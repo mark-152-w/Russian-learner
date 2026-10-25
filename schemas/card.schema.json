@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "card.schema.json",
+  "title": "CardSet",
+  "type": "object",
+  "required": ["id", "title", "cards", "bonusXp"],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": {"type": "string"},
+    "id": {"$ref": "common.schema.json#/$defs/id"},
+    "title": {"$ref": "common.schema.json#/$defs/bilingual"},
+    "bonusXp": {"type": "integer", "minimum": 0},
+    "cards": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "rarity", "art", "blurb"],
+        "additionalProperties": false,
+        "properties": {
+          "id": {"$ref": "common.schema.json#/$defs/id"},
+          "name": {"$ref": "common.schema.json#/$defs/bilingual"},
+          "rarity": {"enum": ["common", "rare", "epic", "legendary"]},
+          "art": {"type": "object", "description": "Parameters for the procedural CSS/SVG card art.", "additionalProperties": true},
+          "level": {"$ref": "common.schema.json#/$defs/level"},
+          "blurb": {"$ref": "story.schema.json", "description": "Short Russian blurb with token analysis (kind = card-blurb)."}
+        }
+      }
+    }
+  }
+}

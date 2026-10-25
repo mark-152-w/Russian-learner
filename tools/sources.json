@@ -1,0 +1,35 @@
+{
+  "openrussian": {
+    "name": "OpenRussian dictionary data",
+    "url": "https://github.com/Badestrand/russian-dictionary",
+    "git": "https://github.com/Badestrand/russian-dictionary.git",
+    "commit": "50e210c4803237779cb562bc1abcea529066031c",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "files": ["nouns.csv", "verbs.csv", "adjectives.csv", "others.csv"]
+  },
+  "frequency": {
+    "name": "FrequencyWords (OpenSubtitles 2018, Russian)",
+    "url": "https://github.com/hermitdave/FrequencyWords",
+    "commit": "525f9b560de45753a5ea01069454e72e9aa541c6",
+    "licence": "CC BY-SA 4.0 (content), MIT (code)",
+    "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "files": {
+      "ru_50k.txt": "https://raw.githubusercontent.com/hermitdave/FrequencyWords/525f9b560de45753a5ea01069454e72e9aa541c6/content/2018/ru/ru_50k.txt",
+      "ru_full.txt": "https://raw.githubusercontent.com/hermitdave/FrequencyWords/525f9b560de45753a5ea01069454e72e9aa541c6/content/2018/ru/ru_full.txt"
+    }
+  },
+  "pymorphy3": {
+    "name": "pymorphy3 + OpenCorpora dictionaries (build-time verification only)",
+    "url": "https://github.com/no-plagiarism/pymorphy3",
+    "licence": "MIT (pymorphy3); OpenCorpora dictionary CC BY-SA 3.0",
+    "licenceUrl": "https://opencorpora.org/?page=about"
+  },
+  "tatoeba": {
+    "name": "Tatoeba sentences (Russian + English translations)",
+    "url": "https://tatoeba.org/en/downloads",
+    "licence": "CC BY 2.0 FR",
+    "licenceUrl": "https://creativecommons.org/licenses/by/2.0/fr/",
+    "status": "NOT REACHABLE from the build sandbox; must be committed manually to tools/raw/tatoeba/ (see PROGRESS.md)"
+  }
+}

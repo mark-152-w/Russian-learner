@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "taxonomy.schema.json",
+  "title": "Taxonomy",
+  "type": "object",
+  "required": ["items"],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": {"type": "string"},
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "label"],
+        "additionalProperties": false,
+        "properties": {
+          "id": {"$ref": "common.schema.json#/$defs/tag"},
+          "label": {"type": "string"},
+          "description": {"type": "string"},
+          "family": {"type": "string"},
+          "level": {"$ref": "common.schema.json#/$defs/level"},
+          "article": {"$ref": "common.schema.json#/$defs/id", "description": "Grammar article to link from the diagnostic."}
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "_doc": "Hand corrections to OpenRussian data. Every unmarked form here is re-checked by validate.py with pymorphy3; slots listed in 'trust' are accepted without that check and must carry a 'note'. Set 'review': true when not fully confident.",
+  "lexemes": {
+    "n:год": {
+      "note": "Dataset gives the archaic plural лета́ as the default. Standard: го́ды; gen. pl. лет (after numbers/много) or годо́в (decades: 90-х годо́в).",
+      "forms": {"sg_prep": "го́де", "sg_loc2": "году́", "pl_nom": "го́ды|*лета́", "pl_gen": "лет|годо́в", "pl_dat": "года́м", "pl_acc": "го́ды", "pl_ins": "года́ми", "pl_prep": "года́х"}
+    },
+    "n:дядя": {
+      "note": "дядья́ is folk/colloquial; standard plural is дя́ди.",
+      "forms": {"pl_nom": "дя́ди|*дядья́", "pl_gen": "дя́дей", "pl_dat": "дя́дям", "pl_acc": "дя́дей", "pl_ins": "дя́дями", "pl_prep": "дя́дях"}
+    },
+    "n:господь": {
+      "note": "Proper noun; dataset forms unstressed. Stress shifts to the first syllable off the nominative.",
+      "lemma": "Госпо́дь",
+      "forms": {"sg_nom": "Госпо́дь", "sg_gen": "Го́спода", "sg_dat": "Го́споду", "sg_acc": "Го́спода", "sg_ins": "Го́сподом", "sg_prep": "Го́споде"}
+    },
+    "n:китай": {
+      "lemma": "Кита́й",
+      "forms": {"sg_nom": "Кита́й", "sg_gen": "Кита́я", "sg_dat": "Кита́ю", "sg_acc": "Кита́й", "sg_ins": "Кита́ем", "sg_prep": "Кита́е"}
+    },
+    "n:аппетит": {
+      "forms": {"sg_gen": "аппети́та", "sg_dat": "аппети́ту", "sg_ins": "аппети́том", "sg_prep": "аппети́те"}
+    },
+    "n:график": {
+      "note": "Dataset nominative is a typo (графтк).",
+      "forms": {"sg_nom": "гра́фик", "sg_gen": "гра́фика", "sg_dat": "гра́фику", "sg_acc": "гра́фик", "sg_ins": "гра́фиком", "sg_prep": "гра́фике", "pl_nom": "гра́фики", "pl_gen": "гра́фиков", "pl_dat": "гра́фикам", "pl_acc": "гра́фики", "pl_ins": "гра́фиками", "pl_prep": "гра́фиках"}
+    },
+    "n:полгода": {
+      "note": "Oblique cases use the полу- stem.",
+      "forms": {"sg_gen": "полуго́да", "sg_dat": "полуго́ду", "sg_ins": "полуго́дом", "sg_prep": "полуго́де", "pl_nom": "", "pl_gen": "", "pl_dat": "", "pl_acc": "", "pl_ins": "", "pl_prep": ""}
+    },
+    "o:зачем": {"lemma": "заче́м"},
+    "o:посреди": {"lemma": "посреди́"},
+    "v:установить": {"lemma": "установи́ть", "forms": {"inf": "установи́ть"}},
+    "v:оказать": {
+      "note": "Dataset non-past/imperative built on a wrong stem (оказа́ю).",
+      "forms": {"np_1sg": "окажу́", "np_2sg": "ока́жешь", "np_3sg": "ока́жет", "np_1pl": "ока́жем", "np_2pl": "ока́жете", "np_3pl": "ока́жут", "imp_sg": "окажи́", "imp_pl": "окажи́те"}
+    },
+    "v:дождаться": {
+      "note": "Dataset non-past/imperative corrupted (дождала́ю́сь).",
+      "forms": {"np_1sg": "дожду́сь", "np_2sg": "дождёшься", "np_3sg": "дождётся", "np_1pl": "дождёмся", "np_2pl": "дождётесь", "np_3pl": "дожду́тся", "imp_sg": "дожди́сь", "imp_pl": "дожди́тесь"}
+    },
+    "v:завести": {
+      "forms": {"np_1sg": "заведу́", "np_3pl": "заведу́т", "pst_f": "завела́", "pst_n": "завело́", "pst_pl": "завели́", "imp_sg": "заведи́", "imp_pl": "заведи́те"}
+    },
+    "v:захотеться": {"forms": {"np_3sg": "захо́чется", "pst_n": "захоте́лось"}},
+    "v:записаться": {
+      "forms": {"np_1sg": "запишу́сь", "np_2sg": "запи́шешься", "np_3sg": "запи́шется", "np_1pl": "запи́шемся", "np_2pl": "запи́шетесь", "np_3pl": "запи́шутся", "pst_m": "записа́лся", "pst_f": "записа́лась", "pst_n": "записа́лось", "pst_pl": "записа́лись", "imp_sg": "запиши́сь", "imp_pl": "запиши́тесь"}
+    },
+    "v:приехать": {
+      "note": "The imperative of приехать is borrowed from приезжать; pymorphy3 files it under the imperfective.",
+      "trust": ["imp_sg", "imp_pl"],
+      "forms": {"imp_sg": "приезжа́й", "imp_pl": "приезжа́йте"}
+    },
+    "v:уехать": {
+      "note": "As приехать: imperative borrowed from уезжать.",
+      "trust": ["imp_sg", "imp_pl"],
+      "forms": {"imp_sg": "уезжа́й", "imp_pl": "уезжа́йте"}
+    },
+    "a:многие": {
+      "note": "Plural-only pronoun-adjective (pymorphy3 lemma is многий). Neuter singular мно́гое is the substantive 'much'.",
+      "trust": ["n_nom", "n_gen", "n_dat", "n_acc", "n_ins", "n_prep", "pl_nom", "pl_gen", "pl_dat", "pl_acc", "pl_ins", "pl_prep", "pl_acc_an"],
+      "forms": {"n_nom": "мно́гое", "n_gen": "мно́гого", "n_dat": "мно́гому", "n_acc": "мно́гое", "n_ins": "мно́гим", "n_prep": "мно́гом", "pl_nom": "мно́гие", "pl_gen": "мно́гих", "pl_dat": "мно́гим", "pl_acc": "мно́гие", "pl_ins": "мно́гими", "pl_prep": "мно́гих", "pl_acc_an": "мно́гих"}
+    }
+  }
+}

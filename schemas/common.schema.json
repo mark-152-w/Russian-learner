@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "common.schema.json",
+  "title": "Common",
+  "description": "Russian-text conventions are enforced by tools/validate.py, not by JSON Schema: every Cyrillic word in any string must carry a stress mark (U+0301) or ё unless monosyllabic or an unstressed proclitic; ё must never be written as е; strings under 'accept' must be words pymorphy3 knows. Keys listed in validate.py NO_STRESS_KEYS (ids and references) are exempt.",
+  "$defs": {
+    "level": {"enum": ["A1", "A2", "B1", "B2", "C1", "C2"]},
+    "id": {"type": "string", "pattern": "^[a-z0-9]+(?:[-:._][a-zа-яё0-9]+)*$", "minLength": 3},
+    "lexemeId": {
+      "type": "string",
+      "pattern": "^[nvao]:[^\\s:][^:]*(?::[0-9]+)?$",
+      "description": "Lexicon id: pos letter (n noun, v verb, a adjective, o other) + ':' + bare lemma, plus ':2', ':3' for homographs in dataset order."
+    },
+    "tag": {"type": "string", "pattern": "^[a-z0-9]+(?:[.-][a-z0-9]+)*$", "description": "Grammar tag from src/data/tags.json."},
+    "errorType": {"type": "string", "pattern": "^[a-z0-9]+(?:[.-][a-z0-9]+)*$", "description": "Error id from src/data/errors.json."},
+    "ruText": {"type": "string", "minLength": 1, "description": "Russian text shown to the learner; stressed."},
+    "enText": {"type": "string", "minLength": 1},
+    "bilingual": {
+      "type": "object",
+      "properties": {"ru": {"$ref": "#/$defs/ruText"}, "en": {"$ref": "#/$defs/enText"}},
+      "additionalProperties": false,
+      "minProperties": 1
+    },
+    "markdown": {
+      "type": "string",
+      "description": "Limited markdown: **bold**, *italic*, `code`, lists, line breaks, [text](#/route) links, and {{ru:слово́}} for inline Russian that should be tappable/playable."
+    },
+    "review": {"type": "boolean", "description": "true = hand-written Russian the author is not fully confident about; listed in PROGRESS.md."},
+    "grammemes": {
+      "type": "object",
+      "description": "Morphological analysis in the app's own tag set.",
+      "properties": {
+        "pos": {"enum": ["noun", "verb", "adj", "pron", "num", "adv", "prep", "conj", "part", "intj", "pred", "prtf", "prts", "grnd", "comp", "name"]},
+        "case": {"enum": ["nom", "gen", "dat", "acc", "ins", "prep", "loc2", "gen2", "voc"]},
+        "number": {"enum": ["sg", "pl"]},
+        "gender": {"enum": ["m", "f", "n"]},
+        "person": {"enum": [1, 2, 3]},
+        "tense": {"enum": ["past", "pres", "fut"]},
+        "aspect": {"enum": ["impf", "pf"]},
+        "mood": {"enum": ["ind", "imp", "cond"]},
+        "voice": {"enum": ["act", "pass"]},
+        "animate": {"type": "boolean"},
+        "short": {"type": "boolean"},
+        "degree": {"enum": ["comp", "sup"]}
+      },
+      "additionalProperties": false
+    }
+  }
+}

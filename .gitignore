@@ -1,0 +1,9 @@
+node_modules/
+dist/
+*.tsbuildinfo
+__pycache__/
+*.pyc
+.DS_Store
+# raw downloaded sources (re-fetch with: npm run data:fetch). Tatoeba must be committed by hand.
+tools/raw/*
+!tools/raw/tatoeba/

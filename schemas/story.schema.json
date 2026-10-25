@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "story.schema.json",
+  "title": "Story",
+  "description": "Every word token carries a build-time analysis that validate.py checks against pymorphy3. No runtime guessing.",
+  "type": "object",
+  "required": ["id", "kind", "level", "title", "sentences", "questions"],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": {"type": "string"},
+    "id": {"$ref": "common.schema.json#/$defs/id"},
+    "kind": {"enum": ["story", "nonfiction", "dialogue", "card-blurb"]},
+    "level": {"$ref": "common.schema.json#/$defs/level"},
+    "series": {"type": "string", "description": "Recurring-character series id."},
+    "chapter": {"type": "integer", "minimum": 1},
+    "title": {"$ref": "common.schema.json#/$defs/bilingual"},
+    "characters": {"type": "array", "items": {"type": "string"}},
+    "cliffhanger": {"type": "string", "description": "English teaser for the next chapter."},
+    "sentences": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["tokens", "en"],
+        "additionalProperties": false,
+        "properties": {
+          "speaker": {"type": "string"},
+          "para": {"type": "boolean", "description": "Starts a new paragraph."},
+          "en": {"type": "string"},
+          "tokens": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/token"}}
+        }
+      }
+    },
+    "questions": {"type": "array", "items": {"$ref": "exercise.schema.json#/$defs/item"}},
+    "review": {"$ref": "common.schema.json#/$defs/review"}
+  },
+  "$defs": {
+    "token": {
+      "type": "object",
+      "required": ["t"],
+      "additionalProperties": false,
+      "properties": {
+        "t": {"type": "string", "description": "Surface text exactly as displayed (stressed), or punctuation."},
+        "sp": {"type": "boolean", "description": "Followed by a space (default true for words)."},
+        "lex": {"$ref": "common.schema.json#/$defs/lexemeId", "description": "Lexicon entry, when the lemma is in the dictionary."},
+        "lemma": {"type": "string", "description": "Stressed dictionary form (required for words)."},
+        "g": {"$ref": "common.schema.json#/$defs/grammemes"},
+        "gloss": {"type": "string", "description": "Contextual English gloss."},
+        "rare": {"type": "boolean", "description": "Show the gloss inline at lower levels."}
+      }
+    }
+  }
+}

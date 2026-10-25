@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "grammar-article.schema.json",
+  "title": "GrammarArticle",
+  "type": "object",
+  "required": ["id", "title", "level", "tags", "card", "sections", "examples"],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": {"type": "string"},
+    "id": {"$ref": "common.schema.json#/$defs/id"},
+    "title": {"$ref": "common.schema.json#/$defs/bilingual"},
+    "level": {"$ref": "common.schema.json#/$defs/level"},
+    "tags": {"type": "array", "items": {"$ref": "common.schema.json#/$defs/tag"}, "minItems": 1, "description": "The drill button runs exercises with exactly these tags."},
+    "card": {"$ref": "common.schema.json#/$defs/markdown", "description": "Short pointer shown inside course units (3–6 lines)."},
+    "sections": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["kind"],
+        "additionalProperties": false,
+        "properties": {
+          "kind": {"enum": ["why", "explanation", "vs-english", "table", "spelling-rule", "memory-trick", "common-mistakes", "note"]},
+          "title": {"type": "string"},
+          "body": {"$ref": "common.schema.json#/$defs/markdown"},
+          "table": {
+            "type": "object",
+            "description": "Either a static table or a generated one (filled from the lexicon at runtime).",
+            "properties": {
+              "caption": {"type": "string"},
+              "head": {"type": "array", "items": {"type": "string"}},
+              "rows": {"type": "array", "items": {"type": "array", "items": {"type": "string"}}},
+              "generate": {
+                "type": "object",
+                "required": ["lexemes", "slots"],
+                "properties": {
+                  "lexemes": {"type": "array", "items": {"$ref": "common.schema.json#/$defs/lexemeId"}},
+                  "slots": {"type": "array", "items": {"type": "string"}},
+                  "highlightEndings": {"type": "boolean"}
+                },
+                "additionalProperties": false
+              }
+            },
+            "additionalProperties": false
+          },
+          "mistakes": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["wrong", "right", "why"],
+              "additionalProperties": false,
+              "properties": {"wrong": {"type": "string"}, "right": {"type": "string"}, "why": {"type": "string"}, "error": {"$ref": "common.schema.json#/$defs/errorType"}}
+            }
+          }
+        }
+      }
+    },
+    "examples": {
+      "type": "array",
+      "minItems": 5,
+      "items": {
+        "type": "object",
+        "required": ["ru", "en"],
+        "additionalProperties": false,
+        "properties": {"ru": {"$ref": "common.schema.json#/$defs/ruText"}, "en": {"type": "string"}, "focus": {"type": "string", "description": "Word to highlight."}}
+      }
+    },
+    "related": {"type": "array", "items": {"$ref": "common.schema.json#/$defs/id"}},
+    "review": {"$ref": "common.schema.json#/$defs/review"}
+  }
+}
