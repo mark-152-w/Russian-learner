@@ -53,7 +53,7 @@ NO_STRESS_KEYS = {
     "$schema", "id", "lex", "vocab", "partners", "to", "requires", "sets", "verb", "object", "topic", "start", "flags",
     "article", "related", "grammar", "series", "characters", "art", "generator", "reading", "listening", "unlock",
     "family", "level", "type", "kind", "source", "error", "tags", "exits", "testOut", "action", "rarity", "speaker",
-    "register", "pos", "slot", "case", "number", "gender", "tense", "aspect", "mood", "voice", "degree", "lemmaId",
+    "register", "pos", "slot", "lexemes", "slots", "case", "number", "gender", "tense", "aspect", "mood", "voice", "degree", "lemmaId",
 }
 ANSWER_KEYS = {"accept"}
 # Values that are wrong Russian on purpose (the "wrong" side of a common-mistakes entry).

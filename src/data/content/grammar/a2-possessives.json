@@ -1,0 +1,63 @@
+{
+  "$schema": "../../../../schemas/grammar-article.schema.json",
+  "id": "g-possessives",
+  "title": {"en": "Possessives: мой, твой, наш, ваш, свой, его́", "ru": "Притяжа́тельные местоиме́ния"},
+  "level": "A2",
+  "tags": ["pron.possessive"],
+  "card": "**мой, твой, наш, ваш, свой** agree with the thing owned, like adjectives: **моя́ кни́га**, **в моём до́ме**. **его́** (*his*), **её** (*her*), **их** (*their*) **never change**. **свой** means *one's own*, referring back to the subject: **Он лю́бит свою́ жену́** (his own wife).",
+  "sections": [
+    {
+      "kind": "why",
+      "body": "Russian possessives behave like adjectives: they agree with the **owned** thing, not with the owner. So a woman says **мой брат** and a man says **моя́ сестра́**: the ending is about the brother or the sister, not about the speaker.\n\nThe third person is different: **его́, её, их** are frozen genitive forms of **он, она́, они́** (*of him, of her, of them*), so they never change."
+    },
+    {
+      "kind": "table",
+      "title": "Nominative forms",
+      "table": {
+        "head": ["", "masculine", "feminine", "neuter", "plural"],
+        "rows": [
+          ["my", "**мой**", "**моя́**", "**моё**", "**мои́**"],
+          ["your (ты)", "**твой**", "**твоя́**", "**твоё**", "**твои́**"],
+          ["our", "**наш**", "**на́ша**", "**на́ше**", "**на́ши**"],
+          ["your (вы)", "**ваш**", "**ва́ша**", "**ва́ше**", "**ва́ши**"],
+          ["one's own", "**свой**", "**своя́**", "**своё**", "**свои́**"],
+          ["his / her / their", "**его́ / её / их**", "**его́ / её / их**", "**его́ / её / их**", "**его́ / её / их**"]
+        ]
+      }
+    },
+    {
+      "kind": "table",
+      "title": "мой in all cases",
+      "table": {
+        "generate": {"lexemes": ["a:мой", "a:свой"], "slots": ["m_nom", "m_gen", "m_dat", "m_ins", "m_prep", "f_nom", "f_gen", "f_acc", "f_ins", "pl_nom", "pl_gen", "pl_ins"]}
+      }
+    },
+    {
+      "kind": "explanation",
+      "title": "свой: the reflexive possessive",
+      "body": "When the owner is the **subject of the same clause**, Russian prefers **свой**: **Я чита́ю свою́ кни́гу** = **Я чита́ю мою́ кни́гу** (both fine for *I*/*you*), but with *he, she, they* the choice changes the meaning:\n\n- **Он лю́бит свою́ жену́.** *He loves his (own) wife.*\n- **Он лю́бит его́ жену́.** *He loves his (another man's) wife!*\n\nSo with a third-person subject, **свой** points back to the subject and **его́/её/их** point to someone else. **свой** is never used in the subject itself: *His wife is here* is **Его́ жена́ здесь.**"
+    },
+    {
+      "kind": "vs-english",
+      "body": "English *his* can be ambiguous: *Tom took his car* (his own? someone else's?). Russian forces a decision: **свою́ маши́ну** or **его́ маши́ну**. English also uses possessives where Russian leaves them out: *I washed my hands* is simply **Я помы́л ру́ки**."
+    },
+    {
+      "kind": "common-mistakes",
+      "mistakes": [
+        {"wrong": "Она́ взяла́ её су́мку.", "right": "Она́ взяла́ свою́ су́мку.", "why": "Her own bag, and she is the subject: **свою́**. **её** would mean another woman's bag.", "error": "pronoun.svoy"},
+        {"wrong": "Я говорю́ с его́й сестро́й.", "right": "Я говорю́ с его́ сестро́й.", "why": "**его́, её, их** never change, whatever the case of the noun.", "error": "ending.invented"},
+        {"wrong": "Э́то мой ма́ма.", "right": "Э́то моя́ ма́ма.", "why": "**ма́ма** is feminine, so **моя́**.", "error": "agreement.gender"}
+      ]
+    }
+  ],
+  "examples": [
+    {"ru": "Э́то моя́ сестра́.", "en": "This is my sister.", "focus": "моя́"},
+    {"ru": "Где твой телефо́н?", "en": "Where's your phone?", "focus": "твой"},
+    {"ru": "Мы лю́бим наш го́род.", "en": "We love our city.", "focus": "наш"},
+    {"ru": "Он забы́л свою́ су́мку.", "en": "He forgot his bag.", "focus": "свою́"},
+    {"ru": "Её брат живёт в Ло́ндоне.", "en": "Her brother lives in London.", "focus": "Её"},
+    {"ru": "Я позвони́л своему́ дру́гу.", "en": "I called my friend.", "focus": "своему́"},
+    {"ru": "Их де́ти уже́ больши́е.", "en": "Their children are already grown up.", "focus": "Их"}
+  ],
+  "related": ["g-adjective-agreement", "g-personal-pronouns"]
+}

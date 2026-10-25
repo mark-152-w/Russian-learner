@@ -1,0 +1,69 @@
+{
+  "$schema": "../../../../schemas/grammar-article.schema.json",
+  "id": "g-time-dates",
+  "title": {"en": "Telling the time, days and dates", "ru": "Вре́мя и да́ты"},
+  "level": "A2",
+  "tags": ["num.time-date", "case.acc.time"],
+  "card": "**Кото́рый час?** — **Сейча́с три часа́.** *At* a time uses **в** + accusative: **в три часа́**, **в сре́ду**. Months use **в** + prepositional: **в январе́**. Dates use the **neuter ordinal** + month in the genitive: **пя́тое ма́я** (*the fifth of May*), and *on* a date puts the ordinal in the genitive: **пя́того ма́я**.",
+  "sections": [
+    {
+      "kind": "table",
+      "title": "Hours",
+      "table": {
+        "head": ["Clock", "Russian", "Note"],
+        "rows": [
+          ["1:00", "**час**", "no number needed"],
+          ["2:00 – 4:00", "**два / три / четы́ре часа́**", "2–4 + genitive singular"],
+          ["5:00 – 12:00", "**пять / шесть … двена́дцать часо́в**", "5+ + genitive plural"],
+          ["3:20", "**три два́дцать**", "in everyday speech, just two numbers"],
+          ["at 3:00", "**в три часа́**", "**в** + accusative"]
+        ]
+      }
+    },
+    {
+      "kind": "table",
+      "title": "When? Days, months, seasons, parts of the day",
+      "table": {
+        "head": ["Question", "Construction", "Examples"],
+        "rows": [
+          ["what day?", "**в** + accusative", "**в понеде́льник**, **в сре́ду**, **в суббо́ту**"],
+          ["what month?", "**в** + prepositional", "**в январе́**, **в ма́е**, **в сентябре́**"],
+          ["what season?", "instrumental, no preposition", "**зимо́й**, **весно́й**, **ле́том**, **о́сенью**"],
+          ["what part of the day?", "instrumental, no preposition", "**у́тром**, **днём**, **ве́чером**, **но́чью**"],
+          ["what year?", "**в** + prepositional of the ordinal", "**в две ты́сячи двадца́том году́**"]
+        ]
+      }
+    },
+    {
+      "kind": "explanation",
+      "title": "Dates",
+      "body": "A date is an ordinal number (neuter, agreeing with the unspoken **число́**, *date*) plus the month in the genitive:\n\n- *What's the date today?* **Како́е сего́дня число́?** — **Сего́дня пе́рвое ма́я.**\n- *On* a date, the ordinal goes into the genitive: **Я роди́лся пя́того ма́я.** (*I was born on the fifth of May.*)\n- Months are not capitalised: **янва́рь, февра́ль, март, апре́ль, май, ию́нь, ию́ль, а́вгуст, сентя́брь, октя́брь, ноя́брь, дека́брь**."
+    },
+    {
+      "kind": "vs-english",
+      "body": "English uses *at, on, in* for times, days and months; Russian uses **в** for all three but with different cases: **в три часа́** (acc), **в сре́ду** (acc), **в ма́е** (prep). Seasons and times of day need no preposition at all: *in summer* is just **ле́том**."
+    },
+    {
+      "kind": "memory-trick",
+      "body": "Days of the week mostly count from Monday: **вто́рник** (*second*), **четве́рг** (*fourth*), **пя́тница** (*fifth*). **среда́** is *the middle*, and **суббо́та** comes from *Sabbath*. **воскресе́нье** means *resurrection*."
+    },
+    {
+      "kind": "common-mistakes",
+      "mistakes": [
+        {"wrong": "в понеде́льнике", "right": "в понеде́льник", "why": "Days take **в** + accusative.", "error": "case.wrong"},
+        {"wrong": "в ле́то", "right": "ле́том", "why": "Seasons use the bare instrumental.", "error": "case.instrumental-role"},
+        {"wrong": "в пять часа́", "right": "в пять часо́в", "why": "5 and above take the genitive plural.", "error": "numeral.governance"}
+      ]
+    }
+  ],
+  "examples": [
+    {"ru": "Кото́рый час? — Два часа́.", "en": "What time is it? Two o'clock.", "focus": "Два часа́"},
+    {"ru": "Фильм начина́ется в семь часо́в.", "en": "The film starts at seven.", "focus": "в семь часо́в"},
+    {"ru": "Уви́димся в пя́тницу.", "en": "See you on Friday.", "focus": "в пя́тницу"},
+    {"ru": "Мы е́дем на мо́ре в ию́ле.", "en": "We're going to the seaside in July.", "focus": "в ию́ле"},
+    {"ru": "Зимо́й здесь о́чень хо́лодно.", "en": "It's very cold here in winter.", "focus": "Зимо́й"},
+    {"ru": "Сего́дня пе́рвое ма́я.", "en": "Today is the first of May.", "focus": "пе́рвое ма́я"},
+    {"ru": "Я позвоню́ тебе́ ве́чером.", "en": "I'll call you in the evening.", "focus": "ве́чером"}
+  ],
+  "related": ["g-numbers", "g-instrumental", "g-accusative"]
+}

@@ -1,0 +1,68 @@
+{
+  "$schema": "../../../../schemas/grammar-article.schema.json",
+  "id": "g-cases-intro",
+  "title": {"en": "Cases: why Russian nouns change their endings", "ru": "Падежи́"},
+  "level": "A2",
+  "tags": ["case.nom", "case.gen", "case.dat", "case.acc", "case.ins", "case.prep"],
+  "card": "Russian shows *who did what to whom* with **endings** instead of word order. A noun has six cases, and each one answers its own question: **кто? что?** (nominative), **кого́? чего́?** (genitive), **кому́? чему́?** (dative), **кого́? что?** (accusative), **кем? чем?** (instrumental), **о ком? о чём?** (prepositional).",
+  "sections": [
+    {
+      "kind": "why",
+      "body": "English relies on word order: *the dog bites the man* and *the man bites the dog* mean different things only because the words swapped places. Russian marks the roles on the words themselves, so the order is free to do other jobs, such as putting the new or important information last.\n\n**Соба́ка куса́ет челове́ка.** and **Челове́ка куса́ет соба́ка.** both mean *the dog bites the man*: the ending **-а** on **челове́ка** says \"this is the one being bitten\", wherever it stands. Swap the endings, not the words, to swap the roles: **Челове́к куса́ет соба́ку.**\n\nThat is the whole idea of cases: an ending is a small label that tells you the word's job in the sentence."
+    },
+    {
+      "kind": "vs-english",
+      "body": "English still has a little of this: *he / him / his*, *who / whom / whose*. You would never say *him sees I*, because *he* and *him* carry the role. Russian simply does this with every noun, adjective and pronoun.\n\nEnglish also uses prepositions where Russian uses a case alone: *a glass **of** water* is **стака́н воды́** (genitive), *write **with** a pen* is **писа́ть ру́чкой** (instrumental), *give it **to** Anna* is **дать А́нне** (dative)."
+    },
+    {
+      "kind": "table",
+      "title": "The six cases at a glance",
+      "table": {
+        "head": ["Case", "Question", "Main jobs", "Example"],
+        "rows": [
+          ["Nominative", "**кто? что?**", "the subject; the dictionary form", "**Кни́га** лежи́т на столе́."],
+          ["Genitive", "**кого́? чего́?**", "*of*; after **нет**, numbers, many prepositions", "У меня́ нет **кни́ги**."],
+          ["Dative", "**кому́? чему́?**", "*to/for* someone; how someone feels", "Я дал **бра́ту** кни́гу."],
+          ["Accusative", "**кого́? что?**", "the direct object; *into/onto* with в, на", "Я чита́ю **кни́гу**."],
+          ["Instrumental", "**кем? чем?**", "*with*, *by means of*; after **быть**, **стать**", "Я пишу́ **ру́чкой**."],
+          ["Prepositional", "**о ком? о чём?**", "location with в, на; *about* with о", "Мы говори́м о **кни́ге**."]
+        ]
+      }
+    },
+    {
+      "kind": "explanation",
+      "title": "What actually decides the case",
+      "body": "Three things choose a case, and once you look for them the choice stops being mysterious:\n\n- **The role in the sentence.** The subject is nominative; the thing directly acted on is accusative.\n- **A preposition.** Every preposition takes a fixed case (or two, with a change of meaning): **без** always takes the genitive, **с** meaning *with* always takes the instrumental.\n- **A governing word.** Some verbs, adjectives and quantity words demand a case: **помога́ть** + dative, **занима́ться** + instrumental, **мно́го** + genitive.\n\nSo when you meet a new verb or preposition, learn it with its case, the way English speakers learn *depend **on***."
+    },
+    {
+      "kind": "table",
+      "title": "One word, six forms",
+      "table": {
+        "caption": "Generated from the dictionary. Tap a word to open its page.",
+        "generate": {"lexemes": ["n:книга", "n:стол", "n:окно"], "slots": ["sg_nom", "sg_gen", "sg_dat", "sg_acc", "sg_ins", "sg_prep"]}
+      }
+    },
+    {
+      "kind": "memory-trick",
+      "body": "Learn the six questions as a chant, in the traditional order: **кто, кого́, кому́, кого́, кем, о ком**. When you are unsure of a case, ask the question the sentence implies. *I'm thinking about…* о ко́м? → prepositional."
+    },
+    {
+      "kind": "common-mistakes",
+      "mistakes": [
+        {"wrong": "Я ви́жу кни́га.", "right": "Я ви́жу кни́гу.", "why": "The dictionary form is the subject form. As a direct object the word must change: **кни́гу**.", "error": "case.nom-default"},
+        {"wrong": "Я говорю́ о Москва́.", "right": "Я говорю́ о Москве́.", "why": "**о** (*about*) always takes the prepositional.", "error": "case.preposition-government"},
+        {"wrong": "Это кни́га мой брат.", "right": "Э́то кни́га моего́ бра́та.", "why": "English *my brother's book* becomes *the book of my brother*: the owner goes in the genitive, after the thing owned.", "error": "case.wrong"}
+      ]
+    }
+  ],
+  "examples": [
+    {"ru": "Ма́ма чита́ет кни́гу.", "en": "Mum is reading a book.", "focus": "кни́гу"},
+    {"ru": "Кни́гу чита́ет ма́ма.", "en": "It's Mum who is reading the book.", "focus": "Кни́гу"},
+    {"ru": "У меня́ нет вре́мени.", "en": "I have no time.", "focus": "вре́мени"},
+    {"ru": "Я пишу́ письмо́ дру́гу.", "en": "I'm writing a letter to a friend.", "focus": "дру́гу"},
+    {"ru": "Он рабо́тает врачо́м.", "en": "He works as a doctor.", "focus": "врачо́м"},
+    {"ru": "Мы живём в Москве́.", "en": "We live in Moscow.", "focus": "Москве́"},
+    {"ru": "Мы говори́ли о рабо́те.", "en": "We talked about work.", "focus": "рабо́те"}
+  ],
+  "related": ["g-gender-nominative", "g-prepositional", "g-accusative", "g-genitive", "g-dative", "g-instrumental", "g-case-cheatsheet"]
+}

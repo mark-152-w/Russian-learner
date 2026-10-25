@@ -1,0 +1,59 @@
+{
+  "$schema": "../../../../schemas/grammar-article.schema.json",
+  "id": "g-aspect-intro",
+  "title": {"en": "Aspect: process or result?", "ru": "Вид глаго́ла"},
+  "level": "A2",
+  "tags": ["aspect.intro"],
+  "card": "Most verbs come in pairs: an **imperfective** for the process, repetition or general fact (**чита́ть**), and a **perfective** for one completed result (**прочита́ть**). Same meaning, different view: **Я чита́л кни́гу** (*I was reading / I read for a while*) vs **Я прочита́л кни́гу** (*I finished the book*).",
+  "sections": [
+    {
+      "kind": "why",
+      "body": "Aspect is not about time but about how you look at an action. The imperfective looks at the action from inside: in progress, repeated, or simply named. The perfective looks at it from outside, as a single whole with a result.\n\nThink of a film versus a photograph. **Он писа́л письмо́** is the film: you watch him writing. **Он написа́л письмо́** is the photograph of the finished letter."
+    },
+    {
+      "kind": "table",
+      "title": "Choosing the aspect",
+      "table": {
+        "head": ["Imperfective (НСВ)", "Perfective (СВ)"],
+        "rows": [
+          ["process, duration: **Я до́лго чита́л.**", "one completed result: **Я прочита́л кни́гу.**"],
+          ["repetition, habit: **Я ка́ждый день звоню́ ма́ме.**", "one occasion: **Я позвони́л ма́ме.**"],
+          ["naming the action, *did you ever*: **Ты чита́л «Войну́ и мир»?**", "result still relevant: **Ты прочита́л кни́гу? Мо́жно взять?**"],
+          ["two simultaneous actions: **Он чита́л, а она́ писа́ла.**", "a sequence: **Он прочита́л письмо́ и позвони́л.**"],
+          ["has a present tense", "no present: its \"present\" form is future"]
+        ]
+      }
+    },
+    {
+      "kind": "explanation",
+      "title": "How pairs are formed",
+      "body": "- **A prefix** makes the perfective: **де́лать → сде́лать**, **писа́ть → написа́ть**, **чита́ть → прочита́ть**, **смотре́ть → посмотре́ть**.\n- **A suffix** changes: **отвеча́ть → отве́тить**, **реша́ть → реши́ть**, **дава́ть → дать**.\n- **A different word** entirely: **говори́ть → сказа́ть**, **брать → взять**, **класть → положи́ть**.\n\nEach word page in the lab shows the verb's aspect and its partner."
+    },
+    {
+      "kind": "vs-english",
+      "body": "English expresses some of this with tenses: *was reading* is roughly imperfective, *have read* roughly perfective. But the match is loose: *I read the book yesterday* can be either, depending on whether you finished it. Russian makes you decide every time you use a verb."
+    },
+    {
+      "kind": "memory-trick",
+      "body": "Ask yourself: **is there a tick in a box?** If the action produced a result you could tick off (the letter written, the film watched to the end), use the perfective. If not, or if it happened again and again, use the imperfective."
+    },
+    {
+      "kind": "common-mistakes",
+      "mistakes": [
+        {"wrong": "Ка́ждый день я позвони́л ма́ме.", "right": "Ка́ждый день я звони́л ма́ме.", "why": "Repetition is imperfective.", "error": "aspect.wrong"},
+        {"wrong": "Я чита́л кни́гу и пото́м о́тдал её дру́гу.", "right": "Я прочита́л кни́гу и пото́м о́тдал её дру́гу.", "why": "A sequence of completed steps is perfective.", "error": "aspect.wrong"},
+        {"wrong": "Сейча́с я прочита́ю.", "right": "Сейча́с я чита́ю.", "why": "*Right now* is a process: the perfective has no present tense.", "error": "aspect.wrong"}
+      ]
+    }
+  ],
+  "examples": [
+    {"ru": "Вчера́ я весь ве́чер чита́л.", "en": "Yesterday I spent the whole evening reading.", "focus": "чита́л"},
+    {"ru": "Я прочита́л э́ту кни́гу за два дня.", "en": "I read this book in two days.", "focus": "прочита́л"},
+    {"ru": "Он всегда́ опа́здывает.", "en": "He's always late.", "focus": "опа́здывает"},
+    {"ru": "Сего́дня он опозда́л.", "en": "Today he was late.", "focus": "опозда́л"},
+    {"ru": "Ты уже́ сде́лал дома́шнее зада́ние?", "en": "Have you done your homework yet?", "focus": "сде́лал"},
+    {"ru": "Я до́лго реша́л зада́чу и наконе́ц реши́л.", "en": "I worked on the problem for a long time and finally solved it.", "focus": "реши́л"},
+    {"ru": "Что ты де́лал вчера́?", "en": "What did you do yesterday?", "focus": "де́лал"}
+  ],
+  "related": ["g-future-tense", "g-past-tense", "g-aspect-depth"]
+}

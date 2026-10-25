@@ -25,11 +25,24 @@ export function Md({ text, className = '' }: { text: string; className?: string 
   const { showStress } = useSettings()
   return (
     <div className={className}>
-      {text.split(/\n{2,}/).map((para, i) => (
-        <p key={i} className="mb-2 last:mb-0">
-          {para.split('\n').flatMap((line, j) => (j ? [<br key={`b${j}`} />, ...renderInline(line, showStress)] : renderInline(line, showStress)))}
-        </p>
-      ))}
+      {text.split(/\n{2,}/).map((para, i) => {
+        const lines = para.split('\n')
+        // a paragraph made only of "- " lines is a bullet list
+        if (lines.every((l) => l.startsWith('- '))) {
+          return (
+            <ul key={i} className="mb-2 list-disc space-y-1 pl-5 last:mb-0">
+              {lines.map((l, j) => (
+                <li key={j}>{renderInline(l.slice(2), showStress)}</li>
+              ))}
+            </ul>
+          )
+        }
+        return (
+          <p key={i} className="mb-2 last:mb-0">
+            {lines.flatMap((line, j) => (j ? [<br key={`b${j}`} />, ...renderInline(line, showStress)] : renderInline(line, showStress)))}
+          </p>
+        )
+      })}
     </div>
   )
 }

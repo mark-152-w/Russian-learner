@@ -125,5 +125,15 @@ class AbbreviationTest(unittest.TestCase):
         self.assertEqual(errs, [])
 
 
+class DictionaryStressTest(unittest.TestCase):
+    def test_wrong_stress_is_caught(self):
+        errs, _ = errors("на сто́ле")
+        self.assertTrue(any("differs from the dictionary" in e for e in errs))
+
+    def test_either_stress_of_a_homograph_is_fine(self):
+        self.assertEqual(errors("ру́ки")[0], [])
+        self.assertEqual(errors("руки́")[0], [])
+
+
 if __name__ == "__main__":
     unittest.main()

@@ -1,0 +1,67 @@
+{
+  "$schema": "../../../../schemas/grammar-article.schema.json",
+  "id": "g-prepositional",
+  "title": {"en": "The prepositional case: where and about what", "ru": "Предло́жный паде́ж"},
+  "level": "A2",
+  "tags": ["case.prep", "case.prep.location", "case.prep.about", "case.loc2"],
+  "card": "Use the prepositional after **в** and **на** for *location* (где?) and after **о/об** for *about*. Almost every noun simply ends in **-е**: **в Москве́**, **на столе́**, **о кни́ге**. Feminine **-ь** nouns and nouns in **-ия/-ие** take **-и**: **в Росси́и**, **о жи́зни**.",
+  "sections": [
+    {
+      "kind": "why",
+      "body": "This is the only case that never appears without a preposition, which is where its name comes from. Its two everyday jobs are answering **где?** (*where?*) with **в** and **на**, and saying what you speak or think **about** with **о**.\n\nIt is usually the first case learners master, because the ending is so regular: in the singular it is nearly always **-е**."
+    },
+    {
+      "kind": "table",
+      "title": "Singular endings",
+      "table": {
+        "head": ["Nominative", "Prepositional", "Examples"],
+        "rows": [
+          ["consonant, -й, -а, -я, -о, -е", "-е", "**стол → на столе́**, **музе́й → в музе́е**, **шко́ла → в шко́ле**, **окно́ → на окне́**"],
+          ["feminine -ь", "-и", "**пло́щадь → на пло́щади**, **жизнь → о жи́зни**"],
+          ["-ия, -ие, -ий", "-ии", "**Росси́я → в Росси́и**, **зда́ние → в зда́нии**"],
+          ["-мя", "-мени", "**вре́мя → о вре́мени**, **и́мя → об и́мени**"]
+        ]
+      }
+    },
+    {
+      "kind": "table",
+      "title": "Generated paradigms",
+      "table": {
+        "generate": {"lexemes": ["n:школа", "n:город", "n:площадь", "n:здание"], "slots": ["sg_nom", "sg_prep", "pl_prep"]}
+      }
+    },
+    {
+      "kind": "explanation",
+      "title": "в or на?",
+      "body": "Both mean *in/at/on*, and the choice is mostly about the place itself:\n\n- **в** for enclosed spaces and most buildings, cities and countries: **в ко́мнате**, **в шко́ле**, **в Москве́**, **в Росси́и**.\n- **на** for surfaces and open areas: **на столе́**, **на у́лице**, **на пло́щади**.\n- **на** also for events and activities, and for a fixed list of places that must simply be learned: **на конце́рте**, **на рабо́те**, **на уро́ке**, **на по́чте**, **на вокза́ле**, **на ры́нке**, **на заво́де**, **на ро́дине**.\n\nThe partner prepositions for *from* follow the same split: **в → из**, **на → с** (**из шко́лы**, **с рабо́ты**)."
+    },
+    {
+      "kind": "explanation",
+      "title": "The stressed -у́: в лесу́, на мосту́",
+      "body": "About a hundred common masculine nouns take a stressed **-у́** after **в** and **на** when they mean location: **в лесу́**, **в саду́**, **на мосту́**, **в углу́**, **на берегу́**, **в году́**. After **о** they go back to the normal **-е**: **о ле́се**, **о са́де**. The dictionary marks these; the word pages show both."
+    },
+    {
+      "kind": "vs-english",
+      "body": "English chooses between *in*, *at* and *on* by meaning; Russian chooses between **в** and **на** by habit as much as by meaning, so *at work* is **на рабо́те** but *at school* is **в шко́ле**. Learn the place together with its preposition: think of **на рабо́те** as one unit."
+    },
+    {
+      "kind": "common-mistakes",
+      "mistakes": [
+        {"wrong": "Я живу́ в Москву́.", "right": "Я живу́ в Москве́.", "why": "*Living in* is a location (где?), so prepositional. **в Москву́** (accusative) means *to Moscow*.", "error": "case.acc-for-prep"},
+        {"wrong": "Я рабо́таю в рабо́те.", "right": "Я на рабо́те.", "why": "**рабо́та** takes **на** for *at work*.", "error": "case.preposition-government"},
+        {"wrong": "Мы говори́ли о Росси́е.", "right": "Мы говори́ли о Росси́и.", "why": "Nouns in **-ия** take **-ии**, never **-ие**.", "error": "ending.invented"}
+      ]
+    }
+  ],
+  "examples": [
+    {"ru": "Кни́га на столе́.", "en": "The book is on the table.", "focus": "столе́"},
+    {"ru": "Мы живём в Москве́.", "en": "We live in Moscow.", "focus": "Москве́"},
+    {"ru": "Ма́ма на рабо́те.", "en": "Mum is at work.", "focus": "рабо́те"},
+    {"ru": "Де́ти игра́ют на у́лице.", "en": "The children are playing outside.", "focus": "у́лице"},
+    {"ru": "Мы гуля́ли в лесу́.", "en": "We went for a walk in the forest.", "focus": "лесу́"},
+    {"ru": "Я ду́маю о бра́те.", "en": "I'm thinking about my brother.", "focus": "бра́те"},
+    {"ru": "Он роди́лся в Росси́и.", "en": "He was born in Russia.", "focus": "Росси́и"},
+    {"ru": "Расскажи́ о себе́.", "en": "Tell me about yourself.", "focus": "себе́"}
+  ],
+  "related": ["g-cases-intro", "g-accusative", "g-where-whither", "g-case-cheatsheet"]
+}

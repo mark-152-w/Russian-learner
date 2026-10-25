@@ -1,0 +1,67 @@
+{
+  "$schema": "../../../../schemas/grammar-article.schema.json",
+  "id": "g-dative",
+  "title": {"en": "The dative case: to whom, and how it feels", "ru": "Да́тельный паде́ж"},
+  "level": "A2",
+  "tags": ["case.dat", "case.dat.indirect-object", "case.dat.impersonal", "case.dat.prepositions"],
+  "card": "The dative is the ***to/for*** case: the person something is given, said or shown to: **Я дал бра́ту кни́гу.** It also marks who *experiences* a feeling or state: **Мне хо́лодно** (*I'm cold*), **Мне нра́вится** (*I like*), and follows **к** (*towards*) and **по** (*along, by*). Singular endings: **-у/-ю** (masc./neut.), **-е** (fem. **-а/-я**), **-и** (fem. **-ь**).",
+  "sections": [
+    {
+      "kind": "why",
+      "body": "The dative is the case of the *receiver*. Whoever ends up with the gift, the message or the feeling goes in the dative. That is why it appears in Russian's many \"impersonal\" phrases: instead of *I am cold*, Russian says *to-me it is cold*, **мне хо́лодно**, because the person is treated as the one who experiences the cold, not the one who does something."
+    },
+    {
+      "kind": "table",
+      "title": "Singular endings",
+      "table": {
+        "head": ["Nominative", "Dative", "Examples"],
+        "rows": [
+          ["masculine consonant, neuter -о", "-у", "**брат → бра́ту**, **окно́ → окну́**"],
+          ["masculine -й, -ь; neuter -е", "-ю", "**музе́й → музе́ю**, **учи́тель → учи́телю**, **мо́ре → мо́рю**"],
+          ["-а, -я", "-е", "**ма́ма → ма́ме**, **па́па → па́пе**, **неде́ля → неде́ле**"],
+          ["feminine -ь, -ия", "-и", "**дочь → до́чери**, **Мари́я → Мари́и**"]
+        ]
+      }
+    },
+    {
+      "kind": "explanation",
+      "title": "The main uses",
+      "body": "- **Indirect object** with verbs of giving and telling: **дать**, **дари́ть**, **сказа́ть**, **писа́ть**, **звони́ть**, **показа́ть**, **объясни́ть**: **Позвони́ ма́ме!**\n- **Verbs that take the dative where English uses an object**: **помога́ть** (*help*), **меша́ть** (*disturb*), **сове́товать** (*advise*), **ве́рить** (*believe*): **Я помога́ю дру́гу.**\n- **Feelings and states** with an adverb in **-о**: **мне хо́лодно / ску́чно / интере́сно / ве́село**.\n- **Liking**: **Мне нра́вится му́зыка.** The thing liked is the *subject*; you are the dative receiver.\n- **Need and permission**: **мне на́до / ну́жно**, **мне мо́жно**, **мне нельзя́**.\n- **Age**: **Мне два́дцать лет.** (*To me are twenty years.*)\n- **Prepositions**: **к** (*towards, to someone's place*): **Я иду́ к врачу́**; **по** (*along, around, by means of*): **по у́лице**, **по телефо́ну**."
+    },
+    {
+      "kind": "table",
+      "title": "Pronouns in the dative",
+      "table": {
+        "head": ["я", "ты", "он / оно́", "она́", "мы", "вы", "они́"],
+        "rows": [["**мне**", "**тебе́**", "**ему́**", "**ей**", "**нам**", "**вам**", "**им**"]]
+      }
+    },
+    {
+      "kind": "vs-english",
+      "body": "English *I like music* puts *I* first as the subject. Russian turns it round: **Мне нра́вится му́зыка**, *music pleases me*. So the verb agrees with the music, not with you: **Мне нра́вятся э́ти пе́сни** (*I like these songs*). Think of the Spanish *me gusta* if you know it."
+    },
+    {
+      "kind": "memory-trick",
+      "body": "Picture a hand reaching out to receive: whoever's hand it is, that word goes in the dative. *Give **him** the book*, *tell **Mum**, it's cold **to me***: all hands."
+    },
+    {
+      "kind": "common-mistakes",
+      "mistakes": [
+        {"wrong": "Я нра́влюсь му́зыка.", "right": "Мне нра́вится му́зыка.", "why": "The person who likes is in the dative; the thing liked is the subject.", "error": "case.wrong"},
+        {"wrong": "Я помога́ю бра́та.", "right": "Я помога́ю бра́ту.", "why": "**помога́ть** takes the dative, not the accusative.", "error": "case.verb-government"},
+        {"wrong": "Я хо́лодно.", "right": "Мне хо́лодно.", "why": "States and feelings use the dative of the person, with no subject.", "error": "case.wrong"}
+      ]
+    }
+  ],
+  "examples": [
+    {"ru": "Я подари́л ма́ме цветы́.", "en": "I gave Mum flowers.", "focus": "ма́ме"},
+    {"ru": "Мне нра́вится э́тот фильм.", "en": "I like this film.", "focus": "Мне"},
+    {"ru": "Нам на́до идти́.", "en": "We have to go.", "focus": "Нам"},
+    {"ru": "Сего́дня мне ску́чно.", "en": "I'm bored today.", "focus": "мне"},
+    {"ru": "Позвони́ бра́ту.", "en": "Call your brother.", "focus": "бра́ту"},
+    {"ru": "Я иду́ к врачу́.", "en": "I'm going to the doctor's.", "focus": "врачу́"},
+    {"ru": "Мы гуля́ли по го́роду.", "en": "We walked around the city.", "focus": "го́роду"},
+    {"ru": "Ско́лько тебе́ лет?", "en": "How old are you?", "focus": "тебе́"}
+  ],
+  "related": ["g-cases-intro", "g-impersonal", "g-personal-pronouns"]
+}

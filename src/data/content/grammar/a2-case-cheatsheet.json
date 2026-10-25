@@ -1,0 +1,76 @@
+{
+  "$schema": "../../../../schemas/grammar-article.schema.json",
+  "id": "g-case-cheatsheet",
+  "title": {"en": "Case cheat sheet: prepositions and question words", "ru": "Шпарга́лка по падежа́м"},
+  "level": "A2",
+  "tags": ["case.nom", "case.gen", "case.dat", "case.acc", "case.ins", "case.prep"],
+  "card": "Every common preposition, question word and governing word with the case it takes, on one page. When a preposition has two cases, the meaning tells you which: **в** + prepositional = *in* (где?), **в** + accusative = *into* (куда́?).",
+  "sections": [
+    {
+      "kind": "table",
+      "title": "Question words",
+      "table": {
+        "head": ["Case", "Questions", "Typical trigger"],
+        "rows": [
+          ["Nominative", "**кто? что?**", "the subject"],
+          ["Genitive", "**кого́? чего́?** (+ **чей?**, **ско́лько?**)", "*of*, **нет**, quantities"],
+          ["Dative", "**кому́? чему́?**", "*to/for* someone, feelings"],
+          ["Accusative", "**кого́? что?** **куда́?**", "the direct object, direction"],
+          ["Instrumental", "**кем? чем?**", "tool, *with*, professions"],
+          ["Prepositional", "**о ком? о чём?** **где?**", "*about*, location"]
+        ]
+      }
+    },
+    {
+      "kind": "table",
+      "title": "Prepositions",
+      "table": {
+        "head": ["Case", "Prepositions", "Examples"],
+        "rows": [
+          ["Genitive", "**у** (at, by), **из** (out of), **от** (from), **без** (without), **для** (for), **до** (until, up to), **по́сле** (after), **о́коло** (near), **кро́ме** (except), **вокру́г** (around), **среди́** (among), **из-за** (because of), **напро́тив** (opposite), **во́зле** (beside), **с** (off, since)", "**у дру́га**, **из Москвы́**, **без са́хара**, **по́сле уро́ка**"],
+          ["Dative", "**к** (towards, to someone), **по** (along, around, by)", "**к врачу́**, **по у́лице**, **по телефо́ну**"],
+          ["Accusative", "**в, на** (into, onto: куда́?), **за** (for; behind, motion), **под** (under, motion), **че́рез** (across, in), **про** (about, colloquial)", "**в шко́лу**, **на стол**, **спаси́бо за по́мощь**, **че́рез час**"],
+          ["Instrumental", "**с** (with), **над** (above), **под** (under), **за** (behind), **пе́ред** (in front of, before), **ме́жду** (between)", "**с дру́гом**, **над столо́м**, **пе́ред до́мом**"],
+          ["Prepositional", "**в, на** (in, on: где?), **о / об / обо** (about), **при** (in the presence of, under)", "**в шко́ле**, **на столе́**, **о рабо́те**"]
+        ]
+      }
+    },
+    {
+      "kind": "table",
+      "title": "Prepositions with two cases",
+      "table": {
+        "head": ["Preposition", "With…", "Meaning"],
+        "rows": [
+          ["**в, на**", "accusative / prepositional", "into, onto (motion) / in, on (location)"],
+          ["**за, под**", "accusative / instrumental", "behind, under (motion) / behind, under (location)"],
+          ["**с**", "genitive / instrumental", "off, from, since / with"]
+        ]
+      }
+    },
+    {
+      "kind": "table",
+      "title": "Words that govern a case",
+      "table": {
+        "head": ["Case", "Words"],
+        "rows": [
+          ["Genitive", "**нет**, **мно́го**, **ма́ло**, **ско́лько**, **не́сколько**, numbers 2+; **боя́ться**, **жела́ть**, **ждать** (sometimes)"],
+          ["Dative", "**помога́ть**, **звони́ть**, **сове́товать**, **меша́ть**, **ве́рить**, **нра́виться**, **на́до**, **ну́жно**, **мо́жно**, **нельзя́**"],
+          ["Instrumental", "**быть** (past, future), **стать**, **рабо́тать**, **занима́ться**, **интересова́ться**, **по́льзоваться**, **горди́ться**, **дово́лен**"]
+        ]
+      }
+    },
+    {
+      "kind": "memory-trick",
+      "body": "**Location, motion, origin** in one line: **в шко́ле** → **в шко́лу** → **из шко́лы**; **на рабо́те** → **на рабо́ту** → **с рабо́ты**; **у врача́** → **к врачу́** → **от врача́**."
+    }
+  ],
+  "examples": [
+    {"ru": "Я живу́ у дру́га.", "en": "I'm staying at a friend's.", "focus": "у дру́га"},
+    {"ru": "Мы встре́тимся по́сле рабо́ты.", "en": "We'll meet after work.", "focus": "по́сле рабо́ты"},
+    {"ru": "Спаси́бо за по́мощь!", "en": "Thanks for the help!", "focus": "за по́мощь"},
+    {"ru": "Ко́шка спит под столо́м.", "en": "The cat is sleeping under the table.", "focus": "под столо́м"},
+    {"ru": "Я позвоню́ че́рез час.", "en": "I'll call in an hour.", "focus": "че́рез час"},
+    {"ru": "Мы говори́ли о пого́де.", "en": "We talked about the weather.", "focus": "о пого́де"}
+  ],
+  "related": ["g-cases-intro", "g-where-whither"]
+}

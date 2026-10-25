@@ -1,0 +1,77 @@
+{
+  "$schema": "../../../../schemas/grammar-article.schema.json",
+  "id": "g-gender-nominative",
+  "title": {"en": "Gender and the nominative", "ru": "Род и имени́тельный паде́ж"},
+  "level": "A2",
+  "tags": ["case.nom", "adj.agreement"],
+  "card": "Every noun is **masculine**, **feminine** or **neuter**, and you can almost always tell from the last letter: a consonant or **-й** is masculine (**стол**, **музе́й**), **-а/-я** is feminine (**кни́га**, **неде́ля**), **-о/-е** is neuter (**окно́**, **мо́ре**). Words in **-ь** must be learned: **слова́рь** (m), **дверь** (f).",
+  "sections": [
+    {
+      "kind": "why",
+      "body": "Gender in Russian is a grammatical class, not a statement about sex: a table is masculine and a book is feminine because of their endings, and that is all. Gender matters because it decides two things: which set of endings the noun uses in the other cases, and which form adjectives, pronouns and past-tense verbs take when they agree with it: **но́вый стол**, **но́вая кни́га**, **но́вое окно́**."
+    },
+    {
+      "kind": "table",
+      "title": "Telling the gender from the ending",
+      "table": {
+        "head": ["Ending", "Gender", "Examples"],
+        "rows": [
+          ["consonant", "masculine", "**стол**, **дом**, **брат**, **го́род**"],
+          ["-й", "masculine", "**музе́й**, **трамва́й**, **геро́й**"],
+          ["-а, -я", "feminine", "**кни́га**, **ма́ма**, **неде́ля**, **пе́сня**"],
+          ["-о, -е, -ё", "neuter", "**окно́**, **ме́сто**, **мо́ре**, **зда́ние**"],
+          ["-ь", "masculine **or** feminine", "**день**, **слова́рь** (m); **дверь**, **ночь** (f)"],
+          ["-мя", "neuter (only ten words)", "**и́мя**, **вре́мя**"]
+        ]
+      }
+    },
+    {
+      "kind": "explanation",
+      "title": "The exceptions that bite",
+      "body": "- Men with **-а/-я** names or titles are masculine in meaning but decline like feminine nouns: **па́па**, **дя́дя**, **мужчи́на**, **Ми́ша**. Adjectives agree with the meaning: **мой па́па**, **ста́рый мужчи́на**.\n- **-ь** words: most nouns in **-ость** are feminine (**ра́дость**, **но́вость**); words for male people and months are masculine (**учи́тель**, **янва́рь**).\n- Borrowed words in **-о, -е, -и, -у** are neuter and never change: **кафе́**, **метро́**, **такси́**. **ко́фе** is the famous exception: masculine (**чёрный ко́фе**)."
+    },
+    {
+      "kind": "vs-english",
+      "body": "English has gender only in *he / she / it*. In Russian **он** and **она́** also mean *it* for things: **Где кни́га? — Она́ на столе́.** (*Where's the book? It's on the table.*) Saying **оно́** for a book is a typical English-speaker slip."
+    },
+    {
+      "kind": "table",
+      "title": "Nominative plural",
+      "table": {
+        "head": ["Gender", "Singular → plural", "Examples"],
+        "rows": [
+          ["masculine", "-ы / -и", "**стол → столы́**, **музе́й → музе́и**"],
+          ["feminine", "-ы / -и", "**кни́га → кни́ги**, **неде́ля → неде́ли**"],
+          ["neuter", "-а / -я", "**окно́ → о́кна**, **мо́ре → моря́**"]
+        ]
+      }
+    },
+    {
+      "kind": "spelling-rule",
+      "title": "The 7-letter rule",
+      "body": "After **к, г, х, ж, ш, щ, ч** never write **ы**: write **и** instead. So the plural of **кни́га** is **кни́ги**, of **нож** is **ножи́**, of **врач** is **врачи́**. These letters are either always hard or always soft, so **ы** would add nothing, and Russian spelling simply forbids it."
+    },
+    {
+      "kind": "memory-trick",
+      "body": "Some common masculine nouns take a stressed **-а́** plural instead of **-ы**: **дом → дома́**, **го́род → города́**, **глаз → глаза́**, **учи́тель → учителя́**. Think of them as the \"loud\" plurals: the stress jumps to the new ending."
+    },
+    {
+      "kind": "common-mistakes",
+      "mistakes": [
+        {"wrong": "Э́то мой кни́га.", "right": "Э́то моя́ кни́га.", "why": "**кни́га** is feminine, so the possessive is **моя́**.", "error": "agreement.gender"},
+        {"wrong": "кни́гы", "right": "кни́ги", "why": "The 7-letter rule: after **г** write **и**.", "error": "spelling.7-letter"},
+        {"wrong": "Где ключ? — Оно́ на столе́.", "right": "Где ключ? — Он на столе́.", "why": "*It* for a masculine thing is **он**.", "error": "agreement.gender"}
+      ]
+    }
+  ],
+  "examples": [
+    {"ru": "Где мой ключ? — Он на столе́.", "en": "Where's my key? It's on the table.", "focus": "Он"},
+    {"ru": "Э́то но́вая кни́га.", "en": "This is a new book.", "focus": "кни́га"},
+    {"ru": "Окно́ откры́то.", "en": "The window is open.", "focus": "Окно́"},
+    {"ru": "Мой па́па врач.", "en": "My dad is a doctor.", "focus": "па́па"},
+    {"ru": "Дверь закры́та.", "en": "The door is closed.", "focus": "Дверь"},
+    {"ru": "В Росси́и больши́е города́.", "en": "Russia has big cities.", "focus": "города́"},
+    {"ru": "Мне нра́вится э́то и́мя.", "en": "I like this name.", "focus": "и́мя"}
+  ],
+  "related": ["g-cases-intro", "g-adjective-agreement", "g-possessives"]
+}

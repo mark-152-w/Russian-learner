@@ -1,0 +1,71 @@
+{
+  "$schema": "../../../../schemas/grammar-article.schema.json",
+  "id": "g-genitive",
+  "title": {"en": "The genitive case: of, without, and nothing", "ru": "Роди́тельный паде́ж"},
+  "level": "A2",
+  "tags": ["case.gen", "case.gen.possession", "case.gen.negation", "case.gen.prepositions"],
+  "card": "The genitive means ***of***: **кни́га бра́та** (*brother's book*), **стака́н воды́** (*a glass of water*). It also follows **нет** (*there isn't*), most quantities, and many prepositions: **у, из, от, без, для, до, по́сле, о́коло**. Singular endings: **-а/-я** for masculine and neuter, **-ы/-и** for feminine.",
+  "sections": [
+    {
+      "kind": "why",
+      "body": "The genitive is the most frequent case after the nominative, because it does so many jobs: possession, parts and amounts, absence, and a long list of prepositions. Its common thread is *of* or *from*: something belongs to, comes out of, or is measured from the word in the genitive."
+    },
+    {
+      "kind": "table",
+      "title": "Singular endings",
+      "table": {
+        "head": ["Nominative", "Genitive", "Examples"],
+        "rows": [
+          ["masculine consonant", "-а", "**стол → стола́**, **брат → бра́та**"],
+          ["masculine -й, -ь", "-я", "**музе́й → музе́я**, **слова́рь → словаря́**"],
+          ["neuter -о / -е", "-а / -я", "**окно́ → окна́**, **мо́ре → мо́ря**"],
+          ["-а", "-ы (-и after к, г, х, ж, ш, щ, ч)", "**ма́ма → ма́мы**, **кни́га → кни́ги**"],
+          ["-я, feminine -ь", "-и", "**неде́ля → неде́ли**, **дверь → две́ри**"]
+        ]
+      }
+    },
+    {
+      "kind": "explanation",
+      "title": "The main uses",
+      "body": "- **Possession and *of***: **маши́на отца́** (*father's car*), **центр го́рода** (*the city centre*), **ча́шка ча́я** (*a cup of tea*).\n- **Absence with нет**: **У меня́ нет вре́мени.** **Здесь нет метро́.** In the past and future the verb becomes neuter and impersonal: **не́ было вре́мени**, **не бу́дет вре́мени**.\n- **Quantities**: **мно́го**, **ма́ло**, **ско́лько**, **не́сколько**, and numbers from 2 up (see the numbers article): **мно́го рабо́ты**, **два бра́та**.\n- **Prepositions**: **у** (*by, at someone's*), **из** (*out of*), **от** (*from a person, away from*), **без** (*without*), **для** (*for*), **до** (*until, up to*), **по́сле** (*after*), **о́коло** (*near*), **кро́ме** (*except*).\n- **Having**: **у меня́ есть** (*I have*) literally means *by me there is*: **У бра́та есть маши́на.**"
+    },
+    {
+      "kind": "table",
+      "title": "Generated paradigms",
+      "table": {
+        "generate": {"lexemes": ["n:брат", "n:книга", "n:неделя", "n:окно"], "slots": ["sg_nom", "sg_gen"]}
+      }
+    },
+    {
+      "kind": "vs-english",
+      "body": "English *'s* and *of* map onto the genitive, but the word order flips: *Anna's brother* is **брат А́нны**, the owner coming **after**. English *any* in negatives also hides a genitive: *There aren't any problems* is **Нет пробле́м**."
+    },
+    {
+      "kind": "spelling-rule",
+      "body": "The 7-letter rule again: after **к, г, х, ж, ш, щ, ч** the feminine ending is **-и**, not **-ы**: **кни́ги**, **ру́чки**, **да́чи**. Spelling errors here are among the most common in learners' writing."
+    },
+    {
+      "kind": "memory-trick",
+      "body": "**нет** wants the genitive because nothing is there: the thing is *missing*, so it can't be the subject. **Ма́ма до́ма** → **Ма́мы нет до́ма**. The subject vanishes into the genitive."
+    },
+    {
+      "kind": "common-mistakes",
+      "mistakes": [
+        {"wrong": "У меня́ нет вре́мя.", "right": "У меня́ нет вре́мени.", "why": "**нет** takes the genitive; **вре́мя** has the special genitive **вре́мени**.", "error": "case.gen-after-negation"},
+        {"wrong": "Э́то маши́на па́па.", "right": "Э́то маши́на па́пы.", "why": "The owner is genitive. **па́па** declines like a feminine **-а** noun: **па́пы**.", "error": "case.nom-default"},
+        {"wrong": "Я из Москву́.", "right": "Я из Москвы́.", "why": "**из** always takes the genitive.", "error": "case.preposition-government"}
+      ]
+    }
+  ],
+  "examples": [
+    {"ru": "Э́то маши́на моего́ отца́.", "en": "This is my father's car.", "focus": "отца́"},
+    {"ru": "У меня́ нет вре́мени.", "en": "I have no time.", "focus": "вре́мени"},
+    {"ru": "Я пью ча́шку ча́я.", "en": "I'm drinking a cup of tea.", "focus": "ча́я"},
+    {"ru": "Он прие́хал из Москвы́.", "en": "He came from Moscow.", "focus": "Москвы́"},
+    {"ru": "Я пью ко́фе без са́хара.", "en": "I take my coffee without sugar.", "focus": "са́хара"},
+    {"ru": "У сестры́ есть соба́ка.", "en": "My sister has a dog.", "focus": "сестры́"},
+    {"ru": "Пода́рок для ма́мы.", "en": "A present for Mum.", "focus": "ма́мы"},
+    {"ru": "Ма́мы нет до́ма.", "en": "Mum isn't home.", "focus": "Ма́мы"}
+  ],
+  "related": ["g-cases-intro", "g-genitive-plural", "g-numbers", "g-case-cheatsheet"]
+}

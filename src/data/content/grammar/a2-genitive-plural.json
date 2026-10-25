@@ -1,0 +1,68 @@
+{
+  "$schema": "../../../../schemas/grammar-article.schema.json",
+  "id": "g-genitive-plural",
+  "title": {"en": "The genitive plural: the hard one, made logical", "ru": "Роди́тельный паде́ж мно́жественного числа́"},
+  "level": "A2",
+  "tags": ["case.gen", "case.plural", "case.gen.quantity"],
+  "card": "Needed after **мно́го**, **ско́лько**, **нет** and numbers from 5. Three endings: **-ов/-ев** for most masculine nouns (**столо́в**, **музе́ев**), **-ей** for nouns ending in **-ь** or **ж, ш, щ, ч** (**двере́й**, **враче́й**), and **no ending** for feminine **-а** and neuter **-о** nouns (**книг**, **слов**), often with a vowel slipped in (**ру́чка → ру́чек**).",
+  "sections": [
+    {
+      "kind": "why",
+      "body": "The genitive plural is famous for being irregular, but it follows a neat logic: **the ending \"swaps\" with the nominative singular.** Nouns that have *no* ending in the singular (**стол**) get a real ending in the genitive plural (**столо́в**); nouns that *have* an ending in the singular (**кни́га**, **сло́во**) lose it (**книг**, **слов**). It's as if Russian keeps one ending per word between these two forms."
+    },
+    {
+      "kind": "table",
+      "title": "The three patterns",
+      "table": {
+        "head": ["Singular", "Genitive plural", "Examples"],
+        "rows": [
+          ["masculine consonant", "-ов", "**стол → столо́в**, **го́род → городо́в**, **студе́нт → студе́нтов**"],
+          ["masculine -й; -ц unstressed", "-ев", "**музе́й → музе́ев**, **ме́сяц → ме́сяцев**"],
+          ["-ь (m and f), ж, ш, щ, ч", "-ей", "**дверь → двере́й**, **слова́рь → словаре́й**, **врач → враче́й**, **нож → ноже́й**"],
+          ["-а, -о", "zero ending", "**кни́га → книг**, **ма́ма → мам**, **сло́во → слов**, **ме́сто → мест**"],
+          ["-я after a consonant; -е", "-ь or -ей", "**неде́ля → неде́ль**, **мо́ре → море́й**"],
+          ["-ия, -ие", "-ий", "**а́рмия → а́рмий**, **зда́ние → зда́ний**"]
+        ]
+      }
+    },
+    {
+      "kind": "explanation",
+      "title": "Fleeting vowels",
+      "body": "When the zero ending would leave two consonants jammed together at the end of the word, Russian slips in an **о** or **е** to make it pronounceable: **ру́чка → ру́чек**, **окно́ → о́кон**, **де́вушка → де́вушек**, **письмо́ → пи́сем**. The vowel is **о** after a hard consonant (**о́кон**) and usually **е** after a soft one or after **ж, ш, ч** (**ру́чек**, **де́вушек**)."
+    },
+    {
+      "kind": "table",
+      "title": "Generated paradigms",
+      "table": {
+        "generate": {"lexemes": ["n:стол", "n:книга", "n:окно", "n:дверь", "n:девушка"], "slots": ["sg_nom", "pl_nom", "pl_gen"]}
+      }
+    },
+    {
+      "kind": "explanation",
+      "title": "Irregulars worth learning now",
+      "body": "- **челове́к → люде́й** (but **пять челове́к** after numbers)\n- **ребёнок → дете́й**\n- **год → лет** (after numbers and **мно́го**)\n- **друг → друзе́й**, **брат → бра́тьев**, **стул → сту́льев**\n- **раз → раз** (**мно́го раз**), **глаз → глаз**, **солда́т → солда́т**\n- **день → дней**, **де́ньги → де́нег**"
+    },
+    {
+      "kind": "memory-trick",
+      "body": "**The swap rule**: if the dictionary form ends in a consonant, the genitive plural has an ending; if it ends in a vowel, the genitive plural has none. *Something in one, nothing in the other.*"
+    },
+    {
+      "kind": "common-mistakes",
+      "mistakes": [
+        {"wrong": "мно́го кни́гов", "right": "мно́го книг", "why": "Feminine **-а** nouns take the zero ending: **книг**.", "error": "ending.invented"},
+        {"wrong": "пять ру́чкой", "right": "пять ру́чек", "why": "After 5 and up: genitive plural, with a fleeting **е**.", "error": "case.gen-quantity"},
+        {"wrong": "мно́го челове́ков", "right": "мно́го люде́й", "why": "**челове́к** borrows its plural from **лю́ди**.", "error": "ending.invented"}
+      ]
+    }
+  ],
+  "examples": [
+    {"ru": "В библиоте́ке мно́го книг.", "en": "There are lots of books in the library.", "focus": "книг"},
+    {"ru": "У меня́ нет вопро́сов.", "en": "I have no questions.", "focus": "вопро́сов"},
+    {"ru": "Ско́лько у вас дете́й?", "en": "How many children do you have?", "focus": "дете́й"},
+    {"ru": "Мы не ви́делись пять лет.", "en": "We haven't seen each other for five years.", "focus": "лет"},
+    {"ru": "Там бы́ло мно́го люде́й.", "en": "There were a lot of people there.", "focus": "люде́й"},
+    {"ru": "Я купи́л де́сять я́блок.", "en": "I bought ten apples.", "focus": "я́блок"},
+    {"ru": "У него́ мно́го друзе́й.", "en": "He has a lot of friends.", "focus": "друзе́й"}
+  ],
+  "related": ["g-genitive", "g-numbers", "g-plural-declension"]
+}

@@ -1,0 +1,61 @@
+{
+  "$schema": "../../../../schemas/grammar-article.schema.json",
+  "id": "g-future-tense",
+  "title": {"en": "The future: бу́ду чита́ть vs прочита́ю", "ru": "Бу́дущее вре́мя"},
+  "level": "A2",
+  "tags": ["verb.future", "aspect.future"],
+  "card": "Two futures, one for each aspect. **Imperfective**: **бу́ду / бу́дешь / бу́дет…** + infinitive, for a process or habit: **Я бу́ду чита́ть.** **Perfective**: the verb's present-tense endings already mean the future, for one completed result: **Я прочита́ю.** Never combine them: ~~бу́ду прочита́ть~~ is wrong.",
+  "sections": [
+    {
+      "kind": "why",
+      "body": "A perfective verb describes a completed whole: something that *gets done*. Something being done right now can't be complete, so perfective verbs have no present tense: their \"present\" endings automatically point to the future. **Я прочита́ю** literally means *I will read it through*.\n\nImperfective verbs describe processes, so they need a separate future: **бу́ду** (the future of **быть**) + the infinitive."
+    },
+    {
+      "kind": "table",
+      "title": "The forms of бу́ду",
+      "table": {
+        "head": ["я", "ты", "он / она́", "мы", "вы", "они́"],
+        "rows": [["**бу́ду**", "**бу́дешь**", "**бу́дет**", "**бу́дем**", "**бу́дете**", "**бу́дут**"]]
+      }
+    },
+    {
+      "kind": "table",
+      "title": "Two futures side by side",
+      "table": {
+        "head": ["Imperfective: process, repetition", "Perfective: one completed result"],
+        "rows": [
+          ["**Я бу́ду чита́ть** весь ве́чер. *I'll be reading all evening.*", "**Я прочита́ю** э́ту кни́гу за́втра. *I'll read (finish) this book tomorrow.*"],
+          ["**Мы бу́дем писа́ть** ка́ждый день. *We'll write every day.*", "**Я напишу́** тебе́ письмо́. *I'll write you a letter.*"],
+          ["**Ты бу́дешь рабо́тать?** *Will you be working?*", "**Ты сде́лаешь** э́то? *Will you get it done?*"]
+        ]
+      }
+    },
+    {
+      "kind": "explanation",
+      "title": "How to choose",
+      "body": "Ask: am I talking about an activity, or about a result?\n\n- *What will you do tonight?* is an activity: **Что ты бу́дешь де́лать?**\n- *Will you do it?* is a result: **Ты сде́лаешь?**\n- Repeated or habitual actions are always imperfective: **Я бу́ду звони́ть ка́ждый день.**\n- A single promise or plan with a clear end is perfective: **Я позвоню́ за́втра.**"
+    },
+    {
+      "kind": "vs-english",
+      "body": "English *will* works with any verb. In Russian, *will* + verb splits by aspect, and **бу́ду** is only for imperfectives. The verbs **быть** (*be*) and **хоте́ть** don't need a partner: **Я бу́ду до́ма.** (*I'll be at home.*)"
+    },
+    {
+      "kind": "common-mistakes",
+      "mistakes": [
+        {"wrong": "Я бу́ду прочита́ть.", "right": "Я прочита́ю.", "why": "**бу́ду** combines only with imperfective infinitives.", "error": "aspect.future-pf"},
+        {"wrong": "За́втра я чита́ю.", "right": "За́втра я бу́ду чита́ть.", "why": "Possible in speech for fixed plans, but the standard future of an imperfective is **бу́ду** + infinitive.", "error": "verb.tense"},
+        {"wrong": "Я бу́ду быть до́ма.", "right": "Я бу́ду до́ма.", "why": "**бу́ду** already is the future of **быть**.", "error": "verb.tense"}
+      ]
+    }
+  ],
+  "examples": [
+    {"ru": "Что ты бу́дешь де́лать за́втра?", "en": "What will you be doing tomorrow?", "focus": "бу́дешь де́лать"},
+    {"ru": "Я позвоню́ тебе́ ве́чером.", "en": "I'll call you this evening.", "focus": "позвоню́"},
+    {"ru": "За́втра бу́дет дождь.", "en": "It will rain tomorrow.", "focus": "бу́дет"},
+    {"ru": "Мы ско́ро вернёмся.", "en": "We'll be back soon.", "focus": "вернёмся"},
+    {"ru": "Я бу́ду ждать.", "en": "I'll be waiting.", "focus": "бу́ду ждать"},
+    {"ru": "Ты мне помо́жешь?", "en": "Will you help me?", "focus": "помо́жешь"},
+    {"ru": "Я всё сде́лаю.", "en": "I'll get it all done.", "focus": "сде́лаю"}
+  ],
+  "related": ["g-aspect-intro", "g-present-tense", "g-past-tense"]
+}
