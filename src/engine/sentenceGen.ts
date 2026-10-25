@@ -13,16 +13,22 @@ type Tags = [string, ...string[]]
 
 /** Preposition (folded, variants included) → base form. */
 const PREP_BASE: Record<string, string> = {
-  в: 'в', во: 'в', на: 'на', о: 'о', об: 'о', обо: 'о', у: 'у', из: 'из', изо: 'из', от: 'от', ото: 'от', без: 'без',
-  для: 'для', до: 'до', после: 'после', с: 'с', со: 'с', к: 'к', ко: 'к', по: 'по', за: 'за', под: 'под', подо: 'под',
-  над: 'над', надо: 'над', перед: 'перед', передо: 'перед', между: 'между', через: 'через', про: 'про', при: 'при',
-  около: 'около', кроме: 'кроме', вокруг: 'вокруг', среди: 'среди', против: 'против', мимо: 'мимо', возле: 'возле',
+  в: 'в', во: 'в', на: 'на', о: 'о', об: 'о', обо: 'о', у: 'у', из: 'из', изо: 'из', от: 'от', ото: 'от', без: 'без', // ru-ignore
+  для: 'для', до: 'до', после: 'после', с: 'с', со: 'с', к: 'к', ко: 'к', по: 'по', за: 'за', под: 'под', подо: 'под', // ru-ignore
+  над: 'над', надо: 'над', перед: 'перед', передо: 'перед', между: 'между', через: 'через', про: 'про', при: 'при', // ru-ignore
+  около: 'около', кроме: 'кроме', вокруг: 'вокруг', среди: 'среди', против: 'против', мимо: 'мимо', возле: 'возле', // ru-ignore
 }
 
-const GEN_PREPS = new Set(['у', 'из', 'от', 'без', 'для', 'до', 'после', 'около', 'кроме', 'вокруг', 'среди', 'против', 'мимо', 'возле'])
-const QUANT = new Set(['много', 'мало', 'сколько', 'несколько'])
-const FEW = new Set(['два', 'две', 'три', 'четыре', 'оба', 'обе'])
-const MANY = new Set(['пять', 'шесть', 'семь', 'восемь', 'девять', 'десять', 'двадцать', 'тридцать', 'сто'])
+/** How each base preposition is shown in explanations (stressed). */
+const PREP_SHOWN: Record<string, string> = {
+  после: 'по́сле', перед: 'пе́ред', между: 'ме́жду', через: 'че́рез', около: 'о́коло', кроме: 'кро́ме', // ru-ignore
+  вокруг: 'вокру́г', среди: 'среди́', против: 'про́тив', мимо: 'ми́мо', возле: 'во́зле', // ru-ignore
+}
+
+const GEN_PREPS = new Set(['у', 'из', 'от', 'без', 'для', 'до', 'после', 'около', 'кроме', 'вокруг', 'среди', 'против', 'мимо', 'возле']) // ru-ignore
+const QUANT = new Set(['много', 'мало', 'сколько', 'несколько']) // ru-ignore
+const FEW = new Set(['два', 'две', 'три', 'четыре', 'оба', 'обе']) // ru-ignore
+const MANY = new Set(['пять', 'шесть', 'семь', 'восемь', 'девять', 'десять', 'двадцать', 'тридцать', 'сто']) // ru-ignore
 
 export interface CaseReason {
   tags: string[]
@@ -41,19 +47,20 @@ export function caseReason(kase: Case, number: string, prev: WordToken | undefin
   const govText = base ? prev!.text : base2 ? prev2!.text : undefined
   const g = (tags: string[], reason: string): CaseReason => ({ tags, reason, governor: govText })
   if (prep) {
+    const P = PREP_SHOWN[prep] ?? prep
     if ((prep === 'в' || prep === 'на') && (kase === 'prep' || kase === 'loc2'))
-      return g(['case.prep.location', kase === 'loc2' ? 'case.loc2' : 'case.prep'], `${prep} + prepositional: location (где?)${kase === 'loc2' ? ', with the stressed -у́ ending some masculine nouns take after в/на' : ''}.`)
-    if ((prep === 'в' || prep === 'на') && kase === 'acc') return g(['case.acc.direction', 'case.acc'], `${prep} + accusative: motion into/onto (куда́?), or a point in time (в сре́ду).`)
+      return g(['case.prep.location', kase === 'loc2' ? 'case.loc2' : 'case.prep'], `${P} + prepositional: location (где?)${kase === 'loc2' ? ', with the stressed -у́ ending some masculine nouns take after в/на' : ''}.`)
+    if ((prep === 'в' || prep === 'на') && kase === 'acc') return g(['case.acc.direction', 'case.acc'], `${P} + accusative: motion into/onto (куда́?), or a point in time (в сре́ду).`)
     if (prep === 'о' && kase === 'prep') return g(['case.prep.about', 'case.prep'], 'о/об + prepositional: about someone or something.')
     if (prep === 'при' && kase === 'prep') return g(['case.prep'], 'при + prepositional: in the presence of / at the time of.')
-    if (GEN_PREPS.has(prep) && kase === 'gen') return g(['case.gen.prepositions', 'case.gen'], `${prep} always takes the genitive.`)
+    if (GEN_PREPS.has(prep) && kase === 'gen') return g(['case.gen.prepositions', 'case.gen'], `${P} always takes the genitive.`)
     if (prep === 'с' && kase === 'ins') return g(['case.ins.with', 'case.ins'], 'с + instrumental: together with.')
     if (prep === 'с' && kase === 'gen') return g(['case.gen.prepositions', 'case.gen'], 'с + genitive: off / down from / since.')
-    if ((prep === 'к' || prep === 'по') && kase === 'dat') return g(['case.dat.prepositions', 'case.dat'], `${prep} + dative: ${prep === 'к' ? 'towards someone or something' : 'along, around, by (по телефо́ну)'}.`)
-    if (['над', 'перед', 'между'].includes(prep) && kase === 'ins') return g(['case.ins.prepositions', 'case.ins'], `${prep} takes the instrumental.`)
-    if ((prep === 'за' || prep === 'под') && kase === 'ins') return g(['case.ins.prepositions', 'case.ins'], `${prep} + instrumental: location (где?).`)
-    if ((prep === 'за' || prep === 'под') && kase === 'acc') return g(['case.acc.direction', 'case.acc'], `${prep} + accusative: direction (куда́?), or "for" (спаси́бо за…).`)
-    if ((prep === 'через' || prep === 'про') && kase === 'acc') return g(['case.acc'], `${prep} takes the accusative.`)
+    if ((prep === 'к' || prep === 'по') && kase === 'dat') return g(['case.dat.prepositions', 'case.dat'], `${P} + dative: ${prep === 'к' ? 'towards someone or something' : 'along, around, by (по телефо́ну)'}.`)
+    if (['над', 'перед', 'между'].includes(prep) && kase === 'ins') return g(['case.ins.prepositions', 'case.ins'], `${P} takes the instrumental.`) // ru-ignore
+    if ((prep === 'за' || prep === 'под') && kase === 'ins') return g(['case.ins.prepositions', 'case.ins'], `${P} + instrumental: location (где?).`)
+    if ((prep === 'за' || prep === 'под') && kase === 'acc') return g(['case.acc.direction', 'case.acc'], `${P} + accusative: direction (куда́?), or "for" (спаси́бо за…).`)
+    if ((prep === 'через' || prep === 'про') && kase === 'acc') return g(['case.acc'], `${P} takes the accusative.`) // ru-ignore
   }
   if (kase === 'gen') {
     if (p === 'нет' || (next && fold(next.text) === 'нет')) return { tags: ['case.gen.negation', 'case.gen'], reason: 'нет + genitive: the thing that is absent.', governor: p === 'нет' ? prev!.text : next!.text }
@@ -76,7 +83,7 @@ export function caseReason(kase: Case, number: string, prev: WordToken | undefin
 }
 
 /** Frozen expressions where the noun's form isn't a live grammar choice (до сих пор). */
-const IDIOMS: [string, string][] = [['сих', 'пор'], ['всех', 'сил'], ['под', 'конец'], ['конце', 'концов']]
+const IDIOMS: [string, string][] = [['сих', 'пор'], ['всех', 'сил'], ['под', 'конец'], ['конце', 'концов']] // ru-ignore
 function inIdiom(toks: WordToken[], i: number): boolean {
   const prev = toks[i - 1] ? fold(toks[i - 1]!.text) : ''
   return IDIOMS.some(([a, b]) => prev === a && fold(toks[i]!.text) === b)
@@ -241,7 +248,7 @@ export function nounClass(lx: Lexeme): NounClass {
   if (lx.pos !== 'noun') return 'other'
   const w = fold(lx.lemma)
   const last = w.slice(-1)
-  if (w.endsWith('мя') && lx.gender === 'n') return 'neut-mya'
+  if (w.endsWith('мя') && lx.gender === 'n') return 'neut-mya' // ru-ignore
   if (last === 'а') return 'fem-a'
   if (last === 'я') return 'fem-ya'
   if (last === 'ь') return lx.gender === 'f' ? 'fem-soft' : 'masc-soft'
