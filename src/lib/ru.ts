@@ -2,14 +2,14 @@
 //  * Primary stress: U+0301 after the vowel (а́); secondary: U+0300.
 //  * ё is always written and counts as stressed.
 
-export const ACUTE = '́'
-export const GRAVE = '̀'
-const VOWELS = new Set('аеёиоуыэюяАЕЁИОУЫЭЮЯ')
+export const ACUTE = '\u0301'
+export const GRAVE = '\u0300'
+const VOWELS = new Set('аеёиоуыэюяАЕЁИОУЫЭЮЯ') // ru-ignore
 
 export const isVowel = (ch: string) => VOWELS.has(ch)
 
 export function stripStress(s: string): string {
-  return s.replace(/[́̀]/g, '')
+  return s.replace(/[\u0301\u0300]/g, '')
 }
 
 /** Comparison key: no stress marks, lower case, ё → е. */

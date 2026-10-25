@@ -28,6 +28,20 @@ export type ExerciseItem = {
    * Items: Lexicon id: pos letter (n noun, v verb, a adjective, o other) + ':' + bare lemma, plus ':2', ':3' for homographs in dataset order.
    */
   vocab?: string[]
+  /**
+   * The lexeme form the answer should be. Lets the grader diagnose wrong answers against the whole paradigm (wrong case, wrong number, ...).
+   */
+  target?: {
+    /**
+     * Lexicon id: pos letter (n noun, v verb, a adjective, o other) + ':' + bare lemma, plus ':2', ':3' for homographs in dataset order.
+     */
+    lex: string
+    slot: string
+  }
+  /**
+   * Runtime only: rolled when the item is presented.
+   */
+  golden?: boolean
   prompt: {
     /**
      * Russian prompt. '___' marks the gap in cloze/transform items.
@@ -122,6 +136,20 @@ export type ExerciseItem1 = {
    * Items: Lexicon id: pos letter (n noun, v verb, a adjective, o other) + ':' + bare lemma, plus ':2', ':3' for homographs in dataset order.
    */
   vocab?: string[]
+  /**
+   * The lexeme form the answer should be. Lets the grader diagnose wrong answers against the whole paradigm (wrong case, wrong number, ...).
+   */
+  target?: {
+    /**
+     * Lexicon id: pos letter (n noun, v verb, a adjective, o other) + ':' + bare lemma, plus ':2', ':3' for homographs in dataset order.
+     */
+    lex: string
+    slot: string
+  }
+  /**
+   * Runtime only: rolled when the item is presented.
+   */
+  golden?: boolean
   prompt: {
     /**
      * Russian prompt. '___' marks the gap in cloze/transform items.

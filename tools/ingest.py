@@ -87,6 +87,7 @@ def load_frequency():
             if cyr.match(w):
                 total += int(c)
     lemma_freq: dict[tuple, float] = collections.defaultdict(float)
+    unambiguous: dict[tuple, float] = collections.defaultdict(float)
     unknown_mass = 0
     with open(RAW / "frequency" / "ru_50k.txt", encoding="utf-8") as f:
         for line in f:
@@ -100,8 +101,16 @@ def load_frequency():
                 continue
             weights = [max(p.score, 1e-6) for p in ps]
             tw = sum(weights)
+            keys = {(fold(p.normal_form), group_of(p)) for p in ps}
             for p, wt in zip(ps, weights):
                 lemma_freq[(fold(p.normal_form), group_of(p))] += c * wt / tw
+            if len(keys) == 1:
+                unambiguous[next(iter(keys))] += c
+    # Inflecting words must be backed by forms that belong to them alone. Otherwise a rare homonym
+    # inherits the mass of a frequent word (ага́ "cane toad" from ага "yep", уж "grass snake" from уже́).
+    for key, t in lemma_freq.items():
+        if key[1] in ("noun", "verb", "adj") and unambiguous[key] < 0.1 * t:
+            lemma_freq[key] = min(t, 10 * unambiguous[key])
     return lemma_freq, total, unknown_mass
 
 
@@ -378,7 +387,11 @@ def main():
         k = fold(lx["lemma"])
         if lx["pos"] == "other":
             return [(k, "other"), (k, "noun"), (k, "adj"), (k, "verb")]
-        return [(k, lx["pos"]), (k, "other")]
+        # A noun-file entry may borrow the 'other' frequency only if it really is a numeral/pronoun
+        # (пять, кто). Otherwise the rare noun ага́ ("aga") would inherit the interjection ага's rank.
+        if lx["pos"] == "noun" and any(p.tag.POS in ("NUMR", "NPRO") and fold(p.normal_form) == k for p in dparses(k)):
+            return [(k, "noun"), (k, "other")]
+        return [(k, lx["pos"])]
 
     matched_keys = {}
     for lx in lexemes:
@@ -399,8 +412,14 @@ def main():
 
     # ---- apply overrides (hand-written; validated by tools/validate.py)
     by_id_tmp: dict[str, dict] = {}
+    # Homographs share a frequency key; dataset rows are frequency-sorted, so only the first keeps the rank
+    # (пора́ "time to" ranks, по́ра "pore" moves to the extended dictionary).
+    ranked_keys: set = set()
     for lx in lexemes:
-        lx["rank"] = rank_of.get(lx.get("fkey")) if lx.get("fkey") else None
+        k = lx.get("fkey")
+        lx["rank"] = rank_of.get(k) if k and k not in ranked_keys else None
+        if k:
+            ranked_keys.add(k)
 
     # ---- IDs, levels, gender/animacy, partners
     seen_ids = collections.Counter()

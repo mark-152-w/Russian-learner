@@ -54,3 +54,81 @@ body {
   font-family: var(--font-sans);
   -webkit-text-size-adjust: 100%;
 }
+
+/* ---------- cosmetic skins (unlocked from chests) ---------- */
+:root[data-skin='birch'] { --paper: #f7f6f0; --paper-2: #e8e9df; --red: #2f6b3a; --red-soft: #5a8f63; --line: #cfd3c2; }
+:root[data-skin='gzhel'] { --paper: #f3f6fb; --paper-2: #e2e9f5; --red: #1f4fa3; --red-soft: #4b74c2; --line: #c4d0e4; }
+:root[data-skin='khokhloma'] { --paper: #fbf3e2; --paper-2: #f2e2bf; --red: #b3221a; --red-soft: #d4a017; --line: #e0c48d; }
+:root[data-skin='palekh'] { --paper: #f4eee4; --paper-2: #e6dccb; --red: #7a1f2b; --red-soft: #b88a2e; --line: #cdbf9f; }
+:root[data-skin='white-nights'] { --paper: #f2f2f7; --paper-2: #e3e3ee; --red: #5b4b9a; --red-soft: #8676c4; --line: #cfcfe0; }
+@media (prefers-color-scheme: dark) {
+  :root[data-skin='birch']:not([data-theme='light']) { --red: #8cc796; --red-soft: #6da878; }
+  :root[data-skin='gzhel']:not([data-theme='light']) { --red: #8fb0ee; --red-soft: #6f92d6; }
+  :root[data-skin='khokhloma']:not([data-theme='light']) { --red: #ef7a5f; --red-soft: #e2b84a; }
+  :root[data-skin='palekh']:not([data-theme='light']) { --red: #e0b65a; --red-soft: #c0703f; }
+  :root[data-skin='white-nights']:not([data-theme='light']) { --red: #b3a5f0; --red-soft: #9585dc; }
+  :root:not([data-theme='light']) { --gold: #f0c35a; --good: #6fc48a; --bad: #e07a6c; }
+}
+:root[data-theme='dark'][data-skin='birch'] { --red: #8cc796; --red-soft: #6da878; }
+:root[data-theme='dark'][data-skin='gzhel'] { --red: #8fb0ee; --red-soft: #6f92d6; }
+:root[data-theme='dark'][data-skin='khokhloma'] { --red: #ef7a5f; --red-soft: #e2b84a; }
+:root[data-theme='dark'][data-skin='palekh'] { --red: #e0b65a; --red-soft: #c0703f; }
+:root[data-theme='dark'][data-skin='white-nights'] { --red: #b3a5f0; --red-soft: #9585dc; }
+:root { --gold: #c8911a; --good: #2f7d4a; --bad: #b4392b; }
+:root[data-theme='dark'] { --gold: #f0c35a; --good: #6fc48a; --bad: #e07a6c; }
+
+@theme {
+  --color-gold: var(--gold);
+  --color-good: var(--good);
+  --color-bad: var(--bad);
+}
+
+/* ---------- juice ---------- */
+@keyframes particle {
+  from { transform: translate(0, 0) scale(1); opacity: 1; }
+  to { transform: translate(var(--dx), var(--dy)) scale(0.3); opacity: 0; }
+}
+@keyframes pop { 0% { transform: scale(0.6); opacity: 0; } 60% { transform: scale(1.15); opacity: 1; } 100% { transform: scale(1); } }
+@keyframes shake { 0%, 100% { transform: translateX(0); } 20%, 60% { transform: translateX(-6px); } 40%, 80% { transform: translateX(6px); } }
+@keyframes float-up { from { transform: translateY(0); opacity: 1; } to { transform: translateY(-48px); opacity: 0; } }
+@keyframes edge-pulse { 0%, 100% { box-shadow: inset 0 0 0 0 transparent; } 50% { box-shadow: inset 0 0 40px 6px var(--edge, var(--gold)); } }
+@keyframes glow { 0%, 100% { filter: drop-shadow(0 0 0 transparent); } 50% { filter: drop-shadow(0 0 8px var(--gold)); } }
+@keyframes chest-wobble { 0%, 100% { transform: rotate(0); } 25% { transform: rotate(-6deg); } 75% { transform: rotate(6deg); } }
+@keyframes shine { from { background-position: -200% 0; } to { background-position: 200% 0; } }
+@keyframes rise { from { transform: translateY(16px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+
+.anim-pop { animation: pop 0.35s ease-out both; }
+.anim-shake { animation: shake 0.35s ease-in-out; }
+.anim-float { animation: float-up 0.9s ease-out forwards; }
+.anim-glow { animation: glow 1.2s ease-in-out infinite; }
+.anim-wobble { animation: chest-wobble 0.5s ease-in-out infinite; }
+.anim-rise { animation: rise 0.4s ease-out both; }
+.edge-pulse { animation: edge-pulse 1.6s ease-in-out infinite; }
+.golden-card {
+  background: linear-gradient(110deg, transparent 30%, color-mix(in srgb, var(--gold) 35%, transparent) 50%, transparent 70%) var(--paper-2);
+  background-size: 200% 100%;
+  animation: shine 2.5s linear infinite;
+  border-color: var(--gold) !important;
+}
+
+:root[data-motion='reduce'] *,
+:root[data-motion='reduce'] *::before,
+:root[data-motion='reduce'] *::after {
+  animation: none !important;
+  transition: none !important;
+}
+@media (prefers-reduced-motion: reduce) {
+  :root:not([data-motion='full']) *,
+  :root:not([data-motion='full']) *::before,
+  :root:not([data-motion='full']) *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+/* Russian text: slightly larger, and stress marks a touch red for learners */
+.ru { font-family: var(--font-serif); }
+button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible {
+  outline: 2px solid var(--red);
+  outline-offset: 2px;
+}

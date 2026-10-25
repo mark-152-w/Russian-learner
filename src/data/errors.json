@@ -46,6 +46,7 @@
     {"id": "stress.wrong", "family": "stress", "label": "Wrong stress", "description": "The stressed vowel is elsewhere; stress often moves within a paradigm (рука́ → ру́ку)."},
     {"id": "vocab.wrong-word", "family": "vocab", "label": "Different word", "description": "A real word, but not the one meant."},
     {"id": "vocab.false-friend", "family": "vocab", "label": "False friend", "description": "Looks like an English word but means something else (магази́н = shop, not magazine)."},
+    {"id": "listening.misheard", "family": "listening", "label": "Misheard word", "description": "A word in the dictation was missed or heard as something else."},
     {"id": "register.formality", "family": "register", "label": "ты/вы or register mismatch"}
   ]
 }

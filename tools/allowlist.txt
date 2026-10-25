@@ -1,0 +1,4 @@
+# Real words missing from the pymorphy3/OpenCorpora dictionary (one per line, no stress marks needed).
+хохлома
+перфекционист
+кроссвордист

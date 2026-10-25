@@ -26,8 +26,26 @@ src/data/              generated + hand-written data
   errors.json          error taxonomy (grader diagnostics)
   tags.json            grammar tag vocabulary
   content/{grammar,units,exercises,stories,adventure,cards,idioms}/*.json  hand-written content
-src/lib/               runtime libraries (ru.ts, lexicon.ts, …)
+src/lib/               ru.ts (stress helpers), lexicon.ts (lazy chunks, decodeCell), rng.ts (seeded), ics.ts
+src/engine/            normalize.ts, translit.ts, slots.ts (slot → labels/tags), diagnose.ts (paradigm + spelling
+                       rules → error type), grader.ts (all 11 item types), generators.ts (drills from the lexicon)
+src/srs/fsrs.ts        ts-fsrs wrapper; cards stored with epoch-ms dates; ratingFor(verdict, ms)
+src/db/                Dexie schema (db.ts), settings, backup (export/import/reset)
+src/rewards/           pure: xp, levels, chest, streak, quests, achievements, goals; service.ts persists them
+src/audio/             sound.ts (Web Audio synth), haptics.ts, tts.ts (speechSynthesis)
+src/components/        ui.tsx, Md.tsx (markdown-lite + Ru), juice.tsx, exercises.tsx, SessionRunner, SessionSummary
+src/pages/             Home, Practice, Trophies, Settings, Attributions
+src/features.ts        features that exist; quests/achievements for anything else stay hidden
 ```
+
+## How a learning activity plugs in
+
+1. Produce `ExerciseItem`s (hand-written JSON or a generator). Give form items a `target {lex, slot}` so the
+   grader can diagnose wrong answers against the paradigm.
+2. Render with `<SessionRunner items lexemes kind>`, or call `grade()` yourself and report every answer through a
+   `RewardSession` (`answer()` per item, `finish()` at the end). Never award XP directly. The service handles
+   XP and anti-grind, combos, mastery (the learner model), quests, achievements, streaks and chests.
+3. When a section ships, add its feature flag to `src/features.ts` so its quests and achievements appear.
 
 ## Commands
 
@@ -62,10 +80,20 @@ src/lib/               runtime libraries (ru.ts, lexicon.ts, …)
 - Story tokens need `lemma` + `g` (grammemes); validate checks them against pymorphy3.
 - Mark uncertain hand-written Russian with `"review": true`; validate writes `tools/reports/review.tsv`.
 
+## Gotchas
+
+- When writing TS through the Write tool, `\u0301` escapes can end up as literal combining marks. Keep escapes
+  explicit in code (`'\u0301'`); a combining mark not following a Cyrillic vowel in `src/**/*.ts(x)` is a bug.
+- validate.py also scans string literals and JSX text in `src/**/*.ts(x)` (tests excluded) for the Russian rules.
+  Add `// ru-ignore` to a line holding letter sets such as `'аеёиоуыэюя'`. ALL-CAPS abbreviations (ЙЦУКЕН) are
+  exempt. A stressed monosyllable carries its clitic group (не́ было, на́ пол).
+- Frequency: an inflecting word is ranked only on evidence from forms unique to it, and only the first homograph
+  (dataset order) is ranked. This stops ага́ "cane toad" from inheriting the interjection ага.
+
 ## Stack
 
 Vite 8 + React 19 + TypeScript 7 + Tailwind 4, react-router (HashRouter for GitHub Pages), Dexie, ts-fsrs,
-vite-plugin-pwa (Phase 1), Vitest. Fonts: PT Sans / PT Serif via @fontsource (self-hosted).
+vite-plugin-pwa (precaches app + A1–C2 lexicon; X* rare tail cached on first use), Vitest. Fonts: PT Sans / PT Serif via @fontsource (self-hosted).
 Palette tokens in `src/index.css` (`paper`, `ink`, `red`, `line`); dark mode via `prefers-color-scheme` or
 `<html data-theme>`.
 

@@ -32,6 +32,14 @@
         "level": {"$ref": "common.schema.json#/$defs/level"},
         "tags": {"type": "array", "items": {"$ref": "common.schema.json#/$defs/tag"}, "minItems": 1},
         "vocab": {"type": "array", "items": {"$ref": "common.schema.json#/$defs/lexemeId"}},
+        "target": {
+          "type": "object",
+          "description": "The lexeme form the answer should be. Lets the grader diagnose wrong answers against the whole paradigm (wrong case, wrong number, ...).",
+          "required": ["lex", "slot"],
+          "additionalProperties": false,
+          "properties": {"lex": {"$ref": "common.schema.json#/$defs/lexemeId"}, "slot": {"type": "string"}}
+        },
+        "golden": {"type": "boolean", "description": "Runtime only: rolled when the item is presented."},
         "prompt": {
           "type": "object",
           "additionalProperties": false,

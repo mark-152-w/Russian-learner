@@ -114,5 +114,16 @@ class TokenTest(unittest.TestCase):
         self.assertEqual(self.run_tok({"t": ","}), [])
 
 
+class AbbreviationTest(unittest.TestCase):
+    def test_caps_abbreviations_exempt(self):
+        errs, warns = errors("the ЙЦУКЕН layout, ТРКИ exams")
+        self.assertEqual(errs, [])
+        self.assertEqual(warns, [])
+
+    def test_clitic_group(self):
+        errs, _ = errors("Его́ там не́ было.")
+        self.assertEqual(errs, [])
+
+
 if __name__ == "__main__":
     unittest.main()

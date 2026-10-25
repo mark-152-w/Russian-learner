@@ -32,7 +32,7 @@ from referencing import Registry, Resource
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from morph import SLOTS, confirms, dparses  # noqa: E402
-from rulib import ACUTE, GRAVE, VOWELS, fold, missing_stress_parts, needs_stress, strip_stress  # noqa: E402
+from rulib import ACUTE, GRAVE, VOWELS, fold, missing_stress_parts, needs_stress, strip_stress, syllables  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "src" / "data"
@@ -53,7 +53,7 @@ NO_STRESS_KEYS = {
     "$schema", "id", "lex", "vocab", "partners", "to", "requires", "sets", "verb", "object", "topic", "start", "flags",
     "article", "related", "grammar", "series", "characters", "art", "generator", "reading", "listening", "unlock",
     "family", "level", "type", "kind", "source", "error", "tags", "exits", "testOut", "action", "rarity", "speaker",
-    "register", "pos", "case", "number", "gender", "tense", "aspect", "mood", "voice", "degree", "lemmaId",
+    "register", "pos", "slot", "case", "number", "gender", "tense", "aspect", "mood", "voice", "degree", "lemmaId",
 }
 ANSWER_KEYS = {"accept"}
 
@@ -107,10 +107,16 @@ def yo_required(w: str) -> str | None:
 def check_text(text: str, where: str, rep: Report, answer: bool = False):
     """Apply the Russian display rules to one string."""
     clean = STRIKE.sub(" ", text)
+    prev = ""
     for m in WORD.finditer(clean):
-        w = m.group(0)
+        w, prev_word = m.group(0), prev
+        prev = w
+        # a stressed monosyllable takes the stress of the clitic group: не́ было, на́ пол, за́ руку
+        clitic_group = syllables(prev_word) == 1 and ACUTE in prev_word
         if w.startswith("-") or w.endswith("-"):
             continue  # morpheme notation: пере-, -ешь
+        if len(w) > 1 and strip_stress(w).isupper():
+            continue  # abbreviations read letter by letter: ЙЦУКЕН, СССР, ТРКИ
         # marks must follow vowels
         for i, ch in enumerate(w):
             if ch in (ACUTE, GRAVE) and (i == 0 or w[i - 1] not in VOWELS):
@@ -118,7 +124,7 @@ def check_text(text: str, where: str, rep: Report, answer: bool = False):
         for part in w.split("-"):
             if part.count(ACUTE) > 1 or (part.count(ACUTE) == 1 and ("ё" in part.lower())):
                 rep.err(where, f"more than one primary stress in «{part}»")
-        if missing_stress_parts(w):
+        if missing_stress_parts(w) and not clitic_group:
             rep.err(where, f"missing stress mark in «{w}»")
         yo = yo_required(w)
         if yo:
@@ -341,6 +347,27 @@ def validate_content(rep: Report, registry, schemas, lex_ids: set[str]):
                         check_token(tok, f"{rel}:sentences[{si}].tokens[{ti}]", rep, lex_ids)
 
 
+
+# --------------------------------------------------------------------------- UI source strings
+STRING_LIT = re.compile(r"'(?:[^'\\\n]|\\.)*'|\"(?:[^\"\\\n]|\\.)*\"|`(?:[^`\\]|\\.)*`|>[^<>{}]+<")
+
+
+def validate_sources(rep: Report):
+    """Russian inside string literals / JSX text in src/**/*.ts(x) obeys the same display rules.
+    Tests and generated files are skipped; a line containing 'ru-ignore' is skipped (character classes etc.)."""
+    for path in sorted((ROOT / "src").rglob("*.ts*")):
+        if path.name.endswith((".test.ts", ".test.tsx", ".gen.ts", ".d.ts")):
+            continue
+        rel = str(path.relative_to(ROOT))
+        for n, line in enumerate(path.read_text(encoding="utf-8").splitlines(), 1):
+            if "ru-ignore" in line or line.lstrip().startswith(("//", "*", "/*")):
+                continue
+            line = line.split(" // ")[0]
+            for lit in STRING_LIT.findall(line):
+                if re.search("[А-Яа-яЁё]", lit):
+                    check_text(lit, f"{rel}:{n}", rep)
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--full", action="store_true", help="also re-check unranked lexicon entries")
@@ -360,6 +387,7 @@ def main():
     else:
         lex_ids = validate_lexicon(rep, args.full, registry, schemas)
     validate_content(rep, registry, schemas, lex_ids)
+    validate_sources(rep)
 
     REPORTS.mkdir(parents=True, exist_ok=True)
     with open(REPORTS / "review.tsv", "w", encoding="utf-8", newline="") as f:
