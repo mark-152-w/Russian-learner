@@ -418,3 +418,20 @@ export async function practisedToday(now: number): Promise<boolean> {
   const p = await getProfile()
   return !!p.streak.lastDay && daysBetween(p.streak.lastDay, dayKey(now)) === 0
 }
+
+/** For other modules (SRS reviews, reader…): bump stats and re-check achievements. */
+export async function bumpStatsExternal(delta: Stats, max: Stats = {}): Promise<AchievementDef[]> {
+  return db.transaction('rw', ALL_TABLES(), async () => {
+    await bumpStats(delta, max)
+    return checkAchievements(Date.now())
+  })
+}
+
+/** For other modules: progress quests (and pay out any that complete). */
+export async function progressQuestsExternal(ev: QuestEvent, now: number): Promise<QuestDef[]> {
+  return db.transaction('rw', ALL_TABLES(), async () => {
+    const qs = await progressQuests(ev, dayKey(now))
+    for (const q of qs) await addXp(q.xp, now)
+    return qs
+  })
+}

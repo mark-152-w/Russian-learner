@@ -146,3 +146,42 @@ export function runDrill(spec: DrillSpec, ctx: DrillContext): ExerciseItem[] {
   }
   return out
 }
+
+/** Grammar tag → how to build a drill of exactly that topic (generated items + hand-written ones with the tag). */
+export function itemsForTag(tag: string, ctx: DrillContext, count = 12): ExerciseItem[] {
+  const hand = [...ctx.handwritten.values()].filter((i) => i.tags.includes(tag))
+  const gen: ExerciseItem[] = []
+  const caseMatch = /^case\.(nom|gen|dat|acc|ins|prep)(\.|$)/.exec(tag)
+  const want = Math.max(0, count - Math.min(hand.length, Math.ceil(count / 2)))
+  if (tag === 'case.loc2') gen.push(...GENERATORS['case-cloze']!(ctx, { tags: [tag] }, want))
+  else if (caseMatch) {
+    const kase = caseMatch[1]
+    const exact = tag.split('.').length > 2
+    gen.push(...GENERATORS['case-cloze']!(ctx, exact ? { tags: [tag] } : { cases: [kase] }, Math.ceil(want * 0.7)))
+    if (!exact) gen.push(...GENERATORS.forms!({ ...ctx, vocab: ctx.pool }, { pos: 'noun', slots: [`sg_${kase}`, `pl_${kase}`] }, want - gen.length))
+  } else if (tag === 'case.plural') {
+    gen.push(...GENERATORS['case-cloze']!(ctx, { numbers: ['pl'] }, Math.ceil(want / 2)))
+    gen.push(...GENERATORS.forms!({ ...ctx, vocab: ctx.pool }, { pos: 'noun', slots: ['pl_nom', 'pl_gen', 'pl_dat', 'pl_acc', 'pl_ins', 'pl_prep'] }, want - gen.length))
+  } else if (tag === 'adj.agreement') {
+    gen.push(...GENERATORS['case-cloze']!(ctx, { pos: ['adj'] }, Math.ceil(want / 2)))
+    gen.push(...GENERATORS.forms!({ ...ctx, vocab: ctx.pool }, { pos: 'adj' }, want - gen.length))
+  } else if (tag.startsWith('verb.')) {
+    const kinds = { 'verb.present': ['np'], 'verb.future': ['np'], 'verb.past': ['pst'], 'verb.imperative': ['imp'] }[tag] ?? ['np', 'pst']
+    gen.push(...GENERATORS['verb-cloze']!(ctx, { kinds }, Math.ceil(want / 2)))
+    const prefix = { np: 'np_', pst: 'pst_', imp: 'imp_' } as Record<string, string>
+    const slots = ['np_1sg', 'np_2sg', 'np_3sg', 'np_1pl', 'np_2pl', 'np_3pl', 'pst_m', 'pst_f', 'pst_n', 'pst_pl', 'imp_sg', 'imp_pl'].filter((s) =>
+      kinds.some((k) => s.startsWith(prefix[k]!)),
+    )
+    gen.push(...GENERATORS.forms!({ ...ctx, vocab: ctx.pool }, { pos: 'verb', slots }, want - gen.length))
+  } else if (tag === 'case.gen.quantity' || tag === 'num.governance') {
+    gen.push(...GENERATORS['case-cloze']!(ctx, { tags: ['case.gen.quantity', 'num.governance'] }, want))
+  } else if (tag === 'stress') gen.push(...GENERATORS.stress!({ ...ctx, vocab: shuffle(ctx.rng, ctx.pool).slice(0, 40) }, {}, want))
+  else if (tag === 'vocab') gen.push(...GENERATORS.vocab!({ ...ctx, vocab: shuffle(ctx.rng, ctx.pool).slice(0, 40) }, {}, want))
+  return shuffle(ctx.rng, [...shuffle(ctx.rng, hand).slice(0, count - gen.length), ...gen]).slice(0, count)
+}
+
+/** Tags this build can drill (generated or hand-written). */
+export function drillableTag(tag: string, handwritten: Map<string, ExerciseItem>): boolean {
+  if (/^case\.|^verb\.(present|past|future|imperative)$|^adj\.agreement$|^num\.governance$|^stress$|^vocab$/.test(tag)) return true
+  return [...handwritten.values()].some((i) => i.tags.includes(tag))
+}

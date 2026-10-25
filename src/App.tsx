@@ -16,13 +16,20 @@ const Practice = lazy(() => import('./pages/Practice'))
 const Trophies = lazy(() => import('./pages/Trophies'))
 const Settings = lazy(() => import('./pages/Settings'))
 const Attributions = lazy(() => import('./pages/Attributions'))
+const Review = lazy(() => import('./pages/Review'))
+const Lab = lazy(() => import('./pages/Lab'))
+const Word = lazy(() => import('./pages/Word'))
+const Drill = lazy(() => import('./pages/Drill'))
+const GrammarIndex = lazy(() => import('./pages/Grammar').then((m) => ({ default: m.GrammarIndex })))
+const GrammarArticlePage = lazy(() => import('./pages/Grammar').then((m) => ({ default: m.GrammarArticlePage })))
 
 const NAV = [
   { to: '/', label: 'Home', icon: 'home' },
-  { to: '/practice/full', label: 'Practice', icon: 'play' },
-  { to: '/trophies', label: 'Trophies', icon: 'trophy' },
-  { to: '/settings', label: 'Settings', icon: 'gear' },
+  { to: '/review', label: 'Review', icon: 'cards' },
+  { to: '/grammar', label: 'Grammar', icon: 'book' },
+  { to: '/lab', label: 'Lab', icon: 'table' },
 ]
+const IN_SESSION = ['/practice', '/review', '/drill']
 
 /** Applies theme, skin, motion and audio preferences to the document. */
 function Preferences() {
@@ -56,7 +63,7 @@ function Header() {
   const li = levelInfo(profile.xp)
   const streak = streakStatus(profile.streak, profile.freezes, dayKey(Date.now()))
   const { pathname } = useLocation()
-  const inSession = pathname.startsWith('/practice')
+  const inSession = IN_SESSION.some((p) => pathname.startsWith(p))
   return (
     <header className="sticky top-0 z-20 border-b border-line bg-paper/95 backdrop-blur">
       <div className="mx-auto flex max-w-3xl items-center justify-between gap-3 px-4 py-3">
@@ -77,9 +84,12 @@ function Header() {
             <Icon name="flame" filled className="h-5 w-5" />
             {streak.shown}
           </span>
-          <span className="rounded-full bg-paper-2 px-2 py-0.5" title={`${li.rank.en}, level ${li.level}`}>
+          <NavLink to="/trophies" className="rounded-full bg-paper-2 px-2 py-0.5 hover:text-red" title={`${li.rank.en}, level ${li.level}: trophies`}>
             Lv {li.level}
-          </span>
+          </NavLink>
+          <NavLink to="/settings" className="text-ink-soft hover:text-red" aria-label="Settings">
+            <Icon name="gear" className="h-5 w-5" />
+          </NavLink>
         </div>
       </div>
     </header>
@@ -88,7 +98,7 @@ function Header() {
 
 function BottomNav() {
   const { pathname } = useLocation()
-  if (pathname.startsWith('/practice')) return null
+  if (IN_SESSION.some((p) => pathname.startsWith(p))) return null
   return (
     <nav className="fixed inset-x-0 bottom-0 z-20 border-t border-line bg-paper pb-[env(safe-area-inset-bottom)] sm:hidden" aria-label="Main">
       <div className="grid grid-cols-4">
@@ -118,6 +128,12 @@ export default function App() {
               <Route path="/trophies" element={<Trophies />} />
               <Route path="/settings" element={<Settings />} />
               <Route path="/attributions" element={<Attributions />} />
+              <Route path="/review" element={<Review />} />
+              <Route path="/lab" element={<Lab />} />
+              <Route path="/word/:id" element={<Word />} />
+              <Route path="/drill/:kind/:a/:b?/:c?" element={<Drill />} />
+              <Route path="/grammar" element={<GrammarIndex />} />
+              <Route path="/grammar/:id" element={<GrammarArticlePage />} />
             </Routes>
           </Suspense>
         </main>

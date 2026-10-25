@@ -7,6 +7,8 @@ import { stopSpeaking } from '../audio/tts'
 import { RewardSession, type AnswerEffects, type SessionEnd } from '../rewards/service'
 import type { LevelInfo } from '../rewards/levels'
 import { ExerciseView } from './exercises'
+import { FEATURES } from '../features'
+import { addFormCard } from '../srs/deck'
 import { Celebration, ComboMeter, EdgePulse, useJuice, XpFloat } from './juice'
 import { Md, Ru } from './Md'
 import { SessionSummary } from './SessionSummary'
@@ -18,9 +20,15 @@ interface Props {
   kind: string
   onDone: () => void
   onAgain?: () => void
+  /** SRS sessions: retrievability before review (drives XP freshness). */
+  recallFor?: (item: ExerciseItem) => number | null
+  /** Called after each graded answer (e.g. to reschedule an SRS card). */
+  onGraded?: (item: ExerciseItem, verdict: Verdict, ms: number) => Promise<void>
 }
 
-export function SessionRunner({ items, lexemes, kind, onDone, onAgain }: Props) {
+const FORM_TYPES = new Set(['transform', 'cloze', 'choice'])
+
+export function SessionRunner({ items, lexemes, kind, onDone, onAgain, recallFor, onGraded }: Props) {
   const session = useRef<RewardSession>(null as unknown as RewardSession)
   session.current ??= new RewardSession(kind, Date.now())
   const [queue, setQueue] = useState(items)
@@ -57,7 +65,12 @@ export function SessionRunner({ items, lexemes, kind, onDone, onAgain }: Props) 
       haptic.wrong()
     }
     const lexeme = item.target ? lexemes.get(item.target.lex) : undefined
-    const e = await session.current.answer({ item, verdict: v, ms, golden, lexeme, now: Date.now() })
+    const e = await session.current.answer({ item, verdict: v, ms, golden, lexeme, recall: recallFor?.(item) ?? null, now: Date.now() })
+    await onGraded?.(item, v, ms)
+    // a form missed anywhere becomes its own spaced-repetition card
+    if (!v.correct && item.target && FORM_TYPES.has(item.type) && FEATURES.has('vocab') && !item.id.startsWith('srs:form:')) {
+      void addFormCard(item.target.lex, item.target.slot, Date.now())
+    }
     setFx(e)
     setXp(session.current.xp)
     if (e.comboUp) {

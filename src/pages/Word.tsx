@@ -1,0 +1,183 @@
+import { useEffect, useState } from 'react'
+import { Link, useParams } from 'react-router-dom'
+import { useLiveQuery } from 'dexie-react-hooks'
+import type { Lexeme, Sentence } from '../types/content.gen'
+import { db } from '../db/db'
+import { useSettings } from '../db/settings'
+import { speak, useRussianVoices } from '../audio/tts'
+import { loadLexemes } from '../lib/lexicon'
+import { examplesFor, sentencesUpTo } from '../lib/sentences'
+import { addWord, wordState } from '../srs/deck'
+import { State } from '../srs/fsrs'
+import { isDrillable } from '../engine/generators'
+import { NOUN_CLASS_LABEL, nounClass } from '../engine/sentenceGen'
+import { FormTable } from '../components/FormTable'
+import { Ru } from '../components/Md'
+import { Button, Card, Icon } from '../components/ui'
+
+const POS_NAME = { noun: 'noun', verb: 'verb', adj: 'adjective', other: 'word' }
+const GENDER = { m: 'masculine', f: 'feminine', n: 'neuter', mf: 'common gender', pl: 'plural only' }
+
+export function ExampleList({ sentences, lex }: { sentences: Sentence[]; lex: string }) {
+  const s = useSettings()
+  return (
+    <ul className="space-y-2">
+      {sentences.map((x) => {
+        const hit = x.w.find((w) => w.slice(2).some((r) => String(r).startsWith(lex + '|')))
+        const [a, b] = hit ? [hit[0] as number, hit[1] as number] : [0, 0]
+        return (
+          <li key={x.id}>
+            <button type="button" onClick={() => speak(x.ru, { rate: s.ttsRate, voice: s.ttsVoice })} className="text-left">
+              <Ru className="text-lg">{x.ru.slice(0, a)}</Ru>
+              <Ru className="text-lg font-bold text-red">{x.ru.slice(a, b)}</Ru>
+              <Ru className="text-lg">{x.ru.slice(b)}</Ru>
+            </button>
+            <div className="text-sm text-ink-soft">
+              {x.en[0]}{' '}
+              <a href={`https://tatoeba.org/en/sentences/show/${x.id.slice(2)}`} className="text-xs underline" target="_blank" rel="noreferrer">
+                Tatoeba
+              </a>
+            </div>
+          </li>
+        )
+      })}
+    </ul>
+  )
+}
+
+export default function Word() {
+  const { id = '' } = useParams()
+  const settings = useSettings()
+  const { voices } = useRussianVoices()
+  const [lx, setLx] = useState<Lexeme | null | undefined>(undefined)
+  const [examples, setExamples] = useState<Sentence[]>([])
+  const [partners, setPartners] = useState<Lexeme[]>([])
+  const state = useLiveQuery(() => wordState(id), [id])
+  const history = useLiveQuery(async () => {
+    const attempts = await db.attempts.where('ts').above(0).filter((a) => a.lex === id || (a.item.includes(id) && a.item.startsWith('srs:'))).toArray()
+    const m = await db.mastery.get(`lex:${id}`)
+    return { attempts, mastery: m }
+  }, [id])
+
+  useEffect(() => {
+    let alive = true
+    loadLexemes([id]).then(async (m) => {
+      const x = m.get(id) ?? null
+      if (!alive) return
+      setLx(x)
+      if (x?.partners?.length) setPartners([...(await loadLexemes(x.partners)).values()])
+      const pool = await sentencesUpTo('C1')
+      if (alive) setExamples(examplesFor(id, pool, 6))
+    })
+    return () => {
+      alive = false
+    }
+  }, [id])
+
+  if (lx === undefined) return <p className="py-12 text-center text-ink-soft">Loading…</p>
+  if (lx === null) return <p className="py-12 text-center text-ink-soft">No such word in the dictionary.</p>
+
+  const cls = lx.pos === 'noun' ? nounClass(lx) : null
+  const attempts = history?.attempts ?? []
+  const correct = attempts.filter((a) => a.correct).length
+  const due = state?.cards.filter((c) => c.state !== State.New).map((c) => c.due).sort()[0]
+
+  return (
+    <div className="space-y-4">
+      <Card>
+        <div className="flex items-start justify-between gap-3">
+          <div>
+            <button type="button" onClick={() => speak(lx.lemma, { rate: settings.ttsRate, voice: settings.ttsVoice })} className="flex items-center gap-2" aria-label="Play">
+              <Ru className="font-serif text-4xl">{lx.lemma}</Ru>
+              <Icon name="speaker" className="h-6 w-6 text-red" />
+            </button>
+            <p className="mt-1 text-ink-soft">
+              {POS_NAME[lx.pos]}
+              {lx.gender ? `, ${GENDER[lx.gender]}` : ''}
+              {lx.animate ? ', animate' : ''}
+              {lx.indeclinable ? ', indeclinable' : ''}
+              {lx.aspect ? `, ${lx.aspect === 'pf' ? 'perfective' : lx.aspect === 'impf' ? 'imperfective' : 'both aspects'}` : ''}
+            </p>
+          </div>
+          <div className="text-right text-sm text-ink-soft">
+            {lx.rank ? (
+              <>
+                <div className="font-bold text-red">{lx.level}</div>
+                <div>#{lx.rank.toLocaleString('en')} most frequent</div>
+              </>
+            ) : (
+              <div>rare word</div>
+            )}
+          </div>
+        </div>
+        <ul className="mt-3 list-disc pl-5">
+          {lx.en.map((e) => (
+            <li key={e}>{e}</li>
+          ))}
+        </ul>
+        {partners.length > 0 && (
+          <p className="mt-2 text-sm">
+            Aspect partner:{' '}
+            {partners.map((p) => (
+              <Link key={p.id} to={`/word/${encodeURIComponent(p.id)}`} className="mr-2 text-red underline">
+                <Ru>{p.lemma}</Ru>
+              </Link>
+            ))}
+          </p>
+        )}
+        <div className="mt-4 flex flex-wrap gap-2">
+          {state && state.cards.length === 0 ? (
+            <Button onClick={() => addWord(lx.id, Date.now(), voices.length > 0)}>Add to my deck</Button>
+          ) : (
+            <span className="rounded-lg bg-paper px-3 py-2 text-sm">
+              {state?.known ? 'Known ✓' : 'In your deck'}
+              {due ? ` · next review ${new Date(due).toLocaleDateString('en-GB', { day: 'numeric', month: 'short' })}` : ''}
+            </span>
+          )}
+          {isDrillable(lx) && (
+            <Link to={`/drill/word/${encodeURIComponent(lx.id)}`}>
+              <Button variant="secondary">Drill this word</Button>
+            </Link>
+          )}
+          {cls && cls !== 'other' && (
+            <Link to={`/drill/pattern/${cls}/pl_gen,pl_ins,pl_dat,sg_ins,sg_gen`}>
+              <Button variant="secondary">Drill this pattern</Button>
+            </Link>
+          )}
+        </div>
+        {cls && cls !== 'other' && <p className="mt-2 text-xs text-ink-soft">Pattern: {NOUN_CLASS_LABEL[cls]}</p>}
+      </Card>
+
+      {lx.pos !== 'other' && (
+        <Card>
+          <FormTable lx={lx} />
+        </Card>
+      )}
+
+      {examples.length > 0 && (
+        <Card>
+          <h2 className="mb-2 font-serif text-xl">Examples</h2>
+          <ExampleList sentences={examples} lex={lx.id} />
+        </Card>
+      )}
+
+      <Card>
+        <h2 className="font-serif text-xl">My history with this word</h2>
+        {attempts.length ? (
+          <p className="mt-1 text-sm">
+            Seen {attempts.length} time{attempts.length === 1 ? '' : 's'}, {Math.round((100 * correct) / attempts.length)}% correct
+            {history?.mastery ? ` · mastery ${Math.round(history.mastery.score * 100)}%` : ''}. Last seen{' '}
+            {new Date(Math.max(...attempts.map((a) => a.ts))).toLocaleDateString('en-GB', { day: 'numeric', month: 'short' })}.
+          </p>
+        ) : (
+          <p className="mt-1 text-sm text-ink-soft">You haven't practised this word yet.</p>
+        )}
+        {attempts.some((a) => !a.correct && a.err) && (
+          <p className="mt-1 text-sm text-ink-soft">
+            Mistakes: {[...new Set(attempts.filter((a) => a.err).map((a) => a.err))].join(', ')}
+          </p>
+        )}
+      </Card>
+    </div>
+  )
+}

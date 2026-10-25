@@ -61,3 +61,35 @@ export function loadChunk(name: ChunkName): Promise<Lexeme[]> {
 }
 
 export const CORE_CHUNKS: ChunkName[] = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2']
+
+export type IndexRow = [id: string, lemma: string, pos: Pos, rank: number, chunk: ChunkName, gloss: string]
+let coreIndex: Promise<IndexRow[]> | null = null
+let extIndex: Promise<IndexRow[]> | null = null
+
+export function loadIndex(which: 'core' | 'ext'): Promise<IndexRow[]> {
+  if (which === 'core') return (coreIndex ??= import('../data/lexicon/index-core.json').then((m) => m.default as IndexRow[]))
+  return (extIndex ??= import('../data/lexicon/index-ext.json').then((m) => m.default as IndexRow[]))
+}
+
+/** Load the chunks holding the given lexeme ids (core first; the rare tail only if needed). */
+export async function loadLexemes(ids: string[]): Promise<Map<string, Lexeme>> {
+  const want = new Set(ids)
+  const core = await loadIndex('core')
+  const chunks = new Set<ChunkName>()
+  for (const r of core) if (want.has(r[0])) chunks.add(r[4])
+  const found = new Set(core.filter((r) => want.has(r[0])).map((r) => r[0]))
+  if ([...want].some((id) => !found.has(id) && !id.startsWith('name:'))) {
+    for (const r of await loadIndex('ext')) if (want.has(r[0])) chunks.add(r[4])
+  }
+  const out = new Map<string, Lexeme>()
+  for (const c of chunks) for (const x of await loadChunk(c)) if (want.has(x.id)) out.set(x.id, x)
+  return out
+}
+
+export const LEVELS: ChunkName[] = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2']
+
+/** All ranked words up to and including a level. */
+export async function poolUpTo(level: ChunkName): Promise<Lexeme[]> {
+  const lv = LEVELS.slice(0, LEVELS.indexOf(level) + 1)
+  return (await Promise.all(lv.map(loadChunk))).flat()
+}

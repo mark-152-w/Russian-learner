@@ -56,6 +56,8 @@ NO_STRESS_KEYS = {
     "register", "pos", "slot", "case", "number", "gender", "tense", "aspect", "mood", "voice", "degree", "lemmaId",
 }
 ANSWER_KEYS = {"accept"}
+# Values that are wrong Russian on purpose (the "wrong" side of a common-mistakes entry).
+DELIBERATELY_WRONG_KEYS = {"wrong"}
 
 STRIKE = re.compile(r"~~.*?~~", re.S)
 WORD = re.compile(r"(?<![\ẃ̀-])-?[А-Яа-яЁё́̀]+(?:-[А-Яа-яЁё́̀]+)*-?(?![\ẃ̀])")
@@ -145,7 +147,7 @@ def walk(node, path: str, rep: Report, key: str | None = None):
                                  ensure_ascii=False)[:160]
             rep.review.append((path, label, snippet))
         for k, v in node.items():
-            if k in NO_STRESS_KEYS:
+            if k in NO_STRESS_KEYS or k in DELIBERATELY_WRONG_KEYS:
                 continue
             walk(v, f"{path}.{k}", rep, k)
     elif isinstance(node, list):

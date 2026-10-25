@@ -9,6 +9,8 @@ import { downloadIcs, reminderIcs } from '../lib/ics'
 import { VoiceHelp } from '../components/VoiceHelp'
 import { Ru } from '../components/Md'
 import { Button, Card, Toggle } from '../components/ui'
+import { FEATURES } from '../features'
+import { loadChunk, loadIndex } from '../lib/lexicon'
 
 function Section({ title, children }: { title: string; children: ReactNode }) {
   return (
@@ -44,6 +46,32 @@ const LAYOUT_HELP: [string, string][] = [
   ['iPhone / iPad', 'Settings → General → Keyboard → Keyboards → Add New Keyboard → Russian. Switch with the globe key.'],
   ['Android (Gboard)', 'Gboard settings → Languages → Add keyboard → Russian. Switch with the globe key or by long-pressing space.'],
 ]
+
+/** The rare-word tail (30k words) is fetched on demand; this caches all of it for offline lookups. */
+function FullDictionary() {
+  const [state, setState] = useState<'idle' | 'busy' | 'done' | 'error'>('idle')
+  const run = async () => {
+    setState('busy')
+    try {
+      const idx = await loadIndex('ext')
+      for (const c of [...new Set(idx.map((r) => r[4]))]) await loadChunk(c)
+      setState('done')
+    } catch {
+      setState('error')
+    }
+  }
+  return (
+    <div className="flex min-h-11 items-center justify-between gap-4 py-2">
+      <span>
+        <span className="block">Full dictionary offline</span>
+        <span className="block text-sm text-ink-soft">The 12,000 core words always work offline. Add the 30,000 rarer ones (about 3 MB).</span>
+      </span>
+      <Button variant="secondary" disabled={state === 'busy' || state === 'done'} onClick={run}>
+        {state === 'busy' ? 'Downloading…' : state === 'done' ? 'Saved ✓' : state === 'error' ? 'Retry' : 'Download'}
+      </Button>
+    </div>
+  )
+}
 
 export default function Settings() {
   const s = useSettings()
@@ -90,6 +118,15 @@ export default function Settings() {
           options={[5, 10, 15, 20, 30, 45, 60].map((m) => [m, `${m} minutes`] as [number, string])}
           onChange={(v) => set({ dailyGoalMinutes: v })}
         />
+        {FEATURES.has('vocab') && (
+          <Select
+            label="New words per day"
+            value={s.newCardsPerDay}
+            options={[0, 5, 10, 15, 20, 30, 50].map((n) => [n, n ? `${n} words` : 'none (reviews only)'] as [number, string])}
+            onChange={(v) => set({ newCardsPerDay: v })}
+          />
+        )}
+        <FullDictionary />
       </Section>
 
       <Section title="Display">

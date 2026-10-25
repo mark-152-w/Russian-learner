@@ -1,3 +1,3 @@
 // Features that exist in this build. Quests and achievements tied to anything else stay hidden.
 // Phase 2 adds 'vocab' and 'course'; Phase 4 'reader' and 'listening'; Phase 5 'games', 'cards', 'adventure'.
-export const FEATURES: ReadonlySet<string> = new Set<string>([])
+export const FEATURES: ReadonlySet<string> = new Set<string>(['vocab'])
