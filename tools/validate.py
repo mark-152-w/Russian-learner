@@ -109,6 +109,8 @@ def yo_required(w: str) -> str | None:
 def check_text(text: str, where: str, rep: Report, answer: bool = False):
     """Apply the Russian display rules to one string."""
     clean = STRIKE.sub(" ", text)
+    # markdown markers aren't letters: «**в**ойти́» is one word, войти́
+    clean = clean.replace("**", "").replace("*", "").replace("{{ru:", "").replace("}}", "")
     prev = ""
     for m in WORD.finditer(clean):
         w, prev_word = m.group(0), prev
@@ -162,12 +164,18 @@ _DICT: dict[str, set[str]] | None = None
 
 
 def dictionary_forms() -> dict[str, set[str]]:
-    """fold(form) -> every stressed spelling the core lexicon / closed-class table allows (lower case)."""
+    """fold(form) -> every stressed spelling the core lexicon / closed-class table allows (lower case).
+    Stressed lines in tools/allowlist.txt add spellings (proper names that clash with common words: Толсто́го)."""
     global _DICT
     if _DICT is None:
         from sentences import build_index
         index, _ = build_index(include_ext=True)
         _DICT = {k: {c[2].lower() for c in cs} for k, cs in index.items()}
+        if ALLOWLIST_PATH.exists():
+            for line in ALLOWLIST_PATH.read_text(encoding="utf-8").splitlines():
+                w = line.strip()
+                if w and not w.startswith("#") and ACUTE in w:
+                    _DICT.setdefault(fold(w), set()).add(w.lower())
     return _DICT
 
 

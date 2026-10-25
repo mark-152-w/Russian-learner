@@ -1,0 +1,78 @@
+{
+  "$schema": "../../../../schemas/grammar-article.schema.json",
+  "id": "g-comparatives",
+  "title": {"en": "Comparatives and superlatives", "ru": "Сравни́тельная и превосхо́дная сте́пень"},
+  "level": "B1",
+  "tags": ["adj.comparative", "adj.superlative"],
+  "card": "The short comparative adds **-ее** to the stem and never changes: **но́вый → нове́е**, **интере́сный → интере́снее**. *Than* is **чем** or the bare genitive: **Он ста́рше, чем я** = **Он ста́рше меня́**. The superlative is usually **са́мый** + adjective: **са́мый большо́й го́род**.",
+  "sections": [
+    {
+      "kind": "table",
+      "title": "Regular comparatives",
+      "table": {
+        "head": ["Adjective", "Comparative", "Note"],
+        "rows": [
+          ["**но́вый**", "**нове́е**", "stress usually on **-е́е** if the stem is short"],
+          ["**интере́сный**", "**интере́снее**", "long stems keep their stress"],
+          ["**тёплый**", "**тепле́е**", ""],
+          ["**бы́стрый**", "**быстре́е**", "also used as an adverb: *faster*"]
+        ]
+      }
+    },
+    {
+      "kind": "table",
+      "title": "Irregular and consonant-change comparatives",
+      "table": {
+        "head": ["Adjective", "Comparative", "Meaning"],
+        "rows": [
+          ["**хоро́ший**", "**лу́чше**", "better"],
+          ["**плохо́й**", "**ху́же**", "worse"],
+          ["**большо́й**", "**бо́льше**", "bigger, more"],
+          ["**ма́ленький**", "**ме́ньше**", "smaller, less"],
+          ["**молодо́й**", "**моло́же**", "younger"],
+          ["**ста́рый**", "**ста́рше / старе́е**", "older (people / things)"],
+          ["**дорого́й**", "**доро́же**", "more expensive"],
+          ["**дешёвый**", "**деше́вле**", "cheaper"],
+          ["**бли́зкий**", "**бли́же**", "closer"],
+          ["**далёкий**", "**да́льше**", "further"],
+          ["**высо́кий**", "**вы́ше**", "higher, taller"],
+          ["**ни́зкий**", "**ни́же**", "lower, shorter"],
+          ["**лёгкий**", "**ле́гче**", "easier, lighter"],
+          ["**ти́хий**", "**ти́ше**", "quieter"]
+        ]
+      }
+    },
+    {
+      "kind": "explanation",
+      "title": "\"Than\", \"much\", \"the more…\"",
+      "body": "- *Than*: **чем** + nominative (**Москва́ бо́льше, чем Петербу́рг**), or the genitive alone (**Москва́ бо́льше Петербу́рга**). Use **чем** when the comparison isn't a simple noun: **Лу́чше по́здно, чем никогда́.**\n- *Much / far* + comparative: **намно́го** or **гора́здо**: **гора́здо интере́снее**.\n- *A bit*: prefix **по-**: **побо́льше** (*a bit more*), **поме́ньше**.\n- *The more…, the more…*: **чем бо́льше, тем лу́чше**.\n- *As … as possible*: **как мо́жно скоре́е**."
+    },
+    {
+      "kind": "explanation",
+      "title": "Superlatives",
+      "body": "The everyday superlative is **са́мый** (declined like an adjective) + the adjective: **са́мый большо́й**, **са́мая краси́вая**, **в са́мом ста́ром до́ме**. Bookish Russian also has **-ейший / -айший**: **нове́йший** (*the latest*), **кратча́йший** (*the shortest*). *The best* is **лу́чший** or **са́мый лу́чший**; *better than all* is **лу́чше всех** (people) or **лу́чше всего́** (things)."
+    },
+    {
+      "kind": "vs-english",
+      "body": "English chooses between *-er* and *more* by word length; Russian simply uses **-ее** for almost everything, plus a set of irregulars that, as in English (*good, better*), are the most frequent words. Unlike English, the short comparative is the same for every gender and number: **Он / она́ / они́ вы́ше.**"
+    },
+    {
+      "kind": "common-mistakes",
+      "mistakes": [
+        {"wrong": "бо́лее лу́чше", "right": "лу́чше", "why": "**лу́чше** is already comparative; **бо́лее** + adjective is the long-form alternative (**бо́лее интере́сный**), never both.", "error": "vocab.wrong-word"},
+        {"wrong": "Он ста́рше чем я.", "right": "Он ста́рше, чем я.", "why": "**чем** is preceded by a comma.", "error": "word-order.unnatural"},
+        {"wrong": "са́мый лу́чше", "right": "са́мый лу́чший", "why": "**са́мый** goes with the long adjective.", "error": "agreement.case"}
+      ]
+    }
+  ],
+  "examples": [
+    {"ru": "Сего́дня тепле́е, чем вчера́.", "en": "It's warmer today than yesterday.", "focus": "тепле́е"},
+    {"ru": "Мой брат ста́рше меня́.", "en": "My brother is older than me.", "focus": "ста́рше"},
+    {"ru": "Э́то гора́здо лу́чше.", "en": "This is much better.", "focus": "лу́чше"},
+    {"ru": "Говори́те, пожа́луйста, ме́дленнее.", "en": "Please speak more slowly.", "focus": "ме́дленнее"},
+    {"ru": "Москва́ — са́мый большо́й го́род Росси́и.", "en": "Moscow is the largest city in Russia.", "focus": "са́мый большо́й"},
+    {"ru": "Чем бо́льше, тем лу́чше.", "en": "The more, the better.", "focus": "бо́льше"},
+    {"ru": "Она́ поёт лу́чше всех.", "en": "She sings best of all.", "focus": "лу́чше всех"}
+  ],
+  "related": ["g-adjective-agreement"]
+}

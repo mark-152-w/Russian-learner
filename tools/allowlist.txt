@@ -2,3 +2,9 @@
 хохлома
 перфекционист
 кроссвордист
+# Proper names whose stress differs from a common word (stressed lines add allowed spellings)
+Толсто́й
+Толсто́го
+Толсто́му
+Толсты́м
+Толсто́м

@@ -1,0 +1,61 @@
+{
+  "$schema": "../../../../schemas/grammar-article.schema.json",
+  "id": "g-imperatives",
+  "title": {"en": "The imperative: telling people what to do", "ru": "Повели́тельное наклоне́ние"},
+  "level": "B1",
+  "tags": ["verb.imperative", "aspect.imperative"],
+  "card": "Take the **они́** form, drop the ending, and add **-й** (after a vowel), **-и** (if the **я** form is stressed on the ending), or **-ь** (if the stem is stressed): **чита́ют → чита́й**, **говоря́т → говори́**, **вста́нут → встань**. Add **-те** for **вы**: **чита́йте**, **говори́те**. **Дава́й(те)** + verb = *let's*.",
+  "sections": [
+    {
+      "kind": "table",
+      "title": "Forming the imperative",
+      "table": {
+        "head": ["Stem (from они́)", "Ending", "Examples"],
+        "rows": [
+          ["ends in a vowel", "-й / -йте", "**чита́ют → чита́й, чита́йте**; **рабо́тают → рабо́тай**"],
+          ["consonant; я-form stressed on the ending", "-и / -ите", "**говоря́т (говорю́) → говори́**; **пи́шут (пишу́) → пиши́**"],
+          ["consonant; stem stressed", "-ь / -ьте", "**вста́нут → встань**; **ре́жут → режь**"]
+        ]
+      }
+    },
+    {
+      "kind": "table",
+      "title": "Generated examples",
+      "table": {
+        "generate": {"lexemes": ["v:читать", "v:говорить", "v:писать", "v:сказать", "v:дать"], "slots": ["inf", "imp_sg", "imp_pl"]}
+      }
+    },
+    {
+      "kind": "explanation",
+      "title": "Irregulars and reflexives",
+      "body": "- **дать → дай**, **есть → ешь**, **е́хать → поезжа́й**, **лечь → ляг**, **пить → пей**, **быть → будь**.\n- Reflexive verbs add **-ся** after a consonant and **-сь** after a vowel: **сади́сь, сади́тесь**; **умыва́йся, умыва́йтесь**.\n- **Let's**: **дава́й / дава́йте** + perfective future (one action) or + imperfective infinitive (an activity): **Дава́й пойдём в кино́.** **Дава́йте говори́ть по-ру́сски.** **Пойдём!** alone also means *let's go*.\n- **Let him / let them**: **пусть** + present/future: **Пусть он позвони́т.**"
+    },
+    {
+      "kind": "explanation",
+      "title": "Aspect in the imperative",
+      "body": "A single concrete request is perfective (**Закро́й дверь.**); invitations, encouragement and prohibitions are imperfective (**Сади́сь!**, **Не закрыва́й!**). See the aspect-in-depth article for the full picture."
+    },
+    {
+      "kind": "vs-english",
+      "body": "English has one imperative form; Russian has two (**ты** and **вы**) and two aspects. Politeness comes mainly from **вы**, **пожа́луйста** and the perfective-vs-imperfective choice rather than from *could you*. Overusing **Не могли́ бы вы…** sounds stiff in everyday situations; **Скажи́те, пожа́луйста, …** is the normal polite way to ask a stranger."
+    },
+    {
+      "kind": "common-mistakes",
+      "mistakes": [
+        {"wrong": "Пиша́йте!", "right": "Пиши́те!", "why": "**пишу́** is stressed on the ending, so **-и**: **пиши́**.", "error": "verb.imperative"},
+        {"wrong": "Дава́й идём!", "right": "Пойдём!", "why": "**дава́й** + perfective future, or simply **пойдём**.", "error": "verb.imperative"},
+        {"wrong": "Сади́тся!", "right": "Сади́тесь!", "why": "Imperative of **сади́ться** for **вы**: **сади́тесь**.", "error": "verb.imperative"}
+      ]
+    }
+  ],
+  "examples": [
+    {"ru": "Скажи́те, пожа́луйста, где метро́?", "en": "Excuse me, where's the metro?", "focus": "Скажи́те"},
+    {"ru": "Пиши́ мне!", "en": "Write to me!", "focus": "Пиши́"},
+    {"ru": "Да́йте, пожа́луйста, ко́фе.", "en": "A coffee, please.", "focus": "Да́йте"},
+    {"ru": "Дава́й пойдём в кино́.", "en": "Let's go to the cinema.", "focus": "Дава́й"},
+    {"ru": "Не волну́йся!", "en": "Don't worry!", "focus": "волну́йся"},
+    {"ru": "Будь осторо́жен!", "en": "Be careful!", "focus": "Будь"},
+    {"ru": "Пусть он позвони́т мне.", "en": "Let him call me.", "focus": "Пусть"}
+  ],
+  "related": ["g-aspect-depth", "g-present-tense"]
+}

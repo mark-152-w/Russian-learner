@@ -1,0 +1,66 @@
+{
+  "$schema": "../../../../schemas/grammar-article.schema.json",
+  "id": "g-plural-declension",
+  "title": {"en": "The plural in all cases", "ru": "Мно́жественное число́"},
+  "level": "B1",
+  "tags": ["case.plural"],
+  "card": "Good news: in the plural, gender almost stops mattering. Dative **-ам/-ям**, instrumental **-ами/-ями**, prepositional **-ах/-ях** are the same for every noun: **кни́гам, кни́гами, кни́гах**; **стола́м, стола́ми, стола́х**. Only the nominative and genitive vary, and the accusative copies one of them (animate = genitive).",
+  "sections": [
+    {
+      "kind": "why",
+      "body": "Over centuries, Russian merged its plural declensions into one. The three \"oblique\" plural cases (dative, instrumental, prepositional) are now identical across all genders, which makes the plural much easier than the singular once you have the nominative and genitive."
+    },
+    {
+      "kind": "table",
+      "title": "The shared endings",
+      "table": {
+        "head": ["Case", "Hard stem", "Soft stem", "Examples"],
+        "rows": [
+          ["Dative", "-ам", "-ям", "**стола́м**, **кни́гам**, **дверя́м**"],
+          ["Instrumental", "-ами", "-ями", "**стола́ми**, **кни́гами**, **дверя́ми**"],
+          ["Prepositional", "-ах", "-ях", "**стола́х**, **кни́гах**, **дверя́х**"]
+        ],
+        "caption": "A few nouns keep an old instrumental in **-ьми**: **детьми́**, **людьми́**, and the optional **дверьми́**."
+      }
+    },
+    {
+      "kind": "table",
+      "title": "Full paradigms",
+      "table": {
+        "generate": {"lexemes": ["n:стол", "n:книга", "n:дверь", "n:человек", "n:друг"], "slots": ["pl_nom", "pl_gen", "pl_dat", "pl_acc", "pl_ins", "pl_prep"]}
+      }
+    },
+    {
+      "kind": "explanation",
+      "title": "The accusative in the plural",
+      "body": "For **all** genders, the plural accusative copies the nominative for things and the genitive for living beings:\n\n- **Я ви́жу столы́ / кни́ги / о́кна.** (inanimate: = nominative)\n- **Я ви́жу студе́нтов / де́вушек / дете́й.** (animate: = genitive)\n\nIn the singular this applied only to masculine nouns; in the plural it covers feminine and neuter animals and people too: **Я люблю́ ко́шек.**"
+    },
+    {
+      "kind": "explanation",
+      "title": "Stress in the plural",
+      "body": "Many common nouns move their stress in the plural, usually to the ending: **го́род → города́, городо́в**; **сло́во → слова́**; **окно́ → о́кна** (the other way). The plural stress is usually the same in all plural cases, apart from the nominative and accusative. Check the word page when in doubt; the lab tables show every form."
+    },
+    {
+      "kind": "vs-english",
+      "body": "English has one plural form (*tables*) plus *'s* (*tables'*). Russian has six, but four of them follow one pattern across all nouns, so the real work is just the nominative and genitive plural you already know."
+    },
+    {
+      "kind": "common-mistakes",
+      "mistakes": [
+        {"wrong": "с друзья́м", "right": "с друзья́ми", "why": "**с** + instrumental: **-ами/-ями**.", "error": "case.wrong"},
+        {"wrong": "Я ви́жу де́вушки.", "right": "Я ви́жу де́вушек.", "why": "Animate plural accusative = genitive.", "error": "animacy.acc"},
+        {"wrong": "в города́м", "right": "в города́х", "why": "Location: prepositional plural **-ах**.", "error": "case.wrong"}
+      ]
+    }
+  ],
+  "examples": [
+    {"ru": "Я пишу́ друзья́м.", "en": "I'm writing to friends.", "focus": "друзья́м"},
+    {"ru": "Мы говори́ли с детьми́.", "en": "We talked with the children.", "focus": "детьми́"},
+    {"ru": "В э́тих города́х мно́го музе́ев.", "en": "There are many museums in these cities.", "focus": "города́х"},
+    {"ru": "Я люблю́ ко́шек.", "en": "I love cats.", "focus": "ко́шек"},
+    {"ru": "Он помога́ет студе́нтам.", "en": "He helps students.", "focus": "студе́нтам"},
+    {"ru": "Она́ занима́ется с ученика́ми.", "en": "She's working with her pupils.", "focus": "ученика́ми"},
+    {"ru": "Я ду́маю о свои́х роди́телях.", "en": "I'm thinking about my parents.", "focus": "роди́телях"}
+  ],
+  "related": ["g-genitive-plural", "g-cases-intro", "g-adjective-agreement"]
+}

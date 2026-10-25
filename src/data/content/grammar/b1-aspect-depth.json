@@ -1,0 +1,53 @@
+{
+  "$schema": "../../../../schemas/grammar-article.schema.json",
+  "id": "g-aspect-depth",
+  "title": {"en": "Aspect in depth: past, future, imperative, negation", "ru": "Вид глаго́ла: подро́бно"},
+  "level": "B1",
+  "tags": ["aspect.past", "aspect.future", "aspect.imperative", "aspect.negation", "aspect.nuance"],
+  "card": "**Past**: perfective for a result, imperfective for a process, habit or \"have you ever\". **Imperative**: perfective for a one-off request (**Закро́йте окно́**), imperfective for invitations, instructions in progress and prohibitions (**Сади́тесь!**, **Не закрыва́йте!**). **Negation** usually pulls towards the imperfective.",
+  "sections": [
+    {
+      "kind": "explanation",
+      "title": "Past: result versus fact",
+      "body": "- **Result** that matters now: **Я потеря́л ключи́.** (*I've lost my keys*: they're still lost.)\n- **Process or duration**: **Я два часа́ иска́л ключи́.**\n- **Repetition**: **Он ча́сто теря́л ключи́.**\n- **General fact**, *did it ever happen?*: **Ты чита́л Толсто́го?** (*Have you read Tolstoy?*) The question is about the experience, not a finished task.\n- **Annulled result** (did and undid): **Я открыва́л окно́** means *I opened the window (and it's closed again now)*. Compare **Я откры́л окно́** (*it's open now*)."
+    },
+    {
+      "kind": "explanation",
+      "title": "Imperative",
+      "body": "- A one-off concrete request: perfective. **Дай мне ру́чку, пожа́луйста.** **Позвони́ ма́ме.**\n- A polite invitation or encouragement to start (often with guests): imperfective. **Сади́тесь!** **Проходи́те!** **Бери́те, не стесня́йтесь!**\n- Instructions about *how* to do something already under way: imperfective. **Чита́йте ме́дленнее.**\n- **Prohibition** with **не**: imperfective. **Не открыва́й окно́!** **Не опа́здывайте!**\n- **Warning** against an accident with **не**: perfective. **Не упади́!** (*Don't fall!*) **Не забу́дь!** (*Don't forget!*)"
+    },
+    {
+      "kind": "explanation",
+      "title": "Negation",
+      "body": "- **не на́до / не ну́жно / не сто́ит** + imperfective: **Не на́до звони́ть.** (*No need to call.*)\n- **нельзя́** + imperfective = *not allowed*: **Здесь нельзя́ кури́ть.** **нельзя́** + perfective = *impossible*: **Э́ту дверь нельзя́ откры́ть.** (*It can't be opened.*)\n- In the past, **не** + perfective means the expected result didn't happen: **Я не сдал экза́мен.** (*I failed it.*) **не** + imperfective means the action didn't take place at all: **Я не сдава́л экза́мен.** (*I didn't sit it.*)"
+    },
+    {
+      "kind": "explanation",
+      "title": "Verbs of beginning and ending",
+      "body": "**начина́ть / нача́ть**, **конча́ть / ко́нчить**, **продолжа́ть**, **перестава́ть / переста́ть**, **устава́ть / уста́ть** are always followed by an **imperfective** infinitive: **Я на́чал чита́ть.** **Он переста́л кури́ть.** The beginning or end is the completed event; the activity itself is a process."
+    },
+    {
+      "kind": "memory-trick",
+      "body": "In the imperative, perfective is *a task*, imperfective is *an attitude*. **Откро́й окно́** gives a task; **Открыва́й!** says \"go on, open it, what are you waiting for\"."
+    },
+    {
+      "kind": "common-mistakes",
+      "mistakes": [
+        {"wrong": "Не откро́й окно́.", "right": "Не открыва́й окно́.", "why": "A prohibition takes the imperfective.", "error": "aspect.negation"},
+        {"wrong": "Я на́чал прочита́ть.", "right": "Я на́чал чита́ть.", "why": "After **нача́ть**, use an imperfective infinitive.", "error": "aspect.wrong"},
+        {"wrong": "Ты когда́-нибудь прочита́л Пу́шкина?", "right": "Ты когда́-нибудь чита́л Пу́шкина?", "why": "*Have you ever* asks about experience: imperfective.", "error": "aspect.wrong"}
+      ]
+    }
+  ],
+  "examples": [
+    {"ru": "Я потеря́л ключи́.", "en": "I've lost my keys.", "focus": "потеря́л"},
+    {"ru": "Ты чита́л э́ту кни́гу?", "en": "Have you read this book?", "focus": "чита́л"},
+    {"ru": "Закро́йте, пожа́луйста, дверь.", "en": "Please close the door.", "focus": "Закро́йте"},
+    {"ru": "Проходи́те, сади́тесь!", "en": "Come in, sit down!", "focus": "сади́тесь"},
+    {"ru": "Не забу́дь позвони́ть.", "en": "Don't forget to call.", "focus": "забу́дь"},
+    {"ru": "Не на́до ничего́ покупа́ть.", "en": "There's no need to buy anything.", "focus": "покупа́ть"},
+    {"ru": "Он переста́л кури́ть.", "en": "He's stopped smoking.", "focus": "кури́ть"},
+    {"ru": "Здесь нельзя́ фотографи́ровать.", "en": "Photography isn't allowed here.", "focus": "фотографи́ровать"}
+  ],
+  "related": ["g-aspect-intro", "g-imperatives", "g-future-tense"]
+}
