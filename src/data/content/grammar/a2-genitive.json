@@ -4,7 +4,7 @@
   "title": {"en": "The genitive case: of, without, and nothing", "ru": "Роди́тельный паде́ж"},
   "level": "A2",
   "tags": ["case.gen", "case.gen.possession", "case.gen.negation", "case.gen.prepositions"],
-  "card": "The genitive means ***of***: **кни́га бра́та** (*brother's book*), **стака́н воды́** (*a glass of water*). It also follows **нет** (*there isn't*), most quantities, and many prepositions: **у, из, от, без, для, до, по́сле, о́коло**. Singular endings: **-а/-я** for masculine and neuter, **-ы/-и** for feminine.",
+  "card": "The genitive means *of*: **кни́га бра́та** (*brother's book*), **стака́н воды́** (*a glass of water*). It also follows **нет** (*there isn't*), most quantities, and many prepositions: **у, из, от, без, для, до, по́сле, о́коло**. Singular endings: **-а/-я** for masculine and neuter, **-ы/-и** for feminine.",
   "sections": [
     {
       "kind": "why",
@@ -27,7 +27,7 @@
     {
       "kind": "explanation",
       "title": "The main uses",
-      "body": "- **Possession and *of***: **маши́на отца́** (*father's car*), **центр го́рода** (*the city centre*), **ча́шка ча́я** (*a cup of tea*).\n- **Absence with нет**: **У меня́ нет вре́мени.** **Здесь нет метро́.** In the past and future the verb becomes neuter and impersonal: **не́ было вре́мени**, **не бу́дет вре́мени**.\n- **Quantities**: **мно́го**, **ма́ло**, **ско́лько**, **не́сколько**, and numbers from 2 up (see the numbers article): **мно́го рабо́ты**, **два бра́та**.\n- **Prepositions**: **у** (*by, at someone's*), **из** (*out of*), **от** (*from a person, away from*), **без** (*without*), **для** (*for*), **до** (*until, up to*), **по́сле** (*after*), **о́коло** (*near*), **кро́ме** (*except*).\n- **Having**: **у меня́ есть** (*I have*) literally means *by me there is*: **У бра́та есть маши́на.**"
+      "body": "- **Possession, “of”**: **маши́на отца́** (*father's car*), **центр го́рода** (*the city centre*), **ча́шка ча́я** (*a cup of tea*).\n- **Absence with нет**: **У меня́ нет вре́мени.** **Здесь нет метро́.** In the past and future the verb becomes neuter and impersonal: **не́ было вре́мени**, **не бу́дет вре́мени**.\n- **Quantities**: **мно́го**, **ма́ло**, **ско́лько**, **не́сколько**, and numbers from 2 up (see the numbers article): **мно́го рабо́ты**, **два бра́та**.\n- **Prepositions**: **у** (*by, at someone's*), **из** (*out of*), **от** (*from a person, away from*), **без** (*without*), **для** (*for*), **до** (*until, up to*), **по́сле** (*after*), **о́коло** (*near*), **кро́ме** (*except*).\n- **Having**: **у меня́ есть** (*I have*) literally means *by me there is*: **У бра́та есть маши́на.**"
     },
     {
       "kind": "table",

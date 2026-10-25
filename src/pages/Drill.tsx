@@ -63,7 +63,7 @@ export default function Drill() {
       key={round}
       items={state.items}
       lexemes={state.lexemes}
-      kind={`drill-${kind}`}
+      kind={kind === 'tag' ? `drill-tag-${a}` : `drill-${kind}`}
       onDone={() => nav(-1)}
       onAgain={() => setRound((r) => r + 1)}
     />

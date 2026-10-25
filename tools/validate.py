@@ -60,6 +60,8 @@ ANSWER_KEYS = {"accept"}
 DELIBERATELY_WRONG_KEYS = {"wrong"}
 
 STRIKE = re.compile(r"~~.*?~~", re.S)
+# the tokens src/components/Md.tsx renders; a '*' left over means emphasis it would show literally (nesting)
+MD_TOKEN = re.compile(r"\*\*[^*]+\*\*|\*[^*]+\*|~~[^~]+~~|`[^`]+`|\{\{ru:[^}]+\}\}")
 WORD = re.compile(r"(?<![\ẃ̀-])-?[А-Яа-яЁё́̀]+(?:-[А-Яа-яЁё́̀]+)*-?(?![\ẃ̀])")
 
 ALLOWLIST_PATH = ROOT / "tools" / "allowlist.txt"
@@ -164,6 +166,8 @@ def walk(node, path: str, rep: Report, key: str | None = None):
         for i, v in enumerate(node):
             walk(v, f"{path}[{i}]", rep, key)
     elif isinstance(node, str):
+        if "*" in MD_TOKEN.sub("", node):
+            rep.err(path, "markdown emphasis the renderer can't display (unbalanced or nested * / **)")
         check_text(node, path, rep, answer=key in ANSWER_KEYS)
 
 

@@ -4,7 +4,7 @@
   "title": {"en": "The dative case: to whom, and how it feels", "ru": "Да́тельный паде́ж"},
   "level": "A2",
   "tags": ["case.dat", "case.dat.indirect-object", "case.dat.impersonal", "case.dat.prepositions"],
-  "card": "The dative is the ***to/for*** case: the person something is given, said or shown to: **Я дал бра́ту кни́гу.** It also marks who *experiences* a feeling or state: **Мне хо́лодно** (*I'm cold*), **Мне нра́вится** (*I like*), and follows **к** (*towards*) and **по** (*along, by*). Singular endings: **-у/-ю** (masc./neut.), **-е** (fem. **-а/-я**), **-и** (fem. **-ь**).",
+  "card": "The dative is the *to/for* case: the person something is given, said or shown to: **Я дал бра́ту кни́гу.** It also marks who *experiences* a feeling or state: **Мне хо́лодно** (*I'm cold*), **Мне нра́вится** (*I like*), and follows **к** (*towards*) and **по** (*along, by*). Singular endings: **-у/-ю** (masc./neut.), **-е** (fem. **-а/-я**), **-и** (fem. **-ь**).",
   "sections": [
     {
       "kind": "why",
@@ -42,7 +42,7 @@
     },
     {
       "kind": "memory-trick",
-      "body": "Picture a hand reaching out to receive: whoever's hand it is, that word goes in the dative. *Give **him** the book*, *tell **Mum**, it's cold **to me***: all hands."
+      "body": "Picture a hand reaching out to receive: whoever's hand it is, that word goes in the dative. *give him the book*, *tell Mum*, *it's cold to me*: all hands."
     },
     {
       "kind": "common-mistakes",

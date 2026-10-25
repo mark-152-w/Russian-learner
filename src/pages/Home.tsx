@@ -1,4 +1,8 @@
+import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
+import { getKV, setKV } from '../db/db'
+import { FEATURES } from '../features'
+import { loadPlan, loadVocabulary, type PlanStep, type Vocabulary } from '../lib/plan'
 import { useSettings } from '../db/settings'
 import { useNow, useProfile, useQuests, useStats, useToday } from '../hooks/live'
 import { isHappyHour, nextGoal } from '../rewards/goals'
@@ -8,6 +12,72 @@ import { activeBoost } from '../rewards/service'
 import { dayKey, streakStatus } from '../rewards/streak'
 import { Ru } from '../components/Md'
 import { Bar, Card, CountUp, Icon } from '../components/ui'
+
+const STEP_ICON = { review: 'cards', course: 'path', weak: 'table', fun: 'bolt' } as const
+
+/** Today's plan: a short checklist that ticks itself off as sessions finish. */
+function DailyPlan() {
+  const [steps, setSteps] = useState<PlanStep[] | null>(null)
+  useEffect(() => void loadPlan(Date.now(), FEATURES).then(setSteps), [])
+  if (!steps?.length) return null
+  const done = steps.filter((s) => s.done).length
+  return (
+    <Card>
+      <div className="flex items-baseline justify-between">
+        <h2 className="font-serif text-xl">Today's plan</h2>
+        <span className="text-sm text-ink-soft">
+          {done} / {steps.length}
+        </span>
+      </div>
+      <ol className="mt-2 space-y-1">
+        {steps.map((s) => (
+          <li key={s.id}>
+            <Link to={s.to} className="flex items-center gap-3 rounded-lg px-2 py-2 hover:bg-paper">
+              <span className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-full ${s.done ? 'bg-good text-paper' : 'bg-paper text-red'}`}>
+                <Icon name={s.done ? 'check' : STEP_ICON[s.id]} className="h-5 w-5" />
+              </span>
+              <span className="min-w-0 flex-1">
+                <span className={`block font-bold ${s.done ? 'text-ink-soft line-through' : ''}`}>{s.title}</span>
+                <span className="block text-sm text-ink-soft">{s.detail}</span>
+              </span>
+            </Link>
+          </li>
+        ))}
+      </ol>
+    </Card>
+  )
+}
+
+/** "You know N words ≈ X% of everyday Russian", with a highlight the first time a milestone shows. */
+function VocabularyCard() {
+  const [v, setV] = useState<Vocabulary | null>(null)
+  const [fresh, setFresh] = useState(false)
+  useEffect(() => {
+    void loadVocabulary().then(async (x) => {
+      setV(x)
+      const seen = await getKV<number>('milestone:seen', 0)
+      if (x.milestone > seen) {
+        setFresh(seen > 0)
+        await setKV('milestone:seen', x.milestone)
+      }
+    })
+  }, [])
+  if (!v) return null
+  return (
+    <Card className={fresh ? 'anim-pop border-gold' : ''}>
+      {fresh && <p className="text-sm font-bold text-gold">New milestone: {v.milestone.toLocaleString('en')} words!</p>}
+      <p>
+        You know about <b>{v.known.toLocaleString('en')}</b> words: enough to recognise roughly{' '}
+        <b className="text-red">{Math.round(v.coverage * 100)}%</b> of the words in everyday spoken Russian.
+      </p>
+      {v.nextMilestone && <Bar value={v.known / v.nextMilestone} className="mt-2" color="bg-gold" />}
+      <p className="mt-1 text-xs text-ink-soft">
+        Counts the {v.credited.toLocaleString('en')} most frequent words (assumed known) plus every word whose card has matured in
+        review.{v.nextMilestone ? ` Next milestone: ${v.nextMilestone.toLocaleString('en')}.` : ''}
+      </p>
+    </Card>
+  )
+}
 
 const mmss = (ms: number) => `${Math.floor(ms / 60000)}:${String(Math.floor((ms % 60000) / 1000)).padStart(2, '0')}`
 
@@ -95,6 +165,8 @@ export default function Home() {
         </Card>
       </div>
 
+      <DailyPlan />
+
       <div className="grid gap-3 sm:grid-cols-2">
         <Link to="/practice/full" className="flex items-center gap-3 rounded-xl bg-red px-5 py-4 text-paper shadow-md transition hover:brightness-110 active:scale-[0.99]">
           <Icon name="play" filled className="h-8 w-8" />
@@ -111,6 +183,8 @@ export default function Home() {
           </span>
         </Link>
       </div>
+
+      {FEATURES.has('vocab') && <VocabularyCard />}
 
       <Card className="space-y-3">
         <h2 className="font-serif text-xl">Today's quests</h2>

@@ -10,11 +10,14 @@ tools/                 Python build pipeline (run from repo root)
   sources.json         pinned source datasets (commit hashes, licences)
   fetch_sources.sh     downloads sources into tools/raw/ (gitignored)
   ingest.py            raw CSV/TXT → src/data/lexicon/*, stats/coverage.json, meta.json, tools/reports/*
+  sentences.py         Tatoeba → src/data/sentences/{A1..C1}.json (only fully resolved, unambiguously stressed)
+  closed_class.json    stressed pronouns, numerals, names, preposition variants (во, со, обо) for sentences + validate
   morph.py             pymorphy3 verification shared by ingest + validate (slot → grammemes)
   rulib.py             stress/ё helpers (mirror: src/lib/ru.ts)
   validate.py          schema + Russian-text + reference + lexicon checks; exit 1 on errors
   overrides.json       hand corrections to the dictionary (re-verified by validate.py)
-  allowlist.txt        (optional) words pymorphy3 doesn't know but are fine (names etc.)
+  allowlist.txt        words pymorphy3 doesn't know but are fine (names etc.); a stressed entry (Толсто́го) also
+                       teaches validate's dictionary-stress check that spelling
   reports/             generated review reports (ingest_summary.md is the overview)
   tests/               python unittest suite
 schemas/               JSON Schemas for every data file (source of truth for TS types)
@@ -23,18 +26,27 @@ src/data/              generated + hand-written data
   lexicon/{A1..C2}.json  ranked words by level (precached core); X1..Xn.json rare tail (optional download)
   lexicon/index-{core,ext}.json  [id, lemma, pos, rank, chunk, gloss] rows for search
   lexicon/slots.json   slot order for the positional `forms` arrays
+  sentences/{A1..C1}.json  {id:"s:<tatoeba>", ru, en[], lv, r, w:[[start,end,"lex|slot"],…]} (B2/C1 runtime-cached)
   errors.json          error taxonomy (grader diagnostics)
   tags.json            grammar tag vocabulary
   content/{grammar,units,exercises,stories,adventure,cards,idioms}/*.json  hand-written content
-src/lib/               ru.ts (stress helpers), lexicon.ts (lazy chunks, decodeCell), rng.ts (seeded), ics.ts
+src/lib/               ru.ts (stress helpers), lexicon.ts (lazy chunks, decodeCell, loadIndex, poolUpTo), rng.ts,
+                       ics.ts, sentences.ts (load/examplesFor), content.ts (hand-written JSON via import.meta.glob),
+                       drillContext.ts (lexicon + sentences + hand-written for generators), course.ts (unit progress,
+                       lesson/checkpoint items), learner.ts (placement result, learner level), coverage.ts
+                       ("N words ≈ X%"), plan.ts (Home daily plan, weakest tag, vocabulary milestones)
 src/engine/            normalize.ts, translit.ts, slots.ts (slot → labels/tags), diagnose.ts (paradigm + spelling
-                       rules → error type), grader.ts (all 11 item types), generators.ts (drills from the lexicon)
+                       rules → error type), grader.ts (all 11 item types), generators.ts (drills from the lexicon),
+                       sentenceGen.ts (case/verb cloze, find-error, tiles, declension patterns from sentences),
+                       drills.ts (generator registry used by unit JSON; itemsForTag), placement.ts (staircases)
 src/srs/fsrs.ts        ts-fsrs wrapper; cards stored with epoch-ms dates; ratingFor(verdict, ms)
+src/srs/deck.ts        vocabulary deck: card directions, form cards from missed forms, new-word queue, due items
 src/db/                Dexie schema (db.ts), settings, backup (export/import/reset)
 src/rewards/           pure: xp, levels, chest, streak, quests, achievements, goals; service.ts persists them
 src/audio/             sound.ts (Web Audio synth), haptics.ts, tts.ts (speechSynthesis)
 src/components/        ui.tsx, Md.tsx (markdown-lite + Ru), juice.tsx, exercises.tsx, SessionRunner, SessionSummary
-src/pages/             Home, Practice, Trophies, Settings, Attributions
+src/pages/             Home, Practice, Review, Course (course/unit/lesson), Placement, Grammar, Lab, Word, Drill
+                       (/drill/{word,pattern,cell,tag}/…), Trophies, Settings, Attributions
 src/features.ts        features that exist; quests/achievements for anything else stay hidden
 ```
 
@@ -49,7 +61,8 @@ src/features.ts        features that exist; quests/achievements for anything els
 
 ## Commands
 
-- `npm run data:fetch && npm run data:ingest`: rebuild the lexicon (about 80 s). Output is deterministic.
+- `npm run data:fetch && npm run data:ingest`: rebuild the lexicon and sentences (a few minutes). Output is
+  deterministic. `npm run data:sentences` redoes only the sentences.
 - `npm run data:validate`: must pass before a phase is done (`--full` re-checks the rare tail too, slower).
 - `npm run check`: python tests + validate + typecheck + vitest.
 - `npm run dev` / `npm run build` (`BASE=/` for root hosting; default base is `/Russian-learner/`).
@@ -79,6 +92,14 @@ src/features.ts        features that exist; quests/achievements for anything els
 - Inline Russian in markdown can be wrapped `{{ru:сло́во}}` to make it tappable/playable in the UI.
 - Story tokens need `lemma` + `g` (grammemes); validate checks them against pymorphy3.
 - Mark uncertain hand-written Russian with `"review": true`; validate writes `tools/reports/review.tsv`.
+- Polysyllabic words are checked against the dictionary's stress (lexicon + closed_class + stressed allowlist):
+  руку́ is an error. Homographs pass with either stress, so check це́ны/цены́-type words yourself.
+- Markdown is only `**bold**`, `*italic*`, `~~wrong~~`, `` `code` ``, `{{ru:…}}` and `- ` bullets; nesting
+  (`*give **him***`) can't render and is a validate error.
+- Unit drills are data: `{generator, params, count}` from the registry in `src/engine/drills.ts`, or `items`
+  ids of hand-written exercises. `src/engine/units.test.ts` checks every unit yields gradable items.
+- Session `kind` strings matter: the daily plan ticks steps off by kind (`review`, `lesson`, `checkpoint`,
+  `drill-tag-<tag>`).
 
 ## Gotchas
 

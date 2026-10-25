@@ -5,26 +5,128 @@
 | Phase | State |
 |---|---|
 | 0: scaffold, ingestion, validation, schemas | Done |
-| 1: shell, storage, PWA, engine, grader, FSRS, rewards | **Done** |
-| 2: grammar A2–B1, A2 units, placement, daily plan, vocab SRS, declension lab | Next (needs your go-ahead on the writing budget, below) |
+| 1: shell, storage, PWA, engine, grader, FSRS, rewards | Done |
+| 2: grammar A2–B1, A2 units, placement, daily plan, vocab SRS, declension lab | **Done** |
+| 3: specialist trainers (cases, aspect, motion, stress, numerals) | Next (estimate at the end) |
 
 `npm run check` passes:
 
-- 21 Python tool tests;
-- `validate.py`: 0 errors and 0 warnings, now also scanning UI source strings;
+- 25 Python tool tests;
+- `validate.py`: 0 errors, 2 warnings (сёк in two C1 sentences: a real form pymorphy3 doesn't know);
 - typecheck;
-- 76 Vitest tests covering the grader, diagnosis, normalisation, transliteration, generators, FSRS, XP, chests,
-  streaks, quests, achievements, the rewards service, and backup round-trips.
+- 105 Vitest tests. New in Phase 2: sentence cloze and generators, every unit producing gradable items,
+  placement staircase and item bank, the vocabulary deck, and the daily plan.
 
-`npm run build` produces a PWA with 42 precached files.
+`npm run build`: the precache is 123 files, 11.3 MB raw (about 2.9 MB gzipped). That covers the app, the A1–C2
+lexicon and the A1–B1 example sentences. The rare-word tail, its search index and the B2/C1 sentences are cached
+the first time they're used.
 
-I tested Phase 1 end to end in headless Chromium:
+I ran an end-to-end check in headless Chromium with no console errors. It covered:
 
-- a full session through the UI, ending in the chest and the summary;
-- Home, Trophies and Settings;
-- **offline**: the app reloads and a practice session generates and runs with the network off;
-- dark mode;
-- no console errors.
+- Home with the daily plan;
+- the whole placement test through to the result;
+- the course, a unit and a lesson;
+- the grammar index and an article;
+- the stress sprint;
+- the Lab, word pages and Review (checked earlier in the phase).
+
+## Phase 2: what's built
+
+**Example sentences** (`tools/sentences.py`). From Tatoeba's 536k Russian–English pairs, I kept **32,430**
+sentences:
+
+| Level | Sentences |
+|---|---|
+| A1 | 2,594 |
+| A2 | 4,218 |
+| B1 | 6,736 |
+| B2 | 9,633 |
+| C1 | 9,249 |
+
+A sentence is kept only when:
+
+- every word resolves to a verified lexicon form, or to a closed-class word in `tools/closed_class.json`
+  (pronouns, numerals, names, preposition variants such as во/со/обо);
+- the stress is unambiguous in context.
+
+Each word stores its lexeme and slot, so stress is added from the dictionary and cloze gaps know exactly what
+they test. Stress marks already in the source text are stripped, which fixed doubled marks like му́ка́. A
+sentence's level is the rank of its rarest word. Each lexeme is capped at 6 examples so common words don't
+crowd out the rest. Every sentence links back to Tatoeba (CC BY 2.0 FR).
+
+**Generators from real sentences** (`src/engine/sentenceGen.ts`, `drills.ts`):
+
+- **Case cloze** with the governing word in bold and a "why this case?" reason: «**в** + prepositional: location»,
+  «**нет** + genitive», «after **два/три/четы́ре**: genitive singular».
+- **Verb cloze.**
+- **Find the error:** a real form planted in the wrong case, same number.
+- **Word tiles.**
+- **Declension-pattern drills.**
+
+A drill registry (`case-cloze`, `verb-cloze`, `forms`, `pattern`, `vocab`, `stress`, `match`, `find-error`,
+`tiles`) lets units declare drills as data. `itemsForTag()` builds a focused drill for any grammar tag.
+
+**Vocabulary SRS** (`/review`, `src/srs/deck.ts`):
+
+- Each word gets cards in several directions: ru→en, en→ru, audio (when a Russian voice exists) and sentence
+  cloze, staggered over a few days.
+- A form you miss in any session becomes its own **form card** (e.g. «рука́ → accusative singular»).
+- There's a daily new-word limit (setting) and a queue fed by unit word lists.
+- Words more frequent than your known rank are skipped.
+- Function words (prepositions, conjunctions, particles) aren't made into cards; they're learned through the
+  grammar.
+
+**Declension and conjugation lab** (`/lab`, `/word/:id`):
+
+- Search by lemma, English, or **any inflected form** (книгами → кни́га).
+- Full stressed tables with highlighted endings, filter chips (case, number, tense) and rare/unverified marks.
+- Word pages show:
+  - Tatoeba examples;
+  - your deck state and history;
+  - "Drill this word" and "Drill this pattern" buttons (e.g. all feminine -а nouns in the instrumental plural).
+- A case × number × gender accuracy heatmap where each cell launches a drill.
+- Settings → "Download the full dictionary" caches the rare tail for offline lookup.
+
+**Grammar reference** (`/grammar`): 30 articles, 20 at A2 and 10 at B1, plus a case cheat sheet. Each has:
+
+- a summary card;
+- why it works this way;
+- how it differs from English;
+- tables, some generated live from the lexicon so they're never wrong;
+- spelling rules and memory tricks;
+- common mistakes, each with its error type;
+- 5–10 stressed examples;
+- related articles.
+
+**A2 course** (`/course`): 20 units of 286 hand-picked words, each with:
+
+- grammar cards;
+- a lesson that interleaves its drills, with 92 hand-written items for the nuances generators can't capture
+  (aspect choices, case subtleties);
+- a 15-item checkpoint. 80% completes the unit, and the "units" achievements track it.
+
+Units below your placed level offer **test-out**.
+
+**Placement test** (`/placement`, linked from the course page and Settings):
+
+- About 25 questions in five interleaved staircases: case endings, verb forms, aspect, vocabulary and reading.
+- Each staircase starts at A2: a right answer moves it up a level, a wrong one moves it down.
+- A skill's level is the highest level where you got at least as many right as wrong.
+- Your overall level is the median of the five.
+- The result sets test-out on the course page and the known-word rank (150 / 600 / 1,500 / 3,000 for vocabulary
+  A1–B2).
+
+**Daily plan** (Home), a checklist that ticks itself off as sessions finish:
+
+1. Due reviews, or new words when nothing is due.
+2. The next course step (the lesson, then its checkpoint).
+3. **Your weakest grammar topic** from the learner model. It has to have 6+ attempts and be under 75%; it then
+   links to a focused drill of exactly that topic.
+4. A stress sprint as the light item.
+
+Home also shows **"You know about N words: enough to recognise roughly X% of the words in everyday spoken
+Russian"**. It's computed honestly from the subtitle frequency curve and highlights each milestone (100, 250,
+500, 1,000…) once.
 
 ## Phase 1: what's built
 
@@ -118,68 +220,82 @@ Russian–English pairs with per-sentence attribution. I'll ingest it at the sta
 
 ## Decisions and trade-offs
 
-- **No placement test yet.** Until it exists (Phase 2), practice draws from the A1+A2 bands.
-- **Validator now covers UI code.** Hand-written Russian in UI code (achievement titles, rank names, skins) goes
-  through the same stress and ё checks as content. Exemptions:
-  - letter sets marked `// ru-ignore`;
-  - ALL-CAPS abbreviations;
-  - words that inherit stress from a stressed preposition or particle (не́ было, на́ пол).
-- **Chest odds depend on quality only.** Long sessions don't buy better chests; a minimum of 8 answers prevents
-  micro-session farming.
-- **Streaks.** A session of 5+ answers counts for the day. Freezes are spent automatically.
-- **Quest rewards.** Each quest pays XP. I dropped the idea of a second "all three quests" chest to keep
-  rewards from stacking interruptions.
-- **"New cards per day" is hidden** until the vocabulary deck exists (Phase 2), per the "no stubs" rule. The
-  same goes for the "download full dictionary" option, which needs the lab.
-- **Ghost races, collectible cards and the town** are Phase 5 (games). The reward system has hooks for them:
-  personal bests table, feature flags, gated achievements.
+**Phase 2**
+
+- **Descriptive declension labels.** Patterns are named by their endings ("feminine -а/-я nouns", "masculine
+  hard-stem nouns") rather than by school numbering (1st/2nd/3rd declension). Russian and Western textbooks
+  number them differently, and the descriptive names say what you need to know.
+- **Sentence selection: correctness over quantity.** About 6% of Tatoeba survives the filter. Dropping a
+  sentence costs little; a wrong stress mark taught as correct costs a lot.
+- **Names are linked only to proper-noun lexemes.** Earlier, Том was linked to том "volume".
+- **Grammar articles came out shorter than estimated.** They total about 14k words of prose against the 35–50k I
+  estimated. I wrote them to be concise: one idea per section, tables instead of paragraphs. Every article
+  still has all the sections from the brief, and the generated tables carry much of the load. If you'd like
+  longer "why" sections, that's an easy follow-up.
+- **The placement test favours quick choices over typing.** The goal is a level, not a grade. It gives no XP
+  and doesn't touch the learner model.
+- **Known-word credit.** The most frequent words (150 by default, or more after placement) aren't introduced
+  as cards and count towards the "you know N words" figure. Without this, an A2 learner would be shown
+  я / не / ты as new words.
+- **The rare-word search index isn't precached.** It's 2.7 MB and is only needed after "download the full
+  dictionary".
+- **The validator now also catches** wrong stress compared with the dictionary (руку́, сто́ле), compounds
+  (Ба́ба-Яга́), clitic groups (не́ было) and markdown emphasis the renderer can't display. It can't tell
+  homographs apart (це́ны "prices" vs цены́ is fine either way), so I checked those by hand.
+
+**Phase 1** (unchanged):
+
+- Chest odds depend on quality only, with a minimum of 8 answers.
+- A session of 5+ answers counts for the streak.
+- Quests pay XP rather than a second chest.
+- Ghost races, collectible cards and the town are Phase 5.
 
 ## Known issues
 
 - The Phase 0 known issues still stand (morph disagreements report, 9 suspect top-5000 words, unverified short
   adjectives).
-- Speech recognition isn't wired up yet (Phase 4).
-- Headless Chromium has no Russian voices, so audio exercises were checked by unit tests and manual logic only.
-  Please try "Test the voice" in Settings on your phone.
+- Headless Chromium has no Russian voices, so audio cards and listen items were verified by tests only. Please
+  try a review session on your phone.
+- Tatoeba translations are community-written; a few English glosses are loose. Each sentence links to its
+  source page.
+- The placement test's aspect skill draws from 8 hand-written items plus the units' aspect items, so retaking
+  it soon repeats questions. The Phase 3 aspect trainer will add more.
 
 ## Content counts
 
 | Content | Count |
 |---|---|
 | Lexemes | 43,174 (12,283 ranked A1–C2) |
-| Example sentence pairs available (Tatoeba, not yet ingested) | 536,124 |
+| Example sentences (verified, stressed, analysed) | 32,430 |
+| Grammar articles | 30 (20 A2, 10 B1), about 14k words |
+| Course units | 20 (A2), 286 unit words |
+| Hand-written exercise items | 92 (84 in units, 8 placement) |
 | Error types | 47 |
 | Grammar tags | 71 |
-| Achievements | 66 (51 active, 11 hidden) |
-| Quests | 14 daily, 4 weekly templates (2 daily feature-gated) |
+| Achievements | 66 (57 active, 11 hidden) |
+| Quests | 14 daily, 4 weekly templates |
 | Themes | 6 |
-| Hand-written grammar, units, stories, exercises | 0 (Phase 2+) |
 
 ## Review queue (`"review": true`)
 
-None. All Russian written so far (achievement and rank names, UI strings, 19 dictionary overrides) passes
-`validate.py`, and I'm confident in it.
+None. All the hand-written Russian passes `validate.py`, including the dictionary-stress check, and I
+re-checked the homographs by hand. Corrections I made along the way, for the record:
 
-## Next: Phase 2, and the spend estimate you asked for
+- письмо́, де́ньги, о́тдал, приезжа́й, це́ны;
+- по́ездом instead of на по́езде in a "how did you get here" example.
 
-**Code** (moderate):
+If anything reads oddly to you, tell me the unit or article and I'll fix it.
 
-- Tatoeba sentence ingestion: keep sentences whose words are all verified lexicon forms; add stress from the
-  lexicon; drop sentences where stress is ambiguous; store a per-token analysis verified by pymorphy3.
-- Cloze generator from real sentences.
-- Vocabulary SRS deck and word pages.
-- Declension lab and heatmap.
-- Placement test engine.
-- Daily plan.
+## Next: Phase 3, specialist trainers (estimate)
 
-**Writing**, the first big batch:
+Mostly code. The writing is small because most items come from the sentence bank.
 
-| Content | Size | Output tokens (approx.) |
+| Piece | Work | Output tokens (approx.) |
 |---|---|---|
-| ~28 A2–B1 grammar articles (why, vs English, tables, spelling rules, memory tricks, common mistakes, 5–10 stressed examples each), plus the case cheat sheet | 1,200–1,800 words each | 70–90k |
-| ~20 A2 unit definitions (vocab sets, drill specs, boss names) | mostly data | about 8k |
-| About 10 hand-written subtle items per unit (aspect and case nuances generators can't capture) | about 200 items | about 15k |
-| About 60 placement-test items, beyond the generated ones | | about 8k |
+| Cases trainer: preposition→case sorting game, governing-word highlight (exists), "why" for every item | code | about 8k |
+| Numerals trainer: 2/3/4 + gen sg, 5+ gen pl, declined numerals, prices and times; all generated | code | about 6k |
+| Aspect trainer: ~80 hand-written contextual pairs with one-line reasons, plus negation and imperatives; process vs result timeline graphic | writing + code | about 15k |
+| Verbs of motion: uni/multi-directional, on foot/by vehicle; 13 prefixes, each with an animated SVG direction diagram; ~60 items, figurative uses at B2 | writing + code | about 15k |
+| Stress trainer: shifting patterns, feminine past (жила́), minimal pairs (за́мок / замо́к); generated, plus a ~30-pair list | code + small list | about 5k |
 
-**Total: roughly 100–120k output tokens of writing**, plus code. If that's more than you want, I can halve the
-article length (shorter "why" and "vs English" sections) or write A2 articles now and the B1 ones in Phase 6.
+**Total: roughly 50k output tokens**, about half of Phase 2's budget.

@@ -142,13 +142,16 @@ export async function recordReview(cardIdValue: string, v: Pick<Verdict, 'correc
   return next
 }
 
-export async function countKnownWords(): Promise<number> {
+/** Words with a mature vocabulary card. */
+export async function knownLexemes(): Promise<Set<string>> {
   const lexes = new Set<string>()
   await db.srs.each((c) => {
     if (c.kind === 'vocab' && isKnown(c)) lexes.add(c.lex)
   })
-  return lexes.size
+  return lexes
 }
+
+export const countKnownWords = async () => (await knownLexemes()).size
 
 export async function retrievabilityOf(cardIdValue: string, now: number): Promise<number | null> {
   const c = await db.srs.get(cardIdValue)

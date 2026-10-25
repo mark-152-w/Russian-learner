@@ -7,7 +7,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 from morph import confirms, verify  # noqa: E402
 from rulib import fold, from_dataset, missing_stress_parts, put_stress, stress_index, transfer_stress  # noqa: E402
-from validate import Report, check_text, check_token  # noqa: E402
+from validate import Report, check_text, check_token, walk  # noqa: E402
 
 
 def errors(text, answer=False):
@@ -133,6 +133,20 @@ class DictionaryStressTest(unittest.TestCase):
     def test_either_stress_of_a_homograph_is_fine(self):
         self.assertEqual(errors("ру́ки")[0], [])
         self.assertEqual(errors("руки́")[0], [])
+
+
+class MarkdownTest(unittest.TestCase):
+    def md_errors(self, text):
+        rep = Report()
+        walk({"body": text}, "t", rep)
+        return [e for e in rep.errors if "markdown" in e]
+
+    def test_plain_emphasis_ok(self):
+        self.assertEqual(self.md_errors("*of*: **кни́га** and ~~кни́гу~~"), [])
+
+    def test_nested_emphasis_caught(self):
+        self.assertTrue(self.md_errors("*tell **Mum**, it's cold **to me***"))
+        self.assertTrue(self.md_errors("the ***of*** case"))
 
 
 if __name__ == "__main__":
