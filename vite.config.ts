@@ -32,14 +32,14 @@ export default defineConfig({
         ],
       },
       workbox: {
-        // Precache the app and the core lexicon (A1–C2); the rare-word tail (X*) is cached on first use.
+        // Precache the app, core lexicon (A1–C2) and A1–B1 sentences; the rare-word tail and B2/C1 sentences are cached on first use.
         globPatterns: ['**/*.{js,css,html,svg,png,woff2}'],
-        globIgnores: ['**/lex/X*'],
+        globIgnores: ['**/lex/X*', '**/sent/B2*', '**/sent/C1*'],
         maximumFileSizeToCacheInBytes: 6 * 1024 * 1024,
         navigateFallback: 'index.html',
         runtimeCaching: [
           {
-            urlPattern: /\/assets\/lex\/X.*\.js$/,
+            urlPattern: /\/assets\/(lex\/X|sent\/(B2|C1)).*\.js$/,
             handler: 'CacheFirst',
             options: { cacheName: 'lexicon-ext', expiration: { maxEntries: 20 } },
           },
@@ -52,7 +52,12 @@ export default defineConfig({
     rollupOptions: {
       output: {
         // keep lexicon chunks recognisable so the service worker can treat them separately
-        chunkFileNames: (chunk) => (/^[ABCX]\d$/.test(chunk.name) ? 'assets/lex/[name]-[hash].js' : 'assets/[name]-[hash].js'),
+        chunkFileNames: (chunk) =>
+          chunk.facadeModuleId?.includes('/data/sentences/')
+            ? 'assets/sent/[name]-[hash].js'
+            : /^[ABCX]\d$/.test(chunk.name)
+              ? 'assets/lex/[name]-[hash].js'
+              : 'assets/[name]-[hash].js',
       },
     },
   },

@@ -92,6 +92,8 @@ def verify(form: str, lemma: str, pos: str, slot: str):
             continue
         if check_lemma and p.tag.POS not in ("PRTF", "PRTS") and fold(p.normal_form) != lf:
             continue
+        if "ё" in bare and "ё" not in p.word:
+            continue  # a dataset ё the dictionary spells with е (контролём) is an error, not a variant
         if any(a <= p.tag.grammemes for a in alts):
             return "ok", p.word
     if pos == "noun" and slot == "sg_gen":

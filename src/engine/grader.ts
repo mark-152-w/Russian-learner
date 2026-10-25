@@ -30,7 +30,7 @@ export interface Verdict {
   /** Markdown-lite diagnostic. */
   message?: string
   /** Accepted, but worth a remark. */
-  note?: 'typo' | 'yo'
+  note?: 'typo' | 'yo' | 'order'
   noteText?: string
   diff?: DiffToken[]
   /** choice-reason: the one-line reason, shown either way. */
@@ -199,8 +199,10 @@ function gradeTiles(item: ExerciseItem, tiles: string[]): Verdict {
   const hit = accepts.find((a) => normalizeAnswer(a) === resp)
   if (hit) return { correct: true, expected: hit, given: sentence }
   const sorted = (s: string) => normalizeAnswer(s).split(' ').sort().join(' ')
-  if (accepts.some((a) => sorted(a) === sorted(sentence))) {
-    return wrong(item, sentence, 'word-order.unnatural', 'All the right words, but not in a natural order.')
+  const sameWords = accepts.find((a) => sorted(a) === sorted(sentence))
+  if (sameWords) {
+    // Russian word order is flexible: the right words in another order count, with the original shown.
+    return { correct: true, expected: sameWords, given: sentence, note: 'order', noteText: `Word order is flexible in Russian. The original: **${sameWords}**` }
   }
   for (const t of tiles) {
     const d = item.distractors?.find((x) => normalizeAnswer(x.ru) === normalizeAnswer(t))
@@ -231,6 +233,12 @@ function gradeFindError(item: ExerciseItem, index: number): Verdict {
 }
 
 export function grade(item: ExerciseItem, response: Response, ctx?: GradeContext): Verdict {
+  const v = gradeAny(item, response, ctx)
+  if (item.reason && !v.reason) v.reason = item.reason
+  return v
+}
+
+function gradeAny(item: ExerciseItem, response: Response, ctx?: GradeContext): Verdict {
   switch (response.kind) {
     case 'text':
       return item.type === 'dictation' ? gradeDictation(item, response.text) : gradeText(item, response.text, ctx)

@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "description": "«Медведь»: an offline Russian course from A2 to C1",
+  "description": "\u00ab\u041c\u0435\u0434\u0432\u0435\u0434\u044c\u00bb: an offline Russian course from A2 to C1",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
@@ -12,10 +12,11 @@
     "typecheck": "tsc -b",
     "gen:types": "node scripts/gen-types.mjs",
     "data:fetch": "bash tools/fetch_sources.sh",
-    "data:ingest": "python3 tools/ingest.py",
+    "data:ingest": "python3 tools/ingest.py && python3 tools/sentences.py",
     "data:validate": "python3 tools/validate.py",
     "data:test": "python3 -m unittest discover -s tools/tests",
-    "check": "npm run data:test && npm run data:validate && npm run typecheck && npm test"
+    "check": "npm run data:test && npm run data:validate && npm run typecheck && npm test",
+    "data:sentences": "python3 tools/sentences.py"
   },
   "dependencies": {
     "@fontsource/pt-sans": "^5.3.0",

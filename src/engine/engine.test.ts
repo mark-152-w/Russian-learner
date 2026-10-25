@@ -166,7 +166,9 @@ describe('grader: other item types', () => {
     }
     expect(grade(it, { kind: 'tiles', tiles: ['Я', 'живу́', 'в', 'Москве́'] }).correct).toBe(true)
     expect(grade(it, { kind: 'tiles', tiles: ['Я', 'живу́', 'в', 'Москву́'] }).errorType).toBe('case.acc-for-prep')
-    expect(grade(it, { kind: 'tiles', tiles: ['живу́', 'Я', 'Москве́', 'в'] }).errorType).toBe('word-order.unnatural')
+    const reordered = grade(it, { kind: 'tiles', tiles: ['В', 'Москве́', 'я', 'живу́'] })
+    expect(reordered.correct).toBe(true)
+    expect(reordered.noteText).toContain('Word order is flexible')
   })
   it('find-error, match and self-graded', () => {
     const fe: ExerciseItem = { id: 'x:5', type: 'find-error', level: 'A2', tags: ['case.prep.location'], prompt: { ru: 'Я живу́ в Москву́' }, errorIndex: 3, accept: ['Я живу́ в Москве́'], distractors: [{ ru: 'Москву́', error: 'case.acc-for-prep' }] }

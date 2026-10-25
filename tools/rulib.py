@@ -59,13 +59,21 @@ def missing_stress_parts(word: str) -> list[str]:
     """Parts of a (possibly hyphenated) word that need a stress mark but lack one."""
     if word.lower() in UNSTRESSED_OK:
         return []
-    out = []
-    for i, part in enumerate(word.split("-")):
-        if i > 0 and part.lower() in ENCLITICS:
-            continue
-        if needs_stress(part):
-            out.append(part)
-    return out
+    parts = [p for i, p in enumerate(word.split("-")) if not (i > 0 and p.lower() in ENCLITICS)]
+    if len(parts) > 1:
+        # compounds (кое-что́, ко́ка-ко́ла, се́веро-за́пад): one stressed part is enough
+        if any(has_stress(p) for p in parts) or all(syllables(p) <= 1 for p in parts):
+            return []
+        return [p for p in parts if syllables(p) > 1]
+    return [p for p in parts if needs_stress(p)]
+
+
+def marks_ok(word: str) -> bool:
+    """Stress marks only after vowels, at most one primary stress per hyphen part, never on ё."""
+    for part in word.split("-"):
+        if part.count(ACUTE) > 1 or (ACUTE in part and ("ё" in part or "Ё" in part)):
+            return False
+    return all(i > 0 and word[i - 1] in VOWELS for i, ch in enumerate(word) if ch in (ACUTE, GRAVE))
 
 
 def transfer_stress(src: str, dst: str) -> str | None:

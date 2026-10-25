@@ -54,7 +54,7 @@ export const ACHIEVEMENTS: AchievementDef[] = [
   def('chest-10', 'Кладоиска́тель', 'Treasure hunter', 'Open 10 chests.', 'chests', 10),
   def('chest-epic', 'Эпи́ческая нахо́дка', 'Epic find', 'Open an epic chest.', 'chest_epic', 1),
   def('chest-legendary', 'Легенда́рный клад', 'Legendary hoard', 'Open a legendary chest.', 'chest_legendary', 1, { hidden: true, xp: 150 }),
-  def('skins-3', 'Модни́к', 'Dandy', 'Own 3 themes.', 'skins', 3),
+  def('skins-3', 'Франт', 'Dandy', 'Own 3 themes.', 'skins', 3),
   def('happy-hour', 'Счастли́вый час', 'Happy hour', 'Finish a session during a Счастли́вый час.', 'happyHourSessions', 1),
   def('night-owl', 'Сова́', 'Night owl', 'Finish a session between 23:00 and 04:00.', 'nightSessions', 1, { hidden: true }),
   def('early-bird', 'Жа́воронок', 'Early bird', 'Finish a session between 05:00 and 07:00.', 'earlySessions', 1, { hidden: true }),

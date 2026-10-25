@@ -124,6 +124,7 @@ rank	id	slot	form	pymorphy	note
 1339	a:сукин	m_acc	сукиного	ok	unstressed
 1339	a:сукин	n_gen	сукиного	ok	unstressed
 1375	a:зелёный	sup	зелене́йший	unknown	
+1386	a:крупный	short_pl	кру́пны́	ok	
 1480	a:таковой	f_ins	таково́ю	unknown	
 1481	a:домашний	short_m	дома́шен	unknown	
 1488	a:малый	short_m	мал	mismatch	
@@ -150,6 +151,7 @@ rank	id	slot	form	pymorphy	note
 1562	n:мясо	pl_ins	мя́сами	unknown	
 1562	n:мясо	pl_prep	мя́сах	unknown	
 1593	n:дружище	pl_nom	дружи́ща	mismatch	
+1599	a:узкий	short_pl	у́зки́	ok	
 1599	a:узкий	sup	узча́йший	unknown	
 1605	a:мелкий	comp	мельче	ok	unstressed
 1605	a:мелкий	sup	мелчайший	unknown	unstressed
@@ -199,6 +201,7 @@ rank	id	slot	form	pymorphy	note
 1972	n:добро	pl_acc	добра́	mismatch	
 1972	n:добро	pl_ins	добра́ми	unknown	
 1972	n:добро	pl_prep	добра́х	unknown	
+2040	v:выдать	pst_n	вы́дало́	ok	
 2045	a:мировой	short_pl	мировы́	unknown	
 2054	a:вчерашний	short_m	вчера́шен	unknown	
 2060	a:иной	f_ins	ино́ю	unknown	
@@ -306,6 +309,8 @@ rank	id	slot	form	pymorphy	note
 2950	n:Италия	pl_acc	Ита́лии	mismatch	
 2950	n:Италия	pl_ins	Ита́лиями	unknown	
 2950	n:Италия	pl_prep	Ита́лиях	unknown	
+2988	v:очистить	imp_pl	о́чи́стите	ok	
+2988	v:очистить	imp_pl	о́чи́стьте	ok	
 3005	n:пыль	pl_nom	пы́ли	mismatch	
 3005	n:пыль	pl_gen	пы́лей	unknown	
 3005	n:пыль	pl_dat	пы́лям	unknown	
@@ -348,6 +353,16 @@ rank	id	slot	form	pymorphy	note
 3377	a:рождественский	short_n	рожде́ственско	unknown	
 3377	a:рождественский	short_pl	рожде́ственски	unknown	
 3415	n:Испания	sg_ins	Испа́ниею	unknown	
+3586	n:фронт	sg_gen	фро́нта́	ok	
+3586	n:фронт	sg_dat	фро́нту́	ok	
+3586	n:фронт	sg_ins	фро́нто́м	ok	
+3586	n:фронт	sg_prep	фро́нте́	ok	
+3586	n:фронт	pl_nom	фро́нты́	ok	
+3586	n:фронт	pl_gen	фро́нто́в	ok	
+3586	n:фронт	pl_dat	фро́нта́м	ok	
+3586	n:фронт	pl_acc	фро́нты́	ok	
+3586	n:фронт	pl_ins	фро́нта́ми	ok	
+3586	n:фронт	pl_prep	фро́нта́х	ok	
 3607	a:крошечный	sup	кро́шечнейший	unknown	
 3614	a:публичный	short_m	публичен	ok	unstressed
 3620	a:компьютерный	m_ins	компью́терном	mismatch	
@@ -397,6 +412,8 @@ rank	id	slot	form	pymorphy	note
 4153	a:восьмой	f_ins	восьмо́ю	unknown	
 4191	n:Австралия	sg_ins	Австра́лиею	unknown	
 4193	a:покойный	short_m	поко́йн	unknown	
+4199	a:тяжкий	short_pl	тя́жки́	ok	
+4220	a:верховный	short_f	верхо́вна́	ok	
 4237	n:паренёк	sg_acc	паренёк	mismatch	
 4237	n:паренёк	pl_acc	пареньки́	mismatch	
 4287	a:злобный	sup	зло́бнейшый	unknown	
@@ -416,6 +433,7 @@ rank	id	slot	form	pymorphy	note
 4419	n:приманка	sg_acc	приманок	mismatch	unstressed
 4419	n:приманка	sg_ins	прима́нком	unknown	
 4419	n:приманка	pl_gen	прима́нков	unknown	
+4422	a:модный	short_pl	мо́дны́	ok	
 4437	a:жаркий	sup	жа́рчейщий	unknown	
 4438	n:двести	sg_nom	две́сти	mismatch	
 4438	n:двести	sg_gen	двухсо́т	mismatch	
@@ -611,6 +629,7 @@ rank	id	slot	form	pymorphy	note
 5538	a:деревянный	short_f	деревя́нна	unknown	
 5538	a:деревянный	short_n	деревя́нно	mismatch	
 5538	a:деревянный	short_pl	деревя́нны	unknown	
+5550	n:госсекретарь	sg_ins	го́ссекретарём	ok	
 5623	n:стерлинг	sg_gen	сте́рлингу	mismatch	
 5765	n:Венеция	sg_ins	Вене́циею	unknown	
 5772	n:превосходительство	pl_acc	превосходи́тельства	mismatch	
@@ -792,6 +811,19 @@ rank	id	slot	form	pymorphy	note
 6991	v:обокрасть	np_3pl	обкраду́т	unknown	
 6991	v:обокрасть	imp_sg	обкради́	unknown	
 6991	v:обокрасть	imp_pl	обкради́те	unknown	
+6998	n:головоломка	pl_gen	головолом́ок	ok	
+7007	n:мутант	sg_nom	мут́ант	ok	
+7007	n:мутант	sg_gen	мут́анта	ok	
+7007	n:мутант	sg_dat	мут́анту	ok	
+7007	n:мутант	sg_acc	мут́анта	ok	
+7007	n:мутант	sg_ins	мут́антом	ok	
+7007	n:мутант	sg_prep	мут́анте	ok	
+7007	n:мутант	pl_nom	мут́анты	ok	
+7007	n:мутант	pl_gen	мут́антов	ok	
+7007	n:мутант	pl_dat	мут́антам	ok	
+7007	n:мутант	pl_acc	мут́антов	ok	
+7007	n:мутант	pl_ins	мут́антами	ok	
+7007	n:мутант	pl_prep	мут́антах	ok	
 7059	a:кодовый	short_m	ко́дов	mismatch	
 7059	a:кодовый	short_f	ко́дова	unknown	
 7059	a:кодовый	short_n	ко́дово	unknown	
@@ -821,6 +853,18 @@ rank	id	slot	form	pymorphy	note
 7297	a:трагический	short_f	траги́ческа	unknown	
 7297	a:трагический	short_n	траги́ческо	unknown	
 7297	a:трагический	short_pl	траги́чески	mismatch	
+7302	n:таксист	sg_nom	такс́ист	ok	
+7302	n:таксист	sg_gen	такс́иста	ok	
+7302	n:таксист	sg_dat	такс́исту	ok	
+7302	n:таксист	sg_acc	такс́иста	ok	
+7302	n:таксист	sg_ins	такс́истом	ok	
+7302	n:таксист	sg_prep	такс́исте	ok	
+7302	n:таксист	pl_nom	такс́исты	ok	
+7302	n:таксист	pl_gen	такс́истов	ok	
+7302	n:таксист	pl_dat	такс́истам	ok	
+7302	n:таксист	pl_acc	такс́истов	ok	
+7302	n:таксист	pl_ins	такс́истами	ok	
+7302	n:таксист	pl_prep	такс́истах	ok	
 7307	n:тестирование	pl_nom	тести́рования	mismatch	
 7307	n:тестирование	pl_gen	тести́рований	unknown	
 7307	n:тестирование	pl_dat	тести́рованиям	unknown	
@@ -895,6 +939,10 @@ rank	id	slot	form	pymorphy	note
 7612	v:соревноваться	imp_pl	соревнова́йтесь	unknown	
 7649	n:разрез	pl_nom	разре́зи	unknown	
 7649	n:разрез	pl_acc	разре́зи	unknown	
+7660	a:несчастливый	short_m	несча́стли́в	ok	
+7660	a:несчастливый	short_f	несча́стли́ва	ok	
+7660	a:несчастливый	short_n	несча́стли́во	ok	
+7660	a:несчастливый	short_pl	несча́стли́вы	ok	
 7663	n:невестка	pl_acc	неве́стки	mismatch	
 7705	a:армейский	short_m	арме́йск	unknown	
 7705	a:армейский	short_f	арме́йска	unknown	
@@ -1140,7 +1188,11 @@ rank	id	slot	form	pymorphy	note
 9939	n:румпель	pl_acc	ру́мпеля	mismatch	
 9953	n:джокер	sg_acc	джо́кер	mismatch	
 9953	n:джокер	pl_acc	джо́керы	mismatch	
+9963	a:мятный	short_n	мя́́тно	ok	
+9963	a:мятный	short_pl	мя́́тны	ok	
 10010	a:постыдный	sup	посты́днейший	unknown	
+10065	v:очиститься	imp_pl	о́чи́ститесь	ok	
+10065	v:очиститься	imp_pl	о́чи́стьтесь	ok	
 10068	n:пуск	pl_nom	пуска́	mismatch	
 10068	n:пуск	pl_acc	пуска́	mismatch	
 10105	v:объехать	imp_sg	объезжа́й	mismatch	
@@ -1210,6 +1262,8 @@ rank	id	slot	form	pymorphy	note
 10362	n:пай	pl_prep	паях	ok	unstressed
 10390	a:продажный	sup	прода́жнейший	unknown	
 10409	v:чтить	np_3pl	чтут	mismatch	
+10410	v:расчистить	imp_pl	ра́счи́стите	ok	
+10410	v:расчистить	imp_pl	ра́счи́стьте	ok	
 10451	n:аладдин	sg_ins	аладди́ном	unknown	
 10469	n:порнуха	pl_nom	порну́хи	mismatch	
 10469	n:порнуха	pl_gen	порну́х	unknown	
@@ -1331,6 +1385,8 @@ rank	id	slot	form	pymorphy	note
 11427	n:умысел	pl_acc	у́мыселы	unknown	
 11427	n:умысел	pl_ins	у́мыселами	unknown	
 11427	n:умысел	pl_prep	у́мыселах	unknown	
+11454	v:обчистить	imp_pl	о́бчи́стите	ok	
+11454	v:обчистить	imp_pl	о́бчи́стьте	ok	
 11457	a:портативный	short_f	портати́вно	mismatch	
 11457	a:портативный	short_n	портати́вна	mismatch	
 11514	n:тайга	pl_nom	тайги́	mismatch	
@@ -1615,6 +1671,37 @@ rank	id	slot	form	pymorphy	note
 13131	a:учащийся	short_n	уча́щеся	unknown	
 13131	a:учащийся	short_pl	уча́щися	unknown	
 13138	a:абсурдный	sup	абсу́рднейший	unknown	
+13145	a:одновременный	m_nom	одновре́ме́нный	ok	
+13145	a:одновременный	m_gen	одновре́ме́нного	ok	
+13145	a:одновременный	m_dat	одновре́ме́нному	ok	
+13145	a:одновременный	m_acc	одновре́ме́нный	ok	
+13145	a:одновременный	m_acc	одновре́ме́нного	ok	
+13145	a:одновременный	m_ins	одновре́ме́нным	ok	
+13145	a:одновременный	m_prep	одновре́ме́нном	ok	
+13145	a:одновременный	f_nom	одновре́ме́нная	ok	
+13145	a:одновременный	f_gen	одновре́ме́нной	ok	
+13145	a:одновременный	f_dat	одновре́ме́нной	ok	
+13145	a:одновременный	f_acc	одновре́ме́нную	ok	
+13145	a:одновременный	f_ins	одновре́ме́нной	ok	
+13145	a:одновременный	f_ins	одновре́ме́нною	ok	
+13145	a:одновременный	f_prep	одновре́ме́нной	ok	
+13145	a:одновременный	n_nom	одновре́ме́нное	ok	
+13145	a:одновременный	n_gen	одновре́ме́нного	ok	
+13145	a:одновременный	n_dat	одновре́ме́нному	ok	
+13145	a:одновременный	n_acc	одновре́ме́нное	ok	
+13145	a:одновременный	n_ins	одновре́ме́нным	ok	
+13145	a:одновременный	n_prep	одновре́ме́нном	ok	
+13145	a:одновременный	pl_nom	одновре́ме́нные	ok	
+13145	a:одновременный	pl_gen	одновре́ме́нных	ok	
+13145	a:одновременный	pl_dat	одновре́ме́нным	ok	
+13145	a:одновременный	pl_acc	одновре́ме́нные	ok	
+13145	a:одновременный	pl_acc	одновре́ме́нных	ok	
+13145	a:одновременный	pl_ins	одновре́ме́нными	ok	
+13145	a:одновременный	pl_prep	одновре́ме́нных	ok	
+13145	a:одновременный	short_m	одновре́ме́нен	ok	
+13145	a:одновременный	short_f	одновре́ме́нна	ok	
+13145	a:одновременный	short_n	одновре́ме́нно	ok	
+13145	a:одновременный	short_pl	одновре́ме́нны	ok	
 13149	a:рулевой	m_gen	рулевого	ok	unstressed
 13149	a:рулевой	m_dat	рулевому	ok	unstressed
 13149	a:рулевой	m_ins	рулевым	ok	unstressed

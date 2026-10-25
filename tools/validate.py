@@ -32,7 +32,7 @@ from referencing import Registry, Resource
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from morph import SLOTS, confirms, dparses  # noqa: E402
-from rulib import ACUTE, GRAVE, VOWELS, fold, missing_stress_parts, needs_stress, strip_stress, syllables  # noqa: E402
+from rulib import ACUTE, GRAVE, VOWELS, fold, missing_stress_parts, needs_stress, strip_stress, syllables  # noqa: E402,F401
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "src" / "data"
@@ -126,6 +126,10 @@ def check_text(text: str, where: str, rep: Report, answer: bool = False):
                 rep.err(where, f"more than one primary stress in «{part}»")
         if missing_stress_parts(w) and not clitic_group:
             rep.err(where, f"missing stress mark in «{w}»")
+        if not clitic_group and syllables(w) > 1 and not missing_stress_parts(w):
+            known = dictionary_forms().get(fold(w))
+            if known and w.lower() not in known:
+                rep.err(where, f"«{w}» differs from the dictionary: {' / '.join(sorted(known))}")
         yo = yo_required(w)
         if yo:
             rep.err(where, f"write ё: «{w}» → «{yo}»")
@@ -149,6 +153,84 @@ def walk(node, path: str, rep: Report, key: str | None = None):
             walk(v, f"{path}[{i}]", rep, key)
     elif isinstance(node, str):
         check_text(node, path, rep, answer=key in ANSWER_KEYS)
+
+
+# --------------------------------------------------------------------------- dictionary stress index
+_DICT: dict[str, set[str]] | None = None
+
+
+def dictionary_forms() -> dict[str, set[str]]:
+    """fold(form) -> every stressed spelling the core lexicon / closed-class table allows (lower case)."""
+    global _DICT
+    if _DICT is None:
+        from sentences import build_index
+        index, _ = build_index(include_ext=True)
+        _DICT = {k: {c[2].lower() for c in cs} for k, cs in index.items()}
+    return _DICT
+
+
+def validate_sentences(rep: Report, registry, schemas, lex_ids: set[str]):
+    validator = Draft202012Validator(schemas["sentences.schema.json"], registry=registry)
+    closed = json.loads((ROOT / "tools" / "closed_class.json").read_text(encoding="utf-8"))["entries"]
+    names = {f"name:{e['lemma']}" for e in closed if e["kind"] == "name"}
+    lemma_of = {}
+    for path in (DATA / "lexicon").glob("[ABC][0-9].json"):
+        for x in json.loads(path.read_text(encoding="utf-8")):
+            lemma_of[x["id"]] = (x["lemma"], x["pos"])
+    seen: set[str] = set()
+    checked: dict[tuple, bool] = {}
+    for path in sorted((DATA / "sentences").glob("*.json")):
+        items = json.loads(path.read_text(encoding="utf-8"))
+        for e in list(validator.iter_errors(items))[:20]:
+            rep.err(f"sentences/{path.name}{list(e.absolute_path)}", e.message)
+        for s in items:
+            where = f"sentences/{path.name}:{s['id']}"
+            if s["id"] in seen:
+                rep.err(where, "duplicate sentence id")
+            seen.add(s["id"])
+            check_text(s["ru"], where, rep)
+            for w in s["w"]:
+                surface = s["ru"][w[0]:w[1]]
+                if not WORD.fullmatch(surface):
+                    rep.err(where, f"token offsets {w[0]}:{w[1]} do not cover a word ({surface!r})")
+                    continue
+                for a in w[2:]:
+                    lex, slot = a.split("|")
+                    if lex.startswith("name:"):
+                        if lex not in names:
+                            rep.err(where, f"unknown name {lex}")
+                        continue
+                    if lex not in lex_ids:
+                        rep.err(where, f"unknown lexeme {lex}")
+                        continue
+                    lemma, pos = lemma_of.get(lex, (None, None))
+                    if not slot or pos == "other" or not lemma or slot not in SLOTS[pos]:
+                        continue  # uninflected or closed-class (closed-class table is checked separately)
+                    key = (surface.lower(), lemma, pos, slot)
+                    if key not in checked:
+                        checked[key] = confirms(surface, lemma, pos, slot)
+                    if not checked[key]:
+                        rep.err(where, f"«{surface}» is not {slot} of {lemma} per pymorphy3")
+
+
+def validate_closed_class(rep: Report):
+    oc = {"nom": "nomn", "gen": "gent", "dat": "datv", "acc": "accs", "ins": "ablt", "prep": "loct"}
+    gm = {"m": "masc", "f": "femn", "n": "neut", "pl": "plur"}
+    for e in json.loads((ROOT / "tools" / "closed_class.json").read_text(encoding="utf-8"))["entries"]:
+        lf = fold(e["lemma"])
+        if e["kind"] == "prep":
+            for v in e["forms"].values():
+                if not any(p.tag.POS == "PREP" for p in dparses(strip_stress(v).lower())):
+                    rep.err(f"closed_class.json:{e['lemma']}", f"«{v}» is not a preposition per pymorphy3")
+            continue
+        for slot, cell in e["forms"].items():
+            parts = slot.split("_")
+            want = {oc[parts[-1]]} | ({gm[parts[0]]} if len(parts) == 2 else set())
+            for v in cell.split("|"):
+                check_text(v, f"closed_class.json:{e['lemma']}:{slot}", rep)
+                ps = [p for p in dparses(strip_stress(v).lower()) if fold(p.normal_form) == lf]
+                if not any(want <= p.tag.grammemes or "Fixd" in p.tag.grammemes for p in ps):
+                    rep.err(f"closed_class.json:{e['lemma']}", f"{slot} «{v}» not confirmed by pymorphy3")
 
 
 # --------------------------------------------------------------------------- story token analysis
@@ -386,6 +468,9 @@ def main():
             lex_ids |= {r[0] for r in json.loads((DATA / "lexicon" / idx).read_text(encoding="utf-8"))}
     else:
         lex_ids = validate_lexicon(rep, args.full, registry, schemas)
+    validate_closed_class(rep)
+    if not args.skip_lexicon:
+        validate_sentences(rep, registry, schemas, lex_ids)
     validate_content(rep, registry, schemas, lex_ids)
     validate_sources(rep)
 

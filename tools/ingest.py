@@ -23,7 +23,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from rulib import (ACUTE, UNSTRESSED_OK, fold, from_dataset, has_stress, put_stress,  # noqa: E402
-                   strip_stress, stress_index, syllables, transfer_stress)
+                   strip_stress, stress_index, syllables, transfer_stress, marks_ok)
 from morph import (CASES, PERSONS, SLOTS, dparses, group_of, lemma_parse, preferred,  # noqa: E402
                    verify)
 
@@ -260,7 +260,7 @@ def main():
                         and not has_stress(f2):
                     f2, stressed = word, True
                 n_all += 0 if rare else 1
-                verified = status == "ok" and stressed
+                verified = status == "ok" and stressed and marks_ok(f2)
                 n_ok += 1 if (verified and not rare) else 0
                 if not verified:
                     rep_unverified.append((lx, slot, f2, status, "unstressed" if not stressed else ""))
