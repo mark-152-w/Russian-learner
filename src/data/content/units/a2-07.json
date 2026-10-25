@@ -1,0 +1,69 @@
+{
+ "$schema": "../../../../schemas/unit.schema.json",
+ "id": "u-a2-07",
+ "number": 7,
+ "level": "A2",
+ "title": {
+  "en": "Yesterday",
+  "ru": "Вчера́"
+ },
+ "theme": "the past",
+ "grammar": [
+  "g-past-tense"
+ ],
+ "vocab": [
+  "v:быть",
+  "v:жить",
+  "v:работать",
+  "v:сказать",
+  "v:спросить",
+  "v:ответить",
+  "v:сделать",
+  "v:прийти",
+  "v:уйти",
+  "v:встретить",
+  "o:вчера",
+  "n:неделя",
+  "n:год",
+  "n:вечер"
+ ],
+ "drills": [
+  {
+   "generator": "verb-cloze",
+   "count": 8,
+   "params": {
+    "kinds": [
+     "pst"
+    ]
+   }
+  },
+  {
+   "generator": "forms",
+   "count": 8,
+   "params": {
+    "pos": "verb",
+    "slots": [
+     "pst_m",
+     "pst_f",
+     "pst_n",
+     "pst_pl"
+    ]
+   }
+  },
+  {
+   "generator": "vocab",
+   "count": 4
+  }
+ ],
+ "boss": {
+  "name": {
+   "ru": "Коще́й Бессме́ртный",
+   "en": "the deathless sorcerer"
+  },
+  "hp": 13,
+  "art": "boss-07"
+ },
+ "testOut": [
+  "verb.past"
+ ]
+}

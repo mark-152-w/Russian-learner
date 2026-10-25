@@ -1,0 +1,81 @@
+{
+ "$schema": "../../../../schemas/unit.schema.json",
+ "id": "u-a2-02",
+ "number": 2,
+ "level": "A2",
+ "title": {
+  "en": "Where do you live?",
+  "ru": "Где ты живёшь?"
+ },
+ "theme": "home and city",
+ "grammar": [
+  "g-prepositional"
+ ],
+ "vocab": [
+  "n:дом",
+  "n:квартира",
+  "n:комната",
+  "n:улица",
+  "n:школа",
+  "n:университет",
+  "n:магазин",
+  "n:город",
+  "n:страна",
+  "n:площадь",
+  "n:парк",
+  "n:работа",
+  "n:кухня",
+  "n:окно",
+  "n:стол",
+  "v:жить",
+  "v:работать"
+ ],
+ "drills": [
+  {
+   "generator": "case-cloze",
+   "count": 8,
+   "params": {
+    "cases": [
+     "prep"
+    ],
+    "tags": [
+     "case.prep.location"
+    ]
+   }
+  },
+  {
+   "generator": "forms",
+   "count": 6,
+   "params": {
+    "pos": "noun",
+    "slots": [
+     "sg_prep"
+    ]
+   }
+  },
+  {
+   "generator": "vocab",
+   "count": 5
+  },
+  {
+   "generator": "find-error",
+   "count": 3,
+   "params": {
+    "cases": [
+     "prep"
+    ]
+   }
+  }
+ ],
+ "boss": {
+  "name": {
+   "ru": "Ле́ший",
+   "en": "the forest spirit"
+  },
+  "hp": 11,
+  "art": "boss-02"
+ },
+ "testOut": [
+  "case.prep.location"
+ ]
+}

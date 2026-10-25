@@ -1,0 +1,68 @@
+{
+ "$schema": "../../../../schemas/unit.schema.json",
+ "id": "u-a2-01",
+ "number": 1,
+ "level": "A2",
+ "title": {
+  "en": "Meeting people",
+  "ru": "Знако́мство"
+ },
+ "theme": "people",
+ "grammar": [
+  "g-gender-nominative",
+  "g-personal-pronouns"
+ ],
+ "vocab": [
+  "n:имя",
+  "n:друг",
+  "n:брат",
+  "n:сестра",
+  "n:мама",
+  "n:папа",
+  "n:семья",
+  "n:человек",
+  "n:девушка",
+  "n:парень",
+  "n:студент",
+  "n:врач",
+  "n:учитель",
+  "v:знать",
+  "v:звать",
+  "a:новый"
+ ],
+ "drills": [
+  {
+   "generator": "vocab",
+   "count": 8
+  },
+  {
+   "generator": "forms",
+   "count": 6,
+   "params": {
+    "pos": "noun",
+    "slots": [
+     "pl_nom"
+    ]
+   }
+  },
+  {
+   "generator": "stress",
+   "count": 4
+  },
+  {
+   "generator": "match",
+   "count": 1
+  }
+ ],
+ "boss": {
+  "name": {
+   "ru": "Домово́й",
+   "en": "the house spirit"
+  },
+  "hp": 10,
+  "art": "boss-01"
+ },
+ "testOut": [
+  "case.nom"
+ ]
+}

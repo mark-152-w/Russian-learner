@@ -1,0 +1,61 @@
+{
+ "$schema": "../../../../schemas/unit.schema.json",
+ "id": "u-a2-11",
+ "number": 11,
+ "level": "A2",
+ "title": {
+  "en": "Time and days",
+  "ru": "Вре́мя и дни"
+ },
+ "theme": "the calendar",
+ "grammar": [
+  "g-time-dates"
+ ],
+ "vocab": [
+  "n:понедельник",
+  "n:вторник",
+  "n:среда",
+  "n:четверг",
+  "n:пятница",
+  "n:суббота",
+  "n:воскресенье",
+  "n:утро",
+  "n:вечер",
+  "n:ночь",
+  "n:зима",
+  "n:весна",
+  "n:лето",
+  "n:осень",
+  "n:месяц"
+ ],
+ "drills": [
+  {
+   "items": [
+    "ex-a2-u11-01",
+    "ex-a2-u11-02",
+    "ex-a2-u11-03",
+    "ex-a2-u11-04",
+    "ex-a2-u11-05",
+    "ex-a2-u11-06",
+    "ex-a2-u11-07",
+    "ex-a2-u11-08",
+    "ex-a2-u11-09"
+   ]
+  },
+  {
+   "generator": "vocab",
+   "count": 6
+  }
+ ],
+ "boss": {
+  "name": {
+   "ru": "Мете́лица",
+   "en": "the snowstorm"
+  },
+  "hp": 15,
+  "art": "boss-11"
+ },
+ "testOut": [
+  "num.time-date"
+ ]
+}

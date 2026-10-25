@@ -1,0 +1,67 @@
+{
+ "$schema": "../../../../schemas/unit.schema.json",
+ "id": "u-a2-17",
+ "number": 17,
+ "level": "A2",
+ "title": {
+  "en": "Tomorrow",
+  "ru": "За́втра"
+ },
+ "theme": "plans",
+ "grammar": [
+  "g-future-tense"
+ ],
+ "vocab": [
+  "v:прочитать",
+  "v:написать",
+  "v:сделать",
+  "v:позвонить",
+  "v:купить",
+  "v:приготовить",
+  "v:посмотреть",
+  "v:вернуться",
+  "o:завтра",
+  "o:сегодня",
+  "n:план",
+  "n:отпуск",
+  "n:каникулы"
+ ],
+ "drills": [
+  {
+   "items": [
+    "ex-a2-u17-01",
+    "ex-a2-u17-02",
+    "ex-a2-u17-03",
+    "ex-a2-u17-04",
+    "ex-a2-u17-05",
+    "ex-a2-u17-06",
+    "ex-a2-u17-07",
+    "ex-a2-u17-08"
+   ]
+  },
+  {
+   "generator": "verb-cloze",
+   "count": 5,
+   "params": {
+    "kinds": [
+     "np"
+    ]
+   }
+  },
+  {
+   "generator": "vocab",
+   "count": 4
+  }
+ ],
+ "boss": {
+  "name": {
+   "ru": "Тугари́н Зме́евич",
+   "en": "the dragon knight"
+  },
+  "hp": 18,
+  "art": "boss-17"
+ },
+ "testOut": [
+  "verb.future"
+ ]
+}

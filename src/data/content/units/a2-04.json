@@ -1,0 +1,75 @@
+{
+ "$schema": "../../../../schemas/unit.schema.json",
+ "id": "u-a2-04",
+ "number": 4,
+ "level": "A2",
+ "title": {
+  "en": "What are you doing?",
+  "ru": "Что ты де́лаешь?"
+ },
+ "theme": "everyday actions",
+ "grammar": [
+  "g-present-tense"
+ ],
+ "vocab": [
+  "v:читать",
+  "v:писать",
+  "v:говорить",
+  "v:смотреть",
+  "v:слушать",
+  "v:делать",
+  "v:думать",
+  "v:понимать",
+  "v:любить",
+  "v:хотеть",
+  "v:мочь",
+  "v:спать",
+  "v:играть",
+  "v:гулять"
+ ],
+ "drills": [
+  {
+   "generator": "verb-cloze",
+   "count": 8,
+   "params": {
+    "kinds": [
+     "np"
+    ]
+   }
+  },
+  {
+   "generator": "forms",
+   "count": 8,
+   "params": {
+    "pos": "verb",
+    "slots": [
+     "np_1sg",
+     "np_2sg",
+     "np_3sg",
+     "np_1pl",
+     "np_2pl",
+     "np_3pl"
+    ]
+   }
+  },
+  {
+   "generator": "vocab",
+   "count": 5
+  },
+  {
+   "generator": "stress",
+   "count": 3
+  }
+ ],
+ "boss": {
+  "name": {
+   "ru": "Водяно́й",
+   "en": "the water spirit"
+  },
+  "hp": 12,
+  "art": "boss-04"
+ },
+ "testOut": [
+  "verb.present"
+ ]
+}

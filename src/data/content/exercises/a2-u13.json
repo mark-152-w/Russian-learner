@@ -1,0 +1,101 @@
+{
+ "$schema": "../../../../schemas/exercise.schema.json",
+ "items": [
+  {
+   "id": "ex-a2-u13-01",
+   "type": "choice",
+   "level": "A2",
+   "tags": [
+    "case.ins.instrument"
+   ],
+   "prompt": {
+    "ru": "Я пишу́ ___.",
+    "en": "I write with a pen.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "ру́чкой"
+   ],
+   "distractors": [
+    {
+     "ru": "с ру́чкой",
+     "error": "case.instrumental-role",
+     "why": "A tool takes the bare instrumental; **с** means *together with*."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-a2-u13-02",
+   "type": "choice",
+   "level": "A2",
+   "tags": [
+    "case.ins.predicate"
+   ],
+   "prompt": {
+    "ru": "Он хо́чет стать ___.",
+    "en": "He wants to become a doctor.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "врачо́м"
+   ],
+   "distractors": [
+    {
+     "ru": "врач",
+     "error": "case.instrumental-role",
+     "why": "After **стать**, the profession is instrumental."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-a2-u13-03",
+   "type": "choice",
+   "level": "A2",
+   "tags": [
+    "case.ins.with"
+   ],
+   "prompt": {
+    "ru": "Мы с ___ идём в кино́.",
+    "en": "My brother and I are going to the cinema.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "бра́том"
+   ],
+   "distractors": [
+    {
+     "ru": "брат",
+     "error": "case.nom-default",
+     "why": "**мы с** + instrumental means *X and I*."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-a2-u13-04",
+   "type": "choice",
+   "level": "A2",
+   "tags": [
+    "case.ins"
+   ],
+   "prompt": {
+    "ru": "Она́ занима́ется ___.",
+    "en": "She does sport.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "спо́ртом"
+   ],
+   "distractors": [
+    {
+     "ru": "спорт",
+     "error": "case.verb-government",
+     "why": "**занима́ться** takes the instrumental."
+    }
+   ],
+   "source": "handwritten"
+  }
+ ]
+}

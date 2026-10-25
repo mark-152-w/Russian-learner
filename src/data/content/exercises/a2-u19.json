@@ -1,0 +1,269 @@
+{
+ "$schema": "../../../../schemas/exercise.schema.json",
+ "items": [
+  {
+   "id": "ex-a2-u19-01",
+   "type": "choice-reason",
+   "level": "A2",
+   "tags": [
+    "motion.basic"
+   ],
+   "prompt": {
+    "ru": "Куда́ ты сейча́с ___?",
+    "en": "Where are you going now?",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "идёшь"
+   ],
+   "distractors": [
+    {
+     "ru": "хо́дишь",
+     "error": "motion.direction"
+    }
+   ],
+   "source": "handwritten",
+   "reason": "Right now, one direction → **идти́**."
+  },
+  {
+   "id": "ex-a2-u19-02",
+   "type": "choice-reason",
+   "level": "A2",
+   "tags": [
+    "motion.basic"
+   ],
+   "prompt": {
+    "ru": "Я ка́ждый день ___ в спортза́л.",
+    "en": "I go to the gym every day.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "хожу́"
+   ],
+   "distractors": [
+    {
+     "ru": "иду́",
+     "error": "motion.direction"
+    }
+   ],
+   "source": "handwritten",
+   "reason": "A habit → multidirectional **ходи́ть**."
+  },
+  {
+   "id": "ex-a2-u19-03",
+   "type": "choice-reason",
+   "level": "A2",
+   "tags": [
+    "motion.basic"
+   ],
+   "prompt": {
+    "ru": "Вчера́ мы ___ в теа́тр.",
+    "en": "Yesterday we went to the theatre.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "ходи́ли"
+   ],
+   "distractors": [
+    {
+     "ru": "шли",
+     "error": "motion.direction"
+    }
+   ],
+   "source": "handwritten",
+   "reason": "A round trip in the past → **ходи́ть**."
+  },
+  {
+   "id": "ex-a2-u19-04",
+   "type": "choice-reason",
+   "level": "A2",
+   "tags": [
+    "motion.basic"
+   ],
+   "prompt": {
+    "ru": "За́втра я ___ в Петербу́рг.",
+    "en": "Tomorrow I'm going to St Petersburg.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "е́ду"
+   ],
+   "distractors": [
+    {
+     "ru": "иду́",
+     "error": "motion.mode"
+    }
+   ],
+   "source": "handwritten",
+   "reason": "Another city: by vehicle → **е́хать**; one trip → unidirectional."
+  },
+  {
+   "id": "ex-a2-u19-05",
+   "type": "choice-reason",
+   "level": "A2",
+   "tags": [
+    "motion.basic"
+   ],
+   "prompt": {
+    "ru": "Ле́том мы ___ на мо́ре.",
+    "en": "In the summer we went to the seaside.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "е́здили"
+   ],
+   "distractors": [
+    {
+     "ru": "е́хали",
+     "error": "motion.direction"
+    }
+   ],
+   "source": "handwritten",
+   "reason": "A trip there and back → **е́здить**."
+  },
+  {
+   "id": "ex-a2-u19-06",
+   "type": "choice-reason",
+   "level": "A2",
+   "tags": [
+    "motion.basic"
+   ],
+   "prompt": {
+    "ru": "Когда́ я ___ домо́й, на́чался дождь.",
+    "en": "As I was walking home, it started to rain.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "шёл"
+   ],
+   "distractors": [
+    {
+     "ru": "ходи́л",
+     "error": "motion.direction"
+    }
+   ],
+   "source": "handwritten",
+   "reason": "On the way, in one direction → **идти́**."
+  },
+  {
+   "id": "ex-a2-u19-07",
+   "type": "choice-reason",
+   "level": "A2",
+   "tags": [
+    "motion.basic"
+   ],
+   "prompt": {
+    "ru": "Он ___ на рабо́ту на авто́бусе.",
+    "en": "He's going to work by bus.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "е́дет"
+   ],
+   "distractors": [
+    {
+     "ru": "идёт",
+     "error": "motion.mode"
+    }
+   ],
+   "source": "handwritten",
+   "reason": "By bus → **е́хать**."
+  },
+  {
+   "id": "ex-a2-u19-08",
+   "type": "choice-reason",
+   "level": "A2",
+   "tags": [
+    "motion.basic"
+   ],
+   "prompt": {
+    "ru": "Ребёнок уже́ ___.",
+    "en": "The child can already walk.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "хо́дит"
+   ],
+   "distractors": [
+    {
+     "ru": "идёт",
+     "error": "motion.direction"
+    }
+   ],
+   "source": "handwritten",
+   "reason": "The general ability to walk → **ходи́ть**."
+  },
+  {
+   "id": "ex-a2-u19-09",
+   "type": "choice-reason",
+   "level": "A2",
+   "tags": [
+    "motion.basic"
+   ],
+   "prompt": {
+    "ru": "Мы це́лый день ___ по го́роду.",
+    "en": "We walked around the city all day.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "ходи́ли"
+   ],
+   "distractors": [
+    {
+     "ru": "шли",
+     "error": "motion.direction"
+    }
+   ],
+   "source": "handwritten",
+   "reason": "Walking around, not to one goal → multidirectional."
+  },
+  {
+   "id": "ex-a2-u19-10",
+   "type": "choice-reason",
+   "level": "A2",
+   "tags": [
+    "motion.basic"
+   ],
+   "prompt": {
+    "ru": "Он ___ в Москву́ и ещё не верну́лся.",
+    "en": "He's gone to Moscow and isn't back yet.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "пое́хал"
+   ],
+   "distractors": [
+    {
+     "ru": "е́здил",
+     "error": "motion.direction"
+    }
+   ],
+   "source": "handwritten",
+   "reason": "Set off and hasn't come back → perfective **пое́хать**; **е́здил** means *went and came back*."
+  },
+  {
+   "id": "ex-a2-u19-11",
+   "type": "choice-reason",
+   "level": "A2",
+   "tags": [
+    "motion.basic"
+   ],
+   "prompt": {
+    "ru": "___ в кино́!",
+    "en": "Let's go to the cinema!",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "Пойдём"
+   ],
+   "distractors": [
+    {
+     "ru": "Хо́дим",
+     "error": "motion.direction"
+    }
+   ],
+   "source": "handwritten",
+   "reason": "*Let's go* → **пойдём**."
+  }
+ ]
+}

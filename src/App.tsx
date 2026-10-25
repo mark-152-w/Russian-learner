@@ -20,16 +20,21 @@ const Review = lazy(() => import('./pages/Review'))
 const Lab = lazy(() => import('./pages/Lab'))
 const Word = lazy(() => import('./pages/Word'))
 const Drill = lazy(() => import('./pages/Drill'))
+const CoursePage = lazy(() => import('./pages/Course').then((m) => ({ default: m.CoursePage })))
+const UnitPage = lazy(() => import('./pages/Course').then((m) => ({ default: m.UnitPage })))
+const LessonPage = lazy(() => import('./pages/Course').then((m) => ({ default: m.LessonPage })))
+const Placement = lazy(() => import('./pages/Placement'))
 const GrammarIndex = lazy(() => import('./pages/Grammar').then((m) => ({ default: m.GrammarIndex })))
 const GrammarArticlePage = lazy(() => import('./pages/Grammar').then((m) => ({ default: m.GrammarArticlePage })))
 
 const NAV = [
   { to: '/', label: 'Home', icon: 'home' },
+  { to: '/course', label: 'Course', icon: 'path' },
   { to: '/review', label: 'Review', icon: 'cards' },
   { to: '/grammar', label: 'Grammar', icon: 'book' },
   { to: '/lab', label: 'Lab', icon: 'table' },
 ]
-const IN_SESSION = ['/practice', '/review', '/drill']
+const IN_SESSION = ['/practice', '/review', '/drill', '/lesson', '/placement']
 
 /** Applies theme, skin, motion and audio preferences to the document. */
 function Preferences() {
@@ -101,7 +106,7 @@ function BottomNav() {
   if (IN_SESSION.some((p) => pathname.startsWith(p))) return null
   return (
     <nav className="fixed inset-x-0 bottom-0 z-20 border-t border-line bg-paper pb-[env(safe-area-inset-bottom)] sm:hidden" aria-label="Main">
-      <div className="grid grid-cols-4">
+      <div className="grid grid-cols-5">
         {NAV.map((n) => (
           <NavLink key={n.to} to={n.to} end className={({ isActive }) => `flex min-h-14 flex-col items-center justify-center gap-0.5 text-xs ${isActive ? 'text-red' : 'text-ink-soft'}`}>
             <Icon name={n.icon} className="h-6 w-6" />
@@ -132,6 +137,10 @@ export default function App() {
               <Route path="/lab" element={<Lab />} />
               <Route path="/word/:id" element={<Word />} />
               <Route path="/drill/:kind/:a/:b?/:c?" element={<Drill />} />
+              <Route path="/course" element={<CoursePage />} />
+              <Route path="/unit/:id" element={<UnitPage />} />
+              <Route path="/lesson/:id/:mode" element={<LessonPage />} />
+              <Route path="/placement" element={<Placement />} />
               <Route path="/grammar" element={<GrammarIndex />} />
               <Route path="/grammar/:id" element={<GrammarArticlePage />} />
             </Routes>

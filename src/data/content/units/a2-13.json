@@ -1,0 +1,70 @@
+{
+ "$schema": "../../../../schemas/unit.schema.json",
+ "id": "u-a2-13",
+ "number": 13,
+ "level": "A2",
+ "title": {
+  "en": "With what? With whom?",
+  "ru": "Чем? С кем?"
+ },
+ "theme": "tools and company",
+ "grammar": [
+  "g-instrumental"
+ ],
+ "vocab": [
+  "n:ручка",
+  "n:карандаш",
+  "n:нож",
+  "n:ложка",
+  "n:вилка",
+  "n:автобус",
+  "n:поезд",
+  "n:самолёт",
+  "v:заниматься",
+  "v:интересоваться",
+  "v:стать",
+  "n:спорт",
+  "n:музыка",
+  "n:инженер"
+ ],
+ "drills": [
+  {
+   "items": [
+    "ex-a2-u13-01",
+    "ex-a2-u13-02",
+    "ex-a2-u13-03",
+    "ex-a2-u13-04"
+   ]
+  },
+  {
+   "generator": "case-cloze",
+   "count": 8,
+   "params": {
+    "cases": [
+     "ins"
+    ]
+   }
+  },
+  {
+   "generator": "forms",
+   "count": 6,
+   "params": {
+    "pos": "noun",
+    "slots": [
+     "sg_ins"
+    ]
+   }
+  }
+ ],
+ "boss": {
+  "name": {
+   "ru": "Жар-пти́ца",
+   "en": "the Firebird"
+  },
+  "hp": 16,
+  "art": "boss-13"
+ },
+ "testOut": [
+  "case.ins"
+ ]
+}

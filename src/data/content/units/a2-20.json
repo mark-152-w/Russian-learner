@@ -1,0 +1,68 @@
+{
+ "$schema": "../../../../schemas/unit.schema.json",
+ "id": "u-a2-20",
+ "number": 20,
+ "level": "A2",
+ "title": {
+  "en": "A2 review",
+  "ru": "Повторе́ние"
+ },
+ "theme": "everything so far",
+ "grammar": [
+  "g-cases-intro",
+  "g-case-cheatsheet"
+ ],
+ "vocab": [
+  "n:язык",
+  "n:урок",
+  "n:слово",
+  "n:текст",
+  "n:вопрос",
+  "n:ответ",
+  "n:ошибка",
+  "n:правило",
+  "n:пример",
+  "v:учить",
+  "v:выучить",
+  "v:повторять",
+  "v:понять",
+  "v:объяснять"
+ ],
+ "drills": [
+  {
+   "generator": "case-cloze",
+   "count": 10
+  },
+  {
+   "generator": "forms",
+   "count": 6,
+   "params": {
+    "pos": "noun"
+   }
+  },
+  {
+   "generator": "find-error",
+   "count": 4
+  },
+  {
+   "generator": "vocab",
+   "count": 4
+  }
+ ],
+ "boss": {
+  "name": {
+   "ru": "Царь-Медве́дь",
+   "en": "the Bear King"
+  },
+  "hp": 20,
+  "art": "boss-20"
+ },
+ "testOut": [
+  "case.nom",
+  "case.gen",
+  "case.dat",
+  "case.acc",
+  "case.ins",
+  "case.prep"
+ ]
+}

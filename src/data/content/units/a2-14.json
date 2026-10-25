@@ -1,0 +1,63 @@
+{
+ "$schema": "../../../../schemas/unit.schema.json",
+ "id": "u-a2-14",
+ "number": 14,
+ "level": "A2",
+ "title": {
+  "en": "What kind?",
+  "ru": "Како́й?"
+ },
+ "theme": "describing things",
+ "grammar": [
+  "g-adjective-agreement"
+ ],
+ "vocab": [
+  "a:большой",
+  "a:маленький",
+  "a:новый",
+  "a:старый",
+  "a:хороший",
+  "a:плохой",
+  "a:красивый",
+  "a:интересный",
+  "a:русский",
+  "a:молодой",
+  "a:дорогой",
+  "a:синий",
+  "a:последний",
+  "a:трудный"
+ ],
+ "drills": [
+  {
+   "generator": "case-cloze",
+   "count": 6,
+   "params": {
+    "pos": [
+     "adj"
+    ]
+   }
+  },
+  {
+   "generator": "forms",
+   "count": 8,
+   "params": {
+    "pos": "adj"
+   }
+  },
+  {
+   "generator": "vocab",
+   "count": 4
+  }
+ ],
+ "boss": {
+  "name": {
+   "ru": "Царе́вна-лягу́шка",
+   "en": "the Frog Princess"
+  },
+  "hp": 17,
+  "art": "boss-14"
+ },
+ "testOut": [
+  "adj.agreement"
+ ]
+}

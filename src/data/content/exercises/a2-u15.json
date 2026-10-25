@@ -1,0 +1,226 @@
+{
+ "$schema": "../../../../schemas/exercise.schema.json",
+ "items": [
+  {
+   "id": "ex-a2-u15-01",
+   "type": "choice",
+   "level": "A2",
+   "tags": [
+    "pron.possessive"
+   ],
+   "prompt": {
+    "ru": "Э́то ___ сестра́.",
+    "en": "This is my sister.",
+    "instruction": "Choose the right word"
+   },
+   "accept": [
+    "моя́"
+   ],
+   "distractors": [
+    {
+     "ru": "мой",
+     "error": "agreement.gender",
+     "why": "**сестра́** is feminine: **моя́**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-a2-u15-02",
+   "type": "choice",
+   "level": "A2",
+   "tags": [
+    "pron.possessive"
+   ],
+   "prompt": {
+    "ru": "Он лю́бит ___ жену́.",
+    "en": "He loves his (own) wife.",
+    "instruction": "Choose the right word"
+   },
+   "accept": [
+    "свою́"
+   ],
+   "distractors": [
+    {
+     "ru": "его́",
+     "error": "pronoun.svoy",
+     "why": "His own wife, with **он** as subject: **свою́**. **его́** would be another man's wife."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-a2-u15-03",
+   "type": "choice",
+   "level": "A2",
+   "tags": [
+    "pron.possessive"
+   ],
+   "prompt": {
+    "ru": "___ брат живёт в Москве́.",
+    "en": "Her brother lives in Moscow.",
+    "instruction": "Choose the right word"
+   },
+   "accept": [
+    "Её"
+   ],
+   "distractors": [
+    {
+     "ru": "Свой",
+     "error": "pronoun.svoy",
+     "why": "**свой** can't be part of the subject."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-a2-u15-04",
+   "type": "choice",
+   "level": "A2",
+   "tags": [
+    "pron.personal"
+   ],
+   "prompt": {
+    "ru": "Я говорю́ с ___.",
+    "en": "I'm talking to him.",
+    "instruction": "Choose the right word"
+   },
+   "accept": [
+    "ним"
+   ],
+   "distractors": [
+    {
+     "ru": "им",
+     "error": "pronoun.form",
+     "why": "After a preposition: the **н-** form."
+    },
+    {
+     "ru": "его́",
+     "error": "pronoun.form",
+     "why": "**с** takes the instrumental: **ним**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-a2-u15-05",
+   "type": "choice",
+   "level": "A2",
+   "tags": [
+    "pron.personal"
+   ],
+   "prompt": {
+    "ru": "У ___ есть маши́на.",
+    "en": "He has a car.",
+    "instruction": "Choose the right word"
+   },
+   "accept": [
+    "него́"
+   ],
+   "distractors": [
+    {
+     "ru": "его́",
+     "error": "pronoun.form",
+     "why": "After **у**: **него́**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-a2-u15-06",
+   "type": "choice",
+   "level": "A2",
+   "tags": [
+    "pron.personal"
+   ],
+   "prompt": {
+    "ru": "Я ви́жу ___.",
+    "en": "I can see her.",
+    "instruction": "Choose the right word"
+   },
+   "accept": [
+    "её"
+   ],
+   "distractors": [
+    {
+     "ru": "ей",
+     "error": "pronoun.form",
+     "why": "Direct object: accusative **её**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-a2-u15-07",
+   "type": "choice",
+   "level": "A2",
+   "tags": [
+    "pron.personal"
+   ],
+   "prompt": {
+    "ru": "Э́то для ___.",
+    "en": "This is for you.",
+    "instruction": "Choose the right word"
+   },
+   "accept": [
+    "вас"
+   ],
+   "distractors": [
+    {
+     "ru": "вам",
+     "error": "pronoun.form",
+     "why": "**для** + genitive: **вас**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-a2-u15-08",
+   "type": "choice",
+   "level": "A2",
+   "tags": [
+    "pron.personal"
+   ],
+   "prompt": {
+    "ru": "Мы говори́ли о ___.",
+    "en": "We were talking about them.",
+    "instruction": "Choose the right word"
+   },
+   "accept": [
+    "них"
+   ],
+   "distractors": [
+    {
+     "ru": "их",
+     "error": "pronoun.form",
+     "why": "After **о**: the **н-** form."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-a2-u15-09",
+   "type": "choice",
+   "level": "A2",
+   "tags": [
+    "pron.possessive"
+   ],
+   "prompt": {
+    "ru": "___ де́ти уже́ больши́е.",
+    "en": "Their children are grown up now.",
+    "instruction": "Choose the right word"
+   },
+   "accept": [
+    "Их"
+   ],
+   "distractors": [
+    {
+     "ru": "Свои́",
+     "error": "pronoun.svoy",
+     "why": "**свой** can't be part of the subject."
+    }
+   ],
+   "source": "handwritten"
+  }
+ ]
+}

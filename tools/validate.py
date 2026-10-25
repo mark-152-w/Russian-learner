@@ -106,6 +106,14 @@ def yo_required(w: str) -> str | None:
     return None
 
 
+def compound_agrees(word: str, dict_form: str) -> bool:
+    """Hyphenated words: only parts the dictionary marks must agree (ба́ба-яга allows Ба́ба-Яга́)."""
+    a, b = word.split("-"), dict_form.split("-")
+    if len(a) != len(b) or len(a) < 2:
+        return False
+    return all(x == y or (fold(x) == fold(y) and ACUTE not in y and "ё" not in y) for x, y in zip(a, b))
+
+
 def check_text(text: str, where: str, rep: Report, answer: bool = False):
     """Apply the Russian display rules to one string."""
     clean = STRIKE.sub(" ", text)
@@ -132,7 +140,7 @@ def check_text(text: str, where: str, rep: Report, answer: bool = False):
             rep.err(where, f"missing stress mark in «{w}»")
         if not clitic_group and syllables(w) > 1 and not missing_stress_parts(w):
             known = dictionary_forms().get(fold(w))
-            if known and w.lower() not in known:
+            if known and w.lower() not in known and not any(compound_agrees(w.lower(), k) for k in known):
                 rep.err(where, f"«{w}» differs from the dictionary: {' / '.join(sorted(known))}")
         yo = yo_required(w)
         if yo:

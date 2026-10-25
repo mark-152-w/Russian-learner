@@ -1,0 +1,207 @@
+{
+ "$schema": "../../../../schemas/exercise.schema.json",
+ "items": [
+  {
+   "id": "ex-a2-u17-01",
+   "type": "choice",
+   "level": "A2",
+   "tags": [
+    "aspect.future",
+    "verb.future"
+   ],
+   "prompt": {
+    "ru": "За́втра я ___ э́ту кни́гу.",
+    "en": "Tomorrow I'll finish reading this book.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "прочита́ю"
+   ],
+   "distractors": [
+    {
+     "ru": "бу́ду прочита́ть",
+     "error": "aspect.future-pf",
+     "why": "**бу́ду** never combines with a perfective."
+    },
+    {
+     "ru": "чита́ю",
+     "error": "verb.tense",
+     "why": "That's the present tense."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-a2-u17-02",
+   "type": "choice",
+   "level": "A2",
+   "tags": [
+    "aspect.future",
+    "verb.future"
+   ],
+   "prompt": {
+    "ru": "Весь ве́чер я ___ телеви́зор.",
+    "en": "I'll be watching TV all evening.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "бу́ду смотре́ть"
+   ],
+   "distractors": [
+    {
+     "ru": "посмотрю́",
+     "error": "aspect.wrong",
+     "why": "A whole evening is a process: imperfective future."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-a2-u17-03",
+   "type": "choice",
+   "level": "A2",
+   "tags": [
+    "aspect.future",
+    "verb.future"
+   ],
+   "prompt": {
+    "ru": "Я ___ тебе́ за́втра.",
+    "en": "I'll call you tomorrow.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "позвоню́"
+   ],
+   "distractors": [
+    {
+     "ru": "бу́ду позвони́ть",
+     "error": "aspect.future-pf",
+     "why": "**бу́ду** never combines with a perfective."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-a2-u17-04",
+   "type": "choice",
+   "level": "A2",
+   "tags": [
+    "verb.future"
+   ],
+   "prompt": {
+    "ru": "Что ты ___ де́лать ле́том?",
+    "en": "What will you do in the summer?",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "бу́дешь"
+   ],
+   "distractors": [
+    {
+     "ru": "бу́ду",
+     "error": "verb.person",
+     "why": "**ты** takes **бу́дешь**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-a2-u17-05",
+   "type": "choice",
+   "level": "A2",
+   "tags": [
+    "verb.future"
+   ],
+   "prompt": {
+    "ru": "За́втра ___ дождь.",
+    "en": "It will rain tomorrow.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "бу́дет"
+   ],
+   "distractors": [
+    {
+     "ru": "есть",
+     "error": "verb.tense",
+     "why": "The future of **быть** is **бу́дет**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-a2-u17-06",
+   "type": "choice",
+   "level": "A2",
+   "tags": [
+    "aspect.future",
+    "verb.future"
+   ],
+   "prompt": {
+    "ru": "Ты мне ___?",
+    "en": "Will you help me?",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "помо́жешь"
+   ],
+   "distractors": [
+    {
+     "ru": "бу́дешь помо́чь",
+     "error": "aspect.future-pf",
+     "why": "**бу́ду** never combines with a perfective."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-a2-u17-07",
+   "type": "choice",
+   "level": "A2",
+   "tags": [
+    "verb.future"
+   ],
+   "prompt": {
+    "ru": "Я ___ ждать тебя́ у вхо́да.",
+    "en": "I'll be waiting for you at the entrance.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "бу́ду"
+   ],
+   "distractors": [
+    {
+     "ru": "бу́дешь",
+     "error": "verb.person",
+     "why": "**я** takes **бу́ду**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-a2-u17-08",
+   "type": "choice",
+   "level": "A2",
+   "tags": [
+    "aspect.future",
+    "verb.future"
+   ],
+   "prompt": {
+    "ru": "Ка́ждый день я ___ по-ру́сски.",
+    "en": "I'll speak Russian every day.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "бу́ду говори́ть"
+   ],
+   "distractors": [
+    {
+     "ru": "скажу́",
+     "error": "aspect.wrong",
+     "why": "*Every day* is repeated: imperfective future."
+    }
+   ],
+   "source": "handwritten"
+  }
+ ]
+}

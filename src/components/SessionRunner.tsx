@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useRef, useState } from 'react'
+import { useCallback, useEffect, useRef, useState, type ReactNode } from 'react'
 import type { ExerciseItem, Lexeme } from '../types/content.gen'
 import { grade, type Response, type Verdict } from '../engine/grader'
 import { haptic } from '../audio/haptics'
@@ -24,11 +24,15 @@ interface Props {
   recallFor?: (item: ExerciseItem) => number | null
   /** Called after each graded answer (e.g. to reschedule an SRS card). */
   onGraded?: (item: ExerciseItem, verdict: Verdict, ms: number) => Promise<void>
+  /** Called once with the session result (e.g. to pass a unit checkpoint). */
+  onFinish?: (end: SessionEnd) => void | Promise<void>
+  /** Shown above the summary (e.g. "Checkpoint passed"). */
+  summaryNote?: (end: SessionEnd) => ReactNode
 }
 
 const FORM_TYPES = new Set(['transform', 'cloze', 'choice'])
 
-export function SessionRunner({ items, lexemes, kind, onDone, onAgain, recallFor, onGraded }: Props) {
+export function SessionRunner({ items, lexemes, kind, onDone, onAgain, recallFor, onGraded, onFinish, summaryNote }: Props) {
   const session = useRef<RewardSession>(null as unknown as RewardSession)
   session.current ??= new RewardSession(kind, Date.now())
   const [queue, setQueue] = useState(items)
@@ -95,9 +99,11 @@ export function SessionRunner({ items, lexemes, kind, onDone, onAgain, recallFor
   const finish = useCallback(async () => {
     stopSpeaking()
     const e = await session.current.finish(Date.now())
-    if (e) setEnd(e)
-    else onDone()
-  }, [onDone])
+    if (e) {
+      await onFinish?.(e)
+      setEnd(e)
+    } else onDone()
+  }, [onDone, onFinish])
 
   const next = useCallback(() => {
     if (idx + 1 >= queue.length) return void finish()
@@ -121,7 +127,13 @@ export function SessionRunner({ items, lexemes, kind, onDone, onAgain, recallFor
     }
   }, [verdict, levelUp, next])
 
-  if (end) return <SessionSummary end={end} onDone={onDone} onAgain={onAgain} />
+  if (end)
+    return (
+      <>
+        {summaryNote?.(end)}
+        <SessionSummary end={end} onDone={onDone} onAgain={onAgain} />
+      </>
+    )
 
   const combo = fx?.combo ?? session.current.combo
   const multiplier = fx?.multiplier ?? 1

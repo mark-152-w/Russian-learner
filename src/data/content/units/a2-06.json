@@ -1,0 +1,80 @@
+{
+ "$schema": "../../../../schemas/unit.schema.json",
+ "id": "u-a2-06",
+ "number": 6,
+ "level": "A2",
+ "title": {
+  "en": "Where to?",
+  "ru": "Куда́?"
+ },
+ "theme": "around town",
+ "grammar": [
+  "g-where-whither",
+  "g-accusative",
+  "g-motion-basics"
+ ],
+ "vocab": [
+  "n:театр",
+  "n:библиотека",
+  "n:море",
+  "n:работа",
+  "n:вокзал",
+  "n:рынок",
+  "n:почта",
+  "n:концерт",
+  "n:аптека",
+  "n:банк",
+  "n:музей",
+  "v:идти",
+  "v:ехать",
+  "o:куда",
+  "o:где",
+  "o:домой",
+  "o:откуда"
+ ],
+ "drills": [
+  {
+   "items": [
+    "ex-a2-u06-01",
+    "ex-a2-u06-02",
+    "ex-a2-u06-03",
+    "ex-a2-u06-04",
+    "ex-a2-u06-05",
+    "ex-a2-u06-06",
+    "ex-a2-u06-07",
+    "ex-a2-u06-08",
+    "ex-a2-u06-09",
+    "ex-a2-u06-10"
+   ]
+  },
+  {
+   "generator": "case-cloze",
+   "count": 5,
+   "params": {
+    "tags": [
+     "case.acc.direction"
+    ]
+   }
+  },
+  {
+   "generator": "case-cloze",
+   "count": 4,
+   "params": {
+    "tags": [
+     "case.prep.location"
+    ]
+   }
+  }
+ ],
+ "boss": {
+  "name": {
+   "ru": "Солове́й-Разбо́йник",
+   "en": "the highway robber"
+  },
+  "hp": 13,
+  "art": "boss-06"
+ },
+ "testOut": [
+  "case.motion-location"
+ ]
+}
