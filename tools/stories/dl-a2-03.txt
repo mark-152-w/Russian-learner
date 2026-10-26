@@ -1,0 +1,27 @@
+id: dl-a2-03
+kind: dialogue
+level: A2
+title: Как пройти́? | How do I get there?
+---
+Тури́ст: Извини́те, вы не ска́жете, как пройти́ к музе́ю? | Tourist: Excuse me, could you tell me how to get to the museum?
+Же́нщина: К како́му музе́ю? Здесь их два. | Woman: Which museum? There are two here.
+Тури́ст: К истори́ческому. | Tourist: The history one.
+Же́нщина: Иди́те пря́мо до конца́ у́лицы, пото́м напра́во. | Woman: Go straight on to the end of the street, then right.
+Же́нщина: Музе́й бу́дет сле́ва, напро́тив па́рка. | Woman: The museum will be on the left, opposite the park.
+Тури́ст: Э́то далеко́? | Tourist: Is it far?
+Же́нщина: Нет, мину́т пять пешко́м. | Woman: No, about five minutes on foot.
+Тури́ст: Большо́е спаси́бо! | Tourist: Thank you very much!
+Же́нщина: Не за что. | Woman: You're welcome.
+---
+? Куда́ хо́чет пойти́ тури́ст? | Where does the tourist want to go?
++ В истори́ческий музе́й.
+- В парк.
+- В теа́тр.
+? Где нахо́дится музе́й? | Where is the museum?
++ Напро́тив па́рка.
+- Ря́дом с вокза́лом.
+- В конце́ у́лицы, сле́ва от магази́на.
+? Ско́лько вре́мени идти́? | How long does it take to walk?
++ Мину́т пять.
+- Три́дцать мину́т.
+- Час.

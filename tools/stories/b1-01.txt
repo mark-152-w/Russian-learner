@@ -1,0 +1,49 @@
+id: st-b1-01
+kind: story
+level: B1
+series: anya2
+chapter: 1
+title: Экза́мен | The exam
+characters: А́ня, Оле́г
+cliffhanger: With the exams over, Anya needs money for the summer, and a job.
+---
+В январе́ у А́ни была́ пе́рвая се́ссия. | In January Anya had her first exam session.
+Са́мым тру́дным был экза́мен по исто́рии. | The hardest was the history exam.
+Две неде́ли она́ почти́ не выходи́ла из до́ма: чита́ла уче́бники, писа́ла конспе́кты и пила́ сли́шком мно́го ко́фе. | For two weeks she hardly left home: she read textbooks, wrote notes and drank far too much coffee.
+Ба́рсик спал на её тетра́дях и, ка́жется, то́же гото́вился к экза́мену. | Barsik slept on her notebooks and seemed to be preparing for the exam too.
+
+Накану́не экза́мена позвони́л Оле́г. | The day before the exam Oleg rang.
+— Ну как, ты гото́ва? | "Well, are you ready?"
+— Нет! Я ничего́ не по́мню! | "No! I don't remember anything!"
+— Так всегда́ быва́ет. Ложи́сь спать пора́ньше. У́тром всё вспо́мнишь. | "It's always like that. Go to bed early. You'll remember it all in the morning."
+
+Но А́ня до́лго не могла́ усну́ть. | But Anya couldn't fall asleep for a long time.
+Она́ лежа́ла и повторя́ла да́ты: ты́сяча семьсо́т тре́тий год, ты́сяча восемьсо́т двена́дцатый... | She lay there repeating dates: 1703, 1812…
+
+У́тром в аудито́рии бы́ло ти́хо. | In the morning the lecture room was quiet.
+А́ня взяла́ биле́т и прочита́ла вопро́с: «Основа́ние Петербу́рга». | Anya drew a question card and read the question: "The founding of St Petersburg".
+Она́ улыбну́лась. Э́ту те́му она́ зна́ла лу́чше всего́. | She smiled. She knew this topic best of all.
+Она́ отвеча́ла два́дцать мину́т, а преподава́тель слу́шал и кива́л. | She answered for twenty minutes, while the lecturer listened and nodded.
+— Отли́чно, — сказа́л он в конце́. — Пять. | "Excellent," he said at the end. "Five."
+
+На у́лице А́ню ждал Оле́г. | Oleg was waiting for Anya outside.
+— Ну? — спроси́л он. | "Well?" he asked.
+— Пять! — закрича́ла она́ так гро́мко, что лю́ди оберну́лись. | "A five!" she shouted so loudly that people turned round.
+Они́ пошли́ в кафе́ и заказа́ли са́мый большо́й торт. | They went to a café and ordered the biggest cake.
+---
+? Како́й экза́мен был са́мым тру́дным? | Which exam was the hardest?
++ По исто́рии.
+- По литерату́ре.
+- По англи́йскому.
+? Что сове́товал Оле́г? | What did Oleg advise?
++ Лечь спать пора́ньше.
+- Чита́ть всю ночь.
+- Пить бо́льше ко́фе.
+? Како́й вопро́с был в биле́те? | What question was on the card?
++ Основа́ние Петербу́рга.
+- Исто́рия Москвы́.
+- Война́ ты́сяча восемьсо́т двена́дцатого го́да.
+? Каку́ю оце́нку получи́ла А́ня? | What mark did Anya get?
++ Пять.
+- Четы́ре.
+- Три.

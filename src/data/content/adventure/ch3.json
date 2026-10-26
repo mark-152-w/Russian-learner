@@ -1,0 +1,413 @@
+{
+ "$schema": "../../../../schemas/adventure.schema.json",
+ "id": "adv-3",
+ "chapter": 3,
+ "level": "B1",
+ "title": {
+  "ru": "Да́ча",
+  "en": "The dacha"
+ },
+ "start": "gate",
+ "parser": true,
+ "cliffhanger": "A message on Misha's phone: a meeting at the station at nine.",
+ "verbs": [
+  {
+   "id": "go",
+   "forms": [
+    "иди́",
+    "иди́те",
+    "идти́",
+    "пойди́",
+    "пойди́те"
+   ],
+   "action": "go"
+  },
+  {
+   "id": "take",
+   "lex": "v:взять",
+   "forms": [
+    "возьми́",
+    "возьми́те",
+    "взять"
+   ],
+   "action": "take",
+   "object": {
+    "case": "acc",
+    "why": "Take *what?*: the accusative. Inanimate masculine nouns look like the nominative (ключ), feminine -а becomes -у (су́мку)."
+   }
+  },
+  {
+   "id": "look",
+   "lex": "v:осмотреть",
+   "forms": [
+    "осмотри́",
+    "осмотри́те",
+    "осмотре́ть"
+   ],
+   "action": "look",
+   "object": {
+    "case": "acc",
+    "why": "Examine *what?*: the accusative."
+   }
+  },
+  {
+   "id": "open",
+   "lex": "v:открыть",
+   "forms": [
+    "откро́й",
+    "откро́йте",
+    "откры́ть"
+   ],
+   "action": "open",
+   "object": {
+    "case": "acc",
+    "why": "Open *what?*: the accusative. Дверь is feminine with a soft sign, so it doesn't change: откро́й дверь."
+   }
+  }
+ ],
+ "items": {
+  "key": {
+   "forms": {
+    "nom": "ключ",
+    "gen": "ключа́",
+    "dat": "ключу́",
+    "acc": "ключ",
+    "ins": "ключо́м",
+    "prep": "ключе́"
+   },
+   "en": "key",
+   "lex": "n:ключ"
+  },
+  "box": {
+   "forms": {
+    "nom": "я́щик",
+    "gen": "я́щика",
+    "dat": "я́щику",
+    "acc": "я́щик",
+    "ins": "я́щиком",
+    "prep": "я́щике"
+   },
+   "en": "box",
+   "lex": "n:ящик"
+  },
+  "door": {
+   "forms": {
+    "nom": "дверь",
+    "gen": "две́ри",
+    "dat": "две́ри",
+    "acc": "дверь",
+    "ins": "две́рью",
+    "prep": "две́ри"
+   },
+   "en": "door",
+   "lex": "n:дверь"
+  },
+  "cup": {
+   "forms": {
+    "nom": "ча́шка",
+    "gen": "ча́шки",
+    "dat": "ча́шке",
+    "acc": "ча́шку",
+    "ins": "ча́шкой",
+    "prep": "ча́шке"
+   },
+   "en": "cup",
+   "lex": "n:чашка"
+  },
+  "phone": {
+   "forms": {
+    "nom": "телефо́н",
+    "gen": "телефо́на",
+    "dat": "телефо́ну",
+    "acc": "телефо́н",
+    "ins": "телефо́ном",
+    "prep": "телефо́не"
+   },
+   "en": "phone",
+   "lex": "n:телефон"
+  },
+  "bag": {
+   "forms": {
+    "nom": "су́мка",
+    "gen": "су́мки",
+    "dat": "су́мке",
+    "acc": "су́мку",
+    "ins": "су́мкой",
+    "prep": "су́мке"
+   },
+   "en": "bag",
+   "lex": "n:сумка"
+  },
+  "bike": {
+   "forms": {
+    "nom": "велосипе́д",
+    "gen": "велосипе́да",
+    "dat": "велосипе́ду",
+    "acc": "велосипе́д",
+    "ins": "велосипе́дом",
+    "prep": "велосипе́де"
+   },
+   "en": "bicycle",
+   "lex": "n:велосипед"
+  },
+  "shed": {
+   "forms": {
+    "nom": "сара́й",
+    "gen": "сара́я",
+    "dat": "сара́ю",
+    "acc": "сара́й",
+    "ins": "сара́ем",
+    "prep": "сара́е"
+   },
+   "en": "shed",
+   "lex": "n:сарай"
+  },
+  "house": {
+   "forms": {
+    "nom": "дом",
+    "gen": "до́ма",
+    "dat": "до́му",
+    "acc": "дом",
+    "ins": "до́мом",
+    "prep": "до́ме"
+   },
+   "en": "house",
+   "lex": "n:дом"
+  },
+  "street": {
+   "forms": {
+    "nom": "у́лица",
+    "gen": "у́лицы",
+    "dat": "у́лице",
+    "acc": "у́лицу",
+    "ins": "у́лицей",
+    "prep": "у́лице"
+   },
+   "en": "street, outside",
+   "lex": "n:улица"
+  }
+ },
+ "scenes": {
+  "gate": {
+   "text": "Вы на да́че. Пе́ред ва́ми ста́рый деревя́нный дом. Сле́ва стои́т сара́й.",
+   "en": "You're at the dacha. In front of you is an old wooden house. On the left stands a shed.",
+   "hint": "Type commands in Russian: иди́ в сара́й, иди́ к до́му. Type «по́мощь» for the verbs you know.",
+   "exits": {
+    "в сара́й": "shed",
+    "к до́му": "porch",
+    "в дом": "porch"
+   }
+  },
+  "shed": {
+   "text": "В сара́е темно́. Здесь ста́рый велосипе́д и деревя́нный я́щик.",
+   "en": "It's dark in the shed. There's an old bicycle and a wooden box.",
+   "hint": "Try осмотри́ я́щик.",
+   "exits": {
+    "на у́лицу": "gate"
+   },
+   "commands": [
+    {
+     "verb": "look",
+     "to": "shed",
+     "object": "box",
+     "sets": [
+      "saw_key"
+     ],
+     "response": "В я́щике лежи́т ключ.",
+     "en": "There's a key in the box."
+    },
+    {
+     "verb": "open",
+     "to": "shed",
+     "object": "box",
+     "sets": [
+      "saw_key"
+     ],
+     "response": "В я́щике лежи́т ключ.",
+     "en": "There's a key in the box."
+    },
+    {
+     "verb": "take",
+     "to": "shed",
+     "object": "key",
+     "requires": [
+      "saw_key"
+     ],
+     "sets": [
+      "has_key"
+     ],
+     "response": "Вы взя́ли ключ.",
+     "en": "You took the key."
+    },
+    {
+     "verb": "look",
+     "to": "shed",
+     "object": "bike",
+     "response": "Ста́рый велосипе́д. Колесо́ спу́щено.",
+     "en": "An old bicycle. The tyre is flat."
+    }
+   ]
+  },
+  "porch": {
+   "text": "Вы у две́ри до́ма. Дверь закры́та.",
+   "en": "You're at the door of the house. The door is locked.",
+   "exits": {
+    "на у́лицу": "gate"
+   },
+   "commands": [
+    {
+     "verb": "open",
+     "to": "hall",
+     "object": "door",
+     "requires": [
+      "has_key"
+     ],
+     "response": "Ключ подхо́дит! Дверь открыва́ется.",
+     "en": "The key fits! The door opens."
+    },
+    {
+     "verb": "open",
+     "to": "porch",
+     "object": "door",
+     "response": "Дверь закры́та. Ну́жен ключ.",
+     "en": "The door is locked. You need a key."
+    },
+    {
+     "verb": "look",
+     "to": "porch",
+     "object": "door",
+     "response": "Ста́рая дверь. Замо́к но́вый.",
+     "en": "An old door. The lock is new."
+    }
+   ]
+  },
+  "hall": {
+   "text": "В до́ме хо́лодно. На столе́ стои́т ча́шка. Ря́дом лежи́т телефо́н. На полу́ — больша́я су́мка.",
+   "en": "It's cold in the house. A cup stands on the table. Next to it lies a phone. On the floor there's a big bag.",
+   "hint": "Examine things, open things, take things.",
+   "exits": {
+    "на у́лицу": "gate"
+   },
+   "commands": [
+    {
+     "verb": "look",
+     "to": "hall",
+     "object": "cup",
+     "sets": [
+      "warm_tea"
+     ],
+     "response": "Чай в ча́шке ещё тёплый! Кто́-то был здесь неда́вно.",
+     "en": "The tea in the cup is still warm! Someone was here recently."
+    },
+    {
+     "verb": "take",
+     "to": "end",
+     "object": "phone",
+     "requires": [
+      "seen_bag"
+     ],
+     "sets": [
+      "has_phone"
+     ]
+    },
+    {
+     "verb": "take",
+     "to": "hall",
+     "object": "phone",
+     "sets": [
+      "has_phone"
+     ],
+     "response": "Вы взя́ли телефо́н. На экра́не сообще́ние: «Встре́тимся на вокза́ле в де́вять. Джон».",
+     "en": "You took the phone. There's a message on the screen: \"Let's meet at the station at nine. John.\""
+    },
+    {
+     "verb": "look",
+     "to": "hall",
+     "object": "phone",
+     "response": "На экра́не сообще́ние: «Встре́тимся на вокза́ле в де́вять. Джон».",
+     "en": "There's a message on the screen: \"Let's meet at the station at nine. John.\""
+    },
+    {
+     "verb": "open",
+     "to": "end",
+     "object": "bag",
+     "requires": [
+      "has_phone"
+     ],
+     "sets": [
+      "seen_bag"
+     ]
+    },
+    {
+     "verb": "look",
+     "to": "end",
+     "object": "bag",
+     "requires": [
+      "has_phone"
+     ],
+     "sets": [
+      "seen_bag"
+     ]
+    },
+    {
+     "verb": "open",
+     "to": "bag",
+     "object": "bag",
+     "sets": [
+      "seen_bag"
+     ]
+    },
+    {
+     "verb": "look",
+     "to": "bag",
+     "object": "bag",
+     "sets": [
+      "seen_bag"
+     ]
+    }
+   ]
+  },
+  "bag": {
+   "text": "Су́мка пуста́я. В ней то́лько газе́та со статьёй о самова́ре. Самова́ра здесь нет.",
+   "en": "The bag is empty. There's only a newspaper in it, with the article about the samovar. The samovar isn't here.",
+   "hint": "Is there anything else on the table?",
+   "exits": {
+    "на у́лицу": "gate"
+   },
+   "commands": [
+    {
+     "verb": "take",
+     "to": "end",
+     "object": "phone",
+     "sets": [
+      "has_phone"
+     ]
+    },
+    {
+     "verb": "look",
+     "to": "end",
+     "object": "phone"
+    },
+    {
+     "verb": "look",
+     "to": "bag",
+     "object": "bag",
+     "response": "Пуста́я су́мка.",
+     "en": "An empty bag."
+    },
+    {
+     "verb": "look",
+     "to": "bag",
+     "object": "cup",
+     "response": "Чай в ча́шке ещё тёплый! Кто́-то был здесь неда́вно.",
+     "en": "The tea in the cup is still warm! Someone was here recently."
+    }
+   ]
+  },
+  "end": {
+   "text": "На экра́не телефо́на сообще́ние: «Встре́тимся на вокза́ле в де́вять. Джон». Ми́ша уе́хал на вокза́л! И самова́р, наве́рное, с ним.",
+   "en": "There's a message on the phone screen: \"Let's meet at the station at nine. John.\" Misha has gone to the station! And the samovar is probably with him.",
+   "end": true
+  }
+ }
+}

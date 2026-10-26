@@ -1,0 +1,1157 @@
+{
+ "$schema": "../../../../schemas/story.schema.json",
+ "id": "dl-b2-01",
+ "kind": "dialogue",
+ "level": "B2",
+ "title": {
+  "ru": "Интервью́",
+  "en": "The interview"
+ },
+ "sentences": [
+  {
+   "para": true,
+   "speaker": "Ка́тя",
+   "en": "Katya: Yuri, can you tell me what you thought about all those years?",
+   "tokens": [
+    {
+     "t": "Ю́рий",
+     "sp": false,
+     "lemma": "Ю́рий",
+     "g": {
+      "pos": "name",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "вы",
+     "lex": "o:вы",
+     "lemma": "вы",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "мо́жете",
+     "lex": "v:мочь",
+     "lemma": "мочь",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 2,
+      "number": "pl"
+     }
+    },
+    {
+     "t": "рассказа́ть",
+     "sp": false,
+     "lex": "v:рассказать",
+     "lemma": "рассказа́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "о",
+     "lex": "o:о",
+     "lemma": "о",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "чём",
+     "lex": "o:что",
+     "lemma": "что",
+     "g": {
+      "pos": "pron",
+      "case": "prep"
+     }
+    },
+    {
+     "t": "вы",
+     "lex": "o:вы",
+     "lemma": "вы",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "ду́мали",
+     "lex": "v:думать",
+     "lemma": "ду́мать",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "past",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "все",
+     "lex": "o:всё",
+     "lemma": "всё",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "э́ти",
+     "lex": "a:этот",
+     "lemma": "э́тот",
+     "g": {
+      "pos": "adj",
+      "case": "acc",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "го́ды",
+     "sp": false,
+     "lex": "n:год",
+     "lemma": "год",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "?",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Ю́рий",
+   "en": "Yuri: Honestly? I tried not to think about the past. I had a family, a job, a bridge that had to be finished.",
+   "tokens": [
+    {
+     "t": "Че́стно",
+     "sp": false,
+     "lex": "o:честно",
+     "lemma": "че́стно",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "?"
+    },
+    {
+     "t": "Я",
+     "lex": "o:я",
+     "lemma": "я",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "стара́лся",
+     "lex": "v:стараться",
+     "lemma": "стара́ться",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "не",
+     "lex": "o:не",
+     "lemma": "не",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "ду́мать",
+     "lex": "v:думать",
+     "lemma": "ду́мать",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf"
+     }
+    },
+    {
+     "t": "о",
+     "lex": "o:о",
+     "lemma": "о",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "про́шлом",
+     "sp": false,
+     "lex": "n:прошлое",
+     "lemma": "про́шлое",
+     "g": {
+      "pos": "noun",
+      "case": "prep",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "."
+    },
+    {
+     "t": "У",
+     "lex": "o:у",
+     "lemma": "у",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "меня́",
+     "lex": "o:я",
+     "lemma": "я",
+     "g": {
+      "pos": "pron",
+      "case": "gen"
+     }
+    },
+    {
+     "t": "была́",
+     "lex": "v:быть",
+     "lemma": "быть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "семья́",
+     "sp": false,
+     "lex": "n:семья",
+     "lemma": "семья́",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "рабо́та",
+     "sp": false,
+     "lex": "n:работа",
+     "lemma": "рабо́та",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "мост",
+     "sp": false,
+     "lex": "n:мост",
+     "lemma": "мост",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "кото́рый",
+     "lex": "a:который",
+     "lemma": "кото́рый",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "на́до",
+     "lex": "o:надо",
+     "lemma": "на́до",
+     "g": {
+      "pos": "pred"
+     }
+    },
+    {
+     "t": "бы́ло",
+     "lex": "v:быть",
+     "lemma": "быть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "n"
+     }
+    },
+    {
+     "t": "достро́ить",
+     "sp": false,
+     "lex": "v:достроить",
+     "lemma": "достро́ить",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf"
+     },
+     "rare": true
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Ка́тя",
+   "en": "Katya: But you kept the letters?",
+   "tokens": [
+    {
+     "t": "Но",
+     "lex": "o:но",
+     "lemma": "но",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "пи́сьма",
+     "lex": "n:письмо",
+     "lemma": "письмо́",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "вы",
+     "lex": "o:вы",
+     "lemma": "вы",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "храни́ли",
+     "sp": false,
+     "lex": "v:хранить",
+     "lemma": "храни́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "past",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "?",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Ю́рий",
+   "en": "Yuri: No. Nina kept my letters, and I never received her replies. You know, when you're young it seems that your whole life is ahead and everything can be put right.",
+   "tokens": [
+    {
+     "t": "Нет",
+     "sp": false,
+     "lex": "o:нет",
+     "lemma": "нет",
+     "g": {
+      "pos": "pred"
+     }
+    },
+    {
+     "t": "."
+    },
+    {
+     "t": "Мои́",
+     "lex": "a:мой",
+     "lemma": "мой",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "пи́сьма",
+     "lex": "n:письмо",
+     "lemma": "письмо́",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "сохрани́ла",
+     "lex": "v:сохранить",
+     "lemma": "сохрани́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "Ни́на",
+     "sp": false,
+     "lemma": "Ни́на",
+     "g": {
+      "pos": "name",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "а",
+     "lex": "o:а",
+     "lemma": "а",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "её",
+     "lex": "o:она",
+     "lemma": "она́",
+     "g": {
+      "pos": "pron",
+      "case": "acc"
+     }
+    },
+    {
+     "t": "отве́ты",
+     "lex": "n:ответ",
+     "lemma": "отве́т",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "я",
+     "lex": "o:я",
+     "lemma": "я",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "так",
+     "lex": "o:так",
+     "lemma": "так",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "и",
+     "lex": "o:и",
+     "lemma": "и",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "не",
+     "lex": "o:не",
+     "lemma": "не",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "получи́л",
+     "sp": false,
+     "lex": "v:получить",
+     "lemma": "получи́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "."
+    },
+    {
+     "t": "Зна́ете",
+     "sp": false,
+     "lex": "v:знать",
+     "lemma": "знать",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 2,
+      "number": "pl"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "в",
+     "lex": "o:в",
+     "lemma": "в",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "мо́лодости",
+     "lex": "n:молодость",
+     "lemma": "мо́лодость",
+     "g": {
+      "pos": "noun",
+      "case": "prep",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "ка́жется",
+     "sp": false,
+     "lex": "v:казаться",
+     "lemma": "каза́ться",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "sg"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "что",
+     "lex": "o:что",
+     "lemma": "что",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "вся",
+     "lex": "a:весь",
+     "lemma": "весь",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "жизнь",
+     "lex": "n:жизнь",
+     "lemma": "жизнь",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "впереди́",
+     "lex": "o:впереди",
+     "lemma": "впереди́",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "и",
+     "lex": "o:и",
+     "lemma": "и",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "всё",
+     "lex": "o:всё",
+     "lemma": "всё",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "мо́жно",
+     "lex": "o:можно",
+     "lemma": "мо́жно",
+     "g": {
+      "pos": "pred"
+     }
+    },
+    {
+     "t": "испра́вить",
+     "sp": false,
+     "lex": "v:исправить",
+     "lemma": "испра́вить",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Ка́тя",
+   "en": "Katya: And now?",
+   "tokens": [
+    {
+     "t": "А",
+     "lex": "o:а",
+     "lemma": "а",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "тепе́рь",
+     "sp": false,
+     "lex": "o:теперь",
+     "lemma": "тепе́рь",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "?",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Ю́рий",
+   "en": "Yuri: And now I know that not everything can. But some things still can. Even at eighty.",
+   "tokens": [
+    {
+     "t": "А",
+     "lex": "o:а",
+     "lemma": "а",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "тепе́рь",
+     "lex": "o:теперь",
+     "lemma": "тепе́рь",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "я",
+     "lex": "o:я",
+     "lemma": "я",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "зна́ю",
+     "sp": false,
+     "lex": "v:знать",
+     "lemma": "знать",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 1,
+      "number": "sg"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "что",
+     "lex": "o:что",
+     "lemma": "что",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "не",
+     "lex": "o:не",
+     "lemma": "не",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "всё",
+     "sp": false,
+     "lex": "o:всё",
+     "lemma": "всё",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "."
+    },
+    {
+     "t": "Но",
+     "lex": "o:но",
+     "lemma": "но",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "что́-то",
+     "lex": "o:что-то",
+     "lemma": "что́-то",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "всё-таки",
+     "lex": "o:всё-таки",
+     "lemma": "всё-таки",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "мо́жно",
+     "sp": false,
+     "lex": "o:можно",
+     "lemma": "мо́жно",
+     "g": {
+      "pos": "pred"
+     }
+    },
+    {
+     "t": "."
+    },
+    {
+     "t": "Да́же",
+     "lex": "o:даже",
+     "lemma": "да́же",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "в",
+     "lex": "o:в",
+     "lemma": "в",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "во́семьдесят",
+     "lex": "o:восемьдесят",
+     "lemma": "во́семьдесят",
+     "g": {
+      "pos": "num"
+     },
+     "rare": true
+    },
+    {
+     "t": "лет",
+     "sp": false,
+     "lex": "n:год",
+     "lemma": "год",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "pl"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Ка́тя",
+   "en": "Katya: What would you say to the young people who will read this interview?",
+   "tokens": [
+    {
+     "t": "Что",
+     "lex": "o:что",
+     "lemma": "что",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "бы",
+     "lex": "o:бы",
+     "lemma": "бы",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "вы",
+     "lex": "o:вы",
+     "lemma": "вы",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "сказа́ли",
+     "lex": "v:сказать",
+     "lemma": "сказа́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "молоды́м",
+     "lex": "a:молодой",
+     "lemma": "молодо́й",
+     "g": {
+      "pos": "adj",
+      "case": "dat",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "лю́дям",
+     "sp": false,
+     "lex": "n:человек",
+     "lemma": "челове́к",
+     "g": {
+      "pos": "noun",
+      "case": "dat",
+      "number": "pl"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "кото́рые",
+     "lex": "a:который",
+     "lemma": "кото́рый",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "прочита́ют",
+     "lex": "v:прочитать",
+     "lemma": "прочита́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "fut",
+      "person": 3,
+      "number": "pl"
+     }
+    },
+    {
+     "t": "э́то",
+     "lex": "a:этот",
+     "lemma": "э́тот",
+     "g": {
+      "pos": "adj",
+      "case": "acc",
+      "number": "sg",
+      "gender": "n"
+     }
+    },
+    {
+     "t": "интервью́",
+     "sp": false,
+     "lex": "n:интервью",
+     "lemma": "интервью́",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "?",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Ю́рий",
+   "en": "Yuri: Answer letters. And don't believe it when people tell you you've been forgotten.",
+   "tokens": [
+    {
+     "t": "Отвеча́йте",
+     "lex": "v:отвечать",
+     "lemma": "отвеча́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "mood": "imp",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "на",
+     "lex": "o:на",
+     "lemma": "на",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "пи́сьма",
+     "sp": false,
+     "lex": "n:письмо",
+     "lemma": "письмо́",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "."
+    },
+    {
+     "t": "И",
+     "lex": "o:и",
+     "lemma": "и",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "не",
+     "lex": "o:не",
+     "lemma": "не",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "ве́рьте",
+     "sp": false,
+     "lex": "v:верить",
+     "lemma": "ве́рить",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "mood": "imp",
+      "number": "pl"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "когда́",
+     "lex": "o:когда",
+     "lemma": "когда́",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "вам",
+     "lex": "o:вы",
+     "lemma": "вы",
+     "g": {
+      "pos": "pron",
+      "case": "dat"
+     }
+    },
+    {
+     "t": "говоря́т",
+     "sp": false,
+     "lex": "v:говорить",
+     "lemma": "говори́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "pl"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "что",
+     "lex": "o:что",
+     "lemma": "что",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "вас",
+     "lex": "o:вы",
+     "lemma": "вы",
+     "g": {
+      "pos": "pron",
+      "case": "gen"
+     }
+    },
+    {
+     "t": "забы́ли",
+     "sp": false,
+     "lex": "v:забыть",
+     "lemma": "забы́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "pl"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  }
+ ],
+ "questions": [
+  {
+   "id": "dl-b2-01-q1",
+   "type": "choice",
+   "level": "B2",
+   "tags": [
+    "listening"
+   ],
+   "prompt": {
+    "ru": "О чём Ю́рий стара́лся не ду́мать?",
+    "en": "What did Yuri try not to think about?",
+    "instruction": "Choose the answer"
+   },
+   "accept": [
+    "О про́шлом."
+   ],
+   "distractors": [
+    {
+     "ru": "О рабо́те.",
+     "error": "reading.detail"
+    },
+    {
+     "ru": "О семье́.",
+     "error": "reading.detail"
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "dl-b2-01-q2",
+   "type": "choice",
+   "level": "B2",
+   "tags": [
+    "listening"
+   ],
+   "prompt": {
+    "ru": "Что, по слова́м Ю́рия, ка́жется в мо́лодости?",
+    "en": "What, according to Yuri, seems true when you're young?",
+    "instruction": "Choose the answer"
+   },
+   "accept": [
+    "Что всё мо́жно испра́вить."
+   ],
+   "distractors": [
+    {
+     "ru": "Что жизнь коро́ткая.",
+     "error": "reading.detail"
+    },
+    {
+     "ru": "Что пи́сьма не нужны́.",
+     "error": "reading.detail"
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "dl-b2-01-q3",
+   "type": "choice",
+   "level": "B2",
+   "tags": [
+    "listening"
+   ],
+   "prompt": {
+    "ru": "Како́й сове́т даёт Ю́рий?",
+    "en": "What advice does Yuri give?",
+    "instruction": "Choose the answer"
+   },
+   "accept": [
+    "Отвеча́ть на пи́сьма."
+   ],
+   "distractors": [
+    {
+     "ru": "Не писа́ть пи́сем.",
+     "error": "reading.detail"
+    },
+    {
+     "ru": "Жить в Сиби́ри.",
+     "error": "reading.detail"
+    }
+   ],
+   "source": "handwritten"
+  }
+ ]
+}

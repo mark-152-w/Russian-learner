@@ -1,0 +1,601 @@
+{
+ "$schema": "../../../../schemas/story.schema.json",
+ "id": "dl-a2-08",
+ "kind": "dialogue",
+ "level": "A2",
+ "title": {
+  "ru": "На ры́нке",
+  "en": "At the market"
+ },
+ "sentences": [
+  {
+   "para": true,
+   "speaker": "Покупа́тельница",
+   "en": "Customer: How much are your tomatoes?",
+   "tokens": [
+    {
+     "t": "Ско́лько",
+     "lex": "o:сколько",
+     "lemma": "ско́лько",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "сто́ят",
+     "lex": "v:стоить",
+     "lemma": "сто́ить",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "pl"
+     }
+    },
+    {
+     "t": "ва́ши",
+     "lemma": "ваш",
+     "g": {
+      "pos": "pron",
+      "case": "acc",
+      "number": "pl"
+     },
+     "gloss": "your, yours (plural or polite)"
+    },
+    {
+     "t": "помидо́ры",
+     "sp": false,
+     "lex": "n:помидор",
+     "lemma": "помидо́р",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "pl"
+     },
+     "rare": true
+    },
+    {
+     "t": "?",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Продаве́ц",
+   "en": "Seller: A hundred and ninety roubles a kilo. Fresh, picked yesterday!",
+   "tokens": [
+    {
+     "t": "Сто",
+     "lex": "o:сто",
+     "lemma": "сто",
+     "g": {
+      "pos": "num",
+      "case": "nom"
+     },
+     "rare": true
+    },
+    {
+     "t": "девяно́сто",
+     "lex": "o:девяносто",
+     "lemma": "девяно́сто",
+     "g": {
+      "pos": "num",
+      "case": "nom"
+     },
+     "rare": true
+    },
+    {
+     "t": "рубле́й",
+     "lex": "n:рубль",
+     "lemma": "рубль",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "pl"
+     },
+     "rare": true
+    },
+    {
+     "t": "килогра́мм",
+     "sp": false,
+     "lex": "n:килограмм",
+     "lemma": "килогра́мм",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": "."
+    },
+    {
+     "t": "Све́жие",
+     "sp": false,
+     "lex": "a:свежий",
+     "lemma": "све́жий",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "pl"
+     },
+     "rare": true
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "вчера́",
+     "lex": "o:вчера",
+     "lemma": "вчера́",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "собра́ли",
+     "sp": false,
+     "lex": "v:собрать",
+     "lemma": "собра́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "!",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Покупа́тельница",
+   "en": "Customer: That's expensive. And the cucumbers?",
+   "tokens": [
+    {
+     "t": "До́рого",
+     "sp": false,
+     "lex": "o:дорого",
+     "lemma": "до́рого",
+     "g": {
+      "pos": "adv"
+     },
+     "rare": true
+    },
+    {
+     "t": "."
+    },
+    {
+     "t": "А",
+     "lex": "o:а",
+     "lemma": "а",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "огурцы́",
+     "sp": false,
+     "lex": "n:огурец",
+     "lemma": "огуре́ц",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "pl"
+     },
+     "rare": true
+    },
+    {
+     "t": "?",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Продаве́ц",
+   "en": "Seller: Cucumbers are a hundred and fifty.",
+   "tokens": [
+    {
+     "t": "Огурцы́",
+     "lex": "n:огурец",
+     "lemma": "огуре́ц",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "pl"
+     },
+     "rare": true
+    },
+    {
+     "t": "сто",
+     "lex": "o:сто",
+     "lemma": "сто",
+     "g": {
+      "pos": "num",
+      "case": "nom"
+     },
+     "rare": true
+    },
+    {
+     "t": "пятьдеся́т",
+     "sp": false,
+     "lex": "o:пятьдесят",
+     "lemma": "пятьдеся́т",
+     "g": {
+      "pos": "num"
+     },
+     "rare": true
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Покупа́тельница",
+   "en": "Customer: A kilo of cucumbers and half a kilo of tomatoes, please.",
+   "tokens": [
+    {
+     "t": "Да́йте",
+     "sp": false,
+     "lex": "v:дать",
+     "lemma": "дать",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "mood": "imp",
+      "number": "pl"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "пожа́луйста",
+     "sp": false,
+     "lex": "o:пожалуйста",
+     "lemma": "пожа́луйста",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "килогра́мм",
+     "lex": "n:килограмм",
+     "lemma": "килогра́мм",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": "огурцо́в",
+     "lex": "n:огурец",
+     "lemma": "огуре́ц",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "pl"
+     },
+     "rare": true
+    },
+    {
+     "t": "и",
+     "lex": "o:и",
+     "lemma": "и",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "полови́ну",
+     "lex": "n:половина",
+     "lemma": "полови́на",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "килогра́мма",
+     "lex": "n:килограмм",
+     "lemma": "килогра́мм",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": "помидо́ров",
+     "sp": false,
+     "lex": "n:помидор",
+     "lemma": "помидо́р",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "pl"
+     },
+     "rare": true
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Продаве́ц",
+   "en": "Seller: Anything else? There are apples too, very sweet.",
+   "tokens": [
+    {
+     "t": "Что",
+     "lex": "o:что",
+     "lemma": "что",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "ещё",
+     "sp": false,
+     "lex": "o:ещё",
+     "lemma": "ещё",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "?"
+    },
+    {
+     "t": "Есть",
+     "lex": "v:быть",
+     "lemma": "быть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "sg"
+     }
+    },
+    {
+     "t": "ещё",
+     "lex": "o:ещё",
+     "lemma": "ещё",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "я́блоки",
+     "sp": false,
+     "lex": "n:яблоко",
+     "lemma": "я́блоко",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "pl"
+     },
+     "rare": true
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "о́чень",
+     "lex": "o:очень",
+     "lemma": "о́чень",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "сла́дкие",
+     "sp": false,
+     "lex": "a:сладкий",
+     "lemma": "сла́дкий",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "pl"
+     },
+     "rare": true
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Покупа́тельница",
+   "en": "Customer: No, thanks, I have my own apples at the dacha.",
+   "tokens": [
+    {
+     "t": "Нет",
+     "sp": false,
+     "lex": "o:нет",
+     "lemma": "нет",
+     "g": {
+      "pos": "pred"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "спаси́бо",
+     "sp": false,
+     "lex": "o:спасибо",
+     "lemma": "спаси́бо",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "я́блоки",
+     "lex": "n:яблоко",
+     "lemma": "я́блоко",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "pl"
+     },
+     "rare": true
+    },
+    {
+     "t": "у",
+     "lex": "o:у",
+     "lemma": "у",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "меня́",
+     "lex": "o:я",
+     "lemma": "я",
+     "g": {
+      "pos": "pron",
+      "case": "gen"
+     }
+    },
+    {
+     "t": "на",
+     "lex": "o:на",
+     "lemma": "на",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "да́че",
+     "lex": "n:дача",
+     "lemma": "да́ча",
+     "g": {
+      "pos": "noun",
+      "case": "prep",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": "свои́",
+     "sp": false,
+     "lex": "a:свой",
+     "lemma": "свой",
+     "g": {
+      "pos": "adj",
+      "case": "acc",
+      "number": "pl"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  }
+ ],
+ "questions": [
+  {
+   "id": "dl-a2-08-q1",
+   "type": "choice",
+   "level": "A2",
+   "tags": [
+    "listening"
+   ],
+   "prompt": {
+    "ru": "Ско́лько сто́ят помидо́ры?",
+    "en": "How much do the tomatoes cost?",
+    "instruction": "Choose the answer"
+   },
+   "accept": [
+    "Сто девяно́сто рубле́й."
+   ],
+   "distractors": [
+    {
+     "ru": "Сто пятьдеся́т рубле́й.",
+     "error": "reading.detail"
+    },
+    {
+     "ru": "Сто рубле́й.",
+     "error": "reading.detail"
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "dl-a2-08-q2",
+   "type": "choice",
+   "level": "A2",
+   "tags": [
+    "listening"
+   ],
+   "prompt": {
+    "ru": "Что купи́ла же́нщина?",
+    "en": "What did the woman buy?",
+    "instruction": "Choose the answer"
+   },
+   "accept": [
+    "Огурцы́ и помидо́ры."
+   ],
+   "distractors": [
+    {
+     "ru": "То́лько я́блоки.",
+     "error": "reading.detail"
+    },
+    {
+     "ru": "То́лько огурцы́.",
+     "error": "reading.detail"
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "dl-a2-08-q3",
+   "type": "choice",
+   "level": "A2",
+   "tags": [
+    "listening"
+   ],
+   "prompt": {
+    "ru": "Почему́ она́ не купи́ла я́блоки?",
+    "en": "Why didn't she buy apples?",
+    "instruction": "Choose the answer"
+   },
+   "accept": [
+    "У неё есть свои́ я́блоки на да́че."
+   ],
+   "distractors": [
+    {
+     "ru": "Они́ сли́шком дороги́е.",
+     "error": "reading.detail"
+    },
+    {
+     "ru": "Она́ не лю́бит я́блоки.",
+     "error": "reading.detail"
+    }
+   ],
+   "source": "handwritten"
+  }
+ ]
+}

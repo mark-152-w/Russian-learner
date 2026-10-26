@@ -1,0 +1,42 @@
+id: st-a2-06
+kind: story
+level: A2
+series: anya
+chapter: 6
+title: Звоно́к из Каза́ни | A call from Kazan
+characters: А́ня, Ми́ша
+cliffhanger: Misha is on the train to Moscow. Will Anya's tiny flat be big enough?
+---
+В четве́рг ве́чером позвони́ла ма́ма. | On Thursday evening Mum rang.
+— А́ня, у нас но́вость, — сказа́ла она́. — Ми́ша хо́чет прие́хать к тебе́ на неде́лю. | "Anya, we have news," she said. "Misha wants to come and stay with you for a week."
+Ми́ша — мой мла́дший брат. | Misha is my younger brother.
+Ему́ двена́дцать лет. | He's twelve.
+Он ещё никогда́ не был в Москве́. | He's never been to Moscow.
+
+— Но у меня́ одна́ ко́мната! — сказа́ла я. | "But I've only got one room!" I said.
+— Ничего́, он мо́жет спать на дива́не, — отве́тила ма́ма. | "Never mind, he can sleep on the sofa," Mum answered.
+— У меня́ нет дива́на. | "I haven't got a sofa."
+— Зна́чит, на полу́. Ему́ всё равно́. | "Then on the floor. He doesn't mind."
+
+Пото́м тру́бку взял Ми́ша. | Then Misha took the phone.
+— А́ня, я хочу́ уви́деть Кремль, метро́ и зоопа́рк! | "Anya, I want to see the Kremlin, the metro and the zoo!"
+— Хорошо́, — засмея́лась я. — А ещё ты бу́дешь ходи́ть со мной в магази́н. | "All right," I laughed. "And you'll also be coming shopping with me."
+— Э́то ску́чно! | "That's boring!"
+
+По́сле разгово́ра я посмотре́ла на свою́ ма́ленькую кварти́ру. | After the call I looked at my small flat.
+Где бу́дет спать Ми́ша? | Where will Misha sleep?
+На сле́дующий день я рассказа́ла об э́том Ни́не. | The next day I told Nina about it.
+— У меня́ есть ста́рая раскладу́шка, — сказа́ла она́. — Бери́! | "I've got an old camp bed," she said. "Take it!"
+---
+? Ско́лько лет Ми́ше? | How old is Misha?
++ Двена́дцать.
+- Девятна́дцать.
+- Де́сять.
+? Что хо́чет уви́деть Ми́ша? | What does Misha want to see?
++ Кремль, метро́ и зоопа́рк.
+- Теа́тр и музе́й.
+- Университе́т А́ни.
+? Где бу́дет спать Ми́ша? | Where will Misha sleep?
++ На раскладу́шке Ни́ны.
+- На дива́не.
+- В гости́нице.

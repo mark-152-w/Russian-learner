@@ -1,0 +1,26 @@
+id: dl-b1-06
+kind: dialogue
+level: B1
+title: Счёт, пожа́луйста | The bill, please
+---
+Гость: Де́вушка, принеси́те, пожа́луйста, счёт. | Customer: Excuse me, could you bring the bill, please?
+Официа́нтка: Коне́чно. Вы бу́дете плати́ть ка́ртой и́ли нали́чными? | Waitress: Of course. Will you pay by card or in cash?
+Гость: Ка́ртой. Ой, подожди́те, здесь, ка́жется, оши́бка. | Customer: By card. Oh, wait, there seems to be a mistake here.
+Официа́нтка: Где? | Waitress: Where?
+Гость: Вот: две ча́шки ко́фе. А мы зака́зывали то́лько одну́. | Customer: Here: two cups of coffee. But we only ordered one.
+Официа́нтка: Да, вы пра́вы, извини́те. Сейча́с испра́влю. | Waitress: Yes, you're right, I'm sorry. I'll correct it now.
+Гость: Ничего́ стра́шного. А чаевы́е мо́жно оста́вить ка́ртой? | Customer: No problem. And can I leave a tip by card?
+Официа́нтка: Да, мо́жно. Спаси́бо вам большо́е! | Waitress: Yes, you can. Thank you very much!
+---
+? Как гость бу́дет плати́ть? | How will the customer pay?
++ Ка́ртой.
+- Нали́чными.
+- Он не бу́дет плати́ть.
+? Кака́я была́ оши́бка в счёте? | What was the mistake in the bill?
++ Там бы́ли две ча́шки ко́фе вме́сто одно́й.
+- Там не́ было ко́фе.
+- Там был чужо́й обе́д.
+? Что отве́тила официа́нтка? | What did the waitress say?
++ Что гость прав, и испра́вила счёт.
+- Что оши́бки нет.
+- Что ну́жно позва́ть дире́ктора.

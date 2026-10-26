@@ -1,0 +1,1941 @@
+{
+ "$schema": "../../../../schemas/story.schema.json",
+ "id": "nf-b2-04",
+ "kind": "nonfiction",
+ "level": "B2",
+ "title": {
+  "ru": "Чай с самова́ра",
+  "en": "Tea from the samovar"
+ },
+ "sentences": [
+  {
+   "para": true,
+   "en": "Many people think the main Russian drink is vodka.",
+   "tokens": [
+    {
+     "t": "Мно́гие",
+     "lex": "a:многие",
+     "lemma": "мно́гие",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "pl"
+     },
+     "rare": true
+    },
+    {
+     "t": "ду́мают",
+     "sp": false,
+     "lex": "v:думать",
+     "lemma": "ду́мать",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "pl"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "что",
+     "lex": "o:что",
+     "lemma": "что",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "гла́вный",
+     "lex": "a:главный",
+     "lemma": "гла́вный",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "ру́сский",
+     "lex": "a:русский",
+     "lemma": "ру́сский",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "напи́ток",
+     "lex": "n:напиток",
+     "lemma": "напи́ток",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "—"
+    },
+    {
+     "t": "во́дка",
+     "sp": false,
+     "lex": "n:водка",
+     "lemma": "во́дка",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "In fact Russians drink far more tea.",
+   "tokens": [
+    {
+     "t": "На",
+     "lex": "o:на",
+     "lemma": "на",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "са́мом",
+     "lex": "a:самый",
+     "lemma": "са́мый",
+     "g": {
+      "pos": "adj",
+      "case": "prep",
+      "number": "sg",
+      "gender": "n"
+     }
+    },
+    {
+     "t": "де́ле",
+     "lex": "n:дело",
+     "lemma": "де́ло",
+     "g": {
+      "pos": "noun",
+      "case": "prep",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "ру́сские",
+     "lex": "a:русский",
+     "lemma": "ру́сский",
+     "g": {
+      "pos": "adj",
+      "case": "acc",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "пьют",
+     "lex": "v:пить",
+     "lemma": "пить",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "pl"
+     }
+    },
+    {
+     "t": "гора́здо",
+     "lex": "o:гораздо",
+     "lemma": "гора́здо",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "бо́льше",
+     "lex": "a:большой",
+     "lemma": "большо́й",
+     "g": {
+      "pos": "comp"
+     }
+    },
+    {
+     "t": "ча́я",
+     "sp": false,
+     "lex": "n:чай",
+     "lemma": "чай",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "They drink tea in the morning and the evening, at work and when visiting, in summer and in winter.",
+   "tokens": [
+    {
+     "t": "Чай",
+     "lex": "n:чай",
+     "lemma": "чай",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "пьют",
+     "lex": "v:пить",
+     "lemma": "пить",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "pl"
+     }
+    },
+    {
+     "t": "у́тром",
+     "lex": "n:утро",
+     "lemma": "у́тро",
+     "g": {
+      "pos": "noun",
+      "case": "ins",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "и",
+     "lex": "o:и",
+     "lemma": "и",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "ве́чером",
+     "sp": false,
+     "lex": "n:вечер",
+     "lemma": "ве́чер",
+     "g": {
+      "pos": "noun",
+      "case": "ins",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "на",
+     "lex": "o:на",
+     "lemma": "на",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "рабо́те",
+     "lex": "n:работа",
+     "lemma": "рабо́та",
+     "g": {
+      "pos": "noun",
+      "case": "prep",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "и",
+     "lex": "o:и",
+     "lemma": "и",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "в",
+     "lex": "o:в",
+     "lemma": "в",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "гостя́х",
+     "sp": false,
+     "lex": "n:гость",
+     "lemma": "гость",
+     "g": {
+      "pos": "noun",
+      "case": "prep",
+      "number": "pl"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "ле́том",
+     "lex": "n:лето",
+     "lemma": "ле́то",
+     "g": {
+      "pos": "noun",
+      "case": "ins",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "и",
+     "lex": "o:и",
+     "lemma": "и",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "зимо́й",
+     "sp": false,
+     "lex": "n:зима",
+     "lemma": "зима́",
+     "g": {
+      "pos": "noun",
+      "case": "ins",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "Offering a guest some tea is the first rule of hospitality.",
+   "tokens": [
+    {
+     "t": "Предложи́ть",
+     "lex": "v:предложить",
+     "lemma": "предложи́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf"
+     }
+    },
+    {
+     "t": "го́стю",
+     "lex": "n:гость",
+     "lemma": "гость",
+     "g": {
+      "pos": "noun",
+      "case": "dat",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "ча́ю",
+     "lex": "n:чай",
+     "lemma": "чай",
+     "g": {
+      "pos": "noun",
+      "case": "dat",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "—"
+    },
+    {
+     "t": "э́то",
+     "lex": "o:это",
+     "lemma": "э́то",
+     "g": {
+      "pos": "pron"
+     }
+    },
+    {
+     "t": "пе́рвое",
+     "lex": "a:первый",
+     "lemma": "пе́рвый",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "n"
+     }
+    },
+    {
+     "t": "пра́вило",
+     "lex": "n:правило",
+     "lemma": "пра́вило",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "гостеприи́мства",
+     "sp": false,
+     "lex": "n:гостеприимство",
+     "lemma": "гостеприи́мство",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "para": true,
+   "en": "Tea came to Russia from China in the seventeenth century.",
+   "tokens": [
+    {
+     "t": "Чай",
+     "lex": "n:чай",
+     "lemma": "чай",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "пришёл",
+     "lex": "v:прийти",
+     "lemma": "прийти́",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "в",
+     "lex": "o:в",
+     "lemma": "в",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "Росси́ю",
+     "lex": "n:Россия",
+     "lemma": "Росси́я",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "из",
+     "lex": "o:из",
+     "lemma": "из",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "Кита́я",
+     "lex": "n:китай",
+     "lemma": "Кита́й",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "в",
+     "lex": "o:в",
+     "lemma": "в",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "семна́дцатом",
+     "lex": "a:семнадцатый",
+     "lemma": "семна́дцатый",
+     "g": {
+      "pos": "adj",
+      "case": "prep",
+      "number": "sg",
+      "gender": "m"
+     },
+     "rare": true
+    },
+    {
+     "t": "ве́ке",
+     "sp": false,
+     "lex": "n:век",
+     "lemma": "век",
+     "g": {
+      "pos": "noun",
+      "case": "prep",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "At first it was very expensive and only the rich could drink it.",
+   "tokens": [
+    {
+     "t": "Снача́ла",
+     "lex": "o:сначала",
+     "lemma": "снача́ла",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "он",
+     "lex": "o:он",
+     "lemma": "он",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "был",
+     "lex": "v:быть",
+     "lemma": "быть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "о́чень",
+     "lex": "o:очень",
+     "lemma": "о́чень",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "дороги́м",
+     "sp": false,
+     "lex": "a:дорогой",
+     "lemma": "дорого́й",
+     "g": {
+      "pos": "adj",
+      "case": "ins",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "и",
+     "lex": "o:и",
+     "lemma": "и",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "пить",
+     "lex": "v:пить",
+     "lemma": "пить",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf"
+     }
+    },
+    {
+     "t": "его́",
+     "lex": "o:он",
+     "lemma": "он",
+     "g": {
+      "pos": "pron",
+      "case": "acc"
+     }
+    },
+    {
+     "t": "могли́",
+     "lex": "v:мочь",
+     "lemma": "мочь",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "past",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "то́лько",
+     "lex": "o:только",
+     "lemma": "то́лько",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "бога́тые",
+     "sp": false,
+     "lex": "a:богатый",
+     "lemma": "бога́тый",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "pl"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "Tea was carried by camel through Mongolia and Siberia, and the journey took more than a year.",
+   "tokens": [
+    {
+     "t": "Чай",
+     "lex": "n:чай",
+     "lemma": "чай",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "везли́",
+     "lex": "v:везти",
+     "lemma": "везти́",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "past",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "на",
+     "lex": "o:на",
+     "lemma": "на",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "верблю́дах",
+     "lex": "n:верблюд",
+     "lemma": "верблю́д",
+     "g": {
+      "pos": "noun",
+      "case": "prep",
+      "number": "pl"
+     },
+     "rare": true
+    },
+    {
+     "t": "че́рез",
+     "lex": "o:через",
+     "lemma": "че́рез",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "Монго́лию",
+     "lemma": "Монго́лия",
+     "g": {
+      "pos": "name",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "и",
+     "lex": "o:и",
+     "lemma": "и",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "Сиби́рь",
+     "sp": false,
+     "lemma": "Сиби́рь",
+     "g": {
+      "pos": "name",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "и",
+     "lex": "o:и",
+     "lemma": "и",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "доро́га",
+     "lex": "n:дорога",
+     "lemma": "доро́га",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "занима́ла",
+     "lex": "v:занимать",
+     "lemma": "занима́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "бо́льше",
+     "lex": "a:большой",
+     "lemma": "большо́й",
+     "g": {
+      "pos": "comp"
+     }
+    },
+    {
+     "t": "го́да",
+     "sp": false,
+     "lex": "n:год",
+     "lemma": "год",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "para": true,
+   "en": "The symbol of Russian tea-drinking became the samovar.",
+   "tokens": [
+    {
+     "t": "Си́мволом",
+     "lex": "n:символ",
+     "lemma": "си́мвол",
+     "g": {
+      "pos": "noun",
+      "case": "ins",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "ру́сского",
+     "lex": "a:русский",
+     "lemma": "ру́сский",
+     "g": {
+      "pos": "adj",
+      "case": "gen",
+      "number": "sg",
+      "gender": "n"
+     }
+    },
+    {
+     "t": "чаепи́тия",
+     "lex": "n:чаепитие",
+     "lemma": "чаепи́тие",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": "стал",
+     "lex": "v:стать",
+     "lemma": "стать",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "самова́р",
+     "sp": false,
+     "lex": "n:самовар",
+     "lemma": "самова́р",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "It's a large metal vessel in which water was boiled.",
+   "tokens": [
+    {
+     "t": "Э́то",
+     "lex": "o:это",
+     "lemma": "э́то",
+     "g": {
+      "pos": "pron"
+     }
+    },
+    {
+     "t": "большо́й",
+     "lex": "a:большой",
+     "lemma": "большо́й",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "металли́ческий",
+     "lex": "a:металлический",
+     "lemma": "металли́ческий",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "m"
+     },
+     "rare": true
+    },
+    {
+     "t": "сосу́д",
+     "sp": false,
+     "lex": "n:сосуд",
+     "lemma": "сосу́д",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "в",
+     "lex": "o:в",
+     "lemma": "в",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "кото́ром",
+     "lex": "a:который",
+     "lemma": "кото́рый",
+     "g": {
+      "pos": "adj",
+      "case": "prep",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "кипяти́ли",
+     "lex": "v:кипятить",
+     "lemma": "кипяти́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "past",
+      "number": "pl"
+     },
+     "rare": true
+    },
+    {
+     "t": "во́ду",
+     "sp": false,
+     "lex": "n:вода",
+     "lemma": "вода́",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "A small teapot with very strong brewed tea was placed on the samovar.",
+   "tokens": [
+    {
+     "t": "На",
+     "lex": "o:на",
+     "lemma": "на",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "самова́р",
+     "lex": "n:самовар",
+     "lemma": "самова́р",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": "ста́вили",
+     "lex": "v:ставить",
+     "lemma": "ста́вить",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "past",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "ма́ленький",
+     "lex": "a:маленький",
+     "lemma": "ма́ленький",
+     "g": {
+      "pos": "adj",
+      "case": "acc",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "ча́йник",
+     "lex": "n:чайник",
+     "lemma": "ча́йник",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": "с",
+     "lex": "o:с",
+     "lemma": "с",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "о́чень",
+     "lex": "o:очень",
+     "lemma": "о́чень",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "кре́пкой",
+     "lex": "a:крепкий",
+     "lemma": "кре́пкий",
+     "g": {
+      "pos": "adj",
+      "case": "ins",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "зава́ркой",
+     "sp": false,
+     "lex": "n:заварка",
+     "lemma": "зава́рка",
+     "g": {
+      "pos": "noun",
+      "case": "ins",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "Everyone poured a little of the brew into a cup and added hot water to taste.",
+   "tokens": [
+    {
+     "t": "Ка́ждый",
+     "lex": "a:каждый",
+     "lemma": "ка́ждый",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "налива́л",
+     "lex": "v:наливать",
+     "lemma": "налива́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "m"
+     },
+     "rare": true
+    },
+    {
+     "t": "в",
+     "lex": "o:в",
+     "lemma": "в",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "ча́шку",
+     "lex": "n:чашка",
+     "lemma": "ча́шка",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "немно́го",
+     "lex": "o:немного",
+     "lemma": "немно́го",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "зава́рки",
+     "lex": "n:заварка",
+     "lemma": "зава́рка",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": "и",
+     "lex": "o:и",
+     "lemma": "и",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "добавля́л",
+     "lex": "v:добавлять",
+     "lemma": "добавля́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "горя́чую",
+     "lex": "a:горячий",
+     "lemma": "горя́чий",
+     "g": {
+      "pos": "adj",
+      "case": "acc",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "во́ду",
+     "lex": "n:вода",
+     "lemma": "вода́",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "по",
+     "lex": "o:по",
+     "lemma": "по",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "вку́су",
+     "sp": false,
+     "lex": "n:вкус",
+     "lemma": "вкус",
+     "g": {
+      "pos": "noun",
+      "case": "dat",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "para": true,
+   "en": "People drank tea slowly, often from a saucer, with sugar or jam.",
+   "tokens": [
+    {
+     "t": "Пи́ли",
+     "lex": "v:пить",
+     "lemma": "пить",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "past",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "чай",
+     "lex": "n:чай",
+     "lemma": "чай",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "ме́дленно",
+     "sp": false,
+     "lex": "o:медленно",
+     "lemma": "ме́дленно",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "ча́сто",
+     "lex": "o:часто",
+     "lemma": "ча́сто",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "из",
+     "lex": "o:из",
+     "lemma": "из",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "блю́дца",
+     "sp": false,
+     "lex": "n:блюдце",
+     "lemma": "блю́дце",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "с",
+     "lex": "o:с",
+     "lemma": "с",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "са́харом",
+     "lex": "n:сахар",
+     "lemma": "са́хар",
+     "g": {
+      "pos": "noun",
+      "case": "ins",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "и́ли",
+     "lex": "o:или",
+     "lemma": "и́ли",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "с",
+     "lex": "o:с",
+     "lemma": "с",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "варе́ньем",
+     "sp": false,
+     "lex": "n:варенье",
+     "lemma": "варе́нье",
+     "g": {
+      "pos": "noun",
+      "case": "ins",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "You could sit at the samovar for hours: chatting, singing, discussing business.",
+   "tokens": [
+    {
+     "t": "За",
+     "lex": "o:за",
+     "lemma": "за",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "самова́ром",
+     "lex": "n:самовар",
+     "lemma": "самова́р",
+     "g": {
+      "pos": "noun",
+      "case": "ins",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": "мо́жно",
+     "lex": "o:можно",
+     "lemma": "мо́жно",
+     "g": {
+      "pos": "pred"
+     }
+    },
+    {
+     "t": "бы́ло",
+     "lex": "v:быть",
+     "lemma": "быть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "n"
+     }
+    },
+    {
+     "t": "сиде́ть",
+     "lex": "v:сидеть",
+     "lemma": "сиде́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf"
+     }
+    },
+    {
+     "t": "часа́ми",
+     "sp": false,
+     "lex": "n:час",
+     "lemma": "час",
+     "g": {
+      "pos": "noun",
+      "case": "ins",
+      "number": "pl"
+     }
+    },
+    {
+     "t": ":"
+    },
+    {
+     "t": "разгова́ривать",
+     "sp": false,
+     "lex": "v:разговаривать",
+     "lemma": "разгова́ривать",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "петь",
+     "sp": false,
+     "lex": "v:петь",
+     "lemma": "петь",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "обсужда́ть",
+     "lex": "v:обсуждать",
+     "lemma": "обсужда́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf"
+     }
+    },
+    {
+     "t": "дела́",
+     "sp": false,
+     "lex": "n:дело",
+     "lemma": "де́ло",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "pl"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "para": true,
+   "en": "Today the samovar mostly stands in museums or at dachas as a decoration.",
+   "tokens": [
+    {
+     "t": "Сего́дня",
+     "lex": "o:сегодня",
+     "lemma": "сего́дня",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "самова́р",
+     "lex": "n:самовар",
+     "lemma": "самова́р",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": "в",
+     "lex": "o:в",
+     "lemma": "в",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "основно́м",
+     "lex": "a:основной",
+     "lemma": "основно́й",
+     "g": {
+      "pos": "adj",
+      "case": "prep",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "стои́т",
+     "lex": "v:стоять",
+     "lemma": "стоя́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "sg"
+     }
+    },
+    {
+     "t": "в",
+     "lex": "o:в",
+     "lemma": "в",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "музе́ях",
+     "lex": "n:музей",
+     "lemma": "музе́й",
+     "g": {
+      "pos": "noun",
+      "case": "prep",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "и́ли",
+     "lex": "o:или",
+     "lemma": "и́ли",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "на",
+     "lex": "o:на",
+     "lemma": "на",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "да́чах",
+     "lex": "n:дача",
+     "lemma": "да́ча",
+     "g": {
+      "pos": "noun",
+      "case": "prep",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "как",
+     "lemma": "как",
+     "g": {
+      "pos": "adv"
+     },
+     "gloss": "how; as, like"
+    },
+    {
+     "t": "украше́ние",
+     "sp": false,
+     "lex": "n:украшение",
+     "lemma": "украше́ние",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "The kettle has replaced it in every flat.",
+   "tokens": [
+    {
+     "t": "Ча́йник",
+     "lex": "n:чайник",
+     "lemma": "ча́йник",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": "замени́л",
+     "lex": "v:заменить",
+     "lemma": "замени́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "его́",
+     "lex": "o:он",
+     "lemma": "он",
+     "g": {
+      "pos": "pron",
+      "case": "acc"
+     }
+    },
+    {
+     "t": "в",
+     "lex": "o:в",
+     "lemma": "в",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "ка́ждой",
+     "lex": "a:каждый",
+     "lemma": "ка́ждый",
+     "g": {
+      "pos": "adj",
+      "case": "prep",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "кварти́ре",
+     "sp": false,
+     "lex": "n:квартира",
+     "lemma": "кварти́ра",
+     "g": {
+      "pos": "noun",
+      "case": "prep",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "But the tradition of long tea over conversation is alive.",
+   "tokens": [
+    {
+     "t": "Но",
+     "lex": "o:но",
+     "lemma": "но",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "тради́ция",
+     "lex": "n:традиция",
+     "lemma": "тради́ция",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "до́лгого",
+     "lex": "a:долгий",
+     "lemma": "до́лгий",
+     "g": {
+      "pos": "adj",
+      "case": "gen",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "ча́я",
+     "lex": "n:чай",
+     "lemma": "чай",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "за",
+     "lex": "o:за",
+     "lemma": "за",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "разгово́ром",
+     "lex": "n:разговор",
+     "lemma": "разгово́р",
+     "g": {
+      "pos": "noun",
+      "case": "ins",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "жива́",
+     "sp": false,
+     "lex": "a:живой",
+     "lemma": "живо́й",
+     "g": {
+      "pos": "adj",
+      "short": true,
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "If you've been invited \"for tea\", don't think it will be one cup in five minutes.",
+   "tokens": [
+    {
+     "t": "Е́сли",
+     "lex": "o:если",
+     "lemma": "е́сли",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "вас",
+     "lex": "o:вы",
+     "lemma": "вы",
+     "g": {
+      "pos": "pron",
+      "case": "acc"
+     }
+    },
+    {
+     "t": "пригласи́ли",
+     "lex": "v:пригласить",
+     "lemma": "пригласи́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "«",
+     "sp": false
+    },
+    {
+     "t": "на",
+     "lex": "o:на",
+     "lemma": "на",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "чай",
+     "sp": false,
+     "lex": "n:чай",
+     "lemma": "чай",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "»",
+     "sp": false
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "не",
+     "lex": "o:не",
+     "lemma": "не",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "ду́майте",
+     "sp": false,
+     "lex": "v:думать",
+     "lemma": "ду́мать",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "mood": "imp",
+      "number": "pl"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "что",
+     "lex": "o:что",
+     "lemma": "что",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "э́то",
+     "lex": "o:это",
+     "lemma": "э́то",
+     "g": {
+      "pos": "pron"
+     }
+    },
+    {
+     "t": "бу́дет",
+     "lex": "v:быть",
+     "lemma": "быть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "fut",
+      "person": 3,
+      "number": "sg"
+     }
+    },
+    {
+     "t": "одна́",
+     "lex": "o:один",
+     "lemma": "оди́н",
+     "g": {
+      "pos": "num",
+      "case": "nom",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "ча́шка",
+     "lex": "n:чашка",
+     "lemma": "ча́шка",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "за",
+     "lex": "o:за",
+     "lemma": "за",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "пять",
+     "lex": "n:пять",
+     "lemma": "пять",
+     "g": {
+      "pos": "num",
+      "case": "acc"
+     }
+    },
+    {
+     "t": "мину́т",
+     "sp": false,
+     "lex": "n:минута",
+     "lemma": "мину́та",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "pl"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  }
+ ],
+ "questions": [
+  {
+   "id": "nf-b2-04-q1",
+   "type": "choice",
+   "level": "B2",
+   "tags": [
+    "reading"
+   ],
+   "prompt": {
+    "ru": "Отку́да чай пришёл в Росси́ю?",
+    "en": "Where did tea come to Russia from?",
+    "instruction": "Choose the answer"
+   },
+   "accept": [
+    "Из Кита́я."
+   ],
+   "distractors": [
+    {
+     "ru": "Из И́ндии.",
+     "error": "reading.detail"
+    },
+    {
+     "ru": "Из А́нглии.",
+     "error": "reading.detail"
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "nf-b2-04-q2",
+   "type": "choice",
+   "level": "B2",
+   "tags": [
+    "reading"
+   ],
+   "prompt": {
+    "ru": "Почему́ снача́ла чай пи́ли то́лько бога́тые?",
+    "en": "Why did only the rich drink tea at first?",
+    "instruction": "Choose the answer"
+   },
+   "accept": [
+    "Он был о́чень дороги́м."
+   ],
+   "distractors": [
+    {
+     "ru": "Его́ запреща́ли.",
+     "error": "reading.detail"
+    },
+    {
+     "ru": "Он был невку́сным.",
+     "error": "reading.detail"
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "nf-b2-04-q3",
+   "type": "choice",
+   "level": "B2",
+   "tags": [
+    "reading"
+   ],
+   "prompt": {
+    "ru": "Что ста́вили на самова́р?",
+    "en": "What was placed on the samovar?",
+    "instruction": "Choose the answer"
+   },
+   "accept": [
+    "Ма́ленький ча́йник с зава́ркой."
+   ],
+   "distractors": [
+    {
+     "ru": "Ча́шки.",
+     "error": "reading.detail"
+    },
+    {
+     "ru": "Са́хар.",
+     "error": "reading.detail"
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "nf-b2-04-q4",
+   "type": "choice",
+   "level": "B2",
+   "tags": [
+    "reading"
+   ],
+   "prompt": {
+    "ru": "Что зна́чит приглаше́ние «на чай»?",
+    "en": "What does an invitation \"for tea\" mean?",
+    "instruction": "Choose the answer"
+   },
+   "accept": [
+    "До́лгий разгово́р за столо́м."
+   ],
+   "distractors": [
+    {
+     "ru": "Одна́ ча́шка за пять мину́т.",
+     "error": "reading.detail"
+    },
+    {
+     "ru": "Обе́д в рестора́не.",
+     "error": "reading.detail"
+    }
+   ],
+   "source": "handwritten"
+  }
+ ]
+}

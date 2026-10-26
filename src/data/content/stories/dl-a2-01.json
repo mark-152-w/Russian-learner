@@ -1,0 +1,592 @@
+{
+ "$schema": "../../../../schemas/story.schema.json",
+ "id": "dl-a2-01",
+ "kind": "dialogue",
+ "level": "A2",
+ "title": {
+  "ru": "В магази́не",
+  "en": "In the shop"
+ },
+ "sentences": [
+  {
+   "para": true,
+   "speaker": "Покупа́тель",
+   "en": "Customer: Hello! Do you have any milk?",
+   "tokens": [
+    {
+     "t": "Здра́вствуйте",
+     "sp": false,
+     "lex": "o:здравствуйте",
+     "lemma": "здра́вствуйте",
+     "g": {
+      "pos": "intj"
+     }
+    },
+    {
+     "t": "!"
+    },
+    {
+     "t": "У",
+     "lex": "o:у",
+     "lemma": "у",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "вас",
+     "lex": "o:вы",
+     "lemma": "вы",
+     "g": {
+      "pos": "pron",
+      "case": "gen"
+     }
+    },
+    {
+     "t": "есть",
+     "lex": "v:быть",
+     "lemma": "быть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "sg"
+     }
+    },
+    {
+     "t": "молоко́",
+     "sp": false,
+     "lex": "n:молоко",
+     "lemma": "молоко́",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": "?",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Продаве́ц",
+   "en": "Shop assistant: Yes. Which do you want, big or small?",
+   "tokens": [
+    {
+     "t": "Есть",
+     "sp": false,
+     "lex": "v:быть",
+     "lemma": "быть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "sg"
+     }
+    },
+    {
+     "t": "."
+    },
+    {
+     "t": "Вам",
+     "lex": "o:вы",
+     "lemma": "вы",
+     "g": {
+      "pos": "pron",
+      "case": "dat"
+     }
+    },
+    {
+     "t": "како́е",
+     "sp": false,
+     "lex": "a:какой",
+     "lemma": "како́й",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "n"
+     }
+    },
+    {
+     "t": ":"
+    },
+    {
+     "t": "большо́е",
+     "lex": "a:большой",
+     "lemma": "большо́й",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "n"
+     }
+    },
+    {
+     "t": "и́ли",
+     "lex": "o:или",
+     "lemma": "и́ли",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "ма́ленькое",
+     "sp": false,
+     "lex": "a:маленький",
+     "lemma": "ма́ленький",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "n"
+     }
+    },
+    {
+     "t": "?",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Покупа́тель",
+   "en": "Customer: Big, please. And some bread too.",
+   "tokens": [
+    {
+     "t": "Большо́е",
+     "sp": false,
+     "lex": "a:большой",
+     "lemma": "большо́й",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "n"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "пожа́луйста",
+     "sp": false,
+     "lex": "o:пожалуйста",
+     "lemma": "пожа́луйста",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "."
+    },
+    {
+     "t": "И",
+     "lex": "o:и",
+     "lemma": "и",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "ещё",
+     "lex": "o:ещё",
+     "lemma": "ещё",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "хлеб",
+     "sp": false,
+     "lex": "n:хлеб",
+     "lemma": "хлеб",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Продаве́ц",
+   "en": "Shop assistant: White or brown?",
+   "tokens": [
+    {
+     "t": "Бе́лый",
+     "lex": "a:белый",
+     "lemma": "бе́лый",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "и́ли",
+     "lex": "o:или",
+     "lemma": "и́ли",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "чёрный",
+     "sp": false,
+     "lex": "a:чёрный",
+     "lemma": "чёрный",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "?",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Покупа́тель",
+   "en": "Customer: Brown. How much is that?",
+   "tokens": [
+    {
+     "t": "Чёрный",
+     "sp": false,
+     "lex": "a:чёрный",
+     "lemma": "чёрный",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "."
+    },
+    {
+     "t": "Ско́лько",
+     "lex": "o:сколько",
+     "lemma": "ско́лько",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "э́то",
+     "lex": "o:это",
+     "lemma": "э́то",
+     "g": {
+      "pos": "pron"
+     }
+    },
+    {
+     "t": "сто́ит",
+     "sp": false,
+     "lex": "v:стоить",
+     "lemma": "сто́ить",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "sg"
+     }
+    },
+    {
+     "t": "?",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Продаве́ц",
+   "en": "Shop assistant: A hundred and twenty roubles.",
+   "tokens": [
+    {
+     "t": "Сто",
+     "lex": "o:сто",
+     "lemma": "сто",
+     "g": {
+      "pos": "num",
+      "case": "nom"
+     },
+     "rare": true
+    },
+    {
+     "t": "два́дцать",
+     "lex": "o:двадцать",
+     "lemma": "два́дцать",
+     "g": {
+      "pos": "num",
+      "case": "nom"
+     },
+     "rare": true
+    },
+    {
+     "t": "рубле́й",
+     "sp": false,
+     "lex": "n:рубль",
+     "lemma": "рубль",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "pl"
+     },
+     "rare": true
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Покупа́тель",
+   "en": "Customer: Here you are.",
+   "tokens": [
+    {
+     "t": "Вот",
+     "sp": false,
+     "lex": "o:вот",
+     "lemma": "вот",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "пожа́луйста",
+     "sp": false,
+     "lex": "o:пожалуйста",
+     "lemma": "пожа́луйста",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Продаве́ц",
+   "en": "Shop assistant: Thank you! Do you need a bag?",
+   "tokens": [
+    {
+     "t": "Спаси́бо",
+     "sp": false,
+     "lex": "o:спасибо",
+     "lemma": "спаси́бо",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "!"
+    },
+    {
+     "t": "Паке́т",
+     "lex": "n:пакет",
+     "lemma": "паке́т",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": "ну́жен",
+     "sp": false,
+     "lex": "a:нужный",
+     "lemma": "ну́жный",
+     "g": {
+      "pos": "adj",
+      "short": true,
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "?",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Покупа́тель",
+   "en": "Customer: No, thanks, I've got a bag.",
+   "tokens": [
+    {
+     "t": "Нет",
+     "sp": false,
+     "lex": "o:нет",
+     "lemma": "нет",
+     "g": {
+      "pos": "pred"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "спаси́бо",
+     "sp": false,
+     "lex": "o:спасибо",
+     "lemma": "спаси́бо",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "у",
+     "lex": "o:у",
+     "lemma": "у",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "меня́",
+     "lex": "o:я",
+     "lemma": "я",
+     "g": {
+      "pos": "pron",
+      "case": "gen"
+     }
+    },
+    {
+     "t": "есть",
+     "lex": "v:быть",
+     "lemma": "быть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "sg"
+     }
+    },
+    {
+     "t": "су́мка",
+     "sp": false,
+     "lex": "n:сумка",
+     "lemma": "су́мка",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  }
+ ],
+ "questions": [
+  {
+   "id": "dl-a2-01-q1",
+   "type": "choice",
+   "level": "A2",
+   "tags": [
+    "listening"
+   ],
+   "prompt": {
+    "ru": "Како́е молоко́ купи́л покупа́тель?",
+    "en": "What milk did the customer buy?",
+    "instruction": "Choose the answer"
+   },
+   "accept": [
+    "Большо́е."
+   ],
+   "distractors": [
+    {
+     "ru": "Ма́ленькое.",
+     "error": "reading.detail"
+    },
+    {
+     "ru": "Он не купи́л молоко́.",
+     "error": "reading.detail"
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "dl-a2-01-q2",
+   "type": "choice",
+   "level": "A2",
+   "tags": [
+    "listening"
+   ],
+   "prompt": {
+    "ru": "Како́й хлеб он взял?",
+    "en": "Which bread did he take?",
+    "instruction": "Choose the answer"
+   },
+   "accept": [
+    "Чёрный."
+   ],
+   "distractors": [
+    {
+     "ru": "Бе́лый.",
+     "error": "reading.detail"
+    },
+    {
+     "ru": "Он не взял хлеб.",
+     "error": "reading.detail"
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "dl-a2-01-q3",
+   "type": "choice",
+   "level": "A2",
+   "tags": [
+    "listening"
+   ],
+   "prompt": {
+    "ru": "Ско́лько он заплати́л?",
+    "en": "How much did he pay?",
+    "instruction": "Choose the answer"
+   },
+   "accept": [
+    "Сто два́дцать рубле́й."
+   ],
+   "distractors": [
+    {
+     "ru": "Два́дцать рубле́й.",
+     "error": "reading.detail"
+    },
+    {
+     "ru": "Две́сти рубле́й.",
+     "error": "reading.detail"
+    }
+   ],
+   "source": "handwritten"
+  }
+ ]
+}

@@ -1,0 +1,1455 @@
+{
+ "$schema": "../../../../schemas/story.schema.json",
+ "id": "st-a2-06",
+ "kind": "story",
+ "level": "A2",
+ "series": "anya",
+ "chapter": 6,
+ "title": {
+  "ru": "Звоно́к из Каза́ни",
+  "en": "A call from Kazan"
+ },
+ "characters": [
+  "А́ня",
+  "Ми́ша"
+ ],
+ "cliffhanger": "Misha is on the train to Moscow. Will Anya's tiny flat be big enough?",
+ "sentences": [
+  {
+   "para": true,
+   "en": "On Thursday evening Mum rang.",
+   "tokens": [
+    {
+     "t": "В",
+     "lex": "o:в",
+     "lemma": "в",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "четве́рг",
+     "lex": "n:четверг",
+     "lemma": "четве́рг",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": "ве́чером",
+     "lex": "n:вечер",
+     "lemma": "ве́чер",
+     "g": {
+      "pos": "noun",
+      "case": "ins",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "позвони́ла",
+     "lex": "v:позвонить",
+     "lemma": "позвони́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "ма́ма",
+     "sp": false,
+     "lex": "n:мама",
+     "lemma": "ма́ма",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "\"Anya, we have news,\" she said. \"Misha wants to come and stay with you for a week.\"",
+   "tokens": [
+    {
+     "t": "—"
+    },
+    {
+     "t": "А́ня",
+     "sp": false,
+     "lemma": "А́ня",
+     "g": {
+      "pos": "name",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "у",
+     "lex": "o:у",
+     "lemma": "у",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "нас",
+     "lex": "o:мы",
+     "lemma": "мы",
+     "g": {
+      "pos": "pron",
+      "case": "gen"
+     }
+    },
+    {
+     "t": "но́вость",
+     "sp": false,
+     "lex": "n:новость",
+     "lemma": "но́вость",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "—"
+    },
+    {
+     "t": "сказа́ла",
+     "lex": "v:сказать",
+     "lemma": "сказа́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "она́",
+     "sp": false,
+     "lex": "o:она",
+     "lemma": "она́",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "."
+    },
+    {
+     "t": "—"
+    },
+    {
+     "t": "Ми́ша",
+     "lemma": "Ми́ша",
+     "g": {
+      "pos": "name",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "хо́чет",
+     "lex": "v:хотеть",
+     "lemma": "хоте́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "sg"
+     }
+    },
+    {
+     "t": "прие́хать",
+     "lex": "v:приехать",
+     "lemma": "прие́хать",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf"
+     }
+    },
+    {
+     "t": "к",
+     "lex": "o:к",
+     "lemma": "к",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "тебе́",
+     "lex": "o:ты",
+     "lemma": "ты",
+     "g": {
+      "pos": "pron",
+      "case": "dat"
+     }
+    },
+    {
+     "t": "на",
+     "lex": "o:на",
+     "lemma": "на",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "неде́лю",
+     "sp": false,
+     "lex": "n:неделя",
+     "lemma": "неде́ля",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "Misha is my younger brother.",
+   "tokens": [
+    {
+     "t": "Ми́ша",
+     "lemma": "Ми́ша",
+     "g": {
+      "pos": "name",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "—"
+    },
+    {
+     "t": "мой",
+     "lex": "v:мыть",
+     "lemma": "мыть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "mood": "imp",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "мла́дший",
+     "lex": "a:младший",
+     "lemma": "мла́дший",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "брат",
+     "sp": false,
+     "lex": "n:брат",
+     "lemma": "брат",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "He's twelve.",
+   "tokens": [
+    {
+     "t": "Ему́",
+     "lex": "o:он",
+     "lemma": "он",
+     "g": {
+      "pos": "pron",
+      "case": "dat"
+     }
+    },
+    {
+     "t": "двена́дцать",
+     "lex": "o:двенадцать",
+     "lemma": "двена́дцать",
+     "g": {
+      "pos": "num",
+      "case": "nom"
+     },
+     "rare": true
+    },
+    {
+     "t": "лет",
+     "sp": false,
+     "lex": "n:год",
+     "lemma": "год",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "pl"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "He's never been to Moscow.",
+   "tokens": [
+    {
+     "t": "Он",
+     "lex": "o:он",
+     "lemma": "он",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "ещё",
+     "lex": "o:ещё",
+     "lemma": "ещё",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "никогда́",
+     "lex": "o:никогда",
+     "lemma": "никогда́",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "не",
+     "lex": "o:не",
+     "lemma": "не",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "был",
+     "lex": "v:быть",
+     "lemma": "быть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "в",
+     "lex": "o:в",
+     "lemma": "в",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "Москве́",
+     "sp": false,
+     "lex": "n:Москва",
+     "lemma": "Москва́",
+     "g": {
+      "pos": "noun",
+      "case": "prep",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "para": true,
+   "en": "\"But I've only got one room!\" I said.",
+   "tokens": [
+    {
+     "t": "—"
+    },
+    {
+     "t": "Но",
+     "lex": "o:но",
+     "lemma": "но",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "у",
+     "lex": "o:у",
+     "lemma": "у",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "меня́",
+     "lex": "o:я",
+     "lemma": "я",
+     "g": {
+      "pos": "pron",
+      "case": "gen"
+     }
+    },
+    {
+     "t": "одна́",
+     "lex": "o:один",
+     "lemma": "оди́н",
+     "g": {
+      "pos": "num",
+      "case": "nom",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "ко́мната",
+     "sp": false,
+     "lex": "n:комната",
+     "lemma": "ко́мната",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "!"
+    },
+    {
+     "t": "—"
+    },
+    {
+     "t": "сказа́ла",
+     "lex": "v:сказать",
+     "lemma": "сказа́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "я",
+     "sp": false,
+     "lex": "o:я",
+     "lemma": "я",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "\"Never mind, he can sleep on the sofa,\" Mum answered.",
+   "tokens": [
+    {
+     "t": "—"
+    },
+    {
+     "t": "Ничего́",
+     "sp": false,
+     "lex": "o:ничто",
+     "lemma": "ничто́",
+     "g": {
+      "pos": "pron",
+      "case": "gen"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "он",
+     "lex": "o:он",
+     "lemma": "он",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "мо́жет",
+     "lex": "v:мочь",
+     "lemma": "мочь",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "sg"
+     }
+    },
+    {
+     "t": "спать",
+     "lex": "v:спать",
+     "lemma": "спать",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf"
+     }
+    },
+    {
+     "t": "на",
+     "lex": "o:на",
+     "lemma": "на",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "дива́не",
+     "sp": false,
+     "lex": "n:диван",
+     "lemma": "дива́н",
+     "g": {
+      "pos": "noun",
+      "case": "prep",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "—"
+    },
+    {
+     "t": "отве́тила",
+     "lex": "v:ответить",
+     "lemma": "отве́тить",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "ма́ма",
+     "sp": false,
+     "lex": "n:мама",
+     "lemma": "ма́ма",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "\"I haven't got a sofa.\"",
+   "tokens": [
+    {
+     "t": "—"
+    },
+    {
+     "t": "У",
+     "lex": "o:у",
+     "lemma": "у",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "меня́",
+     "lex": "o:я",
+     "lemma": "я",
+     "g": {
+      "pos": "pron",
+      "case": "gen"
+     }
+    },
+    {
+     "t": "нет",
+     "lex": "o:нет",
+     "lemma": "нет",
+     "g": {
+      "pos": "pred"
+     }
+    },
+    {
+     "t": "дива́на",
+     "sp": false,
+     "lex": "n:диван",
+     "lemma": "дива́н",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "\"Then on the floor. He doesn't mind.\"",
+   "tokens": [
+    {
+     "t": "—"
+    },
+    {
+     "t": "Зна́чит",
+     "sp": false,
+     "lex": "v:значить",
+     "lemma": "зна́чить",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "sg"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "на",
+     "lex": "o:на",
+     "lemma": "на",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "полу́",
+     "sp": false,
+     "lex": "n:пол",
+     "lemma": "пол",
+     "g": {
+      "pos": "noun",
+      "case": "loc2",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "."
+    },
+    {
+     "t": "Ему́",
+     "lex": "o:он",
+     "lemma": "он",
+     "g": {
+      "pos": "pron",
+      "case": "dat"
+     }
+    },
+    {
+     "t": "всё",
+     "lex": "o:всё",
+     "lemma": "всё",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "равно́",
+     "sp": false,
+     "lex": "o:равно",
+     "lemma": "равно́",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "para": true,
+   "en": "Then Misha took the phone.",
+   "tokens": [
+    {
+     "t": "Пото́м",
+     "lex": "o:потом",
+     "lemma": "пото́м",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "тру́бку",
+     "lex": "n:трубка",
+     "lemma": "тру́бка",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "взял",
+     "lex": "v:взять",
+     "lemma": "взять",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "Ми́ша",
+     "sp": false,
+     "lemma": "Ми́ша",
+     "g": {
+      "pos": "name",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "\"Anya, I want to see the Kremlin, the metro and the zoo!\"",
+   "tokens": [
+    {
+     "t": "—"
+    },
+    {
+     "t": "А́ня",
+     "sp": false,
+     "lemma": "А́ня",
+     "g": {
+      "pos": "name",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "я",
+     "lex": "o:я",
+     "lemma": "я",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "хочу́",
+     "lex": "v:хотеть",
+     "lemma": "хоте́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 1,
+      "number": "sg"
+     }
+    },
+    {
+     "t": "уви́деть",
+     "lex": "v:увидеть",
+     "lemma": "уви́деть",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf"
+     }
+    },
+    {
+     "t": "Кремль",
+     "sp": false,
+     "lex": "n:кремль",
+     "lemma": "кремль",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "метро́",
+     "lex": "n:метро",
+     "lemma": "метро́",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": "и",
+     "lex": "o:и",
+     "lemma": "и",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "зоопа́рк",
+     "sp": false,
+     "lex": "n:зоопарк",
+     "lemma": "зоопа́рк",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": "!",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "\"All right,\" I laughed. \"And you'll also be coming shopping with me.\"",
+   "tokens": [
+    {
+     "t": "—"
+    },
+    {
+     "t": "Хорошо́",
+     "sp": false,
+     "lex": "o:хорошо",
+     "lemma": "хорошо́",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "—"
+    },
+    {
+     "t": "засмея́лась",
+     "lex": "v:засмеяться",
+     "lemma": "засмея́ться",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "f"
+     },
+     "rare": true
+    },
+    {
+     "t": "я",
+     "sp": false,
+     "lex": "o:я",
+     "lemma": "я",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "."
+    },
+    {
+     "t": "—"
+    },
+    {
+     "t": "А",
+     "lex": "o:а",
+     "lemma": "а",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "ещё",
+     "lex": "o:ещё",
+     "lemma": "ещё",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "ты",
+     "lex": "o:ты",
+     "lemma": "ты",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "бу́дешь",
+     "lex": "v:быть",
+     "lemma": "быть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "fut",
+      "person": 2,
+      "number": "sg"
+     }
+    },
+    {
+     "t": "ходи́ть",
+     "lex": "v:ходить",
+     "lemma": "ходи́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf"
+     }
+    },
+    {
+     "t": "со",
+     "lex": "o:с",
+     "lemma": "с",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "мной",
+     "lex": "o:я",
+     "lemma": "я",
+     "g": {
+      "pos": "pron",
+      "case": "ins"
+     }
+    },
+    {
+     "t": "в",
+     "lex": "o:в",
+     "lemma": "в",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "магази́н",
+     "sp": false,
+     "lex": "n:магазин",
+     "lemma": "магази́н",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "\"That's boring!\"",
+   "tokens": [
+    {
+     "t": "—"
+    },
+    {
+     "t": "Э́то",
+     "lex": "o:это",
+     "lemma": "э́то",
+     "g": {
+      "pos": "pron"
+     }
+    },
+    {
+     "t": "ску́чно",
+     "sp": false,
+     "lex": "o:скучно",
+     "lemma": "ску́чно",
+     "g": {
+      "pos": "adv"
+     },
+     "rare": true
+    },
+    {
+     "t": "!",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "para": true,
+   "en": "After the call I looked at my small flat.",
+   "tokens": [
+    {
+     "t": "По́сле",
+     "lex": "o:после",
+     "lemma": "по́сле",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "разгово́ра",
+     "lex": "n:разговор",
+     "lemma": "разгово́р",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "я",
+     "lex": "o:я",
+     "lemma": "я",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "посмотре́ла",
+     "lex": "v:посмотреть",
+     "lemma": "посмотре́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "на",
+     "lex": "o:на",
+     "lemma": "на",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "свою́",
+     "lex": "a:свой",
+     "lemma": "свой",
+     "g": {
+      "pos": "adj",
+      "case": "acc",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "ма́ленькую",
+     "lex": "a:маленький",
+     "lemma": "ма́ленький",
+     "g": {
+      "pos": "adj",
+      "case": "acc",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "кварти́ру",
+     "sp": false,
+     "lex": "n:квартира",
+     "lemma": "кварти́ра",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "Where will Misha sleep?",
+   "tokens": [
+    {
+     "t": "Где",
+     "lex": "o:где",
+     "lemma": "где",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "бу́дет",
+     "lex": "v:быть",
+     "lemma": "быть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "fut",
+      "person": 3,
+      "number": "sg"
+     }
+    },
+    {
+     "t": "спать",
+     "lex": "v:спать",
+     "lemma": "спать",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf"
+     }
+    },
+    {
+     "t": "Ми́ша",
+     "sp": false,
+     "lemma": "Ми́ша",
+     "g": {
+      "pos": "name",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "?",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "The next day I told Nina about it.",
+   "tokens": [
+    {
+     "t": "На",
+     "lex": "o:на",
+     "lemma": "на",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "сле́дующий",
+     "lex": "a:следующий",
+     "lemma": "сле́дующий",
+     "g": {
+      "pos": "adj",
+      "case": "acc",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "день",
+     "lex": "n:день",
+     "lemma": "день",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "я",
+     "lex": "o:я",
+     "lemma": "я",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "рассказа́ла",
+     "lex": "v:рассказать",
+     "lemma": "рассказа́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "об",
+     "lex": "o:о",
+     "lemma": "о",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "э́том",
+     "lex": "a:этот",
+     "lemma": "э́тот",
+     "g": {
+      "pos": "adj",
+      "case": "prep",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "Ни́не",
+     "sp": false,
+     "lemma": "Ни́на",
+     "g": {
+      "pos": "name",
+      "case": "prep",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "\"I've got an old camp bed,\" she said. \"Take it!\"",
+   "tokens": [
+    {
+     "t": "—"
+    },
+    {
+     "t": "У",
+     "lex": "o:у",
+     "lemma": "у",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "меня́",
+     "lex": "o:я",
+     "lemma": "я",
+     "g": {
+      "pos": "pron",
+      "case": "gen"
+     }
+    },
+    {
+     "t": "есть",
+     "lex": "v:быть",
+     "lemma": "быть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "sg"
+     }
+    },
+    {
+     "t": "ста́рая",
+     "lex": "a:старый",
+     "lemma": "ста́рый",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "раскладу́шка",
+     "sp": false,
+     "lex": "n:раскладушка",
+     "lemma": "раскладу́шка",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "—"
+    },
+    {
+     "t": "сказа́ла",
+     "lex": "v:сказать",
+     "lemma": "сказа́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "она́",
+     "sp": false,
+     "lex": "o:она",
+     "lemma": "она́",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "."
+    },
+    {
+     "t": "—"
+    },
+    {
+     "t": "Бери́",
+     "sp": false,
+     "lex": "v:брать",
+     "lemma": "брать",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "mood": "imp",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "!",
+     "sp": false
+    }
+   ]
+  }
+ ],
+ "questions": [
+  {
+   "id": "st-a2-06-q1",
+   "type": "choice",
+   "level": "A2",
+   "tags": [
+    "reading"
+   ],
+   "prompt": {
+    "ru": "Ско́лько лет Ми́ше?",
+    "en": "How old is Misha?",
+    "instruction": "Choose the answer"
+   },
+   "accept": [
+    "Двена́дцать."
+   ],
+   "distractors": [
+    {
+     "ru": "Девятна́дцать.",
+     "error": "reading.detail"
+    },
+    {
+     "ru": "Де́сять.",
+     "error": "reading.detail"
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "st-a2-06-q2",
+   "type": "choice",
+   "level": "A2",
+   "tags": [
+    "reading"
+   ],
+   "prompt": {
+    "ru": "Что хо́чет уви́деть Ми́ша?",
+    "en": "What does Misha want to see?",
+    "instruction": "Choose the answer"
+   },
+   "accept": [
+    "Кремль, метро́ и зоопа́рк."
+   ],
+   "distractors": [
+    {
+     "ru": "Теа́тр и музе́й.",
+     "error": "reading.detail"
+    },
+    {
+     "ru": "Университе́т А́ни.",
+     "error": "reading.detail"
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "st-a2-06-q3",
+   "type": "choice",
+   "level": "A2",
+   "tags": [
+    "reading"
+   ],
+   "prompt": {
+    "ru": "Где бу́дет спать Ми́ша?",
+    "en": "Where will Misha sleep?",
+    "instruction": "Choose the answer"
+   },
+   "accept": [
+    "На раскладу́шке Ни́ны."
+   ],
+   "distractors": [
+    {
+     "ru": "На дива́не.",
+     "error": "reading.detail"
+    },
+    {
+     "ru": "В гости́нице.",
+     "error": "reading.detail"
+    }
+   ],
+   "source": "handwritten"
+  }
+ ]
+}

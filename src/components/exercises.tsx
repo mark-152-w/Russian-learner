@@ -7,6 +7,7 @@ import { choiceOptions, type Response, type Verdict } from '../engine/grader'
 import { normalizeAnswer } from '../engine/normalize'
 import { translitToCyrillic } from '../engine/translit'
 import { speak } from '../audio/tts'
+import { listenOnce, recognitionSupported } from '../audio/speech'
 import { sound } from '../audio/sound'
 import { displayStress, isVowel, stressIndex, stripStress } from '../lib/ru'
 import { seeded, shuffle } from '../lib/rng'
@@ -100,6 +101,14 @@ function TypedView({ item, verdict, onSubmit, audio }: ViewProps & { audio?: boo
   }, !verdict)
   const value = s.translit ? translitToCyrillic(text) : text
   const submit = () => normalizeAnswer(value) && onSubmit({ kind: 'text', text: value })
+  const speaking = item.tags.includes('speaking') && recognitionSupported()
+  const [listening, setListening] = useState(false)
+  const record = async () => {
+    setListening(true)
+    const heard = await listenOnce()
+    setListening(false)
+    if (heard) setText(heard)
+  }
   return (
     <div className="space-y-4">
       {audio ? <PlayButtons play={play} /> : null}
@@ -125,6 +134,11 @@ function TypedView({ item, verdict, onSubmit, audio }: ViewProps & { audio?: boo
           className={`ru w-full rounded-lg border-2 bg-paper px-4 py-3 text-center text-2xl outline-none ${verdict ? (verdict.correct ? 'border-good' : 'border-bad') : 'border-line focus:border-red'}`}
         />
         {s.translit && text && <p className="ru text-center text-lg text-ink-soft" lang="ru">→ {value}</p>}
+        {speaking && !verdict && (
+          <Button type="button" variant="secondary" className="w-full" onClick={record} disabled={listening}>
+            {listening ? 'Listening… speak now' : '🎤 Say it aloud'}
+          </Button>
+        )}
         {!verdict && (
           <Button type="submit" className="w-full" disabled={!normalizeAnswer(value)}>
             Check
@@ -313,9 +327,12 @@ function FindErrorView({ item, verdict, onSubmit }: ViewProps) {
 function SelfGradedView({ item, verdict, onSubmit }: ViewProps) {
   const [text, setText] = useState('')
   const [shown, setShown] = useState(false)
+  const play = useSpeaker(item.prompt.audio, !!item.prompt.audio)
+  const spoken = item.tags.includes('speaking')
   return (
     <div className="space-y-3">
-      <textarea
+      {item.prompt.audio ? <PlayButtons play={play} /> : null}
+      {!spoken && <textarea
         lang="ru"
         value={text}
         onChange={(e) => setText(e.target.value)}
@@ -323,10 +340,10 @@ function SelfGradedView({ item, verdict, onSubmit }: ViewProps) {
         readOnly={shown}
         className="ru w-full rounded-lg border-2 border-line bg-paper p-3 text-xl outline-none focus:border-red"
         aria-label="Your answer"
-      />
+      />}
       {!shown ? (
         <Button className="w-full" onClick={() => setShown(true)}>
-          Compare with the model answer
+          {spoken ? 'Show the sentence' : 'Compare with the model answer'}
         </Button>
       ) : (
         <>

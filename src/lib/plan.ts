@@ -8,12 +8,13 @@ import { drillableTag } from '../engine/drills'
 import { loadHandwritten, loadUnits } from './content'
 import { getProgress, nextUnit, type CourseProgress } from './course'
 import { coverageOf } from './coverage'
-import { getPlacement } from './learner'
+import { getPlacement, learnerLevel } from './learner'
+import { getReaderProgress, STORY_INDEX } from './stories'
 import { loadIndex } from './lexicon'
 import tagsJson from '../data/tags.json'
 
 export interface PlanStep {
-  id: 'review' | 'course' | 'weak' | 'fun'
+  id: 'review' | 'course' | 'weak' | 'read' | 'fun'
   title: string
   detail: string
   to: string
@@ -31,6 +32,8 @@ export interface PlanInput {
   features: ReadonlySet<string>
   /** Days since the epoch: picks today's light item. */
   dayIndex?: number
+  /** The next unread story at the learner's level, if any. */
+  nextStory?: { id: string; title: string; words: number }
 }
 
 /** A topic counts as weak with enough evidence and an accuracy below this. */
@@ -46,6 +49,10 @@ const FUN = [
   { title: 'Numbers and prices', detail: 'два рубля́, пять рубле́й, два́дцать оди́н год…', to: '/trainer/numerals/count', kind: 'trainer-numerals' },
   { title: 'Aspect: process or result?', detail: 'Real contexts, a one-line reason and a timeline.', to: '/trainer/aspect/mixed', kind: 'trainer-aspect' },
   { title: 'Verbs of motion', detail: 'идти́ or ходи́ть? пришёл or ушёл?', to: '/trainer/motion/mixed', kind: 'trainer-motion' },
+  { title: 'Case arcade', detail: 'Pick the right form before the noun lands.', to: '/arcade', kind: 'arcade', feature: 'arcade' },
+  { title: '«Де́ло»', detail: 'The detective story: one more scene.', to: '/adventure', kind: 'adventure', feature: 'adventure' },
+  { title: 'Speed match', detail: 'Five words, five meanings, one minute.', to: '/speed', kind: 'speed', feature: 'speed' },
+  { title: "Today's crossword", detail: 'Every answer is an inflected form.', to: '/crossword/daily', kind: 'crossword', feature: 'crossword' },
 ]
 
 export function weakestTag(rows: Mastery[]): Mastery | undefined {
@@ -88,8 +95,18 @@ export function planSteps(x: PlanInput): PlanStep[] {
       done: did(`drill-tag-${tag}`),
     })
   }
+  if (x.features.has('reader') && x.nextStory) {
+    steps.push({
+      id: 'read',
+      title: `Read: ${x.nextStory.title}`,
+      detail: `${x.nextStory.words} words, then a few questions. Tap any word you don't know.`,
+      to: `/story/${x.nextStory.id}`,
+      done: did('story'),
+    })
+  }
   // the light item rotates through the trainers day by day
-  const fun = x.features.has('trainers') ? FUN[(x.dayIndex ?? 0) % FUN.length]! : { ...FUN[0]!, to: '/drill/tag/stress', kind: 'drill-tag-stress' }
+  const funs = FUN.filter((f) => !('feature' in f) || x.features.has(f.feature as string))
+  const fun = x.features.has('trainers') ? funs[(x.dayIndex ?? 0) % funs.length]! : { ...FUN[0]!, to: '/drill/tag/stress', kind: 'drill-tag-stress' }
   steps.push({ id: 'fun', title: fun.title, detail: fun.detail, to: fun.to, done: did(fun.kind) })
   return steps
 }
@@ -131,16 +148,21 @@ export async function loadVocabulary(): Promise<Vocabulary> {
 
 export async function loadPlan(now: number, features: ReadonlySet<string>): Promise<PlanStep[]> {
   const today = dayKey(now)
-  const [due, units, progress, tagRows, hand, sessions] = await Promise.all([
+  const [due, units, progress, tagRows, hand, sessions, reader, level] = await Promise.all([
     countDue(now),
     loadUnits(),
     getProgress(),
     db.mastery.where('key').startsWith('tag:').toArray(),
     loadHandwritten(),
     db.sessions.where('start').aboveOrEqual(now - 36 * 3600_000).toArray(),
+    getReaderProgress(),
+    learnerLevel(),
   ])
+  const LV = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2']
+  const story = STORY_INDEX.find((s) => s.kind !== 'dialogue' && !reader[s.id]?.read && LV.indexOf(s.level) >= LV.indexOf(level))
+  const nextStory = story ? { id: story.id, title: story.title.en, words: story.words } : undefined
   const doneKinds = new Set(sessions.filter((s) => dayKey(s.start) === today).map((s) => s.kind))
   const tagMastery = tagRows.filter((m) => drillableTag(m.key.slice(4), hand))
   const dayIndex = Math.floor((now - new Date(now).getTimezoneOffset() * 60000) / 86400000)
-  return planSteps({ due, doneKinds, next: nextUnit(units, progress), progress, tagMastery, features, dayIndex })
+  return planSteps({ due, doneKinds, next: nextUnit(units, progress), progress, tagMastery, features, dayIndex, nextStory })
 }

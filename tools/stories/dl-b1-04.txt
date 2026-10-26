@@ -1,0 +1,25 @@
+id: dl-b1-04
+kind: dialogue
+level: B1
+title: Шу́мные сосе́ди | Noisy neighbours
+---
+Ни́на: До́брый ве́чер. Я ва́ша сосе́дка сни́зу. Извини́те, что беспоко́ю. | Nina: Good evening. I'm your neighbour from downstairs. Sorry to bother you.
+Сосе́д: Здра́вствуйте. Что́-то случи́лось? | Neighbour: Hello. Has something happened?
+Ни́на: У вас ка́ждый ве́чер о́чень гро́мкая му́зыка. Уже́ оди́ннадцать часо́в, а я не могу́ усну́ть. | Nina: You have very loud music every evening. It's already eleven o'clock and I can't get to sleep.
+Сосе́д: Ой, извини́те, пожа́луйста! Я не ду́мал, что так хорошо́ слы́шно. | Neighbour: Oh, I'm so sorry! I didn't think you could hear it so well.
+Ни́на: В на́шем до́ме сте́ны то́нкие. Я слы́шу да́же, как вы поёте. | Nina: The walls in our building are thin. I can even hear you singing.
+Сосе́д: Пра́вда? Как неудо́бно... Я бу́ду выключа́ть му́зыку в де́сять. | Neighbour: Really? How embarrassing… I'll switch the music off at ten.
+Ни́на: Спаси́бо. А поёте вы, кста́ти, непло́хо. | Nina: Thank you. And by the way, you don't sing badly.
+---
+? Почему́ Ни́на пришла́ к сосе́ду? | Why did Nina come to the neighbour?
++ У него́ гро́мкая му́зыка.
+- Она́ хо́чет пригласи́ть его́ в го́сти.
+- У неё слома́лся свет.
+? Ско́лько вре́мени, когда́ она́ пришла́? | What time is it when she came?
++ Оди́ннадцать часо́в.
+- Де́сять часо́в.
+- Двена́дцать часо́в.
+? Что пообеща́л сосе́д? | What did the neighbour promise?
++ Выключа́ть му́зыку в де́сять.
+- Перее́хать.
+- Пе́ть ти́ше.

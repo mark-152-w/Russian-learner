@@ -1,0 +1,46 @@
+id: st-b1-03
+kind: story
+level: B1
+series: anya2
+chapter: 3
+title: На да́чу! | Off to the dacha!
+characters: А́ня, Ни́на, Оле́г, Ка́тя
+cliffhanger: There is something heavy in the attic that nobody has opened for sixty years.
+---
+В ма́е Ни́на постуча́ла в дверь А́ни. | In May Nina knocked on Anya's door.
+— А́ня, у меня́ есть да́ча под Москво́й. Ста́рый дом, сад, река́ ря́дом. | "Anya, I have a dacha outside Moscow. An old house, a garden, a river nearby."
+Мне одно́й тяжело́ там рабо́тать. Мо́жет быть, вы с друзья́ми помо́жете мне? | "It's hard for me to work there on my own. Perhaps you and your friends could help me?"
+— С удово́льствием! — сра́зу согласи́лась А́ня. | "With pleasure!" Anya agreed at once.
+
+В суббо́ту у́тром они́ вчетверо́м се́ли на электри́чку: А́ня, Ни́на, Оле́г и Ка́тя. | On Saturday morning the four of them got on the suburban train: Anya, Nina, Oleg and Katya.
+Ба́рсик е́хал в су́мке и недово́льно смотре́л на всех. | Barsik travelled in a bag and looked at everyone crossly.
+За окно́м шли берёзы, поля́ и ма́ленькие дере́вни. | Birches, fields and little villages went by outside the window.
+
+Да́ча оказа́лась деревя́нным до́мом с большо́й вера́ндой. | The dacha turned out to be a wooden house with a big veranda.
+В саду́ росли́ я́блони, а за забо́ром блесте́ла река́. | Apple trees grew in the garden, and beyond the fence the river glittered.
+— Э́тот дом постро́ил мой оте́ц, — сказа́ла Ни́на. — Я провела́ здесь всё де́тство. | "My father built this house," said Nina. "I spent my whole childhood here."
+
+Весь день они́ рабо́тали: Оле́г чини́л забо́р, Ка́тя и А́ня копа́ли гря́дки, а Ни́на сажа́ла цветы́. | They worked all day: Oleg mended the fence, Katya and Anya dug the vegetable beds, and Nina planted flowers.
+Ве́чером они́ сиде́ли на вера́нде, пи́ли чай с варе́ньем и слу́шали, как пою́т пти́цы. | In the evening they sat on the veranda, drinking tea with jam and listening to the birds singing.
+
+— Ни́на, а что там, под кры́шей? — спроси́л Оле́г и показа́л на ма́ленькую дверь под кры́шей. | "Nina, what's up there under the roof?" asked Oleg, pointing at a little door under the roof.
+— Черда́к. Там ста́рые ве́щи. Я туда́ давно́ не поднима́лась. | "The attic. There are old things up there. I haven't been up there for ages."
+— Мо́жно посмотре́ть? — глаза́ у Ка́ти загоре́лись. | "Can we have a look?" Katya's eyes lit up.
+— За́втра, — улыбну́лась Ни́на. — Сего́дня уже́ темно́. | "Tomorrow," Nina smiled. "It's already dark today."
+---
+? Что предложи́ла Ни́на? | What did Nina suggest?
++ Пое́хать к ней на да́чу и помо́чь.
+- Пойти́ в музе́й.
+- Купи́ть но́вую кварти́ру.
+? Кто постро́ил дом? | Who built the house?
++ Оте́ц Ни́ны.
+- Оле́г.
+- Муж Ни́ны.
+? Что де́лал Оле́г? | What did Oleg do?
++ Чини́л забо́р.
+- Сажа́л цветы́.
+- Гото́вил у́жин.
+? Что нашли́ под кры́шей? | What was under the roof?
++ Черда́к со ста́рыми веща́ми.
+- Гнездо́ птиц.
+- Ещё одну́ ко́мнату для госте́й.

@@ -1,0 +1,48 @@
+id: st-a2-02
+kind: story
+level: A2
+series: anya
+chapter: 2
+title: Пе́рвый день | The first day
+characters: А́ня, Оле́г
+cliffhanger: Anya's flat is quiet, too quiet. Where is Barsik?
+---
+У́тром я вста́ла в семь часо́в. | In the morning I got up at seven.
+Я бы́стро вы́пила ко́фе и пошла́ в университе́т. | I quickly drank some coffee and set off for the university.
+Университе́т большо́й, а я ещё пло́хо зна́ю Москву́. | The university is big, and I still don't know Moscow well.
+
+Я до́лго иска́ла пра́вильное зда́ние. | I spent a long time looking for the right building.
+Пото́м я уви́дела высо́кого па́рня с кни́гой. | Then I saw a tall guy with a book.
+— Извини́те, где здесь факульте́т журнали́стики? — спроси́ла я. | "Excuse me, where's the journalism faculty here?" I asked.
+— Я то́же туда́ иду́, — отве́тил он. — Пойдём вме́сте! | "I'm going there too," he answered. "Let's go together!"
+
+Его́ зову́т Оле́г. | His name is Oleg.
+Он то́же студе́нт, но он не из Москвы́, а из Новосиби́рска. | He's a student too, but he isn't from Moscow, he's from Novosibirsk.
+Мы шли и разгова́ривали. | We walked and talked.
+Оле́г лю́бит футбо́л, му́зыку и хоро́шие кни́ги. | Oleg likes football, music and good books.
+
+Пе́рвая ле́кция была́ о́чень интере́сная. | The first lecture was very interesting.
+Преподава́тель говори́л бы́стро, и я понима́ла не всё. | The lecturer spoke fast, and I didn't understand everything.
+По́сле ле́кции Оле́г спроси́л: | After the lecture Oleg asked:
+— Ты хо́чешь пообе́дать? Здесь ря́дом есть хоро́шее кафе́. | "Do you want to have lunch? There's a good café near here."
+— Хочу́! — сказа́ла я. | "I do!" I said.
+
+В кафе́ мы е́ли суп и пи́ли чай. | In the café we had soup and drank tea.
+Ве́чером я пришла́ домо́й уста́лая, но о́чень дово́льная. | In the evening I came home tired but very happy.
+---
+? Отку́да Оле́г? | Where is Oleg from?
++ Из Новосиби́рска.
+- Из Москвы́.
+- Из Каза́ни.
+? Что лю́бит Оле́г? | What does Oleg like?
++ Футбо́л, му́зыку и кни́ги.
+- Теа́тр и кино́.
+- Ко́шек и соба́к.
+? Почему́ А́ня понима́ла не всё на ле́кции? | Why didn't Anya understand everything in the lecture?
++ Преподава́тель говори́л бы́стро.
+- Ле́кция была́ ску́чная.
+- Она́ опозда́ла.
+? Что они́ е́ли в кафе́? | What did they eat in the café?
++ Суп.
+- Пи́ццу.
+- Ры́бу.

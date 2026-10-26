@@ -1,0 +1,1770 @@
+{
+ "$schema": "../../../../schemas/story.schema.json",
+ "id": "nf-b2-10",
+ "kind": "nonfiction",
+ "level": "B2",
+ "title": {
+  "ru": "Да́ча",
+  "en": "The dacha"
+ },
+ "sentences": [
+  {
+   "para": true,
+   "en": "On Friday evenings the roads out of big cities are jammed with traffic.",
+   "tokens": [
+    {
+     "t": "В",
+     "lex": "o:в",
+     "lemma": "в",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "пя́тницу",
+     "lex": "n:пятница",
+     "lemma": "пя́тница",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "ве́чером",
+     "lex": "n:вечер",
+     "lemma": "ве́чер",
+     "g": {
+      "pos": "noun",
+      "case": "ins",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "доро́ги",
+     "lex": "n:дорога",
+     "lemma": "доро́га",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "из",
+     "lex": "o:из",
+     "lemma": "из",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "больши́х",
+     "lex": "a:большой",
+     "lemma": "большо́й",
+     "g": {
+      "pos": "adj",
+      "case": "gen",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "городо́в",
+     "lex": "n:город",
+     "lemma": "го́род",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "стоя́т",
+     "lex": "v:стоять",
+     "lemma": "стоя́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "pl"
+     }
+    },
+    {
+     "t": "в",
+     "lex": "o:в",
+     "lemma": "в",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "про́бках",
+     "sp": false,
+     "lex": "n:пробка",
+     "lemma": "про́бка",
+     "g": {
+      "pos": "noun",
+      "case": "prep",
+      "number": "pl"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "That's millions of Russians heading for the dacha.",
+   "tokens": [
+    {
+     "t": "Э́то",
+     "lex": "a:этот",
+     "lemma": "э́тот",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "n"
+     }
+    },
+    {
+     "t": "миллио́ны",
+     "lex": "n:миллион",
+     "lemma": "миллио́н",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "ру́сских",
+     "lex": "a:русский",
+     "lemma": "ру́сский",
+     "g": {
+      "pos": "adj",
+      "case": "acc",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "е́дут",
+     "lex": "v:ехать",
+     "lemma": "е́хать",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "pl"
+     }
+    },
+    {
+     "t": "на",
+     "lex": "o:на",
+     "lemma": "на",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "да́чу",
+     "sp": false,
+     "lex": "n:дача",
+     "lemma": "да́ча",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "A dacha is a little house outside town with a plot of land.",
+   "tokens": [
+    {
+     "t": "Да́ча",
+     "lex": "n:дача",
+     "lemma": "да́ча",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "—"
+    },
+    {
+     "t": "э́то",
+     "lex": "o:это",
+     "lemma": "э́то",
+     "g": {
+      "pos": "pron"
+     }
+    },
+    {
+     "t": "за́городный",
+     "lex": "a:загородный",
+     "lemma": "за́городный",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "m"
+     },
+     "rare": true
+    },
+    {
+     "t": "до́мик",
+     "lex": "n:домик",
+     "lemma": "до́мик",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "с",
+     "lex": "o:с",
+     "lemma": "с",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "уча́стком",
+     "lex": "n:участок",
+     "lemma": "уча́сток",
+     "g": {
+      "pos": "noun",
+      "case": "ins",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "земли́",
+     "sp": false,
+     "lex": "n:земля",
+     "lemma": "земля́",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "It may be old and small or big and modern, but it always has a special meaning.",
+   "tokens": [
+    {
+     "t": "Она́",
+     "lex": "o:она",
+     "lemma": "она́",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "мо́жет",
+     "lex": "v:мочь",
+     "lemma": "мочь",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "sg"
+     }
+    },
+    {
+     "t": "быть",
+     "lex": "v:быть",
+     "lemma": "быть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf"
+     }
+    },
+    {
+     "t": "ста́рой",
+     "lex": "a:старый",
+     "lemma": "ста́рый",
+     "g": {
+      "pos": "adj",
+      "case": "gen",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "и",
+     "lex": "o:и",
+     "lemma": "и",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "ма́ленькой",
+     "lex": "a:маленький",
+     "lemma": "ма́ленький",
+     "g": {
+      "pos": "adj",
+      "case": "gen",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "и́ли",
+     "lex": "o:или",
+     "lemma": "и́ли",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "большо́й",
+     "lex": "a:большой",
+     "lemma": "большо́й",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "и",
+     "lex": "o:и",
+     "lemma": "и",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "совреме́нной",
+     "sp": false,
+     "lex": "a:современный",
+     "lemma": "совреме́нный",
+     "g": {
+      "pos": "adj",
+      "case": "gen",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "но",
+     "lex": "o:но",
+     "lemma": "но",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "значе́ние",
+     "lex": "n:значение",
+     "lemma": "значе́ние",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "у",
+     "lex": "o:у",
+     "lemma": "у",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "неё",
+     "lex": "o:она",
+     "lemma": "она́",
+     "g": {
+      "pos": "pron",
+      "case": "gen"
+     }
+    },
+    {
+     "t": "всегда́",
+     "lex": "o:всегда",
+     "lemma": "всегда́",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "осо́бенное",
+     "sp": false,
+     "lex": "a:особенный",
+     "lemma": "осо́бенный",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "n"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "para": true,
+   "en": "In Soviet times many families received small plots of just six hundredths of a hectare.",
+   "tokens": [
+    {
+     "t": "В",
+     "lex": "o:в",
+     "lemma": "в",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "сове́тское",
+     "lex": "a:советский",
+     "lemma": "сове́тский",
+     "g": {
+      "pos": "adj",
+      "case": "acc",
+      "number": "sg",
+      "gender": "n"
+     },
+     "rare": true
+    },
+    {
+     "t": "вре́мя",
+     "lex": "n:время",
+     "lemma": "вре́мя",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "мно́гие",
+     "lex": "a:многие",
+     "lemma": "мно́гие",
+     "g": {
+      "pos": "adj",
+      "case": "acc",
+      "number": "pl"
+     },
+     "rare": true
+    },
+    {
+     "t": "се́мьи",
+     "lex": "n:семья",
+     "lemma": "семья́",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "получа́ли",
+     "lex": "v:получать",
+     "lemma": "получа́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "past",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "небольши́е",
+     "lex": "a:небольшой",
+     "lemma": "небольшо́й",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "уча́стки",
+     "sp": false,
+     "lex": "n:участок",
+     "lemma": "уча́сток",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "pl"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "всего́",
+     "lex": "o:всего",
+     "lemma": "всего́",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "шесть",
+     "lex": "o:шесть",
+     "lemma": "шесть",
+     "g": {
+      "pos": "num",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "со́ток",
+     "sp": false,
+     "lex": "n:сотка",
+     "lemma": "со́тка",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "pl"
+     },
+     "rare": true
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "There they built little houses with their own hands and grew potatoes, cucumbers and tomatoes.",
+   "tokens": [
+    {
+     "t": "Там",
+     "lex": "o:там",
+     "lemma": "там",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "стро́или",
+     "lex": "v:строить",
+     "lemma": "стро́ить",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "past",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "до́мики",
+     "lex": "n:домик",
+     "lemma": "до́мик",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "свои́ми",
+     "lex": "a:свой",
+     "lemma": "свой",
+     "g": {
+      "pos": "adj",
+      "case": "ins",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "рука́ми",
+     "lex": "n:рука",
+     "lemma": "рука́",
+     "g": {
+      "pos": "noun",
+      "case": "ins",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "и",
+     "lex": "o:и",
+     "lemma": "и",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "выра́щивали",
+     "lex": "v:выращивать",
+     "lemma": "выра́щивать",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "past",
+      "number": "pl"
+     },
+     "rare": true
+    },
+    {
+     "t": "карто́шку",
+     "sp": false,
+     "lex": "n:картошка",
+     "lemma": "карто́шка",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "огурцы́",
+     "lex": "n:огурец",
+     "lemma": "огуре́ц",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "pl"
+     },
+     "rare": true
+    },
+    {
+     "t": "и",
+     "lex": "o:и",
+     "lemma": "и",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "помидо́ры",
+     "sp": false,
+     "lex": "n:помидор",
+     "lemma": "помидо́р",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "pl"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "Shops didn't always have vegetables, and the dacha helped to feed the family.",
+   "tokens": [
+    {
+     "t": "В",
+     "lex": "o:в",
+     "lemma": "в",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "магази́нах",
+     "lex": "n:магазин",
+     "lemma": "магази́н",
+     "g": {
+      "pos": "noun",
+      "case": "prep",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "не",
+     "lex": "o:не",
+     "lemma": "не",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "всегда́",
+     "lex": "o:всегда",
+     "lemma": "всегда́",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "бы́ли",
+     "lex": "v:быть",
+     "lemma": "быть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "past",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "о́вощи",
+     "sp": false,
+     "lex": "n:овощ",
+     "lemma": "о́вощ",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "pl"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "и",
+     "lex": "o:и",
+     "lemma": "и",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "да́ча",
+     "lex": "n:дача",
+     "lemma": "да́ча",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "помога́ла",
+     "lex": "v:помогать",
+     "lemma": "помога́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "прокорми́ть",
+     "lex": "v:прокормить",
+     "lemma": "прокорми́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf"
+     },
+     "rare": true
+    },
+    {
+     "t": "семью́",
+     "sp": false,
+     "lex": "o:семь",
+     "lemma": "семь",
+     "g": {
+      "pos": "num",
+      "case": "ins"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "para": true,
+   "en": "Today vegetables can be bought in any shop, but dachas haven't gone anywhere.",
+   "tokens": [
+    {
+     "t": "Сего́дня",
+     "lex": "o:сегодня",
+     "lemma": "сего́дня",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "о́вощи",
+     "lex": "n:овощ",
+     "lemma": "о́вощ",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "мо́жно",
+     "lex": "o:можно",
+     "lemma": "мо́жно",
+     "g": {
+      "pos": "pred"
+     }
+    },
+    {
+     "t": "купи́ть",
+     "lex": "v:купить",
+     "lemma": "купи́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf"
+     }
+    },
+    {
+     "t": "в",
+     "lex": "o:в",
+     "lemma": "в",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "любо́м",
+     "lex": "a:любой",
+     "lemma": "любо́й",
+     "g": {
+      "pos": "adj",
+      "case": "prep",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "магази́не",
+     "sp": false,
+     "lex": "n:магазин",
+     "lemma": "магази́н",
+     "g": {
+      "pos": "noun",
+      "case": "prep",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "но",
+     "lex": "o:но",
+     "lemma": "но",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "да́чи",
+     "lex": "n:дача",
+     "lemma": "да́ча",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "никуда́",
+     "lex": "o:никуда",
+     "lemma": "никуда́",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "не",
+     "lex": "o:не",
+     "lemma": "не",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "де́лись",
+     "sp": false,
+     "lex": "v:деться",
+     "lemma": "де́ться",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "pl"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "For some the dacha means working in the garden and pride in their own apples.",
+   "tokens": [
+    {
+     "t": "Для",
+     "lex": "o:для",
+     "lemma": "для",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "одни́х",
+     "lex": "o:один",
+     "lemma": "оди́н",
+     "g": {
+      "pos": "num",
+      "case": "gen",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "да́ча",
+     "lex": "n:дача",
+     "lemma": "да́ча",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "—"
+    },
+    {
+     "t": "э́то",
+     "lex": "a:этот",
+     "lemma": "э́тот",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "n"
+     }
+    },
+    {
+     "t": "рабо́та",
+     "lex": "n:работа",
+     "lemma": "рабо́та",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "в",
+     "lex": "o:в",
+     "lemma": "в",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "саду́",
+     "lex": "n:сад",
+     "lemma": "сад",
+     "g": {
+      "pos": "noun",
+      "case": "loc2",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "и",
+     "lex": "o:и",
+     "lemma": "и",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "го́рдость",
+     "lex": "n:гордость",
+     "lemma": "го́рдость",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "за",
+     "lex": "o:за",
+     "lemma": "за",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "со́бственные",
+     "lex": "a:собственный",
+     "lemma": "со́бственный",
+     "g": {
+      "pos": "adj",
+      "case": "acc",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "я́блоки",
+     "sp": false,
+     "lex": "n:яблоко",
+     "lemma": "я́блоко",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "pl"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "For others it means barbecues, the banya and conversations till morning.",
+   "tokens": [
+    {
+     "t": "Для",
+     "lex": "o:для",
+     "lemma": "для",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "други́х",
+     "lex": "a:другой",
+     "lemma": "друго́й",
+     "g": {
+      "pos": "adj",
+      "case": "gen",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "—"
+    },
+    {
+     "t": "шашлыки́",
+     "sp": false,
+     "lex": "n:шашлык",
+     "lemma": "шашлы́к",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "pl"
+     },
+     "rare": true
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "ба́ня",
+     "lex": "n:баня",
+     "lemma": "ба́ня",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": "и",
+     "lex": "o:и",
+     "lemma": "и",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "разгово́ры",
+     "lex": "n:разговор",
+     "lemma": "разгово́р",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "до",
+     "lex": "o:до",
+     "lemma": "до",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "утра́",
+     "sp": false,
+     "lex": "n:утро",
+     "lemma": "у́тро",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "And for children the dacha is summer: the river, a bike, friends and freedom.",
+   "tokens": [
+    {
+     "t": "А",
+     "lex": "o:а",
+     "lemma": "а",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "для",
+     "lex": "o:для",
+     "lemma": "для",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "дете́й",
+     "lex": "n:ребёнок",
+     "lemma": "ребёнок",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "да́ча",
+     "lex": "n:дача",
+     "lemma": "да́ча",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "—"
+    },
+    {
+     "t": "э́то",
+     "lex": "a:этот",
+     "lemma": "э́тот",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "n"
+     }
+    },
+    {
+     "t": "ле́то",
+     "sp": false,
+     "lex": "n:лето",
+     "lemma": "ле́то",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ":"
+    },
+    {
+     "t": "река́",
+     "sp": false,
+     "lex": "n:река",
+     "lemma": "река́",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "велосипе́д",
+     "sp": false,
+     "lex": "n:велосипед",
+     "lemma": "велосипе́д",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "друзья́",
+     "lex": "n:друг",
+     "lemma": "друг",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "и",
+     "lex": "o:и",
+     "lemma": "и",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "свобо́да",
+     "sp": false,
+     "lex": "n:свобода",
+     "lemma": "свобо́да",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "para": true,
+   "en": "In summer city flats empty: grandmothers and grandchildren live at the dacha from May to September.",
+   "tokens": [
+    {
+     "t": "Ле́том",
+     "lex": "n:лето",
+     "lemma": "ле́то",
+     "g": {
+      "pos": "noun",
+      "case": "ins",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "городски́е",
+     "lex": "a:городской",
+     "lemma": "городско́й",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "кварти́ры",
+     "lex": "n:квартира",
+     "lemma": "кварти́ра",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "пусте́ют",
+     "sp": false,
+     "lex": "v:пустеть",
+     "lemma": "пусте́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "pl"
+     },
+     "rare": true
+    },
+    {
+     "t": ":"
+    },
+    {
+     "t": "ба́бушки",
+     "lex": "n:бабушка",
+     "lemma": "ба́бушка",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "с",
+     "lex": "o:с",
+     "lemma": "с",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "вну́ками",
+     "lex": "n:внук",
+     "lemma": "внук",
+     "g": {
+      "pos": "noun",
+      "case": "ins",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "живу́т",
+     "lex": "v:жить",
+     "lemma": "жить",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "pl"
+     }
+    },
+    {
+     "t": "на",
+     "lex": "o:на",
+     "lemma": "на",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "да́че",
+     "lex": "n:дача",
+     "lemma": "да́ча",
+     "g": {
+      "pos": "noun",
+      "case": "prep",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "с",
+     "lex": "o:с",
+     "lemma": "с",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "ма́я",
+     "lex": "n:май",
+     "lemma": "май",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "по",
+     "lex": "o:по",
+     "lemma": "по",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "сентя́брь",
+     "sp": false,
+     "lex": "n:сентябрь",
+     "lemma": "сентя́брь",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "And in autumn comes the time for preserving.",
+   "tokens": [
+    {
+     "t": "А",
+     "lex": "o:а",
+     "lemma": "а",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "о́сенью",
+     "lex": "n:осень",
+     "lemma": "о́сень",
+     "g": {
+      "pos": "noun",
+      "case": "ins",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "начина́ется",
+     "lex": "v:начинаться",
+     "lemma": "начина́ться",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "sg"
+     }
+    },
+    {
+     "t": "вре́мя",
+     "lex": "n:время",
+     "lemma": "вре́мя",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "загото́вок",
+     "sp": false,
+     "lex": "n:заготовка",
+     "lemma": "загото́вка",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "pl"
+     },
+     "rare": true
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "Cucumbers are salted, berries are made into jam, and in winter every kitchen has jars of summer.",
+   "tokens": [
+    {
+     "t": "Огурцы́",
+     "lex": "n:огурец",
+     "lemma": "огуре́ц",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "pl"
+     },
+     "rare": true
+    },
+    {
+     "t": "со́лят",
+     "sp": false,
+     "lex": "v:солить",
+     "lemma": "соли́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "pl"
+     },
+     "rare": true
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "из",
+     "lex": "o:из",
+     "lemma": "из",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "я́год",
+     "lex": "n:ягода",
+     "lemma": "я́года",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "pl"
+     },
+     "rare": true
+    },
+    {
+     "t": "ва́рят",
+     "lex": "v:варить",
+     "lemma": "вари́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "pl"
+     },
+     "rare": true
+    },
+    {
+     "t": "варе́нье",
+     "sp": false,
+     "lex": "n:варенье",
+     "lemma": "варе́нье",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "и",
+     "lex": "o:и",
+     "lemma": "и",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "зимо́й",
+     "lex": "n:зима",
+     "lemma": "зима́",
+     "g": {
+      "pos": "noun",
+      "case": "ins",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "на",
+     "lex": "o:на",
+     "lemma": "на",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "ка́ждой",
+     "lex": "a:каждый",
+     "lemma": "ка́ждый",
+     "g": {
+      "pos": "adj",
+      "case": "prep",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "ку́хне",
+     "lex": "n:кухня",
+     "lemma": "ку́хня",
+     "g": {
+      "pos": "noun",
+      "case": "prep",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "стоя́т",
+     "lex": "v:стоять",
+     "lemma": "стоя́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "pl"
+     }
+    },
+    {
+     "t": "ба́нки",
+     "lex": "n:банк",
+     "lemma": "банк",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "с",
+     "lex": "o:с",
+     "lemma": "с",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "ле́том",
+     "sp": false,
+     "lex": "n:лето",
+     "lemma": "ле́то",
+     "g": {
+      "pos": "noun",
+      "case": "ins",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  }
+ ],
+ "questions": [
+  {
+   "id": "nf-b2-10-q1",
+   "type": "choice",
+   "level": "B2",
+   "tags": [
+    "reading"
+   ],
+   "prompt": {
+    "ru": "Почему́ в пя́тницу на доро́гах про́бки?",
+    "en": "Why are there traffic jams on Friday?",
+    "instruction": "Choose the answer"
+   },
+   "accept": [
+    "Лю́ди е́дут на да́чу."
+   ],
+   "distractors": [
+    {
+     "ru": "Лю́ди е́дут на рабо́ту.",
+     "error": "reading.detail"
+    },
+    {
+     "ru": "Лю́ди е́дут в аэропо́рт.",
+     "error": "reading.detail"
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "nf-b2-10-q2",
+   "type": "choice",
+   "level": "B2",
+   "tags": [
+    "reading"
+   ],
+   "prompt": {
+    "ru": "Заче́м да́ча была́ нужна́ в сове́тское вре́мя?",
+    "en": "Why was the dacha needed in Soviet times?",
+    "instruction": "Choose the answer"
+   },
+   "accept": [
+    "Что́бы выра́щивать о́вощи для семьи́."
+   ],
+   "distractors": [
+    {
+     "ru": "Что́бы отдыха́ть от рабо́ты.",
+     "error": "reading.detail"
+    },
+    {
+     "ru": "Что́бы сдава́ть её тури́стам.",
+     "error": "reading.detail"
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "nf-b2-10-q3",
+   "type": "choice",
+   "level": "B2",
+   "tags": [
+    "reading"
+   ],
+   "prompt": {
+    "ru": "Что зна́чит да́ча для дете́й?",
+    "en": "What does the dacha mean for children?",
+    "instruction": "Choose the answer"
+   },
+   "accept": [
+    "Ле́то и свобо́ду."
+   ],
+   "distractors": [
+    {
+     "ru": "Рабо́ту в саду́.",
+     "error": "reading.detail"
+    },
+    {
+     "ru": "Шко́лу.",
+     "error": "reading.detail"
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "nf-b2-10-q4",
+   "type": "choice",
+   "level": "B2",
+   "tags": [
+    "reading"
+   ],
+   "prompt": {
+    "ru": "Что де́лают о́сенью?",
+    "en": "What do people do in autumn?",
+    "instruction": "Choose the answer"
+   },
+   "accept": [
+    "Со́лят огурцы́ и ва́рят варе́нье."
+   ],
+   "distractors": [
+    {
+     "ru": "Покупа́ют о́вощи.",
+     "error": "reading.detail"
+    },
+    {
+     "ru": "Продаю́т да́чу.",
+     "error": "reading.detail"
+    }
+   ],
+   "source": "handwritten"
+  }
+ ]
+}

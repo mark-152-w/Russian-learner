@@ -11,7 +11,13 @@ tools/                 Python build pipeline (run from repo root)
   fetch_sources.sh     downloads sources into tools/raw/ (gitignored)
   ingest.py            raw CSV/TXT → src/data/lexicon/*, stats/coverage.json, meta.json, tools/reports/*
   sentences.py         Tatoeba → src/data/sentences/{A1..C1}.json (only fully resolved, unambiguously stressed)
-  closed_class.json    stressed pronouns, numerals, names, preposition variants (во, со, обо) for sentences + validate
+  closed_class.json    stressed paradigms the dataset lacks: pronouns (наш, ваш), numerals (11–19…), names/places,
+                       preposition variants (во, со, обо), invariant words (kind "word": как, пусть; with "sub" + "en")
+  stories.py           tools/stories/*.txt → src/data/content/stories/*.json + src/data/stories-index.json, with
+                       context disambiguation; report in tools/reports/stories.md
+  stories/             story/dialogue sources (see the docstring in stories.py for the format and {hints})
+  cards/               card-set sources (set header, cards split by '===', blurb lines like stories); stories.py
+                       builds them into content/cards/*.json + src/data/cards-index.json
   morph.py             pymorphy3 verification shared by ingest + validate (slot → grammemes)
   rulib.py             stress/ё helpers (mirror: src/lib/ru.ts)
   validate.py          schema + Russian-text + reference + lexicon checks; exit 1 on errors
@@ -27,6 +33,8 @@ src/data/              generated + hand-written data
   lexicon/index-{core,ext}.json  [id, lemma, pos, rank, chunk, gloss] rows for search
   lexicon/slots.json   slot order for the positional `forms` arrays
   sentences/{A1..C1}.json  {id:"s:<tatoeba>", ru, en[], lv, r, w:[[start,end,"lex|slot"],…]} (B2/C1 runtime-cached)
+  stories-index.json   generated library index (id, kind, level, series, chapter, title, words, questions)
+  cards-index.json     generated card index (sets → cards: id, name, rarity, art, level; no blurbs)
   errors.json          error taxonomy (grader diagnostics)
   tags.json            grammar tag vocabulary
   content/{grammar,units,exercises,stories,adventure,cards,idioms}/*.json  hand-written content
@@ -34,22 +42,33 @@ src/lib/               ru.ts (stress helpers), lexicon.ts (lazy chunks, decodeCe
                        ics.ts, sentences.ts (load/examplesFor), content.ts (hand-written JSON via import.meta.glob),
                        drillContext.ts (lexicon + sentences + hand-written for generators), course.ts (unit progress,
                        lesson/checkpoint items), learner.ts (placement result, learner level), coverage.ts
-                       ("N words ≈ X%"), plan.ts (Home daily plan, weakest tag, vocabulary milestones)
+                       ("N words ≈ X%"), plan.ts (Home daily plan, weakest tag, vocabulary milestones),
+                       stories.ts (lazy story files, reading progress, analysis labels), bosses.ts (boss records),
+                       cards.ts (card index, lazy set files, owned cards), adventure.ts (chapters, progress, flags)
 src/engine/            normalize.ts, translit.ts, slots.ts (slot → labels/tags), diagnose.ts (paradigm + spelling
                        rules → error type), grader.ts (all 11 item types), generators.ts (drills from the lexicon),
                        sentenceGen.ts (case/verb cloze, find-error, tiles, declension patterns from sentences),
                        drills.ts (generator registry used by unit JSON; itemsForTag), placement.ts (staircases),
-                       trainers.ts (preposition sorting, numerals from closed_class.json, stress items, minimal pairs)
+                       trainers.ts (preposition sorting, numerals from closed_class.json, stress items, minimal pairs),
+                       listening.ts (dictation, shadowing, ы/и + hard/soft pairs, а́канье), keyboard.ts (ЙЦУКЕН course),
+                       arcade.ts (case arcade waves/cards, joinPreposition о→об…), crossword.ts (candidates from the
+                       lexicon, grid builder, daySeed), speed.ts (speed match board), boss.ts (HP/hearts, revenge items),
+                       town.ts (buildings, levels, ranks), adventure.ts («Де́ло» parser: verb government → explanations)
 src/srs/fsrs.ts        ts-fsrs wrapper; cards stored with epoch-ms dates; ratingFor(verdict, ms)
 src/srs/deck.ts        vocabulary deck: card directions, form cards from missed forms, new-word queue, due items
 src/db/                Dexie schema (db.ts), settings, backup (export/import/reset)
 src/rewards/           pure: xp, levels, chest, streak, quests, achievements, goals; service.ts persists them
-src/audio/             sound.ts (Web Audio synth), haptics.ts, tts.ts (speechSynthesis)
-src/components/        ui.tsx, Md.tsx (markdown-lite + Ru), juice.tsx, exercises.tsx, SessionRunner, SessionSummary,
+src/audio/             sound.ts (Web Audio synth), haptics.ts, tts.ts (speechSynthesis), speech.ts (recognition, Chrome)
+src/components/        ui.tsx, Md.tsx (markdown-lite + Ru), juice.tsx, exercises.tsx, SessionRunner (hud/onAnswered
+                       hooks for bosses), SessionSummary, Tappable.tsx (analysed tokens + WordSheet), BossArt.tsx
+                       (20 parametric portraits), CardFace.tsx (card + NewCard),
                        visuals.tsx (aspect timelines + motion-prefix diagrams; an item's `visual` shows in feedback)
 src/pages/             Home, Practice, Review, Course (course/unit/lesson), Placement, Grammar, Lab, Word, Drill
-                       (/drill/{word,pattern,cell,tag}/…), Trainers (/trainers, /trainer/:id, /trainer/:id/:mode),
-                       Trophies, Settings, Attributions
+                       (/drill/{word,pattern,cell,tag}/…), Trainers (/trainers = Practice hub, /trainer/:id/:mode),
+                       Reader (/reader, /story/:id[/quiz], /dialogue/:id), Listening (/listening, /listen/:mode),
+                       Keyboard (/keyboard/:n), Games (/games hub), Arcade (/arcade), Crossword (/crossword[/:topic],
+                       'daily' = day-seeded), Speed (/speed), Boss (/boss/:unit), Cards (/cards, /card/:id), Town (/town),
+                       Adventure (/adventure, /adventure/:n), Trophies, Settings, Attributions
 src/features.ts        features that exist; quests/achievements for anything else stay hidden
 ```
 
@@ -66,6 +85,8 @@ src/features.ts        features that exist; quests/achievements for anything els
 
 - `npm run data:fetch && npm run data:ingest`: rebuild the lexicon and sentences (a few minutes). Output is
   deterministic. `npm run data:sentences` redoes only the sentences.
+- `python3 tools/stories.py`: rebuild stories and cards after editing `tools/stories/*.txt` or `tools/cards/*.txt`
+  (exit 1 on problems). Re-run it after any ingest, since lexeme ids/ranks feed the analysis.
 - `npm run data:validate`: must pass before a phase is done (`--full` re-checks the rare tail too, slower).
 - `npm run check`: python tests + validate + typecheck + vitest.
 - `npm run dev` / `npm run build` (`BASE=/` for root hosting; default base is `/Russian-learner/`).
@@ -101,11 +122,22 @@ src/features.ts        features that exist; quests/achievements for anything els
   (`*give **him***`) can't render and is a validate error.
 - Unit drills are data: `{generator, params, count}` from the registry in `src/engine/drills.ts`, or `items`
   ids of hand-written exercises. `src/engine/units.test.ts` checks every unit yields gradable items.
+- Stories: one sentence per line `Russian | English`; blank line = new paragraph; dialogues `Speaker: text | en`.
+  Write every polysyllabic word stressed; the written stress picks homographs. Words the lexicon lacks are
+  problems: rephrase, or add a name/word to closed_class.json (validated). Gerunds and most participles aren't
+  in the lexicon. Check `tools/reports/stories.md` for odd context decisions; fix with `{hint}`.
 - Session `kind` strings matter: the daily plan ticks steps off by kind (`review`, `lesson`, `checkpoint`,
-  `drill-tag-<tag>`, `trainer-<id>`), and `trainer-<id>` feeds the trainer stats, quest and achievements.
+  `drill-tag-<tag>`, `trainer-<id>`, `arcade`, `crossword`, `speed`, `boss`, `adventure`), and `trainer-<id>` feeds the trainer stats, quest and achievements.
 - Trainer content: aspect and motion items live in `content/exercises/{aspect,motion}.json` (ids `ex-asp-*`,
   `ex-mot-*`, type `choice-reason`, with `visual.timeline` / `visual.motion`). Only write a pair where one
   answer is clearly wrong; if both aspects would sound natural, leave the context out.
+- «Де́ло» chapters (`content/adventure/ch*.json`) are data: scenes with choices (optionally a graded `check` item)
+  or, with `parser: true`, `commands` matched by verb id + object/topic item ids + `requires` flags (first match
+  wins, so put the flag-gated command before its fallback). Verbs and items accumulate from earlier chapters
+  (later ids win). A verb's `object`/`topic` give case + preposition + `why`, which the parser explains; items
+  list their six case forms (names need no `lex`). Flags are shared across chapters.
+- Cards: rarities gate chests (never a card rarer than the chest). `Profile.cards` holds owned ids; completed
+  sets pay `bonusXp` via the service (`awardCard()` for milestone rewards).
 - Minimal pairs (`MINIMAL_PAIRS` in trainers.ts) name lexeme + slot; forms come from the lexicon, and a test
   checks each pair differs only in stress. Check homograph order (`n:хлопок` is хлопо́к, `:2` is хло́пок).
 
@@ -116,10 +148,14 @@ src/features.ts        features that exist; quests/achievements for anything els
 - validate.py also scans string literals and JSX text in `src/**/*.ts(x)` (tests excluded) for the Russian rules.
   Add `// ru-ignore` to a line holding letter sets such as `'аеёиоуыэюя'`. ALL-CAPS abbreviations (ЙЦУКЕН) are
   exempt. A stressed monosyllable carries its clitic group (не́ было, на́ пол).
+- Chromium's `scrollIntoView()` now returns a Promise: never return its result from a `useEffect` arrow (React calls
+  it as a cleanup). Use a block body.
 - Vitest caches transforms in `node_modules/.vitest-cache`: a **new** JSON file under an `import.meta.glob` won't
   appear in tests until you delete that folder.
 - String literals that are ids (`'n:книга'`, `'tr:prep:…'`) are skipped by validate's source scan. A prefix
   written as a key needs morpheme notation (`'пере-'`) or it's flagged as unstressed.
+- pymorphy3's normal form can differ from the dataset lemma (сча́стье → счастие, де́ньги → деньга, мно́гие →
+  многий). `morph.lemma_keys()` covers this in ingest and validate; use it for any new lemma comparison.
 - Frequency: an inflecting word is ranked only on evidence from forms unique to it, and only the first homograph
   (dataset order) is ranked. This stops ага́ "cane toad" from inheriting the interjection ага.
 

@@ -31,6 +31,8 @@ export function useRussianVoices(): { voices: SpeechSynthesisVoice[]; ready: boo
 export interface SpeakOptions {
   rate?: number
   voice?: string
+  /** 0–2; dialogues give the second speaker a different pitch when only one voice is installed. */
+  pitch?: number
   onEnd?: () => void
   onBoundary?: (charIndex: number) => void
 }
@@ -42,6 +44,7 @@ export function speak(text: string, opts: SpeakOptions = {}) {
   const u = new SpeechSynthesisUtterance(stripStress(text))
   u.lang = 'ru-RU'
   u.rate = opts.rate ?? 0.9
+  if (opts.pitch !== undefined) u.pitch = opts.pitch
   const voices = russianVoices()
   const v = voices.find((x) => x.voiceURI === opts.voice) ?? voices.find((x) => x.localService) ?? voices[0]
   if (v) u.voice = v

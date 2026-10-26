@@ -1,0 +1,43 @@
+id: nf-b2-04
+kind: nonfiction
+level: B2
+title: Чай с самова́ра | Tea from the samovar
+---
+Мно́гие ду́мают, что гла́вный ру́сский напи́ток — во́дка. | Many people think the main Russian drink is vodka.
+На са́мом де́ле ру́сские пьют гора́здо бо́льше ча́я. | In fact Russians drink far more tea.
+Чай пьют у́тром и ве́чером, на рабо́те и в гостя́х, ле́том и зимо́й. | They drink tea in the morning and the evening, at work and when visiting, in summer and in winter.
+Предложи́ть го́стю ча́ю — э́то пе́рвое пра́вило гостеприи́мства. | Offering a guest some tea is the first rule of hospitality.
+
+Чай пришёл в Росси́ю из Кита́я в семна́дцатом ве́ке. | Tea came to Russia from China in the seventeenth century.
+Снача́ла он был о́чень дороги́м, и пить его́ могли́ то́лько бога́тые. | At first it was very expensive and only the rich could drink it.
+Чай везли́ на верблю́дах че́рез Монго́лию и Сиби́рь, и доро́га занима́ла бо́льше го́да. | Tea was carried by camel through Mongolia and Siberia, and the journey took more than a year.
+
+Си́мволом ру́сского чаепи́тия стал самова́р. | The symbol of Russian tea-drinking became the samovar.
+Э́то большо́й металли́ческий сосу́д, в кото́ром кипяти́ли во́ду. | It's a large metal vessel in which water was boiled.
+На самова́р ста́вили ма́ленький ча́йник с о́чень кре́пкой зава́ркой. | A small teapot with very strong brewed tea was placed on the samovar.
+Ка́ждый налива́л в ча́шку немно́го зава́рки и добавля́л горя́чую во́ду по вку́су. | Everyone poured a little of the brew into a cup and added hot water to taste.
+
+Пи́ли чай ме́дленно, ча́сто из блю́дца, с са́харом и́ли с варе́ньем. | People drank tea slowly, often from a saucer, with sugar or jam.
+За самова́ром мо́жно бы́ло сиде́ть часа́ми: разгова́ривать, петь, обсужда́ть дела́. | You could sit at the samovar for hours: chatting, singing, discussing business.
+
+Сего́дня самова́р в основно́м стои́т в музе́ях и́ли на да́чах как украше́ние. | Today the samovar mostly stands in museums or at dachas as a decoration.
+Ча́йник замени́л его́ в ка́ждой кварти́ре. | The kettle has replaced it in every flat.
+Но тради́ция до́лгого ча́я за разгово́ром жива́. | But the tradition of long tea over conversation is alive.
+Е́сли вас пригласи́ли «на чай», не ду́майте, что э́то бу́дет одна́ ча́шка за пять мину́т. | If you've been invited "for tea", don't think it will be one cup in five minutes.
+---
+? Отку́да чай пришёл в Росси́ю? | Where did tea come to Russia from?
++ Из Кита́я.
+- Из И́ндии.
+- Из А́нглии.
+? Почему́ снача́ла чай пи́ли то́лько бога́тые? | Why did only the rich drink tea at first?
++ Он был о́чень дороги́м.
+- Его́ запреща́ли.
+- Он был невку́сным.
+? Что ста́вили на самова́р? | What was placed on the samovar?
++ Ма́ленький ча́йник с зава́ркой.
+- Ча́шки.
+- Са́хар.
+? Что зна́чит приглаше́ние «на чай»? | What does an invitation "for tea" mean?
++ До́лгий разгово́р за столо́м.
+- Одна́ ча́шка за пять мину́т.
+- Обе́д в рестора́не.

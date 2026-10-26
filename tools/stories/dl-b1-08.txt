@@ -1,0 +1,26 @@
+id: dl-b1-08
+kind: dialogue
+level: B1
+title: Что посмотре́ть? | What shall we watch?
+---
+Ми́ша: Пойдём в кино́ в выходны́е? | Misha: Shall we go to the cinema at the weekend?
+А́ня: Дава́й. А что идёт? | Anya: Let's. What's on?
+Ми́ша: Есть но́вый фильм про ко́смос и коме́дия. | Misha: There's a new film about space and a comedy.
+А́ня: Про ко́смос я не хочу́, там, наве́рное, всё взрыва́ется. Дава́й коме́дию. | Anya: I don't want the space one, everything probably explodes in it. Let's see the comedy.
+Ми́ша: Но коме́дия, говоря́т, глу́пая. А фильм про ко́смос всем нра́вится. | Misha: But they say the comedy is silly. And everyone likes the space film.
+А́ня: Ла́дно, уговори́л. Но тогда́ ты покупа́ешь моро́женое. | Anya: All right, you've talked me into it. But then you're buying the ice cream.
+Ми́ша: Договори́лись! Сеа́нс в семь и́ли в де́вять? | Misha: Deal! The seven o'clock showing or the nine?
+А́ня: В семь. По́сле девяти́ я засыпа́ю. | Anya: Seven. After nine I fall asleep.
+---
+? Како́й фильм хоте́ла посмотре́ть А́ня снача́ла? | Which film did Anya want to see at first?
++ Коме́дию.
+- Фильм про ко́смос.
+- Мультфи́льм.
+? Что до́лжен купи́ть Ми́ша? | What does Misha have to buy?
++ Моро́женое.
+- Биле́ты для всех.
+- Во́ду.
+? На како́й сеа́нс они́ пойду́т? | Which showing will they go to?
++ В семь.
+- В де́вять.
+- В пять.

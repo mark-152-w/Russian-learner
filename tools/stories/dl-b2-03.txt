@@ -1,0 +1,26 @@
+id: dl-b2-03
+kind: dialogue
+level: B2
+title: Ты и́ли вы? | Ty or vy?
+---
+Ма́йкл: Оле́г, мо́жно вопро́с? Почему́ ты говори́шь «ты» Ни́не, а мне сказа́л, что к ней на́до обраща́ться на «вы»? | Michael: Oleg, can I ask a question? Why do you say "ty" to Nina, but told me I should address her as "vy"?
+Оле́г: Потому́ что она́ сама́ предложи́ла мне перейти́ на «ты». Мы давно́ знако́мы, она́ мне как ба́бушка. | Oleg: Because she herself suggested I switch to "ty". We've known each other for a long time, she's like a grandmother to me.
+Ма́йкл: А е́сли я скажу́ ей «ты», она́ оби́дится? | Michael: And if I say "ty" to her, will she be offended?
+Оле́г: Не оби́дится, но удиви́тся. Ты ведь её почти́ не зна́ешь. | Oleg: She won't be offended, but she'll be surprised. You hardly know her, after all.
+Ма́йкл: А с тобо́й мы сра́зу ста́ли на «ты». | Michael: But you and I were on "ty" terms straight away.
+Оле́г: Мы рове́сники. С рове́сниками всё про́ще. | Oleg: We're the same age. With people your own age everything is simpler.
+Ма́йкл: По-англи́йски так легко́: всем говори́шь «you», и никаки́х пробле́м. | Michael: In English it's so easy: you say "you" to everyone and there are no problems.
+Оле́г: Зато́ у нас мо́жно одни́м сло́вом показа́ть, как ты отно́сишься к челове́ку. По-мо́ему, э́то здо́рово. | Oleg: But in Russian you can show how you feel about someone with one word. I think that's great.
+---
+? Почему́ Оле́г говори́т Ни́не «ты»? | Why does Oleg say "ty" to Nina?
++ Она́ сама́ предложи́ла.
+- Она́ его́ ба́бушка.
+- Он не зна́ет, что так нельзя́.
+? Что бу́дет, е́сли Ма́йкл ска́жет Ни́не «ты»? | What will happen if Michael says "ty" to Nina?
++ Она́ удиви́тся.
+- Она́ оби́дится.
+- Ничего́, э́то норма́льно.
+? Что нра́вится Оле́гу в ру́сском «ты» и «вы»? | What does Oleg like about Russian ty and vy?
++ Мо́жно показа́ть своё отноше́ние к челове́ку.
+- Э́то про́ще, чем в англи́йском.
+- Так говоря́т все рове́сники.

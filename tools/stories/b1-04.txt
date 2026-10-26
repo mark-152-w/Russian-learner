@@ -1,0 +1,49 @@
+id: st-b1-04
+kind: story
+level: B1
+series: anya2
+chapter: 4
+title: Сунду́к на чердаке́ | The chest in the attic
+characters: А́ня, Ни́на, Оле́г, Ка́тя
+cliffhanger: The letters are signed only "Your Yuri". Who was he?
+---
+У́тром Оле́г пе́рвым подня́лся на черда́к. | In the morning Oleg was the first to go up to the attic.
+Там бы́ло темно́ и пы́льно. | It was dark and dusty up there.
+Ста́рые сту́лья, ла́мпы, коро́бки с журна́лами — каза́лось, вре́мя здесь останови́лось. | Old chairs, lamps, boxes of magazines: it seemed that time had stopped here.
+
+В углу́ стоя́л большо́й деревя́нный сунду́к. | In the corner stood a big wooden chest.
+— Ни́на, что в нём? — кри́кнул Оле́г вниз. | "Nina, what's in it?" Oleg called down.
+— Не по́мню, — отве́тила она́. — Его́ откры́ть нельзя́, ключ давно́ потеря́лся. | "I don't remember," she answered. "It can't be opened, the key was lost long ago."
+
+Но Оле́г был упря́мым. | But Oleg was stubborn.
+Че́рез три́дцать мину́т он всё-таки откры́л замо́к. | Thirty minutes later he did manage to open the lock.
+В сундуке́ лежа́ли ста́рое пла́тье, фотогра́фии и па́чка пи́сем с голубо́й ле́нтой. | In the chest lay an old dress, photographs and a bundle of letters tied with a pale blue ribbon.
+
+Они́ спусти́лись на вера́нду и положи́ли пи́сьма пе́ред Ни́ной. | They went down to the veranda and put the letters in front of Nina.
+Ни́на взяла́ ве́рхний конве́рт и до́лго молча́ла. | Nina took the top envelope and was silent for a long time.
+Пото́м она́ ти́хо сказа́ла: | Then she said quietly:
+— Я ду́мала, что мать их вы́бросила. | "I thought my mother had thrown them away."
+
+На конве́ртах был оди́н и тот же обра́тный а́дрес: го́род в Сиби́ри. | The envelopes all had the same return address: a town in Siberia.
+Ка́тя осторо́жно взяла́ одно́ письмо́ и прочита́ла после́днюю стро́чку: | Katya carefully took one letter and read the last line:
+«Я верну́сь ле́том. Жди меня́. Твой Ю́рий». | "I'll come back in the summer. Wait for me. Your Yuri."
+— Ни́на, а кто тако́й Ю́рий? — спроси́ла А́ня. | "Nina, who is Yuri?" asked Anya.
+Ни́на вы́терла глаза́ и сказа́ла: | Nina wiped her eyes and said:
+— Э́то до́лгая исто́рия. Поста́вьте ча́йник. | "It's a long story. Put the kettle on."
+---
+? Где стоя́л сунду́к? | Where was the chest?
++ В углу́ на чердаке́.
+- На вера́нде.
+- В саду́.
+? Почему́ сунду́к не открыва́ли? | Why hadn't the chest been opened?
++ Ключ потеря́лся.
+- Он был сли́шком тяжёлый.
+- Ни́на не разреша́ла.
+? Что лежа́ло в сундуке́? | What was in the chest?
++ Пла́тье, фотогра́фии и пи́сьма.
+- Де́ньги и зо́лото.
+- Кни́ги и журна́лы.
+? Отку́да бы́ли пи́сьма? | Where were the letters from?
++ Из Сиби́ри.
+- Из Петербу́рга.
+- Из Каза́ни.

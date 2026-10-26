@@ -1,0 +1,1008 @@
+{
+ "$schema": "../../../../schemas/story.schema.json",
+ "id": "dl-b2-02",
+ "kind": "dialogue",
+ "level": "B2",
+ "title": {
+  "ru": "Возвра́т",
+  "en": "A refund"
+ },
+ "sentences": [
+  {
+   "para": true,
+   "speaker": "Покупа́тельница",
+   "en": "Customer: Hello. I'd like to return these shoes. I bought them a week ago and they've already come apart.",
+   "tokens": [
+    {
+     "t": "Здра́вствуйте",
+     "sp": false,
+     "lex": "o:здравствуйте",
+     "lemma": "здра́вствуйте",
+     "g": {
+      "pos": "intj"
+     }
+    },
+    {
+     "t": "."
+    },
+    {
+     "t": "Я",
+     "lex": "o:я",
+     "lemma": "я",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "хочу́",
+     "lex": "v:хотеть",
+     "lemma": "хоте́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 1,
+      "number": "sg"
+     }
+    },
+    {
+     "t": "верну́ть",
+     "lex": "v:вернуть",
+     "lemma": "верну́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf"
+     }
+    },
+    {
+     "t": "э́ти",
+     "lex": "a:этот",
+     "lemma": "э́тот",
+     "g": {
+      "pos": "adj",
+      "case": "acc",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "ту́фли",
+     "sp": false,
+     "lex": "n:туфля",
+     "lemma": "ту́фля",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "."
+    },
+    {
+     "t": "Я",
+     "lex": "o:я",
+     "lemma": "я",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "купи́ла",
+     "lex": "v:купить",
+     "lemma": "купи́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "их",
+     "lex": "o:они",
+     "lemma": "они́",
+     "g": {
+      "pos": "pron",
+      "case": "acc"
+     }
+    },
+    {
+     "t": "неде́лю",
+     "lex": "n:неделя",
+     "lemma": "неде́ля",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "наза́д",
+     "sp": false,
+     "lex": "o:назад",
+     "lemma": "наза́д",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "а",
+     "lex": "o:а",
+     "lemma": "а",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "они́",
+     "lex": "o:они",
+     "lemma": "они́",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "уже́",
+     "lex": "o:уже",
+     "lemma": "уже́",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "слома́лись",
+     "sp": false,
+     "lex": "v:сломаться",
+     "lemma": "слома́ться",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "pl"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Продаве́ц",
+   "en": "Shop assistant: Please show me. Did you wear them in the rain?",
+   "tokens": [
+    {
+     "t": "Покажи́те",
+     "sp": false,
+     "lex": "v:показать",
+     "lemma": "показа́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "mood": "imp",
+      "number": "pl"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "пожа́луйста",
+     "sp": false,
+     "lex": "o:пожалуйста",
+     "lemma": "пожа́луйста",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "."
+    },
+    {
+     "t": "Вы",
+     "lex": "o:вы",
+     "lemma": "вы",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "их",
+     "lex": "o:они",
+     "lemma": "они́",
+     "g": {
+      "pos": "pron",
+      "case": "gen"
+     }
+    },
+    {
+     "t": "носи́ли",
+     "lex": "v:носить",
+     "lemma": "носи́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "past",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "под",
+     "lex": "o:под",
+     "lemma": "под",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "дождём",
+     "sp": false,
+     "lex": "n:дождь",
+     "lemma": "дождь",
+     "g": {
+      "pos": "noun",
+      "case": "ins",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "?",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Покупа́тельница",
+   "en": "Customer: I wore them in the street, the way everyone wears shoes. You don't mean to say the shoes aren't for the street?",
+   "tokens": [
+    {
+     "t": "Я",
+     "lex": "o:я",
+     "lemma": "я",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "носи́ла",
+     "lex": "v:носить",
+     "lemma": "носи́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "их",
+     "lex": "o:они",
+     "lemma": "они́",
+     "g": {
+      "pos": "pron",
+      "case": "acc"
+     }
+    },
+    {
+     "t": "по",
+     "lex": "o:по",
+     "lemma": "по",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "у́лице",
+     "sp": false,
+     "lex": "n:улица",
+     "lemma": "у́лица",
+     "g": {
+      "pos": "noun",
+      "case": "dat",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "как",
+     "lemma": "как",
+     "g": {
+      "pos": "conj"
+     },
+     "gloss": "how; as, like"
+    },
+    {
+     "t": "все",
+     "lex": "o:всё",
+     "lemma": "всё",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "но́сят",
+     "lex": "v:носить",
+     "lemma": "носи́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "pl"
+     }
+    },
+    {
+     "t": "ту́фли",
+     "sp": false,
+     "lex": "n:туфля",
+     "lemma": "ту́фля",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "."
+    },
+    {
+     "t": "Вы",
+     "lex": "o:вы",
+     "lemma": "вы",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "же",
+     "lex": "o:же",
+     "lemma": "же",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "не",
+     "lex": "o:не",
+     "lemma": "не",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "хоти́те",
+     "lex": "v:хотеть",
+     "lemma": "хоте́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 2,
+      "number": "pl"
+     }
+    },
+    {
+     "t": "сказа́ть",
+     "sp": false,
+     "lex": "v:сказать",
+     "lemma": "сказа́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "что",
+     "lex": "o:что",
+     "lemma": "что",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "ту́фли",
+     "lex": "n:туфля",
+     "lemma": "ту́фля",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "не",
+     "lex": "o:не",
+     "lemma": "не",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "для",
+     "lex": "o:для",
+     "lemma": "для",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "у́лицы",
+     "sp": false,
+     "lex": "n:улица",
+     "lemma": "у́лица",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "?",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Продаве́ц",
+   "en": "Shop assistant: No, of course not. Do you have the receipt?",
+   "tokens": [
+    {
+     "t": "Нет",
+     "sp": false,
+     "lex": "o:нет",
+     "lemma": "нет",
+     "g": {
+      "pos": "pred"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "коне́чно",
+     "sp": false,
+     "lex": "o:конечно",
+     "lemma": "коне́чно",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "."
+    },
+    {
+     "t": "У",
+     "lex": "o:у",
+     "lemma": "у",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "вас",
+     "lex": "o:вы",
+     "lemma": "вы",
+     "g": {
+      "pos": "pron",
+      "case": "gen"
+     }
+    },
+    {
+     "t": "есть",
+     "lex": "v:быть",
+     "lemma": "быть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "sg"
+     }
+    },
+    {
+     "t": "чек",
+     "sp": false,
+     "lex": "n:чек",
+     "lemma": "чек",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "?",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Покупа́тельница",
+   "en": "Customer: Here it is.",
+   "tokens": [
+    {
+     "t": "Вот",
+     "lex": "o:вот",
+     "lemma": "вот",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "он",
+     "sp": false,
+     "lex": "o:он",
+     "lemma": "он",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Продаве́ц",
+   "en": "Shop assistant: Fine. Do you want your money back or to exchange the shoes for another pair?",
+   "tokens": [
+    {
+     "t": "Хорошо́",
+     "sp": false,
+     "lex": "o:хорошо",
+     "lemma": "хорошо́",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "."
+    },
+    {
+     "t": "Вы",
+     "lex": "o:вы",
+     "lemma": "вы",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "хоти́те",
+     "lex": "v:хотеть",
+     "lemma": "хоте́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 2,
+      "number": "pl"
+     }
+    },
+    {
+     "t": "получи́ть",
+     "lex": "v:получить",
+     "lemma": "получи́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf"
+     }
+    },
+    {
+     "t": "де́ньги",
+     "lex": "n:деньги",
+     "lemma": "де́ньги",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "и́ли",
+     "lex": "o:или",
+     "lemma": "и́ли",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "поменя́ть",
+     "lex": "v:поменять",
+     "lemma": "поменя́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf"
+     }
+    },
+    {
+     "t": "ту́фли",
+     "lex": "n:туфля",
+     "lemma": "ту́фля",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "на",
+     "lex": "o:на",
+     "lemma": "на",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "други́е",
+     "sp": false,
+     "lex": "a:другой",
+     "lemma": "друго́й",
+     "g": {
+      "pos": "adj",
+      "case": "acc",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "?",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Покупа́тельница",
+   "en": "Customer: Money, please. I won't be buying this brand again.",
+   "tokens": [
+    {
+     "t": "Лу́чше",
+     "lex": "a:хороший",
+     "lemma": "хоро́ший",
+     "g": {
+      "pos": "comp"
+     }
+    },
+    {
+     "t": "де́ньги",
+     "sp": false,
+     "lex": "n:деньги",
+     "lemma": "де́ньги",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "."
+    },
+    {
+     "t": "Бо́льше",
+     "lex": "a:большой",
+     "lemma": "большо́й",
+     "g": {
+      "pos": "comp"
+     }
+    },
+    {
+     "t": "я",
+     "lex": "o:я",
+     "lemma": "я",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "э́ту",
+     "lex": "a:этот",
+     "lemma": "э́тот",
+     "g": {
+      "pos": "adj",
+      "case": "acc",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "фи́рму",
+     "lex": "n:фирма",
+     "lemma": "фи́рма",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "покупа́ть",
+     "lex": "v:покупать",
+     "lemma": "покупа́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf"
+     }
+    },
+    {
+     "t": "не",
+     "lex": "o:не",
+     "lemma": "не",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "бу́ду",
+     "sp": false,
+     "lex": "v:быть",
+     "lemma": "быть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "fut",
+      "person": 1,
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Продаве́ц",
+   "en": "Shop assistant: I understand. Please fill in the form, and the money will be returned to your card within three days.",
+   "tokens": [
+    {
+     "t": "Понима́ю",
+     "sp": false,
+     "lex": "v:понимать",
+     "lemma": "понима́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 1,
+      "number": "sg"
+     }
+    },
+    {
+     "t": "."
+    },
+    {
+     "t": "Запо́лните",
+     "sp": false,
+     "lex": "v:заполнить",
+     "lemma": "запо́лнить",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "mood": "imp",
+      "number": "pl"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "пожа́луйста",
+     "sp": false,
+     "lex": "o:пожалуйста",
+     "lemma": "пожа́луйста",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "заявле́ние",
+     "sp": false,
+     "lex": "n:заявление",
+     "lemma": "заявле́ние",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "и",
+     "lex": "o:и",
+     "lemma": "и",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "де́ньги",
+     "lex": "n:деньги",
+     "lemma": "де́ньги",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "верну́тся",
+     "lex": "v:вернуться",
+     "lemma": "верну́ться",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "fut",
+      "person": 3,
+      "number": "pl"
+     }
+    },
+    {
+     "t": "на",
+     "lex": "o:на",
+     "lemma": "на",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "ка́рту",
+     "lex": "n:карта",
+     "lemma": "ка́рта",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "в",
+     "lex": "o:в",
+     "lemma": "в",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "тече́ние",
+     "lex": "n:течение",
+     "lemma": "тече́ние",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "трёх",
+     "lex": "o:три",
+     "lemma": "три",
+     "g": {
+      "pos": "num",
+      "case": "prep"
+     }
+    },
+    {
+     "t": "дней",
+     "sp": false,
+     "lex": "n:день",
+     "lemma": "день",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "pl"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  }
+ ],
+ "questions": [
+  {
+   "id": "dl-b2-02-q1",
+   "type": "choice",
+   "level": "B2",
+   "tags": [
+    "listening"
+   ],
+   "prompt": {
+    "ru": "Почему́ же́нщина хо́чет верну́ть ту́фли?",
+    "en": "Why does the woman want to return the shoes?",
+    "instruction": "Choose the answer"
+   },
+   "accept": [
+    "Они́ слома́лись че́рез неде́лю."
+   ],
+   "distractors": [
+    {
+     "ru": "Они́ ей не подхо́дят по разме́ру.",
+     "error": "reading.detail"
+    },
+    {
+     "ru": "Ей не нра́вится цвет.",
+     "error": "reading.detail"
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "dl-b2-02-q2",
+   "type": "choice",
+   "level": "B2",
+   "tags": [
+    "listening"
+   ],
+   "prompt": {
+    "ru": "Что спроси́л продаве́ц снача́ла?",
+    "en": "What did the shop assistant ask first?",
+    "instruction": "Choose the answer"
+   },
+   "accept": [
+    "Носи́ла ли она́ их под дождём."
+   ],
+   "distractors": [
+    {
+     "ru": "Где она́ их купи́ла.",
+     "error": "reading.detail"
+    },
+    {
+     "ru": "Ско́лько они́ сто́или.",
+     "error": "reading.detail"
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "dl-b2-02-q3",
+   "type": "choice",
+   "level": "B2",
+   "tags": [
+    "listening"
+   ],
+   "prompt": {
+    "ru": "Что вы́брала покупа́тельница?",
+    "en": "What did the customer choose?",
+    "instruction": "Choose the answer"
+   },
+   "accept": [
+    "Получи́ть де́ньги."
+   ],
+   "distractors": [
+    {
+     "ru": "Взять други́е ту́фли.",
+     "error": "reading.detail"
+    },
+    {
+     "ru": "Почини́ть ту́фли.",
+     "error": "reading.detail"
+    }
+   ],
+   "source": "handwritten"
+  }
+ ]
+}

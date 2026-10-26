@@ -1,0 +1,42 @@
+id: nf-b2-03
+kind: nonfiction
+level: B2
+title: «Пое́хали!» | "Let's go!"
+---
+Двена́дцатого апре́ля ты́сяча девятьсо́т шестьдеся́т пе́рвого го́да лётчик Ю́рий Гага́рин стал пе́рвым челове́ком в ко́смосе. Ему́ бы́ло два́дцать семь лет. | On 12 April 1961 the pilot Yuri Gagarin became the first person in space. He was twenty-seven.
+Пе́ред ста́ртом он улыбну́лся и сказа́л одно́ сло́во, кото́рое зна́ет вся страна́: «Пое́хали!» | Before the launch he smiled and said one word that the whole country knows: "Poyekhali!" ("Let's go!")
+
+Гага́рин роди́лся в просто́й крестья́нской семье́ в дере́вне. | Gagarin was born into a simple peasant family in a village.
+В де́тстве он пережи́л войну́. | As a child he lived through the war.
+По́сле шко́лы он учи́лся в техни́ческом учи́лище, а в свобо́дное вре́мя занима́лся в аэроклу́бе. | After school he studied at a technical college, and in his free time he went to a flying club.
+Там он впервы́е подня́лся в не́бо и по́нял, что хо́чет лета́ть. | There he first went up into the sky and realised that he wanted to fly.
+
+Для пе́рвого полёта в ко́смос выбира́ли из двадцати́ лётчиков. | Twenty pilots were candidates for the first space flight.
+Гага́рин был не са́мым о́пытным, но у него́ бы́ли споко́йный хара́ктер, хоро́шая па́мять и удиви́тельная улы́бка. | Gagarin wasn't the most experienced, but he had a calm character, a good memory and a remarkable smile.
+Говоря́т, что его́ вы́брали ещё и потому́, что он был невысо́кого ро́ста: косми́ческий кора́бль был о́чень те́сным. | It's said that he was also chosen because he was short: the spacecraft was very cramped.
+
+Полёт продолжа́лся сто во́семь мину́т. | The flight lasted a hundred and eight minutes.
+Кора́бль облете́л Зе́млю оди́н раз и верну́лся. | The craft went once round the Earth and came back.
+Гага́рин приземли́лся на по́ле недалеко́ от Во́лги, где его́ уви́дели крестья́нка и её вну́чка. | Gagarin landed in a field not far from the Volga, where a peasant woman and her granddaughter saw him.
+Они́ снача́ла испуга́лись челове́ка в ора́нжевом костю́ме, а он сказа́л им: «Я свой, сове́тский!» | At first they were frightened by the man in the orange suit, but he told them: "I'm one of you, a Soviet!"
+
+По́сле полёта Гага́рин стал знамени́тым на весь мир. | After the flight Gagarin became famous all over the world.
+Он поги́б в ты́сяча девятьсо́т шестьдеся́т восьмо́м году́ во вре́мя трениро́вочного полёта. | He died in 1968 during a training flight.
+Но его́ улы́бка и его́ «Пое́хали!» до сих пор остаю́тся си́мволом сме́лости и наде́жды. | But his smile and his "Poyekhali!" remain a symbol of courage and hope to this day.
+---
+? Ско́лько продолжа́лся полёт Гага́рина? | How long did Gagarin's flight last?
++ Сто во́семь мину́т.
+- Два часа́.
+- Три дня.
+? Где Гага́рин впервы́е подня́лся в не́бо? | Where did Gagarin first go up into the sky?
++ В аэроклу́бе.
+- В а́рмии.
+- В шко́ле.
+? Почему́, как говоря́т, вы́брали Гага́рина? | Why, according to the story, was Gagarin chosen?
++ У него́ был споко́йный хара́ктер, и он был невысо́кого ро́ста.
+- Он был са́мым о́пытным лётчиком.
+- Он знал англи́йский язы́к.
+? Кто пе́рвым уви́дел Гага́рина по́сле полёта? | Who saw Gagarin first after the flight?
++ Крестья́нка и её вну́чка.
+- Его́ жена́.
+- Журнали́сты.

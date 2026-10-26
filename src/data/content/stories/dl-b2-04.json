@@ -1,0 +1,922 @@
+{
+ "$schema": "../../../../schemas/story.schema.json",
+ "id": "dl-b2-04",
+ "kind": "dialogue",
+ "level": "B2",
+ "title": {
+  "ru": "Обсужда́ем кни́гу",
+  "en": "Discussing a book"
+ },
+ "sentences": [
+  {
+   "para": true,
+   "speaker": "А́ня",
+   "en": "Anya: So how did you like the book? Did you finish it?",
+   "tokens": [
+    {
+     "t": "Ну",
+     "lex": "o:ну",
+     "lemma": "ну",
+     "g": {
+      "pos": "intj"
+     }
+    },
+    {
+     "t": "как",
+     "lemma": "как",
+     "g": {
+      "pos": "adv"
+     },
+     "gloss": "how; as, like"
+    },
+    {
+     "t": "тебе́",
+     "lex": "o:ты",
+     "lemma": "ты",
+     "g": {
+      "pos": "pron",
+      "case": "dat"
+     }
+    },
+    {
+     "t": "кни́га",
+     "sp": false,
+     "lex": "n:книга",
+     "lemma": "кни́га",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "?"
+    },
+    {
+     "t": "Ты",
+     "lex": "o:ты",
+     "lemma": "ты",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "дочита́л",
+     "sp": false,
+     "lex": "v:дочитать",
+     "lemma": "дочита́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "m"
+     },
+     "rare": true
+    },
+    {
+     "t": "?",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Оле́г",
+   "en": "Oleg: I finished it last night. I couldn't put it down.",
+   "tokens": [
+    {
+     "t": "Дочита́л",
+     "lex": "v:дочитать",
+     "lemma": "дочита́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "m"
+     },
+     "rare": true
+    },
+    {
+     "t": "вчера́",
+     "lex": "o:вчера",
+     "lemma": "вчера́",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "но́чью",
+     "sp": false,
+     "lex": "n:ночь",
+     "lemma": "ночь",
+     "g": {
+      "pos": "noun",
+      "case": "ins",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "."
+    },
+    {
+     "t": "Не",
+     "lex": "o:не",
+     "lemma": "не",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "мог",
+     "lex": "v:мочь",
+     "lemma": "мочь",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "оторва́ться",
+     "sp": false,
+     "lex": "v:оторваться",
+     "lemma": "оторва́ться",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "А́ня",
+   "en": "Anya: I didn't like the ending. Too sad.",
+   "tokens": [
+    {
+     "t": "А",
+     "lex": "o:а",
+     "lemma": "а",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "мне",
+     "lex": "o:я",
+     "lemma": "я",
+     "g": {
+      "pos": "pron",
+      "case": "dat"
+     }
+    },
+    {
+     "t": "коне́ц",
+     "lex": "n:конец",
+     "lemma": "коне́ц",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "не",
+     "lex": "o:не",
+     "lemma": "не",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "понра́вился",
+     "sp": false,
+     "lex": "v:понравиться",
+     "lemma": "понра́виться",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "."
+    },
+    {
+     "t": "Сли́шком",
+     "lex": "o:слишком",
+     "lemma": "сли́шком",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "гру́стный",
+     "sp": false,
+     "lex": "a:грустный",
+     "lemma": "гру́стный",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Оле́г",
+   "en": "Oleg: I think it's exactly right. If everything had ended well, nobody would remember the story.",
+   "tokens": [
+    {
+     "t": "По-мо́ему",
+     "sp": false,
+     "lex": "o:по-моему",
+     "lemma": "по-мо́ему",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "он",
+     "lex": "o:он",
+     "lemma": "он",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "как",
+     "lemma": "как",
+     "g": {
+      "pos": "adv"
+     },
+     "gloss": "how; as, like"
+    },
+    {
+     "t": "раз",
+     "lex": "n:раз",
+     "lemma": "раз",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "пра́вильный",
+     "sp": false,
+     "lex": "a:правильный",
+     "lemma": "пра́вильный",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "."
+    },
+    {
+     "t": "Е́сли",
+     "lex": "o:если",
+     "lemma": "е́сли",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "бы",
+     "lex": "o:бы",
+     "lemma": "бы",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "всё",
+     "lex": "o:всё",
+     "lemma": "всё",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "ко́нчилось",
+     "lex": "v:кончиться",
+     "lemma": "ко́нчиться",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "n"
+     }
+    },
+    {
+     "t": "хорошо́",
+     "sp": false,
+     "lex": "o:хорошо",
+     "lemma": "хорошо́",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "никто́",
+     "lex": "o:никто",
+     "lemma": "никто́",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "бы",
+     "lex": "o:бы",
+     "lemma": "бы",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "не",
+     "lex": "o:не",
+     "lemma": "не",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "по́мнил",
+     "lex": "v:помнить",
+     "lemma": "по́мнить",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "э́ту",
+     "lex": "a:этот",
+     "lemma": "э́тот",
+     "g": {
+      "pos": "adj",
+      "case": "acc",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "исто́рию",
+     "sp": false,
+     "lex": "n:история",
+     "lemma": "исто́рия",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "А́ня",
+   "en": "Anya: Maybe. But I wanted the characters to meet.",
+   "tokens": [
+    {
+     "t": "Мо́жет",
+     "lex": "v:мочь",
+     "lemma": "мочь",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "sg"
+     }
+    },
+    {
+     "t": "быть",
+     "sp": false,
+     "lex": "v:быть",
+     "lemma": "быть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf"
+     }
+    },
+    {
+     "t": "."
+    },
+    {
+     "t": "Но",
+     "lex": "o:но",
+     "lemma": "но",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "мне",
+     "lex": "o:я",
+     "lemma": "я",
+     "g": {
+      "pos": "pron",
+      "case": "dat"
+     }
+    },
+    {
+     "t": "хоте́лось",
+     "sp": false,
+     "lex": "v:хотеться",
+     "lemma": "хоте́ться",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "n"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "что́бы",
+     "lex": "o:чтобы",
+     "lemma": "что́бы",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "геро́и",
+     "lex": "n:герой",
+     "lemma": "геро́й",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "встре́тились",
+     "sp": false,
+     "lex": "v:встретиться",
+     "lemma": "встре́титься",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "pl"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Оле́г",
+   "en": "Oleg: You sound like Nina. She always wants a happy ending too.",
+   "tokens": [
+    {
+     "t": "Ты",
+     "lex": "o:ты",
+     "lemma": "ты",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "говори́шь",
+     "lex": "v:говорить",
+     "lemma": "говори́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 2,
+      "number": "sg"
+     }
+    },
+    {
+     "t": "как",
+     "lemma": "как",
+     "g": {
+      "pos": "adv"
+     },
+     "gloss": "how; as, like"
+    },
+    {
+     "t": "Ни́на",
+     "sp": false,
+     "lemma": "Ни́на",
+     "g": {
+      "pos": "name",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "."
+    },
+    {
+     "t": "Она́",
+     "lex": "o:она",
+     "lemma": "она́",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "то́же",
+     "lex": "o:тоже",
+     "lemma": "то́же",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "всегда́",
+     "lex": "o:всегда",
+     "lemma": "всегда́",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "хо́чет",
+     "lex": "v:хотеть",
+     "lemma": "хоте́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "sg"
+     }
+    },
+    {
+     "t": "счастли́вого",
+     "lex": "a:счастливый",
+     "lemma": "счастли́вый",
+     "g": {
+      "pos": "adj",
+      "case": "gen",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "конца́",
+     "sp": false,
+     "lex": "n:конец",
+     "lemma": "коне́ц",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "А́ня",
+   "en": "Anya: So what? She got one in real life, didn't she?",
+   "tokens": [
+    {
+     "t": "Ну",
+     "lex": "o:ну",
+     "lemma": "ну",
+     "g": {
+      "pos": "intj"
+     }
+    },
+    {
+     "t": "и",
+     "lex": "o:и",
+     "lemma": "и",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "что",
+     "sp": false,
+     "lex": "o:что",
+     "lemma": "что",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "?"
+    },
+    {
+     "t": "У",
+     "lex": "o:у",
+     "lemma": "у",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "неё",
+     "lex": "o:она",
+     "lemma": "она́",
+     "g": {
+      "pos": "pron",
+      "case": "gen"
+     }
+    },
+    {
+     "t": "ведь",
+     "lex": "o:ведь",
+     "lemma": "ведь",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "в",
+     "lex": "o:в",
+     "lemma": "в",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "жи́зни",
+     "lex": "n:жизнь",
+     "lemma": "жизнь",
+     "g": {
+      "pos": "noun",
+      "case": "prep",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "он",
+     "lex": "o:он",
+     "lemma": "он",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "получи́лся",
+     "sp": false,
+     "lex": "v:получиться",
+     "lemma": "получи́ться",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Оле́г",
+   "en": "Oleg: That's true. All right, I give up. Next time you choose.",
+   "tokens": [
+    {
+     "t": "Э́то",
+     "lex": "a:этот",
+     "lemma": "э́тот",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "n"
+     }
+    },
+    {
+     "t": "пра́вда",
+     "sp": false,
+     "lex": "n:правда",
+     "lemma": "пра́вда",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "."
+    },
+    {
+     "t": "Ла́дно",
+     "sp": false,
+     "lex": "o:ладно",
+     "lemma": "ла́дно",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "сдаю́сь",
+     "sp": false,
+     "lex": "v:сдаваться",
+     "lemma": "сдава́ться",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 1,
+      "number": "sg"
+     }
+    },
+    {
+     "t": "."
+    },
+    {
+     "t": "В",
+     "lex": "o:в",
+     "lemma": "в",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "сле́дующий",
+     "lex": "a:следующий",
+     "lemma": "сле́дующий",
+     "g": {
+      "pos": "adj",
+      "case": "acc",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "раз",
+     "lex": "n:раз",
+     "lemma": "раз",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "выбира́ешь",
+     "lex": "v:выбирать",
+     "lemma": "выбира́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 2,
+      "number": "sg"
+     }
+    },
+    {
+     "t": "ты",
+     "sp": false,
+     "lex": "o:ты",
+     "lemma": "ты",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  }
+ ],
+ "questions": [
+  {
+   "id": "dl-b2-04-q1",
+   "type": "choice",
+   "level": "B2",
+   "tags": [
+    "listening"
+   ],
+   "prompt": {
+    "ru": "Когда́ Оле́г дочита́л кни́гу?",
+    "en": "When did Oleg finish the book?",
+    "instruction": "Choose the answer"
+   },
+   "accept": [
+    "Вчера́ но́чью."
+   ],
+   "distractors": [
+    {
+     "ru": "Неде́лю наза́д.",
+     "error": "reading.detail"
+    },
+    {
+     "ru": "Он ещё не дочита́л.",
+     "error": "reading.detail"
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "dl-b2-04-q2",
+   "type": "choice",
+   "level": "B2",
+   "tags": [
+    "listening"
+   ],
+   "prompt": {
+    "ru": "Почему́ А́не не понра́вился коне́ц?",
+    "en": "Why didn't Anya like the ending?",
+    "instruction": "Choose the answer"
+   },
+   "accept": [
+    "Он сли́шком гру́стный."
+   ],
+   "distractors": [
+    {
+     "ru": "Он сли́шком дли́нный.",
+     "error": "reading.detail"
+    },
+    {
+     "ru": "Она́ его́ не поняла́.",
+     "error": "reading.detail"
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "dl-b2-04-q3",
+   "type": "choice",
+   "level": "B2",
+   "tags": [
+    "listening"
+   ],
+   "prompt": {
+    "ru": "Кто вы́берет сле́дующую кни́гу?",
+    "en": "Who will choose the next book?",
+    "instruction": "Choose the answer"
+   },
+   "accept": [
+    "А́ня."
+   ],
+   "distractors": [
+    {
+     "ru": "Оле́г.",
+     "error": "reading.detail"
+    },
+    {
+     "ru": "Ни́на.",
+     "error": "reading.detail"
+    }
+   ],
+   "source": "handwritten"
+  }
+ ]
+}

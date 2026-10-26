@@ -1,0 +1,26 @@
+id: dl-a2-06
+kind: dialogue
+level: A2
+title: Приглаше́ние | An invitation
+---
+Оле́г: Алло́, А́ня? Приве́т! Что ты де́лаешь в суббо́ту? | Oleg: Hello, Anya? Hi! What are you doing on Saturday?
+А́ня: Пока́ не зна́ю. А что? | Anya: I don't know yet. Why?
+Оле́г: У меня́ день рожде́ния. Приходи́ ко мне ве́чером! | Oleg: It's my birthday. Come round in the evening!
+А́ня: С удово́льствием! Во ско́лько? | Anya: With pleasure! What time?
+Оле́г: В семь. Бу́дут Ка́тя и ещё не́сколько друзе́й. | Oleg: At seven. Katya and a few other friends will be there.
+А́ня: Что тебе́ подари́ть? | Anya: What shall I give you?
+Оле́г: Ничего́ не ну́жно. Про́сто приходи́! | Oleg: You don't need to give me anything. Just come!
+А́ня: Хорошо́. Тогда́ до суббо́ты! | Anya: All right. See you on Saturday, then!
+---
+? Почему́ Оле́г звони́т А́не? | Why is Oleg ringing Anya?
++ Он приглаша́ет её на день рожде́ния.
+- Он хо́чет пойти́ в кино́.
+- Он заболе́л.
+? Во ско́лько на́до прийти́? | What time should she come?
++ В семь.
+- В шесть.
+- В во́семь.
+? Что Оле́г хо́чет в пода́рок? | What does Oleg want as a present?
++ Ничего́.
+- Кни́гу.
+- Цветы́.

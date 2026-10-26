@@ -1,0 +1,669 @@
+{
+ "$schema": "../../../../schemas/story.schema.json",
+ "id": "dl-a2-07",
+ "kind": "dialogue",
+ "level": "A2",
+ "title": {
+  "ru": "В гости́нице",
+  "en": "At the hotel"
+ },
+ "sentences": [
+  {
+   "para": true,
+   "speaker": "Администра́тор",
+   "en": "Receptionist: Good evening! How can I help?",
+   "tokens": [
+    {
+     "t": "До́брый",
+     "lex": "a:добрый",
+     "lemma": "до́брый",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "ве́чер",
+     "sp": false,
+     "lex": "n:вечер",
+     "lemma": "ве́чер",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "!"
+    },
+    {
+     "t": "Чем",
+     "lex": "o:что",
+     "lemma": "что",
+     "g": {
+      "pos": "pron",
+      "case": "ins"
+     }
+    },
+    {
+     "t": "могу́",
+     "lex": "v:мочь",
+     "lemma": "мочь",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 1,
+      "number": "sg"
+     }
+    },
+    {
+     "t": "помо́чь",
+     "sp": false,
+     "lex": "v:помочь",
+     "lemma": "помо́чь",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf"
+     }
+    },
+    {
+     "t": "?",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Гость",
+   "en": "Guest: Hello. I booked a room under the name Vetrov.",
+   "tokens": [
+    {
+     "t": "Здра́вствуйте",
+     "sp": false,
+     "lex": "o:здравствуйте",
+     "lemma": "здра́вствуйте",
+     "g": {
+      "pos": "intj"
+     }
+    },
+    {
+     "t": "."
+    },
+    {
+     "t": "Я",
+     "lex": "o:я",
+     "lemma": "я",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "заказа́л",
+     "lex": "v:заказать",
+     "lemma": "заказа́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "но́мер",
+     "lex": "n:номер",
+     "lemma": "но́мер",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "на",
+     "lex": "o:на",
+     "lemma": "на",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "фами́лию",
+     "lex": "n:фамилия",
+     "lemma": "фами́лия",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": "Ветро́в",
+     "sp": false,
+     "lemma": "Ветро́в",
+     "g": {
+      "pos": "name",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Администра́тор",
+   "en": "Receptionist: Yes, I see it. A single room for three nights.",
+   "tokens": [
+    {
+     "t": "Да",
+     "sp": false,
+     "lex": "o:да",
+     "lemma": "да",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "ви́жу",
+     "sp": false,
+     "lex": "v:видеть",
+     "lemma": "ви́деть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 1,
+      "number": "sg"
+     }
+    },
+    {
+     "t": "."
+    },
+    {
+     "t": "Одноме́стный",
+     "lex": "a:одноместный",
+     "lemma": "одноме́стный",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "m"
+     },
+     "rare": true
+    },
+    {
+     "t": "но́мер",
+     "lex": "n:номер",
+     "lemma": "но́мер",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "на",
+     "lex": "o:на",
+     "lemma": "на",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "три",
+     "lex": "o:три",
+     "lemma": "три",
+     "g": {
+      "pos": "num",
+      "case": "acc"
+     }
+    },
+    {
+     "t": "но́чи",
+     "sp": false,
+     "lex": "n:ночь",
+     "lemma": "ночь",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Гость",
+   "en": "Guest: That's right. And is there breakfast?",
+   "tokens": [
+    {
+     "t": "Пра́вильно",
+     "sp": false,
+     "lex": "o:правильно",
+     "lemma": "пра́вильно",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "."
+    },
+    {
+     "t": "А",
+     "lex": "o:а",
+     "lemma": "а",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "за́втрак",
+     "lex": "n:завтрак",
+     "lemma": "за́втрак",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "есть",
+     "sp": false,
+     "lex": "v:быть",
+     "lemma": "быть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "sg"
+     }
+    },
+    {
+     "t": "?",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Администра́тор",
+   "en": "Receptionist: Yes, breakfast is from seven to ten on the ground floor.",
+   "tokens": [
+    {
+     "t": "Да",
+     "sp": false,
+     "lex": "o:да",
+     "lemma": "да",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "за́втрак",
+     "lex": "n:завтрак",
+     "lemma": "за́втрак",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "с",
+     "lex": "o:с",
+     "lemma": "с",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "семи́",
+     "lex": "o:семь",
+     "lemma": "семь",
+     "g": {
+      "pos": "num",
+      "case": "gen"
+     }
+    },
+    {
+     "t": "до",
+     "lex": "o:до",
+     "lemma": "до",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "десяти́",
+     "lex": "o:десять",
+     "lemma": "де́сять",
+     "g": {
+      "pos": "num",
+      "case": "gen"
+     }
+    },
+    {
+     "t": "на",
+     "lex": "o:на",
+     "lemma": "на",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "пе́рвом",
+     "lex": "a:первый",
+     "lemma": "пе́рвый",
+     "g": {
+      "pos": "adj",
+      "case": "prep",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "этаже́",
+     "sp": false,
+     "lex": "n:этаж",
+     "lemma": "эта́ж",
+     "g": {
+      "pos": "noun",
+      "case": "prep",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Гость",
+   "en": "Guest: And where can I leave my suitcase tomorrow?",
+   "tokens": [
+    {
+     "t": "А",
+     "lex": "o:а",
+     "lemma": "а",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "где",
+     "lex": "o:где",
+     "lemma": "где",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "мо́жно",
+     "lex": "o:можно",
+     "lemma": "мо́жно",
+     "g": {
+      "pos": "pred"
+     }
+    },
+    {
+     "t": "оста́вить",
+     "lex": "v:оставить",
+     "lemma": "оста́вить",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf"
+     }
+    },
+    {
+     "t": "чемода́н",
+     "lex": "n:чемодан",
+     "lemma": "чемода́н",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": "за́втра",
+     "sp": false,
+     "lex": "o:завтра",
+     "lemma": "за́втра",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "?",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Администра́тор",
+   "en": "Receptionist: We have a left-luggage room. Here's your key, room three hundred and five.",
+   "tokens": [
+    {
+     "t": "У",
+     "lex": "o:у",
+     "lemma": "у",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "нас",
+     "lex": "o:мы",
+     "lemma": "мы",
+     "g": {
+      "pos": "pron",
+      "case": "gen"
+     }
+    },
+    {
+     "t": "есть",
+     "lex": "v:быть",
+     "lemma": "быть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "sg"
+     }
+    },
+    {
+     "t": "ка́мера",
+     "lex": "n:камера",
+     "lemma": "ка́мера",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "хране́ния",
+     "sp": false,
+     "lex": "n:хранение",
+     "lemma": "хране́ние",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": "."
+    },
+    {
+     "t": "Вот",
+     "lex": "o:вот",
+     "lemma": "вот",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "ваш",
+     "lemma": "ваш",
+     "g": {
+      "pos": "pron",
+      "case": "nom",
+      "gender": "m"
+     },
+     "gloss": "your, yours (plural or polite)"
+    },
+    {
+     "t": "ключ",
+     "sp": false,
+     "lex": "n:ключ",
+     "lemma": "ключ",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "ко́мната",
+     "lex": "n:комната",
+     "lemma": "ко́мната",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "три́ста",
+     "lex": "o:триста",
+     "lemma": "три́ста",
+     "g": {
+      "pos": "num"
+     },
+     "rare": true
+    },
+    {
+     "t": "пять",
+     "sp": false,
+     "lex": "n:пять",
+     "lemma": "пять",
+     "g": {
+      "pos": "num",
+      "case": "nom"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  }
+ ],
+ "questions": [
+  {
+   "id": "dl-a2-07-q1",
+   "type": "choice",
+   "level": "A2",
+   "tags": [
+    "listening"
+   ],
+   "prompt": {
+    "ru": "На ско́лько ноче́й гость заказа́л но́мер?",
+    "en": "For how many nights did the guest book the room?",
+    "instruction": "Choose the answer"
+   },
+   "accept": [
+    "На три но́чи."
+   ],
+   "distractors": [
+    {
+     "ru": "На одну́ ночь.",
+     "error": "reading.detail"
+    },
+    {
+     "ru": "На неде́лю.",
+     "error": "reading.detail"
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "dl-a2-07-q2",
+   "type": "choice",
+   "level": "A2",
+   "tags": [
+    "listening"
+   ],
+   "prompt": {
+    "ru": "Когда́ за́втрак?",
+    "en": "When is breakfast?",
+    "instruction": "Choose the answer"
+   },
+   "accept": [
+    "С семи́ до десяти́."
+   ],
+   "distractors": [
+    {
+     "ru": "С восьми́ до двена́дцати.",
+     "error": "reading.detail"
+    },
+    {
+     "ru": "За́втрака нет.",
+     "error": "reading.detail"
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "dl-a2-07-q3",
+   "type": "choice",
+   "level": "A2",
+   "tags": [
+    "listening"
+   ],
+   "prompt": {
+    "ru": "Где за́втрак?",
+    "en": "Where is breakfast?",
+    "instruction": "Choose the answer"
+   },
+   "accept": [
+    "На пе́рвом этаже́."
+   ],
+   "distractors": [
+    {
+     "ru": "В но́мере.",
+     "error": "reading.detail"
+    },
+    {
+     "ru": "В кафе́ ря́дом.",
+     "error": "reading.detail"
+    }
+   ],
+   "source": "handwritten"
+  }
+ ]
+}

@@ -1,0 +1,1196 @@
+{
+ "$schema": "../../../../schemas/story.schema.json",
+ "id": "st-a2-03",
+ "kind": "story",
+ "level": "A2",
+ "series": "anya",
+ "chapter": 3,
+ "title": {
+  "ru": "Где Ба́рсик?",
+  "en": "Where's Barsik?"
+ },
+ "characters": [
+  "А́ня",
+  "Ба́рсик"
+ ],
+ "cliffhanger": "Someone has written a note on Anya's door. Who could it be?",
+ "sentences": [
+  {
+   "para": true,
+   "en": "I opened the door and said:",
+   "tokens": [
+    {
+     "t": "Я",
+     "lex": "o:я",
+     "lemma": "я",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "откры́ла",
+     "lex": "v:открыть",
+     "lemma": "откры́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "дверь",
+     "lex": "n:дверь",
+     "lemma": "дверь",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "и",
+     "lex": "o:и",
+     "lemma": "и",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "сказа́ла",
+     "sp": false,
+     "lex": "v:сказать",
+     "lemma": "сказа́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": ":",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "\"Barsik, I'm home!\"",
+   "tokens": [
+    {
+     "t": "—"
+    },
+    {
+     "t": "Ба́рсик",
+     "sp": false,
+     "lemma": "Ба́рсик",
+     "g": {
+      "pos": "name",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "я",
+     "lex": "o:я",
+     "lemma": "я",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "до́ма",
+     "sp": false,
+     "lex": "n:дом",
+     "lemma": "дом",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "!",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "But nobody answered.",
+   "tokens": [
+    {
+     "t": "Но",
+     "lex": "o:но",
+     "lemma": "но",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "никто́",
+     "lex": "o:никто",
+     "lemma": "никто́",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "не",
+     "lex": "o:не",
+     "lemma": "не",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "отве́тил",
+     "sp": false,
+     "lex": "v:ответить",
+     "lemma": "отве́тить",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "Usually Barsik runs straight to me.",
+   "tokens": [
+    {
+     "t": "Обы́чно",
+     "lex": "a:обычный",
+     "lemma": "обы́чный",
+     "g": {
+      "pos": "adj",
+      "short": true,
+      "number": "sg",
+      "gender": "n"
+     }
+    },
+    {
+     "t": "Ба́рсик",
+     "lemma": "Ба́рсик",
+     "g": {
+      "pos": "name",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "сра́зу",
+     "lex": "o:сразу",
+     "lemma": "сра́зу",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "бежи́т",
+     "lex": "v:бежать",
+     "lemma": "бежа́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "sg"
+     }
+    },
+    {
+     "t": "ко",
+     "lex": "o:к",
+     "lemma": "к",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "мне",
+     "sp": false,
+     "lex": "o:я",
+     "lemma": "я",
+     "g": {
+      "pos": "pron",
+      "case": "dat"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "But today he wasn't there.",
+   "tokens": [
+    {
+     "t": "А",
+     "lex": "o:а",
+     "lemma": "а",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "сего́дня",
+     "lex": "o:сегодня",
+     "lemma": "сего́дня",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "его́",
+     "lex": "o:он",
+     "lemma": "он",
+     "g": {
+      "pos": "pron",
+      "case": "gen"
+     }
+    },
+    {
+     "t": "не́",
+     "lex": "o:не",
+     "lemma": "не",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "было",
+     "sp": false,
+     "lex": "v:быть",
+     "lemma": "быть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "n"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "para": true,
+   "en": "I looked in the kitchen, in the bathroom and under the bed.",
+   "tokens": [
+    {
+     "t": "Я",
+     "lex": "o:я",
+     "lemma": "я",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "посмотре́ла",
+     "lex": "v:посмотреть",
+     "lemma": "посмотре́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "на",
+     "lex": "o:на",
+     "lemma": "на",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "ку́хне",
+     "sp": false,
+     "lex": "n:кухня",
+     "lemma": "ку́хня",
+     "g": {
+      "pos": "noun",
+      "case": "prep",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "в",
+     "lex": "o:в",
+     "lemma": "в",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "ва́нной",
+     "lex": "n:ванная",
+     "lemma": "ва́нная",
+     "g": {
+      "pos": "noun",
+      "case": "prep",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": "и",
+     "lex": "o:и",
+     "lemma": "и",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "под",
+     "lex": "o:под",
+     "lemma": "под",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "крова́тью",
+     "sp": false,
+     "lex": "n:кровать",
+     "lemma": "крова́ть",
+     "g": {
+      "pos": "noun",
+      "case": "ins",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "Barsik wasn't anywhere.",
+   "tokens": [
+    {
+     "t": "Ба́рсика",
+     "lemma": "Ба́рсик",
+     "g": {
+      "pos": "name",
+      "case": "gen",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "нигде́",
+     "lex": "o:нигде",
+     "lemma": "нигде́",
+     "g": {
+      "pos": "adv"
+     },
+     "rare": true
+    },
+    {
+     "t": "не́",
+     "lex": "o:не",
+     "lemma": "не",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "было",
+     "sp": false,
+     "lex": "v:быть",
+     "lemma": "быть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "n"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "Then I saw that the window was open.",
+   "tokens": [
+    {
+     "t": "Пото́м",
+     "lex": "o:потом",
+     "lemma": "пото́м",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "я",
+     "lex": "o:я",
+     "lemma": "я",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "уви́дела",
+     "sp": false,
+     "lex": "v:увидеть",
+     "lemma": "уви́деть",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "что",
+     "lex": "o:что",
+     "lemma": "что",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "окно́",
+     "lex": "n:окно",
+     "lemma": "окно́",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "откры́то",
+     "sp": false,
+     "lex": "o:открыто",
+     "lemma": "откры́то",
+     "g": {
+      "pos": "adv"
+     },
+     "rare": true
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "In the morning I'd forgotten to shut it!",
+   "tokens": [
+    {
+     "t": "У́тром",
+     "lex": "n:утро",
+     "lemma": "у́тро",
+     "g": {
+      "pos": "noun",
+      "case": "ins",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "я",
+     "lex": "o:я",
+     "lemma": "я",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "забы́ла",
+     "lex": "v:забыть",
+     "lemma": "забы́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "его́",
+     "lex": "o:он",
+     "lemma": "он",
+     "g": {
+      "pos": "pron",
+      "case": "acc"
+     }
+    },
+    {
+     "t": "закры́ть",
+     "sp": false,
+     "lex": "v:закрыть",
+     "lemma": "закры́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf"
+     }
+    },
+    {
+     "t": "!",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "para": true,
+   "en": "I went outside.",
+   "tokens": [
+    {
+     "t": "Я",
+     "lex": "o:я",
+     "lemma": "я",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "вы́шла",
+     "lex": "v:выйти",
+     "lemma": "вы́йти",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "на",
+     "lex": "o:на",
+     "lemma": "на",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "у́лицу",
+     "sp": false,
+     "lex": "n:улица",
+     "lemma": "у́лица",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "\"Barsik! Barsik!\" I shouted.",
+   "tokens": [
+    {
+     "t": "—"
+    },
+    {
+     "t": "Ба́рсик",
+     "sp": false,
+     "lemma": "Ба́рсик",
+     "g": {
+      "pos": "name",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "!"
+    },
+    {
+     "t": "Ба́рсик",
+     "sp": false,
+     "lemma": "Ба́рсик",
+     "g": {
+      "pos": "name",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "!"
+    },
+    {
+     "t": "—"
+    },
+    {
+     "t": "крича́ла",
+     "lex": "v:кричать",
+     "lemma": "крича́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "я",
+     "sp": false,
+     "lex": "o:я",
+     "lemma": "я",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "Some children were playing near the building.",
+   "tokens": [
+    {
+     "t": "Ря́дом",
+     "lex": "o:рядом",
+     "lemma": "ря́дом",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "с",
+     "lex": "o:с",
+     "lemma": "с",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "до́мом",
+     "lex": "n:дом",
+     "lemma": "дом",
+     "g": {
+      "pos": "noun",
+      "case": "ins",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "игра́ли",
+     "lex": "v:играть",
+     "lemma": "игра́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "past",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "де́ти",
+     "sp": false,
+     "lex": "n:ребёнок",
+     "lemma": "ребёнок",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "pl"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "\"Have you seen a grey cat?\" I asked.",
+   "tokens": [
+    {
+     "t": "—"
+    },
+    {
+     "t": "Вы",
+     "lex": "o:вы",
+     "lemma": "вы",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "не",
+     "lex": "o:не",
+     "lemma": "не",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "ви́дели",
+     "lex": "v:видеть",
+     "lemma": "ви́деть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "past",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "се́рого",
+     "lex": "a:серый",
+     "lemma": "се́рый",
+     "g": {
+      "pos": "adj",
+      "case": "acc",
+      "number": "sg",
+      "gender": "m"
+     },
+     "rare": true
+    },
+    {
+     "t": "кота́",
+     "sp": false,
+     "lex": "n:кот",
+     "lemma": "кот",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": "?"
+    },
+    {
+     "t": "—"
+    },
+    {
+     "t": "спроси́ла",
+     "lex": "v:спросить",
+     "lemma": "спроси́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "я",
+     "sp": false,
+     "lex": "o:я",
+     "lemma": "я",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "\"No, we haven't,\" a girl answered.",
+   "tokens": [
+    {
+     "t": "—"
+    },
+    {
+     "t": "Нет",
+     "sp": false,
+     "lex": "o:нет",
+     "lemma": "нет",
+     "g": {
+      "pos": "pred"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "не",
+     "lex": "o:не",
+     "lemma": "не",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "ви́дели",
+     "sp": false,
+     "lex": "v:видеть",
+     "lemma": "ви́деть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "past",
+      "number": "pl"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "—"
+    },
+    {
+     "t": "отве́тила",
+     "lex": "v:ответить",
+     "lemma": "отве́тить",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "де́вочка",
+     "sp": false,
+     "lex": "n:девочка",
+     "lemma": "де́вочка",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "para": true,
+   "en": "I walked round the park for an hour.",
+   "tokens": [
+    {
+     "t": "Я",
+     "lex": "o:я",
+     "lemma": "я",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "ходи́ла",
+     "lex": "v:ходить",
+     "lemma": "ходи́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "по",
+     "lex": "o:по",
+     "lemma": "по",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "па́рку",
+     "lex": "n:парк",
+     "lemma": "парк",
+     "g": {
+      "pos": "noun",
+      "case": "dat",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": "час",
+     "sp": false,
+     "lex": "n:час",
+     "lemma": "час",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "It got dark and cold.",
+   "tokens": [
+    {
+     "t": "Ста́ло",
+     "lex": "v:стать",
+     "lemma": "стать",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "n"
+     }
+    },
+    {
+     "t": "темно́",
+     "lex": "o:темно",
+     "lemma": "темно́",
+     "g": {
+      "pos": "adv"
+     },
+     "rare": true
+    },
+    {
+     "t": "и",
+     "lex": "o:и",
+     "lemma": "и",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "хо́лодно",
+     "sp": false,
+     "lex": "o:холодно",
+     "lemma": "хо́лодно",
+     "g": {
+      "pos": "adv"
+     },
+     "rare": true
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "I came home alone and slept badly all night.",
+   "tokens": [
+    {
+     "t": "Я",
+     "lex": "o:я",
+     "lemma": "я",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "верну́лась",
+     "lex": "v:вернуться",
+     "lemma": "верну́ться",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "домо́й",
+     "lex": "o:домой",
+     "lemma": "домо́й",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "одна́",
+     "lex": "o:один",
+     "lemma": "оди́н",
+     "g": {
+      "pos": "num",
+      "case": "nom",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "и",
+     "lex": "o:и",
+     "lemma": "и",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "пло́хо",
+     "lex": "o:плохо",
+     "lemma": "пло́хо",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "спала́",
+     "lex": "v:спать",
+     "lemma": "спать",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "всю",
+     "lex": "a:весь",
+     "lemma": "весь",
+     "g": {
+      "pos": "adj",
+      "case": "acc",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "ночь",
+     "sp": false,
+     "lex": "n:ночь",
+     "lemma": "ночь",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  }
+ ],
+ "questions": [
+  {
+   "id": "st-a2-03-q1",
+   "type": "choice",
+   "level": "A2",
+   "tags": [
+    "reading"
+   ],
+   "prompt": {
+    "ru": "Почему́ Ба́рсик убежа́л?",
+    "en": "Why did Barsik get out?",
+    "instruction": "Choose the answer"
+   },
+   "accept": [
+    "Окно́ бы́ло откры́то."
+   ],
+   "distractors": [
+    {
+     "ru": "Дверь была́ откры́та.",
+     "error": "reading.detail"
+    },
+    {
+     "ru": "Он был голо́дный.",
+     "error": "reading.detail"
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "st-a2-03-q2",
+   "type": "choice",
+   "level": "A2",
+   "tags": [
+    "reading"
+   ],
+   "prompt": {
+    "ru": "Где А́ня иска́ла Ба́рсика на у́лице?",
+    "en": "Where did Anya look for Barsik outside?",
+    "instruction": "Choose the answer"
+   },
+   "accept": [
+    "В па́рке."
+   ],
+   "distractors": [
+    {
+     "ru": "В магази́не.",
+     "error": "reading.detail"
+    },
+    {
+     "ru": "В метро́.",
+     "error": "reading.detail"
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "st-a2-03-q3",
+   "type": "choice",
+   "level": "A2",
+   "tags": [
+    "reading"
+   ],
+   "prompt": {
+    "ru": "Кто отве́тил А́не на у́лице?",
+    "en": "Who answered Anya in the street?",
+    "instruction": "Choose the answer"
+   },
+   "accept": [
+    "Де́вочка."
+   ],
+   "distractors": [
+    {
+     "ru": "Па́рень.",
+     "error": "reading.detail"
+    },
+    {
+     "ru": "Мужчи́на.",
+     "error": "reading.detail"
+    }
+   ],
+   "source": "handwritten"
+  }
+ ]
+}

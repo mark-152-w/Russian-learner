@@ -1,0 +1,660 @@
+{
+ "$schema": "../../../../schemas/story.schema.json",
+ "id": "dl-a2-02",
+ "kind": "dialogue",
+ "level": "A2",
+ "title": {
+  "ru": "В кафе́",
+  "en": "In the café"
+ },
+ "sentences": [
+  {
+   "para": true,
+   "speaker": "Официа́нтка",
+   "en": "Waitress: Good afternoon! What would you like to order?",
+   "tokens": [
+    {
+     "t": "До́брый",
+     "lex": "a:добрый",
+     "lemma": "до́брый",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "день",
+     "sp": false,
+     "lex": "n:день",
+     "lemma": "день",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "!"
+    },
+    {
+     "t": "Что",
+     "lex": "o:что",
+     "lemma": "что",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "бу́дете",
+     "lex": "v:быть",
+     "lemma": "быть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "fut",
+      "person": 2,
+      "number": "pl"
+     }
+    },
+    {
+     "t": "зака́зывать",
+     "sp": false,
+     "lex": "v:заказывать",
+     "lemma": "зака́зывать",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf"
+     },
+     "rare": true
+    },
+    {
+     "t": "?",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Гость",
+   "en": "Customer: Can I have the menu?",
+   "tokens": [
+    {
+     "t": "Мо́жно",
+     "lex": "o:можно",
+     "lemma": "мо́жно",
+     "g": {
+      "pos": "pred"
+     }
+    },
+    {
+     "t": "меню́",
+     "sp": false,
+     "lex": "n:меню",
+     "lemma": "меню́",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": "?",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Официа́нтка",
+   "en": "Waitress: Of course, here you are.",
+   "tokens": [
+    {
+     "t": "Коне́чно",
+     "sp": false,
+     "lex": "o:конечно",
+     "lemma": "коне́чно",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "вот",
+     "sp": false,
+     "lex": "o:вот",
+     "lemma": "вот",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "пожа́луйста",
+     "sp": false,
+     "lex": "o:пожалуйста",
+     "lemma": "пожа́луйста",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Гость",
+   "en": "Customer: I'll have the soup and a salad. And what do you have for dessert?",
+   "tokens": [
+    {
+     "t": "Я",
+     "lex": "o:я",
+     "lemma": "я",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "бу́ду",
+     "lex": "v:быть",
+     "lemma": "быть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "fut",
+      "person": 1,
+      "number": "sg"
+     }
+    },
+    {
+     "t": "суп",
+     "lex": "n:суп",
+     "lemma": "суп",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": "и",
+     "lex": "o:и",
+     "lemma": "и",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "сала́т",
+     "sp": false,
+     "lex": "n:салат",
+     "lemma": "сала́т",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": "."
+    },
+    {
+     "t": "А",
+     "lex": "o:а",
+     "lemma": "а",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "что",
+     "lex": "o:что",
+     "lemma": "что",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "у",
+     "lex": "o:у",
+     "lemma": "у",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "вас",
+     "lex": "o:вы",
+     "lemma": "вы",
+     "g": {
+      "pos": "pron",
+      "case": "gen"
+     }
+    },
+    {
+     "t": "на",
+     "lex": "o:на",
+     "lemma": "на",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "десе́рт",
+     "sp": false,
+     "lex": "n:десерт",
+     "lemma": "десе́рт",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": "?",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Официа́нтка",
+   "en": "Waitress: There's apple pie and ice cream.",
+   "tokens": [
+    {
+     "t": "Есть",
+     "lex": "v:быть",
+     "lemma": "быть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "sg"
+     }
+    },
+    {
+     "t": "пиро́г",
+     "lex": "n:пирог",
+     "lemma": "пиро́г",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": "с",
+     "lex": "o:с",
+     "lemma": "с",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "я́блоками",
+     "lex": "n:яблоко",
+     "lemma": "я́блоко",
+     "g": {
+      "pos": "noun",
+      "case": "ins",
+      "number": "pl"
+     },
+     "rare": true
+    },
+    {
+     "t": "и",
+     "lex": "o:и",
+     "lemma": "и",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "моро́женое",
+     "sp": false,
+     "lex": "n:мороженое",
+     "lemma": "моро́женое",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Гость",
+   "en": "Customer: Pie, please. And a cup of tea.",
+   "tokens": [
+    {
+     "t": "Пиро́г",
+     "sp": false,
+     "lex": "n:пирог",
+     "lemma": "пиро́г",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "пожа́луйста",
+     "sp": false,
+     "lex": "o:пожалуйста",
+     "lemma": "пожа́луйста",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "."
+    },
+    {
+     "t": "И",
+     "lex": "o:и",
+     "lemma": "и",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "ча́шку",
+     "lex": "n:чашка",
+     "lemma": "ча́шка",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": "ча́я",
+     "sp": false,
+     "lex": "n:чай",
+     "lemma": "чай",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Официа́нтка",
+   "en": "Waitress: Black or green tea?",
+   "tokens": [
+    {
+     "t": "Чай",
+     "lex": "n:чай",
+     "lemma": "чай",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "чёрный",
+     "lex": "a:чёрный",
+     "lemma": "чёрный",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "и́ли",
+     "lex": "o:или",
+     "lemma": "и́ли",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "зелёный",
+     "sp": false,
+     "lex": "a:зелёный",
+     "lemma": "зелёный",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "?",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Гость",
+   "en": "Customer: Green, without sugar.",
+   "tokens": [
+    {
+     "t": "Зелёный",
+     "sp": false,
+     "lex": "a:зелёный",
+     "lemma": "зелёный",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "без",
+     "lex": "o:без",
+     "lemma": "без",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "са́хара",
+     "sp": false,
+     "lex": "n:сахар",
+     "lemma": "са́хар",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Официа́нтка",
+   "en": "Waitress: Fine. Everything will be ready in ten minutes.",
+   "tokens": [
+    {
+     "t": "Хорошо́",
+     "sp": false,
+     "lex": "o:хорошо",
+     "lemma": "хорошо́",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "."
+    },
+    {
+     "t": "Всё",
+     "lex": "o:всё",
+     "lemma": "всё",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "бу́дет",
+     "lex": "v:быть",
+     "lemma": "быть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "fut",
+      "person": 3,
+      "number": "sg"
+     }
+    },
+    {
+     "t": "че́рез",
+     "lex": "o:через",
+     "lemma": "че́рез",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "де́сять",
+     "lex": "o:десять",
+     "lemma": "де́сять",
+     "g": {
+      "pos": "num",
+      "case": "acc"
+     }
+    },
+    {
+     "t": "мину́т",
+     "sp": false,
+     "lex": "n:минута",
+     "lemma": "мину́та",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "pl"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  }
+ ],
+ "questions": [
+  {
+   "id": "dl-a2-02-q1",
+   "type": "choice",
+   "level": "A2",
+   "tags": [
+    "listening"
+   ],
+   "prompt": {
+    "ru": "Что гость заказа́л на десе́рт?",
+    "en": "What did the customer order for dessert?",
+    "instruction": "Choose the answer"
+   },
+   "accept": [
+    "Пиро́г с я́блоками."
+   ],
+   "distractors": [
+    {
+     "ru": "Моро́женое.",
+     "error": "reading.detail"
+    },
+    {
+     "ru": "Торт.",
+     "error": "reading.detail"
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "dl-a2-02-q2",
+   "type": "choice",
+   "level": "A2",
+   "tags": [
+    "listening"
+   ],
+   "prompt": {
+    "ru": "Како́й чай он хо́чет?",
+    "en": "What tea does he want?",
+    "instruction": "Choose the answer"
+   },
+   "accept": [
+    "Зелёный без са́хара."
+   ],
+   "distractors": [
+    {
+     "ru": "Чёрный с са́харом.",
+     "error": "reading.detail"
+    },
+    {
+     "ru": "Чёрный без са́хара.",
+     "error": "reading.detail"
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "dl-a2-02-q3",
+   "type": "choice",
+   "level": "A2",
+   "tags": [
+    "listening"
+   ],
+   "prompt": {
+    "ru": "Когда́ бу́дет зака́з?",
+    "en": "When will the order be ready?",
+    "instruction": "Choose the answer"
+   },
+   "accept": [
+    "Че́рез де́сять мину́т."
+   ],
+   "distractors": [
+    {
+     "ru": "Че́рез час.",
+     "error": "reading.detail"
+    },
+    {
+     "ru": "Сра́зу.",
+     "error": "reading.detail"
+    }
+   ],
+   "source": "handwritten"
+  }
+ ]
+}

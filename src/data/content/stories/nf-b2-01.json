@@ -1,0 +1,2038 @@
+{
+ "$schema": "../../../../schemas/story.schema.json",
+ "id": "nf-b2-01",
+ "kind": "nonfiction",
+ "level": "B2",
+ "title": {
+  "ru": "Ру́сская ба́ня",
+  "en": "The Russian bathhouse"
+ },
+ "sentences": [
+  {
+   "para": true,
+   "en": "For many Russians the banya isn't just a way to get clean.",
+   "tokens": [
+    {
+     "t": "Для",
+     "lex": "o:для",
+     "lemma": "для",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "мно́гих",
+     "lex": "a:многие",
+     "lemma": "мно́гие",
+     "g": {
+      "pos": "adj",
+      "case": "gen",
+      "number": "pl"
+     },
+     "rare": true
+    },
+    {
+     "t": "ру́сских",
+     "lex": "a:русский",
+     "lemma": "ру́сский",
+     "g": {
+      "pos": "adj",
+      "case": "gen",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "ба́ня",
+     "lex": "n:баня",
+     "lemma": "ба́ня",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": "—"
+    },
+    {
+     "t": "э́то",
+     "lex": "o:это",
+     "lemma": "э́то",
+     "g": {
+      "pos": "pron"
+     }
+    },
+    {
+     "t": "не",
+     "lex": "o:не",
+     "lemma": "не",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "про́сто",
+     "lex": "a:простой",
+     "lemma": "просто́й",
+     "g": {
+      "pos": "adj",
+      "short": true,
+      "number": "sg",
+      "gender": "n"
+     }
+    },
+    {
+     "t": "спо́соб",
+     "lex": "n:способ",
+     "lemma": "спо́соб",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "помы́ться",
+     "sp": false,
+     "lex": "v:помыться",
+     "lemma": "помы́ться",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf"
+     },
+     "rare": true
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "It's a ritual, a form of relaxation and even a philosophy.",
+   "tokens": [
+    {
+     "t": "Э́то",
+     "lex": "a:этот",
+     "lemma": "э́тот",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "n"
+     }
+    },
+    {
+     "t": "ритуа́л",
+     "sp": false,
+     "lex": "n:ритуал",
+     "lemma": "ритуа́л",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "о́тдых",
+     "lex": "n:отдых",
+     "lemma": "о́тдых",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "и",
+     "lex": "o:и",
+     "lemma": "и",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "да́же",
+     "lex": "o:даже",
+     "lemma": "да́же",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "филосо́фия",
+     "sp": false,
+     "lex": "n:философия",
+     "lemma": "филосо́фия",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "As far back as the Middle Ages foreigners wrote with surprise that Russians sat in terrible heat and then jumped into a cold river or into the snow.",
+   "tokens": [
+    {
+     "t": "Ещё",
+     "lex": "o:ещё",
+     "lemma": "ещё",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "в",
+     "lex": "o:в",
+     "lemma": "в",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "сре́дние",
+     "lex": "a:средний",
+     "lemma": "сре́дний",
+     "g": {
+      "pos": "adj",
+      "case": "acc",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "века́",
+     "lex": "n:век",
+     "lemma": "век",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "иностра́нцы",
+     "lex": "n:иностранец",
+     "lemma": "иностра́нец",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "pl"
+     },
+     "rare": true
+    },
+    {
+     "t": "с",
+     "lex": "o:с",
+     "lemma": "с",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "удивле́нием",
+     "lex": "n:удивление",
+     "lemma": "удивле́ние",
+     "g": {
+      "pos": "noun",
+      "case": "ins",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": "писа́ли",
+     "lex": "v:писать",
+     "lemma": "писа́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "past",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "о",
+     "lex": "o:о",
+     "lemma": "о",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "том",
+     "sp": false,
+     "lex": "n:том",
+     "lemma": "том",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "что",
+     "lex": "o:что",
+     "lemma": "что",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "ру́сские",
+     "lex": "a:русский",
+     "lemma": "ру́сский",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "сидя́т",
+     "lex": "v:сидеть",
+     "lemma": "сиде́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "pl"
+     }
+    },
+    {
+     "t": "в",
+     "lex": "o:в",
+     "lemma": "в",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "стра́шной",
+     "lex": "a:страшный",
+     "lemma": "стра́шный",
+     "g": {
+      "pos": "adj",
+      "case": "prep",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "жаре́",
+     "sp": false,
+     "lex": "n:жара",
+     "lemma": "жара́",
+     "g": {
+      "pos": "noun",
+      "case": "prep",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "а",
+     "lex": "o:а",
+     "lemma": "а",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "пото́м",
+     "lex": "o:потом",
+     "lemma": "пото́м",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "пры́гают",
+     "lex": "v:прыгать",
+     "lemma": "пры́гать",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "pl"
+     }
+    },
+    {
+     "t": "в",
+     "lex": "o:в",
+     "lemma": "в",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "холо́дную",
+     "lex": "a:холодный",
+     "lemma": "холо́дный",
+     "g": {
+      "pos": "adj",
+      "case": "acc",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "ре́ку",
+     "lex": "n:река",
+     "lemma": "река́",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "и́ли",
+     "lex": "o:или",
+     "lemma": "и́ли",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "в",
+     "lex": "o:в",
+     "lemma": "в",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "снег",
+     "sp": false,
+     "lex": "n:снег",
+     "lemma": "снег",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "para": true,
+   "en": "A traditional banya is a small wooden building, usually not far from water.",
+   "tokens": [
+    {
+     "t": "Традицио́нная",
+     "lex": "a:традиционный",
+     "lemma": "традицио́нный",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "f"
+     },
+     "rare": true
+    },
+    {
+     "t": "ба́ня",
+     "lex": "n:баня",
+     "lemma": "ба́ня",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": "—"
+    },
+    {
+     "t": "э́то",
+     "lex": "o:это",
+     "lemma": "э́то",
+     "g": {
+      "pos": "pron"
+     }
+    },
+    {
+     "t": "деревя́нный",
+     "lex": "a:деревянный",
+     "lemma": "деревя́нный",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "m"
+     },
+     "rare": true
+    },
+    {
+     "t": "до́мик",
+     "sp": false,
+     "lex": "n:домик",
+     "lemma": "до́мик",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "обы́чно",
+     "lex": "o:обычно",
+     "lemma": "обы́чно",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "недалеко́",
+     "lex": "o:недалеко",
+     "lemma": "недалеко́",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "от",
+     "lex": "o:от",
+     "lemma": "от",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "воды́",
+     "sp": false,
+     "lex": "n:вода",
+     "lemma": "вода́",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "Inside there's a stove with hot stones lying on it.",
+   "tokens": [
+    {
+     "t": "Внутри́",
+     "lex": "o:внутри",
+     "lemma": "внутри́",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "есть",
+     "lex": "v:быть",
+     "lemma": "быть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "sg"
+     }
+    },
+    {
+     "t": "пе́чка",
+     "sp": false,
+     "lex": "n:печка",
+     "lemma": "пе́чка",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "на",
+     "lex": "o:на",
+     "lemma": "на",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "кото́рой",
+     "lex": "a:который",
+     "lemma": "кото́рый",
+     "g": {
+      "pos": "adj",
+      "case": "prep",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "лежа́т",
+     "lex": "v:лежать",
+     "lemma": "лежа́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "pl"
+     }
+    },
+    {
+     "t": "горя́чие",
+     "lex": "a:горячий",
+     "lemma": "горя́чий",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "ка́мни",
+     "sp": false,
+     "lex": "n:камень",
+     "lemma": "ка́мень",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "pl"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "When water is thrown onto the stones, steam rises.",
+   "tokens": [
+    {
+     "t": "Когда́",
+     "lex": "o:когда",
+     "lemma": "когда́",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "на",
+     "lex": "o:на",
+     "lemma": "на",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "ка́мни",
+     "lex": "n:камень",
+     "lemma": "ка́мень",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "выплёскивают",
+     "lex": "v:выплёскивать",
+     "lemma": "выплёскивать",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "pl"
+     },
+     "rare": true
+    },
+    {
+     "t": "во́ду",
+     "sp": false,
+     "lex": "n:вода",
+     "lemma": "вода́",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "поднима́ется",
+     "lex": "v:подниматься",
+     "lemma": "поднима́ться",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "sg"
+     }
+    },
+    {
+     "t": "пар",
+     "sp": false,
+     "lex": "n:пара",
+     "lemma": "па́ра",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "pl"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "The main thing in a banya isn't the temperature but the steam: it should be light and soft.",
+   "tokens": [
+    {
+     "t": "Гла́вное",
+     "lex": "n:главное",
+     "lemma": "гла́вное",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": "в",
+     "lex": "o:в",
+     "lemma": "в",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "ба́не",
+     "lex": "n:баня",
+     "lemma": "ба́ня",
+     "g": {
+      "pos": "noun",
+      "case": "prep",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": "—"
+    },
+    {
+     "t": "не",
+     "lex": "o:не",
+     "lemma": "не",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "температу́ра",
+     "sp": false,
+     "lex": "n:температура",
+     "lemma": "температу́ра",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "а",
+     "lex": "o:а",
+     "lemma": "а",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "и́менно",
+     "lex": "o:именно",
+     "lemma": "и́менно",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "пар",
+     "sp": false,
+     "lex": "n:пара",
+     "lemma": "па́ра",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "pl"
+     }
+    },
+    {
+     "t": ":"
+    },
+    {
+     "t": "он",
+     "lex": "o:он",
+     "lemma": "он",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "до́лжен",
+     "lex": "a:должный",
+     "lemma": "до́лжный",
+     "g": {
+      "pos": "adj",
+      "short": true,
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "быть",
+     "lex": "v:быть",
+     "lemma": "быть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf"
+     }
+    },
+    {
+     "t": "лёгким",
+     "lex": "n:лёгкое",
+     "lemma": "лёгкое",
+     "g": {
+      "pos": "noun",
+      "case": "ins",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": "и",
+     "lex": "o:и",
+     "lemma": "и",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "мя́гким",
+     "sp": false,
+     "lex": "a:мягкий",
+     "lemma": "мя́гкий",
+     "g": {
+      "pos": "adj",
+      "case": "ins",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "para": true,
+   "en": "An essential part of the banya is a whisk made of birch or oak twigs.",
+   "tokens": [
+    {
+     "t": "Обяза́тельный",
+     "lex": "a:обязательный",
+     "lemma": "обяза́тельный",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "m"
+     },
+     "rare": true
+    },
+    {
+     "t": "атрибу́т",
+     "lex": "n:атрибут",
+     "lemma": "атрибу́т",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": "ба́ни",
+     "lex": "n:баня",
+     "lemma": "ба́ня",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": "—"
+    },
+    {
+     "t": "ве́ник",
+     "lex": "n:веник",
+     "lemma": "ве́ник",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": "из",
+     "lex": "o:из",
+     "lemma": "из",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "берёзовых",
+     "lex": "a:берёзовый",
+     "lemma": "берёзовый",
+     "g": {
+      "pos": "adj",
+      "case": "gen",
+      "number": "pl"
+     },
+     "rare": true
+    },
+    {
+     "t": "и́ли",
+     "lex": "o:или",
+     "lemma": "и́ли",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "дубо́вых",
+     "lex": "a:дубовый",
+     "lemma": "дубо́вый",
+     "g": {
+      "pos": "adj",
+      "case": "gen",
+      "number": "pl"
+     },
+     "rare": true
+    },
+    {
+     "t": "ве́ток",
+     "sp": false,
+     "lex": "n:ветка",
+     "lemma": "ве́тка",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "pl"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "This usually frightens foreigners: why hit each other with twigs?",
+   "tokens": [
+    {
+     "t": "Иностра́нцев",
+     "lex": "n:иностранец",
+     "lemma": "иностра́нец",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "pl"
+     },
+     "rare": true
+    },
+    {
+     "t": "э́то",
+     "lex": "o:это",
+     "lemma": "э́то",
+     "g": {
+      "pos": "pron"
+     }
+    },
+    {
+     "t": "обы́чно",
+     "lex": "o:обычно",
+     "lemma": "обы́чно",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "пуга́ет",
+     "sp": false,
+     "lex": "v:пугать",
+     "lemma": "пуга́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "sg"
+     }
+    },
+    {
+     "t": ":"
+    },
+    {
+     "t": "заче́м",
+     "lex": "o:зачем",
+     "lemma": "заче́м",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "бить",
+     "lex": "v:бить",
+     "lemma": "бить",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf"
+     }
+    },
+    {
+     "t": "друг",
+     "lex": "n:друг",
+     "lemma": "друг",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "дру́га",
+     "lex": "n:друг",
+     "lemma": "друг",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "ве́тками",
+     "sp": false,
+     "lex": "n:ветка",
+     "lemma": "ве́тка",
+     "g": {
+      "pos": "noun",
+      "case": "ins",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "?",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "In fact it's a kind of massage that improves the circulation.",
+   "tokens": [
+    {
+     "t": "На",
+     "lex": "o:на",
+     "lemma": "на",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "са́мом",
+     "lex": "a:самый",
+     "lemma": "са́мый",
+     "g": {
+      "pos": "adj",
+      "case": "prep",
+      "number": "sg",
+      "gender": "n"
+     }
+    },
+    {
+     "t": "де́ле",
+     "lex": "n:дело",
+     "lemma": "де́ло",
+     "g": {
+      "pos": "noun",
+      "case": "prep",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "э́то",
+     "lex": "o:это",
+     "lemma": "э́то",
+     "g": {
+      "pos": "pron"
+     }
+    },
+    {
+     "t": "своеобра́зный",
+     "lex": "a:своеобразный",
+     "lemma": "своеобра́зный",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "m"
+     },
+     "rare": true
+    },
+    {
+     "t": "масса́ж",
+     "sp": false,
+     "lex": "n:массаж",
+     "lemma": "масса́ж",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "кото́рый",
+     "lex": "a:который",
+     "lemma": "кото́рый",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "улучша́ет",
+     "lex": "v:улучшать",
+     "lemma": "улучша́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": "кровообраще́ние",
+     "sp": false,
+     "lex": "n:кровообращение",
+     "lemma": "кровообраще́ние",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "para": true,
+   "en": "But the banya isn't only water and steam.",
+   "tokens": [
+    {
+     "t": "Но",
+     "lex": "o:но",
+     "lemma": "но",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "ба́ня",
+     "lex": "n:баня",
+     "lemma": "ба́ня",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": "—"
+    },
+    {
+     "t": "э́то",
+     "lex": "o:это",
+     "lemma": "э́то",
+     "g": {
+      "pos": "pron"
+     }
+    },
+    {
+     "t": "не",
+     "lex": "o:не",
+     "lemma": "не",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "то́лько",
+     "lex": "o:только",
+     "lemma": "то́лько",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "вода́",
+     "lex": "n:вода",
+     "lemma": "вода́",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "и",
+     "lex": "o:и",
+     "lemma": "и",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "пар",
+     "sp": false,
+     "lex": "n:пара",
+     "lemma": "па́ра",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "pl"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "They meet friends there, discuss the news, drink herbal tea with honey.",
+   "tokens": [
+    {
+     "t": "Там",
+     "lex": "o:там",
+     "lemma": "там",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "встреча́ются",
+     "lex": "v:встречаться",
+     "lemma": "встреча́ться",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "pl"
+     }
+    },
+    {
+     "t": "с",
+     "lex": "o:с",
+     "lemma": "с",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "друзья́ми",
+     "sp": false,
+     "lex": "n:друг",
+     "lemma": "друг",
+     "g": {
+      "pos": "noun",
+      "case": "ins",
+      "number": "pl"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "обсужда́ют",
+     "lex": "v:обсуждать",
+     "lemma": "обсужда́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "pl"
+     }
+    },
+    {
+     "t": "но́вости",
+     "sp": false,
+     "lex": "n:новость",
+     "lemma": "но́вость",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "pl"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "пьют",
+     "lex": "v:пить",
+     "lemma": "пить",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "pl"
+     }
+    },
+    {
+     "t": "чай",
+     "lex": "n:чай",
+     "lemma": "чай",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "с",
+     "lex": "o:с",
+     "lemma": "с",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "траво́й",
+     "lex": "n:трава",
+     "lemma": "трава́",
+     "g": {
+      "pos": "noun",
+      "case": "ins",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "и",
+     "lex": "o:и",
+     "lemma": "и",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "мёдом",
+     "sp": false,
+     "lex": "n:мёд",
+     "lemma": "мёд",
+     "g": {
+      "pos": "noun",
+      "case": "ins",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "No wonder people say: \"In the banya everyone is equal.\"",
+   "tokens": [
+    {
+     "t": "Неда́ром",
+     "lex": "o:недаром",
+     "lemma": "неда́ром",
+     "g": {
+      "pos": "adv"
+     },
+     "rare": true
+    },
+    {
+     "t": "говоря́т",
+     "sp": false,
+     "lex": "v:говорить",
+     "lemma": "говори́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "pl"
+     }
+    },
+    {
+     "t": ":"
+    },
+    {
+     "t": "«",
+     "sp": false
+    },
+    {
+     "t": "В",
+     "lex": "o:в",
+     "lemma": "в",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "ба́не",
+     "lex": "n:баня",
+     "lemma": "ба́ня",
+     "g": {
+      "pos": "noun",
+      "case": "prep",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": "все",
+     "lex": "o:всё",
+     "lemma": "всё",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "равны́",
+     "sp": false,
+     "lex": "a:равный",
+     "lemma": "ра́вный",
+     "g": {
+      "pos": "adj",
+      "short": true,
+      "number": "pl"
+     }
+    },
+    {
+     "t": "»",
+     "sp": false
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "Without clothes or phones people become simple and open.",
+   "tokens": [
+    {
+     "t": "Без",
+     "lex": "o:без",
+     "lemma": "без",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "оде́жды",
+     "lex": "n:одежда",
+     "lemma": "оде́жда",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "и",
+     "lex": "o:и",
+     "lemma": "и",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "без",
+     "lex": "o:без",
+     "lemma": "без",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "телефо́нов",
+     "lex": "n:телефон",
+     "lemma": "телефо́н",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "лю́ди",
+     "lex": "n:человек",
+     "lemma": "челове́к",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "стано́вятся",
+     "lex": "v:становиться",
+     "lemma": "станови́ться",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "pl"
+     }
+    },
+    {
+     "t": "просты́ми",
+     "lex": "a:простой",
+     "lemma": "просто́й",
+     "g": {
+      "pos": "adj",
+      "case": "ins",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "и",
+     "lex": "o:и",
+     "lemma": "и",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "откры́тыми",
+     "sp": false,
+     "lex": "a:открытый",
+     "lemma": "откры́тый",
+     "g": {
+      "pos": "adj",
+      "case": "ins",
+      "number": "pl"
+     },
+     "rare": true
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "para": true,
+   "en": "Today big cities have modern banyas with swimming pools and restaurants.",
+   "tokens": [
+    {
+     "t": "Сего́дня",
+     "lex": "o:сегодня",
+     "lemma": "сего́дня",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "в",
+     "lex": "o:в",
+     "lemma": "в",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "больши́х",
+     "lex": "a:большой",
+     "lemma": "большо́й",
+     "g": {
+      "pos": "adj",
+      "case": "prep",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "города́х",
+     "lex": "n:город",
+     "lemma": "го́род",
+     "g": {
+      "pos": "noun",
+      "case": "prep",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "есть",
+     "lex": "v:быть",
+     "lemma": "быть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "sg"
+     }
+    },
+    {
+     "t": "совреме́нные",
+     "lex": "a:современный",
+     "lemma": "совреме́нный",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "ба́ни",
+     "lex": "n:баня",
+     "lemma": "ба́ня",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "pl"
+     },
+     "rare": true
+    },
+    {
+     "t": "с",
+     "lex": "o:с",
+     "lemma": "с",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "бассе́йнами",
+     "lex": "n:бассейн",
+     "lemma": "бассе́йн",
+     "g": {
+      "pos": "noun",
+      "case": "ins",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "и",
+     "lex": "o:и",
+     "lemma": "и",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "рестора́нами",
+     "sp": false,
+     "lex": "n:ресторан",
+     "lemma": "рестора́н",
+     "g": {
+      "pos": "noun",
+      "case": "ins",
+      "number": "pl"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "But many Russians still believe that a real banya can only be at the dacha, by the river, after a day's work in the garden.",
+   "tokens": [
+    {
+     "t": "Но",
+     "lex": "o:но",
+     "lemma": "но",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "мно́гие",
+     "lex": "a:многие",
+     "lemma": "мно́гие",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "pl"
+     },
+     "rare": true
+    },
+    {
+     "t": "ру́сские",
+     "lex": "a:русский",
+     "lemma": "ру́сский",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "по-пре́жнему",
+     "lex": "o:по-прежнему",
+     "lemma": "по-пре́жнему",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "счита́ют",
+     "sp": false,
+     "lex": "v:считать",
+     "lemma": "счита́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "pl"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "что",
+     "lex": "o:что",
+     "lemma": "что",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "настоя́щая",
+     "lex": "a:настоящий",
+     "lemma": "настоя́щий",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "ба́ня",
+     "lex": "n:баня",
+     "lemma": "ба́ня",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": "мо́жет",
+     "lex": "v:мочь",
+     "lemma": "мочь",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "sg"
+     }
+    },
+    {
+     "t": "быть",
+     "lex": "v:быть",
+     "lemma": "быть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf"
+     }
+    },
+    {
+     "t": "то́лько",
+     "lex": "o:только",
+     "lemma": "то́лько",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "на",
+     "lex": "o:на",
+     "lemma": "на",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "да́че",
+     "sp": false,
+     "lex": "n:дача",
+     "lemma": "да́ча",
+     "g": {
+      "pos": "noun",
+      "case": "prep",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "у",
+     "lex": "o:у",
+     "lemma": "у",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "реки́",
+     "sp": false,
+     "lex": "n:река",
+     "lemma": "река́",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "по́сле",
+     "lex": "o:после",
+     "lemma": "по́сле",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "дня",
+     "lex": "n:день",
+     "lemma": "день",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "рабо́ты",
+     "lex": "n:работа",
+     "lemma": "рабо́та",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "в",
+     "lex": "o:в",
+     "lemma": "в",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "саду́",
+     "sp": false,
+     "lex": "n:сад",
+     "lemma": "сад",
+     "g": {
+      "pos": "noun",
+      "case": "loc2",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  }
+ ],
+ "questions": [
+  {
+   "id": "nf-b2-01-q1",
+   "type": "choice",
+   "level": "B2",
+   "tags": [
+    "reading"
+   ],
+   "prompt": {
+    "ru": "Что гла́вное в ба́не?",
+    "en": "What is the main thing in a banya?",
+    "instruction": "Choose the answer"
+   },
+   "accept": [
+    "Пар."
+   ],
+   "distractors": [
+    {
+     "ru": "Температу́ра.",
+     "error": "reading.detail"
+    },
+    {
+     "ru": "Бассе́йн.",
+     "error": "reading.detail"
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "nf-b2-01-q2",
+   "type": "choice",
+   "level": "B2",
+   "tags": [
+    "reading"
+   ],
+   "prompt": {
+    "ru": "Из чего́ де́лают ве́ник?",
+    "en": "What is the whisk made of?",
+    "instruction": "Choose the answer"
+   },
+   "accept": [
+    "Из берёзовых и́ли дубо́вых ве́ток."
+   ],
+   "distractors": [
+    {
+     "ru": "Из травы́.",
+     "error": "reading.detail"
+    },
+    {
+     "ru": "Из бума́ги.",
+     "error": "reading.detail"
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "nf-b2-01-q3",
+   "type": "choice",
+   "level": "B2",
+   "tags": [
+    "reading"
+   ],
+   "prompt": {
+    "ru": "Что ру́сские де́лают в ба́не, кро́ме того́, что́бы мы́ться?",
+    "en": "What do Russians do in the banya besides washing?",
+    "instruction": "Choose the answer"
+   },
+   "accept": [
+    "Встреча́ются с друзья́ми и обсужда́ют но́вости."
+   ],
+   "distractors": [
+    {
+     "ru": "Смо́трят телеви́зор.",
+     "error": "reading.detail"
+    },
+    {
+     "ru": "Рабо́тают.",
+     "error": "reading.detail"
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "nf-b2-01-q4",
+   "type": "choice",
+   "level": "B2",
+   "tags": [
+    "reading"
+   ],
+   "prompt": {
+    "ru": "Где, по мне́нию мно́гих, мо́жет быть настоя́щая ба́ня?",
+    "en": "Where, in many people's view, can a real banya be?",
+    "instruction": "Choose the answer"
+   },
+   "accept": [
+    "На да́че, у реки́."
+   ],
+   "distractors": [
+    {
+     "ru": "В це́нтре го́рода.",
+     "error": "reading.detail"
+    },
+    {
+     "ru": "В гости́нице.",
+     "error": "reading.detail"
+    }
+   ],
+   "source": "handwritten"
+  }
+ ]
+}

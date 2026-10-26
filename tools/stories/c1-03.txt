@@ -1,0 +1,47 @@
+id: st-c1-03
+kind: story
+level: C1
+title: Попу́тчик | The fellow passenger
+---
+Есть стра́нная ру́сская тради́ция: расска́зывать всю свою́ жизнь незнако́мому челове́ку в по́езде. | There's a strange Russian tradition: telling your whole life story to a stranger on a train.
+Ты зна́ешь, что бо́льше никогда́ его́ не уви́дишь, и поэ́тому говори́шь то, чего́ не сказа́л бы да́же бли́зкому дру́гу. | You know you'll never see them again, and so you say things you wouldn't tell even a close friend.
+
+Я е́хал из Москвы́ в Ки́ров ночны́м по́ездом. | I was travelling from Moscow to Kirov on the night train.
+В купе́ кро́ме меня́ был то́лько пожило́й мужчи́на с аккура́тной седо́й бородо́й. | Apart from me there was only an elderly man with a neat grey beard in the compartment.
+Он доста́л из су́мки варёные я́йца, хлеб и те́рмос, и, коне́чно, предложи́л мне поу́жинать вме́сте. | He took boiled eggs, bread and a flask out of his bag and, of course, offered to have supper with me.
+Отказа́ться бы́ло невозмо́жно. | It was impossible to refuse.
+
+Снача́ла мы говори́ли о пого́де и о це́нах, как полага́ется. | At first we talked about the weather and prices, as one does.
+Пото́м он спроси́л, чем я занима́юсь. | Then he asked what I did.
+Я сказа́л, что рабо́таю в ба́нке, но всю жизнь мечта́л писа́ть кни́ги. | I said that I worked in a bank but had dreamed all my life of writing books.
+— А почему́ не пи́шете? — спроси́л он так про́сто, что я растеря́лся. | "So why don't you write?" he asked so simply that I was taken aback.
+
+Я на́чал объясня́ть: ипоте́ка, семья́, нет вре́мени, нет тала́нта, и вообще́ уже́ по́здно. | I began to explain: the mortgage, the family, no time, no talent, and anyway it's too late.
+Он слу́шал, кива́л и пил чай. | He listened, nodded and drank his tea.
+Когда́ я замолча́л, он сказа́л: | When I stopped, he said:
+— Мне се́мьдесят два го́да. Пе́рвую карти́ну я написа́л в шестьдеся́т пять. | "I'm seventy-two. I painted my first picture at sixty-five."
+— Тепе́рь у меня́ была́ уже́ втора́я вы́ставка. | "I've already had my second exhibition."
+— Зна́ете, о чём я жале́ю? Что со́рок лет расска́зывал попу́тчикам, почему́ не рису́ю. | "Do you know what I regret? That for forty years I told my fellow passengers why I wasn't painting."
+
+Но́чью я до́лго не мог усну́ть. | At night I couldn't sleep for a long time.
+По́езд стуча́л колёсами, за окно́м проплыва́ли тёмные леса́ и ре́дкие огни́. | The train clattered on, and dark forests and occasional lights drifted past the window.
+У́тром мой попу́тчик вы́шел на како́й-то ма́ленькой ста́нции, и я да́же не спроси́л, как его́ зову́т. | In the morning my fellow passenger got off at some small station, and I didn't even ask his name.
+Но в тот же ве́чер я откры́л ноутбу́к и написа́л пе́рвую страни́цу. | But that very evening I opened my laptop and wrote the first page.
+Э́ту. | This one.
+---
+? О како́й тради́ции расска́зывает а́втор? | What tradition does the narrator describe?
++ Расска́зывать о себе́ незнако́мым в по́езде.
+- Пить чай в по́езде.
+- Чита́ть кни́ги в доро́ге.
+? О чём всю жизнь мечта́л а́втор? | What had the narrator always dreamed of?
++ Писа́ть кни́ги.
+- Рисова́ть карти́ны.
+- Рабо́тать в ба́нке.
+? Когда́ попу́тчик написа́л пе́рвую карти́ну? | When did the fellow passenger paint his first picture?
++ В шестьдеся́т пять лет.
+- В де́тстве.
+- В два́дцать лет.
+? Что а́втор сде́лал в тот же ве́чер? | What did the narrator do that same evening?
++ Написа́л пе́рвую страни́цу.
+- Позвони́л попу́тчику.
+- Купи́л карти́ну.

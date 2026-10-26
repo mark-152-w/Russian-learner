@@ -1,0 +1,25 @@
+id: dl-a2-08
+kind: dialogue
+level: A2
+title: На ры́нке | At the market
+---
+Покупа́тельница: Ско́лько сто́ят ва́ши помидо́ры? | Customer: How much are your tomatoes?
+Продаве́ц: Сто девяно́сто рубле́й килогра́мм. Све́жие, вчера́ собра́ли! | Seller: A hundred and ninety roubles a kilo. Fresh, picked yesterday!
+Покупа́тельница: До́рого. А огурцы́? | Customer: That's expensive. And the cucumbers?
+Продаве́ц: Огурцы́ сто пятьдеся́т. | Seller: Cucumbers are a hundred and fifty.
+Покупа́тельница: Да́йте, пожа́луйста, килогра́мм огурцо́в и полови́ну килогра́мма помидо́ров. | Customer: A kilo of cucumbers and half a kilo of tomatoes, please.
+Продаве́ц: Что ещё? Есть ещё я́блоки, о́чень сла́дкие. | Seller: Anything else? There are apples too, very sweet.
+Покупа́тельница: Нет, спаси́бо, я́блоки у меня́ на да́че свои́. | Customer: No, thanks, I have my own apples at the dacha.
+---
+? Ско́лько сто́ят помидо́ры? | How much do the tomatoes cost?
++ Сто девяно́сто рубле́й.
+- Сто пятьдеся́т рубле́й.
+- Сто рубле́й.
+? Что купи́ла же́нщина? | What did the woman buy?
++ Огурцы́ и помидо́ры.
+- То́лько я́блоки.
+- То́лько огурцы́.
+? Почему́ она́ не купи́ла я́блоки? | Why didn't she buy apples?
++ У неё есть свои́ я́блоки на да́че.
+- Они́ сли́шком дороги́е.
+- Она́ не лю́бит я́блоки.

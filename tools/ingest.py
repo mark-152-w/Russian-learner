@@ -24,7 +24,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from rulib import (ACUTE, UNSTRESSED_OK, fold, from_dataset, has_stress, put_stress,  # noqa: E402
                    strip_stress, stress_index, syllables, transfer_stress, marks_ok)
-from morph import (CASES, PERSONS, SLOTS, dparses, group_of, lemma_parse, preferred,  # noqa: E402
+from morph import (lemma_keys, CASES, PERSONS, SLOTS, dparses, group_of, lemma_parse, preferred,  # noqa: E402
                    verify)
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -78,6 +78,9 @@ def split_senses(s: str) -> list[str]:
 
 
 # --------------------------------------------------------------------------- frequency
+DOMINANT_SHARE = 0.75
+
+
 def load_frequency():
     cyr = re.compile(r"^[а-яё-]+$")
     total = 0
@@ -101,11 +104,15 @@ def load_frequency():
                 continue
             weights = [max(p.score, 1e-6) for p in ps]
             tw = sum(weights)
-            keys = {(fold(p.normal_form), group_of(p)) for p in ps}
+            share: dict[tuple, float] = collections.defaultdict(float)
             for p, wt in zip(ps, weights):
-                lemma_freq[(fold(p.normal_form), group_of(p))] += c * wt / tw
-            if len(keys) == 1:
-                unambiguous[next(iter(keys))] += c
+                share[(fold(p.normal_form), group_of(p))] += wt / tw
+            for key, sh in share.items():
+                lemma_freq[key] += c * sh
+                # evidence: the form belongs to this lemma alone, or pymorphy3 clearly prefers it
+                # (кафе́ also parses as a rare noun "каф", but only marginally)
+                if sh >= DOMINANT_SHARE:
+                    unambiguous[key] += c
     # Inflecting words must be backed by forms that belong to them alone. Otherwise a rare homonym
     # inherits the mass of a frequent word (ага́ "cane toad" from ага "yep", уж "grass snake" from уже́).
     for key, t in lemma_freq.items():
@@ -158,6 +165,11 @@ def main():
             bare = r["bare"].strip()
             ctx = (pos, bare)
             cells = {k: parse_cell(v, ctx + (k,)) for k, v in raw_cells(pos, r).items()}
+            if pos == "noun" and r["indeclinable"] == "1" and not any(cells.values()):
+                # кафе́, метро́, ко́фе: the dataset leaves the table empty; every form is the lemma
+                lemma_cell = parse_cell(r["accented"], ctx + ("sg_nom",))
+                cells = {k: list(lemma_cell) for k in cells if not (r["sg_only"] == "1" and k.startswith("pl_"))}
+                stats["indeclinable_filled"] += 1
             if pos != "other" and not any(v for k, v in cells.items() if k != "inf"):
                 stats[f"dropped_no_table_{pos}"] += 1
                 continue
@@ -391,7 +403,8 @@ def main():
         # (пять, кто). Otherwise the rare noun ага́ ("aga") would inherit the interjection ага's rank.
         if lx["pos"] == "noun" and any(p.tag.POS in ("NUMR", "NPRO") and fold(p.normal_form) == k for p in dparses(k)):
             return [(k, "noun"), (k, "other")]
-        return [(k, lx["pos"])]
+        # pymorphy3 may file the lemma under another normal form (сча́стье → счастие, де́ньги → деньга)
+        return [(k, lx["pos"])] + [(alt, lx["pos"]) for alt in sorted(lemma_keys(lx["lemma"], lx["pos"]) - {k})]
 
     matched_keys = {}
     for lx in lexemes:

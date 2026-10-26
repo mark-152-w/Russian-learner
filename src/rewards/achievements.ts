@@ -92,11 +92,18 @@ export const ACHIEVEMENTS: AchievementDef[] = [
   def('trainer-1', 'Тренажёр', 'Warm-up', 'Finish a trainer session.', 'trainerSessions', 1, { feature: 'trainers' }),
   def('trainer-50', 'Трудя́га', 'Hard worker', 'Finish 50 trainer sessions.', 'trainerSessions', 50, { feature: 'trainers', xp: 300 }),
   def('trainers-all', 'Многобо́рец', 'All-rounder', 'Try all five trainers.', 'trainersTried', 5, { feature: 'trainers', xp: 150 }),
-  def('boss-1', 'Пе́рвая побе́да', 'First victory', 'Defeat a unit boss.', 'bosses', 1, { feature: 'games' }),
-  def('boss-10', 'Богаты́рь', 'Hero', 'Defeat 10 bosses.', 'bosses', 10, { feature: 'games', xp: 200 }),
-  def('crossword-1', 'Кроссворди́ст', 'Crossworder', 'Solve a declension crossword.', 'crosswords', 1, { feature: 'games' }),
+  def('boss-1', 'Пе́рвая побе́да', 'First victory', 'Defeat a unit boss.', 'bosses', 1, { feature: 'bosses' }),
+  def('boss-10', 'Богаты́рь', 'Hero', 'Defeat 10 bosses.', 'bosses', 10, { feature: 'bosses', xp: 200 }),
+  def('crossword-1', 'Кроссворди́ст', 'Crossworder', 'Solve a declension crossword.', 'crosswords', 1, { feature: 'crossword' }),
+  def('crossword-10', 'Разга́дчик', 'Puzzle solver', 'Solve 10 crosswords.', 'crosswords', 10, { feature: 'crossword', xp: 150 }),
+  def('arcade-500', 'Ме́ткость', 'Sharpshooter', 'Score 500 in the case arcade.', 'arcadeBest', 500, { feature: 'arcade', xp: 100 }),
+  def('arcade-2000', 'Чемпио́н', 'Champion', 'Score 2,000 in the case arcade.', 'arcadeBest', 2000, { feature: 'arcade', xp: 300 }),
+  def('speed-25', 'Скорогово́рка', 'Tongue twister', 'Match 25 pairs in one speed round.', 'speedBest', 25, { feature: 'speed', xp: 100 }),
   def('adventure-1', 'Сы́щик', 'Sleuth', 'Finish the first chapter of «Де́ло».', 'adventureChapters', 1, { feature: 'adventure' }),
+  def('adventure-5', 'Де́ло закры́то', 'Case closed', 'Finish all five chapters of «Де́ло».', 'adventureChapters', 5, { feature: 'adventure', xp: 300 }),
   def('set-complete', 'Коллекционе́р', 'Collector', 'Complete a card set.', 'cardSets', 1, { feature: 'cards', xp: 200 }),
+  def('cards-all', 'Храни́тель', 'Keeper', 'Collect all 32 cards.', 'cardsOwned', 32, { feature: 'cards', xp: 500, hidden: true }),
+  def('town-25', 'Градострои́тель', 'Town planner', 'Reach 25 building levels in your town.', 'townLevels', 25, { feature: 'town', xp: 300 }),
 ]
 
 export const isUnlocked = (a: AchievementDef, s: Stats) => {

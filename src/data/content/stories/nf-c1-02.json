@@ -1,0 +1,2434 @@
+{
+ "$schema": "../../../../schemas/story.schema.json",
+ "id": "nf-c1-02",
+ "kind": "nonfiction",
+ "level": "C1",
+ "title": {
+  "ru": "«Пу́шкин — на́ше всё»",
+  "en": "\"Pushkin is our everything\""
+ },
+ "sentences": [
+  {
+   "para": true,
+   "en": "Every Russian schoolchild knows the phrase \"Pushkin is our everything.\"",
+   "tokens": [
+    {
+     "t": "Фра́зу",
+     "lex": "n:фраза",
+     "lemma": "фра́за",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "«",
+     "sp": false
+    },
+    {
+     "t": "Пу́шкин",
+     "lemma": "Пу́шкин",
+     "g": {
+      "pos": "name",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "—"
+    },
+    {
+     "t": "на́ше",
+     "lemma": "наш",
+     "g": {
+      "pos": "pron",
+      "case": "nom",
+      "gender": "n"
+     },
+     "gloss": "our, ours"
+    },
+    {
+     "t": "всё",
+     "sp": false,
+     "lex": "o:всё",
+     "lemma": "всё",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "»"
+    },
+    {
+     "t": "зна́ет",
+     "lex": "v:знать",
+     "lemma": "знать",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "sg"
+     }
+    },
+    {
+     "t": "ка́ждый",
+     "lex": "a:каждый",
+     "lemma": "ка́ждый",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "ру́сский",
+     "lex": "a:русский",
+     "lemma": "ру́сский",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "шко́льник",
+     "sp": false,
+     "lex": "n:школьник",
+     "lemma": "шко́льник",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "A critic said it back in the nineteenth century, and since then it has become almost a saying.",
+   "tokens": [
+    {
+     "t": "Её",
+     "lex": "o:она",
+     "lemma": "она́",
+     "g": {
+      "pos": "pron",
+      "case": "acc"
+     }
+    },
+    {
+     "t": "сказа́л",
+     "lex": "v:сказать",
+     "lemma": "сказа́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "оди́н",
+     "lex": "o:один",
+     "lemma": "оди́н",
+     "g": {
+      "pos": "num",
+      "case": "acc",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "кри́тик",
+     "lex": "n:критика",
+     "lemma": "кри́тика",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "ещё",
+     "lex": "o:ещё",
+     "lemma": "ещё",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "в",
+     "lex": "o:в",
+     "lemma": "в",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "девятна́дцатом",
+     "lex": "a:девятнадцатый",
+     "lemma": "девятна́дцатый",
+     "g": {
+      "pos": "adj",
+      "case": "prep",
+      "number": "sg",
+      "gender": "m"
+     },
+     "rare": true
+    },
+    {
+     "t": "ве́ке",
+     "sp": false,
+     "lex": "n:век",
+     "lemma": "век",
+     "g": {
+      "pos": "noun",
+      "case": "prep",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "и",
+     "lex": "o:и",
+     "lemma": "и",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "с",
+     "lex": "o:с",
+     "lemma": "с",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "тех",
+     "lex": "a:тот",
+     "lemma": "тот",
+     "g": {
+      "pos": "adj",
+      "case": "gen",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "пор",
+     "lex": "n:пора",
+     "lemma": "пора́",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "она́",
+     "lex": "o:она",
+     "lemma": "она́",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "ста́ла",
+     "lex": "v:стать",
+     "lemma": "стать",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "почти́",
+     "lex": "o:почти",
+     "lemma": "почти́",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "погово́ркой",
+     "sp": false,
+     "lex": "n:поговорка",
+     "lemma": "погово́рка",
+     "g": {
+      "pos": "noun",
+      "case": "ins",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "To foreigners this often seems an exaggeration: why is a poet who is far less known abroad than Tolstoy or Dostoyevsky more important to Russians than anyone?",
+   "tokens": [
+    {
+     "t": "Иностра́нцам",
+     "lex": "n:иностранец",
+     "lemma": "иностра́нец",
+     "g": {
+      "pos": "noun",
+      "case": "dat",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "э́то",
+     "lex": "o:это",
+     "lemma": "э́то",
+     "g": {
+      "pos": "pron"
+     }
+    },
+    {
+     "t": "ча́сто",
+     "lex": "o:часто",
+     "lemma": "ча́сто",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "ка́жется",
+     "lex": "v:казаться",
+     "lemma": "каза́ться",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "sg"
+     }
+    },
+    {
+     "t": "преувеличе́нием",
+     "sp": false,
+     "lex": "n:преувеличение",
+     "lemma": "преувеличе́ние",
+     "g": {
+      "pos": "noun",
+      "case": "ins",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": ":"
+    },
+    {
+     "t": "почему́",
+     "lex": "o:почему",
+     "lemma": "почему́",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "поэ́т",
+     "sp": false,
+     "lex": "n:поэт",
+     "lemma": "поэ́т",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "кото́рого",
+     "lex": "a:который",
+     "lemma": "кото́рый",
+     "g": {
+      "pos": "adj",
+      "case": "acc",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "за",
+     "lex": "o:за",
+     "lemma": "за",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "грани́цей",
+     "lex": "n:граница",
+     "lemma": "грани́ца",
+     "g": {
+      "pos": "noun",
+      "case": "ins",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "зна́ют",
+     "lex": "v:знать",
+     "lemma": "знать",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "pl"
+     }
+    },
+    {
+     "t": "гора́здо",
+     "lex": "o:гораздо",
+     "lemma": "гора́здо",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "ху́же",
+     "sp": false,
+     "lex": "a:плохой",
+     "lemma": "плохо́й",
+     "g": {
+      "pos": "comp"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "чем",
+     "lemma": "чем",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "Толсто́го",
+     "lemma": "Толсто́й",
+     "g": {
+      "pos": "name",
+      "case": "gen",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "и́ли",
+     "lex": "o:или",
+     "lemma": "и́ли",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "Достое́вского",
+     "sp": false,
+     "lemma": "Достое́вский",
+     "g": {
+      "pos": "name",
+      "case": "gen",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "для",
+     "lex": "o:для",
+     "lemma": "для",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "ру́сских",
+     "lex": "a:русский",
+     "lemma": "ру́сский",
+     "g": {
+      "pos": "adj",
+      "case": "gen",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "важне́е",
+     "lex": "a:важный",
+     "lemma": "ва́жный",
+     "g": {
+      "pos": "comp"
+     }
+    },
+    {
+     "t": "всех",
+     "sp": false,
+     "lex": "a:весь",
+     "lemma": "весь",
+     "g": {
+      "pos": "adj",
+      "case": "gen",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "?",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "para": true,
+   "en": "The answer lies partly in the language.",
+   "tokens": [
+    {
+     "t": "Отве́т",
+     "lex": "n:ответ",
+     "lemma": "отве́т",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "отча́сти",
+     "lex": "o:отчасти",
+     "lemma": "отча́сти",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "в",
+     "lex": "o:в",
+     "lemma": "в",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "языке́",
+     "sp": false,
+     "lex": "n:язык",
+     "lemma": "язы́к",
+     "g": {
+      "pos": "noun",
+      "case": "prep",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "Before Pushkin, Russian literature spoke a heavy, bookish language full of church words and foreign borrowings.",
+   "tokens": [
+    {
+     "t": "До",
+     "lex": "o:до",
+     "lemma": "до",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "Пу́шкина",
+     "lemma": "Пу́шкин",
+     "g": {
+      "pos": "name",
+      "case": "gen",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "ру́сская",
+     "lex": "a:русский",
+     "lemma": "ру́сский",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "литерату́ра",
+     "lex": "n:литература",
+     "lemma": "литерату́ра",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "говори́ла",
+     "lex": "v:говорить",
+     "lemma": "говори́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "на",
+     "lex": "o:на",
+     "lemma": "на",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "тяжёлом",
+     "sp": false,
+     "lex": "a:тяжёлый",
+     "lemma": "тяжёлый",
+     "g": {
+      "pos": "adj",
+      "case": "prep",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "кни́жном",
+     "lex": "a:книжный",
+     "lemma": "кни́жный",
+     "g": {
+      "pos": "adj",
+      "case": "prep",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "языке́",
+     "sp": false,
+     "lex": "n:язык",
+     "lemma": "язы́к",
+     "g": {
+      "pos": "noun",
+      "case": "prep",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "по́лном",
+     "lex": "a:полный",
+     "lemma": "по́лный",
+     "g": {
+      "pos": "adj",
+      "case": "prep",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "церко́вных",
+     "lex": "a:церковный",
+     "lemma": "церко́вный",
+     "g": {
+      "pos": "adj",
+      "case": "gen",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "слов",
+     "lex": "n:слово",
+     "lemma": "сло́во",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "и",
+     "lex": "o:и",
+     "lemma": "и",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "иностра́нных",
+     "lex": "a:иностранный",
+     "lemma": "иностра́нный",
+     "g": {
+      "pos": "adj",
+      "case": "gen",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "заи́мствований",
+     "sp": false,
+     "lex": "n:заимствование",
+     "lemma": "заи́мствование",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "pl"
+     },
+     "rare": true
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "Pushkin began to write the way living people spoke, and at the same time his verse remained wonderfully light and musical.",
+   "tokens": [
+    {
+     "t": "Пу́шкин",
+     "lemma": "Пу́шкин",
+     "g": {
+      "pos": "name",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "на́чал",
+     "lex": "v:начать",
+     "lemma": "нача́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "писа́ть",
+     "lex": "v:писать",
+     "lemma": "писа́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf"
+     }
+    },
+    {
+     "t": "так",
+     "sp": false,
+     "lex": "o:так",
+     "lemma": "так",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "как",
+     "lemma": "как",
+     "g": {
+      "pos": "conj"
+     },
+     "gloss": "how; as, like"
+    },
+    {
+     "t": "говори́ли",
+     "lex": "v:говорить",
+     "lemma": "говори́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "past",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "живы́е",
+     "lex": "a:живой",
+     "lemma": "живо́й",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "лю́ди",
+     "sp": false,
+     "lex": "n:человек",
+     "lemma": "челове́к",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "pl"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "и",
+     "lex": "o:и",
+     "lemma": "и",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "при",
+     "lex": "o:при",
+     "lemma": "при",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "э́том",
+     "lex": "a:этот",
+     "lemma": "э́тот",
+     "g": {
+      "pos": "adj",
+      "case": "prep",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "его́",
+     "lex": "o:он",
+     "lemma": "он",
+     "g": {
+      "pos": "pron",
+      "case": "acc"
+     }
+    },
+    {
+     "t": "стихи́",
+     "lex": "n:стих",
+     "lemma": "стих",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "оста́лись",
+     "lex": "v:остаться",
+     "lemma": "оста́ться",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "удиви́тельно",
+     "lex": "a:удивительный",
+     "lemma": "удиви́тельный",
+     "g": {
+      "pos": "adj",
+      "short": true,
+      "number": "sg",
+      "gender": "n"
+     }
+    },
+    {
+     "t": "лёгкими",
+     "lex": "n:лёгкое",
+     "lemma": "лёгкое",
+     "g": {
+      "pos": "noun",
+      "case": "ins",
+      "number": "pl"
+     },
+     "rare": true
+    },
+    {
+     "t": "и",
+     "lex": "o:и",
+     "lemma": "и",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "музыка́льными",
+     "sp": false,
+     "lex": "a:музыкальный",
+     "lemma": "музыка́льный",
+     "g": {
+      "pos": "adj",
+      "case": "ins",
+      "number": "pl"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "In essence, it was he who to a large extent created the modern Russian literary language.",
+   "tokens": [
+    {
+     "t": "По",
+     "lex": "o:по",
+     "lemma": "по",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "су́ти",
+     "sp": false,
+     "lex": "n:суть",
+     "lemma": "суть",
+     "g": {
+      "pos": "noun",
+      "case": "dat",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "совреме́нный",
+     "lex": "a:современный",
+     "lemma": "совреме́нный",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "литерату́рный",
+     "lex": "a:литературный",
+     "lemma": "литерату́рный",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "m"
+     },
+     "rare": true
+    },
+    {
+     "t": "ру́сский",
+     "lex": "a:русский",
+     "lemma": "ру́сский",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "язы́к",
+     "lex": "n:язык",
+     "lemma": "язы́к",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "во",
+     "lex": "o:в",
+     "lemma": "в",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "мно́гом",
+     "lex": "a:многие",
+     "lemma": "мно́гие",
+     "g": {
+      "pos": "adj",
+      "case": "prep",
+      "number": "sg",
+      "gender": "n"
+     },
+     "rare": true
+    },
+    {
+     "t": "со́здал",
+     "lex": "v:создать",
+     "lemma": "созда́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "и́менно",
+     "lex": "o:именно",
+     "lemma": "и́менно",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "он",
+     "sp": false,
+     "lex": "o:он",
+     "lemma": "он",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "para": true,
+   "en": "Another reason is his range.",
+   "tokens": [
+    {
+     "t": "Друга́я",
+     "lex": "a:другой",
+     "lemma": "друго́й",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "причи́на",
+     "lex": "n:причина",
+     "lemma": "причи́на",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "—"
+    },
+    {
+     "t": "широта́",
+     "sp": false,
+     "lex": "n:широта",
+     "lemma": "широта́",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "Pushkin wrote about everything: love and friendship, tsars and peasants, history and fairy tales.",
+   "tokens": [
+    {
+     "t": "Пу́шкин",
+     "lemma": "Пу́шкин",
+     "g": {
+      "pos": "name",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "писа́л",
+     "lex": "v:писать",
+     "lemma": "писа́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "обо",
+     "lex": "o:о",
+     "lemma": "о",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "всём",
+     "sp": false,
+     "lex": "a:весь",
+     "lemma": "весь",
+     "g": {
+      "pos": "adj",
+      "case": "prep",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": ":"
+    },
+    {
+     "t": "о",
+     "lex": "o:о",
+     "lemma": "о",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "любви́",
+     "lex": "n:любовь",
+     "lemma": "любо́вь",
+     "g": {
+      "pos": "noun",
+      "case": "prep",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "и",
+     "lex": "o:и",
+     "lemma": "и",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "дру́жбе",
+     "sp": false,
+     "lex": "n:дружба",
+     "lemma": "дру́жба",
+     "g": {
+      "pos": "noun",
+      "case": "prep",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "о",
+     "lex": "o:о",
+     "lemma": "о",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "царя́х",
+     "lex": "n:царь",
+     "lemma": "царь",
+     "g": {
+      "pos": "noun",
+      "case": "prep",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "и",
+     "lex": "o:и",
+     "lemma": "и",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "крестья́нах",
+     "sp": false,
+     "lex": "n:крестьянин",
+     "lemma": "крестья́нин",
+     "g": {
+      "pos": "noun",
+      "case": "prep",
+      "number": "pl"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "об",
+     "lex": "o:о",
+     "lemma": "о",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "исто́рии",
+     "lex": "n:история",
+     "lemma": "исто́рия",
+     "g": {
+      "pos": "noun",
+      "case": "prep",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "и",
+     "lex": "o:и",
+     "lemma": "и",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "о",
+     "lex": "o:о",
+     "lemma": "о",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "ска́зках",
+     "sp": false,
+     "lex": "n:сказка",
+     "lemma": "ска́зка",
+     "g": {
+      "pos": "noun",
+      "case": "prep",
+      "number": "pl"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "Russian children hear his fairy tales before they start to speak, and adults go on quoting lines from \"Eugene Onegin\" into old age.",
+   "tokens": [
+    {
+     "t": "Ру́сские",
+     "lex": "a:русский",
+     "lemma": "ру́сский",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "де́ти",
+     "lex": "n:ребёнок",
+     "lemma": "ребёнок",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "слы́шат",
+     "lex": "v:слышать",
+     "lemma": "слы́шать",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "pl"
+     }
+    },
+    {
+     "t": "его́",
+     "lex": "o:он",
+     "lemma": "он",
+     "g": {
+      "pos": "pron",
+      "case": "acc"
+     }
+    },
+    {
+     "t": "ска́зки",
+     "lex": "n:сказка",
+     "lemma": "ска́зка",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "ещё",
+     "lex": "o:ещё",
+     "lemma": "ещё",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "до",
+     "lex": "o:до",
+     "lemma": "до",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "того́",
+     "sp": false,
+     "lex": "a:тот",
+     "lemma": "тот",
+     "g": {
+      "pos": "adj",
+      "case": "gen",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "как",
+     "lemma": "как",
+     "g": {
+      "pos": "conj"
+     },
+     "gloss": "how; as, like"
+    },
+    {
+     "t": "начина́ют",
+     "lex": "v:начинать",
+     "lemma": "начина́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "pl"
+     }
+    },
+    {
+     "t": "говори́ть",
+     "sp": false,
+     "lex": "v:говорить",
+     "lemma": "говори́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "а",
+     "lex": "o:а",
+     "lemma": "а",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "взро́слые",
+     "lex": "a:взрослый",
+     "lemma": "взро́слый",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "до",
+     "lex": "o:до",
+     "lemma": "до",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "ста́рости",
+     "lex": "n:старость",
+     "lemma": "ста́рость",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "повторя́ют",
+     "lex": "v:повторять",
+     "lemma": "повторя́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "pl"
+     }
+    },
+    {
+     "t": "стро́чки",
+     "lex": "n:строчка",
+     "lemma": "стро́чка",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "из",
+     "lex": "o:из",
+     "lemma": "из",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "«",
+     "sp": false
+    },
+    {
+     "t": "Евге́ния",
+     "lemma": "Евге́ний",
+     "g": {
+      "pos": "name",
+      "case": "gen",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "Оне́гина",
+     "sp": false,
+     "lemma": "Оне́гин",
+     "g": {
+      "pos": "name",
+      "case": "gen",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "»",
+     "sp": false
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "His poems are heard at weddings and celebrations; people refer to them in arguments and in jokes.",
+   "tokens": [
+    {
+     "t": "Его́",
+     "lex": "o:он",
+     "lemma": "он",
+     "g": {
+      "pos": "pron",
+      "case": "acc"
+     }
+    },
+    {
+     "t": "стихи́",
+     "lex": "n:стих",
+     "lemma": "стих",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "звуча́т",
+     "lex": "v:звучать",
+     "lemma": "звуча́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "pl"
+     }
+    },
+    {
+     "t": "на",
+     "lex": "o:на",
+     "lemma": "на",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "сва́дьбах",
+     "lex": "n:свадьба",
+     "lemma": "сва́дьба",
+     "g": {
+      "pos": "noun",
+      "case": "prep",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "и",
+     "lex": "o:и",
+     "lemma": "и",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "пра́здниках",
+     "sp": false,
+     "lex": "n:праздник",
+     "lemma": "пра́здник",
+     "g": {
+      "pos": "noun",
+      "case": "prep",
+      "number": "pl"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "на",
+     "lex": "o:на",
+     "lemma": "на",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "них",
+     "lex": "o:они",
+     "lemma": "они́",
+     "g": {
+      "pos": "pron",
+      "case": "prep"
+     }
+    },
+    {
+     "t": "ссыла́ются",
+     "lex": "v:ссылаться",
+     "lemma": "ссыла́ться",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "pl"
+     },
+     "rare": true
+    },
+    {
+     "t": "в",
+     "lex": "o:в",
+     "lemma": "в",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "спо́рах",
+     "lex": "n:спор",
+     "lemma": "спор",
+     "g": {
+      "pos": "noun",
+      "case": "prep",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "и",
+     "lex": "o:и",
+     "lemma": "и",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "в",
+     "lex": "o:в",
+     "lemma": "в",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "шу́тках",
+     "sp": false,
+     "lex": "n:шутка",
+     "lemma": "шу́тка",
+     "g": {
+      "pos": "noun",
+      "case": "prep",
+      "number": "pl"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "para": true,
+   "en": "Finally, his very fate matters too.",
+   "tokens": [
+    {
+     "t": "Наконе́ц",
+     "sp": false,
+     "lex": "o:наконец",
+     "lemma": "наконе́ц",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "важна́",
+     "lex": "a:важный",
+     "lemma": "ва́жный",
+     "g": {
+      "pos": "adj",
+      "short": true,
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "и",
+     "lex": "o:и",
+     "lemma": "и",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "сама́",
+     "lex": "a:сам",
+     "lemma": "сам",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "его́",
+     "lex": "o:он",
+     "lemma": "он",
+     "g": {
+      "pos": "pron",
+      "case": "acc"
+     }
+    },
+    {
+     "t": "судьба́",
+     "sp": false,
+     "lex": "n:судьба",
+     "lemma": "судьба́",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "Pushkin died in a duel when he was only thirty-seven.",
+   "tokens": [
+    {
+     "t": "Пу́шкин",
+     "lemma": "Пу́шкин",
+     "g": {
+      "pos": "name",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "поги́б",
+     "lex": "v:погибнуть",
+     "lemma": "поги́бнуть",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "на",
+     "lex": "o:на",
+     "lemma": "на",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "дуэ́ли",
+     "sp": false,
+     "lex": "n:дуэль",
+     "lemma": "дуэ́ль",
+     "g": {
+      "pos": "noun",
+      "case": "prep",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "когда́",
+     "lex": "o:когда",
+     "lemma": "когда́",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "ему́",
+     "lex": "o:он",
+     "lemma": "он",
+     "g": {
+      "pos": "pron",
+      "case": "dat"
+     }
+    },
+    {
+     "t": "бы́ло",
+     "lex": "v:быть",
+     "lemma": "быть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "n"
+     }
+    },
+    {
+     "t": "всего́",
+     "lex": "a:весь",
+     "lemma": "весь",
+     "g": {
+      "pos": "adj",
+      "case": "acc",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "три́дцать",
+     "lex": "n:тридцать",
+     "lemma": "три́дцать",
+     "g": {
+      "pos": "num",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "семь",
+     "lex": "o:семь",
+     "lemma": "семь",
+     "g": {
+      "pos": "num",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "лет",
+     "sp": false,
+     "lex": "n:год",
+     "lemma": "год",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "pl"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "He didn't have time to grow old and stayed forever in memory young, brave and free.",
+   "tokens": [
+    {
+     "t": "Он",
+     "lex": "o:он",
+     "lemma": "он",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "не",
+     "lex": "o:не",
+     "lemma": "не",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "успе́л",
+     "lex": "v:успеть",
+     "lemma": "успе́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "стать",
+     "lex": "v:стать",
+     "lemma": "стать",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf"
+     }
+    },
+    {
+     "t": "ста́рым",
+     "lex": "a:старый",
+     "lemma": "ста́рый",
+     "g": {
+      "pos": "adj",
+      "case": "ins",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "и",
+     "lex": "o:и",
+     "lemma": "и",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "навсегда́",
+     "lex": "o:навсегда",
+     "lemma": "навсегда́",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "оста́лся",
+     "lex": "v:остаться",
+     "lemma": "оста́ться",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "в",
+     "lex": "o:в",
+     "lemma": "в",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "па́мяти",
+     "lex": "n:память",
+     "lemma": "па́мять",
+     "g": {
+      "pos": "noun",
+      "case": "prep",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "молоды́м",
+     "sp": false,
+     "lex": "n:молодые",
+     "lemma": "молоды́е",
+     "g": {
+      "pos": "noun",
+      "case": "dat",
+      "number": "pl"
+     },
+     "rare": true
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "сме́лым",
+     "lex": "a:смелый",
+     "lemma": "сме́лый",
+     "g": {
+      "pos": "adj",
+      "case": "ins",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "и",
+     "lex": "o:и",
+     "lemma": "и",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "свобо́дным",
+     "sp": false,
+     "lex": "a:свободный",
+     "lemma": "свобо́дный",
+     "g": {
+      "pos": "adj",
+      "case": "ins",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "para": true,
+   "en": "Translators have long complained that Pushkin hardly lends itself to translation.",
+   "tokens": [
+    {
+     "t": "Перево́дчики",
+     "lex": "n:переводчик",
+     "lemma": "перево́дчик",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "давно́",
+     "lex": "o:давно",
+     "lemma": "давно́",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "жа́луются",
+     "sp": false,
+     "lex": "v:жаловаться",
+     "lemma": "жа́ловаться",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "pl"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "что",
+     "lex": "o:что",
+     "lemma": "что",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "Пу́шкин",
+     "lemma": "Пу́шкин",
+     "g": {
+      "pos": "name",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "почти́",
+     "lex": "o:почти",
+     "lemma": "почти́",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "не",
+     "lex": "o:не",
+     "lemma": "не",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "поддаётся",
+     "lex": "v:поддаваться",
+     "lemma": "поддава́ться",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "sg"
+     }
+    },
+    {
+     "t": "перево́ду",
+     "sp": false,
+     "lex": "n:перевод",
+     "lemma": "перево́д",
+     "g": {
+      "pos": "noun",
+      "case": "dat",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "In translation the music disappears and only the plot remains.",
+   "tokens": [
+    {
+     "t": "В",
+     "lex": "o:в",
+     "lemma": "в",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "перево́де",
+     "lex": "n:перевод",
+     "lemma": "перево́д",
+     "g": {
+      "pos": "noun",
+      "case": "prep",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "исчеза́ет",
+     "lex": "v:исчезать",
+     "lemma": "исчеза́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "sg"
+     }
+    },
+    {
+     "t": "му́зыка",
+     "sp": false,
+     "lex": "n:музыка",
+     "lemma": "му́зыка",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "и",
+     "lex": "o:и",
+     "lemma": "и",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "остаётся",
+     "lex": "v:оставаться",
+     "lemma": "остава́ться",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "sg"
+     }
+    },
+    {
+     "t": "то́лько",
+     "lex": "o:только",
+     "lemma": "то́лько",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "сюже́т",
+     "sp": false,
+     "lex": "n:сюжет",
+     "lemma": "сюже́т",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "Perhaps that's why, to really understand why Pushkin is \"our everything\", you need to read him in Russian.",
+   "tokens": [
+    {
+     "t": "Мо́жет",
+     "lex": "v:мочь",
+     "lemma": "мочь",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "sg"
+     }
+    },
+    {
+     "t": "быть",
+     "sp": false,
+     "lex": "v:быть",
+     "lemma": "быть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "поэ́тому",
+     "sp": false,
+     "lex": "o:поэтому",
+     "lemma": "поэ́тому",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "что́бы",
+     "lex": "o:чтобы",
+     "lemma": "что́бы",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "по-настоя́щему",
+     "lex": "o:по-настоящему",
+     "lemma": "по-настоя́щему",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "поня́ть",
+     "sp": false,
+     "lex": "v:понять",
+     "lemma": "поня́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "почему́",
+     "lex": "o:почему",
+     "lemma": "почему́",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "Пу́шкин",
+     "lemma": "Пу́шкин",
+     "g": {
+      "pos": "name",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "—"
+    },
+    {
+     "t": "«",
+     "sp": false
+    },
+    {
+     "t": "на́ше",
+     "lemma": "наш",
+     "g": {
+      "pos": "pron",
+      "case": "nom",
+      "gender": "n"
+     },
+     "gloss": "our, ours"
+    },
+    {
+     "t": "всё",
+     "sp": false,
+     "lex": "o:всё",
+     "lemma": "всё",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "»",
+     "sp": false
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "ну́жно",
+     "lex": "o:нужно",
+     "lemma": "ну́жно",
+     "g": {
+      "pos": "pred"
+     }
+    },
+    {
+     "t": "прочита́ть",
+     "lex": "v:прочитать",
+     "lemma": "прочита́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf"
+     }
+    },
+    {
+     "t": "его́",
+     "lex": "o:он",
+     "lemma": "он",
+     "g": {
+      "pos": "pron",
+      "case": "acc"
+     }
+    },
+    {
+     "t": "по-ру́сски",
+     "sp": false,
+     "lex": "o:по-русски",
+     "lemma": "по-ру́сски",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  }
+ ],
+ "questions": [
+  {
+   "id": "nf-c1-02-q1",
+   "type": "choice",
+   "level": "C1",
+   "tags": [
+    "reading"
+   ],
+   "prompt": {
+    "ru": "Каку́ю роль сыгра́л Пу́шкин в исто́рии языка́?",
+    "en": "What role did Pushkin play in the history of the language?",
+    "instruction": "Choose the answer"
+   },
+   "accept": [
+    "Он во мно́гом со́здал совреме́нный литерату́рный язы́к."
+   ],
+   "distractors": [
+    {
+     "ru": "Он написа́л пе́рвый слова́рь.",
+     "error": "reading.detail"
+    },
+    {
+     "ru": "Он запрети́л иностра́нные слова́.",
+     "error": "reading.detail"
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "nf-c1-02-q2",
+   "type": "choice",
+   "level": "C1",
+   "tags": [
+    "reading"
+   ],
+   "prompt": {
+    "ru": "О чём писа́л Пу́шкин?",
+    "en": "What did Pushkin write about?",
+    "instruction": "Choose the answer"
+   },
+   "accept": [
+    "Обо всём: о любви́, об исто́рии, о ска́зках."
+   ],
+   "distractors": [
+    {
+     "ru": "То́лько о любви́.",
+     "error": "reading.detail"
+    },
+    {
+     "ru": "То́лько о войне́.",
+     "error": "reading.detail"
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "nf-c1-02-q3",
+   "type": "choice",
+   "level": "C1",
+   "tags": [
+    "reading"
+   ],
+   "prompt": {
+    "ru": "Ско́лько лет бы́ло Пу́шкину, когда́ он поги́б?",
+    "en": "How old was Pushkin when he died?",
+    "instruction": "Choose the answer"
+   },
+   "accept": [
+    "Три́дцать семь."
+   ],
+   "distractors": [
+    {
+     "ru": "Пятьдеся́т.",
+     "error": "reading.detail"
+    },
+    {
+     "ru": "Два́дцать оди́н.",
+     "error": "reading.detail"
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "nf-c1-02-q4",
+   "type": "choice",
+   "level": "C1",
+   "tags": [
+    "reading"
+   ],
+   "prompt": {
+    "ru": "Почему́ Пу́шкина тру́дно переводи́ть?",
+    "en": "Why is Pushkin hard to translate?",
+    "instruction": "Choose the answer"
+   },
+   "accept": [
+    "В перево́де исчеза́ет му́зыка стиха́."
+   ],
+   "distractors": [
+    {
+     "ru": "Он писа́л на ста́ром языке́.",
+     "error": "reading.detail"
+    },
+    {
+     "ru": "Его́ стихи́ сли́шком дли́нные.",
+     "error": "reading.detail"
+    }
+   ],
+   "source": "handwritten"
+  }
+ ]
+}

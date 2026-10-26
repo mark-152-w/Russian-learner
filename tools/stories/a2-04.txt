@@ -1,0 +1,41 @@
+id: st-a2-04
+kind: story
+level: A2
+series: anya
+chapter: 4
+title: Запи́ска | The note
+characters: А́ня, Ба́рсик, Ни́на
+cliffhanger: Mum rings with news: Anya's little brother wants to come to Moscow.
+---
+У́тром я уви́дела на две́ри запи́ску. | In the morning I saw a note on the door.
+«Ваш кот у меня́. Кварти́ра пять. Ни́на». | "Your cat is at my place. Flat five. Nina."
+
+Кварти́ра пять была́ на пе́рвом этаже́. | Flat five was on the ground floor.
+Дверь откры́ла пожила́я же́нщина. | An elderly woman opened the door.
+— Здра́вствуйте! Я А́ня, из кварти́ры двена́дцать. | "Hello! I'm Anya, from flat twelve."
+— А, здра́вствуй! Проходи́! Твой кот здесь, на ку́хне. | "Oh, hello! Come in! Your cat is here, in the kitchen."
+
+Ба́рсик сиде́л на сту́ле и ел ры́бу. | Barsik was sitting on a chair, eating fish.
+Он посмотре́л на меня́ так, как бу́дто ничего́ не случи́лось. | He looked at me as if nothing had happened.
+— Он пришёл ве́чером, — объясни́ла Ни́на. — Был голо́дный и мо́крый. | "He came in the evening," Nina explained. "He was hungry and wet."
+— Спаси́бо вам большо́е! — сказа́ла я. | "Thank you so much!" I said.
+
+Ни́на пригласи́ла меня́ на чай. | Nina invited me for tea.
+Она́ рассказа́ла, что живёт здесь со́рок лет. | She told me she'd been living here for forty years.
+Ра́ньше она́ рабо́тала учи́тельницей. | She used to work as a teacher.
+У неё есть внук, но он живёт далеко́. | She has a grandson, but he lives far away.
+— Приходи́ ко мне, когда́ хо́чешь, — сказа́ла Ни́на. | "Come and see me whenever you like," said Nina.
+Тепе́рь у меня́ в Москве́ есть два дру́га: Оле́г и Ни́на. | Now I have two friends in Moscow: Oleg and Nina.
+---
+? Где был Ба́рсик? | Where was Barsik?
++ У Ни́ны на ку́хне.
+- В па́рке.
+- В университе́те.
+? Кем ра́ньше рабо́тала Ни́на? | What was Nina's job before?
++ Учи́тельницей.
+- Врачо́м.
+- Продавцо́м.
+? Ско́лько лет Ни́на живёт в э́том до́ме? | How long has Nina lived in this building?
++ Со́рок лет.
+- Пять лет.
+- Двена́дцать лет.

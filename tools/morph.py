@@ -86,11 +86,11 @@ def verify(form: str, lemma: str, pos: str, slot: str):
     if not ps:
         return "unknown", None
     allowed, alts, check_lemma = slot_requirements(pos, slot)
-    lf = fold(lemma)
+    lfs = lemma_keys(lemma, pos)
     for p in ps:
         if p.tag.POS not in allowed:
             continue
-        if check_lemma and p.tag.POS not in ("PRTF", "PRTS") and fold(p.normal_form) != lf:
+        if check_lemma and p.tag.POS not in ("PRTF", "PRTS") and fold(p.normal_form) not in lfs:
             continue
         if "ё" in bare and "ё" not in p.word:
             continue  # a dataset ё the dictionary spells with е (контролём) is an error, not a variant
@@ -98,9 +98,23 @@ def verify(form: str, lemma: str, pos: str, slot: str):
             return "ok", p.word
     if pos == "noun" and slot == "sg_gen":
         for p in ps:
-            if p.tag.POS == "NOUN" and fold(p.normal_form) == lf and {"sing", "gen2"} <= p.tag.grammemes:
+            if p.tag.POS == "NOUN" and fold(p.normal_form) in lfs and {"sing", "gen2"} <= p.tag.grammemes:
                 return "gen2", p.word
     return "mismatch", None
+
+
+@lru_cache(maxsize=None)
+def lemma_keys(lemma: str, pos: str) -> frozenset:
+    """The lemma, plus the normal form pymorphy3 gives the lemma itself when that differs:
+    сча́стье → счастие, де́ньги → деньга. Only parses of the lemma as a dictionary form count."""
+    bare = fold(lemma)
+    keys = {bare}
+    head = {"noun": ("NOUN", {"nomn"}), "name": ("NOUN", {"nomn"}), "verb": ("INFN", set()), "adj": ("ADJF", {"nomn"})}.get(pos)
+    if head:
+        for p in dparses(bare):
+            if p.tag.POS == head[0] and head[1] <= p.tag.grammemes:
+                keys.add(fold(p.normal_form))
+    return frozenset(keys)
 
 
 @lru_cache(maxsize=None)

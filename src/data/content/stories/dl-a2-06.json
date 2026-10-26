@@ -1,0 +1,628 @@
+{
+ "$schema": "../../../../schemas/story.schema.json",
+ "id": "dl-a2-06",
+ "kind": "dialogue",
+ "level": "A2",
+ "title": {
+  "ru": "Приглаше́ние",
+  "en": "An invitation"
+ },
+ "sentences": [
+  {
+   "para": true,
+   "speaker": "Оле́г",
+   "en": "Oleg: Hello, Anya? Hi! What are you doing on Saturday?",
+   "tokens": [
+    {
+     "t": "Алло́",
+     "sp": false,
+     "lex": "o:алло",
+     "lemma": "алло́",
+     "g": {
+      "pos": "intj"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "А́ня",
+     "sp": false,
+     "lemma": "А́ня",
+     "g": {
+      "pos": "name",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "?"
+    },
+    {
+     "t": "Приве́т",
+     "sp": false,
+     "lex": "n:привет",
+     "lemma": "приве́т",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "!"
+    },
+    {
+     "t": "Что",
+     "lex": "o:что",
+     "lemma": "что",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "ты",
+     "lex": "o:ты",
+     "lemma": "ты",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "де́лаешь",
+     "lex": "v:делать",
+     "lemma": "де́лать",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 2,
+      "number": "sg"
+     }
+    },
+    {
+     "t": "в",
+     "lex": "o:в",
+     "lemma": "в",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "суббо́ту",
+     "sp": false,
+     "lex": "n:суббота",
+     "lemma": "суббо́та",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": "?",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "А́ня",
+   "en": "Anya: I don't know yet. Why?",
+   "tokens": [
+    {
+     "t": "Пока́",
+     "lex": "o:пока",
+     "lemma": "пока́",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "не",
+     "lex": "o:не",
+     "lemma": "не",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "зна́ю",
+     "sp": false,
+     "lex": "v:знать",
+     "lemma": "знать",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 1,
+      "number": "sg"
+     }
+    },
+    {
+     "t": "."
+    },
+    {
+     "t": "А",
+     "lex": "o:а",
+     "lemma": "а",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "что",
+     "sp": false,
+     "lex": "o:что",
+     "lemma": "что",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "?",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Оле́г",
+   "en": "Oleg: It's my birthday. Come round in the evening!",
+   "tokens": [
+    {
+     "t": "У",
+     "lex": "o:у",
+     "lemma": "у",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "меня́",
+     "lex": "o:я",
+     "lemma": "я",
+     "g": {
+      "pos": "pron",
+      "case": "gen"
+     }
+    },
+    {
+     "t": "день",
+     "lex": "n:день",
+     "lemma": "день",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "рожде́ния",
+     "sp": false,
+     "lex": "n:рождение",
+     "lemma": "рожде́ние",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "."
+    },
+    {
+     "t": "Приходи́",
+     "lex": "v:приходить",
+     "lemma": "приходи́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "mood": "imp",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "ко",
+     "lex": "o:к",
+     "lemma": "к",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "мне",
+     "lex": "o:я",
+     "lemma": "я",
+     "g": {
+      "pos": "pron",
+      "case": "dat"
+     }
+    },
+    {
+     "t": "ве́чером",
+     "sp": false,
+     "lex": "n:вечер",
+     "lemma": "ве́чер",
+     "g": {
+      "pos": "noun",
+      "case": "ins",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "!",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "А́ня",
+   "en": "Anya: With pleasure! What time?",
+   "tokens": [
+    {
+     "t": "С",
+     "lex": "o:с",
+     "lemma": "с",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "удово́льствием",
+     "sp": false,
+     "lex": "n:удовольствие",
+     "lemma": "удово́льствие",
+     "g": {
+      "pos": "noun",
+      "case": "ins",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "!"
+    },
+    {
+     "t": "Во",
+     "lex": "o:в",
+     "lemma": "в",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "ско́лько",
+     "sp": false,
+     "lex": "o:сколько",
+     "lemma": "ско́лько",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "?",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Оле́г",
+   "en": "Oleg: At seven. Katya and a few other friends will be there.",
+   "tokens": [
+    {
+     "t": "В",
+     "lex": "o:в",
+     "lemma": "в",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "семь",
+     "sp": false,
+     "lex": "o:семь",
+     "lemma": "семь",
+     "g": {
+      "pos": "num",
+      "case": "acc"
+     }
+    },
+    {
+     "t": "."
+    },
+    {
+     "t": "Бу́дут",
+     "lex": "v:быть",
+     "lemma": "быть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "fut",
+      "person": 3,
+      "number": "pl"
+     }
+    },
+    {
+     "t": "Ка́тя",
+     "lemma": "Ка́тя",
+     "g": {
+      "pos": "name",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "и",
+     "lex": "o:и",
+     "lemma": "и",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "ещё",
+     "lex": "o:ещё",
+     "lemma": "ещё",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "не́сколько",
+     "lex": "o:несколько",
+     "lemma": "не́сколько",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "друзе́й",
+     "sp": false,
+     "lex": "n:друг",
+     "lemma": "друг",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "pl"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "А́ня",
+   "en": "Anya: What shall I give you?",
+   "tokens": [
+    {
+     "t": "Что",
+     "lex": "o:что",
+     "lemma": "что",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "тебе́",
+     "lex": "o:ты",
+     "lemma": "ты",
+     "g": {
+      "pos": "pron",
+      "case": "dat"
+     }
+    },
+    {
+     "t": "подари́ть",
+     "sp": false,
+     "lex": "v:подарить",
+     "lemma": "подари́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf"
+     }
+    },
+    {
+     "t": "?",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Оле́г",
+   "en": "Oleg: You don't need to give me anything. Just come!",
+   "tokens": [
+    {
+     "t": "Ничего́",
+     "lex": "o:ничто",
+     "lemma": "ничто́",
+     "g": {
+      "pos": "pron",
+      "case": "gen"
+     }
+    },
+    {
+     "t": "не",
+     "lex": "o:не",
+     "lemma": "не",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "ну́жно",
+     "sp": false,
+     "lex": "o:нужно",
+     "lemma": "ну́жно",
+     "g": {
+      "pos": "pred"
+     }
+    },
+    {
+     "t": "."
+    },
+    {
+     "t": "Про́сто",
+     "lex": "o:просто",
+     "lemma": "про́сто",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "приходи́",
+     "sp": false,
+     "lex": "v:приходить",
+     "lemma": "приходи́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "mood": "imp",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "!",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "А́ня",
+   "en": "Anya: All right. See you on Saturday, then!",
+   "tokens": [
+    {
+     "t": "Хорошо́",
+     "sp": false,
+     "lex": "o:хорошо",
+     "lemma": "хорошо́",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "."
+    },
+    {
+     "t": "Тогда́",
+     "lex": "o:тогда",
+     "lemma": "тогда́",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "до",
+     "lex": "o:до",
+     "lemma": "до",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "суббо́ты",
+     "sp": false,
+     "lex": "n:суббота",
+     "lemma": "суббо́та",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": "!",
+     "sp": false
+    }
+   ]
+  }
+ ],
+ "questions": [
+  {
+   "id": "dl-a2-06-q1",
+   "type": "choice",
+   "level": "A2",
+   "tags": [
+    "listening"
+   ],
+   "prompt": {
+    "ru": "Почему́ Оле́г звони́т А́не?",
+    "en": "Why is Oleg ringing Anya?",
+    "instruction": "Choose the answer"
+   },
+   "accept": [
+    "Он приглаша́ет её на день рожде́ния."
+   ],
+   "distractors": [
+    {
+     "ru": "Он хо́чет пойти́ в кино́.",
+     "error": "reading.detail"
+    },
+    {
+     "ru": "Он заболе́л.",
+     "error": "reading.detail"
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "dl-a2-06-q2",
+   "type": "choice",
+   "level": "A2",
+   "tags": [
+    "listening"
+   ],
+   "prompt": {
+    "ru": "Во ско́лько на́до прийти́?",
+    "en": "What time should she come?",
+    "instruction": "Choose the answer"
+   },
+   "accept": [
+    "В семь."
+   ],
+   "distractors": [
+    {
+     "ru": "В шесть.",
+     "error": "reading.detail"
+    },
+    {
+     "ru": "В во́семь.",
+     "error": "reading.detail"
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "dl-a2-06-q3",
+   "type": "choice",
+   "level": "A2",
+   "tags": [
+    "listening"
+   ],
+   "prompt": {
+    "ru": "Что Оле́г хо́чет в пода́рок?",
+    "en": "What does Oleg want as a present?",
+    "instruction": "Choose the answer"
+   },
+   "accept": [
+    "Ничего́."
+   ],
+   "distractors": [
+    {
+     "ru": "Кни́гу.",
+     "error": "reading.detail"
+    },
+    {
+     "ru": "Цветы́.",
+     "error": "reading.detail"
+    }
+   ],
+   "source": "handwritten"
+  }
+ ]
+}

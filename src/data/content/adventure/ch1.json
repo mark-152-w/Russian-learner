@@ -1,0 +1,159 @@
+{
+ "$schema": "../../../../schemas/adventure.schema.json",
+ "id": "adv-1",
+ "chapter": 1,
+ "level": "A2",
+ "title": {
+  "ru": "Пропа́жа",
+  "en": "The disappearance"
+ },
+ "start": "phone",
+ "cliffhanger": "A note on a cat's collar sends you into the museum garden.",
+ "scenes": {
+  "phone": {
+   "text": "У́тро. Вы пьёте ко́фе, и вдруг звони́т телефо́н. Э́то Ни́на, дире́ктор городско́го музе́я: «Приезжа́йте скоре́е! Пропа́л наш стари́нный самова́р!»",
+   "en": "Morning. You're drinking coffee when the phone rings. It's Nina, the director of the town museum: \"Come quickly! Our antique samovar has disappeared!\"",
+   "choices": [
+    {
+     "text": "«Уже́ е́ду!»",
+     "en": "\"On my way!\"",
+     "to": "taxi"
+    },
+    {
+     "text": "«Сейча́с, то́лько допью́ ко́фе».",
+     "en": "\"In a minute, I'll just finish my coffee.\"",
+     "to": "coffee"
+    }
+   ]
+  },
+  "coffee": {
+   "text": "Вы споко́йно допива́ете ко́фе. Телефо́н звони́т сно́ва и сно́ва. Ка́жется, Ни́на о́чень волну́ется.",
+   "en": "You calmly finish your coffee. The phone rings again and again. Nina seems very worried.",
+   "choices": [
+    {
+     "text": "Е́хать в музе́й",
+     "en": "Go to the museum",
+     "to": "taxi"
+    }
+   ]
+  },
+  "taxi": {
+   "text": "Вы е́дете в музе́й на такси́. Шофёр говори́т: «Э́тот самова́р — гла́вное сокро́вище на́шего го́рода. Ему́ две́сти лет!»",
+   "en": "You take a taxi to the museum. The driver says: \"That samovar is our town's greatest treasure. It's two hundred years old!\"",
+   "choices": [
+    {
+     "text": "Спроси́ть, кто зна́ет о самова́ре",
+     "en": "Ask who knows about the samovar",
+     "to": "driver"
+    },
+    {
+     "text": "Мо́лча смотре́ть в окно́",
+     "en": "Look out of the window in silence",
+     "to": "museum"
+    }
+   ]
+  },
+  "driver": {
+   "text": "«Все зна́ют, — отвеча́ет шофёр. — Неде́лю наза́д в газе́те была́ статья́ о нём. А вчера́ в го́род прие́хал иностра́нец, коллекционе́р».",
+   "en": "\"Everyone knows,\" the driver answers. \"A week ago there was an article about it in the paper. And yesterday a foreigner came to town, a collector.\"",
+   "choices": [
+    {
+     "text": "Поблагодари́ть шофёра",
+     "en": "Thank the driver",
+     "to": "museum",
+     "sets": [
+      "heard_collector"
+     ]
+    }
+   ]
+  },
+  "museum": {
+   "text": "Ни́на ждёт вас у вхо́да. Ря́дом стои́т охра́нник Оле́г. У него́ о́чень уста́лое лицо́.",
+   "en": "Nina is waiting for you at the entrance. Next to her stands the guard, Oleg. He looks very tired.",
+   "choices": [
+    {
+     "text": "Поговори́ть с Ни́ной",
+     "en": "Talk to Nina",
+     "to": "nina"
+    },
+    {
+     "text": "Поговори́ть с Оле́гом",
+     "en": "Talk to Oleg",
+     "to": "oleg"
+    },
+    {
+     "text": "Осмотре́ть зал",
+     "en": "Examine the hall (talk to both first)",
+     "to": "hall",
+     "requires": [
+      "talked_nina",
+      "talked_oleg"
+     ]
+    }
+   ]
+  },
+  "nina": {
+   "text": "«Вчера́ ве́чером самова́р был на ме́сте, — говори́т Ни́на. — Я ушла́ в шесть часо́в. А сего́дня у́тром его́ нет! Две́ри бы́ли закры́ты».",
+   "en": "\"Yesterday evening the samovar was in its place,\" says Nina. \"I left at six. And this morning it's gone! The doors were locked.\"",
+   "choices": [
+    {
+     "text": "Верну́ться",
+     "en": "Go back",
+     "to": "museum",
+     "sets": [
+      "talked_nina"
+     ]
+    }
+   ]
+  },
+  "oleg": {
+   "text": "Оле́г смо́трит в пол. «Я рабо́тал всю ночь. Никто́ не приходи́л. Ну... мо́жет быть, я немно́го спал».",
+   "en": "Oleg looks at the floor. \"I worked all night. Nobody came. Well... maybe I slept a little.\"",
+   "choices": [
+    {
+     "text": "Верну́ться",
+     "en": "Go back",
+     "to": "museum",
+     "sets": [
+      "talked_oleg"
+     ]
+    }
+   ]
+  },
+  "hall": {
+   "text": "В за́ле ти́хо. На столе́, где стоя́л самова́р, то́лько пыль. А на полу́ — следы́. Ма́ленькие, как у ко́шки.",
+   "en": "The hall is quiet. On the table where the samovar stood there's only dust. And on the floor, tracks. Small ones, like a cat's.",
+   "choices": [
+    {
+     "text": "Иска́ть ко́шку",
+     "en": "Look for the cat",
+     "to": "cat"
+    },
+    {
+     "text": "Посмотре́ть в окно́",
+     "en": "Look out of the window",
+     "to": "window"
+    }
+   ]
+  },
+  "window": {
+   "text": "Окно́ откры́то. За окно́м — сад. Здесь мог пройти́ челове́к.",
+   "en": "The window is open. Outside is the garden. Someone could have got through here.",
+   "choices": [
+    {
+     "text": "Иска́ть ко́шку",
+     "en": "Look for the cat",
+     "to": "cat",
+     "sets": [
+      "saw_window"
+     ]
+    }
+   ]
+  },
+  "cat": {
+   "text": "Под столо́м сиди́т ры́жий кот. «Э́то Ба́рсик, наш кот», — говори́т Ни́на. На ше́е у Ба́рсика — запи́ска: «Иди́те в сад».",
+   "en": "A ginger cat is sitting under the table. \"That's Barsik, our cat,\" says Nina. Round Barsik's neck there's a note: \"Go into the garden.\"",
+   "end": true
+  }
+ }
+}

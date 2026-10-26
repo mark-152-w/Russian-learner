@@ -138,7 +138,24 @@ function MasteryLine({ prefixes }: { prefixes: string[] }) {
 export function TrainersHub() {
   return (
     <div className="space-y-3">
-      <h1 className="font-serif text-3xl">Trainers</h1>
+      <h1 className="font-serif text-3xl">Practice</h1>
+      <div className="grid gap-3 sm:grid-cols-2">
+        <Link to="/listening" className="block rounded-xl border-2 border-line bg-paper-2 p-4 transition hover:border-red">
+          <p className="font-bold">Listening and speaking</p>
+          <p className="text-sm text-ink-soft">Dialogues, dictation, ы/и and hard/soft sounds, shadowing.</p>
+          <MasteryLine prefixes={['listening', 'phonetics.']} />
+        </Link>
+        <Link to="/games" className="block rounded-xl border-2 border-red bg-paper-2 p-4 transition hover:border-red sm:col-span-2">
+          <p className="font-bold">Games</p>
+          <p className="text-sm text-ink-soft">The case arcade and the declension crossword (daily puzzle and by topic).</p>
+        </Link>
+        <Link to="/keyboard" className="block rounded-xl border-2 border-line bg-paper-2 p-4 transition hover:border-red">
+          <p className="font-bold">Keyboard</p>
+          <p className="text-sm text-ink-soft">Touch-type the Russian ЙЦУКЕН layout, a few keys at a time.</p>
+          <MasteryLine prefixes={['keyboard']} />
+        </Link>
+      </div>
+      <h2 className="pt-2 font-serif text-2xl">Grammar trainers</h2>
       {TRAINERS.map((t) => (
         <Link key={t.id} to={`/trainer/${t.id}`} className="block">
           <Card className="space-y-2 transition hover:border-red">

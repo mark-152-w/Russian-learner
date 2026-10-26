@@ -1,0 +1,1849 @@
+{
+ "$schema": "../../../../schemas/card.schema.json",
+ "id": "cs-people",
+ "title": {
+  "ru": "Лю́ди",
+  "en": "People"
+ },
+ "bonusXp": 200,
+ "cards": [
+  {
+   "id": "c-pushkin",
+   "name": {
+    "ru": "Пу́шкин",
+    "en": "Alexander Pushkin"
+   },
+   "rarity": "rare",
+   "art": {
+    "icon": "🪶",
+    "hue": 30
+   },
+   "level": "A2",
+   "blurb": {
+    "id": "c-pushkin-blurb",
+    "kind": "card-blurb",
+    "level": "A2",
+    "title": {
+     "ru": "Пу́шкин",
+     "en": "Alexander Pushkin"
+    },
+    "sentences": [
+     {
+      "para": true,
+      "en": "Pushkin is Russia's best-loved poet.",
+      "tokens": [
+       {
+        "t": "Пу́шкин",
+        "lemma": "Пу́шкин",
+        "g": {
+         "pos": "name",
+         "case": "nom",
+         "number": "sg"
+        }
+       },
+       {
+        "t": "—"
+       },
+       {
+        "t": "са́мый",
+        "lex": "a:самый",
+        "lemma": "са́мый",
+        "g": {
+         "pos": "adj",
+         "case": "nom",
+         "number": "sg",
+         "gender": "m"
+        }
+       },
+       {
+        "t": "люби́мый",
+        "lex": "a:любимый",
+        "lemma": "люби́мый",
+        "g": {
+         "pos": "adj",
+         "case": "nom",
+         "number": "sg",
+         "gender": "m"
+        },
+        "rare": true
+       },
+       {
+        "t": "поэ́т",
+        "lex": "n:поэт",
+        "lemma": "поэ́т",
+        "g": {
+         "pos": "noun",
+         "case": "nom",
+         "number": "sg"
+        },
+        "rare": true
+       },
+       {
+        "t": "Росси́и",
+        "sp": false,
+        "lex": "n:Россия",
+        "lemma": "Росси́я",
+        "g": {
+         "pos": "noun",
+         "case": "gen",
+         "number": "sg"
+        },
+        "rare": true
+       },
+       {
+        "t": ".",
+        "sp": false
+       }
+      ]
+     },
+     {
+      "en": "He lived in the nineteenth century and wrote poems, fairy tales and novels.",
+      "tokens": [
+       {
+        "t": "Он",
+        "lex": "o:он",
+        "lemma": "он",
+        "g": {
+         "pos": "pron",
+         "case": "nom"
+        }
+       },
+       {
+        "t": "жил",
+        "lex": "v:жить",
+        "lemma": "жить",
+        "g": {
+         "pos": "verb",
+         "aspect": "impf",
+         "tense": "past",
+         "number": "sg",
+         "gender": "m"
+        }
+       },
+       {
+        "t": "в",
+        "lex": "o:в",
+        "lemma": "в",
+        "g": {
+         "pos": "prep"
+        }
+       },
+       {
+        "t": "девятна́дцатом",
+        "lex": "a:девятнадцатый",
+        "lemma": "девятна́дцатый",
+        "g": {
+         "pos": "adj",
+         "case": "prep",
+         "number": "sg",
+         "gender": "m"
+        },
+        "rare": true
+       },
+       {
+        "t": "ве́ке",
+        "lex": "n:век",
+        "lemma": "век",
+        "g": {
+         "pos": "noun",
+         "case": "prep",
+         "number": "sg"
+        },
+        "rare": true
+       },
+       {
+        "t": "и",
+        "lex": "o:и",
+        "lemma": "и",
+        "g": {
+         "pos": "conj"
+        }
+       },
+       {
+        "t": "писа́л",
+        "lex": "v:писать",
+        "lemma": "писа́ть",
+        "g": {
+         "pos": "verb",
+         "aspect": "impf",
+         "tense": "past",
+         "number": "sg",
+         "gender": "m"
+        }
+       },
+       {
+        "t": "стихи́",
+        "sp": false,
+        "lex": "n:стих",
+        "lemma": "стих",
+        "g": {
+         "pos": "noun",
+         "case": "acc",
+         "number": "pl"
+        },
+        "rare": true
+       },
+       {
+        "t": ","
+       },
+       {
+        "t": "ска́зки",
+        "lex": "n:сказка",
+        "lemma": "ска́зка",
+        "g": {
+         "pos": "noun",
+         "case": "acc",
+         "number": "pl"
+        },
+        "rare": true
+       },
+       {
+        "t": "и",
+        "lex": "o:и",
+        "lemma": "и",
+        "g": {
+         "pos": "conj"
+        }
+       },
+       {
+        "t": "рома́ны",
+        "sp": false,
+        "lex": "n:роман",
+        "lemma": "рома́н",
+        "g": {
+         "pos": "noun",
+         "case": "acc",
+         "number": "pl"
+        }
+       },
+       {
+        "t": ".",
+        "sp": false
+       }
+      ]
+     },
+     {
+      "en": "Russians say: \"Pushkin is our everything.\"",
+      "tokens": [
+       {
+        "t": "Ру́сские",
+        "lex": "a:русский",
+        "lemma": "ру́сский",
+        "g": {
+         "pos": "adj",
+         "case": "nom",
+         "number": "pl"
+        }
+       },
+       {
+        "t": "говоря́т",
+        "sp": false,
+        "lex": "v:говорить",
+        "lemma": "говори́ть",
+        "g": {
+         "pos": "verb",
+         "aspect": "impf",
+         "tense": "pres",
+         "person": 3,
+         "number": "pl"
+        }
+       },
+       {
+        "t": ":"
+       },
+       {
+        "t": "«",
+        "sp": false
+       },
+       {
+        "t": "Пу́шкин",
+        "lemma": "Пу́шкин",
+        "g": {
+         "pos": "name",
+         "case": "nom",
+         "number": "sg"
+        }
+       },
+       {
+        "t": "—"
+       },
+       {
+        "t": "на́ше",
+        "lemma": "наш",
+        "g": {
+         "pos": "pron",
+         "case": "nom",
+         "gender": "n"
+        },
+        "gloss": "our, ours"
+       },
+       {
+        "t": "всё",
+        "sp": false,
+        "lex": "o:всё",
+        "lemma": "всё",
+        "g": {
+         "pos": "part"
+        }
+       },
+       {
+        "t": "»",
+        "sp": false
+       },
+       {
+        "t": ".",
+        "sp": false
+       }
+      ]
+     }
+    ],
+    "questions": []
+   }
+  },
+  {
+   "id": "c-tolstoy",
+   "name": {
+    "ru": "Толсто́й",
+    "en": "Leo Tolstoy"
+   },
+   "rarity": "epic",
+   "art": {
+    "icon": "📖",
+    "hue": 200
+   },
+   "level": "B1",
+   "blurb": {
+    "id": "c-tolstoy-blurb",
+    "kind": "card-blurb",
+    "level": "B1",
+    "title": {
+     "ru": "Толсто́й",
+     "en": "Leo Tolstoy"
+    },
+    "sentences": [
+     {
+      "para": true,
+      "en": "Tolstoy wrote the novel \"War and Peace\", one of the most famous books in the world.",
+      "tokens": [
+       {
+        "t": "Толсто́й",
+        "lemma": "Толсто́й",
+        "g": {
+         "pos": "name",
+         "case": "nom",
+         "number": "sg"
+        }
+       },
+       {
+        "t": "написа́л",
+        "lex": "v:написать",
+        "lemma": "написа́ть",
+        "g": {
+         "pos": "verb",
+         "aspect": "pf",
+         "tense": "past",
+         "number": "sg",
+         "gender": "m"
+        }
+       },
+       {
+        "t": "рома́н",
+        "lex": "n:роман",
+        "lemma": "рома́н",
+        "g": {
+         "pos": "noun",
+         "case": "acc",
+         "number": "sg"
+        }
+       },
+       {
+        "t": "«",
+        "sp": false
+       },
+       {
+        "t": "Война́",
+        "lex": "n:война",
+        "lemma": "война́",
+        "g": {
+         "pos": "noun",
+         "case": "nom",
+         "number": "sg"
+        }
+       },
+       {
+        "t": "и",
+        "lex": "o:и",
+        "lemma": "и",
+        "g": {
+         "pos": "conj"
+        }
+       },
+       {
+        "t": "мир",
+        "sp": false,
+        "lex": "n:мир",
+        "lemma": "мир",
+        "g": {
+         "pos": "noun",
+         "case": "nom",
+         "number": "sg"
+        }
+       },
+       {
+        "t": "»"
+       },
+       {
+        "t": "—"
+       },
+       {
+        "t": "одну́",
+        "lex": "o:один",
+        "lemma": "оди́н",
+        "g": {
+         "pos": "num",
+         "case": "acc",
+         "gender": "f"
+        }
+       },
+       {
+        "t": "из",
+        "lex": "o:из",
+        "lemma": "из",
+        "g": {
+         "pos": "prep"
+        }
+       },
+       {
+        "t": "са́мых",
+        "lex": "a:самый",
+        "lemma": "са́мый",
+        "g": {
+         "pos": "adj",
+         "case": "gen",
+         "number": "pl"
+        }
+       },
+       {
+        "t": "изве́стных",
+        "lex": "a:известный",
+        "lemma": "изве́стный",
+        "g": {
+         "pos": "adj",
+         "case": "gen",
+         "number": "pl"
+        }
+       },
+       {
+        "t": "книг",
+        "lex": "n:книга",
+        "lemma": "кни́га",
+        "g": {
+         "pos": "noun",
+         "case": "gen",
+         "number": "pl"
+        }
+       },
+       {
+        "t": "в",
+        "lex": "o:в",
+        "lemma": "в",
+        "g": {
+         "pos": "prep"
+        }
+       },
+       {
+        "t": "ми́ре",
+        "sp": false,
+        "lex": "n:мир",
+        "lemma": "мир",
+        "g": {
+         "pos": "noun",
+         "case": "prep",
+         "number": "sg"
+        }
+       },
+       {
+        "t": ".",
+        "sp": false
+       }
+      ]
+     },
+     {
+      "en": "The novel has a great many characters, and it takes a long time to read.",
+      "tokens": [
+       {
+        "t": "В",
+        "lex": "o:в",
+        "lemma": "в",
+        "g": {
+         "pos": "prep"
+        }
+       },
+       {
+        "t": "рома́не",
+        "lex": "n:роман",
+        "lemma": "рома́н",
+        "g": {
+         "pos": "noun",
+         "case": "prep",
+         "number": "sg"
+        }
+       },
+       {
+        "t": "о́чень",
+        "lex": "o:очень",
+        "lemma": "о́чень",
+        "g": {
+         "pos": "adv"
+        }
+       },
+       {
+        "t": "мно́го",
+        "lex": "o:много",
+        "lemma": "мно́го",
+        "g": {
+         "pos": "adv"
+        }
+       },
+       {
+        "t": "персона́жей",
+        "sp": false,
+        "lex": "n:персонаж",
+        "lemma": "персона́ж",
+        "g": {
+         "pos": "noun",
+         "case": "gen",
+         "number": "pl"
+        }
+       },
+       {
+        "t": ","
+       },
+       {
+        "t": "и",
+        "lex": "o:и",
+        "lemma": "и",
+        "g": {
+         "pos": "conj"
+        }
+       },
+       {
+        "t": "чита́ть",
+        "lex": "v:читать",
+        "lemma": "чита́ть",
+        "g": {
+         "pos": "verb",
+         "aspect": "impf"
+        }
+       },
+       {
+        "t": "его́",
+        "lex": "o:он",
+        "lemma": "он",
+        "g": {
+         "pos": "pron",
+         "case": "acc"
+        }
+       },
+       {
+        "t": "на́до",
+        "lex": "o:надо",
+        "lemma": "на́до",
+        "g": {
+         "pos": "pred"
+        }
+       },
+       {
+        "t": "до́лго",
+        "sp": false,
+        "lex": "o:долго",
+        "lemma": "до́лго",
+        "g": {
+         "pos": "adv"
+        }
+       },
+       {
+        "t": ".",
+        "sp": false
+       }
+      ]
+     }
+    ],
+    "questions": []
+   }
+  },
+  {
+   "id": "c-dostoevsky",
+   "name": {
+    "ru": "Достое́вский",
+    "en": "Fyodor Dostoevsky"
+   },
+   "rarity": "epic",
+   "art": {
+    "icon": "🕯️",
+    "hue": 260
+   },
+   "level": "B1",
+   "blurb": {
+    "id": "c-dostoevsky-blurb",
+    "kind": "card-blurb",
+    "level": "B1",
+    "title": {
+     "ru": "Достое́вский",
+     "en": "Fyodor Dostoevsky"
+    },
+    "sentences": [
+     {
+      "para": true,
+      "en": "Dostoevsky wrote about hard questions: what good and evil are, whether God exists.",
+      "tokens": [
+       {
+        "t": "Достое́вский",
+        "lemma": "Достое́вский",
+        "g": {
+         "pos": "name",
+         "case": "nom",
+         "number": "sg"
+        }
+       },
+       {
+        "t": "писа́л",
+        "lex": "v:писать",
+        "lemma": "писа́ть",
+        "g": {
+         "pos": "verb",
+         "aspect": "impf",
+         "tense": "past",
+         "number": "sg",
+         "gender": "m"
+        }
+       },
+       {
+        "t": "о",
+        "lex": "o:о",
+        "lemma": "о",
+        "g": {
+         "pos": "prep"
+        }
+       },
+       {
+        "t": "тру́дных",
+        "lex": "a:трудный",
+        "lemma": "тру́дный",
+        "g": {
+         "pos": "adj",
+         "case": "prep",
+         "number": "pl"
+        }
+       },
+       {
+        "t": "вопро́сах",
+        "sp": false,
+        "lex": "n:вопрос",
+        "lemma": "вопро́с",
+        "g": {
+         "pos": "noun",
+         "case": "prep",
+         "number": "pl"
+        }
+       },
+       {
+        "t": ":"
+       },
+       {
+        "t": "что",
+        "lex": "o:что",
+        "lemma": "что",
+        "g": {
+         "pos": "pron",
+         "case": "nom"
+        }
+       },
+       {
+        "t": "тако́е",
+        "lex": "a:такой",
+        "lemma": "тако́й",
+        "g": {
+         "pos": "adj",
+         "case": "nom",
+         "number": "sg",
+         "gender": "n"
+        }
+       },
+       {
+        "t": "добро́",
+        "lex": "n:добро",
+        "lemma": "добро́",
+        "g": {
+         "pos": "noun",
+         "case": "nom",
+         "number": "sg"
+        }
+       },
+       {
+        "t": "и",
+        "lex": "o:и",
+        "lemma": "и",
+        "g": {
+         "pos": "conj"
+        }
+       },
+       {
+        "t": "зло",
+        "sp": false,
+        "lex": "n:зло",
+        "lemma": "зло",
+        "g": {
+         "pos": "noun",
+         "case": "nom",
+         "number": "sg"
+        }
+       },
+       {
+        "t": ","
+       },
+       {
+        "t": "есть",
+        "lex": "v:быть",
+        "lemma": "быть",
+        "g": {
+         "pos": "verb",
+         "aspect": "impf",
+         "tense": "pres",
+         "person": 3,
+         "number": "sg"
+        }
+       },
+       {
+        "t": "ли",
+        "lex": "o:ли",
+        "lemma": "ли",
+        "g": {
+         "pos": "part"
+        }
+       },
+       {
+        "t": "Бог",
+        "sp": false,
+        "lex": "n:бог",
+        "lemma": "бог",
+        "g": {
+         "pos": "noun",
+         "case": "nom",
+         "number": "sg"
+        }
+       },
+       {
+        "t": ".",
+        "sp": false
+       }
+      ]
+     },
+     {
+      "en": "His novel \"Crime and Punishment\" is read all over the world.",
+      "tokens": [
+       {
+        "t": "Его́",
+        "lex": "o:он",
+        "lemma": "он",
+        "g": {
+         "pos": "pron",
+         "case": "acc"
+        }
+       },
+       {
+        "t": "рома́н",
+        "lex": "n:роман",
+        "lemma": "рома́н",
+        "g": {
+         "pos": "noun",
+         "case": "nom",
+         "number": "sg"
+        }
+       },
+       {
+        "t": "«",
+        "sp": false
+       },
+       {
+        "t": "Преступле́ние",
+        "lex": "n:преступление",
+        "lemma": "преступле́ние",
+        "g": {
+         "pos": "noun",
+         "case": "nom",
+         "number": "sg"
+        }
+       },
+       {
+        "t": "и",
+        "lex": "o:и",
+        "lemma": "и",
+        "g": {
+         "pos": "conj"
+        }
+       },
+       {
+        "t": "наказа́ние",
+        "sp": false,
+        "lex": "n:наказание",
+        "lemma": "наказа́ние",
+        "g": {
+         "pos": "noun",
+         "case": "nom",
+         "number": "sg"
+        }
+       },
+       {
+        "t": "»"
+       },
+       {
+        "t": "чита́ют",
+        "lex": "v:читать",
+        "lemma": "чита́ть",
+        "g": {
+         "pos": "verb",
+         "aspect": "impf",
+         "tense": "pres",
+         "person": 3,
+         "number": "pl"
+        }
+       },
+       {
+        "t": "во",
+        "lex": "o:в",
+        "lemma": "в",
+        "g": {
+         "pos": "prep"
+        }
+       },
+       {
+        "t": "всём",
+        "lex": "a:весь",
+        "lemma": "весь",
+        "g": {
+         "pos": "adj",
+         "case": "prep",
+         "number": "sg",
+         "gender": "m"
+        }
+       },
+       {
+        "t": "ми́ре",
+        "sp": false,
+        "lex": "n:мир",
+        "lemma": "мир",
+        "g": {
+         "pos": "noun",
+         "case": "prep",
+         "number": "sg"
+        }
+       },
+       {
+        "t": ".",
+        "sp": false
+       }
+      ]
+     }
+    ],
+    "questions": []
+   }
+  },
+  {
+   "id": "c-gagarin",
+   "name": {
+    "ru": "Гага́рин",
+    "en": "Yuri Gagarin"
+   },
+   "rarity": "legendary",
+   "art": {
+    "icon": "🚀",
+    "hue": 220
+   },
+   "level": "A2",
+   "blurb": {
+    "id": "c-gagarin-blurb",
+    "kind": "card-blurb",
+    "level": "A2",
+    "title": {
+     "ru": "Гага́рин",
+     "en": "Yuri Gagarin"
+    },
+    "sentences": [
+     {
+      "para": true,
+      "en": "In 1961 Yuri Gagarin became the first person to fly into space.",
+      "tokens": [
+       {
+        "t": "В",
+        "lex": "o:в",
+        "lemma": "в",
+        "g": {
+         "pos": "prep"
+        }
+       },
+       {
+        "t": "1961"
+       },
+       {
+        "t": "году́",
+        "lex": "n:год",
+        "lemma": "год",
+        "g": {
+         "pos": "noun",
+         "case": "loc2",
+         "number": "sg"
+        }
+       },
+       {
+        "t": "Ю́рий",
+        "lemma": "Ю́рий",
+        "g": {
+         "pos": "name",
+         "case": "nom",
+         "number": "sg"
+        }
+       },
+       {
+        "t": "Гага́рин",
+        "lemma": "Гага́рин",
+        "g": {
+         "pos": "name",
+         "case": "nom",
+         "number": "sg"
+        }
+       },
+       {
+        "t": "пе́рвым",
+        "lex": "a:первый",
+        "lemma": "пе́рвый",
+        "g": {
+         "pos": "adj",
+         "case": "ins",
+         "number": "sg",
+         "gender": "m"
+        }
+       },
+       {
+        "t": "полете́л",
+        "lex": "v:полететь",
+        "lemma": "полете́ть",
+        "g": {
+         "pos": "verb",
+         "aspect": "pf",
+         "tense": "past",
+         "number": "sg",
+         "gender": "m"
+        },
+        "rare": true
+       },
+       {
+        "t": "в",
+        "lex": "o:в",
+        "lemma": "в",
+        "g": {
+         "pos": "prep"
+        }
+       },
+       {
+        "t": "ко́смос",
+        "sp": false,
+        "lex": "n:космос",
+        "lemma": "ко́смос",
+        "g": {
+         "pos": "noun",
+         "case": "acc",
+         "number": "sg"
+        },
+        "rare": true
+       },
+       {
+        "t": ".",
+        "sp": false
+       }
+      ]
+     },
+     {
+      "en": "Before the launch he said: \"Off we go!\"",
+      "tokens": [
+       {
+        "t": "Пе́ред",
+        "lex": "o:перед",
+        "lemma": "пе́ред",
+        "g": {
+         "pos": "prep"
+        }
+       },
+       {
+        "t": "ста́ртом",
+        "lex": "n:старт",
+        "lemma": "старт",
+        "g": {
+         "pos": "noun",
+         "case": "ins",
+         "number": "sg"
+        },
+        "rare": true
+       },
+       {
+        "t": "он",
+        "lex": "o:он",
+        "lemma": "он",
+        "g": {
+         "pos": "pron",
+         "case": "nom"
+        }
+       },
+       {
+        "t": "сказа́л",
+        "sp": false,
+        "lex": "v:сказать",
+        "lemma": "сказа́ть",
+        "g": {
+         "pos": "verb",
+         "aspect": "pf",
+         "tense": "past",
+         "number": "sg",
+         "gender": "m"
+        }
+       },
+       {
+        "t": ":"
+       },
+       {
+        "t": "«",
+        "sp": false
+       },
+       {
+        "t": "Пое́хали",
+        "sp": false,
+        "lex": "v:поехать",
+        "lemma": "пое́хать",
+        "g": {
+         "pos": "verb",
+         "aspect": "pf",
+         "tense": "past",
+         "number": "pl"
+        }
+       },
+       {
+        "t": "!",
+        "sp": false
+       },
+       {
+        "t": "»",
+        "sp": false
+       }
+      ]
+     },
+     {
+      "en": "Now the twelfth of April is a holiday.",
+      "tokens": [
+       {
+        "t": "Тепе́рь",
+        "lex": "o:теперь",
+        "lemma": "тепе́рь",
+        "g": {
+         "pos": "adv"
+        }
+       },
+       {
+        "t": "двена́дцатое",
+        "lex": "a:двенадцатый",
+        "lemma": "двена́дцатый",
+        "g": {
+         "pos": "adj",
+         "case": "nom",
+         "number": "sg",
+         "gender": "n"
+        },
+        "rare": true
+       },
+       {
+        "t": "апре́ля",
+        "lex": "n:апрель",
+        "lemma": "апре́ль",
+        "g": {
+         "pos": "noun",
+         "case": "gen",
+         "number": "sg"
+        },
+        "rare": true
+       },
+       {
+        "t": "—"
+       },
+       {
+        "t": "пра́здник",
+        "sp": false,
+        "lex": "n:праздник",
+        "lemma": "пра́здник",
+        "g": {
+         "pos": "noun",
+         "case": "nom",
+         "number": "sg"
+        }
+       },
+       {
+        "t": ".",
+        "sp": false
+       }
+      ]
+     }
+    ],
+    "questions": []
+   }
+  },
+  {
+   "id": "c-tchaikovsky",
+   "name": {
+    "ru": "Чайко́вский",
+    "en": "Pyotr Tchaikovsky"
+   },
+   "rarity": "rare",
+   "art": {
+    "icon": "🎻",
+    "hue": 330
+   },
+   "level": "A2",
+   "blurb": {
+    "id": "c-tchaikovsky-blurb",
+    "kind": "card-blurb",
+    "level": "A2",
+    "title": {
+     "ru": "Чайко́вский",
+     "en": "Pyotr Tchaikovsky"
+    },
+    "sentences": [
+     {
+      "para": true,
+      "en": "Tchaikovsky is a Russian composer.",
+      "tokens": [
+       {
+        "t": "Чайко́вский",
+        "lemma": "Чайко́вский",
+        "g": {
+         "pos": "name",
+         "case": "nom",
+         "number": "sg"
+        }
+       },
+       {
+        "t": "—"
+       },
+       {
+        "t": "ру́сский",
+        "lex": "a:русский",
+        "lemma": "ру́сский",
+        "g": {
+         "pos": "adj",
+         "case": "nom",
+         "number": "sg",
+         "gender": "m"
+        }
+       },
+       {
+        "t": "компози́тор",
+        "sp": false,
+        "lex": "n:композитор",
+        "lemma": "компози́тор",
+        "g": {
+         "pos": "noun",
+         "case": "nom",
+         "number": "sg"
+        },
+        "rare": true
+       },
+       {
+        "t": ".",
+        "sp": false
+       }
+      ]
+     },
+     {
+      "en": "His ballet \"Swan Lake\" is known all over the world.",
+      "tokens": [
+       {
+        "t": "Его́",
+        "lex": "o:он",
+        "lemma": "он",
+        "g": {
+         "pos": "pron",
+         "case": "acc"
+        }
+       },
+       {
+        "t": "бале́т",
+        "lex": "n:балет",
+        "lemma": "бале́т",
+        "g": {
+         "pos": "noun",
+         "case": "nom",
+         "number": "sg"
+        },
+        "rare": true
+       },
+       {
+        "t": "«",
+        "sp": false
+       },
+       {
+        "t": "Лебеди́ное",
+        "lex": "a:лебединый",
+        "lemma": "лебеди́ный",
+        "g": {
+         "pos": "adj",
+         "case": "nom",
+         "number": "sg",
+         "gender": "n"
+        },
+        "rare": true
+       },
+       {
+        "t": "о́зеро",
+        "sp": false,
+        "lex": "n:озеро",
+        "lemma": "о́зеро",
+        "g": {
+         "pos": "noun",
+         "case": "nom",
+         "number": "sg"
+        },
+        "rare": true
+       },
+       {
+        "t": "»"
+       },
+       {
+        "t": "зна́ют",
+        "lex": "v:знать",
+        "lemma": "знать",
+        "g": {
+         "pos": "verb",
+         "aspect": "impf",
+         "tense": "pres",
+         "person": 3,
+         "number": "pl"
+        }
+       },
+       {
+        "t": "во",
+        "lex": "o:в",
+        "lemma": "в",
+        "g": {
+         "pos": "prep"
+        }
+       },
+       {
+        "t": "всём",
+        "lex": "a:весь",
+        "lemma": "весь",
+        "g": {
+         "pos": "adj",
+         "case": "prep",
+         "number": "sg",
+         "gender": "m"
+        }
+       },
+       {
+        "t": "ми́ре",
+        "sp": false,
+        "lex": "n:мир",
+        "lemma": "мир",
+        "g": {
+         "pos": "noun",
+         "case": "prep",
+         "number": "sg"
+        }
+       },
+       {
+        "t": ".",
+        "sp": false
+       }
+      ]
+     }
+    ],
+    "questions": []
+   }
+  },
+  {
+   "id": "c-mendeleev",
+   "name": {
+    "ru": "Менделе́ев",
+    "en": "Dmitri Mendeleev"
+   },
+   "rarity": "rare",
+   "art": {
+    "icon": "⚗️",
+    "hue": 160
+   },
+   "level": "B1",
+   "blurb": {
+    "id": "c-mendeleev-blurb",
+    "kind": "card-blurb",
+    "level": "B1",
+    "title": {
+     "ru": "Менделе́ев",
+     "en": "Dmitri Mendeleev"
+    },
+    "sentences": [
+     {
+      "para": true,
+      "en": "Mendeleev was a chemist.",
+      "tokens": [
+       {
+        "t": "Менделе́ев",
+        "lemma": "Менделе́ев",
+        "g": {
+         "pos": "name",
+         "case": "nom",
+         "number": "sg"
+        }
+       },
+       {
+        "t": "был",
+        "lex": "v:быть",
+        "lemma": "быть",
+        "g": {
+         "pos": "verb",
+         "aspect": "impf",
+         "tense": "past",
+         "number": "sg",
+         "gender": "m"
+        }
+       },
+       {
+        "t": "хи́миком",
+        "sp": false,
+        "lex": "n:химик",
+        "lemma": "хи́мик",
+        "g": {
+         "pos": "noun",
+         "case": "ins",
+         "number": "sg"
+        },
+        "rare": true
+       },
+       {
+        "t": ".",
+        "sp": false
+       }
+      ]
+     },
+     {
+      "en": "He created the table of chemical elements.",
+      "tokens": [
+       {
+        "t": "Он",
+        "lex": "o:он",
+        "lemma": "он",
+        "g": {
+         "pos": "pron",
+         "case": "nom"
+        }
+       },
+       {
+        "t": "со́здал",
+        "lex": "v:создать",
+        "lemma": "созда́ть",
+        "g": {
+         "pos": "verb",
+         "aspect": "pf",
+         "tense": "past",
+         "number": "sg",
+         "gender": "m"
+        }
+       },
+       {
+        "t": "табли́цу",
+        "lex": "n:таблица",
+        "lemma": "табли́ца",
+        "g": {
+         "pos": "noun",
+         "case": "acc",
+         "number": "sg"
+        },
+        "rare": true
+       },
+       {
+        "t": "хими́ческих",
+        "lex": "a:химический",
+        "lemma": "хими́ческий",
+        "g": {
+         "pos": "adj",
+         "case": "gen",
+         "number": "pl"
+        },
+        "rare": true
+       },
+       {
+        "t": "элеме́нтов",
+        "sp": false,
+        "lex": "n:элемент",
+        "lemma": "элеме́нт",
+        "g": {
+         "pos": "noun",
+         "case": "gen",
+         "number": "pl"
+        },
+        "rare": true
+       },
+       {
+        "t": ".",
+        "sp": false
+       }
+      ]
+     },
+     {
+      "en": "They say he saw the table in a dream.",
+      "tokens": [
+       {
+        "t": "Говоря́т",
+        "sp": false,
+        "lex": "v:говорить",
+        "lemma": "говори́ть",
+        "g": {
+         "pos": "verb",
+         "aspect": "impf",
+         "tense": "pres",
+         "person": 3,
+         "number": "pl"
+        }
+       },
+       {
+        "t": ","
+       },
+       {
+        "t": "что",
+        "lex": "o:что",
+        "lemma": "что",
+        "g": {
+         "pos": "conj"
+        }
+       },
+       {
+        "t": "он",
+        "lex": "o:он",
+        "lemma": "он",
+        "g": {
+         "pos": "pron",
+         "case": "nom"
+        }
+       },
+       {
+        "t": "уви́дел",
+        "lex": "v:увидеть",
+        "lemma": "уви́деть",
+        "g": {
+         "pos": "verb",
+         "aspect": "pf",
+         "tense": "past",
+         "number": "sg",
+         "gender": "m"
+        }
+       },
+       {
+        "t": "э́ту",
+        "lex": "a:этот",
+        "lemma": "э́тот",
+        "g": {
+         "pos": "adj",
+         "case": "acc",
+         "number": "sg",
+         "gender": "f"
+        }
+       },
+       {
+        "t": "табли́цу",
+        "lex": "n:таблица",
+        "lemma": "табли́ца",
+        "g": {
+         "pos": "noun",
+         "case": "acc",
+         "number": "sg"
+        },
+        "rare": true
+       },
+       {
+        "t": "во",
+        "lex": "o:в",
+        "lemma": "в",
+        "g": {
+         "pos": "prep"
+        }
+       },
+       {
+        "t": "сне",
+        "sp": false,
+        "lex": "n:сон",
+        "lemma": "сон",
+        "g": {
+         "pos": "noun",
+         "case": "prep",
+         "number": "sg"
+        }
+       },
+       {
+        "t": ".",
+        "sp": false
+       }
+      ]
+     }
+    ],
+    "questions": []
+   }
+  },
+  {
+   "id": "c-tereshkova",
+   "name": {
+    "ru": "Терешко́ва",
+    "en": "Valentina Tereshkova"
+   },
+   "rarity": "epic",
+   "art": {
+    "icon": "🛰️",
+    "hue": 280
+   },
+   "level": "A2",
+   "blurb": {
+    "id": "c-tereshkova-blurb",
+    "kind": "card-blurb",
+    "level": "A2",
+    "title": {
+     "ru": "Терешко́ва",
+     "en": "Valentina Tereshkova"
+    },
+    "sentences": [
+     {
+      "para": true,
+      "en": "In 1963 Tereshkova became the first woman in space.",
+      "tokens": [
+       {
+        "t": "В",
+        "lex": "o:в",
+        "lemma": "в",
+        "g": {
+         "pos": "prep"
+        }
+       },
+       {
+        "t": "1963"
+       },
+       {
+        "t": "году́",
+        "lex": "n:год",
+        "lemma": "год",
+        "g": {
+         "pos": "noun",
+         "case": "loc2",
+         "number": "sg"
+        }
+       },
+       {
+        "t": "Терешко́ва",
+        "lemma": "Терешко́ва",
+        "g": {
+         "pos": "name",
+         "case": "nom",
+         "number": "sg"
+        }
+       },
+       {
+        "t": "ста́ла",
+        "lex": "v:стать",
+        "lemma": "стать",
+        "g": {
+         "pos": "verb",
+         "aspect": "pf",
+         "tense": "past",
+         "number": "sg",
+         "gender": "f"
+        }
+       },
+       {
+        "t": "пе́рвой",
+        "lex": "a:первый",
+        "lemma": "пе́рвый",
+        "g": {
+         "pos": "adj",
+         "case": "ins",
+         "number": "sg",
+         "gender": "f"
+        }
+       },
+       {
+        "t": "же́нщиной",
+        "lex": "n:женщина",
+        "lemma": "же́нщина",
+        "g": {
+         "pos": "noun",
+         "case": "ins",
+         "number": "sg"
+        }
+       },
+       {
+        "t": "в",
+        "lex": "o:в",
+        "lemma": "в",
+        "g": {
+         "pos": "prep"
+        }
+       },
+       {
+        "t": "ко́смосе",
+        "sp": false,
+        "lex": "n:космос",
+        "lemma": "ко́смос",
+        "g": {
+         "pos": "noun",
+         "case": "prep",
+         "number": "sg"
+        },
+        "rare": true
+       },
+       {
+        "t": ".",
+        "sp": false
+       }
+      ]
+     },
+     {
+      "en": "She spent almost three days there.",
+      "tokens": [
+       {
+        "t": "Она́",
+        "lex": "o:она",
+        "lemma": "она́",
+        "g": {
+         "pos": "pron",
+         "case": "nom"
+        }
+       },
+       {
+        "t": "провела́",
+        "lex": "v:провести",
+        "lemma": "провести́",
+        "g": {
+         "pos": "verb",
+         "aspect": "pf",
+         "tense": "past",
+         "number": "sg",
+         "gender": "f"
+        }
+       },
+       {
+        "t": "там",
+        "lex": "o:там",
+        "lemma": "там",
+        "g": {
+         "pos": "adv"
+        }
+       },
+       {
+        "t": "почти́",
+        "lex": "o:почти",
+        "lemma": "почти́",
+        "g": {
+         "pos": "adv"
+        }
+       },
+       {
+        "t": "три",
+        "lex": "o:три",
+        "lemma": "три",
+        "g": {
+         "pos": "num",
+         "case": "acc"
+        }
+       },
+       {
+        "t": "дня",
+        "sp": false,
+        "lex": "n:день",
+        "lemma": "день",
+        "g": {
+         "pos": "noun",
+         "case": "gen",
+         "number": "sg"
+        }
+       },
+       {
+        "t": ".",
+        "sp": false
+       }
+      ]
+     }
+    ],
+    "questions": []
+   }
+  },
+  {
+   "id": "c-shostakovich",
+   "name": {
+    "ru": "Шостако́вич",
+    "en": "Dmitri Shostakovich"
+   },
+   "rarity": "common",
+   "art": {
+    "icon": "🎼",
+    "hue": 0
+   },
+   "level": "B1",
+   "blurb": {
+    "id": "c-shostakovich-blurb",
+    "kind": "card-blurb",
+    "level": "B1",
+    "title": {
+     "ru": "Шостако́вич",
+     "en": "Dmitri Shostakovich"
+    },
+    "sentences": [
+     {
+      "para": true,
+      "en": "Shostakovich wrote fifteen symphonies.",
+      "tokens": [
+       {
+        "t": "Шостако́вич",
+        "lemma": "Шостако́вич",
+        "g": {
+         "pos": "name",
+         "case": "nom",
+         "number": "sg"
+        }
+       },
+       {
+        "t": "написа́л",
+        "lex": "v:написать",
+        "lemma": "написа́ть",
+        "g": {
+         "pos": "verb",
+         "aspect": "pf",
+         "tense": "past",
+         "number": "sg",
+         "gender": "m"
+        }
+       },
+       {
+        "t": "пятна́дцать",
+        "lex": "n:пятнадцать",
+        "lemma": "пятна́дцать",
+        "g": {
+         "pos": "num",
+         "case": "acc"
+        },
+        "rare": true
+       },
+       {
+        "t": "симфо́ний",
+        "sp": false,
+        "lex": "n:симфония",
+        "lemma": "симфо́ния",
+        "g": {
+         "pos": "noun",
+         "case": "gen",
+         "number": "pl"
+        },
+        "rare": true
+       },
+       {
+        "t": ".",
+        "sp": false
+       }
+      ]
+     },
+     {
+      "en": "He began writing his Seventh Symphony during the war.",
+      "tokens": [
+       {
+        "t": "Седьму́ю",
+        "lex": "a:седьмой",
+        "lemma": "седьмо́й",
+        "g": {
+         "pos": "adj",
+         "case": "acc",
+         "number": "sg",
+         "gender": "f"
+        }
+       },
+       {
+        "t": "симфо́нию",
+        "lex": "n:симфония",
+        "lemma": "симфо́ния",
+        "g": {
+         "pos": "noun",
+         "case": "acc",
+         "number": "sg"
+        },
+        "rare": true
+       },
+       {
+        "t": "он",
+        "lex": "o:он",
+        "lemma": "он",
+        "g": {
+         "pos": "pron",
+         "case": "nom"
+        }
+       },
+       {
+        "t": "на́чал",
+        "lex": "v:начать",
+        "lemma": "нача́ть",
+        "g": {
+         "pos": "verb",
+         "aspect": "pf",
+         "tense": "past",
+         "number": "sg",
+         "gender": "m"
+        }
+       },
+       {
+        "t": "писа́ть",
+        "lex": "v:писать",
+        "lemma": "писа́ть",
+        "g": {
+         "pos": "verb",
+         "aspect": "impf"
+        }
+       },
+       {
+        "t": "во",
+        "lex": "o:в",
+        "lemma": "в",
+        "g": {
+         "pos": "prep"
+        }
+       },
+       {
+        "t": "вре́мя",
+        "lex": "n:время",
+        "lemma": "вре́мя",
+        "g": {
+         "pos": "noun",
+         "case": "acc",
+         "number": "sg"
+        }
+       },
+       {
+        "t": "войны́",
+        "sp": false,
+        "lex": "n:война",
+        "lemma": "война́",
+        "g": {
+         "pos": "noun",
+         "case": "gen",
+         "number": "sg"
+        }
+       },
+       {
+        "t": ".",
+        "sp": false
+       }
+      ]
+     }
+    ],
+    "questions": []
+   }
+  }
+ ]
+}

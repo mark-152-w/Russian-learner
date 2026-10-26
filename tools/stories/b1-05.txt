@@ -1,0 +1,48 @@
+id: st-b1-05
+kind: story
+level: B1
+series: anya2
+chapter: 5
+title: Исто́рия Ни́ны | Nina's story
+characters: Ни́на, А́ня, Ка́тя, Оле́г
+cliffhanger: Katya has an idea: what if Yuri is still alive?
+---
+— Мне бы́ло восемна́дцать лет, — начала́ Ни́на. — Мы с Ю́рием учи́лись в одно́й шко́ле. | "I was eighteen," Nina began. "Yuri and I went to the same school."
+Он был весёлым, уме́л игра́ть на гита́ре и знал наизу́сть всего́ Пу́шкина. | "He was cheerful, he could play the guitar and he knew all of Pushkin by heart."
+
+По́сле шко́лы Ю́рий уе́хал в Сиби́рь. | After school Yuri went to Siberia.
+Тогда́ там стро́или электроста́нцию, и молоды́е лю́ди е́хали туда́ со всей страны́. | They were building a power station there then, and young people went there from all over the country.
+Он писа́л мне ка́ждую неде́лю. | He wrote to me every week.
+Я ждала́ его́ пи́сем, как пра́здника. | I waited for his letters like a holiday.
+
+А пото́м пи́сьма переста́ли приходи́ть. | And then the letters stopped coming.
+Я написа́ла ему́ де́сять раз, но не получи́ла ни одного́ отве́та. | I wrote to him ten times but didn't get a single reply.
+Мать сказа́ла, что он, наве́рное, встре́тил другу́ю де́вушку. | My mother said that he had probably met another girl.
+Я пла́кала всё ле́то. | I cried all summer.
+
+Че́рез три го́да я вы́шла за́муж. | Three years later I got married.
+Муж у меня́ был хоро́ший челове́к, мы прожи́ли вме́сте со́рок лет. | My husband was a good man; we lived together for forty years.
+Но пи́сьма Ю́рия я так и не смогла́ вы́бросить. | But I never could bring myself to throw away Yuri's letters.
+
+Ни́на замолча́ла. | Nina fell silent.
+Ка́тя рассма́тривала конве́рты. | Katya was examining the envelopes.
+— Посмотри́те на да́ты, — вдруг сказа́ла она́. — После́днее письмо́ пришло́ в а́вгусте. Но здесь есть ещё одно́, его́ не откры́ли! | "Look at the dates," she suddenly said. "The last letter was sent in August. But there's one more here, and it hasn't been opened!"
+Ни́на взяла́ конве́рт дрожа́щими рука́ми. | Nina took the envelope with trembling hands.
+— Мать... Она́ спря́тала его́ от меня́. | "Mother… She hid it from me."
+---
+? Где учи́лись Ни́на и Ю́рий? | Where did Nina and Yuri study?
++ В одно́й шко́ле.
+- В университе́те.
+- В Сиби́ри.
+? Заче́м Ю́рий уе́хал в Сиби́рь? | Why did Yuri go to Siberia?
++ Стро́ить электроста́нцию.
+- Учи́ться.
+- Рабо́тать в шко́ле.
+? Что сказа́ла мать Ни́ны? | What did Nina's mother say?
++ Что Ю́рий встре́тил другу́ю де́вушку.
+- Что Ю́рий заболе́л.
+- Что Ю́рий ско́ро вернётся.
+? Что нашла́ Ка́тя? | What did Katya find?
++ Неоткры́тое письмо́.
+- Фотогра́фию Ю́рия.
+- Ключ от сундука́.

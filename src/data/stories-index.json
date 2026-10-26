@@ -1,0 +1,706 @@
+[
+ {
+  "id": "st-a2-01",
+  "kind": "story",
+  "level": "A2",
+  "series": "anya",
+  "chapter": 1,
+  "title": {
+   "ru": "Но́вый го́род",
+   "en": "A new city"
+  },
+  "words": 115,
+  "questions": 4
+ },
+ {
+  "id": "st-a2-02",
+  "kind": "story",
+  "level": "A2",
+  "series": "anya",
+  "chapter": 2,
+  "title": {
+   "ru": "Пе́рвый день",
+   "en": "The first day"
+  },
+  "words": 118,
+  "questions": 4
+ },
+ {
+  "id": "st-a2-03",
+  "kind": "story",
+  "level": "A2",
+  "series": "anya",
+  "chapter": 3,
+  "title": {
+   "ru": "Где Ба́рсик?",
+   "en": "Where's Barsik?"
+  },
+  "words": 90,
+  "questions": 3
+ },
+ {
+  "id": "st-a2-04",
+  "kind": "story",
+  "level": "A2",
+  "series": "anya",
+  "chapter": 4,
+  "title": {
+   "ru": "Запи́ска",
+   "en": "The note"
+  },
+  "words": 110,
+  "questions": 3
+ },
+ {
+  "id": "st-a2-05",
+  "kind": "story",
+  "level": "A2",
+  "series": "anya",
+  "chapter": 5,
+  "title": {
+   "ru": "В метро́",
+   "en": "In the metro"
+  },
+  "words": 110,
+  "questions": 3
+ },
+ {
+  "id": "st-a2-06",
+  "kind": "story",
+  "level": "A2",
+  "series": "anya",
+  "chapter": 6,
+  "title": {
+   "ru": "Звоно́к из Каза́ни",
+   "en": "A call from Kazan"
+  },
+  "words": 111,
+  "questions": 3
+ },
+ {
+  "id": "st-a2-07",
+  "kind": "story",
+  "level": "A2",
+  "series": "anya",
+  "chapter": 7,
+  "title": {
+   "ru": "Ми́ша в Москве́",
+   "en": "Misha in Moscow"
+  },
+  "words": 104,
+  "questions": 3
+ },
+ {
+  "id": "st-a2-08",
+  "kind": "story",
+  "level": "A2",
+  "series": "anya",
+  "chapter": 8,
+  "title": {
+   "ru": "Пла́н Ми́ши",
+   "en": "Misha's plan"
+  },
+  "words": 88,
+  "questions": 3
+ },
+ {
+  "id": "st-a2-09",
+  "kind": "story",
+  "level": "A2",
+  "series": "anya",
+  "chapter": 9,
+  "title": {
+   "ru": "Потеря́лся",
+   "en": "Lost"
+  },
+  "words": 92,
+  "questions": 3
+ },
+ {
+  "id": "st-a2-10",
+  "kind": "story",
+  "level": "A2",
+  "series": "anya",
+  "chapter": 10,
+  "title": {
+   "ru": "До свида́ния, Москва́!",
+   "en": "Goodbye, Moscow!"
+  },
+  "words": 107,
+  "questions": 3
+ },
+ {
+  "id": "dl-a2-01",
+  "kind": "dialogue",
+  "level": "A2",
+  "title": {
+   "ru": "В магази́не",
+   "en": "In the shop"
+  },
+  "words": 37,
+  "questions": 3
+ },
+ {
+  "id": "dl-a2-02",
+  "kind": "dialogue",
+  "level": "A2",
+  "title": {
+   "ru": "В кафе́",
+   "en": "In the café"
+  },
+  "words": 45,
+  "questions": 3
+ },
+ {
+  "id": "dl-a2-03",
+  "kind": "dialogue",
+  "level": "A2",
+  "title": {
+   "ru": "Как пройти́?",
+   "en": "How do I get there?"
+  },
+  "words": 39,
+  "questions": 3
+ },
+ {
+  "id": "dl-a2-04",
+  "kind": "dialogue",
+  "level": "A2",
+  "title": {
+   "ru": "Биле́т на по́езд",
+   "en": "A train ticket"
+  },
+  "words": 46,
+  "questions": 3
+ },
+ {
+  "id": "dl-a2-05",
+  "kind": "dialogue",
+  "level": "A2",
+  "title": {
+   "ru": "У врача́",
+   "en": "At the doctor's"
+  },
+  "words": 50,
+  "questions": 3
+ },
+ {
+  "id": "dl-a2-06",
+  "kind": "dialogue",
+  "level": "A2",
+  "title": {
+   "ru": "Приглаше́ние",
+   "en": "An invitation"
+  },
+  "words": 45,
+  "questions": 3
+ },
+ {
+  "id": "dl-a2-07",
+  "kind": "dialogue",
+  "level": "A2",
+  "title": {
+   "ru": "В гости́нице",
+   "en": "At the hotel"
+  },
+  "words": 49,
+  "questions": 3
+ },
+ {
+  "id": "dl-a2-08",
+  "kind": "dialogue",
+  "level": "A2",
+  "title": {
+   "ru": "На ры́нке",
+   "en": "At the market"
+  },
+  "words": 40,
+  "questions": 3
+ },
+ {
+  "id": "st-b1-01",
+  "kind": "story",
+  "level": "B1",
+  "series": "anya2",
+  "chapter": 1,
+  "title": {
+   "ru": "Экза́мен",
+   "en": "The exam"
+  },
+  "words": 142,
+  "questions": 4
+ },
+ {
+  "id": "st-b1-02",
+  "kind": "story",
+  "level": "B1",
+  "series": "anya2",
+  "chapter": 2,
+  "title": {
+   "ru": "Рабо́та",
+   "en": "The job"
+  },
+  "words": 145,
+  "questions": 4
+ },
+ {
+  "id": "st-b1-03",
+  "kind": "story",
+  "level": "B1",
+  "series": "anya2",
+  "chapter": 3,
+  "title": {
+   "ru": "На да́чу!",
+   "en": "Off to the dacha!"
+  },
+  "words": 160,
+  "questions": 4
+ },
+ {
+  "id": "st-b1-04",
+  "kind": "story",
+  "level": "B1",
+  "series": "anya2",
+  "chapter": 4,
+  "title": {
+   "ru": "Сунду́к на чердаке́",
+   "en": "The chest in the attic"
+  },
+  "words": 138,
+  "questions": 4
+ },
+ {
+  "id": "st-b1-05",
+  "kind": "story",
+  "level": "B1",
+  "series": "anya2",
+  "chapter": 5,
+  "title": {
+   "ru": "Исто́рия Ни́ны",
+   "en": "Nina's story"
+  },
+  "words": 143,
+  "questions": 4
+ },
+ {
+  "id": "st-b1-06",
+  "kind": "story",
+  "level": "B1",
+  "series": "anya2",
+  "chapter": 6,
+  "title": {
+   "ru": "Неоткры́тое письмо́",
+   "en": "The unopened letter"
+  },
+  "words": 140,
+  "questions": 3
+ },
+ {
+  "id": "st-b1-07",
+  "kind": "story",
+  "level": "B1",
+  "series": "anya2",
+  "chapter": 7,
+  "title": {
+   "ru": "По́иски",
+   "en": "The search"
+  },
+  "words": 123,
+  "questions": 4
+ },
+ {
+  "id": "st-b1-08",
+  "kind": "story",
+  "level": "B1",
+  "series": "anya2",
+  "chapter": 8,
+  "title": {
+   "ru": "Разгово́р с де́душкой",
+   "en": "A talk with Grandpa"
+  },
+  "words": 115,
+  "questions": 3
+ },
+ {
+  "id": "st-b1-09",
+  "kind": "story",
+  "level": "B1",
+  "series": "anya2",
+  "chapter": 9,
+  "title": {
+   "ru": "Отве́т",
+   "en": "The answer"
+  },
+  "words": 121,
+  "questions": 3
+ },
+ {
+  "id": "st-b1-10",
+  "kind": "story",
+  "level": "B1",
+  "series": "anya2",
+  "chapter": 10,
+  "title": {
+   "ru": "Встре́ча на вокза́ле",
+   "en": "A meeting at the station"
+  },
+  "words": 137,
+  "questions": 4
+ },
+ {
+  "id": "dl-b1-01",
+  "kind": "dialogue",
+  "level": "B1",
+  "title": {
+   "ru": "В такси́",
+   "en": "In a taxi"
+  },
+  "words": 65,
+  "questions": 3
+ },
+ {
+  "id": "dl-b1-02",
+  "kind": "dialogue",
+  "level": "B1",
+  "title": {
+   "ru": "В апте́ке",
+   "en": "At the chemist's"
+  },
+  "words": 51,
+  "questions": 3
+ },
+ {
+  "id": "dl-b1-03",
+  "kind": "dialogue",
+  "level": "B1",
+  "title": {
+   "ru": "Кварти́ра",
+   "en": "The flat"
+  },
+  "words": 59,
+  "questions": 3
+ },
+ {
+  "id": "dl-b1-04",
+  "kind": "dialogue",
+  "level": "B1",
+  "title": {
+   "ru": "Шу́мные сосе́ди",
+   "en": "Noisy neighbours"
+  },
+  "words": 63,
+  "questions": 3
+ },
+ {
+  "id": "dl-b1-05",
+  "kind": "dialogue",
+  "level": "B1",
+  "title": {
+   "ru": "Собесе́дование",
+   "en": "The job interview"
+  },
+  "words": 72,
+  "questions": 3
+ },
+ {
+  "id": "dl-b1-06",
+  "kind": "dialogue",
+  "level": "B1",
+  "title": {
+   "ru": "Счёт, пожа́луйста",
+   "en": "The bill, please"
+  },
+  "words": 45,
+  "questions": 3
+ },
+ {
+  "id": "dl-b1-07",
+  "kind": "dialogue",
+  "level": "B1",
+  "title": {
+   "ru": "Пропа́л чемода́н",
+   "en": "A missing suitcase"
+  },
+  "words": 58,
+  "questions": 3
+ },
+ {
+  "id": "dl-b1-08",
+  "kind": "dialogue",
+  "level": "B1",
+  "title": {
+   "ru": "Что посмотре́ть?",
+   "en": "What shall we watch?"
+  },
+  "words": 57,
+  "questions": 3
+ },
+ {
+  "id": "st-b2-06",
+  "kind": "story",
+  "level": "B2",
+  "title": {
+   "ru": "Соба́ка на платфо́рме",
+   "en": "The dog on the platform"
+  },
+  "words": 169,
+  "questions": 4
+ },
+ {
+  "id": "st-b2-08",
+  "kind": "story",
+  "level": "B2",
+  "title": {
+   "ru": "Уро́к исто́рии",
+   "en": "A history lesson"
+  },
+  "words": 170,
+  "questions": 4
+ },
+ {
+  "id": "st-b2-07",
+  "kind": "story",
+  "level": "B2",
+  "series": "katya",
+  "chapter": 1,
+  "title": {
+   "ru": "Пе́рвая статья́",
+   "en": "The first article"
+  },
+  "words": 151,
+  "questions": 4
+ },
+ {
+  "id": "dl-b2-01",
+  "kind": "dialogue",
+  "level": "B2",
+  "title": {
+   "ru": "Интервью́",
+   "en": "The interview"
+  },
+  "words": 96,
+  "questions": 3
+ },
+ {
+  "id": "dl-b2-02",
+  "kind": "dialogue",
+  "level": "B2",
+  "title": {
+   "ru": "Возвра́т",
+   "en": "A refund"
+  },
+  "words": 81,
+  "questions": 3
+ },
+ {
+  "id": "dl-b2-03",
+  "kind": "dialogue",
+  "level": "B2",
+  "title": {
+   "ru": "Ты и́ли вы?",
+   "en": "Ty or vy?"
+  },
+  "words": 89,
+  "questions": 3
+ },
+ {
+  "id": "dl-b2-04",
+  "kind": "dialogue",
+  "level": "B2",
+  "title": {
+   "ru": "Обсужда́ем кни́гу",
+   "en": "Discussing a book"
+  },
+  "words": 72,
+  "questions": 3
+ },
+ {
+  "id": "nf-b2-01",
+  "kind": "nonfiction",
+  "level": "B2",
+  "title": {
+   "ru": "Ру́сская ба́ня",
+   "en": "The Russian bathhouse"
+  },
+  "words": 172,
+  "questions": 4
+ },
+ {
+  "id": "nf-b2-02",
+  "kind": "nonfiction",
+  "level": "B2",
+  "title": {
+   "ru": "Го́род Петра́",
+   "en": "Peter's city"
+  },
+  "words": 173,
+  "questions": 4
+ },
+ {
+  "id": "nf-b2-03",
+  "kind": "nonfiction",
+  "level": "B2",
+  "title": {
+   "ru": "«Пое́хали!»",
+   "en": "\"Let's go!\""
+  },
+  "words": 187,
+  "questions": 4
+ },
+ {
+  "id": "nf-b2-04",
+  "kind": "nonfiction",
+  "level": "B2",
+  "title": {
+   "ru": "Чай с самова́ра",
+   "en": "Tea from the samovar"
+  },
+  "words": 163,
+  "questions": 4
+ },
+ {
+  "id": "nf-b2-05",
+  "kind": "nonfiction",
+  "level": "B2",
+  "title": {
+   "ru": "Метро́ как музе́й",
+   "en": "The metro as a museum"
+  },
+  "words": 143,
+  "questions": 4
+ },
+ {
+  "id": "nf-b2-09",
+  "kind": "nonfiction",
+  "level": "B2",
+  "title": {
+   "ru": "Ты и́ли вы?",
+   "en": "Ty or vy?"
+  },
+  "words": 161,
+  "questions": 4
+ },
+ {
+  "id": "nf-b2-10",
+  "kind": "nonfiction",
+  "level": "B2",
+  "title": {
+   "ru": "Да́ча",
+   "en": "The dacha"
+  },
+  "words": 149,
+  "questions": 4
+ },
+ {
+  "id": "st-c1-03",
+  "kind": "story",
+  "level": "C1",
+  "title": {
+   "ru": "Попу́тчик",
+   "en": "The fellow passenger"
+  },
+  "words": 209,
+  "questions": 4
+ },
+ {
+  "id": "st-c1-08",
+  "kind": "story",
+  "level": "C1",
+  "title": {
+   "ru": "Чужа́я фотогра́фия",
+   "en": "Someone else's photograph"
+  },
+  "words": 233,
+  "questions": 4
+ },
+ {
+  "id": "st-c1-07",
+  "kind": "story",
+  "level": "C1",
+  "series": "anya3",
+  "chapter": 1,
+  "title": {
+   "ru": "Пять лет спустя́",
+   "en": "Five years later"
+  },
+  "words": 240,
+  "questions": 4
+ },
+ {
+  "id": "nf-c1-01",
+  "kind": "nonfiction",
+  "level": "C1",
+  "title": {
+   "ru": "Байка́л",
+   "en": "Lake Baikal"
+  },
+  "words": 227,
+  "questions": 4
+ },
+ {
+  "id": "nf-c1-02",
+  "kind": "nonfiction",
+  "level": "C1",
+  "title": {
+   "ru": "«Пу́шкин — на́ше всё»",
+   "en": "\"Pushkin is our everything\""
+  },
+  "words": 210,
+  "questions": 4
+ },
+ {
+  "id": "nf-c1-04",
+  "kind": "nonfiction",
+  "level": "C1",
+  "title": {
+   "ru": "Са́мая дли́нная желе́зная доро́га",
+   "en": "The longest railway"
+  },
+  "words": 175,
+  "questions": 4
+ },
+ {
+  "id": "nf-c1-05",
+  "kind": "nonfiction",
+  "level": "C1",
+  "title": {
+   "ru": "Разгово́ры на ку́хне",
+   "en": "Kitchen conversations"
+  },
+  "words": 166,
+  "questions": 3
+ },
+ {
+  "id": "nf-c1-06",
+  "kind": "nonfiction",
+  "level": "C1",
+  "title": {
+   "ru": "Девятьсо́т дней",
+   "en": "Nine hundred days"
+  },
+  "words": 220,
+  "questions": 4
+ },
+ {
+  "id": "nf-c1-09",
+  "kind": "nonfiction",
+  "level": "C1",
+  "title": {
+   "ru": "Почему́ ру́сские не улыба́ются?",
+   "en": "Why don't Russians smile?"
+  },
+  "words": 151,
+  "questions": 4
+ },
+ {
+  "id": "nf-c1-10",
+  "kind": "nonfiction",
+  "level": "C1",
+  "title": {
+   "ru": "Тру́дный язы́к",
+   "en": "A difficult language"
+  },
+  "words": 205,
+  "questions": 3
+ }
+]

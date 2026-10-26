@@ -1,0 +1,843 @@
+{
+ "$schema": "../../../../schemas/story.schema.json",
+ "id": "dl-b1-04",
+ "kind": "dialogue",
+ "level": "B1",
+ "title": {
+  "ru": "Шу́мные сосе́ди",
+  "en": "Noisy neighbours"
+ },
+ "sentences": [
+  {
+   "para": true,
+   "speaker": "Ни́на",
+   "en": "Nina: Good evening. I'm your neighbour from downstairs. Sorry to bother you.",
+   "tokens": [
+    {
+     "t": "До́брый",
+     "lex": "a:добрый",
+     "lemma": "до́брый",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "ве́чер",
+     "sp": false,
+     "lex": "n:вечер",
+     "lemma": "ве́чер",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "."
+    },
+    {
+     "t": "Я",
+     "lex": "o:я",
+     "lemma": "я",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "ва́ша",
+     "lemma": "ваш",
+     "g": {
+      "pos": "pron",
+      "case": "nom",
+      "gender": "f"
+     },
+     "gloss": "your, yours (plural or polite)"
+    },
+    {
+     "t": "сосе́дка",
+     "lex": "n:соседка",
+     "lemma": "сосе́дка",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": "сни́зу",
+     "sp": false,
+     "lex": "o:снизу",
+     "lemma": "сни́зу",
+     "g": {
+      "pos": "adv"
+     },
+     "rare": true
+    },
+    {
+     "t": "."
+    },
+    {
+     "t": "Извини́те",
+     "sp": false,
+     "lex": "v:извинить",
+     "lemma": "извини́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "mood": "imp",
+      "number": "pl"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "что",
+     "lex": "o:что",
+     "lemma": "что",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "беспоко́ю",
+     "sp": false,
+     "lex": "v:беспокоить",
+     "lemma": "беспоко́ить",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 1,
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Сосе́д",
+   "en": "Neighbour: Hello. Has something happened?",
+   "tokens": [
+    {
+     "t": "Здра́вствуйте",
+     "sp": false,
+     "lex": "o:здравствуйте",
+     "lemma": "здра́вствуйте",
+     "g": {
+      "pos": "intj"
+     }
+    },
+    {
+     "t": "."
+    },
+    {
+     "t": "Что́-то",
+     "lex": "o:что-то",
+     "lemma": "что́-то",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "случи́лось",
+     "sp": false,
+     "lex": "v:случиться",
+     "lemma": "случи́ться",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "n"
+     }
+    },
+    {
+     "t": "?",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Ни́на",
+   "en": "Nina: You have very loud music every evening. It's already eleven o'clock and I can't get to sleep.",
+   "tokens": [
+    {
+     "t": "У",
+     "lex": "o:у",
+     "lemma": "у",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "вас",
+     "lex": "o:вы",
+     "lemma": "вы",
+     "g": {
+      "pos": "pron",
+      "case": "gen"
+     }
+    },
+    {
+     "t": "ка́ждый",
+     "lex": "a:каждый",
+     "lemma": "ка́ждый",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "ве́чер",
+     "lex": "n:вечер",
+     "lemma": "ве́чер",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "о́чень",
+     "lex": "o:очень",
+     "lemma": "о́чень",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "гро́мкая",
+     "lex": "a:громкий",
+     "lemma": "гро́мкий",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "му́зыка",
+     "sp": false,
+     "lex": "n:музыка",
+     "lemma": "му́зыка",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "."
+    },
+    {
+     "t": "Уже́",
+     "lex": "o:уже",
+     "lemma": "уже́",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "оди́ннадцать",
+     "lemma": "оди́ннадцать",
+     "g": {
+      "pos": "num",
+      "case": "nom"
+     },
+     "gloss": "eleven"
+    },
+    {
+     "t": "часо́в",
+     "sp": false,
+     "lex": "n:час",
+     "lemma": "час",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "pl"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "а",
+     "lex": "o:а",
+     "lemma": "а",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "я",
+     "lex": "o:я",
+     "lemma": "я",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "не",
+     "lex": "o:не",
+     "lemma": "не",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "могу́",
+     "lex": "v:мочь",
+     "lemma": "мочь",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 1,
+      "number": "sg"
+     }
+    },
+    {
+     "t": "усну́ть",
+     "sp": false,
+     "lex": "v:уснуть",
+     "lemma": "усну́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Сосе́д",
+   "en": "Neighbour: Oh, I'm so sorry! I didn't think you could hear it so well.",
+   "tokens": [
+    {
+     "t": "Ой",
+     "sp": false,
+     "lex": "o:ой",
+     "lemma": "ой",
+     "g": {
+      "pos": "intj"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "извини́те",
+     "sp": false,
+     "lex": "v:извинить",
+     "lemma": "извини́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "mood": "imp",
+      "number": "pl"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "пожа́луйста",
+     "sp": false,
+     "lex": "o:пожалуйста",
+     "lemma": "пожа́луйста",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "!"
+    },
+    {
+     "t": "Я",
+     "lex": "o:я",
+     "lemma": "я",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "не",
+     "lex": "o:не",
+     "lemma": "не",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "ду́мал",
+     "sp": false,
+     "lex": "v:думать",
+     "lemma": "ду́мать",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "что",
+     "lex": "o:что",
+     "lemma": "что",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "так",
+     "lex": "o:так",
+     "lemma": "так",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "хорошо́",
+     "lex": "o:хорошо",
+     "lemma": "хорошо́",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "слы́шно",
+     "sp": false,
+     "lex": "o:слышно",
+     "lemma": "слы́шно",
+     "g": {
+      "pos": "adv"
+     },
+     "rare": true
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Ни́на",
+   "en": "Nina: The walls in our building are thin. I can even hear you singing.",
+   "tokens": [
+    {
+     "t": "В",
+     "lex": "o:в",
+     "lemma": "в",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "на́шем",
+     "lemma": "наш",
+     "g": {
+      "pos": "pron",
+      "case": "prep",
+      "gender": "m"
+     },
+     "gloss": "our, ours"
+    },
+    {
+     "t": "до́ме",
+     "lex": "n:дом",
+     "lemma": "дом",
+     "g": {
+      "pos": "noun",
+      "case": "prep",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "сте́ны",
+     "lex": "n:стена",
+     "lemma": "стена́",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "то́нкие",
+     "sp": false,
+     "lex": "a:тонкий",
+     "lemma": "то́нкий",
+     "g": {
+      "pos": "adj",
+      "case": "acc",
+      "number": "pl"
+     },
+     "rare": true
+    },
+    {
+     "t": "."
+    },
+    {
+     "t": "Я",
+     "lex": "o:я",
+     "lemma": "я",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "слы́шу",
+     "lex": "v:слышать",
+     "lemma": "слы́шать",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 1,
+      "number": "sg"
+     }
+    },
+    {
+     "t": "да́же",
+     "sp": false,
+     "lex": "o:даже",
+     "lemma": "да́же",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "как",
+     "lemma": "как",
+     "g": {
+      "pos": "conj"
+     },
+     "gloss": "how; as, like"
+    },
+    {
+     "t": "вы",
+     "lex": "o:вы",
+     "lemma": "вы",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "поёте",
+     "sp": false,
+     "lex": "v:петь",
+     "lemma": "петь",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 2,
+      "number": "pl"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Сосе́д",
+   "en": "Neighbour: Really? How embarrassing… I'll switch the music off at ten.",
+   "tokens": [
+    {
+     "t": "Пра́вда",
+     "sp": false,
+     "lex": "n:правда",
+     "lemma": "пра́вда",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "?"
+    },
+    {
+     "t": "Как",
+     "lemma": "как",
+     "g": {
+      "pos": "adv"
+     },
+     "gloss": "how; as, like"
+    },
+    {
+     "t": "неудо́бно",
+     "sp": false,
+     "lex": "o:неудобно",
+     "lemma": "неудо́бно",
+     "g": {
+      "pos": "adv"
+     },
+     "rare": true
+    },
+    {
+     "t": ".",
+     "sp": false
+    },
+    {
+     "t": ".",
+     "sp": false
+    },
+    {
+     "t": "."
+    },
+    {
+     "t": "Я",
+     "lex": "o:я",
+     "lemma": "я",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "бу́ду",
+     "lex": "v:быть",
+     "lemma": "быть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "fut",
+      "person": 1,
+      "number": "sg"
+     }
+    },
+    {
+     "t": "выключа́ть",
+     "lex": "v:выключать",
+     "lemma": "выключа́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf"
+     },
+     "rare": true
+    },
+    {
+     "t": "му́зыку",
+     "lex": "n:музыка",
+     "lemma": "му́зыка",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "в",
+     "lex": "o:в",
+     "lemma": "в",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "де́сять",
+     "sp": false,
+     "lex": "o:десять",
+     "lemma": "де́сять",
+     "g": {
+      "pos": "num",
+      "case": "acc"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Ни́на",
+   "en": "Nina: Thank you. And by the way, you don't sing badly.",
+   "tokens": [
+    {
+     "t": "Спаси́бо",
+     "sp": false,
+     "lex": "o:спасибо",
+     "lemma": "спаси́бо",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "."
+    },
+    {
+     "t": "А",
+     "lex": "o:а",
+     "lemma": "а",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "поёте",
+     "lex": "v:петь",
+     "lemma": "петь",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 2,
+      "number": "pl"
+     }
+    },
+    {
+     "t": "вы",
+     "sp": false,
+     "lex": "o:вы",
+     "lemma": "вы",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "кста́ти",
+     "sp": false,
+     "lex": "o:кстати",
+     "lemma": "кста́ти",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "непло́хо",
+     "sp": false,
+     "lex": "o:неплохо",
+     "lemma": "непло́хо",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  }
+ ],
+ "questions": [
+  {
+   "id": "dl-b1-04-q1",
+   "type": "choice",
+   "level": "B1",
+   "tags": [
+    "listening"
+   ],
+   "prompt": {
+    "ru": "Почему́ Ни́на пришла́ к сосе́ду?",
+    "en": "Why did Nina come to the neighbour?",
+    "instruction": "Choose the answer"
+   },
+   "accept": [
+    "У него́ гро́мкая му́зыка."
+   ],
+   "distractors": [
+    {
+     "ru": "Она́ хо́чет пригласи́ть его́ в го́сти.",
+     "error": "reading.detail"
+    },
+    {
+     "ru": "У неё слома́лся свет.",
+     "error": "reading.detail"
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "dl-b1-04-q2",
+   "type": "choice",
+   "level": "B1",
+   "tags": [
+    "listening"
+   ],
+   "prompt": {
+    "ru": "Ско́лько вре́мени, когда́ она́ пришла́?",
+    "en": "What time is it when she came?",
+    "instruction": "Choose the answer"
+   },
+   "accept": [
+    "Оди́ннадцать часо́в."
+   ],
+   "distractors": [
+    {
+     "ru": "Де́сять часо́в.",
+     "error": "reading.detail"
+    },
+    {
+     "ru": "Двена́дцать часо́в.",
+     "error": "reading.detail"
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "dl-b1-04-q3",
+   "type": "choice",
+   "level": "B1",
+   "tags": [
+    "listening"
+   ],
+   "prompt": {
+    "ru": "Что пообеща́л сосе́д?",
+    "en": "What did the neighbour promise?",
+    "instruction": "Choose the answer"
+   },
+   "accept": [
+    "Выключа́ть му́зыку в де́сять."
+   ],
+   "distractors": [
+    {
+     "ru": "Перее́хать.",
+     "error": "reading.detail"
+    },
+    {
+     "ru": "Пе́ть ти́ше.",
+     "error": "reading.detail"
+    }
+   ],
+   "source": "handwritten"
+  }
+ ]
+}

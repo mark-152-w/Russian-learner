@@ -1,0 +1,787 @@
+{
+ "$schema": "../../../../schemas/story.schema.json",
+ "id": "dl-b1-03",
+ "kind": "dialogue",
+ "level": "B1",
+ "title": {
+  "ru": "Кварти́ра",
+  "en": "The flat"
+ },
+ "sentences": [
+  {
+   "para": true,
+   "speaker": "Хозя́йка",
+   "en": "Landlady: Here, come in. This is the living room, and the bedroom is over there.",
+   "tokens": [
+    {
+     "t": "Вот",
+     "sp": false,
+     "lex": "o:вот",
+     "lemma": "вот",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "проходи́те",
+     "sp": false,
+     "lex": "v:проходить",
+     "lemma": "проходи́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "mood": "imp",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "."
+    },
+    {
+     "t": "Э́то",
+     "lex": "a:этот",
+     "lemma": "э́тот",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "n"
+     }
+    },
+    {
+     "t": "гости́ная",
+     "sp": false,
+     "lex": "n:гостиная",
+     "lemma": "гости́ная",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "а",
+     "lex": "o:а",
+     "lemma": "а",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "там",
+     "lex": "o:там",
+     "lemma": "там",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "спа́льня",
+     "sp": false,
+     "lex": "n:спальня",
+     "lemma": "спа́льня",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Студе́нт",
+   "en": "Student: It's a bright flat! And how much is it a month?",
+   "tokens": [
+    {
+     "t": "Све́тлая",
+     "lex": "a:светлый",
+     "lemma": "све́тлый",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "f"
+     },
+     "rare": true
+    },
+    {
+     "t": "кварти́ра",
+     "sp": false,
+     "lex": "n:квартира",
+     "lemma": "кварти́ра",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "!"
+    },
+    {
+     "t": "А",
+     "lex": "o:а",
+     "lemma": "а",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "ско́лько",
+     "lex": "o:сколько",
+     "lemma": "ско́лько",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "сто́ит",
+     "lex": "v:стоить",
+     "lemma": "сто́ить",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "sg"
+     }
+    },
+    {
+     "t": "в",
+     "lex": "o:в",
+     "lemma": "в",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "ме́сяц",
+     "sp": false,
+     "lex": "n:месяц",
+     "lemma": "ме́сяц",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "?",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Хозя́йка",
+   "en": "Landlady: Thirty thousand plus utilities.",
+   "tokens": [
+    {
+     "t": "Три́дцать",
+     "lex": "n:тридцать",
+     "lemma": "три́дцать",
+     "g": {
+      "pos": "num",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "ты́сяч",
+     "lex": "n:тысяча",
+     "lemma": "ты́сяча",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "плюс",
+     "lex": "n:плюс",
+     "lemma": "плюс",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "коммуна́льные",
+     "lex": "a:коммунальный",
+     "lemma": "коммуна́льный",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "pl"
+     },
+     "rare": true
+    },
+    {
+     "t": "услу́ги",
+     "sp": false,
+     "lex": "n:услуга",
+     "lemma": "услу́га",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "pl"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Студе́нт",
+   "en": "Student: Are pets allowed? I have a cat.",
+   "tokens": [
+    {
+     "t": "А",
+     "lex": "o:а",
+     "lemma": "а",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "мо́жно",
+     "lex": "o:можно",
+     "lemma": "мо́жно",
+     "g": {
+      "pos": "pred"
+     }
+    },
+    {
+     "t": "с",
+     "lex": "o:с",
+     "lemma": "с",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "живо́тными",
+     "sp": false,
+     "lex": "n:животное",
+     "lemma": "живо́тное",
+     "g": {
+      "pos": "noun",
+      "case": "ins",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "?"
+    },
+    {
+     "t": "У",
+     "lex": "o:у",
+     "lemma": "у",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "меня́",
+     "lex": "o:я",
+     "lemma": "я",
+     "g": {
+      "pos": "pron",
+      "case": "gen"
+     }
+    },
+    {
+     "t": "ко́шка",
+     "sp": false,
+     "lex": "n:кошка",
+     "lemma": "ко́шка",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Хозя́йка",
+   "en": "Landlady: A cat's fine if it's calm. But I wouldn't allow a dog.",
+   "tokens": [
+    {
+     "t": "Ко́шку",
+     "lex": "n:кошка",
+     "lemma": "ко́шка",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "мо́жно",
+     "sp": false,
+     "lex": "o:можно",
+     "lemma": "мо́жно",
+     "g": {
+      "pos": "pred"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "е́сли",
+     "lex": "o:если",
+     "lemma": "е́сли",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "она́",
+     "lex": "o:она",
+     "lemma": "она́",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "споко́йная",
+     "sp": false,
+     "lex": "a:спокойный",
+     "lemma": "споко́йный",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "."
+    },
+    {
+     "t": "А",
+     "lex": "o:а",
+     "lemma": "а",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "вот",
+     "lex": "o:вот",
+     "lemma": "вот",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "соба́ку",
+     "lex": "n:собака",
+     "lemma": "соба́ка",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "я",
+     "lex": "o:я",
+     "lemma": "я",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "бы",
+     "lex": "o:бы",
+     "lemma": "бы",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "не",
+     "lex": "o:не",
+     "lemma": "не",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "разреши́ла",
+     "sp": false,
+     "lex": "v:разрешить",
+     "lemma": "разреши́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Студе́нт",
+   "en": "Student: She's very calm. She sleeps all day.",
+   "tokens": [
+    {
+     "t": "Она́",
+     "lex": "o:она",
+     "lemma": "она́",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "о́чень",
+     "lex": "o:очень",
+     "lemma": "о́чень",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "споко́йная",
+     "sp": false,
+     "lex": "a:спокойный",
+     "lemma": "споко́йный",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "."
+    },
+    {
+     "t": "Спит",
+     "lex": "v:спать",
+     "lemma": "спать",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "sg"
+     }
+    },
+    {
+     "t": "весь",
+     "lex": "a:весь",
+     "lemma": "весь",
+     "g": {
+      "pos": "adj",
+      "case": "acc",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "день",
+     "sp": false,
+     "lex": "n:день",
+     "lemma": "день",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Хозя́йка",
+   "en": "Landlady: Then that's fine. Rent has to be paid by the fifth of each month.",
+   "tokens": [
+    {
+     "t": "Тогда́",
+     "lex": "o:тогда",
+     "lemma": "тогда́",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "хорошо́",
+     "sp": false,
+     "lex": "o:хорошо",
+     "lemma": "хорошо́",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "."
+    },
+    {
+     "t": "Плати́ть",
+     "lex": "v:платить",
+     "lemma": "плати́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf"
+     }
+    },
+    {
+     "t": "на́до",
+     "lex": "o:надо",
+     "lemma": "на́до",
+     "g": {
+      "pos": "pred"
+     }
+    },
+    {
+     "t": "до",
+     "lex": "o:до",
+     "lemma": "до",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "пя́того",
+     "lex": "a:пятый",
+     "lemma": "пя́тый",
+     "g": {
+      "pos": "adj",
+      "case": "gen",
+      "number": "sg",
+      "gender": "n"
+     }
+    },
+    {
+     "t": "числа́",
+     "lex": "n:число",
+     "lemma": "число́",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "ка́ждого",
+     "lex": "a:каждый",
+     "lemma": "ка́ждый",
+     "g": {
+      "pos": "adj",
+      "case": "gen",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "ме́сяца",
+     "sp": false,
+     "lex": "n:месяц",
+     "lemma": "ме́сяц",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Студе́нт",
+   "en": "Student: Agreed. When can I move in?",
+   "tokens": [
+    {
+     "t": "Договори́лись",
+     "sp": false,
+     "lex": "v:договориться",
+     "lemma": "договори́ться",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "."
+    },
+    {
+     "t": "Когда́",
+     "lex": "o:когда",
+     "lemma": "когда́",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "мо́жно",
+     "lex": "o:можно",
+     "lemma": "мо́жно",
+     "g": {
+      "pos": "pred"
+     }
+    },
+    {
+     "t": "въе́хать",
+     "sp": false,
+     "lex": "v:въехать",
+     "lemma": "въе́хать",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf"
+     },
+     "rare": true
+    },
+    {
+     "t": "?",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Хозя́йка",
+   "en": "Landlady: Tomorrow if you like.",
+   "tokens": [
+    {
+     "t": "Хоть",
+     "lex": "o:хоть",
+     "lemma": "хоть",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "за́втра",
+     "sp": false,
+     "lex": "o:завтра",
+     "lemma": "за́втра",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  }
+ ],
+ "questions": [
+  {
+   "id": "dl-b1-03-q1",
+   "type": "choice",
+   "level": "B1",
+   "tags": [
+    "listening"
+   ],
+   "prompt": {
+    "ru": "Ско́лько сто́ит кварти́ра?",
+    "en": "How much does the flat cost?",
+    "instruction": "Choose the answer"
+   },
+   "accept": [
+    "Три́дцать ты́сяч плюс коммуна́льные услу́ги."
+   ],
+   "distractors": [
+    {
+     "ru": "Два́дцать ты́сяч.",
+     "error": "reading.detail"
+    },
+    {
+     "ru": "Пятьдеся́т ты́сяч.",
+     "error": "reading.detail"
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "dl-b1-03-q2",
+   "type": "choice",
+   "level": "B1",
+   "tags": [
+    "listening"
+   ],
+   "prompt": {
+    "ru": "Како́е живо́тное у студе́нта?",
+    "en": "What pet does the student have?",
+    "instruction": "Choose the answer"
+   },
+   "accept": [
+    "Ко́шка."
+   ],
+   "distractors": [
+    {
+     "ru": "Соба́ка.",
+     "error": "reading.detail"
+    },
+    {
+     "ru": "У него́ нет живо́тных.",
+     "error": "reading.detail"
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "dl-b1-03-q3",
+   "type": "choice",
+   "level": "B1",
+   "tags": [
+    "listening"
+   ],
+   "prompt": {
+    "ru": "Когда́ на́до плати́ть?",
+    "en": "When must the rent be paid?",
+    "instruction": "Choose the answer"
+   },
+   "accept": [
+    "До пя́того числа́ ка́ждого ме́сяца."
+   ],
+   "distractors": [
+    {
+     "ru": "В конце́ ме́сяца.",
+     "error": "reading.detail"
+    },
+    {
+     "ru": "Раз в год.",
+     "error": "reading.detail"
+    }
+   ],
+   "source": "handwritten"
+  }
+ ]
+}

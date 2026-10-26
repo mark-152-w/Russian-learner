@@ -1,0 +1,1741 @@
+{
+ "$schema": "../../../../schemas/story.schema.json",
+ "id": "nf-b2-05",
+ "kind": "nonfiction",
+ "level": "B2",
+ "title": {
+  "ru": "Метро́ как музе́й",
+  "en": "The metro as a museum"
+ },
+ "sentences": [
+  {
+   "para": true,
+   "en": "The Moscow metro opened in 1935.",
+   "tokens": [
+    {
+     "t": "Моско́вское",
+     "lex": "a:московский",
+     "lemma": "моско́вский",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "n"
+     },
+     "rare": true
+    },
+    {
+     "t": "метро́",
+     "lex": "n:метро",
+     "lemma": "метро́",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "откры́лось",
+     "lex": "v:открыться",
+     "lemma": "откры́ться",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "n"
+     }
+    },
+    {
+     "t": "в",
+     "lex": "o:в",
+     "lemma": "в",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "ты́сяча",
+     "lex": "n:тысяча",
+     "lemma": "ты́сяча",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "девятьсо́т",
+     "lex": "o:девятьсот",
+     "lemma": "девятьсо́т",
+     "g": {
+      "pos": "num"
+     },
+     "rare": true
+    },
+    {
+     "t": "три́дцать",
+     "lex": "n:тридцать",
+     "lemma": "три́дцать",
+     "g": {
+      "pos": "num",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "пя́том",
+     "lex": "a:пятый",
+     "lemma": "пя́тый",
+     "g": {
+      "pos": "adj",
+      "case": "prep",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "году́",
+     "sp": false,
+     "lex": "n:год",
+     "lemma": "год",
+     "g": {
+      "pos": "noun",
+      "case": "loc2",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "The first line was short: just thirteen stations.",
+   "tokens": [
+    {
+     "t": "Пе́рвая",
+     "lex": "a:первый",
+     "lemma": "пе́рвый",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "ли́ния",
+     "lex": "n:линия",
+     "lemma": "ли́ния",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "была́",
+     "lex": "v:быть",
+     "lemma": "быть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "коро́ткой",
+     "sp": false,
+     "lex": "a:короткий",
+     "lemma": "коро́ткий",
+     "g": {
+      "pos": "adj",
+      "case": "gen",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": ":"
+    },
+    {
+     "t": "всего́",
+     "lex": "o:всего",
+     "lemma": "всего́",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "трина́дцать",
+     "lex": "o:тринадцать",
+     "lemma": "трина́дцать",
+     "g": {
+      "pos": "num",
+      "case": "nom"
+     },
+     "rare": true
+    },
+    {
+     "t": "ста́нций",
+     "sp": false,
+     "lex": "n:станция",
+     "lemma": "ста́нция",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "pl"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "Today the metro has hundreds of stations, and millions of people use it every day.",
+   "tokens": [
+    {
+     "t": "Сего́дня",
+     "lex": "o:сегодня",
+     "lemma": "сего́дня",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "в",
+     "lex": "o:в",
+     "lemma": "в",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "метро́",
+     "lex": "n:метро",
+     "lemma": "метро́",
+     "g": {
+      "pos": "noun",
+      "case": "prep",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "со́тни",
+     "lex": "n:сотня",
+     "lemma": "со́тня",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "ста́нций",
+     "sp": false,
+     "lex": "n:станция",
+     "lemma": "ста́нция",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "pl"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "и",
+     "lex": "o:и",
+     "lemma": "и",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "ка́ждый",
+     "lex": "a:каждый",
+     "lemma": "ка́ждый",
+     "g": {
+      "pos": "adj",
+      "case": "acc",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "день",
+     "lex": "n:день",
+     "lemma": "день",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "им",
+     "lex": "o:он",
+     "lemma": "он",
+     "g": {
+      "pos": "pron",
+      "case": "ins"
+     }
+    },
+    {
+     "t": "по́льзуются",
+     "lex": "v:пользоваться",
+     "lemma": "по́льзоваться",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "pl"
+     }
+    },
+    {
+     "t": "миллио́ны",
+     "lex": "n:миллион",
+     "lemma": "миллио́н",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "люде́й",
+     "sp": false,
+     "lex": "n:человек",
+     "lemma": "челове́к",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "pl"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "para": true,
+   "en": "But the Moscow metro isn't famous only for its size.",
+   "tokens": [
+    {
+     "t": "Но",
+     "lex": "o:но",
+     "lemma": "но",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "моско́вское",
+     "lex": "a:московский",
+     "lemma": "моско́вский",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "n"
+     },
+     "rare": true
+    },
+    {
+     "t": "метро́",
+     "lex": "n:метро",
+     "lemma": "метро́",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "знамени́то",
+     "lex": "a:знаменитый",
+     "lemma": "знамени́тый",
+     "g": {
+      "pos": "adj",
+      "short": true,
+      "number": "sg",
+      "gender": "n"
+     }
+    },
+    {
+     "t": "не",
+     "lex": "o:не",
+     "lemma": "не",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "то́лько",
+     "lex": "o:только",
+     "lemma": "то́лько",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "разме́рами",
+     "sp": false,
+     "lex": "n:размер",
+     "lemma": "разме́р",
+     "g": {
+      "pos": "noun",
+      "case": "ins",
+      "number": "pl"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "Its old stations look like palaces: marble, mosaics, sculptures, huge chandeliers.",
+   "tokens": [
+    {
+     "t": "Его́",
+     "lex": "o:он",
+     "lemma": "он",
+     "g": {
+      "pos": "pron",
+      "case": "acc"
+     }
+    },
+    {
+     "t": "ста́рые",
+     "lex": "a:старый",
+     "lemma": "ста́рый",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "ста́нции",
+     "lex": "n:станция",
+     "lemma": "ста́нция",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "похо́жи",
+     "lex": "a:похожий",
+     "lemma": "похо́жий",
+     "g": {
+      "pos": "adj",
+      "short": true,
+      "number": "pl"
+     }
+    },
+    {
+     "t": "на",
+     "lex": "o:на",
+     "lemma": "на",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "дворцы́",
+     "sp": false,
+     "lex": "n:дворец",
+     "lemma": "дворе́ц",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "pl"
+     }
+    },
+    {
+     "t": ":"
+    },
+    {
+     "t": "мра́мор",
+     "sp": false,
+     "lex": "n:мрамор",
+     "lemma": "мра́мор",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "моза́ика",
+     "sp": false,
+     "lex": "n:мозаика",
+     "lemma": "моза́ика",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "скульпту́ры",
+     "sp": false,
+     "lex": "n:скульптура",
+     "lemma": "скульпту́ра",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "pl"
+     },
+     "rare": true
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "огро́мные",
+     "lex": "a:огромный",
+     "lemma": "огро́мный",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "лю́стры",
+     "sp": false,
+     "lex": "n:люстра",
+     "lemma": "лю́стра",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "pl"
+     },
+     "rare": true
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "Soviet architects wanted every worker on the way to the factory to feel he was in an \"underground palace of the people\".",
+   "tokens": [
+    {
+     "t": "Сове́тские",
+     "lex": "a:советский",
+     "lemma": "сове́тский",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "pl"
+     },
+     "rare": true
+    },
+    {
+     "t": "архите́кторы",
+     "lex": "n:архитектор",
+     "lemma": "архите́ктор",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "pl"
+     },
+     "rare": true
+    },
+    {
+     "t": "хоте́ли",
+     "sp": false,
+     "lex": "v:хотеть",
+     "lemma": "хоте́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "past",
+      "number": "pl"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "что́бы",
+     "lex": "o:чтобы",
+     "lemma": "что́бы",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "ка́ждый",
+     "lex": "a:каждый",
+     "lemma": "ка́ждый",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "рабо́чий",
+     "lex": "n:рабочий",
+     "lemma": "рабо́чий",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "по",
+     "lex": "o:по",
+     "lemma": "по",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "доро́ге",
+     "lex": "n:дорога",
+     "lemma": "доро́га",
+     "g": {
+      "pos": "noun",
+      "case": "dat",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "на",
+     "lex": "o:на",
+     "lemma": "на",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "заво́д",
+     "lex": "n:завод",
+     "lemma": "заво́д",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "чу́вствовал",
+     "lex": "v:чувствовать",
+     "lemma": "чу́вствовать",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "себя́",
+     "lex": "o:себя",
+     "lemma": "себя́",
+     "g": {
+      "pos": "pron",
+      "case": "acc"
+     }
+    },
+    {
+     "t": "в",
+     "lex": "o:в",
+     "lemma": "в",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "«",
+     "sp": false
+    },
+    {
+     "t": "подзе́мном",
+     "lex": "a:подземный",
+     "lemma": "подзе́мный",
+     "g": {
+      "pos": "adj",
+      "case": "prep",
+      "number": "sg",
+      "gender": "m"
+     },
+     "rare": true
+    },
+    {
+     "t": "дворце́",
+     "lex": "n:дворец",
+     "lemma": "дворе́ц",
+     "g": {
+      "pos": "noun",
+      "case": "prep",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "наро́да",
+     "sp": false,
+     "lex": "n:народ",
+     "lemma": "наро́д",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "»",
+     "sp": false
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "para": true,
+   "en": "The stations of the line that runs in a circle are especially beautiful.",
+   "tokens": [
+    {
+     "t": "Осо́бенно",
+     "lex": "o:особенно",
+     "lemma": "осо́бенно",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "краси́вы",
+     "lex": "a:красивый",
+     "lemma": "краси́вый",
+     "g": {
+      "pos": "adj",
+      "short": true,
+      "number": "pl"
+     }
+    },
+    {
+     "t": "ста́нции",
+     "lex": "n:станция",
+     "lemma": "ста́нция",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "ли́нии",
+     "sp": false,
+     "lex": "n:линия",
+     "lemma": "ли́ния",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "кото́рая",
+     "lex": "a:который",
+     "lemma": "кото́рый",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "идёт",
+     "lex": "v:идти",
+     "lemma": "идти́",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "sg"
+     }
+    },
+    {
+     "t": "по",
+     "lex": "o:по",
+     "lemma": "по",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "кру́гу",
+     "sp": false,
+     "lex": "n:круг",
+     "lemma": "круг",
+     "g": {
+      "pos": "noun",
+      "case": "dat",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "At one station the ceiling is decorated with mosaics of heroes of Russian history.",
+   "tokens": [
+    {
+     "t": "На",
+     "lex": "o:на",
+     "lemma": "на",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "одно́й",
+     "lex": "o:один",
+     "lemma": "оди́н",
+     "g": {
+      "pos": "num",
+      "case": "prep",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "ста́нции",
+     "lex": "n:станция",
+     "lemma": "ста́нция",
+     "g": {
+      "pos": "noun",
+      "case": "prep",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "потоло́к",
+     "lex": "n:потолок",
+     "lemma": "потоло́к",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "украша́ют",
+     "lex": "v:украшать",
+     "lemma": "украша́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "pl"
+     },
+     "rare": true
+    },
+    {
+     "t": "моза́ики",
+     "lex": "n:мозаика",
+     "lemma": "моза́ика",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "pl"
+     },
+     "rare": true
+    },
+    {
+     "t": "с",
+     "lex": "o:с",
+     "lemma": "с",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "геро́ями",
+     "lex": "n:герой",
+     "lemma": "геро́й",
+     "g": {
+      "pos": "noun",
+      "case": "ins",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "ру́сской",
+     "lex": "a:русский",
+     "lemma": "ру́сский",
+     "g": {
+      "pos": "adj",
+      "case": "gen",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "исто́рии",
+     "sp": false,
+     "lex": "n:история",
+     "lemma": "исто́рия",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "At another there are bronze figures of soldiers, workers and students.",
+   "tokens": [
+    {
+     "t": "На",
+     "lex": "o:на",
+     "lemma": "на",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "друго́й",
+     "lex": "a:другой",
+     "lemma": "друго́й",
+     "g": {
+      "pos": "adj",
+      "case": "prep",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "ста́нции",
+     "lex": "n:станция",
+     "lemma": "ста́нция",
+     "g": {
+      "pos": "noun",
+      "case": "prep",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "стоя́т",
+     "lex": "v:стоять",
+     "lemma": "стоя́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "pl"
+     }
+    },
+    {
+     "t": "бро́нзовые",
+     "lex": "a:бронзовый",
+     "lemma": "бро́нзовый",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "pl"
+     },
+     "rare": true
+    },
+    {
+     "t": "фигу́ры",
+     "lex": "n:фигура",
+     "lemma": "фигу́ра",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "солда́т",
+     "sp": false,
+     "lex": "n:солдат",
+     "lemma": "солда́т",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "pl"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "рабо́чих",
+     "lex": "n:рабочий",
+     "lemma": "рабо́чий",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "и",
+     "lex": "o:и",
+     "lemma": "и",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "студе́нтов",
+     "sp": false,
+     "lex": "n:студент",
+     "lemma": "студе́нт",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "pl"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "On one of them, a border guard's dog, the nose shines: passengers rub it for luck.",
+   "tokens": [
+    {
+     "t": "У",
+     "lex": "o:у",
+     "lemma": "у",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "одно́й",
+     "lex": "o:один",
+     "lemma": "оди́н",
+     "g": {
+      "pos": "num",
+      "case": "gen",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "из",
+     "lex": "o:из",
+     "lemma": "из",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "них",
+     "lex": "o:они",
+     "lemma": "они́",
+     "g": {
+      "pos": "pron",
+      "case": "gen"
+     }
+    },
+    {
+     "t": "—"
+    },
+    {
+     "t": "соба́ки",
+     "lex": "n:собака",
+     "lemma": "соба́ка",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "пограни́чника",
+     "lex": "n:пограничник",
+     "lemma": "пограни́чник",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": "—"
+    },
+    {
+     "t": "нос",
+     "lex": "n:нос",
+     "lemma": "нос",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "блести́т",
+     "sp": false,
+     "lex": "v:блестеть",
+     "lemma": "блесте́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "sg"
+     }
+    },
+    {
+     "t": ":"
+    },
+    {
+     "t": "пассажи́ры",
+     "lex": "n:пассажир",
+     "lemma": "пассажи́р",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "трут",
+     "lex": "v:тереть",
+     "lemma": "тере́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "pl"
+     }
+    },
+    {
+     "t": "его́",
+     "lex": "o:он",
+     "lemma": "он",
+     "g": {
+      "pos": "pron",
+      "case": "acc"
+     }
+    },
+    {
+     "t": "на",
+     "lex": "o:на",
+     "lemma": "на",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "уда́чу",
+     "sp": false,
+     "lex": "n:удача",
+     "lemma": "уда́ча",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "para": true,
+   "en": "During the war the metro served as a bomb shelter.",
+   "tokens": [
+    {
+     "t": "Во",
+     "lex": "o:в",
+     "lemma": "в",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "вре́мя",
+     "lex": "n:время",
+     "lemma": "вре́мя",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "войны́",
+     "lex": "n:война",
+     "lemma": "война́",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "метро́",
+     "lex": "n:метро",
+     "lemma": "метро́",
+     "g": {
+      "pos": "noun",
+      "case": "prep",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "служи́ло",
+     "lex": "v:служить",
+     "lemma": "служи́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "n"
+     }
+    },
+    {
+     "t": "бомбоубе́жищем",
+     "sp": false,
+     "lex": "n:бомбоубежище",
+     "lemma": "бомбоубе́жище",
+     "g": {
+      "pos": "noun",
+      "case": "ins",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "Thousands of Muscovites slept on the platforms, and at one of the stations children were even born.",
+   "tokens": [
+    {
+     "t": "Ты́сячи",
+     "lex": "n:тысяча",
+     "lemma": "ты́сяча",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "москвиче́й",
+     "lex": "n:москвич",
+     "lemma": "москви́ч",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "pl"
+     },
+     "rare": true
+    },
+    {
+     "t": "спа́ли",
+     "lex": "v:спать",
+     "lemma": "спать",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "past",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "на",
+     "lex": "o:на",
+     "lemma": "на",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "платфо́рмах",
+     "sp": false,
+     "lex": "n:платформа",
+     "lemma": "платфо́рма",
+     "g": {
+      "pos": "noun",
+      "case": "prep",
+      "number": "pl"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "а",
+     "lex": "o:а",
+     "lemma": "а",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "на",
+     "lex": "o:на",
+     "lemma": "на",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "одно́й",
+     "lex": "o:один",
+     "lemma": "оди́н",
+     "g": {
+      "pos": "num",
+      "case": "prep",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "из",
+     "lex": "o:из",
+     "lemma": "из",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "ста́нций",
+     "lex": "n:станция",
+     "lemma": "ста́нция",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "да́же",
+     "lex": "o:даже",
+     "lemma": "да́же",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "родили́сь",
+     "lex": "v:родиться",
+     "lemma": "роди́ться",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "де́ти",
+     "sp": false,
+     "lex": "n:ребёнок",
+     "lemma": "ребёнок",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "pl"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "para": true,
+   "en": "If you come to Moscow, be sure to buy a ticket and spend a few hours in the metro.",
+   "tokens": [
+    {
+     "t": "Е́сли",
+     "lex": "o:если",
+     "lemma": "е́сли",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "вы",
+     "lex": "o:вы",
+     "lemma": "вы",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "прие́дете",
+     "lex": "v:приехать",
+     "lemma": "прие́хать",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "fut",
+      "person": 2,
+      "number": "pl"
+     }
+    },
+    {
+     "t": "в",
+     "lex": "o:в",
+     "lemma": "в",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "Москву́",
+     "sp": false,
+     "lex": "n:Москва",
+     "lemma": "Москва́",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "обяза́тельно",
+     "lex": "o:обязательно",
+     "lemma": "обяза́тельно",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "купи́те",
+     "lex": "v:купить",
+     "lemma": "купи́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "mood": "imp",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "биле́т",
+     "lex": "n:билет",
+     "lemma": "биле́т",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "и",
+     "lex": "o:и",
+     "lemma": "и",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "проведи́те",
+     "lex": "v:провести",
+     "lemma": "провести́",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "mood": "imp",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "в",
+     "lex": "o:в",
+     "lemma": "в",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "метро́",
+     "lex": "n:метро",
+     "lemma": "метро́",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "не́сколько",
+     "lex": "o:несколько",
+     "lemma": "не́сколько",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "часо́в",
+     "sp": false,
+     "lex": "n:час",
+     "lemma": "час",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "pl"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "It's probably the cheapest tour in the world.",
+   "tokens": [
+    {
+     "t": "Э́то",
+     "sp": false,
+     "lex": "o:это",
+     "lemma": "э́то",
+     "g": {
+      "pos": "pron"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "наве́рное",
+     "sp": false,
+     "lex": "o:наверное",
+     "lemma": "наве́рное",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "са́мая",
+     "lex": "a:самый",
+     "lemma": "са́мый",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "дешёвая",
+     "lex": "a:дешёвый",
+     "lemma": "дешёвый",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "экску́рсия",
+     "lex": "n:экскурсия",
+     "lemma": "экску́рсия",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "в",
+     "lex": "o:в",
+     "lemma": "в",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "ми́ре",
+     "sp": false,
+     "lex": "n:мир",
+     "lemma": "мир",
+     "g": {
+      "pos": "noun",
+      "case": "prep",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  }
+ ],
+ "questions": [
+  {
+   "id": "nf-b2-05-q1",
+   "type": "choice",
+   "level": "B2",
+   "tags": [
+    "reading"
+   ],
+   "prompt": {
+    "ru": "Когда́ откры́лось моско́вское метро́?",
+    "en": "When did the Moscow metro open?",
+    "instruction": "Choose the answer"
+   },
+   "accept": [
+    "В ты́сяча девятьсо́т три́дцать пя́том году́."
+   ],
+   "distractors": [
+    {
+     "ru": "В ты́сяча девятьсо́т шестьдеся́т пе́рвом году́.",
+     "error": "reading.detail"
+    },
+    {
+     "ru": "В ты́сяча семьсо́т тре́тьем году́.",
+     "error": "reading.detail"
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "nf-b2-05-q2",
+   "type": "choice",
+   "level": "B2",
+   "tags": [
+    "reading"
+   ],
+   "prompt": {
+    "ru": "На что похо́жи ста́рые ста́нции?",
+    "en": "What do the old stations look like?",
+    "instruction": "Choose the answer"
+   },
+   "accept": [
+    "На дворцы́."
+   ],
+   "distractors": [
+    {
+     "ru": "На заво́ды.",
+     "error": "reading.detail"
+    },
+    {
+     "ru": "На вокза́лы.",
+     "error": "reading.detail"
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "nf-b2-05-q3",
+   "type": "choice",
+   "level": "B2",
+   "tags": [
+    "reading"
+   ],
+   "prompt": {
+    "ru": "Почему́ у соба́ки на ста́нции блести́т нос?",
+    "en": "Why does the dog's nose at the station shine?",
+    "instruction": "Choose the answer"
+   },
+   "accept": [
+    "Пассажи́ры трут его́ на уда́чу."
+   ],
+   "distractors": [
+    {
+     "ru": "Его́ ча́сто мо́ют.",
+     "error": "reading.detail"
+    },
+    {
+     "ru": "Он сде́лан из зо́лота.",
+     "error": "reading.detail"
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "nf-b2-05-q4",
+   "type": "choice",
+   "level": "B2",
+   "tags": [
+    "reading"
+   ],
+   "prompt": {
+    "ru": "Чем служи́ло метро́ во вре́мя войны́?",
+    "en": "What did the metro serve as during the war?",
+    "instruction": "Choose the answer"
+   },
+   "accept": [
+    "Бомбоубе́жищем."
+   ],
+   "distractors": [
+    {
+     "ru": "Шко́лой.",
+     "error": "reading.detail"
+    },
+    {
+     "ru": "Заво́дом.",
+     "error": "reading.detail"
+    }
+   ],
+   "source": "handwritten"
+  }
+ ]
+}

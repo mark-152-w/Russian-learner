@@ -1,0 +1,47 @@
+id: st-c1-08
+kind: story
+level: C1
+title: Чужа́я фотогра́фия | Someone else's photograph
+---
+Я купи́л её на ста́ром ры́нке за сто рубле́й, вме́сте со ста́рым фотоаппара́том. | I bought it at an old market for a hundred roubles, together with an old camera.
+Продаве́ц сказа́л, что фотогра́фия лежа́ла в футля́ре, и он не стал её выбра́сывать. | The seller said the photo had been lying in the case and he hadn't thrown it out.
+На ста́ром сни́мке молода́я же́нщина в све́тлом пла́тье смея́лась, а на рука́х у неё сиде́л ребёнок. | In the old picture a young woman in a light dress was laughing, with a child sitting in her arms.
+На обра́тной стороне́ кто́-то написа́л аккура́тным по́черком: «Ле́на и сын, Я́лта, ты́сяча девятьсо́т шестьдеся́т восьмо́й». | On the back someone had written in neat handwriting: "Lena and son, Yalta, 1968".
+
+Не зна́ю почему́, но я не смог положи́ть её в я́щик и забы́ть. | I don't know why, but I couldn't put it in a drawer and forget it.
+Же́нщина на фотогра́фии смея́лась так, как смею́тся то́лько о́чень счастли́вые лю́ди. | The woman in the photograph was laughing the way only very happy people laugh.
+Мне каза́лось несправедли́вым, что её сча́стье тепе́рь сто́ит сто рубле́й и лежи́т ме́жду ста́рыми значка́ми и ло́жками. | It seemed unfair to me that her happiness now cost a hundred roubles and lay among old badges and spoons.
+
+Я вы́ложил сни́мок в интерне́т и написа́л: «Мо́жет быть, кто́-то узна́ет э́тих люде́й». | I put the picture online and wrote: "Perhaps someone will recognise these people."
+Пе́рвые дни никто́ не отвеча́л. | For the first few days nobody answered.
+Пото́м посы́пались коммента́рии: одни́ сове́товали обрати́ться в архи́в, други́е утвержда́ли, что зна́ют э́ту же́нщину, но ошиба́лись. | Then comments started pouring in: some advised going to an archive, others claimed they knew the woman but were wrong.
+Я уже́ почти́ переста́л наде́яться, когда́ пришло́ письмо́. | I had almost stopped hoping when a message arrived.
+
+«Здра́вствуйте. Ребёнок на фотогра́фии — я. | "Hello. The child in the photograph is me."
+Ма́мы не ста́ло три го́да наза́д, и по́сле её сме́рти мно́гие ве́щи из её кварти́ры пропа́ли. | "Mum died three years ago, and after her death many things from her flat went missing."
+Э́то была́ её люби́мая фотогра́фия. | "This was her favourite photograph."
+Мы с ней ча́сто вспомина́ли то ле́то в Я́лте». | "She and I often remembered that summer in Yalta."
+Внизу́ стоя́ло и́мя: «Серге́й». | At the bottom was a name: "Sergei".
+
+Мы встре́тились в кафе́ в це́нтре Москвы́. | We met in a café in the centre of Moscow.
+Серге́й оказа́лся седы́м мужчи́ной с той же улы́бкой, что и у же́нщины на сни́мке. | Sergei turned out to be a grey-haired man with the same smile as the woman in the picture.
+Он до́лго держа́л фотогра́фию в рука́х и ничего́ не говори́л. | He held the photo for a long time and said nothing.
+Пото́м попыта́лся отда́ть мне де́ньги, но я, коне́чно, не взял. | Then he tried to give me money, but of course I didn't take it.
+Ина́че всё э́то оказа́лось бы обы́чной сде́лкой, а э́то бы́ло что́-то совсе́м друго́е. | Otherwise it would all have turned out to be an ordinary deal, and this was something completely different.
+---
+? Где а́втор нашёл фотогра́фию? | Where did the narrator find the photo?
++ На ры́нке, в футля́ре фотоаппара́та.
+- В интерне́те.
+- В архи́ве.
+? Что бы́ло напи́сано на обра́тной стороне́? | What was written on the back?
++ Имена́, го́род и год.
+- А́дрес.
+- Но́мер телефо́на.
+? Кем оказа́лся Серге́й? | Who did Sergei turn out to be?
++ Ребёнком на фотогра́фии.
+- Продавцо́м с ры́нка.
+- Фото́графом.
+? Почему́ а́втор не взял де́ньги? | Why didn't the narrator take the money?
++ Он не хоте́л, что́бы э́то ста́ло обы́чной сде́лкой.
+- Серге́й предложи́л сли́шком ма́ло.
+- Он уже́ получи́л де́ньги от продавца́.

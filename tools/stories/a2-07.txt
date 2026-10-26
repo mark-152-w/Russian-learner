@@ -1,0 +1,41 @@
+id: st-a2-07
+kind: story
+level: A2
+series: anya
+chapter: 7
+title: Ми́ша в Москве́ | Misha in Moscow
+characters: А́ня, Ми́ша, Оле́г
+cliffhanger: Misha has an idea, and Anya is sure it's a bad one.
+---
+По́езд пришёл в семь часо́в утра́. | The train arrived at seven in the morning.
+Ми́ша вы́шел из ваго́на с больши́м рюкзако́м. | Misha got out of the carriage with a big rucksack.
+— Приве́т! — закрича́л он. — Где Кремль? | "Hi!" he shouted. "Where's the Kremlin?"
+— Снача́ла за́втрак, — сказа́ла я. | "Breakfast first," I said.
+
+По́сле за́втрака мы пое́хали в центр. | After breakfast we went into the centre.
+Ми́ше о́чень понра́вилось метро́. | Misha liked the metro a lot.
+— Тут как в музе́е! — сказа́л он. | "It's like a museum in here!" he said.
+На Кра́сной пло́щади бы́ло мно́го тури́стов. | There were lots of tourists in Red Square.
+Ми́ша фотографи́ровал всё: Кремль, ба́шни, голубе́й и да́же поли́цию. | Misha photographed everything: the Kremlin, the towers, the pigeons and even the police.
+
+Пото́м к нам пришёл Оле́г. | Then Oleg came to meet us.
+Он и Ми́ша сра́зу ста́ли друзья́ми, потому́ что о́ба лю́бят футбо́л. | He and Misha became friends straight away because they both love football.
+Они́ говори́ли о футбо́ле це́лый час, а я шла ря́дом и молча́ла. | They talked about football for a whole hour, while I walked beside them in silence.
+
+Ве́чером мы е́ли пи́ццу до́ма. | In the evening we ate pizza at home.
+Ба́рсик спал у Ми́ши на коле́нях. | Barsik slept on Misha's lap.
+— Здесь лу́чше, чем до́ма, — сказа́л Ми́ша. | "It's better here than at home," said Misha.
+— Не говори́ так ма́ме, — улыбну́лась я. | "Don't say that to Mum," I smiled.
+---
+? Что Ми́ша сказа́л о метро́? | What did Misha say about the metro?
++ Что там как в музе́е.
+- Что там ску́чно.
+- Что там хо́лодно.
+? Почему́ Оле́г и Ми́ша ста́ли друзья́ми? | Why did Oleg and Misha become friends?
++ О́ба лю́бят футбо́л.
+- О́ба лю́бят рисова́ть.
+- О́ба из Каза́ни.
+? Что они́ е́ли ве́чером? | What did they eat in the evening?
++ Пи́ццу.
+- Суп.
+- Пиро́г.

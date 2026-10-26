@@ -1,0 +1,654 @@
+{
+ "$schema": "../../../../schemas/story.schema.json",
+ "id": "dl-a2-04",
+ "kind": "dialogue",
+ "level": "A2",
+ "title": {
+  "ru": "Биле́т на по́езд",
+  "en": "A train ticket"
+ },
+ "sentences": [
+  {
+   "para": true,
+   "speaker": "Пассажи́р",
+   "en": "Passenger: Hello. I need a ticket to Kazan for tomorrow.",
+   "tokens": [
+    {
+     "t": "Здра́вствуйте",
+     "sp": false,
+     "lex": "o:здравствуйте",
+     "lemma": "здра́вствуйте",
+     "g": {
+      "pos": "intj"
+     }
+    },
+    {
+     "t": "."
+    },
+    {
+     "t": "Мне",
+     "lex": "o:я",
+     "lemma": "я",
+     "g": {
+      "pos": "pron",
+      "case": "dat"
+     }
+    },
+    {
+     "t": "ну́жен",
+     "lex": "a:нужный",
+     "lemma": "ну́жный",
+     "g": {
+      "pos": "adj",
+      "short": true,
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "биле́т",
+     "lex": "n:билет",
+     "lemma": "биле́т",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "до",
+     "lex": "o:до",
+     "lemma": "до",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "Каза́ни",
+     "lemma": "Каза́нь",
+     "g": {
+      "pos": "name",
+      "case": "gen",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "на",
+     "lex": "o:на",
+     "lemma": "на",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "за́втра",
+     "sp": false,
+     "lex": "o:завтра",
+     "lemma": "за́втра",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Касси́р",
+   "en": "Ticket clerk: For what time? There's a train in the morning and in the evening.",
+   "tokens": [
+    {
+     "t": "На",
+     "lex": "o:на",
+     "lemma": "на",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "како́е",
+     "lex": "a:какой",
+     "lemma": "како́й",
+     "g": {
+      "pos": "adj",
+      "case": "acc",
+      "number": "sg",
+      "gender": "n"
+     }
+    },
+    {
+     "t": "вре́мя",
+     "sp": false,
+     "lex": "n:время",
+     "lemma": "вре́мя",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "?"
+    },
+    {
+     "t": "Есть",
+     "lex": "v:быть",
+     "lemma": "быть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "sg"
+     }
+    },
+    {
+     "t": "по́езд",
+     "lex": "n:поезд",
+     "lemma": "по́езд",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "у́тром",
+     "lex": "n:утро",
+     "lemma": "у́тро",
+     "g": {
+      "pos": "noun",
+      "case": "ins",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "и",
+     "lex": "o:и",
+     "lemma": "и",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "ве́чером",
+     "sp": false,
+     "lex": "n:вечер",
+     "lemma": "ве́чер",
+     "g": {
+      "pos": "noun",
+      "case": "ins",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Пассажи́р",
+   "en": "Passenger: In the evening. What time does it arrive?",
+   "tokens": [
+    {
+     "t": "Ве́чером",
+     "sp": false,
+     "lex": "n:вечер",
+     "lemma": "ве́чер",
+     "g": {
+      "pos": "noun",
+      "case": "ins",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "."
+    },
+    {
+     "t": "Во",
+     "lex": "o:в",
+     "lemma": "в",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "ско́лько",
+     "lex": "o:сколько",
+     "lemma": "ско́лько",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "он",
+     "lex": "o:он",
+     "lemma": "он",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "прихо́дит",
+     "sp": false,
+     "lex": "v:приходить",
+     "lemma": "приходи́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "sg"
+     }
+    },
+    {
+     "t": "?",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Касси́р",
+   "en": "Ticket clerk: Departure at 22:00, arrival at seven in the morning.",
+   "tokens": [
+    {
+     "t": "Отправле́ние",
+     "lex": "n:отправление",
+     "lemma": "отправле́ние",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": "в",
+     "lex": "o:в",
+     "lemma": "в",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "два́дцать",
+     "lex": "o:двадцать",
+     "lemma": "два́дцать",
+     "g": {
+      "pos": "num",
+      "case": "acc"
+     },
+     "rare": true
+    },
+    {
+     "t": "два",
+     "lex": "o:два",
+     "lemma": "два",
+     "g": {
+      "pos": "num",
+      "case": "nom",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "часа́",
+     "sp": false,
+     "lex": "n:час",
+     "lemma": "час",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "прибы́тие",
+     "lex": "n:прибытие",
+     "lemma": "прибы́тие",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": "в",
+     "lex": "o:в",
+     "lemma": "в",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "семь",
+     "lex": "o:семь",
+     "lemma": "семь",
+     "g": {
+      "pos": "num",
+      "case": "acc"
+     }
+    },
+    {
+     "t": "утра́",
+     "sp": false,
+     "lex": "n:утро",
+     "lemma": "у́тро",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Пассажи́р",
+   "en": "Passenger: Fine. Can I have a lower berth?",
+   "tokens": [
+    {
+     "t": "Хорошо́",
+     "sp": false,
+     "lex": "o:хорошо",
+     "lemma": "хорошо́",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "."
+    },
+    {
+     "t": "Мо́жно",
+     "lex": "o:можно",
+     "lemma": "мо́жно",
+     "g": {
+      "pos": "pred"
+     }
+    },
+    {
+     "t": "ни́жнее",
+     "lex": "a:нижний",
+     "lemma": "ни́жний",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "n"
+     },
+     "rare": true
+    },
+    {
+     "t": "ме́сто",
+     "sp": false,
+     "lex": "n:место",
+     "lemma": "ме́сто",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "?",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Касси́р",
+   "en": "Ticket clerk: There are no lower ones left, only upper ones.",
+   "tokens": [
+    {
+     "t": "Ни́жних",
+     "lex": "a:нижний",
+     "lemma": "ни́жний",
+     "g": {
+      "pos": "adj",
+      "case": "acc",
+      "number": "pl"
+     },
+     "rare": true
+    },
+    {
+     "t": "уже́",
+     "lex": "o:уже",
+     "lemma": "уже́",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "нет",
+     "sp": false,
+     "lex": "o:нет",
+     "lemma": "нет",
+     "g": {
+      "pos": "pred"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "то́лько",
+     "lex": "o:только",
+     "lemma": "то́лько",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "ве́рхние",
+     "sp": false,
+     "lex": "a:верхний",
+     "lemma": "ве́рхний",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "pl"
+     },
+     "rare": true
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Пассажи́р",
+   "en": "Passenger: Never mind, an upper one then.",
+   "tokens": [
+    {
+     "t": "Ничего́",
+     "sp": false,
+     "lex": "o:ничто",
+     "lemma": "ничто́",
+     "g": {
+      "pos": "pron",
+      "case": "gen"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "пусть",
+     "lemma": "пусть",
+     "g": {
+      "pos": "conj"
+     },
+     "gloss": "let (him, her, them…); even if"
+    },
+    {
+     "t": "бу́дет",
+     "lex": "v:быть",
+     "lemma": "быть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "fut",
+      "person": 3,
+      "number": "sg"
+     }
+    },
+    {
+     "t": "ве́рхнее",
+     "sp": false,
+     "lex": "a:верхний",
+     "lemma": "ве́рхний",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "n"
+     },
+     "rare": true
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Касси́р",
+   "en": "Ticket clerk: Your passport, please.",
+   "tokens": [
+    {
+     "t": "Ваш",
+     "lemma": "ваш",
+     "g": {
+      "pos": "pron",
+      "case": "nom",
+      "gender": "m"
+     },
+     "gloss": "your, yours (plural or polite)"
+    },
+    {
+     "t": "па́спорт",
+     "sp": false,
+     "lex": "n:паспорт",
+     "lemma": "па́спорт",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "пожа́луйста",
+     "sp": false,
+     "lex": "o:пожалуйста",
+     "lemma": "пожа́луйста",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  }
+ ],
+ "questions": [
+  {
+   "id": "dl-a2-04-q1",
+   "type": "choice",
+   "level": "A2",
+   "tags": [
+    "listening"
+   ],
+   "prompt": {
+    "ru": "Куда́ е́дет пассажи́р?",
+    "en": "Where is the passenger going?",
+    "instruction": "Choose the answer"
+   },
+   "accept": [
+    "В Каза́нь."
+   ],
+   "distractors": [
+    {
+     "ru": "В Москву́.",
+     "error": "reading.detail"
+    },
+    {
+     "ru": "В Петербу́рг.",
+     "error": "reading.detail"
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "dl-a2-04-q2",
+   "type": "choice",
+   "level": "A2",
+   "tags": [
+    "listening"
+   ],
+   "prompt": {
+    "ru": "Когда́ прихо́дит по́езд?",
+    "en": "When does the train arrive?",
+    "instruction": "Choose the answer"
+   },
+   "accept": [
+    "В семь утра́."
+   ],
+   "distractors": [
+    {
+     "ru": "В два́дцать два часа́.",
+     "error": "reading.detail"
+    },
+    {
+     "ru": "В по́лдень.",
+     "error": "reading.detail"
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "dl-a2-04-q3",
+   "type": "choice",
+   "level": "A2",
+   "tags": [
+    "listening"
+   ],
+   "prompt": {
+    "ru": "Како́е ме́сто он взял?",
+    "en": "Which berth did he take?",
+    "instruction": "Choose the answer"
+   },
+   "accept": [
+    "Ве́рхнее."
+   ],
+   "distractors": [
+    {
+     "ru": "Ни́жнее.",
+     "error": "reading.detail"
+    },
+    {
+     "ru": "Он не взял биле́т.",
+     "error": "reading.detail"
+    }
+   ],
+   "source": "handwritten"
+  }
+ ]
+}

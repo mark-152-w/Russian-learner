@@ -1,0 +1,26 @@
+id: dl-b1-02
+kind: dialogue
+level: B1
+title: В апте́ке | At the chemist's
+---
+Покупа́тель: Здра́вствуйте. У меня́ уже́ три дня си́льный ка́шель. Что вы посове́туете? | Customer: Hello. I've had a bad cough for three days. What would you recommend?
+Фармаце́вт: Ка́шель сухо́й и́ли мо́крый? | Pharmacist: Is it a dry cough or a chesty one?
+Покупа́тель: Скоре́е сухо́й. И но́чью ху́же. | Customer: Dry, I think. And it's worse at night.
+Фармаце́вт: Температу́ра есть? | Pharmacist: Do you have a temperature?
+Покупа́тель: Нет, температу́ры нет. | Customer: No, no temperature.
+Фармаце́вт: Тогда́ возьми́те э́тот сиро́п. Принима́йте его́ три ра́за в день по́сле еды́. | Pharmacist: Then take this syrup. Take it three times a day after meals.
+Фармаце́вт: Но е́сли че́рез неде́лю не ста́нет лу́чше, обяза́тельно сходи́те к врачу́. | Pharmacist: But if it isn't better in a week, be sure to see a doctor.
+Покупа́тель: Поня́тно. Спаси́бо большо́е. | Customer: I see. Thank you very much.
+---
+? Како́й у покупа́теля ка́шель? | What kind of cough does the customer have?
++ Сухо́й.
+- Мо́крый.
+- Его́ нет.
+? Как принима́ть сиро́п? | How should the syrup be taken?
++ Три ра́за в день по́сле еды́.
+- Оди́н раз ве́чером.
+- Пе́ред едо́й.
+? Что ну́жно сде́лать, е́сли не ста́нет лу́чше? | What should he do if it doesn't get better?
++ Пойти́ к врачу́.
+- Купи́ть друго́й сиро́п.
+- Лечь в больни́цу.

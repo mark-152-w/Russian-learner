@@ -1,0 +1,1484 @@
+{
+ "$schema": "../../../../schemas/story.schema.json",
+ "id": "st-b1-08",
+ "kind": "story",
+ "level": "B1",
+ "series": "anya2",
+ "chapter": 8,
+ "title": {
+  "ru": "Разгово́р с де́душкой",
+  "en": "A talk with Grandpa"
+ },
+ "characters": [
+  "Оле́г",
+  "Ю́рий"
+ ],
+ "cliffhanger": "Yuri asks Oleg a question that changes everything.",
+ "sentences": [
+  {
+   "para": true,
+   "en": "In the evening Oleg rang his grandfather.",
+   "tokens": [
+    {
+     "t": "Ве́чером",
+     "lex": "n:вечер",
+     "lemma": "ве́чер",
+     "g": {
+      "pos": "noun",
+      "case": "ins",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "Оле́г",
+     "lemma": "Оле́г",
+     "g": {
+      "pos": "name",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "позвони́л",
+     "lex": "v:позвонить",
+     "lemma": "позвони́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "де́душке",
+     "sp": false,
+     "lex": "n:дедушка",
+     "lemma": "де́душка",
+     "g": {
+      "pos": "noun",
+      "case": "dat",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "He didn't know how to start the conversation.",
+   "tokens": [
+    {
+     "t": "Он",
+     "lex": "o:он",
+     "lemma": "он",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "не",
+     "lex": "o:не",
+     "lemma": "не",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "знал",
+     "sp": false,
+     "lex": "v:знать",
+     "lemma": "знать",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "как",
+     "lemma": "как",
+     "g": {
+      "pos": "conj"
+     },
+     "gloss": "how; as, like"
+    },
+    {
+     "t": "нача́ть",
+     "lex": "v:начать",
+     "lemma": "нача́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf"
+     }
+    },
+    {
+     "t": "разгово́р",
+     "sp": false,
+     "lex": "n:разговор",
+     "lemma": "разгово́р",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "\"Grandpa, do you remember a girl called Nina? From a village outside Moscow?\"",
+   "tokens": [
+    {
+     "t": "—"
+    },
+    {
+     "t": "Де́душка",
+     "sp": false,
+     "lex": "n:дедушка",
+     "lemma": "де́душка",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "ты",
+     "lex": "o:ты",
+     "lemma": "ты",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "по́мнишь",
+     "lex": "v:помнить",
+     "lemma": "по́мнить",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 2,
+      "number": "sg"
+     }
+    },
+    {
+     "t": "де́вушку",
+     "lex": "n:девушка",
+     "lemma": "де́вушка",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "по",
+     "lex": "o:по",
+     "lemma": "по",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "и́мени",
+     "lex": "n:имя",
+     "lemma": "и́мя",
+     "g": {
+      "pos": "noun",
+      "case": "dat",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "Ни́на",
+     "sp": false,
+     "lemma": "Ни́на",
+     "g": {
+      "pos": "name",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "?"
+    },
+    {
+     "t": "Из",
+     "lex": "o:из",
+     "lemma": "из",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "дере́вни",
+     "lex": "n:деревня",
+     "lemma": "дере́вня",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "под",
+     "lex": "o:под",
+     "lemma": "под",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "Москво́й",
+     "sp": false,
+     "lex": "n:Москва",
+     "lemma": "Москва́",
+     "g": {
+      "pos": "noun",
+      "case": "ins",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": "?",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "There was a long silence on the line.",
+   "tokens": [
+    {
+     "t": "В",
+     "lex": "o:в",
+     "lemma": "в",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "тру́бке",
+     "lex": "n:трубка",
+     "lemma": "тру́бка",
+     "g": {
+      "pos": "noun",
+      "case": "prep",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "до́лго",
+     "lex": "o:долго",
+     "lemma": "до́лго",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "молча́ли",
+     "sp": false,
+     "lex": "v:молчать",
+     "lemma": "молча́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "past",
+      "number": "pl"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "para": true,
+   "en": "\"How do you know that name?\" his grandfather asked at last.",
+   "tokens": [
+    {
+     "t": "—"
+    },
+    {
+     "t": "Отку́да",
+     "lex": "o:откуда",
+     "lemma": "отку́да",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "ты",
+     "lex": "o:ты",
+     "lemma": "ты",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "зна́ешь",
+     "lex": "v:знать",
+     "lemma": "знать",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 2,
+      "number": "sg"
+     }
+    },
+    {
+     "t": "э́то",
+     "lex": "a:этот",
+     "lemma": "э́тот",
+     "g": {
+      "pos": "adj",
+      "case": "acc",
+      "number": "sg",
+      "gender": "n"
+     }
+    },
+    {
+     "t": "и́мя",
+     "sp": false,
+     "lex": "n:имя",
+     "lemma": "и́мя",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "?"
+    },
+    {
+     "t": "—"
+    },
+    {
+     "t": "наконе́ц",
+     "lex": "o:наконец",
+     "lemma": "наконе́ц",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "спроси́л",
+     "lex": "v:спросить",
+     "lemma": "спроси́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "де́душка",
+     "sp": false,
+     "lex": "n:дедушка",
+     "lemma": "де́душка",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "Oleg told him everything: about the dacha, the chest, the letters and the unopened envelope.",
+   "tokens": [
+    {
+     "t": "Оле́г",
+     "lemma": "Оле́г",
+     "g": {
+      "pos": "name",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "рассказа́л",
+     "lex": "v:рассказать",
+     "lemma": "рассказа́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "ему́",
+     "lex": "o:он",
+     "lemma": "он",
+     "g": {
+      "pos": "pron",
+      "case": "dat"
+     }
+    },
+    {
+     "t": "всё",
+     "sp": false,
+     "lex": "o:всё",
+     "lemma": "всё",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": ":"
+    },
+    {
+     "t": "про",
+     "lex": "o:про",
+     "lemma": "про",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "да́чу",
+     "sp": false,
+     "lex": "n:дача",
+     "lemma": "да́ча",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "про",
+     "lex": "o:про",
+     "lemma": "про",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "сунду́к",
+     "sp": false,
+     "lex": "n:сундук",
+     "lemma": "сунду́к",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "про",
+     "lex": "o:про",
+     "lemma": "про",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "пи́сьма",
+     "lex": "n:письмо",
+     "lemma": "письмо́",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "и",
+     "lex": "o:и",
+     "lemma": "и",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "про",
+     "lex": "o:про",
+     "lemma": "про",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "конве́рт",
+     "sp": false,
+     "lex": "n:конверт",
+     "lemma": "конве́рт",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "кото́рый",
+     "lex": "a:который",
+     "lemma": "кото́рый",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "никто́",
+     "lex": "o:никто",
+     "lemma": "никто́",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "не",
+     "lex": "o:не",
+     "lemma": "не",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "откры́л",
+     "sp": false,
+     "lex": "v:открыть",
+     "lemma": "откры́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "His grandfather listened without interrupting.",
+   "tokens": [
+    {
+     "t": "Де́душка",
+     "lex": "n:дедушка",
+     "lemma": "де́душка",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "слу́шал",
+     "lex": "v:слушать",
+     "lemma": "слу́шать",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "и",
+     "lex": "o:и",
+     "lemma": "и",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "не",
+     "lex": "o:не",
+     "lemma": "не",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "перебива́л",
+     "sp": false,
+     "lex": "v:перебивать",
+     "lemma": "перебива́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "m"
+     },
+     "rare": true
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "para": true,
+   "en": "\"So she didn't get my letter,\" he said quietly.",
+   "tokens": [
+    {
+     "t": "—"
+    },
+    {
+     "t": "Зна́чит",
+     "sp": false,
+     "lex": "v:значить",
+     "lemma": "зна́чить",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "sg"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "она́",
+     "lex": "o:она",
+     "lemma": "она́",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "не",
+     "lex": "o:не",
+     "lemma": "не",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "получи́ла",
+     "lex": "v:получить",
+     "lemma": "получи́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "моё",
+     "lex": "a:мой",
+     "lemma": "мой",
+     "g": {
+      "pos": "adj",
+      "case": "acc",
+      "number": "sg",
+      "gender": "n"
+     }
+    },
+    {
+     "t": "письмо́",
+     "sp": false,
+     "lex": "n:письмо",
+     "lemma": "письмо́",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "—"
+    },
+    {
+     "t": "сказа́л",
+     "lex": "v:сказать",
+     "lemma": "сказа́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "он",
+     "lex": "o:он",
+     "lemma": "он",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "ти́хо",
+     "sp": false,
+     "lex": "o:тихо",
+     "lemma": "ти́хо",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "\"I waited for her answer all autumn.\"",
+   "tokens": [
+    {
+     "t": "—"
+    },
+    {
+     "t": "Я",
+     "lex": "o:я",
+     "lemma": "я",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "ждал",
+     "lex": "v:ждать",
+     "lemma": "ждать",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "её",
+     "lex": "o:она",
+     "lemma": "она́",
+     "g": {
+      "pos": "pron",
+      "case": "acc"
+     }
+    },
+    {
+     "t": "отве́та",
+     "lex": "n:ответ",
+     "lemma": "отве́т",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "всю",
+     "lex": "a:весь",
+     "lemma": "весь",
+     "g": {
+      "pos": "adj",
+      "case": "acc",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "о́сень",
+     "sp": false,
+     "lex": "n:осень",
+     "lemma": "о́сень",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "\"Then I decided she had stopped loving me.\"",
+   "tokens": [
+    {
+     "t": "—"
+    },
+    {
+     "t": "Пото́м",
+     "lex": "o:потом",
+     "lemma": "пото́м",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "я",
+     "lex": "o:я",
+     "lemma": "я",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "реши́л",
+     "sp": false,
+     "lex": "v:решить",
+     "lemma": "реши́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "что",
+     "lex": "o:что",
+     "lemma": "что",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "она́",
+     "lex": "o:она",
+     "lemma": "она́",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "меня́",
+     "lex": "o:я",
+     "lemma": "я",
+     "g": {
+      "pos": "pron",
+      "case": "gen"
+     }
+    },
+    {
+     "t": "разлюби́ла",
+     "sp": false,
+     "lex": "v:разлюбить",
+     "lemma": "разлюби́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "f"
+     },
+     "rare": true
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "\"A year later I met your grandmother.\"",
+   "tokens": [
+    {
+     "t": "—"
+    },
+    {
+     "t": "Че́рез",
+     "lex": "o:через",
+     "lemma": "че́рез",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "год",
+     "lex": "n:год",
+     "lemma": "год",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "я",
+     "lex": "o:я",
+     "lemma": "я",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "познако́мился",
+     "lex": "v:познакомиться",
+     "lemma": "познако́миться",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "с",
+     "lex": "o:с",
+     "lemma": "с",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "твое́й",
+     "lex": "a:твой",
+     "lemma": "твой",
+     "g": {
+      "pos": "adj",
+      "case": "ins",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "ба́бушкой",
+     "sp": false,
+     "lex": "n:бабушка",
+     "lemma": "ба́бушка",
+     "g": {
+      "pos": "noun",
+      "case": "ins",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "\"We were happy, Oleg. I don't regret anything.\"",
+   "tokens": [
+    {
+     "t": "—"
+    },
+    {
+     "t": "Мы",
+     "lex": "o:мы",
+     "lemma": "мы",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "бы́ли",
+     "lex": "v:быть",
+     "lemma": "быть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "past",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "сча́стливы",
+     "sp": false,
+     "lex": "a:счастливый",
+     "lemma": "счастли́вый",
+     "g": {
+      "pos": "adj",
+      "short": true,
+      "number": "pl"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "Оле́г",
+     "sp": false,
+     "lemma": "Оле́г",
+     "g": {
+      "pos": "name",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "."
+    },
+    {
+     "t": "Я",
+     "lex": "o:я",
+     "lemma": "я",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "ни",
+     "lex": "o:ни",
+     "lemma": "ни",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "о",
+     "lex": "o:о",
+     "lemma": "о",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "чём",
+     "lex": "o:что",
+     "lemma": "что",
+     "g": {
+      "pos": "pron",
+      "case": "prep"
+     }
+    },
+    {
+     "t": "не",
+     "lex": "o:не",
+     "lemma": "не",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "жале́ю",
+     "sp": false,
+     "lex": "v:жалеть",
+     "lemma": "жале́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 1,
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "para": true,
+   "en": "\"And Nina?\" asked Oleg. \"She's lovely, Grandpa. She's like a grandmother to me.\"",
+   "tokens": [
+    {
+     "t": "—"
+    },
+    {
+     "t": "А",
+     "lex": "o:а",
+     "lemma": "а",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "Ни́на",
+     "sp": false,
+     "lemma": "Ни́на",
+     "g": {
+      "pos": "name",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "?"
+    },
+    {
+     "t": "—"
+    },
+    {
+     "t": "спроси́л",
+     "lex": "v:спросить",
+     "lemma": "спроси́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "Оле́г",
+     "sp": false,
+     "lemma": "Оле́г",
+     "g": {
+      "pos": "name",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "."
+    },
+    {
+     "t": "—"
+    },
+    {
+     "t": "Она́",
+     "lex": "o:она",
+     "lemma": "она́",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "хоро́шая",
+     "sp": false,
+     "lex": "a:хороший",
+     "lemma": "хоро́ший",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "де́душка",
+     "sp": false,
+     "lex": "n:дедушка",
+     "lemma": "де́душка",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "."
+    },
+    {
+     "t": "Она́",
+     "lex": "o:она",
+     "lemma": "она́",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "мне",
+     "lex": "o:я",
+     "lemma": "я",
+     "g": {
+      "pos": "pron",
+      "case": "dat"
+     }
+    },
+    {
+     "t": "как",
+     "lemma": "как",
+     "g": {
+      "pos": "adv"
+     },
+     "gloss": "how; as, like"
+    },
+    {
+     "t": "ба́бушка",
+     "sp": false,
+     "lex": "n:бабушка",
+     "lemma": "ба́бушка",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "His grandfather sighed.",
+   "tokens": [
+    {
+     "t": "Де́душка",
+     "lex": "n:дедушка",
+     "lemma": "де́душка",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "вздохну́л",
+     "sp": false,
+     "lex": "v:вздохнуть",
+     "lemma": "вздохну́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "m"
+     },
+     "rare": true
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "\"Just tell me one thing: does she want to see me?\"",
+   "tokens": [
+    {
+     "t": "—"
+    },
+    {
+     "t": "Скажи́",
+     "lex": "v:сказать",
+     "lemma": "сказа́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "mood": "imp",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "мне",
+     "lex": "o:я",
+     "lemma": "я",
+     "g": {
+      "pos": "pron",
+      "case": "dat"
+     }
+    },
+    {
+     "t": "то́лько",
+     "lex": "o:только",
+     "lemma": "то́лько",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "одно́",
+     "sp": false,
+     "lex": "o:один",
+     "lemma": "оди́н",
+     "g": {
+      "pos": "num",
+      "case": "acc",
+      "gender": "n"
+     }
+    },
+    {
+     "t": ":"
+    },
+    {
+     "t": "она́",
+     "lex": "o:она",
+     "lemma": "она́",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "хо́чет",
+     "lex": "v:хотеть",
+     "lemma": "хоте́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "sg"
+     }
+    },
+    {
+     "t": "меня́",
+     "lex": "o:я",
+     "lemma": "я",
+     "g": {
+      "pos": "pron",
+      "case": "acc"
+     }
+    },
+    {
+     "t": "уви́деть",
+     "sp": false,
+     "lex": "v:увидеть",
+     "lemma": "уви́деть",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf"
+     }
+    },
+    {
+     "t": "?",
+     "sp": false
+    }
+   ]
+  }
+ ],
+ "questions": [
+  {
+   "id": "st-b1-08-q1",
+   "type": "choice",
+   "level": "B1",
+   "tags": [
+    "reading"
+   ],
+   "prompt": {
+    "ru": "Кому́ позвони́л Оле́г?",
+    "en": "Whom did Oleg ring?",
+    "instruction": "Choose the answer"
+   },
+   "accept": [
+    "Де́душке."
+   ],
+   "distractors": [
+    {
+     "ru": "Ни́не.",
+     "error": "reading.detail"
+    },
+    {
+     "ru": "Ка́те.",
+     "error": "reading.detail"
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "st-b1-08-q2",
+   "type": "choice",
+   "level": "B1",
+   "tags": [
+    "reading"
+   ],
+   "prompt": {
+    "ru": "Что поду́мал Ю́рий, когда́ не получи́л отве́та?",
+    "en": "What did Yuri think when he got no answer?",
+    "instruction": "Choose the answer"
+   },
+   "accept": [
+    "Что Ни́на его́ разлюби́ла."
+   ],
+   "distractors": [
+    {
+     "ru": "Что Ни́на заболе́ла.",
+     "error": "reading.detail"
+    },
+    {
+     "ru": "Что пи́сьма потеря́лись.",
+     "error": "reading.detail"
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "st-b1-08-q3",
+   "type": "choice",
+   "level": "B1",
+   "tags": [
+    "reading"
+   ],
+   "prompt": {
+    "ru": "Что Ю́рий спроси́л в конце́?",
+    "en": "What did Yuri ask at the end?",
+    "instruction": "Choose the answer"
+   },
+   "accept": [
+    "Хо́чет ли Ни́на его́ уви́деть."
+   ],
+   "distractors": [
+    {
+     "ru": "Где живёт Ни́на.",
+     "error": "reading.detail"
+    },
+    {
+     "ru": "Когда́ Оле́г прие́дет домо́й.",
+     "error": "reading.detail"
+    }
+   ],
+   "source": "handwritten"
+  }
+ ]
+}

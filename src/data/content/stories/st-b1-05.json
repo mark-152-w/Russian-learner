@@ -1,0 +1,1798 @@
+{
+ "$schema": "../../../../schemas/story.schema.json",
+ "id": "st-b1-05",
+ "kind": "story",
+ "level": "B1",
+ "series": "anya2",
+ "chapter": 5,
+ "title": {
+  "ru": "Исто́рия Ни́ны",
+  "en": "Nina's story"
+ },
+ "characters": [
+  "Ни́на",
+  "А́ня",
+  "Ка́тя",
+  "Оле́г"
+ ],
+ "cliffhanger": "Katya has an idea: what if Yuri is still alive?",
+ "sentences": [
+  {
+   "para": true,
+   "en": "\"I was eighteen,\" Nina began. \"Yuri and I went to the same school.\"",
+   "tokens": [
+    {
+     "t": "—"
+    },
+    {
+     "t": "Мне",
+     "lex": "o:я",
+     "lemma": "я",
+     "g": {
+      "pos": "pron",
+      "case": "dat"
+     }
+    },
+    {
+     "t": "бы́ло",
+     "lex": "v:быть",
+     "lemma": "быть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "n"
+     }
+    },
+    {
+     "t": "восемна́дцать",
+     "lex": "o:восемнадцать",
+     "lemma": "восемна́дцать",
+     "g": {
+      "pos": "num",
+      "case": "nom"
+     },
+     "rare": true
+    },
+    {
+     "t": "лет",
+     "sp": false,
+     "lex": "n:год",
+     "lemma": "год",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "pl"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "—"
+    },
+    {
+     "t": "начала́",
+     "lex": "v:начать",
+     "lemma": "нача́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "Ни́на",
+     "sp": false,
+     "lemma": "Ни́на",
+     "g": {
+      "pos": "name",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "."
+    },
+    {
+     "t": "—"
+    },
+    {
+     "t": "Мы",
+     "lex": "o:мы",
+     "lemma": "мы",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "с",
+     "lex": "o:с",
+     "lemma": "с",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "Ю́рием",
+     "lemma": "Ю́рий",
+     "g": {
+      "pos": "name",
+      "case": "ins",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "учи́лись",
+     "lex": "v:учиться",
+     "lemma": "учи́ться",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "past",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "в",
+     "lex": "o:в",
+     "lemma": "в",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "одно́й",
+     "lex": "o:один",
+     "lemma": "оди́н",
+     "g": {
+      "pos": "num",
+      "case": "prep",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "шко́ле",
+     "sp": false,
+     "lex": "n:школа",
+     "lemma": "шко́ла",
+     "g": {
+      "pos": "noun",
+      "case": "prep",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "\"He was cheerful, he could play the guitar and he knew all of Pushkin by heart.\"",
+   "tokens": [
+    {
+     "t": "Он",
+     "lex": "o:он",
+     "lemma": "он",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "был",
+     "lex": "v:быть",
+     "lemma": "быть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "весёлым",
+     "sp": false,
+     "lex": "a:весёлый",
+     "lemma": "весёлый",
+     "g": {
+      "pos": "adj",
+      "case": "ins",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "уме́л",
+     "lex": "v:уметь",
+     "lemma": "уме́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "игра́ть",
+     "lex": "v:играть",
+     "lemma": "игра́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf"
+     }
+    },
+    {
+     "t": "на",
+     "lex": "o:на",
+     "lemma": "на",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "гита́ре",
+     "lex": "n:гитара",
+     "lemma": "гита́ра",
+     "g": {
+      "pos": "noun",
+      "case": "prep",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": "и",
+     "lex": "o:и",
+     "lemma": "и",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "знал",
+     "lex": "v:знать",
+     "lemma": "знать",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "наизу́сть",
+     "lex": "o:наизусть",
+     "lemma": "наизу́сть",
+     "g": {
+      "pos": "adv"
+     },
+     "rare": true
+    },
+    {
+     "t": "всего́",
+     "lex": "a:весь",
+     "lemma": "весь",
+     "g": {
+      "pos": "adj",
+      "case": "gen",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "Пу́шкина",
+     "sp": false,
+     "lemma": "Пу́шкин",
+     "g": {
+      "pos": "name",
+      "case": "gen",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "para": true,
+   "en": "After school Yuri went to Siberia.",
+   "tokens": [
+    {
+     "t": "По́сле",
+     "lex": "o:после",
+     "lemma": "по́сле",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "шко́лы",
+     "lex": "n:школа",
+     "lemma": "шко́ла",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "Ю́рий",
+     "lemma": "Ю́рий",
+     "g": {
+      "pos": "name",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "уе́хал",
+     "lex": "v:уехать",
+     "lemma": "уе́хать",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "в",
+     "lex": "o:в",
+     "lemma": "в",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "Сиби́рь",
+     "sp": false,
+     "lemma": "Сиби́рь",
+     "g": {
+      "pos": "name",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "They were building a power station there then, and young people went there from all over the country.",
+   "tokens": [
+    {
+     "t": "Тогда́",
+     "lex": "o:тогда",
+     "lemma": "тогда́",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "там",
+     "lex": "o:там",
+     "lemma": "там",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "стро́или",
+     "lex": "v:строить",
+     "lemma": "стро́ить",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "past",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "электроста́нцию",
+     "sp": false,
+     "lex": "n:электростанция",
+     "lemma": "электроста́нция",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "и",
+     "lex": "o:и",
+     "lemma": "и",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "молоды́е",
+     "lex": "a:молодой",
+     "lemma": "молодо́й",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "лю́ди",
+     "lex": "n:человек",
+     "lemma": "челове́к",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "е́хали",
+     "lex": "v:ехать",
+     "lemma": "е́хать",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "past",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "туда́",
+     "lex": "o:туда",
+     "lemma": "туда́",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "со",
+     "lex": "o:с",
+     "lemma": "с",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "всей",
+     "lex": "a:весь",
+     "lemma": "весь",
+     "g": {
+      "pos": "adj",
+      "case": "gen",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "страны́",
+     "sp": false,
+     "lex": "n:страна",
+     "lemma": "страна́",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "He wrote to me every week.",
+   "tokens": [
+    {
+     "t": "Он",
+     "lex": "o:он",
+     "lemma": "он",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "писа́л",
+     "lex": "v:писать",
+     "lemma": "писа́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "мне",
+     "lex": "o:я",
+     "lemma": "я",
+     "g": {
+      "pos": "pron",
+      "case": "dat"
+     }
+    },
+    {
+     "t": "ка́ждую",
+     "lex": "a:каждый",
+     "lemma": "ка́ждый",
+     "g": {
+      "pos": "adj",
+      "case": "acc",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "неде́лю",
+     "sp": false,
+     "lex": "n:неделя",
+     "lemma": "неде́ля",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "I waited for his letters like a holiday.",
+   "tokens": [
+    {
+     "t": "Я",
+     "lex": "o:я",
+     "lemma": "я",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "ждала́",
+     "lex": "v:ждать",
+     "lemma": "ждать",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "его́",
+     "lex": "o:он",
+     "lemma": "он",
+     "g": {
+      "pos": "pron",
+      "case": "acc"
+     }
+    },
+    {
+     "t": "пи́сем",
+     "sp": false,
+     "lex": "n:письмо",
+     "lemma": "письмо́",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "pl"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "как",
+     "lemma": "как",
+     "g": {
+      "pos": "conj"
+     },
+     "gloss": "how; as, like"
+    },
+    {
+     "t": "пра́здника",
+     "sp": false,
+     "lex": "n:праздник",
+     "lemma": "пра́здник",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "para": true,
+   "en": "And then the letters stopped coming.",
+   "tokens": [
+    {
+     "t": "А",
+     "lex": "o:а",
+     "lemma": "а",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "пото́м",
+     "lex": "o:потом",
+     "lemma": "пото́м",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "пи́сьма",
+     "lex": "n:письмо",
+     "lemma": "письмо́",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "переста́ли",
+     "lex": "v:перестать",
+     "lemma": "переста́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "приходи́ть",
+     "sp": false,
+     "lex": "v:приходить",
+     "lemma": "приходи́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "I wrote to him ten times but didn't get a single reply.",
+   "tokens": [
+    {
+     "t": "Я",
+     "lex": "o:я",
+     "lemma": "я",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "написа́ла",
+     "lex": "v:написать",
+     "lemma": "написа́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "ему́",
+     "lex": "o:он",
+     "lemma": "он",
+     "g": {
+      "pos": "pron",
+      "case": "dat"
+     }
+    },
+    {
+     "t": "де́сять",
+     "lex": "o:десять",
+     "lemma": "де́сять",
+     "g": {
+      "pos": "num",
+      "case": "acc"
+     }
+    },
+    {
+     "t": "раз",
+     "sp": false,
+     "lex": "n:раз",
+     "lemma": "раз",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "pl"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "но",
+     "lex": "o:но",
+     "lemma": "но",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "не",
+     "lex": "o:не",
+     "lemma": "не",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "получи́ла",
+     "lex": "v:получить",
+     "lemma": "получи́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "ни",
+     "lex": "o:ни",
+     "lemma": "ни",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "одного́",
+     "lex": "o:один",
+     "lemma": "оди́н",
+     "g": {
+      "pos": "num",
+      "case": "gen",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "отве́та",
+     "sp": false,
+     "lex": "n:ответ",
+     "lemma": "отве́т",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "My mother said that he had probably met another girl.",
+   "tokens": [
+    {
+     "t": "Мать",
+     "lex": "n:мать",
+     "lemma": "мать",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "сказа́ла",
+     "sp": false,
+     "lex": "v:сказать",
+     "lemma": "сказа́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "что",
+     "lex": "o:что",
+     "lemma": "что",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "он",
+     "sp": false,
+     "lex": "o:он",
+     "lemma": "он",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "наве́рное",
+     "sp": false,
+     "lex": "o:наверное",
+     "lemma": "наве́рное",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "встре́тил",
+     "lex": "v:встретить",
+     "lemma": "встре́тить",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "другу́ю",
+     "lex": "a:другой",
+     "lemma": "друго́й",
+     "g": {
+      "pos": "adj",
+      "case": "acc",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "де́вушку",
+     "sp": false,
+     "lex": "n:девушка",
+     "lemma": "де́вушка",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "I cried all summer.",
+   "tokens": [
+    {
+     "t": "Я",
+     "lex": "o:я",
+     "lemma": "я",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "пла́кала",
+     "lex": "v:плакать",
+     "lemma": "пла́кать",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "всё",
+     "lex": "a:весь",
+     "lemma": "весь",
+     "g": {
+      "pos": "adj",
+      "case": "acc",
+      "number": "sg",
+      "gender": "n"
+     }
+    },
+    {
+     "t": "ле́то",
+     "sp": false,
+     "lex": "n:лето",
+     "lemma": "ле́то",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "para": true,
+   "en": "Three years later I got married.",
+   "tokens": [
+    {
+     "t": "Че́рез",
+     "lex": "o:через",
+     "lemma": "че́рез",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "три",
+     "lex": "o:три",
+     "lemma": "три",
+     "g": {
+      "pos": "num",
+      "case": "acc"
+     }
+    },
+    {
+     "t": "го́да",
+     "lex": "n:год",
+     "lemma": "год",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "я",
+     "lex": "o:я",
+     "lemma": "я",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "вы́шла",
+     "lex": "v:выйти",
+     "lemma": "вы́йти",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "за́муж",
+     "sp": false,
+     "lex": "o:замуж",
+     "lemma": "за́муж",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "My husband was a good man; we lived together for forty years.",
+   "tokens": [
+    {
+     "t": "Муж",
+     "lex": "n:муж",
+     "lemma": "муж",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "у",
+     "lex": "o:у",
+     "lemma": "у",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "меня́",
+     "lex": "o:я",
+     "lemma": "я",
+     "g": {
+      "pos": "pron",
+      "case": "gen"
+     }
+    },
+    {
+     "t": "был",
+     "lex": "v:быть",
+     "lemma": "быть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "хоро́ший",
+     "lex": "a:хороший",
+     "lemma": "хоро́ший",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "челове́к",
+     "sp": false,
+     "lex": "n:человек",
+     "lemma": "челове́к",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "мы",
+     "lex": "o:мы",
+     "lemma": "мы",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "прожи́ли",
+     "lex": "v:прожить",
+     "lemma": "прожи́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "вме́сте",
+     "lex": "o:вместе",
+     "lemma": "вме́сте",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "со́рок",
+     "lex": "o:сорок",
+     "lemma": "со́рок",
+     "g": {
+      "pos": "num",
+      "case": "acc"
+     },
+     "rare": true
+    },
+    {
+     "t": "лет",
+     "sp": false,
+     "lex": "n:год",
+     "lemma": "год",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "pl"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "But I never could bring myself to throw away Yuri's letters.",
+   "tokens": [
+    {
+     "t": "Но",
+     "lex": "o:но",
+     "lemma": "но",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "пи́сьма",
+     "lex": "n:письмо",
+     "lemma": "письмо́",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "Ю́рия",
+     "lemma": "Ю́рий",
+     "g": {
+      "pos": "name",
+      "case": "gen",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "я",
+     "lex": "o:я",
+     "lemma": "я",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "так",
+     "lex": "o:так",
+     "lemma": "так",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "и",
+     "lex": "o:и",
+     "lemma": "и",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "не",
+     "lex": "o:не",
+     "lemma": "не",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "смогла́",
+     "lex": "v:смочь",
+     "lemma": "смочь",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "вы́бросить",
+     "sp": false,
+     "lex": "v:выбросить",
+     "lemma": "вы́бросить",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "para": true,
+   "en": "Nina fell silent.",
+   "tokens": [
+    {
+     "t": "Ни́на",
+     "lemma": "Ни́на",
+     "g": {
+      "pos": "name",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "замолча́ла",
+     "sp": false,
+     "lex": "v:замолчать",
+     "lemma": "замолча́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "Katya was examining the envelopes.",
+   "tokens": [
+    {
+     "t": "Ка́тя",
+     "lemma": "Ка́тя",
+     "g": {
+      "pos": "name",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "рассма́тривала",
+     "lex": "v:рассматривать",
+     "lemma": "рассма́тривать",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "f"
+     },
+     "rare": true
+    },
+    {
+     "t": "конве́рты",
+     "sp": false,
+     "lex": "n:конверт",
+     "lemma": "конве́рт",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "pl"
+     },
+     "rare": true
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "\"Look at the dates,\" she suddenly said. \"The last letter was sent in August. But there's one more here, and it hasn't been opened!\"",
+   "tokens": [
+    {
+     "t": "—"
+    },
+    {
+     "t": "Посмотри́те",
+     "lex": "v:посмотреть",
+     "lemma": "посмотре́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "mood": "imp",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "на",
+     "lex": "o:на",
+     "lemma": "на",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "да́ты",
+     "sp": false,
+     "lex": "n:дата",
+     "lemma": "да́та",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "pl"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "—"
+    },
+    {
+     "t": "вдруг",
+     "lex": "o:вдруг",
+     "lemma": "вдруг",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "сказа́ла",
+     "lex": "v:сказать",
+     "lemma": "сказа́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "она́",
+     "sp": false,
+     "lex": "o:она",
+     "lemma": "она́",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "."
+    },
+    {
+     "t": "—"
+    },
+    {
+     "t": "После́днее",
+     "lex": "a:последний",
+     "lemma": "после́дний",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "n"
+     }
+    },
+    {
+     "t": "письмо́",
+     "lex": "n:письмо",
+     "lemma": "письмо́",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "пришло́",
+     "lex": "v:прийти",
+     "lemma": "прийти́",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "n"
+     }
+    },
+    {
+     "t": "в",
+     "lex": "o:в",
+     "lemma": "в",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "а́вгусте",
+     "sp": false,
+     "lex": "n:август",
+     "lemma": "а́вгуст",
+     "g": {
+      "pos": "noun",
+      "case": "prep",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": "."
+    },
+    {
+     "t": "Но",
+     "lex": "o:но",
+     "lemma": "но",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "здесь",
+     "lex": "o:здесь",
+     "lemma": "здесь",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "есть",
+     "lex": "v:быть",
+     "lemma": "быть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "sg"
+     }
+    },
+    {
+     "t": "ещё",
+     "lex": "o:ещё",
+     "lemma": "ещё",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "одно́",
+     "sp": false,
+     "lex": "o:один",
+     "lemma": "оди́н",
+     "g": {
+      "pos": "num",
+      "case": "nom",
+      "gender": "n"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "его́",
+     "lex": "o:он",
+     "lemma": "он",
+     "g": {
+      "pos": "pron",
+      "case": "acc"
+     }
+    },
+    {
+     "t": "не",
+     "lex": "o:не",
+     "lemma": "не",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "откры́ли",
+     "sp": false,
+     "lex": "v:открыть",
+     "lemma": "откры́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "!",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "Nina took the envelope with trembling hands.",
+   "tokens": [
+    {
+     "t": "Ни́на",
+     "lemma": "Ни́на",
+     "g": {
+      "pos": "name",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "взяла́",
+     "lex": "v:взять",
+     "lemma": "взять",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "конве́рт",
+     "lex": "n:конверт",
+     "lemma": "конве́рт",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": "дрожа́щими",
+     "lex": "a:дрожащий",
+     "lemma": "дрожа́щий",
+     "g": {
+      "pos": "adj",
+      "case": "ins",
+      "number": "pl"
+     },
+     "rare": true
+    },
+    {
+     "t": "рука́ми",
+     "sp": false,
+     "lex": "n:рука",
+     "lemma": "рука́",
+     "g": {
+      "pos": "noun",
+      "case": "ins",
+      "number": "pl"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "\"Mother… She hid it from me.\"",
+   "tokens": [
+    {
+     "t": "—"
+    },
+    {
+     "t": "Мать",
+     "sp": false,
+     "lex": "n:мать",
+     "lemma": "мать",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    },
+    {
+     "t": ".",
+     "sp": false
+    },
+    {
+     "t": "."
+    },
+    {
+     "t": "Она́",
+     "lex": "o:она",
+     "lemma": "она́",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "спря́тала",
+     "lex": "v:спрятать",
+     "lemma": "спря́тать",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "его́",
+     "lex": "o:он",
+     "lemma": "он",
+     "g": {
+      "pos": "pron",
+      "case": "acc"
+     }
+    },
+    {
+     "t": "от",
+     "lex": "o:от",
+     "lemma": "от",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "меня́",
+     "sp": false,
+     "lex": "o:я",
+     "lemma": "я",
+     "g": {
+      "pos": "pron",
+      "case": "gen"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  }
+ ],
+ "questions": [
+  {
+   "id": "st-b1-05-q1",
+   "type": "choice",
+   "level": "B1",
+   "tags": [
+    "reading"
+   ],
+   "prompt": {
+    "ru": "Где учи́лись Ни́на и Ю́рий?",
+    "en": "Where did Nina and Yuri study?",
+    "instruction": "Choose the answer"
+   },
+   "accept": [
+    "В одно́й шко́ле."
+   ],
+   "distractors": [
+    {
+     "ru": "В университе́те.",
+     "error": "reading.detail"
+    },
+    {
+     "ru": "В Сиби́ри.",
+     "error": "reading.detail"
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "st-b1-05-q2",
+   "type": "choice",
+   "level": "B1",
+   "tags": [
+    "reading"
+   ],
+   "prompt": {
+    "ru": "Заче́м Ю́рий уе́хал в Сиби́рь?",
+    "en": "Why did Yuri go to Siberia?",
+    "instruction": "Choose the answer"
+   },
+   "accept": [
+    "Стро́ить электроста́нцию."
+   ],
+   "distractors": [
+    {
+     "ru": "Учи́ться.",
+     "error": "reading.detail"
+    },
+    {
+     "ru": "Рабо́тать в шко́ле.",
+     "error": "reading.detail"
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "st-b1-05-q3",
+   "type": "choice",
+   "level": "B1",
+   "tags": [
+    "reading"
+   ],
+   "prompt": {
+    "ru": "Что сказа́ла мать Ни́ны?",
+    "en": "What did Nina's mother say?",
+    "instruction": "Choose the answer"
+   },
+   "accept": [
+    "Что Ю́рий встре́тил другу́ю де́вушку."
+   ],
+   "distractors": [
+    {
+     "ru": "Что Ю́рий заболе́л.",
+     "error": "reading.detail"
+    },
+    {
+     "ru": "Что Ю́рий ско́ро вернётся.",
+     "error": "reading.detail"
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "st-b1-05-q4",
+   "type": "choice",
+   "level": "B1",
+   "tags": [
+    "reading"
+   ],
+   "prompt": {
+    "ru": "Что нашла́ Ка́тя?",
+    "en": "What did Katya find?",
+    "instruction": "Choose the answer"
+   },
+   "accept": [
+    "Неоткры́тое письмо́."
+   ],
+   "distractors": [
+    {
+     "ru": "Фотогра́фию Ю́рия.",
+     "error": "reading.detail"
+    },
+    {
+     "ru": "Ключ от сундука́.",
+     "error": "reading.detail"
+    }
+   ],
+   "source": "handwritten"
+  }
+ ]
+}

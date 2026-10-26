@@ -1,0 +1,1557 @@
+{
+ "$schema": "../../../../schemas/story.schema.json",
+ "id": "st-b1-07",
+ "kind": "story",
+ "level": "B1",
+ "series": "anya2",
+ "chapter": 7,
+ "title": {
+  "ru": "По́иски",
+  "en": "The search"
+ },
+ "characters": [
+  "Ка́тя",
+  "А́ня",
+  "Оле́г"
+ ],
+ "cliffhanger": "Oleg goes pale when he hears the name of the town.",
+ "sentences": [
+  {
+   "para": true,
+   "en": "On Monday Katya started looking for Yuri Vetrov.",
+   "tokens": [
+    {
+     "t": "В",
+     "lex": "o:в",
+     "lemma": "в",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "понеде́льник",
+     "lex": "n:понедельник",
+     "lemma": "понеде́льник",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "Ка́тя",
+     "lemma": "Ка́тя",
+     "g": {
+      "pos": "name",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "начала́",
+     "lex": "v:начать",
+     "lemma": "нача́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "иска́ть",
+     "lex": "v:искать",
+     "lemma": "иска́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf"
+     }
+    },
+    {
+     "t": "Ю́рия",
+     "lemma": "Ю́рий",
+     "g": {
+      "pos": "name",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "Ветро́ва",
+     "sp": false,
+     "lemma": "Ветро́в",
+     "g": {
+      "pos": "name",
+      "case": "gen",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "At first she searched online, but found only a footballer and a young programmer.",
+   "tokens": [
+    {
+     "t": "Снача́ла",
+     "lex": "o:сначала",
+     "lemma": "снача́ла",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "она́",
+     "lex": "o:она",
+     "lemma": "она́",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "иска́ла",
+     "lex": "v:искать",
+     "lemma": "иска́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "в",
+     "lex": "o:в",
+     "lemma": "в",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "интерне́те",
+     "sp": false,
+     "lex": "n:интернет",
+     "lemma": "интерне́т",
+     "g": {
+      "pos": "noun",
+      "case": "prep",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "но",
+     "lex": "o:но",
+     "lemma": "но",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "нашла́",
+     "lex": "v:найти",
+     "lemma": "найти́",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "то́лько",
+     "lex": "o:только",
+     "lemma": "то́лько",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "футболи́ста",
+     "lex": "n:футболист",
+     "lemma": "футболи́ст",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": "и",
+     "lex": "o:и",
+     "lemma": "и",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "молодо́го",
+     "lex": "a:молодой",
+     "lemma": "молодо́й",
+     "g": {
+      "pos": "adj",
+      "case": "acc",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "программи́ста",
+     "sp": false,
+     "lex": "n:программист",
+     "lemma": "программи́ст",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "Then she wrote to the museum of the Siberian town where they had built the power station.",
+   "tokens": [
+    {
+     "t": "Пото́м",
+     "lex": "o:потом",
+     "lemma": "пото́м",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "она́",
+     "lex": "o:она",
+     "lemma": "она́",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "написа́ла",
+     "lex": "v:написать",
+     "lemma": "написа́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "в",
+     "lex": "o:в",
+     "lemma": "в",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "музе́й",
+     "lex": "n:музей",
+     "lemma": "музе́й",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "того́",
+     "lex": "a:тот",
+     "lemma": "тот",
+     "g": {
+      "pos": "adj",
+      "case": "acc",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "сиби́рского",
+     "lex": "a:сибирский",
+     "lemma": "сиби́рский",
+     "g": {
+      "pos": "adj",
+      "case": "acc",
+      "number": "sg",
+      "gender": "m"
+     },
+     "rare": true
+    },
+    {
+     "t": "го́рода",
+     "sp": false,
+     "lex": "n:город",
+     "lemma": "го́род",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "где",
+     "lex": "o:где",
+     "lemma": "где",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "стро́или",
+     "lex": "v:строить",
+     "lemma": "стро́ить",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "past",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "электроста́нцию",
+     "sp": false,
+     "lex": "n:электростанция",
+     "lemma": "электроста́нция",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "para": true,
+   "en": "The answer came a week later.",
+   "tokens": [
+    {
+     "t": "Отве́т",
+     "lex": "n:ответ",
+     "lemma": "отве́т",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "пришёл",
+     "lex": "v:прийти",
+     "lemma": "прийти́",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "че́рез",
+     "lex": "o:через",
+     "lemma": "че́рез",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "неде́лю",
+     "sp": false,
+     "lex": "n:неделя",
+     "lemma": "неде́ля",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "A woman who worked at the museum wrote that Yuri Vetrov had indeed worked on the construction.",
+   "tokens": [
+    {
+     "t": "Сотру́дница",
+     "lex": "n:сотрудница",
+     "lemma": "сотру́дница",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": "музе́я",
+     "lex": "n:музей",
+     "lemma": "музе́й",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "писа́ла",
+     "sp": false,
+     "lex": "v:писать",
+     "lemma": "писа́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "что",
+     "lex": "o:что",
+     "lemma": "что",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "Ю́рий",
+     "lemma": "Ю́рий",
+     "g": {
+      "pos": "name",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "Ветро́в",
+     "lemma": "Ветро́в",
+     "g": {
+      "pos": "name",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "действи́тельно",
+     "lex": "o:действительно",
+     "lemma": "действи́тельно",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "рабо́тал",
+     "lex": "v:работать",
+     "lemma": "рабо́тать",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "на",
+     "lex": "o:на",
+     "lemma": "на",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "строи́тельстве",
+     "sp": false,
+     "lex": "n:строительство",
+     "lemma": "строи́тельство",
+     "g": {
+      "pos": "noun",
+      "case": "prep",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "Later he became an engineer and ran the power station for many years.",
+   "tokens": [
+    {
+     "t": "По́зже",
+     "lex": "a:поздний",
+     "lemma": "по́здний",
+     "g": {
+      "pos": "comp"
+     }
+    },
+    {
+     "t": "он",
+     "lex": "o:он",
+     "lemma": "он",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "стал",
+     "lex": "v:стать",
+     "lemma": "стать",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "инжене́ром",
+     "lex": "n:инженер",
+     "lemma": "инжене́р",
+     "g": {
+      "pos": "noun",
+      "case": "ins",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": "и",
+     "lex": "o:и",
+     "lemma": "и",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "мно́го",
+     "lex": "o:много",
+     "lemma": "мно́го",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "лет",
+     "lex": "n:год",
+     "lemma": "год",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "руководи́л",
+     "lex": "v:руководить",
+     "lemma": "руководи́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "m"
+     },
+     "rare": true
+    },
+    {
+     "t": "электроста́нцией",
+     "sp": false,
+     "lex": "n:электростанция",
+     "lemma": "электроста́нция",
+     "g": {
+      "pos": "noun",
+      "case": "ins",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "The museum even has a photo of him.",
+   "tokens": [
+    {
+     "t": "В",
+     "lex": "o:в",
+     "lemma": "в",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "музе́е",
+     "lex": "n:музей",
+     "lemma": "музе́й",
+     "g": {
+      "pos": "noun",
+      "case": "prep",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "да́же",
+     "lex": "o:даже",
+     "lemma": "да́же",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "есть",
+     "lex": "v:быть",
+     "lemma": "быть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "sg"
+     }
+    },
+    {
+     "t": "его́",
+     "lex": "o:он",
+     "lemma": "он",
+     "g": {
+      "pos": "pron",
+      "case": "acc"
+     }
+    },
+    {
+     "t": "фотогра́фия",
+     "sp": false,
+     "lex": "n:фотография",
+     "lemma": "фотогра́фия",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "Now he is retired and lives in Novosibirsk.",
+   "tokens": [
+    {
+     "t": "Сейча́с",
+     "lex": "o:сейчас",
+     "lemma": "сейча́с",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "он",
+     "lex": "o:он",
+     "lemma": "он",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "на",
+     "lex": "o:на",
+     "lemma": "на",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "пе́нсии",
+     "lex": "n:пенсия",
+     "lemma": "пе́нсия",
+     "g": {
+      "pos": "noun",
+      "case": "prep",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "и",
+     "lex": "o:и",
+     "lemma": "и",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "живёт",
+     "lex": "v:жить",
+     "lemma": "жить",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "sg"
+     }
+    },
+    {
+     "t": "в",
+     "lex": "o:в",
+     "lemma": "в",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "Новосиби́рске",
+     "sp": false,
+     "lex": "n:Новосибирск",
+     "lemma": "Новосиби́рск",
+     "g": {
+      "pos": "noun",
+      "case": "prep",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "para": true,
+   "en": "Katya read the letter aloud in the café where she and Anya worked.",
+   "tokens": [
+    {
+     "t": "Ка́тя",
+     "lemma": "Ка́тя",
+     "g": {
+      "pos": "name",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "прочита́ла",
+     "lex": "v:прочитать",
+     "lemma": "прочита́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "письмо́",
+     "lex": "n:письмо",
+     "lemma": "письмо́",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "вслух",
+     "lex": "o:вслух",
+     "lemma": "вслух",
+     "g": {
+      "pos": "adv"
+     },
+     "rare": true
+    },
+    {
+     "t": "в",
+     "lex": "o:в",
+     "lemma": "в",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "кафе́",
+     "sp": false,
+     "lex": "n:кафе",
+     "lemma": "кафе́",
+     "g": {
+      "pos": "noun",
+      "case": "prep",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "где",
+     "lex": "o:где",
+     "lemma": "где",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "они́",
+     "lex": "o:они",
+     "lemma": "они́",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "с",
+     "lex": "o:с",
+     "lemma": "с",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "А́ней",
+     "lemma": "А́ня",
+     "g": {
+      "pos": "name",
+      "case": "ins",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "рабо́тали",
+     "sp": false,
+     "lex": "v:работать",
+     "lemma": "рабо́тать",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "past",
+      "number": "pl"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "At that moment Oleg came into the café.",
+   "tokens": [
+    {
+     "t": "В",
+     "lex": "o:в",
+     "lemma": "в",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "э́тот",
+     "lex": "a:этот",
+     "lemma": "э́тот",
+     "g": {
+      "pos": "adj",
+      "case": "acc",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "моме́нт",
+     "lex": "n:момент",
+     "lemma": "моме́нт",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "в",
+     "lex": "o:в",
+     "lemma": "в",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "кафе́",
+     "lex": "n:кафе",
+     "lemma": "кафе́",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "зашёл",
+     "lex": "v:зайти",
+     "lemma": "зайти́",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "Оле́г",
+     "sp": false,
+     "lemma": "Оле́г",
+     "g": {
+      "pos": "name",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "\"In Novosibirsk?\" he asked again. \"But that's where I'm from!\"",
+   "tokens": [
+    {
+     "t": "—"
+    },
+    {
+     "t": "В",
+     "lex": "o:в",
+     "lemma": "в",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "Новосиби́рске",
+     "sp": false,
+     "lex": "n:Новосибирск",
+     "lemma": "Новосиби́рск",
+     "g": {
+      "pos": "noun",
+      "case": "prep",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": "?"
+    },
+    {
+     "t": "—"
+    },
+    {
+     "t": "переспроси́л",
+     "lex": "v:переспросить",
+     "lemma": "переспроси́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "m"
+     },
+     "rare": true
+    },
+    {
+     "t": "он",
+     "sp": false,
+     "lex": "o:он",
+     "lemma": "он",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "."
+    },
+    {
+     "t": "—"
+    },
+    {
+     "t": "Я",
+     "lex": "o:я",
+     "lemma": "я",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "же",
+     "lex": "o:же",
+     "lemma": "же",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "отту́да",
+     "sp": false,
+     "lex": "o:оттуда",
+     "lemma": "отту́да",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "!",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "\"We know,\" Anya smiled. \"You don't happen to know a Yuri Vetrov?\"",
+   "tokens": [
+    {
+     "t": "—"
+    },
+    {
+     "t": "Мы",
+     "lex": "o:мы",
+     "lemma": "мы",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "зна́ем",
+     "sp": false,
+     "lex": "v:знать",
+     "lemma": "знать",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 1,
+      "number": "pl"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "—"
+    },
+    {
+     "t": "улыбну́лась",
+     "lex": "v:улыбнуться",
+     "lemma": "улыбну́ться",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "f"
+     },
+     "rare": true
+    },
+    {
+     "t": "А́ня",
+     "sp": false,
+     "lemma": "А́ня",
+     "g": {
+      "pos": "name",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "."
+    },
+    {
+     "t": "—"
+    },
+    {
+     "t": "Ты",
+     "sp": false,
+     "lex": "o:ты",
+     "lemma": "ты",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "случа́йно",
+     "sp": false,
+     "lex": "o:случайно",
+     "lemma": "случа́йно",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "не",
+     "lex": "o:не",
+     "lemma": "не",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "зна́ешь",
+     "lex": "v:знать",
+     "lemma": "знать",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 2,
+      "number": "sg"
+     }
+    },
+    {
+     "t": "Ю́рия",
+     "lemma": "Ю́рий",
+     "g": {
+      "pos": "name",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "Ветро́ва",
+     "sp": false,
+     "lemma": "Ветро́в",
+     "g": {
+      "pos": "name",
+      "case": "gen",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "?",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "para": true,
+   "en": "Oleg gave them a strange look.",
+   "tokens": [
+    {
+     "t": "Оле́г",
+     "lemma": "Оле́г",
+     "g": {
+      "pos": "name",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "стра́нно",
+     "lex": "o:странно",
+     "lemma": "стра́нно",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "посмотре́л",
+     "lex": "v:посмотреть",
+     "lemma": "посмотре́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "на",
+     "lex": "o:на",
+     "lemma": "на",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "них",
+     "sp": false,
+     "lex": "o:они",
+     "lemma": "они́",
+     "g": {
+      "pos": "pron",
+      "case": "acc"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "\"My grandmother's name was Vera. And my grandfather… My surname is Vetrov, and my grandfather's name is Yuri.\"",
+   "tokens": [
+    {
+     "t": "—"
+    },
+    {
+     "t": "Мою́",
+     "lex": "a:мой",
+     "lemma": "мой",
+     "g": {
+      "pos": "adj",
+      "case": "acc",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "ба́бушку",
+     "lex": "n:бабушка",
+     "lemma": "ба́бушка",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "зва́ли",
+     "lex": "v:звать",
+     "lemma": "звать",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "past",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "Ве́ра",
+     "sp": false,
+     "lemma": "Ве́ра",
+     "g": {
+      "pos": "name",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "."
+    },
+    {
+     "t": "А",
+     "lex": "o:а",
+     "lemma": "а",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "де́душку",
+     "sp": false,
+     "lex": "n:дедушка",
+     "lemma": "де́душка",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    },
+    {
+     "t": ".",
+     "sp": false
+    },
+    {
+     "t": "."
+    },
+    {
+     "t": "Моя́",
+     "lex": "a:мой",
+     "lemma": "мой",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "фами́лия",
+     "lex": "n:фамилия",
+     "lemma": "фами́лия",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "Ветро́в",
+     "sp": false,
+     "lemma": "Ветро́в",
+     "g": {
+      "pos": "name",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "и",
+     "lex": "o:и",
+     "lemma": "и",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "де́душку",
+     "lex": "n:дедушка",
+     "lemma": "де́душка",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "зову́т",
+     "lex": "v:звать",
+     "lemma": "звать",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "pl"
+     }
+    },
+    {
+     "t": "Ю́рий",
+     "sp": false,
+     "lemma": "Ю́рий",
+     "g": {
+      "pos": "name",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "Katya dropped her cup.",
+   "tokens": [
+    {
+     "t": "Ка́тя",
+     "lemma": "Ка́тя",
+     "g": {
+      "pos": "name",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "урони́ла",
+     "lex": "v:уронить",
+     "lemma": "урони́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "f"
+     },
+     "rare": true
+    },
+    {
+     "t": "ча́шку",
+     "sp": false,
+     "lex": "n:чашка",
+     "lemma": "ча́шка",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  }
+ ],
+ "questions": [
+  {
+   "id": "st-b1-07-q1",
+   "type": "choice",
+   "level": "B1",
+   "tags": [
+    "reading"
+   ],
+   "prompt": {
+    "ru": "Что Ка́тя снача́ла нашла́ в интерне́те?",
+    "en": "What did Katya find online at first?",
+    "instruction": "Choose the answer"
+   },
+   "accept": [
+    "Футболи́ста и программи́ста."
+   ],
+   "distractors": [
+    {
+     "ru": "Фотогра́фию Ю́рия.",
+     "error": "reading.detail"
+    },
+    {
+     "ru": "А́дрес Ю́рия.",
+     "error": "reading.detail"
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "st-b1-07-q2",
+   "type": "choice",
+   "level": "B1",
+   "tags": [
+    "reading"
+   ],
+   "prompt": {
+    "ru": "Кем стал Ю́рий?",
+    "en": "What did Yuri become?",
+    "instruction": "Choose the answer"
+   },
+   "accept": [
+    "Инжене́ром."
+   ],
+   "distractors": [
+    {
+     "ru": "Учи́телем.",
+     "error": "reading.detail"
+    },
+    {
+     "ru": "Врачо́м.",
+     "error": "reading.detail"
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "st-b1-07-q3",
+   "type": "choice",
+   "level": "B1",
+   "tags": [
+    "reading"
+   ],
+   "prompt": {
+    "ru": "Где сейча́с живёт Ю́рий?",
+    "en": "Where does Yuri live now?",
+    "instruction": "Choose the answer"
+   },
+   "accept": [
+    "В Новосиби́рске."
+   ],
+   "distractors": [
+    {
+     "ru": "В Москве́.",
+     "error": "reading.detail"
+    },
+    {
+     "ru": "В Каза́ни.",
+     "error": "reading.detail"
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "st-b1-07-q4",
+   "type": "choice",
+   "level": "B1",
+   "tags": [
+    "reading"
+   ],
+   "prompt": {
+    "ru": "Кто тако́й Ю́рий для Оле́га?",
+    "en": "Who is Yuri to Oleg?",
+    "instruction": "Choose the answer"
+   },
+   "accept": [
+    "Его́ де́душка."
+   ],
+   "distractors": [
+    {
+     "ru": "Его́ оте́ц.",
+     "error": "reading.detail"
+    },
+    {
+     "ru": "Его́ учи́тель.",
+     "error": "reading.detail"
+    }
+   ],
+   "source": "handwritten"
+  }
+ ]
+}

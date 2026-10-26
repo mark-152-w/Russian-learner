@@ -1,0 +1,47 @@
+id: st-b1-02
+kind: story
+level: B1
+series: anya2
+chapter: 2
+title: Рабо́та | The job
+characters: А́ня, Ка́тя
+cliffhanger: Nina has a surprise for Anya: an invitation to the country.
+---
+По́сле экза́менов А́ня реши́ла найти́ рабо́ту. | After the exams Anya decided to find a job.
+Стипе́ндия у неё ма́ленькая, а жизнь в Москве́ дорога́я. | Her grant is small, and life in Moscow is expensive.
+В кафе́ ря́дом с её до́мом иска́ли официа́нтку, и А́ня пошла́ туда́. | The café next to her building was looking for a waitress, and Anya went there.
+
+Хозя́йка кафе́ оказа́лась весёлой же́нщиной лет сорока́. | The café owner turned out to be a cheerful woman of about forty.
+— О́пыт рабо́ты есть? — спроси́ла она́. | "Any work experience?" she asked.
+— Нет, — че́стно отве́тила А́ня. — Но я бы́стро учу́сь. | "No," Anya answered honestly. "But I learn fast."
+— Хорошо́. Начина́ешь в суббо́ту. Ка́тя тебе́ всё пока́жет. | "All right. You start on Saturday. Katya will show you everything."
+
+Ка́те бы́ло два́дцать оди́н год. | Katya was twenty-one.
+Она́ учи́лась на журнали́ста и рабо́тала в кафе́ по выходны́м. | She was studying journalism and worked in the café at weekends.
+— Гла́вное — улыба́ться и ничего́ не роня́ть, — объясни́ла она́. | "The main thing is to smile and not drop anything," she explained.
+
+Пе́рвый день был тру́дным. | The first day was hard.
+А́ня перепу́тала зака́зы, принесла́ чай вме́сто ко́фе и чуть не урони́ла подно́с. | Anya mixed up the orders, brought tea instead of coffee and nearly dropped a tray.
+Но гости́ бы́ли до́брыми, а оди́н пожило́й мужчи́на да́же оста́вил ей больши́е чаевы́е. | But the customers were kind, and one elderly man even left her a big tip.
+— За улы́бку, — сказа́л он. | "For the smile," he said.
+
+Ве́чером А́ня и Ка́тя пи́ли чай на ку́хне кафе́. | In the evening Anya and Katya drank tea in the café kitchen.
+— Зна́ешь, я пишу́ статьи́ для студе́нческой газе́ты, — сказа́ла Ка́тя. — Е́сли узна́ешь интере́сную исто́рию, расскажи́ мне. | "You know, I write articles for the student paper," said Katya. "If you come across an interesting story, tell me."
+А́ня тогда́ ещё не зна́ла, что така́я исто́рия ско́ро найдётся. | Anya didn't know yet that such a story would soon turn up.
+---
+? Почему́ А́ня реши́ла найти́ рабо́ту? | Why did Anya decide to find a job?
++ Жизнь в Москве́ дорога́я.
+- Ей бы́ло ску́чно.
+- Её попроси́ла ма́ма.
+? Где у́чится Ка́тя? | What is Katya studying?
++ На журнали́ста.
+- На врача́.
+- На учи́теля.
+? Что А́ня принесла́ вме́сто ко́фе? | What did Anya bring instead of coffee?
++ Чай.
+- Сок.
+- Во́ду.
+? Что Ка́тя попроси́ла А́ню? | What did Katya ask Anya to do?
++ Рассказа́ть ей интере́сную исто́рию.
+- Рабо́тать в воскресе́нье.
+- Купи́ть газе́ту.

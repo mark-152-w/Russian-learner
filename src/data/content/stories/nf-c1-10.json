@@ -1,0 +1,2390 @@
+{
+ "$schema": "../../../../schemas/story.schema.json",
+ "id": "nf-c1-10",
+ "kind": "nonfiction",
+ "level": "C1",
+ "title": {
+  "ru": "Тру́дный язы́к",
+  "en": "A difficult language"
+ },
+ "sentences": [
+  {
+   "para": true,
+   "en": "Russian is considered one of the hardest languages for English speakers.",
+   "tokens": [
+    {
+     "t": "Ру́сский",
+     "lex": "a:русский",
+     "lemma": "ру́сский",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "язы́к",
+     "lex": "n:язык",
+     "lemma": "язы́к",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "счита́ется",
+     "lex": "v:считаться",
+     "lemma": "счита́ться",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "sg"
+     }
+    },
+    {
+     "t": "одни́м",
+     "lex": "o:один",
+     "lemma": "оди́н",
+     "g": {
+      "pos": "num",
+      "case": "ins",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "из",
+     "lex": "o:из",
+     "lemma": "из",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "са́мых",
+     "lex": "a:самый",
+     "lemma": "са́мый",
+     "g": {
+      "pos": "adj",
+      "case": "gen",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "тру́дных",
+     "lex": "a:трудный",
+     "lemma": "тру́дный",
+     "g": {
+      "pos": "adj",
+      "case": "gen",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "для",
+     "lex": "o:для",
+     "lemma": "для",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "тех",
+     "sp": false,
+     "lex": "a:тот",
+     "lemma": "тот",
+     "g": {
+      "pos": "adj",
+      "case": "gen",
+      "number": "pl"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "кто",
+     "lex": "o:кто",
+     "lemma": "кто",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "говори́т",
+     "lex": "v:говорить",
+     "lemma": "говори́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "sg"
+     }
+    },
+    {
+     "t": "по-англи́йски",
+     "sp": false,
+     "lex": "o:по-английски",
+     "lemma": "по-англи́йски",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "Six cases, three genders, verbal aspect, stress that jumps from place to place, verbs of motion with endless prefixes: the list goes on.",
+   "tokens": [
+    {
+     "t": "Шесть",
+     "lex": "o:шесть",
+     "lemma": "шесть",
+     "g": {
+      "pos": "num",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "падеже́й",
+     "sp": false,
+     "lex": "n:падёж",
+     "lemma": "паде́ж",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "pl"
+     },
+     "rare": true
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "три",
+     "lex": "o:три",
+     "lemma": "три",
+     "g": {
+      "pos": "num",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "ро́да",
+     "sp": false,
+     "lex": "n:род",
+     "lemma": "род",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "вид",
+     "lex": "n:вид",
+     "lemma": "вид",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "глаго́ла",
+     "sp": false,
+     "lex": "n:глагол",
+     "lemma": "глаго́л",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "ударе́ние",
+     "sp": false,
+     "lex": "n:ударение",
+     "lemma": "ударе́ние",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "кото́рое",
+     "lex": "a:который",
+     "lemma": "кото́рый",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "n"
+     }
+    },
+    {
+     "t": "пры́гает",
+     "lex": "v:прыгать",
+     "lemma": "пры́гать",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "sg"
+     }
+    },
+    {
+     "t": "с",
+     "lex": "o:с",
+     "lemma": "с",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "ме́ста",
+     "lex": "n:место",
+     "lemma": "ме́сто",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "на",
+     "lex": "o:на",
+     "lemma": "на",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "ме́сто",
+     "sp": false,
+     "lex": "n:место",
+     "lemma": "ме́сто",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "глаго́лы",
+     "lex": "n:глагол",
+     "lemma": "глаго́л",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "pl"
+     },
+     "rare": true
+    },
+    {
+     "t": "движе́ния",
+     "lex": "n:движение",
+     "lemma": "движе́ние",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "с",
+     "lex": "o:с",
+     "lemma": "с",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "бесконе́чными",
+     "lex": "a:бесконечный",
+     "lemma": "бесконе́чный",
+     "g": {
+      "pos": "adj",
+      "case": "ins",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "приста́вками",
+     "lex": "n:приставка",
+     "lemma": "приста́вка",
+     "g": {
+      "pos": "noun",
+      "case": "ins",
+      "number": "pl"
+     },
+     "rare": true
+    },
+    {
+     "t": "—"
+    },
+    {
+     "t": "спи́сок",
+     "lex": "n:список",
+     "lemma": "спи́сок",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "мо́жно",
+     "lex": "o:можно",
+     "lemma": "мо́жно",
+     "g": {
+      "pos": "pred"
+     }
+    },
+    {
+     "t": "продолжа́ть",
+     "sp": false,
+     "lex": "v:продолжать",
+     "lemma": "продолжа́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "No wonder many people give up learning it in the second month.",
+   "tokens": [
+    {
+     "t": "Неудиви́тельно",
+     "sp": false,
+     "lex": "o:неудивительно",
+     "lemma": "неудиви́тельно",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "что",
+     "lex": "o:что",
+     "lemma": "что",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "мно́гие",
+     "lex": "a:многие",
+     "lemma": "мно́гие",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "pl"
+     },
+     "rare": true
+    },
+    {
+     "t": "броса́ют",
+     "lex": "v:бросать",
+     "lemma": "броса́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "pl"
+     }
+    },
+    {
+     "t": "учи́ть",
+     "lex": "v:учить",
+     "lemma": "учи́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf"
+     }
+    },
+    {
+     "t": "его́",
+     "lex": "o:он",
+     "lemma": "он",
+     "g": {
+      "pos": "pron",
+      "case": "acc"
+     }
+    },
+    {
+     "t": "уже́",
+     "lex": "o:уже",
+     "lemma": "уже́",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "на",
+     "lex": "o:на",
+     "lemma": "на",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "второ́м",
+     "lex": "a:второй",
+     "lemma": "второ́й",
+     "g": {
+      "pos": "adj",
+      "case": "prep",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "ме́сяце",
+     "sp": false,
+     "lex": "n:месяц",
+     "lemma": "ме́сяц",
+     "g": {
+      "pos": "noun",
+      "case": "prep",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "para": true,
+   "en": "But this difficulty has another side.",
+   "tokens": [
+    {
+     "t": "Но",
+     "lex": "o:но",
+     "lemma": "но",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "у",
+     "lex": "o:у",
+     "lemma": "у",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "э́той",
+     "lex": "a:этот",
+     "lemma": "э́тот",
+     "g": {
+      "pos": "adj",
+      "case": "gen",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "сло́жности",
+     "lex": "n:сложность",
+     "lemma": "сло́жность",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "есть",
+     "lex": "v:быть",
+     "lemma": "быть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "sg"
+     }
+    },
+    {
+     "t": "и",
+     "lex": "o:и",
+     "lemma": "и",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "обра́тная",
+     "lex": "a:обратный",
+     "lemma": "обра́тный",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "сторона́",
+     "sp": false,
+     "lex": "n:сторона",
+     "lemma": "сторона́",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "Cases, which at first seem a pointless torture, actually give the language remarkable freedom.",
+   "tokens": [
+    {
+     "t": "Падежи́",
+     "sp": false,
+     "lex": "n:падёж",
+     "lemma": "паде́ж",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "pl"
+     },
+     "rare": true
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "кото́рые",
+     "lex": "a:который",
+     "lemma": "кото́рый",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "снача́ла",
+     "lex": "o:сначала",
+     "lemma": "снача́ла",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "ка́жутся",
+     "lex": "v:казаться",
+     "lemma": "каза́ться",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "pl"
+     }
+    },
+    {
+     "t": "бессмы́сленной",
+     "lex": "a:бессмысленный",
+     "lemma": "бессмы́сленный",
+     "g": {
+      "pos": "adj",
+      "case": "ins",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "пы́ткой",
+     "sp": false,
+     "lex": "n:пытка",
+     "lemma": "пы́тка",
+     "g": {
+      "pos": "noun",
+      "case": "ins",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "на",
+     "lex": "o:на",
+     "lemma": "на",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "са́мом",
+     "lex": "a:самый",
+     "lemma": "са́мый",
+     "g": {
+      "pos": "adj",
+      "case": "prep",
+      "number": "sg",
+      "gender": "n"
+     }
+    },
+    {
+     "t": "де́ле",
+     "lex": "n:дело",
+     "lemma": "де́ло",
+     "g": {
+      "pos": "noun",
+      "case": "prep",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "даю́т",
+     "lex": "v:давать",
+     "lemma": "дава́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "pl"
+     }
+    },
+    {
+     "t": "языку́",
+     "lex": "n:язык",
+     "lemma": "язы́к",
+     "g": {
+      "pos": "noun",
+      "case": "dat",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "удиви́тельную",
+     "lex": "a:удивительный",
+     "lemma": "удиви́тельный",
+     "g": {
+      "pos": "adj",
+      "case": "acc",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "свобо́ду",
+     "sp": false,
+     "lex": "n:свобода",
+     "lemma": "свобо́да",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "Since the ending shows who is doing what, the word order can be changed to highlight what matters.",
+   "tokens": [
+    {
+     "t": "Поско́льку",
+     "lex": "o:поскольку",
+     "lemma": "поско́льку",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "оконча́ние",
+     "lex": "n:окончание",
+     "lemma": "оконча́ние",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "пока́зывает",
+     "sp": false,
+     "lex": "v:показывать",
+     "lemma": "пока́зывать",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "sg"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "кто",
+     "lex": "o:кто",
+     "lemma": "кто",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "что",
+     "lex": "o:что",
+     "lemma": "что",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "де́лает",
+     "sp": false,
+     "lex": "v:делать",
+     "lemma": "де́лать",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "sg"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "поря́док",
+     "lex": "n:порядок",
+     "lemma": "поря́док",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "слов",
+     "lex": "n:слово",
+     "lemma": "сло́во",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "мо́жно",
+     "lex": "o:можно",
+     "lemma": "мо́жно",
+     "g": {
+      "pos": "pred"
+     }
+    },
+    {
+     "t": "меня́ть",
+     "sp": false,
+     "lex": "v:менять",
+     "lemma": "меня́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "что́бы",
+     "lex": "o:чтобы",
+     "lemma": "что́бы",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "вы́делить",
+     "lex": "v:выделить",
+     "lemma": "вы́делить",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf"
+     }
+    },
+    {
+     "t": "то",
+     "sp": false,
+     "lex": "o:то",
+     "lemma": "то",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "что",
+     "lex": "o:что",
+     "lemma": "что",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "ва́жно",
+     "sp": false,
+     "lex": "o:важно",
+     "lemma": "ва́жно",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "\"Mama lyubit syna\" and \"Syna lyubit mama\" are about the same thing, but with different emphasis.",
+   "tokens": [
+    {
+     "t": "«",
+     "sp": false
+    },
+    {
+     "t": "Ма́ма",
+     "lex": "n:мама",
+     "lemma": "ма́ма",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "лю́бит",
+     "lex": "v:любить",
+     "lemma": "люби́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "sg"
+     }
+    },
+    {
+     "t": "сы́на",
+     "sp": false,
+     "lex": "n:сын",
+     "lemma": "сын",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "»"
+    },
+    {
+     "t": "и",
+     "lex": "o:и",
+     "lemma": "и",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "«",
+     "sp": false
+    },
+    {
+     "t": "Сы́на",
+     "lex": "n:сын",
+     "lemma": "сын",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "лю́бит",
+     "lex": "v:любить",
+     "lemma": "люби́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "sg"
+     }
+    },
+    {
+     "t": "ма́ма",
+     "sp": false,
+     "lex": "n:мама",
+     "lemma": "ма́ма",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "»"
+    },
+    {
+     "t": "—"
+    },
+    {
+     "t": "э́то",
+     "lex": "o:это",
+     "lemma": "э́то",
+     "g": {
+      "pos": "pron"
+     }
+    },
+    {
+     "t": "об",
+     "lex": "o:о",
+     "lemma": "о",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "одно́м",
+     "lex": "o:один",
+     "lemma": "оди́н",
+     "g": {
+      "pos": "num",
+      "case": "prep",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "и",
+     "lex": "o:и",
+     "lemma": "и",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "том",
+     "lex": "n:том",
+     "lemma": "том",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "же",
+     "sp": false,
+     "lex": "o:же",
+     "lemma": "же",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "но",
+     "lex": "o:но",
+     "lemma": "но",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "с",
+     "lex": "o:с",
+     "lemma": "с",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "ра́зными",
+     "lex": "a:разный",
+     "lemma": "ра́зный",
+     "g": {
+      "pos": "adj",
+      "case": "ins",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "акце́нтами",
+     "sp": false,
+     "lex": "n:акцент",
+     "lemma": "акце́нт",
+     "g": {
+      "pos": "noun",
+      "case": "ins",
+      "number": "pl"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "para": true,
+   "en": "Aspect, which torments students so much, lets you say in one word what needs several in English.",
+   "tokens": [
+    {
+     "t": "Вид",
+     "lex": "n:вид",
+     "lemma": "вид",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "глаго́ла",
+     "sp": false,
+     "lex": "n:глагол",
+     "lemma": "глаго́л",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "кото́рый",
+     "lex": "a:который",
+     "lemma": "кото́рый",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "так",
+     "lex": "o:так",
+     "lemma": "так",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "му́чит",
+     "lex": "v:мучить",
+     "lemma": "му́чить",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "sg"
+     }
+    },
+    {
+     "t": "студе́нтов",
+     "sp": false,
+     "lex": "n:студент",
+     "lemma": "студе́нт",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "pl"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "позволя́ет",
+     "lex": "v:позволять",
+     "lemma": "позволя́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "sg"
+     }
+    },
+    {
+     "t": "одни́м",
+     "lex": "o:один",
+     "lemma": "оди́н",
+     "g": {
+      "pos": "num",
+      "case": "ins",
+      "gender": "n"
+     }
+    },
+    {
+     "t": "сло́вом",
+     "lex": "n:слово",
+     "lemma": "сло́во",
+     "g": {
+      "pos": "noun",
+      "case": "ins",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "сказа́ть",
+     "lex": "v:сказать",
+     "lemma": "сказа́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf"
+     }
+    },
+    {
+     "t": "то",
+     "sp": false,
+     "lex": "o:то",
+     "lemma": "то",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "для",
+     "lex": "o:для",
+     "lemma": "для",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "чего́",
+     "lex": "o:что",
+     "lemma": "что",
+     "g": {
+      "pos": "pron",
+      "case": "gen"
+     }
+    },
+    {
+     "t": "в",
+     "lex": "o:в",
+     "lemma": "в",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "англи́йском",
+     "lex": "a:английский",
+     "lemma": "англи́йский",
+     "g": {
+      "pos": "adj",
+      "case": "prep",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "ну́жно",
+     "lex": "o:нужно",
+     "lemma": "ну́жно",
+     "g": {
+      "pos": "pred"
+     }
+    },
+    {
+     "t": "не́сколько",
+     "sp": false,
+     "lex": "o:несколько",
+     "lemma": "не́сколько",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "\"Ya chital etu knigu\" and \"Ya prochital etu knigu\" are two different worlds: in the first what matters is the process or the bare fact, in the second the result.",
+   "tokens": [
+    {
+     "t": "«",
+     "sp": false
+    },
+    {
+     "t": "Я",
+     "lex": "o:я",
+     "lemma": "я",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "чита́л",
+     "lex": "v:читать",
+     "lemma": "чита́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "э́ту",
+     "lex": "a:этот",
+     "lemma": "э́тот",
+     "g": {
+      "pos": "adj",
+      "case": "acc",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "кни́гу",
+     "sp": false,
+     "lex": "n:книга",
+     "lemma": "кни́га",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "»"
+    },
+    {
+     "t": "и",
+     "lex": "o:и",
+     "lemma": "и",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "«",
+     "sp": false
+    },
+    {
+     "t": "Я",
+     "lex": "o:я",
+     "lemma": "я",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "прочита́л",
+     "lex": "v:прочитать",
+     "lemma": "прочита́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "э́ту",
+     "lex": "a:этот",
+     "lemma": "э́тот",
+     "g": {
+      "pos": "adj",
+      "case": "acc",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "кни́гу",
+     "sp": false,
+     "lex": "n:книга",
+     "lemma": "кни́га",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "»"
+    },
+    {
+     "t": "—"
+    },
+    {
+     "t": "э́то",
+     "lex": "o:это",
+     "lemma": "э́то",
+     "g": {
+      "pos": "pron"
+     }
+    },
+    {
+     "t": "два",
+     "lex": "o:два",
+     "lemma": "два",
+     "g": {
+      "pos": "num",
+      "case": "nom",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "ра́зных",
+     "lex": "a:разный",
+     "lemma": "ра́зный",
+     "g": {
+      "pos": "adj",
+      "case": "acc",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "ми́ра",
+     "sp": false,
+     "lex": "n:мир",
+     "lemma": "мир",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ":"
+    },
+    {
+     "t": "в",
+     "lex": "o:в",
+     "lemma": "в",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "пе́рвом",
+     "lex": "a:первый",
+     "lemma": "пе́рвый",
+     "g": {
+      "pos": "adj",
+      "case": "prep",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "ва́жен",
+     "lex": "a:важный",
+     "lemma": "ва́жный",
+     "g": {
+      "pos": "adj",
+      "short": true,
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "проце́сс",
+     "lex": "n:процесс",
+     "lemma": "проце́сс",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "и́ли",
+     "lex": "o:или",
+     "lemma": "и́ли",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "сам",
+     "lex": "a:сам",
+     "lemma": "сам",
+     "g": {
+      "pos": "adj",
+      "case": "acc",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "факт",
+     "sp": false,
+     "lex": "n:факт",
+     "lemma": "факт",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "во",
+     "lex": "o:в",
+     "lemma": "в",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "второ́м",
+     "lex": "a:второй",
+     "lemma": "второ́й",
+     "g": {
+      "pos": "adj",
+      "case": "prep",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "—"
+    },
+    {
+     "t": "результа́т",
+     "sp": false,
+     "lex": "n:результат",
+     "lemma": "результа́т",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "para": true,
+   "en": "Another merit of Russian is its honesty.",
+   "tokens": [
+    {
+     "t": "Ещё",
+     "lex": "o:ещё",
+     "lemma": "ещё",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "одно́",
+     "lex": "o:один",
+     "lemma": "оди́н",
+     "g": {
+      "pos": "num",
+      "case": "nom",
+      "gender": "n"
+     }
+    },
+    {
+     "t": "досто́инство",
+     "lex": "n:достоинство",
+     "lemma": "досто́инство",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "ру́сского",
+     "lex": "a:русский",
+     "lemma": "ру́сский",
+     "g": {
+      "pos": "adj",
+      "case": "gen",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "языка́",
+     "lex": "n:язык",
+     "lemma": "язы́к",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "—"
+    },
+    {
+     "t": "его́",
+     "lex": "o:он",
+     "lemma": "он",
+     "g": {
+      "pos": "pron",
+      "case": "acc"
+     }
+    },
+    {
+     "t": "че́стность",
+     "sp": false,
+     "lex": "n:честность",
+     "lemma": "че́стность",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "It is almost always written the way it's pronounced, if you know a few rules.",
+   "tokens": [
+    {
+     "t": "Он",
+     "lex": "o:он",
+     "lemma": "он",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "почти́",
+     "lex": "o:почти",
+     "lemma": "почти́",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "всегда́",
+     "lex": "o:всегда",
+     "lemma": "всегда́",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "пи́шется",
+     "lex": "v:писаться",
+     "lemma": "писа́ться",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "sg"
+     }
+    },
+    {
+     "t": "так",
+     "sp": false,
+     "lex": "o:так",
+     "lemma": "так",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "как",
+     "lemma": "как",
+     "g": {
+      "pos": "conj"
+     },
+     "gloss": "how; as, like"
+    },
+    {
+     "t": "произно́сится",
+     "sp": false,
+     "lex": "v:произноситься",
+     "lemma": "произноси́ться",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "sg"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "е́сли",
+     "lex": "o:если",
+     "lemma": "е́сли",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "знать",
+     "lex": "v:знать",
+     "lemma": "знать",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf"
+     }
+    },
+    {
+     "t": "не́сколько",
+     "lex": "o:несколько",
+     "lemma": "не́сколько",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "пра́вил",
+     "sp": false,
+     "lex": "n:правило",
+     "lemma": "пра́вило",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "pl"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "If you learn the alphabet in a week, you'll be able to read any word, even if you don't know its meaning.",
+   "tokens": [
+    {
+     "t": "Е́сли",
+     "lex": "o:если",
+     "lemma": "е́сли",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "вы",
+     "lex": "o:вы",
+     "lemma": "вы",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "вы́учите",
+     "lex": "v:выучить",
+     "lemma": "вы́учить",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "fut",
+      "person": 2,
+      "number": "pl"
+     }
+    },
+    {
+     "t": "алфави́т",
+     "lex": "n:алфавит",
+     "lemma": "алфави́т",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "за",
+     "lex": "o:за",
+     "lemma": "за",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "неде́лю",
+     "sp": false,
+     "lex": "n:неделя",
+     "lemma": "неде́ля",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "вы",
+     "lex": "o:вы",
+     "lemma": "вы",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "смо́жете",
+     "lex": "v:смочь",
+     "lemma": "смочь",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "fut",
+      "person": 2,
+      "number": "pl"
+     }
+    },
+    {
+     "t": "прочита́ть",
+     "lex": "v:прочитать",
+     "lemma": "прочита́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf"
+     }
+    },
+    {
+     "t": "любо́е",
+     "lex": "a:любой",
+     "lemma": "любо́й",
+     "g": {
+      "pos": "adj",
+      "case": "acc",
+      "number": "sg",
+      "gender": "n"
+     }
+    },
+    {
+     "t": "сло́во",
+     "sp": false,
+     "lex": "n:слово",
+     "lemma": "сло́во",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "да́же",
+     "lex": "o:даже",
+     "lemma": "да́же",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "е́сли",
+     "lex": "o:если",
+     "lemma": "е́сли",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "не",
+     "lex": "o:не",
+     "lemma": "не",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "зна́ете",
+     "lex": "v:знать",
+     "lemma": "знать",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 2,
+      "number": "pl"
+     }
+    },
+    {
+     "t": "его́",
+     "lex": "o:он",
+     "lemma": "он",
+     "g": {
+      "pos": "pron",
+      "case": "acc"
+     }
+    },
+    {
+     "t": "значе́ния",
+     "sp": false,
+     "lex": "n:значение",
+     "lemma": "значе́ние",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "para": true,
+   "en": "And above all, a reward awaits beyond the difficulties: a literature you can't truly understand in translation, songs, jokes, kitchen conversations until morning.",
+   "tokens": [
+    {
+     "t": "А",
+     "lex": "o:а",
+     "lemma": "а",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "гла́вное",
+     "sp": false,
+     "lex": "n:главное",
+     "lemma": "гла́вное",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "за",
+     "lex": "o:за",
+     "lemma": "за",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "тру́дностями",
+     "lex": "n:трудность",
+     "lemma": "тру́дность",
+     "g": {
+      "pos": "noun",
+      "case": "ins",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "ждёт",
+     "lex": "v:ждать",
+     "lemma": "ждать",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "sg"
+     }
+    },
+    {
+     "t": "награ́да",
+     "sp": false,
+     "lex": "n:награда",
+     "lemma": "награ́да",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ":"
+    },
+    {
+     "t": "литерату́ра",
+     "sp": false,
+     "lex": "n:литература",
+     "lemma": "литерату́ра",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "кото́рую",
+     "lex": "a:который",
+     "lemma": "кото́рый",
+     "g": {
+      "pos": "adj",
+      "case": "acc",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "нельзя́",
+     "lex": "o:нельзя",
+     "lemma": "нельзя́",
+     "g": {
+      "pos": "pred"
+     }
+    },
+    {
+     "t": "по-настоя́щему",
+     "lex": "o:по-настоящему",
+     "lemma": "по-настоя́щему",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "поня́ть",
+     "lex": "v:понять",
+     "lemma": "поня́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf"
+     }
+    },
+    {
+     "t": "в",
+     "lex": "o:в",
+     "lemma": "в",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "перево́де",
+     "sp": false,
+     "lex": "n:перевод",
+     "lemma": "перево́д",
+     "g": {
+      "pos": "noun",
+      "case": "prep",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "пе́сни",
+     "sp": false,
+     "lex": "n:песня",
+     "lemma": "пе́сня",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "pl"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "шу́тки",
+     "sp": false,
+     "lex": "n:шутка",
+     "lemma": "шу́тка",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "pl"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "разгово́ры",
+     "lex": "n:разговор",
+     "lemma": "разгово́р",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "на",
+     "lex": "o:на",
+     "lemma": "на",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "ку́хне",
+     "lex": "n:кухня",
+     "lemma": "ку́хня",
+     "g": {
+      "pos": "noun",
+      "case": "prep",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "до",
+     "lex": "o:до",
+     "lemma": "до",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "утра́",
+     "sp": false,
+     "lex": "n:утро",
+     "lemma": "у́тро",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "If you've read this text to the end, then you've already covered most of the way.",
+   "tokens": [
+    {
+     "t": "Е́сли",
+     "lex": "o:если",
+     "lemma": "е́сли",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "вы",
+     "lex": "o:вы",
+     "lemma": "вы",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "дочита́ли",
+     "lex": "v:дочитать",
+     "lemma": "дочита́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "pl"
+     },
+     "rare": true
+    },
+    {
+     "t": "э́тот",
+     "lex": "a:этот",
+     "lemma": "э́тот",
+     "g": {
+      "pos": "adj",
+      "case": "acc",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "текст",
+     "lex": "n:текст",
+     "lemma": "текст",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "до",
+     "lex": "o:до",
+     "lemma": "до",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "конца́",
+     "sp": false,
+     "lex": "n:конец",
+     "lemma": "коне́ц",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "зна́чит",
+     "sp": false,
+     "lex": "v:значить",
+     "lemma": "зна́чить",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "sg"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "бо́льшую",
+     "lex": "a:больший",
+     "lemma": "бо́льший",
+     "g": {
+      "pos": "adj",
+      "case": "acc",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "часть",
+     "lex": "n:часть",
+     "lemma": "часть",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "пути́",
+     "lex": "n:путь",
+     "lemma": "путь",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "вы",
+     "lex": "o:вы",
+     "lemma": "вы",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "уже́",
+     "lex": "o:уже",
+     "lemma": "уже́",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "прошли́",
+     "sp": false,
+     "lex": "v:пройти",
+     "lemma": "пройти́",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "pl"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  }
+ ],
+ "questions": [
+  {
+   "id": "nf-c1-10-q1",
+   "type": "choice",
+   "level": "C1",
+   "tags": [
+    "reading"
+   ],
+   "prompt": {
+    "ru": "Что даю́т языку́ падежи́?",
+    "en": "What do cases give the language?",
+    "instruction": "Choose the answer"
+   },
+   "accept": [
+    "Свобо́ду поря́дка слов."
+   ],
+   "distractors": [
+    {
+     "ru": "Просты́е оконча́ния.",
+     "error": "reading.detail"
+    },
+    {
+     "ru": "Коро́ткие слова́.",
+     "error": "reading.detail"
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "nf-c1-10-q2",
+   "type": "choice",
+   "level": "C1",
+   "tags": [
+    "reading"
+   ],
+   "prompt": {
+    "ru": "Чем отлича́ются «чита́л» и «прочита́л»?",
+    "en": "How do \"chital\" and \"prochital\" differ?",
+    "instruction": "Choose the answer"
+   },
+   "accept": [
+    "В пе́рвом ва́жен проце́сс и́ли факт, во второ́м — результа́т."
+   ],
+   "distractors": [
+    {
+     "ru": "Пе́рвое — бу́дущее вре́мя.",
+     "error": "reading.detail"
+    },
+    {
+     "ru": "Ниче́м.",
+     "error": "reading.detail"
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "nf-c1-10-q3",
+   "type": "choice",
+   "level": "C1",
+   "tags": [
+    "reading"
+   ],
+   "prompt": {
+    "ru": "Почему́ а́втор называ́ет ру́сский язы́к че́стным?",
+    "en": "Why does the author call Russian honest?",
+    "instruction": "Choose the answer"
+   },
+   "accept": [
+    "Он почти́ всегда́ пи́шется так, как произно́сится."
+   ],
+   "distractors": [
+    {
+     "ru": "В нём нет исключе́ний.",
+     "error": "reading.detail"
+    },
+    {
+     "ru": "На нём нельзя́ лгать.",
+     "error": "reading.detail"
+    }
+   ],
+   "source": "handwritten"
+  }
+ ]
+}

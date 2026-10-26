@@ -1,0 +1,1778 @@
+# Story analysis report
+
+60 texts, 7242 analysed words. Decisions taken by a context rule (check a sample):
+
+- lexeme: 624
+- nom: 340
+- open: 328
+- acc: 274
+- gen: 64
+- prep: 42
+- agrees with its adjective: 40
+- no agreement with году́: 5
+- no agreement with он: 2
+- no agreement with его́: 2
+- no agreement with Ни́не: 1
+- no agreement with пода́рок: 1
+- no agreement with ритуа́л: 1
+- no agreement with вре́мя: 1
+- no agreement with оши́бка: 1
+- no agreement with миллио́ны: 1
+- no agreement with рабо́та: 1
+- no agreement with Байка́ла: 1
+- no agreement with слов: 1
+- no agreement with три́дцать: 1
+- no agreement with ве́щи: 1
+- no agreement with ми́ра: 1
+- no agreement with проце́сс: 1
+- no agreement with просту́да: 1
+- no agreement with гости́ная: 1
+- no agreement with пра́вда: 1
+- no agreement with по́мощь: 1
+- no agreement with апре́ля: 1
+
+## Problems
+
+None.
+
+## Decisions
+
+- a2-01.txt:1: «Меня́» lexeme: chose o:я over o:меня
+- a2-01.txt:1: «Меня́» open: acc/gen → acc
+- a2-01.txt:1: «зову́т» lexeme: chose v:звать over o:зовут
+- a2-01.txt:2: «Мне» lexeme: chose o:я over o:мне
+- a2-01.txt:2: «лет» lexeme: chose n:год over n:лета, n:лёт
+- a2-01.txt:10: «меня́» lexeme: chose o:я over o:меня
+- a2-01.txt:12: «крова́ть» nom: subject
+- a2-01.txt:12: «стол» nom: listed after крова́ть
+- a2-01.txt:12: «шкаф» nom: listed after стол
+- a2-01.txt:13: «Окно́» nom: subject
+- a2-01.txt:14: «сел» lexeme: chose v:сесть over n:село
+- a2-01.txt:16: «Ве́чером» lexeme: chose n:вечер over o:вечером
+- a2-01.txt:19: «уже́» lexeme: chose o:уже over n:уж
+- a2-01.txt:24: «Магази́н» nom: subject
+- a2-01.txt:24: «ря́дом» lexeme: chose o:рядом over n:ряд
+- a2-01.txt:25: «хлеб» acc: after a transitive verb
+- a2-01.txt:25: «сыр» acc: listed after хлеб
+- a2-01.txt:25: «молоко́» acc: listed after сыр
+- a2-02.txt:1: «У́тром» lexeme: chose n:утро over o:утром
+- a2-02.txt:1: «часо́в» lexeme: chose n:час over n:часы
+- a2-02.txt:2: «ко́фе» acc: after a transitive verb
+- a2-02.txt:2: «ко́фе» open: sg_acc/pl_acc → sg_acc
+- a2-02.txt:3: «Университе́т» nom: subject
+- a2-02.txt:3: «большо́й» open: m_nom/m_acc/f_gen/f_dat/f_ins → m_nom
+- a2-02.txt:5: «зда́ние» acc: after a transitive verb
+- a2-02.txt:6: «па́рня» acc: after a transitive verb
+- a2-02.txt:7: «Извини́те» lexeme: chose v:извинить over o:извините
+- a2-02.txt:7: «факульте́т» nom: subject
+- a2-02.txt:7: «журнали́стики» gen: follows a noun (possession)
+- a2-02.txt:10: «Его́» lexeme: chose o:он over o:его, o:оно
+- a2-02.txt:10: «Его́» open: acc/gen → acc
+- a2-02.txt:10: «зову́т» lexeme: chose v:звать over o:зовут
+- a2-02.txt:12: «шли» lexeme: chose v:идти over v:слать
+- a2-02.txt:13: «футбо́л» acc: after a transitive verb
+- a2-02.txt:13: «кни́ги» agrees with its adjective
+- a2-02.txt:13: «кни́ги» acc: listed after му́зыку
+- a2-02.txt:16: «всё» lexeme: chose o:всё over o:все
+- a2-02.txt:18: «ря́дом» lexeme: chose o:рядом over n:ряд
+- a2-02.txt:18: «есть» lexeme: chose v:быть over o:есть, v:есть
+- a2-02.txt:18: «есть» open: np_3sg/np_3pl → np_3sg
+- a2-02.txt:18: «кафе́» agrees with its adjective
+- a2-02.txt:18: «кафе́» nom: subject
+- a2-02.txt:21: «кафе́» prep: location
+- a2-02.txt:21: «кафе́» open: sg_prep/pl_prep → sg_prep
+- a2-02.txt:21: «е́ли» lexeme: chose v:есть over n:ель
+- a2-02.txt:21: «суп» acc: after a transitive verb
+- a2-02.txt:21: «чай» lexeme: chose n:чай over v:чаять
+- a2-02.txt:21: «чай» acc: after a transitive verb
+- a2-02.txt:22: «Ве́чером» lexeme: chose n:вечер over o:вечером
+- a2-02.txt:22: «домо́й» lexeme: chose o:домой over v:домыть
+- a2-03.txt:1: «дверь» acc: after a transitive verb
+- a2-03.txt:2: «до́ма» lexeme: chose n:дом over o:дома
+- a2-03.txt:4: «ко» lexeme: chose o:к over o:ко
+- a2-03.txt:4: «мне» lexeme: chose o:я over o:мне
+- a2-03.txt:5: «его́» lexeme: chose o:он over o:его, o:оно
+- a2-03.txt:5: «его́» gen: negated existence (не́ было, нет)
+- a2-03.txt:8: «Ба́рсика» gen: negated existence (не́ было, нет)
+- a2-03.txt:9: «окно́» nom: subject
+- a2-03.txt:10: «У́тром» lexeme: chose n:утро over o:утром
+- a2-03.txt:10: «его́» lexeme: chose o:он over o:его, o:оно
+- a2-03.txt:10: «его́» acc: after a transitive verb
+- a2-03.txt:14: «Ря́дом» lexeme: chose o:рядом over n:ряд
+- a2-03.txt:15: «кота́» acc: after a transitive verb
+- a2-03.txt:18: «па́рку» lexeme: chose n:парк over n:парка
+- a2-03.txt:20: «домо́й» lexeme: chose o:домой over v:домыть
+- a2-03.txt:20: «ночь» agrees with its adjective
+- a2-04.txt:1: «У́тром» lexeme: chose n:утро over o:утром
+- a2-04.txt:1: «две́ри» prep: location
+- a2-04.txt:2: «меня́» lexeme: chose o:я over o:меня
+- a2-04.txt:2: «пять» nom: subject
+- a2-04.txt:4: «пять» nom: subject
+- a2-04.txt:5: «Дверь» nom: subject
+- a2-04.txt:6: «Здра́вствуйте» lexeme: chose o:здравствуйте over v:здравствовать
+- a2-04.txt:10: «меня́» lexeme: chose o:я over o:меня
+- a2-04.txt:11: «ве́чером» lexeme: chose n:вечер over o:вечером
+- a2-04.txt:11: «голо́дный» open: m_nom/m_acc → m_nom
+- a2-04.txt:11: «мо́крый» open: m_nom/m_acc → m_nom
+- a2-04.txt:12: «вам» lexeme: chose o:вы over o:вам
+- a2-04.txt:12: «большо́е» open: n_nom/n_acc → n_nom
+- a2-04.txt:14: «меня́» lexeme: chose o:я over o:меня
+- a2-04.txt:14: «меня́» acc: after a transitive verb
+- a2-04.txt:14: «чай» lexeme: chose n:чай over v:чаять
+- a2-04.txt:15: «со́рок» acc: a number after the verb
+- a2-04.txt:15: «лет» lexeme: chose n:год over n:лета, n:лёт
+- a2-04.txt:17: «есть» lexeme: chose v:быть over o:есть, v:есть
+- a2-04.txt:17: «есть» open: np_3sg/np_3pl → np_3sg
+- a2-04.txt:18: «ко» lexeme: chose o:к over o:ко
+- a2-04.txt:18: «мне» lexeme: chose o:я over o:мне
+- a2-04.txt:19: «меня́» lexeme: chose o:я over o:меня
+- a2-04.txt:19: «есть» lexeme: chose v:быть over o:есть, v:есть
+- a2-04.txt:19: «есть» open: np_3sg/np_3pl → np_3sg
+- a2-05.txt:1: «мне» lexeme: chose o:я over o:мне
+- a2-05.txt:4: «ста́нции» prep: location
+- a2-05.txt:6: «метро́» acc: after a transitive verb
+- a2-05.txt:6: «метро́» open: sg_acc/pl_acc → sg_acc
+- a2-05.txt:13: «Вам» lexeme: chose o:вы over o:вам
+- a2-05.txt:13: «три» lexeme: chose o:три over v:тереть
+- a2-05.txt:13: «три» acc: a number after the verb
+- a2-05.txt:18: «Почти́» lexeme: chose o:почти over v:почесть, v:почтить
+- a2-05.txt:20: «карти́ны» acc: after a transitive verb
+- a2-05.txt:20: «два» acc: a number after the verb
+- a2-05.txt:21: «Мне» lexeme: chose o:я over o:мне
+- a2-05.txt:21: «лес» lexeme: chose n:лес over n:леса
+- a2-05.txt:21: «лес» nom: subject
+- a2-06.txt:1: «ве́чером» lexeme: chose n:вечер over o:вечером
+- a2-06.txt:2: «нас» lexeme: chose o:мы over o:нас
+- a2-06.txt:2: «но́вость» nom: listed after А́ня
+- a2-06.txt:2: «тебе́» lexeme: chose o:ты over o:тебе
+- a2-06.txt:4: «Ему́» lexeme: chose o:он over o:ему, o:оно
+- a2-06.txt:4: «лет» lexeme: chose n:год over n:лета, n:лёт
+- a2-06.txt:7: «меня́» lexeme: chose o:я over o:меня
+- a2-06.txt:9: «меня́» lexeme: chose o:я over o:меня
+- a2-06.txt:10: «полу́» lexeme: chose n:пол over n:пола
+- a2-06.txt:10: «Ему́» lexeme: chose o:он over o:ему, o:оно
+- a2-06.txt:10: «всё» lexeme: chose o:всё over o:все
+- a2-06.txt:13: «Кремль» acc: after a transitive verb
+- a2-06.txt:13: «метро́» acc: listed after Кремль
+- a2-06.txt:13: «метро́» open: sg_acc/pl_acc → sg_acc
+- a2-06.txt:13: «зоопа́рк» acc: listed after метро́
+- a2-06.txt:19: «день» lexeme: chose n:день over v:деть
+- a2-06.txt:19: «об» lexeme: chose o:о over o:об
+- a2-06.txt:19: «э́том» no agreement with Ни́не
+- a2-06.txt:19: «э́том» open: m_prep/n_prep → m_prep
+- a2-06.txt:20: «меня́» lexeme: chose o:я over o:меня
+- a2-06.txt:20: «есть» lexeme: chose v:быть over o:есть, v:есть
+- a2-06.txt:20: «есть» open: np_3sg/np_3pl → np_3sg
+- a2-07.txt:1: «По́езд» nom: subject
+- a2-07.txt:1: «часо́в» lexeme: chose n:час over n:часы
+- a2-07.txt:3: «Приве́т» nom: subject
+- a2-07.txt:3: «Кремль» nom: subject
+- a2-07.txt:4: «за́втрак» nom: subject
+- a2-07.txt:7: «метро́» gen: after a reflexive verb (боя́ться, испуга́ться…)
+- a2-07.txt:7: «метро́» open: sg_gen/pl_gen → sg_gen
+- a2-07.txt:8: «Тут» lexeme: chose o:тут over n:тут
+- a2-07.txt:9: «пло́щади» prep: location
+- a2-07.txt:10: «всё» lexeme: chose o:всё over o:все
+- a2-07.txt:10: «Кремль» nom: subject
+- a2-07.txt:10: «ба́шни» nom: listed after Кремль
+- a2-07.txt:10: «голубе́й» lexeme: chose n:голубь over v:голубеть
+- a2-07.txt:10: «голубе́й» open: pl_acc/pl_gen → pl_acc
+- a2-07.txt:12: «нам» lexeme: chose o:мы over o:нам
+- a2-07.txt:13: «ста́ли» lexeme: chose v:стать over n:сталь
+- a2-07.txt:13: «что» nom: subject
+- a2-07.txt:13: «футбо́л» acc: after a transitive verb
+- a2-07.txt:14: «ря́дом» lexeme: chose o:рядом over n:ряд
+- a2-07.txt:16: «Ве́чером» lexeme: chose n:вечер over o:вечером
+- a2-07.txt:16: «е́ли» lexeme: chose v:есть over n:ель
+- a2-07.txt:16: «до́ма» lexeme: chose n:дом over o:дома
+- a2-07.txt:17: «спал» lexeme: chose v:спать over v:спасть
+- a2-07.txt:18: «чем» lexeme: chose o:что over o:чём
+- a2-07.txt:18: «до́ма» lexeme: chose n:дом over o:дома
+- a2-08.txt:1: «У́тром» lexeme: chose n:утро over o:утром
+- a2-08.txt:2: «тебе́» lexeme: chose o:ты over o:тебе
+- a2-08.txt:2: «за́втрак» acc: after a transitive verb
+- a2-08.txt:6: «дым» nom: subject
+- a2-08.txt:7: «окно́» acc: after a transitive verb
+- a2-08.txt:11: «кафе́» prep: location
+- a2-08.txt:11: «кафе́» open: sg_prep/pl_prep → sg_prep
+- a2-08.txt:11: «ря́дом» lexeme: chose o:рядом over n:ряд
+- a2-08.txt:14: «како́й» open: m_nom/m_acc/f_gen/f_dat/f_ins → m_nom
+- a2-08.txt:14: «большо́й» open: m_nom/m_acc/f_gen/f_dat/f_ins → m_nom
+- a2-08.txt:16: «моро́женое» acc: after a transitive verb
+- a2-08.txt:17: «ря́дом» lexeme: chose o:рядом over n:ряд
+- a2-08.txt:18: «никого́» open: acc/gen → acc
+- a2-08.txt:19: «ему́» lexeme: chose o:он over o:ему, o:оно
+- a2-09.txt:3: «ма́льчика» acc: after a transitive verb
+- a2-09.txt:3: «Ему́» lexeme: chose o:он over o:ему, o:оно
+- a2-09.txt:3: «лет» lexeme: chose n:год over n:лета, n:лёт
+- a2-09.txt:3: «него́» lexeme: chose o:он over o:оно
+- a2-09.txt:8: «три́дцать» acc: after a transitive verb
+- a2-09.txt:9: «уже́» lexeme: chose o:уже over n:уж
+- a2-09.txt:13: «их» lexeme: chose o:они over o:их
+- a2-09.txt:13: «их» acc: after a transitive verb
+- a2-09.txt:13: «тетра́ди» prep: location
+- a2-09.txt:16: «меня́» lexeme: chose o:я over o:меня
+- a2-09.txt:16: «сел» lexeme: chose v:сесть over n:село
+- a2-09.txt:16: «телефо́н» nom: subject
+- a2-09.txt:16: «что» nom: subject
+- a2-09.txt:19: «его́» lexeme: chose o:он over o:его, o:оно
+- a2-09.txt:19: «его́» acc: after a transitive verb
+- a2-10.txt:2: «день» lexeme: chose n:день over v:деть
+- a2-10.txt:3: «у́жин» acc: after a transitive verb
+- a2-10.txt:5: «Ве́чером» lexeme: chose n:вечер over o:вечером
+- a2-10.txt:5: «нам» lexeme: chose o:мы over o:нам
+- a2-10.txt:5: «пришли́» lexeme: chose v:прийти over v:прислать
+- a2-10.txt:6: «пиро́г» lexeme: chose n:пирог over n:пирога
+- a2-10.txt:6: «пиро́г» acc: after a transitive verb
+- a2-10.txt:6: «фру́кты» nom: subject
+- a2-10.txt:7: «суп» acc: after a transitive verb
+- a2-10.txt:7: «сала́т» acc: after a transitive verb
+- a2-10.txt:8: «Всё» lexeme: chose o:всё over o:все
+- a2-10.txt:12: «нам» lexeme: chose o:мы over o:нам
+- a2-10.txt:12: «рису́нки» acc: after a transitive verb
+- a2-10.txt:13: «бы́ли» lexeme: chose v:быть over n:быль
+- a2-10.txt:13: «метро́» nom: listed after медве́ди
+- a2-10.txt:13: «метро́» open: sg_nom/pl_nom → sg_nom
+- a2-10.txt:13: «Кремль» nom: listed after метро́
+- a2-10.txt:14: «Э́то» no agreement with пода́рок
+- a2-10.txt:14: «Э́то» open: n_nom/n_acc → n_nom
+- a2-10.txt:14: «пода́рок» nom: subject
+- a2-10.txt:14: «тебя́» lexeme: chose o:ты over o:тебя
+- a2-10.txt:14: «мне» lexeme: chose o:я over o:мне
+- a2-10.txt:16: «У́тром» lexeme: chose n:утро over o:утром
+- a2-10.txt:17: «сел» lexeme: chose v:сесть over n:село
+- a2-10.txt:17: «мне» lexeme: chose o:я over o:мне
+- a2-10.txt:19: «домо́й» lexeme: chose o:домой over v:домыть
+- b1-01.txt:2: «Са́мым» open: m_ins/n_ins/pl_dat → m_ins
+- b1-01.txt:2: «тру́дным» open: m_ins/n_ins/pl_dat → m_ins
+- b1-01.txt:2: «экза́мен» nom: subject
+- b1-01.txt:2: «исто́рии» open: sg_dat/sg_prep/pl_acc → sg_dat
+- b1-01.txt:3: «почти́» lexeme: chose o:почти over v:почесть, v:почтить
+- b1-01.txt:3: «до́ма» lexeme: chose n:дом over o:дома
+- b1-01.txt:3: «уче́бники» acc: after a transitive verb
+- b1-01.txt:3: «конспе́кты» acc: after a transitive verb
+- b1-01.txt:3: «пила́» lexeme: chose v:пить over n:пила
+- b1-01.txt:3: «ко́фе» open: sg_gen/pl_gen → sg_gen
+- b1-01.txt:4: «спал» lexeme: chose v:спать over v:спасть
+- b1-01.txt:4: «её» lexeme: chose o:она over o:её
+- b1-01.txt:9: «У́тром» lexeme: chose n:утро over o:утром
+- b1-01.txt:9: «всё» lexeme: chose o:всё over o:все
+- b1-01.txt:12: «да́ты» acc: after a transitive verb
+- b1-01.txt:12: «год» nom: subject
+- b1-01.txt:12: «двена́дцатый» open: m_nom/m_acc → m_nom
+- b1-01.txt:14: «У́тром» lexeme: chose n:утро over o:утром
+- b1-01.txt:14: «аудито́рии» prep: location
+- b1-01.txt:15: «биле́т» acc: after a transitive verb
+- b1-01.txt:15: «вопро́с» acc: after a transitive verb
+- b1-01.txt:15: «Основа́ние» nom: subject
+- b1-01.txt:17: «два́дцать» acc: a number after the verb
+- b1-01.txt:18: «Пять» nom: subject
+- b1-01.txt:22: «Пять» nom: subject
+- b1-01.txt:23: «пошли́» lexeme: chose v:пойти over v:послать
+- b1-01.txt:23: «кафе́» acc: direction
+- b1-01.txt:23: «кафе́» open: sg_acc/pl_acc → sg_acc
+- b1-01.txt:23: «торт» acc: after a transitive verb
+- b1-02.txt:2: «жизнь» nom: subject
+- b1-02.txt:3: «кафе́» acc: direction
+- b1-02.txt:3: «кафе́» open: sg_acc/pl_acc → sg_acc
+- b1-02.txt:3: «ря́дом» lexeme: chose o:рядом over n:ряд
+- b1-02.txt:3: «её» lexeme: chose o:она over o:её
+- b1-02.txt:3: «её» open: acc/gen → acc
+- b1-02.txt:5: «кафе́» gen: follows a noun (possession)
+- b1-02.txt:5: «кафе́» open: sg_gen/pl_gen → sg_gen
+- b1-02.txt:5: «лет» lexeme: chose n:год over n:лета, n:лёт
+- b1-02.txt:5: «сорока́» open: gen/dat/ins → gen
+- b1-02.txt:6: «О́пыт» nom: subject
+- b1-02.txt:6: «рабо́ты» gen: follows a noun (possession)
+- b1-02.txt:6: «есть» lexeme: chose v:быть over o:есть, v:есть
+- b1-02.txt:6: «есть» open: np_3sg/np_3pl → np_3sg
+- b1-02.txt:8: «тебе́» lexeme: chose o:ты over o:тебе
+- b1-02.txt:8: «всё» lexeme: chose o:всё over o:все
+- b1-02.txt:10: «год» acc: a span of time
+- b1-02.txt:11: «кафе́» prep: location
+- b1-02.txt:11: «кафе́» open: sg_prep/pl_prep → sg_prep
+- b1-02.txt:11: «выходны́м» lexeme: chose n:выходные over n:выходной
+- b1-02.txt:12: «Гла́вное» nom: subject
+- b1-02.txt:14: «день» lexeme: chose n:день over v:деть
+- b1-02.txt:14: «день» acc: a span of time
+- b1-02.txt:14: «тру́дным» open: m_ins/n_ins/pl_dat → m_ins
+- b1-02.txt:15: «зака́зы» acc: after a transitive verb
+- b1-02.txt:15: «чай» lexeme: chose n:чай over v:чаять
+- b1-02.txt:15: «чай» acc: after a transitive verb
+- b1-02.txt:15: «ко́фе» open: sg_gen/pl_gen → sg_gen
+- b1-02.txt:15: «подно́с» acc: after a transitive verb
+- b1-02.txt:16: «бы́ли» lexeme: chose v:быть over n:быль
+- b1-02.txt:16: «ей» lexeme: chose o:она over o:ей
+- b1-02.txt:16: «ей» open: dat/ins → dat
+- b1-02.txt:16: «чаевы́е» acc: after a transitive verb
+- b1-02.txt:19: «Ве́чером» lexeme: chose n:вечер over o:вечером
+- b1-02.txt:19: «чай» lexeme: chose n:чай over v:чаять
+- b1-02.txt:19: «чай» acc: after a transitive verb
+- b1-02.txt:19: «кафе́» prep: location
+- b1-02.txt:19: «кафе́» open: sg_prep/pl_prep → sg_prep
+- b1-02.txt:20: «статьи́» acc: after a transitive verb
+- b1-02.txt:20: «мне» lexeme: chose o:я over o:мне
+- b1-03.txt:2: «меня́» lexeme: chose o:я over o:меня
+- b1-03.txt:2: «есть» lexeme: chose v:быть over o:есть, v:есть
+- b1-03.txt:2: «есть» open: np_3sg/np_3pl → np_3sg
+- b1-03.txt:2: «дом» nom: subject
+- b1-03.txt:2: «сад» nom: listed after дом
+- b1-03.txt:2: «ря́дом» lexeme: chose o:рядом over n:ряд
+- b1-03.txt:3: «Мне» lexeme: chose o:я over o:мне
+- b1-03.txt:3: «одно́й» open: f_gen/f_dat/f_ins → f_gen
+- b1-03.txt:3: «мне» lexeme: chose o:я over o:мне
+- b1-03.txt:6: «у́тром» lexeme: chose n:утро over o:утром
+- b1-03.txt:6: «се́ли» lexeme: chose v:сесть over n:сель
+- b1-03.txt:7: «всех» acc: direction
+- b1-03.txt:8: «шли» lexeme: chose v:идти over v:слать
+- b1-03.txt:8: «берёзы» nom: subject
+- b1-03.txt:8: «поля́» nom: listed after берёзы
+- b1-03.txt:8: «дере́вни» agrees with its adjective
+- b1-03.txt:8: «дере́вни» nom: listed after поля́
+- b1-03.txt:11: «саду́» open: sg_prep/sg_loc2 → sg_prep
+- b1-03.txt:11: «я́блони» nom: subject
+- b1-03.txt:12: «дом» nom: subject
+- b1-03.txt:12: «де́тство» acc: after a transitive verb
+- b1-03.txt:14: «день» lexeme: chose n:день over v:деть
+- b1-03.txt:14: «день» acc: a span of time
+- b1-03.txt:14: «забо́р» acc: after a transitive verb
+- b1-03.txt:14: «гря́дки» acc: after a transitive verb
+- b1-03.txt:14: «цветы́» acc: after a transitive verb
+- b1-03.txt:15: «Ве́чером» lexeme: chose n:вечер over o:вечером
+- b1-03.txt:15: «чай» lexeme: chose n:чай over v:чаять
+- b1-03.txt:15: «чай» acc: after a transitive verb
+- b1-03.txt:15: «пти́цы» gen: after a transitive verb
+- b1-03.txt:17: «что» nom: subject
+- b1-03.txt:18: «Черда́к» nom: subject
+- b1-03.txt:18: «ве́щи» agrees with its adjective
+- b1-03.txt:18: «ве́щи» nom: subject
+- b1-03.txt:19: «глаза́» nom: subject
+- b1-03.txt:20: «уже́» lexeme: chose o:уже over n:уж
+- b1-04.txt:1: «У́тром» lexeme: chose n:утро over o:утром
+- b1-04.txt:1: «пе́рвым» open: m_ins/n_ins/pl_dat → m_ins
+- b1-04.txt:3: «сту́лья» nom: subject
+- b1-04.txt:3: «ла́мпы» nom: listed after сту́лья
+- b1-04.txt:3: «коро́бки» nom: listed after ла́мпы
+- b1-04.txt:3: «вре́мя» acc: a span of time
+- b1-04.txt:5: «углу́» open: sg_prep/sg_loc2 → sg_prep
+- b1-04.txt:5: «сунду́к» nom: subject
+- b1-04.txt:6: «нём» lexeme: chose o:он over o:оно
+- b1-04.txt:7: «Его́» lexeme: chose o:он over o:его, o:оно
+- b1-04.txt:7: «Его́» open: acc/gen → acc
+- b1-04.txt:7: «ключ» nom: subject
+- b1-04.txt:9: «упря́мым» open: m_ins/n_ins/pl_dat → m_ins
+- b1-04.txt:10: «замо́к» acc: after a transitive verb
+- b1-04.txt:11: «пла́тье» nom: subject
+- b1-04.txt:11: «фотогра́фии» nom: listed after пла́тье
+- b1-04.txt:13: «пи́сьма» acc: after a transitive verb
+- b1-04.txt:14: «конве́рт» acc: after a transitive verb
+- b1-04.txt:16: «мать» nom: subject
+- b1-04.txt:16: «их» lexeme: chose o:они over o:их
+- b1-04.txt:16: «их» gen: follows a noun (possession)
+- b1-04.txt:18: «тот» open: m_nom/m_acc → m_nom
+- b1-04.txt:18: «а́дрес» nom: subject
+- b1-04.txt:18: «го́род» nom: subject
+- b1-04.txt:19: «одно́» acc: a number after the verb
+- b1-04.txt:19: «письмо́» acc: after a transitive verb
+- b1-04.txt:20: «ле́том» lexeme: chose n:лето over o:летом
+- b1-04.txt:20: «меня́» lexeme: chose o:я over o:меня
+- b1-04.txt:20: «меня́» acc: after a transitive verb
+- b1-04.txt:22: «глаза́» acc: after a transitive verb
+- b1-04.txt:23: «ча́йник» acc: after a transitive verb
+- b1-05.txt:1: «Мне» lexeme: chose o:я over o:мне
+- b1-05.txt:1: «лет» lexeme: chose n:год over n:лета, n:лёт
+- b1-05.txt:2: «весёлым» open: m_ins/n_ins/pl_dat → m_ins
+- b1-05.txt:2: «всего́» open: m_gen/n_gen → m_gen
+- b1-05.txt:2: «Пу́шкина» agrees with its adjective
+- b1-05.txt:6: «мне» lexeme: chose o:я over o:мне
+- b1-05.txt:7: «его́» lexeme: chose o:он over o:его, o:оно
+- b1-05.txt:7: «его́» acc: after a transitive verb
+- b1-05.txt:9: «пи́сьма» nom: subject
+- b1-05.txt:10: «ему́» lexeme: chose o:он over o:ему, o:оно
+- b1-05.txt:10: «де́сять» acc: a number after the verb
+- b1-05.txt:11: «Мать» nom: subject
+- b1-05.txt:12: «ле́то» acc: a span of time
+- b1-05.txt:14: «три» lexeme: chose o:три over v:тереть
+- b1-05.txt:15: «меня́» lexeme: chose o:я over o:меня
+- b1-05.txt:15: «со́рок» acc: a number after the verb
+- b1-05.txt:15: «лет» lexeme: chose n:год over n:лета, n:лёт
+- b1-05.txt:16: «пи́сьма» nom: subject
+- b1-05.txt:16: «Ю́рия» gen: follows a noun (possession)
+- b1-05.txt:19: «конве́рты» acc: after a transitive verb
+- b1-05.txt:20: «письмо́» nom: subject
+- b1-05.txt:20: «есть» lexeme: chose v:быть over o:есть, v:есть
+- b1-05.txt:20: «есть» open: np_3sg/np_3pl → np_3sg
+- b1-05.txt:20: «его́» lexeme: chose o:он over o:его, o:оно
+- b1-05.txt:20: «его́» open: acc/gen → acc
+- b1-05.txt:21: «конве́рт» acc: after a transitive verb
+- b1-05.txt:22: «Мать» nom: subject
+- b1-05.txt:22: «его́» lexeme: chose o:он over o:его, o:оно
+- b1-05.txt:22: «его́» acc: after a transitive verb
+- b1-05.txt:22: «меня́» lexeme: chose o:я over o:меня
+- b1-06.txt:1: «конве́рт» acc: after a transitive verb
+- b1-06.txt:1: «его́» lexeme: chose o:он over o:его, o:оно
+- b1-06.txt:1: «его́» acc: after a transitive verb
+- b1-06.txt:2: «меня́» lexeme: chose o:я over o:меня
+- b1-06.txt:2: «глаза́» acc: after a transitive verb
+- b1-06.txt:4: «конве́рт» acc: after a transitive verb
+- b1-06.txt:6: «меня́» lexeme: chose o:я over o:меня
+- b1-06.txt:6: «меня́» gen: follows a noun (possession)
+- b1-06.txt:8: «тебе́» lexeme: chose o:ты over o:тебе
+- b1-06.txt:9: «мне» lexeme: chose o:я over o:мне
+- b1-06.txt:10: «меня́» lexeme: chose o:я over o:меня
+- b1-06.txt:10: «меня́» acc: after a transitive verb
+- b1-06.txt:10: «одно́» acc: a number after the verb
+- b1-06.txt:10: «сло́во» nom: subject
+- b1-06.txt:15: «об» lexeme: chose o:о over o:об
+- b1-06.txt:18: «есть» lexeme: chose v:быть over o:есть, v:есть
+- b1-06.txt:18: «есть» open: np_3sg/np_3pl → np_3sg
+- b1-06.txt:19: «уже́» lexeme: chose o:уже over n:уж
+- b1-06.txt:19: «телефо́н» acc: after a transitive verb
+- b1-06.txt:20: «его́» lexeme: chose o:он over o:его, o:оно
+- b1-06.txt:20: «его́» acc: after a transitive verb
+- b1-06.txt:22: «Мне» lexeme: chose o:я over o:мне
+- b1-06.txt:22: «лет» lexeme: chose n:год over n:лета, n:лёт
+- b1-06.txt:22: «Что» nom: subject
+- b1-06.txt:22: «ему́» lexeme: chose o:он over o:ему, o:оно
+- b1-07.txt:1: «Ю́рия» acc: after a transitive verb
+- b1-07.txt:1: «Ветро́ва» gen: follows a noun (possession)
+- b1-07.txt:2: «футболи́ста» acc: after a transitive verb
+- b1-07.txt:2: «программи́ста» acc: listed after футболи́ста
+- b1-07.txt:5: «Отве́т» nom: subject
+- b1-07.txt:7: «лет» lexeme: chose n:год over n:лета, n:лёт
+- b1-07.txt:8: «есть» lexeme: chose v:быть over o:есть, v:есть
+- b1-07.txt:8: «есть» open: np_3sg/np_3pl → np_3sg
+- b1-07.txt:8: «его́» lexeme: chose o:он over o:его, o:оно
+- b1-07.txt:8: «его́» open: acc/gen → acc
+- b1-07.txt:9: «пе́нсии» prep: location
+- b1-07.txt:11: «письмо́» acc: after a transitive verb
+- b1-07.txt:11: «кафе́» prep: location
+- b1-07.txt:11: «кафе́» open: sg_prep/pl_prep → sg_prep
+- b1-07.txt:12: «кафе́» acc: direction
+- b1-07.txt:12: «кафе́» open: sg_acc/pl_acc → sg_acc
+- b1-07.txt:14: «Ю́рия» acc: after a transitive verb
+- b1-07.txt:14: «Ветро́ва» gen: follows a noun (possession)
+- b1-07.txt:16: «них» acc: direction
+- b1-07.txt:17: «зову́т» lexeme: chose v:звать over o:зовут
+- b1-08.txt:1: «Ве́чером» lexeme: chose n:вечер over o:вечером
+- b1-08.txt:2: «разгово́р» acc: after a transitive verb
+- b1-08.txt:3: «и́мени» open: sg_dat/sg_prep → sg_dat
+- b1-08.txt:6: «и́мя» acc: after a transitive verb
+- b1-08.txt:7: «ему́» lexeme: chose o:он over o:ему, o:оно
+- b1-08.txt:7: «всё» lexeme: chose o:всё over o:все
+- b1-08.txt:10: «письмо́» acc: after a transitive verb
+- b1-08.txt:11: «её» lexeme: chose o:она over o:её
+- b1-08.txt:11: «её» acc: after a transitive verb
+- b1-08.txt:11: «о́сень» agrees with its adjective
+- b1-08.txt:12: «меня́» lexeme: chose o:я over o:меня
+- b1-08.txt:12: «меня́» gen: follows a noun (possession)
+- b1-08.txt:14: «бы́ли» lexeme: chose v:быть over n:быль
+- b1-08.txt:14: «чём» lexeme: chose o:что over o:чём
+- b1-08.txt:16: «мне» lexeme: chose o:я over o:мне
+- b1-08.txt:18: «мне» lexeme: chose o:я over o:мне
+- b1-08.txt:18: «одно́» acc: a number after the verb
+- b1-08.txt:18: «меня́» lexeme: chose o:я over o:меня
+- b1-08.txt:18: «меня́» acc: after a transitive verb
+- b1-09.txt:1: «день» lexeme: chose n:день over v:деть
+- b1-09.txt:1: «пришли́» lexeme: chose v:прийти over v:прислать
+- b1-09.txt:2: «цветы́» acc: after a transitive verb
+- b1-09.txt:3: «нашли́» lexeme: chose v:найти over v:наслать
+- b1-09.txt:3: «Ю́рия» acc: after a transitive verb
+- b1-09.txt:3: «вас» lexeme: chose o:вы over o:вас
+- b1-09.txt:3: «вас» acc: after a transitive verb
+- b1-09.txt:5: «пол» lexeme: chose n:пол over n:пола
+- b1-09.txt:6: «его́» lexeme: chose o:он over o:его, o:оно
+- b1-09.txt:6: «его́» gen: follows a noun (possession)
+- b1-09.txt:6: «нашли́» lexeme: chose v:найти over v:наслать
+- b1-09.txt:9: «его́» lexeme: chose o:он over o:его, o:оно
+- b1-09.txt:9: «его́» acc: after a transitive verb
+- b1-09.txt:13: «Мне» lexeme: chose o:я over o:мне
+- b1-09.txt:13: «Жизнь» acc: a span of time
+- b1-09.txt:13: «хоро́шей» open: f_gen/f_dat/f_ins → f_gen
+- b1-09.txt:14: «ему́» lexeme: chose o:он over o:ему, o:оно
+- b1-09.txt:14: «одно́» acc: a number after the verb
+- b1-09.txt:14: «его́» lexeme: chose o:он over o:его, o:оно
+- b1-09.txt:14: «его́» gen: follows a noun (possession)
+- b1-09.txt:17: «телефо́н» acc: after a transitive verb
+- b1-09.txt:18: «ему́» lexeme: chose o:он over o:ему, o:оно
+- b1-09.txt:18: «са́ми» open: pl_nom/pl_acc → pl_nom
+- b1-09.txt:18: «ли́нии» prep: location
+- b1-09.txt:19: «телефо́н» acc: after a transitive verb
+- b1-09.txt:19: «её» lexeme: chose o:она over o:её
+- b1-09.txt:19: «её» open: acc/gen → acc
+- b1-09.txt:21: «вы́шли» lexeme: chose v:выйти over v:выслать
+- b1-10.txt:2: «Его́» lexeme: chose o:он over o:его, o:оно
+- b1-10.txt:2: «Его́» open: acc/gen → acc
+- b1-10.txt:2: «по́езд» nom: subject
+- b1-10.txt:3: «наде́ла» lexeme: chose v:надеть over n:надел
+- b1-10.txt:3: «пла́тье» acc: after a transitive verb
+- b1-10.txt:3: «три» lexeme: chose o:три over v:тереть
+- b1-10.txt:3: «три» acc: a number after the verb
+- b1-10.txt:11: «ле́том» lexeme: chose n:лето over o:летом
+- b1-10.txt:14: «Ве́чером» lexeme: chose n:вечер over o:вечером
+- b1-10.txt:14: «все» lexeme: chose o:всё over o:все
+- b1-10.txt:15: «их» lexeme: chose o:они over o:их
+- b1-10.txt:15: «их» acc: after a transitive verb
+- b1-10.txt:16: «э́того» open: m_acc_an/m_gen/n_gen → m_acc_an
+- b2-01.txt:1: «спо́соб» nom: subject
+- b2-01.txt:2: «Э́то» no agreement with ритуа́л
+- b2-01.txt:2: «Э́то» open: n_nom/n_acc → n_nom
+- b2-01.txt:2: «ритуа́л» nom: subject
+- b2-01.txt:2: «о́тдых» nom: listed after ритуа́л
+- b2-01.txt:3: «ру́сские» open: pl_nom/pl_acc → pl_nom
+- b2-01.txt:3: «жаре́» lexeme: chose n:жара over n:жар
+- b2-01.txt:5: «до́мик» nom: subject
+- b2-01.txt:6: «есть» lexeme: chose v:быть over o:есть, v:есть
+- b2-01.txt:6: «есть» open: np_3sg/np_3pl → np_3sg
+- b2-01.txt:6: «ка́мни» nom: subject
+- b2-01.txt:7: «во́ду» lexeme: chose n:вода over n:вод
+- b2-01.txt:7: «пар» lexeme: chose n:пара over n:пар
+- b2-01.txt:8: «Гла́вное» nom: subject
+- b2-01.txt:8: «пар» lexeme: chose n:пара over n:пар
+- b2-01.txt:8: «лёгким» open: sg_ins/pl_dat → sg_ins
+- b2-01.txt:8: «мя́гким» open: m_ins/n_ins/pl_dat → m_ins
+- b2-01.txt:10: «атрибу́т» nom: subject
+- b2-01.txt:10: «ба́ни» gen: follows a noun (possession)
+- b2-01.txt:10: «ве́ник» nom: subject
+- b2-01.txt:11: «Иностра́нцев» open: pl_acc/pl_gen → pl_acc
+- b2-01.txt:11: «дру́га» gen: follows a noun (possession)
+- b2-01.txt:12: «масса́ж» nom: subject
+- b2-01.txt:12: «кото́рый» open: m_nom/m_acc → m_nom
+- b2-01.txt:12: «кровообраще́ние» acc: after a transitive verb
+- b2-01.txt:14: «пар» lexeme: chose n:пара over n:пар
+- b2-01.txt:15: «но́вости» acc: after a transitive verb
+- b2-01.txt:15: «чай» lexeme: chose n:чай over v:чаять
+- b2-01.txt:15: «чай» acc: after a transitive verb
+- b2-01.txt:16: «все» lexeme: chose o:всё over o:все
+- b2-01.txt:19: «больши́х» prep: location
+- b2-01.txt:19: «есть» lexeme: chose v:быть over o:есть, v:есть
+- b2-01.txt:19: «есть» open: np_3sg/np_3pl → np_3sg
+- b2-01.txt:19: «ба́ни» agrees with its adjective
+- b2-01.txt:19: «ба́ни» nom: subject
+- b2-01.txt:20: «мно́гие» open: pl_nom/pl_acc → pl_nom
+- b2-01.txt:20: «ру́сские» open: pl_nom/pl_acc → pl_nom
+- b2-01.txt:20: «саду́» open: sg_prep/sg_loc2 → sg_prep
+- b2-02.txt:1: «боло́тистых» prep: location
+- b2-02.txt:1: «кре́пость» acc: after a transitive verb
+- b2-02.txt:2: «кото́рый» open: m_nom/m_acc → m_nom
+- b2-02.txt:2: «мно́гие» open: pl_nom/pl_acc → pl_nom
+- b2-02.txt:2: «са́мым» open: m_ins/n_ins/pl_dat → m_ins
+- b2-02.txt:2: «европе́йским» open: m_ins/n_ins/pl_dat → m_ins
+- b2-02.txt:4: «Пе́рвый» open: m_nom/m_acc → m_nom
+- b2-02.txt:5: «Евро́пе» open: sg_dat/sg_prep → sg_dat
+- b2-02.txt:5: «держа́вы» agrees with its adjective
+- b2-02.txt:6: «Ему́» lexeme: chose o:он over o:ему, o:оно
+- b2-02.txt:8: «го́род» acc: after a transitive verb
+- b2-02.txt:9: «Ты́сячи» nom: subject
+- b2-02.txt:9: «рабо́чих» gen: follows a noun (possession)
+- b2-02.txt:9: «кана́лы» acc: after a transitive verb
+- b2-02.txt:10: «Мно́гие» open: pl_nom/pl_acc → pl_nom
+- b2-02.txt:11: «Петербу́рг» nom: subject
+- b2-02.txt:13: «иностра́нных» prep: location
+- b2-02.txt:14: «проспе́кты» acc: after a transitive verb
+- b2-02.txt:14: «дворцы́» acc: listed after проспе́кты
+- b2-02.txt:14: «пло́щади» acc: listed after дворцы́
+- b2-02.txt:15: «го́род» acc: after a transitive verb
+- b2-02.txt:16: «двена́дцатом» no agreement with году́
+- b2-02.txt:16: «двена́дцатом» open: m_prep/n_prep → m_prep
+- b2-02.txt:16: «Петербу́рг» nom: subject
+- b2-02.txt:16: «Росси́и» gen: follows a noun (possession)
+- b2-02.txt:16: «два» acc: a number after the verb
+- b2-02.txt:16: «ве́ка» lexeme: chose n:век over n:веко
+- b2-02.txt:18: «ле́то» acc: a span of time
+- b2-02.txt:18: «но́чи» agrees with its adjective
+- b2-02.txt:18: «но́чи» acc: a span of time
+- b2-02.txt:18: «со́лнце» nom: subject
+- b2-02.txt:18: «почти́» lexeme: chose o:почти over v:почесть, v:почтить
+- b2-02.txt:19: «го́род» acc: after a transitive verb
+- b2-03.txt:1: «Ему́» lexeme: chose o:он over o:ему, o:оно
+- b2-03.txt:1: «лет» lexeme: chose n:год over n:лета, n:лёт
+- b2-03.txt:2: «одно́» acc: a number after the verb
+- b2-03.txt:2: «сло́во» acc: after a transitive verb
+- b2-03.txt:2: «кото́рое» open: n_nom/n_acc → n_nom
+- b2-03.txt:4: «просто́й» lexeme: chose n:простой over v:простоять
+- b2-03.txt:6: «учи́лище» prep: location
+- b2-03.txt:10: «са́мым» open: m_ins/n_ins/pl_dat → m_ins
+- b2-03.txt:10: «о́пытным» open: m_ins/n_ins/pl_dat → m_ins
+- b2-03.txt:10: «него́» lexeme: chose o:он over o:оно
+- b2-03.txt:10: «бы́ли» lexeme: chose v:быть over n:быль
+- b2-03.txt:10: «хара́ктер» nom: subject
+- b2-03.txt:10: «па́мять» agrees with its adjective
+- b2-03.txt:11: «его́» lexeme: chose o:он over o:его, o:оно
+- b2-03.txt:11: «его́» gen: follows a noun (possession)
+- b2-03.txt:11: «кора́бль» nom: subject
+- b2-03.txt:11: «те́сным» open: m_ins/n_ins/pl_dat → m_ins
+- b2-03.txt:13: «Полёт» nom: subject
+- b2-03.txt:13: «сто» acc: a number after the verb
+- b2-03.txt:13: «во́семь» acc: a number after the verb
+- b2-03.txt:14: «Кора́бль» nom: subject
+- b2-03.txt:14: «оди́н» acc: a number after the verb
+- b2-03.txt:14: «раз» agrees with its adjective
+- b2-03.txt:14: «раз» acc: a span of time
+- b2-03.txt:15: «по́ле» prep: location
+- b2-03.txt:15: «его́» lexeme: chose o:он over o:его, o:оно
+- b2-03.txt:15: «его́» open: acc/gen → acc
+- b2-03.txt:15: «её» lexeme: chose o:она over o:её
+- b2-03.txt:15: «её» open: acc/gen → acc
+- b2-03.txt:16: «челове́ка» gen: after a reflexive verb (боя́ться, испуга́ться…)
+- b2-03.txt:16: «им» lexeme: chose o:он over o:им, o:они, o:оно
+- b2-03.txt:16: «свой» open: m_nom/m_acc → m_nom
+- b2-03.txt:16: «сове́тский» open: m_nom/m_acc → m_nom
+- b2-03.txt:18: «знамени́тым» open: m_ins/n_ins/pl_dat → m_ins
+- b2-03.txt:19: «восьмо́м» no agreement with году́
+- b2-03.txt:19: «восьмо́м» open: m_prep/n_prep → m_prep
+- b2-03.txt:20: «его́» lexeme: chose o:он over o:его, o:оно
+- b2-03.txt:20: «его́» open: acc/gen → acc
+- b2-03.txt:20: «его́» lexeme: chose o:он over o:его, o:оно
+- b2-03.txt:20: «его́» open: acc/gen → acc
+- b2-03.txt:20: «пор» lexeme: chose n:пора over n:пора:2
+- b2-03.txt:20: «сме́лости» gen: follows a noun (possession)
+- b2-03.txt:20: «наде́жды» gen: listed after сме́лости
+- b2-04.txt:1: «Мно́гие» open: pl_nom/pl_acc → pl_nom
+- b2-04.txt:1: «напи́ток» nom: subject
+- b2-04.txt:3: «Чай» lexeme: chose n:чай over v:чаять
+- b2-04.txt:3: «Чай» nom: subject
+- b2-04.txt:3: «у́тром» lexeme: chose n:утро over o:утром
+- b2-04.txt:3: «ве́чером» lexeme: chose n:вечер over o:вечером
+- b2-04.txt:3: «ле́том» lexeme: chose n:лето over o:летом
+- b2-04.txt:3: «зимо́й» lexeme: chose n:зима over o:зимой
+- b2-04.txt:4: «ча́ю» lexeme: chose n:чай over v:чаять
+- b2-04.txt:4: «пра́вило» lexeme: chose n:правило over v:править
+- b2-04.txt:4: «пра́вило» nom: subject
+- b2-04.txt:4: «гостеприи́мства» gen: follows a noun (possession)
+- b2-04.txt:6: «Чай» lexeme: chose n:чай over v:чаять
+- b2-04.txt:6: «Чай» nom: subject
+- b2-04.txt:6: «ве́ке» lexeme: chose n:век over n:веко
+- b2-04.txt:7: «дороги́м» open: m_ins/n_ins/pl_dat → m_ins
+- b2-04.txt:7: «его́» lexeme: chose o:он over o:его, o:оно
+- b2-04.txt:7: «его́» acc: after a transitive verb
+- b2-04.txt:7: «бога́тые» open: pl_nom/pl_acc → pl_nom
+- b2-04.txt:8: «Чай» lexeme: chose n:чай over v:чаять
+- b2-04.txt:8: «Чай» nom: subject
+- b2-04.txt:10: «чаепи́тия» agrees with its adjective
+- b2-04.txt:10: «самова́р» nom: subject
+- b2-04.txt:11: «сосу́д» nom: subject
+- b2-04.txt:11: «кото́ром» open: m_prep/n_prep → m_prep
+- b2-04.txt:11: «во́ду» lexeme: chose n:вода over n:вод
+- b2-04.txt:12: «ча́йник» acc: after a transitive verb
+- b2-04.txt:13: «Ка́ждый» open: m_nom/m_acc → m_nom
+- b2-04.txt:13: «во́ду» lexeme: chose n:вода over n:вод
+- b2-04.txt:15: «чай» lexeme: chose n:чай over v:чаять
+- b2-04.txt:15: «чай» acc: after a transitive verb
+- b2-04.txt:16: «часа́ми» lexeme: chose n:час over n:часы
+- b2-04.txt:16: «дела́» acc: after a transitive verb
+- b2-04.txt:18: «самова́р» nom: subject
+- b2-04.txt:18: «основно́м» open: m_prep/n_prep → m_prep
+- b2-04.txt:18: «украше́ние» nom: subject
+- b2-04.txt:19: «Ча́йник» nom: subject
+- b2-04.txt:19: «его́» lexeme: chose o:он over o:его, o:оно
+- b2-04.txt:19: «его́» acc: after a transitive verb
+- b2-04.txt:21: «вас» lexeme: chose o:вы over o:вас
+- b2-04.txt:21: «вас» open: acc/gen → acc
+- b2-04.txt:21: «чай» lexeme: chose n:чай over v:чаять
+- b2-05.txt:1: «метро́» agrees with its adjective
+- b2-05.txt:1: «метро́» nom: subject
+- b2-05.txt:1: «три́дцать» nom: subject
+- b2-05.txt:1: «пя́том» no agreement with году́
+- b2-05.txt:1: «пя́том» open: m_prep/n_prep → m_prep
+- b2-05.txt:2: «коро́ткой» open: f_gen/f_dat/f_ins → f_gen
+- b2-05.txt:3: «метро́» prep: location
+- b2-05.txt:3: «метро́» open: sg_prep/pl_prep → sg_prep
+- b2-05.txt:3: «день» lexeme: chose n:день over v:деть
+- b2-05.txt:3: «день» acc: a span of time
+- b2-05.txt:3: «им» lexeme: chose o:он over o:им, o:они, o:оно
+- b2-05.txt:3: «миллио́ны» nom: subject
+- b2-05.txt:3: «люде́й» gen: follows a noun (possession)
+- b2-05.txt:5: «метро́» agrees with its adjective
+- b2-05.txt:5: «метро́» nom: subject
+- b2-05.txt:6: «Его́» lexeme: chose o:он over o:его, o:оно
+- b2-05.txt:6: «Его́» open: acc/gen → acc
+- b2-05.txt:6: «ста́нции» agrees with its adjective
+- b2-05.txt:6: «ста́нции» nom: subject
+- b2-05.txt:6: «мра́мор» nom: subject
+- b2-05.txt:6: «скульпту́ры» nom: listed after моза́ика
+- b2-05.txt:6: «лю́стры» agrees with its adjective
+- b2-05.txt:6: «лю́стры» nom: listed after скульпту́ры
+- b2-05.txt:7: «доро́ге» open: sg_dat/sg_prep → sg_dat
+- b2-05.txt:7: «себя́» acc: after a transitive verb
+- b2-05.txt:9: «ста́нции» nom: subject
+- b2-05.txt:9: «ли́нии» gen: follows a noun (possession)
+- b2-05.txt:10: «ста́нции» prep: location
+- b2-05.txt:10: «моза́ики» acc: after a transitive verb
+- b2-05.txt:10: «исто́рии» agrees with its adjective
+- b2-05.txt:11: «друго́й» prep: location
+- b2-05.txt:11: «ста́нции» prep: location
+- b2-05.txt:11: «фигу́ры» agrees with its adjective
+- b2-05.txt:11: «фигу́ры» nom: subject
+- b2-05.txt:11: «солда́т» gen: follows a noun (possession)
+- b2-05.txt:11: «рабо́чих» gen: listed after солда́т
+- b2-05.txt:11: «студе́нтов» gen: listed after рабо́чих
+- b2-05.txt:12: «соба́ки» nom: subject
+- b2-05.txt:12: «пограни́чника» gen: follows a noun (possession)
+- b2-05.txt:12: «нос» nom: subject
+- b2-05.txt:12: «его́» lexeme: chose o:он over o:его, o:оно
+- b2-05.txt:12: «его́» acc: after a transitive verb
+- b2-05.txt:14: «метро́» prep: location
+- b2-05.txt:14: «метро́» open: sg_prep/pl_prep → sg_prep
+- b2-05.txt:15: «Ты́сячи» nom: subject
+- b2-05.txt:15: «москвиче́й» gen: follows a noun (possession)
+- b2-05.txt:15: «спа́ли» lexeme: chose v:спать over v:спасть
+- b2-05.txt:17: «биле́т» acc: after a transitive verb
+- b2-05.txt:17: «метро́» acc: direction
+- b2-05.txt:17: «метро́» open: sg_acc/pl_acc → sg_acc
+- b2-05.txt:17: «часо́в» lexeme: chose n:час over n:часы
+- b2-05.txt:18: «ми́ре» lexeme: chose n:мир over n:миро
+- b2-06.txt:1: «ста́нции» prep: location
+- b2-06.txt:1: «все» lexeme: chose o:всё over o:все
+- b2-06.txt:1: «кли́чке» open: sg_dat/sg_prep → sg_dat
+- b2-06.txt:2: «ве́чер» acc: a span of time
+- b2-06.txt:2: «часо́в» lexeme: chose n:час over n:часы
+- b2-06.txt:5: «мне» lexeme: chose o:я over o:мне
+- b2-06.txt:8: «его́» lexeme: chose o:он over o:его, o:оно
+- b2-06.txt:8: «его́» acc: after a transitive verb
+- b2-06.txt:8: «шли» lexeme: chose v:идти over v:слать
+- b2-06.txt:8: «домо́й» lexeme: chose o:домой over v:домыть
+- b2-06.txt:10: «зимо́й» lexeme: chose n:зима over o:зимой
+- b2-06.txt:11: «Ему́» lexeme: chose o:он over o:ему, o:оно
+- b2-06.txt:11: «его́» lexeme: chose o:он over o:его, o:оно
+- b2-06.txt:11: «его́» open: acc/gen → acc
+- b2-06.txt:12: «об» lexeme: chose o:о over o:об
+- b2-06.txt:12: «э́том» open: m_prep/n_prep → m_prep
+- b2-06.txt:15: «её» lexeme: chose o:она over o:её
+- b2-06.txt:15: «её» gen: follows a noun (possession)
+- b2-06.txt:16: «Её» lexeme: chose o:она over o:её
+- b2-06.txt:16: «Её» open: acc/gen → acc
+- b2-06.txt:16: «домо́й» lexeme: chose o:домой over v:домыть
+- b2-06.txt:17: «уже́» lexeme: chose o:уже over n:уж
+- b2-06.txt:17: «год» acc: a span of time
+- b2-06.txt:20: «поезда́» nom: subject
+- b2-06.txt:21: «её» lexeme: chose o:она over o:её
+- b2-06.txt:21: «её» acc: after a transitive verb
+- b2-06.txt:21: «глаза́» acc: after a transitive verb
+- b2-06.txt:21: «них» prep: location
+- b2-06.txt:21: «оби́ды» gen: listed after го́ря
+- b2-06.txt:21: «ожида́ние» nom: subject
+- b2-07.txt:2: «её» lexeme: chose o:она over o:её
+- b2-07.txt:2: «её» acc: after a transitive verb
+- b2-07.txt:2: «Письмо́» nom: subject
+- b2-07.txt:2: «кото́рое» open: n_nom/n_acc → n_nom
+- b2-07.txt:2: «лет» lexeme: chose n:год over n:лета, n:лёт
+- b2-07.txt:3: «У́тром» lexeme: chose n:утро over o:утром
+- b2-07.txt:3: «текст» acc: after a transitive verb
+- b2-07.txt:5: «телефо́н» nom: subject
+- b2-07.txt:7: «Её» lexeme: chose o:она over o:её
+- b2-07.txt:7: «Её» open: acc/gen → acc
+- b2-07.txt:7: «сайт» acc: after a transitive verb
+- b2-07.txt:7: «ве́чером» lexeme: chose n:вечер over o:вечером
+- b2-07.txt:7: «телеви́дения» open: sg_gen/pl_acc → sg_gen
+- b2-07.txt:8: «сюже́т» acc: after a transitive verb
+- b2-07.txt:8: «го́лос» acc: after a transitive verb
+- b2-07.txt:10: «кафе́» acc: direction
+- b2-07.txt:10: «кафе́» open: sg_acc/pl_acc → sg_acc
+- b2-07.txt:12: «её» lexeme: chose o:она over o:её
+- b2-07.txt:12: «её» open: acc/gen → acc
+- b2-07.txt:13: «её» lexeme: chose o:она over o:её
+- b2-07.txt:13: «её» acc: after a transitive verb
+- b2-07.txt:13: «её» lexeme: chose o:она over o:её
+- b2-07.txt:13: «её» agrees with its adjective
+- b2-07.txt:17: «костю́м» acc: after a transitive verb
+- b2-07.txt:19: «Сюже́т» nom: subject
+- b2-07.txt:19: «воскресе́нье» prep: location
+- b2-07.txt:19: «ве́чером» lexeme: chose n:вечер over o:вечером
+- b2-08.txt:1: «лет» lexeme: chose n:год over n:лета, n:лёт
+- b2-08.txt:2: «него́» lexeme: chose o:он over o:оно
+- b2-08.txt:2: «ты́сячи» gen: after a reflexive verb (боя́ться, испуга́ться…)
+- b2-08.txt:2: «дете́й» gen: follows a noun (possession)
+- b2-08.txt:2: «почти́» lexeme: chose o:почти over v:почесть, v:почтить
+- b2-08.txt:2: «ка́ждого» no agreement with он
+- b2-08.txt:2: «ка́ждого» open: m_acc_an/m_gen/n_gen → m_acc_an
+- b2-08.txt:2: «и́мени» open: sg_dat/sg_prep → sg_dat
+- b2-08.txt:3: «его́» lexeme: chose o:он over o:его, o:оно
+- b2-08.txt:3: «его́» acc: after a transitive verb
+- b2-08.txt:3: «Об» lexeme: chose o:о over o:об
+- b2-08.txt:3: «э́том» no agreement with он
+- b2-08.txt:3: «э́том» open: m_prep/n_prep → m_prep
+- b2-08.txt:5: «день» lexeme: chose n:день over v:деть
+- b2-08.txt:5: «его́» lexeme: chose o:он over o:его, o:оно
+- b2-08.txt:6: «Пе́рвом» open: m_prep/n_prep → m_prep
+- b2-08.txt:6: «уже́» lexeme: chose o:уже over n:уж
+- b2-08.txt:6: «дверь» nom: subject
+- b2-08.txt:9: «меня́» lexeme: chose o:я over o:меня
+- b2-08.txt:9: «меня́» gen: follows a noun (possession)
+- b2-08.txt:10: «него́» lexeme: chose o:он over o:оно
+- b2-08.txt:11: «па́рты» agrees with its adjective
+- b2-08.txt:11: «Тот» open: m_nom/m_acc → m_nom
+- b2-08.txt:11: «кото́рый» no agreement with вре́мя
+- b2-08.txt:11: «кото́рый» open: m_nom/m_acc → m_nom
+- b2-08.txt:11: «вре́мя» acc: a span of time
+- b2-08.txt:11: «спал» lexeme: chose v:спать over v:спасть
+- b2-08.txt:11: «мои́х» prep: location
+- b2-08.txt:13: «спал» lexeme: chose v:спать over v:спасть
+- b2-08.txt:13: «Петербу́рг» acc: after a transitive verb
+- b2-08.txt:14: «города́» acc: after a transitive verb
+- b2-08.txt:18: «прое́кт» nom: subject
+- b2-08.txt:18: «шко́лы» agrees with its adjective
+- b2-08.txt:18: «све́тлой» open: f_gen/f_dat/f_ins → f_gen
+- b2-08.txt:19: «Её» lexeme: chose o:она over o:её
+- b2-08.txt:19: «Её» open: acc/gen → acc
+- b2-08.txt:19: «сле́дующем» no agreement with году́
+- b2-08.txt:19: «сле́дующем» open: m_prep/n_prep → m_prep
+- b2-08.txt:19: «музе́й» nom: subject
+- b2-08.txt:20: «очки́» lexeme: chose n:очко over n:очки
+- b2-08.txt:20: «очки́» acc: after a transitive verb
+- b2-08.txt:20: «их» lexeme: chose o:они over o:их
+- b2-08.txt:20: «их» acc: after a transitive verb
+- b2-08.txt:21: «их» lexeme: chose o:они over o:их
+- b2-08.txt:21: «их» open: acc/gen → acc
+- b2-09.txt:1: «вы́бор» nom: subject
+- b2-09.txt:2: «тако́й» prep: location
+- b2-09.txt:2: «ру́сском» no agreement with оши́бка
+- b2-09.txt:2: «ру́сском» open: m_prep/n_prep → m_prep
+- b2-09.txt:2: «челове́ка» acc: after a transitive verb
+- b2-09.txt:2: «стра́нной» open: f_gen/f_dat/f_ins → f_gen
+- b2-09.txt:4: «Пра́вило» lexeme: chose n:правило over v:править
+- b2-09.txt:4: «Пра́вило» nom: subject
+- b2-09.txt:4: «просты́м» open: m_ins/n_ins/pl_dat → m_ins
+- b2-09.txt:6: «ста́ршим» open: m_ins/n_ins/pl_dat → m_ins
+- b2-09.txt:7: «жи́зни» prep: location
+- b2-09.txt:7: «всё» lexeme: chose o:всё over o:все
+- b2-09.txt:9: «что» nom: subject
+- b2-09.txt:10: «почти́» lexeme: chose o:почти over v:почесть, v:почтить
+- b2-09.txt:10: «все» lexeme: chose o:всё over o:все
+- b2-09.txt:13: «Перехо́д» nom: subject
+- b2-09.txt:13: «моме́нт» nom: subject
+- b2-09.txt:14: «его́» lexeme: chose o:он over o:его, o:оно
+- b2-09.txt:14: «его́» open: acc/gen → acc
+- b2-09.txt:14: «ста́рший» open: m_nom/m_acc → m_nom
+- b2-09.txt:14: «тот» open: m_nom/m_acc → m_nom
+- b2-09.txt:14: «положе́ние» acc: after a transitive verb
+- b2-09.txt:14: «Дава́й» lexeme: chose v:давать over o:давай
+- b2-09.txt:17: «челове́ка» acc: after a transitive verb
+- b2-09.txt:18: «и́мени» open: sg_dat/sg_prep → sg_dat
+- b2-09.txt:20: «ним» lexeme: chose o:он over o:они, o:оно
+- b2-10.txt:1: «ве́чером» lexeme: chose n:вечер over o:вечером
+- b2-10.txt:2: «Э́то» no agreement with миллио́ны
+- b2-10.txt:2: «Э́то» open: n_nom/n_acc → n_nom
+- b2-10.txt:2: «миллио́ны» nom: subject
+- b2-10.txt:2: «ру́сских» open: pl_acc_an/pl_gen → pl_acc_an
+- b2-10.txt:3: «до́мик» nom: subject
+- b2-10.txt:4: «ста́рой» open: f_gen/f_dat/f_ins → f_gen
+- b2-10.txt:4: «ма́ленькой» open: f_gen/f_dat/f_ins → f_gen
+- b2-10.txt:4: «большо́й» open: m_nom/m_acc/f_gen/f_dat/f_ins → m_nom
+- b2-10.txt:4: «совреме́нной» open: f_gen/f_dat/f_ins → f_gen
+- b2-10.txt:4: «значе́ние» nom: subject
+- b2-10.txt:4: «осо́бенное» open: n_nom/n_acc → n_nom
+- b2-10.txt:7: «до́мики» acc: after a transitive verb
+- b2-10.txt:7: «огурцы́» acc: listed after карто́шку
+- b2-10.txt:7: «помидо́ры» acc: listed after огурцы́
+- b2-10.txt:8: «бы́ли» lexeme: chose v:быть over n:быль
+- b2-10.txt:8: «о́вощи» lexeme: chose n:овощ over n:овощи
+- b2-10.txt:8: «о́вощи» nom: subject
+- b2-10.txt:8: «семью́» lexeme: chose o:семь over n:семья
+- b2-10.txt:10: «о́вощи» lexeme: chose n:овощ over n:овощи
+- b2-10.txt:10: «о́вощи» nom: subject
+- b2-10.txt:10: «да́чи» nom: subject
+- b2-10.txt:11: «э́то» no agreement with рабо́та
+- b2-10.txt:11: «э́то» open: n_nom/n_acc → n_nom
+- b2-10.txt:11: «саду́» open: sg_prep/sg_loc2 → sg_prep
+- b2-10.txt:12: «шашлыки́» nom: subject
+- b2-10.txt:12: «разгово́ры» nom: listed after ба́ня
+- b2-10.txt:13: «ле́то» nom: subject
+- b2-10.txt:13: «велосипе́д» nom: listed after река́
+- b2-10.txt:15: «Ле́том» lexeme: chose n:лето over o:летом
+- b2-10.txt:15: «кварти́ры» agrees with its adjective
+- b2-10.txt:15: «кварти́ры» nom: subject
+- b2-10.txt:15: «ба́бушки» nom: subject
+- b2-10.txt:16: «о́сенью» lexeme: chose n:осень over o:осенью
+- b2-10.txt:16: «вре́мя» acc: a span of time
+- b2-10.txt:17: «Огурцы́» nom: subject
+- b2-10.txt:17: «варе́нье» acc: after a transitive verb
+- b2-10.txt:17: «зимо́й» lexeme: chose n:зима over o:зимой
+- b2-10.txt:17: «ба́нки» lexeme: chose n:банк over n:банка
+- b2-10.txt:17: «ба́нки» nom: subject
+- b2-10.txt:17: «ле́том» lexeme: chose n:лето over o:летом
+- c1-01.txt:1: «Байка́л» nom: subject
+- c1-01.txt:1: «Сиби́ри» gen: follows a noun (possession)
+- c1-01.txt:1: «слу́чай» nom: subject
+- c1-01.txt:1: «сравне́ние» nom: subject
+- c1-01.txt:2: «о́зеро» nom: subject
+- c1-01.txt:2: «не́которых» prep: location
+- c1-01.txt:2: «его́» lexeme: chose o:он over o:его, o:оно
+- c1-01.txt:3: «часть» agrees with its adjective
+- c1-01.txt:5: «Учёные» open: pl_nom/pl_acc → pl_nom
+- c1-01.txt:5: «лет» lexeme: chose n:год over n:лета, n:лёт
+- c1-01.txt:6: «мир» nom: subject
+- c1-01.txt:6: «часть» agrees with its adjective
+- c1-01.txt:7: «Са́мый» open: m_nom/m_acc → m_nom
+- c1-01.txt:7: «изве́стный» open: m_nom/m_acc → m_nom
+- c1-01.txt:8: «кото́рое» open: n_nom/n_acc → n_nom
+- c1-01.txt:8: «пор» lexeme: chose n:пора over n:пора:2
+- c1-01.txt:10: «тако́й» prep: location
+- c1-01.txt:10: «дно» nom: subject
+- c1-01.txt:11: «Зимо́й» lexeme: chose n:зима over o:зимой
+- c1-01.txt:11: «о́зеро» nom: subject
+- c1-01.txt:11: «лёд» nom: subject
+- c1-01.txt:11: «прозра́чным» open: m_ins/n_ins/pl_dat → m_ins
+- c1-01.txt:11: «стекло́» lexeme: chose n:стекло over v:стечь
+- c1-01.txt:11: «стекло́» nom: subject
+- c1-01.txt:12: «нему́» lexeme: chose o:он over o:оно
+- c1-01.txt:12: «маши́ны» nom: subject
+- c1-01.txt:12: «ми́ра» lexeme: chose n:мир over n:миро
+- c1-01.txt:14: «почти́» lexeme: chose o:почти over v:почесть, v:почтить
+- c1-01.txt:15: «Его́» lexeme: chose o:он over o:его, o:оно
+- c1-01.txt:15: «Его́» open: acc/gen → acc
+- c1-01.txt:15: «нём» lexeme: chose o:он over o:оно
+- c1-01.txt:15: «мно́жество» nom: subject
+- c1-01.txt:16: «ста́рого» no agreement with Байка́ла
+- c1-01.txt:16: «ста́рого» open: m_gen/n_gen → m_gen
+- c1-01.txt:16: «кото́рые» open: pl_nom/pl_acc → pl_nom
+- c1-01.txt:16: «дочь» agrees with its adjective
+- c1-01.txt:17: «нему́» lexeme: chose o:он over o:оно
+- c1-01.txt:17: «ей» lexeme: chose o:она over o:ей
+- c1-01.txt:17: «ей» open: dat/ins → dat
+- c1-01.txt:17: «ка́мень» acc: after a transitive verb
+- c1-01.txt:18: «ка́мень» nom: subject
+- c1-01.txt:20: «Байка́л» nom: subject
+- c1-01.txt:20: «госуда́рство» acc: after a transitive verb
+- c1-01.txt:20: «него́» lexeme: chose o:он over o:оно
+- c1-01.txt:20: «загрязне́ние» nom: subject
+- c1-01.txt:20: «тури́зм» nom: listed after загрязне́ние
+- c1-01.txt:20: «измене́ние» nom: listed after тури́зм
+- c1-01.txt:21: «того́» open: m_gen/n_gen → m_gen
+- c1-01.txt:21: «чу́до» acc: after a transitive verb
+- c1-01.txt:21: «таки́м» open: m_ins/n_ins/pl_dat → m_ins
+- c1-01.txt:21: «каки́м» no agreement with его́
+- c1-01.txt:21: «каки́м» open: m_ins/n_ins/pl_dat → m_ins
+- c1-01.txt:21: «его́» lexeme: chose o:он over o:его, o:оно
+- c1-01.txt:21: «его́» acc: listed after чу́до
+- c1-02.txt:1: «на́ше» open: n_nom/n_acc → n_nom
+- c1-02.txt:1: «всё» lexeme: chose o:всё over o:все
+- c1-02.txt:2: «Её» lexeme: chose o:она over o:её
+- c1-02.txt:2: «Её» open: acc/gen → acc
+- c1-02.txt:2: «оди́н» acc: a number after the verb
+- c1-02.txt:2: «кри́тик» lexeme: chose n:критика over n:критик
+- c1-02.txt:2: «ве́ке» lexeme: chose n:век over n:веко
+- c1-02.txt:2: «пор» lexeme: chose n:пора over n:пора:2
+- c1-02.txt:2: «почти́» lexeme: chose o:почти over v:почесть, v:почтить
+- c1-02.txt:3: «кото́рого» open: m_acc_an/m_gen/n_gen → m_acc_an
+- c1-02.txt:3: «чем» lexeme: chose o:что over o:чём
+- c1-02.txt:3: «Толсто́го» gen: follows a noun (possession)
+- c1-02.txt:3: «Достое́вского» gen: listed after Толсто́го
+- c1-02.txt:5: «Отве́т» nom: subject
+- c1-02.txt:6: «тяжёлом» open: m_prep/n_prep → m_prep
+- c1-02.txt:6: «по́лном» no agreement with слов
+- c1-02.txt:6: «по́лном» open: m_prep/n_prep → m_prep
+- c1-02.txt:7: «при» lexeme: chose o:при over v:переть
+- c1-02.txt:7: «э́том» no agreement with его́
+- c1-02.txt:7: «э́том» open: m_prep/n_prep → m_prep
+- c1-02.txt:7: «его́» lexeme: chose o:он over o:его, o:оно
+- c1-02.txt:7: «его́» open: acc/gen → acc
+- c1-02.txt:7: «стихи́» nom: subject
+- c1-02.txt:8: «су́ти» open: sg_dat/sg_prep/pl_acc → sg_dat
+- c1-02.txt:8: «язы́к» nom: subject
+- c1-02.txt:11: «обо» lexeme: chose o:о over o:обо
+- c1-02.txt:11: «всём» open: m_prep/n_prep → m_prep
+- c1-02.txt:11: «любви́» open: sg_prep/pl_acc → sg_prep
+- c1-02.txt:11: «об» lexeme: chose o:о over o:об
+- c1-02.txt:11: «исто́рии» prep: listed after крестья́нах
+- c1-02.txt:12: «его́» lexeme: chose o:он over o:его, o:оно
+- c1-02.txt:12: «его́» acc: after a transitive verb
+- c1-02.txt:12: «ска́зки» gen: follows a noun (possession)
+- c1-02.txt:12: «того́» open: m_gen/n_gen → m_gen
+- c1-02.txt:12: «стро́чки» acc: after a transitive verb
+- c1-02.txt:13: «Его́» lexeme: chose o:он over o:его, o:оно
+- c1-02.txt:13: «Его́» open: acc/gen → acc
+- c1-02.txt:13: «стихи́» nom: subject
+- c1-02.txt:13: «них» prep: location
+- c1-02.txt:13: «спо́рах» lexeme: chose n:спор over n:спора
+- c1-02.txt:15: «его́» lexeme: chose o:он over o:его, o:оно
+- c1-02.txt:15: «его́» open: acc/gen → acc
+- c1-02.txt:16: «дуэ́ли» prep: location
+- c1-02.txt:16: «ему́» lexeme: chose o:он over o:ему, o:оно
+- c1-02.txt:16: «всего́» no agreement with три́дцать
+- c1-02.txt:16: «всего́» open: m_acc_an/m_gen/n_gen → m_acc_an
+- c1-02.txt:16: «три́дцать» nom: subject
+- c1-02.txt:16: «лет» lexeme: chose n:год over n:лета, n:лёт
+- c1-02.txt:17: «стать» lexeme: chose v:стать over n:стать
+- c1-02.txt:17: «ста́рым» open: m_ins/n_ins/pl_dat → m_ins
+- c1-02.txt:17: «па́мяти» prep: location
+- c1-02.txt:17: «сме́лым» open: m_ins/n_ins/pl_dat → m_ins
+- c1-02.txt:17: «свобо́дным» open: m_ins/n_ins/pl_dat → m_ins
+- c1-02.txt:19: «почти́» lexeme: chose o:почти over v:почесть, v:почтить
+- c1-02.txt:20: «сюже́т» nom: subject
+- c1-02.txt:21: «на́ше» open: n_nom/n_acc → n_nom
+- c1-02.txt:21: «всё» lexeme: chose o:всё over o:все
+- c1-02.txt:21: «его́» lexeme: chose o:он over o:его, o:оно
+- c1-02.txt:21: «его́» acc: after a transitive verb
+- c1-03.txt:1: «Есть» lexeme: chose v:быть over o:есть, v:есть
+- c1-03.txt:1: «Есть» open: np_3sg/np_3pl → np_3sg
+- c1-03.txt:1: «жизнь» agrees with its adjective
+- c1-03.txt:2: «его́» lexeme: chose o:он over o:его, o:оно
+- c1-03.txt:2: «его́» open: acc/gen → acc
+- c1-03.txt:2: «чего́» lexeme: chose o:что over o:чего
+- c1-03.txt:5: «купе́» prep: location
+- c1-03.txt:5: «купе́» open: sg_prep/pl_prep → sg_prep
+- c1-03.txt:5: «меня́» lexeme: chose o:я over o:меня
+- c1-03.txt:6: «я́йца» acc: after a transitive verb
+- c1-03.txt:6: «хлеб» acc: listed after я́йца
+- c1-03.txt:6: «те́рмос» acc: listed after хлеб
+- c1-03.txt:6: «мне» lexeme: chose o:я over o:мне
+- c1-03.txt:10: «чем» lexeme: chose o:что over o:чём
+- c1-03.txt:11: «ба́нке» lexeme: chose n:банк over n:банка
+- c1-03.txt:11: «жизнь» agrees with its adjective
+- c1-03.txt:11: «кни́ги» acc: after a transitive verb
+- c1-03.txt:14: «уже́» lexeme: chose o:уже over n:уж
+- c1-03.txt:15: «пил» lexeme: chose v:пить over n:пила
+- c1-03.txt:15: «чай» lexeme: chose n:чай over v:чаять
+- c1-03.txt:15: «чай» acc: after a transitive verb
+- c1-03.txt:17: «Мне» lexeme: chose o:я over o:мне
+- c1-03.txt:17: «пять» acc: after a transitive verb
+- c1-03.txt:18: «меня́» lexeme: chose o:я over o:меня
+- c1-03.txt:18: «уже́» lexeme: chose o:уже over n:уж
+- c1-03.txt:19: «чём» lexeme: chose o:что over o:чём
+- c1-03.txt:19: «Что» nom: subject
+- c1-03.txt:19: «лет» lexeme: chose n:год over n:лета, n:лёт
+- c1-03.txt:22: «По́езд» nom: subject
+- c1-03.txt:22: «леса́» lexeme: chose n:лес over n:леса
+- c1-03.txt:22: «леса́» acc: after a transitive verb
+- c1-03.txt:22: «огни́» acc: listed after леса́
+- c1-03.txt:23: «У́тром» lexeme: chose n:утро over o:утром
+- c1-03.txt:23: «ста́нции» agrees with its adjective
+- c1-03.txt:23: «ста́нции» open: sg_gen/sg_dat → sg_gen
+- c1-03.txt:23: «его́» lexeme: chose o:он over o:его, o:оно
+- c1-03.txt:23: «его́» open: acc/gen → acc
+- c1-03.txt:23: «зову́т» lexeme: chose v:звать over o:зовут
+- c1-03.txt:24: «ве́чер» acc: a span of time
+- c1-03.txt:24: «ноутбу́к» acc: after a transitive verb
+- c1-04.txt:2: «Её» lexeme: chose o:она over o:её
+- c1-04.txt:2: «Её» open: acc/gen → acc
+- c1-04.txt:2: «ми́ре» lexeme: chose n:мир over n:миро
+- c1-04.txt:3: «По́езд» nom: subject
+- c1-04.txt:3: «ней» open: dat/prep → dat
+- c1-04.txt:3: «часы́» lexeme: chose n:час over n:часы
+- c1-04.txt:3: «часы́» acc: a span of time
+- c1-04.txt:5: «Строи́тельство» nom: subject
+- c1-04.txt:5: «девяно́сто» acc: a number after the verb
+- c1-04.txt:5: «пе́рвом» no agreement with году́
+- c1-04.txt:5: «пе́рвом» open: m_prep/n_prep → m_prep
+- c1-04.txt:5: «лет» lexeme: chose n:год over n:лета, n:лёт
+- c1-04.txt:6: «Рабо́чим» open: sg_ins/pl_dat → sg_ins
+- c1-04.txt:6: «пути́» acc: after a transitive verb
+- c1-04.txt:6: «боло́та» acc: listed after тайгу́
+- c1-04.txt:6: «мосты́» acc: after a transitive verb
+- c1-04.txt:6: «ска́лах» lexeme: chose n:скала over n:скала:2
+- c1-04.txt:7: «Зимо́й» lexeme: chose n:зима over o:зимой
+- c1-04.txt:7: «моро́зы» nom: subject
+- c1-04.txt:7: «ле́том» lexeme: chose n:лето over o:летом
+- c1-04.txt:7: «люде́й» gen: follows a noun (possession)
+- c1-04.txt:9: «Магистра́ль» nom: subject
+- c1-04.txt:9: «Сиби́рь» acc: after a transitive verb
+- c1-04.txt:10: «города́» nom: subject
+- c1-04.txt:10: «миллио́ны» nom: subject
+- c1-04.txt:10: «жи́телей» gen: follows a noun (possession)
+- c1-04.txt:11: «Новосиби́рск» nom: subject
+- c1-04.txt:11: «Обь» acc: after a transitive verb
+- c1-04.txt:12: «тре́тий» open: m_nom/m_acc → m_nom
+- c1-04.txt:12: «величине́» open: sg_dat/sg_prep → sg_dat
+- c1-04.txt:12: «Росси́и» open: sg_dat/sg_prep → sg_dat
+- c1-04.txt:14: «путеше́ствие» nom: subject
+- c1-04.txt:14: «доро́ге» open: sg_dat/sg_prep → sg_dat
+- c1-04.txt:14: «почти́» lexeme: chose o:почти over v:почесть, v:почтить
+- c1-04.txt:15: «по́езд» nom: subject
+- c1-04.txt:15: «нём» lexeme: chose o:он over o:оно
+- c1-04.txt:15: «домо́й» lexeme: chose o:домой over v:домыть
+- c1-04.txt:15: «вое́нные» open: pl_nom/pl_acc → pl_nom
+- c1-04.txt:15: «ба́бушки» nom: listed after студе́нты
+- c1-04.txt:16: «чай» lexeme: chose n:чай over v:чаять
+- c1-04.txt:16: «чай» acc: after a transitive verb
+- c1-04.txt:16: «металли́ческих» acc: direction
+- c1-04.txt:17: «жизнь» agrees with its adjective
+- c1-04.txt:17: «спо́рами» lexeme: chose n:спор over n:спора
+- c1-05.txt:1: «челове́ка» acc: after a transitive verb
+- c1-05.txt:1: «вам» lexeme: chose o:вы over o:вам
+- c1-05.txt:1: «нему́» lexeme: chose o:он over o:оно
+- c1-05.txt:2: «телеви́зор» nom: subject
+- c1-05.txt:2: «ковёр» nom: subject
+- c1-05.txt:2: «ча́йник» nom: subject
+- c1-05.txt:6: «Кварти́ры» nom: subject
+- c1-05.txt:6: «бы́ли» lexeme: chose v:быть over n:быль
+- c1-05.txt:6: «ме́сто» nom: subject
+- c1-05.txt:6: «уше́й» lexeme: chose n:ухо over v:ушить
+- c1-05.txt:7: «свобо́ды» gen: follows a noun (possession)
+- c1-05.txt:9: «поли́тике» lexeme: chose n:политика over n:политик
+- c1-05.txt:9: «кни́ги» agrees with its adjective
+- c1-05.txt:9: «кни́ги» acc: after a transitive verb
+- c1-05.txt:9: «пе́сни» lexeme: chose n:песня over n:песнь
+- c1-05.txt:9: «пе́сни» acc: after a transitive verb
+- c1-05.txt:10: «во́ду» lexeme: chose n:вода over n:вод
+- c1-05.txt:10: «ра́дио» acc: listed after во́ду
+- c1-05.txt:10: «ра́дио» open: sg_acc/pl_acc → sg_acc
+- c1-05.txt:11: «учёные» open: pl_nom/pl_acc → pl_nom
+- c1-05.txt:11: «разгово́ры» nom: subject
+- c1-05.txt:11: «их» lexeme: chose o:они over o:их
+- c1-05.txt:11: «жи́зни» acc: direction
+- c1-05.txt:13: «Времена́» acc: a span of time
+- c1-05.txt:13: «кварти́ры» nom: subject
+- c1-05.txt:13: «ста́ли» lexeme: chose v:стать over n:сталь
+- c1-05.txt:15: «Госте́й» open: pl_acc/pl_gen → pl_acc
+- c1-05.txt:15: «разгово́ры» nom: subject
+- c1-05.txt:15: «все» open: n_nom/n_acc/pl_nom/pl_acc → n_nom
+- c1-05.txt:15: «уже́» lexeme: chose o:уже over n:уж
+- c1-05.txt:15: «чай» lexeme: chose n:чай over v:чаять
+- c1-05.txt:15: «чай» nom: subject
+- c1-06.txt:1: «войска́» nom: subject
+- c1-06.txt:1: «Ленингра́д» acc: after a transitive verb
+- c1-06.txt:2: «почти́» lexeme: chose o:почти over v:почесть, v:почтить
+- c1-06.txt:3: «почти́» lexeme: chose o:почти over v:почесть, v:почтить
+- c1-06.txt:5: «блока́ды» gen: follows a noun (possession)
+- c1-06.txt:5: «са́мой» open: f_gen/f_dat/f_ins → f_gen
+- c1-06.txt:5: «стра́шной» open: f_gen/f_dat/f_ins → f_gen
+- c1-06.txt:6: «Моро́зы» nom: subject
+- c1-06.txt:6: «отопле́ния» gen: listed after электри́чества
+- c1-06.txt:7: «го́лод» nom: subject
+- c1-06.txt:8: «сто» acc: a number after the verb
+- c1-06.txt:8: «два́дцать» acc: a number after the verb
+- c1-06.txt:8: «пять» acc: after a transitive verb
+- c1-06.txt:8: «день» lexeme: chose n:день over v:деть
+- c1-06.txt:8: «хлеб» nom: subject
+- c1-06.txt:8: «э́тот» open: m_nom/m_acc → m_nom
+- c1-06.txt:9: «ме́бель» acc: after a transitive verb
+- c1-06.txt:9: «кни́ги» acc: listed after ме́бель
+- c1-06.txt:11: «жи́зни» gen: follows a noun (possession)
+- c1-06.txt:11: «путь» nom: subject
+- c1-06.txt:11: «льду» open: sg_dat/sg_prep → sg_dat
+- c1-06.txt:12: «ней» open: dat/prep → dat
+- c1-06.txt:12: «дете́й» open: pl_acc/pl_gen → pl_acc
+- c1-06.txt:12: «больны́х» open: pl_acc_an/pl_gen → pl_acc_an
+- c1-06.txt:13: «Маши́ны» nom: subject
+- c1-06.txt:13: «шли» lexeme: chose v:идти over v:слать
+- c1-06.txt:13: «не́которые» open: pl_nom/pl_acc → pl_nom
+- c1-06.txt:15: «всё» lexeme: chose o:всё over o:все
+- c1-06.txt:15: «го́род» nom: subject
+- c1-06.txt:15: «жил» lexeme: chose v:жить over n:жила
+- c1-06.txt:16: «заво́ды» nom: subject
+- c1-06.txt:16: «газе́ты» acc: after a transitive verb
+- c1-06.txt:16: «шли» lexeme: chose v:идти over v:слать
+- c1-06.txt:16: «уро́ки» nom: subject
+- c1-06.txt:17: «Шостако́вича» gen: follows a noun (possession)
+- c1-06.txt:18: «Музыка́нтов» open: pl_acc/pl_gen → pl_acc
+- c1-06.txt:18: «кото́рые» open: pl_nom/pl_acc → pl_nom
+- c1-06.txt:19: «Конце́рт» nom: subject
+- c1-06.txt:19: «ра́дио» acc: after a transitive verb
+- c1-06.txt:19: «ра́дио» open: sg_acc/pl_acc → sg_acc
+- c1-06.txt:19: «его́» lexeme: chose o:он over o:его, o:оно
+- c1-06.txt:19: «его́» open: acc/gen → acc
+- c1-06.txt:21: «со́рок» acc: a number after the verb
+- c1-06.txt:22: «со́тни» nom: subject
+- c1-06.txt:23: «пор» lexeme: chose n:пора over n:пора:2
+- c1-06.txt:23: «па́мять» acc: after a transitive verb
+- c1-07.txt:1: «день» lexeme: chose n:день over v:деть
+- c1-07.txt:1: «дипло́м» acc: after a transitive verb
+- c1-07.txt:1: «дождь» nom: subject
+- c1-07.txt:2: «пять» nom: subject
+- c1-07.txt:2: «лет» lexeme: chose n:год over n:лета, n:лёт
+- c1-07.txt:2: «уже́» lexeme: chose o:уже over n:уж
+- c1-07.txt:5: «мно́гое» open: n_nom/n_acc → n_nom
+- c1-07.txt:6: «всех» open: pl_acc_an/pl_gen/pl_prep → pl_acc_an
+- c1-07.txt:6: «знако́мых» open: pl_acc_an/pl_gen/pl_prep → pl_acc_an
+- c1-07.txt:6: «зимо́й» lexeme: chose n:зима over o:зимой
+- c1-07.txt:6: «им» lexeme: chose o:он over o:им, o:они, o:оно
+- c1-07.txt:7: «большо́й» prep: location
+- c1-07.txt:7: «исто́рии» nom: subject
+- c1-07.txt:7: «кото́рых» open: pl_acc_an/pl_gen → pl_acc_an
+- c1-07.txt:8: «его́» lexeme: chose o:он over o:его, o:оно
+- c1-07.txt:8: «его́» open: acc/gen → acc
+- c1-07.txt:8: «уже́» lexeme: chose o:уже over n:уж
+- c1-07.txt:8: «год» acc: a span of time
+- c1-07.txt:8: «мост» acc: after a transitive verb
+- c1-07.txt:10: «кото́рый» open: m_nom/m_acc → m_nom
+- c1-07.txt:11: «все» lexeme: chose o:всё over o:все
+- c1-07.txt:11: «вечера́» nom: subject
+- c1-07.txt:13: «Ве́чером» lexeme: chose n:вечер over o:вечером
+- c1-07.txt:14: «ста́рый» open: m_nom/m_acc → m_nom
+- c1-07.txt:14: «то́лстый» open: m_nom/m_acc → m_nom
+- c1-07.txt:14: «всех» open: pl_acc_an/pl_gen → pl_acc_an
+- c1-07.txt:15: «тост» acc: after a transitive verb
+- c1-07.txt:16: «жи́зни» acc: direction
+- c1-07.txt:16: «окно́» nom: subject
+- c1-07.txt:17: «Все» lexeme: chose o:всё over o:все
+- c1-07.txt:18: «слу́чай» nom: subject
+- c1-07.txt:18: «Ю́рия» acc: after a transitive verb
+- c1-07.txt:20: «все» open: n_nom/n_acc/pl_nom/pl_acc → n_nom
+- c1-07.txt:20: «уже́» lexeme: chose o:уже over n:уж
+- c1-07.txt:20: «спа́ли» lexeme: chose v:спать over v:спасть
+- c1-07.txt:22: «жизнь» agrees with its adjective
+- c1-07.txt:22: «ей» lexeme: chose o:она over o:ей
+- c1-08.txt:1: «её» lexeme: chose o:она over o:её
+- c1-08.txt:1: «её» acc: after a transitive verb
+- c1-08.txt:2: «её» lexeme: chose o:она over o:её
+- c1-08.txt:2: «её» open: acc/gen → acc
+- c1-08.txt:3: «пла́тье» prep: location
+- c1-08.txt:4: «восьмо́й» open: m_nom/m_acc/f_gen/f_dat/f_ins → m_nom
+- c1-08.txt:6: «смог» lexeme: chose v:смочь over n:смог
+- c1-08.txt:6: «её» lexeme: chose o:она over o:её
+- c1-08.txt:6: «её» acc: after a transitive verb
+- c1-08.txt:7: «фотогра́фии» prep: location
+- c1-08.txt:8: «Мне» lexeme: chose o:я over o:мне
+- c1-08.txt:8: «несправедли́вым» open: m_ins/n_ins/pl_dat → m_ins
+- c1-08.txt:8: «её» lexeme: chose o:она over o:её
+- c1-08.txt:8: «её» gen: follows a noun (possession)
+- c1-08.txt:8: «сча́стье» nom: subject
+- c1-08.txt:8: «сто» acc: a number after the verb
+- c1-08.txt:10: «сни́мок» acc: after a transitive verb
+- c1-08.txt:10: «люде́й» acc: after a transitive verb
+- c1-08.txt:11: «дни» acc: a span of time
+- c1-08.txt:12: «коммента́рии» nom: subject
+- c1-08.txt:12: «други́е» open: pl_nom/pl_acc → pl_nom
+- c1-08.txt:13: «уже́» lexeme: chose o:уже over n:уж
+- c1-08.txt:13: «почти́» lexeme: chose o:почти over v:почесть, v:почтить
+- c1-08.txt:13: «письмо́» nom: subject
+- c1-08.txt:15: «Здра́вствуйте» lexeme: chose o:здравствуйте over v:здравствовать
+- c1-08.txt:15: «фотогра́фии» prep: location
+- c1-08.txt:16: «Ма́мы» nom: subject
+- c1-08.txt:16: «три» lexeme: chose o:три over v:тереть
+- c1-08.txt:16: «три» acc: a number after the verb
+- c1-08.txt:16: «её» lexeme: chose o:она over o:её
+- c1-08.txt:16: «мно́гие» no agreement with ве́щи
+- c1-08.txt:16: «мно́гие» open: pl_nom/pl_acc → pl_nom
+- c1-08.txt:16: «её» lexeme: chose o:она over o:её
+- c1-08.txt:17: «её» lexeme: chose o:она over o:её
+- c1-08.txt:17: «её» open: acc/gen → acc
+- c1-08.txt:18: «ле́то» acc: a span of time
+- c1-08.txt:19: «и́мя» nom: subject
+- c1-08.txt:21: «кафе́» prep: location
+- c1-08.txt:21: «кафе́» open: sg_prep/pl_prep → sg_prep
+- c1-08.txt:22: «той» open: f_gen/f_ins → f_gen
+- c1-08.txt:24: «мне» lexeme: chose o:я over o:мне
+- c1-08.txt:24: «де́ньги» acc: after a transitive verb
+- c1-08.txt:25: «всё» lexeme: chose o:всё over o:все
+- c1-08.txt:25: «что́-то» nom: subject
+- c1-08.txt:25: «друго́е» open: n_nom/n_acc → n_nom
+- c1-09.txt:1: «кото́рые» open: pl_nom/pl_acc → pl_nom
+- c1-09.txt:1: «дела́» nom: subject
+- c1-09.txt:1: «вам» lexeme: chose o:вы over o:вам
+- c1-09.txt:2: «ру́сские» open: pl_nom/pl_acc → pl_nom
+- c1-09.txt:2: «таки́е» open: pl_nom/pl_acc → pl_nom
+- c1-09.txt:2: «неприве́тливые» open: pl_nom/pl_acc → pl_nom
+- c1-09.txt:5: «знак» nom: subject
+- c1-09.txt:5: «ве́жливости» gen: follows a noun (possession)
+- c1-09.txt:5: «знак» nom: subject
+- c1-09.txt:5: «симпа́тии» agrees with its adjective
+- c1-09.txt:5: «симпа́тии» gen: follows a noun (possession)
+- c1-09.txt:6: «стра́нным» open: m_ins/n_ins/pl_dat → m_ins
+- c1-09.txt:6: «ним» lexeme: chose o:он over o:они, o:оно
+- c1-09.txt:6: «себя́» acc: after a transitive verb
+- c1-09.txt:7: «Есть» lexeme: chose v:быть over o:есть, v:есть
+- c1-09.txt:7: «Есть» open: np_3sg/np_3pl → np_3sg
+- c1-09.txt:7: «смех» nom: subject
+- c1-09.txt:7: «при́знак» nom: subject
+- c1-09.txt:7: «глу́пости» gen: follows a noun (possession)
+- c1-09.txt:9: «того́» open: m_gen/n_gen → m_gen
+- c1-09.txt:9: «ру́сские» open: pl_nom/pl_acc → pl_nom
+- c1-09.txt:9: «и́скренность» acc: after a transitive verb
+- c1-09.txt:9: «чем» lexeme: chose o:что over o:чём
+- c1-09.txt:9: «ве́жливость» acc: listed after и́скренность
+- c1-09.txt:10: «вид» acc: after a transitive verb
+- c1-09.txt:10: «всё» lexeme: chose o:всё over o:все
+- c1-09.txt:11: «мно́гим» open: n_ins/pl_dat → n_ins
+- c1-09.txt:11: «неи́скренней» open: f_gen/f_dat/f_ins → f_gen
+- c1-09.txt:11: «почти́» lexeme: chose o:почти over v:почесть, v:почтить
+- c1-09.txt:11: «оскорби́тельной» open: f_gen/f_dat/f_ins → f_gen
+- c1-09.txt:13: «всё» lexeme: chose o:всё over o:все
+- c1-09.txt:14: «Тот» open: m_nom/m_acc → m_nom
+- c1-09.txt:14: «кото́рый» open: m_nom/m_acc → m_nom
+- c1-09.txt:14: «после́днее» open: n_nom/n_acc → n_nom
+- c1-09.txt:16: «вам» lexeme: chose o:вы over o:вам
+- c1-09.txt:16: «вам» lexeme: chose o:вы over o:вам
+- c1-09.txt:16: «ра́ды» gen: follows a noun (possession)
+- c1-10.txt:1: «язы́к» nom: subject
+- c1-10.txt:1: «одни́м» open: m_ins/n_ins/pl_dat → m_ins
+- c1-10.txt:2: «падеже́й» lexeme: chose n:падёж over n:падёж:2
+- c1-10.txt:2: «три» lexeme: chose o:три over v:тереть
+- c1-10.txt:2: «вид» nom: subject
+- c1-10.txt:2: «ударе́ние» nom: subject
+- c1-10.txt:2: «кото́рое» open: n_nom/n_acc → n_nom
+- c1-10.txt:2: «глаго́лы» acc: listed after ме́сто
+- c1-10.txt:2: «движе́ния» gen: follows a noun (possession)
+- c1-10.txt:2: «спи́сок» nom: subject
+- c1-10.txt:3: «мно́гие» open: pl_nom/pl_acc → pl_nom
+- c1-10.txt:3: «его́» lexeme: chose o:он over o:его, o:оно
+- c1-10.txt:3: «его́» acc: after a transitive verb
+- c1-10.txt:3: «уже́» lexeme: chose o:уже over n:уж
+- c1-10.txt:5: «есть» lexeme: chose v:быть over o:есть, v:есть
+- c1-10.txt:5: «есть» open: np_3sg/np_3pl → np_3sg
+- c1-10.txt:6: «Падежи́» lexeme: chose n:падёж over n:падёж:2
+- c1-10.txt:6: «Падежи́» nom: subject
+- c1-10.txt:6: «кото́рые» open: pl_nom/pl_acc → pl_nom
+- c1-10.txt:7: «оконча́ние» nom: subject
+- c1-10.txt:7: «что» nom: subject
+- c1-10.txt:7: «поря́док» nom: subject
+- c1-10.txt:8: «сы́на» acc: after a transitive verb
+- c1-10.txt:8: «Сы́на» open: sg_acc/sg_gen → sg_acc
+- c1-10.txt:8: «об» lexeme: chose o:о over o:об
+- c1-10.txt:8: «одно́м» open: m_prep/n_prep → m_prep
+- c1-10.txt:10: «Вид» nom: subject
+- c1-10.txt:10: «кото́рый» open: m_nom/m_acc → m_nom
+- c1-10.txt:10: «студе́нтов» acc: after a transitive verb
+- c1-10.txt:10: «сло́вом» lexeme: chose n:слово over o:словом
+- c1-10.txt:10: «чего́» lexeme: chose o:что over o:чего
+- c1-10.txt:10: «англи́йском» open: m_prep/n_prep → m_prep
+- c1-10.txt:11: «ра́зных» no agreement with ми́ра
+- c1-10.txt:11: «ра́зных» open: pl_acc_an/pl_gen → pl_acc_an
+- c1-10.txt:11: «ми́ра» lexeme: chose n:мир over n:миро
+- c1-10.txt:11: «пе́рвом» no agreement with проце́сс
+- c1-10.txt:11: «пе́рвом» open: m_prep/n_prep → m_prep
+- c1-10.txt:11: «второ́м» open: m_prep/n_prep → m_prep
+- c1-10.txt:11: «результа́т» nom: subject
+- c1-10.txt:13: «досто́инство» nom: subject
+- c1-10.txt:13: «его́» lexeme: chose o:он over o:его, o:оно
+- c1-10.txt:13: «его́» open: acc/gen → acc
+- c1-10.txt:13: «че́стность» nom: subject
+- c1-10.txt:14: «почти́» lexeme: chose o:почти over v:почесть, v:почтить
+- c1-10.txt:14: «знать» lexeme: chose v:знать over n:знать
+- c1-10.txt:14: «пра́вил» lexeme: chose n:правило over v:править
+- c1-10.txt:15: «алфави́т» acc: after a transitive verb
+- c1-10.txt:15: «сло́во» acc: after a transitive verb
+- c1-10.txt:15: «его́» lexeme: chose o:он over o:его, o:оно
+- c1-10.txt:15: «его́» acc: after a transitive verb
+- c1-10.txt:15: «значе́ния» gen: follows a noun (possession)
+- c1-10.txt:17: «гла́вное» nom: subject
+- c1-10.txt:17: «пе́сни» lexeme: chose n:песня over n:песнь
+- c1-10.txt:17: «пе́сни» nom: subject
+- c1-10.txt:17: «шу́тки» nom: listed after пе́сни
+- c1-10.txt:17: «разгово́ры» nom: listed after шу́тки
+- c1-10.txt:18: «текст» acc: after a transitive verb
+- c1-10.txt:18: «часть» agrees with its adjective
+- c1-10.txt:18: «пути́» gen: follows a noun (possession)
+- c1-10.txt:18: «уже́» lexeme: chose o:уже over n:уж
+- dl-a2-01.txt:1: «Здра́вствуйте» lexeme: chose o:здравствуйте over v:здравствовать
+- dl-a2-01.txt:1: «вас» lexeme: chose o:вы over o:вас
+- dl-a2-01.txt:1: «есть» lexeme: chose v:быть over o:есть, v:есть
+- dl-a2-01.txt:1: «есть» open: np_3sg/np_3pl → np_3sg
+- dl-a2-01.txt:1: «молоко́» nom: subject
+- dl-a2-01.txt:2: «Есть» lexeme: chose v:быть over o:есть, v:есть
+- dl-a2-01.txt:2: «Есть» open: np_3sg/np_3pl → np_3sg
+- dl-a2-01.txt:2: «Вам» lexeme: chose o:вы over o:вам
+- dl-a2-01.txt:2: «како́е» open: n_nom/n_acc → n_nom
+- dl-a2-01.txt:2: «большо́е» open: n_nom/n_acc → n_nom
+- dl-a2-01.txt:2: «ма́ленькое» open: n_nom/n_acc → n_nom
+- dl-a2-01.txt:3: «Большо́е» open: n_nom/n_acc → n_nom
+- dl-a2-01.txt:3: «хлеб» nom: subject
+- dl-a2-01.txt:4: «Бе́лый» open: m_nom/m_acc → m_nom
+- dl-a2-01.txt:4: «чёрный» open: m_nom/m_acc → m_nom
+- dl-a2-01.txt:5: «Чёрный» open: m_nom/m_acc → m_nom
+- dl-a2-01.txt:8: «Паке́т» nom: subject
+- dl-a2-01.txt:9: «меня́» lexeme: chose o:я over o:меня
+- dl-a2-01.txt:9: «есть» lexeme: chose v:быть over o:есть, v:есть
+- dl-a2-01.txt:9: «есть» open: np_3sg/np_3pl → np_3sg
+- dl-a2-02.txt:1: «день» lexeme: chose n:день over v:деть
+- dl-a2-02.txt:1: «день» nom: subject
+- dl-a2-02.txt:1: «Что» nom: subject
+- dl-a2-02.txt:2: «меню́» nom: subject
+- dl-a2-02.txt:2: «меню́» open: sg_nom/pl_nom → sg_nom
+- dl-a2-02.txt:4: «суп» nom: subject
+- dl-a2-02.txt:4: «сала́т» nom: listed after суп
+- dl-a2-02.txt:4: «что» nom: subject
+- dl-a2-02.txt:4: «вас» lexeme: chose o:вы over o:вас
+- dl-a2-02.txt:5: «Есть» lexeme: chose v:быть over o:есть, v:есть
+- dl-a2-02.txt:5: «Есть» open: np_3sg/np_3pl → np_3sg
+- dl-a2-02.txt:5: «пиро́г» lexeme: chose n:пирог over n:пирога
+- dl-a2-02.txt:5: «пиро́г» nom: subject
+- dl-a2-02.txt:6: «Пиро́г» lexeme: chose n:пирог over n:пирога
+- dl-a2-02.txt:6: «Пиро́г» nom: subject
+- dl-a2-02.txt:7: «Чай» lexeme: chose n:чай over v:чаять
+- dl-a2-02.txt:7: «Чай» nom: subject
+- dl-a2-02.txt:7: «чёрный» open: m_nom/m_acc → m_nom
+- dl-a2-02.txt:7: «зелёный» open: m_nom/m_acc → m_nom
+- dl-a2-02.txt:8: «Зелёный» open: m_nom/m_acc → m_nom
+- dl-a2-02.txt:9: «Всё» lexeme: chose o:всё over o:все
+- dl-a2-03.txt:1: «Извини́те» lexeme: chose v:извинить over o:извините
+- dl-a2-03.txt:2: «их» lexeme: chose o:они over o:их
+- dl-a2-03.txt:2: «их» open: acc/gen → acc
+- dl-a2-03.txt:3: «истори́ческому» open: m_dat/n_dat → m_dat
+- dl-a2-03.txt:5: «Музе́й» nom: subject
+- dl-a2-03.txt:5: «па́рка» lexeme: chose n:парк over n:парка
+- dl-a2-03.txt:7: «пять» nom: subject
+- dl-a2-03.txt:8: «Большо́е» open: n_nom/n_acc → n_nom
+- dl-a2-04.txt:1: «Здра́вствуйте» lexeme: chose o:здравствуйте over v:здравствовать
+- dl-a2-04.txt:1: «Мне» lexeme: chose o:я over o:мне
+- dl-a2-04.txt:1: «биле́т» nom: subject
+- dl-a2-04.txt:2: «Есть» lexeme: chose v:быть over o:есть, v:есть
+- dl-a2-04.txt:2: «Есть» open: np_3sg/np_3pl → np_3sg
+- dl-a2-04.txt:2: «по́езд» nom: subject
+- dl-a2-04.txt:2: «у́тром» lexeme: chose n:утро over o:утром
+- dl-a2-04.txt:2: «ве́чером» lexeme: chose n:вечер over o:вечером
+- dl-a2-04.txt:3: «Ве́чером» lexeme: chose n:вечер over o:вечером
+- dl-a2-04.txt:4: «Отправле́ние» nom: subject
+- dl-a2-04.txt:4: «прибы́тие» nom: subject
+- dl-a2-04.txt:5: «ме́сто» nom: subject
+- dl-a2-04.txt:6: «Ни́жних» open: pl_acc_an/pl_gen → pl_acc_an
+- dl-a2-04.txt:6: «уже́» lexeme: chose o:уже over n:уж
+- dl-a2-04.txt:6: «ве́рхние» open: pl_nom/pl_acc → pl_nom
+- dl-a2-04.txt:7: «ве́рхнее» open: n_nom/n_acc → n_nom
+- dl-a2-04.txt:8: «па́спорт» nom: subject
+- dl-a2-05.txt:1: «Здра́вствуйте» lexeme: chose o:здравствуйте over v:здравствовать
+- dl-a2-05.txt:1: «Что» nom: subject
+- dl-a2-05.txt:1: «вас» lexeme: chose o:вы over o:вас
+- dl-a2-05.txt:2: «меня́» lexeme: chose o:я over o:меня
+- dl-a2-05.txt:2: «го́рло» nom: listed after голова́
+- dl-a2-05.txt:4: «меня́» lexeme: chose o:я over o:меня
+- dl-a2-05.txt:5: «рот» lexeme: chose n:рот over n:рота
+- dl-a2-05.txt:5: «рот» acc: after a transitive verb
+- dl-a2-05.txt:5: «го́рло» nom: subject
+- dl-a2-05.txt:5: «кра́сное» open: n_nom/n_acc → n_nom
+- dl-a2-05.txt:6: «Э́то» no agreement with просту́да
+- dl-a2-05.txt:6: «Э́то» open: n_nom/n_acc → n_nom
+- dl-a2-05.txt:6: «до́ма» lexeme: chose n:дом over o:дома
+- dl-a2-05.txt:6: «три» lexeme: chose o:три over v:тереть
+- dl-a2-05.txt:6: «три» acc: a number after the verb
+- dl-a2-05.txt:8: «дам» lexeme: chose v:дать over n:дама
+- dl-a2-05.txt:8: «вам» lexeme: chose o:вы over o:вам
+- dl-a2-05.txt:8: «больни́чный» open: m_nom/m_acc → m_nom
+- dl-a2-06.txt:1: «Приве́т» nom: subject
+- dl-a2-06.txt:1: «Что» nom: subject
+- dl-a2-06.txt:2: «что» nom: subject
+- dl-a2-06.txt:3: «меня́» lexeme: chose o:я over o:меня
+- dl-a2-06.txt:3: «день» lexeme: chose n:день over v:деть
+- dl-a2-06.txt:3: «день» nom: subject
+- dl-a2-06.txt:3: «ко» lexeme: chose o:к over o:ко
+- dl-a2-06.txt:3: «мне» lexeme: chose o:я over o:мне
+- dl-a2-06.txt:3: «ве́чером» lexeme: chose n:вечер over o:вечером
+- dl-a2-06.txt:6: «Что» nom: subject
+- dl-a2-06.txt:6: «тебе́» lexeme: chose o:ты over o:тебе
+- dl-a2-07.txt:1: «ве́чер» nom: subject
+- dl-a2-07.txt:1: «Чем» lexeme: chose o:что over o:чём
+- dl-a2-07.txt:2: «Здра́вствуйте» lexeme: chose o:здравствуйте over v:здравствовать
+- dl-a2-07.txt:2: «но́мер» acc: after a transitive verb
+- dl-a2-07.txt:3: «но́мер» nom: subject
+- dl-a2-07.txt:3: «три» lexeme: chose o:три over v:тереть
+- dl-a2-07.txt:4: «за́втрак» nom: subject
+- dl-a2-07.txt:4: «есть» lexeme: chose v:быть over o:есть, v:есть
+- dl-a2-07.txt:4: «есть» open: np_3sg/np_3pl → np_3sg
+- dl-a2-07.txt:5: «за́втрак» nom: subject
+- dl-a2-07.txt:6: «чемода́н» acc: after a transitive verb
+- dl-a2-07.txt:7: «нас» lexeme: chose o:мы over o:нас
+- dl-a2-07.txt:7: «есть» lexeme: chose v:быть over o:есть, v:есть
+- dl-a2-07.txt:7: «есть» open: np_3sg/np_3pl → np_3sg
+- dl-a2-07.txt:7: «ключ» nom: subject
+- dl-a2-07.txt:7: «пять» nom: listed after ключ
+- dl-a2-08.txt:1: «помидо́ры» acc: after a transitive verb
+- dl-a2-08.txt:2: «килогра́мм» nom: subject
+- dl-a2-08.txt:2: «Све́жие» open: pl_nom/pl_acc → pl_nom
+- dl-a2-08.txt:3: «огурцы́» nom: subject
+- dl-a2-08.txt:4: «Огурцы́» nom: subject
+- dl-a2-08.txt:5: «килогра́мм» nom: subject
+- dl-a2-08.txt:6: «Что» nom: subject
+- dl-a2-08.txt:6: «Есть» lexeme: chose v:быть over o:есть, v:есть
+- dl-a2-08.txt:6: «Есть» open: np_3sg/np_3pl → np_3sg
+- dl-a2-08.txt:6: «я́блоки» nom: subject
+- dl-a2-08.txt:6: «сла́дкие» open: pl_nom/pl_acc → pl_nom
+- dl-a2-08.txt:7: «я́блоки» nom: subject
+- dl-a2-08.txt:7: «меня́» lexeme: chose o:я over o:меня
+- dl-b1-01.txt:1: «ве́чер» nom: subject
+- dl-b1-01.txt:2: «меня́» lexeme: chose o:я over o:меня
+- dl-b1-01.txt:2: «самолёт» nom: subject
+- dl-b1-01.txt:3: «ве́чером» lexeme: chose n:вечер over o:вечером
+- dl-b1-01.txt:3: «про́бки» nom: subject
+- dl-b1-01.txt:4: «путём» lexeme: chose n:путь over o:путём
+- dl-b1-01.txt:5: «на́бережной» open: sg_dat/sg_prep → sg_dat
+- dl-b1-01.txt:7: «два́дцать» acc: a number after the verb
+- dl-b1-01.txt:7: «лет» lexeme: chose n:год over n:лета, n:лёт
+- dl-b1-01.txt:7: «меня́» lexeme: chose o:я over o:меня
+- dl-b1-02.txt:1: «Здра́вствуйте» lexeme: chose o:здравствуйте over v:здравствовать
+- dl-b1-02.txt:1: «меня́» lexeme: chose o:я over o:меня
+- dl-b1-02.txt:1: «уже́» lexeme: chose o:уже over n:уж
+- dl-b1-02.txt:1: «три» lexeme: chose o:три over v:тереть
+- dl-b1-02.txt:1: «ка́шель» nom: subject
+- dl-b1-02.txt:1: «Что» nom: subject
+- dl-b1-02.txt:2: «Ка́шель» nom: subject
+- dl-b1-02.txt:2: «сухо́й» open: m_nom/m_acc/f_gen/f_dat/f_ins → m_nom
+- dl-b1-02.txt:2: «мо́крый» open: m_nom/m_acc → m_nom
+- dl-b1-02.txt:3: «сухо́й» open: m_nom/m_acc/f_gen/f_dat/f_ins → m_nom
+- dl-b1-02.txt:4: «есть» lexeme: chose v:быть over o:есть, v:есть
+- dl-b1-02.txt:4: «есть» open: np_3sg/np_3pl → np_3sg
+- dl-b1-02.txt:5: «температу́ры» gen: negated existence (не́ было, нет)
+- dl-b1-02.txt:6: «сиро́п» acc: after a transitive verb
+- dl-b1-02.txt:6: «его́» lexeme: chose o:он over o:его, o:оно
+- dl-b1-02.txt:6: «его́» acc: after a transitive verb
+- dl-b1-02.txt:6: «три» lexeme: chose o:три over v:тереть
+- dl-b1-02.txt:6: «три» acc: a number after the verb
+- dl-b1-02.txt:6: «день» lexeme: chose n:день over v:деть
+- dl-b1-02.txt:8: «большо́е» open: n_nom/n_acc → n_nom
+- dl-b1-03.txt:1: «Э́то» no agreement with гости́ная
+- dl-b1-03.txt:1: «Э́то» open: n_nom/n_acc → n_nom
+- dl-b1-03.txt:3: «Три́дцать» nom: subject
+- dl-b1-03.txt:3: «плюс» nom: subject
+- dl-b1-03.txt:3: «услу́ги» agrees with its adjective
+- dl-b1-03.txt:3: «услу́ги» nom: subject
+- dl-b1-03.txt:4: «меня́» lexeme: chose o:я over o:меня
+- dl-b1-03.txt:4: «ко́шка» lexeme: chose n:кошка over n:кошки
+- dl-b1-03.txt:5: «Ко́шку» lexeme: chose n:кошка over n:кошки
+- dl-b1-03.txt:6: «день» lexeme: chose n:день over v:деть
+- dl-b1-03.txt:6: «день» acc: a span of time
+- dl-b1-04.txt:1: «ве́чер» nom: subject
+- dl-b1-04.txt:1: «Извини́те» lexeme: chose v:извинить over o:извините
+- dl-b1-04.txt:2: «Здра́вствуйте» lexeme: chose o:здравствуйте over v:здравствовать
+- dl-b1-04.txt:2: «Что́-то» nom: subject
+- dl-b1-04.txt:3: «вас» lexeme: chose o:вы over o:вас
+- dl-b1-04.txt:3: «ве́чер» nom: subject
+- dl-b1-04.txt:3: «Уже́» lexeme: chose o:уже over n:уж
+- dl-b1-04.txt:3: «часо́в» lexeme: chose n:час over n:часы
+- dl-b1-04.txt:4: «извини́те» lexeme: chose v:извинить over o:извините
+- dl-b1-04.txt:5: «сте́ны» lexeme: chose n:стена over n:стен
+- dl-b1-05.txt:2: «Меня́» lexeme: chose o:я over o:меня
+- dl-b1-05.txt:2: «Меня́» open: acc/gen → acc
+- dl-b1-05.txt:2: «зову́т» lexeme: chose v:звать over o:зовут
+- dl-b1-05.txt:3: «нас» lexeme: chose o:мы over o:нас
+- dl-b1-05.txt:4: «журна́л» acc: after a transitive verb
+- dl-b1-05.txt:4: «Мне» lexeme: chose o:я over o:мне
+- dl-b1-05.txt:5: «вас» lexeme: chose o:вы over o:вас
+- dl-b1-05.txt:5: «есть» lexeme: chose v:быть over o:есть, v:есть
+- dl-b1-05.txt:5: «есть» open: np_3sg/np_3pl → np_3sg
+- dl-b1-05.txt:5: «о́пыт» nom: subject
+- dl-b1-05.txt:5: «рабо́ты» gen: follows a noun (possession)
+- dl-b1-05.txt:7: «её» lexeme: chose o:она over o:её
+- dl-b1-05.txt:7: «её» gen: follows a noun (possession)
+- dl-b1-05.txt:7: «кото́рые» open: pl_nom/pl_acc → pl_nom
+- dl-b1-05.txt:7: «шли» lexeme: chose v:идти over v:слать
+- dl-b1-05.txt:7: «лет» lexeme: chose n:год over n:лета, n:лёт
+- dl-b1-05.txt:9: «вам» lexeme: chose o:вы over o:вам
+- dl-b1-06.txt:1: «счёт» nom: subject
+- dl-b1-06.txt:6: «извини́те» lexeme: chose v:извинить over o:извините
+- dl-b1-06.txt:7: «стра́шного» open: m_acc_an/m_gen/n_gen → m_acc_an
+- dl-b1-06.txt:7: «чаевы́е» nom: subject
+- dl-b1-06.txt:8: «вам» lexeme: chose o:вы over o:вам
+- dl-b1-06.txt:8: «большо́е» open: n_nom/n_acc → n_nom
+- dl-b1-07.txt:1: «Здра́вствуйте» lexeme: chose o:здравствуйте over v:здравствовать
+- dl-b1-07.txt:1: «чемода́н» nom: subject
+- dl-b1-07.txt:1: «уже́» lexeme: chose o:уже over n:уж
+- dl-b1-07.txt:1: «час» acc: a span of time
+- dl-b1-07.txt:2: «биле́т» nom: subject
+- dl-b1-07.txt:4: «Како́й» open: m_nom/m_acc/f_gen/f_dat/f_ins → m_nom
+- dl-b1-07.txt:4: «вас» lexeme: chose o:вы over o:вас
+- dl-b1-07.txt:4: «чемода́н» nom: subject
+- dl-b1-07.txt:4: «его́» lexeme: chose o:он over o:его, o:оно
+- dl-b1-07.txt:4: «его́» acc: after a transitive verb
+- dl-b1-07.txt:5: «Большо́й» open: m_nom/m_acc/f_gen/f_dat/f_ins → m_nom
+- dl-b1-07.txt:5: «си́ний» open: m_nom/m_acc → m_nom
+- dl-b1-07.txt:5: «него́» lexeme: chose o:он over o:оно
+- dl-b1-07.txt:6: «чемода́н» nom: subject
+- dl-b1-07.txt:6: «Его́» lexeme: chose o:он over o:его, o:оно
+- dl-b1-07.txt:6: «Его́» open: acc/gen → acc
+- dl-b1-07.txt:6: «у́тром» lexeme: chose n:утро over o:утром
+- dl-b1-07.txt:7: «его́» lexeme: chose o:он over o:его, o:оно
+- dl-b1-07.txt:7: «его́» acc: after a transitive verb
+- dl-b1-07.txt:7: «домо́й» lexeme: chose o:домой over v:домыть
+- dl-b1-07.txt:8: «а́дрес» acc: after a transitive verb
+- dl-b1-07.txt:8: «телефо́н» acc: listed after а́дрес
+- dl-b1-08.txt:1: «кино́» acc: direction
+- dl-b1-08.txt:1: «кино́» open: sg_acc/pl_acc → sg_acc
+- dl-b1-08.txt:1: «выходны́е» lexeme: chose n:выходные over n:выходной
+- dl-b1-08.txt:2: «Дава́й» lexeme: chose v:давать over o:давай
+- dl-b1-08.txt:2: «что» nom: subject
+- dl-b1-08.txt:3: «Есть» lexeme: chose v:быть over o:есть, v:есть
+- dl-b1-08.txt:3: «Есть» open: np_3sg/np_3pl → np_3sg
+- dl-b1-08.txt:3: «фильм» nom: subject
+- dl-b1-08.txt:4: «всё» lexeme: chose o:всё over o:все
+- dl-b1-08.txt:4: «Дава́й» lexeme: chose v:давать over o:давай
+- dl-b1-08.txt:5: «фильм» nom: subject
+- dl-b1-08.txt:5: «всем» open: m_ins/n_ins/m_prep/n_prep/pl_dat → m_ins
+- dl-b1-08.txt:6: «моро́женое» acc: after a transitive verb
+- dl-b1-08.txt:7: «Сеа́нс» nom: subject
+- dl-b2-01.txt:1: «чём» lexeme: chose o:что over o:чём
+- dl-b2-01.txt:1: «все» lexeme: chose o:всё over o:все
+- dl-b2-01.txt:1: «го́ды» acc: a span of time
+- dl-b2-01.txt:2: «меня́» lexeme: chose o:я over o:меня
+- dl-b2-01.txt:2: «мост» nom: listed after рабо́та
+- dl-b2-01.txt:2: «кото́рый» open: m_nom/m_acc → m_nom
+- dl-b2-01.txt:3: «пи́сьма» nom: subject
+- dl-b2-01.txt:4: «пи́сьма» nom: subject
+- dl-b2-01.txt:4: «её» lexeme: chose o:она over o:её
+- dl-b2-01.txt:4: «её» open: acc/gen → acc
+- dl-b2-01.txt:4: «отве́ты» nom: subject
+- dl-b2-01.txt:4: «жизнь» agrees with its adjective
+- dl-b2-01.txt:4: «всё» lexeme: chose o:всё over o:все
+- dl-b2-01.txt:6: «всё» lexeme: chose o:всё over o:все
+- dl-b2-01.txt:6: «что́-то» nom: subject
+- dl-b2-01.txt:6: «лет» lexeme: chose n:год over n:лета, n:лёт
+- dl-b2-01.txt:7: «Что» nom: subject
+- dl-b2-01.txt:7: «кото́рые» open: pl_nom/pl_acc → pl_nom
+- dl-b2-01.txt:7: «интервью́» agrees with its adjective
+- dl-b2-01.txt:7: «интервью́» acc: after a transitive verb
+- dl-b2-01.txt:8: «вам» lexeme: chose o:вы over o:вам
+- dl-b2-01.txt:8: «вас» lexeme: chose o:вы over o:вас
+- dl-b2-01.txt:8: «вас» gen: follows a noun (possession)
+- dl-b2-02.txt:1: «Здра́вствуйте» lexeme: chose o:здравствуйте over v:здравствовать
+- dl-b2-02.txt:1: «ту́фли» agrees with its adjective
+- dl-b2-02.txt:1: «ту́фли» acc: after a transitive verb
+- dl-b2-02.txt:1: «их» lexeme: chose o:они over o:их
+- dl-b2-02.txt:1: «их» acc: after a transitive verb
+- dl-b2-02.txt:1: «уже́» lexeme: chose o:уже over n:уж
+- dl-b2-02.txt:2: «их» lexeme: chose o:они over o:их
+- dl-b2-02.txt:2: «их» gen: follows a noun (possession)
+- dl-b2-02.txt:3: «их» lexeme: chose o:они over o:их
+- dl-b2-02.txt:3: «их» acc: after a transitive verb
+- dl-b2-02.txt:3: «у́лице» open: sg_dat/sg_prep → sg_dat
+- dl-b2-02.txt:3: «все» lexeme: chose o:всё over o:все
+- dl-b2-02.txt:3: «ту́фли» acc: after a transitive verb
+- dl-b2-02.txt:3: «ту́фли» gen: follows a noun (possession)
+- dl-b2-02.txt:4: «вас» lexeme: chose o:вы over o:вас
+- dl-b2-02.txt:4: «есть» lexeme: chose v:быть over o:есть, v:есть
+- dl-b2-02.txt:4: «есть» open: np_3sg/np_3pl → np_3sg
+- dl-b2-02.txt:4: «чек» lexeme: chose n:чек over n:чека
+- dl-b2-02.txt:4: «чек» nom: subject
+- dl-b2-02.txt:6: «де́ньги» acc: after a transitive verb
+- dl-b2-02.txt:6: «ту́фли» acc: after a transitive verb
+- dl-b2-02.txt:7: «де́ньги» nom: subject
+- dl-b2-02.txt:8: «заявле́ние» nom: subject
+- dl-b2-02.txt:8: «де́ньги» nom: subject
+- dl-b2-02.txt:8: «трёх» prep: location
+- dl-b2-03.txt:1: «вопро́с» nom: listed after Оле́г
+- dl-b2-03.txt:1: «мне» lexeme: chose o:я over o:мне
+- dl-b2-03.txt:2: «что» nom: subject
+- dl-b2-03.txt:2: «мне» lexeme: chose o:я over o:мне
+- dl-b2-03.txt:2: «мне» lexeme: chose o:я over o:мне
+- dl-b2-03.txt:3: «ей» lexeme: chose o:она over o:ей
+- dl-b2-03.txt:3: «ей» open: dat/ins → dat
+- dl-b2-03.txt:4: «её» lexeme: chose o:она over o:её
+- dl-b2-03.txt:4: «её» open: acc/gen → acc
+- dl-b2-03.txt:4: «почти́» lexeme: chose o:почти over v:почесть, v:почтить
+- dl-b2-03.txt:5: «ста́ли» lexeme: chose v:стать over n:сталь
+- dl-b2-03.txt:6: «всё» lexeme: chose o:всё over o:все
+- dl-b2-03.txt:7: «всем» open: m_ins/n_ins/pl_dat → m_ins
+- dl-b2-03.txt:8: «нас» lexeme: chose o:мы over o:нас
+- dl-b2-03.txt:8: «сло́вом» lexeme: chose n:слово over o:словом
+- dl-b2-04.txt:1: «тебе́» lexeme: chose o:ты over o:тебе
+- dl-b2-04.txt:3: «мне» lexeme: chose o:я over o:мне
+- dl-b2-04.txt:3: «коне́ц» nom: subject
+- dl-b2-04.txt:3: «гру́стный» open: m_nom/m_acc → m_nom
+- dl-b2-04.txt:4: «раз» nom: subject
+- dl-b2-04.txt:4: «пра́вильный» open: m_nom/m_acc → m_nom
+- dl-b2-04.txt:4: «всё» lexeme: chose o:всё over o:все
+- dl-b2-04.txt:5: «мне» lexeme: chose o:я over o:мне
+- dl-b2-04.txt:7: «что» nom: subject
+- dl-b2-04.txt:7: «жи́зни» prep: location
+- dl-b2-04.txt:8: «Э́то» no agreement with пра́вда
+- dl-b2-04.txt:8: «Э́то» open: n_nom/n_acc → n_nom
+- culture.txt:c-matryoshka:1: «ку́клы» nom: subject
+- culture.txt:c-matryoshka:2: «пять» nom: subject
+- culture.txt:c-samovar:1: «Самова́р» nom: subject
+- culture.txt:c-samovar:1: «ча́йник» nom: subject
+- culture.txt:c-samovar:1: «кото́ром» open: m_prep/n_prep → m_prep
+- culture.txt:c-samovar:1: «во́ду» lexeme: chose n:вода over n:вод
+- culture.txt:c-maslenitsa:1: «пра́здник» nom: subject
+- culture.txt:c-maslenitsa:2: «блины́» acc: after a transitive verb
+- culture.txt:c-maslenitsa:2: «чу́чело» acc: after a transitive verb
+- culture.txt:c-dacha:1: «дом» nom: subject
+- culture.txt:c-dacha:2: «Ле́том» lexeme: chose n:лето over o:летом
+- culture.txt:c-dacha:2: «мно́гие» open: pl_nom/pl_acc → pl_nom
+- culture.txt:c-dacha:2: «ру́сские» open: pl_nom/pl_acc → pl_nom
+- culture.txt:c-dacha:2: «выходны́е» lexeme: chose n:выходные over n:выходной
+- culture.txt:c-dacha:2: «о́вощи» lexeme: chose n:овощ over n:овощи
+- culture.txt:c-dacha:2: «о́вощи» acc: after a transitive verb
+- culture.txt:c-new-year:1: «год» nom: subject
+- culture.txt:c-new-year:1: «пра́здник» nom: subject
+- culture.txt:c-new-year:2: «сала́т» nom: subject
+- culture.txt:c-new-year:2: «оливье́» open: sg_nom/pl_nom → sg_nom
+- culture.txt:c-new-year:2: «пода́рки» nom: subject
+- culture.txt:c-ballet:1: «бале́т» nom: subject
+- culture.txt:c-ballet:1: «ми́ре» lexeme: chose n:мир over n:миро
+- culture.txt:c-ballet:2: «Биле́ты» nom: subject
+- culture.txt:c-gzhel:1: «Гжель» nom: subject
+- culture.txt:c-gzhel:2: «Её» lexeme: chose o:она over o:её
+- culture.txt:c-gzhel:2: «Её» open: acc/gen → acc
+- culture.txt:c-gzhel:2: «уже́» lexeme: chose o:уже over n:уж
+- culture.txt:c-gzhel:2: «лет» lexeme: chose n:год over n:лета, n:лёт
+- idioms.txt:c-sobaka:2: «нашли́» lexeme: chose v:найти over v:наслать
+- idioms.txt:c-sobaka:2: «пробле́мы» gen: follows a noun (possession)
+- idioms.txt:c-lapsha:1: «вам» lexeme: chose o:вы over o:вам
+- idioms.txt:c-lapsha:2: «мне» lexeme: chose o:я over o:мне
+- idioms.txt:c-lapsha:2: «кото́рый» open: m_nom/m_acc → m_nom
+- idioms.txt:c-rak:1: «Ра́ки» lexeme: chose n:рак over n:рака
+- idioms.txt:c-maslo:1: «всё» lexeme: chose o:всё over o:все
+- idioms.txt:c-maslo:1: «всё» lexeme: chose o:всё over o:все
+- idioms.txt:c-medvezhya:1: «Э́то» no agreement with по́мощь
+- idioms.txt:c-medvezhya:1: «Э́то» open: n_nom/n_acc → n_nom
+- idioms.txt:c-medvezhya:1: «по́мощь» nom: subject
+- idioms.txt:c-trud:2: «Её» lexeme: chose o:она over o:её
+- idioms.txt:c-trud:2: «Её» open: acc/gen → acc
+- idioms.txt:c-utro:2: «У́тром» lexeme: chose n:утро over o:утром
+- idioms.txt:c-utro:2: «всё» lexeme: chose o:всё over o:все
+- people.txt:c-pushkin:1: «Росси́и» gen: follows a noun (possession)
+- people.txt:c-pushkin:2: «жил» lexeme: chose v:жить over n:жила
+- people.txt:c-pushkin:2: «ве́ке» lexeme: chose n:век over n:веко
+- people.txt:c-pushkin:2: «стихи́» acc: after a transitive verb
+- people.txt:c-pushkin:2: «ска́зки» acc: listed after стихи́
+- people.txt:c-pushkin:2: «рома́ны» acc: listed after ска́зки
+- people.txt:c-pushkin:3: «Ру́сские» open: pl_nom/pl_acc → pl_nom
+- people.txt:c-pushkin:3: «на́ше» open: n_nom/n_acc → n_nom
+- people.txt:c-pushkin:3: «всё» lexeme: chose o:всё over o:все
+- people.txt:c-tolstoy:1: «рома́н» acc: after a transitive verb
+- people.txt:c-tolstoy:1: «мир» nom: listed after Война́
+- people.txt:c-tolstoy:1: «ми́ре» lexeme: chose n:мир over n:миро
+- people.txt:c-tolstoy:2: «его́» lexeme: chose o:он over o:его, o:оно
+- people.txt:c-tolstoy:2: «его́» acc: after a transitive verb
+- people.txt:c-dostoevsky:1: «что» nom: subject
+- people.txt:c-dostoevsky:1: «добро́» nom: subject
+- people.txt:c-dostoevsky:1: «зло» nom: listed after добро́
+- people.txt:c-dostoevsky:1: «есть» lexeme: chose v:быть over o:есть, v:есть
+- people.txt:c-dostoevsky:1: «есть» open: np_3sg/np_3pl → np_3sg
+- people.txt:c-dostoevsky:2: «Его́» lexeme: chose o:он over o:его, o:оно
+- people.txt:c-dostoevsky:2: «Его́» open: acc/gen → acc
+- people.txt:c-dostoevsky:2: «рома́н» nom: subject
+- people.txt:c-dostoevsky:2: «Преступле́ние» nom: subject
+- people.txt:c-dostoevsky:2: «наказа́ние» nom: listed after Преступле́ние
+- people.txt:c-dostoevsky:2: «ми́ре» lexeme: chose n:мир over n:миро
+- people.txt:c-gagarin:1: «пе́рвым» open: m_ins/n_ins/pl_dat → m_ins
+- people.txt:c-gagarin:3: «двена́дцатое» no agreement with апре́ля
+- people.txt:c-gagarin:3: «двена́дцатое» open: n_nom/n_acc → n_nom
+- people.txt:c-gagarin:3: «пра́здник» nom: subject
+- people.txt:c-tchaikovsky:2: «Его́» lexeme: chose o:он over o:его, o:оно
+- people.txt:c-tchaikovsky:2: «Его́» open: acc/gen → acc
+- people.txt:c-tchaikovsky:2: «бале́т» nom: subject
+- people.txt:c-tchaikovsky:2: «о́зеро» nom: subject
+- people.txt:c-tchaikovsky:2: «ми́ре» lexeme: chose n:мир over n:миро
+- people.txt:c-tereshkova:2: «почти́» lexeme: chose o:почти over v:почесть, v:почтить
+- people.txt:c-tereshkova:2: «три» lexeme: chose o:три over v:тереть
+- people.txt:c-tereshkova:2: «три» acc: a number after the verb
+- people.txt:c-shostakovich:1: «пятна́дцать» acc: after a transitive verb
+- places.txt:c-moscow:1: «Росси́и» gen: follows a noun (possession)
+- places.txt:c-moscow:3: «Кремль» nom: subject
+- places.txt:c-moscow:3: «ря́дом» lexeme: chose o:рядом over n:ряд
+- places.txt:c-moscow:3: «пло́щадь» agrees with its adjective
+- places.txt:c-petersburg:1: «Петербу́рг» nom: subject
+- places.txt:c-petersburg:2: «Ле́том» lexeme: chose n:лето over o:летом
+- places.txt:c-petersburg:2: «но́чи» agrees with its adjective
+- places.txt:c-petersburg:2: «но́чи» nom: subject
+- places.txt:c-petersburg:2: «днём» lexeme: chose n:день over o:днём
+- places.txt:c-petersburg:3: «мосты́» nom: subject
+- places.txt:c-petersburg:3: «корабли́» acc: after a transitive verb
+- places.txt:c-baikal:1: «Байка́л» nom: subject
+- places.txt:c-baikal:1: «о́зеро» nom: subject
+- places.txt:c-baikal:1: «ми́ре» lexeme: chose n:мир over n:миро
+- places.txt:c-baikal:2: «нём» lexeme: chose o:он over o:оно
+- places.txt:c-baikal:3: «Зимо́й» lexeme: chose n:зима over o:зимой
+- places.txt:c-baikal:3: «лёд» nom: subject
+- places.txt:c-baikal:3: «тако́й» open: m_nom/m_acc/f_gen/f_dat/f_ins → m_nom
+- places.txt:c-baikal:3: «прозра́чный» open: m_nom/m_acc → m_nom
+- places.txt:c-baikal:3: «дно» nom: subject
+- places.txt:c-siberia:1: «Сиби́рь» nom: subject
+- places.txt:c-siberia:2: «Зимо́й» lexeme: chose n:зима over o:зимой
+- places.txt:c-siberia:2: «ми́нус» nom: subject
+- places.txt:c-siberia:2: «ле́том» lexeme: chose n:лето over o:летом
+- places.txt:c-siberia:2: «плюс» nom: subject
+- places.txt:c-siberia:2: «три́дцать» nom: subject
+- places.txt:c-kazan:1: «ру́сские» open: pl_nom/pl_acc → pl_nom
+- places.txt:c-kazan:2: «ря́дом» lexeme: chose o:рядом over n:ряд
+- places.txt:c-kazan:2: «мече́ть» nom: subject
+- places.txt:c-kazan:2: «це́рковь» nom: listed after мече́ть
+- places.txt:c-volga:2: «Ру́сские» open: pl_nom/pl_acc → pl_nom
+- places.txt:c-volga:2: «её» lexeme: chose o:она over o:её
+- places.txt:c-volga:2: «её» acc: after a transitive verb
+- places.txt:c-hermitage:1: «Эрмита́ж» nom: subject
+- places.txt:c-hermitage:1: «ми́ра» lexeme: chose n:мир over n:миро
+- places.txt:c-hermitage:2: «всё» lexeme: chose o:всё over o:все
+- places.txt:c-hermitage:2: «лет» lexeme: chose n:год over n:лета, n:лёт
+- places.txt:c-hermitage:3: «ко́шки» lexeme: chose n:кошка over n:кошки
+- places.txt:c-hermitage:3: «ко́шки» nom: subject
+- places.txt:c-hermitage:3: «мыше́й» acc: after a transitive verb

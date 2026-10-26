@@ -1,0 +1,43 @@
+id: nf-c1-02
+kind: nonfiction
+level: C1
+title: «Пу́шкин — на́ше всё» | "Pushkin is our everything"
+---
+Фра́зу «Пу́шкин — на́ше всё» зна́ет ка́ждый ру́сский шко́льник. | Every Russian schoolchild knows the phrase "Pushkin is our everything."
+Её сказа́л оди́н кри́тик ещё в девятна́дцатом ве́ке, и с тех пор она́ ста́ла почти́ погово́ркой. | A critic said it back in the nineteenth century, and since then it has become almost a saying.
+Иностра́нцам э́то ча́сто ка́жется преувеличе́нием: почему́ поэ́т, кото́рого за грани́цей зна́ют гора́здо ху́же, чем Толсто́го и́ли Достое́вского, для ру́сских важне́е всех? | To foreigners this often seems an exaggeration: why is a poet who is far less known abroad than Tolstoy or Dostoyevsky more important to Russians than anyone?
+
+Отве́т отча́сти в языке́. | The answer lies partly in the language.
+До Пу́шкина ру́сская литерату́ра говори́ла на тяжёлом, кни́жном языке́, по́лном церко́вных слов и иностра́нных заи́мствований. | Before Pushkin, Russian literature spoke a heavy, bookish language full of church words and foreign borrowings.
+Пу́шкин на́чал писа́ть так, как говори́ли живы́е лю́ди, и при э́том его́ стихи́ оста́лись удиви́тельно лёгкими и музыка́льными. | Pushkin began to write the way living people spoke, and at the same time his verse remained wonderfully light and musical.
+По су́ти, совреме́нный литерату́рный ру́сский язы́к во мно́гом со́здал и́менно он. | In essence, it was he who to a large extent created the modern Russian literary language.
+
+Друга́я причи́на — широта́. | Another reason is his range.
+Пу́шкин писа́л обо всём: о любви́ и дру́жбе, о царя́х и крестья́нах, об исто́рии и о ска́зках. | Pushkin wrote about everything: love and friendship, tsars and peasants, history and fairy tales.
+Ру́сские де́ти слы́шат его́ ска́зки ещё до того́, как начина́ют говори́ть, а взро́слые до ста́рости повторя́ют стро́чки из «Евге́ния Оне́гина». | Russian children hear his fairy tales before they start to speak, and adults go on quoting lines from "Eugene Onegin" into old age.
+Его́ стихи́ звуча́т на сва́дьбах и пра́здниках, на них ссыла́ются в спо́рах и в шу́тках. | His poems are heard at weddings and celebrations; people refer to them in arguments and in jokes.
+
+Наконе́ц, важна́ и сама́ его́ судьба́. | Finally, his very fate matters too.
+Пу́шкин поги́б на дуэ́ли, когда́ ему́ бы́ло всего́ три́дцать семь лет. | Pushkin died in a duel when he was only thirty-seven.
+Он не успе́л стать ста́рым и навсегда́ оста́лся в па́мяти молоды́м, сме́лым и свобо́дным. | He didn't have time to grow old and stayed forever in memory young, brave and free.
+
+Перево́дчики давно́ жа́луются, что Пу́шкин почти́ не поддаётся перево́ду. | Translators have long complained that Pushkin hardly lends itself to translation.
+В перево́де исчеза́ет му́зыка, и остаётся то́лько сюже́т. | In translation the music disappears and only the plot remains.
+Мо́жет быть, поэ́тому, что́бы по-настоя́щему поня́ть, почему́ Пу́шкин — «на́ше всё», ну́жно прочита́ть его́ по-ру́сски. | Perhaps that's why, to really understand why Pushkin is "our everything", you need to read him in Russian.
+---
+? Каку́ю роль сыгра́л Пу́шкин в исто́рии языка́? | What role did Pushkin play in the history of the language?
++ Он во мно́гом со́здал совреме́нный литерату́рный язы́к.
+- Он написа́л пе́рвый слова́рь.
+- Он запрети́л иностра́нные слова́.
+? О чём писа́л Пу́шкин? | What did Pushkin write about?
++ Обо всём: о любви́, об исто́рии, о ска́зках.
+- То́лько о любви́.
+- То́лько о войне́.
+? Ско́лько лет бы́ло Пу́шкину, когда́ он поги́б? | How old was Pushkin when he died?
++ Три́дцать семь.
+- Пятьдеся́т.
+- Два́дцать оди́н.
+? Почему́ Пу́шкина тру́дно переводи́ть? | Why is Pushkin hard to translate?
++ В перево́де исчеза́ет му́зыка стиха́.
+- Он писа́л на ста́ром языке́.
+- Его́ стихи́ сли́шком дли́нные.

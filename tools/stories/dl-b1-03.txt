@@ -1,0 +1,27 @@
+id: dl-b1-03
+kind: dialogue
+level: B1
+title: Кварти́ра | The flat
+---
+Хозя́йка: Вот, проходи́те. Э́то гости́ная, а там спа́льня. | Landlady: Here, come in. This is the living room, and the bedroom is over there.
+Студе́нт: Све́тлая кварти́ра! А ско́лько сто́ит в ме́сяц? | Student: It's a bright flat! And how much is it a month?
+Хозя́йка: Три́дцать ты́сяч плюс коммуна́льные услу́ги. | Landlady: Thirty thousand plus utilities.
+Студе́нт: А мо́жно с живо́тными? У меня́ ко́шка. | Student: Are pets allowed? I have a cat.
+Хозя́йка: Ко́шку мо́жно, е́сли она́ споко́йная. А вот соба́ку я бы не разреши́ла. | Landlady: A cat's fine if it's calm. But I wouldn't allow a dog.
+Студе́нт: Она́ о́чень споко́йная. Спит весь день. | Student: She's very calm. She sleeps all day.
+Хозя́йка: Тогда́ хорошо́. Плати́ть на́до до пя́того числа́ ка́ждого ме́сяца. | Landlady: Then that's fine. Rent has to be paid by the fifth of each month.
+Студе́нт: Договори́лись. Когда́ мо́жно въе́хать? | Student: Agreed. When can I move in?
+Хозя́йка: Хоть за́втра. | Landlady: Tomorrow if you like.
+---
+? Ско́лько сто́ит кварти́ра? | How much does the flat cost?
++ Три́дцать ты́сяч плюс коммуна́льные услу́ги.
+- Два́дцать ты́сяч.
+- Пятьдеся́т ты́сяч.
+? Како́е живо́тное у студе́нта? | What pet does the student have?
++ Ко́шка.
+- Соба́ка.
+- У него́ нет живо́тных.
+? Когда́ на́до плати́ть? | When must the rent be paid?
++ До пя́того числа́ ка́ждого ме́сяца.
+- В конце́ ме́сяца.
+- Раз в год.

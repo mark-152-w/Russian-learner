@@ -1,0 +1,43 @@
+id: st-a2-10
+kind: story
+level: A2
+series: anya
+chapter: 10
+title: До свида́ния, Москва́! | Goodbye, Moscow!
+characters: А́ня, Ми́ша, Оле́г, Ни́на
+cliffhanger: Summer is coming, and Grandma has an invitation for everyone.
+---
+Неде́ля прошла́ о́чень бы́стро. | The week went by very fast.
+В после́дний день Ми́ша сказа́л: | On the last day Misha said:
+— Я хочу́ пригото́вить у́жин для всех. И на э́тот раз без ды́ма! | "I want to cook dinner for everyone. And this time without smoke!"
+
+Ве́чером к нам пришли́ Оле́г и Ни́на. | In the evening Oleg and Nina came round.
+Ни́на принесла́ пиро́г, а Оле́г — фру́кты. | Nina brought a pie, and Oleg brought fruit.
+Ми́ша свари́л суп и сде́лал сала́т. | Misha made soup and a salad.
+Всё бы́ло о́чень вку́сно. | Everything was very tasty.
+— Ты бу́дешь хоро́шим по́варом, — сказа́ла Ни́на. | "You'll make a good cook," said Nina.
+Ми́ша покрасне́л от удово́льствия. | Misha went red with pleasure.
+
+Пото́м Ми́ша показа́л нам свои́ рису́нки. | Then Misha showed us his drawings.
+Там бы́ли медве́ди, метро́, Кремль и да́же Ба́рсик. | There were bears, the metro, the Kremlin and even Barsik.
+— Э́то пода́рок для тебя́, — сказа́л он мне. | "This is a present for you," he told me.
+
+У́тром мы пое́хали на вокза́л. | In the morning we went to the station.
+Ми́ша сел в по́езд и помаха́л мне руко́й. | Misha got on the train and waved to me.
+— Я прие́ду ещё! — закрича́л он. | "I'll come again!" he shouted.
+Я верну́лась домо́й. | I came back home.
+В кварти́ре бы́ло ти́хо. | The flat was quiet.
+Ба́рсик сиде́л на раскладу́шке и ждал Ми́шу. | Barsik was sitting on the camp bed, waiting for Misha.
+---
+? Что принесла́ Ни́на? | What did Nina bring?
++ Пиро́г.
+- Фру́кты.
+- Сала́т.
+? Что Ми́ша подари́л А́не? | What did Misha give Anya?
++ Свои́ рису́нки.
+- Кни́гу.
+- Цветы́.
+? Где Ба́рсик ждал Ми́шу? | Where was Barsik waiting for Misha?
++ На раскладу́шке.
+- На окне́.
+- Под крова́тью.

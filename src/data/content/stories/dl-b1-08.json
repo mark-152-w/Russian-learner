@@ -1,0 +1,786 @@
+{
+ "$schema": "../../../../schemas/story.schema.json",
+ "id": "dl-b1-08",
+ "kind": "dialogue",
+ "level": "B1",
+ "title": {
+  "ru": "Что посмотре́ть?",
+  "en": "What shall we watch?"
+ },
+ "sentences": [
+  {
+   "para": true,
+   "speaker": "Ми́ша",
+   "en": "Misha: Shall we go to the cinema at the weekend?",
+   "tokens": [
+    {
+     "t": "Пойдём",
+     "lex": "v:пойти",
+     "lemma": "пойти́",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "fut",
+      "person": 1,
+      "number": "pl"
+     }
+    },
+    {
+     "t": "в",
+     "lex": "o:в",
+     "lemma": "в",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "кино́",
+     "lex": "n:кино",
+     "lemma": "кино́",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "в",
+     "lex": "o:в",
+     "lemma": "в",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "выходны́е",
+     "sp": false,
+     "lex": "n:выходные",
+     "lemma": "выходны́е",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "pl"
+     },
+     "rare": true
+    },
+    {
+     "t": "?",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "А́ня",
+   "en": "Anya: Let's. What's on?",
+   "tokens": [
+    {
+     "t": "Дава́й",
+     "sp": false,
+     "lex": "v:давать",
+     "lemma": "дава́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "mood": "imp",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "."
+    },
+    {
+     "t": "А",
+     "lex": "o:а",
+     "lemma": "а",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "что",
+     "lex": "o:что",
+     "lemma": "что",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "идёт",
+     "sp": false,
+     "lex": "v:идти",
+     "lemma": "идти́",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "sg"
+     }
+    },
+    {
+     "t": "?",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Ми́ша",
+   "en": "Misha: There's a new film about space and a comedy.",
+   "tokens": [
+    {
+     "t": "Есть",
+     "lex": "v:быть",
+     "lemma": "быть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "sg"
+     }
+    },
+    {
+     "t": "но́вый",
+     "lex": "a:новый",
+     "lemma": "но́вый",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "фильм",
+     "lex": "n:фильм",
+     "lemma": "фильм",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "про",
+     "lex": "o:про",
+     "lemma": "про",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "ко́смос",
+     "lex": "n:космос",
+     "lemma": "ко́смос",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "и",
+     "lex": "o:и",
+     "lemma": "и",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "коме́дия",
+     "sp": false,
+     "lex": "n:комедия",
+     "lemma": "коме́дия",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "А́ня",
+   "en": "Anya: I don't want the space one, everything probably explodes in it. Let's see the comedy.",
+   "tokens": [
+    {
+     "t": "Про",
+     "lex": "o:про",
+     "lemma": "про",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "ко́смос",
+     "lex": "n:космос",
+     "lemma": "ко́смос",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "я",
+     "lex": "o:я",
+     "lemma": "я",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "не",
+     "lex": "o:не",
+     "lemma": "не",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "хочу́",
+     "sp": false,
+     "lex": "v:хотеть",
+     "lemma": "хоте́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 1,
+      "number": "sg"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "там",
+     "sp": false,
+     "lex": "o:там",
+     "lemma": "там",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "наве́рное",
+     "sp": false,
+     "lex": "o:наверное",
+     "lemma": "наве́рное",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "всё",
+     "lex": "o:всё",
+     "lemma": "всё",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "взрыва́ется",
+     "sp": false,
+     "lex": "v:взрываться",
+     "lemma": "взрыва́ться",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": "."
+    },
+    {
+     "t": "Дава́й",
+     "lex": "v:давать",
+     "lemma": "дава́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "mood": "imp",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "коме́дию",
+     "sp": false,
+     "lex": "n:комедия",
+     "lemma": "коме́дия",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Ми́ша",
+   "en": "Misha: But they say the comedy is silly. And everyone likes the space film.",
+   "tokens": [
+    {
+     "t": "Но",
+     "lex": "o:но",
+     "lemma": "но",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "коме́дия",
+     "sp": false,
+     "lex": "n:комедия",
+     "lemma": "коме́дия",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "говоря́т",
+     "sp": false,
+     "lex": "v:говорить",
+     "lemma": "говори́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "pl"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "глу́пая",
+     "sp": false,
+     "lex": "a:глупый",
+     "lemma": "глу́пый",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "."
+    },
+    {
+     "t": "А",
+     "lex": "o:а",
+     "lemma": "а",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "фильм",
+     "lex": "n:фильм",
+     "lemma": "фильм",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "про",
+     "lex": "o:про",
+     "lemma": "про",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "ко́смос",
+     "lex": "n:космос",
+     "lemma": "ко́смос",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "всем",
+     "lex": "a:весь",
+     "lemma": "весь",
+     "g": {
+      "pos": "adj",
+      "case": "ins",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "нра́вится",
+     "sp": false,
+     "lex": "v:нравиться",
+     "lemma": "нра́виться",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "А́ня",
+   "en": "Anya: All right, you've talked me into it. But then you're buying the ice cream.",
+   "tokens": [
+    {
+     "t": "Ла́дно",
+     "sp": false,
+     "lex": "o:ладно",
+     "lemma": "ла́дно",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "уговори́л",
+     "sp": false,
+     "lex": "v:уговорить",
+     "lemma": "уговори́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "."
+    },
+    {
+     "t": "Но",
+     "lex": "o:но",
+     "lemma": "но",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "тогда́",
+     "lex": "o:тогда",
+     "lemma": "тогда́",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "ты",
+     "lex": "o:ты",
+     "lemma": "ты",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "покупа́ешь",
+     "lex": "v:покупать",
+     "lemma": "покупа́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 2,
+      "number": "sg"
+     }
+    },
+    {
+     "t": "моро́женое",
+     "sp": false,
+     "lex": "n:мороженое",
+     "lemma": "моро́женое",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Ми́ша",
+   "en": "Misha: Deal! The seven o'clock showing or the nine?",
+   "tokens": [
+    {
+     "t": "Договори́лись",
+     "sp": false,
+     "lex": "v:договориться",
+     "lemma": "договори́ться",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "!"
+    },
+    {
+     "t": "Сеа́нс",
+     "lex": "n:сеанс",
+     "lemma": "сеа́нс",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": "в",
+     "lex": "o:в",
+     "lemma": "в",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "семь",
+     "lex": "o:семь",
+     "lemma": "семь",
+     "g": {
+      "pos": "num",
+      "case": "acc"
+     }
+    },
+    {
+     "t": "и́ли",
+     "lex": "o:или",
+     "lemma": "и́ли",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "в",
+     "lex": "o:в",
+     "lemma": "в",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "де́вять",
+     "sp": false,
+     "lex": "o:девять",
+     "lemma": "де́вять",
+     "g": {
+      "pos": "num",
+      "case": "acc"
+     }
+    },
+    {
+     "t": "?",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "А́ня",
+   "en": "Anya: Seven. After nine I fall asleep.",
+   "tokens": [
+    {
+     "t": "В",
+     "lex": "o:в",
+     "lemma": "в",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "семь",
+     "sp": false,
+     "lex": "o:семь",
+     "lemma": "семь",
+     "g": {
+      "pos": "num",
+      "case": "acc"
+     }
+    },
+    {
+     "t": "."
+    },
+    {
+     "t": "По́сле",
+     "lex": "o:после",
+     "lemma": "по́сле",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "девяти́",
+     "lex": "o:девять",
+     "lemma": "де́вять",
+     "g": {
+      "pos": "num",
+      "case": "gen"
+     }
+    },
+    {
+     "t": "я",
+     "lex": "o:я",
+     "lemma": "я",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "засыпа́ю",
+     "sp": false,
+     "lex": "v:засыпать:2",
+     "lemma": "засыпа́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 1,
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  }
+ ],
+ "questions": [
+  {
+   "id": "dl-b1-08-q1",
+   "type": "choice",
+   "level": "B1",
+   "tags": [
+    "listening"
+   ],
+   "prompt": {
+    "ru": "Како́й фильм хоте́ла посмотре́ть А́ня снача́ла?",
+    "en": "Which film did Anya want to see at first?",
+    "instruction": "Choose the answer"
+   },
+   "accept": [
+    "Коме́дию."
+   ],
+   "distractors": [
+    {
+     "ru": "Фильм про ко́смос.",
+     "error": "reading.detail"
+    },
+    {
+     "ru": "Мультфи́льм.",
+     "error": "reading.detail"
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "dl-b1-08-q2",
+   "type": "choice",
+   "level": "B1",
+   "tags": [
+    "listening"
+   ],
+   "prompt": {
+    "ru": "Что до́лжен купи́ть Ми́ша?",
+    "en": "What does Misha have to buy?",
+    "instruction": "Choose the answer"
+   },
+   "accept": [
+    "Моро́женое."
+   ],
+   "distractors": [
+    {
+     "ru": "Биле́ты для всех.",
+     "error": "reading.detail"
+    },
+    {
+     "ru": "Во́ду.",
+     "error": "reading.detail"
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "dl-b1-08-q3",
+   "type": "choice",
+   "level": "B1",
+   "tags": [
+    "listening"
+   ],
+   "prompt": {
+    "ru": "На како́й сеа́нс они́ пойду́т?",
+    "en": "Which showing will they go to?",
+    "instruction": "Choose the answer"
+   },
+   "accept": [
+    "В семь."
+   ],
+   "distractors": [
+    {
+     "ru": "В де́вять.",
+     "error": "reading.detail"
+    },
+    {
+     "ru": "В пять.",
+     "error": "reading.detail"
+    }
+   ],
+   "source": "handwritten"
+  }
+ ]
+}

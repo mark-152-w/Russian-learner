@@ -1,0 +1,26 @@
+id: dl-b2-02
+kind: dialogue
+level: B2
+title: Возвра́т | A refund
+---
+Покупа́тельница: Здра́вствуйте. Я хочу́ верну́ть э́ти ту́фли. Я купи́ла их неде́лю наза́д, а они́ уже́ слома́лись. | Customer: Hello. I'd like to return these shoes. I bought them a week ago and they've already come apart.
+Продаве́ц: Покажи́те, пожа́луйста. Вы их носи́ли под дождём? | Shop assistant: Please show me. Did you wear them in the rain?
+Покупа́тельница: Я носи́ла их по у́лице, как все но́сят ту́фли. Вы же не хоти́те сказа́ть, что ту́фли не для у́лицы? | Customer: I wore them in the street, the way everyone wears shoes. You don't mean to say the shoes aren't for the street?
+Продаве́ц: Нет, коне́чно. У вас есть чек? | Shop assistant: No, of course not. Do you have the receipt?
+Покупа́тельница: Вот он. | Customer: Here it is.
+Продаве́ц: Хорошо́. Вы хоти́те получи́ть де́ньги и́ли поменя́ть ту́фли на други́е? | Shop assistant: Fine. Do you want your money back or to exchange the shoes for another pair?
+Покупа́тельница: Лу́чше де́ньги. Бо́льше я э́ту фи́рму покупа́ть не бу́ду. | Customer: Money, please. I won't be buying this brand again.
+Продаве́ц: Понима́ю. Запо́лните, пожа́луйста, заявле́ние, и де́ньги верну́тся на ка́рту в тече́ние трёх дней. | Shop assistant: I understand. Please fill in the form, and the money will be returned to your card within three days.
+---
+? Почему́ же́нщина хо́чет верну́ть ту́фли? | Why does the woman want to return the shoes?
++ Они́ слома́лись че́рез неде́лю.
+- Они́ ей не подхо́дят по разме́ру.
+- Ей не нра́вится цвет.
+? Что спроси́л продаве́ц снача́ла? | What did the shop assistant ask first?
++ Носи́ла ли она́ их под дождём.
+- Где она́ их купи́ла.
+- Ско́лько они́ сто́или.
+? Что вы́брала покупа́тельница? | What did the customer choose?
++ Получи́ть де́ньги.
+- Взять други́е ту́фли.
+- Почини́ть ту́фли.

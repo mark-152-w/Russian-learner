@@ -1,0 +1,79 @@
+set: cs-places
+title: Места́ | Places
+bonusXp: 200
+===
+id: c-moscow
+name: Москва́ | Moscow
+rarity: common
+level: A2
+art: 🏛️ 0
+---
+Москва́ — столи́ца Росси́и. | Moscow is the capital of Russia.
+Здесь живёт бо́льше двена́дцати миллио́нов челове́к. | More than twelve million people live here.
+В це́нтре стои́т Кремль, а ря́дом — Кра́сная пло́щадь. | The Kremlin stands in the centre, and Red Square is next to it.
+===
+id: c-petersburg
+name: Петербу́рг | St Petersburg
+rarity: rare
+level: B1
+art: 🌉 210
+---
+Петербу́рг стои́т на Неве́. | St Petersburg stands on the Neva.
+Ле́том здесь бе́лые но́чи: в по́лночь светло́, как днём. | In summer there are white nights: at midnight it's as light as day.
+Но́чью мосты́ разво́дят, что́бы прошли́ корабли́. | At night the bridges are raised so that ships can pass.
+===
+id: c-baikal
+name: Байка́л | Lake Baikal
+rarity: epic
+level: B1
+art: 💧 195
+---
+Байка́л — са́мое глубо́кое о́зеро в ми́ре. | Baikal is the deepest lake in the world.
+В нём пя́тая часть всей пре́сной воды́ на Земле́. | It holds a fifth of all the fresh water on Earth.
+Зимо́й лёд тако́й прозра́чный, что ви́дно дно. | In winter the ice is so clear that you can see the bottom.
+===
+id: c-siberia
+name: Сиби́рь | Siberia
+rarity: common
+level: A2
+art: 🌲 140
+---
+Сиби́рь занима́ет бо́льше полови́ны Росси́и. | Siberia takes up more than half of Russia.
+Зимо́й там быва́ет ми́нус со́рок{nom}, а ле́том — плюс три́дцать. | In winter it can be minus forty there, and in summer plus thirty.
+===
+id: c-kamchatka
+name: Камча́тка | Kamchatka
+rarity: epic
+level: A2
+art: 🌋 10
+---
+На Камча́тке о́чень мно́го вулка́нов и ге́йзеров. | Kamchatka has a great many volcanoes and geysers.
+Медве́ди здесь — обы́чные сосе́ди. | Bears are ordinary neighbours here.
+===
+id: c-kazan
+name: Каза́нь | Kazan
+rarity: common
+level: A2
+art: 🕌 150
+---
+В Каза́ни живу́т ру́сские и тата́ры. | Russians and Tatars live in Kazan.
+В Кремле́ Каза́ни ря́дом стоя́т мече́ть и це́рковь. | In the Kazan Kremlin a mosque and a church stand side by side.
+===
+id: c-volga
+name: Во́лга | The Volga
+rarity: rare
+level: A2
+art: 🛶 205
+---
+Во́лга — са́мая дли́нная река́ в Евро́пе. | The Volga is the longest river in Europe.
+Ру́сские называ́ют её «ма́тушка Во́лга». | Russians call it "Mother Volga".
+===
+id: c-hermitage
+name: Эрмита́ж | The Hermitage
+rarity: legendary
+level: B1
+art: 🖼️ 45
+---
+Эрмита́ж — оди́н из са́мых больши́х музе́ев ми́ра. | The Hermitage is one of the biggest museums in the world.
+Говоря́т, что е́сли смотре́ть на ка́ждую карти́ну одну́ мину́ту, на всё уйдёт мно́го лет. | They say that if you looked at each painting for one minute, it would take many years to see everything.
+В музе́е живу́т ко́шки: они́ ло́вят мыше́й. | Cats live in the museum: they catch mice.

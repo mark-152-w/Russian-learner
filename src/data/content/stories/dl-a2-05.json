@@ -1,0 +1,694 @@
+{
+ "$schema": "../../../../schemas/story.schema.json",
+ "id": "dl-a2-05",
+ "kind": "dialogue",
+ "level": "A2",
+ "title": {
+  "ru": "У врача́",
+  "en": "At the doctor's"
+ },
+ "sentences": [
+  {
+   "para": true,
+   "speaker": "Врач",
+   "en": "Doctor: Hello. What's hurting?",
+   "tokens": [
+    {
+     "t": "Здра́вствуйте",
+     "sp": false,
+     "lex": "o:здравствуйте",
+     "lemma": "здра́вствуйте",
+     "g": {
+      "pos": "intj"
+     }
+    },
+    {
+     "t": "."
+    },
+    {
+     "t": "Что",
+     "lex": "o:что",
+     "lemma": "что",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "у",
+     "lex": "o:у",
+     "lemma": "у",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "вас",
+     "lex": "o:вы",
+     "lemma": "вы",
+     "g": {
+      "pos": "pron",
+      "case": "gen"
+     }
+    },
+    {
+     "t": "боли́т",
+     "sp": false,
+     "lex": "v:болеть",
+     "lemma": "боле́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "sg"
+     }
+    },
+    {
+     "t": "?",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Пацие́нт",
+   "en": "Patient: I've got a headache and a sore throat.",
+   "tokens": [
+    {
+     "t": "У",
+     "lex": "o:у",
+     "lemma": "у",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "меня́",
+     "lex": "o:я",
+     "lemma": "я",
+     "g": {
+      "pos": "pron",
+      "case": "gen"
+     }
+    },
+    {
+     "t": "боли́т",
+     "lex": "v:болеть",
+     "lemma": "боле́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "sg"
+     }
+    },
+    {
+     "t": "голова́",
+     "lex": "n:голова",
+     "lemma": "голова́",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "и",
+     "lex": "o:и",
+     "lemma": "и",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "го́рло",
+     "sp": false,
+     "lex": "n:горло",
+     "lemma": "го́рло",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Врач",
+   "en": "Doctor: For how long?",
+   "tokens": [
+    {
+     "t": "Давно́",
+     "sp": false,
+     "lex": "o:давно",
+     "lemma": "давно́",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "?",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Пацие́нт",
+   "en": "Patient: Two days. And yesterday I had a high temperature.",
+   "tokens": [
+    {
+     "t": "Два",
+     "lex": "o:два",
+     "lemma": "два",
+     "g": {
+      "pos": "num",
+      "case": "nom",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "дня",
+     "sp": false,
+     "lex": "n:день",
+     "lemma": "день",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "."
+    },
+    {
+     "t": "И",
+     "lex": "o:и",
+     "lemma": "и",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "вчера́",
+     "lex": "o:вчера",
+     "lemma": "вчера́",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "у",
+     "lex": "o:у",
+     "lemma": "у",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "меня́",
+     "lex": "o:я",
+     "lemma": "я",
+     "g": {
+      "pos": "pron",
+      "case": "gen"
+     }
+    },
+    {
+     "t": "была́",
+     "lex": "v:быть",
+     "lemma": "быть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "высо́кая",
+     "lex": "a:высокий",
+     "lemma": "высо́кий",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "температу́ра",
+     "sp": false,
+     "lex": "n:температура",
+     "lemma": "температу́ра",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Врач",
+   "en": "Doctor: Open your mouth, please. Yes, your throat is red.",
+   "tokens": [
+    {
+     "t": "Откро́йте",
+     "lex": "v:открыть",
+     "lemma": "откры́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "mood": "imp",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "рот",
+     "sp": false,
+     "lex": "n:рот",
+     "lemma": "рот",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "пожа́луйста",
+     "sp": false,
+     "lex": "o:пожалуйста",
+     "lemma": "пожа́луйста",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "."
+    },
+    {
+     "t": "Да",
+     "sp": false,
+     "lex": "o:да",
+     "lemma": "да",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "го́рло",
+     "lex": "n:горло",
+     "lemma": "го́рло",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": "кра́сное",
+     "sp": false,
+     "lex": "a:красный",
+     "lemma": "кра́сный",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "n"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Врач",
+   "en": "Doctor: It's a cold. Drink lots of hot tea and stay in bed at home for three days.",
+   "tokens": [
+    {
+     "t": "Э́то",
+     "lex": "a:этот",
+     "lemma": "э́тот",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "n"
+     }
+    },
+    {
+     "t": "просту́да",
+     "sp": false,
+     "lex": "n:простуда",
+     "lemma": "просту́да",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": "."
+    },
+    {
+     "t": "Пе́йте",
+     "lex": "v:пить",
+     "lemma": "пить",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "mood": "imp",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "мно́го",
+     "lex": "o:много",
+     "lemma": "мно́го",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "горя́чего",
+     "lex": "a:горячий",
+     "lemma": "горя́чий",
+     "g": {
+      "pos": "adj",
+      "case": "gen",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "ча́я",
+     "lex": "n:чай",
+     "lemma": "чай",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "и",
+     "lex": "o:и",
+     "lemma": "и",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "лежи́те",
+     "lex": "v:лежать",
+     "lemma": "лежа́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "mood": "imp",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "до́ма",
+     "lex": "n:дом",
+     "lemma": "дом",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "три",
+     "lex": "o:три",
+     "lemma": "три",
+     "g": {
+      "pos": "num",
+      "case": "acc"
+     }
+    },
+    {
+     "t": "дня",
+     "sp": false,
+     "lex": "n:день",
+     "lemma": "день",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Пацие́нт",
+   "en": "Patient: And can I go to work?",
+   "tokens": [
+    {
+     "t": "А",
+     "lex": "o:а",
+     "lemma": "а",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "на",
+     "lex": "o:на",
+     "lemma": "на",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "рабо́ту",
+     "lex": "n:работа",
+     "lemma": "рабо́та",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "мо́жно",
+     "sp": false,
+     "lex": "o:можно",
+     "lemma": "мо́жно",
+     "g": {
+      "pos": "pred"
+     }
+    },
+    {
+     "t": "?",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Врач",
+   "en": "Doctor: No, you can't go to work. I'll give you a sick note.",
+   "tokens": [
+    {
+     "t": "Нет",
+     "sp": false,
+     "lex": "o:нет",
+     "lemma": "нет",
+     "g": {
+      "pos": "pred"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "на",
+     "lex": "o:на",
+     "lemma": "на",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "рабо́ту",
+     "lex": "n:работа",
+     "lemma": "рабо́та",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "нельзя́",
+     "sp": false,
+     "lex": "o:нельзя",
+     "lemma": "нельзя́",
+     "g": {
+      "pos": "pred"
+     }
+    },
+    {
+     "t": "."
+    },
+    {
+     "t": "Я",
+     "lex": "o:я",
+     "lemma": "я",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "дам",
+     "lex": "v:дать",
+     "lemma": "дать",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "fut",
+      "person": 1,
+      "number": "sg"
+     }
+    },
+    {
+     "t": "вам",
+     "lex": "o:вы",
+     "lemma": "вы",
+     "g": {
+      "pos": "pron",
+      "case": "dat"
+     }
+    },
+    {
+     "t": "больни́чный",
+     "sp": false,
+     "lex": "a:больничный",
+     "lemma": "больни́чный",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "m"
+     },
+     "rare": true
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  }
+ ],
+ "questions": [
+  {
+   "id": "dl-a2-05-q1",
+   "type": "choice",
+   "level": "A2",
+   "tags": [
+    "listening"
+   ],
+   "prompt": {
+    "ru": "Что боли́т у пацие́нта?",
+    "en": "What hurts the patient?",
+    "instruction": "Choose the answer"
+   },
+   "accept": [
+    "Голова́ и го́рло."
+   ],
+   "distractors": [
+    {
+     "ru": "Нога́.",
+     "error": "reading.detail"
+    },
+    {
+     "ru": "Живо́т.",
+     "error": "reading.detail"
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "dl-a2-05-q2",
+   "type": "choice",
+   "level": "A2",
+   "tags": [
+    "listening"
+   ],
+   "prompt": {
+    "ru": "Что сказа́л врач?",
+    "en": "What did the doctor say?",
+    "instruction": "Choose the answer"
+   },
+   "accept": [
+    "Э́то просту́да."
+   ],
+   "distractors": [
+    {
+     "ru": "Ну́жно в больни́цу.",
+     "error": "reading.detail"
+    },
+    {
+     "ru": "Всё в поря́дке.",
+     "error": "reading.detail"
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "dl-a2-05-q3",
+   "type": "choice",
+   "level": "A2",
+   "tags": [
+    "listening"
+   ],
+   "prompt": {
+    "ru": "Мо́жно ли пацие́нту идти́ на рабо́ту?",
+    "en": "Can the patient go to work?",
+    "instruction": "Choose the answer"
+   },
+   "accept": [
+    "Нет, нельзя́."
+   ],
+   "distractors": [
+    {
+     "ru": "Да, мо́жно.",
+     "error": "reading.detail"
+    },
+    {
+     "ru": "То́лько у́тром.",
+     "error": "reading.detail"
+    }
+   ],
+   "source": "handwritten"
+  }
+ ]
+}

@@ -7,23 +7,216 @@
 | 0: scaffold, ingestion, validation, schemas | Done |
 | 1: shell, storage, PWA, engine, grader, FSRS, rewards | Done |
 | 2: grammar A2–B1, A2 units, placement, daily plan, vocab SRS, declension lab | Done |
-| 3: specialist trainers (cases, aspect, motion, stress, numerals) | **Done** |
-| 4: graded reader, listening and speaking, keyboard trainer | Next (needs your go-ahead on the writing budget, at the end) |
+| 3: specialist trainers (cases, aspect, motion, stress, numerals) | Done |
+| 4: graded reader, listening and speaking, keyboard trainer | **Done** (all 40 stories, not just the first 15) |
+| 5: games, collectible cards, the town, text adventure «Де́ло» | **Done** (in four chunks) |
+| 6: B1–C1 units, remaining grammar articles, idioms/culture | Next (estimate at the end) |
+| 7: stats dashboard, polish, accessibility, performance, GitHub Pages deploy | Later |
 
 `npm run check` passes:
 
 - 25 Python tool tests;
 - `validate.py`: 0 errors, 2 warnings (сёк in two C1 sentences: a real form pymorphy3 doesn't know);
 - typecheck;
-- 117 Vitest tests. New in Phase 3: the counting rule and declined numerals, preposition sorting, shifting
-  stress and minimal pairs resolved from the lexicon, every hand-written aspect and motion item answerable, and
-  the trainer rotation in the daily plan.
+- 144 Vitest tests. New in Phase 5:
+  - the preposition joining rule (о → об, с → со…);
+  - every arcade wave deals valid gradable cards;
+  - every crossword topic builds a consistent grid, and the daily puzzle is deterministic;
+  - boss damage, hearts, and revenge items from recent mistakes;
+  - speed match never deals a word twice and never gives the newcomer away;
+  - the card index matches the set files, and every blurb word is analysed;
+  - chests never deal a card rarer than the chest;
+  - town levels and ranks;
+  - every adventure link resolves, every gate grades, and the parser plays chapters 3–5 and explains wrong cases
+    and prepositions.
+  New in Phase 4:
+  - every story word carries an analysis and every comprehension question is answerable;
+  - analysis labels;
+  - а́канье;
+  - the dictation, shadowing and sound-pair items grade their own answers;
+  - each keyboard lesson uses only learned letters.
 
-`npm run build`: the precache is 126 files, 11.1 MB raw (about 2.9 MB gzipped). The rare-word tail, its search
-index and the B2/C1 sentences are cached the first time they're used.
+`npm run build`: the precache is 221 files (191 after Phase 4), 12.4 MB raw (about 3.2 MB gzipped), with the stories loaded one file at a time.
 
-I ran every trainer end to end in headless Chromium with no console errors. That covered the hub, the motion
-prefix gallery, the aspect timeline legend, and a run of each mode with its feedback and diagram.
+I ran end-to-end checks in headless Chromium at phone width, with no console errors. In Phase 5 they covered:
+the games hub; an arcade run, a speed round and a crossword; a boss fight to the end; the town; the collection and
+a card's tappable text; «Де́ло» chapter 1 by choices, a chapter 2 grammar gate, and chapter 3 by typed commands,
+including wrong cases. In Phase 4 they covered:
+
+- the daily plan's new reading step;
+- the library;
+- a story: tapping a word, the English toggle, and the questions;
+- a C1 text, where stress marks and glosses are off by default;
+- the Listening page and a dialogue;
+- the keyboard: typing a lesson line with Latin key positions;
+- the new Practice and Reference hubs.
+
+## Phase 5: what's built
+
+Both games live under **Practice → Games** (`/games`), and the daily plan's "something fun" step now rotates
+through them too.
+
+**Case arcade** (`/arcade`, `src/engine/arcade.ts`). A card falls with a governing word and a noun in the
+dictionary form (без + кни́га); pick the right form from three before it lands. Waves of eight cards get faster
+(9 s down to 3.2 s) and widen: genitive/dative/accusative, then all five cases, then plurals, then adjective +
+noun phrases, then numbers (2 кни́ги, 5 книг). в/на carry a «где?» or «куда́?» cue so the case is decidable, and
+the preposition adapts to the word (об о́кнах, со столо́м, во вто́рник). Three lives; points are 10 × wave plus a
+speed bonus. A wrong answer shows the rule (**без** + genitive: **без кни́ги**). Every card is a normal graded
+item with a lexeme target, so misses feed the learner model and the diagnosis like any drill. The top ten runs
+are kept as personal bests. With reduced motion on, cards fall 3 s slower.
+
+**Declension crossword** (`/crossword`, `src/engine/crossword.ts`). Every answer is an inflected form from the
+lexicon at your level: the clue gives the dictionary form or the English meaning plus the form wanted
+(«кни́га — gen. pl.», «"choose" — ты …»). A generator places 6–10 words on a grid where they cross. There is a
+daily puzzle (the same for everyone on a given day) and puzzles by topic: mixed, each case, plurals, verb
+forms. Type with any keyboard, including Latin key positions; tap a cell twice to switch direction; Check marks
+wrong letters; Reveal fills a word (a revealed word doesn't count as correct). Stress doesn't matter and ё = е.
+
+**Rewards**: two new session kinds (`arcade`, `crossword`), feature flags `arcade` and `crossword`, and three
+new achievements: Разга́дчик (10 crosswords), Ме́ткость (500 arcade points), Чемпио́н (2,000). The boss
+achievements now wait for the `bosses` flag (chunk 2).
+
+**Speed match** (`/speed`, `src/engine/speed.ts`). Five Russian words, five meanings, one minute. Each match
+deals a new word, and its meaning is swapped into a random slot so the newcomer isn't obvious. Runs of matches
+score more, and a wrong pair costs three seconds. Every attempted pair is a graded meaning item for the learner model.
+
+**Boss battles** (`/boss/:unit`, `src/engine/boss.ts`). Every A2 unit has the boss its JSON always named: Домово́й,
+Ле́ший, Ба́ба-Яга́, Змей Горы́ныч, up to Царь-Медве́дь. The 20 SVG portraits are drawn from shared parts, one line of
+data each. A boss has HP; every right answer hits it, a run of three hits twice as hard, and each mistake costs
+one of three hearts. The questions are the unit's checkpoint drills plus "revenge" items: forms you got wrong
+anywhere in the app in the last two weeks. The boss shows on its unit page and in the games hub. A first win
+counts for Пе́рвая побе́да / Богаты́рь and earns a card. The session runner gained two small hooks (`hud`,
+`onAnswered`), so bosses reuse every exercise type.
+
+**Collectible cards** (`/cards`, `/card/:id`). There are 32 cards in four sets: people (Пу́шкин, Гага́рин,
+Терешко́ва…), places (Байка́л, Камча́тка, Эрмита́ж…), idioms (Ни пу́ха ни пера́!, Ве́шать лапшу́ на у́ши…) and culture
+(ба́ня, Ма́сленица, Гжель…). Each card has a two- or three-sentence text, written in `tools/cards/*.txt` and built
+by the story pipeline. Every word in it is analysed and tappable, like a story.
+- Cards come from chests: a better chest can hold a rarer card, and never one rarer than the chest. They're also
+  milestone rewards: a boss's first defeat, a completed unit, a finished adventure chapter.
+- A full set pays bonus XP.
+- `src/data/cards-index.json` holds names and rarities only, so chests don't load the texts.
+
+**The town** (`/town`, linked from Home). Ten buildings, each growing through five levels with one part of your
+learning:
+- Дом (longest streak), По́чта (reviews), Ры́нок (words known), Шко́ла (units);
+- Библиоте́ка (stories), Теа́тр (dictations), Вокза́л (trainer sessions), Стадио́н (games);
+- Кре́пость (bosses), Музе́й (cards).
+
+An empty plot is something you haven't tried yet. The town's rank climbs from Ху́тор to Столи́ца.
+
+**«Де́ло»** (`/adventure`, `src/engine/adventure.ts`, `content/adventure/ch1–5.json`). The town museum's
+200-year-old samovar has vanished, and you're the detective.
+- Chapters 1–2 (A2) are choices. Three of them only open once you pick the right form («Покажи́те биле́т Ни́не»).
+- Chapters 3–5 (B1) take typed commands: иди́, возьми́, осмотри́, откро́й, then спроси́ о…, поговори́ с…, покажи́…
+  кому́, поста́вь на…, отда́й… кому́.
+- The parser reads each verb's case and preposition from the chapter data. It explains a mistake in grammar
+  terms: «возьми́ ключа́» → take *what?*: the accusative, **возьми́ ключ**; «иди́ в сара́е» → *where to?*: в +
+  accusative. Good Russian that just doesn't apply gets "Your Russian is fine, but nothing happens".
+- Every grammar decision is reported to the learner model under the matching tag. A first finish of a chapter
+  earns an epic-or-lower card.
+- There are two endings.
+
+**Rewards**:
+- new session kinds: `speed`, `boss`, `adventure`;
+- feature flags: `speed`, `bosses`, `cards`, `town`, `adventure`;
+- new achievements: Скорогово́рка (25 pairs in a round), Храни́тель (all 32 cards, hidden), Градострои́тель (25
+  building levels), Де́ло закры́то (all five chapters);
+- the daily plan's light step now also rotates through speed match and «Де́ло».
+
+## Phase 4: what's built
+
+**Story pipeline** (`tools/stories.py`). I write a story as plain stressed Russian, one sentence per line, each
+followed by its English. The tool tokenises it and gives every word its lexeme, stressed lemma and grammatical
+analysis. `validate.py` then checks each analysis against pymorphy3, so nothing is guessed at runtime.
+
+Where several analyses fit a word, it decides in this order:
+
+1. The written stress (за́мок / замо́к, ру́ки / руки́).
+2. Inline hints, for the rare cases rules can't settle: `ва́нной{n:ванная}`.
+3. Preposition government, which carries across «и»: «в Голла́ндии и А́нглии».
+4. в/на with a direction verb takes the accusative; otherwise the prepositional.
+5. Quantities: нет, мно́го, два, пять.
+6. Noun-phrase agreement: «ру́сского чаепи́тия» is genitive singular.
+7. Possession.
+8. Negated existence takes the genitive: «его́ не́ было».
+9. A span of time is accusative: «спала́ всю ночь».
+10. A number after a verb is accusative: «смотре́ли два часа́».
+11. After a reflexive verb, genitive over accusative: «испуга́лись челове́ка».
+12. Subject before the verb, object after a transitive verb.
+13. Lists inherit the case of their first member: «купи́ла хлеб, сыр, молоко́».
+
+Every decision a rule had to make is listed in `tools/reports/stories.md`. I reviewed the borderline ones and
+fixed the patterns behind them.
+
+**Graded reader** (Read tab). It has **40 texts**:
+
+| Level | Texts |
+|---|---|
+| A2 | 10 |
+| B1 | 10 |
+| B2 | 3 stories and 7 non-fiction pieces |
+| C1 | 3 stories and 7 non-fiction pieces |
+
+That's 6,083 words in total.
+
+The recurring characters carry two series: Anya's first year in Moscow (A2), and a dacha mystery with letters
+from 1961 (B1). It ends in a C1 epilogue.
+
+The non-fiction covers the banya, Peter the Great's city, Gagarin, tea and the samovar, the Moscow metro, ты/вы,
+the dacha, Baikal, Pushkin, the Trans-Siberian, kitchen conversations, the Leningrad blockade, the Russian smile
+and why Russian is worth the difficulty.
+
+Each text has 3–4 comprehension questions.
+
+**In the reader:**
+
+- Tap any word for its meaning, dictionary form, analysis in plain English ("verb (perfective) · past,
+  feminine") and stress. You can listen to it, add it to your deck, or open all its forms.
+- Rare words for your level get a small inline gloss.
+- Stress marks and glosses are on by default at A2–B1 and off at B2–C1. You can toggle them, and the English
+  translation of each sentence.
+- **Listen** reads the text sentence by sentence and highlights the current one. You can change the speed and
+  start from any sentence.
+- Finishing the questions counts towards the story quest and the 1 / 10 / 40-stories achievements.
+
+**Listening** (Practice → Listening and speaking):
+
+- **20 dialogues**: 8 at A2, 8 at B1 and 4 at B2. They cover shops, cafés, directions, tickets, the doctor,
+  flats, neighbours, an interview, a refund and more. The transcript is hidden until you ask for it, and each
+  speaker gets a different voice (or pitch, if the device has only one).
+- **Dictation** from the sentence bank, marked word by word.
+- **ы or и?** and **Hard or soft?**: hear one of a pair (был/бил, брат/брать, у́гол/у́голь) and choose.
+- **Unstressed о**: dictation of words where о is heard as а ("you hear «малако», you write молоко́").
+- **Shadowing**: hear it, say it. In Chrome the microphone button transcribes what you said and marks it. In
+  other browsers you compare yourself with the text.
+
+**Keyboard** (Practice → Keyboard):
+
+- 13 lessons from the home row outwards, with an on-screen keyboard that lights up the next key and colours each
+  finger's keys.
+- It reads *physical key positions*, so it works before the Russian layout is installed. It also accepts input
+  from a phone's Russian keyboard.
+- Lessons use real words built only from the letters learned so far, and the last one uses real sentences.
+- Words-per-minute and accuracy are tracked per lesson. 90% opens the next one.
+- Setup help covers Windows, macOS, iPhone and Android.
+
+**Navigation:** Home · Course · Review · **Read** · **Practice** (trainers, listening, keyboard) · **Reference**
+(grammar, with the dictionary lab one tap away). The daily plan now includes "Read: <next story>".
+
+**Dictionary fixes found while writing.** Real stories exercise the dictionary much harder than drills, and
+four Phase 0 bugs surfaced:
+
+- **Indeclinable nouns were dropped.** The dataset leaves their tables empty, so кафе́, метро́, ко́фе, такси́,
+  пальто́ and 293 others never entered the lexicon. They're now kept, with every form equal to the lemma.
+- **Words whose pymorphy3 lemma differs were unranked.** сча́стье is filed as "счастие" and де́ньги as
+  "деньга", so all their forms counted as unverified, and the words were classed as suspect and dropped from
+  the ranked dictionary. де́ньги is now rank 149 (A1) and сча́стье rank 900 (A2).
+- **The frequency rule was too strict.** A form counted as evidence only if no other lemma shared it, so кафе́
+  (also a form of a rare noun "каф") scored zero and landed at C2. A clearly dominant reading now counts too.
+  кафе́ is B1, and the junk words the rule was built for (ага́ "cane toad", уж "grass snake") still score zero.
+- **Missing from the dataset entirely:** как, наш, ваш, пусть, the numbers 11–19, and быть's future
+  (бу́ду…). These are added through `closed_class.json` and `overrides.json`, so validate.py checks them.
 
 ## Phase 3: what's built
 
@@ -277,6 +470,23 @@ Russian–English pairs with per-sentence attribution. I'll ingest it at the sta
 
 ## Decisions and trade-offs
 
+**Phase 4**
+
+- **All 40 stories now, not 15.** The brief planned 15 here and the rest in Phase 6. Writing them in one go kept
+  the series consistent. Phase 6 can now focus on the B1–C1 course units and idioms.
+- **Tapping a word doesn't add it to the deck automatically.** The sheet has an "Add to my deck" button. An
+  automatic add would fill the deck with every word you were merely curious about.
+- **Stories avoid gerunds and participles the dictionary doesn't hold.** Rather than leaving such words
+  unanalysed, I rephrased (держа́ → а на рука́х у неё сиде́л…). At C1 this costs a little stylistic range. It's
+  worth revisiting if the dictionary gains participle tables.
+- **Shadowing with speech recognition is the one exception to "zero runtime API calls".** Chrome's
+  `webkitSpeechRecognition` sends the audio to Google's service. It runs only when you tap the microphone, and
+  everything works without it. Firefox and Safari fall back to self-checking.
+- **Sound-pair items use fixed word lists** (14 pairs) because they need real minimal pairs. Dictation and а́канье
+  are generated.
+- **The keyboard trainer reports each finished line to the reward service** as an item, so typing earns XP and
+  feeds the streak like anything else. A line counts as correct only when it was typed without errors.
+
 **Phase 3**
 
 - **Preposition sorting is a choice item with fixed case bins**, not drag-and-drop. It is faster on a phone, and
@@ -320,7 +530,7 @@ Russian–English pairs with per-sentence attribution. I'll ingest it at the sta
 - Chest odds depend on quality only, with a minimum of 8 answers.
 - A session of 5+ answers counts for the streak.
 - Quests pay XP rather than a second chest.
-- Ghost races, collectible cards and the town are Phase 5.
+- Ghost races, collectible cards and the town are Phase 5 (cards and the town are chunk 3).
 
 ## Known issues
 
@@ -332,20 +542,32 @@ Russian–English pairs with per-sentence attribution. I'll ingest it at the sta
   source page.
 - The motion diagrams animate with CSS `offset-path`. Safari before 16 (2022) shows them static, which still
   reads correctly.
+- The story analysis has a review report (`tools/reports/stories.md`, about 1,600 decisions). I checked the
+  borderline patterns, not every line. If a tapped word shows an odd case, tell me the story and sentence.
+- The dataset stresses по́лчаса (standard: полчаса́) and lacks some common short participles. Stories
+  work around both.
+- Listening drills need a Russian TTS voice. Without one, the Listening page explains how to add one and offers
+  only the dialogue transcripts.
 
 ## Content counts
 
 | Content | Count |
 |---|---|
-| Lexemes | 43,174 (12,283 ranked A1–C2) |
-| Example sentences (verified, stressed, analysed) | 32,430 |
+| Lexemes | 43,377 (12,392 ranked A1–C2) |
+| Example sentences (verified, stressed, analysed) | 33,176 |
+| Stories and non-fiction | 40 (A2 10, B1 10, B2 10, C1 10), 6,083 analysed words, 147 questions |
+| Dialogues | 20 (A2 8, B1 8, B2 4), 1,159 words, 60 questions |
+| Keyboard lessons | 13 |
 | Grammar articles | 30 (20 A2, 10 B1), about 14k words |
 | Course units | 20 (A2), 286 unit words |
 | Hand-written exercise items | 226 (84 in units, 8 placement, 71 aspect, 63 motion) |
 | Trainer prepositions / minimal pairs | 40 / 14 |
 | Error types | 47 |
 | Grammar tags | 71 |
-| Achievements | 69 (60 active, 11 hidden) |
+| Achievements | 76 (all active, 12 hidden) |
+| Collectible cards | 32 in 4 sets, 528 analysed words |
+| Unit bosses | 20 |
+| «Де́ло» | 5 chapters, 35 scenes, 3 grammar gates, 9 parser verbs |
 | Quests | 15 daily, 4 weekly templates |
 | Themes | 6 |
 
@@ -357,21 +579,26 @@ re-checked the homographs by hand. Corrections I made along the way, for the rec
 - Phase 2: письмо́, де́ньги, о́тдал, приезжа́й, це́ны; по́ездом instead of на по́езде;
 - Phase 3: the imperative of переби́ть is **перебе́й** (I'd written переби́й, and pymorphy3 flagged it).
   I rephrased an example to avoid ко́е-что, whose stress dictionaries disagree on.
+- Phase 4: the dictionary-stress check caught dozens of slips in my story drafts. Among them:
+  - wrong stress: у́тром, подно́с, оди́н, весёлым, морски́е, невероя́тно, люби́л, косми́ческий, снача́ла,
+    остаётся (twice!), измене́ние, приезжа́ют, сни́зу, плати́ть, во́семьдесят, девяти́, начала́;
+  - missing marks: тру́бку, е́ли, о́пыт, па́чка, де́вять and others.
+  Every one is fixed. None of the story text is marked for review.
+
+- Phase 5: the dictionary-stress check caught мо́лча, следы́, за кото́м, в деревня́х and ло́вят (I'd stressed
+  them wrong). It also caught поня́тнее, a form the lexicon lacks; I rephrased that sentence.
 
 If anything reads oddly to you, tell me the unit or article and I'll fix it.
 
-## Next: Phase 4, reader, listening and keyboard (estimate)
-
-This is the biggest writing batch so far. Stories are hand-written; a build step adds the per-word analysis
-(lemma, case/tense, stress), and validate.py checks it against pymorphy3.
+## Next: Phase 6, B1–C1 content (estimate)
 
 | Piece | Work | Output tokens (approx.) |
 |---|---|---|
-| Graded reader: tappable words (gloss, dictionary form, analysis, add to SRS), comprehension questions, TTS with sentence highlighting and speed, stress/gloss defaults by level | code | about 12k |
-| ~40 original stories A2–C1 with recurring characters, plus short non-fiction (culture, history, everyday life); 250–700 words each, rising with level, with questions and glosses | writing | 70–90k |
-| Listening: dictation from the sentence bank (generated), sound discrimination (ы/и, hard/soft, а́канье), shadowing with optional SpeechRecognition | code + small lists | about 10k |
-| ~20 short scripted dialogues with questions (two voices where available) | writing | about 15k |
-| Keyboard trainer: ЙЦУКЕН course from the home row out, on-screen keyboard, layout setup help | code | about 8k |
+| B1 course units (20), with bosses, drills from the registry and hand-written items | writing + data | 30–35k |
+| B2 and C1 units (about 25), lighter on hand-written items, more generated drills | writing + data | 30–35k |
+| Remaining grammar articles: B2 and C1 (about 20) | writing | 45–50k |
+| Idioms and culture file (about 80 entries, with examples), linked from cards and the reader | writing | 20–25k |
+| Course pages for the new levels, placement and test-out at B1+ | code | about 5k |
 
-**Total: roughly 115–135k output tokens.** If that's too much at once, I'd suggest writing the A2–B1 stories
-now (about 20, about 35k) and the B2–C1 ones with the B1–C1 course in Phase 6.
+**Total: roughly 130–150k output tokens.** It splits naturally into four chunks (B1 units, B2/C1 units, grammar,
+idioms), like Phase 5.

@@ -1,0 +1,2036 @@
+{
+ "$schema": "../../../../schemas/story.schema.json",
+ "id": "nf-b2-02",
+ "kind": "nonfiction",
+ "level": "B2",
+ "title": {
+  "ru": "Го́род Петра́",
+  "en": "Peter's city"
+ },
+ "sentences": [
+  {
+   "para": true,
+   "en": "In May 1703 work began on a fortress on the marshy banks of the Neva.",
+   "tokens": [
+    {
+     "t": "В",
+     "lex": "o:в",
+     "lemma": "в",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "ма́е",
+     "lex": "n:май",
+     "lemma": "май",
+     "g": {
+      "pos": "noun",
+      "case": "prep",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "ты́сяча",
+     "lex": "n:тысяча",
+     "lemma": "ты́сяча",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "семьсо́т",
+     "lex": "o:семьсот",
+     "lemma": "семьсо́т",
+     "g": {
+      "pos": "num"
+     },
+     "rare": true
+    },
+    {
+     "t": "тре́тьего",
+     "lex": "a:третий",
+     "lemma": "тре́тий",
+     "g": {
+      "pos": "adj",
+      "case": "gen",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "го́да",
+     "lex": "n:год",
+     "lemma": "год",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "на",
+     "lex": "o:на",
+     "lemma": "на",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "боло́тистых",
+     "lex": "a:болотистый",
+     "lemma": "боло́тистый",
+     "g": {
+      "pos": "adj",
+      "case": "prep",
+      "number": "pl"
+     },
+     "rare": true
+    },
+    {
+     "t": "берега́х",
+     "lex": "n:берег",
+     "lemma": "бе́рег",
+     "g": {
+      "pos": "noun",
+      "case": "prep",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "Невы́",
+     "lex": "n:Нева",
+     "lemma": "Нева́",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": "на́чали",
+     "lex": "v:начать",
+     "lemma": "нача́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "стро́ить",
+     "lex": "v:строить",
+     "lemma": "стро́ить",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf"
+     }
+    },
+    {
+     "t": "кре́пость",
+     "sp": false,
+     "lex": "n:крепость",
+     "lemma": "кре́пость",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "So began the history of St Petersburg, the city many call the most European in Russia.",
+   "tokens": [
+    {
+     "t": "Так",
+     "lex": "o:так",
+     "lemma": "так",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "начала́сь",
+     "lex": "v:начаться",
+     "lemma": "нача́ться",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "исто́рия",
+     "lex": "n:история",
+     "lemma": "исто́рия",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "Петербу́рга",
+     "lex": "n:Петербург",
+     "lemma": "Петербу́рг",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": "—"
+    },
+    {
+     "t": "го́рода",
+     "sp": false,
+     "lex": "n:город",
+     "lemma": "го́род",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "кото́рый",
+     "lex": "a:который",
+     "lemma": "кото́рый",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "мно́гие",
+     "lex": "a:многие",
+     "lemma": "мно́гие",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "pl"
+     },
+     "rare": true
+    },
+    {
+     "t": "называ́ют",
+     "lex": "v:называть",
+     "lemma": "называ́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "pl"
+     }
+    },
+    {
+     "t": "са́мым",
+     "lex": "a:самый",
+     "lemma": "са́мый",
+     "g": {
+      "pos": "adj",
+      "case": "ins",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "европе́йским",
+     "lex": "a:европейский",
+     "lemma": "европе́йский",
+     "g": {
+      "pos": "adj",
+      "case": "ins",
+      "number": "sg",
+      "gender": "m"
+     },
+     "rare": true
+    },
+    {
+     "t": "в",
+     "lex": "o:в",
+     "lemma": "в",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "Росси́и",
+     "sp": false,
+     "lex": "n:Россия",
+     "lemma": "Росси́я",
+     "g": {
+      "pos": "noun",
+      "case": "prep",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "para": true,
+   "en": "Tsar Peter the First dreamed of access to the sea.",
+   "tokens": [
+    {
+     "t": "Царь",
+     "lex": "n:царь",
+     "lemma": "царь",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "Пётр",
+     "lemma": "Пётр",
+     "g": {
+      "pos": "name",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "Пе́рвый",
+     "lex": "a:первый",
+     "lemma": "пе́рвый",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "мечта́л",
+     "lex": "v:мечтать",
+     "lemma": "мечта́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "о",
+     "lex": "o:о",
+     "lemma": "о",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "вы́ходе",
+     "lex": "n:выход",
+     "lemma": "вы́ход",
+     "g": {
+      "pos": "noun",
+      "case": "prep",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "к",
+     "lex": "o:к",
+     "lemma": "к",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "мо́рю",
+     "sp": false,
+     "lex": "n:море",
+     "lemma": "мо́ре",
+     "g": {
+      "pos": "noun",
+      "case": "dat",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "He travelled a lot in Europe, worked in shipyards in Holland and England, and saw how maritime powers lived.",
+   "tokens": [
+    {
+     "t": "Он",
+     "lex": "o:он",
+     "lemma": "он",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "мно́го",
+     "lex": "o:много",
+     "lemma": "мно́го",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "путеше́ствовал",
+     "lex": "v:путешествовать",
+     "lemma": "путеше́ствовать",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "по",
+     "lex": "o:по",
+     "lemma": "по",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "Евро́пе",
+     "sp": false,
+     "lex": "n:Европа",
+     "lemma": "Евро́па",
+     "g": {
+      "pos": "noun",
+      "case": "dat",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "рабо́тал",
+     "lex": "v:работать",
+     "lemma": "рабо́тать",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "на",
+     "lex": "o:на",
+     "lemma": "на",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "ве́рфях",
+     "lex": "n:верфь",
+     "lemma": "верфь",
+     "g": {
+      "pos": "noun",
+      "case": "prep",
+      "number": "pl"
+     },
+     "rare": true
+    },
+    {
+     "t": "в",
+     "lex": "o:в",
+     "lemma": "в",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "Голла́ндии",
+     "lemma": "Голла́ндия",
+     "g": {
+      "pos": "name",
+      "case": "prep",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "и",
+     "lex": "o:и",
+     "lemma": "и",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "А́нглии",
+     "lex": "n:Англия",
+     "lemma": "А́нглия",
+     "g": {
+      "pos": "noun",
+      "case": "prep",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "и",
+     "lex": "o:и",
+     "lemma": "и",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "ви́дел",
+     "sp": false,
+     "lex": "v:видеть",
+     "lemma": "ви́деть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "как",
+     "lemma": "как",
+     "g": {
+      "pos": "conj"
+     },
+     "gloss": "how; as, like"
+    },
+    {
+     "t": "живу́т",
+     "lex": "v:жить",
+     "lemma": "жить",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "pl"
+     }
+    },
+    {
+     "t": "морски́е",
+     "lex": "a:морской",
+     "lemma": "морско́й",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "держа́вы",
+     "sp": false,
+     "lex": "n:держава",
+     "lemma": "держа́ва",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "pl"
+     },
+     "rare": true
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "He needed a new capital: open and modern, with access to the sea.",
+   "tokens": [
+    {
+     "t": "Ему́",
+     "lex": "o:он",
+     "lemma": "он",
+     "g": {
+      "pos": "pron",
+      "case": "dat"
+     }
+    },
+    {
+     "t": "нужна́",
+     "lex": "a:нужный",
+     "lemma": "ну́жный",
+     "g": {
+      "pos": "adj",
+      "short": true,
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "была́",
+     "lex": "v:быть",
+     "lemma": "быть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "но́вая",
+     "lex": "a:новый",
+     "lemma": "но́вый",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "столи́ца",
+     "lex": "n:столица",
+     "lemma": "столи́ца",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "—"
+    },
+    {
+     "t": "откры́тая",
+     "lex": "a:открытый",
+     "lemma": "откры́тый",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "f"
+     },
+     "rare": true
+    },
+    {
+     "t": "и",
+     "lex": "o:и",
+     "lemma": "и",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "совреме́нная",
+     "sp": false,
+     "lex": "a:современный",
+     "lemma": "совреме́нный",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "с",
+     "lex": "o:с",
+     "lemma": "с",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "вы́ходом",
+     "lex": "n:выход",
+     "lemma": "вы́ход",
+     "g": {
+      "pos": "noun",
+      "case": "ins",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "к",
+     "lex": "o:к",
+     "lemma": "к",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "мо́рю",
+     "sp": false,
+     "lex": "n:море",
+     "lemma": "мо́ре",
+     "g": {
+      "pos": "noun",
+      "case": "dat",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "para": true,
+   "en": "Building a city on marshes was incredibly hard.",
+   "tokens": [
+    {
+     "t": "Стро́ить",
+     "lex": "v:строить",
+     "lemma": "стро́ить",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf"
+     }
+    },
+    {
+     "t": "го́род",
+     "lex": "n:город",
+     "lemma": "го́род",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "на",
+     "lex": "o:на",
+     "lemma": "на",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "боло́тах",
+     "lex": "n:болото",
+     "lemma": "боло́то",
+     "g": {
+      "pos": "noun",
+      "case": "prep",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "бы́ло",
+     "lex": "v:быть",
+     "lemma": "быть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "n"
+     }
+    },
+    {
+     "t": "невероя́тно",
+     "lex": "o:невероятно",
+     "lemma": "невероя́тно",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "тру́дно",
+     "sp": false,
+     "lex": "o:трудно",
+     "lemma": "тру́дно",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "Thousands of workers from all over the country dug canals, drained the land and drove wooden piles into it.",
+   "tokens": [
+    {
+     "t": "Ты́сячи",
+     "lex": "n:тысяча",
+     "lemma": "ты́сяча",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "рабо́чих",
+     "lex": "n:рабочий",
+     "lemma": "рабо́чий",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "со",
+     "lex": "o:с",
+     "lemma": "с",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "всей",
+     "lex": "a:весь",
+     "lemma": "весь",
+     "g": {
+      "pos": "adj",
+      "case": "gen",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "страны́",
+     "lex": "n:страна",
+     "lemma": "страна́",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "копа́ли",
+     "lex": "v:копать",
+     "lemma": "копа́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "past",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "кана́лы",
+     "sp": false,
+     "lex": "n:канал",
+     "lemma": "кана́л",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "pl"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "осуша́ли",
+     "lex": "v:осушать",
+     "lemma": "осуша́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "past",
+      "number": "pl"
+     },
+     "rare": true
+    },
+    {
+     "t": "зе́млю",
+     "lex": "n:земля",
+     "lemma": "земля́",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "и",
+     "lex": "o:и",
+     "lemma": "и",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "вбива́ли",
+     "lex": "v:вбивать",
+     "lemma": "вбива́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "past",
+      "number": "pl"
+     },
+     "rare": true
+    },
+    {
+     "t": "в",
+     "lex": "o:в",
+     "lemma": "в",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "неё",
+     "lex": "o:она",
+     "lemma": "она́",
+     "g": {
+      "pos": "pron",
+      "case": "acc"
+     }
+    },
+    {
+     "t": "деревя́нные",
+     "lex": "a:деревянный",
+     "lemma": "деревя́нный",
+     "g": {
+      "pos": "adj",
+      "case": "acc",
+      "number": "pl"
+     },
+     "rare": true
+    },
+    {
+     "t": "сва́и",
+     "sp": false,
+     "lex": "n:свая",
+     "lemma": "сва́я",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "pl"
+     },
+     "rare": true
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "Many of them died of disease and cold.",
+   "tokens": [
+    {
+     "t": "Мно́гие",
+     "lex": "a:многие",
+     "lemma": "мно́гие",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "pl"
+     },
+     "rare": true
+    },
+    {
+     "t": "из",
+     "lex": "o:из",
+     "lemma": "из",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "них",
+     "lex": "o:они",
+     "lemma": "они́",
+     "g": {
+      "pos": "pron",
+      "case": "gen"
+     }
+    },
+    {
+     "t": "поги́бли",
+     "lex": "v:погибнуть",
+     "lemma": "поги́бнуть",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "от",
+     "lex": "o:от",
+     "lemma": "от",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "боле́зней",
+     "lex": "n:болезнь",
+     "lemma": "боле́знь",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "и",
+     "lex": "o:и",
+     "lemma": "и",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "хо́лода",
+     "sp": false,
+     "lex": "n:холод",
+     "lemma": "хо́лод",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "That's why people say St Petersburg stands on bones.",
+   "tokens": [
+    {
+     "t": "Поэ́тому",
+     "lex": "o:поэтому",
+     "lemma": "поэ́тому",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "говоря́т",
+     "sp": false,
+     "lex": "v:говорить",
+     "lemma": "говори́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "pl"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "что",
+     "lex": "o:что",
+     "lemma": "что",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "Петербу́рг",
+     "lex": "n:Петербург",
+     "lemma": "Петербу́рг",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": "стои́т",
+     "lex": "v:стоять",
+     "lemma": "стоя́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "sg"
+     }
+    },
+    {
+     "t": "на",
+     "lex": "o:на",
+     "lemma": "на",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "костя́х",
+     "sp": false,
+     "lex": "n:кость",
+     "lemma": "кость",
+     "g": {
+      "pos": "noun",
+      "case": "prep",
+      "number": "pl"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "para": true,
+   "en": "Peter invited foreign architects to the new city.",
+   "tokens": [
+    {
+     "t": "Пётр",
+     "lemma": "Пётр",
+     "g": {
+      "pos": "name",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "пригласи́л",
+     "lex": "v:пригласить",
+     "lemma": "пригласи́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "в",
+     "lex": "o:в",
+     "lemma": "в",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "но́вый",
+     "lex": "a:новый",
+     "lemma": "но́вый",
+     "g": {
+      "pos": "adj",
+      "case": "acc",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "го́род",
+     "lex": "n:город",
+     "lemma": "го́род",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "иностра́нных",
+     "lex": "a:иностранный",
+     "lemma": "иностра́нный",
+     "g": {
+      "pos": "adj",
+      "case": "prep",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "архите́кторов",
+     "sp": false,
+     "lex": "n:архитектор",
+     "lemma": "архите́ктор",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "pl"
+     },
+     "rare": true
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "They created straight avenues, stone palaces and squares.",
+   "tokens": [
+    {
+     "t": "Они́",
+     "lex": "o:они",
+     "lemma": "они́",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "создава́ли",
+     "lex": "v:создавать",
+     "lemma": "создава́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "past",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "прямы́е",
+     "lex": "a:прямой",
+     "lemma": "прямо́й",
+     "g": {
+      "pos": "adj",
+      "case": "acc",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "проспе́кты",
+     "sp": false,
+     "lex": "n:проспект",
+     "lemma": "проспе́кт",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "pl"
+     },
+     "rare": true
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "ка́менные",
+     "lex": "a:каменный",
+     "lemma": "ка́менный",
+     "g": {
+      "pos": "adj",
+      "case": "acc",
+      "number": "pl"
+     },
+     "rare": true
+    },
+    {
+     "t": "дворцы́",
+     "lex": "n:дворец",
+     "lemma": "дворе́ц",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "и",
+     "lex": "o:и",
+     "lemma": "и",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "пло́щади",
+     "sp": false,
+     "lex": "n:площадь",
+     "lemma": "пло́щадь",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "pl"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "The tsar loved his city so much that he ordered the nobility to move there from Moscow.",
+   "tokens": [
+    {
+     "t": "Царь",
+     "lex": "n:царь",
+     "lemma": "царь",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "люби́л",
+     "lex": "v:любить",
+     "lemma": "люби́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "свой",
+     "lex": "a:свой",
+     "lemma": "свой",
+     "g": {
+      "pos": "adj",
+      "case": "acc",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "го́род",
+     "lex": "n:город",
+     "lemma": "го́род",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "так",
+     "lex": "o:так",
+     "lemma": "так",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "си́льно",
+     "sp": false,
+     "lex": "o:сильно",
+     "lemma": "си́льно",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "что",
+     "lex": "o:что",
+     "lemma": "что",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "приказа́л",
+     "lex": "v:приказать",
+     "lemma": "приказа́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "дворя́нам",
+     "lex": "n:дворянин",
+     "lemma": "дворяни́н",
+     "g": {
+      "pos": "noun",
+      "case": "dat",
+      "number": "pl"
+     },
+     "rare": true
+    },
+    {
+     "t": "переезжа́ть",
+     "lex": "v:переезжать",
+     "lemma": "переезжа́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf"
+     }
+    },
+    {
+     "t": "туда́",
+     "lex": "o:туда",
+     "lemma": "туда́",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "из",
+     "lex": "o:из",
+     "lemma": "из",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "Москвы́",
+     "sp": false,
+     "lex": "n:Москва",
+     "lemma": "Москва́",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "In 1712 St Petersburg became the capital of Russia and remained so for two centuries.",
+   "tokens": [
+    {
+     "t": "В",
+     "lex": "o:в",
+     "lemma": "в",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "ты́сяча",
+     "lex": "n:тысяча",
+     "lemma": "ты́сяча",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "семьсо́т",
+     "lex": "o:семьсот",
+     "lemma": "семьсо́т",
+     "g": {
+      "pos": "num"
+     },
+     "rare": true
+    },
+    {
+     "t": "двена́дцатом",
+     "lex": "a:двенадцатый",
+     "lemma": "двена́дцатый",
+     "g": {
+      "pos": "adj",
+      "case": "prep",
+      "number": "sg",
+      "gender": "m"
+     },
+     "rare": true
+    },
+    {
+     "t": "году́",
+     "lex": "n:год",
+     "lemma": "год",
+     "g": {
+      "pos": "noun",
+      "case": "loc2",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "Петербу́рг",
+     "lex": "n:Петербург",
+     "lemma": "Петербу́рг",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": "стал",
+     "lex": "v:стать",
+     "lemma": "стать",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "столи́цей",
+     "lex": "n:столица",
+     "lemma": "столи́ца",
+     "g": {
+      "pos": "noun",
+      "case": "ins",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "Росси́и",
+     "lex": "n:Россия",
+     "lemma": "Росси́я",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "и",
+     "lex": "o:и",
+     "lemma": "и",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "остава́лся",
+     "lex": "v:оставаться",
+     "lemma": "остава́ться",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "е́ю",
+     "lex": "o:она",
+     "lemma": "она́",
+     "g": {
+      "pos": "pron",
+      "case": "ins"
+     }
+    },
+    {
+     "t": "два",
+     "lex": "o:два",
+     "lemma": "два",
+     "g": {
+      "pos": "num",
+      "case": "acc"
+     }
+    },
+    {
+     "t": "ве́ка",
+     "sp": false,
+     "lex": "n:век",
+     "lemma": "век",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "para": true,
+   "en": "Today every summer St Petersburg has its white nights: the sun barely sets, and people stroll along the embankments until morning.",
+   "tokens": [
+    {
+     "t": "Сего́дня",
+     "lex": "o:сегодня",
+     "lemma": "сего́дня",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "ка́ждое",
+     "lex": "a:каждый",
+     "lemma": "ка́ждый",
+     "g": {
+      "pos": "adj",
+      "case": "acc",
+      "number": "sg",
+      "gender": "n"
+     }
+    },
+    {
+     "t": "ле́то",
+     "lex": "n:лето",
+     "lemma": "ле́то",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "в",
+     "lex": "o:в",
+     "lemma": "в",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "Петербу́рге",
+     "lex": "n:Петербург",
+     "lemma": "Петербу́рг",
+     "g": {
+      "pos": "noun",
+      "case": "prep",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": "наступа́ют",
+     "lex": "v:наступать",
+     "lemma": "наступа́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "pl"
+     }
+    },
+    {
+     "t": "бе́лые",
+     "lex": "a:белый",
+     "lemma": "бе́лый",
+     "g": {
+      "pos": "adj",
+      "case": "acc",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "но́чи",
+     "sp": false,
+     "lex": "n:ночь",
+     "lemma": "ночь",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "pl"
+     }
+    },
+    {
+     "t": ":"
+    },
+    {
+     "t": "со́лнце",
+     "lex": "n:солнце",
+     "lemma": "со́лнце",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "почти́",
+     "lex": "o:почти",
+     "lemma": "почти́",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "не",
+     "lex": "o:не",
+     "lemma": "не",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "захо́дит",
+     "sp": false,
+     "lex": "v:заходить",
+     "lemma": "заходи́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "sg"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "и",
+     "lex": "o:и",
+     "lemma": "и",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "лю́ди",
+     "lex": "n:человек",
+     "lemma": "челове́к",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "гуля́ют",
+     "lex": "v:гулять",
+     "lemma": "гуля́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "pl"
+     }
+    },
+    {
+     "t": "по",
+     "lex": "o:по",
+     "lemma": "по",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "на́бережным",
+     "lex": "n:набережная",
+     "lemma": "на́бережная",
+     "g": {
+      "pos": "noun",
+      "case": "dat",
+      "number": "pl"
+     },
+     "rare": true
+    },
+    {
+     "t": "до",
+     "lex": "o:до",
+     "lemma": "до",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "утра́",
+     "sp": false,
+     "lex": "n:утро",
+     "lemma": "у́тро",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "If Peter saw his city now, he would probably be pleased.",
+   "tokens": [
+    {
+     "t": "Е́сли",
+     "lex": "o:если",
+     "lemma": "е́сли",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "бы",
+     "lex": "o:бы",
+     "lemma": "бы",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "Пётр",
+     "lemma": "Пётр",
+     "g": {
+      "pos": "name",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "уви́дел",
+     "lex": "v:увидеть",
+     "lemma": "уви́деть",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "свой",
+     "lex": "a:свой",
+     "lemma": "свой",
+     "g": {
+      "pos": "adj",
+      "case": "acc",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "го́род",
+     "lex": "n:город",
+     "lemma": "го́род",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "сейча́с",
+     "sp": false,
+     "lex": "o:сейчас",
+     "lemma": "сейча́с",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "он",
+     "sp": false,
+     "lex": "o:он",
+     "lemma": "он",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "наве́рное",
+     "sp": false,
+     "lex": "o:наверное",
+     "lemma": "наве́рное",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "был",
+     "lex": "v:быть",
+     "lemma": "быть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "бы",
+     "lex": "o:бы",
+     "lemma": "бы",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "дово́лен",
+     "sp": false,
+     "lex": "a:довольный",
+     "lemma": "дово́льный",
+     "g": {
+      "pos": "adj",
+      "short": true,
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  }
+ ],
+ "questions": [
+  {
+   "id": "nf-b2-02-q1",
+   "type": "choice",
+   "level": "B2",
+   "tags": [
+    "reading"
+   ],
+   "prompt": {
+    "ru": "Когда́ на́чали стро́ить Петербу́рг?",
+    "en": "When did they start building St Petersburg?",
+    "instruction": "Choose the answer"
+   },
+   "accept": [
+    "В ты́сяча семьсо́т тре́тьем году́."
+   ],
+   "distractors": [
+    {
+     "ru": "В ты́сяча восемьсо́т двена́дцатом году́.",
+     "error": "reading.detail"
+    },
+    {
+     "ru": "В ты́сяча семьсо́т двена́дцатом году́.",
+     "error": "reading.detail"
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "nf-b2-02-q2",
+   "type": "choice",
+   "level": "B2",
+   "tags": [
+    "reading"
+   ],
+   "prompt": {
+    "ru": "О чём мечта́л Пётр Пе́рвый?",
+    "en": "What did Peter the First dream of?",
+    "instruction": "Choose the answer"
+   },
+   "accept": [
+    "О вы́ходе к мо́рю."
+   ],
+   "distractors": [
+    {
+     "ru": "О но́вом дворце́ в Москве́.",
+     "error": "reading.detail"
+    },
+    {
+     "ru": "О путеше́ствии в Аме́рику.",
+     "error": "reading.detail"
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "nf-b2-02-q3",
+   "type": "choice",
+   "level": "B2",
+   "tags": [
+    "reading"
+   ],
+   "prompt": {
+    "ru": "Почему́ говоря́т, что го́род стои́т на костя́х?",
+    "en": "Why do people say the city stands on bones?",
+    "instruction": "Choose the answer"
+   },
+   "accept": [
+    "Мно́гие рабо́чие поги́бли во вре́мя стро́йки."
+   ],
+   "distractors": [
+    {
+     "ru": "Под го́родом нашли́ ста́рое кла́дбище.",
+     "error": "reading.detail"
+    },
+    {
+     "ru": "Там жи́ли ди́кие живо́тные.",
+     "error": "reading.detail"
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "nf-b2-02-q4",
+   "type": "choice",
+   "level": "B2",
+   "tags": [
+    "reading"
+   ],
+   "prompt": {
+    "ru": "Ско́лько вре́мени Петербу́рг был столи́цей?",
+    "en": "How long was St Petersburg the capital?",
+    "instruction": "Choose the answer"
+   },
+   "accept": [
+    "Два ве́ка."
+   ],
+   "distractors": [
+    {
+     "ru": "Сто лет.",
+     "error": "reading.detail"
+    },
+    {
+     "ru": "Пятьдеся́т лет.",
+     "error": "reading.detail"
+    }
+   ],
+   "source": "handwritten"
+  }
+ ]
+}

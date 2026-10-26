@@ -1,0 +1,26 @@
+id: dl-b1-07
+kind: dialogue
+level: B1
+title: Пропа́л чемода́н | A missing suitcase
+---
+Пассажи́р: Здра́вствуйте. Мой чемода́н не пришёл. Я жду уже́ це́лый час. | Passenger: Hello. My suitcase hasn't arrived. I've been waiting a whole hour.
+Сотру́дница: Покажи́те, пожа́луйста, ваш биле́т. Отку́да вы прилете́ли? | Staff member: Please show me your ticket. Where did you fly in from?
+Пассажи́р: Из Новосиби́рска. | Passenger: From Novosibirsk.
+Сотру́дница: Како́й у вас чемода́н? Опиши́те его́. | Staff member: What is your suitcase like? Describe it.
+Пассажи́р: Большо́й, си́ний, на колёсах. У него́ ста́рая ру́чка, кото́рая пло́хо рабо́тает. | Passenger: Big, blue, on wheels. It has an old handle that doesn't work well.
+Сотру́дница: Похо́же, ваш чемода́н улете́л в Петербу́рг. Его́ привезу́т за́втра у́тром. | Staff member: It looks as if your suitcase flew to St Petersburg. It will be brought tomorrow morning.
+Пассажи́р: А мо́жно доста́вить его́ домо́й? | Passenger: Can it be delivered to my home?
+Сотру́дница: Да, напиши́те здесь ваш а́дрес и телефо́н. | Staff member: Yes, write your address and phone number here.
+---
+? Отку́да прилете́л пассажи́р? | Where did the passenger fly in from?
++ Из Новосиби́рска.
+- Из Петербу́рга.
+- Из Каза́ни.
+? Како́го цве́та чемода́н? | What colour is the suitcase?
++ Си́него.
+- Чёрного.
+- Кра́сного.
+? Когда́ привезу́т чемода́н? | When will the suitcase be brought?
++ За́втра у́тром.
+- Сего́дня ве́чером.
+- Че́рез неде́лю.

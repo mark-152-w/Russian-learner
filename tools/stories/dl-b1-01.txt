@@ -1,0 +1,25 @@
+id: dl-b1-01
+kind: dialogue
+level: B1
+title: В такси́ | In a taxi
+---
+Води́тель: До́брый ве́чер! Куда́ е́дем? | Driver: Good evening! Where are we going?
+Пассажи́рка: В аэропо́рт, пожа́луйста. Мы успе́ем за час? У меня́ самолёт в де́вять. | Passenger: To the airport, please. Will we make it in an hour? My plane is at nine.
+Води́тель: Е́сли не бу́дет про́бок, успе́ем. Но в пя́тницу ве́чером всегда́ про́бки. | Driver: If there's no traffic, we will. But there are always jams on Friday evening.
+Пассажи́рка: Ой! А мо́жно пое́хать други́м путём? | Passenger: Oh! Can we go another way?
+Води́тель: Мо́жно че́рез центр, но там то́же мно́го маши́н. Попро́бую объе́хать по на́бережной. | Driver: We could go through the centre, but there are lots of cars there too. I'll try going round along the embankment.
+Пассажи́рка: Спаси́бо! Я так боя́лась опозда́ть. | Passenger: Thank you! I was so afraid of being late.
+Води́тель: Не волну́йтесь, я так рабо́таю два́дцать лет. Ещё ни оди́н пассажи́р у меня́ не опозда́л. | Driver: Don't worry, I've been working like this for twenty years. Not one of my passengers has missed a flight yet.
+---
+? Куда́ е́дет пассажи́рка? | Where is the passenger going?
++ В аэропо́рт.
+- На вокза́л.
+- Домо́й.
+? Почему́ она́ волну́ется? | Why is she worried?
++ Она́ бои́тся опозда́ть на самолёт.
+- У неё нет де́нег.
+- Она́ забы́ла па́спорт.
+? Как води́тель хо́чет е́хать? | Which way does the driver want to go?
++ По на́бережной.
+- Че́рез центр.
+- На метро́.

@@ -1,0 +1,43 @@
+id: st-b2-08
+kind: story
+level: B2
+title: Уро́к исто́рии | A history lesson
+---
+Серге́й Ива́нович преподава́л исто́рию в одно́й шко́ле со́рок лет. | Sergei Ivanovich taught history at one school for forty years.
+За э́то вре́мя у него́ учи́лись ты́сячи дете́й, и почти́ ка́ждого он по́мнил по и́мени. | In that time thousands of children were his pupils, and he remembered almost every one by name.
+Но вспомина́ли ли его́ они́? Об э́том он стара́лся не ду́мать. | But did they remember him? He tried not to think about that.
+
+В день его́ после́днего уро́ка в кла́ссе бы́ло непривы́чно ти́хо. | On the day of his last lesson the classroom was unusually quiet.
+Он рассказа́л о Петре́ Пе́рвом, отве́тил на вопро́сы и уже́ собира́лся уходи́ть, когда́ дверь откры́лась. | He talked about Peter the First, answered questions and was about to leave when the door opened.
+В класс вошёл высо́кий мужчи́на в дорого́м костю́ме. | A tall man in an expensive suit came into the classroom.
+
+— Вы меня́ не по́мните, Серге́й Ива́нович? | "Don't you remember me, Sergei Ivanovich?"
+Учи́тель внима́тельно посмотре́л на него́. | The teacher looked at him closely.
+— Ива́н... Ива́н с после́дней па́рты. Тот, кото́рый всё вре́мя спал на мои́х уро́ках. | "Ivan… Ivan from the back desk. The one who slept through all my lessons."
+Мужчи́на засмея́лся. | The man laughed.
+— Да, э́то я. Но одна́жды я не спал. Вы расска́зывали о том, как стро́или Петербу́рг. | "Yes, that's me. But once I wasn't asleep. You were talking about how St Petersburg was built."
+— И я тогда́ впервы́е поду́мал, что хочу́ стро́ить города́. | "And I thought for the first time then that I wanted to build cities."
+— Тепе́рь я архите́ктор. | "Now I'm an architect."
+
+Ива́н положи́л на стол большу́ю па́пку. | Ivan put a big folder on the desk.
+Там был прое́кт но́вой шко́лы: све́тлой, с библиоте́кой и со́бственным музе́ем. | Inside was the plan of a new school: a bright one, with a library and its own museum.
+— Её постро́ят в на́шем го́роде в сле́дующем году́, — сказа́л он. — А музе́й мы хоти́м назва́ть ва́шим и́менем. | "It will be built in our town next year," he said. "And we want to name the museum after you."
+Серге́й Ива́нович снял очки́ и до́лго протира́л их. | Sergei Ivanovich took off his glasses and wiped them for a long time.
+Ученики́ впервы́е ви́дели, как пла́чет их учи́тель. | The pupils were seeing their teacher cry for the first time.
+---
+? Ско́лько лет Серге́й Ива́нович рабо́тал в шко́ле? | How many years did Sergei Ivanovich work at the school?
++ Со́рок лет.
+- Два́дцать лет.
+- Де́сять лет.
+? Каки́м был Ива́н в шко́ле? | What was Ivan like at school?
++ Он спал на уро́ках.
+- Он был лу́чшим ученико́м.
+- Он не ходи́л в шко́лу.
+? Кем стал Ива́н? | What did Ivan become?
++ Архите́ктором.
+- Учи́телем.
+- Инжене́ром.
+? Что Ива́н принёс? | What did Ivan bring?
++ Прое́кт но́вой шко́лы.
+- Цветы́.
+- Кни́гу о Петре́ Пе́рвом.

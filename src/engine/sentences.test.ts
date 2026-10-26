@@ -26,7 +26,7 @@ describe('sentences data', () => {
     for (const s of sents.slice(0, 500)) {
       for (const t of wordTokens(s)) {
         expect(t.text).toMatch(/^[А-Яа-яЁё́-]+$/)
-        for (const r of t.readings) expect(r.lex).toMatch(/^(n|v|a|o|name):/)
+        for (const r of t.readings) expect(r.lex).toMatch(/^(n|v|a|o|name|pron|num|word):/)
       }
     }
   })

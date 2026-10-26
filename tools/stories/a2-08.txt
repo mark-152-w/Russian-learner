@@ -1,0 +1,41 @@
+id: st-a2-08
+kind: story
+level: A2
+series: anya
+chapter: 8
+title: Пла́н Ми́ши | Misha's plan
+characters: А́ня, Ми́ша, Оле́г
+cliffhanger: Misha has disappeared from the zoo. Where has he gone?
+---
+У́тром Ми́ша сказа́л: | In the morning Misha said:
+— Я хочу́ пригото́вить тебе́ за́втрак. | "I want to make you breakfast."
+— Ты уме́ешь гото́вить? — удиви́лась я. | "Can you cook?" I asked in surprise.
+— Коне́чно! Я ви́дел, как гото́вит ба́бушка. | "Of course! I've watched Grandma cook."
+
+Че́рез пять мину́т на ку́хне был дым. | Five minutes later there was smoke in the kitchen.
+Я откры́ла окно́, а Ба́рсик убежа́л под крова́ть. | I opened the window, and Barsik ran under the bed.
+Яи́чница была́ чёрная. | The fried eggs were black.
+— Ничего́, — сказа́л Ми́ша. — Зато́ бы́стро! | "Never mind," said Misha. "At least it was quick!"
+
+Мы поза́втракали в кафе́ ря́дом с до́мом. | We had breakfast in the café next to the building.
+Пото́м мы пое́хали в зоопа́рк. | Then we went to the zoo.
+Ми́ше бо́льше всего́ понра́вились медве́ди. | Misha liked the bears most of all.
+— Смотри́, како́й большо́й! — крича́л он. | "Look how big that one is!" he shouted.
+
+Я купи́ла моро́женое и поверну́лась к Ми́ше. | I bought ice cream and turned to Misha.
+Но Ми́ши ря́дом не́ было. | But Misha wasn't beside me.
+Я посмотре́ла нале́во, напра́во — никого́! | I looked left, right: nobody!
+Я позвони́ла ему́, но он не отве́тил. | I rang him, but he didn't answer.
+---
+? Что случи́лось с за́втраком Ми́ши? | What happened to Misha's breakfast?
++ Яи́чница сгоре́ла.
+- Ба́рсик съел яи́чницу.
+- Ми́ша забы́л купи́ть я́йца.
+? Каки́е живо́тные понра́вились Ми́ше бо́льше всего́? | Which animals did Misha like most?
++ Медве́ди.
+- Ти́гры.
+- Пти́цы.
+? Что А́ня купи́ла в зоопа́рке? | What did Anya buy at the zoo?
++ Моро́женое.
+- Ко́фе.
+- Пи́ццу.

@@ -1,0 +1,47 @@
+id: st-c1-07
+kind: story
+level: C1
+series: anya3
+chapter: 1
+title: Пять лет спустя́ | Five years later
+characters: А́ня, Ми́ша, Ни́на, Ю́рий, Оле́г, Ка́тя
+---
+В тот день, когда́ А́ня получи́ла дипло́м, в Москве́ шёл тёплый ле́тний дождь. | On the day Anya received her diploma, a warm summer rain was falling in Moscow.
+Она́ стоя́ла на ступе́нях университе́та и ника́к не могла́ пове́рить, что пять лет уже́ прошли́. | She stood on the university steps and couldn't believe that five years had already gone by.
+Каза́лось, ещё вчера́ она́ выходи́ла из по́езда с чемода́ном и испу́ганным кото́м в су́мке. | It seemed only yesterday that she had stepped off the train with a suitcase and a frightened cat in a bag.
+
+За э́ти го́ды измени́лось мно́гое. | A great deal had changed over those years.
+Ни́на и Ю́рий, к удивле́нию всех знако́мых, пожени́лись и тепе́рь жи́ли на да́че с весны́ до о́сени, а зимо́й спо́рили, в како́м го́роде им холодне́е — в Москве́ и́ли в Новосиби́рске. | To the surprise of everyone they knew, Nina and Yuri had married and now lived at the dacha from spring to autumn, and in winter argued over which city was colder for them, Moscow or Novosibirsk.
+Ка́тя рабо́тала в большо́й газе́те и писа́ла о лю́дях, исто́рии кото́рых, как она́ говори́ла, «никто́ не догада́лся рассказа́ть». | Katya worked for a big newspaper and wrote about people whose stories, as she put it, "nobody had thought to tell".
+Оле́г стал инжене́ром, как его́ де́душка, и уже́ год стро́ил мост где́-то под Каза́нью. | Oleg had become an engineer, like his grandfather, and for a year now had been building a bridge somewhere near Kazan.
+
+А Ми́ша, тот са́мый ма́льчик, кото́рый когда́-то сжёг яи́чницу, неожи́данно для всех поступи́л в Моско́вскую консервато́рию. | And Misha, the very boy who had once burnt the fried eggs, had unexpectedly got into the Moscow Conservatoire.
+Ока́зывается, все те вечера́, когда́ Ю́рий игра́л на гита́ре, он внима́тельно слу́шал. | It turned out that all those evenings when Yuri played the guitar, he had been listening carefully.
+
+Ве́чером они́ собрали́сь на да́че. | In the evening they gathered at the dacha.
+Ба́рсик, ста́рый и то́лстый, лежа́л на вера́нде и с досто́инством игнори́ровал всех. | Barsik, old and fat now, lay on the veranda and ignored everyone with dignity.
+Ю́рий произнёс тост: | Yuri proposed a toast:
+— За то, что́бы в жи́зни всегда́ бы́ло откры́тое окно́, че́рез кото́рое мо́жет убежа́ть кот. | "To always having an open window in life that a cat can run away through."
+Все засмея́лись, но А́ня поняла́, что он име́л в виду́. | Everyone laughed, but Anya understood what he meant.
+Е́сли бы не тот слу́чай, она́ бы не познако́милась с Ни́ной, Ни́на не нашла́ бы Ю́рия, а Ми́ша, мо́жет быть, так и не взял бы в ру́ки гита́ру. | If it hadn't been for that incident, she wouldn't have met Nina, Nina wouldn't have found Yuri, and Misha might never have picked up a guitar.
+
+Но́чью, когда́ все уже́ спа́ли, А́ня вы́шла в сад. | At night, when everyone was asleep, Anya went out into the garden.
+Над реко́й висе́ла больша́я луна́. | A large moon hung over the river.
+Она́ поду́мала, что за́втра начина́ется но́вая жизнь, и впервы́е за до́лгое вре́мя ей бы́ло совсе́м не стра́шно. | She thought that tomorrow a new life was beginning, and for the first time in a long while she wasn't frightened at all.
+---
+? Како́й была́ пого́да в тот день? | What was the weather like that day?
++ Шёл тёплый дождь.
+- Шёл снег.
+- Бы́ло со́лнечно и жа́рко.
+? Что случи́лось с Ни́ной и Ю́рием? | What happened to Nina and Yuri?
++ Они́ пожени́лись.
+- Они́ перее́хали в Каза́нь.
+- Они́ поссо́рились.
+? Куда́ поступи́л Ми́ша? | Where did Misha get in?
++ В консервато́рию.
+- В университе́т.
+- В шко́лу поваро́в.
+? О чём был тост Ю́рия? | What was Yuri's toast about?
++ Об откры́том окне́, че́рез кото́рое мо́жет убежа́ть кот.
+- О дипло́ме А́ни.
+- О Новосиби́рске.

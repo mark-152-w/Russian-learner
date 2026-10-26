@@ -1,0 +1,33 @@
+id: nf-c1-05
+kind: nonfiction
+level: C1
+title: Разгово́ры на ку́хне | Kitchen conversations
+---
+Е́сли вы хоти́те по-настоя́щему узна́ть ру́сского челове́ка, вам на́до попа́сть к нему́ на ку́хню. | If you really want to get to know a Russian, you need to end up in their kitchen.
+Не в гости́ную, где стои́т телеви́зор и лежи́т ковёр, а и́менно на ку́хню, те́сную и тёплую, где на плите́ ве́чно стои́т ча́йник. | Not the living room, with the television and the carpet, but precisely the kitchen, cramped and warm, where a kettle always stands on the stove.
+
+Э́та тради́ция родила́сь в сове́тское вре́мя. | This tradition was born in Soviet times.
+В шестидеся́тые го́ды миллио́ны семе́й перее́хали из коммуна́льных кварти́р в отде́льные. | In the sixties millions of families moved from communal flats into separate ones.
+Кварти́ры бы́ли ма́ленькими, с ку́хнями в пять и́ли шесть квадра́тных ме́тров, но впервы́е у люде́й появи́лось ме́сто, где мо́жно бы́ло говори́ть без чужи́х уше́й. | The flats were small, with kitchens of five or six square metres, but for the first time people had a place where they could talk without strangers listening.
+Ку́хня ста́ла клу́бом, университе́том и, в не́котором смы́сле, после́дним простра́нством свобо́ды. | The kitchen became a club, a university and, in a sense, the last space of freedom.
+
+Здесь до утра́ спо́рили о поли́тике и литерату́ре, чита́ли запрещённые кни́ги, пе́ли пе́сни под гита́ру. | Here people argued about politics and literature until morning, read banned books and sang songs to the guitar.
+Говори́ли ти́хо, иногда́ включа́ли во́ду и́ли ра́дио, что́бы сосе́ди не слы́шали. | They spoke quietly, sometimes turning on the tap or the radio so the neighbours wouldn't hear.
+Мно́гие писа́тели и учёные вспомина́ют, что са́мые ва́жные разгово́ры в их жи́зни прошли́ и́менно за ку́хонным столо́м. | Many writers and scientists recall that the most important conversations of their lives took place at the kitchen table.
+
+Времена́ измени́лись, кварти́ры ста́ли бо́льше, а говори́ть мо́жно гро́мко и где уго́дно. | Times have changed, flats have become bigger, and people can talk loudly wherever they like.
+Но привы́чка оста́лась. | But the habit has remained.
+Госте́й по-пре́жнему приглаша́ют «посиде́ть на ку́хне», и са́мые че́стные разгово́ры начина́ются, когда́ все уже́ поу́жинали, а чай ещё не ко́нчился. | Guests are still invited to "sit in the kitchen", and the most honest conversations begin when everyone has had supper but the tea hasn't run out yet.
+---
+? Когда́ родила́сь тради́ция ку́хонных разгово́ров? | When was the tradition of kitchen conversations born?
++ В сове́тское вре́мя.
+- В девятна́дцатом ве́ке.
+- В на́ши дни.
+? Почему́ ку́хня ста́ла таки́м ва́жным ме́стом? | Why did the kitchen become such an important place?
++ Там мо́жно бы́ло говори́ть без чужи́х уше́й.
+- Там стоя́л телеви́зор.
+- Там была́ са́мая больша́я ко́мната.
+? Заче́м иногда́ включа́ли во́ду и́ли ра́дио? | Why did people sometimes turn on the tap or the radio?
++ Что́бы сосе́ди не слы́шали разгово́р.
+- Что́бы слу́шать му́зыку.
+- Что́бы гото́вить у́жин.

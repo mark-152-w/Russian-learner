@@ -29,18 +29,36 @@ const GrammarArticlePage = lazy(() => import('./pages/Grammar').then((m) => ({ d
 const TrainersHub = lazy(() => import('./pages/Trainers').then((m) => ({ default: m.TrainersHub })))
 const TrainerPage = lazy(() => import('./pages/Trainers').then((m) => ({ default: m.TrainerPage })))
 const TrainerRun = lazy(() => import('./pages/Trainers').then((m) => ({ default: m.TrainerRun })))
+const ReaderPage = lazy(() => import('./pages/Reader').then((m) => ({ default: m.ReaderPage })))
+const StoryView = lazy(() => import('./pages/Reader').then((m) => ({ default: m.StoryView })))
+const StoryQuiz = lazy(() => import('./pages/Reader').then((m) => ({ default: m.StoryQuiz })))
+const ListeningPage = lazy(() => import('./pages/Listening').then((m) => ({ default: m.ListeningPage })))
+const ListenRun = lazy(() => import('./pages/Listening').then((m) => ({ default: m.ListenRun })))
+const KeyboardPage = lazy(() => import('./pages/Keyboard').then((m) => ({ default: m.KeyboardPage })))
+const KeyboardRun = lazy(() => import('./pages/Keyboard').then((m) => ({ default: m.KeyboardRun })))
+const Games = lazy(() => import('./pages/Games'))
+const Arcade = lazy(() => import('./pages/Arcade'))
+const CrosswordHub = lazy(() => import('./pages/Crossword').then((m) => ({ default: m.CrosswordHub })))
+const CrosswordGame = lazy(() => import('./pages/Crossword').then((m) => ({ default: m.CrosswordGame })))
+const Speed = lazy(() => import('./pages/Speed'))
+const Boss = lazy(() => import('./pages/Boss'))
+const CardsPage = lazy(() => import('./pages/Cards').then((m) => ({ default: m.CardsPage })))
+const CardPage = lazy(() => import('./pages/Cards').then((m) => ({ default: m.CardPage })))
+const Town = lazy(() => import('./pages/Town'))
+const AdventureHub = lazy(() => import('./pages/Adventure').then((m) => ({ default: m.AdventureHub })))
+const AdventurePlay = lazy(() => import('./pages/Adventure').then((m) => ({ default: m.AdventurePlay })))
 
 const NAV = [
   { to: '/', label: 'Home', icon: 'home' },
   { to: '/course', label: 'Course', icon: 'path' },
   { to: '/review', label: 'Review', icon: 'cards' },
-  { to: '/trainers', label: 'Trainers', icon: 'target' },
-  { to: '/grammar', label: 'Grammar', icon: 'book' },
-  { to: '/lab', label: 'Lab', icon: 'table' },
+  { to: '/reader', label: 'Read', icon: 'book' },
+  { to: '/trainers', label: 'Practice', icon: 'target' },
+  { to: '/grammar', label: 'Reference', icon: 'table' },
 ]
-const IN_SESSION = ['/practice', '/review', '/drill', '/lesson', '/placement']
+const IN_SESSION = ['/practice', '/review', '/drill', '/lesson', '/placement', '/listen/']
 /** Full-screen sessions hide the navigation (a trainer's run page is /trainer/:id/:mode). */
-const inSessionPath = (p: string) => IN_SESSION.some((x) => p.startsWith(x)) || /^\/trainer\/[^/]+\/[^/]+/.test(p)
+const inSessionPath = (p: string) => IN_SESSION.some((x) => p.startsWith(x)) || /^\/trainer\/[^/]+\/[^/]+|\/quiz$|^\/keyboard\/\d|^\/arcade|^\/crossword\/.|^\/speed|^\/boss\/|^\/adventure\/\d/.test(p)
 
 /** Applies theme, skin, motion and audio preferences to the document. */
 function Preferences() {
@@ -150,6 +168,26 @@ export default function App() {
               <Route path="/trainers" element={<TrainersHub />} />
               <Route path="/trainer/:id" element={<TrainerPage />} />
               <Route path="/trainer/:id/:mode" element={<TrainerRun />} />
+              <Route path="/reader" element={<ReaderPage />} />
+              <Route path="/story/:id" element={<StoryView />} />
+              <Route path="/story/:id/quiz" element={<StoryQuiz />} />
+              <Route path="/dialogue/:id" element={<StoryView listening />} />
+              <Route path="/dialogue/:id/quiz" element={<StoryQuiz listening />} />
+              <Route path="/listening" element={<ListeningPage />} />
+              <Route path="/listen/:mode" element={<ListenRun />} />
+              <Route path="/keyboard" element={<KeyboardPage />} />
+              <Route path="/keyboard/:n" element={<KeyboardRun />} />
+              <Route path="/games" element={<Games />} />
+              <Route path="/arcade" element={<Arcade />} />
+              <Route path="/crossword" element={<CrosswordHub />} />
+              <Route path="/crossword/:topic" element={<CrosswordGame />} />
+              <Route path="/speed" element={<Speed />} />
+              <Route path="/boss/:id" element={<Boss />} />
+              <Route path="/cards" element={<CardsPage />} />
+              <Route path="/card/:id" element={<CardPage />} />
+              <Route path="/town" element={<Town />} />
+              <Route path="/adventure" element={<AdventureHub />} />
+              <Route path="/adventure/:n" element={<AdventurePlay />} />
               <Route path="/grammar" element={<GrammarIndex />} />
               <Route path="/grammar/:id" element={<GrammarArticlePage />} />
             </Routes>

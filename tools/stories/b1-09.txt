@@ -1,0 +1,43 @@
+id: st-b1-09
+kind: story
+level: B1
+series: anya2
+chapter: 9
+title: Отве́т | The answer
+characters: Ни́на, А́ня, Оле́г
+cliffhanger: A train is leaving Novosibirsk for Moscow. It will take two days.
+---
+На сле́дующий день А́ня и Оле́г пришли́ к Ни́не. | The next day Anya and Oleg went to see Nina.
+Ни́на полива́ла цветы́ на балко́не. | Nina was watering the flowers on her balcony.
+— Ни́на, мы нашли́ Ю́рия, — сказа́ла А́ня. — Он жив. И он хо́чет вас уви́деть. | "Nina, we've found Yuri," said Anya. "He's alive. And he wants to see you."
+
+Ни́на поста́вила ле́йку на пол и се́ла. | Nina put the watering can on the floor and sat down.
+— Как вы его́ нашли́? | "How did you find him?"
+Оле́г покрасне́л. | Oleg blushed.
+— Он мой де́душка. | "He's my grandfather."
+Ни́на посмотре́ла на Оле́га так, как бу́дто уви́дела его́ впервы́е. | Nina looked at Oleg as if she were seeing him for the first time.
+— То́-то я ду́мала: улы́бка знако́мая... | "No wonder I thought your smile looked familiar…"
+
+Она́ до́лго молча́ла, а пото́м сказа́ла: | She was silent for a long time, and then said:
+— Мне не на́до ничего́ возвраща́ть. Жизнь прошла́, и она́ была́ хоро́шей. | "I don't need to get anything back. Life has gone by, and it was a good one."
+— Но я хочу́ сказа́ть ему́ одно́: я его́ ждала́. | "But I want to tell him one thing: I did wait for him."
+— Пусть он э́то зна́ет. | "Let him know that."
+
+Оле́г кивну́л и доста́л телефо́н. | Oleg nodded and took out his phone.
+— Вы мо́жете сказа́ть ему́ э́то са́ми. Он на ли́нии. | "You can tell him yourself. He's on the line."
+Ни́на взяла́ телефо́н, и её рука́ дрожа́ла. | Nina took the phone, and her hand was shaking.
+— Ю́ра? — сказа́ла она́. — Э́то я. | "Yura?" she said. "It's me."
+А́ня и Оле́г ти́хо вы́шли на ку́хню. | Anya and Oleg quietly went out to the kitchen.
+---
+? Что де́лала Ни́на, когда́ пришли́ А́ня и Оле́г? | What was Nina doing when Anya and Oleg came?
++ Полива́ла цветы́.
+- Пила́ чай.
+- Чита́ла пи́сьма.
+? Почему́ улы́бка Оле́га показа́лась Ни́не знако́мой? | Why did Oleg's smile seem familiar to Nina?
++ Он внук Ю́рия.
+- Она́ ви́дела его́ в кафе́.
+- Он похо́ж на её сы́на.
+? Что Ни́на хоте́ла сказа́ть Ю́рию? | What did Nina want to tell Yuri?
++ Что она́ его́ ждала́.
+- Что она́ его́ забы́ла.
+- Что она́ хо́чет жить в Сиби́ри.

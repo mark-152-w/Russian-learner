@@ -1,0 +1,75 @@
+set: cs-idioms
+title: Идио́мы | Idioms
+bonusXp: 250
+===
+id: c-ni-pukha
+name: Ни пу́ха ни пера́! | Good luck!
+rarity: common
+level: A2
+art: 🪶 50
+---
+Так говоря́т пе́ред экза́меном. | People say this before an exam.
+Отвеча́ть на́до: «К чёрту!» Э́то не гру́бо, а тради́ция. | The reply is "To the devil!" It isn't rude; it's tradition.
+===
+id: c-sobaka
+name: Вот где соба́ка зары́та | That's the heart of the matter
+rarity: rare
+level: B1
+art: 🐕 30
+---
+Буква́льно: вот где лежи́т соба́ка. | Literally: that's where the dog lies buried.
+Э́ту фра́зу говоря́т, когда́ нашли́ настоя́щую причи́ну пробле́мы. | People say this when they've found the real cause of a problem.
+===
+id: c-lapsha
+name: Ве́шать лапшу́ на у́ши | To pull someone's leg
+rarity: rare
+level: B1
+art: 🍜 40
+---
+Е́сли кто́-то ве́шает вам лапшу́ на у́ши, он вас{acc} обма́нывает. | If someone is hanging noodles on your ears, they're fooling you.
+«Не ве́шай мне лапшу́ на у́ши!» — так говоря́т дру́гу, кото́рый врёт. | "Don't hang noodles on my ears!" is what you say to a friend who's lying.
+===
+id: c-rak
+name: Когда́ рак на горе́ сви́стнет | When pigs fly
+rarity: epic
+level: B1
+art: 🦞 0
+---
+Ра́ки не уме́ют свисте́ть, и на гора́х они́ не живу́т. | Crayfish can't whistle, and they don't live on mountains.
+Зна́чит, э́то бу́дет никогда́. | So it will never happen.
+===
+id: c-maslo
+name: Как по ма́слу | Like clockwork
+rarity: common
+level: A2
+art: 🧈 45
+---
+Е́сли всё идёт как по ма́слу, всё идёт легко́ и без пробле́м. | If everything goes "as if on butter", it goes easily and without problems.
+===
+id: c-medvezhya
+name: Медве́жья услу́га | A bear's favour
+rarity: epic
+level: B1
+art: 🐻 25
+---
+Э́то по́мощь, от кото́рой то́лько ху́же. | It's help that only makes things worse.
+В ста́рой ба́сне медве́дь уби́л му́ху на лбу дру́га ка́мнем. | In an old fable, a bear killed a fly on his friend's forehead with a rock.
+===
+id: c-trud
+name: Без труда́ не вы́тащишь и ры́бку из пруда́ | No pain, no gain
+rarity: rare
+level: A2
+art: 🎣 200
+---
+Э́та посло́вица о том, что без рабо́ты не быва́ет результа́та. | This proverb says there are no results without work.
+Её зна́ют все{o:все} ру́сские де́ти. | Every Russian child knows it.
+===
+id: c-utro
+name: У́тро ве́чера мудрене́е | Sleep on it
+rarity: legendary
+level: B1
+art: 🌅 40
+---
+Е́сли не зна́ешь, что де́лать, лу́чше лечь спать. | If you don't know what to do, it's better to go to bed.
+У́тром всё ста́нет я́сно. | In the morning everything will become clear.
+Так ча́сто говоря́т геро́и ру́сских ска́зок. | Heroes of Russian fairy tales often say this.

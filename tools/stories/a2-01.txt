@@ -1,0 +1,51 @@
+id: st-a2-01
+kind: story
+level: A2
+series: anya
+chapter: 1
+title: Но́вый го́род | A new city
+characters: А́ня, Ба́рсик
+cliffhanger: Tomorrow is Anya's first day at university. Will she find the right building?
+---
+Меня́ зову́т А́ня. | My name is Anya.
+Мне девятна́дцать лет. | I'm nineteen.
+Я из Каза́ни, но тепе́рь я живу́ в Москве́. | I'm from Kazan, but now I live in Moscow.
+
+Я студе́нтка. | I'm a student.
+Я бу́ду учи́ться в университе́те. | I'm going to study at university.
+Вчера́ я прие́хала в Москву́ на по́езде. | Yesterday I came to Moscow by train.
+Со мной прие́хал мой кот Ба́рсик. | My cat Barsik came with me.
+
+У меня́ ма́ленькая кварти́ра. | I have a small flat.
+В кварти́ре одна́ ко́мната, ку́хня и ва́нная. | The flat has one room, a kitchen and a bathroom.
+В ко́мнате стои́т крова́ть, стол и ста́рый шкаф. | In the room there's a bed, a table and an old wardrobe.
+Окно́ смо́трит на парк. | The window looks out onto a park.
+Ба́рсик сра́зу сел на окно́ и на́чал смотре́ть на птиц. | Barsik sat on the windowsill at once and started watching the birds.
+
+Ве́чером я позвони́ла ма́ме. | In the evening I rang Mum.
+— Как кварти́ра? — спроси́ла ма́ма. | "How's the flat?" Mum asked.
+— Ма́ленькая, но хоро́шая, — отве́тила я. | "Small, but nice," I answered.
+— А ты уже́ е́ла? | "And have you eaten yet?"
+— Нет, ещё не е́ла. | "No, not yet."
+— А́ня! Сейча́с же иди́ в магази́н! | "Anya! Go to the shop right now!"
+
+Я засмея́лась и пошла́ в магази́н. | I laughed and went to the shop.
+Магази́н был ря́дом с до́мом. | The shop was next to the building.
+Я купи́ла хлеб, сыр, молоко́ и ры́бу для Ба́рсика. | I bought bread, cheese, milk, and fish for Barsik.
+---
+? Отку́да А́ня? | Where is Anya from?
++ Из Каза́ни.
+- Из Москвы́.
+- Из Петербу́рга.
+? Ско́лько ко́мнат в кварти́ре? | How many rooms are there in the flat?
++ Одна́.
+- Две.
+- Три.
+? Что Ба́рсик де́лал на окне́? | What was Barsik doing on the windowsill?
++ Смотре́л на птиц.
+- Спал.
+- Ел ры́бу.
+? Что А́ня купи́ла для Ба́рсика? | What did Anya buy for Barsik?
++ Ры́бу.
+- Молоко́.
+- Сыр.

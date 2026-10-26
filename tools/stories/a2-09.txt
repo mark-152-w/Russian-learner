@@ -1,0 +1,41 @@
+id: st-a2-09
+kind: story
+level: A2
+series: anya
+chapter: 9
+title: Потеря́лся | Lost
+characters: А́ня, Ми́ша, Оле́г
+cliffhanger: Misha's week is nearly over, and he has one last wish.
+---
+Я бы́стро пошла́ к вы́ходу. | I walked quickly to the exit.
+Там стоя́л охра́нник. | A security guard was standing there.
+— Вы не ви́дели ма́льчика? Ему́ двена́дцать лет, у него́ си́няя ку́ртка. | "Have you seen a boy? He's twelve, he's got a blue jacket."
+— Нет, не ви́дел, — отве́тил он. — Позвони́те в поли́цию. | "No, I haven't," he answered. "Ring the police."
+
+Я позвони́ла Оле́гу. | I rang Oleg.
+— Не волну́йся, — сказа́л он. — Я сейча́с прие́ду. | "Don't worry," he said. "I'll come right away."
+Мы иска́ли Ми́шу вме́сте три́дцать мину́т. | We looked for Misha together for thirty minutes.
+Я уже́ хоте́ла пла́кать. | I was ready to cry.
+
+И вдруг Оле́г засмея́лся: | And suddenly Oleg laughed:
+— Смотри́! | "Look!"
+Ми́ша сиде́л у медве́дей и рисова́л их в тетра́ди. | Misha was sitting by the bears, drawing them in an exercise book.
+Он совсе́м забы́л про вре́мя. | He'd completely forgotten about the time.
+— Ми́ша! Почему́ ты не отвеча́л на звонки́? | "Misha! Why weren't you answering?"
+— У меня́ сел телефо́н, — сказа́л он. — А что случи́лось? | "My phone died," he said. "What happened?"
+
+Я ничего́ не сказа́ла. | I didn't say anything.
+Я про́сто обняла́ его́ о́чень кре́пко. | I just hugged him really tightly.
+---
+? Кому́ позвони́ла А́ня? | Whom did Anya ring?
++ Оле́гу.
+- Ма́ме.
+- Ни́не.
+? Где был Ми́ша? | Where was Misha?
++ У медве́дей.
+- У вы́хода.
+- В кафе́.
+? Почему́ Ми́ша не отвеча́л? | Why wasn't Misha answering?
++ У него́ сел телефо́н.
+- Он спал.
+- Он был в метро́.

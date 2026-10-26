@@ -1,0 +1,40 @@
+id: st-b1-08
+kind: story
+level: B1
+series: anya2
+chapter: 8
+title: Разгово́р с де́душкой | A talk with Grandpa
+characters: Оле́г, Ю́рий
+cliffhanger: Yuri asks Oleg a question that changes everything.
+---
+Ве́чером Оле́г позвони́л де́душке. | In the evening Oleg rang his grandfather.
+Он не знал, как нача́ть разгово́р. | He didn't know how to start the conversation.
+— Де́душка, ты по́мнишь де́вушку по и́мени Ни́на? Из дере́вни под Москво́й? | "Grandpa, do you remember a girl called Nina? From a village outside Moscow?"
+В тру́бке до́лго молча́ли. | There was a long silence on the line.
+
+— Отку́да ты зна́ешь э́то и́мя? — наконе́ц спроси́л де́душка. | "How do you know that name?" his grandfather asked at last.
+Оле́г рассказа́л ему́ всё: про да́чу, про сунду́к, про пи́сьма и про конве́рт, кото́рый никто́ не откры́л. | Oleg told him everything: about the dacha, the chest, the letters and the unopened envelope.
+Де́душка слу́шал и не перебива́л. | His grandfather listened without interrupting.
+
+— Зна́чит, она́ не получи́ла моё письмо́, — сказа́л он ти́хо. | "So she didn't get my letter," he said quietly.
+— Я ждал её отве́та всю о́сень. | "I waited for her answer all autumn."
+— Пото́м я реши́л, что она́ меня́ разлюби́ла. | "Then I decided she had stopped loving me."
+— Че́рез год я познако́мился с твое́й ба́бушкой. | "A year later I met your grandmother."
+— Мы бы́ли сча́стливы, Оле́г. Я ни о чём не жале́ю. | "We were happy, Oleg. I don't regret anything."
+
+— А Ни́на? — спроси́л Оле́г. — Она́ хоро́шая, де́душка. Она́ мне как ба́бушка. | "And Nina?" asked Oleg. "She's lovely, Grandpa. She's like a grandmother to me."
+Де́душка вздохну́л. | His grandfather sighed.
+— Скажи́ мне то́лько одно́: она́ хо́чет меня́ уви́деть? | "Just tell me one thing: does she want to see me?"
+---
+? Кому́ позвони́л Оле́г? | Whom did Oleg ring?
++ Де́душке.
+- Ни́не.
+- Ка́те.
+? Что поду́мал Ю́рий, когда́ не получи́л отве́та? | What did Yuri think when he got no answer?
++ Что Ни́на его́ разлюби́ла.
+- Что Ни́на заболе́ла.
+- Что пи́сьма потеря́лись.
+? Что Ю́рий спроси́л в конце́? | What did Yuri ask at the end?
++ Хо́чет ли Ни́на его́ уви́деть.
+- Где живёт Ни́на.
+- Когда́ Оле́г прие́дет домо́й.
