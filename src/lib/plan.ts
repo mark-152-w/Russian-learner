@@ -50,6 +50,7 @@ const FUN = [
   { title: 'Aspect: process or result?', detail: 'Real contexts, a one-line reason and a timeline.', to: '/trainer/aspect/mixed', kind: 'trainer-aspect' },
   { title: 'Verbs of motion', detail: 'идти́ or ходи́ть? пришёл or ушёл?', to: '/trainer/motion/mixed', kind: 'trainer-motion' },
   { title: 'Case arcade', detail: 'Pick the right form before the noun lands.', to: '/arcade', kind: 'arcade', feature: 'arcade' },
+  { title: 'Speed match', detail: 'Five words, five meanings, one minute.', to: '/speed', kind: 'speed', feature: 'speed' },
   { title: "Today's crossword", detail: 'Every answer is an inflected form.', to: '/crossword/daily', kind: 'crossword', feature: 'crossword' },
 ]
 

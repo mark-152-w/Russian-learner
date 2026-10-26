@@ -12,6 +12,8 @@ import { gloss } from '../engine/generators'
 import { SessionRunner } from '../components/SessionRunner'
 import { Md, Ru } from '../components/Md'
 import { Bar, Button, Card, Icon } from '../components/ui'
+import { BossArt } from '../components/BossArt'
+import { useBossRecords } from '../lib/bosses'
 
 const LEVEL_ORDER = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2']
 
@@ -84,6 +86,7 @@ export function UnitPage() {
   const [queued, setQueued] = useState(false)
   const progress = useCourseProgress()
   const placement = usePlacement()
+  const bosses = useBossRecords()
   useEffect(() => {
     void loadUnits().then(async (us) => {
       const u = us.find((x) => x.id === id) ?? null
@@ -121,6 +124,19 @@ export function UnitPage() {
         </div>
         <p className="mt-2 text-xs text-ink-soft">Score {Math.round(PASS_MARK * 100)}% or more in the checkpoint to complete the unit.</p>
       </Card>
+
+      {unit.boss && (
+        <Link to={`/boss/${unit.id}`} className="block">
+          <Card className="flex items-center gap-3 transition hover:border-red">
+            <BossArt art={unit.boss.art} defeated={!!bosses[unit.id]?.wins} className="h-16 w-16 shrink-0" />
+            <span className="min-w-0 flex-1">
+              <span className="block text-xs font-bold text-red">Unit boss · {unit.boss.hp} HP</span>
+              <Ru className="font-serif text-lg">{unit.boss.name.ru ?? ''}</Ru>
+              <span className="block text-sm text-ink-soft">{bosses[unit.id]?.wins ? `Defeated ${bosses[unit.id]!.wins}×. Fight again?` : 'Beat it with what this unit teaches.'}</span>
+            </span>
+          </Card>
+        </Link>
+      )}
 
       {grammar.map((g) => (
         <Card key={g.id}>

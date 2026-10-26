@@ -98,6 +98,7 @@ export const ACHIEVEMENTS: AchievementDef[] = [
   def('crossword-10', 'Разга́дчик', 'Puzzle solver', 'Solve 10 crosswords.', 'crosswords', 10, { feature: 'crossword', xp: 150 }),
   def('arcade-500', 'Ме́ткость', 'Sharpshooter', 'Score 500 in the case arcade.', 'arcadeBest', 500, { feature: 'arcade', xp: 100 }),
   def('arcade-2000', 'Чемпио́н', 'Champion', 'Score 2,000 in the case arcade.', 'arcadeBest', 2000, { feature: 'arcade', xp: 300 }),
+  def('speed-25', 'Скорогово́рка', 'Tongue twister', 'Match 25 pairs in one speed round.', 'speedBest', 25, { feature: 'speed', xp: 100 }),
   def('adventure-1', 'Сы́щик', 'Sleuth', 'Finish the first chapter of «Де́ло».', 'adventureChapters', 1, { feature: 'adventure' }),
   def('set-complete', 'Коллекционе́р', 'Collector', 'Complete a card set.', 'cardSets', 1, { feature: 'cards', xp: 200 }),
 ]

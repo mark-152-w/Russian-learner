@@ -29,11 +29,15 @@ interface Props {
   onFinish?: (end: SessionEnd) => void | Promise<void>
   /** Shown above the summary (e.g. "Checkpoint passed"). */
   summaryNote?: (end: SessionEnd) => ReactNode
+  /** Shown above the exercise card (e.g. a boss and its HP). */
+  hud?: ReactNode
+  /** Called after each answer; return true to end the session once its feedback is dismissed. */
+  onAnswered?: (verdict: Verdict, effects: AnswerEffects) => boolean | void
 }
 
 const FORM_TYPES = new Set(['transform', 'cloze', 'choice'])
 
-export function SessionRunner({ items, lexemes, kind, onDone, onAgain, recallFor, onGraded, onFinish, summaryNote }: Props) {
+export function SessionRunner({ items, lexemes, kind, onDone, onAgain, recallFor, onGraded, onFinish, summaryNote, hud, onAnswered }: Props) {
   const session = useRef<RewardSession>(null as unknown as RewardSession)
   session.current ??= new RewardSession(kind, Date.now())
   const [queue, setQueue] = useState(items)
@@ -46,6 +50,7 @@ export function SessionRunner({ items, lexemes, kind, onDone, onAgain, recallFor
   const [xp, setXp] = useState(0)
   const shownAt = useRef(Date.now())
   const requeued = useRef(new Set<string>())
+  const stop = useRef(false)
   const cardRef = useRef<HTMLDivElement>(null)
   const juice = useJuice()
   const item = queue[idx]!
@@ -78,6 +83,7 @@ export function SessionRunner({ items, lexemes, kind, onDone, onAgain, recallFor
     }
     setFx(e)
     setXp(session.current.xp)
+    if (onAnswered?.(v, e)) stop.current = true
     if (e.comboUp) {
       sound.comboUp(e.multiplier)
       haptic.combo()
@@ -107,7 +113,7 @@ export function SessionRunner({ items, lexemes, kind, onDone, onAgain, recallFor
   }, [onDone, onFinish])
 
   const next = useCallback(() => {
-    if (idx + 1 >= queue.length) return void finish()
+    if (stop.current || idx + 1 >= queue.length) return void finish()
     setIdx(idx + 1)
     setVerdict(null)
     setFx(null)
@@ -155,6 +161,7 @@ export function SessionRunner({ items, lexemes, kind, onDone, onAgain, recallFor
         {golden && <span className="anim-pop rounded-full bg-gold px-3 py-1 text-xs font-bold text-paper">Golden question · ×5 XP</span>}
       </div>
 
+      {hud}
       <div ref={cardRef} className={`relative rounded-2xl border-2 p-5 ${golden ? 'golden-card' : 'border-line bg-paper-2'}`}>
         {fx && <XpFloat key={idx} amount={fx.xp} golden={golden} />}
         <ExerciseView key={`${idx}:${item.id}`} item={item} verdict={verdict} onSubmit={submit} />

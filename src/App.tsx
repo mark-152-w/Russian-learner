@@ -40,6 +40,8 @@ const Games = lazy(() => import('./pages/Games'))
 const Arcade = lazy(() => import('./pages/Arcade'))
 const CrosswordHub = lazy(() => import('./pages/Crossword').then((m) => ({ default: m.CrosswordHub })))
 const CrosswordGame = lazy(() => import('./pages/Crossword').then((m) => ({ default: m.CrosswordGame })))
+const Speed = lazy(() => import('./pages/Speed'))
+const Boss = lazy(() => import('./pages/Boss'))
 
 const NAV = [
   { to: '/', label: 'Home', icon: 'home' },
@@ -51,7 +53,7 @@ const NAV = [
 ]
 const IN_SESSION = ['/practice', '/review', '/drill', '/lesson', '/placement', '/listen/']
 /** Full-screen sessions hide the navigation (a trainer's run page is /trainer/:id/:mode). */
-const inSessionPath = (p: string) => IN_SESSION.some((x) => p.startsWith(x)) || /^\/trainer\/[^/]+\/[^/]+|\/quiz$|^\/keyboard\/\d|^\/arcade|^\/crossword\/./.test(p)
+const inSessionPath = (p: string) => IN_SESSION.some((x) => p.startsWith(x)) || /^\/trainer\/[^/]+\/[^/]+|\/quiz$|^\/keyboard\/\d|^\/arcade|^\/crossword\/.|^\/speed|^\/boss\//.test(p)
 
 /** Applies theme, skin, motion and audio preferences to the document. */
 function Preferences() {
@@ -174,6 +176,8 @@ export default function App() {
               <Route path="/arcade" element={<Arcade />} />
               <Route path="/crossword" element={<CrosswordHub />} />
               <Route path="/crossword/:topic" element={<CrosswordGame />} />
+              <Route path="/speed" element={<Speed />} />
+              <Route path="/boss/:id" element={<Boss />} />
               <Route path="/grammar" element={<GrammarIndex />} />
               <Route path="/grammar/:id" element={<GrammarArticlePage />} />
             </Routes>
