@@ -1,0 +1,2633 @@
+{
+ "$schema": "../../../../schemas/story.schema.json",
+ "id": "nf-c1-01",
+ "kind": "nonfiction",
+ "level": "C1",
+ "title": {
+  "ru": "Байка́л",
+  "en": "Lake Baikal"
+ },
+ "sentences": [
+  {
+   "para": true,
+   "en": "Baikal is called the pearl of Siberia, and this is that rare case where a grand comparison is no exaggeration.",
+   "tokens": [
+    {
+     "t": "Байка́л",
+     "lemma": "Байка́л",
+     "g": {
+      "pos": "name",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "называ́ют",
+     "lex": "v:называть",
+     "lemma": "называ́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "pl"
+     }
+    },
+    {
+     "t": "жемчу́жиной",
+     "lex": "n:жемчужина",
+     "lemma": "жемчу́жина",
+     "g": {
+      "pos": "noun",
+      "case": "ins",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": "Сиби́ри",
+     "sp": false,
+     "lemma": "Сиби́рь",
+     "g": {
+      "pos": "name",
+      "case": "gen",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "и",
+     "lex": "o:и",
+     "lemma": "и",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "э́то",
+     "lex": "o:это",
+     "lemma": "э́то",
+     "g": {
+      "pos": "pron"
+     }
+    },
+    {
+     "t": "тот",
+     "lex": "a:тот",
+     "lemma": "тот",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "ре́дкий",
+     "lex": "a:редкий",
+     "lemma": "ре́дкий",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "слу́чай",
+     "sp": false,
+     "lex": "n:случай",
+     "lemma": "слу́чай",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "когда́",
+     "lex": "o:когда",
+     "lemma": "когда́",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "гро́мкое",
+     "lex": "a:громкий",
+     "lemma": "гро́мкий",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "n"
+     }
+    },
+    {
+     "t": "сравне́ние",
+     "lex": "n:сравнение",
+     "lemma": "сравне́ние",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "не",
+     "lex": "o:не",
+     "lemma": "не",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "преувели́чивает",
+     "sp": false,
+     "lex": "v:преувеличивать",
+     "lemma": "преувели́чивать",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "It's the deepest lake on the planet: in places its depth exceeds one and a half kilometres.",
+   "tokens": [
+    {
+     "t": "Э́то",
+     "lex": "o:это",
+     "lemma": "э́то",
+     "g": {
+      "pos": "pron"
+     }
+    },
+    {
+     "t": "са́мое",
+     "lex": "a:самый",
+     "lemma": "са́мый",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "n"
+     }
+    },
+    {
+     "t": "глубо́кое",
+     "lex": "a:глубокий",
+     "lemma": "глубо́кий",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "n"
+     }
+    },
+    {
+     "t": "о́зеро",
+     "lex": "n:озеро",
+     "lemma": "о́зеро",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "на",
+     "lex": "o:на",
+     "lemma": "на",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "плане́те",
+     "sp": false,
+     "lex": "n:планета",
+     "lemma": "плане́та",
+     "g": {
+      "pos": "noun",
+      "case": "prep",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ":"
+    },
+    {
+     "t": "в",
+     "lex": "o:в",
+     "lemma": "в",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "не́которых",
+     "lex": "a:некоторый",
+     "lemma": "не́который",
+     "g": {
+      "pos": "adj",
+      "case": "prep",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "места́х",
+     "lex": "n:место",
+     "lemma": "ме́сто",
+     "g": {
+      "pos": "noun",
+      "case": "prep",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "его́",
+     "lex": "o:он",
+     "lemma": "он",
+     "g": {
+      "pos": "pron",
+      "case": "acc"
+     }
+    },
+    {
+     "t": "глубина́",
+     "lex": "n:глубина",
+     "lemma": "глубина́",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "превыша́ет",
+     "lex": "v:превышать",
+     "lemma": "превыша́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": "полтора́",
+     "lex": "o:полтора",
+     "lemma": "полтора́",
+     "g": {
+      "pos": "num"
+     }
+    },
+    {
+     "t": "киломе́тра",
+     "sp": false,
+     "lex": "n:километр",
+     "lemma": "киломе́тр",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "Baikal holds a fifth of all the fresh water on Earth.",
+   "tokens": [
+    {
+     "t": "В",
+     "lex": "o:в",
+     "lemma": "в",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "Байка́ле",
+     "lemma": "Байка́л",
+     "g": {
+      "pos": "name",
+      "case": "prep",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "соде́ржится",
+     "lex": "v:содержаться",
+     "lemma": "содержа́ться",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "sg"
+     }
+    },
+    {
+     "t": "пя́тая",
+     "lex": "a:пятый",
+     "lemma": "пя́тый",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "часть",
+     "lex": "n:часть",
+     "lemma": "часть",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "всей",
+     "lex": "a:весь",
+     "lemma": "весь",
+     "g": {
+      "pos": "adj",
+      "case": "gen",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "пре́сной",
+     "lex": "a:пресный",
+     "lemma": "пре́сный",
+     "g": {
+      "pos": "adj",
+      "case": "gen",
+      "number": "sg",
+      "gender": "f"
+     },
+     "rare": true
+    },
+    {
+     "t": "воды́",
+     "lex": "n:вода",
+     "lemma": "вода́",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "Земли́",
+     "sp": false,
+     "lex": "n:земля",
+     "lemma": "земля́",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "para": true,
+   "en": "Scientists believe the lake is more than twenty million years old.",
+   "tokens": [
+    {
+     "t": "Учёные",
+     "lex": "a:учёный",
+     "lemma": "учёный",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "pl"
+     },
+     "rare": true
+    },
+    {
+     "t": "счита́ют",
+     "sp": false,
+     "lex": "v:считать",
+     "lemma": "счита́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "pl"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "что",
+     "lex": "o:что",
+     "lemma": "что",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "о́зеру",
+     "lex": "n:озеро",
+     "lemma": "о́зеро",
+     "g": {
+      "pos": "noun",
+      "case": "dat",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "бо́лее",
+     "lex": "o:более",
+     "lemma": "бо́лее",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "двадцати́",
+     "lex": "o:двадцать",
+     "lemma": "два́дцать",
+     "g": {
+      "pos": "num",
+      "case": "gen"
+     }
+    },
+    {
+     "t": "миллио́нов",
+     "lex": "n:миллион",
+     "lemma": "миллио́н",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "лет",
+     "sp": false,
+     "lex": "n:год",
+     "lemma": "год",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "pl"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "Over that time a unique world has formed here: most of Baikal's animals and plants are found nowhere else.",
+   "tokens": [
+    {
+     "t": "За",
+     "lex": "o:за",
+     "lemma": "за",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "э́то",
+     "lex": "a:этот",
+     "lemma": "э́тот",
+     "g": {
+      "pos": "adj",
+      "case": "acc",
+      "number": "sg",
+      "gender": "n"
+     }
+    },
+    {
+     "t": "вре́мя",
+     "lex": "n:время",
+     "lemma": "вре́мя",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "здесь",
+     "lex": "o:здесь",
+     "lemma": "здесь",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "сложи́лся",
+     "lex": "v:сложиться",
+     "lemma": "сложи́ться",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "уника́льный",
+     "lex": "a:уникальный",
+     "lemma": "уника́льный",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "мир",
+     "sp": false,
+     "lex": "n:мир",
+     "lemma": "мир",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ":"
+    },
+    {
+     "t": "бо́льшая",
+     "lex": "a:больший",
+     "lemma": "бо́льший",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "часть",
+     "lex": "n:часть",
+     "lemma": "часть",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "живо́тных",
+     "lex": "n:животное",
+     "lemma": "живо́тное",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "и",
+     "lex": "o:и",
+     "lemma": "и",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "расте́ний",
+     "lex": "n:растение",
+     "lemma": "расте́ние",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "Байка́ла",
+     "lemma": "Байка́л",
+     "g": {
+      "pos": "name",
+      "case": "gen",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "не",
+     "lex": "o:не",
+     "lemma": "не",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "встреча́ется",
+     "lex": "v:встречаться",
+     "lemma": "встреча́ться",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "sg"
+     }
+    },
+    {
+     "t": "нигде́",
+     "lex": "o:нигде",
+     "lemma": "нигде́",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "бо́льше",
+     "sp": false,
+     "lex": "o:больше",
+     "lemma": "бо́льше",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "The most famous of them is a freshwater seal, the nerpa.",
+   "tokens": [
+    {
+     "t": "Са́мый",
+     "lex": "a:самый",
+     "lemma": "са́мый",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "изве́стный",
+     "lex": "a:известный",
+     "lemma": "изве́стный",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "из",
+     "lex": "o:из",
+     "lemma": "из",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "них",
+     "lex": "o:они",
+     "lemma": "они́",
+     "g": {
+      "pos": "pron",
+      "case": "gen"
+     }
+    },
+    {
+     "t": "—"
+    },
+    {
+     "t": "пресново́дный",
+     "lex": "a:пресноводный",
+     "lemma": "пресново́дный",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "m"
+     },
+     "rare": true
+    },
+    {
+     "t": "тюле́нь",
+     "lex": "n:тюлень",
+     "lemma": "тюле́нь",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": "—"
+    },
+    {
+     "t": "не́рпа",
+     "sp": false,
+     "lex": "n:нерпа",
+     "lemma": "не́рпа",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "How it got into a lake thousands of kilometres from the ocean remains a mystery to this day.",
+   "tokens": [
+    {
+     "t": "Как",
+     "lemma": "как",
+     "g": {
+      "pos": "adv"
+     },
+     "gloss": "how; as, like"
+    },
+    {
+     "t": "она́",
+     "lex": "o:она",
+     "lemma": "она́",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "попа́ла",
+     "lex": "v:попасть",
+     "lemma": "попа́сть",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "в",
+     "lex": "o:в",
+     "lemma": "в",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "о́зеро",
+     "sp": false,
+     "lex": "n:озеро",
+     "lemma": "о́зеро",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "кото́рое",
+     "lex": "a:который",
+     "lemma": "кото́рый",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "n"
+     }
+    },
+    {
+     "t": "нахо́дится",
+     "lex": "v:находиться",
+     "lemma": "находи́ться",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "sg"
+     }
+    },
+    {
+     "t": "за",
+     "lex": "o:за",
+     "lemma": "за",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "ты́сячи",
+     "lex": "n:тысяча",
+     "lemma": "ты́сяча",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "киломе́тров",
+     "lex": "n:километр",
+     "lemma": "киломе́тр",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "от",
+     "lex": "o:от",
+     "lemma": "от",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "океа́на",
+     "sp": false,
+     "lex": "n:океан",
+     "lemma": "океа́н",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "до",
+     "lex": "o:до",
+     "lemma": "до",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "сих",
+     "lex": "a:сей",
+     "lemma": "сей",
+     "g": {
+      "pos": "adj",
+      "case": "gen",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "пор",
+     "lex": "n:пора",
+     "lemma": "пора́",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "остаётся",
+     "lex": "v:оставаться",
+     "lemma": "остава́ться",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "sg"
+     }
+    },
+    {
+     "t": "зага́дкой",
+     "sp": false,
+     "lex": "n:загадка",
+     "lemma": "зага́дка",
+     "g": {
+      "pos": "noun",
+      "case": "ins",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "para": true,
+   "en": "The water in Baikal is so clear that the bottom is visible at a depth of forty metres.",
+   "tokens": [
+    {
+     "t": "Вода́",
+     "lex": "n:вода",
+     "lemma": "вода́",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "в",
+     "lex": "o:в",
+     "lemma": "в",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "Байка́ле",
+     "lemma": "Байка́л",
+     "g": {
+      "pos": "name",
+      "case": "prep",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "тако́й",
+     "lex": "a:такой",
+     "lemma": "тако́й",
+     "g": {
+      "pos": "adj",
+      "case": "prep",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "чистоты́",
+     "sp": false,
+     "lex": "n:чистота",
+     "lemma": "чистота́",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "что",
+     "lex": "o:что",
+     "lemma": "что",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "дно",
+     "lex": "n:дно",
+     "lemma": "дно",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "ви́дно",
+     "lex": "o:видно",
+     "lemma": "ви́дно",
+     "g": {
+      "pos": "pred"
+     }
+    },
+    {
+     "t": "на",
+     "lex": "o:на",
+     "lemma": "на",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "глубине́",
+     "lex": "n:глубина",
+     "lemma": "глубина́",
+     "g": {
+      "pos": "noun",
+      "case": "prep",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "сорока́",
+     "lex": "o:сорок",
+     "lemma": "со́рок",
+     "g": {
+      "pos": "num",
+      "case": "prep"
+     }
+    },
+    {
+     "t": "ме́тров",
+     "sp": false,
+     "lex": "n:метр",
+     "lemma": "метр",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "pl"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "In winter the lake is covered with ice up to a metre thick, and the ice becomes as transparent as glass.",
+   "tokens": [
+    {
+     "t": "Зимо́й",
+     "lex": "n:зима",
+     "lemma": "зима́",
+     "g": {
+      "pos": "noun",
+      "case": "ins",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "о́зеро",
+     "lex": "n:озеро",
+     "lemma": "о́зеро",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "покрыва́ется",
+     "lex": "v:покрываться",
+     "lemma": "покрыва́ться",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": "льдом",
+     "lex": "n:лёд",
+     "lemma": "лёд",
+     "g": {
+      "pos": "noun",
+      "case": "ins",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "толщино́й",
+     "lex": "n:толщина",
+     "lemma": "толщина́",
+     "g": {
+      "pos": "noun",
+      "case": "ins",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": "до",
+     "lex": "o:до",
+     "lemma": "до",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "ме́тра",
+     "sp": false,
+     "lex": "n:метр",
+     "lemma": "метр",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "и",
+     "lex": "o:и",
+     "lemma": "и",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "лёд",
+     "lex": "n:лёд",
+     "lemma": "лёд",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "стано́вится",
+     "lex": "v:становиться",
+     "lemma": "станови́ться",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "sg"
+     }
+    },
+    {
+     "t": "прозра́чным",
+     "sp": false,
+     "lex": "a:прозрачный",
+     "lemma": "прозра́чный",
+     "g": {
+      "pos": "adj",
+      "case": "ins",
+      "number": "sg",
+      "gender": "m"
+     },
+     "rare": true
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "как",
+     "lemma": "как",
+     "g": {
+      "pos": "conj"
+     },
+     "gloss": "how; as, like"
+    },
+    {
+     "t": "стекло́",
+     "sp": false,
+     "lex": "n:стекло",
+     "lemma": "стекло́",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "Cars drive across it, and tourists come from all over the world to walk above the dark depths.",
+   "tokens": [
+    {
+     "t": "По",
+     "lex": "o:по",
+     "lemma": "по",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "нему́",
+     "lex": "o:он",
+     "lemma": "он",
+     "g": {
+      "pos": "pron",
+      "case": "dat"
+     }
+    },
+    {
+     "t": "е́здят",
+     "lex": "v:ездить",
+     "lemma": "е́здить",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "pl"
+     }
+    },
+    {
+     "t": "маши́ны",
+     "sp": false,
+     "lex": "n:машина",
+     "lemma": "маши́на",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "pl"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "а",
+     "lex": "o:а",
+     "lemma": "а",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "тури́сты",
+     "lex": "n:турист",
+     "lemma": "тури́ст",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "приезжа́ют",
+     "lex": "v:приезжать",
+     "lemma": "приезжа́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "pl"
+     }
+    },
+    {
+     "t": "со",
+     "lex": "o:с",
+     "lemma": "с",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "всего́",
+     "lex": "a:весь",
+     "lemma": "весь",
+     "g": {
+      "pos": "adj",
+      "case": "gen",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "ми́ра",
+     "sp": false,
+     "lex": "n:мир",
+     "lemma": "мир",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "что́бы",
+     "lex": "o:чтобы",
+     "lemma": "что́бы",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "пройти́сь",
+     "lex": "v:пройтись",
+     "lemma": "пройти́сь",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf"
+     }
+    },
+    {
+     "t": "над",
+     "lex": "o:над",
+     "lemma": "над",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "тёмной",
+     "lex": "a:тёмный",
+     "lemma": "тёмный",
+     "g": {
+      "pos": "adj",
+      "case": "ins",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "глубино́й",
+     "sp": false,
+     "lex": "n:глубина",
+     "lemma": "глубина́",
+     "g": {
+      "pos": "noun",
+      "case": "ins",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "para": true,
+   "en": "Local people treat the lake with almost religious respect.",
+   "tokens": [
+    {
+     "t": "Ме́стные",
+     "lex": "a:местный",
+     "lemma": "ме́стный",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "жи́тели",
+     "lex": "n:житель",
+     "lemma": "жи́тель",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "отно́сятся",
+     "lex": "v:относиться",
+     "lemma": "относи́ться",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "pl"
+     }
+    },
+    {
+     "t": "к",
+     "lex": "o:к",
+     "lemma": "к",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "о́зеру",
+     "lex": "n:озеро",
+     "lemma": "о́зеро",
+     "g": {
+      "pos": "noun",
+      "case": "dat",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "с",
+     "lex": "o:с",
+     "lemma": "с",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "почти́",
+     "lex": "o:почти",
+     "lemma": "почти́",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "религио́зным",
+     "lex": "a:религиозный",
+     "lemma": "религио́зный",
+     "g": {
+      "pos": "adj",
+      "case": "ins",
+      "number": "sg",
+      "gender": "n"
+     }
+    },
+    {
+     "t": "уваже́нием",
+     "sp": false,
+     "lex": "n:уважение",
+     "lemma": "уваже́ние",
+     "g": {
+      "pos": "noun",
+      "case": "ins",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "They call it not a lake but a sea, and many legends have been made about it.",
+   "tokens": [
+    {
+     "t": "Его́",
+     "lex": "o:он",
+     "lemma": "он",
+     "g": {
+      "pos": "pron",
+      "case": "acc"
+     }
+    },
+    {
+     "t": "называ́ют",
+     "lex": "v:называть",
+     "lemma": "называ́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "pl"
+     }
+    },
+    {
+     "t": "не",
+     "lex": "o:не",
+     "lemma": "не",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "о́зером",
+     "sp": false,
+     "lex": "n:озеро",
+     "lemma": "о́зеро",
+     "g": {
+      "pos": "noun",
+      "case": "ins",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "а",
+     "lex": "o:а",
+     "lemma": "а",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "мо́рем",
+     "sp": false,
+     "lex": "n:море",
+     "lemma": "мо́ре",
+     "g": {
+      "pos": "noun",
+      "case": "ins",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "и",
+     "lex": "o:и",
+     "lemma": "и",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "о",
+     "lex": "o:о",
+     "lemma": "о",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "нём",
+     "lex": "o:он",
+     "lemma": "он",
+     "g": {
+      "pos": "pron",
+      "case": "prep"
+     }
+    },
+    {
+     "t": "существу́ет",
+     "lex": "v:существовать",
+     "lemma": "существова́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "sg"
+     }
+    },
+    {
+     "t": "мно́жество",
+     "lex": "n:множество",
+     "lemma": "мно́жество",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "леге́нд",
+     "sp": false,
+     "lex": "n:легенда",
+     "lemma": "леге́нда",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "pl"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "One of them tells that old Baikal had many sons, the rivers that flow into the lake, and one daughter, the Angara.",
+   "tokens": [
+    {
+     "t": "Одна́",
+     "lex": "o:один",
+     "lemma": "оди́н",
+     "g": {
+      "pos": "num",
+      "case": "nom",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "из",
+     "lex": "o:из",
+     "lemma": "из",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "них",
+     "lex": "o:они",
+     "lemma": "они́",
+     "g": {
+      "pos": "pron",
+      "case": "gen"
+     }
+    },
+    {
+     "t": "расска́зывает",
+     "sp": false,
+     "lex": "v:рассказывать",
+     "lemma": "расска́зывать",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "sg"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "что",
+     "lex": "o:что",
+     "lemma": "что",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "у",
+     "lex": "o:у",
+     "lemma": "у",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "ста́рого",
+     "lex": "a:старый",
+     "lemma": "ста́рый",
+     "g": {
+      "pos": "adj",
+      "case": "gen",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "Байка́ла",
+     "lemma": "Байка́л",
+     "g": {
+      "pos": "name",
+      "case": "gen",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "бы́ло",
+     "lex": "v:быть",
+     "lemma": "быть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "n"
+     }
+    },
+    {
+     "t": "мно́го",
+     "lex": "o:много",
+     "lemma": "мно́го",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "сынове́й",
+     "lex": "n:сын",
+     "lemma": "сын",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "—"
+    },
+    {
+     "t": "рек",
+     "sp": false,
+     "lex": "n:река",
+     "lemma": "река́",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "pl"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "кото́рые",
+     "lex": "a:который",
+     "lemma": "кото́рый",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "впада́ют",
+     "lex": "v:впадать",
+     "lemma": "впада́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "pl"
+     },
+     "rare": true
+    },
+    {
+     "t": "в",
+     "lex": "o:в",
+     "lemma": "в",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "о́зеро",
+     "sp": false,
+     "lex": "n:озеро",
+     "lemma": "о́зеро",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "—"
+    },
+    {
+     "t": "и",
+     "lex": "o:и",
+     "lemma": "и",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "одна́",
+     "lex": "o:один",
+     "lemma": "оди́н",
+     "g": {
+      "pos": "num",
+      "case": "nom",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "дочь",
+     "sp": false,
+     "lex": "n:дочь",
+     "lemma": "дочь",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "Ангара́",
+     "sp": false,
+     "lemma": "Ангара́",
+     "g": {
+      "pos": "name",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "The Angara fell in love with the young Yenisei and ran away to him, and her father in his anger threw a huge stone after her.",
+   "tokens": [
+    {
+     "t": "Ангара́",
+     "lemma": "Ангара́",
+     "g": {
+      "pos": "name",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "влюби́лась",
+     "lex": "v:влюбиться",
+     "lemma": "влюби́ться",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "в",
+     "lex": "o:в",
+     "lemma": "в",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "молодо́го",
+     "lex": "a:молодой",
+     "lemma": "молодо́й",
+     "g": {
+      "pos": "adj",
+      "case": "acc",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "Енисе́я",
+     "lemma": "Енисе́й",
+     "g": {
+      "pos": "name",
+      "case": "gen",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "и",
+     "lex": "o:и",
+     "lemma": "и",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "убежа́ла",
+     "lex": "v:убежать",
+     "lemma": "убежа́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "к",
+     "lex": "o:к",
+     "lemma": "к",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "нему́",
+     "sp": false,
+     "lex": "o:он",
+     "lemma": "он",
+     "g": {
+      "pos": "pron",
+      "case": "dat"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "а",
+     "lex": "o:а",
+     "lemma": "а",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "оте́ц",
+     "lex": "n:отец",
+     "lemma": "оте́ц",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "в",
+     "lex": "o:в",
+     "lemma": "в",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "гне́ве",
+     "lex": "n:гнев",
+     "lemma": "гнев",
+     "g": {
+      "pos": "noun",
+      "case": "prep",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "бро́сил",
+     "lex": "v:бросить",
+     "lemma": "бро́сить",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "ей",
+     "lex": "o:она",
+     "lemma": "она́",
+     "g": {
+      "pos": "pron",
+      "case": "dat"
+     }
+    },
+    {
+     "t": "вслед",
+     "lex": "o:вслед",
+     "lemma": "вслед",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "огро́мный",
+     "lex": "a:огромный",
+     "lemma": "огро́мный",
+     "g": {
+      "pos": "adj",
+      "case": "acc",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "ка́мень",
+     "sp": false,
+     "lex": "n:камень",
+     "lemma": "ка́мень",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "That stone still stands at the river's source today.",
+   "tokens": [
+    {
+     "t": "Э́тот",
+     "lex": "a:этот",
+     "lemma": "э́тот",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "ка́мень",
+     "lex": "n:камень",
+     "lemma": "ка́мень",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "и",
+     "lex": "o:и",
+     "lemma": "и",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "сего́дня",
+     "lex": "o:сегодня",
+     "lemma": "сего́дня",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "стои́т",
+     "lex": "v:стоять",
+     "lemma": "стоя́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "sg"
+     }
+    },
+    {
+     "t": "в",
+     "lex": "o:в",
+     "lemma": "в",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "исто́ке",
+     "lex": "n:исток",
+     "lemma": "исто́к",
+     "g": {
+      "pos": "noun",
+      "case": "prep",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": "реки́",
+     "sp": false,
+     "lex": "n:река",
+     "lemma": "река́",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "para": true,
+   "en": "Today Baikal is protected by the state, but it has plenty of problems: pollution, mass tourism, climate change.",
+   "tokens": [
+    {
+     "t": "Сего́дня",
+     "lex": "o:сегодня",
+     "lemma": "сего́дня",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "Байка́л",
+     "lemma": "Байка́л",
+     "g": {
+      "pos": "name",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "охраня́ет",
+     "lex": "v:охранять",
+     "lemma": "охраня́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "sg"
+     }
+    },
+    {
+     "t": "госуда́рство",
+     "sp": false,
+     "lex": "n:государство",
+     "lemma": "госуда́рство",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "но",
+     "lex": "o:но",
+     "lemma": "но",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "пробле́м",
+     "lex": "n:проблема",
+     "lemma": "пробле́ма",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "у",
+     "lex": "o:у",
+     "lemma": "у",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "него́",
+     "lex": "o:он",
+     "lemma": "он",
+     "g": {
+      "pos": "pron",
+      "case": "gen"
+     }
+    },
+    {
+     "t": "хвата́ет",
+     "sp": false,
+     "lex": "v:хватать",
+     "lemma": "хвата́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "sg"
+     }
+    },
+    {
+     "t": ":"
+    },
+    {
+     "t": "загрязне́ние",
+     "sp": false,
+     "lex": "n:загрязнение",
+     "lemma": "загрязне́ние",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "ма́ссовый",
+     "lex": "a:массовый",
+     "lemma": "ма́ссовый",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "тури́зм",
+     "sp": false,
+     "lex": "n:туризм",
+     "lemma": "тури́зм",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "измене́ние",
+     "lex": "n:изменение",
+     "lemma": "измене́ние",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "кли́мата",
+     "sp": false,
+     "lex": "n:климат",
+     "lemma": "кли́мат",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "Whether our grandchildren will see this wonder as we see it depends on how people deal with them.",
+   "tokens": [
+    {
+     "t": "От",
+     "lex": "o:от",
+     "lemma": "от",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "того́",
+     "sp": false,
+     "lex": "a:тот",
+     "lemma": "тот",
+     "g": {
+      "pos": "adj",
+      "case": "gen",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "как",
+     "lemma": "как",
+     "g": {
+      "pos": "conj"
+     },
+     "gloss": "how; as, like"
+    },
+    {
+     "t": "лю́ди",
+     "lex": "n:человек",
+     "lemma": "челове́к",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "спра́вятся",
+     "lex": "v:справиться",
+     "lemma": "спра́виться",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "fut",
+      "person": 3,
+      "number": "pl"
+     }
+    },
+    {
+     "t": "с",
+     "lex": "o:с",
+     "lemma": "с",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "ни́ми",
+     "sp": false,
+     "lex": "o:они",
+     "lemma": "они́",
+     "g": {
+      "pos": "pron",
+      "case": "ins"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "зави́сит",
+     "sp": false,
+     "lex": "v:зависеть",
+     "lemma": "зави́сеть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "sg"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "уви́дят",
+     "lex": "v:увидеть",
+     "lemma": "уви́деть",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "fut",
+      "person": 3,
+      "number": "pl"
+     }
+    },
+    {
+     "t": "ли",
+     "lex": "o:ли",
+     "lemma": "ли",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "на́ши",
+     "lemma": "наш",
+     "g": {
+      "pos": "pron",
+      "case": "nom",
+      "number": "pl"
+     },
+     "gloss": "our, ours"
+    },
+    {
+     "t": "вну́ки",
+     "lex": "n:внук",
+     "lemma": "внук",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "э́то",
+     "lex": "a:этот",
+     "lemma": "э́тот",
+     "g": {
+      "pos": "adj",
+      "case": "acc",
+      "number": "sg",
+      "gender": "n"
+     }
+    },
+    {
+     "t": "чу́до",
+     "lex": "n:чудо",
+     "lemma": "чу́до",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "таки́м",
+     "lex": "a:такой",
+     "lemma": "тако́й",
+     "g": {
+      "pos": "adj",
+      "case": "ins",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "же",
+     "sp": false,
+     "lex": "o:же",
+     "lemma": "же",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "каки́м",
+     "lex": "a:какой",
+     "lemma": "како́й",
+     "g": {
+      "pos": "adj",
+      "case": "ins",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "ви́дим",
+     "lex": "a:видимый",
+     "lemma": "ви́димый",
+     "g": {
+      "pos": "adj",
+      "short": true,
+      "number": "sg",
+      "gender": "m"
+     },
+     "rare": true
+    },
+    {
+     "t": "его́",
+     "lex": "o:он",
+     "lemma": "он",
+     "g": {
+      "pos": "pron",
+      "case": "acc"
+     }
+    },
+    {
+     "t": "мы",
+     "sp": false,
+     "lex": "o:мы",
+     "lemma": "мы",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  }
+ ],
+ "questions": [
+  {
+   "id": "nf-c1-01-q1",
+   "type": "choice",
+   "level": "C1",
+   "tags": [
+    "reading"
+   ],
+   "prompt": {
+    "ru": "Чем Байка́л отлича́ется от други́х озёр?",
+    "en": "How does Baikal differ from other lakes?",
+    "instruction": "Choose the answer"
+   },
+   "accept": [
+    "Он са́мый глубо́кий в ми́ре."
+   ],
+   "distractors": [
+    {
+     "ru": "Он са́мый большо́й по пло́щади.",
+     "error": "reading.detail"
+    },
+    {
+     "ru": "В нём солёная вода́.",
+     "error": "reading.detail"
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "nf-c1-01-q2",
+   "type": "choice",
+   "level": "C1",
+   "tags": [
+    "reading"
+   ],
+   "prompt": {
+    "ru": "Что остаётся зага́дкой?",
+    "en": "What remains a mystery?",
+    "instruction": "Choose the answer"
+   },
+   "accept": [
+    "Как не́рпа попа́ла в о́зеро."
+   ],
+   "distractors": [
+    {
+     "ru": "Ско́лько лет о́зеру.",
+     "error": "reading.detail"
+    },
+    {
+     "ru": "Почему́ вода́ така́я чи́стая.",
+     "error": "reading.detail"
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "nf-c1-01-q3",
+   "type": "choice",
+   "level": "C1",
+   "tags": [
+    "reading"
+   ],
+   "prompt": {
+    "ru": "Кто тако́й Енисе́й в леге́нде?",
+    "en": "Who is the Yenisei in the legend?",
+    "instruction": "Choose the answer"
+   },
+   "accept": [
+    "Молодо́й челове́к, в кото́рого влюби́лась Ангара́."
+   ],
+   "distractors": [
+    {
+     "ru": "Оте́ц Ангары́.",
+     "error": "reading.detail"
+    },
+    {
+     "ru": "Брат Байка́ла.",
+     "error": "reading.detail"
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "nf-c1-01-q4",
+   "type": "choice",
+   "level": "C1",
+   "tags": [
+    "reading"
+   ],
+   "prompt": {
+    "ru": "Каки́е пробле́мы есть у Байка́ла?",
+    "en": "What problems does Baikal have?",
+    "instruction": "Choose the answer"
+   },
+   "accept": [
+    "Загрязне́ние, ма́ссовый тури́зм, измене́ние кли́мата."
+   ],
+   "distractors": [
+    {
+     "ru": "Недоста́ток воды́.",
+     "error": "reading.detail"
+    },
+    {
+     "ru": "Сли́шком холо́дная зима́.",
+     "error": "reading.detail"
+    }
+   ],
+   "source": "handwritten"
+  }
+ ]
+}

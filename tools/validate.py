@@ -31,7 +31,7 @@ from jsonschema import Draft202012Validator
 from referencing import Registry, Resource
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from morph import SLOTS, confirms, dparses  # noqa: E402
+from morph import lemma_keys, SLOTS, confirms, dparses  # noqa: E402
 from rulib import ACUTE, GRAVE, UNSTRESSED_OK, VOWELS, fold, missing_stress_parts, needs_stress, strip_stress, syllables  # noqa: E402,F401
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -309,7 +309,8 @@ def check_token(tok: dict, where: str, rep: Report, lex_ids: set[str]):
             continue
         if g.get("short") and p.tag.POS not in ("ADJS", "PRTS"):
             continue
-        if fold(p.normal_form) != lemma_f and not (p.tag.POS in ("PRTF", "PRTS", "GRND", "COMP") or g.get("pos") == "pron"):
+        if (fold(p.normal_form) != lemma_f and fold(p.normal_form) not in lemma_keys(tok["lemma"], g.get("pos", ""))
+                and not (p.tag.POS in ("PRTF", "PRTS", "GRND", "COMP") or g.get("pos") == "pron")):
             continue
         if want <= p.tag.grammemes:
             return

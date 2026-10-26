@@ -8,7 +8,7 @@ import { loadLexemes, formsOf, type FormVariant } from '../lib/lexicon'
 import { displayStress, fold } from '../lib/ru'
 import { drillableTag } from '../engine/drills'
 import { Md, Ru } from '../components/Md'
-import { Button, Card } from '../components/ui'
+import { Button, Card, Icon } from '../components/ui'
 import type { Lexeme } from '../types/content.gen'
 
 const LEVELS = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2']
@@ -37,6 +37,13 @@ export function GrammarIndex() {
           className="mt-3 w-full rounded-lg border-2 border-line bg-paper px-4 py-3 outline-none focus:border-red"
         />
       </Card>
+      <Link to="/lab" className="flex items-center gap-3 rounded-xl border-2 border-line bg-paper-2 px-5 py-4 transition hover:border-red">
+        <Icon name="table" className="h-7 w-7 text-red" />
+        <span>
+          <span className="block font-bold">Dictionary and declension lab</span>
+          <span className="block text-sm text-ink-soft">Look up any word or form, see every ending, and your accuracy by case.</span>
+        </span>
+      </Link>
       {LEVELS.filter((lv) => shown.some((a) => a.level === lv)).map((lv) => (
         <Card key={lv}>
           <h2 className="font-serif text-xl text-red">{lv}</h2>

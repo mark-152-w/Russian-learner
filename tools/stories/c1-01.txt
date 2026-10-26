@@ -1,0 +1,43 @@
+id: nf-c1-01
+kind: nonfiction
+level: C1
+title: Байка́л | Lake Baikal
+---
+Байка́л называ́ют жемчу́жиной Сиби́ри, и э́то тот ре́дкий слу́чай, когда́ гро́мкое сравне́ние не преувели́чивает. | Baikal is called the pearl of Siberia, and this is that rare case where a grand comparison is no exaggeration.
+Э́то са́мое глубо́кое о́зеро на плане́те: в не́которых места́х его́ глубина́ превыша́ет полтора́ киломе́тра. | It's the deepest lake on the planet: in places its depth exceeds one and a half kilometres.
+В Байка́ле соде́ржится пя́тая часть всей пре́сной воды́ Земли́. | Baikal holds a fifth of all the fresh water on Earth.
+
+Учёные счита́ют, что о́зеру бо́лее двадцати́ миллио́нов лет. | Scientists believe the lake is more than twenty million years old.
+За э́то вре́мя здесь сложи́лся уника́льный мир: бо́льшая часть живо́тных и расте́ний Байка́ла не встреча́ется нигде́ бо́льше. | Over that time a unique world has formed here: most of Baikal's animals and plants are found nowhere else.
+Са́мый изве́стный из них — пресново́дный тюле́нь — не́рпа. | The most famous of them is a freshwater seal, the nerpa.
+Как она́ попа́ла в о́зеро, кото́рое нахо́дится за ты́сячи киломе́тров от океа́на, до сих пор остаётся зага́дкой. | How it got into a lake thousands of kilometres from the ocean remains a mystery to this day.
+
+Вода́ в Байка́ле тако́й чистоты́, что дно ви́дно на глубине́ сорока́ ме́тров. | The water in Baikal is so clear that the bottom is visible at a depth of forty metres.
+Зимо́й о́зеро покрыва́ется льдом толщино́й до ме́тра, и лёд стано́вится прозра́чным, как стекло́. | In winter the lake is covered with ice up to a metre thick, and the ice becomes as transparent as glass.
+По нему́ е́здят маши́ны, а тури́сты приезжа́ют со всего́ ми́ра, что́бы пройти́сь над тёмной глубино́й. | Cars drive across it, and tourists come from all over the world to walk above the dark depths.
+
+Ме́стные жи́тели отно́сятся к о́зеру с почти́ религио́зным уваже́нием. | Local people treat the lake with almost religious respect.
+Его́ называ́ют не о́зером, а мо́рем, и о нём существу́ет мно́жество леге́нд. | They call it not a lake but a sea, and many legends have been made about it.
+Одна́ из них расска́зывает, что у ста́рого Байка́ла бы́ло мно́го сынове́й — рек, кото́рые впада́ют в о́зеро, — и одна́ дочь, Ангара́. | One of them tells that old Baikal had many sons, the rivers that flow into the lake, and one daughter, the Angara.
+Ангара́ влюби́лась в молодо́го Енисе́я и убежа́ла к нему́, а оте́ц в гне́ве бро́сил ей вслед огро́мный ка́мень. | The Angara fell in love with the young Yenisei and ran away to him, and her father in his anger threw a huge stone after her.
+Э́тот ка́мень и сего́дня стои́т в исто́ке реки́. | That stone still stands at the river's source today.
+
+Сего́дня Байка́л охраня́ет госуда́рство, но пробле́м у него́ хвата́ет: загрязне́ние, ма́ссовый тури́зм, измене́ние кли́мата. | Today Baikal is protected by the state, but it has plenty of problems: pollution, mass tourism, climate change.
+От того́, как лю́ди спра́вятся с ни́ми, зави́сит, уви́дят ли на́ши вну́ки э́то чу́до таки́м же, каки́м ви́дим его́ мы. | Whether our grandchildren will see this wonder as we see it depends on how people deal with them.
+---
+? Чем Байка́л отлича́ется от други́х озёр? | How does Baikal differ from other lakes?
++ Он са́мый глубо́кий в ми́ре.
+- Он са́мый большо́й по пло́щади.
+- В нём солёная вода́.
+? Что остаётся зага́дкой? | What remains a mystery?
++ Как не́рпа попа́ла в о́зеро.
+- Ско́лько лет о́зеру.
+- Почему́ вода́ така́я чи́стая.
+? Кто тако́й Енисе́й в леге́нде? | Who is the Yenisei in the legend?
++ Молодо́й челове́к, в кото́рого влюби́лась Ангара́.
+- Оте́ц Ангары́.
+- Брат Байка́ла.
+? Каки́е пробле́мы есть у Байка́ла? | What problems does Baikal have?
++ Загрязне́ние, ма́ссовый тури́зм, измене́ние кли́мата.
+- Недоста́ток воды́.
+- Сли́шком холо́дная зима́.

@@ -1,0 +1,41 @@
+id: nf-b2-02
+kind: nonfiction
+level: B2
+title: Го́род Петра́ | Peter's city
+---
+В ма́е ты́сяча семьсо́т тре́тьего го́да на боло́тистых берега́х Невы́ на́чали стро́ить кре́пость. | In May 1703 work began on a fortress on the marshy banks of the Neva.
+Так начала́сь исто́рия Петербу́рга — го́рода, кото́рый мно́гие называ́ют са́мым европе́йским в Росси́и. | So began the history of St Petersburg, the city many call the most European in Russia.
+
+Царь Пётр Пе́рвый мечта́л о вы́ходе к мо́рю. | Tsar Peter the First dreamed of access to the sea.
+Он мно́го путеше́ствовал по Евро́пе, рабо́тал на ве́рфях в Голла́ндии и А́нглии и ви́дел, как живу́т морски́е держа́вы. | He travelled a lot in Europe, worked in shipyards in Holland and England, and saw how maritime powers lived.
+Ему́ нужна́ была́ но́вая столи́ца — откры́тая и совреме́нная, с вы́ходом к мо́рю. | He needed a new capital: open and modern, with access to the sea.
+
+Стро́ить го́род на боло́тах бы́ло невероя́тно тру́дно. | Building a city on marshes was incredibly hard.
+Ты́сячи рабо́чих со всей страны́ копа́ли кана́лы, осуша́ли зе́млю и вбива́ли в неё деревя́нные сва́и. | Thousands of workers from all over the country dug canals, drained the land and drove wooden piles into it.
+Мно́гие из них поги́бли от боле́зней и хо́лода. | Many of them died of disease and cold.
+Поэ́тому говоря́т, что Петербу́рг стои́т на костя́х. | That's why people say St Petersburg stands on bones.
+
+Пётр пригласи́л в но́вый го́род иностра́нных архите́кторов. | Peter invited foreign architects to the new city.
+Они́ создава́ли прямы́е проспе́кты, ка́менные дворцы́ и пло́щади. | They created straight avenues, stone palaces and squares.
+Царь люби́л свой го́род так си́льно, что приказа́л дворя́нам переезжа́ть туда́ из Москвы́. | The tsar loved his city so much that he ordered the nobility to move there from Moscow.
+В ты́сяча семьсо́т двена́дцатом году́ Петербу́рг стал столи́цей Росси́и и остава́лся е́ю два ве́ка. | In 1712 St Petersburg became the capital of Russia and remained so for two centuries.
+
+Сего́дня ка́ждое ле́то в Петербу́рге наступа́ют бе́лые но́чи: со́лнце почти́ не захо́дит, и лю́ди гуля́ют по на́бережным до утра́. | Today every summer St Petersburg has its white nights: the sun barely sets, and people stroll along the embankments until morning.
+Е́сли бы Пётр уви́дел свой го́род сейча́с, он, наве́рное, был бы дово́лен. | If Peter saw his city now, he would probably be pleased.
+---
+? Когда́ на́чали стро́ить Петербу́рг? | When did they start building St Petersburg?
++ В ты́сяча семьсо́т тре́тьем году́.
+- В ты́сяча восемьсо́т двена́дцатом году́.
+- В ты́сяча семьсо́т двена́дцатом году́.
+? О чём мечта́л Пётр Пе́рвый? | What did Peter the First dream of?
++ О вы́ходе к мо́рю.
+- О но́вом дворце́ в Москве́.
+- О путеше́ствии в Аме́рику.
+? Почему́ говоря́т, что го́род стои́т на костя́х? | Why do people say the city stands on bones?
++ Мно́гие рабо́чие поги́бли во вре́мя стро́йки.
+- Под го́родом нашли́ ста́рое кла́дбище.
+- Там жи́ли ди́кие живо́тные.
+? Ско́лько вре́мени Петербу́рг был столи́цей? | How long was St Petersburg the capital?
++ Два ве́ка.
+- Сто лет.
+- Пятьдеся́т лет.

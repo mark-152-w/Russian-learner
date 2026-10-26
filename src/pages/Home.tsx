@@ -13,7 +13,7 @@ import { dayKey, streakStatus } from '../rewards/streak'
 import { Ru } from '../components/Md'
 import { Bar, Card, CountUp, Icon } from '../components/ui'
 
-const STEP_ICON = { review: 'cards', course: 'path', weak: 'table', fun: 'bolt' } as const
+const STEP_ICON = { review: 'cards', course: 'path', weak: 'table', read: 'book', fun: 'bolt' } as const
 
 /** Today's plan: a short checklist that ticks itself off as sessions finish. */
 function DailyPlan() {

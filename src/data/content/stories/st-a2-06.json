@@ -833,7 +833,7 @@
      "lemma": "метро́",
      "g": {
       "pos": "noun",
-      "case": "gen",
+      "case": "acc",
       "number": "sg"
      },
      "rare": true
@@ -853,7 +853,7 @@
      "lemma": "зоопа́рк",
      "g": {
       "pos": "noun",
-      "case": "nom",
+      "case": "acc",
       "number": "sg"
      },
      "rare": true

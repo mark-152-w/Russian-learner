@@ -1,0 +1,941 @@
+{
+ "$schema": "../../../../schemas/story.schema.json",
+ "id": "dl-b1-05",
+ "kind": "dialogue",
+ "level": "B1",
+ "title": {
+  "ru": "Собесе́дование",
+  "en": "The job interview"
+ },
+ "sentences": [
+  {
+   "para": true,
+   "speaker": "Дире́ктор",
+   "en": "Director: Please sit down. Tell me a little about yourself.",
+   "tokens": [
+    {
+     "t": "Сади́тесь",
+     "sp": false,
+     "lex": "v:садиться",
+     "lemma": "сади́ться",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "mood": "imp",
+      "number": "pl"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "пожа́луйста",
+     "sp": false,
+     "lex": "o:пожалуйста",
+     "lemma": "пожа́луйста",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "."
+    },
+    {
+     "t": "Расскажи́те",
+     "lex": "v:рассказать",
+     "lemma": "рассказа́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "mood": "imp",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "немно́го",
+     "lex": "o:немного",
+     "lemma": "немно́го",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "о",
+     "lex": "o:о",
+     "lemma": "о",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "себе́",
+     "sp": false,
+     "lex": "o:себя",
+     "lemma": "себя́",
+     "g": {
+      "pos": "pron",
+      "case": "prep"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Ка́тя",
+   "en": "Katya: My name is Katya, I'm in my final year in the journalism faculty.",
+   "tokens": [
+    {
+     "t": "Меня́",
+     "lex": "o:я",
+     "lemma": "я",
+     "g": {
+      "pos": "pron",
+      "case": "acc"
+     }
+    },
+    {
+     "t": "зову́т",
+     "lex": "v:звать",
+     "lemma": "звать",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "pl"
+     }
+    },
+    {
+     "t": "Ка́тя",
+     "sp": false,
+     "lemma": "Ка́тя",
+     "g": {
+      "pos": "name",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "я",
+     "lex": "o:я",
+     "lemma": "я",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "учу́сь",
+     "lex": "v:учиться",
+     "lemma": "учи́ться",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 1,
+      "number": "sg"
+     }
+    },
+    {
+     "t": "на",
+     "lex": "o:на",
+     "lemma": "на",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "после́днем",
+     "lex": "a:последний",
+     "lemma": "после́дний",
+     "g": {
+      "pos": "adj",
+      "case": "prep",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "ку́рсе",
+     "lex": "n:курс",
+     "lemma": "курс",
+     "g": {
+      "pos": "noun",
+      "case": "prep",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "факульте́та",
+     "lex": "n:факультет",
+     "lemma": "факульте́т",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": "журнали́стики",
+     "sp": false,
+     "lex": "n:журналистика",
+     "lemma": "журнали́стика",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "pl"
+     },
+     "rare": true
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Дире́ктор",
+   "en": "Director: Why do you want to work for us?",
+   "tokens": [
+    {
+     "t": "Почему́",
+     "lex": "o:почему",
+     "lemma": "почему́",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "вы",
+     "lex": "o:вы",
+     "lemma": "вы",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "хоти́те",
+     "lex": "v:хотеть",
+     "lemma": "хоте́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 2,
+      "number": "pl"
+     }
+    },
+    {
+     "t": "рабо́тать",
+     "lex": "v:работать",
+     "lemma": "рабо́тать",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf"
+     }
+    },
+    {
+     "t": "у",
+     "lex": "o:у",
+     "lemma": "у",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "нас",
+     "sp": false,
+     "lex": "o:мы",
+     "lemma": "мы",
+     "g": {
+      "pos": "pron",
+      "case": "gen"
+     }
+    },
+    {
+     "t": "?",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Ка́тя",
+   "en": "Katya: I've been reading your magazine for a long time. I like that you write about ordinary people.",
+   "tokens": [
+    {
+     "t": "Я",
+     "lex": "o:я",
+     "lemma": "я",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "давно́",
+     "lex": "o:давно",
+     "lemma": "давно́",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "чита́ю",
+     "lex": "v:читать",
+     "lemma": "чита́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 1,
+      "number": "sg"
+     }
+    },
+    {
+     "t": "ва́ш",
+     "lemma": "ваш",
+     "g": {
+      "pos": "pron",
+      "case": "acc",
+      "gender": "m"
+     },
+     "gloss": "your, yours (plural or polite)"
+    },
+    {
+     "t": "журна́л",
+     "sp": false,
+     "lex": "n:журнал",
+     "lemma": "журна́л",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "."
+    },
+    {
+     "t": "Мне",
+     "lex": "o:я",
+     "lemma": "я",
+     "g": {
+      "pos": "pron",
+      "case": "dat"
+     }
+    },
+    {
+     "t": "нра́вится",
+     "sp": false,
+     "lex": "v:нравиться",
+     "lemma": "нра́виться",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "sg"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "что",
+     "lex": "o:что",
+     "lemma": "что",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "вы",
+     "lex": "o:вы",
+     "lemma": "вы",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "пи́шете",
+     "lex": "v:писать",
+     "lemma": "писа́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 2,
+      "number": "pl"
+     }
+    },
+    {
+     "t": "о",
+     "lex": "o:о",
+     "lemma": "о",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "просты́х",
+     "lex": "a:простой",
+     "lemma": "просто́й",
+     "g": {
+      "pos": "adj",
+      "case": "prep",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "лю́дях",
+     "sp": false,
+     "lex": "n:человек",
+     "lemma": "челове́к",
+     "g": {
+      "pos": "noun",
+      "case": "prep",
+      "number": "pl"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Дире́ктор",
+   "en": "Director: Do you have work experience?",
+   "tokens": [
+    {
+     "t": "У",
+     "lex": "o:у",
+     "lemma": "у",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "вас",
+     "lex": "o:вы",
+     "lemma": "вы",
+     "g": {
+      "pos": "pron",
+      "case": "gen"
+     }
+    },
+    {
+     "t": "есть",
+     "lex": "v:быть",
+     "lemma": "быть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "sg"
+     }
+    },
+    {
+     "t": "о́пыт",
+     "lex": "n:опыт",
+     "lemma": "о́пыт",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "рабо́ты",
+     "sp": false,
+     "lex": "n:работа",
+     "lemma": "рабо́та",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "?",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Ка́тя",
+   "en": "Katya: I wrote for the student paper for two years. One of my articles was reprinted by several publications.",
+   "tokens": [
+    {
+     "t": "Я",
+     "lex": "o:я",
+     "lemma": "я",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "два",
+     "lex": "o:два",
+     "lemma": "два",
+     "g": {
+      "pos": "num",
+      "case": "nom",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "го́да",
+     "lex": "n:год",
+     "lemma": "год",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "писа́ла",
+     "lex": "v:писать",
+     "lemma": "писа́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "для",
+     "lex": "o:для",
+     "lemma": "для",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "студе́нческой",
+     "lex": "a:студенческий",
+     "lemma": "студе́нческий",
+     "g": {
+      "pos": "adj",
+      "case": "gen",
+      "number": "sg",
+      "gender": "f"
+     },
+     "rare": true
+    },
+    {
+     "t": "газе́ты",
+     "sp": false,
+     "lex": "n:газета",
+     "lemma": "газе́та",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "."
+    },
+    {
+     "t": "Одну́",
+     "lex": "o:один",
+     "lemma": "оди́н",
+     "g": {
+      "pos": "num",
+      "case": "acc",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "мою́",
+     "lex": "a:мой",
+     "lemma": "мой",
+     "g": {
+      "pos": "adj",
+      "case": "acc",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "статью́",
+     "lex": "n:статья",
+     "lemma": "статья́",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "перепеча́тали",
+     "lex": "v:перепечатать",
+     "lemma": "перепеча́тать",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "pl"
+     },
+     "rare": true
+    },
+    {
+     "t": "не́сколько",
+     "lex": "o:несколько",
+     "lemma": "не́сколько",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "изда́ний",
+     "sp": false,
+     "lex": "n:издание",
+     "lemma": "изда́ние",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "pl"
+     },
+     "rare": true
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Дире́ктор",
+   "en": "Director: Yes, I read it. The one about the letters that took sixty years?",
+   "tokens": [
+    {
+     "t": "Да",
+     "sp": false,
+     "lex": "o:да",
+     "lemma": "да",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "я",
+     "lex": "o:я",
+     "lemma": "я",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "её",
+     "lex": "o:она",
+     "lemma": "она́",
+     "g": {
+      "pos": "pron",
+      "case": "gen"
+     }
+    },
+    {
+     "t": "чита́л",
+     "sp": false,
+     "lex": "v:читать",
+     "lemma": "чита́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "."
+    },
+    {
+     "t": "Про",
+     "lex": "o:про",
+     "lemma": "про",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "пи́сьма",
+     "sp": false,
+     "lex": "n:письмо",
+     "lemma": "письмо́",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "pl"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "кото́рые",
+     "lex": "a:который",
+     "lemma": "кото́рый",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "шли",
+     "lex": "v:идти",
+     "lemma": "идти́",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "past",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "шестьдеся́т",
+     "lex": "o:шестьдесят",
+     "lemma": "шестьдеся́т",
+     "g": {
+      "pos": "num"
+     },
+     "rare": true
+    },
+    {
+     "t": "лет",
+     "sp": false,
+     "lex": "n:год",
+     "lemma": "год",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "?",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Ка́тя",
+   "en": "Katya: Yes, that one.",
+   "tokens": [
+    {
+     "t": "Да",
+     "sp": false,
+     "lex": "o:да",
+     "lemma": "да",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "э́ту",
+     "sp": false,
+     "lex": "a:этот",
+     "lemma": "э́тот",
+     "g": {
+      "pos": "adj",
+      "case": "acc",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Дире́ктор",
+   "en": "Director: Good. We'll ring you before the end of the week.",
+   "tokens": [
+    {
+     "t": "Хорошо́",
+     "sp": false,
+     "lex": "o:хорошо",
+     "lemma": "хорошо́",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "."
+    },
+    {
+     "t": "Мы",
+     "lex": "o:мы",
+     "lemma": "мы",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "вам",
+     "lex": "o:вы",
+     "lemma": "вы",
+     "g": {
+      "pos": "pron",
+      "case": "dat"
+     }
+    },
+    {
+     "t": "позвони́м",
+     "lex": "v:позвонить",
+     "lemma": "позвони́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "fut",
+      "person": 1,
+      "number": "pl"
+     }
+    },
+    {
+     "t": "до",
+     "lex": "o:до",
+     "lemma": "до",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "конца́",
+     "lex": "n:конец",
+     "lemma": "коне́ц",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "неде́ли",
+     "sp": false,
+     "lex": "n:неделя",
+     "lemma": "неде́ля",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  }
+ ],
+ "questions": [
+  {
+   "id": "dl-b1-05-q1",
+   "type": "choice",
+   "level": "B1",
+   "tags": [
+    "listening"
+   ],
+   "prompt": {
+    "ru": "Где у́чится Ка́тя?",
+    "en": "What is Katya studying?",
+    "instruction": "Choose the answer"
+   },
+   "accept": [
+    "На факульте́те журнали́стики."
+   ],
+   "distractors": [
+    {
+     "ru": "На факульте́те исто́рии.",
+     "error": "reading.detail"
+    },
+    {
+     "ru": "В шко́ле.",
+     "error": "reading.detail"
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "dl-b1-05-q2",
+   "type": "choice",
+   "level": "B1",
+   "tags": [
+    "listening"
+   ],
+   "prompt": {
+    "ru": "Почему́ Ка́тя хо́чет рабо́тать в журна́ле?",
+    "en": "Why does Katya want to work for the magazine?",
+    "instruction": "Choose the answer"
+   },
+   "accept": [
+    "Ей нра́вится, что там пи́шут о просты́х лю́дях."
+   ],
+   "distractors": [
+    {
+     "ru": "Там хоро́шая зарпла́та.",
+     "error": "reading.detail"
+    },
+    {
+     "ru": "Э́то ря́дом с до́мом.",
+     "error": "reading.detail"
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "dl-b1-05-q3",
+   "type": "choice",
+   "level": "B1",
+   "tags": [
+    "listening"
+   ],
+   "prompt": {
+    "ru": "Чита́л ли дире́ктор её статью́?",
+    "en": "Had the director read her article?",
+    "instruction": "Choose the answer"
+   },
+   "accept": [
+    "Да."
+   ],
+   "distractors": [
+    {
+     "ru": "Нет.",
+     "error": "reading.detail"
+    },
+    {
+     "ru": "Он не по́мнит.",
+     "error": "reading.detail"
+    }
+   ],
+   "source": "handwritten"
+  }
+ ]
+}

@@ -1,0 +1,25 @@
+id: dl-a2-07
+kind: dialogue
+level: A2
+title: В гости́нице | At the hotel
+---
+Администра́тор: До́брый ве́чер! Чем могу́ помо́чь? | Receptionist: Good evening! How can I help?
+Гость: Здра́вствуйте. Я заказа́л но́мер на фами́лию Ветро́в. | Guest: Hello. I booked a room under the name Vetrov.
+Администра́тор: Да, ви́жу. Одноме́стный но́мер на три но́чи. | Receptionist: Yes, I see it. A single room for three nights.
+Гость: Пра́вильно. А за́втрак есть? | Guest: That's right. And is there breakfast?
+Администра́тор: Да, за́втрак с семи́ до десяти́ на пе́рвом этаже́. | Receptionist: Yes, breakfast is from seven to ten on the ground floor.
+Гость: А где мо́жно оста́вить чемода́н за́втра? | Guest: And where can I leave my suitcase tomorrow?
+Администра́тор: У нас есть ка́мера хране́ния. Вот ваш ключ, ко́мната три́ста пять. | Receptionist: We have a left-luggage room. Here's your key, room three hundred and five.
+---
+? На ско́лько ноче́й гость заказа́л но́мер? | For how many nights did the guest book the room?
++ На три но́чи.
+- На одну́ ночь.
+- На неде́лю.
+? Когда́ за́втрак? | When is breakfast?
++ С семи́ до десяти́.
+- С восьми́ до двена́дцати.
+- За́втрака нет.
+? Где за́втрак? | Where is breakfast?
++ На пе́рвом этаже́.
+- В но́мере.
+- В кафе́ ря́дом.

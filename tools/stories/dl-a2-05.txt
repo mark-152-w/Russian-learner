@@ -1,0 +1,26 @@
+id: dl-a2-05
+kind: dialogue
+level: A2
+title: У врача́ | At the doctor's
+---
+Врач: Здра́вствуйте. Что у вас боли́т? | Doctor: Hello. What's hurting?
+Пацие́нт: У меня́ боли́т голова́ и го́рло. | Patient: I've got a headache and a sore throat.
+Врач: Давно́? | Doctor: For how long?
+Пацие́нт: Два дня. И вчера́ у меня́ была́ высо́кая температу́ра. | Patient: Two days. And yesterday I had a high temperature.
+Врач: Откро́йте рот, пожа́луйста. Да, го́рло кра́сное. | Doctor: Open your mouth, please. Yes, your throat is red.
+Врач: Э́то просту́да. Пе́йте мно́го горя́чего ча́я и лежи́те до́ма три дня. | Doctor: It's a cold. Drink lots of hot tea and stay in bed at home for three days.
+Пацие́нт: А на рабо́ту мо́жно? | Patient: And can I go to work?
+Врач: Нет, на рабо́ту нельзя́. Я дам вам больни́чный. | Doctor: No, you can't go to work. I'll give you a sick note.
+---
+? Что боли́т у пацие́нта? | What hurts the patient?
++ Голова́ и го́рло.
+- Нога́.
+- Живо́т.
+? Что сказа́л врач? | What did the doctor say?
++ Э́то просту́да.
+- Ну́жно в больни́цу.
+- Всё в поря́дке.
+? Мо́жно ли пацие́нту идти́ на рабо́ту? | Can the patient go to work?
++ Нет, нельзя́.
+- Да, мо́жно.
+- То́лько у́тром.

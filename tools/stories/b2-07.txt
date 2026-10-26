@@ -1,0 +1,46 @@
+id: st-b2-07
+kind: story
+level: B2
+series: katya
+chapter: 1
+title: Пе́рвая статья́ | The first article
+characters: Ка́тя, А́ня
+---
+Ка́тя написа́ла статью́ о Ни́не и Ю́рии за одну́ ночь. | Katya wrote the article about Nina and Yuri in one night.
+Она́ назвала́ её «Письмо́, кото́рое шло шестьдеся́т лет». | She called it "The letter that took sixty years".
+У́тром она́ отпра́вила текст в студе́нческую газе́ту и легла́ спать. | In the morning she sent the text to the student paper and went to bed.
+
+Когда́ она́ просну́лась, телефо́н разрыва́лся от звонко́в. | When she woke up, her phone was ringing off the hook.
+Статью́ прочита́ли не то́лько студе́нты. | The article had been read not only by students.
+Её перепеча́тал изве́стный сайт, пото́м — газе́та, а ве́чером Ка́те позвони́ли с телеви́дения. | A well-known website reprinted it, then a newspaper, and in the evening television rang Katya.
+— Мы хоте́ли бы снять сюже́т о ва́ших геро́ях, — сказа́л ве́жливый мужско́й го́лос. | "We would like to film a report on your characters," said a polite male voice.
+
+Ка́тя пришла́ в кафе́ расте́рянная. | Katya came into the café looking lost.
+— А́ня, я не зна́ю, что де́лать. | "Anya, I don't know what to do."
+— Ни́на о́чень скро́мная. Вдруг она́ не захо́чет, что́бы её пока́зывали по телеви́зору? | "Nina is very modest. What if she doesn't want to be shown on television?"
+— Так спроси́ её, — отве́тила А́ня. — Э́то её исто́рия, пусть она́ и реша́ет. | "So ask her," Anya answered. "It's her story, let her decide."
+
+Ни́на вы́слушала Ка́тю и засмея́лась. | Nina heard Katya out and laughed.
+— В мои́ го́ды пе́рвый раз на телеви́дении? Почему́ бы и нет! | "On television for the first time at my age? Why not!"
+— Но пусть Ю́ра наде́нет костю́м, а не свою́ ста́рую ку́ртку. | "But Yura has to put on a suit, not his old jacket."
+
+Сюже́т показа́ли в воскресе́нье ве́чером. | The report was shown on Sunday evening.
+А в понеде́льник Ка́тю пригласи́ли на стажиро́вку в большу́ю реда́кцию. | And on Monday Katya was invited to do an internship at a big newspaper office.
+— Ви́дишь, — сказа́ла А́ня, — я же говори́ла, что ты найдёшь свою́ исто́рию. | "You see," said Anya, "I told you you'd find your story."
+---
+? Как Ка́тя назвала́ статью́? | What did Katya call the article?
++ «Письмо́, кото́рое шло шестьдеся́т лет».
+- «Ба́рсик и сунду́к».
+- «Встре́ча на вокза́ле».
+? Кто позвони́л Ка́те ве́чером? | Who rang Katya in the evening?
++ Телеви́дение.
+- Ни́на.
+- Ю́рий.
+? Чего́ боя́лась Ка́тя? | What was Katya afraid of?
++ Что Ни́на не захо́чет выступа́ть по телеви́зору.
+- Что статья́ не понра́вится студе́нтам.
+- Что А́ня рассе́рдится.
+? Что получи́ла Ка́тя по́сле сюже́та? | What did Katya get after the report?
++ Приглаше́ние на стажиро́вку.
+- Де́ньги.
+- Но́вую кварти́ру.

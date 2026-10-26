@@ -262,6 +262,7 @@ export class RewardSession {
           correct: ok,
           typedCorrect: ok && TYPED.has(item.type) ? 1 : 0,
           stressCorrect: ok && item.type === 'stress' ? 1 : 0,
+          dictationPerfect: ok && item.type === 'dictation' && !verdict.note ? 1 : 0,
           golden: ok && a.golden ? 1 : 0,
           goldenAtX5: ok && a.golden && this.combo >= 20 ? 1 : 0,
           typos: verdict.note === 'typo' ? 1 : 0,

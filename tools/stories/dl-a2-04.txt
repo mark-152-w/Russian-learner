@@ -1,0 +1,26 @@
+id: dl-a2-04
+kind: dialogue
+level: A2
+title: Биле́т на по́езд | A train ticket
+---
+Пассажи́р: Здра́вствуйте. Мне ну́жен биле́т до Каза́ни на за́втра. | Passenger: Hello. I need a ticket to Kazan for tomorrow.
+Касси́р: На како́е вре́мя? Есть по́езд у́тром и ве́чером. | Ticket clerk: For what time? There's a train in the morning and in the evening.
+Пассажи́р: Ве́чером. Во ско́лько он прихо́дит? | Passenger: In the evening. What time does it arrive?
+Касси́р: Отправле́ние в два́дцать два часа́, прибы́тие в семь утра́. | Ticket clerk: Departure at 22:00, arrival at seven in the morning.
+Пассажи́р: Хорошо́. Мо́жно ни́жнее ме́сто? | Passenger: Fine. Can I have a lower berth?
+Касси́р: Ни́жних уже́ нет, то́лько ве́рхние. | Ticket clerk: There are no lower ones left, only upper ones.
+Пассажи́р: Ничего́, пусть бу́дет ве́рхнее. | Passenger: Never mind, an upper one then.
+Касси́р: Ваш па́спорт, пожа́луйста. | Ticket clerk: Your passport, please.
+---
+? Куда́ е́дет пассажи́р? | Where is the passenger going?
++ В Каза́нь.
+- В Москву́.
+- В Петербу́рг.
+? Когда́ прихо́дит по́езд? | When does the train arrive?
++ В семь утра́.
+- В два́дцать два часа́.
+- В по́лдень.
+? Како́е ме́сто он взял? | Which berth did he take?
++ Ве́рхнее.
+- Ни́жнее.
+- Он не взял биле́т.

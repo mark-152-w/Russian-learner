@@ -1,0 +1,27 @@
+id: dl-a2-02
+kind: dialogue
+level: A2
+title: В кафе́ | In the café
+---
+Официа́нтка: До́брый день! Что бу́дете зака́зывать? | Waitress: Good afternoon! What would you like to order?
+Гость: Мо́жно меню́? | Customer: Can I have the menu?
+Официа́нтка: Коне́чно, вот, пожа́луйста. | Waitress: Of course, here you are.
+Гость: Я бу́ду суп и сала́т. А что у вас на десе́рт? | Customer: I'll have the soup and a salad. And what do you have for dessert?
+Официа́нтка: Есть пиро́г с я́блоками и моро́женое. | Waitress: There's apple pie and ice cream.
+Гость: Пиро́г, пожа́луйста. И ча́шку ча́я. | Customer: Pie, please. And a cup of tea.
+Официа́нтка: Чай чёрный и́ли зелёный? | Waitress: Black or green tea?
+Гость: Зелёный, без са́хара. | Customer: Green, without sugar.
+Официа́нтка: Хорошо́. Всё бу́дет че́рез де́сять мину́т. | Waitress: Fine. Everything will be ready in ten minutes.
+---
+? Что гость заказа́л на десе́рт? | What did the customer order for dessert?
++ Пиро́г с я́блоками.
+- Моро́женое.
+- Торт.
+? Како́й чай он хо́чет? | What tea does he want?
++ Зелёный без са́хара.
+- Чёрный с са́харом.
+- Чёрный без са́хара.
+? Когда́ бу́дет зака́з? | When will the order be ready?
++ Че́рез де́сять мину́т.
+- Че́рез час.
+- Сра́зу.

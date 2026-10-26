@@ -1,0 +1,826 @@
+{
+ "$schema": "../../../../schemas/story.schema.json",
+ "id": "dl-b1-01",
+ "kind": "dialogue",
+ "level": "B1",
+ "title": {
+  "ru": "В такси́",
+  "en": "In a taxi"
+ },
+ "sentences": [
+  {
+   "para": true,
+   "speaker": "Води́тель",
+   "en": "Driver: Good evening! Where are we going?",
+   "tokens": [
+    {
+     "t": "До́брый",
+     "lex": "a:добрый",
+     "lemma": "до́брый",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "ве́чер",
+     "sp": false,
+     "lex": "n:вечер",
+     "lemma": "ве́чер",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "!"
+    },
+    {
+     "t": "Куда́",
+     "lex": "o:куда",
+     "lemma": "куда́",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "е́дем",
+     "sp": false,
+     "lex": "v:ехать",
+     "lemma": "е́хать",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 1,
+      "number": "pl"
+     }
+    },
+    {
+     "t": "?",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Пассажи́рка",
+   "en": "Passenger: To the airport, please. Will we make it in an hour? My plane is at nine.",
+   "tokens": [
+    {
+     "t": "В",
+     "lex": "o:в",
+     "lemma": "в",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "аэропо́рт",
+     "sp": false,
+     "lex": "n:аэропорт",
+     "lemma": "аэропо́рт",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "пожа́луйста",
+     "sp": false,
+     "lex": "o:пожалуйста",
+     "lemma": "пожа́луйста",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "."
+    },
+    {
+     "t": "Мы",
+     "lex": "o:мы",
+     "lemma": "мы",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "успе́ем",
+     "lex": "v:успеть",
+     "lemma": "успе́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "fut",
+      "person": 1,
+      "number": "pl"
+     }
+    },
+    {
+     "t": "за",
+     "lex": "o:за",
+     "lemma": "за",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "час",
+     "sp": false,
+     "lex": "n:час",
+     "lemma": "час",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "?"
+    },
+    {
+     "t": "У",
+     "lex": "o:у",
+     "lemma": "у",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "меня́",
+     "lex": "o:я",
+     "lemma": "я",
+     "g": {
+      "pos": "pron",
+      "case": "gen"
+     }
+    },
+    {
+     "t": "самолёт",
+     "lex": "n:самолёт",
+     "lemma": "самолёт",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "в",
+     "lex": "o:в",
+     "lemma": "в",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "де́вять",
+     "sp": false,
+     "lex": "o:девять",
+     "lemma": "де́вять",
+     "g": {
+      "pos": "num",
+      "case": "acc"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Води́тель",
+   "en": "Driver: If there's no traffic, we will. But there are always jams on Friday evening.",
+   "tokens": [
+    {
+     "t": "Е́сли",
+     "lex": "o:если",
+     "lemma": "е́сли",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "не",
+     "lex": "o:не",
+     "lemma": "не",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "бу́дет",
+     "lex": "v:быть",
+     "lemma": "быть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "fut",
+      "person": 3,
+      "number": "sg"
+     }
+    },
+    {
+     "t": "про́бок",
+     "sp": false,
+     "lex": "n:пробка",
+     "lemma": "про́бка",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "pl"
+     },
+     "rare": true
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "успе́ем",
+     "sp": false,
+     "lex": "v:успеть",
+     "lemma": "успе́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "fut",
+      "person": 1,
+      "number": "pl"
+     }
+    },
+    {
+     "t": "."
+    },
+    {
+     "t": "Но",
+     "lex": "o:но",
+     "lemma": "но",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "в",
+     "lex": "o:в",
+     "lemma": "в",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "пя́тницу",
+     "lex": "n:пятница",
+     "lemma": "пя́тница",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "ве́чером",
+     "lex": "n:вечер",
+     "lemma": "ве́чер",
+     "g": {
+      "pos": "noun",
+      "case": "ins",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "всегда́",
+     "lex": "o:всегда",
+     "lemma": "всегда́",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "про́бки",
+     "sp": false,
+     "lex": "n:пробка",
+     "lemma": "про́бка",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "pl"
+     },
+     "rare": true
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Пассажи́рка",
+   "en": "Passenger: Oh! Can we go another way?",
+   "tokens": [
+    {
+     "t": "Ой",
+     "sp": false,
+     "lex": "o:ой",
+     "lemma": "ой",
+     "g": {
+      "pos": "intj"
+     }
+    },
+    {
+     "t": "!"
+    },
+    {
+     "t": "А",
+     "lex": "o:а",
+     "lemma": "а",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "мо́жно",
+     "lex": "o:можно",
+     "lemma": "мо́жно",
+     "g": {
+      "pos": "pred"
+     }
+    },
+    {
+     "t": "пое́хать",
+     "lex": "v:поехать",
+     "lemma": "пое́хать",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf"
+     }
+    },
+    {
+     "t": "други́м",
+     "lex": "a:другой",
+     "lemma": "друго́й",
+     "g": {
+      "pos": "adj",
+      "case": "ins",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "путём",
+     "sp": false,
+     "lex": "n:путь",
+     "lemma": "путь",
+     "g": {
+      "pos": "noun",
+      "case": "ins",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "?",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Води́тель",
+   "en": "Driver: We could go through the centre, but there are lots of cars there too. I'll try going round along the embankment.",
+   "tokens": [
+    {
+     "t": "Мо́жно",
+     "lex": "o:можно",
+     "lemma": "мо́жно",
+     "g": {
+      "pos": "pred"
+     }
+    },
+    {
+     "t": "че́рез",
+     "lex": "o:через",
+     "lemma": "че́рез",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "центр",
+     "sp": false,
+     "lex": "n:центр",
+     "lemma": "центр",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "но",
+     "lex": "o:но",
+     "lemma": "но",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "там",
+     "lex": "o:там",
+     "lemma": "там",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "то́же",
+     "lex": "o:тоже",
+     "lemma": "то́же",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "мно́го",
+     "lex": "o:много",
+     "lemma": "мно́го",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "маши́н",
+     "sp": false,
+     "lex": "n:машина",
+     "lemma": "маши́на",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "."
+    },
+    {
+     "t": "Попро́бую",
+     "lex": "v:попробовать",
+     "lemma": "попро́бовать",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "fut",
+      "person": 1,
+      "number": "sg"
+     }
+    },
+    {
+     "t": "объе́хать",
+     "lex": "v:объехать",
+     "lemma": "объе́хать",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf"
+     },
+     "rare": true
+    },
+    {
+     "t": "по",
+     "lex": "o:по",
+     "lemma": "по",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "на́бережной",
+     "sp": false,
+     "lex": "n:набережная",
+     "lemma": "на́бережная",
+     "g": {
+      "pos": "noun",
+      "case": "dat",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Пассажи́рка",
+   "en": "Passenger: Thank you! I was so afraid of being late.",
+   "tokens": [
+    {
+     "t": "Спаси́бо",
+     "sp": false,
+     "lex": "o:спасибо",
+     "lemma": "спаси́бо",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "!"
+    },
+    {
+     "t": "Я",
+     "lex": "o:я",
+     "lemma": "я",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "так",
+     "lex": "o:так",
+     "lemma": "так",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "боя́лась",
+     "lex": "v:бояться",
+     "lemma": "боя́ться",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "опозда́ть",
+     "sp": false,
+     "lex": "v:опоздать",
+     "lemma": "опозда́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Води́тель",
+   "en": "Driver: Don't worry, I've been working like this for twenty years. Not one of my passengers has missed a flight yet.",
+   "tokens": [
+    {
+     "t": "Не",
+     "lex": "o:не",
+     "lemma": "не",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "волну́йтесь",
+     "sp": false,
+     "lex": "v:волноваться",
+     "lemma": "волнова́ться",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "mood": "imp",
+      "number": "pl"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "я",
+     "lex": "o:я",
+     "lemma": "я",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "так",
+     "lex": "o:так",
+     "lemma": "так",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "рабо́таю",
+     "lex": "v:работать",
+     "lemma": "рабо́тать",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 1,
+      "number": "sg"
+     }
+    },
+    {
+     "t": "два́дцать",
+     "lex": "o:двадцать",
+     "lemma": "два́дцать",
+     "g": {
+      "pos": "num",
+      "case": "acc"
+     }
+    },
+    {
+     "t": "лет",
+     "sp": false,
+     "lex": "n:год",
+     "lemma": "год",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "."
+    },
+    {
+     "t": "Ещё",
+     "lex": "o:ещё",
+     "lemma": "ещё",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "ни",
+     "lex": "o:ни",
+     "lemma": "ни",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "оди́н",
+     "lex": "o:один",
+     "lemma": "оди́н",
+     "g": {
+      "pos": "num",
+      "case": "nom",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "пассажи́р",
+     "lex": "n:пассажир",
+     "lemma": "пассажи́р",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "у",
+     "lex": "o:у",
+     "lemma": "у",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "меня́",
+     "lex": "o:я",
+     "lemma": "я",
+     "g": {
+      "pos": "pron",
+      "case": "gen"
+     }
+    },
+    {
+     "t": "не",
+     "lex": "o:не",
+     "lemma": "не",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "опозда́л",
+     "sp": false,
+     "lex": "v:опоздать",
+     "lemma": "опозда́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  }
+ ],
+ "questions": [
+  {
+   "id": "dl-b1-01-q1",
+   "type": "choice",
+   "level": "B1",
+   "tags": [
+    "listening"
+   ],
+   "prompt": {
+    "ru": "Куда́ е́дет пассажи́рка?",
+    "en": "Where is the passenger going?",
+    "instruction": "Choose the answer"
+   },
+   "accept": [
+    "В аэропо́рт."
+   ],
+   "distractors": [
+    {
+     "ru": "На вокза́л.",
+     "error": "reading.detail"
+    },
+    {
+     "ru": "Домо́й.",
+     "error": "reading.detail"
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "dl-b1-01-q2",
+   "type": "choice",
+   "level": "B1",
+   "tags": [
+    "listening"
+   ],
+   "prompt": {
+    "ru": "Почему́ она́ волну́ется?",
+    "en": "Why is she worried?",
+    "instruction": "Choose the answer"
+   },
+   "accept": [
+    "Она́ бои́тся опозда́ть на самолёт."
+   ],
+   "distractors": [
+    {
+     "ru": "У неё нет де́нег.",
+     "error": "reading.detail"
+    },
+    {
+     "ru": "Она́ забы́ла па́спорт.",
+     "error": "reading.detail"
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "dl-b1-01-q3",
+   "type": "choice",
+   "level": "B1",
+   "tags": [
+    "listening"
+   ],
+   "prompt": {
+    "ru": "Как води́тель хо́чет е́хать?",
+    "en": "Which way does the driver want to go?",
+    "instruction": "Choose the answer"
+   },
+   "accept": [
+    "По на́бережной."
+   ],
+   "distractors": [
+    {
+     "ru": "Че́рез центр.",
+     "error": "reading.detail"
+    },
+    {
+     "ru": "На метро́.",
+     "error": "reading.detail"
+    }
+   ],
+   "source": "handwritten"
+  }
+ ]
+}

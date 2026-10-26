@@ -1,0 +1,584 @@
+{
+ "$schema": "../../../../schemas/story.schema.json",
+ "id": "dl-a2-03",
+ "kind": "dialogue",
+ "level": "A2",
+ "title": {
+  "ru": "Как пройти́?",
+  "en": "How do I get there?"
+ },
+ "sentences": [
+  {
+   "para": true,
+   "speaker": "Тури́ст",
+   "en": "Tourist: Excuse me, could you tell me how to get to the museum?",
+   "tokens": [
+    {
+     "t": "Извини́те",
+     "sp": false,
+     "lex": "v:извинить",
+     "lemma": "извини́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "mood": "imp",
+      "number": "pl"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "вы",
+     "lex": "o:вы",
+     "lemma": "вы",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "не",
+     "lex": "o:не",
+     "lemma": "не",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "ска́жете",
+     "sp": false,
+     "lex": "v:сказать",
+     "lemma": "сказа́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "fut",
+      "person": 2,
+      "number": "pl"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "как",
+     "lemma": "как",
+     "g": {
+      "pos": "conj"
+     },
+     "gloss": "how; as, like"
+    },
+    {
+     "t": "пройти́",
+     "lex": "v:пройти",
+     "lemma": "пройти́",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf"
+     }
+    },
+    {
+     "t": "к",
+     "lex": "o:к",
+     "lemma": "к",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "музе́ю",
+     "sp": false,
+     "lex": "n:музей",
+     "lemma": "музе́й",
+     "g": {
+      "pos": "noun",
+      "case": "dat",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": "?",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Же́нщина",
+   "en": "Woman: Which museum? There are two here.",
+   "tokens": [
+    {
+     "t": "К",
+     "lex": "o:к",
+     "lemma": "к",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "како́му",
+     "lex": "a:какой",
+     "lemma": "како́й",
+     "g": {
+      "pos": "adj",
+      "case": "dat",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "музе́ю",
+     "sp": false,
+     "lex": "n:музей",
+     "lemma": "музе́й",
+     "g": {
+      "pos": "noun",
+      "case": "dat",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": "?"
+    },
+    {
+     "t": "Здесь",
+     "lex": "o:здесь",
+     "lemma": "здесь",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "их",
+     "lex": "o:они",
+     "lemma": "они́",
+     "g": {
+      "pos": "pron",
+      "case": "acc"
+     }
+    },
+    {
+     "t": "два",
+     "sp": false,
+     "lex": "o:два",
+     "lemma": "два",
+     "g": {
+      "pos": "num",
+      "case": "nom",
+      "gender": "m"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Тури́ст",
+   "en": "Tourist: The history one.",
+   "tokens": [
+    {
+     "t": "К",
+     "lex": "o:к",
+     "lemma": "к",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "истори́ческому",
+     "sp": false,
+     "lex": "a:исторический",
+     "lemma": "истори́ческий",
+     "g": {
+      "pos": "adj",
+      "case": "dat",
+      "number": "sg",
+      "gender": "m"
+     },
+     "rare": true
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Же́нщина",
+   "en": "Woman: Go straight on to the end of the street, then right.",
+   "tokens": [
+    {
+     "t": "Иди́те",
+     "lex": "v:идти",
+     "lemma": "идти́",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "mood": "imp",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "пря́мо",
+     "lex": "o:прямо",
+     "lemma": "пря́мо",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "до",
+     "lex": "o:до",
+     "lemma": "до",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "конца́",
+     "lex": "n:конец",
+     "lemma": "коне́ц",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "у́лицы",
+     "sp": false,
+     "lex": "n:улица",
+     "lemma": "у́лица",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "пото́м",
+     "lex": "o:потом",
+     "lemma": "пото́м",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "напра́во",
+     "sp": false,
+     "lex": "o:направо",
+     "lemma": "напра́во",
+     "g": {
+      "pos": "adv"
+     },
+     "rare": true
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Же́нщина",
+   "en": "Woman: The museum will be on the left, opposite the park.",
+   "tokens": [
+    {
+     "t": "Музе́й",
+     "lex": "n:музей",
+     "lemma": "музе́й",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": "бу́дет",
+     "lex": "v:быть",
+     "lemma": "быть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "fut",
+      "person": 3,
+      "number": "sg"
+     }
+    },
+    {
+     "t": "сле́ва",
+     "sp": false,
+     "lex": "o:слева",
+     "lemma": "сле́ва",
+     "g": {
+      "pos": "adv"
+     },
+     "rare": true
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "напро́тив",
+     "lex": "o:напротив",
+     "lemma": "напро́тив",
+     "g": {
+      "pos": "prep"
+     },
+     "rare": true
+    },
+    {
+     "t": "па́рка",
+     "sp": false,
+     "lex": "n:парк",
+     "lemma": "парк",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Тури́ст",
+   "en": "Tourist: Is it far?",
+   "tokens": [
+    {
+     "t": "Э́то",
+     "lex": "o:это",
+     "lemma": "э́то",
+     "g": {
+      "pos": "pron"
+     }
+    },
+    {
+     "t": "далеко́",
+     "sp": false,
+     "lex": "o:далеко",
+     "lemma": "далеко́",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "?",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Же́нщина",
+   "en": "Woman: No, about five minutes on foot.",
+   "tokens": [
+    {
+     "t": "Нет",
+     "sp": false,
+     "lex": "o:нет",
+     "lemma": "нет",
+     "g": {
+      "pos": "pred"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "мину́т",
+     "lex": "n:минута",
+     "lemma": "мину́та",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "пять",
+     "lex": "n:пять",
+     "lemma": "пять",
+     "g": {
+      "pos": "num",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "пешко́м",
+     "sp": false,
+     "lex": "o:пешком",
+     "lemma": "пешко́м",
+     "g": {
+      "pos": "adv"
+     },
+     "rare": true
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Тури́ст",
+   "en": "Tourist: Thank you very much!",
+   "tokens": [
+    {
+     "t": "Большо́е",
+     "lex": "a:большой",
+     "lemma": "большо́й",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "n"
+     }
+    },
+    {
+     "t": "спаси́бо",
+     "sp": false,
+     "lex": "o:спасибо",
+     "lemma": "спаси́бо",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "!",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Же́нщина",
+   "en": "Woman: You're welcome.",
+   "tokens": [
+    {
+     "t": "Не",
+     "lex": "o:не",
+     "lemma": "не",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "за",
+     "lex": "o:за",
+     "lemma": "за",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "что",
+     "sp": false,
+     "lex": "o:что",
+     "lemma": "что",
+     "g": {
+      "pos": "pron",
+      "case": "acc"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  }
+ ],
+ "questions": [
+  {
+   "id": "dl-a2-03-q1",
+   "type": "choice",
+   "level": "A2",
+   "tags": [
+    "listening"
+   ],
+   "prompt": {
+    "ru": "Куда́ хо́чет пойти́ тури́ст?",
+    "en": "Where does the tourist want to go?",
+    "instruction": "Choose the answer"
+   },
+   "accept": [
+    "В истори́ческий музе́й."
+   ],
+   "distractors": [
+    {
+     "ru": "В парк.",
+     "error": "reading.detail"
+    },
+    {
+     "ru": "В теа́тр.",
+     "error": "reading.detail"
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "dl-a2-03-q2",
+   "type": "choice",
+   "level": "A2",
+   "tags": [
+    "listening"
+   ],
+   "prompt": {
+    "ru": "Где нахо́дится музе́й?",
+    "en": "Where is the museum?",
+    "instruction": "Choose the answer"
+   },
+   "accept": [
+    "Напро́тив па́рка."
+   ],
+   "distractors": [
+    {
+     "ru": "Ря́дом с вокза́лом.",
+     "error": "reading.detail"
+    },
+    {
+     "ru": "В конце́ у́лицы, сле́ва от магази́на.",
+     "error": "reading.detail"
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "dl-a2-03-q3",
+   "type": "choice",
+   "level": "A2",
+   "tags": [
+    "listening"
+   ],
+   "prompt": {
+    "ru": "Ско́лько вре́мени идти́?",
+    "en": "How long does it take to walk?",
+    "instruction": "Choose the answer"
+   },
+   "accept": [
+    "Мину́т пять."
+   ],
+   "distractors": [
+    {
+     "ru": "Три́дцать мину́т.",
+     "error": "reading.detail"
+    },
+    {
+     "ru": "Час.",
+     "error": "reading.detail"
+    }
+   ],
+   "source": "handwritten"
+  }
+ ]
+}

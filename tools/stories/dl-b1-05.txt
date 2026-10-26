@@ -1,0 +1,27 @@
+id: dl-b1-05
+kind: dialogue
+level: B1
+title: Собесе́дование | The job interview
+---
+Дире́ктор: Сади́тесь, пожа́луйста. Расскажи́те немно́го о себе́. | Director: Please sit down. Tell me a little about yourself.
+Ка́тя: Меня́ зову́т Ка́тя, я учу́сь на после́днем ку́рсе факульте́та журнали́стики. | Katya: My name is Katya, I'm in my final year in the journalism faculty.
+Дире́ктор: Почему́ вы хоти́те рабо́тать у нас? | Director: Why do you want to work for us?
+Ка́тя: Я давно́ чита́ю ва́ш журна́л. Мне нра́вится, что вы пи́шете о просты́х лю́дях. | Katya: I've been reading your magazine for a long time. I like that you write about ordinary people.
+Дире́ктор: У вас есть о́пыт рабо́ты? | Director: Do you have work experience?
+Ка́тя: Я два го́да писа́ла для студе́нческой газе́ты. Одну́ мою́ статью́ перепеча́тали не́сколько изда́ний. | Katya: I wrote for the student paper for two years. One of my articles was reprinted by several publications.
+Дире́ктор: Да, я её чита́л. Про пи́сьма, кото́рые шли шестьдеся́т лет? | Director: Yes, I read it. The one about the letters that took sixty years?
+Ка́тя: Да, э́ту. | Katya: Yes, that one.
+Дире́ктор: Хорошо́. Мы вам позвони́м до конца́ неде́ли. | Director: Good. We'll ring you before the end of the week.
+---
+? Где у́чится Ка́тя? | What is Katya studying?
++ На факульте́те журнали́стики.
+- На факульте́те исто́рии.
+- В шко́ле.
+? Почему́ Ка́тя хо́чет рабо́тать в журна́ле? | Why does Katya want to work for the magazine?
++ Ей нра́вится, что там пи́шут о просты́х лю́дях.
+- Там хоро́шая зарпла́та.
+- Э́то ря́дом с до́мом.
+? Чита́л ли дире́ктор её статью́? | Had the director read her article?
++ Да.
+- Нет.
+- Он не по́мнит.

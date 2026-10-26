@@ -1,0 +1,36 @@
+id: nf-c1-10
+kind: nonfiction
+level: C1
+title: Тру́дный язы́к | A difficult language
+---
+Ру́сский язы́к счита́ется одни́м из са́мых тру́дных для тех, кто говори́т по-англи́йски. | Russian is considered one of the hardest languages for English speakers.
+Шесть падеже́й, три ро́да, вид глаго́ла, ударе́ние, кото́рое пры́гает с ме́ста на ме́сто, глаго́лы движе́ния с бесконе́чными приста́вками — спи́сок мо́жно продолжа́ть. | Six cases, three genders, verbal aspect, stress that jumps from place to place, verbs of motion with endless prefixes: the list goes on.
+Неудиви́тельно, что мно́гие броса́ют учи́ть его́ уже́ на второ́м ме́сяце. | No wonder many people give up learning it in the second month.
+
+Но у э́той сло́жности есть и обра́тная сторона́. | But this difficulty has another side.
+Падежи́, кото́рые снача́ла ка́жутся бессмы́сленной пы́ткой, на са́мом де́ле даю́т языку́ удиви́тельную свобо́ду. | Cases, which at first seem a pointless torture, actually give the language remarkable freedom.
+Поско́льку оконча́ние пока́зывает, кто что де́лает, поря́док слов мо́жно меня́ть, что́бы вы́делить то, что ва́жно. | Since the ending shows who is doing what, the word order can be changed to highlight what matters.
+«Ма́ма лю́бит сы́на» и «Сы́на лю́бит ма́ма» — э́то об одно́м и том же, но с ра́зными акце́нтами. | "Mama lyubit syna" and "Syna lyubit mama" are about the same thing, but with different emphasis.
+
+Вид глаго́ла, кото́рый так му́чит студе́нтов, позволя́ет одни́м сло́вом сказа́ть то, для чего́ в англи́йском ну́жно не́сколько. | Aspect, which torments students so much, lets you say in one word what needs several in English.
+«Я чита́л э́ту кни́гу» и «Я прочита́л э́ту кни́гу» — э́то два ра́зных ми́ра: в пе́рвом ва́жен проце́сс и́ли сам факт, во второ́м — результа́т. | "Ya chital etu knigu" and "Ya prochital etu knigu" are two different worlds: in the first what matters is the process or the bare fact, in the second the result.
+
+Ещё одно́ досто́инство ру́сского языка́ — его́ че́стность. | Another merit of Russian is its honesty.
+Он почти́ всегда́ пи́шется так, как произно́сится, е́сли знать не́сколько пра́вил. | It is almost always written the way it's pronounced, if you know a few rules.
+Е́сли вы вы́учите алфави́т за неде́лю, вы смо́жете прочита́ть любо́е сло́во, да́же е́сли не зна́ете его́ значе́ния. | If you learn the alphabet in a week, you'll be able to read any word, even if you don't know its meaning.
+
+А гла́вное, за тру́дностями ждёт награ́да: литерату́ра, кото́рую нельзя́ по-настоя́щему поня́ть в перево́де, пе́сни, шу́тки, разгово́ры на ку́хне до утра́. | And above all, a reward awaits beyond the difficulties: a literature you can't truly understand in translation, songs, jokes, kitchen conversations until morning.
+Е́сли вы дочита́ли э́тот текст до конца́, зна́чит, бо́льшую часть пути́ вы уже́ прошли́. | If you've read this text to the end, then you've already covered most of the way.
+---
+? Что даю́т языку́ падежи́? | What do cases give the language?
++ Свобо́ду поря́дка слов.
+- Просты́е оконча́ния.
+- Коро́ткие слова́.
+? Чем отлича́ются «чита́л» и «прочита́л»? | How do "chital" and "prochital" differ?
++ В пе́рвом ва́жен проце́сс и́ли факт, во второ́м — результа́т.
+- Пе́рвое — бу́дущее вре́мя.
+- Ниче́м.
+? Почему́ а́втор называ́ет ру́сский язы́к че́стным? | Why does the author call Russian honest?
++ Он почти́ всегда́ пи́шется так, как произно́сится.
+- В нём нет исключе́ний.
+- На нём нельзя́ лгать.

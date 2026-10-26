@@ -1,0 +1,1947 @@
+{
+ "$schema": "../../../../schemas/story.schema.json",
+ "id": "nf-b2-09",
+ "kind": "nonfiction",
+ "level": "B2",
+ "title": {
+  "ru": "Ты и́ли вы?",
+  "en": "Ty or vy?"
+ },
+ "sentences": [
+  {
+   "para": true,
+   "en": "One of the first difficulties for foreigners in Russia is choosing between \"ty\" and \"vy\".",
+   "tokens": [
+    {
+     "t": "Одна́",
+     "lex": "o:один",
+     "lemma": "оди́н",
+     "g": {
+      "pos": "num",
+      "case": "nom",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "из",
+     "lex": "o:из",
+     "lemma": "из",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "пе́рвых",
+     "lex": "a:первый",
+     "lemma": "пе́рвый",
+     "g": {
+      "pos": "adj",
+      "case": "gen",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "тру́дностей",
+     "lex": "n:трудность",
+     "lemma": "тру́дность",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "для",
+     "lex": "o:для",
+     "lemma": "для",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "иностра́нцев",
+     "lex": "n:иностранец",
+     "lemma": "иностра́нец",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "pl"
+     },
+     "rare": true
+    },
+    {
+     "t": "в",
+     "lex": "o:в",
+     "lemma": "в",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "Росси́и",
+     "lex": "n:Россия",
+     "lemma": "Росси́я",
+     "g": {
+      "pos": "noun",
+      "case": "prep",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "—"
+    },
+    {
+     "t": "вы́бор",
+     "lex": "n:выбор",
+     "lemma": "вы́бор",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "ме́жду",
+     "lex": "o:между",
+     "lemma": "ме́жду",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "«",
+     "sp": false
+    },
+    {
+     "t": "ты",
+     "sp": false,
+     "lex": "o:ты",
+     "lemma": "ты",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "»"
+    },
+    {
+     "t": "и",
+     "lex": "o:и",
+     "lemma": "и",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "«",
+     "sp": false
+    },
+    {
+     "t": "вы",
+     "sp": false,
+     "lex": "o:вы",
+     "lemma": "вы",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "»",
+     "sp": false
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "English doesn't have this problem, but in Russian a mistake can offend someone or, on the contrary, seem strange.",
+   "tokens": [
+    {
+     "t": "В",
+     "lex": "o:в",
+     "lemma": "в",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "англи́йском",
+     "lex": "a:английский",
+     "lemma": "англи́йский",
+     "g": {
+      "pos": "adj",
+      "case": "prep",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "языке́",
+     "lex": "n:язык",
+     "lemma": "язы́к",
+     "g": {
+      "pos": "noun",
+      "case": "prep",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "тако́й",
+     "lex": "a:такой",
+     "lemma": "тако́й",
+     "g": {
+      "pos": "adj",
+      "case": "prep",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "пробле́мы",
+     "lex": "n:проблема",
+     "lemma": "пробле́ма",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "нет",
+     "sp": false,
+     "lex": "o:нет",
+     "lemma": "нет",
+     "g": {
+      "pos": "pred"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "а",
+     "lex": "o:а",
+     "lemma": "а",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "в",
+     "lex": "o:в",
+     "lemma": "в",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "ру́сском",
+     "lex": "a:русский",
+     "lemma": "ру́сский",
+     "g": {
+      "pos": "adj",
+      "case": "prep",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "оши́бка",
+     "lex": "n:ошибка",
+     "lemma": "оши́бка",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "мо́жет",
+     "lex": "v:мочь",
+     "lemma": "мочь",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "sg"
+     }
+    },
+    {
+     "t": "оби́деть",
+     "lex": "v:обидеть",
+     "lemma": "оби́деть",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf"
+     }
+    },
+    {
+     "t": "челове́ка",
+     "lex": "n:человек",
+     "lemma": "челове́к",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "и́ли",
+     "sp": false,
+     "lex": "o:или",
+     "lemma": "и́ли",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "наоборо́т",
+     "sp": false,
+     "lex": "o:наоборот",
+     "lemma": "наоборо́т",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "показа́ться",
+     "lex": "v:показаться",
+     "lemma": "показа́ться",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf"
+     }
+    },
+    {
+     "t": "стра́нной",
+     "sp": false,
+     "lex": "a:странный",
+     "lemma": "стра́нный",
+     "g": {
+      "pos": "adj",
+      "case": "gen",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "para": true,
+   "en": "The rule seems simple.",
+   "tokens": [
+    {
+     "t": "Пра́вило",
+     "lex": "n:правило",
+     "lemma": "пра́вило",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "ка́жется",
+     "lex": "v:казаться",
+     "lemma": "каза́ться",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "sg"
+     }
+    },
+    {
+     "t": "просты́м",
+     "sp": false,
+     "lex": "a:простой",
+     "lemma": "просто́й",
+     "g": {
+      "pos": "adj",
+      "case": "ins",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "\"Ty\" is used to children, close friends and relatives.",
+   "tokens": [
+    {
+     "t": "«",
+     "sp": false
+    },
+    {
+     "t": "Ты",
+     "sp": false,
+     "lex": "o:ты",
+     "lemma": "ты",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "»"
+    },
+    {
+     "t": "говоря́т",
+     "lex": "v:говорить",
+     "lemma": "говори́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "pl"
+     }
+    },
+    {
+     "t": "де́тям",
+     "sp": false,
+     "lex": "n:ребёнок",
+     "lemma": "ребёнок",
+     "g": {
+      "pos": "noun",
+      "case": "dat",
+      "number": "pl"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "бли́зким",
+     "lex": "a:близкий",
+     "lemma": "бли́зкий",
+     "g": {
+      "pos": "adj",
+      "case": "dat",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "друзья́м",
+     "lex": "n:друг",
+     "lemma": "друг",
+     "g": {
+      "pos": "noun",
+      "case": "dat",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "и",
+     "lex": "o:и",
+     "lemma": "и",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "ро́дственникам",
+     "sp": false,
+     "lex": "n:родственник",
+     "lemma": "ро́дственник",
+     "g": {
+      "pos": "noun",
+      "case": "dat",
+      "number": "pl"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "\"Vy\" is used to strangers, older people and colleagues at work, especially the boss.",
+   "tokens": [
+    {
+     "t": "«",
+     "sp": false
+    },
+    {
+     "t": "Вы",
+     "sp": false,
+     "lex": "o:вы",
+     "lemma": "вы",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "»"
+    },
+    {
+     "t": "—"
+    },
+    {
+     "t": "незнако́мым",
+     "lex": "a:незнакомый",
+     "lemma": "незнако́мый",
+     "g": {
+      "pos": "adj",
+      "case": "dat",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "лю́дям",
+     "sp": false,
+     "lex": "n:человек",
+     "lemma": "челове́к",
+     "g": {
+      "pos": "noun",
+      "case": "dat",
+      "number": "pl"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "ста́ршим",
+     "lex": "a:старший",
+     "lemma": "ста́рший",
+     "g": {
+      "pos": "adj",
+      "case": "ins",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "и",
+     "lex": "o:и",
+     "lemma": "и",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "колле́гам",
+     "lex": "n:коллега",
+     "lemma": "колле́га",
+     "g": {
+      "pos": "noun",
+      "case": "dat",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "на",
+     "lex": "o:на",
+     "lemma": "на",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "рабо́те",
+     "sp": false,
+     "lex": "n:работа",
+     "lemma": "рабо́та",
+     "g": {
+      "pos": "noun",
+      "case": "prep",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "осо́бенно",
+     "lex": "a:особенный",
+     "lemma": "осо́бенный",
+     "g": {
+      "pos": "adj",
+      "short": true,
+      "number": "sg",
+      "gender": "n"
+     }
+    },
+    {
+     "t": "нача́льнику",
+     "sp": false,
+     "lex": "n:начальник",
+     "lemma": "нача́льник",
+     "g": {
+      "pos": "noun",
+      "case": "dat",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "But in life it isn't that simple.",
+   "tokens": [
+    {
+     "t": "Но",
+     "lex": "o:но",
+     "lemma": "но",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "в",
+     "lex": "o:в",
+     "lemma": "в",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "жи́зни",
+     "lex": "n:жизнь",
+     "lemma": "жизнь",
+     "g": {
+      "pos": "noun",
+      "case": "prep",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "всё",
+     "lex": "o:всё",
+     "lemma": "всё",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "не",
+     "lex": "o:не",
+     "lemma": "не",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "так",
+     "lex": "o:так",
+     "lemma": "так",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "про́сто",
+     "sp": false,
+     "lex": "o:просто",
+     "lemma": "про́сто",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "para": true,
+   "en": "Young people often say \"ty\" to each other straight away, even if they've only just met.",
+   "tokens": [
+    {
+     "t": "Молоды́е",
+     "lex": "a:молодой",
+     "lemma": "молодо́й",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "лю́ди",
+     "lex": "n:человек",
+     "lemma": "челове́к",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "ча́сто",
+     "lex": "o:часто",
+     "lemma": "ча́сто",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "сра́зу",
+     "lex": "o:сразу",
+     "lemma": "сра́зу",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "говоря́т",
+     "lex": "v:говорить",
+     "lemma": "говори́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "pl"
+     }
+    },
+    {
+     "t": "друг",
+     "lex": "n:друг",
+     "lemma": "друг",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "дру́гу",
+     "lex": "n:друг",
+     "lemma": "друг",
+     "g": {
+      "pos": "noun",
+      "case": "dat",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "«",
+     "sp": false
+    },
+    {
+     "t": "ты",
+     "sp": false,
+     "lex": "o:ты",
+     "lemma": "ты",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "»",
+     "sp": false
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "да́же",
+     "lex": "o:даже",
+     "lemma": "да́же",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "е́сли",
+     "lex": "o:если",
+     "lemma": "е́сли",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "то́лько",
+     "lex": "o:только",
+     "lemma": "то́лько",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "что",
+     "lex": "o:что",
+     "lemma": "что",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "познако́мились",
+     "sp": false,
+     "lex": "v:познакомиться",
+     "lemma": "познако́миться",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "pl"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "Online too almost everyone is on \"ty\" terms.",
+   "tokens": [
+    {
+     "t": "В",
+     "lex": "o:в",
+     "lemma": "в",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "интерне́те",
+     "lex": "n:интернет",
+     "lemma": "интерне́т",
+     "g": {
+      "pos": "noun",
+      "case": "prep",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "то́же",
+     "lex": "o:тоже",
+     "lemma": "то́же",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "почти́",
+     "lex": "o:почти",
+     "lemma": "почти́",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "все",
+     "lex": "o:всё",
+     "lemma": "всё",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "на",
+     "lex": "o:на",
+     "lemma": "на",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "«",
+     "sp": false
+    },
+    {
+     "t": "ты",
+     "sp": false,
+     "lex": "o:ты",
+     "lemma": "ты",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "»",
+     "sp": false
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "But a grandmother in a shop may say \"ty\" to the shop assistant, and the assistant won't take offence.",
+   "tokens": [
+    {
+     "t": "А",
+     "lex": "o:а",
+     "lemma": "а",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "вот",
+     "lex": "o:вот",
+     "lemma": "вот",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "ба́бушка",
+     "lex": "n:бабушка",
+     "lemma": "ба́бушка",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "в",
+     "lex": "o:в",
+     "lemma": "в",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "магази́не",
+     "lex": "n:магазин",
+     "lemma": "магази́н",
+     "g": {
+      "pos": "noun",
+      "case": "prep",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "мо́жет",
+     "lex": "v:мочь",
+     "lemma": "мочь",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "sg"
+     }
+    },
+    {
+     "t": "сказа́ть",
+     "lex": "v:сказать",
+     "lemma": "сказа́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf"
+     }
+    },
+    {
+     "t": "продавщи́це",
+     "lex": "n:продавщица",
+     "lemma": "продавщи́ца",
+     "g": {
+      "pos": "noun",
+      "case": "dat",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": "«",
+     "sp": false
+    },
+    {
+     "t": "ты",
+     "sp": false,
+     "lex": "o:ты",
+     "lemma": "ты",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "»",
+     "sp": false
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "и",
+     "lex": "o:и",
+     "lemma": "и",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "та",
+     "lex": "a:тот",
+     "lemma": "тот",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "не",
+     "lex": "o:не",
+     "lemma": "не",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "оби́дится",
+     "sp": false,
+     "lex": "v:обидеться",
+     "lemma": "оби́деться",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "fut",
+      "person": 3,
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "para": true,
+   "en": "Switching from \"vy\" to \"ty\" is an important moment in a relationship.",
+   "tokens": [
+    {
+     "t": "Перехо́д",
+     "lex": "n:переход",
+     "lemma": "перехо́д",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "с",
+     "lex": "o:с",
+     "lemma": "с",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "«",
+     "sp": false
+    },
+    {
+     "t": "вы",
+     "sp": false,
+     "lex": "o:вы",
+     "lemma": "вы",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "»"
+    },
+    {
+     "t": "на",
+     "lex": "o:на",
+     "lemma": "на",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "«",
+     "sp": false
+    },
+    {
+     "t": "ты",
+     "sp": false,
+     "lex": "o:ты",
+     "lemma": "ты",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "»"
+    },
+    {
+     "t": "—"
+    },
+    {
+     "t": "ва́жный",
+     "lex": "a:важный",
+     "lemma": "ва́жный",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "моме́нт",
+     "lex": "n:момент",
+     "lemma": "моме́нт",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "в",
+     "lex": "o:в",
+     "lemma": "в",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "отноше́ниях",
+     "sp": false,
+     "lex": "n:отношение",
+     "lemma": "отноше́ние",
+     "g": {
+      "pos": "noun",
+      "case": "prep",
+      "number": "pl"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "Usually the older person, or the one in the higher position, suggests it: \"Let's switch to ty.\"",
+   "tokens": [
+    {
+     "t": "Обы́чно",
+     "lex": "a:обычный",
+     "lemma": "обы́чный",
+     "g": {
+      "pos": "adj",
+      "short": true,
+      "number": "sg",
+      "gender": "n"
+     }
+    },
+    {
+     "t": "его́",
+     "lex": "o:он",
+     "lemma": "он",
+     "g": {
+      "pos": "pron",
+      "case": "acc"
+     }
+    },
+    {
+     "t": "предлага́ет",
+     "lex": "v:предлагать",
+     "lemma": "предлага́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "sg"
+     }
+    },
+    {
+     "t": "ста́рший",
+     "lex": "a:старший",
+     "lemma": "ста́рший",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "и́ли",
+     "lex": "o:или",
+     "lemma": "и́ли",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "тот",
+     "sp": false,
+     "lex": "a:тот",
+     "lemma": "тот",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "кто",
+     "lex": "o:кто",
+     "lemma": "кто",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "занима́ет",
+     "lex": "v:занимать",
+     "lemma": "занима́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "sg"
+     }
+    },
+    {
+     "t": "бо́лее",
+     "lex": "o:более",
+     "lemma": "бо́лее",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "высо́кое",
+     "lex": "a:высокий",
+     "lemma": "высо́кий",
+     "g": {
+      "pos": "adj",
+      "case": "acc",
+      "number": "sg",
+      "gender": "n"
+     }
+    },
+    {
+     "t": "положе́ние",
+     "sp": false,
+     "lex": "n:положение",
+     "lemma": "положе́ние",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ":"
+    },
+    {
+     "t": "«",
+     "sp": false
+    },
+    {
+     "t": "Дава́й",
+     "lex": "v:давать",
+     "lemma": "дава́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "mood": "imp",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "перейдём",
+     "lex": "v:перейти",
+     "lemma": "перейти́",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "fut",
+      "person": 1,
+      "number": "pl"
+     }
+    },
+    {
+     "t": "на",
+     "lex": "o:на",
+     "lemma": "на",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "ты",
+     "sp": false,
+     "lex": "o:ты",
+     "lemma": "ты",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "»",
+     "sp": false
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "It isn't very polite to turn down such a suggestion.",
+   "tokens": [
+    {
+     "t": "Отказа́ться",
+     "lex": "v:отказаться",
+     "lemma": "отказа́ться",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf"
+     }
+    },
+    {
+     "t": "от",
+     "lex": "o:от",
+     "lemma": "от",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "тако́го",
+     "lex": "a:такой",
+     "lemma": "тако́й",
+     "g": {
+      "pos": "adj",
+      "case": "gen",
+      "number": "sg",
+      "gender": "n"
+     }
+    },
+    {
+     "t": "предложе́ния",
+     "lex": "n:предложение",
+     "lemma": "предложе́ние",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "не",
+     "lex": "o:не",
+     "lemma": "не",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "о́чень",
+     "lex": "o:очень",
+     "lemma": "о́чень",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "ве́жливо",
+     "sp": false,
+     "lex": "o:вежливо",
+     "lemma": "ве́жливо",
+     "g": {
+      "pos": "adv"
+     },
+     "rare": true
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "para": true,
+   "en": "How you address a person matters too.",
+   "tokens": [
+    {
+     "t": "Ва́жно",
+     "lex": "o:важно",
+     "lemma": "ва́жно",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "и",
+     "lex": "o:и",
+     "lemma": "и",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "то",
+     "sp": false,
+     "lex": "o:то",
+     "lemma": "то",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "как",
+     "lemma": "как",
+     "g": {
+      "pos": "conj"
+     },
+     "gloss": "how; as, like"
+    },
+    {
+     "t": "называ́ть",
+     "lex": "v:называть",
+     "lemma": "называ́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf"
+     }
+    },
+    {
+     "t": "челове́ка",
+     "sp": false,
+     "lex": "n:человек",
+     "lemma": "челове́к",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "An older colleague is usually addressed by first name and patronymic, for example Sergei Ivanovich.",
+   "tokens": [
+    {
+     "t": "Колле́гу",
+     "lex": "n:коллега",
+     "lemma": "колле́га",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "ста́ршего",
+     "lex": "a:старший",
+     "lemma": "ста́рший",
+     "g": {
+      "pos": "adj",
+      "case": "gen",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "во́зраста",
+     "lex": "n:возраст",
+     "lemma": "во́зраст",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "обы́чно",
+     "lex": "o:обычно",
+     "lemma": "обы́чно",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "называ́ют",
+     "lex": "v:называть",
+     "lemma": "называ́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "pl"
+     }
+    },
+    {
+     "t": "по",
+     "lex": "o:по",
+     "lemma": "по",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "и́мени",
+     "lex": "n:имя",
+     "lemma": "и́мя",
+     "g": {
+      "pos": "noun",
+      "case": "dat",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "и",
+     "lex": "o:и",
+     "lemma": "и",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "о́тчеству",
+     "sp": false,
+     "lex": "n:отчество",
+     "lemma": "о́тчество",
+     "g": {
+      "pos": "noun",
+      "case": "dat",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "наприме́р",
+     "sp": false,
+     "lex": "o:например",
+     "lemma": "наприме́р",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": ":"
+    },
+    {
+     "t": "Серге́й",
+     "lemma": "Серге́й",
+     "g": {
+      "pos": "name",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "Ива́нович",
+     "sp": false,
+     "lemma": "Ива́нович",
+     "g": {
+      "pos": "name",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "If you're not sure, it's better to start with \"vy\".",
+   "tokens": [
+    {
+     "t": "Е́сли",
+     "lex": "o:если",
+     "lemma": "е́сли",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "вы",
+     "lex": "o:вы",
+     "lemma": "вы",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "не",
+     "lex": "o:не",
+     "lemma": "не",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "уве́рены",
+     "sp": false,
+     "lex": "a:уверенный",
+     "lemma": "уве́ренный",
+     "g": {
+      "pos": "adj",
+      "short": true,
+      "number": "pl"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "лу́чше",
+     "lex": "o:лучше",
+     "lemma": "лу́чше",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "начни́те",
+     "lex": "v:начать",
+     "lemma": "нача́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "mood": "imp",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "с",
+     "lex": "o:с",
+     "lemma": "с",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "«",
+     "sp": false
+    },
+    {
+     "t": "вы",
+     "sp": false,
+     "lex": "o:вы",
+     "lemma": "вы",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "»",
+     "sp": false
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "Nobody has ever yet taken offence at being spoken to too politely.",
+   "tokens": [
+    {
+     "t": "Ещё",
+     "lex": "o:ещё",
+     "lemma": "ещё",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "ни",
+     "lex": "o:ни",
+     "lemma": "ни",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "оди́н",
+     "lex": "o:один",
+     "lemma": "оди́н",
+     "g": {
+      "pos": "num",
+      "case": "nom",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "челове́к",
+     "lex": "n:человек",
+     "lemma": "челове́к",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "не",
+     "lex": "o:не",
+     "lemma": "не",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "оби́делся",
+     "lex": "v:обидеться",
+     "lemma": "оби́деться",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "m"
+     },
+     "rare": true
+    },
+    {
+     "t": "на",
+     "lex": "o:на",
+     "lemma": "на",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "то",
+     "sp": false,
+     "lex": "o:то",
+     "lemma": "то",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "что",
+     "lex": "o:что",
+     "lemma": "что",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "с",
+     "lex": "o:с",
+     "lemma": "с",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "ним",
+     "lex": "o:он",
+     "lemma": "он",
+     "g": {
+      "pos": "pron",
+      "case": "ins"
+     }
+    },
+    {
+     "t": "говори́ли",
+     "lex": "v:говорить",
+     "lemma": "говори́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "past",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "сли́шком",
+     "lex": "o:слишком",
+     "lemma": "сли́шком",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "ве́жливо",
+     "sp": false,
+     "lex": "o:вежливо",
+     "lemma": "ве́жливо",
+     "g": {
+      "pos": "adv"
+     },
+     "rare": true
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  }
+ ],
+ "questions": [
+  {
+   "id": "nf-b2-09-q1",
+   "type": "choice",
+   "level": "B2",
+   "tags": [
+    "reading"
+   ],
+   "prompt": {
+    "ru": "Кому́ обы́чно говоря́т «ты»?",
+    "en": "Who is usually addressed as \"ty\"?",
+    "instruction": "Choose the answer"
+   },
+   "accept": [
+    "Де́тям и бли́зким друзья́м."
+   ],
+   "distractors": [
+    {
+     "ru": "Нача́льнику.",
+     "error": "reading.detail"
+    },
+    {
+     "ru": "Незнако́мым лю́дям.",
+     "error": "reading.detail"
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "nf-b2-09-q2",
+   "type": "choice",
+   "level": "B2",
+   "tags": [
+    "reading"
+   ],
+   "prompt": {
+    "ru": "Кто обы́чно предлага́ет перейти́ на «ты»?",
+    "en": "Who usually suggests switching to \"ty\"?",
+    "instruction": "Choose the answer"
+   },
+   "accept": [
+    "Ста́рший."
+   ],
+   "distractors": [
+    {
+     "ru": "Мла́дший.",
+     "error": "reading.detail"
+    },
+    {
+     "ru": "Тот, кто моло́же.",
+     "error": "reading.detail"
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "nf-b2-09-q3",
+   "type": "choice",
+   "level": "B2",
+   "tags": [
+    "reading"
+   ],
+   "prompt": {
+    "ru": "Как называ́ют колле́гу ста́ршего во́зраста?",
+    "en": "How is an older colleague addressed?",
+    "instruction": "Choose the answer"
+   },
+   "accept": [
+    "По и́мени и о́тчеству."
+   ],
+   "distractors": [
+    {
+     "ru": "То́лько по фами́лии.",
+     "error": "reading.detail"
+    },
+    {
+     "ru": "По и́мени, на «ты».",
+     "error": "reading.detail"
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "nf-b2-09-q4",
+   "type": "choice",
+   "level": "B2",
+   "tags": [
+    "reading"
+   ],
+   "prompt": {
+    "ru": "Что сове́тует а́втор, е́сли вы не уве́рены?",
+    "en": "What does the author advise if you're not sure?",
+    "instruction": "Choose the answer"
+   },
+   "accept": [
+    "Нача́ть с «вы»."
+   ],
+   "distractors": [
+    {
+     "ru": "Нача́ть с «ты».",
+     "error": "reading.detail"
+    },
+    {
+     "ru": "Ничего́ не говори́ть.",
+     "error": "reading.detail"
+    }
+   ],
+   "source": "handwritten"
+  }
+ ]
+}

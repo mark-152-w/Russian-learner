@@ -1,0 +1,39 @@
+id: nf-c1-04
+kind: nonfiction
+level: C1
+title: Са́мая дли́нная желе́зная доро́га | The longest railway
+---
+Желе́зная доро́га че́рез всю Сиби́рь соединя́ет Москву́ с Владивосто́ком. | The railway across the whole of Siberia links Moscow with Vladivostok.
+Её длина́ — бо́лее девяти́ ты́сяч киломе́тров, и э́то са́мая дли́нная желе́зная доро́га в ми́ре. | It is more than nine thousand kilometres long, and it's the longest railway in the world.
+По́езд идёт по ней це́лую неде́лю, и за э́то вре́мя пассажи́ры семь раз перево́дят часы́. | A train takes a whole week, and during that time the passengers put their watches forward seven times.
+
+Строи́тельство начало́сь в ты́сяча восемьсо́т девяно́сто пе́рвом году́ и продолжа́лось бо́лее двадцати́ лет. | Construction began in 1891 and went on for more than twenty years.
+Рабо́чим приходи́лось прокла́дывать пути́ че́рез тайгу́, боло́та и ве́чную мерзлоту́, стро́ить мосты́ че́рез огро́мные сиби́рские ре́ки и пробива́ть доро́гу в ска́лах вокру́г Байка́ла. | Workers had to lay track through the taiga, swamps and permafrost, build bridges over huge Siberian rivers and cut a way through the cliffs around Baikal.
+Зимо́й моро́зы достига́ли сорока́ гра́дусов, ле́том люде́й му́чили комары́. | In winter the frosts reached forty degrees; in summer the mosquitoes tormented people.
+
+Магистра́ль измени́ла Сиби́рь. | The railway changed Siberia.
+Вдоль неё вы́росли города́, в огро́мные пусты́е простра́нства прие́хали миллио́ны но́вых жи́телей. | Towns grew up along it, and millions of new inhabitants came into the huge empty spaces.
+Новосиби́рск, наприме́р, появи́лся и́менно там, где желе́зная доро́га пересекла́ Обь. | Novosibirsk, for example, appeared exactly where the railway crossed the Ob.
+Сего́дня э́то тре́тий по величине́ го́род Росси́и. | Today it is Russia's third-largest city.
+
+Для иностра́нных тури́стов путеше́ствие по э́той доро́ге — почти́ леге́нда. | For foreign tourists a journey along this railway is almost a legend.
+Но для ру́сских э́то пре́жде всего́ обы́чный по́езд: в нём е́дут домо́й студе́нты, вое́нные, ба́бушки с вну́ками и рабо́чие. | But for Russians it's first of all an ordinary train: students, soldiers, grandmothers with grandchildren and workers travel home on it.
+В ваго́не пьют чай из стака́нов в металли́ческих подстака́нниках, игра́ют в ка́рты и, коне́чно, разгова́ривают. | In the carriage people drink tea from glasses in metal holders, play cards and, of course, talk.
+Неде́ля в по́езде — э́то не то́лько доро́га, но и це́лая жизнь, со свои́ми знако́мствами, спо́рами и проща́ниями. | A week on the train isn't just a journey but a whole life, with its own acquaintances, arguments and farewells.
+---
+? Каку́ю длину́ име́ет магистра́ль? | How long is the railway?
++ Бо́лее девяти́ ты́сяч киломе́тров.
+- Две ты́сячи киломе́тров.
+- Пятна́дцать ты́сяч киломе́тров.
+? Ско́лько лет стро́или доро́гу? | How many years did it take to build the railway?
++ Бо́лее двадцати́ лет.
+- Пять лет.
+- Сто лет.
+? Как появи́лся Новосиби́рск? | How did Novosibirsk come about?
++ Там, где желе́зная доро́га пересекла́ Обь.
+- Его́ постро́ил Пётр Пе́рвый.
+- Он стоя́л там ещё до доро́ги.
+? Как в по́езде пьют чай? | How do people drink tea on the train?
++ Из стака́нов в подстака́нниках.
+- Из самова́ра.
+- Из пласти́ковых ча́шек.

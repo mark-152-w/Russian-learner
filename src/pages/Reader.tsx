@@ -295,7 +295,7 @@ export function StoryView({ listening = false }: { listening?: boolean }) {
                         </span>
                       )
                     })}
-                    {english && <span className="block font-sans text-sm text-ink-soft">{sent.en}</span>}
+                    {english ? <span className="block font-sans text-sm text-ink-soft">{sent.en}</span> : ' '}
                     {hasVoice && playing === null && (
                       <button type="button" onClick={() => playFrom(i)} className="mx-1 align-middle text-ink-soft hover:text-red" aria-label="Play from here">
                         <Icon name="speaker" className="inline h-4 w-4" />

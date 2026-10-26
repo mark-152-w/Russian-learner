@@ -1,0 +1,43 @@
+id: st-b2-06
+kind: story
+level: B2
+title: Соба́ка на платфо́рме | The dog on the platform
+---
+На ма́ленькой ста́нции под Москво́й все зна́ли ры́жую соба́ку по кли́чке Ве́рный. | At a small station outside Moscow everyone knew the red dog called Verny.
+Ка́ждый ве́чер в семь часо́в она́ приходи́ла на платфо́рму и встреча́ла электри́чку из Москвы́. | Every evening at seven she came to the platform and met the suburban train from Moscow.
+Когда́ пассажи́ры выходи́ли, соба́ка внима́тельно смотре́ла на ка́ждого, а пото́м ти́хо уходи́ла. | When the passengers got off, the dog looked carefully at each of them and then quietly left.
+
+Касси́рша Людми́ла рассказа́ла мне э́ту исто́рию, когда́ я опозда́л на после́днюю электри́чку. | The ticket clerk, Lyudmila, told me this story when I missed the last train.
+Ра́ньше у соба́ки был хозя́ин, пожило́й инжене́р. | The dog used to have an owner, an elderly engineer.
+Он рабо́тал в Москве́ и ка́ждый ве́чер возвраща́лся э́тим по́ездом. | He worked in Moscow and came back on this train every evening.
+Соба́ка всегда́ ждала́ его́ на платфо́рме, и они́ вме́сте шли домо́й. | The dog always waited for him on the platform, and they walked home together.
+
+Одна́жды зимо́й инжене́р не верну́лся. | One winter the engineer didn't come back.
+Ему́ ста́ло пло́хо на рабо́те, его́ увезли́ в больни́цу, и он там у́мер. | He was taken ill at work, was taken to hospital, and died there.
+Соба́ка ничего́ об э́том не зна́ла. | The dog knew nothing about it.
+Она́ пришла́ на ста́нцию на сле́дующий ве́чер, и пото́м ещё, и ещё. | She came to the station the next evening, and then again, and again.
+
+— Мы её ко́рмим всей ста́нцией, — сказа́ла Людми́ла. | "The whole station feeds her," said Lyudmila.
+— Её мно́го раз хоте́ли взять домо́й, но она́ всегда́ возвраща́ется сюда́. | "People have wanted to take her home many times, but she always comes back here."
+— Ждёт уже́ пя́тый год. | "She's been waiting for five years now."
+
+Я посмотре́л на платфо́рму. | I looked at the platform.
+Под фонарём сиде́ла ста́рая ры́жая соба́ка и смотре́ла туда́, отку́да прихо́дят поезда́. | Under a street lamp sat an old red dog, looking in the direction the trains come from.
+Я до́лго не мог забы́ть её глаза́: в них не́ было ни го́ря, ни оби́ды. То́лько ожида́ние. | For a long time I couldn't forget her eyes: there was neither grief nor resentment in them. Only waiting.
+---
+? Когда́ соба́ка приходи́ла на платфо́рму? | When did the dog come to the platform?
++ Ка́ждый ве́чер в семь часо́в.
+- Ка́ждое у́тро.
+- По выходны́м.
+? Кто рассказа́л а́втору э́ту исто́рию? | Who told the narrator this story?
++ Касси́рша.
+- Хозя́ин соба́ки.
+- Води́тель электри́чки.
+? Что случи́лось с хозя́ином? | What happened to the owner?
++ Он у́мер в больни́це.
+- Он перее́хал в другу́ю страну́.
+- Он забы́л соба́ку.
+? Ско́лько лет соба́ка ждёт? | How many years has the dog been waiting?
++ Пять лет.
+- Оди́н год.
+- Де́сять лет.

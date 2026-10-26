@@ -1,0 +1,1812 @@
+{
+ "$schema": "../../../../schemas/story.schema.json",
+ "id": "nf-c1-09",
+ "kind": "nonfiction",
+ "level": "C1",
+ "title": {
+  "ru": "Почему́ ру́сские не улыба́ются?",
+  "en": "Why don't Russians smile?"
+ },
+ "sentences": [
+  {
+   "para": true,
+   "en": "Foreigners who come to Russia for the first time often complain: people in the street seem gloomy, shop assistants don't smile, and if you ask \"How are you?\" you may well get a detailed account of someone's problems.",
+   "tokens": [
+    {
+     "t": "Иностра́нцы",
+     "sp": false,
+     "lex": "n:иностранец",
+     "lemma": "иностра́нец",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "pl"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "кото́рые",
+     "lex": "a:который",
+     "lemma": "кото́рый",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "впервы́е",
+     "lex": "o:впервые",
+     "lemma": "впервы́е",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "прие́хали",
+     "lex": "v:приехать",
+     "lemma": "прие́хать",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "в",
+     "lex": "o:в",
+     "lemma": "в",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "Росси́ю",
+     "sp": false,
+     "lex": "n:Россия",
+     "lemma": "Росси́я",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "ча́сто",
+     "lex": "o:часто",
+     "lemma": "ча́сто",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "жа́луются",
+     "sp": false,
+     "lex": "v:жаловаться",
+     "lemma": "жа́ловаться",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "pl"
+     }
+    },
+    {
+     "t": ":"
+    },
+    {
+     "t": "лю́ди",
+     "lex": "n:человек",
+     "lemma": "челове́к",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "на",
+     "lex": "o:на",
+     "lemma": "на",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "у́лицах",
+     "lex": "n:улица",
+     "lemma": "у́лица",
+     "g": {
+      "pos": "noun",
+      "case": "prep",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "ка́жутся",
+     "lex": "v:казаться",
+     "lemma": "каза́ться",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "pl"
+     }
+    },
+    {
+     "t": "угрю́мыми",
+     "sp": false,
+     "lex": "a:угрюмый",
+     "lemma": "угрю́мый",
+     "g": {
+      "pos": "adj",
+      "case": "ins",
+      "number": "pl"
+     },
+     "rare": true
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "продавцы́",
+     "lex": "n:продавец",
+     "lemma": "продаве́ц",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "не",
+     "lex": "o:не",
+     "lemma": "не",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "улыба́ются",
+     "sp": false,
+     "lex": "v:улыбаться",
+     "lemma": "улыба́ться",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "pl"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "а",
+     "lex": "o:а",
+     "lemma": "а",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "на",
+     "lex": "o:на",
+     "lemma": "на",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "вопро́с",
+     "lex": "n:вопрос",
+     "lemma": "вопро́с",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "«",
+     "sp": false
+    },
+    {
+     "t": "Как",
+     "lemma": "как",
+     "g": {
+      "pos": "adv"
+     },
+     "gloss": "how; as, like"
+    },
+    {
+     "t": "дела́",
+     "sp": false,
+     "lex": "n:дело",
+     "lemma": "де́ло",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "?",
+     "sp": false
+    },
+    {
+     "t": "»"
+    },
+    {
+     "t": "вам",
+     "lex": "o:вы",
+     "lemma": "вы",
+     "g": {
+      "pos": "pron",
+      "case": "dat"
+     }
+    },
+    {
+     "t": "вполне́",
+     "lex": "o:вполне",
+     "lemma": "вполне́",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "мо́гут",
+     "lex": "v:мочь",
+     "lemma": "мочь",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "pl"
+     }
+    },
+    {
+     "t": "подро́бно",
+     "lex": "o:подробно",
+     "lemma": "подро́бно",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "рассказа́ть",
+     "lex": "v:рассказать",
+     "lemma": "рассказа́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf"
+     }
+    },
+    {
+     "t": "о",
+     "lex": "o:о",
+     "lemma": "о",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "свои́х",
+     "lex": "a:свой",
+     "lemma": "свой",
+     "g": {
+      "pos": "adj",
+      "case": "prep",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "пробле́мах",
+     "sp": false,
+     "lex": "n:проблема",
+     "lemma": "пробле́ма",
+     "g": {
+      "pos": "noun",
+      "case": "prep",
+      "number": "pl"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "Are Russians really so unfriendly?",
+   "tokens": [
+    {
+     "t": "Неуже́ли",
+     "lex": "o:неужели",
+     "lemma": "неуже́ли",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "ру́сские",
+     "lex": "a:русский",
+     "lemma": "ру́сский",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "действи́тельно",
+     "lex": "o:действительно",
+     "lemma": "действи́тельно",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "таки́е",
+     "lex": "a:такой",
+     "lemma": "тако́й",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "неприве́тливые",
+     "sp": false,
+     "lex": "a:неприветливый",
+     "lemma": "неприве́тливый",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "pl"
+     },
+     "rare": true
+    },
+    {
+     "t": "?",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "para": true,
+   "en": "Linguists and psychologists explain it differently.",
+   "tokens": [
+    {
+     "t": "Лингви́сты",
+     "lex": "n:лингвист",
+     "lemma": "лингви́ст",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "pl"
+     },
+     "rare": true
+    },
+    {
+     "t": "и",
+     "lex": "o:и",
+     "lemma": "и",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "психо́логи",
+     "lex": "n:психолог",
+     "lemma": "психо́лог",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "объясня́ют",
+     "lex": "v:объяснять",
+     "lemma": "объясня́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "pl"
+     }
+    },
+    {
+     "t": "э́то",
+     "lex": "o:это",
+     "lemma": "э́то",
+     "g": {
+      "pos": "pron"
+     }
+    },
+    {
+     "t": "ина́че",
+     "sp": false,
+     "lex": "o:иначе",
+     "lemma": "ина́че",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "In Russian culture a smile isn't a sign of politeness but a sign of genuine liking.",
+   "tokens": [
+    {
+     "t": "В",
+     "lex": "o:в",
+     "lemma": "в",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "ру́сской",
+     "lex": "a:русский",
+     "lemma": "ру́сский",
+     "g": {
+      "pos": "adj",
+      "case": "prep",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "культу́ре",
+     "lex": "n:культура",
+     "lemma": "культу́ра",
+     "g": {
+      "pos": "noun",
+      "case": "prep",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "улы́бка",
+     "lex": "n:улыбка",
+     "lemma": "улы́бка",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "—"
+    },
+    {
+     "t": "не",
+     "lex": "o:не",
+     "lemma": "не",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "знак",
+     "lex": "n:знак",
+     "lemma": "знак",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "ве́жливости",
+     "sp": false,
+     "lex": "n:вежливость",
+     "lemma": "ве́жливость",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "а",
+     "lex": "o:а",
+     "lemma": "а",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "знак",
+     "lex": "n:знак",
+     "lemma": "знак",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "и́скренней",
+     "lex": "a:искренний",
+     "lemma": "и́скренний",
+     "g": {
+      "pos": "adj",
+      "case": "gen",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "симпа́тии",
+     "sp": false,
+     "lex": "n:симпатия",
+     "lemma": "симпа́тия",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "Smiling at a stranger for no reason is considered strange: it means you're either laughing at them or not behaving seriously.",
+   "tokens": [
+    {
+     "t": "Улыба́ться",
+     "lex": "v:улыбаться",
+     "lemma": "улыба́ться",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf"
+     }
+    },
+    {
+     "t": "незнако́мому",
+     "lex": "a:незнакомый",
+     "lemma": "незнако́мый",
+     "g": {
+      "pos": "adj",
+      "case": "dat",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "челове́ку",
+     "lex": "n:человек",
+     "lemma": "челове́к",
+     "g": {
+      "pos": "noun",
+      "case": "dat",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "без",
+     "lex": "o:без",
+     "lemma": "без",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "причи́ны",
+     "lex": "n:причина",
+     "lemma": "причи́на",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "счита́ется",
+     "lex": "v:считаться",
+     "lemma": "счита́ться",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "sg"
+     }
+    },
+    {
+     "t": "стра́нным",
+     "sp": false,
+     "lex": "a:странный",
+     "lemma": "стра́нный",
+     "g": {
+      "pos": "adj",
+      "case": "ins",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": ":"
+    },
+    {
+     "t": "зна́чит",
+     "sp": false,
+     "lex": "v:значить",
+     "lemma": "зна́чить",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "sg"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "ты",
+     "lex": "o:ты",
+     "lemma": "ты",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "и́ли",
+     "lex": "o:или",
+     "lemma": "и́ли",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "смеёшься",
+     "lex": "v:смеяться",
+     "lemma": "смея́ться",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 2,
+      "number": "sg"
+     }
+    },
+    {
+     "t": "над",
+     "lex": "o:над",
+     "lemma": "над",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "ним",
+     "sp": false,
+     "lex": "o:он",
+     "lemma": "он",
+     "g": {
+      "pos": "pron",
+      "case": "ins"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "и́ли",
+     "lex": "o:или",
+     "lemma": "и́ли",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "ведёшь",
+     "lex": "v:вести",
+     "lemma": "вести́",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 2,
+      "number": "sg"
+     }
+    },
+    {
+     "t": "себя́",
+     "lex": "o:себя",
+     "lemma": "себя́",
+     "g": {
+      "pos": "pron",
+      "case": "acc"
+     }
+    },
+    {
+     "t": "несерьёзно",
+     "sp": false,
+     "lex": "a:несерьёзный",
+     "lemma": "несерьёзный",
+     "g": {
+      "pos": "adj",
+      "short": true,
+      "number": "sg",
+      "gender": "n"
+     },
+     "rare": true
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "There's even a saying that laughter without reason is a sign of stupidity.",
+   "tokens": [
+    {
+     "t": "Есть",
+     "lex": "v:быть",
+     "lemma": "быть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "sg"
+     }
+    },
+    {
+     "t": "да́же",
+     "lex": "o:даже",
+     "lemma": "да́же",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "погово́рка",
+     "lex": "n:поговорка",
+     "lemma": "погово́рка",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "о",
+     "lex": "o:о",
+     "lemma": "о",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "том",
+     "sp": false,
+     "lex": "n:том",
+     "lemma": "том",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "что",
+     "lex": "o:что",
+     "lemma": "что",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "смех",
+     "lex": "n:смех",
+     "lemma": "смех",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "без",
+     "lex": "o:без",
+     "lemma": "без",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "причи́ны",
+     "lex": "n:причина",
+     "lemma": "причи́на",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "—"
+    },
+    {
+     "t": "при́знак",
+     "lex": "n:признак",
+     "lemma": "при́знак",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "глу́пости",
+     "sp": false,
+     "lex": "n:глупость",
+     "lemma": "глу́пость",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "para": true,
+   "en": "Besides, Russians value sincerity more than politeness.",
+   "tokens": [
+    {
+     "t": "Кро́ме",
+     "lex": "o:кроме",
+     "lemma": "кро́ме",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "того́",
+     "sp": false,
+     "lex": "a:тот",
+     "lemma": "тот",
+     "g": {
+      "pos": "adj",
+      "case": "gen",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "ру́сские",
+     "lex": "a:русский",
+     "lemma": "ру́сский",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "це́нят",
+     "lex": "v:ценить",
+     "lemma": "цени́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "pl"
+     }
+    },
+    {
+     "t": "и́скренность",
+     "lex": "n:искренность",
+     "lemma": "и́скренность",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "бо́льше",
+     "sp": false,
+     "lex": "o:больше",
+     "lemma": "бо́льше",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "чем",
+     "lemma": "чем",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "ве́жливость",
+     "sp": false,
+     "lex": "n:вежливость",
+     "lemma": "ве́жливость",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "If someone is feeling bad, they don't have to pretend everything is wonderful.",
+   "tokens": [
+    {
+     "t": "Е́сли",
+     "lex": "o:если",
+     "lemma": "е́сли",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "челове́ку",
+     "lex": "n:человек",
+     "lemma": "челове́к",
+     "g": {
+      "pos": "noun",
+      "case": "dat",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "пло́хо",
+     "sp": false,
+     "lex": "o:плохо",
+     "lemma": "пло́хо",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "он",
+     "lex": "o:он",
+     "lemma": "он",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "не",
+     "lex": "o:не",
+     "lemma": "не",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "обя́зан",
+     "lex": "a:обязанный",
+     "lemma": "обя́занный",
+     "g": {
+      "pos": "adj",
+      "short": true,
+      "number": "sg",
+      "gender": "m"
+     },
+     "rare": true
+    },
+    {
+     "t": "де́лать",
+     "lex": "v:делать",
+     "lemma": "де́лать",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf"
+     }
+    },
+    {
+     "t": "вид",
+     "sp": false,
+     "lex": "n:вид",
+     "lemma": "вид",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "что",
+     "lex": "o:что",
+     "lemma": "что",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "всё",
+     "lex": "o:всё",
+     "lemma": "всё",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "прекра́сно",
+     "sp": false,
+     "lex": "o:прекрасно",
+     "lemma": "прекра́сно",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "A stock smile at work seems insincere to many people, almost insulting.",
+   "tokens": [
+    {
+     "t": "Дежу́рная",
+     "lex": "a:дежурный",
+     "lemma": "дежу́рный",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "улы́бка",
+     "lex": "n:улыбка",
+     "lemma": "улы́бка",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "на",
+     "lex": "o:на",
+     "lemma": "на",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "рабо́те",
+     "lex": "n:работа",
+     "lemma": "рабо́та",
+     "g": {
+      "pos": "noun",
+      "case": "prep",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "мно́гим",
+     "lex": "a:многие",
+     "lemma": "мно́гие",
+     "g": {
+      "pos": "adj",
+      "case": "ins",
+      "number": "sg",
+      "gender": "n"
+     },
+     "rare": true
+    },
+    {
+     "t": "ка́жется",
+     "lex": "v:казаться",
+     "lemma": "каза́ться",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "sg"
+     }
+    },
+    {
+     "t": "неи́скренней",
+     "sp": false,
+     "lex": "a:неискренний",
+     "lemma": "неи́скренний",
+     "g": {
+      "pos": "adj",
+      "case": "gen",
+      "number": "sg",
+      "gender": "f"
+     },
+     "rare": true
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "почти́",
+     "lex": "o:почти",
+     "lemma": "почти́",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "оскорби́тельной",
+     "sp": false,
+     "lex": "a:оскорбительный",
+     "lemma": "оскорби́тельный",
+     "g": {
+      "pos": "adj",
+      "case": "gen",
+      "number": "sg",
+      "gender": "f"
+     },
+     "rare": true
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "para": true,
+   "en": "But get to know someone better, and everything changes.",
+   "tokens": [
+    {
+     "t": "Но",
+     "lex": "o:но",
+     "lemma": "но",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "сто́ит",
+     "lex": "v:стоить",
+     "lemma": "сто́ить",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "sg"
+     }
+    },
+    {
+     "t": "познако́миться",
+     "lex": "v:познакомиться",
+     "lemma": "познако́миться",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf"
+     }
+    },
+    {
+     "t": "с",
+     "lex": "o:с",
+     "lemma": "с",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "челове́ком",
+     "lex": "n:человек",
+     "lemma": "челове́к",
+     "g": {
+      "pos": "noun",
+      "case": "ins",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "лу́чше",
+     "sp": false,
+     "lex": "o:лучше",
+     "lemma": "лу́чше",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "и",
+     "lex": "o:и",
+     "lemma": "и",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "всё",
+     "lex": "o:всё",
+     "lemma": "всё",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "меня́ется",
+     "sp": false,
+     "lex": "v:меняться",
+     "lemma": "меня́ться",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "That same gloomy neighbour in the lift may turn out to be someone who will go to hospital with you at two in the morning or give you his last penny.",
+   "tokens": [
+    {
+     "t": "Тот",
+     "lex": "a:тот",
+     "lemma": "тот",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "же",
+     "lex": "o:же",
+     "lemma": "же",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "угрю́мый",
+     "lex": "a:угрюмый",
+     "lemma": "угрю́мый",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "m"
+     },
+     "rare": true
+    },
+    {
+     "t": "сосе́д",
+     "lex": "n:сосед",
+     "lemma": "сосе́д",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "в",
+     "lex": "o:в",
+     "lemma": "в",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "ли́фте",
+     "lex": "n:лифт",
+     "lemma": "лифт",
+     "g": {
+      "pos": "noun",
+      "case": "prep",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "мо́жет",
+     "lex": "v:мочь",
+     "lemma": "мочь",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "sg"
+     }
+    },
+    {
+     "t": "оказа́ться",
+     "lex": "v:оказаться",
+     "lemma": "оказа́ться",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf"
+     }
+    },
+    {
+     "t": "челове́ком",
+     "sp": false,
+     "lex": "n:человек",
+     "lemma": "челове́к",
+     "g": {
+      "pos": "noun",
+      "case": "ins",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "кото́рый",
+     "lex": "a:который",
+     "lemma": "кото́рый",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "в",
+     "lex": "o:в",
+     "lemma": "в",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "два",
+     "lex": "o:два",
+     "lemma": "два",
+     "g": {
+      "pos": "num",
+      "case": "acc"
+     }
+    },
+    {
+     "t": "часа́",
+     "lex": "n:час",
+     "lemma": "час",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "но́чи",
+     "lex": "n:ночь",
+     "lemma": "ночь",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "пое́дет",
+     "lex": "v:поехать",
+     "lemma": "пое́хать",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "fut",
+      "person": 3,
+      "number": "sg"
+     }
+    },
+    {
+     "t": "с",
+     "lex": "o:с",
+     "lemma": "с",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "ва́ми",
+     "lex": "o:вы",
+     "lemma": "вы",
+     "g": {
+      "pos": "pron",
+      "case": "ins"
+     }
+    },
+    {
+     "t": "в",
+     "lex": "o:в",
+     "lemma": "в",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "больни́цу",
+     "lex": "n:больница",
+     "lemma": "больни́ца",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "и́ли",
+     "lex": "o:или",
+     "lemma": "и́ли",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "отда́ст",
+     "lex": "v:отдать",
+     "lemma": "отда́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "fut",
+      "person": 3,
+      "number": "sg"
+     }
+    },
+    {
+     "t": "после́днее",
+     "sp": false,
+     "lex": "a:последний",
+     "lemma": "после́дний",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "n"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "The Russian smile is rare, but it's real.",
+   "tokens": [
+    {
+     "t": "Ру́сская",
+     "lex": "a:русский",
+     "lemma": "ру́сский",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "улы́бка",
+     "lex": "n:улыбка",
+     "lemma": "улы́бка",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "ре́дкая",
+     "sp": false,
+     "lex": "a:редкий",
+     "lemma": "ре́дкий",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "но",
+     "lex": "o:но",
+     "lemma": "но",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "настоя́щая",
+     "sp": false,
+     "lex": "a:настоящий",
+     "lemma": "настоя́щий",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "And if someone has smiled at you, it means they really are glad to see you.",
+   "tokens": [
+    {
+     "t": "И",
+     "lex": "o:и",
+     "lemma": "и",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "е́сли",
+     "lex": "o:если",
+     "lemma": "е́сли",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "вам",
+     "lex": "o:вы",
+     "lemma": "вы",
+     "g": {
+      "pos": "pron",
+      "case": "dat"
+     }
+    },
+    {
+     "t": "улыбну́лись",
+     "lex": "v:улыбнуться",
+     "lemma": "улыбну́ться",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "—"
+    },
+    {
+     "t": "зна́чит",
+     "sp": false,
+     "lex": "v:значить",
+     "lemma": "зна́чить",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "sg"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "вам",
+     "lex": "o:вы",
+     "lemma": "вы",
+     "g": {
+      "pos": "pron",
+      "case": "dat"
+     }
+    },
+    {
+     "t": "действи́тельно",
+     "lex": "a:действительный",
+     "lemma": "действи́тельный",
+     "g": {
+      "pos": "adj",
+      "short": true,
+      "number": "sg",
+      "gender": "n"
+     },
+     "rare": true
+    },
+    {
+     "t": "ра́ды",
+     "sp": false,
+     "lex": "n:рада",
+     "lemma": "ра́да",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  }
+ ],
+ "questions": [
+  {
+   "id": "nf-c1-09-q1",
+   "type": "choice",
+   "level": "C1",
+   "tags": [
+    "reading"
+   ],
+   "prompt": {
+    "ru": "Что зна́чит улы́бка в ру́сской культу́ре?",
+    "en": "What does a smile mean in Russian culture?",
+    "instruction": "Choose the answer"
+   },
+   "accept": [
+    "И́скреннюю симпа́тию."
+   ],
+   "distractors": [
+    {
+     "ru": "Ве́жливость.",
+     "error": "reading.detail"
+    },
+    {
+     "ru": "Уста́лость.",
+     "error": "reading.detail"
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "nf-c1-09-q2",
+   "type": "choice",
+   "level": "C1",
+   "tags": [
+    "reading"
+   ],
+   "prompt": {
+    "ru": "Как отно́сятся к улы́бке без причи́ны?",
+    "en": "How is a smile without a reason seen?",
+    "instruction": "Choose the answer"
+   },
+   "accept": [
+    "Как к чему́-то стра́нному."
+   ],
+   "distractors": [
+    {
+     "ru": "Как к зна́ку уваже́ния.",
+     "error": "reading.detail"
+    },
+    {
+     "ru": "Как к обяза́тельному пра́вилу.",
+     "error": "reading.detail"
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "nf-c1-09-q3",
+   "type": "choice",
+   "level": "C1",
+   "tags": [
+    "reading"
+   ],
+   "prompt": {
+    "ru": "Что ру́сские це́нят бо́льше ве́жливости?",
+    "en": "What do Russians value more than politeness?",
+    "instruction": "Choose the answer"
+   },
+   "accept": [
+    "И́скренность."
+   ],
+   "distractors": [
+    {
+     "ru": "Де́ньги.",
+     "error": "reading.detail"
+    },
+    {
+     "ru": "Тишину́.",
+     "error": "reading.detail"
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "nf-c1-09-q4",
+   "type": "choice",
+   "level": "C1",
+   "tags": [
+    "reading"
+   ],
+   "prompt": {
+    "ru": "Что зна́чит, е́сли вам улыбну́лись?",
+    "en": "What does it mean if someone smiles at you?",
+    "instruction": "Choose the answer"
+   },
+   "accept": [
+    "Вам действи́тельно ра́ды."
+   ],
+   "distractors": [
+    {
+     "ru": "Над ва́ми смею́тся.",
+     "error": "reading.detail"
+    },
+    {
+     "ru": "Вас не по́мнят.",
+     "error": "reading.detail"
+    }
+   ],
+   "source": "handwritten"
+  }
+ ]
+}

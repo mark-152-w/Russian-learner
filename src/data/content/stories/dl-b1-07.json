@@ -1,0 +1,795 @@
+{
+ "$schema": "../../../../schemas/story.schema.json",
+ "id": "dl-b1-07",
+ "kind": "dialogue",
+ "level": "B1",
+ "title": {
+  "ru": "Пропа́л чемода́н",
+  "en": "A missing suitcase"
+ },
+ "sentences": [
+  {
+   "para": true,
+   "speaker": "Пассажи́р",
+   "en": "Passenger: Hello. My suitcase hasn't arrived. I've been waiting a whole hour.",
+   "tokens": [
+    {
+     "t": "Здра́вствуйте",
+     "sp": false,
+     "lex": "o:здравствуйте",
+     "lemma": "здра́вствуйте",
+     "g": {
+      "pos": "intj"
+     }
+    },
+    {
+     "t": "."
+    },
+    {
+     "t": "Мой",
+     "lex": "a:мой",
+     "lemma": "мой",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "чемода́н",
+     "lex": "n:чемодан",
+     "lemma": "чемода́н",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "не",
+     "lex": "o:не",
+     "lemma": "не",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "пришёл",
+     "sp": false,
+     "lex": "v:прийти",
+     "lemma": "прийти́",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "."
+    },
+    {
+     "t": "Я",
+     "lex": "o:я",
+     "lemma": "я",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "жду",
+     "lex": "v:ждать",
+     "lemma": "ждать",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 1,
+      "number": "sg"
+     }
+    },
+    {
+     "t": "уже́",
+     "lex": "o:уже",
+     "lemma": "уже́",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "це́лый",
+     "lex": "a:целый",
+     "lemma": "це́лый",
+     "g": {
+      "pos": "adj",
+      "case": "acc",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "час",
+     "sp": false,
+     "lex": "n:час",
+     "lemma": "час",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Сотру́дница",
+   "en": "Staff member: Please show me your ticket. Where did you fly in from?",
+   "tokens": [
+    {
+     "t": "Покажи́те",
+     "sp": false,
+     "lex": "v:показать",
+     "lemma": "показа́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "mood": "imp",
+      "number": "pl"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "пожа́луйста",
+     "sp": false,
+     "lex": "o:пожалуйста",
+     "lemma": "пожа́луйста",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "ваш",
+     "lemma": "ваш",
+     "g": {
+      "pos": "pron",
+      "case": "nom",
+      "gender": "m"
+     },
+     "gloss": "your, yours (plural or polite)"
+    },
+    {
+     "t": "биле́т",
+     "sp": false,
+     "lex": "n:билет",
+     "lemma": "биле́т",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "."
+    },
+    {
+     "t": "Отку́да",
+     "lex": "o:откуда",
+     "lemma": "отку́да",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "вы",
+     "lex": "o:вы",
+     "lemma": "вы",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "прилете́ли",
+     "sp": false,
+     "lex": "v:прилететь",
+     "lemma": "прилете́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "pl"
+     },
+     "rare": true
+    },
+    {
+     "t": "?",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Пассажи́р",
+   "en": "Passenger: From Novosibirsk.",
+   "tokens": [
+    {
+     "t": "Из",
+     "lex": "o:из",
+     "lemma": "из",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "Новосиби́рска",
+     "sp": false,
+     "lex": "n:Новосибирск",
+     "lemma": "Новосиби́рск",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Сотру́дница",
+   "en": "Staff member: What is your suitcase like? Describe it.",
+   "tokens": [
+    {
+     "t": "Како́й",
+     "lex": "a:какой",
+     "lemma": "како́й",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "у",
+     "lex": "o:у",
+     "lemma": "у",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "вас",
+     "lex": "o:вы",
+     "lemma": "вы",
+     "g": {
+      "pos": "pron",
+      "case": "gen"
+     }
+    },
+    {
+     "t": "чемода́н",
+     "sp": false,
+     "lex": "n:чемодан",
+     "lemma": "чемода́н",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "?"
+    },
+    {
+     "t": "Опиши́те",
+     "lex": "v:описать",
+     "lemma": "описа́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "mood": "imp",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "его́",
+     "sp": false,
+     "lex": "o:он",
+     "lemma": "он",
+     "g": {
+      "pos": "pron",
+      "case": "acc"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Пассажи́р",
+   "en": "Passenger: Big, blue, on wheels. It has an old handle that doesn't work well.",
+   "tokens": [
+    {
+     "t": "Большо́й",
+     "sp": false,
+     "lex": "a:большой",
+     "lemma": "большо́й",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "си́ний",
+     "sp": false,
+     "lex": "a:синий",
+     "lemma": "си́ний",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "на",
+     "lex": "o:на",
+     "lemma": "на",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "колёсах",
+     "sp": false,
+     "lex": "n:колесо",
+     "lemma": "колесо́",
+     "g": {
+      "pos": "noun",
+      "case": "prep",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "."
+    },
+    {
+     "t": "У",
+     "lex": "o:у",
+     "lemma": "у",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "него́",
+     "lex": "o:он",
+     "lemma": "он",
+     "g": {
+      "pos": "pron",
+      "case": "gen"
+     }
+    },
+    {
+     "t": "ста́рая",
+     "lex": "a:старый",
+     "lemma": "ста́рый",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "ру́чка",
+     "sp": false,
+     "lex": "n:ручка",
+     "lemma": "ру́чка",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "кото́рая",
+     "lex": "a:который",
+     "lemma": "кото́рый",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "пло́хо",
+     "lex": "o:плохо",
+     "lemma": "пло́хо",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "рабо́тает",
+     "sp": false,
+     "lex": "v:работать",
+     "lemma": "рабо́тать",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Сотру́дница",
+   "en": "Staff member: It looks as if your suitcase flew to St Petersburg. It will be brought tomorrow morning.",
+   "tokens": [
+    {
+     "t": "Похо́же",
+     "sp": false,
+     "lex": "o:похоже",
+     "lemma": "похо́же",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "ваш",
+     "lemma": "ваш",
+     "g": {
+      "pos": "pron",
+      "case": "nom",
+      "gender": "m"
+     },
+     "gloss": "your, yours (plural or polite)"
+    },
+    {
+     "t": "чемода́н",
+     "lex": "n:чемодан",
+     "lemma": "чемода́н",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "улете́л",
+     "lex": "v:улететь",
+     "lemma": "улете́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "m"
+     },
+     "rare": true
+    },
+    {
+     "t": "в",
+     "lex": "o:в",
+     "lemma": "в",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "Петербу́рг",
+     "sp": false,
+     "lex": "n:Петербург",
+     "lemma": "Петербу́рг",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": "."
+    },
+    {
+     "t": "Его́",
+     "lex": "o:он",
+     "lemma": "он",
+     "g": {
+      "pos": "pron",
+      "case": "acc"
+     }
+    },
+    {
+     "t": "привезу́т",
+     "lex": "v:привезти",
+     "lemma": "привезти́",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "fut",
+      "person": 3,
+      "number": "pl"
+     }
+    },
+    {
+     "t": "за́втра",
+     "lex": "o:завтра",
+     "lemma": "за́втра",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "у́тром",
+     "sp": false,
+     "lex": "n:утро",
+     "lemma": "у́тро",
+     "g": {
+      "pos": "noun",
+      "case": "ins",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Пассажи́р",
+   "en": "Passenger: Can it be delivered to my home?",
+   "tokens": [
+    {
+     "t": "А",
+     "lex": "o:а",
+     "lemma": "а",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "мо́жно",
+     "lex": "o:можно",
+     "lemma": "мо́жно",
+     "g": {
+      "pos": "pred"
+     }
+    },
+    {
+     "t": "доста́вить",
+     "lex": "v:доставить",
+     "lemma": "доста́вить",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf"
+     }
+    },
+    {
+     "t": "его́",
+     "lex": "o:он",
+     "lemma": "он",
+     "g": {
+      "pos": "pron",
+      "case": "acc"
+     }
+    },
+    {
+     "t": "домо́й",
+     "sp": false,
+     "lex": "o:домой",
+     "lemma": "домо́й",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "?",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Сотру́дница",
+   "en": "Staff member: Yes, write your address and phone number here.",
+   "tokens": [
+    {
+     "t": "Да",
+     "sp": false,
+     "lex": "o:да",
+     "lemma": "да",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "напиши́те",
+     "lex": "v:написать",
+     "lemma": "написа́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "mood": "imp",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "здесь",
+     "lex": "o:здесь",
+     "lemma": "здесь",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "ваш",
+     "lemma": "ваш",
+     "g": {
+      "pos": "pron",
+      "case": "acc",
+      "gender": "m"
+     },
+     "gloss": "your, yours (plural or polite)"
+    },
+    {
+     "t": "а́дрес",
+     "lex": "n:адрес",
+     "lemma": "а́дрес",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "и",
+     "lex": "o:и",
+     "lemma": "и",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "телефо́н",
+     "sp": false,
+     "lex": "n:телефон",
+     "lemma": "телефо́н",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  }
+ ],
+ "questions": [
+  {
+   "id": "dl-b1-07-q1",
+   "type": "choice",
+   "level": "B1",
+   "tags": [
+    "listening"
+   ],
+   "prompt": {
+    "ru": "Отку́да прилете́л пассажи́р?",
+    "en": "Where did the passenger fly in from?",
+    "instruction": "Choose the answer"
+   },
+   "accept": [
+    "Из Новосиби́рска."
+   ],
+   "distractors": [
+    {
+     "ru": "Из Петербу́рга.",
+     "error": "reading.detail"
+    },
+    {
+     "ru": "Из Каза́ни.",
+     "error": "reading.detail"
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "dl-b1-07-q2",
+   "type": "choice",
+   "level": "B1",
+   "tags": [
+    "listening"
+   ],
+   "prompt": {
+    "ru": "Како́го цве́та чемода́н?",
+    "en": "What colour is the suitcase?",
+    "instruction": "Choose the answer"
+   },
+   "accept": [
+    "Си́него."
+   ],
+   "distractors": [
+    {
+     "ru": "Чёрного.",
+     "error": "reading.detail"
+    },
+    {
+     "ru": "Кра́сного.",
+     "error": "reading.detail"
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "dl-b1-07-q3",
+   "type": "choice",
+   "level": "B1",
+   "tags": [
+    "listening"
+   ],
+   "prompt": {
+    "ru": "Когда́ привезу́т чемода́н?",
+    "en": "When will the suitcase be brought?",
+    "instruction": "Choose the answer"
+   },
+   "accept": [
+    "За́втра у́тром."
+   ],
+   "distractors": [
+    {
+     "ru": "Сего́дня ве́чером.",
+     "error": "reading.detail"
+    },
+    {
+     "ru": "Че́рез неде́лю.",
+     "error": "reading.detail"
+    }
+   ],
+   "source": "handwritten"
+  }
+ ]
+}

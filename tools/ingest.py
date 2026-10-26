@@ -24,7 +24,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from rulib import (ACUTE, UNSTRESSED_OK, fold, from_dataset, has_stress, put_stress,  # noqa: E402
                    strip_stress, stress_index, syllables, transfer_stress, marks_ok)
-from morph import (CASES, PERSONS, SLOTS, dparses, group_of, lemma_parse, preferred,  # noqa: E402
+from morph import (lemma_keys, CASES, PERSONS, SLOTS, dparses, group_of, lemma_parse, preferred,  # noqa: E402
                    verify)
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -403,7 +403,8 @@ def main():
         # (пять, кто). Otherwise the rare noun ага́ ("aga") would inherit the interjection ага's rank.
         if lx["pos"] == "noun" and any(p.tag.POS in ("NUMR", "NPRO") and fold(p.normal_form) == k for p in dparses(k)):
             return [(k, "noun"), (k, "other")]
-        return [(k, lx["pos"])]
+        # pymorphy3 may file the lemma under another normal form (сча́стье → счастие, де́ньги → деньга)
+        return [(k, lx["pos"])] + [(alt, lx["pos"]) for alt in sorted(lemma_keys(lx["lemma"], lx["pos"]) - {k})]
 
     matched_keys = {}
     for lx in lexemes:

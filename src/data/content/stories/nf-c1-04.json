@@ -1,0 +1,2030 @@
+{
+ "$schema": "../../../../schemas/story.schema.json",
+ "id": "nf-c1-04",
+ "kind": "nonfiction",
+ "level": "C1",
+ "title": {
+  "ru": "Са́мая дли́нная желе́зная доро́га",
+  "en": "The longest railway"
+ },
+ "sentences": [
+  {
+   "para": true,
+   "en": "The railway across the whole of Siberia links Moscow with Vladivostok.",
+   "tokens": [
+    {
+     "t": "Желе́зная",
+     "lex": "a:железный",
+     "lemma": "желе́зный",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "доро́га",
+     "lex": "n:дорога",
+     "lemma": "доро́га",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "че́рез",
+     "lex": "o:через",
+     "lemma": "че́рез",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "всю",
+     "lex": "a:весь",
+     "lemma": "весь",
+     "g": {
+      "pos": "adj",
+      "case": "acc",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "Сиби́рь",
+     "lemma": "Сиби́рь",
+     "g": {
+      "pos": "name",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "соединя́ет",
+     "lex": "v:соединять",
+     "lemma": "соединя́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "sg"
+     }
+    },
+    {
+     "t": "Москву́",
+     "lex": "n:Москва",
+     "lemma": "Москва́",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "с",
+     "lex": "o:с",
+     "lemma": "с",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "Владивосто́ком",
+     "sp": false,
+     "lex": "n:Владивосток",
+     "lemma": "Владивосто́к",
+     "g": {
+      "pos": "noun",
+      "case": "ins",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "It is more than nine thousand kilometres long, and it's the longest railway in the world.",
+   "tokens": [
+    {
+     "t": "Её",
+     "lex": "o:она",
+     "lemma": "она́",
+     "g": {
+      "pos": "pron",
+      "case": "acc"
+     }
+    },
+    {
+     "t": "длина́",
+     "lex": "n:длина",
+     "lemma": "длина́",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "—"
+    },
+    {
+     "t": "бо́лее",
+     "lex": "o:более",
+     "lemma": "бо́лее",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "девяти́",
+     "lex": "o:девять",
+     "lemma": "де́вять",
+     "g": {
+      "pos": "num",
+      "case": "gen"
+     }
+    },
+    {
+     "t": "ты́сяч",
+     "lex": "n:тысяча",
+     "lemma": "ты́сяча",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "киломе́тров",
+     "sp": false,
+     "lex": "n:километр",
+     "lemma": "киломе́тр",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "pl"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "и",
+     "lex": "o:и",
+     "lemma": "и",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "э́то",
+     "lex": "o:это",
+     "lemma": "э́то",
+     "g": {
+      "pos": "pron"
+     }
+    },
+    {
+     "t": "са́мая",
+     "lex": "a:самый",
+     "lemma": "са́мый",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "дли́нная",
+     "lex": "a:длинный",
+     "lemma": "дли́нный",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "желе́зная",
+     "lex": "a:железный",
+     "lemma": "желе́зный",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "доро́га",
+     "lex": "n:дорога",
+     "lemma": "доро́га",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "в",
+     "lex": "o:в",
+     "lemma": "в",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "ми́ре",
+     "sp": false,
+     "lex": "n:мир",
+     "lemma": "мир",
+     "g": {
+      "pos": "noun",
+      "case": "prep",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "A train takes a whole week, and during that time the passengers put their watches forward seven times.",
+   "tokens": [
+    {
+     "t": "По́езд",
+     "lex": "n:поезд",
+     "lemma": "по́езд",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "идёт",
+     "lex": "v:идти",
+     "lemma": "идти́",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "sg"
+     }
+    },
+    {
+     "t": "по",
+     "lex": "o:по",
+     "lemma": "по",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "ней",
+     "lex": "o:она",
+     "lemma": "она́",
+     "g": {
+      "pos": "pron",
+      "case": "dat"
+     }
+    },
+    {
+     "t": "це́лую",
+     "lex": "a:целый",
+     "lemma": "це́лый",
+     "g": {
+      "pos": "adj",
+      "case": "acc",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "неде́лю",
+     "sp": false,
+     "lex": "n:неделя",
+     "lemma": "неде́ля",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "и",
+     "lex": "o:и",
+     "lemma": "и",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "за",
+     "lex": "o:за",
+     "lemma": "за",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "э́то",
+     "lex": "a:этот",
+     "lemma": "э́тот",
+     "g": {
+      "pos": "adj",
+      "case": "acc",
+      "number": "sg",
+      "gender": "n"
+     }
+    },
+    {
+     "t": "вре́мя",
+     "lex": "n:время",
+     "lemma": "вре́мя",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "пассажи́ры",
+     "lex": "n:пассажир",
+     "lemma": "пассажи́р",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "семь",
+     "lex": "o:семь",
+     "lemma": "семь",
+     "g": {
+      "pos": "num",
+      "case": "acc"
+     }
+    },
+    {
+     "t": "раз",
+     "lex": "n:раз",
+     "lemma": "раз",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "перево́дят",
+     "lex": "v:переводить",
+     "lemma": "переводи́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "pl"
+     }
+    },
+    {
+     "t": "часы́",
+     "sp": false,
+     "lex": "n:час",
+     "lemma": "час",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "pl"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "para": true,
+   "en": "Construction began in 1891 and went on for more than twenty years.",
+   "tokens": [
+    {
+     "t": "Строи́тельство",
+     "lex": "n:строительство",
+     "lemma": "строи́тельство",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "начало́сь",
+     "lex": "v:начаться",
+     "lemma": "нача́ться",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "n"
+     }
+    },
+    {
+     "t": "в",
+     "lex": "o:в",
+     "lemma": "в",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "ты́сяча",
+     "lex": "n:тысяча",
+     "lemma": "ты́сяча",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "восемьсо́т",
+     "lex": "o:восемьсот",
+     "lemma": "восемьсо́т",
+     "g": {
+      "pos": "num"
+     },
+     "rare": true
+    },
+    {
+     "t": "девяно́сто",
+     "lex": "o:девяносто",
+     "lemma": "девяно́сто",
+     "g": {
+      "pos": "num",
+      "case": "acc"
+     }
+    },
+    {
+     "t": "пе́рвом",
+     "lex": "a:первый",
+     "lemma": "пе́рвый",
+     "g": {
+      "pos": "adj",
+      "case": "prep",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "году́",
+     "lex": "n:год",
+     "lemma": "год",
+     "g": {
+      "pos": "noun",
+      "case": "loc2",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "и",
+     "lex": "o:и",
+     "lemma": "и",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "продолжа́лось",
+     "lex": "v:продолжаться",
+     "lemma": "продолжа́ться",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "n"
+     }
+    },
+    {
+     "t": "бо́лее",
+     "lex": "o:более",
+     "lemma": "бо́лее",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "двадцати́",
+     "lex": "o:двадцать",
+     "lemma": "два́дцать",
+     "g": {
+      "pos": "num",
+      "case": "gen"
+     }
+    },
+    {
+     "t": "лет",
+     "sp": false,
+     "lex": "n:год",
+     "lemma": "год",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "pl"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "Workers had to lay track through the taiga, swamps and permafrost, build bridges over huge Siberian rivers and cut a way through the cliffs around Baikal.",
+   "tokens": [
+    {
+     "t": "Рабо́чим",
+     "lex": "n:рабочий",
+     "lemma": "рабо́чий",
+     "g": {
+      "pos": "noun",
+      "case": "ins",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "приходи́лось",
+     "lex": "v:приходиться",
+     "lemma": "приходи́ться",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "n"
+     }
+    },
+    {
+     "t": "прокла́дывать",
+     "lex": "v:прокладывать",
+     "lemma": "прокла́дывать",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf"
+     },
+     "rare": true
+    },
+    {
+     "t": "пути́",
+     "lex": "n:путь",
+     "lemma": "путь",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "че́рез",
+     "lex": "o:через",
+     "lemma": "че́рез",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "тайгу́",
+     "sp": false,
+     "lex": "n:тайга",
+     "lemma": "тайга́",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "боло́та",
+     "lex": "n:болото",
+     "lemma": "боло́то",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "и",
+     "lex": "o:и",
+     "lemma": "и",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "ве́чную",
+     "lex": "a:вечный",
+     "lemma": "ве́чный",
+     "g": {
+      "pos": "adj",
+      "case": "acc",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "мерзлоту́",
+     "sp": false,
+     "lex": "n:мерзлота",
+     "lemma": "мерзлота́",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "стро́ить",
+     "lex": "v:строить",
+     "lemma": "стро́ить",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf"
+     }
+    },
+    {
+     "t": "мосты́",
+     "lex": "n:мост",
+     "lemma": "мост",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "че́рез",
+     "lex": "o:через",
+     "lemma": "че́рез",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "огро́мные",
+     "lex": "a:огромный",
+     "lemma": "огро́мный",
+     "g": {
+      "pos": "adj",
+      "case": "acc",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "сиби́рские",
+     "lex": "a:сибирский",
+     "lemma": "сиби́рский",
+     "g": {
+      "pos": "adj",
+      "case": "acc",
+      "number": "pl"
+     },
+     "rare": true
+    },
+    {
+     "t": "ре́ки",
+     "lex": "n:река",
+     "lemma": "река́",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "и",
+     "lex": "o:и",
+     "lemma": "и",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "пробива́ть",
+     "lex": "v:пробивать",
+     "lemma": "пробива́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf"
+     },
+     "rare": true
+    },
+    {
+     "t": "доро́гу",
+     "lex": "n:дорога",
+     "lemma": "доро́га",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "в",
+     "lex": "o:в",
+     "lemma": "в",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "ска́лах",
+     "lex": "n:скала",
+     "lemma": "скала́",
+     "g": {
+      "pos": "noun",
+      "case": "prep",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "вокру́г",
+     "lex": "o:вокруг",
+     "lemma": "вокру́г",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "Байка́ла",
+     "sp": false,
+     "lemma": "Байка́л",
+     "g": {
+      "pos": "name",
+      "case": "gen",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "In winter the frosts reached forty degrees; in summer the mosquitoes tormented people.",
+   "tokens": [
+    {
+     "t": "Зимо́й",
+     "lex": "n:зима",
+     "lemma": "зима́",
+     "g": {
+      "pos": "noun",
+      "case": "ins",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "моро́зы",
+     "lex": "n:мороз",
+     "lemma": "моро́з",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "достига́ли",
+     "lex": "v:достигать",
+     "lemma": "достига́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "past",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "сорока́",
+     "lex": "o:сорок",
+     "lemma": "со́рок",
+     "g": {
+      "pos": "num",
+      "case": "gen"
+     }
+    },
+    {
+     "t": "гра́дусов",
+     "sp": false,
+     "lex": "n:градус",
+     "lemma": "гра́дус",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "pl"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "ле́том",
+     "lex": "n:лето",
+     "lemma": "ле́то",
+     "g": {
+      "pos": "noun",
+      "case": "ins",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "люде́й",
+     "lex": "n:человек",
+     "lemma": "челове́к",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "му́чили",
+     "lex": "v:мучить",
+     "lemma": "му́чить",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "past",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "комары́",
+     "sp": false,
+     "lex": "n:комар",
+     "lemma": "кома́р",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "pl"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "para": true,
+   "en": "The railway changed Siberia.",
+   "tokens": [
+    {
+     "t": "Магистра́ль",
+     "lex": "n:магистраль",
+     "lemma": "магистра́ль",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": "измени́ла",
+     "lex": "v:изменить",
+     "lemma": "измени́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "Сиби́рь",
+     "sp": false,
+     "lemma": "Сиби́рь",
+     "g": {
+      "pos": "name",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "Towns grew up along it, and millions of new inhabitants came into the huge empty spaces.",
+   "tokens": [
+    {
+     "t": "Вдоль",
+     "lex": "o:вдоль",
+     "lemma": "вдоль",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "неё",
+     "lex": "o:она",
+     "lemma": "она́",
+     "g": {
+      "pos": "pron",
+      "case": "gen"
+     }
+    },
+    {
+     "t": "вы́росли",
+     "lex": "v:вырасти",
+     "lemma": "вы́расти",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "города́",
+     "sp": false,
+     "lex": "n:город",
+     "lemma": "го́род",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "pl"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "в",
+     "lex": "o:в",
+     "lemma": "в",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "огро́мные",
+     "lex": "a:огромный",
+     "lemma": "огро́мный",
+     "g": {
+      "pos": "adj",
+      "case": "acc",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "пусты́е",
+     "lex": "a:пустой",
+     "lemma": "пусто́й",
+     "g": {
+      "pos": "adj",
+      "case": "acc",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "простра́нства",
+     "lex": "n:пространство",
+     "lemma": "простра́нство",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "прие́хали",
+     "lex": "v:приехать",
+     "lemma": "прие́хать",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "миллио́ны",
+     "lex": "n:миллион",
+     "lemma": "миллио́н",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "но́вых",
+     "lex": "a:новый",
+     "lemma": "но́вый",
+     "g": {
+      "pos": "adj",
+      "case": "gen",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "жи́телей",
+     "sp": false,
+     "lex": "n:житель",
+     "lemma": "жи́тель",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "pl"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "Novosibirsk, for example, appeared exactly where the railway crossed the Ob.",
+   "tokens": [
+    {
+     "t": "Новосиби́рск",
+     "sp": false,
+     "lex": "n:Новосибирск",
+     "lemma": "Новосиби́рск",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "наприме́р",
+     "sp": false,
+     "lex": "o:например",
+     "lemma": "наприме́р",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "появи́лся",
+     "lex": "v:появиться",
+     "lemma": "появи́ться",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "и́менно",
+     "lex": "o:именно",
+     "lemma": "и́менно",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "там",
+     "sp": false,
+     "lex": "o:там",
+     "lemma": "там",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "где",
+     "lex": "o:где",
+     "lemma": "где",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "желе́зная",
+     "lex": "a:железный",
+     "lemma": "желе́зный",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "доро́га",
+     "lex": "n:дорога",
+     "lemma": "доро́га",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "пересекла́",
+     "lex": "v:пересечь",
+     "lemma": "пересе́чь",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "past",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "Обь",
+     "sp": false,
+     "lex": "n:Обь",
+     "lemma": "Обь",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "Today it is Russia's third-largest city.",
+   "tokens": [
+    {
+     "t": "Сего́дня",
+     "lex": "o:сегодня",
+     "lemma": "сего́дня",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "э́то",
+     "lex": "o:это",
+     "lemma": "э́то",
+     "g": {
+      "pos": "pron"
+     }
+    },
+    {
+     "t": "тре́тий",
+     "lex": "a:третий",
+     "lemma": "тре́тий",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "по",
+     "lex": "o:по",
+     "lemma": "по",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "величине́",
+     "lex": "n:величина",
+     "lemma": "величина́",
+     "g": {
+      "pos": "noun",
+      "case": "dat",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": "го́род",
+     "lex": "n:город",
+     "lemma": "го́род",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "Росси́и",
+     "sp": false,
+     "lex": "n:Россия",
+     "lemma": "Росси́я",
+     "g": {
+      "pos": "noun",
+      "case": "dat",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "para": true,
+   "en": "For foreign tourists a journey along this railway is almost a legend.",
+   "tokens": [
+    {
+     "t": "Для",
+     "lex": "o:для",
+     "lemma": "для",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "иностра́нных",
+     "lex": "a:иностранный",
+     "lemma": "иностра́нный",
+     "g": {
+      "pos": "adj",
+      "case": "gen",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "тури́стов",
+     "lex": "n:турист",
+     "lemma": "тури́ст",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "путеше́ствие",
+     "lex": "n:путешествие",
+     "lemma": "путеше́ствие",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "по",
+     "lex": "o:по",
+     "lemma": "по",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "э́той",
+     "lex": "a:этот",
+     "lemma": "э́тот",
+     "g": {
+      "pos": "adj",
+      "case": "dat",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "доро́ге",
+     "lex": "n:дорога",
+     "lemma": "доро́га",
+     "g": {
+      "pos": "noun",
+      "case": "dat",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "—"
+    },
+    {
+     "t": "почти́",
+     "lex": "o:почти",
+     "lemma": "почти́",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "леге́нда",
+     "sp": false,
+     "lex": "n:легенда",
+     "lemma": "леге́нда",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "But for Russians it's first of all an ordinary train: students, soldiers, grandmothers with grandchildren and workers travel home on it.",
+   "tokens": [
+    {
+     "t": "Но",
+     "lex": "o:но",
+     "lemma": "но",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "для",
+     "lex": "o:для",
+     "lemma": "для",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "ру́сских",
+     "lex": "a:русский",
+     "lemma": "ру́сский",
+     "g": {
+      "pos": "adj",
+      "case": "gen",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "э́то",
+     "lex": "o:это",
+     "lemma": "э́то",
+     "g": {
+      "pos": "pron"
+     }
+    },
+    {
+     "t": "пре́жде",
+     "lex": "o:прежде",
+     "lemma": "пре́жде",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "всего́",
+     "lex": "o:всего",
+     "lemma": "всего́",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "обы́чный",
+     "lex": "a:обычный",
+     "lemma": "обы́чный",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "по́езд",
+     "sp": false,
+     "lex": "n:поезд",
+     "lemma": "по́езд",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ":"
+    },
+    {
+     "t": "в",
+     "lex": "o:в",
+     "lemma": "в",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "нём",
+     "lex": "o:он",
+     "lemma": "он",
+     "g": {
+      "pos": "pron",
+      "case": "prep"
+     }
+    },
+    {
+     "t": "е́дут",
+     "lex": "v:ехать",
+     "lemma": "е́хать",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "pl"
+     }
+    },
+    {
+     "t": "домо́й",
+     "lex": "o:домой",
+     "lemma": "домо́й",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "студе́нты",
+     "sp": false,
+     "lex": "n:студент",
+     "lemma": "студе́нт",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "pl"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "вое́нные",
+     "sp": false,
+     "lex": "a:военный",
+     "lemma": "вое́нный",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "pl"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "ба́бушки",
+     "lex": "n:бабушка",
+     "lemma": "ба́бушка",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "с",
+     "lex": "o:с",
+     "lemma": "с",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "вну́ками",
+     "lex": "n:внук",
+     "lemma": "внук",
+     "g": {
+      "pos": "noun",
+      "case": "ins",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "и",
+     "lex": "o:и",
+     "lemma": "и",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "рабо́чие",
+     "sp": false,
+     "lex": "n:рабочий",
+     "lemma": "рабо́чий",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "pl"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "In the carriage people drink tea from glasses in metal holders, play cards and, of course, talk.",
+   "tokens": [
+    {
+     "t": "В",
+     "lex": "o:в",
+     "lemma": "в",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "ваго́не",
+     "lex": "n:вагон",
+     "lemma": "ваго́н",
+     "g": {
+      "pos": "noun",
+      "case": "prep",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "пьют",
+     "lex": "v:пить",
+     "lemma": "пить",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "pl"
+     }
+    },
+    {
+     "t": "чай",
+     "lex": "n:чай",
+     "lemma": "чай",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "из",
+     "lex": "o:из",
+     "lemma": "из",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "стака́нов",
+     "lex": "n:стакан",
+     "lemma": "стака́н",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "в",
+     "lex": "o:в",
+     "lemma": "в",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "металли́ческих",
+     "lex": "a:металлический",
+     "lemma": "металли́ческий",
+     "g": {
+      "pos": "adj",
+      "case": "acc",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "подстака́нниках",
+     "sp": false,
+     "lex": "n:подстаканник",
+     "lemma": "подстака́нник",
+     "g": {
+      "pos": "noun",
+      "case": "prep",
+      "number": "pl"
+     },
+     "rare": true
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "игра́ют",
+     "lex": "v:играть",
+     "lemma": "игра́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "pl"
+     }
+    },
+    {
+     "t": "в",
+     "lex": "o:в",
+     "lemma": "в",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "ка́рты",
+     "lex": "n:карта",
+     "lemma": "ка́рта",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "и",
+     "sp": false,
+     "lex": "o:и",
+     "lemma": "и",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "коне́чно",
+     "sp": false,
+     "lex": "o:конечно",
+     "lemma": "коне́чно",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "разгова́ривают",
+     "sp": false,
+     "lex": "v:разговаривать",
+     "lemma": "разгова́ривать",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "pl"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "en": "A week on the train isn't just a journey but a whole life, with its own acquaintances, arguments and farewells.",
+   "tokens": [
+    {
+     "t": "Неде́ля",
+     "lex": "n:неделя",
+     "lemma": "неде́ля",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "в",
+     "lex": "o:в",
+     "lemma": "в",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "по́езде",
+     "lex": "n:поезд",
+     "lemma": "по́езд",
+     "g": {
+      "pos": "noun",
+      "case": "prep",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "—"
+    },
+    {
+     "t": "э́то",
+     "lex": "o:это",
+     "lemma": "э́то",
+     "g": {
+      "pos": "pron"
+     }
+    },
+    {
+     "t": "не",
+     "lex": "o:не",
+     "lemma": "не",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "то́лько",
+     "lex": "o:только",
+     "lemma": "то́лько",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "доро́га",
+     "sp": false,
+     "lex": "n:дорога",
+     "lemma": "доро́га",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "но",
+     "lex": "o:но",
+     "lemma": "но",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "и",
+     "lex": "o:и",
+     "lemma": "и",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "це́лая",
+     "lex": "a:целый",
+     "lemma": "це́лый",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "жизнь",
+     "sp": false,
+     "lex": "n:жизнь",
+     "lemma": "жизнь",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "со",
+     "lex": "o:с",
+     "lemma": "с",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "свои́ми",
+     "lex": "a:свой",
+     "lemma": "свой",
+     "g": {
+      "pos": "adj",
+      "case": "ins",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "знако́мствами",
+     "sp": false,
+     "lex": "n:знакомство",
+     "lemma": "знако́мство",
+     "g": {
+      "pos": "noun",
+      "case": "ins",
+      "number": "pl"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "спо́рами",
+     "lex": "n:спор",
+     "lemma": "спор",
+     "g": {
+      "pos": "noun",
+      "case": "ins",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "и",
+     "lex": "o:и",
+     "lemma": "и",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "проща́ниями",
+     "sp": false,
+     "lex": "n:прощание",
+     "lemma": "проща́ние",
+     "g": {
+      "pos": "noun",
+      "case": "ins",
+      "number": "pl"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  }
+ ],
+ "questions": [
+  {
+   "id": "nf-c1-04-q1",
+   "type": "choice",
+   "level": "C1",
+   "tags": [
+    "reading"
+   ],
+   "prompt": {
+    "ru": "Каку́ю длину́ име́ет магистра́ль?",
+    "en": "How long is the railway?",
+    "instruction": "Choose the answer"
+   },
+   "accept": [
+    "Бо́лее девяти́ ты́сяч киломе́тров."
+   ],
+   "distractors": [
+    {
+     "ru": "Две ты́сячи киломе́тров.",
+     "error": "reading.detail"
+    },
+    {
+     "ru": "Пятна́дцать ты́сяч киломе́тров.",
+     "error": "reading.detail"
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "nf-c1-04-q2",
+   "type": "choice",
+   "level": "C1",
+   "tags": [
+    "reading"
+   ],
+   "prompt": {
+    "ru": "Ско́лько лет стро́или доро́гу?",
+    "en": "How many years did it take to build the railway?",
+    "instruction": "Choose the answer"
+   },
+   "accept": [
+    "Бо́лее двадцати́ лет."
+   ],
+   "distractors": [
+    {
+     "ru": "Пять лет.",
+     "error": "reading.detail"
+    },
+    {
+     "ru": "Сто лет.",
+     "error": "reading.detail"
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "nf-c1-04-q3",
+   "type": "choice",
+   "level": "C1",
+   "tags": [
+    "reading"
+   ],
+   "prompt": {
+    "ru": "Как появи́лся Новосиби́рск?",
+    "en": "How did Novosibirsk come about?",
+    "instruction": "Choose the answer"
+   },
+   "accept": [
+    "Там, где желе́зная доро́га пересекла́ Обь."
+   ],
+   "distractors": [
+    {
+     "ru": "Его́ постро́ил Пётр Пе́рвый.",
+     "error": "reading.detail"
+    },
+    {
+     "ru": "Он стоя́л там ещё до доро́ги.",
+     "error": "reading.detail"
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "nf-c1-04-q4",
+   "type": "choice",
+   "level": "C1",
+   "tags": [
+    "reading"
+   ],
+   "prompt": {
+    "ru": "Как в по́езде пьют чай?",
+    "en": "How do people drink tea on the train?",
+    "instruction": "Choose the answer"
+   },
+   "accept": [
+    "Из стака́нов в подстака́нниках."
+   ],
+   "distractors": [
+    {
+     "ru": "Из самова́ра.",
+     "error": "reading.detail"
+    },
+    {
+     "ru": "Из пласти́ковых ча́шек.",
+     "error": "reading.detail"
+    }
+   ],
+   "source": "handwritten"
+  }
+ ]
+}

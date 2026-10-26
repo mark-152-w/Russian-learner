@@ -819,8 +819,8 @@
     {
      "t": "выходны́м",
      "sp": false,
-     "lex": "n:выходной",
-     "lemma": "выходно́й",
+     "lex": "n:выходные",
+     "lemma": "выходны́е",
      "g": {
       "pos": "noun",
       "case": "dat",
@@ -1412,7 +1412,7 @@
      "lemma": "кафе́",
      "g": {
       "pos": "noun",
-      "case": "gen",
+      "case": "prep",
       "number": "sg"
      }
     },

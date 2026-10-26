@@ -83,7 +83,7 @@ CLAUSE_BREAK = {",", ";", ":", "—", "(", ")", "«", "»", ".", "!", "?", "…"
 CLAUSE_CONJ = {"и", "а", "но", "что", "когда", "если", "потому", "где", "куда", "который", "которая", "которое",
                "которые", "чтобы", "пока", "хотя", "или", "как"}
 OTHER_POS = [("PREP", "prep"), ("ADVB", "adv"), ("PRED", "pred"), ("CONJ", "conj"), ("NPRO", "pron"), ("PRCL", "part"),
-             ("NUMR", "num"), ("INTJ", "intj"), ("COMP", "comp")]
+             ("NUMR", "num"), ("INTJ", "intj"), ("COMP", "comp"), ("ADJF", "pron")]
 # uninflected words whose usual role the POS order above gets wrong
 PREFERRED_POS = {"же": "part", "ли": "part", "бы": "part", "ведь": "part", "вот": "part", "даже": "part", "только": "part",
                  "ну": "intj", "да": "part", "ни": "part", "уж": "part", "лишь": "part", "разве": "part", "неужели": "part"}
@@ -248,6 +248,23 @@ def finite_verb(w: Word, ctx: Ctx):
     return "tran" if any("tran" in t for t in tags) and not lemma.endswith(("ся", "сь")) else "intr"
 
 
+def agree(adj_slot: str, noun_slot: str, noun: dict) -> bool:
+    """Can an adjective/determiner in adj_slot modify a noun form in noun_slot?"""
+    nc, nn = case_of(noun_slot), number_of(noun_slot) or "sg"
+    if nc is None or case_of(adj_slot) != nc:
+        return False
+    if nn == "pl":
+        return adj_slot.startswith("pl_") or adj_slot[:2] not in ("m_", "f_", "n_")
+    if adj_slot.startswith("pl_"):
+        return False
+    g = noun.get("gender")
+    if g in ("m", "f", "n") and adj_slot[:2] in ("m_", "f_", "n_") and adj_slot[0] != g:
+        return False
+    if nc == "acc" and adj_slot.startswith("m_") and adj_slot.endswith("_an") != bool(noun.get("animate")):
+        return False
+    return True
+
+
 def disambiguate(words: list, ctx: Ctx):
     items = [x for x in words if isinstance(x, Word) and x.cands]
     seq = [x for x in words]  # words and punctuation strings, in order
@@ -292,7 +309,9 @@ def disambiguate(words: list, ctx: Ctx):
             if f in QUANT_GEN or f in FEW or f in MANY:
                 quant = f
                 break
-            if not (nominal(p, ctx) and not is_noun(p, ctx)):  # skip adjectives/determiners/numerals
+            if fold(p.t) in ("и", "или"):
+                continue  # в Голла́ндии и А́нглии: the preposition covers both
+            if not nominal(p, ctx):
                 break
         if prep and prep in PREP_CASES:
             w.keep(lambda c: case_of(c[1]) in PREP_CASES[prep] or not case_of(c[1]))
@@ -310,6 +329,19 @@ def disambiguate(words: list, ctx: Ctx):
             elif quant in QUANT_GEN:
                 w.keep(lambda c: case_of(c[1]) == "gen")
 
+    # 2b. a noun agrees with the adjectives/determiners in front of it (ру́сского чаепи́тия → genitive singular)
+    for i, w in enumerate(seq):
+        if not isinstance(w, Word) or not is_noun(w, ctx) or len(w.cands) < 2:
+            continue
+        mods = []
+        for x in reversed(seq[max(0, i - 3):i]):
+            if not isinstance(x, Word) or not nominal(x, ctx) or is_noun(x, ctx):
+                break
+            mods.append(x)
+        if mods:
+            lx = ctx.lex.get(w.cands[0][0], {})
+            w.keep(lambda c: all(any(agree(m[1], c[1], lx) for m in x.cands) for x in mods), "agrees with its adjective")
+
     # 3. nouns: possession (noun + noun in gen), then subject/object by the clause's verb
     for i, w in enumerate(seq):
         if isinstance(w, Word) and fold(w.t) in ("что", "чем") and w.after_comma and w.cands:
@@ -318,8 +350,14 @@ def disambiguate(words: list, ctx: Ctx):
             continue
         if not isinstance(w, Word) or not (is_noun(w, ctx) or fold(w.t) in ("его", "её", "их")) or len(w.cases()) < 2:
             continue
-        before = [p for p in seq[max(0, i - 3):i]]
-        prev_noun = next((p for p in reversed(before) if isinstance(p, Word)), None)
+        prev_noun = None
+        for p in reversed(seq[max(0, i - 4):i]):
+            if not isinstance(p, Word):
+                break
+            if nominal(p, ctx) and not is_noun(p, ctx):
+                continue  # adjectives belonging to this noun
+            prev_noun = p
+            break
         if "gen" in w.cases() and prev_noun and is_noun(prev_noun, ctx) and not is_prep(prev_noun, ctx):
             if w.keep(lambda c: case_of(c[1]) == "gen", "gen: follows a noun (possession)"):
                 continue
@@ -348,6 +386,10 @@ def disambiguate(words: list, ctx: Ctx):
                     c0 = next(iter(prev.cases()))
                     if w.keep(lambda c: case_of(c[1]) == c0, f"{c0}: listed after {prev.t}"):
                         continue
+        refl_before = next((p for p in reversed(seq[lo:i]) if isinstance(p, Word) and finite_verb(p, ctx)), None)
+        if refl_before and fold(ctx.lemma(refl_before.cands[0][0])).endswith(("ся", "сь")) and {"gen", "acc"} <= w.cases():
+            if w.keep(lambda c: case_of(c[1]) == "gen", "gen: after a reflexive verb (боя́ться, испуга́ться…)"):
+                continue
         if verb_before == "tran":
             w.keep(lambda c: case_of(c[1]) == "acc", "acc: after a transitive verb") or w.keep(lambda c: case_of(c[1]) == "gen", "gen: after a transitive verb")
         elif verb_before == "intr" or verb_after or not verb_before:
@@ -458,7 +500,9 @@ def grammemes(w: Word, ctx: Ctx, nxt) -> dict:
             case = "loc2"  # в саду́, в углу́: the dataset files the locative under the prepositional too
         return {"pos": "noun", "case": case, "number": num}
     if k == "verb":
-        asp = x.get("aspect")
+        # pymorphy3's aspect for the infinitive wins over the dataset's label (прозвуча́ть is perfective)
+        tags = {g for p in dparses(fold(x.get("lemma", ""))) if p.tag.POS == "INFN" for g in p.tag.grammemes}
+        asp = "pf" if "perf" in tags and "impf" not in tags else "impf" if "impf" in tags and "perf" not in tags else x.get("aspect")
         g = {"pos": "verb"}
         if asp in ("impf", "pf"):
             g["aspect"] = asp
@@ -560,6 +604,8 @@ def tokenize(text: str, ctx: Ctx, level: str, problems: list, notes: list, where
         if lexid in ctx.lex:  # names and closed-class-only words have no lexicon entry
             tok["lex"] = lexid
         tok["lemma"] = ctx.lemma(lexid)
+        if not has_stress(tok["lemma"]) and syllables(tok["lemma"]) > 1 and ctx.closed(lexid).get("lemma"):
+            tok["lemma"] = ctx.closed(lexid)["lemma"]  # the dataset lemma is unstressed (тринадцать)
         if getattr(x, "pos_override", None) == "conj" and fold(tok["lemma"]) != fold(x.t):
             tok["lemma"] = x.t.lower()  # «, чем …» is the conjunction чем, not a form of что
             tok.pop("lex", None)

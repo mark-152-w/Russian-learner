@@ -279,7 +279,7 @@
      "lemma": "тот",
      "g": {
       "pos": "adj",
-      "case": "gen",
+      "case": "acc",
       "number": "sg",
       "gender": "m"
      }
@@ -290,7 +290,7 @@
      "lemma": "сиби́рский",
      "g": {
       "pos": "adj",
-      "case": "gen",
+      "case": "acc",
       "number": "sg",
       "gender": "m"
      },

@@ -1,0 +1,27 @@
+id: dl-a2-01
+kind: dialogue
+level: A2
+title: В магази́не | In the shop
+---
+Покупа́тель: Здра́вствуйте! У вас есть молоко́? | Customer: Hello! Do you have any milk?
+Продаве́ц: Есть. Вам како́е: большо́е и́ли ма́ленькое? | Shop assistant: Yes. Which do you want, big or small?
+Покупа́тель: Большо́е, пожа́луйста. И ещё хлеб. | Customer: Big, please. And some bread too.
+Продаве́ц: Бе́лый и́ли чёрный? | Shop assistant: White or brown?
+Покупа́тель: Чёрный. Ско́лько э́то сто́ит? | Customer: Brown. How much is that?
+Продаве́ц: Сто два́дцать рубле́й. | Shop assistant: A hundred and twenty roubles.
+Покупа́тель: Вот, пожа́луйста. | Customer: Here you are.
+Продаве́ц: Спаси́бо! Паке́т ну́жен? | Shop assistant: Thank you! Do you need a bag?
+Покупа́тель: Нет, спаси́бо, у меня́ есть су́мка. | Customer: No, thanks, I've got a bag.
+---
+? Како́е молоко́ купи́л покупа́тель? | What milk did the customer buy?
++ Большо́е.
+- Ма́ленькое.
+- Он не купи́л молоко́.
+? Како́й хлеб он взял? | Which bread did he take?
++ Чёрный.
+- Бе́лый.
+- Он не взял хлеб.
+? Ско́лько он заплати́л? | How much did he pay?
++ Сто два́дцать рубле́й.
+- Два́дцать рубле́й.
+- Две́сти рубле́й.

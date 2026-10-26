@@ -1,0 +1,678 @@
+{
+ "$schema": "../../../../schemas/story.schema.json",
+ "id": "dl-b1-06",
+ "kind": "dialogue",
+ "level": "B1",
+ "title": {
+  "ru": "Счёт, пожа́луйста",
+  "en": "The bill, please"
+ },
+ "sentences": [
+  {
+   "para": true,
+   "speaker": "Гость",
+   "en": "Customer: Excuse me, could you bring the bill, please?",
+   "tokens": [
+    {
+     "t": "Де́вушка",
+     "sp": false,
+     "lex": "n:девушка",
+     "lemma": "де́вушка",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "принеси́те",
+     "sp": false,
+     "lex": "v:принести",
+     "lemma": "принести́",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "mood": "imp",
+      "number": "pl"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "пожа́луйста",
+     "sp": false,
+     "lex": "o:пожалуйста",
+     "lemma": "пожа́луйста",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "счёт",
+     "sp": false,
+     "lex": "n:счёт",
+     "lemma": "счёт",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Официа́нтка",
+   "en": "Waitress: Of course. Will you pay by card or in cash?",
+   "tokens": [
+    {
+     "t": "Коне́чно",
+     "sp": false,
+     "lex": "o:конечно",
+     "lemma": "коне́чно",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "."
+    },
+    {
+     "t": "Вы",
+     "lex": "o:вы",
+     "lemma": "вы",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "бу́дете",
+     "lex": "v:быть",
+     "lemma": "быть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "fut",
+      "person": 2,
+      "number": "pl"
+     }
+    },
+    {
+     "t": "плати́ть",
+     "lex": "v:платить",
+     "lemma": "плати́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf"
+     }
+    },
+    {
+     "t": "ка́ртой",
+     "lex": "n:карта",
+     "lemma": "ка́рта",
+     "g": {
+      "pos": "noun",
+      "case": "ins",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "и́ли",
+     "lex": "o:или",
+     "lemma": "и́ли",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "нали́чными",
+     "sp": false,
+     "lex": "n:наличные",
+     "lemma": "нали́чные",
+     "g": {
+      "pos": "noun",
+      "case": "ins",
+      "number": "pl"
+     },
+     "rare": true
+    },
+    {
+     "t": "?",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Гость",
+   "en": "Customer: By card. Oh, wait, there seems to be a mistake here.",
+   "tokens": [
+    {
+     "t": "Ка́ртой",
+     "sp": false,
+     "lex": "n:карта",
+     "lemma": "ка́рта",
+     "g": {
+      "pos": "noun",
+      "case": "ins",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "."
+    },
+    {
+     "t": "Ой",
+     "sp": false,
+     "lex": "o:ой",
+     "lemma": "ой",
+     "g": {
+      "pos": "intj"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "подожди́те",
+     "sp": false,
+     "lex": "v:подождать",
+     "lemma": "подожда́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "mood": "imp",
+      "number": "pl"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "здесь",
+     "sp": false,
+     "lex": "o:здесь",
+     "lemma": "здесь",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "ка́жется",
+     "sp": false,
+     "lex": "v:казаться",
+     "lemma": "каза́ться",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "sg"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "оши́бка",
+     "sp": false,
+     "lex": "n:ошибка",
+     "lemma": "оши́бка",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Официа́нтка",
+   "en": "Waitress: Where?",
+   "tokens": [
+    {
+     "t": "Где",
+     "sp": false,
+     "lex": "o:где",
+     "lemma": "где",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "?",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Гость",
+   "en": "Customer: Here: two cups of coffee. But we only ordered one.",
+   "tokens": [
+    {
+     "t": "Вот",
+     "sp": false,
+     "lex": "o:вот",
+     "lemma": "вот",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": ":"
+    },
+    {
+     "t": "две",
+     "lex": "o:два",
+     "lemma": "два",
+     "g": {
+      "pos": "num",
+      "case": "nom",
+      "gender": "f"
+     }
+    },
+    {
+     "t": "ча́шки",
+     "lex": "n:чашка",
+     "lemma": "ча́шка",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "ко́фе",
+     "sp": false,
+     "lex": "n:кофе",
+     "lemma": "ко́фе",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "."
+    },
+    {
+     "t": "А",
+     "lex": "o:а",
+     "lemma": "а",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "мы",
+     "lex": "o:мы",
+     "lemma": "мы",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "зака́зывали",
+     "lex": "v:заказывать",
+     "lemma": "зака́зывать",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "past",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "то́лько",
+     "lex": "o:только",
+     "lemma": "то́лько",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "одну́",
+     "sp": false,
+     "lex": "o:один",
+     "lemma": "оди́н",
+     "g": {
+      "pos": "num",
+      "case": "acc",
+      "gender": "f"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Официа́нтка",
+   "en": "Waitress: Yes, you're right, I'm sorry. I'll correct it now.",
+   "tokens": [
+    {
+     "t": "Да",
+     "sp": false,
+     "lex": "o:да",
+     "lemma": "да",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "вы",
+     "lex": "o:вы",
+     "lemma": "вы",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "пра́вы",
+     "sp": false,
+     "lex": "a:правый",
+     "lemma": "пра́вый",
+     "g": {
+      "pos": "adj",
+      "short": true,
+      "number": "pl"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "извини́те",
+     "sp": false,
+     "lex": "v:извинить",
+     "lemma": "извини́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "fut",
+      "person": 2,
+      "number": "pl"
+     }
+    },
+    {
+     "t": "."
+    },
+    {
+     "t": "Сейча́с",
+     "lex": "o:сейчас",
+     "lemma": "сейча́с",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "испра́влю",
+     "sp": false,
+     "lex": "v:исправить",
+     "lemma": "испра́вить",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "fut",
+      "person": 1,
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Гость",
+   "en": "Customer: No problem. And can I leave a tip by card?",
+   "tokens": [
+    {
+     "t": "Ничего́",
+     "lex": "o:ничто",
+     "lemma": "ничто́",
+     "g": {
+      "pos": "pron",
+      "case": "gen"
+     }
+    },
+    {
+     "t": "стра́шного",
+     "sp": false,
+     "lex": "a:страшный",
+     "lemma": "стра́шный",
+     "g": {
+      "pos": "adj",
+      "case": "acc",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "."
+    },
+    {
+     "t": "А",
+     "lex": "o:а",
+     "lemma": "а",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "чаевы́е",
+     "lex": "n:чаевые",
+     "lemma": "чаевы́е",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "pl"
+     },
+     "rare": true
+    },
+    {
+     "t": "мо́жно",
+     "lex": "o:можно",
+     "lemma": "мо́жно",
+     "g": {
+      "pos": "pred"
+     }
+    },
+    {
+     "t": "оста́вить",
+     "lex": "v:оставить",
+     "lemma": "оста́вить",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf"
+     }
+    },
+    {
+     "t": "ка́ртой",
+     "sp": false,
+     "lex": "n:карта",
+     "lemma": "ка́рта",
+     "g": {
+      "pos": "noun",
+      "case": "ins",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "?",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Официа́нтка",
+   "en": "Waitress: Yes, you can. Thank you very much!",
+   "tokens": [
+    {
+     "t": "Да",
+     "sp": false,
+     "lex": "o:да",
+     "lemma": "да",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "мо́жно",
+     "sp": false,
+     "lex": "o:можно",
+     "lemma": "мо́жно",
+     "g": {
+      "pos": "pred"
+     }
+    },
+    {
+     "t": "."
+    },
+    {
+     "t": "Спаси́бо",
+     "lex": "o:спасибо",
+     "lemma": "спаси́бо",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "вам",
+     "lex": "o:вы",
+     "lemma": "вы",
+     "g": {
+      "pos": "pron",
+      "case": "dat"
+     }
+    },
+    {
+     "t": "большо́е",
+     "sp": false,
+     "lex": "a:большой",
+     "lemma": "большо́й",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "n"
+     }
+    },
+    {
+     "t": "!",
+     "sp": false
+    }
+   ]
+  }
+ ],
+ "questions": [
+  {
+   "id": "dl-b1-06-q1",
+   "type": "choice",
+   "level": "B1",
+   "tags": [
+    "listening"
+   ],
+   "prompt": {
+    "ru": "Как гость бу́дет плати́ть?",
+    "en": "How will the customer pay?",
+    "instruction": "Choose the answer"
+   },
+   "accept": [
+    "Ка́ртой."
+   ],
+   "distractors": [
+    {
+     "ru": "Нали́чными.",
+     "error": "reading.detail"
+    },
+    {
+     "ru": "Он не бу́дет плати́ть.",
+     "error": "reading.detail"
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "dl-b1-06-q2",
+   "type": "choice",
+   "level": "B1",
+   "tags": [
+    "listening"
+   ],
+   "prompt": {
+    "ru": "Кака́я была́ оши́бка в счёте?",
+    "en": "What was the mistake in the bill?",
+    "instruction": "Choose the answer"
+   },
+   "accept": [
+    "Там бы́ли две ча́шки ко́фе вме́сто одно́й."
+   ],
+   "distractors": [
+    {
+     "ru": "Там не́ было ко́фе.",
+     "error": "reading.detail"
+    },
+    {
+     "ru": "Там был чужо́й обе́д.",
+     "error": "reading.detail"
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "dl-b1-06-q3",
+   "type": "choice",
+   "level": "B1",
+   "tags": [
+    "listening"
+   ],
+   "prompt": {
+    "ru": "Что отве́тила официа́нтка?",
+    "en": "What did the waitress say?",
+    "instruction": "Choose the answer"
+   },
+   "accept": [
+    "Что гость прав, и испра́вила счёт."
+   ],
+   "distractors": [
+    {
+     "ru": "Что оши́бки нет.",
+     "error": "reading.detail"
+    },
+    {
+     "ru": "Что ну́жно позва́ть дире́ктора.",
+     "error": "reading.detail"
+    }
+   ],
+   "source": "handwritten"
+  }
+ ]
+}

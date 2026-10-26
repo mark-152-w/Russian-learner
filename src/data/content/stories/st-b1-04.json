@@ -179,8 +179,8 @@
      "lemma": "ла́мпа",
      "g": {
       "pos": "noun",
-      "case": "gen",
-      "number": "sg"
+      "case": "nom",
+      "number": "pl"
      },
      "rare": true
     },
@@ -193,8 +193,8 @@
      "lemma": "коро́бка",
      "g": {
       "pos": "noun",
-      "case": "gen",
-      "number": "sg"
+      "case": "nom",
+      "number": "pl"
      }
     },
     {
@@ -501,7 +501,7 @@
      "lemma": "он",
      "g": {
       "pos": "pron",
-      "case": "gen"
+      "case": "acc"
      }
     },
     {
@@ -756,8 +756,8 @@
      "lemma": "фотогра́фия",
      "g": {
       "pos": "noun",
-      "case": "gen",
-      "number": "sg"
+      "case": "nom",
+      "number": "pl"
      }
     },
     {

@@ -1,0 +1,42 @@
+id: nf-b2-01
+kind: nonfiction
+level: B2
+title: Ру́сская ба́ня | The Russian bathhouse
+---
+Для мно́гих ру́сских ба́ня — э́то не про́сто спо́соб помы́ться. | For many Russians the banya isn't just a way to get clean.
+Э́то ритуа́л, о́тдых и да́же филосо́фия. | It's a ritual, a form of relaxation and even a philosophy.
+Ещё в сре́дние века́ иностра́нцы с удивле́нием писа́ли о том, что ру́сские сидя́т в стра́шной жаре́, а пото́м пры́гают в холо́дную ре́ку и́ли в снег. | As far back as the Middle Ages foreigners wrote with surprise that Russians sat in terrible heat and then jumped into a cold river or into the snow.
+
+Традицио́нная ба́ня — э́то деревя́нный до́мик, обы́чно недалеко́ от воды́. | A traditional banya is a small wooden building, usually not far from water.
+Внутри́ есть пе́чка, на кото́рой лежа́т горя́чие ка́мни. | Inside there's a stove with hot stones lying on it.
+Когда́ на ка́мни выплёскивают во́ду, поднима́ется пар. | When water is thrown onto the stones, steam rises.
+Гла́вное в ба́не — не температу́ра, а и́менно пар: он до́лжен быть лёгким и мя́гким. | The main thing in a banya isn't the temperature but the steam: it should be light and soft.
+
+Обяза́тельный атрибу́т ба́ни — ве́ник из берёзовых и́ли дубо́вых ве́ток. | An essential part of the banya is a whisk made of birch or oak twigs.
+Иностра́нцев э́то обы́чно пуга́ет: заче́м бить друг дру́га ве́тками? | This usually frightens foreigners: why hit each other with twigs?
+На са́мом де́ле э́то своеобра́зный масса́ж, кото́рый улучша́ет кровообраще́ние. | In fact it's a kind of massage that improves the circulation.
+
+Но ба́ня — э́то не то́лько вода́ и пар. | But the banya isn't only water and steam.
+Там встреча́ются с друзья́ми, обсужда́ют но́вости, пьют чай с траво́й и мёдом. | They meet friends there, discuss the news, drink herbal tea with honey.
+Неда́ром говоря́т: «В ба́не все равны́». | No wonder people say: "In the banya everyone is equal."
+Без оде́жды и без телефо́нов лю́ди стано́вятся просты́ми и откры́тыми. | Without clothes or phones people become simple and open.
+
+Сего́дня в больши́х города́х есть совреме́нные ба́ни с бассе́йнами и рестора́нами. | Today big cities have modern banyas with swimming pools and restaurants.
+Но мно́гие ру́сские по-пре́жнему счита́ют, что настоя́щая ба́ня мо́жет быть то́лько на да́че, у реки́, по́сле дня рабо́ты в саду́. | But many Russians still believe that a real banya can only be at the dacha, by the river, after a day's work in the garden.
+---
+? Что гла́вное в ба́не? | What is the main thing in a banya?
++ Пар.
+- Температу́ра.
+- Бассе́йн.
+? Из чего́ де́лают ве́ник? | What is the whisk made of?
++ Из берёзовых и́ли дубо́вых ве́ток.
+- Из травы́.
+- Из бума́ги.
+? Что ру́сские де́лают в ба́не, кро́ме того́, что́бы мы́ться? | What do Russians do in the banya besides washing?
++ Встреча́ются с друзья́ми и обсужда́ют но́вости.
+- Смо́трят телеви́зор.
+- Рабо́тают.
+? Где, по мне́нию мно́гих, мо́жет быть настоя́щая ба́ня? | Where, in many people's view, can a real banya be?
++ На да́че, у реки́.
+- В це́нтре го́рода.
+- В гости́нице.

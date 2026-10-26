@@ -1,0 +1,42 @@
+id: nf-b2-09
+kind: nonfiction
+level: B2
+title: Ты и́ли вы? | Ty or vy?
+---
+Одна́ из пе́рвых тру́дностей для иностра́нцев в Росси́и — вы́бор ме́жду «ты» и «вы». | One of the first difficulties for foreigners in Russia is choosing between "ty" and "vy".
+В англи́йском языке́ тако́й пробле́мы нет, а в ру́сском оши́бка мо́жет оби́деть челове́ка и́ли, наоборо́т, показа́ться стра́нной. | English doesn't have this problem, but in Russian a mistake can offend someone or, on the contrary, seem strange.
+
+Пра́вило ка́жется просты́м. | The rule seems simple.
+«Ты» говоря́т де́тям, бли́зким друзья́м и ро́дственникам. | "Ty" is used to children, close friends and relatives.
+«Вы» — незнако́мым лю́дям, ста́ршим и колле́гам на рабо́те, осо́бенно нача́льнику. | "Vy" is used to strangers, older people and colleagues at work, especially the boss.
+Но в жи́зни всё не так про́сто. | But in life it isn't that simple.
+
+Молоды́е лю́ди ча́сто сра́зу говоря́т друг дру́гу «ты», да́же е́сли то́лько что познако́мились. | Young people often say "ty" to each other straight away, even if they've only just met.
+В интерне́те то́же почти́ все на «ты». | Online too almost everyone is on "ty" terms.
+А вот ба́бушка в магази́не мо́жет сказа́ть продавщи́це «ты», и та не оби́дится. | But a grandmother in a shop may say "ty" to the shop assistant, and the assistant won't take offence.
+
+Перехо́д с «вы» на «ты» — ва́жный моме́нт в отноше́ниях. | Switching from "vy" to "ty" is an important moment in a relationship.
+Обы́чно его́ предлага́ет ста́рший и́ли тот, кто занима́ет бо́лее высо́кое положе́ние: «Дава́й перейдём на ты». | Usually the older person, or the one in the higher position, suggests it: "Let's switch to ty."
+Отказа́ться от тако́го предложе́ния не о́чень ве́жливо. | It isn't very polite to turn down such a suggestion.
+
+Ва́жно и то, как называ́ть челове́ка. | How you address a person matters too.
+Колле́гу ста́ршего во́зраста обы́чно называ́ют по и́мени и о́тчеству, наприме́р: Серге́й Ива́нович. | An older colleague is usually addressed by first name and patronymic, for example Sergei Ivanovich.
+Е́сли вы не уве́рены, лу́чше начни́те с «вы». | If you're not sure, it's better to start with "vy".
+Ещё ни оди́н челове́к не оби́делся на то, что с ним говори́ли сли́шком ве́жливо. | Nobody has ever yet taken offence at being spoken to too politely.
+---
+? Кому́ обы́чно говоря́т «ты»? | Who is usually addressed as "ty"?
++ Де́тям и бли́зким друзья́м.
+- Нача́льнику.
+- Незнако́мым лю́дям.
+? Кто обы́чно предлага́ет перейти́ на «ты»? | Who usually suggests switching to "ty"?
++ Ста́рший.
+- Мла́дший.
+- Тот, кто моло́же.
+? Как называ́ют колле́гу ста́ршего во́зраста? | How is an older colleague addressed?
++ По и́мени и о́тчеству.
+- То́лько по фами́лии.
+- По и́мени, на «ты».
+? Что сове́тует а́втор, е́сли вы не уве́рены? | What does the author advise if you're not sure?
++ Нача́ть с «вы».
+- Нача́ть с «ты».
+- Ничего́ не говори́ть.

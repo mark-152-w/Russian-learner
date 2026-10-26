@@ -1,0 +1,39 @@
+id: nf-b2-10
+kind: nonfiction
+level: B2
+title: Да́ча | The dacha
+---
+В пя́тницу ве́чером доро́ги из больши́х городо́в стоя́т в про́бках. | On Friday evenings the roads out of big cities are jammed with traffic.
+Э́то миллио́ны ру́сских е́дут на да́чу. | That's millions of Russians heading for the dacha.
+Да́ча — э́то за́городный до́мик с уча́стком земли́. | A dacha is a little house outside town with a plot of land.
+Она́ мо́жет быть ста́рой и ма́ленькой и́ли большо́й и совреме́нной, но значе́ние у неё всегда́ осо́бенное. | It may be old and small or big and modern, but it always has a special meaning.
+
+В сове́тское вре́мя мно́гие се́мьи получа́ли небольши́е уча́стки, всего́ шесть со́ток. | In Soviet times many families received small plots of just six hundredths of a hectare.
+Там стро́или до́мики свои́ми рука́ми и выра́щивали карто́шку, огурцы́ и помидо́ры. | There they built little houses with their own hands and grew potatoes, cucumbers and tomatoes.
+В магази́нах не всегда́ бы́ли о́вощи, и да́ча помога́ла прокорми́ть семью́. | Shops didn't always have vegetables, and the dacha helped to feed the family.
+
+Сего́дня о́вощи мо́жно купи́ть в любо́м магази́не, но да́чи никуда́ не де́лись. | Today vegetables can be bought in any shop, but dachas haven't gone anywhere.
+Для одни́х да́ча — э́то рабо́та в саду́ и го́рдость за со́бственные я́блоки. | For some the dacha means working in the garden and pride in their own apples.
+Для други́х — шашлыки́, ба́ня и разгово́ры до утра́. | For others it means barbecues, the banya and conversations till morning.
+А для дете́й да́ча — э́то ле́то: река́, велосипе́д, друзья́ и свобо́да. | And for children the dacha is summer: the river, a bike, friends and freedom.
+
+Ле́том городски́е кварти́ры пусте́ют: ба́бушки с вну́ками живу́т на да́че с ма́я по сентя́брь. | In summer city flats empty: grandmothers and grandchildren live at the dacha from May to September.
+А о́сенью начина́ется вре́мя загото́вок. | And in autumn comes the time for preserving.
+Огурцы́ со́лят, из я́год ва́рят варе́нье, и зимо́й на ка́ждой ку́хне стоя́т ба́нки с ле́том. | Cucumbers are salted, berries are made into jam, and in winter every kitchen has jars of summer.
+---
+? Почему́ в пя́тницу на доро́гах про́бки? | Why are there traffic jams on Friday?
++ Лю́ди е́дут на да́чу.
+- Лю́ди е́дут на рабо́ту.
+- Лю́ди е́дут в аэропо́рт.
+? Заче́м да́ча была́ нужна́ в сове́тское вре́мя? | Why was the dacha needed in Soviet times?
++ Что́бы выра́щивать о́вощи для семьи́.
+- Что́бы отдыха́ть от рабо́ты.
+- Что́бы сдава́ть её тури́стам.
+? Что зна́чит да́ча для дете́й? | What does the dacha mean for children?
++ Ле́то и свобо́ду.
+- Рабо́ту в саду́.
+- Шко́лу.
+? Что де́лают о́сенью? | What do people do in autumn?
++ Со́лят огурцы́ и ва́рят варе́нье.
+- Покупа́ют о́вощи.
+- Продаю́т да́чу.

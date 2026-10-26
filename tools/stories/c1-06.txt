@@ -1,0 +1,45 @@
+id: nf-c1-06
+kind: nonfiction
+level: C1
+title: Девятьсо́т дней | Nine hundred days
+---
+Восьмо́го сентября́ ты́сяча девятьсо́т со́рок пе́рвого го́да неме́цкие войска́ окружи́ли Ленингра́д. | On 8 September 1941 German troops encircled Leningrad.
+Начала́сь блока́да, кото́рая продолжа́лась почти́ девятьсо́т дней. | The blockade began, and it lasted almost nine hundred days.
+В го́роде оста́лись бо́лее двух миллио́нов челове́к, и почти́ никто́ из них не мог уе́хать. | More than two million people remained in the city, and almost none of them could leave.
+
+Пе́рвая зима́ блока́ды была́ са́мой стра́шной. | The first winter of the blockade was the most terrible.
+Моро́зы доходи́ли до тридцати́ гра́дусов, не́ было ни электри́чества, ни отопле́ния, ни воды́. | Frosts reached thirty degrees; there was no electricity, no heating, no water.
+Но гла́вным враго́м был го́лод. | But the main enemy was hunger.
+Взро́слые получа́ли всего́ сто два́дцать пять гра́ммов хле́ба в день, и хлеб э́тот наполови́ну состоя́л не из муки́. | Adults received just 125 grams of bread a day, and half of that bread wasn't made of flour.
+Лю́ди сжига́ли ме́бель и кни́ги, что́бы согре́ть ко́мнату хотя́ бы на час. | People burned furniture and books to warm a room for at least an hour.
+
+Еди́нственной свя́зью с большо́й землёй ста́ла Доро́га жи́зни — путь по льду о́зера Ла́дога. | The only link with the mainland was the Road of Life, a route across the ice of Lake Ladoga.
+По ней везли́ в го́род продово́льствие, а из го́рода — дете́й и больны́х. | Food was carried into the city along it, and children and the sick were carried out.
+Маши́ны шли под обстре́лом, не́которые прова́ливались под лёд вме́сте с води́телями. | Trucks drove under fire; some fell through the ice together with their drivers.
+
+И всё же го́род жил. | And yet the city lived.
+Рабо́тали заво́ды, выходи́ли газе́ты, в шко́лах шли уро́ки. | Factories worked, newspapers came out, lessons went on in the schools.
+Девя́того а́вгуста ты́сяча девятьсо́т со́рок второ́го го́да в Ленингра́де прозвуча́ла Седьма́я симфо́ния Шостако́вича. | On 9 August 1942 Shostakovich's Seventh Symphony was performed in Leningrad.
+Музыка́нтов, кото́рые едва́ держа́лись на нога́х от го́лода, специа́льно корми́ли, что́бы они́ смогли́ игра́ть. | The musicians, who could barely stand from hunger, were specially fed so that they would be able to play.
+Конце́рт передава́ли по ра́дио, и его́ слы́шали да́же вра́жеские солда́ты. | The concert was broadcast on the radio, and even enemy soldiers heard it.
+
+Блока́ду сня́ли в январе́ ты́сяча девятьсо́т со́рок четвёртого го́да. | The blockade was lifted in January 1944.
+По ра́зным оце́нкам, за э́ти дни поги́бли со́тни ты́сяч челове́к, а мо́жет быть, и бо́льше миллио́на. | By various estimates, hundreds of thousands of people died in those days, perhaps more than a million.
+В ка́ждой семье́ Петербу́рга до сих пор храня́т па́мять о блока́де, а к хле́бу здесь отно́сятся так, как, мо́жет быть, нигде́ бо́льше. | Every St Petersburg family still keeps the memory of the blockade, and here people treat bread as perhaps they do nowhere else.
+---
+? Ско́лько продолжа́лась блока́да? | How long did the blockade last?
++ Почти́ девятьсо́т дней.
+- Оди́н год.
+- Пять лет.
+? Что бы́ло гла́вным враго́м зимо́й? | What was the main enemy in winter?
++ Го́лод.
+- Ве́тер.
+- Боле́зни.
+? Что тако́е Доро́га жи́зни? | What was the Road of Life?
++ Путь по льду о́зера Ла́дога.
+- Желе́зная доро́га в Москву́.
+- У́лица в це́нтре го́рода.
+? Почему́ музыка́нтов специа́льно корми́ли? | Why were the musicians specially fed?
++ Что́бы они́ смогли́ игра́ть симфо́нию.
+- Потому́ что они́ бы́ли иностра́нцами.
+- Потому́ что они́ рабо́тали на заво́де.

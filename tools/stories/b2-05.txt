@@ -1,0 +1,40 @@
+id: nf-b2-05
+kind: nonfiction
+level: B2
+title: Метро́ как музе́й | The metro as a museum
+---
+Моско́вское метро́ откры́лось в ты́сяча девятьсо́т три́дцать пя́том году́. | The Moscow metro opened in 1935.
+Пе́рвая ли́ния была́ коро́ткой: всего́ трина́дцать ста́нций. | The first line was short: just thirteen stations.
+Сего́дня в метро́ со́тни ста́нций, и ка́ждый день им по́льзуются миллио́ны люде́й. | Today the metro has hundreds of stations, and millions of people use it every day.
+
+Но моско́вское метро́ знамени́то не то́лько разме́рами. | But the Moscow metro isn't famous only for its size.
+Его́ ста́рые ста́нции похо́жи на дворцы́: мра́мор, моза́ика, скульпту́ры, огро́мные лю́стры. | Its old stations look like palaces: marble, mosaics, sculptures, huge chandeliers.
+Сове́тские архите́кторы хоте́ли, что́бы ка́ждый рабо́чий по доро́ге на заво́д чу́вствовал себя́ в «подзе́мном дворце́ наро́да». | Soviet architects wanted every worker on the way to the factory to feel he was in an "underground palace of the people".
+
+Осо́бенно краси́вы ста́нции ли́нии, кото́рая идёт по кру́гу. | The stations of the line that runs in a circle are especially beautiful.
+На одно́й ста́нции потоло́к украша́ют моза́ики с геро́ями ру́сской исто́рии. | At one station the ceiling is decorated with mosaics of heroes of Russian history.
+На друго́й ста́нции стоя́т бро́нзовые фигу́ры солда́т, рабо́чих и студе́нтов. | At another there are bronze figures of soldiers, workers and students.
+У одно́й из них — соба́ки пограни́чника — нос блести́т: пассажи́ры трут его́ на уда́чу. | On one of them, a border guard's dog, the nose shines: passengers rub it for luck.
+
+Во вре́мя войны́ метро́ служи́ло бомбоубе́жищем. | During the war the metro served as a bomb shelter.
+Ты́сячи москвиче́й спа́ли на платфо́рмах, а на одно́й из ста́нций да́же родили́сь де́ти. | Thousands of Muscovites slept on the platforms, and at one of the stations children were even born.
+
+Е́сли вы прие́дете в Москву́, обяза́тельно купи́те биле́т и проведи́те в метро́ не́сколько часо́в. | If you come to Moscow, be sure to buy a ticket and spend a few hours in the metro.
+Э́то, наве́рное, са́мая дешёвая экску́рсия в ми́ре. | It's probably the cheapest tour in the world.
+---
+? Когда́ откры́лось моско́вское метро́? | When did the Moscow metro open?
++ В ты́сяча девятьсо́т три́дцать пя́том году́.
+- В ты́сяча девятьсо́т шестьдеся́т пе́рвом году́.
+- В ты́сяча семьсо́т тре́тьем году́.
+? На что похо́жи ста́рые ста́нции? | What do the old stations look like?
++ На дворцы́.
+- На заво́ды.
+- На вокза́лы.
+? Почему́ у соба́ки на ста́нции блести́т нос? | Why does the dog's nose at the station shine?
++ Пассажи́ры трут его́ на уда́чу.
+- Его́ ча́сто мо́ют.
+- Он сде́лан из зо́лота.
+? Чем служи́ло метро́ во вре́мя войны́? | What did the metro serve as during the war?
++ Бомбоубе́жищем.
+- Шко́лой.
+- Заво́дом.

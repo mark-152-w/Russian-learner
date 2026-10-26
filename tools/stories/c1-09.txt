@@ -1,0 +1,38 @@
+id: nf-c1-09
+kind: nonfiction
+level: C1
+title: Почему́ ру́сские не улыба́ются? | Why don't Russians smile?
+---
+Иностра́нцы, кото́рые впервы́е прие́хали в Росси́ю, ча́сто жа́луются: лю́ди на у́лицах ка́жутся угрю́мыми, продавцы́ не улыба́ются, а на вопро́с «Как дела́?» вам вполне́ мо́гут подро́бно рассказа́ть о свои́х пробле́мах. | Foreigners who come to Russia for the first time often complain: people in the street seem gloomy, shop assistants don't smile, and if you ask "How are you?" you may well get a detailed account of someone's problems.
+Неуже́ли ру́сские действи́тельно таки́е неприве́тливые? | Are Russians really so unfriendly?
+
+Лингви́сты и психо́логи объясня́ют э́то ина́че. | Linguists and psychologists explain it differently.
+В ру́сской культу́ре улы́бка — не знак ве́жливости, а знак и́скренней симпа́тии. | In Russian culture a smile isn't a sign of politeness but a sign of genuine liking.
+Улыба́ться незнако́мому челове́ку без причи́ны счита́ется стра́нным: зна́чит, ты и́ли смеёшься над ним, и́ли ведёшь себя́ несерьёзно. | Smiling at a stranger for no reason is considered strange: it means you're either laughing at them or not behaving seriously.
+Есть да́же погово́рка о том, что смех без причи́ны — при́знак глу́пости. | There's even a saying that laughter without reason is a sign of stupidity.
+
+Кро́ме того́, ру́сские це́нят и́скренность бо́льше, чем ве́жливость. | Besides, Russians value sincerity more than politeness.
+Е́сли челове́ку пло́хо, он не обя́зан де́лать вид, что всё прекра́сно. | If someone is feeling bad, they don't have to pretend everything is wonderful.
+Дежу́рная улы́бка на рабо́те мно́гим ка́жется неи́скренней, почти́ оскорби́тельной. | A stock smile at work seems insincere to many people, almost insulting.
+
+Но сто́ит познако́миться с челове́ком лу́чше, и всё меня́ется. | But get to know someone better, and everything changes.
+Тот же угрю́мый сосе́д в ли́фте мо́жет оказа́ться челове́ком, кото́рый в два часа́ но́чи пое́дет с ва́ми в больни́цу и́ли отда́ст после́днее. | That same gloomy neighbour in the lift may turn out to be someone who will go to hospital with you at two in the morning or give you his last penny.
+Ру́сская улы́бка ре́дкая, но настоя́щая. | The Russian smile is rare, but it's real.
+И е́сли вам улыбну́лись — зна́чит, вам действи́тельно ра́ды. | And if someone has smiled at you, it means they really are glad to see you.
+---
+? Что зна́чит улы́бка в ру́сской культу́ре? | What does a smile mean in Russian culture?
++ И́скреннюю симпа́тию.
+- Ве́жливость.
+- Уста́лость.
+? Как отно́сятся к улы́бке без причи́ны? | How is a smile without a reason seen?
++ Как к чему́-то стра́нному.
+- Как к зна́ку уваже́ния.
+- Как к обяза́тельному пра́вилу.
+? Что ру́сские це́нят бо́льше ве́жливости? | What do Russians value more than politeness?
++ И́скренность.
+- Де́ньги.
+- Тишину́.
+? Что зна́чит, е́сли вам улыбну́лись? | What does it mean if someone smiles at you?
++ Вам действи́тельно ра́ды.
+- Над ва́ми смею́тся.
+- Вас не по́мнят.

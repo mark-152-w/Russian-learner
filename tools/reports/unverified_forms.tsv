@@ -7,1924 +7,1938 @@ rank	id	slot	form	pymorphy	note
 43	a:весь	f_ins	все́ю	mismatch	
 79	a:большой	comp	бо́льший	mismatch	
 99	a:сам	f_ins	самою́	mismatch	
-161	a:новый	n_acc	но́вого	mismatch	
-201	a:маленький	comp	ме́ньший	mismatch	
-210	n:мать	pl_ins	матерьми́	unknown	
-228	a:никакой	f_ins	никако́ю	unknown	
-269	n:господь	sg_gen	господа	ok	unstressed
-269	n:господь	sg_dat	господу	ok	unstressed
-269	n:господь	sg_acc	господа	ok	unstressed
-269	n:господь	sg_ins	господом	ok	unstressed
-269	n:господь	sg_prep	господе	ok	unstressed
-291	a:любой	f_ins	любо́ю	mismatch	
-305	a:дорогой	sup	дорожа́йший	unknown	
-344	v:приехать	imp_sg	приезжа́й	mismatch	
-344	v:приехать	imp_pl	приезжа́йте	mismatch	
-357	a:старый	comp	ста́рше	mismatch	
-357	a:старый	sup	ста́рший	mismatch	
-402	a:второй	f_ins	второ́ю	mismatch	
-404	n:пять	sg_nom	пять	mismatch	
-404	n:пять	sg_gen	пяти	mismatch	unstressed
-404	n:пять	pl_nom	пяти	mismatch	unstressed
-404	n:пять	pl_gen	пя	unknown	
-420	n:свет	pl_nom	све́ты	mismatch	
-420	n:свет	pl_gen	све́тов	mismatch	
-420	n:свет	pl_dat	све́там	mismatch	
-420	n:свет	pl_acc	све́ты	mismatch	
-420	n:свет	pl_ins	све́тами	mismatch	
-420	n:свет	pl_prep	све́тах	mismatch	
-422	a:остальной	f_ins	остально́ю	unknown	
-473	v:уехать	imp_sg	уезжа́й	mismatch	
-473	v:уехать	imp_pl	уезжа́йте	mismatch	
-496	a:собственный	short_f	со́бственно	mismatch	
-496	a:собственный	short_n	со́бственна	mismatch	
-507	a:нормальный	sup	норма́льнейший	unknown	
-545	a:молодой	sup	молодейший	unknown	unstressed
-620	a:сей	f_ins	се́ю	mismatch	
-620	a:сей	n_nom	се	mismatch	
-620	a:сей	n_acc	се	mismatch	
-647	a:больной	comp	больн	unknown	
-738	a:великий	short_m	вели́к	mismatch	
-738	a:великий	short_f	велика́	mismatch	
-738	a:великий	short_n	велико́	mismatch	
-738	a:великий	short_pl	велики́	mismatch	
-738	a:великий	comp	бо́льше	mismatch	
-738	a:великий	comp	бо́лее	mismatch	
-739	a:высокий	comp	вы́ше	mismatch	
-745	a:долгий	sup	до́лее	mismatch	
-749	v:исчезнуть	pst_f	исче́знула	unknown	
-749	v:исчезнуть	pst_n	исче́знуло	unknown	
-749	v:исчезнуть	pst_pl	исче́знули	unknown	
-791	v:погибнуть	pst_m	поги́бнул	unknown	
-791	v:погибнуть	pst_f	поги́бнула	unknown	
-791	v:погибнуть	pst_n	поги́бнуло	unknown	
-791	v:погибнуть	pst_pl	поги́бнули	unknown	
-792	n:детка	pl_nom	де́тки	mismatch	
-792	n:детка	pl_gen	де́ток	mismatch	
-792	n:детка	pl_dat	де́ткам	mismatch	
-792	n:детка	pl_acc	де́ток	mismatch	
-792	n:детка	pl_ins	де́тками	mismatch	
-792	n:детка	pl_prep	де́тках	mismatch	
-810	a:всякий	f_ins	вся́кою	mismatch	
-870	n:девчонка	sg_gen	девчонки	ok	unstressed
-870	n:девчонка	sg_dat	девчонке	ok	unstressed
-870	n:девчонка	sg_acc	девчонку	ok	unstressed
-870	n:девчонка	sg_ins	девчонкой	ok	unstressed
-870	n:девчонка	sg_ins	девчонкою	ok	unstressed
-870	n:девчонка	sg_prep	девчонке	ok	unstressed
-870	n:девчонка	pl_nom	девчонки	ok	unstressed
-870	n:девчонка	pl_dat	девчонкам	ok	unstressed
-870	n:девчонка	pl_ins	девчонками	ok	unstressed
-870	n:девчонка	pl_prep	девчонках	ok	unstressed
-873	a:крутой	sup	круте́йший	unknown	
-932	n:мечта	pl_gen	мечта́ний	mismatch	
-943	n:америка	pl_nom	Аме́рики	mismatch	
-943	n:америка	pl_gen	Аме́рик	unknown	
-943	n:америка	pl_dat	Аме́рикам	unknown	
-943	n:америка	pl_acc	Аме́рики	mismatch	
-943	n:америка	pl_ins	Аме́риками	unknown	
-943	n:америка	pl_prep	Аме́риках	unknown	
-958	n:пиво	pl_nom	пи́ва	mismatch	
-958	n:пиво	pl_gen	пив	mismatch	
-958	n:пиво	pl_dat	пи́вам	unknown	
-958	n:пиво	pl_acc	пи́ва	mismatch	
-958	n:пиво	pl_ins	пи́вами	unknown	
-958	n:пиво	pl_prep	пи́вах	unknown	
-972	n:церковь	pl_dat	церква́м	mismatch	
-972	n:церковь	pl_ins	церква́ми	mismatch	
-972	n:церковь	pl_prep	церква́х	mismatch	
-985	n:рождество	pl_nom	рождества́	mismatch	
-985	n:рождество	pl_gen	рожде́ств	unknown	
-985	n:рождество	pl_dat	рождества́м	unknown	
-985	n:рождество	pl_acc	рождества́	mismatch	
-985	n:рождество	pl_ins	рождества́ми	unknown	
-985	n:рождество	pl_prep	рождества́х	unknown	
-1005	a:особенный	short_m	осо́бенен	unknown	
-1023	n:животное	pl_acc	живо́тные	mismatch	
-1025	n:нос	sg_gen	но́су	mismatch	
-1045	n:сынок	sg_acc	сыно́к	mismatch	
-1045	n:сынок	pl_acc	сынки́	mismatch	
-1126	v:установить	inf	установить	ok	unstressed
-1150	a:кой	f_ins	ко́ею	unknown	
-1173	n:участок	sg_acc	уча́стка	mismatch	
-1173	n:участок	pl_acc	уча́стков	mismatch	
-1187	v:беспокоить	imp_sg	безпоко́й	unknown	
-1187	v:беспокоить	imp_pl	безпоко́йте	unknown	
-1193	v:переехать	imp_sg	переезжа́й	mismatch	
-1193	v:переехать	imp_pl	переезжа́йте	mismatch	
-1210	n:месье	pl_nom	месье́	mismatch	
-1210	n:месье	pl_gen	месье́	mismatch	
-1210	n:месье	pl_dat	месье́	mismatch	
-1210	n:месье	pl_acc	месье́	mismatch	
-1210	n:месье	pl_ins	месье́	mismatch	
-1210	n:месье	pl_prep	месье́	mismatch	
-1250	a:тёмный	sup	темне́йший	unknown	
-1264	a:неплохой	short_m	неплох	ok	unstressed
-1309	n:подружка	pl_acc	подру́жки	mismatch	
-1318	n:добро	pl_nom	добра́	mismatch	
-1318	n:добро	pl_gen	добр	mismatch	
-1318	n:добро	pl_dat	добра́м	unknown	
-1318	n:добро	pl_acc	добра́	mismatch	
-1318	n:добро	pl_ins	добра́ми	unknown	
-1318	n:добро	pl_prep	добра́х	unknown	
-1323	a:особый	short_m	осо́б	mismatch	
-1323	a:особый	short_f	осо́ба	mismatch	
-1323	a:особый	short_n	осо́бо	mismatch	
-1323	a:особый	short_pl	осо́бы	mismatch	
-1333	a:весёлый	sup	веселе́йший	unknown	
-1374	a:сукин	m_gen	сукиного	ok	unstressed
-1374	a:сукин	m_dat	сукиному	ok	unstressed
-1374	a:сукин	m_acc	сукиного	ok	unstressed
-1374	a:сукин	n_gen	сукиного	ok	unstressed
-1410	a:зелёный	sup	зелене́йший	unknown	
-1421	a:крупный	short_pl	кру́пны́	ok	
-1445	n:США	sg_nom	США	mismatch	
-1445	n:США	sg_gen	США	mismatch	
-1445	n:США	sg_dat	США	mismatch	
-1445	n:США	sg_acc	США	mismatch	
-1445	n:США	sg_ins	США	mismatch	
-1445	n:США	sg_prep	США	mismatch	
-1522	a:таковой	f_ins	таково́ю	unknown	
-1523	a:домашний	short_m	дома́шен	unknown	
-1530	a:малый	short_m	мал	mismatch	
-1530	a:малый	short_f	мала́	mismatch	
-1530	a:малый	short_n	мало́	mismatch	
-1530	a:малый	short_pl	малы́	mismatch	
-1530	a:малый	comp	ме́ньше	mismatch	
-1582	v:дождаться	np_1sg	дождала́ю́сь	unknown	
-1582	v:дождаться	np_2sg	дождала́ёшься	unknown	
-1582	v:дождаться	np_3sg	дождала́ётся	unknown	
-1582	v:дождаться	np_1pl	дождала́ёмся	unknown	
-1582	v:дождаться	np_2pl	дождала́ётесь	unknown	
-1582	v:дождаться	np_3pl	дождала́ю́тся	unknown	
-1582	v:дождаться	imp_sg	дождала́и́сь	unknown	
-1582	v:дождаться	imp_pl	дождала́и́тесь	unknown	
-1584	v:достигнуть	pst_m	дости́гнул	unknown	
-1584	v:достигнуть	pst_f	дости́гнула	unknown	
-1584	v:достигнуть	pst_n	дости́гнуло	unknown	
-1584	v:достигнуть	pst_pl	дости́гнули	unknown	
-1604	n:мясо	pl_nom	мя́са	mismatch	
-1604	n:мясо	pl_gen	мяс	unknown	
-1604	n:мясо	pl_dat	мя́сам	unknown	
-1604	n:мясо	pl_acc	мя́са	mismatch	
-1604	n:мясо	pl_ins	мя́сами	unknown	
-1604	n:мясо	pl_prep	мя́сах	unknown	
-1636	n:дружище	pl_nom	дружи́ща	mismatch	
-1642	a:узкий	short_pl	у́зки́	ok	
-1642	a:узкий	sup	узча́йший	unknown	
-1648	a:мелкий	comp	мельче	ok	unstressed
-1648	a:мелкий	sup	мелчайший	unknown	unstressed
-1683	v:завести	np_1sg	заведу	ok	unstressed
-1683	v:завести	np_3pl	заведут	ok	unstressed
-1683	v:завести	pst_f	завела	ok	unstressed
-1683	v:завести	pst_n	завело	ok	unstressed
-1683	v:завести	pst_pl	завели	ok	unstressed
-1683	v:завести	imp_sg	заведи	ok	unstressed
-1683	v:завести	imp_pl	заведите	ok	unstressed
-1701	n:тень	pl_acc	те́ней	mismatch	
-1725	n:Франция	sg_ins	Фра́нциею	unknown	
-1726	a:симпатичный	sup	симпати́чнейший	unknown	
-1727	a:достойный	short_m	досто́ен	unknown	
-1730	a:южный	sup	южне́йший	unknown	
-1733	n:лето	pl_nom	лета́	mismatch	
-1733	n:лето	pl_gen	лет	mismatch	
-1733	n:лето	pl_dat	лета́м	mismatch	
-1733	n:лето	pl_acc	лета́	mismatch	
-1733	n:лето	pl_ins	лета́ми	mismatch	
-1733	n:лето	pl_prep	лета́х	mismatch	
-1835	n:Англия	sg_ins	А́нглиею	unknown	
-1836	a:четвёртый	f_ins	четвёртою	unknown	
-1839	a:обратный	short_n	обра́тна	mismatch	
-1947	n:север	pl_nom	севера́	mismatch	
-1947	n:север	pl_acc	севера́	mismatch	
-1953	v:оказать	np_1sg	оказа́ю	unknown	
-1953	v:оказать	np_2sg	оказа́ешь	unknown	
-1953	v:оказать	np_3sg	оказа́ет	unknown	
-1953	v:оказать	np_1pl	оказа́ем	unknown	
-1953	v:оказать	np_2pl	оказа́ете	unknown	
-1953	v:оказать	np_3pl	оказа́ют	unknown	
-1953	v:оказать	imp_sg	оказа́й	unknown	
-1953	v:оказать	imp_pl	оказа́йте	unknown	
-1965	v:почтить	np_3pl	почтят	ok	unstressed
-1965	v:почтить	np_3pl	почту́т	mismatch	
-1965	v:почтить	imp_sg	почтят	mismatch	unstressed
-1965	v:почтить	imp_pl	почтят	mismatch	unstressed
-1972	v:возникнуть	pst_m	возни́кнул	unknown	
-1972	v:возникнуть	pst_f	возни́кнула	unknown	
-1972	v:возникнуть	pst_n	возни́кнуло	unknown	
-1972	v:возникнуть	pst_pl	возни́кнули	unknown	
-1998	a:взрослый	short_m	взро́сел	unknown	
-1999	a:пятый	f_ins	пя́тою	mismatch	
-2091	v:выдать	pst_n	вы́дало́	ok	
-2096	a:мировой	short_pl	мировы́	unknown	
-2105	a:вчерашний	short_m	вчера́шен	unknown	
-2111	a:иной	f_ins	ино́ю	unknown	
-2134	a:кое-какой	f_ins	кое-како́ю	unknown	
-2139	n:Чикаго	pl_nom	Чика́го	mismatch	
-2139	n:Чикаго	pl_gen	Чика́го	mismatch	
-2139	n:Чикаго	pl_dat	Чика́го	mismatch	
-2139	n:Чикаго	pl_acc	Чика́го	mismatch	
-2139	n:Чикаго	pl_ins	Чика́го	mismatch	
-2139	n:Чикаго	pl_prep	Чика́го	mismatch	
-2173	n:юг	pl_nom	юга́	mismatch	
-2173	n:юг	pl_acc	юга́	mismatch	
-2235	a:очередной	short_pl	очередны́	unknown	
-2245	a:тёплый	sup	тепле́йший	unknown	
-2276	v:проехать	imp_sg	проезжа́й	mismatch	
-2276	v:проехать	imp_pl	проезжа́йте	mismatch	
-2284	a:дешёвый	sup	дешеве́йший	unknown	
-2379	v:проникнуть	pst_m	прони́кнул	unknown	
-2379	v:проникнуть	pst_f	прони́кнула	unknown	
-2379	v:проникнуть	pst_n	прони́кнуло	unknown	
-2379	v:проникнуть	pst_pl	прони́кнули	unknown	
-2394	a:восточный	sup	восто́чнейший	unknown	
-2438	a:жёсткий	sup	жёстчейщий	unknown	
-2552	n:рай	pl_nom	ра́и	mismatch	
-2552	n:рай	pl_gen	ра́ев	unknown	
-2552	n:рай	pl_dat	ра́ям	mismatch	
-2552	n:рай	pl_acc	ра́и	mismatch	
-2552	n:рай	pl_ins	ра́ями	mismatch	
-2552	n:рай	pl_prep	ра́ях	mismatch	
-2553	n:тридцать	sg_nom	три́дцать	mismatch	
-2553	n:тридцать	sg_gen	тридцати	mismatch	unstressed
-2553	n:тридцать	pl_nom	тридцати	mismatch	unstressed
-2553	n:тридцать	pl_gen	тридца	unknown	unstressed
-2564	n:китай	sg_nom	китай	ok	unstressed
-2564	n:китай	sg_gen	китая	ok	unstressed
-2564	n:китай	sg_dat	китаю	ok	unstressed
-2564	n:китай	sg_acc	китай	ok	unstressed
-2564	n:китай	sg_ins	китаем	ok	unstressed
-2564	n:китай	sg_prep	китае	ok	unstressed
-2593	a:чей-то	m_gen	чьего-то	ok	unstressed
-2593	a:чей-то	m_dat	чьему-то	ok	unstressed
-2593	a:чей-то	m_acc	чейчьего-то	unknown	unstressed
-2593	a:чей-то	m_ins	чьим-то	ok	unstressed
-2593	a:чей-то	f_nom	чья-то	ok	unstressed
-2593	a:чей-то	f_gen	чьей-то	ok	unstressed
-2593	a:чей-то	f_dat	чьей-то	ok	unstressed
-2593	a:чей-то	f_acc	чью-то	ok	unstressed
-2593	a:чей-то	f_ins	чьей-то	ok	unstressed
-2593	a:чей-то	f_prep	чьей-то	ok	unstressed
-2593	a:чей-то	n_gen	чьего-то	ok	unstressed
-2593	a:чей-то	n_dat	чьему-то	ok	unstressed
-2593	a:чей-то	n_acc	чейчьего-то	unknown	unstressed
-2593	a:чей-то	n_ins	чьим-то	ok	unstressed
-2593	a:чей-то	pl_nom	чьи-то	ok	unstressed
-2593	a:чей-то	pl_gen	чьих-то	ok	unstressed
-2593	a:чей-то	pl_dat	чьим-то	ok	unstressed
-2593	a:чей-то	pl_acc	чьичьих-то	unknown	unstressed
-2593	a:чей-то	pl_ins	чьими-то	ok	unstressed
-2593	a:чей-то	pl_prep	чьих-то	ok	unstressed
-2596	n:кан	pl_acc	ка́нов	mismatch	
-2605	n:Германия	sg_ins	Герма́ниею	unknown	
-2621	n:рабочий	sg_acc	рабо́чий	mismatch	
-2621	n:рабочий	pl_acc	рабо́чие	mismatch	
-2640	v:выставить	imp_sg	вы́стави	unknown	
-2655	n:африка	pl_nom	а́фрики	mismatch	
-2655	n:африка	pl_gen	а́фрик	unknown	
-2655	n:африка	pl_dat	а́фрикам	unknown	
-2655	n:африка	pl_acc	а́фрики	mismatch	
-2655	n:африка	pl_ins	а́фриками	unknown	
-2655	n:африка	pl_prep	а́фриках	unknown	
-2663	n:Япония	sg_ins	Япо́ниею	unknown	
-2671	a:мобильный	sup	моби́льнейший	unknown	
-2677	n:Россия	sg_ins	Росси́ею	unknown	
-2687	a:завтрашний	short_m	за́втрашен	unknown	
-2688	v:захотеться	np_3sg	захочется	ok	unstressed
-2688	v:захотеться	pst_n	захотелось	ok	unstressed
-2708	n:полгода	sg_gen	полугода	ok	unstressed
-2708	n:полгода	sg_dat	полугоду	ok	unstressed
-2708	n:полгода	sg_ins	полугодом	ok	unstressed
-2708	n:полгода	sg_prep	полугоде	ok	unstressed
-2708	n:полгода	pl_nom	полугоды	unknown	unstressed
-2708	n:полгода	pl_gen	полугодов	unknown	unstressed
-2708	n:полгода	pl_dat	полугодам	unknown	unstressed
-2708	n:полгода	pl_acc	полугоды	unknown	unstressed
-2708	n:полгода	pl_ins	полугодами	unknown	unstressed
-2708	n:полгода	pl_prep	полугодах	unknown	unstressed
-2712	a:жёлтый	sup	желте́йший	unknown	
-2741	v:сдохнуть	pst_m	сдо́хнул	unknown	
-2741	v:сдохнуть	pst_f	сдо́хнула	unknown	
-2741	v:сдохнуть	pst_n	сдо́хнуло	unknown	
-2741	v:сдохнуть	pst_pl	сдо́хнули	unknown	
-2762	a:выпускной	m_ins	выпускного	mismatch	unstressed
-2763	a:прочий	f_ins	про́чею	unknown	
-2772	a:шестой	f_ins	шесто́ю	unknown	
-2790	a:внешний	short_m	вне́шен	unknown	
-2790	a:внешний	short_f	вне́шне	mismatch	
-2790	a:внешний	short_n	вне́шня	unknown	
-2790	a:внешний	short_pl	вне́шни	unknown	
-2816	n:майя	pl_gen	майь	unknown	
-2816	n:майя	pl_acc	ма́йи	mismatch	
-2865	n:Христос	pl_nom	Христы́	unknown	
-2865	n:Христос	pl_gen	Христо́в	mismatch	
-2865	n:Христос	pl_dat	Христа́м	unknown	
-2865	n:Христос	pl_acc	Христо́в	mismatch	
-2865	n:Христос	pl_ins	Христа́ми	unknown	
-2865	n:Христос	pl_prep	Христа́х	unknown	
-2881	a:мерзкий	comp	мерзе́е	unknown	
-2906	a:седьмой	f_ins	седьмо́ю	unknown	
-2986	a:дурной	sup	дурне́йший	unknown	
-3007	v:поздороваться	np_1sg	поздороваюсь	ok	unstressed
-3007	v:поздороваться	np_2sg	поздороваешься	ok	unstressed
-3007	v:поздороваться	np_3sg	поздоровается	ok	unstressed
-3007	v:поздороваться	np_1pl	поздороваемся	ok	unstressed
-3007	v:поздороваться	np_2pl	поздороваетесь	ok	unstressed
-3007	v:поздороваться	np_3pl	поздороваются	ok	unstressed
-3019	n:Италия	sg_ins	Ита́лиею	unknown	
-3019	n:Италия	pl_nom	Ита́лии	mismatch	
-3019	n:Италия	pl_gen	Ита́лий	unknown	
-3019	n:Италия	pl_dat	Ита́лиям	unknown	
-3019	n:Италия	pl_acc	Ита́лии	mismatch	
-3019	n:Италия	pl_ins	Ита́лиями	unknown	
-3019	n:Италия	pl_prep	Ита́лиях	unknown	
-3059	v:очистить	imp_pl	о́чи́стите	ok	
-3059	v:очистить	imp_pl	о́чи́стьте	ok	
-3077	n:пыль	pl_nom	пы́ли	mismatch	
-3077	n:пыль	pl_gen	пы́лей	unknown	
-3077	n:пыль	pl_dat	пы́лям	unknown	
-3077	n:пыль	pl_acc	пы́ли	mismatch	
-3077	n:пыль	pl_ins	пы́лями	unknown	
-3077	n:пыль	pl_prep	пы́лях	unknown	
-3143	v:класть	pst_f	клала	ok	unstressed
-3143	v:класть	pst_n	клало	ok	unstressed
-3143	v:класть	pst_pl	клали	ok	unstressed
-3143	v:класть	imp_pl	кладите	ok	unstressed
-3156	n:аппетит	sg_gen	аппетита	ok	unstressed
-3156	n:аппетит	sg_dat	аппетиту	ok	unstressed
-3156	n:аппетит	sg_ins	аппетитом	ok	unstressed
-3156	n:аппетит	sg_prep	аппетите	ok	unstressed
-3174	n:любитель	pl_nom	любителя́	mismatch	
-3227	n:каникулы	pl_ins	кани́кулам	mismatch	
-3301	n:София	sg_ins	Софи́ею	unknown	
-3313	n:солнышко	pl_nom	со́лнышка	mismatch	
-3353	a:печальный	sup	печа́льнейший	unknown	
-3382	n:подонок	sg_acc	подо́нок	mismatch	
-3382	n:подонок	pl_acc	подо́нки	mismatch	
-3403	a:клёвый	short_m	клёв	mismatch	
-3403	a:клёвый	short_f	клёва	mismatch	
-3403	a:клёвый	short_n	клёво	mismatch	
-3403	a:клёвый	short_pl	клёвы	mismatch	
-3431	n:горе	pl_nom	го́ря	mismatch	
-3431	n:горе	pl_gen	горь	unknown	
-3431	n:горе	pl_dat	го́рям	unknown	
-3431	n:горе	pl_acc	го́ря	mismatch	
-3431	n:горе	pl_ins	го́рями	unknown	
-3431	n:горе	pl_prep	го́рях	unknown	
-3443	n:бег	pl_nom	бега́	mismatch	
-3443	n:бег	pl_gen	бего́в	mismatch	
-3443	n:бег	pl_dat	бега́м	mismatch	
-3443	n:бег	pl_acc	бега́	mismatch	
-3443	n:бег	pl_ins	бега́ми	mismatch	
-3443	n:бег	pl_prep	бега́х	mismatch	
-3459	a:рождественский	short_m	рожде́ственск	unknown	
-3459	a:рождественский	short_f	рожде́ственска	unknown	
-3459	a:рождественский	short_n	рожде́ственско	unknown	
-3459	a:рождественский	short_pl	рожде́ственски	unknown	
-3493	n:Индия	sg_ins	Индией	ok	unstressed
-3493	n:Индия	sg_ins	Индиею	unknown	unstressed
-3496	n:Испания	sg_ins	Испа́ниею	unknown	
-3531	n:май	pl_nom	ма́и	mismatch	
-3531	n:май	pl_gen	ма́ев	unknown	
-3531	n:май	pl_dat	ма́ям	unknown	
-3531	n:май	pl_acc	ма́и	mismatch	
-3531	n:май	pl_ins	ма́ями	unknown	
-3531	n:май	pl_prep	ма́ях	unknown	
-3675	n:фронт	sg_gen	фро́нта́	ok	
-3675	n:фронт	sg_dat	фро́нту́	ok	
-3675	n:фронт	sg_ins	фро́нто́м	ok	
-3675	n:фронт	sg_prep	фро́нте́	ok	
-3675	n:фронт	pl_nom	фро́нты́	ok	
-3675	n:фронт	pl_gen	фро́нто́в	ok	
-3675	n:фронт	pl_dat	фро́нта́м	ok	
-3675	n:фронт	pl_acc	фро́нты́	ok	
-3675	n:фронт	pl_ins	фро́нта́ми	ok	
-3675	n:фронт	pl_prep	фро́нта́х	ok	
-3695	a:крошечный	sup	кро́шечнейший	unknown	
-3702	a:публичный	short_m	публичен	ok	unstressed
-3707	a:компьютерный	m_ins	компью́терном	mismatch	
-3707	a:компьютерный	n_ins	компью́терном	mismatch	
-3739	a:глухой	comp	глуше	ok	unstressed
-3756	a:романтический	short_m	романти́ческ	unknown	
-3756	a:романтический	short_f	романти́ческа	unknown	
-3756	a:романтический	short_n	романти́ческо	unknown	
-3756	a:романтический	short_pl	романти́чески	mismatch	
-3772	n:сити	pl_nom	си́ти	mismatch	
-3772	n:сити	pl_gen	си́ти	mismatch	
-3772	n:сити	pl_dat	си́ти	mismatch	
-3772	n:сити	pl_acc	си́ти	mismatch	
-3772	n:сити	pl_ins	си́ти	mismatch	
-3772	n:сити	pl_prep	си́ти	mismatch	
-3816	a:абсолютный	sup	абсолю́тнейший	unknown	
-3868	a:достаточный	sup	доста́точнейший	unknown	
-3872	n:пятнадцать	sg_nom	пятна́дцать	mismatch	
-3872	n:пятнадцать	sg_gen	пятнадцати	mismatch	unstressed
-3872	n:пятнадцать	sg_dat	пятнадцати	mismatch	unstressed
-3872	n:пятнадцать	sg_acc	пятна́дцать	mismatch	
-3872	n:пятнадцать	sg_ins	пятнадцатью	mismatch	unstressed
-3872	n:пятнадцать	sg_prep	пятнадцати	mismatch	unstressed
-3878	n:жар	sg_ins	жаром	ok	unstressed
-3900	n:график	sg_nom	графтк	unknown	
-3900	n:график	pl_nom	графики	ok	unstressed
-3937	n:выживание	pl_nom	выжива́ния	mismatch	
-3937	n:выживание	pl_gen	выжива́ний	unknown	
-3937	n:выживание	pl_dat	выжива́ниям	unknown	
-3937	n:выживание	pl_acc	выжива́ния	mismatch	
-3937	n:выживание	pl_ins	выжива́ниями	unknown	
-3937	n:выживание	pl_prep	выжива́ниях	unknown	
-3992	v:отступить	np_2sg	отступишь	ok	unstressed
-3992	v:отступить	np_3sg	отступит	ok	unstressed
-3992	v:отступить	np_1pl	отступим	ok	unstressed
-3992	v:отступить	np_3pl	отступят	ok	unstressed
-4028	a:твёрдый	sup	тверде́йший	unknown	
-4091	v:перевернуть	np_3pl	перевернут	ok	unstressed
-4095	n:запуск	pl_nom	запуска́	mismatch	
-4095	n:запуск	pl_acc	запуска́	mismatch	
-4098	n:Токио	pl_nom	То́кио	mismatch	
-4098	n:Токио	pl_gen	То́кио	mismatch	
-4098	n:Токио	pl_dat	То́кио	mismatch	
-4098	n:Токио	pl_acc	То́кио	mismatch	
-4098	n:Токио	pl_ins	То́кио	mismatch	
-4098	n:Токио	pl_prep	То́кио	mismatch	
-4141	v:вырезать	imp_sg	вы́режи	unknown	
-4182	n:парнишка	pl_acc	парни́шки	mismatch	
-4183	v:выехать	imp_sg	выезжа́й	mismatch	
-4183	v:выехать	imp_pl	выезжа́йте	mismatch	
-4190	n:марсель	pl_nom	ма́рселя	mismatch	
-4190	n:марсель	pl_acc	ма́рселя	mismatch	
-4230	n:джи	pl_nom	джи	mismatch	
-4230	n:джи	pl_gen	джи	mismatch	
-4230	n:джи	pl_dat	джи	mismatch	
-4230	n:джи	pl_acc	джи	mismatch	
-4230	n:джи	pl_ins	джи	mismatch	
-4230	n:джи	pl_prep	джи	mismatch	
-4253	a:чувствительный	sup	самый-чувствительный	unknown	unstressed
-4254	a:восьмой	f_ins	восьмо́ю	unknown	
-4294	n:Австралия	sg_ins	Австра́лиею	unknown	
-4296	a:покойный	short_m	поко́йн	unknown	
-4302	a:тяжкий	short_pl	тя́жки́	ok	
-4323	a:верховный	short_f	верхо́вна́	ok	
-4341	n:паренёк	sg_acc	паренёк	mismatch	
-4341	n:паренёк	pl_acc	пареньки́	mismatch	
-4379	n:сми	sg_nom	сми	mismatch	
-4379	n:сми	sg_gen	сми	mismatch	
-4379	n:сми	sg_dat	сми	mismatch	
-4379	n:сми	sg_acc	сми	mismatch	
-4379	n:сми	sg_ins	сми	mismatch	
-4379	n:сми	sg_prep	сми	mismatch	
-4392	a:злобный	sup	зло́бнейшый	unknown	
-4463	a:дальний	short_m	да́лен	unknown	
-4463	a:дальний	comp	да́лее	mismatch	
-4463	a:дальний	comp	да́льше	mismatch	
-4463	a:дальний	comp	дальне́йший	mismatch	
-4477	v:врезаться	np_1sg	вре́жюсь	unknown	
-4477	v:врезаться	np_3pl	вре́жются	unknown	
-4481	v:засыпать	np_3pl	засы́пют	unknown	
-4505	a:серебряный	short_f	сере́бряно	mismatch	
-4505	a:серебряный	short_n	сере́бряна	mismatch	
-4517	a:девятый	f_ins	девя́тою	unknown	
-4525	n:приманка	sg_nom	приманок	mismatch	unstressed
-4525	n:приманка	sg_gen	прима́нка	mismatch	
-4525	n:приманка	sg_dat	прима́нку	mismatch	
-4525	n:приманка	sg_acc	приманок	mismatch	unstressed
-4525	n:приманка	sg_ins	прима́нком	unknown	
-4525	n:приманка	pl_gen	прима́нков	unknown	
-4527	a:модный	short_pl	мо́дны́	ok	
-4542	a:жаркий	sup	жа́рчейщий	unknown	
-4543	n:двести	sg_nom	две́сти	mismatch	
-4543	n:двести	sg_gen	двухсо́т	mismatch	
-4543	n:двести	sg_dat	двумста́м	mismatch	
-4543	n:двести	sg_acc	две́сти	mismatch	
-4543	n:двести	sg_ins	двумяста́ми	mismatch	
-4543	n:двести	sg_prep	двухста́х	mismatch	
-4561	n:пресс-конференция	sg_gen	пресс-конференции	ok	unstressed
-4561	n:пресс-конференция	sg_dat	пресс-конферении	unknown	unstressed
-4561	n:пресс-конференция	sg_acc	пресс-конференцию	ok	unstressed
-4561	n:пресс-конференция	sg_ins	пресс-конференцией	ok	unstressed
-4561	n:пресс-конференция	sg_prep	пресс-конференции	ok	unstressed
-4561	n:пресс-конференция	pl_nom	пресс-конференции	ok	unstressed
-4561	n:пресс-конференция	pl_gen	пресс-конференций	ok	unstressed
-4561	n:пресс-конференция	pl_dat	пресс-конференциям	ok	unstressed
-4561	n:пресс-конференция	pl_acc	пресс-конфереции	unknown	unstressed
-4561	n:пресс-конференция	pl_ins	пресс-конференциями	ok	unstressed
-4561	n:пресс-конференция	pl_prep	пресс-конференциях	ok	unstressed
-4565	v:сфотографировать	np_1sg	сфотографирую	ok	unstressed
-4565	v:сфотографировать	np_2sg	сфотографируешь	ok	unstressed
-4565	v:сфотографировать	np_3sg	сфотографирует	ok	unstressed
-4565	v:сфотографировать	np_1pl	сфотографируем	ok	unstressed
-4565	v:сфотографировать	np_2pl	сфотографируете	ok	unstressed
-4565	v:сфотографировать	np_3pl	сфотографируют	ok	unstressed
-4565	v:сфотографировать	pst_m	сфотографировал	ok	unstressed
-4565	v:сфотографировать	pst_f	сфотографировала	ok	unstressed
-4565	v:сфотографировать	pst_n	сфотографировало	ok	unstressed
-4565	v:сфотографировать	pst_pl	сфотографировали	ok	unstressed
-4597	n:пи	pl_nom	пи	mismatch	
-4597	n:пи	pl_gen	пи	mismatch	
-4597	n:пи	pl_dat	пи	mismatch	
-4597	n:пи	pl_acc	пи	mismatch	
-4597	n:пи	pl_ins	пи	mismatch	
-4597	n:пи	pl_prep	пи	mismatch	
-4602	a:суровый	sup	суро́вейший	unknown	
-4621	a:положительный	short_f	положи́тельн	unknown	
-4633	n:Британия	sg_ins	Брита́ниею	unknown	
-4641	n:Колумбия	sg_ins	Колу́мбиею	unknown	
-4658	n:насекомое	sg_acc	насеко́мого	mismatch	
-4667	a:посторонний	short_m	посторо́нен	unknown	
-4714	a:папин	m_gen	папиного	ok	unstressed
-4714	a:папин	m_dat	папиному	ok	unstressed
-4714	a:папин	m_acc	папиного	ok	unstressed
-4714	a:папин	n_gen	папиного	ok	unstressed
-4757	a:отчаянный	short_f	отча́яна	unknown	
-4757	a:отчаянный	short_n	отча́яно	unknown	
-4757	a:отчаянный	short_pl	отча́яны	unknown	
-4773	a:прикольный	comp	прико́льнее	unknown	
-4773	a:прикольный	sup	прико́льнейший	unknown	
-4829	a:идиотский	short_m	идио́тск	unknown	
-4829	a:идиотский	short_f	идио́тска	unknown	
-4829	a:идиотский	short_n	идио́тско	unknown	
-4829	a:идиотский	short_pl	идио́тски	mismatch	
-4858	n:Шотландия	sg_ins	Шотла́ндиею	unknown	
-4868	n:езда	sg_gen	езди́	mismatch	
-4872	a:критический	short_m	крити́ческ	unknown	
-4872	a:критический	short_f	крити́ческа	unknown	
-4872	a:критический	short_n	крити́ческо	unknown	
-4872	a:критический	short_pl	крити́чески	mismatch	
-4880	v:записаться	np_1sg	запишусь	ok	unstressed
-4880	v:записаться	np_2sg	запишешься	ok	unstressed
-4880	v:записаться	np_3sg	запишется	ok	unstressed
-4880	v:записаться	np_1pl	запишемся	ok	unstressed
-4880	v:записаться	np_2pl	запишетесь	ok	unstressed
-4880	v:записаться	np_3pl	запишутся	ok	unstressed
-4880	v:записаться	pst_m	записался	ok	unstressed
-4880	v:записаться	pst_f	записалась	ok	unstressed
-4880	v:записаться	pst_n	записалось	ok	unstressed
-4880	v:записаться	pst_pl	записались	ok	unstressed
-4880	v:записаться	imp_sg	запишись	ok	unstressed
-4880	v:записаться	imp_pl	запишитесь	ok	unstressed
-4928	n:оон	sg_nom	оон	ok	unstressed
-4928	n:оон	sg_gen	оон	ok	unstressed
-4928	n:оон	sg_dat	оон	ok	unstressed
-4928	n:оон	sg_acc	оон	ok	unstressed
-4928	n:оон	sg_ins	оон	ok	unstressed
-4928	n:оон	sg_prep	оон	ok	unstressed
-4928	n:оон	pl_nom	оон	mismatch	unstressed
-4928	n:оон	pl_gen	оон	mismatch	unstressed
-4928	n:оон	pl_dat	оон	mismatch	unstressed
-4928	n:оон	pl_acc	оон	mismatch	unstressed
-4928	n:оон	pl_ins	оон	mismatch	unstressed
-4928	n:оон	pl_prep	оон	mismatch	unstressed
-4954	a:магический	short_m	маги́ческ	unknown	
-4954	a:магический	short_f	маги́ческа	unknown	
-4954	a:магический	short_n	маги́ческо	unknown	
-4954	a:магический	short_pl	маги́чески	mismatch	
-4972	n:порох	pl_nom	порохи́	unknown	
-4972	n:порох	pl_acc	порохи́	unknown	
-4996	a:отрицательный	short_f	отрица́тельн	unknown	
-5005	n:полк	sg_gen	полку́	mismatch	
-5013	v:сократить	np_1sg	сокрачу́	unknown	
-5014	a:налоговый	m_gen	налогового	ok	unstressed
-5014	a:налоговый	m_dat	налоговому	ok	unstressed
-5014	a:налоговый	m_acc	ого́	mismatch	
-5014	a:налоговый	m_ins	налоговым	ok	unstressed
-5014	a:налоговый	m_prep	налоговом	ok	unstressed
-5014	a:налоговый	f_nom	налоговая	ok	unstressed
-5014	a:налоговый	f_gen	налоговой	ok	unstressed
-5014	a:налоговый	f_dat	налоговой	ok	unstressed
-5014	a:налоговый	f_acc	налоговую	ok	unstressed
-5014	a:налоговый	f_ins	налоговой	ok	unstressed
-5014	a:налоговый	f_prep	налоговой	ok	unstressed
-5014	a:налоговый	n_nom	налоговое	ok	unstressed
-5014	a:налоговый	n_gen	налогового	ok	unstressed
-5014	a:налоговый	n_dat	налоговому	ok	unstressed
-5014	a:налоговый	n_acc	налоговое	ok	unstressed
-5014	a:налоговый	n_ins	налоговым	ok	unstressed
-5014	a:налоговый	n_prep	налоговом	ok	unstressed
-5014	a:налоговый	pl_nom	налоговые	ok	unstressed
-5014	a:налоговый	pl_gen	налоговых	ok	unstressed
-5014	a:налоговый	pl_dat	налоговым	ok	unstressed
-5014	a:налоговый	pl_acc	налоговые	ok	unstressed
-5014	a:налоговый	pl_acc	ых	unknown	
-5014	a:налоговый	pl_ins	налоговыми	ok	unstressed
-5014	a:налоговый	pl_prep	налоговых	ok	unstressed
-5078	n:голубь	sg_nom	голубь	ok	unstressed
-5085	n:сканирование	pl_nom	скани́рования	mismatch	
-5085	n:сканирование	pl_gen	скани́рований	unknown	
-5085	n:сканирование	pl_dat	скани́рованиям	unknown	
-5085	n:сканирование	pl_acc	скани́рования	mismatch	
-5085	n:сканирование	pl_ins	скани́рованиями	unknown	
-5085	n:сканирование	pl_prep	скани́рованиях	unknown	
-5157	v:въехать	imp_sg	въезжа́й	mismatch	
-5157	v:въехать	imp_pl	въезжа́йте	mismatch	
-5198	n:Швейцария	sg_ins	Швейца́риею	unknown	
-5206	a:неподходящий	m_nom	неподходя́щый	unknown	
-5206	a:неподходящий	m_gen	неподходя́щого	unknown	
-5206	a:неподходящий	m_dat	неподходя́щому	unknown	
-5206	a:неподходящий	m_acc	неподходя́щый	unknown	
-5206	a:неподходящий	m_acc	неподходя́щого	unknown	
-5206	a:неподходящий	m_ins	неподходя́щым	unknown	
-5206	a:неподходящий	m_prep	неподходя́щом	unknown	
-5206	a:неподходящий	f_gen	неподходя́щой	unknown	
-5206	a:неподходящий	f_dat	неподходя́щой	unknown	
-5206	a:неподходящий	f_ins	неподходя́щой	unknown	
-5206	a:неподходящий	f_ins	неподходя́щою	unknown	
-5206	a:неподходящий	f_prep	неподходя́щой	unknown	
-5206	a:неподходящий	n_nom	неподходя́щое	unknown	
-5206	a:неподходящий	n_gen	неподходя́щого	unknown	
-5206	a:неподходящий	n_dat	неподходя́щому	unknown	
-5206	a:неподходящий	n_acc	неподходя́щое	unknown	
-5206	a:неподходящий	n_ins	неподходя́щым	unknown	
-5206	a:неподходящий	n_prep	неподходя́щом	unknown	
-5206	a:неподходящий	pl_nom	неподходя́щые	unknown	
-5206	a:неподходящий	pl_gen	неподходя́щых	unknown	
-5206	a:неподходящий	pl_dat	неподходя́щым	unknown	
-5206	a:неподходящий	pl_acc	неподходя́щые	unknown	
-5206	a:неподходящий	pl_acc	неподходя́щых	unknown	
-5206	a:неподходящий	pl_ins	неподходя́щыми	unknown	
-5206	a:неподходящий	pl_prep	неподходя́щых	unknown	
-5253	n:барахло	pl_nom	барахла́	mismatch	
-5253	n:барахло	pl_gen	барахо́л	unknown	
-5253	n:барахло	pl_dat	барахла́м	unknown	
-5253	n:барахло	pl_acc	барахла́	mismatch	
-5253	n:барахло	pl_ins	барахла́ми	unknown	
-5253	n:барахло	pl_prep	барахла́х	unknown	
-5261	n:воровство	pl_nom	воровства́	mismatch	
-5261	n:воровство	pl_gen	воро́вств	unknown	
-5261	n:воровство	pl_dat	воровства́м	unknown	
-5261	n:воровство	pl_acc	воровства́	mismatch	
-5261	n:воровство	pl_ins	воровства́ми	unknown	
-5261	n:воровство	pl_prep	воровства́х	unknown	
-5279	a:миленький	short_m	ми́ленек	unknown	
-5279	a:миленький	short_f	ми́ленька	unknown	
-5279	a:миленький	short_n	ми́ленько	mismatch	
-5279	a:миленький	short_pl	ми́леньки	unknown	
-5283	n:Бразилия	sg_ins	Брази́лиею	unknown	
-5303	n:лампочка	pl_gen	ла́мпочк	unknown	
-5364	v:подвергнуть	pst_f	подве́ргнула	unknown	
-5364	v:подвергнуть	pst_n	подве́ргнуло	unknown	
-5364	v:подвергнуть	pst_pl	подве́ргнули	unknown	
-5408	n:утешение	sg_gen	утешения	ok	unstressed
-5408	n:утешение	sg_dat	утешению	ok	unstressed
-5408	n:утешение	sg_ins	утешением	ok	unstressed
-5408	n:утешение	sg_prep	утешении	ok	unstressed
-5408	n:утешение	pl_nom	утешения	ok	unstressed
-5408	n:утешение	pl_gen	утешений	ok	unstressed
-5408	n:утешение	pl_dat	утешениям	ok	unstressed
-5408	n:утешение	pl_acc	утешения	ok	unstressed
-5408	n:утешение	pl_ins	утешениями	ok	unstressed
-5408	n:утешение	pl_prep	утешениях	ok	unstressed
-5412	a:генетический	short_m	генети́ческ	unknown	
-5412	a:генетический	short_f	генети́ческа	unknown	
-5412	a:генетический	short_n	генети́ческо	unknown	
-5412	a:генетический	short_pl	генети́чески	mismatch	
-5444	n:бах	sg_gen	баха	ok	unstressed
-5444	n:бах	sg_dat	баху	ok	unstressed
-5444	n:бах	sg_ins	бахом	ok	unstressed
-5444	n:бах	sg_prep	бахе	ok	unstressed
-5477	a:стальной	short_f	стальна́	unknown	
-5477	a:стальной	short_n	стально́	unknown	
-5477	a:стальной	short_pl	стальны́	unknown	
-5497	a:родительский	short_m	роди́тельск	unknown	
-5497	a:родительский	short_f	роди́тельска	unknown	
-5497	a:родительский	short_n	роди́тельско	unknown	
-5497	a:родительский	short_pl	роди́тельски	unknown	
-5523	a:денежный	f_nom	денежная	ok	unstressed
-5523	a:денежный	n_nom	денежное	ok	unstressed
-5523	a:денежный	pl_nom	денежные	ok	unstressed
-5565	n:печь	pl_acc	пече́й	mismatch	
-5623	a:давний	f_nom	давная	unknown	unstressed
-5623	a:давний	n_nom	давной	unknown	unstressed
-5623	a:давний	n_acc	давной	unknown	unstressed
-5623	a:давний	pl_nom	давние	ok	unstressed
-5623	a:давний	pl_acc	давние	ok	unstressed
-5627	a:лживый	sup	лжи́вейший	unknown	
-5665	a:десятый	f_ins	деся́тою	unknown	
-5668	a:деревянный	short_m	деревя́нен	unknown	
-5668	a:деревянный	short_f	деревя́нна	unknown	
-5668	a:деревянный	short_n	деревя́нно	mismatch	
-5668	a:деревянный	short_pl	деревя́нны	unknown	
-5677	n:госсекретарь	sg_ins	го́ссекретарём	ok	
-5755	n:стерлинг	sg_gen	сте́рлингу	mismatch	
-5900	n:Венеция	sg_ins	Вене́циею	unknown	
-5907	n:превосходительство	pl_acc	превосходи́тельства	mismatch	
-5913	n:мастерство	pl_nom	мастерства́	mismatch	
-5913	n:мастерство	pl_gen	масте́рств	unknown	
-5913	n:мастерство	pl_dat	мастерства́м	unknown	
-5913	n:мастерство	pl_acc	мастерства́	mismatch	
-5913	n:мастерство	pl_ins	мастерства́ми	unknown	
-5913	n:мастерство	pl_prep	мастерства́х	unknown	
-5929	n:нянька	pl_acc	ня́ньки	mismatch	
-5978	n:Греция	sg_ins	Гре́циею	unknown	
-5982	v:выявить	imp_sg	вы́явь	unknown	
-5982	v:выявить	imp_pl	вы́явьте	unknown	
-5985	a:ближний	short_m	бли́жен	unknown	
-6101	v:обсуждаться	inf	обсуждаться	ok	unstressed
-6103	a:натуральный	sup	натура́льнейший	unknown	
-6121	a:грузовой	f_nom	грузовая	ok	unstressed
-6121	a:грузовой	n_nom	грузовое	ok	unstressed
-6121	a:грузовой	pl_nom	грузовые	ok	unstressed
-6133	n:бойня	pl_gen	бойнь	unknown	
-6150	n:Азия	sg_ins	А́зиею	unknown	
-6195	n:Швеция	sg_ins	Шве́циею	unknown	
-6220	v:предстать	np_1sg	предстаю́	mismatch	
-6220	v:предстать	np_2sg	предстаёшь	mismatch	
-6220	v:предстать	np_3sg	предстаёт	mismatch	
-6220	v:предстать	np_1pl	предстаём	mismatch	
-6220	v:предстать	np_2pl	предстаёте	mismatch	
-6220	v:предстать	np_3pl	предстаю́т	mismatch	
-6220	v:предстать	imp_sg	предста́й	unknown	
-6220	v:предстать	imp_pl	предста́йте	unknown	
-6293	n:Великобритания	sg_ins	Великобрита́ниею	unknown	
-6341	n:ничья	pl_ins	ничьи́х	mismatch	
-6341	n:ничья	pl_prep	ничьи́ми	mismatch	
-6344	n:биография	sg_gen	биографии	ok	unstressed
-6344	n:биография	sg_dat	биографии	ok	unstressed
-6344	n:биография	sg_acc	биографию	ok	unstressed
-6344	n:биография	sg_ins	биографией	ok	unstressed
-6344	n:биография	sg_prep	биографии	ok	unstressed
-6344	n:биография	pl_nom	биографии	ok	unstressed
-6344	n:биография	pl_gen	биографий	ok	unstressed
-6344	n:биография	pl_dat	биографиям	ok	unstressed
-6344	n:биография	pl_acc	биографии	ok	unstressed
-6344	n:биография	pl_ins	биографиями	ok	unstressed
-6344	n:биография	pl_prep	биографиях	ok	unstressed
-6356	a:инопланетный	short_m	иноплане́тен	unknown	
-6356	a:инопланетный	short_f	иноплане́тна	unknown	
-6356	a:инопланетный	short_n	иноплане́тно	unknown	
-6356	a:инопланетный	short_pl	иноплане́тны	unknown	
-6361	n:Флоренция	sg_ins	Флоре́нциею	unknown	
-6373	v:подвергнуться	pst_f	подве́ргнулась	unknown	
-6373	v:подвергнуться	pst_n	подве́ргнулось	unknown	
-6373	v:подвергнуться	pst_pl	подве́ргнулись	unknown	
-6386	n:обломок	sg_nom	обло́мока	unknown	
-6386	n:обломок	sg_acc	обло́мока	unknown	
-6424	a:студенческий	short_m	студе́нческ	unknown	
-6424	a:студенческий	short_f	студе́нческа	unknown	
-6424	a:студенческий	short_n	студе́нческо	unknown	
-6424	a:студенческий	short_pl	студе́нчески	unknown	
-6433	n:мель	sg_gen	мел	mismatch	
-6469	n:марина	pl_acc	мари́ны	mismatch	
-6480	n:клапан	pl_nom	кла́пана	mismatch	
-6480	n:клапан	pl_acc	кла́пана	mismatch	
-6511	n:юпитер	pl_nom	юпи́тера	mismatch	
-6511	n:юпитер	pl_acc	юпи́тера	mismatch	
-6541	v:смутить	np_1sg	смучу́	unknown	
-6588	a:апельсиновый	short_m	апельси́нов	mismatch	
-6588	a:апельсиновый	short_f	апельси́нова	unknown	
-6588	a:апельсиновый	short_n	апельси́ново	unknown	
-6588	a:апельсиновый	short_pl	апельси́новы	unknown	
-6592	v:отражать	pst_m	отража́тл	unknown	
-6592	v:отражать	pst_f	отража́тла	unknown	
-6592	v:отражать	pst_n	отража́тло	unknown	
-6592	v:отражать	pst_pl	отража́тли	unknown	
-6592	v:отражать	imp_sg	отража́тй	unknown	
-6592	v:отражать	imp_pl	отража́тйте	unknown	
-6619	n:чутьё	pl_nom	чутья́	mismatch	
-6619	n:чутьё	pl_gen	чуте́й	unknown	
-6619	n:чутьё	pl_dat	чутья́м	unknown	
-6619	n:чутьё	pl_acc	чутья́	mismatch	
-6619	n:чутьё	pl_ins	чутья́ми	unknown	
-6619	n:чутьё	pl_prep	чутья́х	unknown	
-6625	a:олимпийский	short_m	олимпи́йск	unknown	
-6625	a:олимпийский	short_f	олимпи́йска	unknown	
-6625	a:олимпийский	short_n	олимпи́йско	unknown	
-6625	a:олимпийский	short_pl	олимпи́йски	unknown	
-6697	n:судимость	sg_gen	судимости	ok	unstressed
-6697	n:судимость	sg_dat	судимости	ok	unstressed
-6697	n:судимость	sg_ins	судимостью	ok	unstressed
-6697	n:судимость	sg_prep	судимости	ok	unstressed
-6697	n:судимость	pl_nom	судимости	ok	unstressed
-6697	n:судимость	pl_gen	судимостей	ok	unstressed
-6697	n:судимость	pl_dat	судимостям	ok	unstressed
-6697	n:судимость	pl_acc	судимости	ok	unstressed
-6697	n:судимость	pl_ins	судимостями	ok	unstressed
-6697	n:судимость	pl_prep	судимостях	ok	unstressed
-6715	a:террористический	short_m	террористи́ческ	unknown	
-6715	a:террористический	short_f	террористи́ческа	unknown	
-6715	a:террористический	short_n	террористи́ческо	unknown	
-6715	a:террористический	short_pl	террористи́чески	unknown	
-6725	n:последователь	sg_acc	после́дователь	mismatch	
-6725	n:последователь	pl_acc	после́дователи	mismatch	
-6759	n:кгб	pl_nom	кгб	mismatch	
-6759	n:кгб	pl_gen	кгб	mismatch	
-6759	n:кгб	pl_dat	кгб	mismatch	
-6759	n:кгб	pl_acc	кгб	mismatch	
-6759	n:кгб	pl_ins	кгб	mismatch	
-6759	n:кгб	pl_prep	кгб	mismatch	
-6771	n:пивко	pl_nom	пивки́	unknown	
-6771	n:пивко	pl_gen	пивко́в	unknown	
-6771	n:пивко	pl_dat	пивка́м	unknown	
-6771	n:пивко	pl_acc	пивки́	unknown	
-6771	n:пивко	pl_ins	пивка́ми	unknown	
-6771	n:пивко	pl_prep	пивка́х	unknown	
-6792	v:прибраться	inf	прибраться	ok	unstressed
-6799	a:гадкий	sup	гадча́йший	unknown	
-6826	a:вражеский	short_m	вра́жеск	unknown	
-6826	a:вражеский	short_f	вра́жеска	unknown	
-6826	a:вражеский	short_n	вра́жеско	unknown	
-6826	a:вражеский	short_pl	вра́жески	mismatch	
-6827	n:таможня	pl_gen	тамо́жень	unknown	
-6831	v:гнить	imp_sg	гний	unknown	
-6831	v:гнить	imp_pl	гни́йте	unknown	
-6907	a:сладенький	short_m	сла́денек	unknown	
-6907	a:сладенький	short_f	сла́денька	unknown	
-6907	a:сладенький	short_n	сла́денько	mismatch	
-6907	a:сладенький	short_pl	сла́деньки	unknown	
-6908	n:топ	sg_gen	топа	ok	unstressed
-6908	n:топ	sg_dat	топу	ok	unstressed
-6908	n:топ	sg_ins	топом	ok	unstressed
-6922	n:корм	pl_nom	кормы́	mismatch	
-6922	n:корм	pl_acc	кормы́	mismatch	
-6940	v:обвиняться	pst_m	обвинялся	ok	unstressed
-6940	v:обвиняться	pst_f	обвинялась	ok	unstressed
-6940	v:обвиняться	pst_n	обвинялось	ok	unstressed
-6940	v:обвиняться	pst_pl	обвинялись	ok	unstressed
-6947	n:возмездие	sg_gen	возмездия	ok	unstressed
-6947	n:возмездие	sg_dat	возмездию	ok	unstressed
-6947	n:возмездие	sg_ins	возмездием	ok	unstressed
-6947	n:возмездие	sg_prep	возмездии	ok	unstressed
-6947	n:возмездие	pl_nom	возмездия	ok	unstressed
-6947	n:возмездие	pl_gen	возмездий	ok	unstressed
-6947	n:возмездие	pl_dat	возмездиям	ok	unstressed
-6947	n:возмездие	pl_acc	возмездия	ok	unstressed
-6947	n:возмездие	pl_ins	возмездиями	ok	unstressed
-6947	n:возмездие	pl_prep	возмездиях	ok	unstressed
-6952	n:пух	pl_nom	пу́хи	unknown	
-6952	n:пух	pl_gen	пу́хов	mismatch	
-6952	n:пух	pl_dat	пу́хам	unknown	
-6952	n:пух	pl_acc	пу́хи	unknown	
-6952	n:пух	pl_ins	пу́хами	unknown	
-6952	n:пух	pl_prep	пу́хах	unknown	
-6977	n:сбой	pl_gen	сбо́ув	unknown	
-6997	v:житься	np_1sg	нет	mismatch	
-6997	v:житься	np_2sg	нет	mismatch	
-6997	v:житься	np_1pl	нет	mismatch	
-6997	v:житься	np_2pl	нет	mismatch	
-6997	v:житься	np_3pl	нет	mismatch	
-6997	v:житься	pst_n	жилось	ok	unstressed
-7007	n:полмиллиона	pl_nom	полумиллио́ны	unknown	
-7007	n:полмиллиона	pl_gen	полумиллио́нов	unknown	
-7007	n:полмиллиона	pl_dat	полумиллио́нам	unknown	
-7007	n:полмиллиона	pl_acc	полумиллио́ны	unknown	
-7007	n:полмиллиона	pl_ins	полумиллио́нами	unknown	
-7007	n:полмиллиона	pl_prep	полумиллио́нах	unknown	
-7013	a:водный	short_f	во́дно	mismatch	
-7013	a:водный	short_n	во́дна	mismatch	
-7023	v:промокнуть	np_2sg	промо́кешь	unknown	
-7051	n:кросс	sg_acc	кро́сса	mismatch	
-7051	n:кросс	pl_acc	кро́ссов	mismatch	
-7062	a:благословенный	short_m	благослове́нен	unknown	
-7101	a:гладкий	sup	гладча́йший	unknown	
-7145	v:поражать	np_1sg	поражаю	ok	unstressed
-7145	v:поражать	np_2sg	поражаешь	ok	unstressed
-7145	v:поражать	np_3sg	поражает	ok	unstressed
-7145	v:поражать	np_1pl	поражаем	ok	unstressed
-7145	v:поражать	np_2pl	поражаете	ok	unstressed
-7145	v:поражать	np_3pl	поражают	ok	unstressed
-7145	v:поражать	pst_m	поражал	ok	unstressed
-7145	v:поражать	pst_f	поражала	ok	unstressed
-7145	v:поражать	pst_n	поражало	ok	unstressed
-7145	v:поражать	pst_pl	поражали	ok	unstressed
-7145	v:поражать	imp_sg	поражай	ok	unstressed
-7145	v:поражать	imp_pl	поражайте	ok	unstressed
-7157	a:дьявольский	short_m	дья́вольск	unknown	
-7157	a:дьявольский	short_f	дья́вольска	unknown	
-7157	a:дьявольский	short_n	дья́вольско	unknown	
-7157	a:дьявольский	short_pl	дья́вольски	mismatch	
-7163	n:моль	sg_acc	мо́ля	mismatch	
-7169	v:обокрасть	np_1sg	обкраду́	unknown	
-7169	v:обокрасть	np_2sg	обкрадёшь	unknown	
-7169	v:обокрасть	np_3sg	обкрадёт	unknown	
-7169	v:обокрасть	np_1pl	обкрадём	unknown	
-7169	v:обокрасть	np_2pl	обкрадёте	unknown	
-7169	v:обокрасть	np_3pl	обкраду́т	unknown	
-7169	v:обокрасть	imp_sg	обкради́	unknown	
-7169	v:обокрасть	imp_pl	обкради́те	unknown	
-7176	n:головоломка	pl_gen	головолом́ок	ok	
-7185	n:мутант	sg_nom	мут́ант	ok	
-7185	n:мутант	sg_gen	мут́анта	ok	
-7185	n:мутант	sg_dat	мут́анту	ok	
-7185	n:мутант	sg_acc	мут́анта	ok	
-7185	n:мутант	sg_ins	мут́антом	ok	
-7185	n:мутант	sg_prep	мут́анте	ok	
-7185	n:мутант	pl_nom	мут́анты	ok	
-7185	n:мутант	pl_gen	мут́антов	ok	
-7185	n:мутант	pl_dat	мут́антам	ok	
-7185	n:мутант	pl_acc	мут́антов	ok	
-7185	n:мутант	pl_ins	мут́антами	ok	
-7185	n:мутант	pl_prep	мут́антах	ok	
-7237	a:кодовый	short_m	ко́дов	mismatch	
-7237	a:кодовый	short_f	ко́дова	unknown	
-7237	a:кодовый	short_n	ко́дово	unknown	
-7237	a:кодовый	short_pl	ко́довы	unknown	
-7282	n:колдовство	pl_nom	колдовства́	mismatch	
-7282	n:колдовство	pl_gen	колдо́вств	unknown	
-7282	n:колдовство	pl_dat	колдовства́м	unknown	
-7282	n:колдовство	pl_acc	колдовства́	mismatch	
-7282	n:колдовство	pl_ins	колдовства́ми	unknown	
-7282	n:колдовство	pl_prep	колдовства́х	unknown	
-7289	n:Торонто	pl_nom	Торо́нто	mismatch	
-7289	n:Торонто	pl_gen	Торо́нто	mismatch	
-7289	n:Торонто	pl_dat	Торо́нто	mismatch	
-7289	n:Торонто	pl_acc	Торо́нто	mismatch	
-7289	n:Торонто	pl_ins	Торо́нто	mismatch	
-7289	n:Торонто	pl_prep	Торо́нто	mismatch	
-7306	n:будда	sg_ins	бу́ддою	unknown	
-7363	a:радостный	short_m	рад	mismatch	
-7363	a:радостный	short_f	ра́да	mismatch	
-7363	a:радостный	short_n	ра́до	mismatch	
-7363	a:радостный	short_pl	ра́ды	mismatch	
-7374	a:плотный	sup	плотне́йший	unknown	
-7387	a:влажный	short_pl	влажн	unknown	
-7438	a:дамский	short_m	дамск	unknown	
-7438	a:дамский	short_f	да́мска	unknown	
-7438	a:дамский	short_n	да́мско	unknown	
-7438	a:дамский	short_pl	да́мски	mismatch	
-7466	a:католический	short_m	католи́ческ	unknown	
-7466	a:католический	short_f	католи́ческа	unknown	
-7466	a:католический	short_n	католи́ческо	unknown	
-7466	a:католический	short_pl	католи́чески	unknown	
-7483	a:трагический	short_m	траги́ческ	unknown	
-7483	a:трагический	short_f	траги́ческа	unknown	
-7483	a:трагический	short_n	траги́ческо	unknown	
-7483	a:трагический	short_pl	траги́чески	mismatch	
-7488	n:таксист	sg_nom	такс́ист	ok	
-7488	n:таксист	sg_gen	такс́иста	ok	
-7488	n:таксист	sg_dat	такс́исту	ok	
-7488	n:таксист	sg_acc	такс́иста	ok	
-7488	n:таксист	sg_ins	такс́истом	ok	
-7488	n:таксист	sg_prep	такс́исте	ok	
-7488	n:таксист	pl_nom	такс́исты	ok	
-7488	n:таксист	pl_gen	такс́истов	ok	
-7488	n:таксист	pl_dat	такс́истам	ok	
-7488	n:таксист	pl_acc	такс́истов	ok	
-7488	n:таксист	pl_ins	такс́истами	ok	
-7488	n:таксист	pl_prep	такс́истах	ok	
-7493	n:тестирование	pl_nom	тести́рования	mismatch	
-7493	n:тестирование	pl_gen	тести́рований	unknown	
-7493	n:тестирование	pl_dat	тести́рованиям	unknown	
-7493	n:тестирование	pl_acc	тести́рования	mismatch	
-7493	n:тестирование	pl_ins	тести́рованиями	unknown	
-7493	n:тестирование	pl_prep	тести́рованиях	unknown	
-7528	a:дипломатический	short_m	дипломати́ческ	unknown	
-7528	a:дипломатический	short_f	дипломати́ческа	unknown	
-7528	a:дипломатический	short_n	дипломати́ческо	unknown	
-7528	a:дипломатический	short_pl	дипломати́чески	unknown	
-7539	a:комендантский	short_m	коменда́нтск	unknown	
-7539	a:комендантский	short_f	коменда́нтска	unknown	
-7539	a:комендантский	short_n	коменда́нтско	unknown	
-7539	a:комендантский	short_pl	коменда́нтски	unknown	
-7560	v:упоминаться	inf	упоминаться	ok	unstressed
-7560	v:упоминаться	np_1sg	упоминаюсь	ok	unstressed
-7560	v:упоминаться	np_2sg	упоминаешься	ok	unstressed
-7560	v:упоминаться	np_3sg	упоминается	ok	unstressed
-7560	v:упоминаться	np_1pl	упоминаемся	ok	unstressed
-7560	v:упоминаться	np_2pl	упоминаетесь	ok	unstressed
-7560	v:упоминаться	np_3pl	упоминаются	ok	unstressed
-7560	v:упоминаться	pst_m	упоминался	ok	unstressed
-7560	v:упоминаться	pst_f	упоминалась	ok	unstressed
-7560	v:упоминаться	pst_n	упоминалось	ok	unstressed
-7560	v:упоминаться	pst_pl	упоминались	ok	unstressed
-7565	n:вкуснятина	pl_nom	вкусня́тины	mismatch	
-7565	n:вкуснятина	pl_gen	вкусня́тин	unknown	
-7565	n:вкуснятина	pl_dat	вкусня́тинам	unknown	
-7565	n:вкуснятина	pl_acc	вкусня́тины	mismatch	
-7565	n:вкуснятина	pl_ins	вкусня́тинами	unknown	
-7565	n:вкуснятина	pl_prep	вкусня́тинах	unknown	
-7576	a:энергетический	short_m	энергети́ческ	unknown	
-7576	a:энергетический	short_f	энергети́ческа	unknown	
-7576	a:энергетический	short_n	энергети́ческо	unknown	
-7576	a:энергетический	short_pl	энергети́чески	mismatch	
-7590	n:карате	pl_nom	карате́	mismatch	
-7590	n:карате	pl_gen	карате́	mismatch	
-7590	n:карате	pl_dat	карате́	mismatch	
-7590	n:карате	pl_acc	карате́	mismatch	
-7590	n:карате	pl_ins	карате́	mismatch	
-7590	n:карате	pl_prep	карате́	mismatch	
-7634	n:пул	sg_gen	пула	ok	unstressed
-7634	n:пул	sg_dat	пулу	ok	unstressed
-7634	n:пул	sg_ins	пулом	ok	unstressed
-7634	n:пул	pl_nom	пулы	ok	unstressed
-7634	n:пул	pl_gen	пулов	ok	unstressed
-7634	n:пул	pl_dat	пулам	ok	unstressed
-7634	n:пул	pl_acc	пулы	ok	unstressed
-7634	n:пул	pl_ins	пулами	ok	unstressed
-7634	n:пул	pl_prep	пулах	ok	unstressed
-7645	n:морфий	sg_prep	мо́рфие	unknown	
-7715	a:пластический	short_m	пласти́ческ	unknown	
-7715	a:пластический	short_f	пласти́ческа	unknown	
-7715	a:пластический	short_n	пласти́ческо	unknown	
-7715	a:пластический	short_pl	пласти́чески	unknown	
-7747	n:ориентация	sg_nom	ориента́тация	unknown	
-7747	n:ориентация	sg_gen	ориента́тации	unknown	
-7747	n:ориентация	sg_dat	ориента́тации	unknown	
-7747	n:ориентация	sg_acc	ориента́тацию	unknown	
-7747	n:ориентация	sg_ins	ориента́тацией	unknown	
-7747	n:ориентация	sg_ins	ориента́тациею	unknown	
-7747	n:ориентация	sg_prep	ориента́тации	unknown	
-7747	n:ориентация	pl_nom	ориента́тации	unknown	
-7747	n:ориентация	pl_gen	ориента́таций	unknown	
-7747	n:ориентация	pl_dat	ориента́тациям	unknown	
-7747	n:ориентация	pl_acc	ориента́тации	unknown	
-7747	n:ориентация	pl_ins	ориента́тациями	unknown	
-7747	n:ориентация	pl_prep	ориента́тациях	unknown	
-7800	n:вестибюль	sg_acc	вестибю́ля	mismatch	
-7800	n:вестибюль	pl_acc	вестибю́лей	mismatch	
-7805	v:соревноваться	np_1sg	соревнова́юсь	unknown	
-7805	v:соревноваться	np_2sg	соревнова́ешься	unknown	
-7805	v:соревноваться	np_3sg	соревнова́ется	unknown	
-7805	v:соревноваться	np_1pl	соревнова́емся	unknown	
-7805	v:соревноваться	np_2pl	соревнова́етесь	unknown	
-7805	v:соревноваться	np_3pl	соревнова́ются	unknown	
-7805	v:соревноваться	imp_sg	соревнова́йся	unknown	
-7805	v:соревноваться	imp_pl	соревнова́йтесь	unknown	
-7844	n:разрез	pl_nom	разре́зи	unknown	
-7844	n:разрез	pl_acc	разре́зи	unknown	
-7855	a:несчастливый	short_m	несча́стли́в	ok	
-7855	a:несчастливый	short_f	несча́стли́ва	ok	
-7855	a:несчастливый	short_n	несча́стли́во	ok	
-7855	a:несчастливый	short_pl	несча́стли́вы	ok	
-7858	n:невестка	pl_acc	неве́стки	mismatch	
-7900	a:армейский	short_m	арме́йск	unknown	
-7900	a:армейский	short_f	арме́йска	unknown	
-7900	a:армейский	short_n	арме́йско	unknown	
-7900	a:армейский	short_pl	арме́йски	mismatch	
-7958	n:качели	pl_gen	качелей	ok	unstressed
-7958	n:качели	pl_dat	качелям	ok	unstressed
-7958	n:качели	pl_ins	качелями	ok	unstressed
-7958	n:качели	pl_prep	качелях	ok	unstressed
-8002	n:нато	pl_nom	на́то	mismatch	
-8002	n:нато	pl_gen	на́то	mismatch	
-8002	n:нато	pl_dat	на́то	mismatch	
-8002	n:нато	pl_acc	на́то	mismatch	
-8002	n:нато	pl_ins	на́то	mismatch	
-8002	n:нато	pl_prep	на́то	mismatch	
-8027	a:шустрый	short_f	шу́стро	mismatch	
-8027	a:шустрый	short_n	шустра́	mismatch	
-8027	a:шустрый	sup	шустре́йший	unknown	
-8041	v:удочерить	imp_pl	удочери́м	mismatch	
-8047	v:вторгнуться	pst_f	вто́ргнулась	unknown	
-8047	v:вторгнуться	pst_n	вто́ргнулось	unknown	
-8047	v:вторгнуться	pst_pl	вто́ргнулись	unknown	
-8069	a:необыкновенный	short_pl	необыкнове́нн	unknown	
-8071	n:Мехико	pl_nom	Ме́хико	mismatch	
-8071	n:Мехико	pl_gen	Ме́хико	mismatch	
-8071	n:Мехико	pl_dat	Ме́хико	mismatch	
-8071	n:Мехико	pl_acc	Ме́хико	mismatch	
-8071	n:Мехико	pl_ins	Ме́хико	mismatch	
-8071	n:Мехико	pl_prep	Ме́хико	mismatch	
-8086	n:Глазго	pl_nom	Гла́зго	mismatch	
-8086	n:Глазго	pl_gen	Гла́зго	mismatch	
-8086	n:Глазго	pl_dat	Гла́зго	mismatch	
-8086	n:Глазго	pl_acc	Гла́зго	mismatch	
-8086	n:Глазго	pl_ins	Гла́зго	mismatch	
-8086	n:Глазго	pl_prep	Гла́зго	mismatch	
-8088	n:Марокко	pl_nom	Маро́кко	mismatch	
-8088	n:Марокко	pl_gen	Маро́кко	mismatch	
-8088	n:Марокко	pl_dat	Маро́кко	mismatch	
-8088	n:Марокко	pl_acc	Маро́кко	mismatch	
-8088	n:Марокко	pl_ins	Маро́кко	mismatch	
-8088	n:Марокко	pl_prep	Маро́кко	mismatch	
-8156	n:гуру	pl_nom	гу́ру	mismatch	
-8156	n:гуру	pl_gen	гу́ру	mismatch	
-8156	n:гуру	pl_dat	гу́ру	mismatch	
-8156	n:гуру	pl_acc	гу́ру	mismatch	
-8156	n:гуру	pl_ins	гу́ру	mismatch	
-8156	n:гуру	pl_prep	гу́ру	mismatch	
-8237	n:подрядчик	sg_acc	подря́дчик	mismatch	
-8237	n:подрядчик	pl_acc	подря́дчики	mismatch	
-8252	a:нобелевский	short_m	но́белевск	unknown	
-8252	a:нобелевский	short_f	но́белевска	unknown	
-8252	a:нобелевский	short_n	но́белевско	unknown	
-8252	a:нобелевский	short_pl	но́белевски	unknown	
-8262	n:тапочки	sg_nom	та́почка	unknown	
-8262	n:тапочки	sg_gen	та́почки	mismatch	
-8262	n:тапочки	sg_dat	та́почке	unknown	
-8262	n:тапочки	sg_acc	та́почку	unknown	
-8262	n:тапочки	sg_ins	та́почкой	unknown	
-8262	n:тапочки	sg_prep	та́почке	unknown	
-8295	a:стеклянный	short_m	стекля́нен	unknown	
-8295	a:стеклянный	short_f	стекля́нна	unknown	
-8295	a:стеклянный	short_n	стекля́нно	mismatch	
-8295	a:стеклянный	short_pl	стекля́нны	unknown	
-8296	a:обеденный	short_m	обе́ден	mismatch	
-8334	n:двойка	sg_nom	двоек	mismatch	unstressed
-8334	n:двойка	sg_gen	дво́йка	mismatch	
-8334	n:двойка	sg_dat	дво́йку	mismatch	
-8334	n:двойка	sg_acc	двоек	mismatch	unstressed
-8334	n:двойка	sg_ins	дво́йком	unknown	
-8334	n:двойка	pl_gen	дво́йков	unknown	
-8337	a:почётный	sup	почётнейший	unknown	
-8368	n:Сирия	sg_ins	Си́риею	unknown	
-8392	a:исследовательский	short_m	иссле́довательск	unknown	
-8392	a:исследовательский	short_f	иссле́довательска	unknown	
-8392	a:исследовательский	short_n	иссле́довательско	unknown	
-8392	a:исследовательский	short_pl	иссле́довательски	unknown	
-8416	n:левша	pl_acc	левши́	mismatch	
-8451	n:кадиллак	sg_dat	Кадилла́кау	unknown	
-8495	n:груша	sg_gen	гру́шы	unknown	
-8504	a:президентский	short_m	президе́нтск	unknown	
-8504	a:президентский	short_f	президе́нтска	unknown	
-8504	a:президентский	short_n	президе́нтско	unknown	
-8504	a:президентский	short_pl	президе́нтски	unknown	
-8674	n:рейх	sg_acc	ре́йха	mismatch	
-8674	n:рейх	pl_acc	ре́йхов	mismatch	
-8687	n:паша	sg_ins	пашо́й	unknown	
-8687	n:паша	sg_ins	пашо́ю	unknown	
-8687	n:паша	pl_gen	паше́й	mismatch	
-8687	n:паша	pl_acc	паше́й	mismatch	
-8734	a:существенный	short_f	суще́ствена	unknown	
-8734	a:существенный	short_n	суще́ствено	unknown	
-8734	a:существенный	short_pl	суще́ствены	unknown	
-8756	a:офигенный	short_m	офиге́нен	unknown	
-8756	a:офигенный	short_f	офиге́нна	unknown	
-8756	a:офигенный	short_n	офиге́нно	mismatch	
-8756	a:офигенный	short_pl	офиге́нны	unknown	
-8756	a:офигенный	comp	офиге́ннее	unknown	
-8756	a:офигенный	sup	офиге́ннейший	unknown	
-8765	v:лизать	np_1sg	лижу	ok	unstressed
-8765	v:лизать	np_2sg	лижешь	ok	unstressed
-8765	v:лизать	np_3sg	лижет	ok	unstressed
-8765	v:лизать	np_1pl	лижем	ok	unstressed
-8765	v:лизать	np_2pl	лижете	ok	unstressed
-8765	v:лизать	np_3pl	лижут	ok	unstressed
-8765	v:лизать	pst_m	лизал	ok	unstressed
-8765	v:лизать	pst_f	лизала	ok	unstressed
-8765	v:лизать	pst_n	лизало	ok	unstressed
-8765	v:лизать	pst_pl	лизали	ok	unstressed
-8765	v:лизать	imp_sg	лижи	ok	unstressed
-8765	v:лизать	imp_pl	лижите	ok	unstressed
-8781	n:Турция	sg_ins	Ту́рциею	unknown	
-8811	n:звездолёт	sg_acc	звездолёта	mismatch	
-8811	n:звездолёт	pl_acc	звездолётов	mismatch	
-8816	a:богатенький	short_m	бога́тенек	unknown	
-8816	a:богатенький	short_f	бога́тенька	unknown	
-8816	a:богатенький	short_pl	бога́теньки	unknown	
-8817	n:бельгия	sg_ins	бе́льгиею	unknown	
-8817	n:бельгия	pl_nom	бе́льгии	mismatch	
-8817	n:бельгия	pl_gen	бе́льгий	unknown	
-8817	n:бельгия	pl_dat	бе́льгиям	unknown	
-8817	n:бельгия	pl_acc	бе́льгии	mismatch	
-8817	n:бельгия	pl_ins	бе́льгиями	unknown	
-8817	n:бельгия	pl_prep	бе́льгиях	unknown	
-8832	n:буфер	pl_nom	бу́феры	unknown	
-8832	n:буфер	pl_acc	бу́феры	unknown	
-8891	n:бритьё	pl_nom	бритья́	mismatch	
-8891	n:бритьё	pl_gen	брите́й	mismatch	
-8891	n:бритьё	pl_dat	бритья́м	unknown	
-8891	n:бритьё	pl_acc	бритья́	mismatch	
-8891	n:бритьё	pl_ins	бритья́ми	unknown	
-8891	n:бритьё	pl_prep	бритья́х	unknown	
-8904	v:записываться	np_1sg	записываюсь	ok	unstressed
-8904	v:записываться	np_2sg	записываешься	ok	unstressed
-8904	v:записываться	pst_m	записывался	ok	unstressed
-8904	v:записываться	pst_f	записывалась	ok	unstressed
-8910	n:староста	pl_acc	ста́росты	mismatch	
-8920	n:сыта	pl_nom	сыты́	mismatch	
-8920	n:сыта	pl_gen	сыт	mismatch	
-8920	n:сыта	pl_dat	сыта́м	unknown	
-8920	n:сыта	pl_acc	сыты́	mismatch	
-8920	n:сыта	pl_ins	сыта́ми	unknown	
-8920	n:сыта	pl_prep	сыта́х	unknown	
-8931	n:Дания	sg_ins	Да́ниею	unknown	
-8942	a:отцовский	short_m	отцо́вск	unknown	
-8942	a:отцовский	short_f	отцо́вска	unknown	
-8942	a:отцовский	short_n	отцо́вско	unknown	
-8942	a:отцовский	short_pl	отцо́вски	mismatch	
-8953	n:наследница	pl_acc	насле́дницы	mismatch	
-8977	n:Голландия	sg_ins	Голла́ндиею	unknown	
-8984	a:шведский	short_m	шведск	unknown	
-8984	a:шведский	short_f	шве́дска	unknown	
-8984	a:шведский	short_n	шве́дско	unknown	
-8984	a:шведский	short_pl	шве́дски	mismatch	
-9025	v:посчастливиться	np_1sg	посчастли́влюсь	unknown	
-9025	v:посчастливиться	np_2sg	посчастли́вишься	unknown	
-9025	v:посчастливиться	np_1pl	посчастли́вимся	unknown	
-9025	v:посчастливиться	np_2pl	посчастли́витесь	unknown	
-9025	v:посчастливиться	np_3pl	посчастли́вятся	unknown	
-9025	v:посчастливиться	pst_m	посчастли́вился	unknown	
-9025	v:посчастливиться	pst_f	посчастли́вилась	unknown	
-9025	v:посчастливиться	pst_pl	посчастли́вились	unknown	
-9025	v:посчастливиться	imp_sg	посчастли́вься	unknown	
-9025	v:посчастливиться	imp_pl	посчастли́вьтесь	unknown	
-9041	a:никой	m_gen	нико́го	mismatch	
-9041	a:никой	m_dat	нико́му	mismatch	
-9041	a:никой	m_acc	нико́го	mismatch	
-9041	a:никой	m_ins	ники́м	unknown	
-9041	a:никой	m_prep	нико́м	mismatch	
-9041	a:никой	f_nom	ника́я	unknown	
-9041	a:никой	f_gen	нико́й	mismatch	
-9041	a:никой	f_dat	нико́й	mismatch	
-9041	a:никой	f_acc	нику́ю	unknown	
-9041	a:никой	f_ins	нико́й	mismatch	
-9041	a:никой	f_ins	нико́ю	mismatch	
-9041	a:никой	f_prep	нико́й	mismatch	
-9041	a:никой	n_gen	нико́го	mismatch	
-9041	a:никой	n_dat	нико́му	mismatch	
-9041	a:никой	n_ins	ники́м	unknown	
-9041	a:никой	n_prep	нико́м	mismatch	
-9041	a:никой	pl_nom	ники́е	unknown	
-9041	a:никой	pl_gen	ники́х	unknown	
-9041	a:никой	pl_dat	ники́м	unknown	
-9041	a:никой	pl_acc	ники́е	unknown	
-9041	a:никой	pl_acc	ники́х	unknown	
-9041	a:никой	pl_ins	ники́ми	unknown	
-9041	a:никой	pl_prep	ники́х	unknown	
-9046	n:первенец	sg_acc	пе́рвенец	mismatch	
-9046	n:первенец	pl_acc	пе́рвенцы	mismatch	
-9066	a:продуктовый	short_m	продукто́в	mismatch	
-9066	a:продуктовый	short_f	продукто́ва	unknown	
-9066	a:продуктовый	short_n	продукто́во	unknown	
-9066	a:продуктовый	short_pl	продукто́вы	unknown	
-9146	a:нестабильный	comp	нестаби́льнее	unknown	
-9149	n:Аравия	sg_ins	Ара́виею	unknown	
-9160	n:медиа	sg_nom	ме́диа	mismatch	
-9160	n:медиа	sg_gen	ме́диа	mismatch	
-9160	n:медиа	sg_dat	ме́диа	mismatch	
-9160	n:медиа	sg_acc	ме́диа	mismatch	
-9160	n:медиа	sg_ins	ме́диа	mismatch	
-9160	n:медиа	sg_prep	ме́диа	mismatch	
-9173	n:мемуары	sg_nom	мемуар	ok	unstressed
-9173	n:мемуары	sg_gen	мемуара	ok	unstressed
-9173	n:мемуары	pl_gen	мемуаров	ok	unstressed
-9197	a:настольный	short_f	насто́льно	mismatch	
-9197	a:настольный	short_n	насто́льна	mismatch	
-9305	n:консервы	sg_nom	консерва	unknown	unstressed
-9305	n:консервы	sg_gen	консе́рвы	mismatch	
-9305	n:консервы	sg_dat	консерве	unknown	unstressed
-9305	n:консервы	sg_acc	консерву	unknown	unstressed
-9305	n:консервы	sg_ins	консервой	unknown	unstressed
-9305	n:консервы	sg_ins	консервою	unknown	unstressed
-9305	n:консервы	sg_prep	консерве	unknown	unstressed
-9305	n:консервы	pl_gen	консерв	unknown	unstressed
-9305	n:консервы	pl_dat	консервам	ok	unstressed
-9305	n:консервы	pl_ins	консервами	ok	unstressed
-9305	n:консервы	pl_prep	консервах	ok	unstressed
-9357	n:покровитель	sg_acc	покрови́тель	mismatch	
-9357	n:покровитель	pl_acc	покрови́тели	mismatch	
-9411	n:ягодица	sg_ins	я́годицой	unknown	
-9411	n:ягодица	sg_ins	я́годицою	unknown	
-9432	a:глупенький	short_m	глу́пенек	mismatch	
-9432	a:глупенький	short_f	глу́пенька	mismatch	
-9432	a:глупенький	short_n	глу́пенько	mismatch	
-9432	a:глупенький	short_pl	глу́пеньки	mismatch	
-9457	v:жарить	imp_sg	жа́ри	unknown	
-9457	v:жарить	imp_pl	жа́рите	mismatch	
-9471	n:правота	pl_nom	право́ты	mismatch	
-9471	n:правота	pl_gen	право́т	unknown	
-9471	n:правота	pl_dat	право́там	unknown	
-9471	n:правота	pl_acc	право́ты	mismatch	
-9471	n:правота	pl_ins	право́тами	unknown	
-9471	n:правота	pl_prep	право́тах	unknown	
-9574	n:воз	pl_acc	возо́в	mismatch	
-9597	n:Румыния	sg_ins	Румы́ниею	unknown	
-9621	a:риторический	short_m	ритори́ческ	unknown	
-9621	a:риторический	short_f	ритори́ческа	unknown	
-9621	a:риторический	short_n	ритори́ческо	unknown	
-9621	a:риторический	short_pl	ритори́чески	unknown	
-9629	n:Португалия	sg_ins	Португа́лиею	unknown	
-9645	a:свидетельский	short_m	свиде́тельск	unknown	
-9645	a:свидетельский	short_f	свиде́тельска	unknown	
-9645	a:свидетельский	short_n	свиде́тельско	unknown	
-9645	a:свидетельский	short_pl	свиде́тельски	unknown	
-9703	a:донный	short_m	до́нен	unknown	
-9703	a:донный	short_f	до́нна	mismatch	
-9703	a:донный	short_n	до́нно	unknown	
-9703	a:донный	short_pl	до́нны	mismatch	
-9739	n:разрушитель	sg_acc	разруши́тель	mismatch	
-9739	n:разрушитель	pl_acc	разруши́тели	mismatch	
-9782	v:утихнуть	pst_m	ути́хнул	unknown	
-9782	v:утихнуть	pst_f	ути́хнула	unknown	
-9782	v:утихнуть	pst_n	ути́хнуло	unknown	
-9782	v:утихнуть	pst_pl	ути́хнули	unknown	
-9829	n:фсб	pl_nom	фсб	mismatch	
-9829	n:фсб	pl_gen	фсб	mismatch	
-9829	n:фсб	pl_dat	фсб	mismatch	
-9829	n:фсб	pl_acc	фсб	mismatch	
-9829	n:фсб	pl_ins	фсб	mismatch	
-9829	n:фсб	pl_prep	фсб	mismatch	
-9865	a:адвокатский	short_m	адвока́тск	unknown	
-9865	a:адвокатский	short_f	адвока́тска	unknown	
-9865	a:адвокатский	short_n	адвока́тско	unknown	
-9865	a:адвокатский	short_pl	адвока́тски	unknown	
-9878	n:лом	sg_acc	ло́ма	mismatch	
-9886	v:протестировать	np_1sg	протести́р	unknown	
-10024	n:манекен	sg_gen	манекена	ok	unstressed
-10024	n:манекен	sg_dat	манекену	ok	unstressed
-10024	n:манекен	sg_ins	манекеном	ok	unstressed
-10024	n:манекен	sg_prep	манекене	ok	unstressed
-10024	n:манекен	pl_nom	манекены	ok	unstressed
-10024	n:манекен	pl_gen	манекенов	ok	unstressed
-10024	n:манекен	pl_dat	манекенам	ok	unstressed
-10024	n:манекен	pl_acc	манекены	ok	unstressed
-10024	n:манекен	pl_ins	манекенами	ok	unstressed
-10024	n:манекен	pl_prep	манекенах	ok	unstressed
-10035	n:кандалы	pl_ins	андала́ми	unknown	
-10042	a:банановый	short_m	бана́нов	mismatch	
-10042	a:банановый	short_f	бана́нова	unknown	
-10042	a:банановый	short_n	бана́ново	unknown	
-10042	a:банановый	short_pl	бана́новы	unknown	
-10044	n:Венгрия	sg_ins	Ве́нгриею	unknown	
-10124	a:маменькин	m_gen	маменькиного	ok	unstressed
-10124	a:маменькин	m_dat	маменькиному	ok	unstressed
-10124	a:маменькин	m_acc	маменькиного	ok	unstressed
-10124	a:маменькин	n_gen	маменькиного	ok	unstressed
-10176	n:Финляндия	sg_ins	Финля́ндиею	unknown	
-10182	n:развалина	pl_acc	разва́лины	mismatch	
-10193	a:этакий	f_ins	э́такою	unknown	
-10194	a:турецкий	short_m	туре́цк	unknown	
-10194	a:турецкий	short_f	туре́цка	unknown	
-10194	a:турецкий	short_n	туре́цко	unknown	
-10194	a:турецкий	short_pl	туре́цки	unknown	
-10225	n:румпель	pl_nom	ру́мпеля	mismatch	
-10225	n:румпель	pl_acc	ру́мпеля	mismatch	
-10233	n:вольво	pl_nom	во́льво	mismatch	
-10233	n:вольво	pl_gen	во́льво	mismatch	
-10233	n:вольво	pl_dat	во́льво	mismatch	
-10233	n:вольво	pl_acc	во́льво	mismatch	
-10233	n:вольво	pl_ins	во́льво	mismatch	
-10233	n:вольво	pl_prep	во́льво	mismatch	
-10238	n:джокер	sg_acc	джо́кер	mismatch	
-10238	n:джокер	pl_acc	джо́керы	mismatch	
-10249	a:мятный	short_n	мя́́тно	ok	
-10249	a:мятный	short_pl	мя́́тны	ok	
-10296	a:постыдный	sup	посты́днейший	unknown	
-10354	v:очиститься	imp_pl	о́чи́ститесь	ok	
-10354	v:очиститься	imp_pl	о́чи́стьтесь	ok	
-10361	n:пуск	pl_nom	пуска́	mismatch	
-10361	n:пуск	pl_acc	пуска́	mismatch	
-10395	v:объехать	imp_sg	объезжа́й	mismatch	
-10395	v:объехать	imp_pl	объезжа́йте	mismatch	
-10407	v:адаптироваться	np_1sg	адаптируюсь	ok	unstressed
-10407	v:адаптироваться	np_2sg	адаптируешься	ok	unstressed
-10407	v:адаптироваться	np_3sg	адаптируется	ok	unstressed
-10407	v:адаптироваться	np_1pl	адаптируемся	ok	unstressed
-10407	v:адаптироваться	np_2pl	адаптируетесь	ok	unstressed
-10407	v:адаптироваться	np_3pl	адаптируются	ok	unstressed
-10407	v:адаптироваться	pst_m	адаптировался	ok	unstressed
-10407	v:адаптироваться	pst_f	адаптировалась	ok	unstressed
-10407	v:адаптироваться	pst_n	адаптировалось	ok	unstressed
-10407	v:адаптироваться	pst_pl	адаптировались	ok	unstressed
-10407	v:адаптироваться	imp_sg	адаптируйся	ok	unstressed
-10407	v:адаптироваться	imp_pl	адаптируйтесь	ok	unstressed
-10408	a:докторский	short_m	до́кторск	unknown	
-10408	a:докторский	short_f	до́кторска	unknown	
-10408	a:докторский	short_n	до́кторско	unknown	
-10408	a:докторский	short_pl	до́кторски	unknown	
-10416	n:постоялец	sg_nom	постоя́леца	unknown	
-10416	n:постоялец	sg_acc	постоя́леца	unknown	
-10416	n:постоялец	pl_acc	постоя́льцы	mismatch	
-10418	n:Сицилия	sg_ins	Сици́лиею	unknown	
-10427	v:съехаться	imp_sg	съезжа́йся	mismatch	
-10427	v:съехаться	imp_pl	съезжа́йтесь	mismatch	
-10470	v:выстоять	imp_sg	вы́стоь	unknown	
-10470	v:выстоять	imp_pl	вы́стоьте	unknown	
-10506	v:угораздить	imp_sg	угора́зди	unknown	
-10506	v:угораздить	imp_pl	угора́здите	mismatch	
-10535	n:Ливия	sg_ins	Ли́виею	unknown	
-10572	n:мытьё	pl_nom	мытья́	mismatch	
-10572	n:мытьё	pl_gen	мыте́й	mismatch	
-10572	n:мытьё	pl_dat	мытья́м	unknown	
-10572	n:мытьё	pl_acc	мытья́	mismatch	
-10572	n:мытьё	pl_ins	мытья́ми	unknown	
-10572	n:мытьё	pl_prep	мытья́х	unknown	
-10573	n:пловец	sg_acc	плове́ц	mismatch	
-10573	n:пловец	pl_acc	пловцы́	mismatch	
-10607	v:ссать	np_3pl	ссут	unknown	
-10621	n:пыльца	pl_nom	пыльцы́	mismatch	
-10621	n:пыльца	pl_gen	пыле́ц	unknown	
-10621	n:пыльца	pl_dat	пыльца́м	unknown	
-10621	n:пыльца	pl_acc	пыльцы́	mismatch	
-10621	n:пыльца	pl_ins	пыльца́ми	unknown	
-10621	n:пыльца	pl_prep	пыльца́х	unknown	
-10631	a:соседский	short_m	сосе́дск	unknown	
-10631	a:соседский	short_f	сосе́дска	unknown	
-10631	a:соседский	short_n	сосе́дско	unknown	
-10631	a:соседский	short_pl	сосе́дски	mismatch	
-10632	a:шотландский	short_m	шотла́ндск	unknown	
-10632	a:шотландский	short_f	шотла́ндска	unknown	
-10632	a:шотландский	short_n	шотла́ндско	unknown	
-10632	a:шотландский	short_pl	шотла́ндски	unknown	
-10643	n:простофиля	pl_gen	простофи́лей	mismatch	
-10643	n:простофиля	pl_acc	простофи́лей	mismatch	
-10654	n:пай	sg_nom	па	mismatch	
-10654	n:пай	sg_gen	пая	ok	unstressed
-10654	n:пай	sg_dat	паю	ok	unstressed
-10654	n:пай	sg_acc	па	mismatch	
-10654	n:пай	sg_ins	паем	ok	unstressed
-10654	n:пай	sg_prep	пае	ok	unstressed
-10654	n:пай	pl_nom	паи	ok	unstressed
-10654	n:пай	pl_dat	паям	ok	unstressed
-10654	n:пай	pl_acc	паи	ok	unstressed
-10654	n:пай	pl_ins	паями	ok	unstressed
-10654	n:пай	pl_prep	паях	ok	unstressed
-10684	a:продажный	sup	прода́жнейший	unknown	
-10702	v:чтить	np_3pl	чтут	mismatch	
-10703	v:расчистить	imp_pl	ра́счи́стите	ok	
-10703	v:расчистить	imp_pl	ра́счи́стьте	ok	
-10745	n:аладдин	sg_ins	аладди́ном	unknown	
-10763	n:порнуха	pl_nom	порну́хи	mismatch	
-10763	n:порнуха	pl_gen	порну́х	unknown	
-10763	n:порнуха	pl_dat	порну́хам	unknown	
-10763	n:порнуха	pl_acc	порну́хи	mismatch	
-10763	n:порнуха	pl_ins	порну́хами	unknown	
-10763	n:порнуха	pl_prep	порну́хах	unknown	
-10793	n:мыс	sg_ins	мысом	ok	unstressed
-10796	n:валет	sg_acc	вале́т	mismatch	
-10796	n:валет	pl_acc	вале́ты	mismatch	
-10917	a:органический	short_m	органи́ческ	unknown	
-10917	a:органический	short_f	органи́ческа	unknown	
-10917	a:органический	short_n	органи́ческо	unknown	
-10917	a:органический	short_pl	органи́чески	mismatch	
-10924	n:простота	pl_nom	просто́ты	mismatch	
-10924	n:простота	pl_gen	просто́т	unknown	
-10924	n:простота	pl_dat	просто́там	unknown	
-10924	n:простота	pl_acc	просто́ты	mismatch	
-10924	n:простота	pl_ins	просто́тами	unknown	
-10924	n:простота	pl_prep	просто́тах	unknown	
-10927	n:родство	pl_nom	родства́	mismatch	
-10927	n:родство	pl_gen	родств	unknown	
-10927	n:родство	pl_dat	родства́м	unknown	
-10927	n:родство	pl_acc	родства́	mismatch	
-10927	n:родство	pl_ins	родства́ми	unknown	
-10927	n:родство	pl_prep	родства́х	unknown	
-10952	n:ясли	pl_gen	яслей	ok	unstressed
-10952	n:ясли	pl_dat	яслям	ok	unstressed
-10952	n:ясли	pl_ins	яслями	ok	unstressed
-10952	n:ясли	pl_prep	яслях	ok	unstressed
-11014	n:трепло	pl_nom	трёплы	unknown	
-11014	n:трепло	pl_gen	трёплов	unknown	
-11014	n:трепло	pl_dat	трёплам	unknown	
-11014	n:трепло	pl_acc	трёплов	unknown	
-11014	n:трепло	pl_ins	трёплами	unknown	
-11014	n:трепло	pl_prep	трёплах	unknown	
-11053	n:каратэ	pl_nom	каратэ́	mismatch	
-11053	n:каратэ	pl_gen	каратэ́	mismatch	
-11053	n:каратэ	pl_dat	каратэ́	mismatch	
-11053	n:каратэ	pl_acc	каратэ́	mismatch	
-11053	n:каратэ	pl_ins	каратэ́	mismatch	
-11053	n:каратэ	pl_prep	каратэ́	mismatch	
-11060	n:безразличие	sg_gen	безразличия	ok	unstressed
-11060	n:безразличие	sg_dat	безразличию	ok	unstressed
-11060	n:безразличие	sg_ins	безразличием	ok	unstressed
-11060	n:безразличие	sg_prep	безразли́чие	mismatch	
-11075	a:спутниковый	f_ins	пу́тниковой	unknown	
-11075	a:спутниковый	pl_prep	спу́тниковы	unknown	
-11097	v:опереться	pst_n	опеа́лось	unknown	
-11097	v:опереться	pst_n	опеало́сь	unknown	
-11097	v:опереться	pst_pl	опеа́лись	unknown	
-11097	v:опереться	pst_pl	опеали́сь	unknown	
-11104	a:бестолковый	sup	бестолко́вейший	unknown	
-11120	n:дзюдо	pl_nom	дзюдо́	mismatch	
-11120	n:дзюдо	pl_gen	дзюдо́	mismatch	
-11120	n:дзюдо	pl_dat	дзюдо́	mismatch	
-11120	n:дзюдо	pl_acc	дзюдо́	mismatch	
-11120	n:дзюдо	pl_ins	дзюдо́	mismatch	
-11120	n:дзюдо	pl_prep	дзюдо́	mismatch	
-11167	n:тиф	sg_gen	тифа	ok	unstressed
-11167	n:тиф	sg_dat	тифу	ok	unstressed
-11167	n:тиф	sg_ins	тифом	ok	unstressed
-11167	n:тиф	sg_prep	тифе	ok	unstressed
-11182	a:логический	short_m	логи́ческ	unknown	
-11182	a:логический	short_f	логи́ческа	unknown	
-11182	a:логический	short_n	логи́ческо	unknown	
-11182	a:логический	short_pl	логи́чески	mismatch	
-11217	a:бедненький	short_m	бе́дненек	unknown	
-11217	a:бедненький	short_f	бе́дненька	unknown	
-11217	a:бедненький	short_n	бе́дненько	unknown	
-11217	a:бедненький	short_pl	бе́дненьки	unknown	
-11227	n:Хельсинки	pl_nom	Хе́льсинки	mismatch	
-11227	n:Хельсинки	pl_gen	Хе́льсинки	mismatch	
-11227	n:Хельсинки	pl_dat	Хе́льсинки	mismatch	
-11227	n:Хельсинки	pl_acc	Хе́льсинки	mismatch	
-11227	n:Хельсинки	pl_ins	Хе́льсинки	mismatch	
-11227	n:Хельсинки	pl_prep	Хе́льсинки	mismatch	
-11253	a:самоуверенный	short_f	самоуве́рена	unknown	
-11253	a:самоуверенный	short_n	самоуве́рено	unknown	
-11253	a:самоуверенный	short_pl	самоуве́рены	unknown	
-11320	n:спутница	pl_acc	спу́тницы	mismatch	
-11324	n:туфелька	sg_acc	туфельку	ok	unstressed
-11343	v:высохнуть	pst_m	вы́сохнул	unknown	
-11343	v:высохнуть	pst_f	вы́сохнула	unknown	
-11343	v:высохнуть	pst_n	вы́сохнуло	unknown	
-11343	v:высохнуть	pst_pl	вы́сохнули	unknown	
-11357	n:нытьё	pl_nom	нытья́	mismatch	
-11357	n:нытьё	pl_gen	ныте́й	unknown	
-11357	n:нытьё	pl_dat	нытья́м	unknown	
-11357	n:нытьё	pl_acc	нытья́	mismatch	
-11357	n:нытьё	pl_ins	нытья́ми	unknown	
-11357	n:нытьё	pl_prep	нытья́х	unknown	
-11367	a:одиннадцатый	f_ins	оди́ннадцатою	unknown	
-11377	n:уныние	sg_prep	уны́ние	mismatch	
-11377	n:уныние	pl_gen	уныние́й	unknown	
-11403	n:лучник	sg_acc	лу́чник	mismatch	
-11403	n:лучник	pl_acc	лу́чники	mismatch	
-11452	a:пиратский	short_m	пира́тск	unknown	
-11452	a:пиратский	short_f	пира́тска	unknown	
-11452	a:пиратский	short_n	пира́тско	unknown	
-11452	a:пиратский	short_pl	пира́тски	mismatch	
-11454	a:бедренный	short_m	бе́дрен	unknown	
-11507	n:титр	sg_gen	титра	ok	unstressed
-11507	n:титр	sg_dat	титру	ok	unstressed
-11507	n:титр	sg_ins	титром	ok	unstressed
-11507	n:титр	sg_prep	титре	ok	unstressed
-11507	n:титр	pl_nom	титры	ok	unstressed
-11507	n:титр	pl_gen	титров	ok	unstressed
-11507	n:титр	pl_dat	титрам	ok	unstressed
-11507	n:титр	pl_acc	титры	ok	unstressed
-11507	n:титр	pl_ins	титрами	ok	unstressed
-11507	n:титр	pl_prep	титрах	ok	unstressed
-11563	a:хирургический	short_m	хирурги́ческ	unknown	
-11563	a:хирургический	short_f	хирурги́ческа	unknown	
-11563	a:хирургический	short_n	хирурги́ческо	unknown	
-11563	a:хирургический	short_pl	хирурги́чески	unknown	
-11610	n:чехол	sg_gen	чехола́	unknown	
-11610	n:чехол	sg_dat	чехолу́	unknown	
-11610	n:чехол	sg_ins	чехоло́м	unknown	
-11610	n:чехол	sg_prep	чехоле́	unknown	
-11610	n:чехол	pl_nom	чехола́	unknown	
-11610	n:чехол	pl_gen	чехоло́в	unknown	
-11610	n:чехол	pl_dat	чехола́м	unknown	
-11610	n:чехол	pl_acc	чехола́	unknown	
-11610	n:чехол	pl_ins	чехола́ми	unknown	
-11610	n:чехол	pl_prep	чехола́х	unknown	
-11640	a:рулевой	m_gen	рулевого	ok	unstressed
-11640	a:рулевой	m_dat	рулевому	ok	unstressed
-11640	a:рулевой	m_ins	рулевым	ok	unstressed
-11640	a:рулевой	m_prep	рулевом	ok	unstressed
-11640	a:рулевой	f_nom	рулевая	ok	unstressed
-11640	a:рулевой	f_acc	рулевую	ok	unstressed
-11640	a:рулевой	n_nom	рулевое	ok	unstressed
-11640	a:рулевой	n_gen	рулевого	ok	unstressed
-11640	a:рулевой	n_dat	рулевому	ok	unstressed
-11640	a:рулевой	n_acc	рулевое	ok	unstressed
-11640	a:рулевой	n_ins	рулевым	ok	unstressed
-11640	a:рулевой	n_prep	рулевом	ok	unstressed
-11640	a:рулевой	pl_nom	рулевые	ok	unstressed
-11640	a:рулевой	pl_gen	рулевых	ok	unstressed
-11640	a:рулевой	pl_dat	рулевыи	unknown	unstressed
-11640	a:рулевой	pl_acc	рулевые	ok	unstressed
-11640	a:рулевой	pl_ins	рулевыми	ok	unstressed
-11640	a:рулевой	pl_prep	рулевых	ok	unstressed
-11658	n:линь	sg_nom	лин	mismatch	
-11679	n:гулливер	sg_dat	гулливе́у	unknown	
-11702	n:Нагасаки	pl_nom	Нагаса́ки	mismatch	
-11702	n:Нагасаки	pl_gen	Нагаса́ки	mismatch	
-11702	n:Нагасаки	pl_dat	Нагаса́ки	mismatch	
-11702	n:Нагасаки	pl_acc	Нагаса́ки	mismatch	
-11702	n:Нагасаки	pl_ins	Нагаса́ки	mismatch	
-11702	n:Нагасаки	pl_prep	Нагаса́ки	mismatch	
-11720	n:чувиха	sg_acc	чуви́хи	mismatch	
-11742	n:умысел	sg_gen	у́мысела	unknown	
-11742	n:умысел	sg_dat	у́мыселу	unknown	
-11742	n:умысел	sg_ins	у́мыселом	unknown	
-11742	n:умысел	sg_prep	у́мыселе	unknown	
-11742	n:умысел	pl_nom	у́мыселы	unknown	
-11742	n:умысел	pl_gen	у́мыселов	unknown	
-11742	n:умысел	pl_dat	у́мыселам	unknown	
-11742	n:умысел	pl_acc	у́мыселы	unknown	
-11742	n:умысел	pl_ins	у́мыселами	unknown	
-11742	n:умысел	pl_prep	у́мыселах	unknown	
-11770	v:обчистить	imp_pl	о́бчи́стите	ok	
-11770	v:обчистить	imp_pl	о́бчи́стьте	ok	
-11773	a:портативный	short_f	портати́вно	mismatch	
-11773	a:портативный	short_n	портати́вна	mismatch	
-11830	n:тайга	pl_nom	тайги́	mismatch	
-11830	n:тайга	pl_gen	тайг	unknown	
-11830	n:тайга	pl_dat	тайга́м	unknown	
-11830	n:тайга	pl_acc	тайги́	mismatch	
-11830	n:тайга	pl_ins	тайга́ми	unknown	
-11830	n:тайга	pl_prep	тайга́х	unknown	
-11855	a:промышленный	short_m	промы́шленен	unknown	
-11857	a:толковый	short_f	толкова	ok	unstressed
-11857	a:толковый	short_pl	толковы	ok	unstressed
-11858	a:тринадцатый	f_ins	трина́дцатою	unknown	
-11878	n:старьё	pl_nom	старья́	mismatch	
-11878	n:старьё	pl_gen	старе́й	mismatch	
-11878	n:старьё	pl_dat	старья́м	unknown	
-11878	n:старьё	pl_acc	старья́	mismatch	
-11878	n:старьё	pl_ins	старья́ми	unknown	
-11878	n:старьё	pl_prep	старья́х	unknown	
-11900	a:сотый	f_ins	со́тою	mismatch	
-11906	n:лепёшка	pl_gen	лепёшк	unknown	
-11931	v:распростереть	np_1sg	распростру́	unknown	
-11931	v:распростереть	np_2sg	распрострёшь	unknown	
-11931	v:распростереть	np_3sg	распрострёт	unknown	
-11931	v:распростереть	np_1pl	распрострём	unknown	
-11931	v:распростереть	np_2pl	распрострёте	unknown	
-11931	v:распростереть	np_3pl	распростру́т	unknown	
-11931	v:распростереть	imp_sg	распростри́	unknown	
-11931	v:распростереть	imp_pl	распростри́те	unknown	
-12018	a:республиканский	short_m	республика́нск	unknown	
-12018	a:республиканский	short_f	республика́нска	unknown	
-12018	a:республиканский	short_n	республика́нско	unknown	
-12018	a:республиканский	short_pl	республика́нски	unknown	
-12041	n:приставка	pl_gen	приставок	ok	unstressed
-12064	a:тактический	short_m	такти́ческ	unknown	
-12064	a:тактический	short_f	такти́ческа	unknown	
-12064	a:тактический	short_n	такти́ческо	unknown	
-12064	a:тактический	short_pl	такти́чески	unknown	
-12075	n:остриё	sg_prep	острии́	unknown	
-12121	v:мерещиться	imp_sg	мере́щись	unknown	
-12121	v:мерещиться	imp_pl	мере́щитесь	mismatch	
-12146	n:буэнос	sg_gen	буэ́нос	mismatch	
-12146	n:буэнос	sg_dat	буэ́нос	mismatch	
-12146	n:буэнос	sg_ins	буэ́нос	mismatch	
-12146	n:буэнос	sg_prep	буэ́нос	mismatch	
-12146	n:буэнос	pl_nom	буэ́нос	mismatch	
-12146	n:буэнос	pl_gen	буэ́нос	mismatch	
-12146	n:буэнос	pl_dat	буэ́нос	mismatch	
-12146	n:буэнос	pl_acc	буэ́нос	mismatch	
-12146	n:буэнос	pl_ins	буэ́нос	mismatch	
-12146	n:буэнос	pl_prep	буэ́нос	mismatch	
-12165	a:аллергический	short_m	аллерги́ческ	unknown	
-12165	a:аллергический	short_f	аллерги́ческа	unknown	
-12165	a:аллергический	short_n	аллерги́ческо	unknown	
-12165	a:аллергический	short_pl	аллерги́чески	unknown	
-12213	a:одноглазый	short_m	одногла́з	unknown	
-12213	a:одноглазый	short_f	одногла́за	unknown	
-12213	a:одноглазый	short_n	одногла́зо	unknown	
-12213	a:одноглазый	short_pl	одногла́зы	unknown	
-12231	a:осиный	short_m	оси́н	mismatch	
-12231	a:осиный	short_f	оси́на	mismatch	
-12231	a:осиный	short_n	оси́но	unknown	
-12231	a:осиный	short_pl	оси́ны	mismatch	
-12236	n:падло	pl_acc	падл	mismatch	
-12282	n:буги	pl_nom	бу́ги	mismatch	
-12282	n:буги	pl_gen	бу́ги	mismatch	
-12282	n:буги	pl_dat	бу́ги	mismatch	
-12282	n:буги	pl_acc	бу́ги	mismatch	
-12282	n:буги	pl_ins	бу́ги	mismatch	
-12282	n:буги	pl_prep	бу́ги	mismatch	
-12383	n:окружающее	pl_acc	окружа́ющих	mismatch	
-12406	n:даба	pl_nom	дабы́	mismatch	
-12406	n:даба	pl_gen	даб	mismatch	
-12406	n:даба	pl_dat	даба́м	mismatch	
-12406	n:даба	pl_acc	дабы́	mismatch	
-12406	n:даба	pl_ins	даба́ми	mismatch	
-12406	n:даба	pl_prep	даба́х	mismatch	
-12435	n:костра	pl_nom	костры́	mismatch	
-12435	n:костра	pl_gen	костр	unknown	
-12435	n:костра	pl_dat	костра́м	mismatch	
-12435	n:костра	pl_acc	костры́	mismatch	
-12435	n:костра	pl_ins	костра́ми	mismatch	
-12435	n:костра	pl_prep	костра́х	mismatch	
-12450	n:неохота	pl_nom	неохо́ты	mismatch	
-12450	n:неохота	pl_gen	неохо́т	unknown	
-12450	n:неохота	pl_dat	неохо́там	unknown	
-12450	n:неохота	pl_acc	неохо́ты	mismatch	
-12450	n:неохота	pl_ins	неохо́тами	unknown	
-12450	n:неохота	pl_prep	неохо́тах	unknown	
-12462	n:моща	pl_nom	мощи́	mismatch	
-12462	n:моща	pl_gen	моще́й	mismatch	
-12462	n:моща	pl_dat	моща́м	mismatch	
-12462	n:моща	pl_acc	моще́й	mismatch	
-12462	n:моща	pl_ins	моща́ми	mismatch	
-12462	n:моща	pl_prep	моща́х	mismatch	
-12480	n:опор	sg_gen	опо́р	mismatch	
-12480	n:опор	sg_dat	опо́р	mismatch	
-12480	n:опор	sg_ins	опо́р	mismatch	
-12480	n:опор	sg_prep	опо́р	mismatch	
-12480	n:опор	pl_nom	опо́р	mismatch	
-12480	n:опор	pl_gen	опо́р	mismatch	
-12480	n:опор	pl_dat	опо́р	mismatch	
-12480	n:опор	pl_acc	опо́р	mismatch	
-12480	n:опор	pl_ins	опо́р	mismatch	
-12480	n:опор	pl_prep	опо́р	mismatch	
-12491	n:ладо	pl_nom	ла́да	mismatch	
-12491	n:ладо	pl_gen	лад	mismatch	
-12491	n:ладо	pl_acc	лад	mismatch	
-12514	n:осадок	sg_gen	оса́дока	unknown	
-12514	n:осадок	sg_dat	оса́доку	unknown	
-12514	n:осадок	sg_ins	оса́доком	unknown	
-12514	n:осадок	sg_prep	оса́доке	unknown	
-12514	n:осадок	pl_nom	оса́доки	unknown	
-12514	n:осадок	pl_gen	оса́доков	unknown	
-12514	n:осадок	pl_dat	оса́докам	unknown	
-12514	n:осадок	pl_acc	оса́доки	unknown	
-12514	n:осадок	pl_ins	оса́доками	unknown	
-12514	n:осадок	pl_prep	оса́доках	unknown	
-12529	n:мура	pl_nom	муры́	mismatch	
-12529	n:мура	pl_gen	мур	mismatch	
-12529	n:мура	pl_dat	мура́м	mismatch	
-12529	n:мура	pl_acc	муры́	mismatch	
-12529	n:мура	pl_ins	мура́ми	mismatch	
-12529	n:мура	pl_prep	мура́х	mismatch	
-12548	n:ожерелье	pl_nom	ожере́лья	mismatch	
-12548	n:ожерелье	pl_gen	ожере́лий	mismatch	
-12548	n:ожерелье	pl_dat	ожере́льям	mismatch	
-12548	n:ожерелье	pl_acc	ожере́лья	mismatch	
-12548	n:ожерелье	pl_ins	ожере́льями	mismatch	
-12548	n:ожерелье	pl_prep	ожере́льях	mismatch	
-12552	n:внучок	sg_acc	внучо́к	mismatch	
-12552	n:внучок	pl_acc	внучки́	mismatch	
-12656	n:тканьё	pl_nom	тканья́	mismatch	
-12656	n:тканьё	pl_gen	ткане́й	mismatch	
-12656	n:тканьё	pl_dat	тканья́м	unknown	
-12656	n:тканьё	pl_acc	тканья́	mismatch	
-12656	n:тканьё	pl_ins	тканья́ми	unknown	
-12656	n:тканьё	pl_prep	тканья́х	unknown	
-12701	n:забрало	sg_nom	забра́л	mismatch	
-12701	n:забрало	sg_dat	забралу	ok	unstressed
-12701	n:забрало	sg_acc	забра́л	mismatch	
-12701	n:забрало	sg_ins	забралом	ok	unstressed
-12701	n:забрало	sg_prep	забрале	ok	unstressed
-12701	n:забрало	pl_nom	забралы	unknown	unstressed
-12701	n:забрало	pl_gen	забралов	unknown	unstressed
-12701	n:забрало	pl_dat	забралам	ok	unstressed
-12701	n:забрало	pl_acc	забралы	unknown	unstressed
-12701	n:забрало	pl_ins	забралами	ok	unstressed
-12701	n:забрало	pl_prep	забралах	ok	unstressed
-12715	n:темь	pl_nom	те́ми	mismatch	
-12715	n:темь	pl_gen	те́мей	unknown	
-12715	n:темь	pl_dat	те́мям	unknown	
-12715	n:темь	pl_acc	те́ми	mismatch	
-12715	n:темь	pl_ins	те́мями	unknown	
-12715	n:темь	pl_prep	те́мях	unknown	
-12729	n:духи	pl_nom	духи	ok	unstressed
-12729	n:духи	pl_acc	духи	ok	unstressed
-12730	n:мороженое	sg_prep	мороженомм	unknown	unstressed
-12732	n:трусы	pl_nom	трусы	ok	unstressed
-12732	n:трусы	pl_acc	трусы	ok	unstressed
-12743	n:фиг	pl_nom	фи́ги	mismatch	
-12743	n:фиг	pl_gen	фи́гов	mismatch	
-12743	n:фиг	pl_dat	фи́гам	mismatch	
-12743	n:фиг	pl_acc	фи́ги	mismatch	
-12743	n:фиг	pl_ins	фи́гами	mismatch	
-12743	n:фиг	pl_prep	фи́гах	mismatch	
-12744	n:парикмахерская	pl_gen	парикма́херски	unknown	
-12744	n:парикмахерская	pl_dat	парикма́херски	unknown	
-12744	n:парикмахерская	pl_ins	парикма́херским	mismatch	
-12753	n:лета	pl_nom	лета́	mismatch	
-12753	n:лета	pl_gen	лет	mismatch	
-12753	n:лета	pl_dat	лета́м	mismatch	
-12753	n:лета	pl_acc	лета́	mismatch	
-12753	n:лета	pl_ins	лета́ми	mismatch	
-12753	n:лета	pl_prep	лета́х	mismatch	
-12759	n:але	pl_nom	а́ле	mismatch	
-12759	n:але	pl_gen	а́ле	mismatch	
-12759	n:але	pl_dat	а́ле	mismatch	
-12759	n:але	pl_acc	а́ле	mismatch	
-12759	n:але	pl_ins	а́ле	mismatch	
-12759	n:але	pl_prep	а́ле	mismatch	
-12804	n:развалины	sg_nom	разва́лина	mismatch	
-12804	n:развалины	sg_gen	разва́лины	mismatch	
-12804	n:развалины	sg_dat	разва́лине	mismatch	
-12804	n:развалины	sg_acc	разва́лину	mismatch	
-12804	n:развалины	sg_ins	разва́линой	mismatch	
-12804	n:развалины	sg_prep	разва́лине	mismatch	
-12820	n:блядь	pl_ins	блядьми́	unknown	
-12861	v:возрасти	np_1sg	возросту́	unknown	
-12861	v:возрасти	np_2sg	возростёшь	unknown	
-12861	v:возрасти	np_3sg	возростёт	unknown	
-12861	v:возрасти	np_1pl	возростём	unknown	
-12861	v:возрасти	np_2pl	возростёте	unknown	
-12861	v:возрасти	np_3pl	возросту́т	unknown	
-12861	v:возрасти	imp_sg	возрости́	unknown	
-12861	v:возрасти	imp_pl	возрости́те	unknown	
-12870	v:сыпать	np_3pl	сы́пют	unknown	
-12884	v:постелить	np_2sg	посте́лешь	mismatch	
-12884	v:постелить	np_3sg	посте́лет	mismatch	
-12884	v:постелить	np_1pl	посте́лем	mismatch	
-12884	v:постелить	np_2pl	посте́лете	mismatch	
-12884	v:постелить	np_3pl	посте́лют	mismatch	
-12995	v:опознавать	np_1sg	оппзнаю́	unknown	
-12995	v:опознавать	np_2sg	оппзнаёшь	unknown	
-12995	v:опознавать	np_3sg	оппзнаёт	unknown	
-12995	v:опознавать	np_1pl	оппзнаём	unknown	
-12995	v:опознавать	np_2pl	оппзнаёте	unknown	
-12995	v:опознавать	np_3pl	оппзнаю́т	unknown	
-13053	a:столовый	short_m	столо́в	mismatch	
-13053	a:столовый	short_f	столо́ва	unknown	
-13053	a:столовый	short_n	столо́во	unknown	
-13053	a:столовый	short_pl	столо́вы	unknown	
-13059	a:вооружённый	short_f	вооружённа	unknown	
-13059	a:вооружённый	short_n	вооружённо	unknown	
-13059	a:вооружённый	short_pl	вооружённы	unknown	
-13061	a:стоящий	m_gen	стоящего	ok	unstressed
-13061	a:стоящий	m_dat	стоящему	ok	unstressed
-13061	a:стоящий	m_acc	стоящего	ok	unstressed
-13061	a:стоящий	m_ins	стоящим	ok	unstressed
-13061	a:стоящий	m_prep	стоящем	ok	unstressed
-13061	a:стоящий	f_nom	стоящая	ok	unstressed
-13061	a:стоящий	f_gen	стоящей	ok	unstressed
-13061	a:стоящий	f_dat	стоящей	ok	unstressed
-13061	a:стоящий	f_acc	стоящую	ok	unstressed
-13061	a:стоящий	f_ins	стоящей	ok	unstressed
-13061	a:стоящий	f_ins	стоящею	ok	unstressed
-13061	a:стоящий	f_prep	стоящей	ok	unstressed
-13061	a:стоящий	n_nom	стоящее	ok	unstressed
-13061	a:стоящий	n_gen	стоящего	ok	unstressed
-13061	a:стоящий	n_dat	стоящему	ok	unstressed
-13061	a:стоящий	n_acc	стоящее	ok	unstressed
-13061	a:стоящий	n_ins	стоящим	ok	unstressed
-13061	a:стоящий	n_prep	стоящем	ok	unstressed
-13061	a:стоящий	pl_nom	стоящие	ok	unstressed
-13061	a:стоящий	pl_gen	стоящих	ok	unstressed
-13061	a:стоящий	pl_dat	стоящим	ok	unstressed
-13061	a:стоящий	pl_acc	стоящие	ok	unstressed
-13061	a:стоящий	pl_acc	стоящих	ok	unstressed
-13061	a:стоящий	pl_ins	стоящими	ok	unstressed
-13061	a:стоящий	pl_prep	стоящих	ok	unstressed
-13065	a:мастерский	short_m	ма́стерск	unknown	
-13065	a:мастерский	short_f	ма́стерска	unknown	
-13065	a:мастерский	short_n	ма́стерско	unknown	
-13065	a:мастерский	short_pl	ма́стерски	mismatch	
-13066	a:ванный	short_m	ва́нен	unknown	
-13066	a:ванный	short_f	ва́нна	mismatch	
-13066	a:ванный	short_n	ва́нно	unknown	
-13066	a:ванный	short_pl	ва́нны	mismatch	
-13070	a:напряжённый	short_f	напряжённа	unknown	
-13070	a:напряжённый	short_n	напряжённо	mismatch	
-13070	a:напряжённый	short_pl	напряжённы	unknown	
-13099	a:выдающийся	short_m	выдаю́щся	unknown	
-13099	a:выдающийся	short_f	выдаю́щася	unknown	
-13099	a:выдающийся	short_n	выдаю́щеся	unknown	
-13099	a:выдающийся	short_pl	выдаю́щися	unknown	
-13107	a:снисходительный	sup	снисходи́тельнейший	unknown	
-13125	a:преданный	short_m	пре́данен	unknown	
-13151	a:яростный	short_f	я́ростно	mismatch	
-13151	a:яростный	short_n	я́ростна	mismatch	
-13155	a:некрасивый	short_f	некраси́в	mismatch	
-13179	a:потерянный	short_m	поте́рянен	unknown	
-13180	a:чрезмерный	short_f	чрезме́рена	unknown	
-13180	a:чрезмерный	short_n	чрезме́рено	unknown	
-13180	a:чрезмерный	short_pl	чрезме́рены	unknown	
-13205	a:парикмахерский	short_m	парикма́херск	unknown	
-13205	a:парикмахерский	short_f	парикма́херска	unknown	
-13205	a:парикмахерский	short_n	парикма́херско	unknown	
-13205	a:парикмахерский	short_pl	парикма́херски	unknown	
-13215	a:неслыханный	short_m	неслы́хан	unknown	
-13218	a:умерший	short_m	уме́рш	unknown	
-13218	a:умерший	short_f	уме́рша	unknown	
-13218	a:умерший	short_n	уме́рше	unknown	
-13218	a:умерший	short_pl	уме́рши	mismatch	
-13219	a:признанный	short_f	при́знаны	mismatch	
-13233	a:меньшой	pl_nom	меньши́е	mismatch	
-13233	a:меньшой	pl_gen	меньши́х	mismatch	
-13233	a:меньшой	pl_dat	меньши́м	mismatch	
-13233	a:меньшой	pl_acc	меньши́е	mismatch	
-13233	a:меньшой	pl_ins	меньши́ми	mismatch	
-13233	a:меньшой	pl_prep	меньши́х	mismatch	
-13234	a:немногий	f_ins	немно́гою	unknown	
-13275	a:отчий	short_m	отч	unknown	
-13275	a:отчий	short_f	о́тча	unknown	
-13275	a:отчий	short_n	о́тче	mismatch	
-13275	a:отчий	short_pl	о́тчи	unknown	
-13281	a:учащийся	short_m	уча́щся	unknown	
-13281	a:учащийся	short_f	уча́щася	unknown	
-13281	a:учащийся	short_n	уча́щеся	unknown	
-13281	a:учащийся	short_pl	уча́щися	unknown	
-13288	a:абсурдный	sup	абсу́рднейший	unknown	
-13295	a:одновременный	m_nom	одновре́ме́нный	ok	
-13295	a:одновременный	m_gen	одновре́ме́нного	ok	
-13295	a:одновременный	m_dat	одновре́ме́нному	ok	
-13295	a:одновременный	m_acc	одновре́ме́нный	ok	
-13295	a:одновременный	m_acc	одновре́ме́нного	ok	
-13295	a:одновременный	m_ins	одновре́ме́нным	ok	
-13295	a:одновременный	m_prep	одновре́ме́нном	ok	
-13295	a:одновременный	f_nom	одновре́ме́нная	ok	
-13295	a:одновременный	f_gen	одновре́ме́нной	ok	
-13295	a:одновременный	f_dat	одновре́ме́нной	ok	
-13295	a:одновременный	f_acc	одновре́ме́нную	ok	
-13295	a:одновременный	f_ins	одновре́ме́нной	ok	
-13295	a:одновременный	f_ins	одновре́ме́нною	ok	
-13295	a:одновременный	f_prep	одновре́ме́нной	ok	
-13295	a:одновременный	n_nom	одновре́ме́нное	ok	
-13295	a:одновременный	n_gen	одновре́ме́нного	ok	
-13295	a:одновременный	n_dat	одновре́ме́нному	ok	
-13295	a:одновременный	n_acc	одновре́ме́нное	ok	
-13295	a:одновременный	n_ins	одновре́ме́нным	ok	
-13295	a:одновременный	n_prep	одновре́ме́нном	ok	
-13295	a:одновременный	pl_nom	одновре́ме́нные	ok	
-13295	a:одновременный	pl_gen	одновре́ме́нных	ok	
-13295	a:одновременный	pl_dat	одновре́ме́нным	ok	
-13295	a:одновременный	pl_acc	одновре́ме́нные	ok	
-13295	a:одновременный	pl_acc	одновре́ме́нных	ok	
-13295	a:одновременный	pl_ins	одновре́ме́нными	ok	
-13295	a:одновременный	pl_prep	одновре́ме́нных	ok	
-13295	a:одновременный	short_m	одновре́ме́нен	ok	
-13295	a:одновременный	short_f	одновре́ме́нна	ok	
-13295	a:одновременный	short_n	одновре́ме́нно	ok	
-13295	a:одновременный	short_pl	одновре́ме́нны	ok	
-13301	a:диспетчерский	short_m	диспе́тчерск	unknown	
-13301	a:диспетчерский	short_f	диспе́тчерска	unknown	
-13301	a:диспетчерский	short_n	диспе́тчерско	unknown	
-13301	a:диспетчерский	short_pl	диспе́тчерски	unknown	
-13305	a:павший	short_m	павш	unknown	
-13305	a:павший	short_f	па́вша	unknown	
-13305	a:павший	short_n	па́вше	unknown	
-13305	a:павший	short_pl	па́вши	mismatch	
-13334	a:верховый	short_m	верхо́в	mismatch	
-13334	a:верховый	short_f	верхо́ва	mismatch	
-13334	a:верховый	short_n	верхо́во	mismatch	
-13334	a:верховый	short_pl	верхо́вы	unknown	
-13371	a:всевышний	short_m	всевы́шен	unknown	
-13402	a:преднамеренный	short_m	преднаме́ренен	unknown	
-13431	a:погибший	short_m	поги́бш	unknown	
-13431	a:погибший	short_f	поги́бша	unknown	
-13431	a:погибший	short_n	поги́бше	unknown	
-13431	a:погибший	short_pl	поги́бши	mismatch	
-13448	a:матерой	short_m	матёр	mismatch	
-13448	a:матерой	short_f	матера́	mismatch	
-13448	a:матерой	short_n	матеро́	mismatch	
-13448	a:матерой	short_pl	матеры́	mismatch	
+162	a:новый	n_acc	но́вого	mismatch	
+202	a:маленький	comp	ме́ньший	mismatch	
+211	n:мать	pl_ins	матерьми́	unknown	
+229	a:никакой	f_ins	никако́ю	unknown	
+270	n:господь	sg_gen	господа	ok	unstressed
+270	n:господь	sg_dat	господу	ok	unstressed
+270	n:господь	sg_acc	господа	ok	unstressed
+270	n:господь	sg_ins	господом	ok	unstressed
+270	n:господь	sg_prep	господе	ok	unstressed
+292	a:любой	f_ins	любо́ю	mismatch	
+306	a:дорогой	sup	дорожа́йший	unknown	
+345	v:приехать	imp_sg	приезжа́й	mismatch	
+345	v:приехать	imp_pl	приезжа́йте	mismatch	
+358	a:старый	comp	ста́рше	mismatch	
+358	a:старый	sup	ста́рший	mismatch	
+403	a:второй	f_ins	второ́ю	mismatch	
+405	n:пять	sg_nom	пять	mismatch	
+405	n:пять	sg_gen	пяти	mismatch	unstressed
+405	n:пять	pl_nom	пяти	mismatch	unstressed
+405	n:пять	pl_gen	пя	unknown	
+421	n:свет	pl_nom	све́ты	mismatch	
+421	n:свет	pl_gen	све́тов	mismatch	
+421	n:свет	pl_dat	све́там	mismatch	
+421	n:свет	pl_acc	све́ты	mismatch	
+421	n:свет	pl_ins	све́тами	mismatch	
+421	n:свет	pl_prep	све́тах	mismatch	
+423	a:остальной	f_ins	остально́ю	unknown	
+474	v:уехать	imp_sg	уезжа́й	mismatch	
+474	v:уехать	imp_pl	уезжа́йте	mismatch	
+497	a:собственный	short_f	со́бственно	mismatch	
+497	a:собственный	short_n	со́бственна	mismatch	
+508	a:нормальный	sup	норма́льнейший	unknown	
+546	a:молодой	sup	молодейший	unknown	unstressed
+621	a:сей	f_ins	се́ю	mismatch	
+621	a:сей	n_nom	се	mismatch	
+621	a:сей	n_acc	се	mismatch	
+643	a:легчайший	short_m	легча́йш	unknown	
+643	a:легчайший	short_f	легча́йша	unknown	
+643	a:легчайший	short_n	легча́йше	unknown	
+643	a:легчайший	short_pl	легча́йши	unknown	
+648	a:больной	comp	больн	unknown	
+739	a:великий	short_m	вели́к	mismatch	
+739	a:великий	short_f	велика́	mismatch	
+739	a:великий	short_n	велико́	mismatch	
+739	a:великий	short_pl	велики́	mismatch	
+739	a:великий	comp	бо́льше	mismatch	
+739	a:великий	comp	бо́лее	mismatch	
+740	a:высокий	comp	вы́ше	mismatch	
+746	a:долгий	sup	до́лее	mismatch	
+750	v:исчезнуть	pst_f	исче́знула	unknown	
+750	v:исчезнуть	pst_n	исче́знуло	unknown	
+750	v:исчезнуть	pst_pl	исче́знули	unknown	
+792	v:погибнуть	pst_m	поги́бнул	unknown	
+792	v:погибнуть	pst_f	поги́бнула	unknown	
+792	v:погибнуть	pst_n	поги́бнуло	unknown	
+792	v:погибнуть	pst_pl	поги́бнули	unknown	
+793	n:детка	pl_nom	де́тки	mismatch	
+793	n:детка	pl_gen	де́ток	mismatch	
+793	n:детка	pl_dat	де́ткам	mismatch	
+793	n:детка	pl_acc	де́ток	mismatch	
+793	n:детка	pl_ins	де́тками	mismatch	
+793	n:детка	pl_prep	де́тках	mismatch	
+811	a:всякий	f_ins	вся́кою	mismatch	
+871	n:девчонка	sg_gen	девчонки	ok	unstressed
+871	n:девчонка	sg_dat	девчонке	ok	unstressed
+871	n:девчонка	sg_acc	девчонку	ok	unstressed
+871	n:девчонка	sg_ins	девчонкой	ok	unstressed
+871	n:девчонка	sg_ins	девчонкою	ok	unstressed
+871	n:девчонка	sg_prep	девчонке	ok	unstressed
+871	n:девчонка	pl_nom	девчонки	ok	unstressed
+871	n:девчонка	pl_dat	девчонкам	ok	unstressed
+871	n:девчонка	pl_ins	девчонками	ok	unstressed
+871	n:девчонка	pl_prep	девчонках	ok	unstressed
+874	a:крутой	sup	круте́йший	unknown	
+934	n:мечта	pl_gen	мечта́ний	mismatch	
+945	n:америка	pl_nom	Аме́рики	mismatch	
+945	n:америка	pl_gen	Аме́рик	unknown	
+945	n:америка	pl_dat	Аме́рикам	unknown	
+945	n:америка	pl_acc	Аме́рики	mismatch	
+945	n:америка	pl_ins	Аме́риками	unknown	
+945	n:америка	pl_prep	Аме́риках	unknown	
+960	n:пиво	pl_nom	пи́ва	mismatch	
+960	n:пиво	pl_gen	пив	mismatch	
+960	n:пиво	pl_dat	пи́вам	unknown	
+960	n:пиво	pl_acc	пи́ва	mismatch	
+960	n:пиво	pl_ins	пи́вами	unknown	
+960	n:пиво	pl_prep	пи́вах	unknown	
+974	n:церковь	pl_dat	церква́м	mismatch	
+974	n:церковь	pl_ins	церква́ми	mismatch	
+974	n:церковь	pl_prep	церква́х	mismatch	
+987	n:рождество	pl_nom	рождества́	mismatch	
+987	n:рождество	pl_gen	рожде́ств	unknown	
+987	n:рождество	pl_dat	рождества́м	unknown	
+987	n:рождество	pl_acc	рождества́	mismatch	
+987	n:рождество	pl_ins	рождества́ми	unknown	
+987	n:рождество	pl_prep	рождества́х	unknown	
+1007	a:особенный	short_m	осо́бенен	unknown	
+1025	n:животное	pl_acc	живо́тные	mismatch	
+1027	n:нос	sg_gen	но́су	mismatch	
+1047	n:сынок	sg_acc	сыно́к	mismatch	
+1047	n:сынок	pl_acc	сынки́	mismatch	
+1128	v:установить	inf	установить	ok	unstressed
+1152	a:кой	f_ins	ко́ею	unknown	
+1175	n:участок	sg_acc	уча́стка	mismatch	
+1175	n:участок	pl_acc	уча́стков	mismatch	
+1189	v:беспокоить	imp_sg	безпоко́й	unknown	
+1189	v:беспокоить	imp_pl	безпоко́йте	unknown	
+1195	v:переехать	imp_sg	переезжа́й	mismatch	
+1195	v:переехать	imp_pl	переезжа́йте	mismatch	
+1212	n:месье	pl_nom	месье́	mismatch	
+1212	n:месье	pl_gen	месье́	mismatch	
+1212	n:месье	pl_dat	месье́	mismatch	
+1212	n:месье	pl_acc	месье́	mismatch	
+1212	n:месье	pl_ins	месье́	mismatch	
+1212	n:месье	pl_prep	месье́	mismatch	
+1252	a:тёмный	sup	темне́йший	unknown	
+1266	a:неплохой	short_m	неплох	ok	unstressed
+1311	n:подружка	pl_acc	подру́жки	mismatch	
+1320	n:добро	pl_nom	добра́	mismatch	
+1320	n:добро	pl_gen	добр	mismatch	
+1320	n:добро	pl_dat	добра́м	unknown	
+1320	n:добро	pl_acc	добра́	mismatch	
+1320	n:добро	pl_ins	добра́ми	unknown	
+1320	n:добро	pl_prep	добра́х	unknown	
+1325	a:особый	short_m	осо́б	mismatch	
+1325	a:особый	short_f	осо́ба	mismatch	
+1325	a:особый	short_n	осо́бо	mismatch	
+1325	a:особый	short_pl	осо́бы	mismatch	
+1335	a:весёлый	sup	веселе́йший	unknown	
+1376	a:сукин	m_gen	сукиного	ok	unstressed
+1376	a:сукин	m_dat	сукиному	ok	unstressed
+1376	a:сукин	m_acc	сукиного	ok	unstressed
+1376	a:сукин	n_gen	сукиного	ok	unstressed
+1412	a:зелёный	sup	зелене́йший	unknown	
+1423	a:крупный	short_pl	кру́пны́	ok	
+1447	n:США	sg_nom	США	mismatch	
+1447	n:США	sg_gen	США	mismatch	
+1447	n:США	sg_dat	США	mismatch	
+1447	n:США	sg_acc	США	mismatch	
+1447	n:США	sg_ins	США	mismatch	
+1447	n:США	sg_prep	США	mismatch	
+1524	a:таковой	f_ins	таково́ю	unknown	
+1525	a:домашний	short_m	дома́шен	unknown	
+1532	a:малый	short_m	мал	mismatch	
+1532	a:малый	short_f	мала́	mismatch	
+1532	a:малый	short_n	мало́	mismatch	
+1532	a:малый	short_pl	малы́	mismatch	
+1532	a:малый	comp	ме́ньше	mismatch	
+1584	v:дождаться	np_1sg	дождала́ю́сь	unknown	
+1584	v:дождаться	np_2sg	дождала́ёшься	unknown	
+1584	v:дождаться	np_3sg	дождала́ётся	unknown	
+1584	v:дождаться	np_1pl	дождала́ёмся	unknown	
+1584	v:дождаться	np_2pl	дождала́ётесь	unknown	
+1584	v:дождаться	np_3pl	дождала́ю́тся	unknown	
+1584	v:дождаться	imp_sg	дождала́и́сь	unknown	
+1584	v:дождаться	imp_pl	дождала́и́тесь	unknown	
+1586	v:достигнуть	pst_m	дости́гнул	unknown	
+1586	v:достигнуть	pst_f	дости́гнула	unknown	
+1586	v:достигнуть	pst_n	дости́гнуло	unknown	
+1586	v:достигнуть	pst_pl	дости́гнули	unknown	
+1606	n:мясо	pl_nom	мя́са	mismatch	
+1606	n:мясо	pl_gen	мяс	unknown	
+1606	n:мясо	pl_dat	мя́сам	unknown	
+1606	n:мясо	pl_acc	мя́са	mismatch	
+1606	n:мясо	pl_ins	мя́сами	unknown	
+1606	n:мясо	pl_prep	мя́сах	unknown	
+1638	n:дружище	pl_nom	дружи́ща	mismatch	
+1644	a:узкий	short_pl	у́зки́	ok	
+1644	a:узкий	sup	узча́йший	unknown	
+1650	a:мелкий	comp	мельче	ok	unstressed
+1650	a:мелкий	sup	мелчайший	unknown	unstressed
+1685	v:завести	np_1sg	заведу	ok	unstressed
+1685	v:завести	np_3pl	заведут	ok	unstressed
+1685	v:завести	pst_f	завела	ok	unstressed
+1685	v:завести	pst_n	завело	ok	unstressed
+1685	v:завести	pst_pl	завели	ok	unstressed
+1685	v:завести	imp_sg	заведи	ok	unstressed
+1685	v:завести	imp_pl	заведите	ok	unstressed
+1703	n:тень	pl_acc	те́ней	mismatch	
+1727	n:Франция	sg_ins	Фра́нциею	unknown	
+1728	a:симпатичный	sup	симпати́чнейший	unknown	
+1729	a:достойный	short_m	досто́ен	unknown	
+1732	a:южный	sup	южне́йший	unknown	
+1735	n:лето	pl_nom	лета́	mismatch	
+1735	n:лето	pl_gen	лет	mismatch	
+1735	n:лето	pl_dat	лета́м	mismatch	
+1735	n:лето	pl_acc	лета́	mismatch	
+1735	n:лето	pl_ins	лета́ми	mismatch	
+1735	n:лето	pl_prep	лета́х	mismatch	
+1837	n:Англия	sg_ins	А́нглиею	unknown	
+1838	a:четвёртый	f_ins	четвёртою	unknown	
+1841	a:обратный	short_n	обра́тна	mismatch	
+1949	n:север	pl_nom	севера́	mismatch	
+1949	n:север	pl_acc	севера́	mismatch	
+1955	v:оказать	np_1sg	оказа́ю	unknown	
+1955	v:оказать	np_2sg	оказа́ешь	unknown	
+1955	v:оказать	np_3sg	оказа́ет	unknown	
+1955	v:оказать	np_1pl	оказа́ем	unknown	
+1955	v:оказать	np_2pl	оказа́ете	unknown	
+1955	v:оказать	np_3pl	оказа́ют	unknown	
+1955	v:оказать	imp_sg	оказа́й	unknown	
+1955	v:оказать	imp_pl	оказа́йте	unknown	
+1967	v:почтить	np_3pl	почтят	ok	unstressed
+1967	v:почтить	np_3pl	почту́т	mismatch	
+1967	v:почтить	imp_sg	почтят	mismatch	unstressed
+1967	v:почтить	imp_pl	почтят	mismatch	unstressed
+1974	v:возникнуть	pst_m	возни́кнул	unknown	
+1974	v:возникнуть	pst_f	возни́кнула	unknown	
+1974	v:возникнуть	pst_n	возни́кнуло	unknown	
+1974	v:возникнуть	pst_pl	возни́кнули	unknown	
+2000	a:взрослый	short_m	взро́сел	unknown	
+2001	a:пятый	f_ins	пя́тою	mismatch	
+2093	v:выдать	pst_n	вы́дало́	ok	
+2098	a:мировой	short_pl	мировы́	unknown	
+2107	a:вчерашний	short_m	вчера́шен	unknown	
+2113	a:иной	f_ins	ино́ю	unknown	
+2136	a:кое-какой	f_ins	кое-како́ю	unknown	
+2141	n:Чикаго	pl_nom	Чика́го	mismatch	
+2141	n:Чикаго	pl_gen	Чика́го	mismatch	
+2141	n:Чикаго	pl_dat	Чика́го	mismatch	
+2141	n:Чикаго	pl_acc	Чика́го	mismatch	
+2141	n:Чикаго	pl_ins	Чика́го	mismatch	
+2141	n:Чикаго	pl_prep	Чика́го	mismatch	
+2175	n:юг	pl_nom	юга́	mismatch	
+2175	n:юг	pl_acc	юга́	mismatch	
+2237	a:очередной	short_pl	очередны́	unknown	
+2247	a:тёплый	sup	тепле́йший	unknown	
+2278	v:проехать	imp_sg	проезжа́й	mismatch	
+2278	v:проехать	imp_pl	проезжа́йте	mismatch	
+2286	a:дешёвый	sup	дешеве́йший	unknown	
+2381	v:проникнуть	pst_m	прони́кнул	unknown	
+2381	v:проникнуть	pst_f	прони́кнула	unknown	
+2381	v:проникнуть	pst_n	прони́кнуло	unknown	
+2381	v:проникнуть	pst_pl	прони́кнули	unknown	
+2396	a:восточный	sup	восто́чнейший	unknown	
+2440	a:жёсткий	sup	жёстчейщий	unknown	
+2554	n:рай	pl_nom	ра́и	mismatch	
+2554	n:рай	pl_gen	ра́ев	unknown	
+2554	n:рай	pl_dat	ра́ям	mismatch	
+2554	n:рай	pl_acc	ра́и	mismatch	
+2554	n:рай	pl_ins	ра́ями	mismatch	
+2554	n:рай	pl_prep	ра́ях	mismatch	
+2555	n:тридцать	sg_nom	три́дцать	mismatch	
+2555	n:тридцать	sg_gen	тридцати	mismatch	unstressed
+2555	n:тридцать	pl_nom	тридцати	mismatch	unstressed
+2555	n:тридцать	pl_gen	тридца	unknown	unstressed
+2566	n:китай	sg_nom	китай	ok	unstressed
+2566	n:китай	sg_gen	китая	ok	unstressed
+2566	n:китай	sg_dat	китаю	ok	unstressed
+2566	n:китай	sg_acc	китай	ok	unstressed
+2566	n:китай	sg_ins	китаем	ok	unstressed
+2566	n:китай	sg_prep	китае	ok	unstressed
+2595	a:чей-то	m_gen	чьего-то	ok	unstressed
+2595	a:чей-то	m_dat	чьему-то	ok	unstressed
+2595	a:чей-то	m_acc	чейчьего-то	unknown	unstressed
+2595	a:чей-то	m_ins	чьим-то	ok	unstressed
+2595	a:чей-то	f_nom	чья-то	ok	unstressed
+2595	a:чей-то	f_gen	чьей-то	ok	unstressed
+2595	a:чей-то	f_dat	чьей-то	ok	unstressed
+2595	a:чей-то	f_acc	чью-то	ok	unstressed
+2595	a:чей-то	f_ins	чьей-то	ok	unstressed
+2595	a:чей-то	f_prep	чьей-то	ok	unstressed
+2595	a:чей-то	n_gen	чьего-то	ok	unstressed
+2595	a:чей-то	n_dat	чьему-то	ok	unstressed
+2595	a:чей-то	n_acc	чейчьего-то	unknown	unstressed
+2595	a:чей-то	n_ins	чьим-то	ok	unstressed
+2595	a:чей-то	pl_nom	чьи-то	ok	unstressed
+2595	a:чей-то	pl_gen	чьих-то	ok	unstressed
+2595	a:чей-то	pl_dat	чьим-то	ok	unstressed
+2595	a:чей-то	pl_acc	чьичьих-то	unknown	unstressed
+2595	a:чей-то	pl_ins	чьими-то	ok	unstressed
+2595	a:чей-то	pl_prep	чьих-то	ok	unstressed
+2598	n:кан	pl_acc	ка́нов	mismatch	
+2607	n:Германия	sg_ins	Герма́ниею	unknown	
+2623	n:рабочий	sg_acc	рабо́чий	mismatch	
+2623	n:рабочий	pl_acc	рабо́чие	mismatch	
+2642	v:выставить	imp_sg	вы́стави	unknown	
+2657	n:африка	pl_nom	а́фрики	mismatch	
+2657	n:африка	pl_gen	а́фрик	unknown	
+2657	n:африка	pl_dat	а́фрикам	unknown	
+2657	n:африка	pl_acc	а́фрики	mismatch	
+2657	n:африка	pl_ins	а́фриками	unknown	
+2657	n:африка	pl_prep	а́фриках	unknown	
+2665	n:Япония	sg_ins	Япо́ниею	unknown	
+2673	a:мобильный	sup	моби́льнейший	unknown	
+2679	n:Россия	sg_ins	Росси́ею	unknown	
+2689	a:завтрашний	short_m	за́втрашен	unknown	
+2690	v:захотеться	np_3sg	захочется	ok	unstressed
+2690	v:захотеться	pst_n	захотелось	ok	unstressed
+2710	n:полгода	sg_gen	полугода	ok	unstressed
+2710	n:полгода	sg_dat	полугоду	ok	unstressed
+2710	n:полгода	sg_ins	полугодом	ok	unstressed
+2710	n:полгода	sg_prep	полугоде	ok	unstressed
+2710	n:полгода	pl_nom	полугоды	unknown	unstressed
+2710	n:полгода	pl_gen	полугодов	unknown	unstressed
+2710	n:полгода	pl_dat	полугодам	unknown	unstressed
+2710	n:полгода	pl_acc	полугоды	unknown	unstressed
+2710	n:полгода	pl_ins	полугодами	unknown	unstressed
+2710	n:полгода	pl_prep	полугодах	unknown	unstressed
+2714	a:жёлтый	sup	желте́йший	unknown	
+2743	v:сдохнуть	pst_m	сдо́хнул	unknown	
+2743	v:сдохнуть	pst_f	сдо́хнула	unknown	
+2743	v:сдохнуть	pst_n	сдо́хнуло	unknown	
+2743	v:сдохнуть	pst_pl	сдо́хнули	unknown	
+2764	a:выпускной	m_ins	выпускного	mismatch	unstressed
+2765	a:прочий	f_ins	про́чею	unknown	
+2774	a:шестой	f_ins	шесто́ю	unknown	
+2792	a:внешний	short_m	вне́шен	unknown	
+2792	a:внешний	short_f	вне́шне	mismatch	
+2792	a:внешний	short_n	вне́шня	unknown	
+2792	a:внешний	short_pl	вне́шни	unknown	
+2819	n:майя	pl_gen	майь	unknown	
+2819	n:майя	pl_acc	ма́йи	mismatch	
+2868	n:Христос	pl_nom	Христы́	unknown	
+2868	n:Христос	pl_gen	Христо́в	mismatch	
+2868	n:Христос	pl_dat	Христа́м	unknown	
+2868	n:Христос	pl_acc	Христо́в	mismatch	
+2868	n:Христос	pl_ins	Христа́ми	unknown	
+2868	n:Христос	pl_prep	Христа́х	unknown	
+2884	a:мерзкий	comp	мерзе́е	unknown	
+2909	a:седьмой	f_ins	седьмо́ю	unknown	
+2989	a:дурной	sup	дурне́йший	unknown	
+3010	v:поздороваться	np_1sg	поздороваюсь	ok	unstressed
+3010	v:поздороваться	np_2sg	поздороваешься	ok	unstressed
+3010	v:поздороваться	np_3sg	поздоровается	ok	unstressed
+3010	v:поздороваться	np_1pl	поздороваемся	ok	unstressed
+3010	v:поздороваться	np_2pl	поздороваетесь	ok	unstressed
+3010	v:поздороваться	np_3pl	поздороваются	ok	unstressed
+3022	n:Италия	sg_ins	Ита́лиею	unknown	
+3022	n:Италия	pl_nom	Ита́лии	mismatch	
+3022	n:Италия	pl_gen	Ита́лий	unknown	
+3022	n:Италия	pl_dat	Ита́лиям	unknown	
+3022	n:Италия	pl_acc	Ита́лии	mismatch	
+3022	n:Италия	pl_ins	Ита́лиями	unknown	
+3022	n:Италия	pl_prep	Ита́лиях	unknown	
+3062	v:очистить	imp_pl	о́чи́стите	ok	
+3062	v:очистить	imp_pl	о́чи́стьте	ok	
+3080	n:пыль	pl_nom	пы́ли	mismatch	
+3080	n:пыль	pl_gen	пы́лей	unknown	
+3080	n:пыль	pl_dat	пы́лям	unknown	
+3080	n:пыль	pl_acc	пы́ли	mismatch	
+3080	n:пыль	pl_ins	пы́лями	unknown	
+3080	n:пыль	pl_prep	пы́лях	unknown	
+3146	v:класть	pst_f	клала	ok	unstressed
+3146	v:класть	pst_n	клало	ok	unstressed
+3146	v:класть	pst_pl	клали	ok	unstressed
+3146	v:класть	imp_pl	кладите	ok	unstressed
+3159	n:аппетит	sg_gen	аппетита	ok	unstressed
+3159	n:аппетит	sg_dat	аппетиту	ok	unstressed
+3159	n:аппетит	sg_ins	аппетитом	ok	unstressed
+3159	n:аппетит	sg_prep	аппетите	ok	unstressed
+3177	n:любитель	pl_nom	любителя́	mismatch	
+3230	n:каникулы	pl_ins	кани́кулам	mismatch	
+3304	n:София	sg_ins	Софи́ею	unknown	
+3316	n:солнышко	pl_nom	со́лнышка	mismatch	
+3356	a:печальный	sup	печа́льнейший	unknown	
+3385	n:подонок	sg_acc	подо́нок	mismatch	
+3385	n:подонок	pl_acc	подо́нки	mismatch	
+3406	a:клёвый	short_m	клёв	mismatch	
+3406	a:клёвый	short_f	клёва	mismatch	
+3406	a:клёвый	short_n	клёво	mismatch	
+3406	a:клёвый	short_pl	клёвы	mismatch	
+3434	n:горе	pl_nom	го́ря	mismatch	
+3434	n:горе	pl_gen	горь	unknown	
+3434	n:горе	pl_dat	го́рям	unknown	
+3434	n:горе	pl_acc	го́ря	mismatch	
+3434	n:горе	pl_ins	го́рями	unknown	
+3434	n:горе	pl_prep	го́рях	unknown	
+3446	n:бег	pl_nom	бега́	mismatch	
+3446	n:бег	pl_gen	бего́в	mismatch	
+3446	n:бег	pl_dat	бега́м	mismatch	
+3446	n:бег	pl_acc	бега́	mismatch	
+3446	n:бег	pl_ins	бега́ми	mismatch	
+3446	n:бег	pl_prep	бега́х	mismatch	
+3462	a:рождественский	short_m	рожде́ственск	unknown	
+3462	a:рождественский	short_f	рожде́ственска	unknown	
+3462	a:рождественский	short_n	рожде́ственско	unknown	
+3462	a:рождественский	short_pl	рожде́ственски	unknown	
+3496	n:Индия	sg_ins	Индией	ok	unstressed
+3496	n:Индия	sg_ins	Индиею	unknown	unstressed
+3499	n:Испания	sg_ins	Испа́ниею	unknown	
+3534	n:май	pl_nom	ма́и	mismatch	
+3534	n:май	pl_gen	ма́ев	unknown	
+3534	n:май	pl_dat	ма́ям	unknown	
+3534	n:май	pl_acc	ма́и	mismatch	
+3534	n:май	pl_ins	ма́ями	unknown	
+3534	n:май	pl_prep	ма́ях	unknown	
+3678	n:фронт	sg_gen	фро́нта́	ok	
+3678	n:фронт	sg_dat	фро́нту́	ok	
+3678	n:фронт	sg_ins	фро́нто́м	ok	
+3678	n:фронт	sg_prep	фро́нте́	ok	
+3678	n:фронт	pl_nom	фро́нты́	ok	
+3678	n:фронт	pl_gen	фро́нто́в	ok	
+3678	n:фронт	pl_dat	фро́нта́м	ok	
+3678	n:фронт	pl_acc	фро́нты́	ok	
+3678	n:фронт	pl_ins	фро́нта́ми	ok	
+3678	n:фронт	pl_prep	фро́нта́х	ok	
+3698	a:крошечный	sup	кро́шечнейший	unknown	
+3705	a:публичный	short_m	публичен	ok	unstressed
+3710	a:компьютерный	m_ins	компью́терном	mismatch	
+3710	a:компьютерный	n_ins	компью́терном	mismatch	
+3742	a:глухой	comp	глуше	ok	unstressed
+3759	a:романтический	short_m	романти́ческ	unknown	
+3759	a:романтический	short_f	романти́ческа	unknown	
+3759	a:романтический	short_n	романти́ческо	unknown	
+3759	a:романтический	short_pl	романти́чески	mismatch	
+3775	n:сити	pl_nom	си́ти	mismatch	
+3775	n:сити	pl_gen	си́ти	mismatch	
+3775	n:сити	pl_dat	си́ти	mismatch	
+3775	n:сити	pl_acc	си́ти	mismatch	
+3775	n:сити	pl_ins	си́ти	mismatch	
+3775	n:сити	pl_prep	си́ти	mismatch	
+3819	a:абсолютный	sup	абсолю́тнейший	unknown	
+3871	a:достаточный	sup	доста́точнейший	unknown	
+3875	n:пятнадцать	sg_nom	пятна́дцать	mismatch	
+3875	n:пятнадцать	sg_gen	пятнадцати	mismatch	unstressed
+3875	n:пятнадцать	sg_dat	пятнадцати	mismatch	unstressed
+3875	n:пятнадцать	sg_acc	пятна́дцать	mismatch	
+3875	n:пятнадцать	sg_ins	пятнадцатью	mismatch	unstressed
+3875	n:пятнадцать	sg_prep	пятнадцати	mismatch	unstressed
+3881	n:жар	sg_ins	жаром	ok	unstressed
+3903	n:график	sg_nom	графтк	unknown	
+3903	n:график	pl_nom	графики	ok	unstressed
+3940	n:выживание	pl_nom	выжива́ния	mismatch	
+3940	n:выживание	pl_gen	выжива́ний	unknown	
+3940	n:выживание	pl_dat	выжива́ниям	unknown	
+3940	n:выживание	pl_acc	выжива́ния	mismatch	
+3940	n:выживание	pl_ins	выжива́ниями	unknown	
+3940	n:выживание	pl_prep	выжива́ниях	unknown	
+3995	v:отступить	np_2sg	отступишь	ok	unstressed
+3995	v:отступить	np_3sg	отступит	ok	unstressed
+3995	v:отступить	np_1pl	отступим	ok	unstressed
+3995	v:отступить	np_3pl	отступят	ok	unstressed
+4031	a:твёрдый	sup	тверде́йший	unknown	
+4094	v:перевернуть	np_3pl	перевернут	ok	unstressed
+4098	n:запуск	pl_nom	запуска́	mismatch	
+4098	n:запуск	pl_acc	запуска́	mismatch	
+4101	n:Токио	pl_nom	То́кио	mismatch	
+4101	n:Токио	pl_gen	То́кио	mismatch	
+4101	n:Токио	pl_dat	То́кио	mismatch	
+4101	n:Токио	pl_acc	То́кио	mismatch	
+4101	n:Токио	pl_ins	То́кио	mismatch	
+4101	n:Токио	pl_prep	То́кио	mismatch	
+4144	v:вырезать	imp_sg	вы́режи	unknown	
+4185	n:парнишка	pl_acc	парни́шки	mismatch	
+4186	v:выехать	imp_sg	выезжа́й	mismatch	
+4186	v:выехать	imp_pl	выезжа́йте	mismatch	
+4193	n:марсель	pl_nom	ма́рселя	mismatch	
+4193	n:марсель	pl_acc	ма́рселя	mismatch	
+4233	n:джи	pl_nom	джи	mismatch	
+4233	n:джи	pl_gen	джи	mismatch	
+4233	n:джи	pl_dat	джи	mismatch	
+4233	n:джи	pl_acc	джи	mismatch	
+4233	n:джи	pl_ins	джи	mismatch	
+4233	n:джи	pl_prep	джи	mismatch	
+4256	a:чувствительный	sup	самый-чувствительный	unknown	unstressed
+4257	a:восьмой	f_ins	восьмо́ю	unknown	
+4297	n:Австралия	sg_ins	Австра́лиею	unknown	
+4299	a:покойный	short_m	поко́йн	unknown	
+4305	a:тяжкий	short_pl	тя́жки́	ok	
+4326	a:верховный	short_f	верхо́вна́	ok	
+4344	n:паренёк	sg_acc	паренёк	mismatch	
+4344	n:паренёк	pl_acc	пареньки́	mismatch	
+4382	n:сми	sg_nom	сми	mismatch	
+4382	n:сми	sg_gen	сми	mismatch	
+4382	n:сми	sg_dat	сми	mismatch	
+4382	n:сми	sg_acc	сми	mismatch	
+4382	n:сми	sg_ins	сми	mismatch	
+4382	n:сми	sg_prep	сми	mismatch	
+4395	a:злобный	sup	зло́бнейшый	unknown	
+4466	a:дальний	short_m	да́лен	unknown	
+4466	a:дальний	comp	да́лее	mismatch	
+4466	a:дальний	comp	да́льше	mismatch	
+4466	a:дальний	comp	дальне́йший	mismatch	
+4480	v:врезаться	np_1sg	вре́жюсь	unknown	
+4480	v:врезаться	np_3pl	вре́жются	unknown	
+4484	v:засыпать	np_3pl	засы́пют	unknown	
+4508	a:серебряный	short_f	сере́бряно	mismatch	
+4508	a:серебряный	short_n	сере́бряна	mismatch	
+4520	a:девятый	f_ins	девя́тою	unknown	
+4528	n:приманка	sg_nom	приманок	mismatch	unstressed
+4528	n:приманка	sg_gen	прима́нка	mismatch	
+4528	n:приманка	sg_dat	прима́нку	mismatch	
+4528	n:приманка	sg_acc	приманок	mismatch	unstressed
+4528	n:приманка	sg_ins	прима́нком	unknown	
+4528	n:приманка	pl_gen	прима́нков	unknown	
+4530	a:модный	short_pl	мо́дны́	ok	
+4545	a:жаркий	sup	жа́рчейщий	unknown	
+4546	n:двести	sg_nom	две́сти	mismatch	
+4546	n:двести	sg_gen	двухсо́т	mismatch	
+4546	n:двести	sg_dat	двумста́м	mismatch	
+4546	n:двести	sg_acc	две́сти	mismatch	
+4546	n:двести	sg_ins	двумяста́ми	mismatch	
+4546	n:двести	sg_prep	двухста́х	mismatch	
+4564	n:пресс-конференция	sg_gen	пресс-конференции	ok	unstressed
+4564	n:пресс-конференция	sg_dat	пресс-конферении	unknown	unstressed
+4564	n:пресс-конференция	sg_acc	пресс-конференцию	ok	unstressed
+4564	n:пресс-конференция	sg_ins	пресс-конференцией	ok	unstressed
+4564	n:пресс-конференция	sg_prep	пресс-конференции	ok	unstressed
+4564	n:пресс-конференция	pl_nom	пресс-конференции	ok	unstressed
+4564	n:пресс-конференция	pl_gen	пресс-конференций	ok	unstressed
+4564	n:пресс-конференция	pl_dat	пресс-конференциям	ok	unstressed
+4564	n:пресс-конференция	pl_acc	пресс-конфереции	unknown	unstressed
+4564	n:пресс-конференция	pl_ins	пресс-конференциями	ok	unstressed
+4564	n:пресс-конференция	pl_prep	пресс-конференциях	ok	unstressed
+4568	v:сфотографировать	np_1sg	сфотографирую	ok	unstressed
+4568	v:сфотографировать	np_2sg	сфотографируешь	ok	unstressed
+4568	v:сфотографировать	np_3sg	сфотографирует	ok	unstressed
+4568	v:сфотографировать	np_1pl	сфотографируем	ok	unstressed
+4568	v:сфотографировать	np_2pl	сфотографируете	ok	unstressed
+4568	v:сфотографировать	np_3pl	сфотографируют	ok	unstressed
+4568	v:сфотографировать	pst_m	сфотографировал	ok	unstressed
+4568	v:сфотографировать	pst_f	сфотографировала	ok	unstressed
+4568	v:сфотографировать	pst_n	сфотографировало	ok	unstressed
+4568	v:сфотографировать	pst_pl	сфотографировали	ok	unstressed
+4600	n:пи	pl_nom	пи	mismatch	
+4600	n:пи	pl_gen	пи	mismatch	
+4600	n:пи	pl_dat	пи	mismatch	
+4600	n:пи	pl_acc	пи	mismatch	
+4600	n:пи	pl_ins	пи	mismatch	
+4600	n:пи	pl_prep	пи	mismatch	
+4605	a:суровый	sup	суро́вейший	unknown	
+4624	a:положительный	short_f	положи́тельн	unknown	
+4636	n:Британия	sg_ins	Брита́ниею	unknown	
+4644	n:Колумбия	sg_ins	Колу́мбиею	unknown	
+4661	n:насекомое	sg_acc	насеко́мого	mismatch	
+4670	a:посторонний	short_m	посторо́нен	unknown	
+4717	a:папин	m_gen	папиного	ok	unstressed
+4717	a:папин	m_dat	папиному	ok	unstressed
+4717	a:папин	m_acc	папиного	ok	unstressed
+4717	a:папин	n_gen	папиного	ok	unstressed
+4760	a:отчаянный	short_f	отча́яна	unknown	
+4760	a:отчаянный	short_n	отча́яно	unknown	
+4760	a:отчаянный	short_pl	отча́яны	unknown	
+4776	a:прикольный	comp	прико́льнее	unknown	
+4776	a:прикольный	sup	прико́льнейший	unknown	
+4832	a:идиотский	short_m	идио́тск	unknown	
+4832	a:идиотский	short_f	идио́тска	unknown	
+4832	a:идиотский	short_n	идио́тско	unknown	
+4832	a:идиотский	short_pl	идио́тски	mismatch	
+4861	n:Шотландия	sg_ins	Шотла́ндиею	unknown	
+4871	n:езда	sg_gen	езди́	mismatch	
+4875	a:критический	short_m	крити́ческ	unknown	
+4875	a:критический	short_f	крити́ческа	unknown	
+4875	a:критический	short_n	крити́ческо	unknown	
+4875	a:критический	short_pl	крити́чески	mismatch	
+4883	v:записаться	np_1sg	запишусь	ok	unstressed
+4883	v:записаться	np_2sg	запишешься	ok	unstressed
+4883	v:записаться	np_3sg	запишется	ok	unstressed
+4883	v:записаться	np_1pl	запишемся	ok	unstressed
+4883	v:записаться	np_2pl	запишетесь	ok	unstressed
+4883	v:записаться	np_3pl	запишутся	ok	unstressed
+4883	v:записаться	pst_m	записался	ok	unstressed
+4883	v:записаться	pst_f	записалась	ok	unstressed
+4883	v:записаться	pst_n	записалось	ok	unstressed
+4883	v:записаться	pst_pl	записались	ok	unstressed
+4883	v:записаться	imp_sg	запишись	ok	unstressed
+4883	v:записаться	imp_pl	запишитесь	ok	unstressed
+4931	n:оон	sg_nom	оон	ok	unstressed
+4931	n:оон	sg_gen	оон	ok	unstressed
+4931	n:оон	sg_dat	оон	ok	unstressed
+4931	n:оон	sg_acc	оон	ok	unstressed
+4931	n:оон	sg_ins	оон	ok	unstressed
+4931	n:оон	sg_prep	оон	ok	unstressed
+4931	n:оон	pl_nom	оон	mismatch	unstressed
+4931	n:оон	pl_gen	оон	mismatch	unstressed
+4931	n:оон	pl_dat	оон	mismatch	unstressed
+4931	n:оон	pl_acc	оон	mismatch	unstressed
+4931	n:оон	pl_ins	оон	mismatch	unstressed
+4931	n:оон	pl_prep	оон	mismatch	unstressed
+4957	a:магический	short_m	маги́ческ	unknown	
+4957	a:магический	short_f	маги́ческа	unknown	
+4957	a:магический	short_n	маги́ческо	unknown	
+4957	a:магический	short_pl	маги́чески	mismatch	
+4975	n:порох	pl_nom	порохи́	unknown	
+4975	n:порох	pl_acc	порохи́	unknown	
+4999	a:отрицательный	short_f	отрица́тельн	unknown	
+5008	n:полк	sg_gen	полку́	mismatch	
+5016	v:сократить	np_1sg	сокрачу́	unknown	
+5017	a:налоговый	m_gen	налогового	ok	unstressed
+5017	a:налоговый	m_dat	налоговому	ok	unstressed
+5017	a:налоговый	m_acc	ого́	mismatch	
+5017	a:налоговый	m_ins	налоговым	ok	unstressed
+5017	a:налоговый	m_prep	налоговом	ok	unstressed
+5017	a:налоговый	f_nom	налоговая	ok	unstressed
+5017	a:налоговый	f_gen	налоговой	ok	unstressed
+5017	a:налоговый	f_dat	налоговой	ok	unstressed
+5017	a:налоговый	f_acc	налоговую	ok	unstressed
+5017	a:налоговый	f_ins	налоговой	ok	unstressed
+5017	a:налоговый	f_prep	налоговой	ok	unstressed
+5017	a:налоговый	n_nom	налоговое	ok	unstressed
+5017	a:налоговый	n_gen	налогового	ok	unstressed
+5017	a:налоговый	n_dat	налоговому	ok	unstressed
+5017	a:налоговый	n_acc	налоговое	ok	unstressed
+5017	a:налоговый	n_ins	налоговым	ok	unstressed
+5017	a:налоговый	n_prep	налоговом	ok	unstressed
+5017	a:налоговый	pl_nom	налоговые	ok	unstressed
+5017	a:налоговый	pl_gen	налоговых	ok	unstressed
+5017	a:налоговый	pl_dat	налоговым	ok	unstressed
+5017	a:налоговый	pl_acc	налоговые	ok	unstressed
+5017	a:налоговый	pl_acc	ых	unknown	
+5017	a:налоговый	pl_ins	налоговыми	ok	unstressed
+5017	a:налоговый	pl_prep	налоговых	ok	unstressed
+5081	n:голубь	sg_nom	голубь	ok	unstressed
+5088	n:сканирование	pl_nom	скани́рования	mismatch	
+5088	n:сканирование	pl_gen	скани́рований	unknown	
+5088	n:сканирование	pl_dat	скани́рованиям	unknown	
+5088	n:сканирование	pl_acc	скани́рования	mismatch	
+5088	n:сканирование	pl_ins	скани́рованиями	unknown	
+5088	n:сканирование	pl_prep	скани́рованиях	unknown	
+5160	v:въехать	imp_sg	въезжа́й	mismatch	
+5160	v:въехать	imp_pl	въезжа́йте	mismatch	
+5201	n:Швейцария	sg_ins	Швейца́риею	unknown	
+5209	a:неподходящий	m_nom	неподходя́щый	unknown	
+5209	a:неподходящий	m_gen	неподходя́щого	unknown	
+5209	a:неподходящий	m_dat	неподходя́щому	unknown	
+5209	a:неподходящий	m_acc	неподходя́щый	unknown	
+5209	a:неподходящий	m_acc	неподходя́щого	unknown	
+5209	a:неподходящий	m_ins	неподходя́щым	unknown	
+5209	a:неподходящий	m_prep	неподходя́щом	unknown	
+5209	a:неподходящий	f_gen	неподходя́щой	unknown	
+5209	a:неподходящий	f_dat	неподходя́щой	unknown	
+5209	a:неподходящий	f_ins	неподходя́щой	unknown	
+5209	a:неподходящий	f_ins	неподходя́щою	unknown	
+5209	a:неподходящий	f_prep	неподходя́щой	unknown	
+5209	a:неподходящий	n_nom	неподходя́щое	unknown	
+5209	a:неподходящий	n_gen	неподходя́щого	unknown	
+5209	a:неподходящий	n_dat	неподходя́щому	unknown	
+5209	a:неподходящий	n_acc	неподходя́щое	unknown	
+5209	a:неподходящий	n_ins	неподходя́щым	unknown	
+5209	a:неподходящий	n_prep	неподходя́щом	unknown	
+5209	a:неподходящий	pl_nom	неподходя́щые	unknown	
+5209	a:неподходящий	pl_gen	неподходя́щых	unknown	
+5209	a:неподходящий	pl_dat	неподходя́щым	unknown	
+5209	a:неподходящий	pl_acc	неподходя́щые	unknown	
+5209	a:неподходящий	pl_acc	неподходя́щых	unknown	
+5209	a:неподходящий	pl_ins	неподходя́щыми	unknown	
+5209	a:неподходящий	pl_prep	неподходя́щых	unknown	
+5239	n:вагина	sg_gen	ваги́ны	mismatch	
+5239	n:вагина	sg_dat	ваги́не	mismatch	
+5239	n:вагина	sg_ins	ваги́ною	unknown	
+5239	n:вагина	pl_gen	ваги́н	mismatch	
+5239	n:вагина	pl_dat	ваги́нам	unknown	
+5239	n:вагина	pl_acc	ваги́ны	mismatch	
+5239	n:вагина	pl_ins	ваги́нами	unknown	
+5239	n:вагина	pl_prep	ваги́нах	unknown	
+5257	n:барахло	pl_nom	барахла́	mismatch	
+5257	n:барахло	pl_gen	барахо́л	unknown	
+5257	n:барахло	pl_dat	барахла́м	unknown	
+5257	n:барахло	pl_acc	барахла́	mismatch	
+5257	n:барахло	pl_ins	барахла́ми	unknown	
+5257	n:барахло	pl_prep	барахла́х	unknown	
+5265	n:воровство	pl_nom	воровства́	mismatch	
+5265	n:воровство	pl_gen	воро́вств	unknown	
+5265	n:воровство	pl_dat	воровства́м	unknown	
+5265	n:воровство	pl_acc	воровства́	mismatch	
+5265	n:воровство	pl_ins	воровства́ми	unknown	
+5265	n:воровство	pl_prep	воровства́х	unknown	
+5283	a:миленький	short_m	ми́ленек	unknown	
+5283	a:миленький	short_f	ми́ленька	unknown	
+5283	a:миленький	short_n	ми́ленько	mismatch	
+5283	a:миленький	short_pl	ми́леньки	unknown	
+5287	n:Бразилия	sg_ins	Брази́лиею	unknown	
+5307	n:лампочка	pl_gen	ла́мпочк	unknown	
+5368	v:подвергнуть	pst_f	подве́ргнула	unknown	
+5368	v:подвергнуть	pst_n	подве́ргнуло	unknown	
+5368	v:подвергнуть	pst_pl	подве́ргнули	unknown	
+5412	n:утешение	sg_gen	утешения	ok	unstressed
+5412	n:утешение	sg_dat	утешению	ok	unstressed
+5412	n:утешение	sg_ins	утешением	ok	unstressed
+5412	n:утешение	sg_prep	утешении	ok	unstressed
+5412	n:утешение	pl_nom	утешения	ok	unstressed
+5412	n:утешение	pl_gen	утешений	ok	unstressed
+5412	n:утешение	pl_dat	утешениям	ok	unstressed
+5412	n:утешение	pl_acc	утешения	ok	unstressed
+5412	n:утешение	pl_ins	утешениями	ok	unstressed
+5412	n:утешение	pl_prep	утешениях	ok	unstressed
+5416	a:генетический	short_m	генети́ческ	unknown	
+5416	a:генетический	short_f	генети́ческа	unknown	
+5416	a:генетический	short_n	генети́ческо	unknown	
+5416	a:генетический	short_pl	генети́чески	mismatch	
+5448	n:бах	sg_gen	баха	ok	unstressed
+5448	n:бах	sg_dat	баху	ok	unstressed
+5448	n:бах	sg_ins	бахом	ok	unstressed
+5448	n:бах	sg_prep	бахе	ok	unstressed
+5481	a:стальной	short_f	стальна́	unknown	
+5481	a:стальной	short_n	стально́	unknown	
+5481	a:стальной	short_pl	стальны́	unknown	
+5501	a:родительский	short_m	роди́тельск	unknown	
+5501	a:родительский	short_f	роди́тельска	unknown	
+5501	a:родительский	short_n	роди́тельско	unknown	
+5501	a:родительский	short_pl	роди́тельски	unknown	
+5527	a:денежный	f_nom	денежная	ok	unstressed
+5527	a:денежный	n_nom	денежное	ok	unstressed
+5527	a:денежный	pl_nom	денежные	ok	unstressed
+5570	n:печь	pl_acc	пече́й	mismatch	
+5628	a:давний	f_nom	давная	unknown	unstressed
+5628	a:давний	n_nom	давной	unknown	unstressed
+5628	a:давний	n_acc	давной	unknown	unstressed
+5628	a:давний	pl_nom	давние	ok	unstressed
+5628	a:давний	pl_acc	давние	ok	unstressed
+5632	a:лживый	sup	лжи́вейший	unknown	
+5670	a:десятый	f_ins	деся́тою	unknown	
+5673	a:деревянный	short_m	деревя́нен	unknown	
+5673	a:деревянный	short_f	деревя́нна	unknown	
+5673	a:деревянный	short_n	деревя́нно	mismatch	
+5673	a:деревянный	short_pl	деревя́нны	unknown	
+5682	n:госсекретарь	sg_ins	го́ссекретарём	ok	
+5760	n:стерлинг	sg_gen	сте́рлингу	mismatch	
+5905	n:Венеция	sg_ins	Вене́циею	unknown	
+5912	n:превосходительство	pl_acc	превосходи́тельства	mismatch	
+5918	n:мастерство	pl_nom	мастерства́	mismatch	
+5918	n:мастерство	pl_gen	масте́рств	unknown	
+5918	n:мастерство	pl_dat	мастерства́м	unknown	
+5918	n:мастерство	pl_acc	мастерства́	mismatch	
+5918	n:мастерство	pl_ins	мастерства́ми	unknown	
+5918	n:мастерство	pl_prep	мастерства́х	unknown	
+5934	n:нянька	pl_acc	ня́ньки	mismatch	
+5983	n:Греция	sg_ins	Гре́циею	unknown	
+5987	v:выявить	imp_sg	вы́явь	unknown	
+5987	v:выявить	imp_pl	вы́явьте	unknown	
+5990	a:ближний	short_m	бли́жен	unknown	
+6106	v:обсуждаться	inf	обсуждаться	ok	unstressed
+6108	a:натуральный	sup	натура́льнейший	unknown	
+6126	a:грузовой	f_nom	грузовая	ok	unstressed
+6126	a:грузовой	n_nom	грузовое	ok	unstressed
+6126	a:грузовой	pl_nom	грузовые	ok	unstressed
+6138	n:бойня	pl_gen	бойнь	unknown	
+6155	n:Азия	sg_ins	А́зиею	unknown	
+6200	n:Швеция	sg_ins	Шве́циею	unknown	
+6225	v:предстать	np_1sg	предстаю́	mismatch	
+6225	v:предстать	np_2sg	предстаёшь	mismatch	
+6225	v:предстать	np_3sg	предстаёт	mismatch	
+6225	v:предстать	np_1pl	предстаём	mismatch	
+6225	v:предстать	np_2pl	предстаёте	mismatch	
+6225	v:предстать	np_3pl	предстаю́т	mismatch	
+6225	v:предстать	imp_sg	предста́й	unknown	
+6225	v:предстать	imp_pl	предста́йте	unknown	
+6298	n:Великобритания	sg_ins	Великобрита́ниею	unknown	
+6346	n:ничья	pl_ins	ничьи́х	mismatch	
+6346	n:ничья	pl_prep	ничьи́ми	mismatch	
+6349	n:биография	sg_gen	биографии	ok	unstressed
+6349	n:биография	sg_dat	биографии	ok	unstressed
+6349	n:биография	sg_acc	биографию	ok	unstressed
+6349	n:биография	sg_ins	биографией	ok	unstressed
+6349	n:биография	sg_prep	биографии	ok	unstressed
+6349	n:биография	pl_nom	биографии	ok	unstressed
+6349	n:биография	pl_gen	биографий	ok	unstressed
+6349	n:биография	pl_dat	биографиям	ok	unstressed
+6349	n:биография	pl_acc	биографии	ok	unstressed
+6349	n:биография	pl_ins	биографиями	ok	unstressed
+6349	n:биография	pl_prep	биографиях	ok	unstressed
+6361	a:инопланетный	short_m	иноплане́тен	unknown	
+6361	a:инопланетный	short_f	иноплане́тна	unknown	
+6361	a:инопланетный	short_n	иноплане́тно	unknown	
+6361	a:инопланетный	short_pl	иноплане́тны	unknown	
+6366	n:Флоренция	sg_ins	Флоре́нциею	unknown	
+6378	v:подвергнуться	pst_f	подве́ргнулась	unknown	
+6378	v:подвергнуться	pst_n	подве́ргнулось	unknown	
+6378	v:подвергнуться	pst_pl	подве́ргнулись	unknown	
+6391	n:обломок	sg_nom	обло́мока	unknown	
+6391	n:обломок	sg_acc	обло́мока	unknown	
+6429	a:студенческий	short_m	студе́нческ	unknown	
+6429	a:студенческий	short_f	студе́нческа	unknown	
+6429	a:студенческий	short_n	студе́нческо	unknown	
+6429	a:студенческий	short_pl	студе́нчески	unknown	
+6438	n:мель	sg_gen	мел	mismatch	
+6474	n:марина	pl_acc	мари́ны	mismatch	
+6485	n:клапан	pl_nom	кла́пана	mismatch	
+6485	n:клапан	pl_acc	кла́пана	mismatch	
+6516	n:юпитер	pl_nom	юпи́тера	mismatch	
+6516	n:юпитер	pl_acc	юпи́тера	mismatch	
+6546	v:смутить	np_1sg	смучу́	unknown	
+6593	a:апельсиновый	short_m	апельси́нов	mismatch	
+6593	a:апельсиновый	short_f	апельси́нова	unknown	
+6593	a:апельсиновый	short_n	апельси́ново	unknown	
+6593	a:апельсиновый	short_pl	апельси́новы	unknown	
+6597	v:отражать	pst_m	отража́тл	unknown	
+6597	v:отражать	pst_f	отража́тла	unknown	
+6597	v:отражать	pst_n	отража́тло	unknown	
+6597	v:отражать	pst_pl	отража́тли	unknown	
+6597	v:отражать	imp_sg	отража́тй	unknown	
+6597	v:отражать	imp_pl	отража́тйте	unknown	
+6624	n:чутьё	pl_nom	чутья́	mismatch	
+6624	n:чутьё	pl_gen	чуте́й	unknown	
+6624	n:чутьё	pl_dat	чутья́м	unknown	
+6624	n:чутьё	pl_acc	чутья́	mismatch	
+6624	n:чутьё	pl_ins	чутья́ми	unknown	
+6624	n:чутьё	pl_prep	чутья́х	unknown	
+6630	a:олимпийский	short_m	олимпи́йск	unknown	
+6630	a:олимпийский	short_f	олимпи́йска	unknown	
+6630	a:олимпийский	short_n	олимпи́йско	unknown	
+6630	a:олимпийский	short_pl	олимпи́йски	unknown	
+6702	n:судимость	sg_gen	судимости	ok	unstressed
+6702	n:судимость	sg_dat	судимости	ok	unstressed
+6702	n:судимость	sg_ins	судимостью	ok	unstressed
+6702	n:судимость	sg_prep	судимости	ok	unstressed
+6702	n:судимость	pl_nom	судимости	ok	unstressed
+6702	n:судимость	pl_gen	судимостей	ok	unstressed
+6702	n:судимость	pl_dat	судимостям	ok	unstressed
+6702	n:судимость	pl_acc	судимости	ok	unstressed
+6702	n:судимость	pl_ins	судимостями	ok	unstressed
+6702	n:судимость	pl_prep	судимостях	ok	unstressed
+6720	a:террористический	short_m	террористи́ческ	unknown	
+6720	a:террористический	short_f	террористи́ческа	unknown	
+6720	a:террористический	short_n	террористи́ческо	unknown	
+6720	a:террористический	short_pl	террористи́чески	unknown	
+6730	n:последователь	sg_acc	после́дователь	mismatch	
+6730	n:последователь	pl_acc	после́дователи	mismatch	
+6764	n:кгб	pl_nom	кгб	mismatch	
+6764	n:кгб	pl_gen	кгб	mismatch	
+6764	n:кгб	pl_dat	кгб	mismatch	
+6764	n:кгб	pl_acc	кгб	mismatch	
+6764	n:кгб	pl_ins	кгб	mismatch	
+6764	n:кгб	pl_prep	кгб	mismatch	
+6776	n:пивко	pl_nom	пивки́	unknown	
+6776	n:пивко	pl_gen	пивко́в	unknown	
+6776	n:пивко	pl_dat	пивка́м	unknown	
+6776	n:пивко	pl_acc	пивки́	unknown	
+6776	n:пивко	pl_ins	пивка́ми	unknown	
+6776	n:пивко	pl_prep	пивка́х	unknown	
+6797	v:прибраться	inf	прибраться	ok	unstressed
+6804	a:гадкий	sup	гадча́йший	unknown	
+6831	a:вражеский	short_m	вра́жеск	unknown	
+6831	a:вражеский	short_f	вра́жеска	unknown	
+6831	a:вражеский	short_n	вра́жеско	unknown	
+6831	a:вражеский	short_pl	вра́жески	mismatch	
+6832	n:таможня	pl_gen	тамо́жень	unknown	
+6836	v:гнить	imp_sg	гний	unknown	
+6836	v:гнить	imp_pl	гни́йте	unknown	
+6912	a:сладенький	short_m	сла́денек	unknown	
+6912	a:сладенький	short_f	сла́денька	unknown	
+6912	a:сладенький	short_n	сла́денько	mismatch	
+6912	a:сладенький	short_pl	сла́деньки	unknown	
+6913	n:топ	sg_gen	топа	ok	unstressed
+6913	n:топ	sg_dat	топу	ok	unstressed
+6913	n:топ	sg_ins	топом	ok	unstressed
+6927	n:корм	pl_nom	кормы́	mismatch	
+6927	n:корм	pl_acc	кормы́	mismatch	
+6945	v:обвиняться	pst_m	обвинялся	ok	unstressed
+6945	v:обвиняться	pst_f	обвинялась	ok	unstressed
+6945	v:обвиняться	pst_n	обвинялось	ok	unstressed
+6945	v:обвиняться	pst_pl	обвинялись	ok	unstressed
+6952	n:возмездие	sg_gen	возмездия	ok	unstressed
+6952	n:возмездие	sg_dat	возмездию	ok	unstressed
+6952	n:возмездие	sg_ins	возмездием	ok	unstressed
+6952	n:возмездие	sg_prep	возмездии	ok	unstressed
+6952	n:возмездие	pl_nom	возмездия	ok	unstressed
+6952	n:возмездие	pl_gen	возмездий	ok	unstressed
+6952	n:возмездие	pl_dat	возмездиям	ok	unstressed
+6952	n:возмездие	pl_acc	возмездия	ok	unstressed
+6952	n:возмездие	pl_ins	возмездиями	ok	unstressed
+6952	n:возмездие	pl_prep	возмездиях	ok	unstressed
+6957	n:пух	pl_nom	пу́хи	unknown	
+6957	n:пух	pl_gen	пу́хов	mismatch	
+6957	n:пух	pl_dat	пу́хам	unknown	
+6957	n:пух	pl_acc	пу́хи	unknown	
+6957	n:пух	pl_ins	пу́хами	unknown	
+6957	n:пух	pl_prep	пу́хах	unknown	
+6982	n:сбой	pl_gen	сбо́ув	unknown	
+7002	v:житься	np_1sg	нет	mismatch	
+7002	v:житься	np_2sg	нет	mismatch	
+7002	v:житься	np_1pl	нет	mismatch	
+7002	v:житься	np_2pl	нет	mismatch	
+7002	v:житься	np_3pl	нет	mismatch	
+7002	v:житься	pst_n	жилось	ok	unstressed
+7012	n:полмиллиона	pl_nom	полумиллио́ны	unknown	
+7012	n:полмиллиона	pl_gen	полумиллио́нов	unknown	
+7012	n:полмиллиона	pl_dat	полумиллио́нам	unknown	
+7012	n:полмиллиона	pl_acc	полумиллио́ны	unknown	
+7012	n:полмиллиона	pl_ins	полумиллио́нами	unknown	
+7012	n:полмиллиона	pl_prep	полумиллио́нах	unknown	
+7018	a:водный	short_f	во́дно	mismatch	
+7018	a:водный	short_n	во́дна	mismatch	
+7028	v:промокнуть	np_2sg	промо́кешь	unknown	
+7056	n:кросс	sg_acc	кро́сса	mismatch	
+7056	n:кросс	pl_acc	кро́ссов	mismatch	
+7067	a:благословенный	short_m	благослове́нен	unknown	
+7106	a:гладкий	sup	гладча́йший	unknown	
+7150	v:поражать	np_1sg	поражаю	ok	unstressed
+7150	v:поражать	np_2sg	поражаешь	ok	unstressed
+7150	v:поражать	np_3sg	поражает	ok	unstressed
+7150	v:поражать	np_1pl	поражаем	ok	unstressed
+7150	v:поражать	np_2pl	поражаете	ok	unstressed
+7150	v:поражать	np_3pl	поражают	ok	unstressed
+7150	v:поражать	pst_m	поражал	ok	unstressed
+7150	v:поражать	pst_f	поражала	ok	unstressed
+7150	v:поражать	pst_n	поражало	ok	unstressed
+7150	v:поражать	pst_pl	поражали	ok	unstressed
+7150	v:поражать	imp_sg	поражай	ok	unstressed
+7150	v:поражать	imp_pl	поражайте	ok	unstressed
+7162	a:дьявольский	short_m	дья́вольск	unknown	
+7162	a:дьявольский	short_f	дья́вольска	unknown	
+7162	a:дьявольский	short_n	дья́вольско	unknown	
+7162	a:дьявольский	short_pl	дья́вольски	mismatch	
+7168	n:моль	sg_acc	мо́ля	mismatch	
+7174	v:обокрасть	np_1sg	обкраду́	unknown	
+7174	v:обокрасть	np_2sg	обкрадёшь	unknown	
+7174	v:обокрасть	np_3sg	обкрадёт	unknown	
+7174	v:обокрасть	np_1pl	обкрадём	unknown	
+7174	v:обокрасть	np_2pl	обкрадёте	unknown	
+7174	v:обокрасть	np_3pl	обкраду́т	unknown	
+7174	v:обокрасть	imp_sg	обкради́	unknown	
+7174	v:обокрасть	imp_pl	обкради́те	unknown	
+7181	n:головоломка	pl_gen	головолом́ок	ok	
+7190	n:мутант	sg_nom	мут́ант	ok	
+7190	n:мутант	sg_gen	мут́анта	ok	
+7190	n:мутант	sg_dat	мут́анту	ok	
+7190	n:мутант	sg_acc	мут́анта	ok	
+7190	n:мутант	sg_ins	мут́антом	ok	
+7190	n:мутант	sg_prep	мут́анте	ok	
+7190	n:мутант	pl_nom	мут́анты	ok	
+7190	n:мутант	pl_gen	мут́антов	ok	
+7190	n:мутант	pl_dat	мут́антам	ok	
+7190	n:мутант	pl_acc	мут́антов	ok	
+7190	n:мутант	pl_ins	мут́антами	ok	
+7190	n:мутант	pl_prep	мут́антах	ok	
+7242	a:кодовый	short_m	ко́дов	mismatch	
+7242	a:кодовый	short_f	ко́дова	unknown	
+7242	a:кодовый	short_n	ко́дово	unknown	
+7242	a:кодовый	short_pl	ко́довы	unknown	
+7287	n:колдовство	pl_nom	колдовства́	mismatch	
+7287	n:колдовство	pl_gen	колдо́вств	unknown	
+7287	n:колдовство	pl_dat	колдовства́м	unknown	
+7287	n:колдовство	pl_acc	колдовства́	mismatch	
+7287	n:колдовство	pl_ins	колдовства́ми	unknown	
+7287	n:колдовство	pl_prep	колдовства́х	unknown	
+7294	n:Торонто	pl_nom	Торо́нто	mismatch	
+7294	n:Торонто	pl_gen	Торо́нто	mismatch	
+7294	n:Торонто	pl_dat	Торо́нто	mismatch	
+7294	n:Торонто	pl_acc	Торо́нто	mismatch	
+7294	n:Торонто	pl_ins	Торо́нто	mismatch	
+7294	n:Торонто	pl_prep	Торо́нто	mismatch	
+7311	n:будда	sg_ins	бу́ддою	unknown	
+7368	a:радостный	short_m	рад	mismatch	
+7368	a:радостный	short_f	ра́да	mismatch	
+7368	a:радостный	short_n	ра́до	mismatch	
+7368	a:радостный	short_pl	ра́ды	mismatch	
+7379	a:плотный	sup	плотне́йший	unknown	
+7392	a:влажный	short_pl	влажн	unknown	
+7443	a:дамский	short_m	дамск	unknown	
+7443	a:дамский	short_f	да́мска	unknown	
+7443	a:дамский	short_n	да́мско	unknown	
+7443	a:дамский	short_pl	да́мски	mismatch	
+7471	a:католический	short_m	католи́ческ	unknown	
+7471	a:католический	short_f	католи́ческа	unknown	
+7471	a:католический	short_n	католи́ческо	unknown	
+7471	a:католический	short_pl	католи́чески	unknown	
+7488	a:трагический	short_m	траги́ческ	unknown	
+7488	a:трагический	short_f	траги́ческа	unknown	
+7488	a:трагический	short_n	траги́ческо	unknown	
+7488	a:трагический	short_pl	траги́чески	mismatch	
+7493	n:таксист	sg_nom	такс́ист	ok	
+7493	n:таксист	sg_gen	такс́иста	ok	
+7493	n:таксист	sg_dat	такс́исту	ok	
+7493	n:таксист	sg_acc	такс́иста	ok	
+7493	n:таксист	sg_ins	такс́истом	ok	
+7493	n:таксист	sg_prep	такс́исте	ok	
+7493	n:таксист	pl_nom	такс́исты	ok	
+7493	n:таксист	pl_gen	такс́истов	ok	
+7493	n:таксист	pl_dat	такс́истам	ok	
+7493	n:таксист	pl_acc	такс́истов	ok	
+7493	n:таксист	pl_ins	такс́истами	ok	
+7493	n:таксист	pl_prep	такс́истах	ok	
+7498	n:тестирование	pl_nom	тести́рования	mismatch	
+7498	n:тестирование	pl_gen	тести́рований	unknown	
+7498	n:тестирование	pl_dat	тести́рованиям	unknown	
+7498	n:тестирование	pl_acc	тести́рования	mismatch	
+7498	n:тестирование	pl_ins	тести́рованиями	unknown	
+7498	n:тестирование	pl_prep	тести́рованиях	unknown	
+7533	a:дипломатический	short_m	дипломати́ческ	unknown	
+7533	a:дипломатический	short_f	дипломати́ческа	unknown	
+7533	a:дипломатический	short_n	дипломати́ческо	unknown	
+7533	a:дипломатический	short_pl	дипломати́чески	unknown	
+7544	a:комендантский	short_m	коменда́нтск	unknown	
+7544	a:комендантский	short_f	коменда́нтска	unknown	
+7544	a:комендантский	short_n	коменда́нтско	unknown	
+7544	a:комендантский	short_pl	коменда́нтски	unknown	
+7565	v:упоминаться	inf	упоминаться	ok	unstressed
+7565	v:упоминаться	np_1sg	упоминаюсь	ok	unstressed
+7565	v:упоминаться	np_2sg	упоминаешься	ok	unstressed
+7565	v:упоминаться	np_3sg	упоминается	ok	unstressed
+7565	v:упоминаться	np_1pl	упоминаемся	ok	unstressed
+7565	v:упоминаться	np_2pl	упоминаетесь	ok	unstressed
+7565	v:упоминаться	np_3pl	упоминаются	ok	unstressed
+7565	v:упоминаться	pst_m	упоминался	ok	unstressed
+7565	v:упоминаться	pst_f	упоминалась	ok	unstressed
+7565	v:упоминаться	pst_n	упоминалось	ok	unstressed
+7565	v:упоминаться	pst_pl	упоминались	ok	unstressed
+7570	n:вкуснятина	pl_nom	вкусня́тины	mismatch	
+7570	n:вкуснятина	pl_gen	вкусня́тин	unknown	
+7570	n:вкуснятина	pl_dat	вкусня́тинам	unknown	
+7570	n:вкуснятина	pl_acc	вкусня́тины	mismatch	
+7570	n:вкуснятина	pl_ins	вкусня́тинами	unknown	
+7570	n:вкуснятина	pl_prep	вкусня́тинах	unknown	
+7581	a:энергетический	short_m	энергети́ческ	unknown	
+7581	a:энергетический	short_f	энергети́ческа	unknown	
+7581	a:энергетический	short_n	энергети́ческо	unknown	
+7581	a:энергетический	short_pl	энергети́чески	mismatch	
+7595	n:карате	pl_nom	карате́	mismatch	
+7595	n:карате	pl_gen	карате́	mismatch	
+7595	n:карате	pl_dat	карате́	mismatch	
+7595	n:карате	pl_acc	карате́	mismatch	
+7595	n:карате	pl_ins	карате́	mismatch	
+7595	n:карате	pl_prep	карате́	mismatch	
+7606	n:лазанье	sg_nom	ла́занья	mismatch	
+7639	n:пул	sg_gen	пула	ok	unstressed
+7639	n:пул	sg_dat	пулу	ok	unstressed
+7639	n:пул	sg_ins	пулом	ok	unstressed
+7639	n:пул	pl_nom	пулы	ok	unstressed
+7639	n:пул	pl_gen	пулов	ok	unstressed
+7639	n:пул	pl_dat	пулам	ok	unstressed
+7639	n:пул	pl_acc	пулы	ok	unstressed
+7639	n:пул	pl_ins	пулами	ok	unstressed
+7639	n:пул	pl_prep	пулах	ok	unstressed
+7650	n:морфий	sg_prep	мо́рфие	unknown	
+7720	a:пластический	short_m	пласти́ческ	unknown	
+7720	a:пластический	short_f	пласти́ческа	unknown	
+7720	a:пластический	short_n	пласти́ческо	unknown	
+7720	a:пластический	short_pl	пласти́чески	unknown	
+7752	n:ориентация	sg_nom	ориента́тация	unknown	
+7752	n:ориентация	sg_gen	ориента́тации	unknown	
+7752	n:ориентация	sg_dat	ориента́тации	unknown	
+7752	n:ориентация	sg_acc	ориента́тацию	unknown	
+7752	n:ориентация	sg_ins	ориента́тацией	unknown	
+7752	n:ориентация	sg_ins	ориента́тациею	unknown	
+7752	n:ориентация	sg_prep	ориента́тации	unknown	
+7752	n:ориентация	pl_nom	ориента́тации	unknown	
+7752	n:ориентация	pl_gen	ориента́таций	unknown	
+7752	n:ориентация	pl_dat	ориента́тациям	unknown	
+7752	n:ориентация	pl_acc	ориента́тации	unknown	
+7752	n:ориентация	pl_ins	ориента́тациями	unknown	
+7752	n:ориентация	pl_prep	ориента́тациях	unknown	
+7805	n:вестибюль	sg_acc	вестибю́ля	mismatch	
+7805	n:вестибюль	pl_acc	вестибю́лей	mismatch	
+7810	v:соревноваться	np_1sg	соревнова́юсь	unknown	
+7810	v:соревноваться	np_2sg	соревнова́ешься	unknown	
+7810	v:соревноваться	np_3sg	соревнова́ется	unknown	
+7810	v:соревноваться	np_1pl	соревнова́емся	unknown	
+7810	v:соревноваться	np_2pl	соревнова́етесь	unknown	
+7810	v:соревноваться	np_3pl	соревнова́ются	unknown	
+7810	v:соревноваться	imp_sg	соревнова́йся	unknown	
+7810	v:соревноваться	imp_pl	соревнова́йтесь	unknown	
+7849	n:разрез	pl_nom	разре́зи	unknown	
+7849	n:разрез	pl_acc	разре́зи	unknown	
+7860	a:несчастливый	short_m	несча́стли́в	ok	
+7860	a:несчастливый	short_f	несча́стли́ва	ok	
+7860	a:несчастливый	short_n	несча́стли́во	ok	
+7860	a:несчастливый	short_pl	несча́стли́вы	ok	
+7863	n:невестка	pl_acc	неве́стки	mismatch	
+7905	a:армейский	short_m	арме́йск	unknown	
+7905	a:армейский	short_f	арме́йска	unknown	
+7905	a:армейский	short_n	арме́йско	unknown	
+7905	a:армейский	short_pl	арме́йски	mismatch	
+7963	n:качели	pl_gen	качелей	ok	unstressed
+7963	n:качели	pl_dat	качелям	ok	unstressed
+7963	n:качели	pl_ins	качелями	ok	unstressed
+7963	n:качели	pl_prep	качелях	ok	unstressed
+8007	n:нато	pl_nom	на́то	mismatch	
+8007	n:нато	pl_gen	на́то	mismatch	
+8007	n:нато	pl_dat	на́то	mismatch	
+8007	n:нато	pl_acc	на́то	mismatch	
+8007	n:нато	pl_ins	на́то	mismatch	
+8007	n:нато	pl_prep	на́то	mismatch	
+8032	a:шустрый	short_f	шу́стро	mismatch	
+8032	a:шустрый	short_n	шустра́	mismatch	
+8032	a:шустрый	sup	шустре́йший	unknown	
+8046	v:удочерить	imp_pl	удочери́м	mismatch	
+8052	v:вторгнуться	pst_f	вто́ргнулась	unknown	
+8052	v:вторгнуться	pst_n	вто́ргнулось	unknown	
+8052	v:вторгнуться	pst_pl	вто́ргнулись	unknown	
+8074	a:необыкновенный	short_pl	необыкнове́нн	unknown	
+8076	n:Мехико	pl_nom	Ме́хико	mismatch	
+8076	n:Мехико	pl_gen	Ме́хико	mismatch	
+8076	n:Мехико	pl_dat	Ме́хико	mismatch	
+8076	n:Мехико	pl_acc	Ме́хико	mismatch	
+8076	n:Мехико	pl_ins	Ме́хико	mismatch	
+8076	n:Мехико	pl_prep	Ме́хико	mismatch	
+8091	n:Глазго	pl_nom	Гла́зго	mismatch	
+8091	n:Глазго	pl_gen	Гла́зго	mismatch	
+8091	n:Глазго	pl_dat	Гла́зго	mismatch	
+8091	n:Глазго	pl_acc	Гла́зго	mismatch	
+8091	n:Глазго	pl_ins	Гла́зго	mismatch	
+8091	n:Глазго	pl_prep	Гла́зго	mismatch	
+8093	n:Марокко	pl_nom	Маро́кко	mismatch	
+8093	n:Марокко	pl_gen	Маро́кко	mismatch	
+8093	n:Марокко	pl_dat	Маро́кко	mismatch	
+8093	n:Марокко	pl_acc	Маро́кко	mismatch	
+8093	n:Марокко	pl_ins	Маро́кко	mismatch	
+8093	n:Марокко	pl_prep	Маро́кко	mismatch	
+8161	n:гуру	pl_nom	гу́ру	mismatch	
+8161	n:гуру	pl_gen	гу́ру	mismatch	
+8161	n:гуру	pl_dat	гу́ру	mismatch	
+8161	n:гуру	pl_acc	гу́ру	mismatch	
+8161	n:гуру	pl_ins	гу́ру	mismatch	
+8161	n:гуру	pl_prep	гу́ру	mismatch	
+8242	n:подрядчик	sg_acc	подря́дчик	mismatch	
+8242	n:подрядчик	pl_acc	подря́дчики	mismatch	
+8257	a:нобелевский	short_m	но́белевск	unknown	
+8257	a:нобелевский	short_f	но́белевска	unknown	
+8257	a:нобелевский	short_n	но́белевско	unknown	
+8257	a:нобелевский	short_pl	но́белевски	unknown	
+8267	n:тапочки	sg_nom	та́почка	unknown	
+8267	n:тапочки	sg_gen	та́почки	mismatch	
+8267	n:тапочки	sg_dat	та́почке	unknown	
+8267	n:тапочки	sg_acc	та́почку	unknown	
+8267	n:тапочки	sg_ins	та́почкой	unknown	
+8267	n:тапочки	sg_prep	та́почке	unknown	
+8300	a:стеклянный	short_m	стекля́нен	unknown	
+8300	a:стеклянный	short_f	стекля́нна	unknown	
+8300	a:стеклянный	short_n	стекля́нно	mismatch	
+8300	a:стеклянный	short_pl	стекля́нны	unknown	
+8301	a:обеденный	short_m	обе́ден	mismatch	
+8332	n:хаки	sg_nom	ха́ки	mismatch	
+8332	n:хаки	sg_gen	ха́ки	mismatch	
+8332	n:хаки	sg_dat	ха́ки	mismatch	
+8332	n:хаки	sg_acc	ха́ки	mismatch	
+8332	n:хаки	sg_ins	ха́ки	mismatch	
+8332	n:хаки	sg_prep	ха́ки	mismatch	
+8332	n:хаки	pl_gen	ха́ки	mismatch	
+8332	n:хаки	pl_dat	ха́ки	mismatch	
+8332	n:хаки	pl_ins	ха́ки	mismatch	
+8332	n:хаки	pl_prep	ха́ки	mismatch	
+8341	n:двойка	sg_nom	двоек	mismatch	unstressed
+8341	n:двойка	sg_gen	дво́йка	mismatch	
+8341	n:двойка	sg_dat	дво́йку	mismatch	
+8341	n:двойка	sg_acc	двоек	mismatch	unstressed
+8341	n:двойка	sg_ins	дво́йком	unknown	
+8341	n:двойка	pl_gen	дво́йков	unknown	
+8344	a:почётный	sup	почётнейший	unknown	
+8375	n:Сирия	sg_ins	Си́риею	unknown	
+8399	a:исследовательский	short_m	иссле́довательск	unknown	
+8399	a:исследовательский	short_f	иссле́довательска	unknown	
+8399	a:исследовательский	short_n	иссле́довательско	unknown	
+8399	a:исследовательский	short_pl	иссле́довательски	unknown	
+8423	n:левша	pl_acc	левши́	mismatch	
+8458	n:кадиллак	sg_dat	Кадилла́кау	unknown	
+8502	n:груша	sg_gen	гру́шы	unknown	
+8511	a:президентский	short_m	президе́нтск	unknown	
+8511	a:президентский	short_f	президе́нтска	unknown	
+8511	a:президентский	short_n	президе́нтско	unknown	
+8511	a:президентский	short_pl	президе́нтски	unknown	
+8681	n:рейх	sg_acc	ре́йха	mismatch	
+8681	n:рейх	pl_acc	ре́йхов	mismatch	
+8694	n:паша	sg_ins	пашо́й	unknown	
+8694	n:паша	sg_ins	пашо́ю	unknown	
+8694	n:паша	pl_gen	паше́й	mismatch	
+8694	n:паша	pl_acc	паше́й	mismatch	
+8741	a:существенный	short_f	суще́ствена	unknown	
+8741	a:существенный	short_n	суще́ствено	unknown	
+8741	a:существенный	short_pl	суще́ствены	unknown	
+8763	a:офигенный	short_m	офиге́нен	unknown	
+8763	a:офигенный	short_f	офиге́нна	unknown	
+8763	a:офигенный	short_n	офиге́нно	mismatch	
+8763	a:офигенный	short_pl	офиге́нны	unknown	
+8763	a:офигенный	comp	офиге́ннее	unknown	
+8763	a:офигенный	sup	офиге́ннейший	unknown	
+8772	v:лизать	np_1sg	лижу	ok	unstressed
+8772	v:лизать	np_2sg	лижешь	ok	unstressed
+8772	v:лизать	np_3sg	лижет	ok	unstressed
+8772	v:лизать	np_1pl	лижем	ok	unstressed
+8772	v:лизать	np_2pl	лижете	ok	unstressed
+8772	v:лизать	np_3pl	лижут	ok	unstressed
+8772	v:лизать	pst_m	лизал	ok	unstressed
+8772	v:лизать	pst_f	лизала	ok	unstressed
+8772	v:лизать	pst_n	лизало	ok	unstressed
+8772	v:лизать	pst_pl	лизали	ok	unstressed
+8772	v:лизать	imp_sg	лижи	ok	unstressed
+8772	v:лизать	imp_pl	лижите	ok	unstressed
+8788	n:Турция	sg_ins	Ту́рциею	unknown	
+8818	n:звездолёт	sg_acc	звездолёта	mismatch	
+8818	n:звездолёт	pl_acc	звездолётов	mismatch	
+8823	a:богатенький	short_m	бога́тенек	unknown	
+8823	a:богатенький	short_f	бога́тенька	unknown	
+8823	a:богатенький	short_pl	бога́теньки	unknown	
+8824	n:бельгия	sg_ins	бе́льгиею	unknown	
+8824	n:бельгия	pl_nom	бе́льгии	mismatch	
+8824	n:бельгия	pl_gen	бе́льгий	unknown	
+8824	n:бельгия	pl_dat	бе́льгиям	unknown	
+8824	n:бельгия	pl_acc	бе́льгии	mismatch	
+8824	n:бельгия	pl_ins	бе́льгиями	unknown	
+8824	n:бельгия	pl_prep	бе́льгиях	unknown	
+8839	n:буфер	pl_nom	бу́феры	unknown	
+8839	n:буфер	pl_acc	бу́феры	unknown	
+8898	n:бритьё	pl_nom	бритья́	mismatch	
+8898	n:бритьё	pl_gen	брите́й	mismatch	
+8898	n:бритьё	pl_dat	бритья́м	unknown	
+8898	n:бритьё	pl_acc	бритья́	mismatch	
+8898	n:бритьё	pl_ins	бритья́ми	unknown	
+8898	n:бритьё	pl_prep	бритья́х	unknown	
+8911	v:записываться	np_1sg	записываюсь	ok	unstressed
+8911	v:записываться	np_2sg	записываешься	ok	unstressed
+8911	v:записываться	pst_m	записывался	ok	unstressed
+8911	v:записываться	pst_f	записывалась	ok	unstressed
+8917	n:староста	pl_acc	ста́росты	mismatch	
+8927	n:сыта	pl_nom	сыты́	mismatch	
+8927	n:сыта	pl_gen	сыт	mismatch	
+8927	n:сыта	pl_dat	сыта́м	unknown	
+8927	n:сыта	pl_acc	сыты́	mismatch	
+8927	n:сыта	pl_ins	сыта́ми	unknown	
+8927	n:сыта	pl_prep	сыта́х	unknown	
+8938	n:Дания	sg_ins	Да́ниею	unknown	
+8949	a:отцовский	short_m	отцо́вск	unknown	
+8949	a:отцовский	short_f	отцо́вска	unknown	
+8949	a:отцовский	short_n	отцо́вско	unknown	
+8949	a:отцовский	short_pl	отцо́вски	mismatch	
+8960	n:наследница	pl_acc	насле́дницы	mismatch	
+8984	n:Голландия	sg_ins	Голла́ндиею	unknown	
+8991	a:шведский	short_m	шведск	unknown	
+8991	a:шведский	short_f	шве́дска	unknown	
+8991	a:шведский	short_n	шве́дско	unknown	
+8991	a:шведский	short_pl	шве́дски	mismatch	
+9032	v:посчастливиться	np_1sg	посчастли́влюсь	unknown	
+9032	v:посчастливиться	np_2sg	посчастли́вишься	unknown	
+9032	v:посчастливиться	np_1pl	посчастли́вимся	unknown	
+9032	v:посчастливиться	np_2pl	посчастли́витесь	unknown	
+9032	v:посчастливиться	np_3pl	посчастли́вятся	unknown	
+9032	v:посчастливиться	pst_m	посчастли́вился	unknown	
+9032	v:посчастливиться	pst_f	посчастли́вилась	unknown	
+9032	v:посчастливиться	pst_pl	посчастли́вились	unknown	
+9032	v:посчастливиться	imp_sg	посчастли́вься	unknown	
+9032	v:посчастливиться	imp_pl	посчастли́вьтесь	unknown	
+9048	a:никой	m_gen	нико́го	mismatch	
+9048	a:никой	m_dat	нико́му	mismatch	
+9048	a:никой	m_acc	нико́го	mismatch	
+9048	a:никой	m_ins	ники́м	unknown	
+9048	a:никой	m_prep	нико́м	mismatch	
+9048	a:никой	f_nom	ника́я	unknown	
+9048	a:никой	f_gen	нико́й	mismatch	
+9048	a:никой	f_dat	нико́й	mismatch	
+9048	a:никой	f_acc	нику́ю	unknown	
+9048	a:никой	f_ins	нико́й	mismatch	
+9048	a:никой	f_ins	нико́ю	mismatch	
+9048	a:никой	f_prep	нико́й	mismatch	
+9048	a:никой	n_gen	нико́го	mismatch	
+9048	a:никой	n_dat	нико́му	mismatch	
+9048	a:никой	n_ins	ники́м	unknown	
+9048	a:никой	n_prep	нико́м	mismatch	
+9048	a:никой	pl_nom	ники́е	unknown	
+9048	a:никой	pl_gen	ники́х	unknown	
+9048	a:никой	pl_dat	ники́м	unknown	
+9048	a:никой	pl_acc	ники́е	unknown	
+9048	a:никой	pl_acc	ники́х	unknown	
+9048	a:никой	pl_ins	ники́ми	unknown	
+9048	a:никой	pl_prep	ники́х	unknown	
+9053	n:первенец	sg_acc	пе́рвенец	mismatch	
+9053	n:первенец	pl_acc	пе́рвенцы	mismatch	
+9073	a:продуктовый	short_m	продукто́в	mismatch	
+9073	a:продуктовый	short_f	продукто́ва	unknown	
+9073	a:продуктовый	short_n	продукто́во	unknown	
+9073	a:продуктовый	short_pl	продукто́вы	unknown	
+9153	a:нестабильный	comp	нестаби́льнее	unknown	
+9156	n:Аравия	sg_ins	Ара́виею	unknown	
+9167	n:медиа	sg_nom	ме́диа	mismatch	
+9167	n:медиа	sg_gen	ме́диа	mismatch	
+9167	n:медиа	sg_dat	ме́диа	mismatch	
+9167	n:медиа	sg_acc	ме́диа	mismatch	
+9167	n:медиа	sg_ins	ме́диа	mismatch	
+9167	n:медиа	sg_prep	ме́диа	mismatch	
+9180	n:мемуары	sg_nom	мемуар	ok	unstressed
+9180	n:мемуары	sg_gen	мемуара	ok	unstressed
+9180	n:мемуары	pl_gen	мемуаров	ok	unstressed
+9204	a:настольный	short_f	насто́льно	mismatch	
+9204	a:настольный	short_n	насто́льна	mismatch	
+9312	n:консервы	sg_nom	консерва	unknown	unstressed
+9312	n:консервы	sg_gen	консе́рвы	mismatch	
+9312	n:консервы	sg_dat	консерве	unknown	unstressed
+9312	n:консервы	sg_acc	консерву	unknown	unstressed
+9312	n:консервы	sg_ins	консервой	unknown	unstressed
+9312	n:консервы	sg_ins	консервою	unknown	unstressed
+9312	n:консервы	sg_prep	консерве	unknown	unstressed
+9312	n:консервы	pl_gen	консерв	unknown	unstressed
+9312	n:консервы	pl_dat	консервам	ok	unstressed
+9312	n:консервы	pl_ins	консервами	ok	unstressed
+9312	n:консервы	pl_prep	консервах	ok	unstressed
+9364	n:покровитель	sg_acc	покрови́тель	mismatch	
+9364	n:покровитель	pl_acc	покрови́тели	mismatch	
+9418	n:ягодица	sg_ins	я́годицой	unknown	
+9418	n:ягодица	sg_ins	я́годицою	unknown	
+9439	a:глупенький	short_m	глу́пенек	mismatch	
+9439	a:глупенький	short_f	глу́пенька	mismatch	
+9439	a:глупенький	short_n	глу́пенько	mismatch	
+9439	a:глупенький	short_pl	глу́пеньки	mismatch	
+9464	v:жарить	imp_sg	жа́ри	unknown	
+9464	v:жарить	imp_pl	жа́рите	mismatch	
+9478	n:правота	pl_nom	право́ты	mismatch	
+9478	n:правота	pl_gen	право́т	unknown	
+9478	n:правота	pl_dat	право́там	unknown	
+9478	n:правота	pl_acc	право́ты	mismatch	
+9478	n:правота	pl_ins	право́тами	unknown	
+9478	n:правота	pl_prep	право́тах	unknown	
+9581	n:воз	pl_acc	возо́в	mismatch	
+9604	n:Румыния	sg_ins	Румы́ниею	unknown	
+9628	a:риторический	short_m	ритори́ческ	unknown	
+9628	a:риторический	short_f	ритори́ческа	unknown	
+9628	a:риторический	short_n	ритори́ческо	unknown	
+9628	a:риторический	short_pl	ритори́чески	unknown	
+9636	n:Португалия	sg_ins	Португа́лиею	unknown	
+9652	a:свидетельский	short_m	свиде́тельск	unknown	
+9652	a:свидетельский	short_f	свиде́тельска	unknown	
+9652	a:свидетельский	short_n	свиде́тельско	unknown	
+9652	a:свидетельский	short_pl	свиде́тельски	unknown	
+9710	a:донный	short_m	до́нен	unknown	
+9710	a:донный	short_f	до́нна	mismatch	
+9710	a:донный	short_n	до́нно	unknown	
+9710	a:донный	short_pl	до́нны	mismatch	
+9746	n:разрушитель	sg_acc	разруши́тель	mismatch	
+9746	n:разрушитель	pl_acc	разруши́тели	mismatch	
+9789	v:утихнуть	pst_m	ути́хнул	unknown	
+9789	v:утихнуть	pst_f	ути́хнула	unknown	
+9789	v:утихнуть	pst_n	ути́хнуло	unknown	
+9789	v:утихнуть	pst_pl	ути́хнули	unknown	
+9836	n:фсб	pl_nom	фсб	mismatch	
+9836	n:фсб	pl_gen	фсб	mismatch	
+9836	n:фсб	pl_dat	фсб	mismatch	
+9836	n:фсб	pl_acc	фсб	mismatch	
+9836	n:фсб	pl_ins	фсб	mismatch	
+9836	n:фсб	pl_prep	фсб	mismatch	
+9872	a:адвокатский	short_m	адвока́тск	unknown	
+9872	a:адвокатский	short_f	адвока́тска	unknown	
+9872	a:адвокатский	short_n	адвока́тско	unknown	
+9872	a:адвокатский	short_pl	адвока́тски	unknown	
+9885	n:лом	sg_acc	ло́ма	mismatch	
+9893	v:протестировать	np_1sg	протести́р	unknown	
+10031	n:манекен	sg_gen	манекена	ok	unstressed
+10031	n:манекен	sg_dat	манекену	ok	unstressed
+10031	n:манекен	sg_ins	манекеном	ok	unstressed
+10031	n:манекен	sg_prep	манекене	ok	unstressed
+10031	n:манекен	pl_nom	манекены	ok	unstressed
+10031	n:манекен	pl_gen	манекенов	ok	unstressed
+10031	n:манекен	pl_dat	манекенам	ok	unstressed
+10031	n:манекен	pl_acc	манекены	ok	unstressed
+10031	n:манекен	pl_ins	манекенами	ok	unstressed
+10031	n:манекен	pl_prep	манекенах	ok	unstressed
+10042	n:кандалы	pl_ins	андала́ми	unknown	
+10049	a:банановый	short_m	бана́нов	mismatch	
+10049	a:банановый	short_f	бана́нова	unknown	
+10049	a:банановый	short_n	бана́ново	unknown	
+10049	a:банановый	short_pl	бана́новы	unknown	
+10051	n:Венгрия	sg_ins	Ве́нгриею	unknown	
+10131	a:маменькин	m_gen	маменькиного	ok	unstressed
+10131	a:маменькин	m_dat	маменькиному	ok	unstressed
+10131	a:маменькин	m_acc	маменькиного	ok	unstressed
+10131	a:маменькин	n_gen	маменькиного	ok	unstressed
+10183	n:Финляндия	sg_ins	Финля́ндиею	unknown	
+10189	n:развалина	pl_acc	разва́лины	mismatch	
+10200	a:этакий	f_ins	э́такою	unknown	
+10201	a:турецкий	short_m	туре́цк	unknown	
+10201	a:турецкий	short_f	туре́цка	unknown	
+10201	a:турецкий	short_n	туре́цко	unknown	
+10201	a:турецкий	short_pl	туре́цки	unknown	
+10232	n:румпель	pl_nom	ру́мпеля	mismatch	
+10232	n:румпель	pl_acc	ру́мпеля	mismatch	
+10240	n:вольво	pl_nom	во́льво	mismatch	
+10240	n:вольво	pl_gen	во́льво	mismatch	
+10240	n:вольво	pl_dat	во́льво	mismatch	
+10240	n:вольво	pl_acc	во́льво	mismatch	
+10240	n:вольво	pl_ins	во́льво	mismatch	
+10240	n:вольво	pl_prep	во́льво	mismatch	
+10245	n:джокер	sg_acc	джо́кер	mismatch	
+10245	n:джокер	pl_acc	джо́керы	mismatch	
+10256	a:мятный	short_n	мя́́тно	ok	
+10256	a:мятный	short_pl	мя́́тны	ok	
+10303	a:постыдный	sup	посты́днейший	unknown	
+10361	v:очиститься	imp_pl	о́чи́ститесь	ok	
+10361	v:очиститься	imp_pl	о́чи́стьтесь	ok	
+10368	n:пуск	pl_nom	пуска́	mismatch	
+10368	n:пуск	pl_acc	пуска́	mismatch	
+10402	v:объехать	imp_sg	объезжа́й	mismatch	
+10402	v:объехать	imp_pl	объезжа́йте	mismatch	
+10414	v:адаптироваться	np_1sg	адаптируюсь	ok	unstressed
+10414	v:адаптироваться	np_2sg	адаптируешься	ok	unstressed
+10414	v:адаптироваться	np_3sg	адаптируется	ok	unstressed
+10414	v:адаптироваться	np_1pl	адаптируемся	ok	unstressed
+10414	v:адаптироваться	np_2pl	адаптируетесь	ok	unstressed
+10414	v:адаптироваться	np_3pl	адаптируются	ok	unstressed
+10414	v:адаптироваться	pst_m	адаптировался	ok	unstressed
+10414	v:адаптироваться	pst_f	адаптировалась	ok	unstressed
+10414	v:адаптироваться	pst_n	адаптировалось	ok	unstressed
+10414	v:адаптироваться	pst_pl	адаптировались	ok	unstressed
+10414	v:адаптироваться	imp_sg	адаптируйся	ok	unstressed
+10414	v:адаптироваться	imp_pl	адаптируйтесь	ok	unstressed
+10415	a:докторский	short_m	до́кторск	unknown	
+10415	a:докторский	short_f	до́кторска	unknown	
+10415	a:докторский	short_n	до́кторско	unknown	
+10415	a:докторский	short_pl	до́кторски	unknown	
+10423	n:постоялец	sg_nom	постоя́леца	unknown	
+10423	n:постоялец	sg_acc	постоя́леца	unknown	
+10423	n:постоялец	pl_acc	постоя́льцы	mismatch	
+10425	n:Сицилия	sg_ins	Сици́лиею	unknown	
+10434	v:съехаться	imp_sg	съезжа́йся	mismatch	
+10434	v:съехаться	imp_pl	съезжа́йтесь	mismatch	
+10477	v:выстоять	imp_sg	вы́стоь	unknown	
+10477	v:выстоять	imp_pl	вы́стоьте	unknown	
+10513	v:угораздить	imp_sg	угора́зди	unknown	
+10513	v:угораздить	imp_pl	угора́здите	mismatch	
+10542	n:Ливия	sg_ins	Ли́виею	unknown	
+10579	n:мытьё	pl_nom	мытья́	mismatch	
+10579	n:мытьё	pl_gen	мыте́й	mismatch	
+10579	n:мытьё	pl_dat	мытья́м	unknown	
+10579	n:мытьё	pl_acc	мытья́	mismatch	
+10579	n:мытьё	pl_ins	мытья́ми	unknown	
+10579	n:мытьё	pl_prep	мытья́х	unknown	
+10580	n:пловец	sg_acc	плове́ц	mismatch	
+10580	n:пловец	pl_acc	пловцы́	mismatch	
+10614	v:ссать	np_3pl	ссут	unknown	
+10628	n:пыльца	pl_nom	пыльцы́	mismatch	
+10628	n:пыльца	pl_gen	пыле́ц	unknown	
+10628	n:пыльца	pl_dat	пыльца́м	unknown	
+10628	n:пыльца	pl_acc	пыльцы́	mismatch	
+10628	n:пыльца	pl_ins	пыльца́ми	unknown	
+10628	n:пыльца	pl_prep	пыльца́х	unknown	
+10638	a:соседский	short_m	сосе́дск	unknown	
+10638	a:соседский	short_f	сосе́дска	unknown	
+10638	a:соседский	short_n	сосе́дско	unknown	
+10638	a:соседский	short_pl	сосе́дски	mismatch	
+10639	a:шотландский	short_m	шотла́ндск	unknown	
+10639	a:шотландский	short_f	шотла́ндска	unknown	
+10639	a:шотландский	short_n	шотла́ндско	unknown	
+10639	a:шотландский	short_pl	шотла́ндски	unknown	
+10650	n:простофиля	pl_gen	простофи́лей	mismatch	
+10650	n:простофиля	pl_acc	простофи́лей	mismatch	
+10661	n:пай	sg_nom	па	mismatch	
+10661	n:пай	sg_gen	пая	ok	unstressed
+10661	n:пай	sg_dat	паю	ok	unstressed
+10661	n:пай	sg_acc	па	mismatch	
+10661	n:пай	sg_ins	паем	ok	unstressed
+10661	n:пай	sg_prep	пае	ok	unstressed
+10661	n:пай	pl_nom	паи	ok	unstressed
+10661	n:пай	pl_dat	паям	ok	unstressed
+10661	n:пай	pl_acc	паи	ok	unstressed
+10661	n:пай	pl_ins	паями	ok	unstressed
+10661	n:пай	pl_prep	паях	ok	unstressed
+10692	a:продажный	sup	прода́жнейший	unknown	
+10710	v:чтить	np_3pl	чтут	mismatch	
+10711	v:расчистить	imp_pl	ра́счи́стите	ok	
+10711	v:расчистить	imp_pl	ра́счи́стьте	ok	
+10753	n:аладдин	sg_ins	аладди́ном	unknown	
+10771	n:порнуха	pl_nom	порну́хи	mismatch	
+10771	n:порнуха	pl_gen	порну́х	unknown	
+10771	n:порнуха	pl_dat	порну́хам	unknown	
+10771	n:порнуха	pl_acc	порну́хи	mismatch	
+10771	n:порнуха	pl_ins	порну́хами	unknown	
+10771	n:порнуха	pl_prep	порну́хах	unknown	
+10801	n:мыс	sg_ins	мысом	ok	unstressed
+10804	n:валет	sg_acc	вале́т	mismatch	
+10804	n:валет	pl_acc	вале́ты	mismatch	
+10925	a:органический	short_m	органи́ческ	unknown	
+10925	a:органический	short_f	органи́ческа	unknown	
+10925	a:органический	short_n	органи́ческо	unknown	
+10925	a:органический	short_pl	органи́чески	mismatch	
+10932	n:простота	pl_nom	просто́ты	mismatch	
+10932	n:простота	pl_gen	просто́т	unknown	
+10932	n:простота	pl_dat	просто́там	unknown	
+10932	n:простота	pl_acc	просто́ты	mismatch	
+10932	n:простота	pl_ins	просто́тами	unknown	
+10932	n:простота	pl_prep	просто́тах	unknown	
+10935	n:родство	pl_nom	родства́	mismatch	
+10935	n:родство	pl_gen	родств	unknown	
+10935	n:родство	pl_dat	родства́м	unknown	
+10935	n:родство	pl_acc	родства́	mismatch	
+10935	n:родство	pl_ins	родства́ми	unknown	
+10935	n:родство	pl_prep	родства́х	unknown	
+10960	n:ясли	pl_gen	яслей	ok	unstressed
+10960	n:ясли	pl_dat	яслям	ok	unstressed
+10960	n:ясли	pl_ins	яслями	ok	unstressed
+10960	n:ясли	pl_prep	яслях	ok	unstressed
+11022	n:трепло	pl_nom	трёплы	unknown	
+11022	n:трепло	pl_gen	трёплов	unknown	
+11022	n:трепло	pl_dat	трёплам	unknown	
+11022	n:трепло	pl_acc	трёплов	unknown	
+11022	n:трепло	pl_ins	трёплами	unknown	
+11022	n:трепло	pl_prep	трёплах	unknown	
+11061	n:каратэ	pl_nom	каратэ́	mismatch	
+11061	n:каратэ	pl_gen	каратэ́	mismatch	
+11061	n:каратэ	pl_dat	каратэ́	mismatch	
+11061	n:каратэ	pl_acc	каратэ́	mismatch	
+11061	n:каратэ	pl_ins	каратэ́	mismatch	
+11061	n:каратэ	pl_prep	каратэ́	mismatch	
+11068	n:безразличие	sg_gen	безразличия	ok	unstressed
+11068	n:безразличие	sg_dat	безразличию	ok	unstressed
+11068	n:безразличие	sg_ins	безразличием	ok	unstressed
+11068	n:безразличие	sg_prep	безразли́чие	mismatch	
+11083	a:спутниковый	f_ins	пу́тниковой	unknown	
+11083	a:спутниковый	pl_prep	спу́тниковы	unknown	
+11105	v:опереться	pst_n	опеа́лось	unknown	
+11105	v:опереться	pst_n	опеало́сь	unknown	
+11105	v:опереться	pst_pl	опеа́лись	unknown	
+11105	v:опереться	pst_pl	опеали́сь	unknown	
+11112	a:бестолковый	sup	бестолко́вейший	unknown	
+11128	n:дзюдо	pl_nom	дзюдо́	mismatch	
+11128	n:дзюдо	pl_gen	дзюдо́	mismatch	
+11128	n:дзюдо	pl_dat	дзюдо́	mismatch	
+11128	n:дзюдо	pl_acc	дзюдо́	mismatch	
+11128	n:дзюдо	pl_ins	дзюдо́	mismatch	
+11128	n:дзюдо	pl_prep	дзюдо́	mismatch	
+11175	n:тиф	sg_gen	тифа	ok	unstressed
+11175	n:тиф	sg_dat	тифу	ok	unstressed
+11175	n:тиф	sg_ins	тифом	ok	unstressed
+11175	n:тиф	sg_prep	тифе	ok	unstressed
+11190	a:логический	short_m	логи́ческ	unknown	
+11190	a:логический	short_f	логи́ческа	unknown	
+11190	a:логический	short_n	логи́ческо	unknown	
+11190	a:логический	short_pl	логи́чески	mismatch	
+11225	a:бедненький	short_m	бе́дненек	unknown	
+11225	a:бедненький	short_f	бе́дненька	unknown	
+11225	a:бедненький	short_n	бе́дненько	unknown	
+11225	a:бедненький	short_pl	бе́дненьки	unknown	
+11235	n:Хельсинки	pl_nom	Хе́льсинки	mismatch	
+11235	n:Хельсинки	pl_gen	Хе́льсинки	mismatch	
+11235	n:Хельсинки	pl_dat	Хе́льсинки	mismatch	
+11235	n:Хельсинки	pl_acc	Хе́льсинки	mismatch	
+11235	n:Хельсинки	pl_ins	Хе́льсинки	mismatch	
+11235	n:Хельсинки	pl_prep	Хе́льсинки	mismatch	
+11261	a:самоуверенный	short_f	самоуве́рена	unknown	
+11261	a:самоуверенный	short_n	самоуве́рено	unknown	
+11261	a:самоуверенный	short_pl	самоуве́рены	unknown	
+11328	n:спутница	pl_acc	спу́тницы	mismatch	
+11332	n:туфелька	sg_acc	туфельку	ok	unstressed
+11351	v:высохнуть	pst_m	вы́сохнул	unknown	
+11351	v:высохнуть	pst_f	вы́сохнула	unknown	
+11351	v:высохнуть	pst_n	вы́сохнуло	unknown	
+11351	v:высохнуть	pst_pl	вы́сохнули	unknown	
+11365	n:нытьё	pl_nom	нытья́	mismatch	
+11365	n:нытьё	pl_gen	ныте́й	unknown	
+11365	n:нытьё	pl_dat	нытья́м	unknown	
+11365	n:нытьё	pl_acc	нытья́	mismatch	
+11365	n:нытьё	pl_ins	нытья́ми	unknown	
+11365	n:нытьё	pl_prep	нытья́х	unknown	
+11375	a:одиннадцатый	f_ins	оди́ннадцатою	unknown	
+11385	n:уныние	sg_prep	уны́ние	mismatch	
+11385	n:уныние	pl_gen	уныние́й	unknown	
+11412	n:лучник	sg_acc	лу́чник	mismatch	
+11412	n:лучник	pl_acc	лу́чники	mismatch	
+11461	a:пиратский	short_m	пира́тск	unknown	
+11461	a:пиратский	short_f	пира́тска	unknown	
+11461	a:пиратский	short_n	пира́тско	unknown	
+11461	a:пиратский	short_pl	пира́тски	mismatch	
+11463	a:бедренный	short_m	бе́дрен	unknown	
+11516	n:титр	sg_gen	титра	ok	unstressed
+11516	n:титр	sg_dat	титру	ok	unstressed
+11516	n:титр	sg_ins	титром	ok	unstressed
+11516	n:титр	sg_prep	титре	ok	unstressed
+11516	n:титр	pl_nom	титры	ok	unstressed
+11516	n:титр	pl_gen	титров	ok	unstressed
+11516	n:титр	pl_dat	титрам	ok	unstressed
+11516	n:титр	pl_acc	титры	ok	unstressed
+11516	n:титр	pl_ins	титрами	ok	unstressed
+11516	n:титр	pl_prep	титрах	ok	unstressed
+11572	a:хирургический	short_m	хирурги́ческ	unknown	
+11572	a:хирургический	short_f	хирурги́ческа	unknown	
+11572	a:хирургический	short_n	хирурги́ческо	unknown	
+11572	a:хирургический	short_pl	хирурги́чески	unknown	
+11619	n:чехол	sg_gen	чехола́	unknown	
+11619	n:чехол	sg_dat	чехолу́	unknown	
+11619	n:чехол	sg_ins	чехоло́м	unknown	
+11619	n:чехол	sg_prep	чехоле́	unknown	
+11619	n:чехол	pl_nom	чехола́	unknown	
+11619	n:чехол	pl_gen	чехоло́в	unknown	
+11619	n:чехол	pl_dat	чехола́м	unknown	
+11619	n:чехол	pl_acc	чехола́	unknown	
+11619	n:чехол	pl_ins	чехола́ми	unknown	
+11619	n:чехол	pl_prep	чехола́х	unknown	
+11649	a:рулевой	m_gen	рулевого	ok	unstressed
+11649	a:рулевой	m_dat	рулевому	ok	unstressed
+11649	a:рулевой	m_ins	рулевым	ok	unstressed
+11649	a:рулевой	m_prep	рулевом	ok	unstressed
+11649	a:рулевой	f_nom	рулевая	ok	unstressed
+11649	a:рулевой	f_acc	рулевую	ok	unstressed
+11649	a:рулевой	n_nom	рулевое	ok	unstressed
+11649	a:рулевой	n_gen	рулевого	ok	unstressed
+11649	a:рулевой	n_dat	рулевому	ok	unstressed
+11649	a:рулевой	n_acc	рулевое	ok	unstressed
+11649	a:рулевой	n_ins	рулевым	ok	unstressed
+11649	a:рулевой	n_prep	рулевом	ok	unstressed
+11649	a:рулевой	pl_nom	рулевые	ok	unstressed
+11649	a:рулевой	pl_gen	рулевых	ok	unstressed
+11649	a:рулевой	pl_dat	рулевыи	unknown	unstressed
+11649	a:рулевой	pl_acc	рулевые	ok	unstressed
+11649	a:рулевой	pl_ins	рулевыми	ok	unstressed
+11649	a:рулевой	pl_prep	рулевых	ok	unstressed
+11667	n:линь	sg_nom	лин	mismatch	
+11688	n:гулливер	sg_dat	гулливе́у	unknown	
+11711	n:Нагасаки	pl_nom	Нагаса́ки	mismatch	
+11711	n:Нагасаки	pl_gen	Нагаса́ки	mismatch	
+11711	n:Нагасаки	pl_dat	Нагаса́ки	mismatch	
+11711	n:Нагасаки	pl_acc	Нагаса́ки	mismatch	
+11711	n:Нагасаки	pl_ins	Нагаса́ки	mismatch	
+11711	n:Нагасаки	pl_prep	Нагаса́ки	mismatch	
+11729	n:чувиха	sg_acc	чуви́хи	mismatch	
+11751	n:умысел	sg_gen	у́мысела	unknown	
+11751	n:умысел	sg_dat	у́мыселу	unknown	
+11751	n:умысел	sg_ins	у́мыселом	unknown	
+11751	n:умысел	sg_prep	у́мыселе	unknown	
+11751	n:умысел	pl_nom	у́мыселы	unknown	
+11751	n:умысел	pl_gen	у́мыселов	unknown	
+11751	n:умысел	pl_dat	у́мыселам	unknown	
+11751	n:умысел	pl_acc	у́мыселы	unknown	
+11751	n:умысел	pl_ins	у́мыселами	unknown	
+11751	n:умысел	pl_prep	у́мыселах	unknown	
+11779	v:обчистить	imp_pl	о́бчи́стите	ok	
+11779	v:обчистить	imp_pl	о́бчи́стьте	ok	
+11782	a:портативный	short_f	портати́вно	mismatch	
+11782	a:портативный	short_n	портати́вна	mismatch	
+11839	n:тайга	pl_nom	тайги́	mismatch	
+11839	n:тайга	pl_gen	тайг	unknown	
+11839	n:тайга	pl_dat	тайга́м	unknown	
+11839	n:тайга	pl_acc	тайги́	mismatch	
+11839	n:тайга	pl_ins	тайга́ми	unknown	
+11839	n:тайга	pl_prep	тайга́х	unknown	
+11864	a:промышленный	short_m	промы́шленен	unknown	
+11866	a:толковый	short_f	толкова	ok	unstressed
+11866	a:толковый	short_pl	толковы	ok	unstressed
+11867	a:тринадцатый	f_ins	трина́дцатою	unknown	
+11887	n:старьё	pl_nom	старья́	mismatch	
+11887	n:старьё	pl_gen	старе́й	mismatch	
+11887	n:старьё	pl_dat	старья́м	unknown	
+11887	n:старьё	pl_acc	старья́	mismatch	
+11887	n:старьё	pl_ins	старья́ми	unknown	
+11887	n:старьё	pl_prep	старья́х	unknown	
+11909	a:сотый	f_ins	со́тою	mismatch	
+11915	n:лепёшка	pl_gen	лепёшк	unknown	
+11940	v:распростереть	np_1sg	распростру́	unknown	
+11940	v:распростереть	np_2sg	распрострёшь	unknown	
+11940	v:распростереть	np_3sg	распрострёт	unknown	
+11940	v:распростереть	np_1pl	распрострём	unknown	
+11940	v:распростереть	np_2pl	распрострёте	unknown	
+11940	v:распростереть	np_3pl	распростру́т	unknown	
+11940	v:распростереть	imp_sg	распростри́	unknown	
+11940	v:распростереть	imp_pl	распростри́те	unknown	
+12027	a:республиканский	short_m	республика́нск	unknown	
+12027	a:республиканский	short_f	республика́нска	unknown	
+12027	a:республиканский	short_n	республика́нско	unknown	
+12027	a:республиканский	short_pl	республика́нски	unknown	
+12050	n:приставка	pl_gen	приставок	ok	unstressed
+12073	a:тактический	short_m	такти́ческ	unknown	
+12073	a:тактический	short_f	такти́ческа	unknown	
+12073	a:тактический	short_n	такти́ческо	unknown	
+12073	a:тактический	short_pl	такти́чески	unknown	
+12084	n:остриё	sg_prep	острии́	unknown	
+12130	v:мерещиться	imp_sg	мере́щись	unknown	
+12130	v:мерещиться	imp_pl	мере́щитесь	mismatch	
+12155	n:буэнос	sg_gen	буэ́нос	mismatch	
+12155	n:буэнос	sg_dat	буэ́нос	mismatch	
+12155	n:буэнос	sg_ins	буэ́нос	mismatch	
+12155	n:буэнос	sg_prep	буэ́нос	mismatch	
+12155	n:буэнос	pl_nom	буэ́нос	mismatch	
+12155	n:буэнос	pl_gen	буэ́нос	mismatch	
+12155	n:буэнос	pl_dat	буэ́нос	mismatch	
+12155	n:буэнос	pl_acc	буэ́нос	mismatch	
+12155	n:буэнос	pl_ins	буэ́нос	mismatch	
+12155	n:буэнос	pl_prep	буэ́нос	mismatch	
+12174	a:аллергический	short_m	аллерги́ческ	unknown	
+12174	a:аллергический	short_f	аллерги́ческа	unknown	
+12174	a:аллергический	short_n	аллерги́ческо	unknown	
+12174	a:аллергический	short_pl	аллерги́чески	unknown	
+12222	a:одноглазый	short_m	одногла́з	unknown	
+12222	a:одноглазый	short_f	одногла́за	unknown	
+12222	a:одноглазый	short_n	одногла́зо	unknown	
+12222	a:одноглазый	short_pl	одногла́зы	unknown	
+12240	a:осиный	short_m	оси́н	mismatch	
+12240	a:осиный	short_f	оси́на	mismatch	
+12240	a:осиный	short_n	оси́но	unknown	
+12240	a:осиный	short_pl	оси́ны	mismatch	
+12245	n:падло	pl_acc	падл	mismatch	
+12291	n:буги	pl_gen	бу́ги	mismatch	
+12291	n:буги	pl_dat	бу́ги	mismatch	
+12291	n:буги	pl_ins	бу́ги	mismatch	
+12291	n:буги	pl_prep	бу́ги	mismatch	
+12392	n:окружающее	pl_acc	окружа́ющих	mismatch	
+12415	n:даба	pl_nom	дабы́	mismatch	
+12415	n:даба	pl_gen	даб	mismatch	
+12415	n:даба	pl_dat	даба́м	mismatch	
+12415	n:даба	pl_acc	дабы́	mismatch	
+12415	n:даба	pl_ins	даба́ми	mismatch	
+12415	n:даба	pl_prep	даба́х	mismatch	
+12444	n:костра	pl_nom	костры́	mismatch	
+12444	n:костра	pl_gen	костр	unknown	
+12444	n:костра	pl_dat	костра́м	mismatch	
+12444	n:костра	pl_acc	костры́	mismatch	
+12444	n:костра	pl_ins	костра́ми	mismatch	
+12444	n:костра	pl_prep	костра́х	mismatch	
+12459	n:неохота	pl_nom	неохо́ты	mismatch	
+12459	n:неохота	pl_gen	неохо́т	unknown	
+12459	n:неохота	pl_dat	неохо́там	unknown	
+12459	n:неохота	pl_acc	неохо́ты	mismatch	
+12459	n:неохота	pl_ins	неохо́тами	unknown	
+12459	n:неохота	pl_prep	неохо́тах	unknown	
+12471	n:моща	pl_nom	мощи́	mismatch	
+12471	n:моща	pl_gen	моще́й	mismatch	
+12471	n:моща	pl_dat	моща́м	mismatch	
+12471	n:моща	pl_acc	моще́й	mismatch	
+12471	n:моща	pl_ins	моща́ми	mismatch	
+12471	n:моща	pl_prep	моща́х	mismatch	
+12489	n:опор	sg_gen	опо́р	mismatch	
+12489	n:опор	sg_dat	опо́р	mismatch	
+12489	n:опор	sg_ins	опо́р	mismatch	
+12489	n:опор	sg_prep	опо́р	mismatch	
+12489	n:опор	pl_nom	опо́р	mismatch	
+12489	n:опор	pl_gen	опо́р	mismatch	
+12489	n:опор	pl_dat	опо́р	mismatch	
+12489	n:опор	pl_acc	опо́р	mismatch	
+12489	n:опор	pl_ins	опо́р	mismatch	
+12489	n:опор	pl_prep	опо́р	mismatch	
+12500	n:ладо	pl_nom	ла́да	mismatch	
+12500	n:ладо	pl_gen	лад	mismatch	
+12500	n:ладо	pl_acc	лад	mismatch	
+12523	n:осадок	sg_gen	оса́дока	unknown	
+12523	n:осадок	sg_dat	оса́доку	unknown	
+12523	n:осадок	sg_ins	оса́доком	unknown	
+12523	n:осадок	sg_prep	оса́доке	unknown	
+12523	n:осадок	pl_nom	оса́доки	unknown	
+12523	n:осадок	pl_gen	оса́доков	unknown	
+12523	n:осадок	pl_dat	оса́докам	unknown	
+12523	n:осадок	pl_acc	оса́доки	unknown	
+12523	n:осадок	pl_ins	оса́доками	unknown	
+12523	n:осадок	pl_prep	оса́доках	unknown	
+12538	n:мура	pl_nom	муры́	mismatch	
+12538	n:мура	pl_gen	мур	mismatch	
+12538	n:мура	pl_dat	мура́м	mismatch	
+12538	n:мура	pl_acc	муры́	mismatch	
+12538	n:мура	pl_ins	мура́ми	mismatch	
+12538	n:мура	pl_prep	мура́х	mismatch	
+12561	n:внучок	sg_acc	внучо́к	mismatch	
+12561	n:внучок	pl_acc	внучки́	mismatch	
+12665	n:тканьё	pl_nom	тканья́	mismatch	
+12665	n:тканьё	pl_gen	ткане́й	mismatch	
+12665	n:тканьё	pl_dat	тканья́м	unknown	
+12665	n:тканьё	pl_acc	тканья́	mismatch	
+12665	n:тканьё	pl_ins	тканья́ми	unknown	
+12665	n:тканьё	pl_prep	тканья́х	unknown	
+12710	n:забрало	sg_nom	забра́л	mismatch	
+12710	n:забрало	sg_dat	забралу	ok	unstressed
+12710	n:забрало	sg_acc	забра́л	mismatch	
+12710	n:забрало	sg_ins	забралом	ok	unstressed
+12710	n:забрало	sg_prep	забрале	ok	unstressed
+12710	n:забрало	pl_nom	забралы	unknown	unstressed
+12710	n:забрало	pl_gen	забралов	unknown	unstressed
+12710	n:забрало	pl_dat	забралам	ok	unstressed
+12710	n:забрало	pl_acc	забралы	unknown	unstressed
+12710	n:забрало	pl_ins	забралами	ok	unstressed
+12710	n:забрало	pl_prep	забралах	ok	unstressed
+12724	n:темь	pl_nom	те́ми	mismatch	
+12724	n:темь	pl_gen	те́мей	unknown	
+12724	n:темь	pl_dat	те́мям	unknown	
+12724	n:темь	pl_acc	те́ми	mismatch	
+12724	n:темь	pl_ins	те́мями	unknown	
+12724	n:темь	pl_prep	те́мях	unknown	
+12738	n:духи	pl_nom	духи	ok	unstressed
+12738	n:духи	pl_acc	духи	ok	unstressed
+12739	n:мороженое	sg_prep	мороженомм	unknown	unstressed
+12741	n:трусы	pl_nom	трусы	ok	unstressed
+12741	n:трусы	pl_acc	трусы	ok	unstressed
+12752	n:фиг	pl_nom	фи́ги	mismatch	
+12752	n:фиг	pl_gen	фи́гов	mismatch	
+12752	n:фиг	pl_dat	фи́гам	mismatch	
+12752	n:фиг	pl_acc	фи́ги	mismatch	
+12752	n:фиг	pl_ins	фи́гами	mismatch	
+12752	n:фиг	pl_prep	фи́гах	mismatch	
+12753	n:парикмахерская	pl_gen	парикма́херски	unknown	
+12753	n:парикмахерская	pl_dat	парикма́херски	unknown	
+12753	n:парикмахерская	pl_ins	парикма́херским	mismatch	
+12768	n:але	pl_nom	а́ле	mismatch	
+12768	n:але	pl_gen	а́ле	mismatch	
+12768	n:але	pl_dat	а́ле	mismatch	
+12768	n:але	pl_acc	а́ле	mismatch	
+12768	n:але	pl_ins	а́ле	mismatch	
+12768	n:але	pl_prep	а́ле	mismatch	
+12798	n:мини	sg_nom	ми́ни	mismatch	
+12798	n:мини	sg_gen	ми́ни	mismatch	
+12798	n:мини	sg_dat	ми́ни	mismatch	
+12798	n:мини	sg_acc	ми́ни	mismatch	
+12798	n:мини	sg_ins	ми́ни	mismatch	
+12798	n:мини	sg_prep	ми́ни	mismatch	
+12798	n:мини	pl_gen	ми́ни	mismatch	
+12798	n:мини	pl_dat	ми́ни	mismatch	
+12798	n:мини	pl_acc	ми́ни	mismatch	
+12798	n:мини	pl_ins	ми́ни	mismatch	
+12798	n:мини	pl_prep	ми́ни	mismatch	
+12830	n:блядь	pl_ins	блядьми́	unknown	
+12872	v:возрасти	np_1sg	возросту́	unknown	
+12872	v:возрасти	np_2sg	возростёшь	unknown	
+12872	v:возрасти	np_3sg	возростёт	unknown	
+12872	v:возрасти	np_1pl	возростём	unknown	
+12872	v:возрасти	np_2pl	возростёте	unknown	
+12872	v:возрасти	np_3pl	возросту́т	unknown	
+12872	v:возрасти	imp_sg	возрости́	unknown	
+12872	v:возрасти	imp_pl	возрости́те	unknown	
+12881	v:сыпать	np_3pl	сы́пют	unknown	
+12895	v:постелить	np_2sg	посте́лешь	mismatch	
+12895	v:постелить	np_3sg	посте́лет	mismatch	
+12895	v:постелить	np_1pl	посте́лем	mismatch	
+12895	v:постелить	np_2pl	посте́лете	mismatch	
+12895	v:постелить	np_3pl	посте́лют	mismatch	
+13006	v:опознавать	np_1sg	оппзнаю́	unknown	
+13006	v:опознавать	np_2sg	оппзнаёшь	unknown	
+13006	v:опознавать	np_3sg	оппзнаёт	unknown	
+13006	v:опознавать	np_1pl	оппзнаём	unknown	
+13006	v:опознавать	np_2pl	оппзнаёте	unknown	
+13006	v:опознавать	np_3pl	оппзнаю́т	unknown	
+13064	a:столовый	short_m	столо́в	mismatch	
+13064	a:столовый	short_f	столо́ва	unknown	
+13064	a:столовый	short_n	столо́во	unknown	
+13064	a:столовый	short_pl	столо́вы	unknown	
+13070	a:вооружённый	short_f	вооружённа	unknown	
+13070	a:вооружённый	short_n	вооружённо	unknown	
+13070	a:вооружённый	short_pl	вооружённы	unknown	
+13072	a:стоящий	m_gen	стоящего	ok	unstressed
+13072	a:стоящий	m_dat	стоящему	ok	unstressed
+13072	a:стоящий	m_acc	стоящего	ok	unstressed
+13072	a:стоящий	m_ins	стоящим	ok	unstressed
+13072	a:стоящий	m_prep	стоящем	ok	unstressed
+13072	a:стоящий	f_nom	стоящая	ok	unstressed
+13072	a:стоящий	f_gen	стоящей	ok	unstressed
+13072	a:стоящий	f_dat	стоящей	ok	unstressed
+13072	a:стоящий	f_acc	стоящую	ok	unstressed
+13072	a:стоящий	f_ins	стоящей	ok	unstressed
+13072	a:стоящий	f_ins	стоящею	ok	unstressed
+13072	a:стоящий	f_prep	стоящей	ok	unstressed
+13072	a:стоящий	n_nom	стоящее	ok	unstressed
+13072	a:стоящий	n_gen	стоящего	ok	unstressed
+13072	a:стоящий	n_dat	стоящему	ok	unstressed
+13072	a:стоящий	n_acc	стоящее	ok	unstressed
+13072	a:стоящий	n_ins	стоящим	ok	unstressed
+13072	a:стоящий	n_prep	стоящем	ok	unstressed
+13072	a:стоящий	pl_nom	стоящие	ok	unstressed
+13072	a:стоящий	pl_gen	стоящих	ok	unstressed
+13072	a:стоящий	pl_dat	стоящим	ok	unstressed
+13072	a:стоящий	pl_acc	стоящие	ok	unstressed
+13072	a:стоящий	pl_acc	стоящих	ok	unstressed
+13072	a:стоящий	pl_ins	стоящими	ok	unstressed
+13072	a:стоящий	pl_prep	стоящих	ok	unstressed
+13076	a:мастерский	short_m	ма́стерск	unknown	
+13076	a:мастерский	short_f	ма́стерска	unknown	
+13076	a:мастерский	short_n	ма́стерско	unknown	
+13076	a:мастерский	short_pl	ма́стерски	mismatch	
+13077	a:ванный	short_m	ва́нен	unknown	
+13077	a:ванный	short_f	ва́нна	mismatch	
+13077	a:ванный	short_n	ва́нно	unknown	
+13077	a:ванный	short_pl	ва́нны	mismatch	
+13081	a:напряжённый	short_f	напряжённа	unknown	
+13081	a:напряжённый	short_n	напряжённо	mismatch	
+13081	a:напряжённый	short_pl	напряжённы	unknown	
+13110	a:выдающийся	short_m	выдаю́щся	unknown	
+13110	a:выдающийся	short_f	выдаю́щася	unknown	
+13110	a:выдающийся	short_n	выдаю́щеся	unknown	
+13110	a:выдающийся	short_pl	выдаю́щися	unknown	
+13118	a:снисходительный	sup	снисходи́тельнейший	unknown	
+13136	a:преданный	short_m	пре́данен	unknown	
+13162	a:яростный	short_f	я́ростно	mismatch	
+13162	a:яростный	short_n	я́ростна	mismatch	
+13166	a:некрасивый	short_f	некраси́в	mismatch	
+13190	a:потерянный	short_m	поте́рянен	unknown	
+13191	a:чрезмерный	short_f	чрезме́рена	unknown	
+13191	a:чрезмерный	short_n	чрезме́рено	unknown	
+13191	a:чрезмерный	short_pl	чрезме́рены	unknown	
+13216	a:парикмахерский	short_m	парикма́херск	unknown	
+13216	a:парикмахерский	short_f	парикма́херска	unknown	
+13216	a:парикмахерский	short_n	парикма́херско	unknown	
+13216	a:парикмахерский	short_pl	парикма́херски	unknown	
+13226	a:неслыханный	short_m	неслы́хан	unknown	
+13229	a:умерший	short_m	уме́рш	unknown	
+13229	a:умерший	short_f	уме́рша	unknown	
+13229	a:умерший	short_n	уме́рше	unknown	
+13229	a:умерший	short_pl	уме́рши	mismatch	
+13230	a:признанный	short_f	при́знаны	mismatch	
+13244	a:меньшой	pl_nom	меньши́е	mismatch	
+13244	a:меньшой	pl_gen	меньши́х	mismatch	
+13244	a:меньшой	pl_dat	меньши́м	mismatch	
+13244	a:меньшой	pl_acc	меньши́е	mismatch	
+13244	a:меньшой	pl_ins	меньши́ми	mismatch	
+13244	a:меньшой	pl_prep	меньши́х	mismatch	
+13245	a:немногий	f_ins	немно́гою	unknown	
+13286	a:отчий	short_m	отч	unknown	
+13286	a:отчий	short_f	о́тча	unknown	
+13286	a:отчий	short_n	о́тче	mismatch	
+13286	a:отчий	short_pl	о́тчи	unknown	
+13292	a:учащийся	short_m	уча́щся	unknown	
+13292	a:учащийся	short_f	уча́щася	unknown	
+13292	a:учащийся	short_n	уча́щеся	unknown	
+13292	a:учащийся	short_pl	уча́щися	unknown	
+13299	a:абсурдный	sup	абсу́рднейший	unknown	
+13306	a:одновременный	m_nom	одновре́ме́нный	ok	
+13306	a:одновременный	m_gen	одновре́ме́нного	ok	
+13306	a:одновременный	m_dat	одновре́ме́нному	ok	
+13306	a:одновременный	m_acc	одновре́ме́нный	ok	
+13306	a:одновременный	m_acc	одновре́ме́нного	ok	
+13306	a:одновременный	m_ins	одновре́ме́нным	ok	
+13306	a:одновременный	m_prep	одновре́ме́нном	ok	
+13306	a:одновременный	f_nom	одновре́ме́нная	ok	
+13306	a:одновременный	f_gen	одновре́ме́нной	ok	
+13306	a:одновременный	f_dat	одновре́ме́нной	ok	
+13306	a:одновременный	f_acc	одновре́ме́нную	ok	
+13306	a:одновременный	f_ins	одновре́ме́нной	ok	
+13306	a:одновременный	f_ins	одновре́ме́нною	ok	
+13306	a:одновременный	f_prep	одновре́ме́нной	ok	
+13306	a:одновременный	n_nom	одновре́ме́нное	ok	
+13306	a:одновременный	n_gen	одновре́ме́нного	ok	
+13306	a:одновременный	n_dat	одновре́ме́нному	ok	
+13306	a:одновременный	n_acc	одновре́ме́нное	ok	
+13306	a:одновременный	n_ins	одновре́ме́нным	ok	
+13306	a:одновременный	n_prep	одновре́ме́нном	ok	
+13306	a:одновременный	pl_nom	одновре́ме́нные	ok	
+13306	a:одновременный	pl_gen	одновре́ме́нных	ok	
+13306	a:одновременный	pl_dat	одновре́ме́нным	ok	
+13306	a:одновременный	pl_acc	одновре́ме́нные	ok	
+13306	a:одновременный	pl_acc	одновре́ме́нных	ok	
+13306	a:одновременный	pl_ins	одновре́ме́нными	ok	
+13306	a:одновременный	pl_prep	одновре́ме́нных	ok	
+13306	a:одновременный	short_m	одновре́ме́нен	ok	
+13306	a:одновременный	short_f	одновре́ме́нна	ok	
+13306	a:одновременный	short_n	одновре́ме́нно	ok	
+13306	a:одновременный	short_pl	одновре́ме́нны	ok	
+13312	a:диспетчерский	short_m	диспе́тчерск	unknown	
+13312	a:диспетчерский	short_f	диспе́тчерска	unknown	
+13312	a:диспетчерский	short_n	диспе́тчерско	unknown	
+13312	a:диспетчерский	short_pl	диспе́тчерски	unknown	
+13316	a:павший	short_m	павш	unknown	
+13316	a:павший	short_f	па́вша	unknown	
+13316	a:павший	short_n	па́вше	unknown	
+13316	a:павший	short_pl	па́вши	mismatch	
+13345	a:верховый	short_m	верхо́в	mismatch	
+13345	a:верховый	short_f	верхо́ва	mismatch	
+13345	a:верховый	short_n	верхо́во	mismatch	
+13345	a:верховый	short_pl	верхо́вы	unknown	
+13382	a:всевышний	short_m	всевы́шен	unknown	
+13413	a:преднамеренный	short_m	преднаме́ренен	unknown	
+13442	a:погибший	short_m	поги́бш	unknown	
+13442	a:погибший	short_f	поги́бша	unknown	
+13442	a:погибший	short_n	поги́бше	unknown	
+13442	a:погибший	short_pl	поги́бши	mismatch	
+13459	a:матерой	short_m	матёр	mismatch	
+13459	a:матерой	short_f	матера́	mismatch	
+13459	a:матерой	short_n	матеро́	mismatch	
+13459	a:матерой	short_pl	матеры́	mismatch	

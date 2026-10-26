@@ -1,0 +1,26 @@
+id: dl-b2-04
+kind: dialogue
+level: B2
+title: Обсужда́ем кни́гу | Discussing a book
+---
+А́ня: Ну как тебе́ кни́га? Ты дочита́л? | Anya: So how did you like the book? Did you finish it?
+Оле́г: Дочита́л вчера́ но́чью. Не мог оторва́ться. | Oleg: I finished it last night. I couldn't put it down.
+А́ня: А мне коне́ц не понра́вился. Сли́шком гру́стный. | Anya: I didn't like the ending. Too sad.
+Оле́г: По-мо́ему, он как раз пра́вильный. Е́сли бы всё ко́нчилось хорошо́, никто́ бы не по́мнил э́ту исто́рию. | Oleg: I think it's exactly right. If everything had ended well, nobody would remember the story.
+А́ня: Мо́жет быть. Но мне хоте́лось, что́бы геро́и встре́тились. | Anya: Maybe. But I wanted the characters to meet.
+Оле́г: Ты говори́шь как Ни́на. Она́ то́же всегда́ хо́чет счастли́вого конца́. | Oleg: You sound like Nina. She always wants a happy ending too.
+А́ня: Ну и что? У неё ведь в жи́зни он получи́лся. | Anya: So what? She got one in real life, didn't she?
+Оле́г: Э́то пра́вда. Ла́дно, сдаю́сь. В сле́дующий раз выбира́ешь ты. | Oleg: That's true. All right, I give up. Next time you choose.
+---
+? Когда́ Оле́г дочита́л кни́гу? | When did Oleg finish the book?
++ Вчера́ но́чью.
+- Неде́лю наза́д.
+- Он ещё не дочита́л.
+? Почему́ А́не не понра́вился коне́ц? | Why didn't Anya like the ending?
++ Он сли́шком гру́стный.
+- Он сли́шком дли́нный.
+- Она́ его́ не поняла́.
+? Кто вы́берет сле́дующую кни́гу? | Who will choose the next book?
++ А́ня.
+- Оле́г.
+- Ни́на.

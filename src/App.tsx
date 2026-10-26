@@ -32,18 +32,22 @@ const TrainerRun = lazy(() => import('./pages/Trainers').then((m) => ({ default:
 const ReaderPage = lazy(() => import('./pages/Reader').then((m) => ({ default: m.ReaderPage })))
 const StoryView = lazy(() => import('./pages/Reader').then((m) => ({ default: m.StoryView })))
 const StoryQuiz = lazy(() => import('./pages/Reader').then((m) => ({ default: m.StoryQuiz })))
+const ListeningPage = lazy(() => import('./pages/Listening').then((m) => ({ default: m.ListeningPage })))
+const ListenRun = lazy(() => import('./pages/Listening').then((m) => ({ default: m.ListenRun })))
+const KeyboardPage = lazy(() => import('./pages/Keyboard').then((m) => ({ default: m.KeyboardPage })))
+const KeyboardRun = lazy(() => import('./pages/Keyboard').then((m) => ({ default: m.KeyboardRun })))
 
 const NAV = [
   { to: '/', label: 'Home', icon: 'home' },
   { to: '/course', label: 'Course', icon: 'path' },
   { to: '/review', label: 'Review', icon: 'cards' },
-  { to: '/trainers', label: 'Trainers', icon: 'target' },
-  { to: '/grammar', label: 'Grammar', icon: 'book' },
-  { to: '/lab', label: 'Lab', icon: 'table' },
+  { to: '/reader', label: 'Read', icon: 'book' },
+  { to: '/trainers', label: 'Practice', icon: 'target' },
+  { to: '/grammar', label: 'Reference', icon: 'table' },
 ]
-const IN_SESSION = ['/practice', '/review', '/drill', '/lesson', '/placement']
+const IN_SESSION = ['/practice', '/review', '/drill', '/lesson', '/placement', '/listen/']
 /** Full-screen sessions hide the navigation (a trainer's run page is /trainer/:id/:mode). */
-const inSessionPath = (p: string) => IN_SESSION.some((x) => p.startsWith(x)) || /^\/trainer\/[^/]+\/[^/]+|\/quiz$/.test(p)
+const inSessionPath = (p: string) => IN_SESSION.some((x) => p.startsWith(x)) || /^\/trainer\/[^/]+\/[^/]+|\/quiz$|^\/keyboard\/\d/.test(p)
 
 /** Applies theme, skin, motion and audio preferences to the document. */
 function Preferences() {
@@ -158,6 +162,10 @@ export default function App() {
               <Route path="/story/:id/quiz" element={<StoryQuiz />} />
               <Route path="/dialogue/:id" element={<StoryView listening />} />
               <Route path="/dialogue/:id/quiz" element={<StoryQuiz listening />} />
+              <Route path="/listening" element={<ListeningPage />} />
+              <Route path="/listen/:mode" element={<ListenRun />} />
+              <Route path="/keyboard" element={<KeyboardPage />} />
+              <Route path="/keyboard/:n" element={<KeyboardRun />} />
               <Route path="/grammar" element={<GrammarIndex />} />
               <Route path="/grammar/:id" element={<GrammarArticlePage />} />
             </Routes>

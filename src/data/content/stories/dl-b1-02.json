@@ -1,0 +1,695 @@
+{
+ "$schema": "../../../../schemas/story.schema.json",
+ "id": "dl-b1-02",
+ "kind": "dialogue",
+ "level": "B1",
+ "title": {
+  "ru": "В апте́ке",
+  "en": "At the chemist's"
+ },
+ "sentences": [
+  {
+   "para": true,
+   "speaker": "Покупа́тель",
+   "en": "Customer: Hello. I've had a bad cough for three days. What would you recommend?",
+   "tokens": [
+    {
+     "t": "Здра́вствуйте",
+     "sp": false,
+     "lex": "o:здравствуйте",
+     "lemma": "здра́вствуйте",
+     "g": {
+      "pos": "intj"
+     }
+    },
+    {
+     "t": "."
+    },
+    {
+     "t": "У",
+     "lex": "o:у",
+     "lemma": "у",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "меня́",
+     "lex": "o:я",
+     "lemma": "я",
+     "g": {
+      "pos": "pron",
+      "case": "gen"
+     }
+    },
+    {
+     "t": "уже́",
+     "lex": "o:уже",
+     "lemma": "уже́",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "три",
+     "lex": "o:три",
+     "lemma": "три",
+     "g": {
+      "pos": "num",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "дня",
+     "lex": "n:день",
+     "lemma": "день",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "си́льный",
+     "lex": "a:сильный",
+     "lemma": "си́льный",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "ка́шель",
+     "sp": false,
+     "lex": "n:кашель",
+     "lemma": "ка́шель",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": "."
+    },
+    {
+     "t": "Что",
+     "lex": "o:что",
+     "lemma": "что",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "вы",
+     "lex": "o:вы",
+     "lemma": "вы",
+     "g": {
+      "pos": "pron",
+      "case": "nom"
+     }
+    },
+    {
+     "t": "посове́туете",
+     "sp": false,
+     "lex": "v:посоветовать",
+     "lemma": "посове́товать",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "fut",
+      "person": 2,
+      "number": "pl"
+     },
+     "rare": true
+    },
+    {
+     "t": "?",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Фармаце́вт",
+   "en": "Pharmacist: Is it a dry cough or a chesty one?",
+   "tokens": [
+    {
+     "t": "Ка́шель",
+     "lex": "n:кашель",
+     "lemma": "ка́шель",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": "сухо́й",
+     "lex": "a:сухой",
+     "lemma": "сухо́й",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "m"
+     },
+     "rare": true
+    },
+    {
+     "t": "и́ли",
+     "lex": "o:или",
+     "lemma": "и́ли",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "мо́крый",
+     "sp": false,
+     "lex": "a:мокрый",
+     "lemma": "мо́крый",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "m"
+     },
+     "rare": true
+    },
+    {
+     "t": "?",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Покупа́тель",
+   "en": "Customer: Dry, I think. And it's worse at night.",
+   "tokens": [
+    {
+     "t": "Скоре́е",
+     "lex": "o:скорее",
+     "lemma": "скоре́е",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "сухо́й",
+     "sp": false,
+     "lex": "a:сухой",
+     "lemma": "сухо́й",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "m"
+     },
+     "rare": true
+    },
+    {
+     "t": "."
+    },
+    {
+     "t": "И",
+     "lex": "o:и",
+     "lemma": "и",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "но́чью",
+     "lex": "n:ночь",
+     "lemma": "ночь",
+     "g": {
+      "pos": "noun",
+      "case": "ins",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "ху́же",
+     "sp": false,
+     "lex": "a:плохой",
+     "lemma": "плохо́й",
+     "g": {
+      "pos": "comp"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Фармаце́вт",
+   "en": "Pharmacist: Do you have a temperature?",
+   "tokens": [
+    {
+     "t": "Температу́ра",
+     "lex": "n:температура",
+     "lemma": "температу́ра",
+     "g": {
+      "pos": "noun",
+      "case": "nom",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "есть",
+     "sp": false,
+     "lex": "v:быть",
+     "lemma": "быть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "tense": "pres",
+      "person": 3,
+      "number": "sg"
+     }
+    },
+    {
+     "t": "?",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Покупа́тель",
+   "en": "Customer: No, no temperature.",
+   "tokens": [
+    {
+     "t": "Нет",
+     "sp": false,
+     "lex": "o:нет",
+     "lemma": "нет",
+     "g": {
+      "pos": "pred"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "температу́ры",
+     "lex": "n:температура",
+     "lemma": "температу́ра",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "нет",
+     "sp": false,
+     "lex": "o:нет",
+     "lemma": "нет",
+     "g": {
+      "pos": "pred"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Фармаце́вт",
+   "en": "Pharmacist: Then take this syrup. Take it three times a day after meals.",
+   "tokens": [
+    {
+     "t": "Тогда́",
+     "lex": "o:тогда",
+     "lemma": "тогда́",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "возьми́те",
+     "lex": "v:взять",
+     "lemma": "взять",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "mood": "imp",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "э́тот",
+     "lex": "a:этот",
+     "lemma": "э́тот",
+     "g": {
+      "pos": "adj",
+      "case": "acc",
+      "number": "sg",
+      "gender": "m"
+     }
+    },
+    {
+     "t": "сиро́п",
+     "sp": false,
+     "lex": "n:сироп",
+     "lemma": "сиро́п",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     },
+     "rare": true
+    },
+    {
+     "t": "."
+    },
+    {
+     "t": "Принима́йте",
+     "lex": "v:принимать",
+     "lemma": "принима́ть",
+     "g": {
+      "pos": "verb",
+      "aspect": "impf",
+      "mood": "imp",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "его́",
+     "lex": "o:он",
+     "lemma": "он",
+     "g": {
+      "pos": "pron",
+      "case": "acc"
+     }
+    },
+    {
+     "t": "три",
+     "lex": "o:три",
+     "lemma": "три",
+     "g": {
+      "pos": "num",
+      "case": "acc"
+     }
+    },
+    {
+     "t": "ра́за",
+     "lex": "n:раз",
+     "lemma": "раз",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "в",
+     "lex": "o:в",
+     "lemma": "в",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "день",
+     "lex": "n:день",
+     "lemma": "день",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "по́сле",
+     "lex": "o:после",
+     "lemma": "по́сле",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "еды́",
+     "sp": false,
+     "lex": "n:еда",
+     "lemma": "еда́",
+     "g": {
+      "pos": "noun",
+      "case": "gen",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Фармаце́вт",
+   "en": "Pharmacist: But if it isn't better in a week, be sure to see a doctor.",
+   "tokens": [
+    {
+     "t": "Но",
+     "lex": "o:но",
+     "lemma": "но",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "е́сли",
+     "lex": "o:если",
+     "lemma": "е́сли",
+     "g": {
+      "pos": "conj"
+     }
+    },
+    {
+     "t": "че́рез",
+     "lex": "o:через",
+     "lemma": "че́рез",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "неде́лю",
+     "lex": "n:неделя",
+     "lemma": "неде́ля",
+     "g": {
+      "pos": "noun",
+      "case": "acc",
+      "number": "sg"
+     }
+    },
+    {
+     "t": "не",
+     "lex": "o:не",
+     "lemma": "не",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "ста́нет",
+     "lex": "v:стать",
+     "lemma": "стать",
+     "g": {
+      "pos": "verb",
+      "aspect": "pf",
+      "tense": "fut",
+      "person": 3,
+      "number": "sg"
+     }
+    },
+    {
+     "t": "лу́чше",
+     "sp": false,
+     "lex": "o:лучше",
+     "lemma": "лу́чше",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": ","
+    },
+    {
+     "t": "обяза́тельно",
+     "lex": "o:обязательно",
+     "lemma": "обяза́тельно",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "сходи́те",
+     "lex": "v:сходить",
+     "lemma": "сходи́ть",
+     "g": {
+      "pos": "verb",
+      "mood": "imp",
+      "number": "pl"
+     }
+    },
+    {
+     "t": "к",
+     "lex": "o:к",
+     "lemma": "к",
+     "g": {
+      "pos": "prep"
+     }
+    },
+    {
+     "t": "врачу́",
+     "sp": false,
+     "lex": "n:врач",
+     "lemma": "врач",
+     "g": {
+      "pos": "noun",
+      "case": "dat",
+      "number": "sg"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  },
+  {
+   "speaker": "Покупа́тель",
+   "en": "Customer: I see. Thank you very much.",
+   "tokens": [
+    {
+     "t": "Поня́тно",
+     "sp": false,
+     "lex": "o:понятно",
+     "lemma": "поня́тно",
+     "g": {
+      "pos": "adv"
+     }
+    },
+    {
+     "t": "."
+    },
+    {
+     "t": "Спаси́бо",
+     "lex": "o:спасибо",
+     "lemma": "спаси́бо",
+     "g": {
+      "pos": "part"
+     }
+    },
+    {
+     "t": "большо́е",
+     "sp": false,
+     "lex": "a:большой",
+     "lemma": "большо́й",
+     "g": {
+      "pos": "adj",
+      "case": "nom",
+      "number": "sg",
+      "gender": "n"
+     }
+    },
+    {
+     "t": ".",
+     "sp": false
+    }
+   ]
+  }
+ ],
+ "questions": [
+  {
+   "id": "dl-b1-02-q1",
+   "type": "choice",
+   "level": "B1",
+   "tags": [
+    "listening"
+   ],
+   "prompt": {
+    "ru": "Како́й у покупа́теля ка́шель?",
+    "en": "What kind of cough does the customer have?",
+    "instruction": "Choose the answer"
+   },
+   "accept": [
+    "Сухо́й."
+   ],
+   "distractors": [
+    {
+     "ru": "Мо́крый.",
+     "error": "reading.detail"
+    },
+    {
+     "ru": "Его́ нет.",
+     "error": "reading.detail"
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "dl-b1-02-q2",
+   "type": "choice",
+   "level": "B1",
+   "tags": [
+    "listening"
+   ],
+   "prompt": {
+    "ru": "Как принима́ть сиро́п?",
+    "en": "How should the syrup be taken?",
+    "instruction": "Choose the answer"
+   },
+   "accept": [
+    "Три ра́за в день по́сле еды́."
+   ],
+   "distractors": [
+    {
+     "ru": "Оди́н раз ве́чером.",
+     "error": "reading.detail"
+    },
+    {
+     "ru": "Пе́ред едо́й.",
+     "error": "reading.detail"
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "dl-b1-02-q3",
+   "type": "choice",
+   "level": "B1",
+   "tags": [
+    "listening"
+   ],
+   "prompt": {
+    "ru": "Что ну́жно сде́лать, е́сли не ста́нет лу́чше?",
+    "en": "What should he do if it doesn't get better?",
+    "instruction": "Choose the answer"
+   },
+   "accept": [
+    "Пойти́ к врачу́."
+   ],
+   "distractors": [
+    {
+     "ru": "Купи́ть друго́й сиро́п.",
+     "error": "reading.detail"
+    },
+    {
+     "ru": "Лечь в больни́цу.",
+     "error": "reading.detail"
+    }
+   ],
+   "source": "handwritten"
+  }
+ ]
+}

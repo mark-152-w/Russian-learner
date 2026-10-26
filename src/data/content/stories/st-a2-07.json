@@ -409,7 +409,7 @@
      "lemma": "метро́",
      "g": {
       "pos": "noun",
-      "case": "nom",
+      "case": "gen",
       "number": "sg"
      },
      "rare": true
@@ -626,8 +626,8 @@
      "lemma": "ба́шня",
      "g": {
       "pos": "noun",
-      "case": "gen",
-      "number": "sg"
+      "case": "nom",
+      "number": "pl"
      },
      "rare": true
     },
@@ -640,7 +640,7 @@
      "lemma": "го́лубь",
      "g": {
       "pos": "noun",
-      "case": "gen",
+      "case": "acc",
       "number": "pl"
      },
      "rare": true

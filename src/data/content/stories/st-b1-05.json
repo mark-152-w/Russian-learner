@@ -286,7 +286,7 @@
      "lemma": "весь",
      "g": {
       "pos": "adj",
-      "case": "acc",
+      "case": "gen",
       "number": "sg",
       "gender": "m"
      }
@@ -297,7 +297,7 @@
      "lemma": "Пу́шкин",
      "g": {
       "pos": "name",
-      "case": "acc",
+      "case": "gen",
       "number": "sg"
      }
     },

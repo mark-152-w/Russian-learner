@@ -1,0 +1,26 @@
+id: dl-b2-01
+kind: dialogue
+level: B2
+title: Интервью́ | The interview
+---
+Ка́тя: Ю́рий, вы мо́жете рассказа́ть, о чём вы ду́мали все э́ти го́ды? | Katya: Yuri, can you tell me what you thought about all those years?
+Ю́рий: Че́стно? Я стара́лся не ду́мать о про́шлом. У меня́ была́ семья́, рабо́та, мост, кото́рый на́до бы́ло достро́ить. | Yuri: Honestly? I tried not to think about the past. I had a family, a job, a bridge that had to be finished.
+Ка́тя: Но пи́сьма вы храни́ли? | Katya: But you kept the letters?
+Ю́рий: Нет. Мои́ пи́сьма сохрани́ла Ни́на, а её отве́ты я так и не получи́л. Зна́ете, в мо́лодости ка́жется, что вся жизнь впереди́ и всё мо́жно испра́вить. | Yuri: No. Nina kept my letters, and I never received her replies. You know, when you're young it seems that your whole life is ahead and everything can be put right.
+Ка́тя: А тепе́рь? | Katya: And now?
+Ю́рий: А тепе́рь я зна́ю, что не всё. Но что́-то всё-таки мо́жно. Да́же в во́семьдесят лет. | Yuri: And now I know that not everything can. But some things still can. Even at eighty.
+Ка́тя: Что бы вы сказа́ли молоды́м лю́дям, кото́рые прочита́ют э́то интервью́? | Katya: What would you say to the young people who will read this interview?
+Ю́рий: Отвеча́йте на пи́сьма. И не ве́рьте, когда́ вам говоря́т, что вас забы́ли. | Yuri: Answer letters. And don't believe it when people tell you you've been forgotten.
+---
+? О чём Ю́рий стара́лся не ду́мать? | What did Yuri try not to think about?
++ О про́шлом.
+- О рабо́те.
+- О семье́.
+? Что, по слова́м Ю́рия, ка́жется в мо́лодости? | What, according to Yuri, seems true when you're young?
++ Что всё мо́жно испра́вить.
+- Что жизнь коро́ткая.
+- Что пи́сьма не нужны́.
+? Како́й сове́т даёт Ю́рий? | What advice does Yuri give?
++ Отвеча́ть на пи́сьма.
+- Не писа́ть пи́сем.
+- Жить в Сиби́ри.
