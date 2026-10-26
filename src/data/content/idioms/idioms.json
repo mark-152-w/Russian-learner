@@ -1,0 +1,1096 @@
+{
+ "$schema": "../../../../schemas/idiom.schema.json",
+ "items": [
+  {
+   "id": "id-ni-pukha",
+   "kind": "idiom",
+   "level": "B1",
+   "ru": "Ни пу́ха ни пера́!",
+   "literal": "Neither down nor feather!",
+   "meaning": "Good luck! (before an exam or a test)",
+   "note": "The reply is **К чёрту!** (*To the devil!*). Saying **спаси́бо** is said to bring bad luck.",
+   "examples": [
+    {
+     "ru": "— За́втра экза́мен. — Ни пу́ха ни пера́!",
+     "en": "The exam's tomorrow. — Good luck!"
+    }
+   ]
+  },
+  {
+   "id": "id-sobaka",
+   "kind": "idiom",
+   "level": "B2",
+   "ru": "Вот где соба́ка зары́та",
+   "literal": "That's where the dog is buried",
+   "meaning": "That's the heart of the matter",
+   "examples": [
+    {
+     "ru": "Он про́сто боя́лся. Вот где соба́ка зары́та!",
+     "en": "He was simply scared. That's the real reason!"
+    }
+   ]
+  },
+  {
+   "id": "id-lapsha",
+   "kind": "idiom",
+   "level": "B1",
+   "ru": "Ве́шать лапшу́ на у́ши",
+   "literal": "To hang noodles on someone's ears",
+   "meaning": "To fool someone, to spin a tale",
+   "register": "colloquial",
+   "examples": [
+    {
+     "ru": "Не ве́шай мне лапшу́ на у́ши!",
+     "en": "Don't give me that!"
+    }
+   ]
+  },
+  {
+   "id": "id-rak",
+   "kind": "idiom",
+   "level": "B2",
+   "ru": "Когда́ рак на горе́ сви́стнет",
+   "literal": "When the crayfish whistles on the hill",
+   "meaning": "Never; when pigs fly",
+   "examples": [
+    {
+     "ru": "Он вернёт долг, когда́ рак на горе́ сви́стнет.",
+     "en": "He'll pay back the debt when pigs fly."
+    }
+   ]
+  },
+  {
+   "id": "id-maslo",
+   "kind": "idiom",
+   "level": "B1",
+   "ru": "Как по ма́слу",
+   "literal": "As if on butter",
+   "meaning": "Smoothly, without a hitch",
+   "examples": [
+    {
+     "ru": "Всё прошло́ как по ма́слу.",
+     "en": "Everything went like clockwork."
+    }
+   ]
+  },
+  {
+   "id": "id-medvezhya",
+   "kind": "idiom",
+   "level": "B2",
+   "ru": "Медве́жья услу́га",
+   "literal": "A bear's favour",
+   "meaning": "Well-meant help that does harm",
+   "note": "From a fable by Krylov: a bear swats a fly on his sleeping friend's forehead, with a rock.",
+   "examples": [
+    {
+     "ru": "Ты оказа́л ему́ медве́жью услу́гу.",
+     "en": "You did him more harm than good."
+    }
+   ]
+  },
+  {
+   "id": "id-utro",
+   "kind": "idiom",
+   "level": "B1",
+   "ru": "У́тро ве́чера мудрене́е",
+   "literal": "Morning is wiser than evening",
+   "meaning": "Sleep on it",
+   "examples": [
+    {
+     "ru": "Не реша́й сейча́с: у́тро ве́чера мудрене́е.",
+     "en": "Don't decide now: sleep on it."
+    }
+   ]
+  },
+  {
+   "id": "id-trud",
+   "kind": "idiom",
+   "level": "B1",
+   "ru": "Без труда́ не вы́тащишь и ры́бку из пруда́",
+   "literal": "Without effort you won't even pull a little fish out of the pond",
+   "meaning": "No pain, no gain",
+   "examples": [
+    {
+     "ru": "Учи́ слова́ ка́ждый день: без труда́ не вы́тащишь и ры́бку из пруда́.",
+     "en": "Learn words every day: no pain, no gain."
+    }
+   ]
+  },
+  {
+   "id": "id-baklushi",
+   "kind": "idiom",
+   "level": "B2",
+   "ru": "Бить баклу́ши",
+   "literal": "To beat wooden blanks",
+   "meaning": "To laze about",
+   "register": "colloquial",
+   "examples": [
+    {
+     "ru": "Хва́тит бить баклу́ши, пора́ рабо́тать!",
+     "en": "Stop lazing about, it's time to work!"
+    }
+   ]
+  },
+  {
+   "id": "id-ruki",
+   "kind": "idiom",
+   "level": "B1",
+   "ru": "Ру́ки не дохо́дят",
+   "literal": "The hands don't reach",
+   "meaning": "Never to get round to something",
+   "register": "colloquial",
+   "examples": [
+    {
+     "ru": "Давно́ хочу́ почини́ть кран, но ру́ки не дохо́дят.",
+     "en": "I've been meaning to fix the tap for ages, but I never get round to it."
+    }
+   ]
+  },
+  {
+   "id": "id-sheya",
+   "kind": "idiom",
+   "level": "B2",
+   "ru": "Сиде́ть на ше́е",
+   "literal": "To sit on someone's neck",
+   "meaning": "To live off someone",
+   "examples": [
+    {
+     "ru": "Ему́ три́дцать лет, а он сиди́т на ше́е у роди́телей.",
+     "en": "He's thirty and still living off his parents."
+    }
+   ]
+  },
+  {
+   "id": "id-pyatki",
+   "kind": "idiom",
+   "level": "B2",
+   "ru": "Душа́ ушла́ в пя́тки",
+   "literal": "My soul went into my heels",
+   "meaning": "To be terrified",
+   "examples": [
+    {
+     "ru": "Когда́ я уви́дел медве́дя, душа́ ушла́ в пя́тки.",
+     "en": "When I saw the bear, my heart was in my mouth."
+    }
+   ]
+  },
+  {
+   "id": "id-nebo",
+   "kind": "idiom",
+   "level": "B1",
+   "ru": "На седьмо́м не́бе",
+   "literal": "In the seventh heaven",
+   "meaning": "Overjoyed",
+   "examples": [
+    {
+     "ru": "Она́ сдала́ экза́мен и тепе́рь на седьмо́м не́бе.",
+     "en": "She passed the exam and is in seventh heaven."
+    }
+   ]
+  },
+  {
+   "id": "id-kot",
+   "kind": "idiom",
+   "level": "B1",
+   "ru": "Кот напла́кал",
+   "literal": "The cat cried (that much)",
+   "meaning": "Very little",
+   "register": "colloquial",
+   "examples": [
+    {
+     "ru": "Де́нег у меня́ — кот напла́кал.",
+     "en": "I've got next to no money."
+    }
+   ]
+  },
+  {
+   "id": "id-kapli",
+   "kind": "idiom",
+   "level": "B1",
+   "ru": "Как две ка́пли воды́",
+   "literal": "Like two drops of water",
+   "meaning": "As alike as two peas",
+   "examples": [
+    {
+     "ru": "Близнецы́ похо́жи как две ка́пли воды́.",
+     "en": "The twins are as alike as two peas in a pod."
+    }
+   ]
+  },
+  {
+   "id": "id-muha",
+   "kind": "idiom",
+   "level": "B1",
+   "ru": "Де́лать из му́хи слона́",
+   "literal": "To make an elephant out of a fly",
+   "meaning": "To make a mountain out of a molehill",
+   "examples": [
+    {
+     "ru": "Не де́лай из му́хи слона́, э́то ме́лочь.",
+     "en": "Don't make a mountain out of a molehill, it's a trifle."
+    }
+   ]
+  },
+  {
+   "id": "id-vodoy",
+   "kind": "idiom",
+   "level": "B2",
+   "ru": "Водо́й не разольёшь",
+   "literal": "You can't separate them with water",
+   "meaning": "Inseparable (of friends)",
+   "examples": [
+    {
+     "ru": "Ма́шу и Ка́тю водо́й не разольёшь.",
+     "en": "Masha and Katya are inseparable."
+    }
+   ]
+  },
+  {
+   "id": "id-zub",
+   "kind": "idiom",
+   "level": "B2",
+   "ru": "Зуб на зуб не попада́ет",
+   "literal": "Tooth doesn't meet tooth",
+   "meaning": "Shivering with cold",
+   "examples": [
+    {
+     "ru": "На у́лице так хо́лодно, что зуб на зуб не попада́ет.",
+     "en": "It's so cold out that my teeth are chattering."
+    }
+   ]
+  },
+  {
+   "id": "id-ryba",
+   "kind": "idiom",
+   "level": "B1",
+   "ru": "Как ры́ба в воде́",
+   "literal": "Like a fish in water",
+   "meaning": "Completely at home",
+   "examples": [
+    {
+     "ru": "На ку́хне она́ чу́вствует себя́ как ры́ба в воде́.",
+     "en": "In the kitchen she's in her element."
+    }
+   ]
+  },
+  {
+   "id": "id-gus",
+   "kind": "idiom",
+   "level": "B2",
+   "ru": "Как с гу́ся вода́",
+   "literal": "Like water off a goose",
+   "meaning": "Like water off a duck's back",
+   "examples": [
+    {
+     "ru": "Его́ руга́ют, а ему́ как с гу́ся вода́.",
+     "en": "They tell him off, but it's water off a duck's back."
+    }
+   ]
+  },
+  {
+   "id": "id-palets",
+   "kind": "idiom",
+   "level": "B2",
+   "ru": "Па́лец о па́лец не уда́рить",
+   "literal": "Not to strike finger against finger",
+   "meaning": "Not to lift a finger",
+   "examples": [
+    {
+     "ru": "Он па́лец о па́лец не уда́рил, что́бы помо́чь.",
+     "en": "He didn't lift a finger to help."
+    }
+   ]
+  },
+  {
+   "id": "id-krugom",
+   "kind": "idiom",
+   "level": "B1",
+   "ru": "Голова́ идёт кру́гом",
+   "literal": "My head is going round",
+   "meaning": "To feel overwhelmed",
+   "examples": [
+    {
+     "ru": "Сто́лько дел, что голова́ идёт кру́гом.",
+     "en": "So much to do, my head is spinning."
+    }
+   ]
+  },
+  {
+   "id": "id-gora",
+   "kind": "idiom",
+   "level": "B1",
+   "ru": "Гора́ с плеч",
+   "literal": "A mountain off the shoulders",
+   "meaning": "What a relief",
+   "examples": [
+    {
+     "ru": "Я сдал отчёт, гора́ с плеч!",
+     "en": "I've handed in the report: what a relief!"
+    }
+   ]
+  },
+  {
+   "id": "id-nos",
+   "kind": "idiom",
+   "level": "B1",
+   "ru": "Нос к но́су",
+   "literal": "Nose to nose",
+   "meaning": "Face to face",
+   "examples": [
+    {
+     "ru": "Мы столкну́лись нос к но́су у две́ри.",
+     "en": "We bumped into each other face to face at the door."
+    }
+   ]
+  },
+  {
+   "id": "id-tarelka",
+   "kind": "idiom",
+   "level": "B2",
+   "ru": "Не в свое́й таре́лке",
+   "literal": "Not in one's own plate",
+   "meaning": "Ill at ease, out of place",
+   "examples": [
+    {
+     "ru": "На вечери́нке я чу́вствовал себя́ не в свое́й таре́лке.",
+     "en": "At the party I felt out of place."
+    }
+   ]
+  },
+  {
+   "id": "id-kot-hvost",
+   "kind": "idiom",
+   "level": "B2",
+   "ru": "Тяну́ть кота́ за хвост",
+   "literal": "To pull the cat by the tail",
+   "meaning": "To drag things out, to dither",
+   "register": "colloquial",
+   "examples": [
+    {
+     "ru": "Не тяни́ кота́ за хвост, говори́ пря́мо!",
+     "en": "Stop dithering and say it straight!"
+    }
+   ]
+  },
+  {
+   "id": "id-kasha",
+   "kind": "idiom",
+   "level": "B1",
+   "ru": "Ка́ша в голове́",
+   "literal": "Porridge in the head",
+   "meaning": "Muddled thinking",
+   "register": "colloquial",
+   "examples": [
+    {
+     "ru": "По́сле ле́кции у меня́ ка́ша в голове́.",
+     "en": "After the lecture my head's in a muddle."
+    }
+   ]
+  },
+  {
+   "id": "id-ni-ryba",
+   "kind": "idiom",
+   "level": "B2",
+   "ru": "Ни ры́ба ни мя́со",
+   "literal": "Neither fish nor meat",
+   "meaning": "Nondescript, neither one thing nor the other",
+   "examples": [
+    {
+     "ru": "Фильм так себе́, ни ры́ба ни мя́со.",
+     "en": "The film's so-so, nothing special."
+    }
+   ]
+  },
+  {
+   "id": "id-suhim",
+   "kind": "idiom",
+   "level": "B2",
+   "ru": "Вы́йти сухи́м из воды́",
+   "literal": "To come out of the water dry",
+   "meaning": "To get away with it",
+   "examples": [
+    {
+     "ru": "Он всегда́ выхо́дит сухи́м из воды́.",
+     "en": "He always gets away with it."
+    }
+   ]
+  },
+  {
+   "id": "id-skvoz-zemlyu",
+   "kind": "idiom",
+   "level": "B2",
+   "ru": "Как сквозь зе́млю провали́лся",
+   "literal": "As if it fell through the earth",
+   "meaning": "Vanished into thin air",
+   "examples": [
+    {
+     "ru": "Я иска́л ключи́ весь день, а они́ как сквозь зе́млю провали́лись.",
+     "en": "I looked for my keys all day, but they've vanished into thin air."
+    }
+   ]
+  },
+  {
+   "id": "id-zarubi",
+   "kind": "idiom",
+   "level": "C1",
+   "ru": "Заруби́ себе́ на носу́",
+   "literal": "Notch it on your nose",
+   "meaning": "Remember this once and for all",
+   "register": "colloquial",
+   "examples": [
+    {
+     "ru": "Заруби́ себе́ на носу́: опа́здывать нельзя́!",
+     "en": "Get this into your head: no being late!"
+    }
+   ]
+  },
+  {
+   "id": "id-kurica",
+   "kind": "idiom",
+   "level": "B2",
+   "ru": "Пи́шет как ку́рица ла́пой",
+   "literal": "Writes like a hen with its foot",
+   "meaning": "Writes illegibly",
+   "register": "colloquial",
+   "examples": [
+    {
+     "ru": "Врач пи́шет как ку́рица ла́пой.",
+     "en": "The doctor's handwriting is a scrawl."
+    }
+   ]
+  },
+  {
+   "id": "id-vilami",
+   "kind": "idiom",
+   "level": "C1",
+   "ru": "Ви́лами по воде́ пи́сано",
+   "literal": "Written on water with a pitchfork",
+   "meaning": "Far from certain",
+   "examples": [
+    {
+     "ru": "Его́ обеща́ния — ви́лами по воде́ пи́сано.",
+     "en": "His promises are far from certain."
+    }
+   ]
+  },
+  {
+   "id": "id-dva-scheta",
+   "kind": "idiom",
+   "level": "B1",
+   "ru": "В два счёта",
+   "literal": "In two counts",
+   "meaning": "In no time",
+   "examples": [
+    {
+     "ru": "Я сде́лаю э́то в два счёта.",
+     "en": "I'll do it in a jiffy."
+    }
+   ]
+  },
+  {
+   "id": "id-zhar",
+   "kind": "idiom",
+   "level": "C1",
+   "ru": "Чужи́ми рука́ми жар загреба́ть",
+   "literal": "To rake embers with someone else's hands",
+   "meaning": "To get others to do the hard work",
+   "examples": [
+    {
+     "ru": "Он лю́бит чужи́ми рука́ми жар загреба́ть.",
+     "en": "He likes others to do the hard work for him."
+    }
+   ]
+  },
+  {
+   "id": "id-ne-sudba",
+   "kind": "idiom",
+   "level": "B1",
+   "ru": "Не судьба́",
+   "literal": "Not fate",
+   "meaning": "It wasn't meant to be",
+   "register": "colloquial",
+   "examples": [
+    {
+     "ru": "Мы так и не встре́тились. Не судьба́!",
+     "en": "We never did meet. It wasn't meant to be!"
+    }
+   ]
+  },
+  {
+   "id": "id-lyogok",
+   "kind": "idiom",
+   "level": "B2",
+   "ru": "Лёгок на поми́не",
+   "literal": "Light at the mention",
+   "meaning": "Speak of the devil",
+   "examples": [
+    {
+     "ru": "А вот и Ива́н, лёгок на поми́не!",
+     "en": "And here's Ivan: speak of the devil!"
+    }
+   ]
+  },
+  {
+   "id": "id-blin",
+   "kind": "idiom",
+   "level": "B1",
+   "ru": "Пе́рвый блин ко́мом",
+   "literal": "The first pancake comes out a lump",
+   "meaning": "The first attempt rarely works",
+   "examples": [
+    {
+     "ru": "Не расстра́ивайся: пе́рвый блин ко́мом.",
+     "en": "Don't be upset: nobody gets it right first time."
+    }
+   ]
+  },
+  {
+   "id": "id-maslenica",
+   "kind": "idiom",
+   "level": "C1",
+   "ru": "Не всё коту́ ма́сленица",
+   "literal": "It isn't always Pancake Week for the cat",
+   "meaning": "Good times don't last forever",
+   "examples": [
+    {
+     "ru": "О́тпуск ко́нчился: не всё коту́ ма́сленица.",
+     "en": "The holiday's over: all good things come to an end."
+    }
+   ]
+  },
+  {
+   "id": "id-tishe",
+   "kind": "idiom",
+   "level": "B2",
+   "ru": "Ти́ше е́дешь — да́льше бу́дешь",
+   "literal": "The slower you go, the further you'll get",
+   "meaning": "More haste, less speed",
+   "examples": [
+    {
+     "ru": "Не спеши́: ти́ше е́дешь — да́льше бу́дешь.",
+     "en": "Don't rush: more haste, less speed."
+    }
+   ]
+  },
+  {
+   "id": "id-sto-druzey",
+   "kind": "idiom",
+   "level": "B1",
+   "ru": "Не име́й сто рубле́й, а име́й сто друзе́й",
+   "literal": "Don't have a hundred roubles, have a hundred friends",
+   "meaning": "Friends are worth more than money",
+   "examples": [
+    {
+     "ru": "Друзья́ помогли́ мне перее́хать. Не име́й сто рубле́й, а име́й сто друзе́й!",
+     "en": "My friends helped me move house. Friends are worth more than money!"
+    }
+   ]
+  },
+  {
+   "id": "id-v-gostyah",
+   "kind": "idiom",
+   "level": "B1",
+   "ru": "В гостя́х хорошо́, а до́ма лу́чше",
+   "literal": "It's nice to be a guest, but home is better",
+   "meaning": "There's no place like home",
+   "examples": [
+    {
+     "ru": "Мы ра́ды верну́ться: в гостя́х хорошо́, а до́ма лу́чше.",
+     "en": "We're glad to be back: there's no place like home."
+    }
+   ]
+  },
+  {
+   "id": "id-volkov",
+   "kind": "idiom",
+   "level": "B2",
+   "ru": "Волко́в боя́ться — в лес не ходи́ть",
+   "literal": "If you fear wolves, don't go into the forest",
+   "meaning": "Nothing ventured, nothing gained",
+   "examples": [
+    {
+     "ru": "Рискни́! Волко́в боя́ться — в лес не ходи́ть.",
+     "en": "Take the risk! Nothing ventured, nothing gained."
+    }
+   ]
+  },
+  {
+   "id": "id-sem-raz",
+   "kind": "idiom",
+   "level": "B2",
+   "ru": "Семь раз отме́рь, оди́н раз отре́жь",
+   "literal": "Measure seven times, cut once",
+   "meaning": "Look before you leap",
+   "examples": [
+    {
+     "ru": "Не покупа́й сра́зу: семь раз отме́рь, оди́н раз отре́жь.",
+     "en": "Don't buy it straight away: look before you leap."
+    }
+   ]
+  },
+  {
+   "id": "id-yabloko",
+   "kind": "idiom",
+   "level": "B1",
+   "ru": "Я́блоко от я́блони недалеко́ па́дает",
+   "literal": "The apple doesn't fall far from the apple tree",
+   "meaning": "Like father, like son",
+   "examples": [
+    {
+     "ru": "Сын тако́й же упря́мый, как оте́ц: я́блоко от я́блони недалеко́ па́дает.",
+     "en": "The son's as stubborn as his father: the apple doesn't fall far from the tree."
+    }
+   ]
+  },
+  {
+   "id": "id-luchshe-pozdno",
+   "kind": "idiom",
+   "level": "B1",
+   "ru": "Лу́чше по́здно, чем никогда́",
+   "meaning": "Better late than never",
+   "examples": [
+    {
+     "ru": "Ты наконе́ц пришёл! Лу́чше по́здно, чем никогда́.",
+     "en": "You've finally come! Better late than never."
+    }
+   ]
+  },
+  {
+   "id": "col-blin",
+   "kind": "mat-explained",
+   "level": "B1",
+   "ru": "Блин!",
+   "literal": "Pancake!",
+   "meaning": "Damn! (a mild stand-in for a swear word)",
+   "register": "colloquial",
+   "note": "A polite stand-in for a much ruder word that starts the same way. Fine among friends, odd at work or with strangers.",
+   "examples": [
+    {
+     "ru": "Блин, я забы́л ключи́!",
+     "en": "Damn, I forgot my keys!"
+    }
+   ]
+  },
+  {
+   "id": "col-nichego-sebe",
+   "kind": "colloquial",
+   "level": "A2",
+   "ru": "Ничего́ себе́!",
+   "literal": "Nothing to oneself!",
+   "meaning": "Wow! No way!",
+   "register": "colloquial",
+   "examples": [
+    {
+     "ru": "Ничего́ себе́, како́й большо́й дом!",
+     "en": "Wow, what a big house!"
+    }
+   ]
+  },
+  {
+   "id": "col-davai",
+   "kind": "colloquial",
+   "level": "A2",
+   "ru": "Дава́й!",
+   "literal": "Give!",
+   "meaning": "Bye! / Come on! / OK, let's",
+   "register": "colloquial",
+   "note": "On its own, **Дава́й!** ends a call or a chat among friends: *see you*.",
+   "examples": [
+    {
+     "ru": "Ну всё, дава́й, пока́!",
+     "en": "Right, bye then!"
+    }
+   ]
+  },
+  {
+   "id": "col-ladno",
+   "kind": "colloquial",
+   "level": "A2",
+   "ru": "Ла́дно",
+   "meaning": "OK, fine, all right",
+   "register": "colloquial",
+   "examples": [
+    {
+     "ru": "— Позвони́ мне за́втра. — Ла́дно.",
+     "en": "Call me tomorrow. — OK."
+    }
+   ]
+  },
+  {
+   "id": "col-kak-by",
+   "kind": "colloquial",
+   "level": "B2",
+   "ru": "Как бы",
+   "literal": "As if",
+   "meaning": "Sort of, kind of (a filler)",
+   "register": "colloquial",
+   "note": "A filler that's easy to overuse; too many make you sound vague.",
+   "examples": [
+    {
+     "ru": "Я как бы не про́тив.",
+     "en": "I'm sort of not against it."
+    }
+   ]
+  },
+  {
+   "id": "col-tak-sebe",
+   "kind": "colloquial",
+   "level": "A2",
+   "ru": "Так себе́",
+   "meaning": "So-so",
+   "register": "colloquial",
+   "examples": [
+    {
+     "ru": "— Как фильм? — Так себе́.",
+     "en": "How was the film? — So-so."
+    }
+   ]
+  },
+  {
+   "id": "col-vot-imenno",
+   "kind": "colloquial",
+   "level": "B1",
+   "ru": "Вот и́менно!",
+   "meaning": "Exactly!",
+   "register": "colloquial",
+   "examples": [
+    {
+     "ru": "— Он опя́ть опозда́л? — Вот и́менно!",
+     "en": "Was he late again? — Exactly!"
+    }
+   ]
+  },
+  {
+   "id": "col-pochem",
+   "kind": "colloquial",
+   "level": "C1",
+   "ru": "Знать, что почём",
+   "literal": "To know what costs what",
+   "meaning": "To know the score",
+   "register": "colloquial",
+   "examples": [
+    {
+     "ru": "Он о́пытный и зна́ет, что почём.",
+     "en": "He's experienced and knows the score."
+    }
+   ]
+  },
+  {
+   "id": "col-kstati",
+   "kind": "colloquial",
+   "level": "A2",
+   "ru": "Кста́ти",
+   "meaning": "By the way",
+   "examples": [
+    {
+     "ru": "Кста́ти, ты ви́дел Ива́на?",
+     "en": "By the way, have you seen Ivan?"
+    }
+   ]
+  },
+  {
+   "id": "sl-ni-figa",
+   "kind": "slang",
+   "level": "B2",
+   "ru": "Ни фига́",
+   "meaning": "Nothing at all; no way",
+   "register": "slang",
+   "note": "Mild slang. Avoid it at work.",
+   "examples": [
+    {
+     "ru": "Я ни фига́ не по́нял.",
+     "en": "I didn't get a thing."
+    }
+   ]
+  },
+  {
+   "id": "sl-klass",
+   "kind": "slang",
+   "level": "A2",
+   "ru": "Класс!",
+   "literal": "Class!",
+   "meaning": "Great! Cool!",
+   "register": "slang",
+   "examples": [
+    {
+     "ru": "Мы е́дем на мо́ре? Класс!",
+     "en": "We're going to the seaside? Great!"
+    }
+   ]
+  },
+  {
+   "id": "sl-prikol",
+   "kind": "slang",
+   "level": "B1",
+   "ru": "Прико́л",
+   "meaning": "A joke, something funny",
+   "register": "slang",
+   "examples": [
+    {
+     "ru": "Вот прико́л!",
+     "en": "That's hilarious!"
+    }
+   ]
+  },
+  {
+   "id": "sl-tusovka",
+   "kind": "slang",
+   "level": "B1",
+   "ru": "Тусо́вка",
+   "meaning": "A party; the crowd you hang out with",
+   "register": "slang",
+   "examples": [
+    {
+     "ru": "Вчера́ была́ кла́ссная тусо́вка.",
+     "en": "There was a great party yesterday."
+    }
+   ]
+  },
+  {
+   "id": "et-appetit",
+   "kind": "etiquette",
+   "level": "A2",
+   "ru": "Прия́тного аппети́та!",
+   "meaning": "Enjoy your meal!",
+   "examples": [
+    {
+     "ru": "Сади́тесь за стол. Прия́тного аппети́та!",
+     "en": "Sit down at the table. Enjoy your meal!"
+    }
+   ]
+  },
+  {
+   "id": "et-par",
+   "kind": "etiquette",
+   "level": "B1",
+   "ru": "С лёгким па́ром!",
+   "literal": "With light steam!",
+   "meaning": "Said to someone after a bath or the banya",
+   "examples": [
+    {
+     "ru": "— Я из ба́ни. — С лёгким па́ром!",
+     "en": "I've just been to the banya. — Hope it was good!"
+    }
+   ]
+  },
+  {
+   "id": "et-ne-za-chto",
+   "kind": "etiquette",
+   "level": "A2",
+   "ru": "Не́ за что",
+   "literal": "Not for anything",
+   "meaning": "You're welcome",
+   "examples": [
+    {
+     "ru": "— Спаси́бо! — Не́ за что.",
+     "en": "Thank you! — You're welcome."
+    }
+   ]
+  },
+  {
+   "id": "et-bespokoystvo",
+   "kind": "etiquette",
+   "level": "B1",
+   "ru": "Извини́те за беспоко́йство",
+   "meaning": "Sorry to bother you",
+   "examples": [
+    {
+     "ru": "Извини́те за беспоко́йство, вы не зна́ете, где по́чта?",
+     "en": "Sorry to bother you, do you know where the post office is?"
+    }
+   ]
+  },
+  {
+   "id": "et-puti",
+   "kind": "etiquette",
+   "level": "A2",
+   "ru": "Счастли́вого пути́!",
+   "meaning": "Have a good trip!",
+   "note": "In **счастли́вый** the letters с and ч together sound like **щ**.",
+   "examples": [
+    {
+     "ru": "Пиши́ нам! Счастли́вого пути́!",
+     "en": "Write to us! Have a good trip!"
+    }
+   ]
+  },
+  {
+   "id": "et-na-zdorovye",
+   "kind": "etiquette",
+   "level": "B1",
+   "ru": "На здоро́вье",
+   "literal": "To your health",
+   "meaning": "You're welcome (after thanks for food)",
+   "note": "It isn't a toast in Russia: people toast **За ва́ше здоро́вье!**",
+   "examples": [
+    {
+     "ru": "— Спаси́бо, бы́ло о́чень вку́сно! — На здоро́вье!",
+     "en": "Thanks, it was delicious! — My pleasure!"
+    }
+   ]
+  },
+  {
+   "id": "et-bud-zdorov",
+   "kind": "etiquette",
+   "level": "A2",
+   "ru": "Будь здоро́в!",
+   "literal": "Be healthy!",
+   "meaning": "Bless you! (after a sneeze)",
+   "examples": [
+    {
+     "ru": "— Апчхи́! — Будь здоро́в!",
+     "en": "Atishoo! — Bless you!"
+    }
+   ]
+  },
+  {
+   "id": "et-prisazhivaytes",
+   "kind": "etiquette",
+   "level": "B1",
+   "ru": "Приса́живайтесь",
+   "meaning": "Please take a seat",
+   "note": "Polite and very common. **Сади́тесь** is fine too.",
+   "examples": [
+    {
+     "ru": "Приса́живайтесь, пожа́луйста.",
+     "en": "Please take a seat."
+    }
+   ]
+  },
+  {
+   "id": "et-novy-god",
+   "kind": "etiquette",
+   "level": "A2",
+   "ru": "С Но́вым го́дом!",
+   "meaning": "Happy New Year!",
+   "examples": [
+    {
+     "ru": "С Но́вым го́дом, с но́вым сча́стьем!",
+     "en": "Happy New Year, and here's to new happiness!"
+    }
+   ]
+  },
+  {
+   "id": "et-za-vstrechu",
+   "kind": "etiquette",
+   "level": "B1",
+   "ru": "За встре́чу!",
+   "meaning": "To our meeting! (a toast)",
+   "note": "Toasts start with **за** + accusative: **За дру́жбу!**, **За вас!**",
+   "examples": [
+    {
+     "ru": "Ну, за встре́чу!",
+     "en": "Well, here's to us meeting again!"
+    }
+   ]
+  },
+  {
+   "id": "cu-dorozhka",
+   "kind": "culture",
+   "level": "B1",
+   "ru": "Присе́сть на доро́жку",
+   "literal": "To sit down for the road",
+   "meaning": "To sit in silence for a moment before a journey",
+   "examples": [
+    {
+     "ru": "Дава́йте прися́дем на доро́жку.",
+     "en": "Let's sit down for a moment before we go."
+    }
+   ]
+  },
+  {
+   "id": "cu-svistet",
+   "kind": "culture",
+   "level": "B1",
+   "ru": "Не свисти́ в до́ме",
+   "meaning": "Don't whistle indoors (or there'll be no money)",
+   "examples": [
+    {
+     "ru": "Не свисти́ в до́ме, де́нег не бу́дет!",
+     "en": "Don't whistle indoors, or we'll have no money!"
+    }
+   ]
+  },
+  {
+   "id": "cu-porog",
+   "kind": "culture",
+   "level": "B1",
+   "ru": "Че́рез поро́г не здоро́ваются",
+   "meaning": "Don't greet or shake hands across a threshold",
+   "examples": [
+    {
+     "ru": "Заходи́, че́рез поро́г не здоро́ваются.",
+     "en": "Come in: you don't say hello across the threshold."
+    }
+   ]
+  },
+  {
+   "id": "cu-cvety",
+   "kind": "culture",
+   "level": "B1",
+   "ru": "Нечётное число́ цвето́в",
+   "meaning": "Give an odd number of flowers; even numbers are for funerals",
+   "examples": [
+    {
+     "ru": "Я купи́л пять роз, а не шесть.",
+     "en": "I bought five roses, not six."
+    }
+   ]
+  },
+  {
+   "id": "cu-stary-novy",
+   "kind": "culture",
+   "level": "B2",
+   "ru": "Ста́рый Но́вый год",
+   "meaning": "New Year by the old calendar, on the night of 13–14 January",
+   "examples": [
+    {
+     "ru": "Ста́рый Но́вый год отмеча́ют в ночь на четы́рнадцатое января́.",
+     "en": "Old New Year is celebrated on the night before the fourteenth of January."
+    }
+   ]
+  },
+  {
+   "id": "cu-imeniny",
+   "kind": "culture",
+   "level": "B2",
+   "ru": "Имени́ны",
+   "meaning": "A name day: the saint's day of the name you were given",
+   "examples": [
+    {
+     "ru": "Сего́дня у Татья́ны имени́ны.",
+     "en": "It's Tatyana's name day today."
+    }
+   ]
+  },
+  {
+   "id": "cu-pososhok",
+   "kind": "culture",
+   "level": "C1",
+   "ru": "На посошо́к",
+   "literal": "For the little walking stick",
+   "meaning": "One for the road",
+   "register": "colloquial",
+   "examples": [
+    {
+     "ru": "Ну, на посошо́к — и домо́й.",
+     "en": "Right, one for the road and then home."
+    }
+   ]
+  },
+  {
+   "id": "cu-ivanushka",
+   "kind": "culture",
+   "level": "B2",
+   "ru": "Ива́нушка-дура́чок",
+   "literal": "Little Ivan the fool",
+   "meaning": "The fool of the fairy tales, who wins in the end",
+   "examples": [
+    {
+     "ru": "В ска́зках Ива́нушка-дура́чок всегда́ побежда́ет.",
+     "en": "In fairy tales, Ivan the Fool always wins."
+    }
+   ]
+  }
+ ]
+}

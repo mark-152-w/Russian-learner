@@ -104,6 +104,7 @@ export const ACHIEVEMENTS: AchievementDef[] = [
   def('speed-25', 'Скорогово́рка', 'Tongue twister', 'Match 25 pairs in one speed round.', 'speedBest', 25, { feature: 'speed', xp: 100 }),
   def('adventure-1', 'Сы́щик', 'Sleuth', 'Finish the first chapter of «Де́ло».', 'adventureChapters', 1, { feature: 'adventure' }),
   def('adventure-5', 'Де́ло закры́то', 'Case closed', 'Finish all five chapters of «Де́ло».', 'adventureChapters', 5, { feature: 'adventure', xp: 300 }),
+  def('idioms-50', 'Кра́сное словцо́', 'A way with words', 'Get 50 idiom meanings right.', 'idiomsCorrect', 50, { feature: 'idioms', xp: 150 }),
   def('set-complete', 'Коллекционе́р', 'Collector', 'Complete a card set.', 'cardSets', 1, { feature: 'cards', xp: 200 }),
   def('cards-all', 'Храни́тель', 'Keeper', 'Collect all 32 cards.', 'cardsOwned', 32, { feature: 'cards', xp: 500, hidden: true }),
   def('town-25', 'Градострои́тель', 'Town planner', 'Reach 25 building levels in your town.', 'townLevels', 25, { feature: 'town', xp: 300 }),

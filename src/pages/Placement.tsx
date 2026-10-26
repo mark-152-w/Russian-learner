@@ -24,12 +24,12 @@ const SKILL_NAME: Record<Skill, string> = {
 }
 
 async function loadBank(): Promise<PlacementBank> {
-  const [a1, a2, b1, b2] = await Promise.all(PL_LEVELS.map((l) => loadChunk(l)))
+  const words = await Promise.all(PL_LEVELS.map((l) => loadChunk(l)))
   const sents = await Promise.all(PL_LEVELS.map((l) => loadSentences(l)))
   return {
-    lexemes: new Map([...a1!, ...a2!, ...b1!, ...b2!].map((x) => [x.id, x])),
-    words: { A1: a1!, A2: a2!, B1: b1!, B2: b2! },
-    sentences: { A1: sents[0]!, A2: sents[1]!, B1: sents[2]!, B2: sents[3]! },
+    lexemes: new Map(words.flat().map((x) => [x.id, x])),
+    words: Object.fromEntries(PL_LEVELS.map((l, i) => [l, words[i]!])) as PlacementBank['words'],
+    sentences: Object.fromEntries(PL_LEVELS.map((l, i) => [l, sents[i]!])) as PlacementBank['sentences'],
     handwritten: [...(await loadHandwritten()).values()],
   }
 }

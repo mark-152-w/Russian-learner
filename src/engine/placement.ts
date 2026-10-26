@@ -8,7 +8,7 @@ import { caseClozeItems, verbClozeItems } from './sentenceGen'
 
 export type Skill = 'cases' | 'verbs' | 'aspect' | 'vocab' | 'reading'
 export const SKILLS: Skill[] = ['cases', 'verbs', 'aspect', 'vocab', 'reading']
-export const PL_LEVELS = ['A1', 'A2', 'B1', 'B2'] as const
+export const PL_LEVELS = ['A1', 'A2', 'B1', 'B2', 'C1'] as const
 export type PlLevel = (typeof PL_LEVELS)[number]
 export const ITEMS_PER_SKILL = 5
 const START = 1 // A2
@@ -53,7 +53,7 @@ export interface PlacementResult {
   knownRank: number
 }
 
-const KNOWN_RANK = [150, 600, 1500, 3000]
+const KNOWN_RANK = [150, 600, 1500, 3000, 5500]
 
 export function placementResult(st: PlacementState): PlacementResult {
   const levels = SKILLS.map((s) => skillLevel(st[s]))

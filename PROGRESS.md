@@ -10,15 +10,20 @@
 | 3: specialist trainers (cases, aspect, motion, stress, numerals) | Done |
 | 4: graded reader, listening and speaking, keyboard trainer | **Done** (all 40 stories, not just the first 15) |
 | 5: games, collectible cards, the town, text adventure «Де́ло» | **Done** (in four chunks) |
-| 6: B1–C1 units, remaining grammar articles, idioms/culture | Next (estimate at the end) |
-| 7: stats dashboard, polish, accessibility, performance, GitHub Pages deploy | Later |
+| 6: B1–C1 units, remaining grammar articles, idioms/culture | **Done** (in four chunks) |
+| 7: stats dashboard, polish, accessibility, performance, GitHub Pages deploy | Next (estimate at the end) |
 
 `npm run check` passes:
 
 - 25 Python tool tests;
 - `validate.py`: 0 errors, 2 warnings (сёк in two C1 sentences: a real form pymorphy3 doesn't know);
 - typecheck;
-- 144 Vitest tests. New in Phase 5:
+- 147 Vitest tests. New in Phase 6:
+  - all 65 units, at every level, produce gradable items from every drill, in course order;
+  - placement recovers every level from A1 to C1;
+  - every idiom makes a four-way meaning question that grades.
+
+  New in Phase 5:
   - the preposition joining rule (о → об, с → со…);
   - every arcade wave deals valid gradable cards;
   - every crossword topic builds a consistent grid, and the daily puzzle is deterministic;
@@ -36,7 +41,7 @@
   - the dictation, shadowing and sound-pair items grade their own answers;
   - each keyboard lesson uses only learned letters.
 
-`npm run build`: the precache is 221 files (191 after Phase 4), 12.4 MB raw (about 3.2 MB gzipped), with the stories loaded one file at a time.
+`npm run build`: the precache is 291 files (221 after Phase 5), 12.4 MB raw (about 3.2 MB gzipped), with the stories loaded one file at a time.
 
 I ran end-to-end checks in headless Chromium at phone width, with no console errors. In Phase 5 they covered:
 the games hub; an arcade run, a speed round and a crossword; a boss fight to the end; the town; the collection and
@@ -50,6 +55,48 @@ including wrong cases. In Phase 4 they covered:
 - the Listening page and a dialogue;
 - the keyboard: typing a lesson line with Latin key positions;
 - the new Practice and Reference hubs.
+
+## Phase 6: what's built
+
+The course now runs from A2 to C1, and the reference section covers every level.
+
+**B1 course** (20 units). Work, health, travel, getting around town, shopping, weather, instructions, plans and
+dreams, describing people, home, money, habits, feelings, the kitchen, studying, news, holidays, sport,
+relationships, and a review. Each unit:
+- builds on one or two of the existing B1 articles (reflexive verbs, impersonal sentences, prefixed motion,
+  comparatives, imperatives, the conditional, кото́рый, plural declension, numerals, aspect);
+- has about 14 themed words, generated drills (case and verb cloze, forms, comparatives, patterns, find the
+  error, word tiles), and the aspect and motion trainer items where they fit;
+- has three new hand-written items for what generators can't do: е́сли бы, кото́рую versus кото́рая,
+  нельзя́ переходи́ть, жени́ться на, скуча́ть по…;
+- has a boss: Кот-Баю́н, Руса́лка, Хозя́йка Ме́дной горы́, Тарака́нище, Кот Бегемо́т, Медве́дь-воево́да and others.
+
+**B2/C1 grammar** (20 articles). B2: active and passive participles, gerunds, reported speech, что́бы, свой,
+verbs and their cases, figurative motion, word order, linking words. C1: word formation, diminutives,
+register, the subtle uses of aspect, collective numerals and approximation (лет пять), the passive,
+indefinite and negative pronouns (кто́-то, кто́-нибудь, никто́ не, не́кого), stress patterns, bookish
+prepositions (благодаря́, вопреки́, в связи́ с), and advanced impersonal constructions (мне не спи́тся, доро́гу
+занесло́ сне́гом). Each has the usual card, tables, an English comparison, common mistakes and examples.
+
+**B2 and C1 courses** (15 + 10 units). One unit per new article, each with a theme (science with
+participles, history with the passive, the law with bookish prepositions, poetry with stress…), themed
+vocabulary, generated drills and two or three hand-written items, plus 25 more bosses.
+
+**Idioms and culture** (`/idioms`, linked from Reference). There are 77 entries:
+- 46 idioms and proverbs, 8 everyday phrases, 4 slang words, 10 etiquette phrases and 8 customs, plus блин
+  explained;
+- each has its meaning, a literal translation, a register label, a note where it helps, and an example;
+- you can filter by kind, search in either language, and listen;
+- **Practise 10 meanings** runs a normal session (XP, combos, the learner model).
+
+**Elsewhere**:
+- Units sort by level, then number, and labels name the level ("B1 unit 3").
+- The placement test now reaches C1, so learners placed at B2 or C1 can test out of lower-level units.
+- Boss portraits beyond the hand-designed 40 get a stable look derived from their id.
+- New achievements: B1, B2 and C1 complete; Кра́сное словцо́ (50 idiom meanings).
+- New error types: comparative needed, superlative needed, wrong conjunction.
+- New tags: indefinite and negative pronouns.
+- The town's school and fortress thresholds are rescaled for 65 units and bosses.
 
 ## Phase 5: what's built
 
@@ -558,13 +605,14 @@ Russian–English pairs with per-sentence attribution. I'll ingest it at the sta
 | Stories and non-fiction | 40 (A2 10, B1 10, B2 10, C1 10), 6,083 analysed words, 147 questions |
 | Dialogues | 20 (A2 8, B1 8, B2 4), 1,159 words, 60 questions |
 | Keyboard lessons | 13 |
-| Grammar articles | 30 (20 A2, 10 B1), about 14k words |
-| Course units | 20 (A2), 286 unit words |
-| Hand-written exercise items | 226 (84 in units, 8 placement, 71 aspect, 63 motion) |
+| Grammar articles | 50 (20 A2, 10 B1, 10 B2, 10 C1) |
+| Course units | 65 (20 A2, 20 B1, 15 B2, 10 C1), 727 unit words, 65 bosses |
+| Hand-written exercise items | 344 (202 in units, 8 placement, 71 aspect, 63 motion) |
 | Trainer prepositions / minimal pairs | 40 / 14 |
-| Error types | 47 |
-| Grammar tags | 71 |
-| Achievements | 76 (all active, 12 hidden) |
+| Error types | 51 |
+| Grammar tags | 73 |
+| Achievements | 80 (all active, 12 hidden) |
+| Idioms and culture entries | 77 |
 | Collectible cards | 32 in 4 sets, 528 analysed words |
 | Unit bosses | 20 |
 | «Де́ло» | 5 chapters, 35 scenes, 3 grammar gates, 9 parser verbs |
@@ -588,17 +636,21 @@ re-checked the homographs by hand. Corrections I made along the way, for the rec
 - Phase 5: the dictionary-stress check caught мо́лча, следы́, за кото́м, в деревня́х and ло́вят (I'd stressed
   them wrong). It also caught поня́тнее, a form the lexicon lacks; I rephrased that sentence.
 
+- Phase 6: the checks caught аэропо́рту (I rephrased), посту́пит, стари́к, спле́тница, скупо́й, левша́, зага́дки,
+  прави́тельство, гля́нуть, руга́ют and ви́лами. Two stresses are deliberate and allowlisted with a note: **в связи́ с**
+  (the fixed preposition uses the locative stress) and **ни фига́** (the slang phrase, unlike the noun фи́га). Folklore
+  boss names are allowlisted too.
+
 If anything reads oddly to you, tell me the unit or article and I'll fix it.
 
-## Next: Phase 6, B1–C1 content (estimate)
+## Next: Phase 7, polish and deploy (estimate)
 
 | Piece | Work | Output tokens (approx.) |
 |---|---|---|
-| B1 course units (20), with bosses, drills from the registry and hand-written items | writing + data | 30–35k |
-| B2 and C1 units (about 25), lighter on hand-written items, more generated drills | writing + data | 30–35k |
-| Remaining grammar articles: B2 and C1 (about 20) | writing | 45–50k |
-| Idioms and culture file (about 80 entries, with examples), linked from cards and the reader | writing | 20–25k |
-| Course pages for the new levels, placement and test-out at B1+ | code | about 5k |
+| Stats dashboard: accuracy by case and tag over time, words learned, minutes, streak calendar | code | about 10k |
+| Accessibility pass: focus order, labels, contrast in every theme, reduced motion, screen-reader checks | code | about 6k |
+| Performance: bundle and chunk sizes, lazy loading of heavy pages and data, Lighthouse | code | about 5k |
+| Polish: empty states, small UI inconsistencies, a pass over every page at phone width | code | about 6k |
+| GitHub Pages deploy: workflow, base path, PWA update prompt, a README for running it | code + docs | about 4k |
 
-**Total: roughly 130–150k output tokens.** It splits naturally into four chunks (B1 units, B2/C1 units, grammar,
-idioms), like Phase 5.
+**Total: roughly 30k output tokens.** It's mostly code, so it can go in one or two chunks.
