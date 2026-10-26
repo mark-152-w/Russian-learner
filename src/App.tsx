@@ -45,6 +45,8 @@ const Boss = lazy(() => import('./pages/Boss'))
 const CardsPage = lazy(() => import('./pages/Cards').then((m) => ({ default: m.CardsPage })))
 const CardPage = lazy(() => import('./pages/Cards').then((m) => ({ default: m.CardPage })))
 const Town = lazy(() => import('./pages/Town'))
+const AdventureHub = lazy(() => import('./pages/Adventure').then((m) => ({ default: m.AdventureHub })))
+const AdventurePlay = lazy(() => import('./pages/Adventure').then((m) => ({ default: m.AdventurePlay })))
 
 const NAV = [
   { to: '/', label: 'Home', icon: 'home' },
@@ -56,7 +58,7 @@ const NAV = [
 ]
 const IN_SESSION = ['/practice', '/review', '/drill', '/lesson', '/placement', '/listen/']
 /** Full-screen sessions hide the navigation (a trainer's run page is /trainer/:id/:mode). */
-const inSessionPath = (p: string) => IN_SESSION.some((x) => p.startsWith(x)) || /^\/trainer\/[^/]+\/[^/]+|\/quiz$|^\/keyboard\/\d|^\/arcade|^\/crossword\/.|^\/speed|^\/boss\//.test(p)
+const inSessionPath = (p: string) => IN_SESSION.some((x) => p.startsWith(x)) || /^\/trainer\/[^/]+\/[^/]+|\/quiz$|^\/keyboard\/\d|^\/arcade|^\/crossword\/.|^\/speed|^\/boss\/|^\/adventure\/\d/.test(p)
 
 /** Applies theme, skin, motion and audio preferences to the document. */
 function Preferences() {
@@ -184,6 +186,8 @@ export default function App() {
               <Route path="/cards" element={<CardsPage />} />
               <Route path="/card/:id" element={<CardPage />} />
               <Route path="/town" element={<Town />} />
+              <Route path="/adventure" element={<AdventureHub />} />
+              <Route path="/adventure/:n" element={<AdventurePlay />} />
               <Route path="/grammar" element={<GrammarIndex />} />
               <Route path="/grammar/:id" element={<GrammarArticlePage />} />
             </Routes>

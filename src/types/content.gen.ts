@@ -345,9 +345,9 @@ export interface AdventureChapter {
   items?: {
     [k: string]: {
       /**
-       * Lexicon id: pos letter (n noun, v verb, a adjective, o other) + ':' + bare lemma, plus ':2', ':3' for homographs in dataset order.
+       * Lexicon entry (omit for names).
        */
-      lex: string
+      lex?: string
       /**
        * case → stressed form used in commands/text.
        */
@@ -355,6 +355,10 @@ export interface AdventureChapter {
         [k: string]: string
       }
       adjective?: string
+      /**
+       * English name, for help and error messages.
+       */
+      en?: string
     }
   }
   /**
@@ -407,6 +411,7 @@ export interface AdventureChapter {
         requires?: string[]
         sets?: string[]
         check?: ExerciseItem
+        en?: string
       }[]
       commands?: {
         verb: string
@@ -419,14 +424,30 @@ export interface AdventureChapter {
          * Russian text shown to the learner; stressed.
          */
         response?: string
+        /**
+         * English for the response.
+         */
+        en?: string
       }[]
       end?: boolean
+      /**
+       * English nudge shown under a parser scene (example commands).
+       */
+      hint?: string
     }
   }
   /**
    * true = hand-written Russian the author is not fully confident about; listed in PROGRESS.md.
    */
   review?: boolean
+  /**
+   * English teaser for the next chapter.
+   */
+  cliffhanger?: string
+  /**
+   * Typed commands (with the verbs of this and earlier chapters) rather than choice buttons.
+   */
+  parser?: boolean
 }
 export interface Bilingual {
   /**

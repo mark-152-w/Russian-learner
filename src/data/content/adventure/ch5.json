@@ -1,0 +1,167 @@
+{
+ "$schema": "../../../../schemas/adventure.schema.json",
+ "id": "adv-5",
+ "chapter": 5,
+ "level": "B1",
+ "title": {
+  "ru": "Развя́зка",
+  "en": "The solution"
+ },
+ "start": "return",
+ "parser": true,
+ "verbs": [
+  {
+   "id": "put",
+   "lex": "v:поставить",
+   "forms": [
+    "поста́вь",
+    "поста́вьте",
+    "поста́вить"
+   ],
+   "action": "use",
+   "object": {
+    "case": "acc",
+    "why": "Put *what?*: the accusative."
+   },
+   "topic": {
+    "preposition": "на",
+    "case": "acc",
+    "why": "Put it *where to?* (куда́?): **на** + accusative, на стол. На столе́ (prepositional) is *where* something already is."
+   }
+  },
+  {
+   "id": "give",
+   "lex": "v:отдать",
+   "forms": [
+    "отда́й",
+    "отда́йте",
+    "отда́ть",
+    "дай",
+    "да́йте",
+    "дать"
+   ],
+   "action": "give",
+   "object": {
+    "case": "acc",
+    "why": "Give *what?*: the accusative."
+   },
+   "topic": {
+    "case": "dat",
+    "why": "Give *to whom?*: the dative, with no preposition (Ни́не)."
+   }
+  }
+ ],
+ "items": {
+  "nina": {
+   "forms": {
+    "nom": "Ни́на",
+    "gen": "Ни́ны",
+    "dat": "Ни́не",
+    "acc": "Ни́ну",
+    "ins": "Ни́ной",
+    "prep": "Ни́не"
+   },
+   "en": "Nina"
+  },
+  "oleg": {
+   "forms": {
+    "nom": "Оле́г",
+    "gen": "Оле́га",
+    "dat": "Оле́гу",
+    "acc": "Оле́га",
+    "ins": "Оле́гом",
+    "prep": "Оле́ге"
+   },
+   "en": "Oleg"
+  },
+  "table": {
+   "forms": {
+    "nom": "стол",
+    "gen": "стола́",
+    "dat": "столу́",
+    "acc": "стол",
+    "ins": "столо́м",
+    "prep": "столе́"
+   },
+   "en": "table",
+   "lex": "n:стол"
+  },
+  "barsik": {
+   "forms": {
+    "nom": "Ба́рсик",
+    "gen": "Ба́рсика",
+    "dat": "Ба́рсику",
+    "acc": "Ба́рсика",
+    "ins": "Ба́рсиком",
+    "prep": "Ба́рсике"
+   },
+   "en": "Barsik"
+  }
+ },
+ "scenes": {
+  "return": {
+   "text": "Вы, Ми́ша и Джон возвраща́етесь в музе́й. Ни́на и Оле́г ждут вас в за́ле. Ми́ша де́ржит коро́бку.",
+   "en": "You, Misha and John return to the museum. Nina and Oleg are waiting for you in the hall. Misha is holding the box.",
+   "hint": "Open the box, then put the samovar back in its place.",
+   "commands": [
+    {
+     "verb": "open",
+     "to": "open_box",
+     "object": "box"
+    },
+    {
+     "verb": "look",
+     "to": "return",
+     "object": "box",
+     "response": "Обы́чная коро́бка. Тяжёлая.",
+     "en": "An ordinary box. Heavy."
+    }
+   ]
+  },
+  "open_box": {
+   "text": "В коро́бке — самова́р. Он блести́т, как но́вый: Ми́ша его́ почи́стил. Ни́на пока́зывает на пусто́й стол.",
+   "en": "The samovar is in the box. It shines like new: Misha has polished it. Nina points at the empty table.",
+   "hint": "поста́вь … на … (where to?)",
+   "commands": [
+    {
+     "verb": "put",
+     "to": "placed",
+     "object": "samovar",
+     "topic": "table"
+    },
+    {
+     "verb": "give",
+     "to": "placed",
+     "object": "samovar",
+     "topic": "nina"
+    }
+   ]
+  },
+  "placed": {
+   "text": "Самова́р сно́ва стои́т на столе́. Ни́на пла́чет от ра́дости. Пото́м она́ смо́трит на Ми́шу: «Что же нам с тобо́й де́лать?» Все смо́трят на вас.",
+   "en": "The samovar stands on the table again. Nina cries with joy. Then she looks at Misha: \"Whatever shall we do with you?\" Everyone looks at you.",
+   "choices": [
+    {
+     "text": "«Ми́ша верну́л самова́р. Прости́те его́».",
+     "en": "\"Misha brought the samovar back. Forgive him.\"",
+     "to": "forgive"
+    },
+    {
+     "text": "«Позвони́те в поли́цию».",
+     "en": "\"Call the police.\"",
+     "to": "police"
+    }
+   ]
+  },
+  "forgive": {
+   "text": "Ни́на обнима́ет племя́нника. «Ле́том бу́дешь рабо́тать в музе́е. Беспла́тно!» Джон обеща́ет написа́ть о самова́ре в газе́ту. Ба́рсик мурлы́чет. Де́ло закры́то!",
+   "en": "Nina hugs her nephew. \"This summer you'll work in the museum. For free!\" John promises to write about the samovar for the newspaper. Barsik purrs. Case closed!",
+   "end": true
+  },
+  "police": {
+   "text": "Прие́хала поли́ция. Ми́ша получи́л штраф, а ле́том он рабо́тает в музе́е. Ни́на говори́т вам спаси́бо. Ба́рсик мурлы́чет. Де́ло закры́то!",
+   "en": "The police came. Misha got a fine, and this summer he's working in the museum. Nina thanks you. Barsik purrs. Case closed!",
+   "end": true
+  }
+ }
+}

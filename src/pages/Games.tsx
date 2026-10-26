@@ -10,6 +10,7 @@ import { BossArt } from '../components/BossArt'
 import { Card } from '../components/ui'
 
 const GAMES = [
+  { to: '/adventure', title: '«Де́ло»: a detective story', detail: 'Five chapters. Find the missing samovar; from chapter 3 you type the commands in Russian.' },
   { to: '/arcade', title: 'Case arcade', detail: 'Nouns fall with the word that governs them. Pick the right form before they land.' },
   { to: '/speed', title: 'Speed match', detail: 'Five Russian words, five meanings, one minute. Runs of matches score more.' },
   { to: '/crossword', title: 'Declension crossword', detail: 'A daily puzzle where every answer is an inflected form, plus puzzles by topic.' },

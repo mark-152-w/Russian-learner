@@ -1,0 +1,398 @@
+{
+ "$schema": "../../../../schemas/adventure.schema.json",
+ "id": "adv-4",
+ "chapter": 4,
+ "level": "B1",
+ "title": {
+  "ru": "Вокза́л",
+  "en": "The station"
+ },
+ "start": "station",
+ "parser": true,
+ "cliffhanger": "Back to the museum, with a heavy box.",
+ "verbs": [
+  {
+   "id": "ask",
+   "lex": "v:спросить",
+   "forms": [
+    "спроси́",
+    "спроси́те",
+    "спроси́ть"
+   ],
+   "action": "ask",
+   "topic": {
+    "preposition": "о",
+    "case": "prep",
+    "why": "Ask *about* someone or something: **о** + prepositional (о ком? о чём?). Before a vowel о becomes об."
+   }
+  },
+  {
+   "id": "talk",
+   "lex": "v:поговорить",
+   "forms": [
+    "поговори́",
+    "поговори́те",
+    "поговори́ть"
+   ],
+   "action": "talk",
+   "topic": {
+    "preposition": "с",
+    "case": "ins",
+    "why": "Talk *with* someone: **с** + instrumental (с кем?)."
+   }
+  },
+  {
+   "id": "show",
+   "lex": "v:показать",
+   "forms": [
+    "покажи́",
+    "покажи́те",
+    "показа́ть"
+   ],
+   "action": "give",
+   "object": {
+    "case": "acc",
+    "why": "Show *what?*: the accusative."
+   },
+   "topic": {
+    "case": "dat",
+    "why": "Show *to whom?*: the dative, with no preposition."
+   }
+  }
+ ],
+ "items": {
+  "misha": {
+   "forms": {
+    "nom": "Ми́ша",
+    "gen": "Ми́ши",
+    "dat": "Ми́ше",
+    "acc": "Ми́шу",
+    "ins": "Ми́шей",
+    "prep": "Ми́ше"
+   },
+   "en": "Misha"
+  },
+  "john": {
+   "forms": {
+    "nom": "Джон",
+    "gen": "Джо́на",
+    "dat": "Джо́ну",
+    "acc": "Джо́на",
+    "ins": "Джо́ном",
+    "prep": "Джо́не"
+   },
+   "en": "John"
+  },
+  "lad": {
+   "forms": {
+    "nom": "па́рень",
+    "gen": "па́рня",
+    "dat": "па́рню",
+    "acc": "па́рня",
+    "ins": "па́рнем",
+    "prep": "па́рне"
+   },
+   "en": "the young man",
+   "lex": "n:парень"
+  },
+  "foreigner": {
+   "forms": {
+    "nom": "иностра́нец",
+    "gen": "иностра́нца",
+    "dat": "иностра́нцу",
+    "acc": "иностра́нца",
+    "ins": "иностра́нцем",
+    "prep": "иностра́нце"
+   },
+   "en": "the foreigner",
+   "lex": "n:иностранец"
+  },
+  "cashier": {
+   "forms": {
+    "nom": "касси́р",
+    "gen": "касси́ра",
+    "dat": "касси́ру",
+    "acc": "касси́ра",
+    "ins": "касси́ром",
+    "prep": "касси́ре"
+   },
+   "en": "the cashier",
+   "lex": "n:кассир"
+  },
+  "ticket": {
+   "forms": {
+    "nom": "биле́т",
+    "gen": "биле́та",
+    "dat": "биле́ту",
+    "acc": "биле́т",
+    "ins": "биле́том",
+    "prep": "биле́те"
+   },
+   "en": "ticket",
+   "lex": "n:билет"
+  },
+  "phone": {
+   "forms": {
+    "nom": "телефо́н",
+    "gen": "телефо́на",
+    "dat": "телефо́ну",
+    "acc": "телефо́н",
+    "ins": "телефо́ном",
+    "prep": "телефо́не"
+   },
+   "en": "phone",
+   "lex": "n:телефон"
+  },
+  "box": {
+   "forms": {
+    "nom": "коро́бка",
+    "gen": "коро́бки",
+    "dat": "коро́бке",
+    "acc": "коро́бку",
+    "ins": "коро́бкой",
+    "prep": "коро́бке"
+   },
+   "en": "box",
+   "lex": "n:коробка"
+  },
+  "samovar": {
+   "forms": {
+    "nom": "самова́р",
+    "gen": "самова́ра",
+    "dat": "самова́ру",
+    "acc": "самова́р",
+    "ins": "самова́ром",
+    "prep": "самова́ре"
+   },
+   "en": "samovar",
+   "lex": "n:самовар"
+  },
+  "office": {
+   "forms": {
+    "nom": "ка́сса",
+    "gen": "ка́ссы",
+    "dat": "ка́ссе",
+    "acc": "ка́ссу",
+    "ins": "ка́ссой",
+    "prep": "ка́ссе"
+   },
+   "en": "ticket office",
+   "lex": "n:касса"
+  },
+  "buffet": {
+   "forms": {
+    "nom": "буфе́т",
+    "gen": "буфе́та",
+    "dat": "буфе́ту",
+    "acc": "буфе́т",
+    "ins": "буфе́том",
+    "prep": "буфе́те"
+   },
+   "en": "buffet",
+   "lex": "n:буфет"
+  },
+  "platform": {
+   "forms": {
+    "nom": "платфо́рма",
+    "gen": "платфо́рмы",
+    "dat": "платфо́рме",
+    "acc": "платфо́рму",
+    "ins": "платфо́рмой",
+    "prep": "платфо́рме"
+   },
+   "en": "platform",
+   "lex": "n:платформа"
+  },
+  "hall": {
+   "forms": {
+    "nom": "зал",
+    "gen": "за́ла",
+    "dat": "за́лу",
+    "acc": "зал",
+    "ins": "за́лом",
+    "prep": "за́ле"
+   },
+   "en": "the hall",
+   "lex": "n:зал"
+  }
+ },
+ "scenes": {
+  "station": {
+   "text": "Вы на вокза́ле. Сейча́с во́семь часо́в ве́чера. Здесь ка́сса, буфе́т и платфо́рма.",
+   "en": "You're at the station. It's eight in the evening. There's a ticket office, a buffet and a platform.",
+   "hint": "New verbs: спроси́ (о + prepositional), поговори́ (с + instrumental), покажи́ (+ accusative + dative).",
+   "exits": {
+    "к ка́ссе": "office",
+    "в буфе́т": "buffet",
+    "на платфо́рму": "platform"
+   }
+  },
+  "platform": {
+   "text": "На платфо́рме пу́сто. По́езд придёт то́лько в де́сять.",
+   "en": "The platform is empty. The train only arrives at ten.",
+   "exits": {
+    "в зал": "station"
+   }
+  },
+  "office": {
+   "text": "В ка́ссе сиди́т пожило́й касси́р. «Слу́шаю вас», — говори́т он.",
+   "en": "An elderly cashier sits in the ticket office. \"How can I help?\" he says.",
+   "exits": {
+    "в зал": "station"
+   },
+   "commands": [
+    {
+     "verb": "ask",
+     "to": "office",
+     "topic": "misha",
+     "sets": [
+      "knows_buffet"
+     ],
+     "response": "«Молодо́й челове́к с большо́й коро́бкой? Он купи́л биле́т на по́езд в де́сять. Он сейча́с в буфе́те».",
+     "en": "\"A young man with a big box? He bought a ticket for the ten o'clock train. He's in the buffet now.\""
+    },
+    {
+     "verb": "ask",
+     "to": "office",
+     "topic": "lad",
+     "sets": [
+      "knows_buffet"
+     ],
+     "response": "«Молодо́й челове́к с большо́й коро́бкой? Он сейча́с в буфе́те».",
+     "en": "\"A young man with a big box? He's in the buffet now.\""
+    },
+    {
+     "verb": "ask",
+     "to": "office",
+     "topic": "john",
+     "response": "«Иностра́нец в шля́пе? Он сиди́т в буфе́те уже́ час».",
+     "en": "\"A foreigner in a hat? He's been sitting in the buffet for an hour.\""
+    },
+    {
+     "verb": "ask",
+     "to": "office",
+     "topic": "foreigner",
+     "response": "«Иностра́нец в шля́пе? Он сиди́т в буфе́те уже́ час».",
+     "en": "\"A foreigner in a hat? He's been sitting in the buffet for an hour.\""
+    },
+    {
+     "verb": "show",
+     "to": "office",
+     "object": "ticket",
+     "topic": "cashier",
+     "response": "Касси́р смо́трит на биле́т: «Да, э́то наш биле́т. Михаи́л купи́л два биле́та — себе́ и ещё одному́ челове́ку».",
+     "en": "The cashier looks at the ticket: \"Yes, that's one of ours. Mikhail bought two tickets: for himself and for one other person.\""
+    }
+   ]
+  },
+  "buffet": {
+   "text": "В буфе́те па́хнет пирожка́ми. За столо́м сидя́т два челове́ка: молодо́й па́рень с коро́бкой и иностра́нец в шля́пе.",
+   "en": "The buffet smells of pies. Two people are sitting at a table: a young man with a box and a foreigner in a hat.",
+   "hint": "Talk to them: поговори́ с … (instrumental).",
+   "exits": {
+    "в зал": "station"
+   },
+   "commands": [
+    {
+     "verb": "talk",
+     "to": "john",
+     "topic": "john"
+    },
+    {
+     "verb": "talk",
+     "to": "john",
+     "topic": "foreigner"
+    },
+    {
+     "verb": "talk",
+     "to": "misha",
+     "topic": "misha"
+    },
+    {
+     "verb": "talk",
+     "to": "misha",
+     "topic": "lad"
+    }
+   ]
+  },
+  "john": {
+   "text": "«Я Джон, коллекционе́р, — говори́т иностра́нец. — Ми́ша предложи́л мне самова́р. Но я не покупа́ю чужи́е ве́щи! Я хоте́л позвони́ть в поли́цию».",
+   "en": "\"I'm John, a collector,\" says the foreigner. \"Misha offered me a samovar. But I don't buy other people's property! I was going to call the police.\"",
+   "exits": {
+    "в зал": "station"
+   },
+   "commands": [
+    {
+     "verb": "talk",
+     "to": "misha",
+     "topic": "misha",
+     "sets": [
+      "john_honest"
+     ]
+    },
+    {
+     "verb": "talk",
+     "to": "misha",
+     "topic": "lad",
+     "sets": [
+      "john_honest"
+     ]
+    }
+   ],
+   "hint": "Now talk to Misha."
+  },
+  "misha": {
+   "text": "Ми́ша красне́ет. «Я ничего́ не зна́ю!» — говори́т он. Но коро́бка у его́ ног о́чень похо́жа на самова́р.",
+   "en": "Misha goes red. \"I don't know anything!\" he says. But the box at his feet looks very much like a samovar.",
+   "hint": "You have evidence. Show it to him: покажи́ … (what?) … (to whom?).",
+   "exits": {
+    "в зал": "station"
+   },
+   "commands": [
+    {
+     "verb": "show",
+     "to": "confess",
+     "object": "phone",
+     "topic": "misha"
+    },
+    {
+     "verb": "show",
+     "to": "confess",
+     "object": "phone",
+     "topic": "lad"
+    },
+    {
+     "verb": "show",
+     "to": "confess",
+     "object": "ticket",
+     "topic": "misha"
+    },
+    {
+     "verb": "show",
+     "to": "confess",
+     "object": "ticket",
+     "topic": "lad"
+    },
+    {
+     "verb": "ask",
+     "to": "misha",
+     "topic": "samovar",
+     "response": "«Како́й самова́р? Я ничего́ не зна́ю!»",
+     "en": "\"What samovar? I don't know anything!\""
+    },
+    {
+     "verb": "ask",
+     "to": "misha",
+     "topic": "box",
+     "response": "«Здесь кни́ги. Для университе́та», — говори́т Ми́ша и не смо́трит на вас.",
+     "en": "\"Books in here. For university,\" says Misha, not looking at you."
+    }
+   ]
+  },
+  "confess": {
+   "text": "Ми́ша до́лго молчи́т. Пото́м говори́т: «Да, э́то я. Мне нужны́ бы́ли де́ньги на учёбу. Я ду́мал, никто́ не заме́тит». Он открыва́ет коро́бку. Там самова́р.",
+   "en": "Misha is silent for a long time. Then he says: \"Yes, it was me. I needed money for my studies. I thought nobody would notice.\" He opens the box. The samovar is inside.",
+   "end": true
+  }
+ }
+}

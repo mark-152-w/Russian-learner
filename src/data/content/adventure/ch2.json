@@ -1,0 +1,169 @@
+{
+ "$schema": "../../../../schemas/adventure.schema.json",
+ "id": "adv-2",
+ "chapter": 2,
+ "level": "A2",
+ "title": {
+  "ru": "Следы́",
+  "en": "Tracks"
+ },
+ "start": "garden_gate",
+ "cliffhanger": "The trail leads out of town, to a dacha across the river.",
+ "scenes": {
+  "garden_gate": {
+   "text": "Вы выхо́дите в сад за музе́ем. Ба́рсик бежи́т впереди́. Сад ста́рый, большо́й и о́чень ти́хий.",
+   "en": "You go out into the garden behind the museum. Barsik runs ahead. The garden is old, big and very quiet.",
+   "choices": [
+    {
+     "text": "Идти́ за кото́м",
+     "en": "Follow the cat",
+     "to": "garden"
+    }
+   ]
+  },
+  "garden": {
+   "text": "У ста́рой я́блони Ба́рсик остана́вливается. На земле́ лежи́т биле́т.",
+   "en": "Barsik stops by an old apple tree. A ticket is lying on the ground.",
+   "choices": [
+    {
+     "text": "Взять биле́т",
+     "en": "Pick up the ticket",
+     "to": "ticket",
+     "check": {
+      "id": "adv-2-g1",
+      "type": "choice",
+      "level": "A2",
+      "tags": [
+       "case.acc.direct-object"
+      ],
+      "source": "handwritten",
+      "prompt": {
+       "ru": "Возьми́те ___!",
+       "en": "Take the ticket!",
+       "instruction": "Choose the right form to go on"
+      },
+      "accept": [
+       "биле́т"
+      ],
+      "distractors": [
+       {
+        "ru": "биле́та",
+        "error": "case.verb-government"
+       },
+       {
+        "ru": "биле́том",
+        "error": "case.wrong"
+       }
+      ],
+      "reason": "**возьми́те** + accusative. биле́т is inanimate masculine, so the accusative looks like the nominative: **биле́т**."
+     }
+    }
+   ]
+  },
+  "ticket": {
+   "text": "Э́то биле́т на ночно́й по́езд. По́езд ухо́дит сего́дня в де́сять часо́в ве́чера. На биле́те напи́сано и́мя: Михаи́л.",
+   "en": "It's a ticket for the night train. The train leaves today at ten in the evening. There's a name on the ticket: Mikhail.",
+   "choices": [
+    {
+     "text": "Показа́ть биле́т Ни́не",
+     "en": "Show the ticket to Nina",
+     "to": "nina",
+     "check": {
+      "id": "adv-2-g2",
+      "type": "choice",
+      "level": "A2",
+      "tags": [
+       "case.dat.indirect-object"
+      ],
+      "source": "handwritten",
+      "prompt": {
+       "ru": "Покажи́те биле́т ___.",
+       "en": "Show the ticket to Nina.",
+       "instruction": "Choose the right form to go on"
+      },
+      "accept": [
+       "Ни́не"
+      ],
+      "distractors": [
+       {
+        "ru": "Ни́ну",
+        "error": "case.verb-government"
+       },
+       {
+        "ru": "Ни́ной",
+        "error": "case.wrong"
+       }
+      ],
+      "reason": "Show something **to** someone: the person is in the dative, **Ни́не**."
+     }
+    }
+   ]
+  },
+  "nina": {
+   "text": "Ни́на чита́ет и́мя и бледне́ет. «Михаи́л — э́то мой племя́нник Ми́ша. Он студе́нт, живёт у меня́. Но он не мог!»",
+   "en": "Nina reads the name and turns pale. \"Mikhail is my nephew, Misha. He's a student and lives with me. But he couldn't have!\"",
+   "choices": [
+    {
+     "text": "Спроси́ть, где сейча́с Ми́ша",
+     "en": "Ask where Misha is now",
+     "to": "where"
+    }
+   ]
+  },
+  "where": {
+   "text": "«Он сказа́л, что пое́дет на да́чу, — отвеча́ет Ни́на. — На́ша да́ча за реко́й. Вот а́дрес».",
+   "en": "\"He said he was going to the dacha,\" Nina answers. \"Our dacha is across the river. Here's the address.\"",
+   "choices": [
+    {
+     "text": "Ещё раз поговори́ть с Оле́гом",
+     "en": "Talk to Oleg again",
+     "to": "oleg"
+    }
+   ]
+  },
+  "oleg": {
+   "text": "Оле́г вздыха́ет: «Хорошо́, я скажу́ пра́вду. Но́чью я ви́дел Ми́шу. Он нёс большу́ю су́мку. Я ду́мал, там кни́ги».",
+   "en": "Oleg sighs: \"All right, I'll tell the truth. In the night I saw Misha. He was carrying a big bag. I thought it had books in it.\"",
+   "choices": [
+    {
+     "text": "Спроси́ть, почему́ он молча́л",
+     "en": "Ask why he kept quiet",
+     "to": "oleg2",
+     "check": {
+      "id": "adv-2-g3",
+      "type": "choice",
+      "level": "A2",
+      "tags": [
+       "case.prep.about"
+      ],
+      "source": "handwritten",
+      "prompt": {
+       "ru": "Оле́г не хоте́л говори́ть о ___.",
+       "en": "Oleg didn't want to talk about Misha.",
+       "instruction": "Choose the right form to go on"
+      },
+      "accept": [
+       "Ми́ше"
+      ],
+      "distractors": [
+       {
+        "ru": "Ми́ша",
+        "error": "case.nom-default"
+       },
+       {
+        "ru": "Ми́шу",
+        "error": "case.acc-for-prep"
+       }
+      ],
+      "reason": "**о** + prepositional: о ком? **о Ми́ше**."
+     }
+    }
+   ]
+  },
+  "oleg2": {
+   "text": "«Ми́ша — хоро́ший па́рень, — говори́т Оле́г. — Я не хоте́л, что́бы у него́ бы́ли пробле́мы». Тепе́рь у вас есть след. Но где Ми́ша? И где самова́р?",
+   "en": "\"Misha's a good lad,\" says Oleg. \"I didn't want him to get into trouble.\" Now you have a lead. But where is Misha? And where is the samovar?",
+   "end": true
+  }
+ }
+}
