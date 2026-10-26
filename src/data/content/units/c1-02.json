@@ -1,0 +1,57 @@
+{
+ "$schema": "../../../../schemas/unit.schema.json",
+ "id": "u-c1-02",
+ "number": 2,
+ "level": "C1",
+ "title": {
+  "en": "Childhood",
+  "ru": "Де́тство"
+ },
+ "theme": "family warmth and diminutives",
+ "grammar": [
+  "g-diminutives"
+ ],
+ "vocab": [
+  "n:детство",
+  "n:воспоминание",
+  "n:ребёнок",
+  "n:малыш",
+  "n:игрушка",
+  "n:сказка",
+  "n:колыбель",
+  "n:бабушка",
+  "n:дедушка",
+  "n:внук",
+  "n:внучка",
+  "n:семья",
+  "a:ласковый",
+  "a:нежный"
+ ],
+ "drills": [
+  {
+   "items": [
+    "ex-c1-u02-01",
+    "ex-c1-u02-02"
+   ]
+  },
+  {
+   "generator": "vocab",
+   "count": 6
+  },
+  {
+   "generator": "case-cloze",
+   "count": 6
+  }
+ ],
+ "boss": {
+  "name": {
+   "ru": "Ска́зочник",
+   "en": "the storyteller"
+  },
+  "hp": 34,
+  "art": "boss-57"
+ },
+ "testOut": [
+  "diminutives"
+ ]
+}

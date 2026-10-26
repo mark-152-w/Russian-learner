@@ -44,6 +44,13 @@ export function GrammarIndex() {
           <span className="block text-sm text-ink-soft">Look up any word or form, see every ending, and your accuracy by case.</span>
         </span>
       </Link>
+      <Link to="/idioms" className="flex items-center gap-3 rounded-xl border-2 border-line bg-paper-2 px-5 py-4 transition hover:border-red">
+        <Icon name="book" className="h-7 w-7 text-red" />
+        <span>
+          <span className="block font-bold">Idioms and culture</span>
+          <span className="block text-sm text-ink-soft">Proverbs, everyday phrases, etiquette and customs, with what they really mean.</span>
+        </span>
+      </Link>
       {LEVELS.filter((lv) => shown.some((a) => a.level === lv)).map((lv) => (
         <Card key={lv}>
           <h2 className="font-serif text-xl text-red">{lv}</h2>

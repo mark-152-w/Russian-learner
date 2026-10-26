@@ -1,0 +1,75 @@
+{
+ "$schema": "../../../../schemas/unit.schema.json",
+ "id": "u-b1-14",
+ "number": 14,
+ "level": "B1",
+ "title": {
+  "en": "In the kitchen",
+  "ru": "На ку́хне"
+ },
+ "theme": "recipes",
+ "grammar": [
+  "g-imperatives"
+ ],
+ "vocab": [
+  "n:рецепт",
+  "n:продукт",
+  "n:мясо",
+  "n:рыба",
+  "n:овощ",
+  "n:фрукт",
+  "n:соль",
+  "n:сахар",
+  "n:масло",
+  "n:мука",
+  "v:варить",
+  "v:жарить",
+  "v:резать",
+  "v:добавить"
+ ],
+ "drills": [
+  {
+   "items": [
+    "ex-b1-u14-01",
+    "ex-b1-u14-02",
+    "ex-b1-u14-03"
+   ]
+  },
+  {
+   "generator": "forms",
+   "count": 6,
+   "params": {
+    "pos": "noun",
+    "slots": [
+     "sg_gen",
+     "pl_gen"
+    ]
+   }
+  },
+  {
+   "generator": "verb-cloze",
+   "count": 4,
+   "params": {
+    "kinds": [
+     "imp"
+    ]
+   }
+  },
+  {
+   "generator": "vocab",
+   "count": 6
+  }
+ ],
+ "boss": {
+  "name": {
+   "ru": "Тарака́нище",
+   "en": "the monster cockroach"
+  },
+  "hp": 27,
+  "art": "boss-34"
+ },
+ "testOut": [
+  "verb.imperative",
+  "case.gen.quantity"
+ ]
+}

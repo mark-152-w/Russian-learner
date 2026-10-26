@@ -1,0 +1,73 @@
+{
+ "$schema": "../../../../schemas/unit.schema.json",
+ "id": "u-b1-03",
+ "number": 3,
+ "level": "B1",
+ "title": {
+  "en": "Travelling",
+  "ru": "Путеше́ствия"
+ },
+ "theme": "trains and planes",
+ "grammar": [
+  "g-prefixed-motion"
+ ],
+ "vocab": [
+  "n:путешествие",
+  "n:вокзал",
+  "n:аэропорт",
+  "n:багаж",
+  "n:чемодан",
+  "n:граница",
+  "n:виза",
+  "n:гостиница",
+  "v:приехать",
+  "v:уехать",
+  "v:доехать",
+  "v:улететь",
+  "v:прилететь",
+  "n:пересадка"
+ ],
+ "drills": [
+  {
+   "items": [
+    "ex-b1-u03-01",
+    "ex-b1-u03-02",
+    "ex-b1-u03-03"
+   ]
+  },
+  {
+   "items": [
+    "ex-mot-24",
+    "ex-mot-25",
+    "ex-mot-26",
+    "ex-mot-27",
+    "ex-mot-28",
+    "ex-mot-29"
+   ]
+  },
+  {
+   "generator": "verb-cloze",
+   "count": 6,
+   "params": {
+    "kinds": [
+     "pst"
+    ]
+   }
+  },
+  {
+   "generator": "vocab",
+   "count": 4
+  }
+ ],
+ "boss": {
+  "name": {
+   "ru": "Чу́до-ю́до",
+   "en": "the sea monster"
+  },
+  "hp": 22,
+  "art": "boss-23"
+ },
+ "testOut": [
+  "motion.prefixed"
+ ]
+}

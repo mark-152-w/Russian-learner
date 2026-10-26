@@ -52,7 +52,7 @@ export default function Games() {
               .map((u) => (
                 <Link key={u.id} to={`/boss/${u.id}`} className="flex flex-col items-center rounded-lg p-1 text-center hover:bg-paper" title={u.boss!.name.en}>
                   <BossArt art={u.boss!.art} defeated={!!bosses[u.id]?.wins} className="h-14 w-14" />
-                  <span className="text-xs text-ink-soft">Unit {u.number}</span>
+                  <span className="text-xs text-ink-soft">{u.level} · {u.number}</span>
                 </Link>
               ))}
           </div>

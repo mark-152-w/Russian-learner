@@ -1,0 +1,66 @@
+{
+ "$schema": "../../../../schemas/unit.schema.json",
+ "id": "u-b1-16",
+ "number": 16,
+ "level": "B1",
+ "title": {
+  "en": "News and media",
+  "ru": "Но́вости"
+ },
+ "theme": "papers, TV, the internet",
+ "grammar": [
+  "g-kotoryj"
+ ],
+ "vocab": [
+  "n:газета",
+  "n:журнал",
+  "n:статья",
+  "n:журналист",
+  "n:телевидение",
+  "n:передача",
+  "n:интернет",
+  "n:сообщение",
+  "n:событие",
+  "v:узнать",
+  "v:сообщить",
+  "v:обсуждать",
+  "n:мнение"
+ ],
+ "drills": [
+  {
+   "items": [
+    "ex-b1-u16-01",
+    "ex-b1-u16-02",
+    "ex-b1-u16-03"
+   ]
+  },
+  {
+   "generator": "case-cloze",
+   "count": 6,
+   "params": {
+    "cases": [
+     "prep"
+    ]
+   }
+  },
+  {
+   "generator": "find-error",
+   "count": 4
+  },
+  {
+   "generator": "vocab",
+   "count": 4
+  }
+ ],
+ "boss": {
+  "name": {
+   "ru": "Во́ланд",
+   "en": "the dark professor"
+  },
+  "hp": 28,
+  "art": "boss-36"
+ },
+ "testOut": [
+  "pron.relative"
+ ]
+}

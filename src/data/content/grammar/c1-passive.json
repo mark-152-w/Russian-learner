@@ -1,0 +1,110 @@
+{
+ "$schema": "../../../../schemas/grammar-article.schema.json",
+ "id": "g-passive",
+ "title": {
+  "en": "The passive: three ways",
+  "ru": "Страда́тельный зало́г"
+ },
+ "level": "C1",
+ "tags": [
+  "participle.passive",
+  "verb.reflexive"
+ ],
+ "card": "Russian has three passives. A short participle for a result (perfective): **Дом постро́ен.** A **-ся** verb for a process or a habit (imperfective): **Дом стро́ится.** **Здесь продаю́тся биле́ты.** And, most often in speech, no passive at all: the **они́** form with no subject: **Здесь стро́ят дом.** **Меня́ зову́т А́нна.**",
+ "sections": [
+  {
+   "kind": "why",
+   "body": "English uses *is done* everywhere. Russian prefers active sentences, especially the subjectless **они́** form. Keep the real passives for writing and for results."
+  },
+  {
+   "kind": "table",
+   "title": "Three passives",
+   "table": {
+    "head": [
+     "Form",
+     "Aspect",
+     "Example",
+     "Where"
+    ],
+    "rows": [
+     [
+      "short participle + **быть**",
+      "perfective",
+      "**Письмо́ бы́ло напи́сано вчера́.**",
+      "speech and writing"
+     ],
+     [
+      "verb + **-ся**",
+      "imperfective",
+      "**Э́ти кни́ги чита́ются легко́.**",
+      "writing, general facts"
+     ],
+     [
+      "**они́** form, no subject",
+      "either",
+      "**Здесь говоря́т по-англи́йски.**",
+      "everyday speech"
+     ]
+    ]
+   }
+  },
+  {
+   "kind": "explanation",
+   "title": "Who did it",
+   "body": "The doer goes in the instrumental: **Дом был постро́ен рабо́чими.** **Рома́н чита́ют миллио́ны люде́й**: in speech, just make the doer the subject."
+  },
+  {
+   "kind": "explanation",
+   "title": "The -ся passive is imperfective only",
+   "body": "**Дом стро́ится** (*is being built*) is fine. For a perfective passive use the participle: **Дом постро́ен**, not ~~Дом постро́ился~~."
+  },
+  {
+   "kind": "common-mistakes",
+   "mistakes": [
+    {
+     "wrong": "Дом был постро́ен от рабо́чих.",
+     "right": "Дом был постро́ен рабо́чими.",
+     "why": "The doer of a passive is in the instrumental, with no preposition.",
+     "error": "case.instrumental-role"
+    },
+    {
+     "wrong": "Окно́ откры́лось ма́мой.",
+     "right": "Окно́ откры́ла ма́ма.",
+     "why": "A perfective **-ся** verb isn't a passive: make the doer the subject.",
+     "error": "verb.reflexive"
+    }
+   ]
+  }
+ ],
+ "examples": [
+  {
+   "ru": "Дом постро́ен в про́шлом году́.",
+   "en": "The house was built last year.",
+   "focus": "постро́ен"
+  },
+  {
+   "ru": "Здесь стро́ится но́вая шко́ла.",
+   "en": "A new school is being built here.",
+   "focus": "стро́ится"
+  },
+  {
+   "ru": "Здесь говоря́т по-англи́йски.",
+   "en": "English is spoken here.",
+   "focus": "говоря́т"
+  },
+  {
+   "ru": "Меня́ зову́т А́нна.",
+   "en": "My name is Anna.",
+   "focus": "зову́т"
+  },
+  {
+   "ru": "Рома́н был переведён на два́дцать языко́в.",
+   "en": "The novel was translated into twenty languages.",
+   "focus": "переведён"
+  }
+ ],
+ "related": [
+  "g-participles-passive",
+  "g-reflexive-verbs"
+ ]
+}

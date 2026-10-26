@@ -1,0 +1,982 @@
+{
+ "$schema": "../../../../schemas/exercise.schema.json",
+ "items": [
+  {
+   "id": "ex-b2-u01-01",
+   "type": "choice",
+   "level": "B2",
+   "tags": [
+    "participle.active"
+   ],
+   "prompt": {
+    "ru": "Учёные, ___ э́ту пробле́му, сде́лали откры́тие.",
+    "en": "The scientists studying this problem made a discovery.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "изуча́ющие"
+   ],
+   "distractors": [
+    {
+     "ru": "изуча́ющих",
+     "error": "agreement.case",
+     "why": "The participle agrees with **учёные** (nominative plural)."
+    },
+    {
+     "ru": "изуча́я",
+     "error": "agreement.case",
+     "why": "**изуча́я** is a gerund (*while studying*); describing the scientists needs the participle **изуча́ющие**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-b2-u01-02",
+   "type": "choice",
+   "level": "B2",
+   "tags": [
+    "participle.active"
+   ],
+   "prompt": {
+    "ru": "Я знако́м с учёным, ___ э́тот прибо́р.",
+    "en": "I know the scientist who created this device.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "созда́вшим"
+   ],
+   "distractors": [
+    {
+     "ru": "созда́вший",
+     "error": "agreement.case",
+     "why": "**с** + instrumental: the participle agrees with **учёным**."
+    },
+    {
+     "ru": "созда́вшего",
+     "error": "agreement.case",
+     "why": "**с** + instrumental: the participle agrees with **учёным**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-b2-u02-01",
+   "type": "choice",
+   "level": "B2",
+   "tags": [
+    "participle.passive"
+   ],
+   "prompt": {
+    "ru": "Мост был ___ в про́шлом году́.",
+    "en": "The bridge was built last year.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "постро́ен"
+   ],
+   "distractors": [
+    {
+     "ru": "постро́ена",
+     "error": "agreement.gender",
+     "why": "**мост** is masculine: **постро́ен**."
+    },
+    {
+     "ru": "постро́енный",
+     "error": "agreement.case",
+     "why": "After **был** the passive takes the short form: **постро́ен**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-b2-u02-02",
+   "type": "choice",
+   "level": "B2",
+   "tags": [
+    "participle.passive"
+   ],
+   "prompt": {
+    "ru": "Мы живём в до́ме, ___ изве́стным архите́ктором.",
+    "en": "We live in a house designed by a famous architect.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "постро́енном"
+   ],
+   "distractors": [
+    {
+     "ru": "постро́ен",
+     "error": "agreement.case",
+     "why": "A participle describing **до́ме** is long and agrees with it: **постро́енном**."
+    },
+    {
+     "ru": "постро́енный",
+     "error": "agreement.case",
+     "why": "It agrees with **в до́ме** (prepositional): **постро́енном**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-b2-u02-03",
+   "type": "choice",
+   "level": "B2",
+   "tags": [
+    "participle.passive"
+   ],
+   "prompt": {
+    "ru": "Магази́н ___ на ремо́нт.",
+    "en": "The shop is closed for renovation.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "закры́т"
+   ],
+   "distractors": [
+    {
+     "ru": "закры́та",
+     "error": "agreement.gender",
+     "why": "**магази́н** is masculine: **закры́т**."
+    },
+    {
+     "ru": "закры́л",
+     "error": "verb.tense",
+     "why": "Nobody's named as doing it: the passive, **закры́т**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-b2-u03-01",
+   "type": "choice",
+   "level": "B2",
+   "tags": [
+    "gerund"
+   ],
+   "prompt": {
+    "ru": "___ домо́й, я сра́зу лёг спать.",
+    "en": "When I got home, I went straight to bed.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "Верну́вшись"
+   ],
+   "distractors": [
+    {
+     "ru": "Возвраща́ясь",
+     "error": "aspect.wrong",
+     "why": "First home, then bed: the perfective gerund, **верну́вшись**."
+    },
+    {
+     "ru": "Верну́лся",
+     "error": "verb.tense",
+     "why": "Two verbs need joining: the gerund **верну́вшись**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-b2-u03-02",
+   "type": "choice",
+   "level": "B2",
+   "tags": [
+    "gerund"
+   ],
+   "prompt": {
+    "ru": "Он за́втракает, ___ газе́ту.",
+    "en": "He has breakfast reading the paper.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "чита́я"
+   ],
+   "distractors": [
+    {
+     "ru": "прочита́в",
+     "error": "aspect.wrong",
+     "why": "At the same time: the imperfective gerund, **чита́я**."
+    },
+    {
+     "ru": "чита́ющий",
+     "error": "agreement.case",
+     "why": "*While reading* is the gerund **чита́я**; **чита́ющий** describes a noun."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-b2-u04-01",
+   "type": "choice",
+   "level": "B2",
+   "tags": [
+    "syntax.reported-speech"
+   ],
+   "prompt": {
+    "ru": "Он сказа́л: «Я уста́л». → Он сказа́л, что ___.",
+    "en": "He said he was tired.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "уста́л"
+   ],
+   "distractors": [
+    {
+     "ru": "уста́нет",
+     "error": "verb.tense",
+     "why": "Reported speech keeps the original tense: **уста́л**."
+    },
+    {
+     "ru": "уста́ла",
+     "error": "verb.past-gender",
+     "why": "**он**: the masculine, **уста́л**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-b2-u04-02",
+   "type": "choice",
+   "level": "B2",
+   "tags": [
+    "syntax.reported-speech"
+   ],
+   "prompt": {
+    "ru": "Она́ спроси́ла, зна́ю ___ я его́.",
+    "en": "She asked whether I knew him.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "ли"
+   ],
+   "distractors": [
+    {
+     "ru": "е́сли",
+     "error": "syntax.conjunction",
+     "why": "*Whether* is **ли**, after the verb."
+    },
+    {
+     "ru": "что",
+     "error": "syntax.conjunction",
+     "why": "A reported yes/no question takes **ли**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-b2-u04-03",
+   "type": "choice",
+   "level": "B2",
+   "tags": [
+    "syntax.reported-speech"
+   ],
+   "prompt": {
+    "ru": "Ма́ма попроси́ла, ___ я позвони́л ба́бушке.",
+    "en": "Mum asked me to call Grandma.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "что́бы"
+   ],
+   "distractors": [
+    {
+     "ru": "что",
+     "error": "syntax.conjunction",
+     "why": "A request takes **что́бы** + past."
+    },
+    {
+     "ru": "е́сли",
+     "error": "syntax.conjunction",
+     "why": "A request takes **что́бы** + past."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-b2-u05-01",
+   "type": "choice",
+   "level": "B2",
+   "tags": [
+    "verb.conditional"
+   ],
+   "prompt": {
+    "ru": "Я хочу́, что́бы ты ___ ра́ньше.",
+    "en": "I want you to come earlier.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "пришёл"
+   ],
+   "distractors": [
+    {
+     "ru": "придёшь",
+     "error": "verb.tense",
+     "why": "**что́бы** with a new subject takes the past form: **пришёл**."
+    },
+    {
+     "ru": "прийти́",
+     "error": "verb.tense",
+     "why": "A new subject (**ты**) needs **что́бы** + past: **пришёл**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-b2-u05-02",
+   "type": "choice",
+   "level": "B2",
+   "tags": [
+    "verb.conditional"
+   ],
+   "prompt": {
+    "ru": "Я пришёл, что́бы ___ тебе́.",
+    "en": "I came to help you.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "помо́чь"
+   ],
+   "distractors": [
+    {
+     "ru": "помо́г",
+     "error": "verb.tense",
+     "why": "The same subject: **что́бы** + infinitive, **помо́чь**."
+    },
+    {
+     "ru": "помогу́",
+     "error": "verb.tense",
+     "why": "The same subject: **что́бы** + infinitive, **помо́чь**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-b2-u06-01",
+   "type": "choice",
+   "level": "B2",
+   "tags": [
+    "pron.possessive"
+   ],
+   "prompt": {
+    "ru": "Ива́н лю́бит ___ жену́.",
+    "en": "Ivan loves his (own) wife.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "свою́"
+   ],
+   "distractors": [
+    {
+     "ru": "его́",
+     "error": "pronoun.svoy",
+     "why": "**его́** would be another man's wife: **свою́**."
+    },
+    {
+     "ru": "свое́й",
+     "error": "case.wrong",
+     "why": "**люби́ть** + accusative: **свою́**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-b2-u06-02",
+   "type": "choice",
+   "level": "B2",
+   "tags": [
+    "pron.possessive"
+   ],
+   "prompt": {
+    "ru": "Ма́ша позвони́ла ___ ма́ме.",
+    "en": "Masha called her (own) mother.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "свое́й"
+   ],
+   "distractors": [
+    {
+     "ru": "её",
+     "error": "pronoun.svoy",
+     "why": "**её** would be someone else's mother: **свое́й**."
+    },
+    {
+     "ru": "свою́",
+     "error": "case.wrong",
+     "why": "**звони́ть** + dative: **свое́й**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-b2-u07-01",
+   "type": "choice",
+   "level": "B2",
+   "tags": [
+    "case.ins"
+   ],
+   "prompt": {
+    "ru": "Он руководи́т большо́й ___.",
+    "en": "He runs a big company.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "компа́нией"
+   ],
+   "distractors": [
+    {
+     "ru": "компа́нию",
+     "error": "case.verb-government",
+     "why": "**руководи́ть** + instrumental: **компа́нией**."
+    },
+    {
+     "ru": "компа́нии",
+     "error": "case.verb-government",
+     "why": "**руководи́ть** + instrumental: **компа́нией**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-b2-u07-02",
+   "type": "choice",
+   "level": "B2",
+   "tags": [
+    "case.dat"
+   ],
+   "prompt": {
+    "ru": "Не меша́й ___ рабо́тать.",
+    "en": "Don't stop me working.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "мне"
+   ],
+   "distractors": [
+    {
+     "ru": "меня́",
+     "error": "case.verb-government",
+     "why": "**меша́ть** + dative: **мне**."
+    },
+    {
+     "ru": "мной",
+     "error": "case.verb-government",
+     "why": "**меша́ть** + dative: **мне**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-b2-u07-03",
+   "type": "choice",
+   "level": "B2",
+   "tags": [
+    "case.ins"
+   ],
+   "prompt": {
+    "ru": "Роди́тели гордя́тся ___.",
+    "en": "The parents are proud of their son.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "сы́ном"
+   ],
+   "distractors": [
+    {
+     "ru": "сы́на",
+     "error": "case.verb-government",
+     "why": "**горди́ться** + instrumental: **сы́ном**."
+    },
+    {
+     "ru": "сы́ну",
+     "error": "case.verb-government",
+     "why": "**горди́ться** + instrumental: **сы́ном**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-b2-u08-01",
+   "type": "choice",
+   "level": "B2",
+   "tags": [
+    "motion.figurative"
+   ],
+   "prompt": {
+    "ru": "Тебе́ о́чень ___ э́тот костю́м.",
+    "en": "That suit really suits you.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "идёт"
+   ],
+   "distractors": [
+    {
+     "ru": "хо́дит",
+     "error": "motion.mode",
+     "why": "*To suit* is the unidirectional **идёт**."
+    },
+    {
+     "ru": "е́дет",
+     "error": "motion.mode",
+     "why": "*To suit* is **идёт**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-b2-u08-02",
+   "type": "choice",
+   "level": "B2",
+   "tags": [
+    "motion.figurative"
+   ],
+   "prompt": {
+    "ru": "Что сего́дня ___ в теа́тре?",
+    "en": "What's on at the theatre today?",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "идёт"
+   ],
+   "distractors": [
+    {
+     "ru": "хо́дит",
+     "error": "motion.mode",
+     "why": "A play or film that's on **идёт**."
+    },
+    {
+     "ru": "лети́т",
+     "error": "motion.mode",
+     "why": "A play or film that's on **идёт**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-b2-u09-01",
+   "type": "choice",
+   "level": "B2",
+   "tags": [
+    "syntax.word-order"
+   ],
+   "prompt": {
+    "ru": "— Где кни́га? — ___",
+    "en": "Where's the book? It's on the table.",
+    "instruction": "Choose the natural answer"
+   },
+   "accept": [
+    "Кни́га на столе́"
+   ],
+   "distractors": [
+    {
+     "ru": "На столе́ кни́га",
+     "error": "word-order.unnatural",
+     "why": "The answer (*on the table*) is the news, so it goes last."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-b2-u09-02",
+   "type": "choice",
+   "level": "B2",
+   "tags": [
+    "syntax.word-order"
+   ],
+   "prompt": {
+    "ru": "— Что на столе́? — ___",
+    "en": "What's on the table? A book.",
+    "instruction": "Choose the natural answer"
+   },
+   "accept": [
+    "На столе́ кни́га"
+   ],
+   "distractors": [
+    {
+     "ru": "Кни́га на столе́",
+     "error": "word-order.unnatural",
+     "why": "The answer (*a book*) is the news, so it goes last."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-b2-u10-01",
+   "type": "choice",
+   "level": "B2",
+   "tags": [
+    "syntax.conjunctions"
+   ],
+   "prompt": {
+    "ru": "Мы гуля́ли, ___ шёл дождь.",
+    "en": "We went for a walk although it was raining.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "хотя́"
+   ],
+   "distractors": [
+    {
+     "ru": "потому́ что",
+     "error": "syntax.conjunction",
+     "why": "The rain is a contrast, not a cause: **хотя́**."
+    },
+    {
+     "ru": "поэ́тому",
+     "error": "syntax.conjunction",
+     "why": "The rain is a contrast, not a result: **хотя́**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-b2-u10-02",
+   "type": "choice",
+   "level": "B2",
+   "tags": [
+    "case.gen.prepositions"
+   ],
+   "prompt": {
+    "ru": "Матч отмени́ли из-за ___.",
+    "en": "The match was cancelled because of the rain.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "дождя́"
+   ],
+   "distractors": [
+    {
+     "ru": "дождь",
+     "error": "case.preposition-government",
+     "why": "**из-за** + genitive: **дождя́**."
+    },
+    {
+     "ru": "дождём",
+     "error": "case.preposition-government",
+     "why": "**из-за** + genitive: **дождя́**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-b2-u11-01",
+   "type": "choice",
+   "level": "B2",
+   "tags": [
+    "participle.passive"
+   ],
+   "prompt": {
+    "ru": "Лес был ___ пожа́ром.",
+    "en": "The forest was destroyed by fire.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "уничто́жен"
+   ],
+   "distractors": [
+    {
+     "ru": "уничто́жена",
+     "error": "agreement.gender",
+     "why": "**лес** is masculine: **уничто́жен**."
+    },
+    {
+     "ru": "уничтожа́л",
+     "error": "verb.tense",
+     "why": "The forest suffered the action: the passive **был уничто́жен**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-b2-u11-02",
+   "type": "choice",
+   "level": "B2",
+   "tags": [
+    "case.acc"
+   ],
+   "prompt": {
+    "ru": "Мы должны́ защища́ть ___.",
+    "en": "We must protect nature.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "приро́ду"
+   ],
+   "distractors": [
+    {
+     "ru": "приро́де",
+     "error": "case.verb-government",
+     "why": "**защища́ть** + accusative: **приро́ду**."
+    },
+    {
+     "ru": "приро́ды",
+     "error": "case.verb-government",
+     "why": "**защища́ть** + accusative: **приро́ду**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-b2-u12-01",
+   "type": "choice",
+   "level": "B2",
+   "tags": [
+    "participle.passive"
+   ],
+   "prompt": {
+    "ru": "Э́то зако́н, ___ парла́ментом в про́шлом году́.",
+    "en": "This is a law passed by parliament last year.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "при́нятый"
+   ],
+   "distractors": [
+    {
+     "ru": "при́нят",
+     "error": "agreement.case",
+     "why": "Describing **зако́н**, the participle is long: **при́нятый**."
+    },
+    {
+     "ru": "принима́ющий",
+     "error": "agreement.case",
+     "why": "The law was passed (passive): **при́нятый**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-b2-u12-02",
+   "type": "choice",
+   "level": "B2",
+   "tags": [
+    "case.acc"
+   ],
+   "prompt": {
+    "ru": "Прави́тельство влия́ет на ___.",
+    "en": "The government affects the economy.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "эконо́мику"
+   ],
+   "distractors": [
+    {
+     "ru": "эконо́мике",
+     "error": "case.preposition-government",
+     "why": "**влия́ть на** + accusative: **эконо́мику**."
+    },
+    {
+     "ru": "эконо́мика",
+     "error": "case.preposition-government",
+     "why": "**влия́ть на** + accusative: **эконо́мику**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-b2-u13-01",
+   "type": "choice",
+   "level": "B2",
+   "tags": [
+    "case.ins"
+   ],
+   "prompt": {
+    "ru": "Я интересу́юсь ___.",
+    "en": "I'm interested in art.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "иску́сством"
+   ],
+   "distractors": [
+    {
+     "ru": "иску́сство",
+     "error": "case.verb-government",
+     "why": "**интересова́ться** + instrumental: **иску́сством**."
+    },
+    {
+     "ru": "иску́сства",
+     "error": "case.verb-government",
+     "why": "**интересова́ться** + instrumental: **иску́сством**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-b2-u13-02",
+   "type": "choice",
+   "level": "B2",
+   "tags": [
+    "case.dat"
+   ],
+   "prompt": {
+    "ru": "Э́та карти́на нра́вится ___.",
+    "en": "Everyone likes this painting.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "всем"
+   ],
+   "distractors": [
+    {
+     "ru": "все",
+     "error": "case.verb-government",
+     "why": "**нра́виться** takes the person in the dative: **всем**."
+    },
+    {
+     "ru": "всех",
+     "error": "case.verb-government",
+     "why": "**нра́виться** takes the person in the dative: **всем**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-b2-u14-01",
+   "type": "choice",
+   "level": "B2",
+   "tags": [
+    "gerund",
+    "motion.basic"
+   ],
+   "prompt": {
+    "ru": "___ на рабо́ту, я слу́шаю му́зыку.",
+    "en": "On my way to work I listen to music.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "Идя́"
+   ],
+   "distractors": [
+    {
+     "ru": "Пойдя́",
+     "error": "aspect.wrong",
+     "why": "At the same time: the imperfective gerund, **идя́**."
+    },
+    {
+     "ru": "Иду́щий",
+     "error": "agreement.case",
+     "why": "*While going* is the gerund **идя́**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-b2-u14-02",
+   "type": "choice",
+   "level": "B2",
+   "tags": [
+    "gerund"
+   ],
+   "prompt": {
+    "ru": "Прие́хав в Москву́, она́ ___ сестре́.",
+    "en": "When she arrived in Moscow, she called her sister.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "позвони́ла"
+   ],
+   "distractors": [
+    {
+     "ru": "позвони́в",
+     "error": "verb.tense",
+     "why": "A gerund needs a main verb: **позвони́ла**."
+    },
+    {
+     "ru": "звони́т",
+     "error": "verb.tense",
+     "why": "**прие́хав** sets the story in the past: **позвони́ла**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-b2-u15-01",
+   "type": "choice",
+   "level": "B2",
+   "tags": [
+    "verb.conditional"
+   ],
+   "prompt": {
+    "ru": "Я хочу́, что́бы ты ___ мне.",
+    "en": "I want you to help me.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "помо́г"
+   ],
+   "distractors": [
+    {
+     "ru": "помо́жешь",
+     "error": "verb.tense",
+     "why": "**что́бы** with a new subject: the past form, **помо́г**."
+    },
+    {
+     "ru": "помо́чь",
+     "error": "verb.tense",
+     "why": "A new subject (**ты**): **что́бы** + past, **помо́г**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-b2-u15-02",
+   "type": "choice",
+   "level": "B2",
+   "tags": [
+    "participle.passive"
+   ],
+   "prompt": {
+    "ru": "Кни́га, ___ мои́м дру́гом, ста́ла изве́стной.",
+    "en": "The book written by my friend became famous.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "напи́санная"
+   ],
+   "distractors": [
+    {
+     "ru": "напи́сана",
+     "error": "agreement.case",
+     "why": "Describing **кни́га**, the participle is long: **напи́санная**."
+    },
+    {
+     "ru": "написа́вшая",
+     "error": "agreement.case",
+     "why": "The book was written (passive): **напи́санная**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-b2-u15-03",
+   "type": "choice",
+   "level": "B2",
+   "tags": [
+    "syntax.reported-speech"
+   ],
+   "prompt": {
+    "ru": "Он сказа́л, что ___ за́втра.",
+    "en": "He said he would come tomorrow.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "придёт"
+   ],
+   "distractors": [
+    {
+     "ru": "пришёл бы",
+     "error": "verb.tense",
+     "why": "Reported speech keeps his original future: **придёт**."
+    },
+    {
+     "ru": "приходи́л",
+     "error": "verb.tense",
+     "why": "Reported speech keeps his original future: **придёт**."
+    }
+   ],
+   "source": "handwritten"
+  }
+ ]
+}

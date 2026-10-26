@@ -1,0 +1,75 @@
+{
+ "$schema": "../../../../schemas/unit.schema.json",
+ "id": "u-b1-20",
+ "number": 20,
+ "level": "B1",
+ "title": {
+  "en": "B1 review",
+  "ru": "Повторе́ние"
+ },
+ "theme": "everything from B1",
+ "grammar": [
+  "g-conditional",
+  "g-kotoryj",
+  "g-aspect-depth"
+ ],
+ "vocab": [
+  "n:жизнь",
+  "n:опыт",
+  "n:успех",
+  "n:ошибка",
+  "n:цель",
+  "n:решение",
+  "n:вывод",
+  "n:результат",
+  "v:изменить",
+  "v:решить",
+  "v:понять",
+  "v:продолжать",
+  "v:научиться"
+ ],
+ "drills": [
+  {
+   "items": [
+    "ex-b1-u20-01",
+    "ex-b1-u20-02",
+    "ex-b1-u20-03"
+   ]
+  },
+  {
+   "items": [
+    "ex-asp-55",
+    "ex-asp-56",
+    "ex-asp-57",
+    "ex-mot-51",
+    "ex-mot-52",
+    "ex-mot-53"
+   ]
+  },
+  {
+   "generator": "case-cloze",
+   "count": 6
+  },
+  {
+   "generator": "find-error",
+   "count": 4
+  },
+  {
+   "generator": "tiles",
+   "count": 3
+  }
+ ],
+ "boss": {
+  "name": {
+   "ru": "Медве́дь-воево́да",
+   "en": "the bear governor"
+  },
+  "hp": 30,
+  "art": "boss-40"
+ },
+ "testOut": [
+  "verb.conditional",
+  "pron.relative",
+  "aspect.nuance"
+ ]
+}

@@ -1,0 +1,63 @@
+{
+ "$schema": "../../../../schemas/unit.schema.json",
+ "id": "u-b2-12",
+ "number": 12,
+ "level": "B2",
+ "title": {
+  "en": "Society",
+  "ru": "О́бщество"
+ },
+ "theme": "politics and rights",
+ "grammar": [
+  "g-participles-passive",
+  "g-verb-government"
+ ],
+ "vocab": [
+  "n:общество",
+  "n:государство",
+  "n:власть",
+  "n:закон",
+  "n:выборы",
+  "n:правительство",
+  "n:гражданин",
+  "n:право",
+  "n:политика",
+  "n:президент",
+  "v:голосовать",
+  "v:решать",
+  "v:влиять"
+ ],
+ "drills": [
+  {
+   "items": [
+    "ex-b2-u12-01",
+    "ex-b2-u12-02"
+   ]
+  },
+  {
+   "generator": "case-cloze",
+   "count": 6,
+   "params": {
+    "cases": [
+     "acc",
+     "prep"
+    ]
+   }
+  },
+  {
+   "generator": "vocab",
+   "count": 6
+  }
+ ],
+ "boss": {
+  "name": {
+   "ru": "Чино́вник",
+   "en": "the bureaucrat"
+  },
+  "hp": 31,
+  "art": "boss-52"
+ },
+ "testOut": [
+  "participle.passive"
+ ]
+}

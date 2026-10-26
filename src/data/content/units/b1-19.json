@@ -1,0 +1,74 @@
+{
+ "$schema": "../../../../schemas/unit.schema.json",
+ "id": "u-b1-19",
+ "number": 19,
+ "level": "B1",
+ "title": {
+  "en": "Relationships",
+  "ru": "Отноше́ния"
+ },
+ "theme": "love, quarrels, weddings",
+ "grammar": [
+  "g-conditional",
+  "g-reflexive-verbs"
+ ],
+ "vocab": [
+  "n:друг",
+  "n:подруга",
+  "n:любовь",
+  "n:семья",
+  "n:муж",
+  "n:жена",
+  "v:ссориться",
+  "v:мириться",
+  "v:встречаться",
+  "v:жениться",
+  "v:развестись",
+  "v:доверять",
+  "v:ревновать"
+ ],
+ "drills": [
+  {
+   "items": [
+    "ex-b1-u19-01",
+    "ex-b1-u19-02",
+    "ex-b1-u19-03"
+   ]
+  },
+  {
+   "generator": "case-cloze",
+   "count": 6,
+   "params": {
+    "cases": [
+     "ins",
+     "acc"
+    ]
+   }
+  },
+  {
+   "generator": "verb-cloze",
+   "count": 6,
+   "params": {
+    "kinds": [
+     "pst"
+    ]
+   }
+  },
+  {
+   "generator": "vocab",
+   "count": 4
+  }
+ ],
+ "boss": {
+  "name": {
+   "ru": "Ка́рлсон",
+   "en": "the little man with a propeller"
+  },
+  "hp": 30,
+  "art": "boss-39"
+ },
+ "testOut": [
+  "verb.reflexive",
+  "case.ins.with"
+ ]
+}

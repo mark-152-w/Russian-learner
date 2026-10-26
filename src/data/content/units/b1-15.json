@@ -1,0 +1,74 @@
+{
+ "$schema": "../../../../schemas/unit.schema.json",
+ "id": "u-b1-15",
+ "number": 15,
+ "level": "B1",
+ "title": {
+  "en": "Studying",
+  "ru": "Учёба"
+ },
+ "theme": "exams and university",
+ "grammar": [
+  "g-aspect-depth"
+ ],
+ "vocab": [
+  "n:учёба",
+  "n:университет",
+  "n:факультет",
+  "n:студент",
+  "n:экзамен",
+  "n:сессия",
+  "n:лекция",
+  "n:семинар",
+  "n:оценка",
+  "v:сдать",
+  "v:поступить",
+  "v:готовиться",
+  "v:учить",
+  "n:диплом"
+ ],
+ "drills": [
+  {
+   "items": [
+    "ex-b1-u15-01",
+    "ex-b1-u15-02",
+    "ex-b1-u15-03"
+   ]
+  },
+  {
+   "items": [
+    "ex-asp-24",
+    "ex-asp-27",
+    "ex-asp-28",
+    "ex-asp-29",
+    "ex-asp-34",
+    "ex-asp-35"
+   ]
+  },
+  {
+   "generator": "verb-cloze",
+   "count": 6,
+   "params": {
+    "kinds": [
+     "pst"
+    ]
+   }
+  },
+  {
+   "generator": "vocab",
+   "count": 4
+  }
+ ],
+ "boss": {
+  "name": {
+   "ru": "Мойдоды́р",
+   "en": "the stern washstand"
+  },
+  "hp": 28,
+  "art": "boss-35"
+ },
+ "testOut": [
+  "aspect.past",
+  "aspect.nuance"
+ ]
+}

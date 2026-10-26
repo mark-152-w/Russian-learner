@@ -1,0 +1,85 @@
+{
+ "$schema": "../../../../schemas/unit.schema.json",
+ "id": "u-b1-10",
+ "number": 10,
+ "level": "B1",
+ "title": {
+  "en": "Home",
+  "ru": "Дом"
+ },
+ "theme": "flats and moving",
+ "grammar": [
+  "g-plural-declension"
+ ],
+ "vocab": [
+  "n:квартира",
+  "n:ремонт",
+  "n:мебель",
+  "n:шкаф",
+  "n:диван",
+  "n:стена",
+  "n:окно",
+  "n:дверь",
+  "n:кухня",
+  "n:ванная",
+  "n:комната",
+  "n:этаж",
+  "n:сосед",
+  "v:переехать"
+ ],
+ "drills": [
+  {
+   "items": [
+    "ex-b1-u10-01",
+    "ex-b1-u10-02",
+    "ex-b1-u10-03"
+   ]
+  },
+  {
+   "generator": "case-cloze",
+   "count": 8,
+   "params": {
+    "numbers": [
+     "pl"
+    ]
+   }
+  },
+  {
+   "generator": "forms",
+   "count": 6,
+   "params": {
+    "pos": "noun",
+    "slots": [
+     "pl_gen",
+     "pl_dat",
+     "pl_ins",
+     "pl_prep"
+    ]
+   }
+  },
+  {
+   "generator": "pattern",
+   "count": 4,
+   "params": {
+    "class": "fem-a",
+    "slots": [
+     "pl_gen",
+     "pl_dat",
+     "pl_ins",
+     "pl_prep"
+    ]
+   }
+  }
+ ],
+ "boss": {
+  "name": {
+   "ru": "Караба́с-Бараба́с",
+   "en": "the puppet master"
+  },
+  "hp": 25,
+  "art": "boss-30"
+ },
+ "testOut": [
+  "case.plural"
+ ]
+}

@@ -1,0 +1,78 @@
+{
+ "$schema": "../../../../schemas/unit.schema.json",
+ "id": "u-b1-01",
+ "number": 1,
+ "level": "B1",
+ "title": {
+  "en": "Work",
+  "ru": "Рабо́та"
+ },
+ "theme": "jobs and careers",
+ "grammar": [
+  "g-reflexive-verbs"
+ ],
+ "vocab": [
+  "n:профессия",
+  "n:зарплата",
+  "n:начальник",
+  "n:коллега",
+  "n:офис",
+  "n:опыт",
+  "n:должность",
+  "n:специалист",
+  "n:компания",
+  "v:заниматься",
+  "v:устроиться",
+  "v:уволиться",
+  "v:договориться",
+  "n:отпуск"
+ ],
+ "drills": [
+  {
+   "items": [
+    "ex-b1-u01-01",
+    "ex-b1-u01-02",
+    "ex-b1-u01-03"
+   ]
+  },
+  {
+   "generator": "verb-cloze",
+   "count": 8,
+   "params": {
+    "kinds": [
+     "np",
+     "pst"
+    ]
+   }
+  },
+  {
+   "generator": "forms",
+   "count": 6,
+   "params": {
+    "pos": "verb",
+    "slots": [
+     "np_1sg",
+     "np_3sg",
+     "np_3pl",
+     "pst_m",
+     "pst_f"
+    ]
+   }
+  },
+  {
+   "generator": "vocab",
+   "count": 4
+  }
+ ],
+ "boss": {
+  "name": {
+   "ru": "Кот-Баю́н",
+   "en": "the spellbinding cat"
+  },
+  "hp": 21,
+  "art": "boss-21"
+ },
+ "testOut": [
+  "verb.reflexive"
+ ]
+}

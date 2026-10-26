@@ -1,0 +1,115 @@
+{
+ "$schema": "../../../../schemas/grammar-article.schema.json",
+ "id": "g-gerunds",
+ "title": {
+  "en": "Gerunds: чита́я, прочита́в",
+  "ru": "Дееприча́стия"
+ },
+ "level": "B2",
+ "tags": [
+  "gerund"
+ ],
+ "card": "A gerund (**дееприча́стие**) is a verb used as an adverb: it adds a second action by the same subject. Imperfective: the **они́** stem + **-я** (**чита́ют → чита́я**), *while reading*. Perfective: the past stem + **-в** (**прочита́л → прочита́в**), *having read*. **Чита́я кни́гу, он улыба́лся.** **Прочита́в письмо́, она́ запла́кала.**",
+ "sections": [
+  {
+   "kind": "why",
+   "body": "Gerunds join two actions of one person without **и** or **когда́**. They're common in writing and careful speech, and a few are everyday words: **мо́лча**, **сто́я**, **не спеша́**."
+  },
+  {
+   "kind": "table",
+   "title": "Forming gerunds",
+   "table": {
+    "head": [
+     "Aspect",
+     "Rule",
+     "Examples",
+     "Meaning"
+    ],
+    "rows": [
+     [
+      "imperfective",
+      "the **они́** stem + **-я** (**-а** after ж, ш, ч, щ)",
+      "**чита́ют → чита́я**, **говоря́т → говоря́**, **слы́шат → слы́ша**",
+      "*while doing*"
+     ],
+     [
+      "imperfective in -ся",
+      "+ **-сь**",
+      "**занима́ются → занима́ясь**",
+      "*while doing*"
+     ],
+     [
+      "perfective",
+      "the past stem + **-в**; **-вшись** for -ся verbs",
+      "**прочита́л → прочита́в**, **верну́лся → верну́вшись**",
+      "*having done*"
+     ]
+    ]
+   }
+  },
+  {
+   "kind": "explanation",
+   "title": "Time comes from the main verb",
+   "body": "A gerund has no tense of its own. Imperfective means *at the same time* as the main verb; perfective means *before* it: **Выходя́ из до́ма, я закры́л дверь.** **Вы́йдя из до́ма, я поверну́л нале́во.** Perfectives of the **идти́** family end in **-я**: **войдя́, вы́йдя, придя́**."
+  },
+  {
+   "kind": "explanation",
+   "title": "Same subject only",
+   "body": "The gerund's doer must be the subject of the sentence. ~~Чита́я кни́гу, мне ста́ло ску́чно~~ is a famous error: the boredom isn't reading. Say **Чита́я кни́гу, я заскуча́л.**"
+  },
+  {
+   "kind": "note",
+   "title": "Verbs with no gerund",
+   "body": "Some imperfective verbs have no gerund: **писа́ть, пить, есть, ждать, мочь, бежа́ть**. Use a **когда́** clause instead: **Когда́ я писа́л письмо́, …**"
+  },
+  {
+   "kind": "common-mistakes",
+   "mistakes": [
+    {
+     "wrong": "Прочита́я письмо́, она́ запла́кала.",
+     "right": "Прочита́в письмо́, она́ запла́кала.",
+     "why": "Perfective verbs form the gerund in **-в**.",
+     "error": "aspect.wrong"
+    },
+    {
+     "wrong": "Гуля́я по па́рку, начался́ дождь.",
+     "right": "Когда́ я гуля́л по па́рку, начался́ дождь.",
+     "why": "The rain wasn't walking: a gerund needs the same subject as the main verb.",
+     "error": "word-order.unnatural"
+    }
+   ]
+  }
+ ],
+ "examples": [
+  {
+   "ru": "Чита́я кни́гу, он улыба́лся.",
+   "en": "He smiled as he read the book.",
+   "focus": "Чита́я"
+  },
+  {
+   "ru": "Прочита́в письмо́, она́ запла́кала.",
+   "en": "Having read the letter, she burst into tears.",
+   "focus": "Прочита́в"
+  },
+  {
+   "ru": "Он отве́тил, не ду́мая.",
+   "en": "He answered without thinking.",
+   "focus": "ду́мая"
+  },
+  {
+   "ru": "Верну́вшись домо́й, я сра́зу лёг спать.",
+   "en": "When I got home, I went straight to bed.",
+   "focus": "Верну́вшись"
+  },
+  {
+   "ru": "Она́ слу́шала мо́лча.",
+   "en": "She listened in silence.",
+   "focus": "мо́лча"
+  }
+ ],
+ "related": [
+  "g-participles-active",
+  "g-aspect-depth",
+  "g-conjunctions"
+ ]
+}

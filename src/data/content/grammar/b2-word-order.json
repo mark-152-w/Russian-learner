@@ -1,0 +1,105 @@
+{
+ "$schema": "../../../../schemas/grammar-article.schema.json",
+ "id": "g-word-order",
+ "title": {
+  "en": "Word order and emphasis",
+  "ru": "Поря́док слов"
+ },
+ "level": "B2",
+ "tags": [
+  "syntax.word-order"
+ ],
+ "card": "Russian word order is free in grammar but not in meaning: what's known comes first, what's new comes last. **Ма́ма пришла́** (Mum has arrived) answers *what did Mum do?*; **Пришла́ ма́ма** (It's Mum!) answers *who came?* The end of the sentence carries the news.",
+ "sections": [
+  {
+   "kind": "why",
+   "body": "Endings already show who does what, so Russian uses order for the flow of information. A wrong order isn't ungrammatical, but it answers a different question."
+  },
+  {
+   "kind": "explanation",
+   "title": "Known first, new last",
+   "body": "Answering *where's the book?*: **Кни́га на столе́.** Answering *what's on the table?*: **На столе́ кни́га.** Russian has no articles, and order does part of their job: **В ко́мнату вошла́ же́нщина** is *a woman came in*; **Же́нщина вошла́ в ко́мнату** is *the woman came in*."
+  },
+  {
+   "kind": "table",
+   "title": "Same words, different questions",
+   "table": {
+    "head": [
+     "Sentence",
+     "Answers"
+    ],
+    "rows": [
+     [
+      "**Я купи́л кни́гу вчера́.**",
+      "*When did you buy it?*"
+     ],
+     [
+      "**Вчера́ я купи́л кни́гу.**",
+      "*What did you do yesterday?*"
+     ],
+     [
+      "**Кни́гу купи́л я.**",
+      "*Who bought the book?*"
+     ],
+     [
+      "**Кни́гу я купи́л вчера́.**",
+      "*And the book?*"
+     ]
+    ]
+   }
+  },
+  {
+   "kind": "explanation",
+   "title": "Neutral orders",
+   "body": "In a neutral statement: subject, verb, object (**Ма́ша чита́ет кни́гу**); time and place first (**Вчера́ в Москве́ шёл дождь**); an adjective before its noun; pronouns before the verb. **Я тебя́ люблю́** is the warm, ordinary order; **Я люблю́ тебя́** puts the weight on *you*."
+  },
+  {
+   "kind": "common-mistakes",
+   "mistakes": [
+    {
+     "wrong": "Вошла́ в ко́мнату же́нщина.",
+     "right": "В ко́мнату вошла́ же́нщина.",
+     "why": "A new person in the scene goes last, after what's known (the room).",
+     "error": "word-order.unnatural"
+    },
+    {
+     "wrong": "Где моя́ кни́га? — Лежи́т кни́га на столе́.",
+     "right": "Где моя́ кни́га? — Она́ на столе́.",
+     "why": "The answer (where) is the news, so it goes at the end.",
+     "error": "word-order.unnatural"
+    }
+   ]
+  }
+ ],
+ "examples": [
+  {
+   "ru": "На столе́ лежи́т кни́га.",
+   "en": "There's a book on the table.",
+   "focus": "кни́га"
+  },
+  {
+   "ru": "Кни́га лежи́т на столе́.",
+   "en": "The book is on the table.",
+   "focus": "на столе́"
+  },
+  {
+   "ru": "Пришла́ ма́ма!",
+   "en": "Mum's here!",
+   "focus": "ма́ма"
+  },
+  {
+   "ru": "Я тебя́ люблю́.",
+   "en": "I love you.",
+   "focus": "тебя́"
+  },
+  {
+   "ru": "Э́ту кни́гу написа́л мой брат.",
+   "en": "It was my brother who wrote this book.",
+   "focus": "мой брат"
+  }
+ ],
+ "related": [
+  "g-cases-intro",
+  "g-conjunctions"
+ ]
+}

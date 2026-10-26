@@ -1,0 +1,132 @@
+{
+ "$schema": "../../../../schemas/grammar-article.schema.json",
+ "id": "g-indefinite-negative",
+ "title": {
+  "en": "Pronouns with -то, -нибудь, ни- and не-",
+  "ru": "Неопределённые и отрица́тельные местоиме́ния"
+ },
+ "level": "C1",
+ "tags": [
+  "pron.indefinite",
+  "pron.negative"
+ ],
+ "card": "**кто́-то** is *someone* (a real person I can't name): **Кто́-то звони́л.** **кто́-нибудь** is *anyone at all*: **Кто́-нибудь звони́л?** **никто́ не** is *no one*, with **не** on the verb: **Никто́ не звони́л.** **не́кому** + infinitive is *there's no one to*: **Не́кому позвони́ть.**",
+ "sections": [
+  {
+   "kind": "why",
+   "body": "English *some-, any-, no-* map onto four Russian series, chosen by whether the thing is real and known, real but unknown, or just possible. And Russian doubles its negation, which English forbids."
+  },
+  {
+   "kind": "table",
+   "title": "The series",
+   "table": {
+    "head": [
+     "",
+     "*some-* (real)",
+     "*any-*",
+     "*no-*"
+    ],
+    "rows": [
+     [
+      "who",
+      "**кто́-то**",
+      "**кто́-нибудь**",
+      "**никто́ не**"
+     ],
+     [
+      "what",
+      "**что́-то**",
+      "**что́-нибудь**",
+      "**ничего́ не**"
+     ],
+     [
+      "where",
+      "**где́-то**",
+      "**где́-нибудь**",
+      "**нигде́ не**"
+     ],
+     [
+      "when",
+      "**когда́-то**",
+      "**когда́-нибудь**",
+      "**никогда́ не**"
+     ]
+    ]
+   }
+  },
+  {
+   "kind": "explanation",
+   "title": "-то or -нибудь?",
+   "body": "**-то**: it exists, I just don't know or don't say which: **Тебе́ кто́-то звони́л.** **-нибудь**: any one, in questions, requests, plans and conditions: **Купи́ что́-нибудь на у́жин.** **Ты когда́-нибудь был в Росси́и?**"
+  },
+  {
+   "kind": "explanation",
+   "title": "Double negation",
+   "body": "**ни-** words need **не** on the verb: **Я никого́ не ви́дел.** **Она́ ничего́ не сказа́ла.** With a preposition the **ни** splits off: **ни с кем**, **ни о чём**: **Я ни с кем не говори́л.**"
+  },
+  {
+   "kind": "explanation",
+   "title": "не́- + infinitive",
+   "body": "**не́кого, не́чего, не́где, не́когда** (stressed **не́**) mean *there's no one to, nothing to, nowhere to, no time to*. The person goes in the dative, and the verb has no **не**: **Мне не́куда идти́.** **Ему́ не́чего сказа́ть.**"
+  },
+  {
+   "kind": "common-mistakes",
+   "mistakes": [
+    {
+     "wrong": "Я ви́дел никого́.",
+     "right": "Я никого́ не ви́дел.",
+     "why": "**ни-** words need **не** on the verb.",
+     "error": "pronoun.form"
+    },
+    {
+     "wrong": "Кто́-то звони́л? (asking)",
+     "right": "Кто́-нибудь звони́л?",
+     "why": "Asking whether *anyone* called: **-нибудь**.",
+     "error": "pronoun.form"
+    },
+    {
+     "wrong": "Мне не́чего не де́лать.",
+     "right": "Мне не́чего де́лать.",
+     "why": "**не́чего** + infinitive has no **не** on the verb.",
+     "error": "pronoun.form"
+    }
+   ]
+  }
+ ],
+ "examples": [
+  {
+   "ru": "Тебе́ кто́-то звони́л.",
+   "en": "Someone called you.",
+   "focus": "кто́-то"
+  },
+  {
+   "ru": "Кто́-нибудь звони́л?",
+   "en": "Did anyone call?",
+   "focus": "Кто́-нибудь"
+  },
+  {
+   "ru": "Я никого́ не ви́дел.",
+   "en": "I didn't see anyone.",
+   "focus": "никого́"
+  },
+  {
+   "ru": "Мне не́куда идти́.",
+   "en": "I have nowhere to go.",
+   "focus": "не́куда"
+  },
+  {
+   "ru": "Ты когда́-нибудь был в Сиби́ри?",
+   "en": "Have you ever been to Siberia?",
+   "focus": "когда́-нибудь"
+  },
+  {
+   "ru": "Купи́ что́-нибудь на у́жин.",
+   "en": "Buy something for dinner.",
+   "focus": "что́-нибудь"
+  }
+ ],
+ "related": [
+  "g-personal-pronouns",
+  "g-impersonal"
+ ]
+}

@@ -53,7 +53,8 @@ src/engine/            normalize.ts, translit.ts, slots.ts (slot → labels/tags
                        listening.ts (dictation, shadowing, ы/и + hard/soft pairs, а́канье), keyboard.ts (ЙЦУКЕН course),
                        arcade.ts (case arcade waves/cards, joinPreposition о→об…), crossword.ts (candidates from the
                        lexicon, grid builder, daySeed), speed.ts (speed match board), boss.ts (HP/hearts, revenge items),
-                       town.ts (buildings, levels, ranks), adventure.ts («Де́ло» parser: verb government → explanations)
+                       town.ts (buildings, levels, ranks), adventure.ts («Де́ло» parser: verb government → explanations),
+                       idioms.ts (meaning questions from content/idioms)
 src/srs/fsrs.ts        ts-fsrs wrapper; cards stored with epoch-ms dates; ratingFor(verdict, ms)
 src/srs/deck.ts        vocabulary deck: card directions, form cards from missed forms, new-word queue, due items
 src/db/                Dexie schema (db.ts), settings, backup (export/import/reset)
@@ -68,7 +69,8 @@ src/pages/             Home, Practice, Review, Course (course/unit/lesson), Plac
                        Reader (/reader, /story/:id[/quiz], /dialogue/:id), Listening (/listening, /listen/:mode),
                        Keyboard (/keyboard/:n), Games (/games hub), Arcade (/arcade), Crossword (/crossword[/:topic],
                        'daily' = day-seeded), Speed (/speed), Boss (/boss/:unit), Cards (/cards, /card/:id), Town (/town),
-                       Adventure (/adventure, /adventure/:n), Trophies, Settings, Attributions
+                       Adventure (/adventure, /adventure/:n), Idioms (/idioms, /idioms/practice), Trophies, Settings,
+                       Attributions
 src/features.ts        features that exist; quests/achievements for anything else stay hidden
 ```
 
@@ -120,6 +122,10 @@ src/features.ts        features that exist; quests/achievements for anything els
   руку́ is an error. Homographs pass with either stress, so check це́ны/цены́-type words yourself.
 - Markdown is only `**bold**`, `*italic*`, `~~wrong~~`, `` `code` ``, `{{ru:…}}` and `- ` bullets; nesting
   (`*give **him***`) can't render and is a validate error.
+- Units exist for A2 (20), B1 (20), B2 (15) and C1 (10): `content/units/{a2,b1,b2,c1}-NN.json`, numbered from 1
+  per level; `loadUnits()` sorts by level then number. Hand-written unit items live in
+  `content/exercises/{b1,b2,c1}-units.json` (ids `ex-b1-u03-02`); B1+ units also reuse `ex-asp-*`/`ex-mot-*`.
+  Boss art ids run `boss-01…boss-65`; BossArt has hand-picked looks to 40 and derives the rest from the id.
 - Unit drills are data: `{generator, params, count}` from the registry in `src/engine/drills.ts`, or `items`
   ids of hand-written exercises. `src/engine/units.test.ts` checks every unit yields gradable items.
 - Stories: one sentence per line `Russian | English`; blank line = new paragraph; dialogues `Speaker: text | en`.
@@ -136,6 +142,10 @@ src/features.ts        features that exist; quests/achievements for anything els
   wins, so put the flag-gated command before its fallback). Verbs and items accumulate from earlier chapters
   (later ids win). A verb's `object`/`topic` give case + preposition + `why`, which the parser explains; items
   list their six case forms (names need no `lex`). Flags are shared across chapters.
+- Idioms (`content/idioms/idioms.json`, schema `idiom.schema.json`): kind, level, stressed `ru`, `meaning`,
+  optional `literal`/`register`/`note`, and at least one example. The practice quiz draws distractor meanings
+  from the same kind.
+- Placement covers A1–C1 (`PL_LEVELS`); test-out is offered on units below the placed level.
 - Cards: rarities gate chests (never a card rarer than the chest). `Profile.cards` holds owned ids; completed
   sets pay `bonusXp` via the service (`awardCard()` for milestone rewards).
 - Minimal pairs (`MINIMAL_PAIRS` in trainers.ts) name lexeme + slot; forms come from the lexicon, and a test

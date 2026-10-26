@@ -1,0 +1,64 @@
+{
+ "$schema": "../../../../schemas/unit.schema.json",
+ "id": "u-b2-13",
+ "number": 13,
+ "level": "B2",
+ "title": {
+  "en": "Art",
+  "ru": "Иску́сство"
+ },
+ "theme": "galleries and talent",
+ "grammar": [
+  "g-verb-government"
+ ],
+ "vocab": [
+  "n:искусство",
+  "n:культура",
+  "n:театр",
+  "n:музей",
+  "n:выставка",
+  "n:художник",
+  "n:картина",
+  "n:композитор",
+  "n:писатель",
+  "n:поэзия",
+  "n:произведение",
+  "n:творчество",
+  "n:вдохновение",
+  "n:талант"
+ ],
+ "drills": [
+  {
+   "items": [
+    "ex-b2-u13-01",
+    "ex-b2-u13-02"
+   ]
+  },
+  {
+   "generator": "case-cloze",
+   "count": 6,
+   "params": {
+    "cases": [
+     "ins",
+     "dat"
+    ]
+   }
+  },
+  {
+   "generator": "vocab",
+   "count": 6
+  }
+ ],
+ "boss": {
+  "name": {
+   "ru": "Де́мон",
+   "en": "the Demon"
+  },
+  "hp": 32,
+  "art": "boss-53"
+ },
+ "testOut": [
+  "case.ins",
+  "case.dat"
+ ]
+}

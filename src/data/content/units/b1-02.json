@@ -1,0 +1,76 @@
+{
+ "$schema": "../../../../schemas/unit.schema.json",
+ "id": "u-b1-02",
+ "number": 2,
+ "level": "B1",
+ "title": {
+  "en": "Health",
+  "ru": "Здоро́вье"
+ },
+ "theme": "feeling ill, the doctor",
+ "grammar": [
+  "g-impersonal"
+ ],
+ "vocab": [
+  "n:здоровье",
+  "v:болеть",
+  "n:болезнь",
+  "n:врач",
+  "n:лекарство",
+  "n:таблетка",
+  "n:температура",
+  "n:голова",
+  "n:горло",
+  "n:кашель",
+  "n:аптека",
+  "v:поправиться",
+  "v:простудиться",
+  "n:больница"
+ ],
+ "drills": [
+  {
+   "items": [
+    "ex-b1-u02-01",
+    "ex-b1-u02-02",
+    "ex-b1-u02-03"
+   ]
+  },
+  {
+   "generator": "case-cloze",
+   "count": 6,
+   "params": {
+    "cases": [
+     "dat"
+    ]
+   }
+  },
+  {
+   "generator": "forms",
+   "count": 6,
+   "params": {
+    "pos": "noun",
+    "slots": [
+     "sg_gen",
+     "sg_dat",
+     "sg_prep"
+    ]
+   }
+  },
+  {
+   "generator": "vocab",
+   "count": 6
+  }
+ ],
+ "boss": {
+  "name": {
+   "ru": "Руса́лка",
+   "en": "the river maiden"
+  },
+  "hp": 21,
+  "art": "boss-22"
+ },
+ "testOut": [
+  "verb.impersonal",
+  "case.dat.impersonal"
+ ]
+}

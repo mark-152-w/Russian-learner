@@ -1,0 +1,77 @@
+{
+ "$schema": "../../../../schemas/unit.schema.json",
+ "id": "u-b1-09",
+ "number": 9,
+ "level": "B1",
+ "title": {
+  "en": "Describing people",
+  "ru": "Како́й он?"
+ },
+ "theme": "looks and character",
+ "grammar": [
+  "g-kotoryj"
+ ],
+ "vocab": [
+  "n:характер",
+  "n:внешность",
+  "a:высокий",
+  "a:худой",
+  "a:добрый",
+  "a:умный",
+  "a:честный",
+  "a:весёлый",
+  "a:серьёзный",
+  "n:глаз",
+  "n:волос",
+  "n:борода",
+  "n:улыбка"
+ ],
+ "drills": [
+  {
+   "items": [
+    "ex-b1-u09-01",
+    "ex-b1-u09-02",
+    "ex-b1-u09-03"
+   ]
+  },
+  {
+   "generator": "forms",
+   "count": 6,
+   "params": {
+    "pos": "adj",
+    "slots": [
+     "m_ins",
+     "f_ins",
+     "pl_ins",
+     "m_gen",
+     "f_prep"
+    ]
+   }
+  },
+  {
+   "generator": "vocab",
+   "count": 6
+  },
+  {
+   "generator": "case-cloze",
+   "count": 4,
+   "params": {
+    "cases": [
+     "gen",
+     "ins"
+    ]
+   }
+  }
+ ],
+ "boss": {
+  "name": {
+   "ru": "Хозя́йка Ме́дной горы́",
+   "en": "the Mistress of Copper Mountain"
+  },
+  "hp": 25,
+  "art": "boss-29"
+ },
+ "testOut": [
+  "pron.relative"
+ ]
+}

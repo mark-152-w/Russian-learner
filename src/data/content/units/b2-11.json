@@ -1,0 +1,66 @@
+{
+ "$schema": "../../../../schemas/unit.schema.json",
+ "id": "u-b2-11",
+ "number": 11,
+ "level": "B2",
+ "title": {
+  "en": "Nature",
+  "ru": "Приро́да"
+ },
+ "theme": "ecology",
+ "grammar": [
+  "g-conjunctions",
+  "g-participles-passive"
+ ],
+ "vocab": [
+  "n:природа",
+  "n:экология",
+  "n:загрязнение",
+  "n:климат",
+  "n:лес",
+  "n:река",
+  "n:воздух",
+  "v:защищать",
+  "v:сохранять",
+  "v:уничтожать",
+  "v:выбрасывать",
+  "a:чистый",
+  "a:вредный"
+ ],
+ "drills": [
+  {
+   "items": [
+    "ex-b2-u11-01",
+    "ex-b2-u11-02"
+   ]
+  },
+  {
+   "generator": "case-cloze",
+   "count": 6,
+   "params": {
+    "cases": [
+     "acc"
+    ]
+   }
+  },
+  {
+   "generator": "vocab",
+   "count": 6
+  },
+  {
+   "generator": "stress",
+   "count": 3
+  }
+ ],
+ "boss": {
+  "name": {
+   "ru": "Лесно́й Пожа́р",
+   "en": "the forest fire"
+  },
+  "hp": 31,
+  "art": "boss-51"
+ },
+ "testOut": [
+  "participle.passive"
+ ]
+}

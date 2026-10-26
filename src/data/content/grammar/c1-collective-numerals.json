@@ -1,0 +1,106 @@
+{
+ "$schema": "../../../../schemas/grammar-article.schema.json",
+ "id": "g-collective-numerals",
+ "title": {
+  "en": "Collective numerals and approximation: дво́е, о́ба, лет пять",
+  "ru": "Собира́тельные числи́тельные"
+ },
+ "level": "C1",
+ "tags": [
+  "num.cardinal",
+  "num.declension"
+ ],
+ "card": "**дво́е, тро́е, че́тверо…** count people as a group (**нас бы́ло тро́е**), children (**дво́е дете́й**) and nouns that exist only in the plural (**дво́е су́ток**). **о́ба / о́бе** means *both*. Put the number after the noun to say *about*: **лет пять**, *five years or so*.",
+ "sections": [
+  {
+   "kind": "why",
+   "body": "**Два челове́ка** and **дво́е** both mean *two people*, but **нас бы́ло дво́е** (*there were two of us*) is how Russians actually say it. And **о́ба / о́бе** changes with gender, which English *both* doesn't."
+  },
+  {
+   "kind": "table",
+   "title": "Collective numerals",
+   "table": {
+    "head": [
+     "Numeral",
+     "Use",
+     "Example"
+    ],
+    "rows": [
+     [
+      "**дво́е, тро́е, че́тверо, пя́теро**",
+      "a group of people, men or mixed; children",
+      "**Нас бы́ло тро́е.** **У них дво́е дете́й.**"
+     ],
+     [
+      "**дво́е, тро́е**",
+      "plural-only nouns",
+      "**дво́е су́ток**, **тро́е но́жниц**"
+     ],
+     [
+      "**о́ба** (m, n), **о́бе** (f)",
+      "*both*",
+      "**о́ба бра́та**, **о́бе сестры́**"
+     ]
+    ]
+   }
+  },
+  {
+   "kind": "explanation",
+   "title": "Cases",
+   "body": "Collective numerals take the genitive plural: **дво́е друзе́й**. In other cases they decline like plural adjectives: **с двои́ми детьми́**, **для обо́их бра́тьев**, **обе́им сёстрам**. They aren't used for women alone: say **три де́вушки**, not ~~тро́е де́вушек~~."
+  },
+  {
+   "kind": "explanation",
+   "title": "Approximation",
+   "body": "Put the number *after* the noun: **лет пять** (*five years or so*), **часа́ два** (*about two hours*), **челове́к де́сять**. Or use **о́коло** + genitive (**о́коло пяти́ лет**) or **приме́рно** (**приме́рно пять лет**)."
+  },
+  {
+   "kind": "common-mistakes",
+   "mistakes": [
+    {
+     "wrong": "О́ба сестры́ прие́хали.",
+     "right": "О́бе сестры́ прие́хали.",
+     "why": "Feminine nouns take **о́бе**.",
+     "error": "agreement.gender"
+    },
+    {
+     "wrong": "Я жил там о́коло пять лет.",
+     "right": "Я жил там о́коло пяти́ лет.",
+     "why": "**о́коло** + genitive: **пяти́**.",
+     "error": "numeral.declension"
+    }
+   ]
+  }
+ ],
+ "examples": [
+  {
+   "ru": "Нас бы́ло тро́е.",
+   "en": "There were three of us.",
+   "focus": "тро́е"
+  },
+  {
+   "ru": "У них дво́е дете́й.",
+   "en": "They have two children.",
+   "focus": "дво́е"
+  },
+  {
+   "ru": "О́бе сестры́ живу́т в Москве́.",
+   "en": "Both sisters live in Moscow.",
+   "focus": "О́бе"
+  },
+  {
+   "ru": "Я жил там лет пять.",
+   "en": "I lived there for five years or so.",
+   "focus": "лет пять"
+  },
+  {
+   "ru": "Мы е́хали часа́ два.",
+   "en": "We drove for about two hours.",
+   "focus": "часа́ два"
+  }
+ ],
+ "related": [
+  "g-numerals-cases",
+  "g-numbers"
+ ]
+}

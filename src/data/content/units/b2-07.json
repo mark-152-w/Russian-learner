@@ -1,0 +1,65 @@
+{
+ "$schema": "../../../../schemas/unit.schema.json",
+ "id": "u-b2-07",
+ "number": 7,
+ "level": "B2",
+ "title": {
+  "en": "Support",
+  "ru": "Подде́ржка"
+ },
+ "theme": "help, trust, pride",
+ "grammar": [
+  "g-verb-government"
+ ],
+ "vocab": [
+  "n:поддержка",
+  "n:совет",
+  "n:помощь",
+  "n:доверие",
+  "n:благодарность",
+  "v:помогать",
+  "v:мешать",
+  "v:верить",
+  "v:доверять",
+  "v:благодарить",
+  "v:гордиться",
+  "v:пользоваться",
+  "v:руководить",
+  "v:жаловаться"
+ ],
+ "drills": [
+  {
+   "items": [
+    "ex-b2-u07-01",
+    "ex-b2-u07-02",
+    "ex-b2-u07-03"
+   ]
+  },
+  {
+   "generator": "case-cloze",
+   "count": 8,
+   "params": {
+    "cases": [
+     "dat",
+     "ins"
+    ]
+   }
+  },
+  {
+   "generator": "vocab",
+   "count": 6
+  }
+ ],
+ "boss": {
+  "name": {
+   "ru": "Кот Матро́скин",
+   "en": "the canny cat"
+  },
+  "hp": 29,
+  "art": "boss-47"
+ },
+ "testOut": [
+  "case.dat",
+  "case.ins"
+ ]
+}

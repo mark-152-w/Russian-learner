@@ -1,0 +1,147 @@
+{
+ "$schema": "../../../../schemas/grammar-article.schema.json",
+ "id": "g-prepositions-bookish",
+ "title": {
+  "en": "Bookish prepositions: благодаря́, вопреки́, в тече́ние",
+  "ru": "Произво́дные предло́ги"
+ },
+ "level": "C1",
+ "tags": [
+  "case.gen.prepositions",
+  "case.dat.prepositions",
+  "case.ins.prepositions"
+ ],
+ "card": "Formal Russian adds prepositions made from other words. Genitive: **в тече́ние, в результа́те, в отли́чие от, во вре́мя**. Dative: **благодаря́, вопреки́, согла́сно**. Instrumental: **в связи́ с, по сравне́нию с**. **благодаря́** is for good causes; for bad ones use **из-за**.",
+ "sections": [
+  {
+   "kind": "why",
+   "body": "News, academic writing and official letters lean on these. They're also where C1 writers slip on case, because the base word misleads: **согла́сно** takes the dative, not the genitive."
+  },
+  {
+   "kind": "table",
+   "title": "Common formal prepositions",
+   "table": {
+    "head": [
+     "Preposition",
+     "Case",
+     "Meaning",
+     "Example"
+    ],
+    "rows": [
+     [
+      "**в тече́ние**",
+      "gen",
+      "during, within",
+      "**в тече́ние неде́ли**"
+     ],
+     [
+      "**в результа́те**",
+      "gen",
+      "as a result of",
+      "**в результа́те ава́рии**"
+     ],
+     [
+      "**в отли́чие от**",
+      "gen",
+      "unlike",
+      "**в отли́чие от бра́та**"
+     ],
+     [
+      "**благодаря́**",
+      "dat",
+      "thanks to",
+      "**благодаря́ дру́гу**"
+     ],
+     [
+      "**вопреки́**",
+      "dat",
+      "despite, against",
+      "**вопреки́ сове́ту**"
+     ],
+     [
+      "**согла́сно**",
+      "dat",
+      "according to (rules)",
+      "**согла́сно зако́ну**"
+     ],
+     [
+      "**в связи́ с**",
+      "ins",
+      "in connection with, because of",
+      "**в связи́ с ремо́нтом**"
+     ],
+     [
+      "**по сравне́нию с**",
+      "ins",
+      "compared with",
+      "**по сравне́нию с про́шлым го́дом**"
+     ]
+    ]
+   }
+  },
+  {
+   "kind": "explanation",
+   "title": "Three ways to give a cause",
+   "body": "**благодаря́** + dative for a good cause: **Благодаря́ тебе́ я сдал экза́мен.** **из-за** + genitive for a bad one: **Из-за дождя́ матч отмени́ли.** **в связи́ с** + instrumental, neutral and official: **В связи́ с ремо́нтом магази́н закры́т.**"
+  },
+  {
+   "kind": "spelling-rule",
+   "title": "Spelling",
+   "body": "**в тече́ние** ends in **-е**, like **в продолже́ние**. **насчёт** (*about*) is one word; **на счёт** is *to the account*."
+  },
+  {
+   "kind": "common-mistakes",
+   "mistakes": [
+    {
+     "wrong": "согла́сно зако́на",
+     "right": "согла́сно зако́ну",
+     "why": "**согла́сно** takes the dative.",
+     "error": "case.preposition-government"
+    },
+    {
+     "wrong": "Благодаря́ дождю́ матч отмени́ли.",
+     "right": "Из-за дождя́ матч отмени́ли.",
+     "why": "**благодаря́** is for good causes; a cancelled match calls for **из-за**.",
+     "error": "vocab.wrong-word"
+    },
+    {
+     "wrong": "в тече́нии неде́ли",
+     "right": "в тече́ние неде́ли",
+     "why": "The preposition ends in **-е**."
+    }
+   ]
+  }
+ ],
+ "examples": [
+  {
+   "ru": "Благодаря́ тебе́ я сдал экза́мен.",
+   "en": "Thanks to you I passed the exam.",
+   "focus": "Благодаря́"
+  },
+  {
+   "ru": "В связи́ с ремо́нтом магази́н закры́т.",
+   "en": "The shop is closed for renovation.",
+   "focus": "В связи́ с"
+  },
+  {
+   "ru": "В отли́чие от бра́та, он лю́бит спорт.",
+   "en": "Unlike his brother, he loves sport.",
+   "focus": "В отли́чие от"
+  },
+  {
+   "ru": "Отве́т придёт в тече́ние неде́ли.",
+   "en": "You'll get an answer within a week.",
+   "focus": "в тече́ние"
+  },
+  {
+   "ru": "Вопреки́ прогно́зу, бы́ло со́лнечно.",
+   "en": "Despite the forecast, it was sunny.",
+   "focus": "Вопреки́"
+  }
+ ],
+ "related": [
+  "g-genitive",
+  "g-dative",
+  "g-instrumental"
+ ]
+}

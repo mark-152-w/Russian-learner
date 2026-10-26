@@ -1,5 +1,5 @@
 // Hand-written content (src/data/content/**), validated at build time by tools/validate.py.
-import type { ExerciseFile, ExerciseItem, GrammarArticle, Unit } from '../types/content.gen'
+import type { ExerciseFile, ExerciseItem, GrammarArticle, IdiomFile, Unit } from '../types/content.gen'
 
 const exerciseFiles = import.meta.glob<{ default: ExerciseFile }>('../data/content/exercises/*.json')
 const grammarFiles = import.meta.glob<{ default: GrammarArticle }>('../data/content/grammar/*.json')
@@ -17,9 +17,17 @@ export function loadGrammar(): Promise<GrammarArticle[]> {
   return (grammar ??= Promise.all(Object.values(grammarFiles).map((f) => f())).then((mods) => mods.map((m) => m.default)))
 }
 
+const LEVELS = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2']
 let units: Promise<Unit[]> | null = null
 export function loadUnits(): Promise<Unit[]> {
   return (units ??= Promise.all(Object.values(unitFiles).map((f) => f())).then((mods) =>
-    mods.map((m) => m.default).sort((a, b) => a.number - b.number),
+    mods.map((m) => m.default).sort((a, b) => LEVELS.indexOf(a.level) - LEVELS.indexOf(b.level) || a.number - b.number),
   ))
+}
+
+const idiomFiles = import.meta.glob<{ default: IdiomFile }>('../data/content/idioms/*.json')
+export type Idiom = IdiomFile['items'][number]
+let idioms: Promise<Idiom[]> | null = null
+export function loadIdioms(): Promise<Idiom[]> {
+  return (idioms ??= Promise.all(Object.values(idiomFiles).map((f) => f())).then((mods) => mods.flatMap((m) => m.default.items)))
 }

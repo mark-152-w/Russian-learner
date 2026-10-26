@@ -1,0 +1,121 @@
+{
+ "$schema": "../../../../schemas/grammar-article.schema.json",
+ "id": "g-reported-speech",
+ "title": {
+  "en": "Reported speech",
+  "ru": "Ко́свенная речь"
+ },
+ "level": "B2",
+ "tags": [
+  "syntax.reported-speech"
+ ],
+ "card": "Russian keeps the tense of the original words: **Он сказа́л: «Я уста́л».** → **Он сказа́л, что уста́л.** Questions keep their question word, or take **ли**: **Она́ спроси́ла, где я живу́.** **Она́ спроси́ла, зна́ю ли я его́.** Requests take **что́бы** + past: **Он попроси́л, что́бы я позвони́л.**",
+ "sections": [
+  {
+   "kind": "why",
+   "body": "English shifts the tense back (*he said he was tired*). Russian doesn't: the verb stays as it was spoken. This is the biggest difference, and the commonest mistake."
+  },
+  {
+   "kind": "table",
+   "title": "Patterns",
+   "table": {
+    "head": [
+     "Original",
+     "Reported",
+     "Link"
+    ],
+    "rows": [
+     [
+      "**«Я рабо́таю».**",
+      "**Он сказа́л, что рабо́тает.**",
+      "**что**"
+     ],
+     [
+      "**«Где ты?»**",
+      "**Он спроси́л, где я.**",
+      "the question word"
+     ],
+     [
+      "**«Ты придёшь?»**",
+      "**Он спроси́л, приду́ ли я.**",
+      "**ли** after the key word"
+     ],
+     [
+      "**«Позвони́!»**",
+      "**Он попроси́л, что́бы я позвони́л.**",
+      "**что́бы** + past"
+     ]
+    ]
+   }
+  },
+  {
+   "kind": "explanation",
+   "title": "Where ли goes",
+   "body": "**ли** follows the word the question is about, usually the verb, which moves to the front: **Ты зна́ешь?** → **…зна́ю ли я.** If the point is *tomorrow*: **…за́втра ли я приду́.** Never use **е́сли** for *whether*."
+  },
+  {
+   "kind": "explanation",
+   "title": "Pronouns change, tense doesn't",
+   "body": "Persons shift as in English: **«Я тебя́ жду», — сказа́ла она́.** → **Она́ сказа́ла, что ждёт меня́.** The present **ждёт** stays present, although she said it in the past."
+  },
+  {
+   "kind": "vs-english",
+   "body": "*She said she would come* is **Она́ сказа́ла, что придёт** (the future), not ~~что пришла́ бы~~. *I asked if he knew* is **Я спроси́л, зна́ет ли он**, not ~~е́сли он зна́ет~~."
+  },
+  {
+   "kind": "common-mistakes",
+   "mistakes": [
+    {
+     "wrong": "Он сказа́л, что он был уста́лый.",
+     "right": "Он сказа́л, что уста́л.",
+     "why": "Keep the original tense and wording: «Я уста́л» → **что уста́л**.",
+     "error": "verb.tense"
+    },
+    {
+     "wrong": "Я спроси́л, е́сли он зна́ет.",
+     "right": "Я спроси́л, зна́ет ли он.",
+     "why": "*Whether* is **ли**, after the verb.",
+     "error": "syntax.conjunction"
+    },
+    {
+     "wrong": "Ма́ма сказа́ла, что я позвони́л ба́бушке.",
+     "right": "Ма́ма сказа́ла, что́бы я позвони́л ба́бушке.",
+     "why": "A request takes **что́бы**; **что** would report a fact.",
+     "error": "syntax.conjunction"
+    }
+   ]
+  }
+ ],
+ "examples": [
+  {
+   "ru": "Он сказа́л, что уста́л.",
+   "en": "He said he was tired.",
+   "focus": "уста́л"
+  },
+  {
+   "ru": "Она́ спроси́ла, где я живу́.",
+   "en": "She asked where I lived.",
+   "focus": "где"
+  },
+  {
+   "ru": "Я не зна́ю, придёт ли он.",
+   "en": "I don't know whether he'll come.",
+   "focus": "ли"
+  },
+  {
+   "ru": "Врач сказа́л, что́бы я не рабо́тал неде́лю.",
+   "en": "The doctor told me not to work for a week.",
+   "focus": "что́бы"
+  },
+  {
+   "ru": "Они́ сказа́ли, что бу́дут ждать нас.",
+   "en": "They said they would wait for us.",
+   "focus": "бу́дут"
+  }
+ ],
+ "related": [
+  "g-chtoby",
+  "g-conjunctions",
+  "g-conditional"
+ ]
+}

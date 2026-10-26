@@ -1,0 +1,73 @@
+{
+ "$schema": "../../../../schemas/unit.schema.json",
+ "id": "u-b1-12",
+ "number": 12,
+ "level": "B1",
+ "title": {
+  "en": "Habits",
+  "ru": "Привы́чки"
+ },
+ "theme": "every day versus once",
+ "grammar": [
+  "g-aspect-depth"
+ ],
+ "vocab": [
+  "n:привычка",
+  "o:обычно",
+  "o:иногда",
+  "o:всегда",
+  "o:никогда",
+  "a:каждый",
+  "n:раз",
+  "v:вставать",
+  "v:ложиться",
+  "v:успеть",
+  "v:опоздать",
+  "v:забыть",
+  "v:привыкнуть",
+  "v:случиться"
+ ],
+ "drills": [
+  {
+   "items": [
+    "ex-b1-u12-01",
+    "ex-b1-u12-02",
+    "ex-b1-u12-03"
+   ]
+  },
+  {
+   "items": [
+    "ex-asp-21",
+    "ex-asp-22",
+    "ex-asp-23",
+    "ex-asp-25",
+    "ex-asp-26"
+   ]
+  },
+  {
+   "generator": "verb-cloze",
+   "count": 6,
+   "params": {
+    "kinds": [
+     "np",
+     "pst"
+    ]
+   }
+  },
+  {
+   "generator": "vocab",
+   "count": 4
+  }
+ ],
+ "boss": {
+  "name": {
+   "ru": "Шапокля́к",
+   "en": "the mischievous old lady"
+  },
+  "hp": 26,
+  "art": "boss-32"
+ },
+ "testOut": [
+  "aspect.past"
+ ]
+}

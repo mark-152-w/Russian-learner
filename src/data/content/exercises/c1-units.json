@@ -1,0 +1,692 @@
+{
+ "$schema": "../../../../schemas/exercise.schema.json",
+ "items": [
+  {
+   "id": "ex-c1-u01-01",
+   "type": "choice",
+   "level": "C1",
+   "tags": [
+    "word-formation"
+   ],
+   "prompt": {
+    "ru": "Челове́к, кото́рый перево́дит, — э́то ___.",
+    "en": "Someone who translates is a translator.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "перево́дчик"
+   ],
+   "distractors": [
+    {
+     "ru": "перево́д",
+     "error": "vocab.wrong-word",
+     "why": "**перево́д** is the translation itself; the person takes **-чик**."
+    },
+    {
+     "ru": "переводи́ть",
+     "error": "vocab.wrong-word",
+     "why": "That's the verb; the person is **перево́дчик**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-c1-u01-02",
+   "type": "choice",
+   "level": "C1",
+   "tags": [
+    "word-formation"
+   ],
+   "prompt": {
+    "ru": "Э́то ___ разгово́р: он ничего́ не даст.",
+    "en": "It's a pointless conversation: it won't achieve anything.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "бесполе́зный"
+   ],
+   "distractors": [
+    {
+     "ru": "поле́зный",
+     "error": "vocab.wrong-word",
+     "why": "*Pointless* is **бес-** + **поле́зный**."
+    },
+    {
+     "ru": "бесполе́зно",
+     "error": "agreement.case",
+     "why": "Describing **разгово́р**, the adjective: **бесполе́зный**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-c1-u02-01",
+   "type": "choice",
+   "level": "C1",
+   "tags": [
+    "diminutives"
+   ],
+   "prompt": {
+    "ru": "Подожди́те ___!",
+    "en": "Just a moment!",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "мину́точку"
+   ],
+   "distractors": [
+    {
+     "ru": "мину́точка",
+     "error": "case.wrong",
+     "why": "**подожда́ть** + accusative: **мину́точку**."
+    },
+    {
+     "ru": "мину́те",
+     "error": "case.wrong",
+     "why": "**подожда́ть** + accusative: **мину́точку**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-c1-u02-02",
+   "type": "choice",
+   "level": "C1",
+   "tags": [
+    "diminutives"
+   ],
+   "prompt": {
+    "ru": "Ма́ленький дом — э́то ___.",
+    "en": "A little house is a small one.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "до́мик"
+   ],
+   "distractors": [
+    {
+     "ru": "дома́",
+     "error": "vocab.wrong-word",
+     "why": "That's a plural; *a little house* is the diminutive **до́мик**."
+    },
+    {
+     "ru": "дома́шний",
+     "error": "vocab.wrong-word",
+     "why": "That's an adjective (*home-made*); *a little house* is **до́мик**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-c1-u03-01",
+   "type": "choice",
+   "level": "C1",
+   "tags": [
+    "register"
+   ],
+   "prompt": {
+    "ru": "___, Ива́н Петро́вич!",
+    "en": "Good day, Ivan Petrovich!",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "Здра́вствуйте"
+   ],
+   "distractors": [
+    {
+     "ru": "Приве́т",
+     "error": "register.formality",
+     "why": "A name and patronymic call for **здра́вствуйте**."
+    },
+    {
+     "ru": "Салю́т",
+     "error": "register.formality",
+     "why": "Far too casual for a name and patronymic: **здра́вствуйте**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-c1-u03-02",
+   "type": "choice",
+   "level": "C1",
+   "tags": [
+    "register"
+   ],
+   "prompt": {
+    "ru": "Прошу́ ___ моё заявле́ние.",
+    "en": "Please consider my application.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "рассмотре́ть"
+   ],
+   "distractors": [
+    {
+     "ru": "посмотре́ть",
+     "error": "register.formality",
+     "why": "An application is *considered*: **рассмотре́ть**."
+    },
+    {
+     "ru": "гля́нуть",
+     "error": "register.formality",
+     "why": "**гля́нуть** is colloquial; officially, **рассмотре́ть**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-c1-u04-01",
+   "type": "choice",
+   "level": "C1",
+   "tags": [
+    "aspect.nuance"
+   ],
+   "prompt": {
+    "ru": "Вы когда́-нибудь ___ «Войну́ и мир»?",
+    "en": "Have you ever read War and Peace?",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "чита́ли"
+   ],
+   "distractors": [
+    {
+     "ru": "прочита́ли",
+     "error": "aspect.wrong",
+     "why": "*Have you ever…?* asks about the fact: the imperfective, **чита́ли**."
+    },
+    {
+     "ru": "прочтёте",
+     "error": "verb.tense",
+     "why": "*Have you ever…?* is about the past: **чита́ли**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-c1-u04-02",
+   "type": "choice",
+   "level": "C1",
+   "tags": [
+    "aspect.imperative"
+   ],
+   "prompt": {
+    "ru": "Проходи́те, ___!",
+    "en": "Come in, sit down!",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "сади́тесь"
+   ],
+   "distractors": [
+    {
+     "ru": "ся́дьте",
+     "error": "aspect.wrong",
+     "why": "An invitation sounds warm with the imperfective: **сади́тесь**."
+    },
+    {
+     "ru": "сади́ться",
+     "error": "verb.imperative",
+     "why": "An invitation takes the imperative: **сади́тесь**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-c1-u05-01",
+   "type": "choice",
+   "level": "C1",
+   "tags": [
+    "num.cardinal"
+   ],
+   "prompt": {
+    "ru": "У них ___ дете́й.",
+    "en": "They have two children.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "дво́е"
+   ],
+   "distractors": [
+    {
+     "ru": "два",
+     "error": "numeral.governance",
+     "why": "**два** takes the genitive singular; with **дете́й** use the collective **дво́е**."
+    },
+    {
+     "ru": "двух",
+     "error": "numeral.declension",
+     "why": "The subject of **у них есть**: the nominative **дво́е**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-c1-u05-02",
+   "type": "choice",
+   "level": "C1",
+   "tags": [
+    "num.cardinal"
+   ],
+   "prompt": {
+    "ru": "___ сестры́ живу́т в Москве́.",
+    "en": "Both sisters live in Moscow.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "О́бе"
+   ],
+   "distractors": [
+    {
+     "ru": "О́ба",
+     "error": "agreement.gender",
+     "why": "**сестры́** are feminine: **о́бе**."
+    },
+    {
+     "ru": "Обе́их",
+     "error": "case.wrong",
+     "why": "The subject is nominative: **о́бе**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-c1-u05-03",
+   "type": "choice",
+   "level": "C1",
+   "tags": [
+    "num.declension"
+   ],
+   "prompt": {
+    "ru": "Я жил там о́коло ___ лет.",
+    "en": "I lived there for about five years.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "пяти́"
+   ],
+   "distractors": [
+    {
+     "ru": "пять",
+     "error": "numeral.declension",
+     "why": "**о́коло** + genitive: **пяти́**."
+    },
+    {
+     "ru": "пятью́",
+     "error": "numeral.declension",
+     "why": "**о́коло** + genitive: **пяти́**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-c1-u06-01",
+   "type": "choice",
+   "level": "C1",
+   "tags": [
+    "participle.passive"
+   ],
+   "prompt": {
+    "ru": "Москва́ была́ ___ в 1147 году́.",
+    "en": "Moscow was founded in 1147.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "осно́вана"
+   ],
+   "distractors": [
+    {
+     "ru": "осно́ван",
+     "error": "agreement.gender",
+     "why": "**Москва́** is feminine: **осно́вана**."
+    },
+    {
+     "ru": "основа́ла",
+     "error": "verb.tense",
+     "why": "Moscow didn't found anything: the passive, **была́ осно́вана**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-c1-u06-02",
+   "type": "choice",
+   "level": "C1",
+   "tags": [
+    "participle.passive"
+   ],
+   "prompt": {
+    "ru": "Кре́пость была́ захва́чена ___.",
+    "en": "The fortress was captured by the enemy.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "враго́м"
+   ],
+   "distractors": [
+    {
+     "ru": "врага́",
+     "error": "case.instrumental-role",
+     "why": "The doer of a passive is in the instrumental: **враго́м**."
+    },
+    {
+     "ru": "врагу́",
+     "error": "case.instrumental-role",
+     "why": "The doer of a passive is in the instrumental: **враго́м**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-c1-u07-01",
+   "type": "choice",
+   "level": "C1",
+   "tags": [
+    "pron.negative"
+   ],
+   "prompt": {
+    "ru": "Я ___ не ви́дел.",
+    "en": "I didn't see anyone.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "никого́"
+   ],
+   "distractors": [
+    {
+     "ru": "кого́-нибудь",
+     "error": "pronoun.form",
+     "why": "With **не** on the verb: **никого́**."
+    },
+    {
+     "ru": "кого́-то",
+     "error": "pronoun.form",
+     "why": "With **не** on the verb: **никого́**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-c1-u07-02",
+   "type": "choice",
+   "level": "C1",
+   "tags": [
+    "pron.indefinite"
+   ],
+   "prompt": {
+    "ru": "___ звони́л? — Нет, никто́.",
+    "en": "Did anyone call? No, no one.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "Кто́-нибудь"
+   ],
+   "distractors": [
+    {
+     "ru": "Кто́-то",
+     "error": "pronoun.form",
+     "why": "Asking whether *anyone* called: **-нибудь**."
+    },
+    {
+     "ru": "Никто́",
+     "error": "pronoun.form",
+     "why": "It's a question about *anyone*: **кто́-нибудь**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-c1-u07-03",
+   "type": "choice",
+   "level": "C1",
+   "tags": [
+    "pron.negative"
+   ],
+   "prompt": {
+    "ru": "Мне ___ идти́.",
+    "en": "I have nowhere to go.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "не́куда"
+   ],
+   "distractors": [
+    {
+     "ru": "никуда́",
+     "error": "pronoun.form",
+     "why": "*Nowhere to* + infinitive: **не́куда**."
+    },
+    {
+     "ru": "куда́-то",
+     "error": "pronoun.form",
+     "why": "*Nowhere to* + infinitive: **не́куда**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-c1-u08-01",
+   "type": "choice",
+   "level": "C1",
+   "tags": [
+    "stress"
+   ],
+   "prompt": {
+    "ru": "Откро́й все ___.",
+    "en": "Open all the windows.",
+    "instruction": "Choose the right form (watch the stress)"
+   },
+   "accept": [
+    "о́кна"
+   ],
+   "distractors": [
+    {
+     "ru": "окна́",
+     "error": "stress.wrong",
+     "why": "**окна́** is the genitive singular; the plural is **о́кна**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-c1-u08-02",
+   "type": "choice",
+   "level": "C1",
+   "tags": [
+    "stress"
+   ],
+   "prompt": {
+    "ru": "Подними́ ___!",
+    "en": "Raise your hands!",
+    "instruction": "Choose the right form (watch the stress)"
+   },
+   "accept": [
+    "ру́ки"
+   ],
+   "distractors": [
+    {
+     "ru": "руки́",
+     "error": "stress.wrong",
+     "why": "**руки́** is the genitive singular; the plural is **ру́ки**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-c1-u09-01",
+   "type": "choice",
+   "level": "C1",
+   "tags": [
+    "case.dat.prepositions"
+   ],
+   "prompt": {
+    "ru": "Согла́сно ___, вы должны́ заплати́ть штраф.",
+    "en": "According to the law, you must pay a fine.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "зако́ну"
+   ],
+   "distractors": [
+    {
+     "ru": "зако́на",
+     "error": "case.preposition-government",
+     "why": "**согла́сно** + dative: **зако́ну**."
+    },
+    {
+     "ru": "зако́ном",
+     "error": "case.preposition-government",
+     "why": "**согла́сно** + dative: **зако́ну**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-c1-u09-02",
+   "type": "choice",
+   "level": "C1",
+   "tags": [
+    "case.gen.prepositions"
+   ],
+   "prompt": {
+    "ru": "___ дождя́ матч отмени́ли.",
+    "en": "The match was cancelled because of the rain.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "Из-за"
+   ],
+   "distractors": [
+    {
+     "ru": "Благодаря́",
+     "error": "vocab.wrong-word",
+     "why": "**благодаря́** is for good causes, and takes the dative."
+    },
+    {
+     "ru": "Вопреки́",
+     "error": "vocab.wrong-word",
+     "why": "**вопреки́** means *despite*; a cause is **из-за**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-c1-u09-03",
+   "type": "choice",
+   "level": "C1",
+   "tags": [
+    "case.ins.prepositions"
+   ],
+   "prompt": {
+    "ru": "В связи́ с ___ магази́н закры́т.",
+    "en": "The shop is closed for renovation.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "ремо́нтом"
+   ],
+   "distractors": [
+    {
+     "ru": "ремо́нта",
+     "error": "case.preposition-government",
+     "why": "**в связи́ с** + instrumental: **ремо́нтом**."
+    },
+    {
+     "ru": "ремо́нт",
+     "error": "case.preposition-government",
+     "why": "**в связи́ с** + instrumental: **ремо́нтом**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-c1-u10-01",
+   "type": "choice",
+   "level": "C1",
+   "tags": [
+    "verb.impersonal"
+   ],
+   "prompt": {
+    "ru": "Мне не ___ де́нег.",
+    "en": "I don't have enough money.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "хвата́ет"
+   ],
+   "distractors": [
+    {
+     "ru": "хвата́ют",
+     "error": "agreement.number",
+     "why": "**хвата́ть** is impersonal: always **хвата́ет**."
+    },
+    {
+     "ru": "хвата́ю",
+     "error": "verb.person",
+     "why": "The person is dative (**мне**); the verb stays **хвата́ет**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-c1-u10-02",
+   "type": "choice",
+   "level": "C1",
+   "tags": [
+    "verb.impersonal"
+   ],
+   "prompt": {
+    "ru": "___ удало́сь купи́ть биле́ты.",
+    "en": "We managed to buy tickets.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "Нам"
+   ],
+   "distractors": [
+    {
+     "ru": "Мы",
+     "error": "case.wrong",
+     "why": "**удава́ться** takes the person in the dative: **нам**."
+    },
+    {
+     "ru": "Нас",
+     "error": "case.wrong",
+     "why": "**удава́ться** takes the person in the dative: **нам**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-c1-u10-03",
+   "type": "choice",
+   "level": "C1",
+   "tags": [
+    "verb.impersonal",
+    "case.ins"
+   ],
+   "prompt": {
+    "ru": "Доро́гу занесло́ ___.",
+    "en": "The road was snowed over.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "сне́гом"
+   ],
+   "distractors": [
+    {
+     "ru": "снег",
+     "error": "case.instrumental-role",
+     "why": "The force of nature is in the instrumental: **сне́гом**."
+    },
+    {
+     "ru": "сне́га",
+     "error": "case.instrumental-role",
+     "why": "The force of nature is in the instrumental: **сне́гом**."
+    }
+   ],
+   "source": "handwritten"
+  }
+ ]
+}

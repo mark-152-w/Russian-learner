@@ -1,0 +1,59 @@
+{
+ "$schema": "../../../../schemas/unit.schema.json",
+ "id": "u-c1-07",
+ "number": 7,
+ "level": "C1",
+ "title": {
+  "en": "Mysteries",
+  "ru": "Зага́дки"
+ },
+ "theme": "the unknown and the absent",
+ "grammar": [
+  "g-indefinite-negative"
+ ],
+ "vocab": [
+  "n:тайна",
+  "n:загадка",
+  "n:смысл",
+  "n:судьба",
+  "n:вера",
+  "n:сомнение",
+  "n:истина",
+  "n:свобода",
+  "n:душа",
+  "n:совесть"
+ ],
+ "drills": [
+  {
+   "items": [
+    "ex-c1-u07-01",
+    "ex-c1-u07-02",
+    "ex-c1-u07-03"
+   ]
+  },
+  {
+   "generator": "vocab",
+   "count": 6
+  },
+  {
+   "generator": "find-error",
+   "count": 4
+  },
+  {
+   "generator": "case-cloze",
+   "count": 4
+  }
+ ],
+ "boss": {
+  "name": {
+   "ru": "Сфинкс",
+   "en": "the Sphinx"
+  },
+  "hp": 37,
+  "art": "boss-62"
+ },
+ "testOut": [
+  "pron.indefinite",
+  "pron.negative"
+ ]
+}

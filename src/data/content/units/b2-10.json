@@ -1,0 +1,63 @@
+{
+ "$schema": "../../../../schemas/unit.schema.json",
+ "id": "u-b2-10",
+ "number": 10,
+ "level": "B2",
+ "title": {
+  "en": "Arguments",
+  "ru": "Спор"
+ },
+ "theme": "agreeing and objecting",
+ "grammar": [
+  "g-conjunctions"
+ ],
+ "vocab": [
+  "n:спор",
+  "n:аргумент",
+  "n:мнение",
+  "n:точка",
+  "n:зрение",
+  "n:довод",
+  "n:доказательство",
+  "v:спорить",
+  "v:убедить",
+  "v:согласиться",
+  "v:возражать"
+ ],
+ "drills": [
+  {
+   "items": [
+    "ex-b2-u10-01",
+    "ex-b2-u10-02"
+   ]
+  },
+  {
+   "generator": "case-cloze",
+   "count": 6,
+   "params": {
+    "cases": [
+     "gen"
+    ]
+   }
+  },
+  {
+   "generator": "find-error",
+   "count": 3
+  },
+  {
+   "generator": "vocab",
+   "count": 4
+  }
+ ],
+ "boss": {
+  "name": {
+   "ru": "Конёк-Горбуно́к",
+   "en": "the little hump-backed horse"
+  },
+  "hp": 30,
+  "art": "boss-50"
+ },
+ "testOut": [
+  "syntax.conjunctions"
+ ]
+}

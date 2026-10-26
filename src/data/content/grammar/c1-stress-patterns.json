@@ -1,0 +1,108 @@
+{
+ "$schema": "../../../../schemas/grammar-article.schema.json",
+ "id": "g-stress-patterns",
+ "title": {
+  "en": "Stress patterns: why рука́ becomes ру́ки",
+  "ru": "Ударе́ние в фо́рмах сло́ва"
+ },
+ "level": "C1",
+ "tags": [
+  "stress"
+ ],
+ "card": "Russian stress can move between a word's forms, in a few regular patterns. Nouns: fixed on the stem (**ма́ма, ма́мы**), fixed on the ending (**стол, стола́**), or moving between singular and plural (**окно́ → о́кна**, **рука́ → ру́ки**). Verbs: the **я** form against the rest (**пишу́, пи́шешь**), and the feminine past (**была́**, but **бы́ло**).",
+ "sections": [
+  {
+   "kind": "why",
+   "body": "Stress decides how the vowels sound (an unstressed **о** sounds like **а**) and tells words apart (**за́мок, замо́к**). Native speakers forgive a wrong ending more easily than a wrong stress."
+  },
+  {
+   "kind": "table",
+   "title": "The main noun patterns",
+   "table": {
+    "head": [
+     "Pattern",
+     "Singular",
+     "Plural",
+     "Like"
+    ],
+    "rows": [
+     [
+      "fixed on the stem",
+      "**ма́ма, ма́мы**",
+      "**ма́мы, мам**",
+      "**кни́га, у́лица**"
+     ],
+     [
+      "fixed on the ending",
+      "**стол, стола́**",
+      "**столы́, столо́в**",
+      "**оте́ц, врач, нож**"
+     ],
+     [
+      "stem, then ending in the plural",
+      "**сад, са́да**",
+      "**сады́, садо́в**",
+      "**лес, дом**"
+     ],
+     [
+      "ending, then stem in the plural",
+      "**окно́, окна́**",
+      "**о́кна, о́кон**",
+      "**письмо́, вино́, сестра́**"
+     ],
+     [
+      "mixed",
+      "**рука́, ру́ку**",
+      "**ру́ки, рука́м**",
+      "**голова́, нога́, стена́**"
+     ]
+    ]
+   }
+  },
+  {
+   "kind": "explanation",
+   "title": "Verbs",
+   "body": "Many verbs stress the ending in the **я** form and the stem in the rest: **пишу́, пи́шешь, пи́шет**; **люблю́, лю́бишь**; **могу́, мо́жешь**. In the past, a group of short verbs stresses the feminine ending: **был, была́, бы́ло, бы́ли**; **взял, взяла́**; **жил, жила́**; **на́чал, начала́**."
+  },
+  {
+   "kind": "explanation",
+   "title": "Short adjectives",
+   "body": "Short adjectives often stress the feminine ending: **мо́лод, молода́, мо́лодо, мо́лоды**; **прав, права́**."
+  },
+  {
+   "kind": "memory-trick",
+   "body": "Learn three forms of each new noun: the nominative singular, the genitive singular and the nominative plural (**рука́, руки́, ру́ки**). For verbs, learn the infinitive and the **я** and **ты** forms (**писа́ть, пишу́, пи́шешь**). Together they show the pattern."
+  }
+ ],
+ "examples": [
+  {
+   "ru": "У меня́ боли́т рука́.",
+   "en": "My arm hurts.",
+   "focus": "рука́"
+  },
+  {
+   "ru": "Подними́ ру́ки!",
+   "en": "Raise your hands!",
+   "focus": "ру́ки"
+  },
+  {
+   "ru": "Она́ была́ до́ма.",
+   "en": "She was at home.",
+   "focus": "была́"
+  },
+  {
+   "ru": "Откро́й о́кна.",
+   "en": "Open the windows.",
+   "focus": "о́кна"
+  },
+  {
+   "ru": "Ты меня́ лю́бишь?",
+   "en": "Do you love me?",
+   "focus": "лю́бишь"
+  }
+ ],
+ "related": [
+  "g-past-tense",
+  "g-present-tense"
+ ]
+}

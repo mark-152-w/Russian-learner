@@ -1,0 +1,61 @@
+{
+ "$schema": "../../../../schemas/unit.schema.json",
+ "id": "u-b2-01",
+ "number": 1,
+ "level": "B2",
+ "title": {
+  "en": "Science",
+  "ru": "Нау́ка"
+ },
+ "theme": "research and inventions",
+ "grammar": [
+  "g-participles-active"
+ ],
+ "vocab": [
+  "n:наука",
+  "a:учёный",
+  "n:исследование",
+  "n:открытие",
+  "n:технология",
+  "n:изобретение",
+  "n:лаборатория",
+  "n:эксперимент",
+  "v:развивать",
+  "v:изучать",
+  "v:создать",
+  "n:прибор",
+  "n:теория",
+  "n:компьютер"
+ ],
+ "drills": [
+  {
+   "items": [
+    "ex-b2-u01-01",
+    "ex-b2-u01-02"
+   ]
+  },
+  {
+   "generator": "case-cloze",
+   "count": 6
+  },
+  {
+   "generator": "vocab",
+   "count": 6
+  },
+  {
+   "generator": "find-error",
+   "count": 3
+  }
+ ],
+ "boss": {
+  "name": {
+   "ru": "Голова́ профе́ссора До́уэля",
+   "en": "the professor's living head"
+  },
+  "hp": 26,
+  "art": "boss-41"
+ },
+ "testOut": [
+  "participle.active"
+ ]
+}

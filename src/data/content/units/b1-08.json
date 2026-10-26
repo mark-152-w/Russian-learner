@@ -1,0 +1,73 @@
+{
+ "$schema": "../../../../schemas/unit.schema.json",
+ "id": "u-b1-08",
+ "number": 8,
+ "level": "B1",
+ "title": {
+  "en": "Plans and dreams",
+  "ru": "Пла́ны и мечты́"
+ },
+ "theme": "what if",
+ "grammar": [
+  "g-conditional"
+ ],
+ "vocab": [
+  "n:мечта",
+  "n:план",
+  "n:будущее",
+  "v:мечтать",
+  "v:надеяться",
+  "v:планировать",
+  "v:собираться",
+  "n:возможность",
+  "n:лотерея",
+  "v:выиграть",
+  "v:путешествовать",
+  "v:купить"
+ ],
+ "drills": [
+  {
+   "items": [
+    "ex-b1-u08-01",
+    "ex-b1-u08-02",
+    "ex-b1-u08-03"
+   ]
+  },
+  {
+   "generator": "verb-cloze",
+   "count": 8,
+   "params": {
+    "kinds": [
+     "pst"
+    ]
+   }
+  },
+  {
+   "generator": "vocab",
+   "count": 6
+  },
+  {
+   "generator": "forms",
+   "count": 4,
+   "params": {
+    "pos": "verb",
+    "slots": [
+     "pst_m",
+     "pst_f",
+     "pst_pl"
+    ]
+   }
+  }
+ ],
+ "boss": {
+  "name": {
+   "ru": "Чёрная Ку́рица",
+   "en": "the Black Hen"
+  },
+  "hp": 24,
+  "art": "boss-28"
+ },
+ "testOut": [
+  "verb.conditional"
+ ]
+}

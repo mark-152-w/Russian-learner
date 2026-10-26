@@ -1,0 +1,82 @@
+{
+ "$schema": "../../../../schemas/unit.schema.json",
+ "id": "u-b1-07",
+ "number": 7,
+ "level": "B1",
+ "title": {
+  "en": "Instructions",
+  "ru": "Инстру́кции"
+ },
+ "theme": "requests, advice, how-to",
+ "grammar": [
+  "g-imperatives",
+  "g-aspect-depth"
+ ],
+ "vocab": [
+  "n:совет",
+  "n:инструкция",
+  "v:помогать",
+  "v:советовать",
+  "v:включить",
+  "v:выключить",
+  "v:нажать",
+  "v:открыть",
+  "v:закрыть",
+  "v:проверить",
+  "v:объяснить",
+  "v:повторить",
+  "v:попробовать",
+  "o:осторожно"
+ ],
+ "drills": [
+  {
+   "items": [
+    "ex-b1-u07-01",
+    "ex-b1-u07-02",
+    "ex-b1-u07-03"
+   ]
+  },
+  {
+   "items": [
+    "ex-asp-61",
+    "ex-asp-62",
+    "ex-asp-63",
+    "ex-asp-64",
+    "ex-asp-65",
+    "ex-asp-66"
+   ]
+  },
+  {
+   "generator": "verb-cloze",
+   "count": 6,
+   "params": {
+    "kinds": [
+     "imp"
+    ]
+   }
+  },
+  {
+   "generator": "forms",
+   "count": 6,
+   "params": {
+    "pos": "verb",
+    "slots": [
+     "imp_sg",
+     "imp_pl"
+    ]
+   }
+  }
+ ],
+ "boss": {
+  "name": {
+   "ru": "Полу́дница",
+   "en": "the midday spirit"
+  },
+  "hp": 24,
+  "art": "boss-27"
+ },
+ "testOut": [
+  "verb.imperative",
+  "aspect.imperative"
+ ]
+}

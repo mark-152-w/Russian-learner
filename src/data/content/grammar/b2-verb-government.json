@@ -1,0 +1,123 @@
+{
+ "$schema": "../../../../schemas/grammar-article.schema.json",
+ "id": "g-verb-government",
+ "title": {
+  "en": "Verbs and the cases they take",
+  "ru": "Управле́ние глаго́лов"
+ },
+ "level": "B2",
+ "tags": [
+  "case.dat",
+  "case.ins",
+  "case.gen"
+ ],
+ "card": "Many verbs take a fixed case, and English won't help you guess it. Genitive: **боя́ться, жела́ть, избега́ть, достига́ть**. Dative: **помога́ть, звони́ть, ве́рить, меша́ть, сове́товать**. Instrumental: **занима́ться, интересова́ться, по́льзоваться, руководи́ть, горди́ться**. Learn each verb with its question: **помога́ть кому́?**, **по́льзоваться чем?**",
+ "sections": [
+  {
+   "kind": "why",
+   "body": "These are the verbs English speakers get wrong for years, because English uses a direct object for all of them (*help someone, use something*). Learn them in pairs with the case question."
+  },
+  {
+   "kind": "table",
+   "title": "Verbs by case",
+   "table": {
+    "head": [
+     "Case",
+     "Verbs",
+     "Example"
+    ],
+    "rows": [
+     [
+      "genitive",
+      "**боя́ться, жела́ть, избега́ть, достига́ть**",
+      "**Боя́ться темноты́.** **Жела́ю успе́ха!**"
+     ],
+     [
+      "dative",
+      "**помога́ть, звони́ть, ве́рить, меша́ть, сове́товать, отвеча́ть, нра́виться**",
+      "**Помоги́ ма́ме.** **Я ве́рю тебе́.**"
+     ],
+     [
+      "instrumental",
+      "**занима́ться, интересова́ться, по́льзоваться, руководи́ть, горди́ться, владе́ть**",
+      "**Он руководи́т компа́нией.** **Я горжу́сь тобо́й.**"
+     ],
+     [
+      "with a preposition",
+      "**ду́мать о, ве́рить в, наде́яться на, жа́ловаться на, благодари́ть за**",
+      "**Я ве́рю в тебя́.** **Спаси́бо за по́мощь.**"
+     ]
+    ]
+   }
+  },
+  {
+   "kind": "explanation",
+   "title": "One verb, two patterns",
+   "body": "**ве́рить** + dative is *to believe someone*: **Я ве́рю тебе́.** **ве́рить в** + accusative is *to believe in*: **Я ве́рю в тебя́.** **учи́ть** + accusative is *to learn* or *to teach someone*: **учи́ть слова́**, **учи́ть дете́й**; *what* you teach is dative: **учи́ть дете́й му́зыке**."
+  },
+  {
+   "kind": "memory-trick",
+   "body": "Instrumental verbs often describe something you work *with* or stand *over*: you **по́льзуешься** a tool, you **руководи́шь** a team, you **занима́ешься** a hobby, you **горди́шься** an achievement."
+  },
+  {
+   "kind": "common-mistakes",
+   "mistakes": [
+    {
+     "wrong": "Я помога́ю ма́му.",
+     "right": "Я помога́ю ма́ме.",
+     "why": "**помога́ть** + dative.",
+     "error": "case.verb-government"
+    },
+    {
+     "wrong": "Он по́льзуется компью́тер.",
+     "right": "Он по́льзуется компью́тером.",
+     "why": "**по́льзоваться** + instrumental.",
+     "error": "case.verb-government"
+    },
+    {
+     "wrong": "Я бою́сь соба́ку.",
+     "right": "Я бою́сь соба́ки.",
+     "why": "**боя́ться** + genitive in standard Russian.",
+     "error": "case.verb-government"
+    }
+   ]
+  }
+ ],
+ "examples": [
+  {
+   "ru": "Я помога́ю ма́ме.",
+   "en": "I help my mum.",
+   "focus": "ма́ме"
+  },
+  {
+   "ru": "Он руководи́т большо́й компа́нией.",
+   "en": "He runs a big company.",
+   "focus": "компа́нией"
+  },
+  {
+   "ru": "Жела́ю вам сча́стья!",
+   "en": "I wish you happiness!",
+   "focus": "сча́стья"
+  },
+  {
+   "ru": "Роди́тели гордя́тся сы́ном.",
+   "en": "The parents are proud of their son.",
+   "focus": "сы́ном"
+  },
+  {
+   "ru": "Не меша́й мне рабо́тать.",
+   "en": "Don't stop me working.",
+   "focus": "мне"
+  },
+  {
+   "ru": "Я ве́рю в тебя́.",
+   "en": "I believe in you.",
+   "focus": "в тебя́"
+  }
+ ],
+ "related": [
+  "g-dative",
+  "g-instrumental",
+  "g-genitive"
+ ]
+}

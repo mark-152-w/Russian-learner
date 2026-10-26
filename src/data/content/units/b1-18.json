@@ -1,0 +1,68 @@
+{
+ "$schema": "../../../../schemas/unit.schema.json",
+ "id": "u-b1-18",
+ "number": 18,
+ "level": "B1",
+ "title": {
+  "en": "Sport",
+  "ru": "Спорт"
+ },
+ "theme": "teams and records",
+ "grammar": [
+  "g-comparatives"
+ ],
+ "vocab": [
+  "n:спорт",
+  "n:команда",
+  "n:игра",
+  "n:матч",
+  "n:победа",
+  "n:чемпион",
+  "n:тренер",
+  "v:тренироваться",
+  "v:бегать",
+  "v:плавать",
+  "v:выиграть",
+  "v:проиграть",
+  "a:сильный"
+ ],
+ "drills": [
+  {
+   "items": [
+    "ex-b1-u18-01",
+    "ex-b1-u18-02",
+    "ex-b1-u18-03"
+   ]
+  },
+  {
+   "generator": "forms",
+   "count": 6,
+   "params": {
+    "pos": "adj",
+    "slots": [
+     "comp"
+    ],
+    "fromPool": true
+   }
+  },
+  {
+   "generator": "vocab",
+   "count": 6
+  },
+  {
+   "generator": "match"
+  }
+ ],
+ "boss": {
+  "name": {
+   "ru": "Стари́к Хотта́быч",
+   "en": "the old genie"
+  },
+  "hp": 29,
+  "art": "boss-38"
+ },
+ "testOut": [
+  "adj.comparative",
+  "adj.superlative"
+ ]
+}

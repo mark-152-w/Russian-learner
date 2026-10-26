@@ -48,6 +48,9 @@
     {"id": "vocab.false-friend", "family": "vocab", "label": "False friend", "description": "Looks like an English word but means something else (магази́н = shop, not magazine)."},
     {"id": "reading.detail", "family": "reading", "label": "Missed a detail", "description": "The answer contradicts the text or isn't in it: reread the sentence it comes from."},
     {"id": "listening.misheard", "family": "listening", "label": "Misheard word", "description": "A word in the dictation was missed or heard as something else."},
-    {"id": "register.formality", "family": "register", "label": "ты/вы or register mismatch"}
+    {"id": "register.formality", "family": "register", "label": "ты/вы or register mismatch"},
+    {"id": "adj.comparative", "family": "form", "label": "Comparative needed", "description": "The context (чем, ещё, всех…) needs the comparative form (доро́же, лу́чше), not the plain adjective or a superlative."},
+    {"id": "adj.superlative", "family": "form", "label": "Superlative needed", "description": "The superlative is са́мый + the ordinary adjective (са́мый дешёвый), not са́мый + a comparative."},
+    {"id": "syntax.conjunction", "family": "syntax", "label": "Wrong conjunction", "description": "A different linking word is needed, e.g. чем (not как) after a comparative."}
   ]
 }
