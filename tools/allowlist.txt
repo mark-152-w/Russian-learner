@@ -33,3 +33,5 @@
 Хотта́быч
 Ка́рлсон
 Медве́дь-воево́да
+# fixed preposition в связи́ с (locative stress; the dictionary only has the prepositional свя́зи)
+связи́

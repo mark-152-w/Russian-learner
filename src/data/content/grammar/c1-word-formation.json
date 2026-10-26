@@ -1,0 +1,145 @@
+{
+ "$schema": "../../../../schemas/grammar-article.schema.json",
+ "id": "g-word-formation",
+ "title": {
+  "en": "Word formation: building words from roots",
+  "ru": "Словообразова́ние"
+ },
+ "level": "C1",
+ "tags": [
+  "word-formation"
+ ],
+ "card": "Russian builds families of words from one root: **писа́ть → письмо́, писа́тель, пи́сьменный, запи́ска, перепи́ска**. Learn the common suffixes (**-тель** a person, **-ние** an action, **-ость** a quality, **-ник** a person or a thing) and prefixes (**пере-** again or across, **недо-** not enough, **со-** together), and one root unlocks a dozen words.",
+ "sections": [
+  {
+   "kind": "why",
+   "body": "At C1 most new words are familiar parts in new combinations. Spotting the root and the affixes lets you guess meanings, and spell them."
+  },
+  {
+   "kind": "table",
+   "title": "Suffixes",
+   "table": {
+    "head": [
+     "Suffix",
+     "Makes",
+     "Examples"
+    ],
+    "rows": [
+     [
+      "**-тель**",
+      "a doer",
+      "**писа́тель, учи́тель, зри́тель, води́тель**"
+     ],
+     [
+      "**-ник, -щик, -чик**",
+      "a person by job",
+      "**рабо́тник, перево́дчик, ка́менщик**"
+     ],
+     [
+      "**-ние, -тие**",
+      "an action or process",
+      "**чте́ние, реше́ние, разви́тие, откры́тие**"
+     ],
+     [
+      "**-ость, -ство**",
+      "a quality or state",
+      "**ра́дость, сме́лость, бога́тство, де́тство**"
+     ],
+     [
+      "**-ка**",
+      "a thing, often everyday",
+      "**запи́ска, остано́вка, ру́чка**"
+     ],
+     [
+      "**-ск-, -н-**",
+      "an adjective",
+      "**городско́й, ле́тний, ко́мнатный**"
+     ]
+    ]
+   }
+  },
+  {
+   "kind": "table",
+   "title": "Prefixes",
+   "table": {
+    "head": [
+     "Prefix",
+     "Meaning",
+     "Examples"
+    ],
+    "rows": [
+     [
+      "**пере-**",
+      "again, across, too much",
+      "**переписа́ть, перейти́, перее́сть**"
+     ],
+     [
+      "**недо-**",
+      "not enough",
+      "**недоспа́ть, недооцени́ть**"
+     ],
+     [
+      "**со-**",
+      "together",
+      "**сотру́дник, сочу́вствие**"
+     ],
+     [
+      "**без-, бес-**",
+      "without",
+      "**безопа́сный, бесполе́зный**"
+     ],
+     [
+      "**про-**",
+      "through, past, for a while",
+      "**прочита́ть, пройти́, просиде́ть**"
+     ],
+     [
+      "**раз-, рас-**",
+      "apart, all over",
+      "**разре́зать, рассказа́ть, разда́ть**"
+     ]
+    ]
+   }
+  },
+  {
+   "kind": "explanation",
+   "title": "Consonant changes",
+   "body": "Roots change their final consonant across a family: **друг → дру́жба** (г/ж), **писа́ть → пишу́** (с/ш), **свет → свеча́** (т/ч), **ходи́ть → хожу́** (д/ж). Knowing the pairs г/ж/з, к/ч, х/ш, т/ч, д/ж, ст/щ helps you recognise relatives."
+  },
+  {
+   "kind": "memory-trick",
+   "body": "Strip an unknown long word into prefix, root, suffix and ending. **недооцени́ть** = **недо-** (not enough) + **оцени́ть** (to value): *to underestimate*."
+  }
+ ],
+ "examples": [
+  {
+   "ru": "Мой брат — писа́тель.",
+   "en": "My brother is a writer.",
+   "focus": "писа́тель"
+  },
+  {
+   "ru": "Чте́ние — моё люби́мое заня́тие.",
+   "en": "Reading is my favourite pastime.",
+   "focus": "Чте́ние"
+  },
+  {
+   "ru": "Не недооце́нивай его́.",
+   "en": "Don't underestimate him.",
+   "focus": "недооце́нивай"
+  },
+  {
+   "ru": "Я переписа́л письмо́ три ра́за.",
+   "en": "I rewrote the letter three times.",
+   "focus": "переписа́л"
+  },
+  {
+   "ru": "Э́то бесполе́зный разгово́р.",
+   "en": "This is a pointless conversation.",
+   "focus": "бесполе́зный"
+  }
+ ],
+ "related": [
+  "g-diminutives",
+  "g-prefixed-motion"
+ ]
+}

@@ -1,0 +1,125 @@
+{
+ "$schema": "../../../../schemas/grammar-article.schema.json",
+ "id": "g-participles-passive",
+ "title": {
+  "en": "Passive participles: прочи́танный, чита́емый",
+  "ru": "Страда́тельные прича́стия"
+ },
+ "level": "B2",
+ "tags": [
+  "participle.passive"
+ ],
+ "card": "A passive participle describes what was done *to* something: **прочи́танная кни́га** = *a book that has been read*. The past passive is the common one: **-нный** or **-тый** (**прочита́ть → прочи́танный**, **откры́ть → откры́тый**). Its short form makes the everyday passive: **Магази́н закры́т.** **Письмо́ напи́сано.**",
+ "sections": [
+  {
+   "kind": "why",
+   "body": "The short past passive participle is everyday Russian: on signs (**Закры́то**), in the news (**Мост постро́ен**) and when a job is done (**Всё сде́лано!**). The long forms belong to writing."
+  },
+  {
+   "kind": "table",
+   "title": "Past passive participles",
+   "table": {
+    "head": [
+     "Verb ends in",
+     "Suffix",
+     "Example",
+     "Short form"
+    ],
+    "rows": [
+     [
+      "**-ать, -ять**",
+      "**-анный, -янный**",
+      "**прочита́ть → прочи́танный**",
+      "**прочи́тан, прочи́тана, прочи́тано, прочи́таны**"
+     ],
+     [
+      "**-ить, -еть**",
+      "**-енный**, with the consonant change of the **я** form",
+      "**купи́ть → ку́пленный**, **реши́ть → решённый**",
+      "**ку́плен, решён, решена́**"
+     ],
+     [
+      "**-ыть, -уть, -нять** and short roots",
+      "**-тый**",
+      "**откры́ть → откры́тый**, **заня́ть → за́нятый**",
+      "**откры́т, за́нят, занята́**"
+     ]
+    ]
+   }
+  },
+  {
+   "kind": "explanation",
+   "title": "Short forms make the passive",
+   "body": "Short forms agree with the subject: **Дверь откры́та.** **О́кна закры́ты.** Tense comes from **быть**: **Дом был постро́ен в 1900 году́.** **Рабо́та бу́дет зако́нчена за́втра.** The doer goes in the instrumental: **стихи́, напи́санные Пу́шкиным**."
+  },
+  {
+   "kind": "explanation",
+   "title": "Present passive",
+   "body": "**-емый** or **-имый**, from imperfective verbs: **чита́емый** (*widely read*), **люби́мый** (*loved, favourite*). Many have become plain adjectives: **люби́мый**, **уважа́емый** (*dear*, opening a letter), **необходи́мый**."
+  },
+  {
+   "kind": "spelling-rule",
+   "title": "One н or two?",
+   "body": "Long participles have **-нн-**: **прочи́танная кни́га**. Short forms have one **н**: **кни́га прочи́тана**. Adjectives from imperfective verbs without a prefix have one **н**: **жа́реная карто́шка**; the prefixed participle has two: **поджа́ренная**."
+  },
+  {
+   "kind": "common-mistakes",
+   "mistakes": [
+    {
+     "wrong": "Магази́н закры́тый.",
+     "right": "Магази́н закры́т.",
+     "why": "A current state uses the short form: **закры́т**."
+    },
+    {
+     "wrong": "Письмо́ напи́сана.",
+     "right": "Письмо́ напи́сано.",
+     "why": "The short form agrees with **письмо́**, which is neuter.",
+     "error": "agreement.gender"
+    },
+    {
+     "wrong": "Дом был постро́ен рабо́чих.",
+     "right": "Дом был постро́ен рабо́чими.",
+     "why": "The doer of a passive is in the instrumental.",
+     "error": "case.instrumental-role"
+    }
+   ]
+  }
+ ],
+ "examples": [
+  {
+   "ru": "Магази́н закры́т.",
+   "en": "The shop is closed.",
+   "focus": "закры́т"
+  },
+  {
+   "ru": "Все биле́ты про́даны.",
+   "en": "All the tickets are sold.",
+   "focus": "про́даны"
+  },
+  {
+   "ru": "Э́тот мост был постро́ен сто лет наза́д.",
+   "en": "This bridge was built a hundred years ago.",
+   "focus": "постро́ен"
+  },
+  {
+   "ru": "Я нашёл поте́рянные ключи́.",
+   "en": "I found the lost keys.",
+   "focus": "поте́рянные"
+  },
+  {
+   "ru": "Стихи́, напи́санные Пу́шкиным, зна́ет ка́ждый.",
+   "en": "Everyone knows the poems written by Pushkin.",
+   "focus": "напи́санные"
+  },
+  {
+   "ru": "Уважа́емые пассажи́ры!",
+   "en": "Dear passengers!",
+   "focus": "Уважа́емые"
+  }
+ ],
+ "related": [
+  "g-participles-active",
+  "g-passive",
+  "g-gerunds"
+ ]
+}

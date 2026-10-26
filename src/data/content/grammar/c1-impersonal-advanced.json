@@ -1,0 +1,115 @@
+{
+ "$schema": "../../../../schemas/grammar-article.schema.json",
+ "id": "g-impersonal-advanced",
+ "title": {
+  "en": "Impersonal constructions: его́ ра́нило, мне не спи́тся",
+  "ru": "Безли́чные констру́кции"
+ },
+ "level": "C1",
+ "tags": [
+  "verb.impersonal"
+ ],
+ "card": "Beyond **мне хо́лодно**, Russian uses impersonal verbs where English needs a subject. Natural forces: **Доро́гу занесло́ сне́гом** (the road was snowed over). Involuntary states: **Мне не спи́тся** (I can't get to sleep). Lack: **Мне не хвата́ет вре́мени**. Success and luck: **Нам удало́сь**, **Мне повезло́**.",
+ "sections": [
+  {
+   "kind": "why",
+   "body": "These sentences present events as happening *to* people, by forces no one controls. They're everywhere in literature and common in speech; English can only paraphrase them."
+  },
+  {
+   "kind": "table",
+   "title": "Types",
+   "table": {
+    "head": [
+     "Type",
+     "Pattern",
+     "Example"
+    ],
+    "rows": [
+     [
+      "natural forces",
+      "neuter past, the affected thing in the accusative, the force in the instrumental",
+      "**Доро́гу занесло́ сне́гом.**"
+     ],
+     [
+      "can't help it",
+      "**не** + verb + **-ся**, the person in the dative",
+      "**Мне не спи́тся.** **Ему́ не сиди́тся до́ма.**"
+     ],
+     [
+      "lack",
+      "**хвата́ть, не хвата́ть** + genitive",
+      "**Мне не хвата́ет тебя́.**"
+     ],
+     [
+      "luck, success",
+      "**везти́, удава́ться** + dative",
+      "**Нам повезло́.** **Мне удало́сь поступи́ть.**"
+     ],
+     [
+      "feeling unwell",
+      "verb + accusative",
+      "**Меня́ тошни́т.**"
+     ]
+    ]
+   }
+  },
+  {
+   "kind": "explanation",
+   "title": "Tense and agreement",
+   "body": "Impersonal verbs stay in the third person singular, neuter in the past: **Мне не хвата́ло де́нег.** **Нам повезло́.** What's lacking is genitive, not a subject: not ~~Мне не хвата́ют де́ньги~~."
+  },
+  {
+   "kind": "explanation",
+   "title": "Personal or impersonal?",
+   "body": "**Я не сплю** is a fact (*I'm not asleep*); **Мне не спи́тся** says sleep won't come, against my will. **Ве́тер унёс ло́дку** names the wind as a doer; **Ло́дку унесло́ ве́тром** describes something that just happened."
+  },
+  {
+   "kind": "common-mistakes",
+   "mistakes": [
+    {
+     "wrong": "Мне не хвата́ют де́ньги.",
+     "right": "Мне не хвата́ет де́нег.",
+     "why": "**хвата́ть** is impersonal: a singular verb, and the genitive of what's lacking.",
+     "error": "case.gen-quantity"
+    },
+    {
+     "wrong": "Я удало́сь поступи́ть.",
+     "right": "Мне удало́сь поступи́ть.",
+     "why": "**удава́ться** takes the dative of the person.",
+     "error": "case.wrong"
+    }
+   ]
+  }
+ ],
+ "examples": [
+  {
+   "ru": "Мне сего́дня не спи́тся.",
+   "en": "I can't get to sleep tonight.",
+   "focus": "не спи́тся"
+  },
+  {
+   "ru": "Мне о́чень не хвата́ет тебя́.",
+   "en": "I miss you very much.",
+   "focus": "не хвата́ет"
+  },
+  {
+   "ru": "Доро́гу занесло́ сне́гом.",
+   "en": "The road was snowed over.",
+   "focus": "занесло́"
+  },
+  {
+   "ru": "Нам удало́сь купи́ть биле́ты.",
+   "en": "We managed to buy tickets.",
+   "focus": "удало́сь"
+  },
+  {
+   "ru": "Его́ ра́нило на войне́.",
+   "en": "He was wounded in the war.",
+   "focus": "ра́нило"
+  }
+ ],
+ "related": [
+  "g-impersonal",
+  "g-verb-government"
+ ]
+}

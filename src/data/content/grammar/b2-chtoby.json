@@ -1,0 +1,117 @@
+{
+ "$schema": "../../../../schemas/grammar-article.schema.json",
+ "id": "g-chtoby",
+ "title": {
+  "en": "что́бы: purpose and wishes",
+  "ru": "Сою́з что́бы"
+ },
+ "level": "B2",
+ "tags": [
+  "verb.conditional",
+  "syntax.conjunctions"
+ ],
+ "card": "**что́бы** + infinitive when the subject is the same: **Я пришёл, что́бы помо́чь.** **что́бы** + past when it's different: **Я пришёл, что́бы ты не скуча́л.** After wanting and asking: **Я хочу́, что́бы ты пришёл**, never ~~хочу́ ты придёшь~~.",
+ "sections": [
+  {
+   "kind": "why",
+   "body": "English says *I want you to come*. Russian can't put **ты** after **хочу́**; it needs a clause: **хочу́, что́бы ты пришёл**. The past form here isn't past at all: it's the subjunctive, the **бы** inside **что́бы**."
+  },
+  {
+   "kind": "table",
+   "title": "Same subject or not",
+   "table": {
+    "head": [
+     "Use",
+     "Pattern",
+     "Example"
+    ],
+    "rows": [
+     [
+      "purpose, same subject",
+      "**что́бы** + infinitive",
+      "**Я учу́ ру́сский, что́бы чита́ть Пу́шкина.**"
+     ],
+     [
+      "purpose, new subject",
+      "**что́бы** + past",
+      "**Я говорю́ ме́дленно, что́бы ты по́нял.**"
+     ],
+     [
+      "wish, request, order",
+      "**хоте́ть, проси́ть, сказа́ть, что́бы** + past",
+      "**Ма́ма хо́чет, что́бы я стал врачо́м.**"
+     ],
+     [
+      "*so as not to*",
+      "**что́бы не** + verb",
+      "**Я записа́л а́дрес, что́бы не забы́ть.**"
+     ]
+    ]
+   }
+  },
+  {
+   "kind": "explanation",
+   "title": "Words that need что́бы",
+   "body": "**хоте́ть, жела́ть, проси́ть, тре́бовать, сове́товать** (or an infinitive), and **ва́жно, на́до, ну́жно, лу́чше**: **На́до, что́бы все пришли́ во́время.** After motion verbs the purpose can drop **что́бы**: **Я пришёл помо́чь.**"
+  },
+  {
+   "kind": "vs-english",
+   "body": "*I want him to know* → **Я хочу́, что́бы он знал.** *I asked her to wait* → **Я попроси́л её подожда́ть** (an infinitive) or **Я попроси́л, что́бы она́ подождала́.**"
+  },
+  {
+   "kind": "common-mistakes",
+   "mistakes": [
+    {
+     "wrong": "Я хочу́, что́бы ты придёшь.",
+     "right": "Я хочу́, что́бы ты пришёл.",
+     "why": "After **что́бы** with a new subject: the past form.",
+     "error": "verb.tense"
+    },
+    {
+     "wrong": "Я хочу́ ты зна́ешь.",
+     "right": "Я хочу́, что́бы ты знал.",
+     "why": "**хоте́ть** can't take a person + a verb; it needs **что́бы**.",
+     "error": "syntax.conjunction"
+    },
+    {
+     "wrong": "Я пришёл, что́бы я помо́г.",
+     "right": "Я пришёл, что́бы помо́чь.",
+     "why": "Same subject: **что́бы** + infinitive.",
+     "error": "verb.tense"
+    }
+   ]
+  }
+ ],
+ "examples": [
+  {
+   "ru": "Я учу́ ру́сский, что́бы чита́ть Пу́шкина.",
+   "en": "I'm learning Russian to read Pushkin.",
+   "focus": "что́бы"
+  },
+  {
+   "ru": "Я хочу́, что́бы ты пришёл.",
+   "en": "I want you to come.",
+   "focus": "пришёл"
+  },
+  {
+   "ru": "Говори́ ме́дленнее, что́бы все по́няли.",
+   "en": "Speak more slowly so that everyone understands.",
+   "focus": "по́няли"
+  },
+  {
+   "ru": "Ма́ма проси́ла, что́бы мы не опа́здывали.",
+   "en": "Mum asked us not to be late.",
+   "focus": "что́бы"
+  },
+  {
+   "ru": "Я записа́л а́дрес, что́бы не забы́ть.",
+   "en": "I wrote the address down so as not to forget it.",
+   "focus": "не забы́ть"
+  }
+ ],
+ "related": [
+  "g-conditional",
+  "g-reported-speech",
+  "g-imperatives"
+ ]
+}

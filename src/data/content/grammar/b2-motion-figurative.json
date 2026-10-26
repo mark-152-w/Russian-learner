@@ -1,0 +1,130 @@
+{
+ "$schema": "../../../../schemas/grammar-article.schema.json",
+ "id": "g-motion-figurative",
+ "title": {
+  "en": "Figurative motion: идёт дождь, вре́мя лети́т",
+  "ru": "Глаго́лы движе́ния в перено́сном значе́нии"
+ },
+ "level": "B2",
+ "tags": [
+  "motion.figurative"
+ ],
+ "card": "Unidirectional motion verbs describe many things that move without legs: **идёт дождь** (it's raining), **идёт фильм** (a film is on), **вре́мя лети́т** (time flies), **речь идёт о…** (it's about…), **тебе́ идёт** (it suits you). These are fixed: you can't swap in **ходи́ть**.",
+ "sections": [
+  {
+   "kind": "why",
+   "body": "Many common phrases use motion verbs and make no sense word for word. Learn them as vocabulary."
+  },
+  {
+   "kind": "table",
+   "title": "Common phrases",
+   "table": {
+    "head": [
+     "Phrase",
+     "Meaning",
+     "Example"
+    ],
+    "rows": [
+     [
+      "**идёт дождь, снег**",
+      "it's raining, snowing",
+      "**Весь день идёт снег.**"
+     ],
+     [
+      "**идёт фильм, спекта́кль**",
+      "a film or play is on",
+      "**Что идёт в кино́?**"
+     ],
+     [
+      "**(кому́) идёт**",
+      "suits someone",
+      "**Тебе́ идёт э́то пла́тье.**"
+     ],
+     [
+      "**речь идёт о**",
+      "it's about",
+      "**Речь идёт о деньга́х.**"
+     ],
+     [
+      "**вре́мя лети́т, идёт**",
+      "time flies, passes",
+      "**Как бы́стро лети́т вре́мя!**"
+     ],
+     [
+      "**везти́ (кому́)**",
+      "to be lucky",
+      "**Мне повезло́.**"
+     ],
+     [
+      "**вести́ себя́**",
+      "to behave",
+      "**Веди́ себя́ хорошо́!**"
+     ],
+     [
+      "**носи́ть**",
+      "to wear habitually",
+      "**Она́ но́сит очки́.**"
+     ]
+    ]
+   }
+  },
+  {
+   "kind": "explanation",
+   "title": "Prefixed verbs go figurative too",
+   "body": "**прийти́ к вы́воду** (reach a conclusion), **вы́йти за́муж** (marry, of a woman), **перейти́ на ты** (switch to ты), **провести́ вре́мя** (spend time), **сойти́ с ума́** (go mad), **зайти́ сли́шком далеко́** (go too far), **прийти́ в го́лову** (occur to)."
+  },
+  {
+   "kind": "common-mistakes",
+   "mistakes": [
+    {
+     "wrong": "Хо́дит дождь.",
+     "right": "Идёт дождь.",
+     "why": "Weather and events take the unidirectional **идти́**.",
+     "error": "motion.mode"
+    },
+    {
+     "wrong": "Э́то пла́тье идёт тебя́.",
+     "right": "Э́то пла́тье идёт тебе́.",
+     "why": "*To suit someone*: the dative.",
+     "error": "case.verb-government"
+    }
+   ]
+  }
+ ],
+ "examples": [
+  {
+   "ru": "Весь день идёт дождь.",
+   "en": "It's been raining all day.",
+   "focus": "идёт"
+  },
+  {
+   "ru": "Тебе́ о́чень идёт э́тот цвет.",
+   "en": "That colour really suits you.",
+   "focus": "идёт"
+  },
+  {
+   "ru": "Речь идёт о на́шем бу́дущем.",
+   "en": "It's about our future.",
+   "focus": "Речь идёт"
+  },
+  {
+   "ru": "Как бы́стро лети́т вре́мя!",
+   "en": "How time flies!",
+   "focus": "лети́т"
+  },
+  {
+   "ru": "Мне пришла́ в го́лову отли́чная иде́я.",
+   "en": "A great idea occurred to me.",
+   "focus": "пришла́"
+  },
+  {
+   "ru": "Мы провели́ выходны́е на да́че.",
+   "en": "We spent the weekend at the dacha.",
+   "focus": "провели́"
+  }
+ ],
+ "related": [
+  "g-prefixed-motion",
+  "g-motion-basics"
+ ]
+}

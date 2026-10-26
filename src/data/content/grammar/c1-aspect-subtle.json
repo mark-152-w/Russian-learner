@@ -1,0 +1,84 @@
+{
+ "$schema": "../../../../schemas/grammar-article.schema.json",
+ "id": "g-aspect-subtle",
+ "title": {
+  "en": "Aspect: the subtle cases",
+  "ru": "Тру́дные слу́чаи ви́да"
+ },
+ "level": "C1",
+ "tags": [
+  "aspect.nuance",
+  "aspect.imperative"
+ ],
+ "card": "Three C1 uses of the imperfective. **The fact of an action**: *has it ever happened?* **Ты чита́л «Войну́ и мир»?** **An undone result**: it happened, but the result is gone: **Ко мне приходи́л брат** (he came and left). **Invitation**: **Сади́тесь! Проходи́те!** sounds warmer than the perfective.",
+ "sections": [
+  {
+   "kind": "why",
+   "body": "Beyond process and result, the imperfective names the fact of an action without focusing on its result. This is where even advanced learners pick the perfective and sound slightly off."
+  },
+  {
+   "kind": "explanation",
+   "title": "The fact of an action",
+   "body": "Asking or saying *whether* something happened takes the imperfective, even for one finished action: **Вы смотре́ли э́тот фильм?** — **Да, смотре́л.** **Кто писа́л э́то письмо́?** asks who the author is. The perfective asks about a specific expected result: **Ты посмотре́л фильм, кото́рый я тебе́ дал?**"
+  },
+  {
+   "kind": "explanation",
+   "title": "An undone result",
+   "body": "With motion verbs and a few others, the imperfective past means *went and came back*, *did and undid*: **Я брал твою́ кни́гу** (it's back now). **Кто открыва́л окно́?** (it's shut now, but someone opened it). Compare **Кто откры́л окно́?**: it's open now."
+  },
+  {
+   "kind": "explanation",
+   "title": "Imperatives",
+   "body": "Perfective imperatives are neutral requests: **Сядь, пожа́луйста.** Imperfective ones invite (**Сади́тесь!**, **Проходи́те!**), urge (**Ну, говори́ же!**) or, with **не**, forbid. With **не**, the perfective is a warning: **Не упади́!** (*Mind you don't fall!*)"
+  },
+  {
+   "kind": "common-mistakes",
+   "mistakes": [
+    {
+     "wrong": "Ты прочита́л когда́-нибудь «Войну́ и мир»?",
+     "right": "Ты чита́л когда́-нибудь «Войну́ и мир»?",
+     "why": "*Have you ever…?* asks about the fact: the imperfective.",
+     "error": "aspect.wrong"
+    },
+    {
+     "wrong": "Не забыва́й ключи́!",
+     "right": "Не забу́дь ключи́!",
+     "why": "A warning against an accident takes **не** + perfective.",
+     "error": "aspect.negation"
+    }
+   ]
+  }
+ ],
+ "examples": [
+  {
+   "ru": "Вы смотре́ли э́тот фильм?",
+   "en": "Have you seen this film?",
+   "focus": "смотре́ли"
+  },
+  {
+   "ru": "Ко мне вчера́ приходи́л брат.",
+   "en": "My brother came to see me yesterday (and left).",
+   "focus": "приходи́л"
+  },
+  {
+   "ru": "Кто открыва́л окно́?",
+   "en": "Who opened the window? (it's shut again)",
+   "focus": "открыва́л"
+  },
+  {
+   "ru": "Проходи́те, сади́тесь!",
+   "en": "Come in, sit down!",
+   "focus": "Проходи́те"
+  },
+  {
+   "ru": "Смотри́, не упади́!",
+   "en": "Careful, don't fall!",
+   "focus": "не упади́"
+  }
+ ],
+ "related": [
+  "g-aspect-depth",
+  "g-aspect-intro",
+  "g-imperatives"
+ ]
+}

@@ -1,0 +1,134 @@
+{
+ "$schema": "../../../../schemas/grammar-article.schema.json",
+ "id": "g-svoj",
+ "title": {
+  "en": "свой versus его́, её, их",
+  "ru": "Местоиме́ние свой"
+ },
+ "level": "B2",
+ "tags": [
+  "pron.possessive"
+ ],
+ "card": "**свой** means *one's own* and points back to the subject of its clause: **Он чита́ет свою́ кни́гу** (his own). **Он чита́ет его́ кни́гу** means another man's book. In the third person the choice changes the meaning; with **я, ты, мы, вы** both **свой** and **мой, твой**… are fine.",
+ "sections": [
+  {
+   "kind": "why",
+   "body": "English *his* is ambiguous: *John took his coat* (his own, or someone else's?). Russian decides: **свой** if it belongs to the subject, **его́** if it belongs to someone else."
+  },
+  {
+   "kind": "table",
+   "title": "Forms of свой",
+   "table": {
+    "head": [
+     "",
+     "m",
+     "n",
+     "f",
+     "pl"
+    ],
+    "rows": [
+     [
+      "nom",
+      "**свой**",
+      "**своё**",
+      "**своя́**",
+      "**свои́**"
+     ],
+     [
+      "gen",
+      "**своего́**",
+      "**своего́**",
+      "**свое́й**",
+      "**свои́х**"
+     ],
+     [
+      "dat",
+      "**своему́**",
+      "**своему́**",
+      "**свое́й**",
+      "**свои́м**"
+     ],
+     [
+      "acc",
+      "**свой / своего́**",
+      "**своё**",
+      "**свою́**",
+      "**свои́ / свои́х**"
+     ],
+     [
+      "ins",
+      "**свои́м**",
+      "**свои́м**",
+      "**свое́й**",
+      "**свои́ми**"
+     ],
+     [
+      "prep",
+      "**своём**",
+      "**своём**",
+      "**свое́й**",
+      "**свои́х**"
+     ]
+    ]
+   }
+  },
+  {
+   "kind": "explanation",
+   "title": "The rules",
+   "body": "- **свой** refers to the subject of the same clause: **Ма́ша позвони́ла свое́й ма́ме.**\n- It's never part of the subject: **Его́ брат живёт в Москве́**, not ~~Свой брат~~.\n- A new clause has a new subject: **Он сказа́л, что его́ сестра́ прие́дет.** (**сестра́** is the subject there, so **его́**.)"
+  },
+  {
+   "kind": "explanation",
+   "title": "Set phrases",
+   "body": "**свой** also means *one of us*: **Он свой челове́к.** And *each their own*: **У ка́ждого своё мне́ние.**"
+  },
+  {
+   "kind": "common-mistakes",
+   "mistakes": [
+    {
+     "wrong": "Ива́н лю́бит его́ жену́.",
+     "right": "Ива́н лю́бит свою́ жену́.",
+     "why": "With **его́**, Ivan loves another man's wife!",
+     "error": "pronoun.svoy"
+    },
+    {
+     "wrong": "Свой брат живёт в Москве́.",
+     "right": "Его́ брат живёт в Москве́.",
+     "why": "**свой** can't be part of the subject.",
+     "error": "pronoun.svoy"
+    }
+   ]
+  }
+ ],
+ "examples": [
+  {
+   "ru": "Он чита́ет свою́ кни́гу.",
+   "en": "He's reading his (own) book.",
+   "focus": "свою́"
+  },
+  {
+   "ru": "Ма́ша позвони́ла свое́й ма́ме.",
+   "en": "Masha called her (own) mother.",
+   "focus": "свое́й"
+  },
+  {
+   "ru": "Она́ взяла́ его́ зонт.",
+   "en": "She took his umbrella (another person's).",
+   "focus": "его́"
+  },
+  {
+   "ru": "Мы прие́хали на свое́й маши́не.",
+   "en": "We came in our own car.",
+   "focus": "свое́й"
+  },
+  {
+   "ru": "У ка́ждого своё мне́ние.",
+   "en": "Everyone has their own opinion.",
+   "focus": "своё"
+  }
+ ],
+ "related": [
+  "g-possessives",
+  "g-personal-pronouns"
+ ]
+}

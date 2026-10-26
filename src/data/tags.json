@@ -35,6 +35,8 @@
     {"id": "pron.possessive", "family": "pron", "label": "Possessives (мой, твой, наш, ваш, свой)"},
     {"id": "pron.demonstrative", "family": "pron", "label": "э́тот / тот"},
     {"id": "pron.relative", "family": "pron", "label": "кото́рый"},
+    {"id": "pron.negative", "family": "pron", "label": "Negative pronouns (никто́, не́кого)"},
+    {"id": "pron.indefinite", "family": "pron", "label": "Indefinite pronouns (кто́-то, кто́-нибудь)"},
     {"id": "verb.present", "family": "verb", "label": "Present tense"},
     {"id": "verb.past", "family": "verb", "label": "Past tense"},
     {"id": "verb.future", "family": "verb", "label": "Future tense"},

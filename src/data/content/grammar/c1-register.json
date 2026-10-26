@@ -1,0 +1,118 @@
+{
+ "$schema": "../../../../schemas/grammar-article.schema.json",
+ "id": "g-register",
+ "title": {
+  "en": "Register: formal and everyday Russian",
+  "ru": "Сти́ли ре́чи"
+ },
+ "level": "C1",
+ "tags": [
+  "register"
+ ],
+ "card": "Russian marks register strongly. **ты** and **вы** are only the start: vocabulary (**приобрести́** or **купи́ть**), sentence length, names (**Ива́н Петро́вич** or **Ва́ня**) and particles all change between official, neutral and colloquial speech. Mixing them is the most noticeable C1 slip.",
+ "sections": [
+  {
+   "kind": "why",
+   "body": "Native speakers notice register before grammar. An email to a professor that opens **Приве́т!** and a chat with friends in office Russian both sound wrong."
+  },
+  {
+   "kind": "table",
+   "title": "Official and everyday",
+   "table": {
+    "head": [
+     "Official",
+     "Everyday"
+    ],
+    "rows": [
+     [
+      "**приобрести́**",
+      "**купи́ть**"
+     ],
+     [
+      "**прожива́ть**",
+      "**жить**"
+     ],
+     [
+      "**явля́ться**",
+      "**быть**"
+     ],
+     [
+      "**в связи́ с тем что**",
+      "**потому́ что**"
+     ],
+     [
+      "**в настоя́щее вре́мя**",
+      "**сейча́с**"
+     ],
+     [
+      "**принима́ть уча́стие**",
+      "**уча́ствовать**"
+     ]
+    ]
+   }
+  },
+  {
+   "kind": "explanation",
+   "title": "Names and address",
+   "body": "Officially: first name + patronymic and **вы**: **Ива́н Петро́вич, вы не могли́ бы…?** Among friends: a short name and **ты**: **Ва́ня, мо́жешь…?** Switching to **ты** is an event, and the older or more senior person usually offers: **Дава́йте перейдём на ты.**"
+  },
+  {
+   "kind": "explanation",
+   "title": "Colloquial features",
+   "body": "Everyday speech drops words and adds particles: **Ты куда́?** (no verb), **Ну, дава́й!**, **Ла́дно.**, **Я же говори́л!**, **Вот и всё.** Keep these out of formal writing."
+  },
+  {
+   "kind": "explanation",
+   "title": "Officialese",
+   "body": "Official style piles up nouns: **осуществле́ние контро́ля за выполне́нием**. Good writers avoid it; in your own writing, prefer a verb: **контроли́ровать**."
+  },
+  {
+   "kind": "common-mistakes",
+   "mistakes": [
+    {
+     "wrong": "Приве́т, Ива́н Петро́вич!",
+     "right": "Здра́вствуйте, Ива́н Петро́вич!",
+     "why": "A name and patronymic go with **здра́вствуйте** and **вы**.",
+     "error": "register.formality"
+    },
+    {
+     "wrong": "Я приобрёл хлеб.",
+     "right": "Я купи́л хлеб.",
+     "why": "**приобрести́** is official; for bread, **купи́ть**.",
+     "error": "register.formality"
+    }
+   ]
+  }
+ ],
+ "examples": [
+  {
+   "ru": "Здра́вствуйте, Ива́н Петро́вич! Вы не могли́ бы мне помо́чь?",
+   "en": "Hello, Ivan Petrovich! Could you help me?",
+   "focus": "Вы"
+  },
+  {
+   "ru": "Ва́ня, помоги́, а?",
+   "en": "Vanya, give me a hand, will you?",
+   "focus": "помоги́"
+  },
+  {
+   "ru": "Дава́йте перейдём на ты.",
+   "en": "Let's switch to ты.",
+   "focus": "на ты"
+  },
+  {
+   "ru": "Прошу́ проще́ния за опозда́ние.",
+   "en": "I apologise for being late.",
+   "focus": "Прошу́ проще́ния"
+  },
+  {
+   "ru": "Извини́, я опозда́л.",
+   "en": "Sorry I'm late.",
+   "focus": "Извини́"
+  }
+ ],
+ "related": [
+  "g-word-order",
+  "g-diminutives"
+ ]
+}

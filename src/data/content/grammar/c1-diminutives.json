@@ -1,0 +1,98 @@
+{
+ "$schema": "../../../../schemas/grammar-article.schema.json",
+ "id": "g-diminutives",
+ "title": {
+  "en": "Diminutives",
+  "ru": "Уменьши́тельные су́ффиксы"
+ },
+ "level": "C1",
+ "tags": [
+  "diminutives"
+ ],
+ "card": "Diminutive suffixes make things small or dear: **дом → до́мик**, **рука́ → ру́чка**, **ма́ма → ма́мочка**, **вода́ → води́чка**. They carry warmth (or irony) more than size. Names have whole families: **Ива́н → Ва́ня → Ва́нечка**.",
+ "sections": [
+  {
+   "kind": "why",
+   "body": "Russians use diminutives all the time, especially with children, with food and in polite requests: **Мину́точку!**, **Ча́ю? Ча́йку?** Recognising the tone matters more than producing every form."
+  },
+  {
+   "kind": "table",
+   "title": "Common suffixes",
+   "table": {
+    "head": [
+     "Suffix",
+     "Gender",
+     "Examples"
+    ],
+    "rows": [
+     [
+      "**-ик, -чик**",
+      "masculine",
+      "**до́мик, сто́лик, сту́льчик**"
+     ],
+     [
+      "**-ок, -ек**",
+      "masculine",
+      "**городо́к, листо́к, дружо́к**"
+     ],
+     [
+      "**-ка, -очка, -ечка**",
+      "feminine",
+      "**ру́чка, ма́мочка, ча́шечка**"
+     ],
+     [
+      "**-ко, -ышко**",
+      "neuter",
+      "**око́шко, со́лнышко**"
+     ],
+     [
+      "**-енька, -онька**",
+      "affectionate",
+      "**до́ченька, Ма́шенька**"
+     ]
+    ]
+   }
+  },
+  {
+   "kind": "explanation",
+   "title": "Tone",
+   "body": "A diminutive can be tender (**со́лнышко** for a child), polite (**Подожди́те мину́точку**), childish, or ironic (**Ну и пого́дка!**). Adjectives have them too: **ма́ленький → малю́сенький**, **хоро́ший → хоро́шенький** (*pretty*)."
+  },
+  {
+   "kind": "note",
+   "title": "Words that aren't small any more",
+   "body": "Many diminutives have become ordinary words with their own meaning: **ру́чка** (*a pen*, not only a small hand), **но́жка** (*the leg of a table*), **ча́шка**, **бу́лочка** (*a bun*). Don't undo them."
+  }
+ ],
+ "examples": [
+  {
+   "ru": "Мы сня́ли ма́ленький до́мик у мо́ря.",
+   "en": "We rented a little house by the sea.",
+   "focus": "до́мик"
+  },
+  {
+   "ru": "Подожди́те мину́точку!",
+   "en": "Just a moment!",
+   "focus": "мину́точку"
+  },
+  {
+   "ru": "Спи, со́лнышко.",
+   "en": "Sleep, sweetheart.",
+   "focus": "со́лнышко"
+  },
+  {
+   "ru": "Ну и пого́дка сего́дня!",
+   "en": "Lovely weather today! (ironic)",
+   "focus": "пого́дка"
+  },
+  {
+   "ru": "Ва́ня, иди́ сюда́!",
+   "en": "Vanya, come here!",
+   "focus": "Ва́ня"
+  }
+ ],
+ "related": [
+  "g-word-formation",
+  "g-register"
+ ]
+}

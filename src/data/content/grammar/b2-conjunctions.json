@@ -1,0 +1,116 @@
+{
+ "$schema": "../../../../schemas/grammar-article.schema.json",
+ "id": "g-conjunctions",
+ "title": {
+  "en": "Linking ideas: хотя́, поэ́тому, несмотря́ на то что",
+  "ru": "Сло́жные предложе́ния"
+ },
+ "level": "B2",
+ "tags": [
+  "syntax.conjunctions"
+ ],
+ "card": "Cause: **потому́ что, так как, из-за того́ что**. Result: **поэ́тому, так что**. Contrast: **хотя́, но, одна́ко, несмотря́ на то что**. Time: **когда́, пока́, как то́лько, по́сле того́ как, пе́ред тем как**. A comma goes before them.",
+ "sections": [
+  {
+   "kind": "why",
+   "body": "B2 speech is about connected ideas: reasons, contrasts, sequences. A small set of linking words does most of the work. Learn which ones take **то, что** and which a plain clause."
+  },
+  {
+   "kind": "table",
+   "title": "Linking words",
+   "table": {
+    "head": [
+     "Meaning",
+     "Words",
+     "Example"
+    ],
+    "rows": [
+     [
+      "cause",
+      "**потому́ что, так как, из-за того́ что, благодаря́ тому́ что**",
+      "**Я не пришёл, потому́ что боле́л.**"
+     ],
+     [
+      "result",
+      "**поэ́тому, так что**",
+      "**Шёл дождь, поэ́тому мы оста́лись до́ма.**"
+     ],
+     [
+      "contrast",
+      "**хотя́, но, одна́ко, несмотря́ на то что**",
+      "**Хотя́ бы́ло по́здно, он рабо́тал.**"
+     ],
+     [
+      "time",
+      "**пока́, как то́лько, по́сле того́ как, пе́ред тем как**",
+      "**Как то́лько он пришёл, мы се́ли за стол.**"
+     ],
+     [
+      "condition",
+      "**е́сли, е́сли бы, в слу́чае е́сли**",
+      "**Е́сли бу́дет вре́мя, позвони́.**"
+     ]
+    ]
+   }
+  },
+  {
+   "kind": "explanation",
+   "title": "Before a noun, before a clause",
+   "body": "Before a noun use the preposition; before a clause, the conjunction built from it: **из-за дождя́** / **из-за того́ что шёл дождь**; **несмотря́ на дождь** / **несмотря́ на то что шёл дождь**; **по́сле обе́да** / **по́сле того́ как мы пообе́дали**."
+  },
+  {
+   "kind": "explanation",
+   "title": "пока́ and пока́ не",
+   "body": "**пока́** is *while*: **Пока́ ты спал, я рабо́тал.** **пока́ не** is *until*: **Жди, пока́ я не приду́.** The **не** here isn't a negation in meaning."
+  },
+  {
+   "kind": "common-mistakes",
+   "mistakes": [
+    {
+     "wrong": "Я оста́лся до́ма, потому́ дождь.",
+     "right": "Я оста́лся до́ма из-за дождя́.",
+     "why": "Before a noun use the preposition **из-за** + genitive.",
+     "error": "syntax.conjunction"
+    },
+    {
+     "wrong": "Несмотря́ на то, был дождь, мы гуля́ли.",
+     "right": "Несмотря́ на то что шёл дождь, мы гуля́ли.",
+     "why": "Before a clause: **несмотря́ на то что**.",
+     "error": "syntax.conjunction"
+    }
+   ]
+  }
+ ],
+ "examples": [
+  {
+   "ru": "Я не пришёл, потому́ что боле́л.",
+   "en": "I didn't come because I was ill.",
+   "focus": "потому́ что"
+  },
+  {
+   "ru": "Хотя́ бы́ло по́здно, он ещё рабо́тал.",
+   "en": "Although it was late, he was still working.",
+   "focus": "Хотя́"
+  },
+  {
+   "ru": "Шёл дождь, поэ́тому мы оста́лись до́ма.",
+   "en": "It was raining, so we stayed at home.",
+   "focus": "поэ́тому"
+  },
+  {
+   "ru": "Пока́ ты спал, я пригото́вил за́втрак.",
+   "en": "While you were asleep, I made breakfast.",
+   "focus": "Пока́"
+  },
+  {
+   "ru": "Подожди́, пока́ я не верну́сь.",
+   "en": "Wait until I'm back.",
+   "focus": "пока́"
+  }
+ ],
+ "related": [
+  "g-reported-speech",
+  "g-chtoby",
+  "g-word-order"
+ ]
+}

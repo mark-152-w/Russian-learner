@@ -1,0 +1,114 @@
+{
+ "$schema": "../../../../schemas/grammar-article.schema.json",
+ "id": "g-participles-active",
+ "title": {
+  "en": "Active participles: чита́ющий, прочита́вший",
+  "ru": "Действи́тельные прича́стия"
+ },
+ "level": "B2",
+ "tags": [
+  "participle.active"
+ ],
+ "card": "An active participle is a verb used as an adjective: **челове́к, чита́ющий газе́ту** = *the man reading the paper*. Present: the **они́** form minus **-т** + **-щий** (**чита́ют → чита́ющий**). Past: the past stem + **-вший** (**прочита́л → прочита́вший**). They decline like adjectives and belong mostly to writing; in speech say **кото́рый чита́ет**.",
+ "sections": [
+  {
+   "kind": "why",
+   "body": "Participles let written Russian pack a whole clause into one word. News, instructions and literature use them constantly; conversation prefers **кото́рый**. At B2 you need to recognise them; at C1, to produce the common ones."
+  },
+  {
+   "kind": "table",
+   "title": "How to form them",
+   "table": {
+    "head": [
+     "",
+     "From",
+     "Suffix",
+     "Example"
+    ],
+    "rows": [
+     [
+      "present active",
+      "the **они́** form minus **-т**",
+      "**-щий**",
+      "**чита́ют → чита́ющий**, **говоря́т → говоря́щий**, **иду́т → иду́щий**"
+     ],
+     [
+      "past active",
+      "the past stem",
+      "**-вший** after a vowel, **-ший** after a consonant",
+      "**прочита́л → прочита́вший**, **принёс → принёсший**"
+     ]
+    ]
+   }
+  },
+  {
+   "kind": "explanation",
+   "title": "Aspect and tense",
+   "body": "Present participles come only from imperfective verbs: **чита́ющий** (*who is reading*). Past participles come from both aspects: **чита́вший** (*who was reading*), **прочита́вший** (*who has read*). Reflexive verbs keep **-ся**, even after a vowel: **занима́ющийся**, **верну́вшийся**."
+  },
+  {
+   "kind": "explanation",
+   "title": "Agreement",
+   "body": "The participle agrees with its noun in gender, number and case, like any adjective: **Я говори́л с челове́ком, чита́ющим газе́ту.** **Мы ви́дели студе́нтов, сдаю́щих экза́мен.** A participle phrase after its noun is set off by commas."
+  },
+  {
+   "kind": "vs-english",
+   "body": "English uses *-ing* for several things that Russian keeps apart. *The man reading* is a participle (**чита́ющий**); *while reading* is a gerund (**чита́я**); *reading is useful* is an infinitive or a noun (**чита́ть поле́зно**, **чте́ние**)."
+  },
+  {
+   "kind": "common-mistakes",
+   "mistakes": [
+    {
+     "wrong": "Я ви́дел де́вушку, чита́ющая кни́гу.",
+     "right": "Я ви́дел де́вушку, чита́ющую кни́гу.",
+     "why": "The participle agrees with **де́вушку** (accusative).",
+     "error": "agreement.case"
+    },
+    {
+     "wrong": "прочита́ющий",
+     "right": "прочита́вший",
+     "why": "No present participle from a perfective verb: use the past, **прочита́вший**.",
+     "error": "aspect.wrong"
+    },
+    {
+     "wrong": "занима́ющийсь",
+     "right": "занима́ющийся",
+     "why": "Participles always keep **-ся**, even after a vowel.",
+     "error": "verb.reflexive"
+    }
+   ]
+  }
+ ],
+ "examples": [
+  {
+   "ru": "Челове́к, чита́ющий газе́ту, — мой сосе́д.",
+   "en": "The man reading the paper is my neighbour.",
+   "focus": "чита́ющий"
+  },
+  {
+   "ru": "Студе́нты, сдаю́щие экза́мен, о́чень волну́ются.",
+   "en": "The students taking the exam are very nervous.",
+   "focus": "сдаю́щие"
+  },
+  {
+   "ru": "Я встре́тил дру́га, верну́вшегося из Москвы́.",
+   "en": "I met a friend who had come back from Moscow.",
+   "focus": "верну́вшегося"
+  },
+  {
+   "ru": "Э́то расска́з о де́вочке, потеря́вшей соба́ку.",
+   "en": "It's a story about a girl who lost her dog.",
+   "focus": "потеря́вшей"
+  },
+  {
+   "ru": "Говоря́щий по-ру́сски тури́ст помо́г нам.",
+   "en": "A tourist who spoke Russian helped us.",
+   "focus": "Говоря́щий"
+  }
+ ],
+ "related": [
+  "g-participles-passive",
+  "g-gerunds",
+  "g-kotoryj"
+ ]
+}
