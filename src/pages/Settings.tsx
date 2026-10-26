@@ -133,7 +133,7 @@ export default function Settings() {
             <span className="block text-sm text-ink-soft">Find your level again; units below it can be tested out of.</span>
           </span>
           <Link to="/placement">
-            <Button variant="secondary">Take it</Button>
+            <Button variant="secondary" className="whitespace-nowrap">Take it</Button>
           </Link>
         </div>
       </Section>

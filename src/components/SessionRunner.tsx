@@ -158,7 +158,7 @@ export function SessionRunner({ items, lexemes, kind, onDone, onAgain, recallFor
       </div>
       <div className="flex h-8 items-center justify-between">
         <ComboMeter combo={combo} multiplier={multiplier} />
-        {golden && <span className="anim-pop rounded-full bg-gold px-3 py-1 text-xs font-bold text-paper">Golden question · ×5 XP</span>}
+        {golden && <span className="anim-pop rounded-full bg-gold px-3 py-1 text-xs font-bold text-[#2a1d0f]">Golden question · ×5 XP</span>}
       </div>
 
       {hud}

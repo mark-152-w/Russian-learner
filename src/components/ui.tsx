@@ -23,9 +23,9 @@ export function Card({ children, className = '' }: { children: ReactNode; classN
 }
 
 /** Progress bar that fills smoothly. */
-export function Bar({ value, className = '', color = 'bg-red' }: { value: number; className?: string; color?: string }) {
+export function Bar({ value, className = '', color = 'bg-red', label = 'Progress' }: { value: number; className?: string; color?: string; label?: string }) {
   return (
-    <div className={`h-2.5 overflow-hidden rounded-full bg-paper ${className}`} role="progressbar" aria-valuenow={Math.round(value * 100)} aria-valuemin={0} aria-valuemax={100}>
+    <div className={`h-2.5 overflow-hidden rounded-full bg-paper ${className}`} role="progressbar" aria-label={label} aria-valuenow={Math.round(value * 100)} aria-valuemin={0} aria-valuemax={100}>
       <div className={`h-full rounded-full ${color} transition-[width] duration-700 ease-out`} style={{ width: `${Math.max(0, Math.min(1, value)) * 100}%` }} />
     </div>
   )

@@ -600,8 +600,8 @@ def write_outputs(final, ranked, curve, total_tokens, unknown_mass, stats,
     sources = json.loads((ROOT / "tools" / "sources.json").read_text(encoding="utf-8"))
     counts = collections.Counter(x["pos"] for x in final)
     levels = collections.Counter(x.get("level", "unranked") for x in final)
-    meta = {"sources": {k: {kk: v[kk] for kk in ("name", "url", "licence", "licenceUrl", "commit") if kk in v}
-                        for k, v in sources.items() if k != "tatoeba" or "commit" in v},
+    meta = {"sources": {k: {kk: v[kk] for kk in ("name", "url", "licence", "licenceUrl", "commit", "snapshot") if kk in v}
+                        for k, v in sources.items() if "status" not in v},  # "status" marks a source not yet available
             "counts": {"lexemes": len(final), **counts}, "levels": dict(sorted(levels.items())),
             "chunks": {k: len(v) for k, v in sorted(chunks.items())}}
     (OUT / "meta.json").write_text(json.dumps(meta, ensure_ascii=False, indent=1), encoding="utf-8")

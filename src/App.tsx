@@ -1,4 +1,4 @@
-import { lazy, Suspense, useEffect } from 'react'
+import { lazy, Suspense, useEffect, useState } from 'react'
 import { HashRouter, NavLink, Route, Routes, useLocation } from 'react-router-dom'
 import { prefersReducedMotion, useSettings } from './db/settings'
 import { setSoundEnabled } from './audio/sound'
@@ -9,7 +9,7 @@ import { dayKey, streakStatus } from './rewards/streak'
 import { useProfile } from './hooks/live'
 import { JuiceLayer, useJuice } from './components/juice'
 import { Ru } from './components/Md'
-import { Icon } from './components/ui'
+import { Button, Icon } from './components/ui'
 import Home from './pages/Home'
 
 const Practice = lazy(() => import('./pages/Practice'))
@@ -45,6 +45,7 @@ const Boss = lazy(() => import('./pages/Boss'))
 const CardsPage = lazy(() => import('./pages/Cards').then((m) => ({ default: m.CardsPage })))
 const CardPage = lazy(() => import('./pages/Cards').then((m) => ({ default: m.CardPage })))
 const Town = lazy(() => import('./pages/Town'))
+const Stats = lazy(() => import('./pages/Stats'))
 const IdiomsPage = lazy(() => import('./pages/Idioms').then((m) => ({ default: m.IdiomsPage })))
 const IdiomsPractice = lazy(() => import('./pages/Idioms').then((m) => ({ default: m.IdiomsPractice })))
 const AdventureHub = lazy(() => import('./pages/Adventure').then((m) => ({ default: m.AdventureHub })))
@@ -127,6 +128,59 @@ function Header() {
   )
 }
 
+const TITLES: [RegExp, string][] = [
+  [/^\/$/, 'Today'], [/^\/course/, 'Course'], [/^\/unit\//, 'Unit'], [/^\/lesson\//, 'Lesson'], [/^\/review/, 'Review'],
+  [/^\/practice/, 'Practice session'], [/^\/placement/, 'Placement test'], [/^\/grammar\/./, 'Grammar article'], [/^\/grammar/, 'Reference'],
+  [/^\/lab/, 'Dictionary and declension lab'], [/^\/word\//, 'Word'], [/^\/drill/, 'Drill'], [/^\/trainers?/, 'Practice'],
+  [/^\/reader/, 'Read'], [/^\/story\//, 'Story'], [/^\/dialogue\//, 'Dialogue'], [/^\/listen/, 'Listening'], [/^\/keyboard/, 'Keyboard'],
+  [/^\/games/, 'Games'], [/^\/arcade/, 'Case arcade'], [/^\/crossword/, 'Crossword'], [/^\/speed/, 'Speed match'], [/^\/boss\//, 'Boss battle'],
+  [/^\/cards?/, 'Cards'], [/^\/town/, 'Your town'], [/^\/adventure/, '«Де́ло»'], [/^\/idioms/, 'Idioms and culture'], [/^\/stats/, 'Your stats'],
+  [/^\/trophies/, 'Trophies'], [/^\/settings/, 'Settings'], [/^\/attributions/, 'Attributions'],
+]
+
+/** Names every page: the browser tab, a heading for screen readers where the page has none, and focus on navigation. */
+function PageTitle() {
+  const { pathname } = useLocation()
+  const [needH1, setNeedH1] = useState(false)
+  const title = TITLES.find(([re]) => re.test(pathname))?.[1] ?? 'Медве́дь'
+  useEffect(() => {
+    document.title = `${title} · Медве́дь`
+    // pages load lazily: look for their own heading once they've rendered
+    const t = setTimeout(() => setNeedH1(!document.querySelector('main h1:not(.sr-only)')), 400)
+    document.getElementById('main')?.focus({ preventScroll: true })
+    return () => clearTimeout(t)
+  }, [pathname, title])
+  return needH1 ? <h1 className="sr-only">{title}</h1> : null
+}
+
+/** Offers a new version once the learner isn't in a session; announces when the app is ready offline. */
+function UpdatePrompt() {
+  const { pathname } = useLocation()
+  const juice = useJuice()
+  const [apply, setApply] = useState<(() => void) | null>(null)
+  const [later, setLater] = useState(false)
+  useEffect(() => {
+    const onUpdate = (e: Event) => setApply(() => (e as CustomEvent<() => void>).detail)
+    const onReady = () => juice.toast({ title: 'Ready to work offline', body: 'Медве́дь now works without a connection.', tone: 'red' })
+    window.addEventListener('medved:update', onUpdate)
+    window.addEventListener('medved:offline-ready', onReady)
+    return () => {
+      window.removeEventListener('medved:update', onUpdate)
+      window.removeEventListener('medved:offline-ready', onReady)
+    }
+  }, [juice])
+  if (!apply || later || inSessionPath(pathname)) return null
+  return (
+    <div role="status" className="anim-rise fixed inset-x-3 bottom-20 z-30 mx-auto flex max-w-md items-center gap-3 rounded-xl border-2 border-red bg-paper p-3 shadow-lg sm:bottom-4">
+      <span className="flex-1 text-sm">A new version of Медве́дь is ready.</span>
+      <Button variant="secondary" onClick={() => setLater(true)}>
+        Later
+      </Button>
+      <Button onClick={apply}>Update</Button>
+    </div>
+  )
+}
+
 function BottomNav() {
   const { pathname } = useLocation()
   if (inSessionPath(pathname)) return null
@@ -151,7 +205,8 @@ export default function App() {
         <Preferences />
         <AppOpen />
         <Header />
-        <main className="mx-auto max-w-3xl px-4 pb-24 pt-4 sm:pb-8">
+        <main id="main" tabIndex={-1} className="mx-auto max-w-3xl px-4 pb-24 pt-4 outline-none sm:pb-8">
+          <PageTitle />
           <Suspense fallback={<p className="py-12 text-center text-ink-soft">Loading…</p>}>
             <Routes>
               <Route path="/" element={<Home />} />
@@ -188,6 +243,7 @@ export default function App() {
               <Route path="/cards" element={<CardsPage />} />
               <Route path="/card/:id" element={<CardPage />} />
               <Route path="/town" element={<Town />} />
+              <Route path="/stats" element={<Stats />} />
               <Route path="/idioms" element={<IdiomsPage />} />
               <Route path="/idioms/practice" element={<IdiomsPractice />} />
               <Route path="/adventure" element={<AdventureHub />} />
@@ -197,6 +253,7 @@ export default function App() {
             </Routes>
           </Suspense>
         </main>
+        <UpdatePrompt />
         <BottomNav />
       </JuiceLayer>
     </HashRouter>

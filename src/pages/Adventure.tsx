@@ -34,7 +34,7 @@ export function AdventureHub() {
         const open = isOpen(c.chapter, progress)
         const done = progress.done.includes(c.chapter)
         const body = (
-          <Card className={`flex items-center gap-3 ${open ? 'transition hover:border-red' : 'opacity-60'}`}>
+          <Card className={`flex items-center gap-3 ${open ? 'transition hover:border-red' : 'border-dashed text-ink-soft'}`}>
             <span className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-full font-bold ${done ? 'bg-good text-paper' : open ? 'bg-red text-paper' : 'bg-line'}`}>
               {done ? <Icon name="check" className="h-5 w-5" /> : c.chapter}
             </span>

@@ -1,9 +1,10 @@
-import meta from '../data/meta.json'
+// The pinned source list itself (tools/sources.json), so a credit never waits for a dictionary rebuild.
+import sources from '../../tools/sources.json'
 
-type Source = { name: string; url: string; licence: string; licenceUrl: string; commit?: string }
+type Source = { name: string; url: string; licence: string; licenceUrl: string; commit?: string; snapshot?: string }
 
 export default function Attributions() {
-  const sources = meta.sources as Record<string, Source>
+  const list = Object.entries(sources as Record<string, Source & { status?: string }>).filter(([, s]) => !s.status)
   return (
     <div className="space-y-4">
       <h1 className="font-serif text-3xl">Attributions</h1>
@@ -12,7 +13,7 @@ export default function Attributions() {
         licences.
       </p>
       <ul className="space-y-3">
-        {Object.entries(sources).map(([key, s]) => (
+        {list.map(([key, s]) => (
           <li key={key} className="rounded-lg border border-line bg-paper-2 p-4">
             <a href={s.url} className="font-bold text-red underline">
               {s.name}
@@ -24,6 +25,7 @@ export default function Attributions() {
               </a>
             </div>
             {s.commit && <div className="text-xs text-ink-soft">Version: {s.commit.slice(0, 10)}</div>}
+            {s.snapshot && <div className="text-xs text-ink-soft">Data: {s.snapshot}</div>}
           </li>
         ))}
         <li className="rounded-lg border border-line bg-paper-2 p-4 text-sm">
