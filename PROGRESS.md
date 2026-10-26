@@ -9,25 +9,39 @@
 | 2: grammar A2–B1, A2 units, placement, daily plan, vocab SRS, declension lab | Done |
 | 3: specialist trainers (cases, aspect, motion, stress, numerals) | Done |
 | 4: graded reader, listening and speaking, keyboard trainer | **Done** (all 40 stories, not just the first 15) |
-| 5: games, collectible cards, the town, text adventure «Де́ло» | **In progress**: chunk 1 of 4 done (case arcade, declension crossword) |
+| 5: games, collectible cards, the town, text adventure «Де́ло» | **Done** (in four chunks) |
+| 6: B1–C1 units, remaining grammar articles, idioms/culture | Next (estimate at the end) |
+| 7: stats dashboard, polish, accessibility, performance, GitHub Pages deploy | Later |
 
 `npm run check` passes:
 
 - 25 Python tool tests;
 - `validate.py`: 0 errors, 2 warnings (сёк in two C1 sentences: a real form pymorphy3 doesn't know);
 - typecheck;
-- 130 Vitest tests. New in Phase 5 chunk 1: the preposition joining rule (о → об, с → со…), every arcade wave
-  deals valid gradable cards, every crossword topic builds a consistent grid, and the daily puzzle is
-  deterministic. New in Phase 4:
+- 144 Vitest tests. New in Phase 5:
+  - the preposition joining rule (о → об, с → со…);
+  - every arcade wave deals valid gradable cards;
+  - every crossword topic builds a consistent grid, and the daily puzzle is deterministic;
+  - boss damage, hearts, and revenge items from recent mistakes;
+  - speed match never deals a word twice and never gives the newcomer away;
+  - the card index matches the set files, and every blurb word is analysed;
+  - chests never deal a card rarer than the chest;
+  - town levels and ranks;
+  - every adventure link resolves, every gate grades, and the parser plays chapters 3–5 and explains wrong cases
+    and prepositions.
+  New in Phase 4:
   - every story word carries an analysis and every comprehension question is answerable;
   - analysis labels;
   - а́канье;
   - the dictation, shadowing and sound-pair items grade their own answers;
   - each keyboard lesson uses only learned letters.
 
-`npm run build`: the precache is 199 files (191 after Phase 4), 12.4 MB raw (about 3.2 MB gzipped), with the stories loaded one file at a time.
+`npm run build`: the precache is 221 files (191 after Phase 4), 12.4 MB raw (about 3.2 MB gzipped), with the stories loaded one file at a time.
 
-I ran an end-to-end check in headless Chromium with no console errors. It covered:
+I ran end-to-end checks in headless Chromium at phone width, with no console errors. In Phase 5 they covered:
+the games hub; an arcade run, a speed round and a crossword; a boss fight to the end; the town; the collection and
+a card's tappable text; «Де́ло» chapter 1 by choices, a chapter 2 grammar gate, and chapter 3 by typed commands,
+including wrong cases. In Phase 4 they covered:
 
 - the daily plan's new reading step;
 - the library;
@@ -37,7 +51,7 @@ I ran an end-to-end check in headless Chromium with no console errors. It covere
 - the keyboard: typing a lesson line with Latin key positions;
 - the new Practice and Reference hubs.
 
-## Phase 5, chunk 1: what's built
+## Phase 5: what's built
 
 Both games live under **Practice → Games** (`/games`), and the daily plan's "something fun" step now rotates
 through them too.
@@ -61,6 +75,54 @@ wrong letters; Reveal fills a word (a revealed word doesn't count as correct). S
 **Rewards**: two new session kinds (`arcade`, `crossword`), feature flags `arcade` and `crossword`, and three
 new achievements: Разга́дчик (10 crosswords), Ме́ткость (500 arcade points), Чемпио́н (2,000). The boss
 achievements now wait for the `bosses` flag (chunk 2).
+
+**Speed match** (`/speed`, `src/engine/speed.ts`). Five Russian words, five meanings, one minute. Each match
+deals a new word, and its meaning is swapped into a random slot so the newcomer isn't obvious. Runs of matches
+score more, and a wrong pair costs three seconds. Every attempted pair is a graded meaning item for the learner model.
+
+**Boss battles** (`/boss/:unit`, `src/engine/boss.ts`). Every A2 unit has the boss its JSON always named: Домово́й,
+Ле́ший, Ба́ба-Яга́, Змей Горы́ныч, up to Царь-Медве́дь. The 20 SVG portraits are drawn from shared parts, one line of
+data each. A boss has HP; every right answer hits it, a run of three hits twice as hard, and each mistake costs
+one of three hearts. The questions are the unit's checkpoint drills plus "revenge" items: forms you got wrong
+anywhere in the app in the last two weeks. The boss shows on its unit page and in the games hub. A first win
+counts for Пе́рвая побе́да / Богаты́рь and earns a card. The session runner gained two small hooks (`hud`,
+`onAnswered`), so bosses reuse every exercise type.
+
+**Collectible cards** (`/cards`, `/card/:id`). There are 32 cards in four sets: people (Пу́шкин, Гага́рин,
+Терешко́ва…), places (Байка́л, Камча́тка, Эрмита́ж…), idioms (Ни пу́ха ни пера́!, Ве́шать лапшу́ на у́ши…) and culture
+(ба́ня, Ма́сленица, Гжель…). Each card has a two- or three-sentence text, written in `tools/cards/*.txt` and built
+by the story pipeline. Every word in it is analysed and tappable, like a story.
+- Cards come from chests: a better chest can hold a rarer card, and never one rarer than the chest. They're also
+  milestone rewards: a boss's first defeat, a completed unit, a finished adventure chapter.
+- A full set pays bonus XP.
+- `src/data/cards-index.json` holds names and rarities only, so chests don't load the texts.
+
+**The town** (`/town`, linked from Home). Ten buildings, each growing through five levels with one part of your
+learning:
+- Дом (longest streak), По́чта (reviews), Ры́нок (words known), Шко́ла (units);
+- Библиоте́ка (stories), Теа́тр (dictations), Вокза́л (trainer sessions), Стадио́н (games);
+- Кре́пость (bosses), Музе́й (cards).
+
+An empty plot is something you haven't tried yet. The town's rank climbs from Ху́тор to Столи́ца.
+
+**«Де́ло»** (`/adventure`, `src/engine/adventure.ts`, `content/adventure/ch1–5.json`). The town museum's
+200-year-old samovar has vanished, and you're the detective.
+- Chapters 1–2 (A2) are choices. Three of them only open once you pick the right form («Покажи́те биле́т Ни́не»).
+- Chapters 3–5 (B1) take typed commands: иди́, возьми́, осмотри́, откро́й, then спроси́ о…, поговори́ с…, покажи́…
+  кому́, поста́вь на…, отда́й… кому́.
+- The parser reads each verb's case and preposition from the chapter data. It explains a mistake in grammar
+  terms: «возьми́ ключа́» → take *what?*: the accusative, **возьми́ ключ**; «иди́ в сара́е» → *where to?*: в +
+  accusative. Good Russian that just doesn't apply gets "Your Russian is fine, but nothing happens".
+- Every grammar decision is reported to the learner model under the matching tag. A first finish of a chapter
+  earns an epic-or-lower card.
+- There are two endings.
+
+**Rewards**:
+- new session kinds: `speed`, `boss`, `adventure`;
+- feature flags: `speed`, `bosses`, `cards`, `town`, `adventure`;
+- new achievements: Скорогово́рка (25 pairs in a round), Храни́тель (all 32 cards, hidden), Градострои́тель (25
+  building levels), Де́ло закры́то (all five chapters);
+- the daily plan's light step now also rotates through speed match and «Де́ло».
 
 ## Phase 4: what's built
 
@@ -502,7 +564,10 @@ Russian–English pairs with per-sentence attribution. I'll ingest it at the sta
 | Trainer prepositions / minimal pairs | 40 / 14 |
 | Error types | 47 |
 | Grammar tags | 71 |
-| Achievements | 72 (68 active, 11 hidden) |
+| Achievements | 76 (all active, 12 hidden) |
+| Collectible cards | 32 in 4 sets, 528 analysed words |
+| Unit bosses | 20 |
+| «Де́ло» | 5 chapters, 35 scenes, 3 grammar gates, 9 parser verbs |
 | Quests | 15 daily, 4 weekly templates |
 | Themes | 6 |
 
@@ -520,13 +585,20 @@ re-checked the homographs by hand. Corrections I made along the way, for the rec
   - missing marks: тру́бку, е́ли, о́пыт, па́чка, де́вять and others.
   Every one is fixed. None of the story text is marked for review.
 
+- Phase 5: the dictionary-stress check caught мо́лча, следы́, за кото́м, в деревня́х and ло́вят (I'd stressed
+  them wrong). It also caught поня́тнее, a form the lexicon lacks; I rephrased that sentence.
+
 If anything reads oddly to you, tell me the unit or article and I'll fix it.
 
-## Next: Phase 5, the remaining chunks (estimate)
+## Next: Phase 6, B1–C1 content (estimate)
 
-| Chunk | Piece | Output tokens (approx.) |
+| Piece | Work | Output tokens (approx.) |
 |---|---|---|
-| 1 | Case arcade + declension crossword | **Done** |
-| 2 | Speed match (timed pairs) + boss battles: an SVG boss per A2 unit with HP, drawing on the unit and your recent errors | about 14k |
-| 3 | Collectible card sets (people, places, idioms, culture) with short analysed blurbs + the town meta-map | about 30k |
-| 4 | Text adventure «Де́ло»: 5 chapters, a state machine in data, a parser that explains failed commands grammatically | 45–55k |
+| B1 course units (20), with bosses, drills from the registry and hand-written items | writing + data | 30–35k |
+| B2 and C1 units (about 25), lighter on hand-written items, more generated drills | writing + data | 30–35k |
+| Remaining grammar articles: B2 and C1 (about 20) | writing | 45–50k |
+| Idioms and culture file (about 80 entries, with examples), linked from cards and the reader | writing | 20–25k |
+| Course pages for the new levels, placement and test-out at B1+ | code | about 5k |
+
+**Total: roughly 130–150k output tokens.** It splits naturally into four chunks (B1 units, B2/C1 units, grammar,
+idioms), like Phase 5.
