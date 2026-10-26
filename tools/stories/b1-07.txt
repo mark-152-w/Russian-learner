@@ -1,0 +1,44 @@
+id: st-b1-07
+kind: story
+level: B1
+series: anya2
+chapter: 7
+title: По́иски | The search
+characters: Ка́тя, А́ня, Оле́г
+cliffhanger: Oleg goes pale when he hears the name of the town.
+---
+В понеде́льник Ка́тя начала́ иска́ть Ю́рия Ветро́ва. | On Monday Katya started looking for Yuri Vetrov.
+Снача́ла она́ иска́ла в интерне́те, но нашла́ то́лько футболи́ста и молодо́го программи́ста. | At first she searched online, but found only a footballer and a young programmer.
+Пото́м она́ написа́ла в музе́й того́ сиби́рского го́рода, где стро́или электроста́нцию. | Then she wrote to the museum of the Siberian town where they had built the power station.
+
+Отве́т пришёл че́рез неде́лю. | The answer came a week later.
+Сотру́дница музе́я писа́ла, что Ю́рий Ветро́в действи́тельно рабо́тал на строи́тельстве. | A woman who worked at the museum wrote that Yuri Vetrov had indeed worked on the construction.
+По́зже он стал инжене́ром и мно́го лет руководи́л электроста́нцией. | Later he became an engineer and ran the power station for many years.
+В музе́е да́же есть его́ фотогра́фия. | The museum even has a photo of him.
+Сейча́с он на пе́нсии и живёт в Новосиби́рске. | Now he is retired and lives in Novosibirsk.
+
+Ка́тя прочита́ла письмо́ вслух в кафе́, где они́ с А́ней рабо́тали. | Katya read the letter aloud in the café where she and Anya worked.
+В э́тот моме́нт в кафе́ зашёл Оле́г. | At that moment Oleg came into the café.
+— В Новосиби́рске? — переспроси́л он. — Я же отту́да! | "In Novosibirsk?" he asked again. "But that's where I'm from!"
+— Мы зна́ем, — улыбну́лась А́ня. — Ты, случа́йно, не зна́ешь Ю́рия Ветро́ва? | "We know," Anya smiled. "You don't happen to know a Yuri Vetrov?"
+
+Оле́г стра́нно посмотре́л на них. | Oleg gave them a strange look.
+— Мою́ ба́бушку зва́ли Ве́ра. А де́душку... Моя́ фами́лия Ветро́в, и де́душку зову́т Ю́рий. | "My grandmother's name was Vera. And my grandfather… My surname is Vetrov, and my grandfather's name is Yuri."
+Ка́тя урони́ла ча́шку. | Katya dropped her cup.
+---
+? Что Ка́тя снача́ла нашла́ в интерне́те? | What did Katya find online at first?
++ Футболи́ста и программи́ста.
+- Фотогра́фию Ю́рия.
+- А́дрес Ю́рия.
+? Кем стал Ю́рий? | What did Yuri become?
++ Инжене́ром.
+- Учи́телем.
+- Врачо́м.
+? Где сейча́с живёт Ю́рий? | Where does Yuri live now?
++ В Новосиби́рске.
+- В Москве́.
+- В Каза́ни.
+? Кто тако́й Ю́рий для Оле́га? | Who is Yuri to Oleg?
++ Его́ де́душка.
+- Его́ оте́ц.
+- Его́ учи́тель.

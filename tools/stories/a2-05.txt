@@ -1,0 +1,43 @@
+id: st-a2-05
+kind: story
+level: A2
+series: anya
+chapter: 5
+title: В метро́ | In the metro
+characters: А́ня, Оле́г
+cliffhanger: Anya's little brother Misha is coming to Moscow next week.
+---
+В суббо́ту Оле́г позвони́л мне. | On Saturday Oleg rang me.
+— Пойдём в музе́й? — спроси́л он. | "Shall we go to a museum?" he asked.
+— Пойдём! Где мы встре́тимся? | "Let's! Where shall we meet?"
+— На ста́нции «Пу́шкинская», в двена́дцать. | "At Pushkinskaya station, at twelve."
+
+Я ещё пло́хо зна́ла метро́. | I still didn't know the metro well.
+Я се́ла на по́езд и начала́ чита́ть кни́гу. | I got on a train and started reading a book.
+Когда́ я посмотре́ла в окно́, я уви́дела незнако́мую ста́нцию. | When I looked out of the window, I saw a station I didn't know.
+Я е́хала не в ту сто́рону! | I was going the wrong way!
+
+Я вы́шла из по́езда и спроси́ла же́нщину: | I got off the train and asked a woman:
+— Скажи́те, пожа́луйста, как дое́хать до «Пу́шкинской»? | "Excuse me, how do I get to Pushkinskaya?"
+— Вам ну́жно перейти́ на другу́ю сто́рону и е́хать три ста́нции, — отве́тила она́. | "You need to cross to the other side and go three stops," she answered.
+
+Я опозда́ла на два́дцать мину́т. | I was twenty minutes late.
+Оле́г стоя́л у вы́хода и улыба́лся. | Oleg was standing by the exit, smiling.
+— Ты е́хала в Петербу́рг? — пошути́л он. | "Were you going to St Petersburg?" he joked.
+— Почти́! — засмея́лась я. | "Almost!" I laughed.
+
+В музе́е мы смотре́ли карти́ны два часа́. | In the museum we looked at paintings for two hours.
+Мне бо́льше всего́ понра́вилась одна́ ма́ленькая карти́на: зи́мний лес и дере́вня. | The one I liked most was a small painting: a winter forest and a village.
+---
+? Где А́ня и Оле́г встре́тились? | Where did Anya and Oleg meet?
++ На ста́нции «Пу́шкинская».
+- В музе́е.
+- В университе́те.
+? Почему́ А́ня опозда́ла? | Why was Anya late?
++ Она́ е́хала не в ту сто́рону.
+- Она́ до́лго спала́.
+- По́езд стоя́л.
+? Кака́я карти́на понра́вилась А́не? | Which painting did Anya like?
++ Ма́ленькая карти́на: зи́мний лес и дере́вня.
+- Большо́й портре́т.
+- Карти́на с мо́рем.

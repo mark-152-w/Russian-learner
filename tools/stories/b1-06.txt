@@ -1,0 +1,45 @@
+id: st-b1-06
+kind: story
+level: B1
+series: anya2
+chapter: 6
+title: Неоткры́тое письмо́ | The unopened letter
+characters: Ни́на, А́ня, Ка́тя, Оле́г
+cliffhanger: Katya promises to find Yuri. But where do you start looking for someone after sixty years?
+---
+Ни́на до́лго держа́ла конве́рт в рука́х, но не открыва́ла его́. | Nina held the envelope for a long time, but didn't open it.
+— Прочита́й ты, А́ня, — наконе́ц сказа́ла она́. — У меня́ пло́хо ви́дят глаза́. | "You read it, Anya," she said at last. "My eyes are bad."
+
+А́ня осторо́жно откры́ла конве́рт и начала́ чита́ть вслух: | Anya carefully opened the envelope and began to read aloud:
+«Ни́на, я не зна́ю, почему́ ты не отвеча́ешь. | "Nina, I don't know why you aren't answering."
+Мо́жет быть, ты меня́ забы́ла. | "Perhaps you have forgotten me."
+Е́сли так, я пойму́. | "If so, I will understand."
+Но я до́лжен сказа́ть тебе́ пра́вду: я попа́л в больни́цу и два ме́сяца не мог писа́ть. | "But I must tell you the truth: I ended up in hospital and couldn't write for two months."
+Тепе́рь мне лу́чше. | "I'm better now."
+Е́сли ты ещё ждёшь меня́, напиши́ хотя́ бы одно́ сло́во. | "If you're still waiting for me, write just one word."
+Е́сли не напи́шешь, я оста́нусь здесь навсегда́». | "If you don't, I'll stay here for ever."
+
+На вера́нде ста́ло о́чень ти́хо. | It became very quiet on the veranda.
+Да́же Ба́рсик переста́л умыва́ться. | Even Barsik stopped washing himself.
+— Он ждал моего́ отве́та, — прошепта́ла Ни́на. — А я да́же не зна́ла об э́том письме́. | "He was waiting for my answer," Nina whispered. "And I didn't even know about this letter."
+
+Оле́г посмотре́л на конве́рт. | Oleg looked at the envelope.
+— На конве́рте есть фами́лия: Ю́рий Ветро́в. | "There's a surname on the envelope: Yuri Vetrov."
+Ка́тя уже́ доста́ла телефо́н. | Katya had already got out her phone.
+— Ни́на, вы хоти́те его́ найти́? | "Nina, do you want to find him?"
+Ни́на улыбну́лась сквозь слёзы. | Nina smiled through her tears.
+— Мне се́мьдесят де́вять лет, де́вочка. Что я ему́ скажу́? | "I'm seventy-nine, my girl. What would I say to him?"
+— Пра́вду, — отве́тила Ка́тя. | "The truth," answered Katya.
+---
+? Почему́ Ю́рий не писа́л два ме́сяца? | Why didn't Yuri write for two months?
++ Он был в больни́це.
+- Он встре́тил другу́ю де́вушку.
+- Он забы́л Ни́ну.
+? Что Ю́рий проси́л в письме́? | What did Yuri ask for in the letter?
++ Написа́ть хотя́ бы одно́ сло́во.
+- Прие́хать к нему́ в Сиби́рь.
+- Присла́ть фотогра́фию.
+? Как фами́лия Ю́рия? | What is Yuri's surname?
++ Ветро́в.
+- Пу́шкин.
+- Гага́рин.

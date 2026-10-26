@@ -1,0 +1,42 @@
+id: st-a2-03
+kind: story
+level: A2
+series: anya
+chapter: 3
+title: Где Ба́рсик? | Where's Barsik?
+characters: А́ня, Ба́рсик
+cliffhanger: Someone has written a note on Anya's door. Who could it be?
+---
+Я откры́ла дверь и сказа́ла: | I opened the door and said:
+— Ба́рсик, я до́ма! | "Barsik, I'm home!"
+Но никто́ не отве́тил. | But nobody answered.
+Обы́чно Ба́рсик сра́зу бежи́т ко мне. | Usually Barsik runs straight to me.
+А сего́дня его́ не́ было. | But today he wasn't there.
+
+Я посмотре́ла на ку́хне, в ва́нной{n:ванная} и под крова́тью. | I looked in the kitchen, in the bathroom and under the bed.
+Ба́рсика нигде́ не́ было. | Barsik wasn't anywhere.
+Пото́м я уви́дела, что окно́ откры́то. | Then I saw that the window was open.
+У́тром я забы́ла его́ закры́ть! | In the morning I'd forgotten to shut it!
+
+Я вы́шла на у́лицу. | I went outside.
+— Ба́рсик! Ба́рсик! — крича́ла я. | "Barsik! Barsik!" I shouted.
+Ря́дом с до́мом игра́ли де́ти. | Some children were playing near the building.
+— Вы не ви́дели се́рого кота́? — спроси́ла я. | "Have you seen a grey cat?" I asked.
+— Нет, не ви́дели, — отве́тила де́вочка. | "No, we haven't," a girl answered.
+
+Я ходи́ла по па́рку час. | I walked round the park for an hour.
+Ста́ло темно́ и хо́лодно. | It got dark and cold.
+Я верну́лась домо́й одна́ и пло́хо спала́ всю ночь. | I came home alone and slept badly all night.
+---
+? Почему́ Ба́рсик убежа́л? | Why did Barsik get out?
++ Окно́ бы́ло откры́то.
+- Дверь была́ откры́та.
+- Он был голо́дный.
+? Где А́ня иска́ла Ба́рсика на у́лице? | Where did Anya look for Barsik outside?
++ В па́рке.
+- В магази́не.
+- В метро́.
+? Кто отве́тил А́не на у́лице? | Who answered Anya in the street?
++ Де́вочка.
+- Па́рень.
+- Мужчи́на.

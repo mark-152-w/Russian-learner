@@ -1,0 +1,262 @@
+[
+ {
+  "id": "st-a2-01",
+  "kind": "story",
+  "level": "A2",
+  "series": "anya",
+  "chapter": 1,
+  "title": {
+   "ru": "Но́вый го́род",
+   "en": "A new city"
+  },
+  "words": 115,
+  "questions": 4
+ },
+ {
+  "id": "st-a2-02",
+  "kind": "story",
+  "level": "A2",
+  "series": "anya",
+  "chapter": 2,
+  "title": {
+   "ru": "Пе́рвый день",
+   "en": "The first day"
+  },
+  "words": 118,
+  "questions": 4
+ },
+ {
+  "id": "st-a2-03",
+  "kind": "story",
+  "level": "A2",
+  "series": "anya",
+  "chapter": 3,
+  "title": {
+   "ru": "Где Ба́рсик?",
+   "en": "Where's Barsik?"
+  },
+  "words": 90,
+  "questions": 3
+ },
+ {
+  "id": "st-a2-04",
+  "kind": "story",
+  "level": "A2",
+  "series": "anya",
+  "chapter": 4,
+  "title": {
+   "ru": "Запи́ска",
+   "en": "The note"
+  },
+  "words": 110,
+  "questions": 3
+ },
+ {
+  "id": "st-a2-05",
+  "kind": "story",
+  "level": "A2",
+  "series": "anya",
+  "chapter": 5,
+  "title": {
+   "ru": "В метро́",
+   "en": "In the metro"
+  },
+  "words": 110,
+  "questions": 3
+ },
+ {
+  "id": "st-a2-06",
+  "kind": "story",
+  "level": "A2",
+  "series": "anya",
+  "chapter": 6,
+  "title": {
+   "ru": "Звоно́к из Каза́ни",
+   "en": "A call from Kazan"
+  },
+  "words": 111,
+  "questions": 3
+ },
+ {
+  "id": "st-a2-07",
+  "kind": "story",
+  "level": "A2",
+  "series": "anya",
+  "chapter": 7,
+  "title": {
+   "ru": "Ми́ша в Москве́",
+   "en": "Misha in Moscow"
+  },
+  "words": 104,
+  "questions": 3
+ },
+ {
+  "id": "st-a2-08",
+  "kind": "story",
+  "level": "A2",
+  "series": "anya",
+  "chapter": 8,
+  "title": {
+   "ru": "Пла́н Ми́ши",
+   "en": "Misha's plan"
+  },
+  "words": 88,
+  "questions": 3
+ },
+ {
+  "id": "st-a2-09",
+  "kind": "story",
+  "level": "A2",
+  "series": "anya",
+  "chapter": 9,
+  "title": {
+   "ru": "Потеря́лся",
+   "en": "Lost"
+  },
+  "words": 92,
+  "questions": 3
+ },
+ {
+  "id": "st-a2-10",
+  "kind": "story",
+  "level": "A2",
+  "series": "anya",
+  "chapter": 10,
+  "title": {
+   "ru": "До свида́ния, Москва́!",
+   "en": "Goodbye, Moscow!"
+  },
+  "words": 107,
+  "questions": 3
+ },
+ {
+  "id": "st-b1-01",
+  "kind": "story",
+  "level": "B1",
+  "series": "anya2",
+  "chapter": 1,
+  "title": {
+   "ru": "Экза́мен",
+   "en": "The exam"
+  },
+  "words": 142,
+  "questions": 4
+ },
+ {
+  "id": "st-b1-02",
+  "kind": "story",
+  "level": "B1",
+  "series": "anya2",
+  "chapter": 2,
+  "title": {
+   "ru": "Рабо́та",
+   "en": "The job"
+  },
+  "words": 145,
+  "questions": 4
+ },
+ {
+  "id": "st-b1-03",
+  "kind": "story",
+  "level": "B1",
+  "series": "anya2",
+  "chapter": 3,
+  "title": {
+   "ru": "На да́чу!",
+   "en": "Off to the dacha!"
+  },
+  "words": 160,
+  "questions": 4
+ },
+ {
+  "id": "st-b1-04",
+  "kind": "story",
+  "level": "B1",
+  "series": "anya2",
+  "chapter": 4,
+  "title": {
+   "ru": "Сунду́к на чердаке́",
+   "en": "The chest in the attic"
+  },
+  "words": 138,
+  "questions": 4
+ },
+ {
+  "id": "st-b1-05",
+  "kind": "story",
+  "level": "B1",
+  "series": "anya2",
+  "chapter": 5,
+  "title": {
+   "ru": "Исто́рия Ни́ны",
+   "en": "Nina's story"
+  },
+  "words": 143,
+  "questions": 4
+ },
+ {
+  "id": "st-b1-06",
+  "kind": "story",
+  "level": "B1",
+  "series": "anya2",
+  "chapter": 6,
+  "title": {
+   "ru": "Неоткры́тое письмо́",
+   "en": "The unopened letter"
+  },
+  "words": 140,
+  "questions": 3
+ },
+ {
+  "id": "st-b1-07",
+  "kind": "story",
+  "level": "B1",
+  "series": "anya2",
+  "chapter": 7,
+  "title": {
+   "ru": "По́иски",
+   "en": "The search"
+  },
+  "words": 123,
+  "questions": 4
+ },
+ {
+  "id": "st-b1-08",
+  "kind": "story",
+  "level": "B1",
+  "series": "anya2",
+  "chapter": 8,
+  "title": {
+   "ru": "Разгово́р с де́душкой",
+   "en": "A talk with Grandpa"
+  },
+  "words": 115,
+  "questions": 3
+ },
+ {
+  "id": "st-b1-09",
+  "kind": "story",
+  "level": "B1",
+  "series": "anya2",
+  "chapter": 9,
+  "title": {
+   "ru": "Отве́т",
+   "en": "The answer"
+  },
+  "words": 121,
+  "questions": 3
+ },
+ {
+  "id": "st-b1-10",
+  "kind": "story",
+  "level": "B1",
+  "series": "anya2",
+  "chapter": 10,
+  "title": {
+   "ru": "Встре́ча на вокза́ле",
+   "en": "A meeting at the station"
+  },
+  "words": 137,
+  "questions": 4
+ }
+]

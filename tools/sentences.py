@@ -83,7 +83,7 @@ def build_index(include_ext: bool = False):
         if e["kind"] == "name":  # never attach Том to the common noun том "volume"
             lex = proper_by_lemma.get(lf) or f"name:{e['lemma']}"
         else:
-            lex = by_lemma.get("o:" + lf) or by_lemma.get("n:" + lf) or f"name:{e['lemma']}"
+            lex = by_lemma.get("o:" + lf) or by_lemma.get("n:" + lf) or f"{e['kind']}:{e['lemma']}"
         rank = 0 if e["kind"] == "name" else None
         if lex.startswith(("o:", "n:")) and e["kind"] != "prep":
             # the closed-class paradigm replaces the bare 'other' lemma entry
@@ -92,7 +92,7 @@ def build_index(include_ext: bool = False):
         for slot, cell in e["forms"].items():
             for f in cell.split("|"):
                 # preposition variants (во, со, обо) read as their base preposition, uninflected
-                index[fold(f)].append((lex, "" if e["kind"] == "prep" else slot, f, rank, e["kind"] == "name"))
+                index[fold(f)].append((lex, "" if e["kind"] in ("prep", "word") else slot, f, rank, e["kind"] == "name"))
                 if e["kind"] == "name":
                     names.add(fold(f))
     # fill closed-class ranks from the lexeme they attach to (or treat as very frequent)

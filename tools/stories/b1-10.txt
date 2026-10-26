@@ -1,0 +1,43 @@
+id: st-b1-10
+kind: story
+level: B1
+series: anya2
+chapter: 10
+title: Встре́ча на вокза́ле | A meeting at the station
+characters: Ни́на, Ю́рий, А́ня, Оле́г, Ка́тя
+cliffhanger: Katya's article is finished. But Anya has her own news for the autumn.
+---
+Че́рез две неде́ли Ю́рий прие́хал в Москву́. | Two weeks later Yuri came to Moscow.
+Его́ по́езд приходи́л на вокза́л в шесть утра́. | His train was arriving at the station at six in the morning.
+Ни́на вста́ла в четы́ре, наде́ла своё са́мое краси́вое пла́тье и три ра́за переде́лала причёску. | Nina got up at four, put on her best dress and redid her hair three times.
+— Я вы́гляжу как стару́ха, — сказа́ла она́. | "I look like an old woman," she said.
+— Вы вы́глядите прекра́сно, — отве́тила А́ня, и э́то была́ пра́вда. | "You look wonderful," Anya answered, and it was true.
+
+На платфо́рме бы́ло мно́го наро́ду. | There were lots of people on the platform.
+Из ваго́на вы́шел высо́кий стари́к с па́лкой и буке́том ро́з. | A tall old man with a walking stick and a bunch of roses got out of the carriage.
+Он останови́лся и посмотре́л на Ни́ну. | He stopped and looked at Nina.
+Не́сколько секу́нд они́ про́сто стоя́ли и смотре́ли друг на дру́га. | For a few seconds they simply stood and looked at each other.
+— Здра́вствуй, Ни́на, — сказа́л он. — Я обеща́л верну́ться ле́том. Пра́вда, немно́го опозда́л. | "Hello, Nina," he said. "I promised to come back in the summer. True, I'm a little late."
+Ни́на засмея́лась и запла́кала одновреме́нно. | Nina laughed and cried at the same time.
+
+Ве́чером все собрали́сь на да́че. | In the evening everyone gathered at the dacha.
+Ю́рий игра́л на гита́ре, Ни́на пе́ла, а Ка́тя запи́сывала их исто́рию для газе́ты. | Yuri played the guitar, Nina sang, and Katya wrote down their story for the newspaper.
+— Ты зна́ешь, — сказа́л Оле́г А́не, — е́сли бы Ба́рсик не убежа́л тогда́ к Ни́не, ничего́ бы э́того не́ было. | "You know," Oleg said to Anya, "if Barsik hadn't run off to Nina's that time, none of this would have happened."
+Ба́рсик лежа́л на коле́нях у Ю́рия и, ка́жется, был согла́сен. | Barsik was lying on Yuri's lap and seemed to agree.
+---
+? Когда́ пришёл по́езд Ю́рия? | When did Yuri's train arrive?
++ В шесть утра́.
+- В четы́ре утра́.
+- Ве́чером.
+? Что Ю́рий привёз Ни́не? | What did Yuri bring Nina?
++ Буке́т ро́з.
+- Пи́сьма.
+- Гита́ру.
+? Что де́лала Ка́тя на да́че? | What did Katya do at the dacha?
++ Запи́сывала их исто́рию для газе́ты.
+- Игра́ла на гита́ре.
+- Гото́вила у́жин.
+? Почему́, по слова́м Оле́га, всё э́то случи́лось? | According to Oleg, why did all this happen?
++ Потому́ что Ба́рсик убежа́л к Ни́не.
+- Потому́ что Ка́тя написа́ла статью́.
+- Потому́ что А́ня нашла́ рабо́ту.

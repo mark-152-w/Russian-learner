@@ -163,6 +163,12 @@ def walk(node, path: str, rep: Report, key: str | None = None):
                 continue
             walk(v, f"{path}.{k}", rep, k)
     elif isinstance(node, list):
+        if key == "tokens" and all(isinstance(t, dict) and "t" in t for t in node):
+            # a story sentence: check the running text (clitic groups like не́ было span tokens), then the rest
+            check_text("".join(t["t"] + ("" if t.get("sp") is False else " ") for t in node), path, rep)
+            for i, t in enumerate(node):
+                walk({k: v for k, v in t.items() if k != "t"}, f"{path}[{i}]", rep, key)
+            return
         for i, v in enumerate(node):
             walk(v, f"{path}[{i}]", rep, key)
     elif isinstance(node, str):
@@ -194,7 +200,7 @@ def dictionary_forms() -> dict[str, set[str]]:
 def validate_sentences(rep: Report, registry, schemas, lex_ids: set[str]):
     validator = Draft202012Validator(schemas["sentences.schema.json"], registry=registry)
     closed = json.loads((ROOT / "tools" / "closed_class.json").read_text(encoding="utf-8"))["entries"]
-    names = {f"name:{e['lemma']}" for e in closed if e["kind"] == "name"}
+    names = {f"{e['kind']}:{e['lemma']}" for e in closed}  # name:, and pron:/num:/word: for words the dataset lacks
     lemma_of = {}
     for path in (DATA / "lexicon").glob("[ABC][0-9].json"):
         for x in json.loads(path.read_text(encoding="utf-8")):
@@ -218,9 +224,9 @@ def validate_sentences(rep: Report, registry, schemas, lex_ids: set[str]):
                     continue
                 for a in w[2:]:
                     lex, slot = a.split("|")
-                    if lex.startswith("name:"):
+                    if lex.startswith(("name:", "pron:", "num:", "word:")):
                         if lex not in names:
-                            rep.err(where, f"unknown name {lex}")
+                            rep.err(where, f"unknown closed-class id {lex}")
                         continue
                     if lex not in lex_ids:
                         rep.err(where, f"unknown lexeme {lex}")
@@ -245,19 +251,25 @@ def validate_closed_class(rep: Report):
                 if not any(p.tag.POS == "PREP" for p in dparses(strip_stress(v).lower())):
                     rep.err(f"closed_class.json:{e['lemma']}", f"«{v}» is not a preposition per pymorphy3")
             continue
+        if e["kind"] == "word":
+            for v in e["forms"].values():
+                check_text(v, f"closed_class.json:{e['lemma']}", rep)
+                if not any(p.tag.POS in e.get("sub", []) for p in dparses(strip_stress(v).lower())):
+                    rep.err(f"closed_class.json:{e['lemma']}", f"«{v}» has none of the parts of speech {e.get('sub')} per pymorphy3")
+            continue
         for slot, cell in e["forms"].items():
             parts = slot.split("_")
             want = {oc[parts[-1]]} | ({gm[parts[0]]} if len(parts) == 2 else set())
             for v in cell.split("|"):
                 check_text(v, f"closed_class.json:{e['lemma']}:{slot}", rep)
                 ps = [p for p in dparses(strip_stress(v).lower()) if fold(p.normal_form) == lf]
-                if not any(want <= p.tag.grammemes or "Fixd" in p.tag.grammemes for p in ps):
+                if not any(want <= p.tag.grammemes or "Fixd" in p.tag.grammemes for p in ps) and fold(v) not in ALLOW:
                     rep.err(f"closed_class.json:{e['lemma']}", f"{slot} «{v}» not confirmed by pymorphy3")
 
 
 # --------------------------------------------------------------------------- story token analysis
 POS_MAP = {
-    "noun": {"NOUN"}, "verb": {"VERB", "INFN"}, "adj": {"ADJF", "ADJS"}, "pron": {"NPRO", "ADJF"},
+    "noun": {"NOUN"}, "verb": {"VERB", "INFN"}, "adj": {"ADJF", "ADJS", "PRTF", "PRTS"}, "pron": {"NPRO", "ADJF"},
     "num": {"NUMR", "ADJF"}, "adv": {"ADVB"}, "prep": {"PREP"}, "conj": {"CONJ"}, "part": {"PRCL"},
     "intj": {"INTJ"}, "pred": {"PRED"}, "prtf": {"PRTF"}, "prts": {"PRTS"}, "grnd": {"GRND"}, "comp": {"COMP"},
     "name": {"NOUN"},
@@ -297,7 +309,7 @@ def check_token(tok: dict, where: str, rep: Report, lex_ids: set[str]):
             continue
         if g.get("short") and p.tag.POS not in ("ADJS", "PRTS"):
             continue
-        if fold(p.normal_form) != lemma_f and not (p.tag.POS in ("PRTF", "PRTS", "GRND") or g.get("pos") == "pron"):
+        if fold(p.normal_form) != lemma_f and not (p.tag.POS in ("PRTF", "PRTS", "GRND", "COMP") or g.get("pos") == "pron"):
             continue
         if want <= p.tag.grammemes:
             return

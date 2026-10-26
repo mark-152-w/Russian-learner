@@ -223,7 +223,7 @@ export function tilesItem(s: Sentence, lexemes: Map<string, Lexeme>, rng: Rng): 
   }
   return {
     id: `gen:ti:${s.id}`, type: 'tiles', level: s.lv, tags: ['vocab'], source: 'generated',
-    vocab: toks.map((t) => soleLexeme(t)).filter((x): x is string => !!x && !x.startsWith('name:')),
+    vocab: toks.map((t) => soleLexeme(t)).filter((x): x is string => !!x && !/^(name|pron|num|word):/.test(x)),
     prompt: { en: s.en[0], instruction: 'Build the sentence' },
     accept: [s.ru], tiles: shuffle(rng, [...words, ...distractors.map((d) => d.ru)]), distractors,
   }
