@@ -26,15 +26,21 @@ const LessonPage = lazy(() => import('./pages/Course').then((m) => ({ default: m
 const Placement = lazy(() => import('./pages/Placement'))
 const GrammarIndex = lazy(() => import('./pages/Grammar').then((m) => ({ default: m.GrammarIndex })))
 const GrammarArticlePage = lazy(() => import('./pages/Grammar').then((m) => ({ default: m.GrammarArticlePage })))
+const TrainersHub = lazy(() => import('./pages/Trainers').then((m) => ({ default: m.TrainersHub })))
+const TrainerPage = lazy(() => import('./pages/Trainers').then((m) => ({ default: m.TrainerPage })))
+const TrainerRun = lazy(() => import('./pages/Trainers').then((m) => ({ default: m.TrainerRun })))
 
 const NAV = [
   { to: '/', label: 'Home', icon: 'home' },
   { to: '/course', label: 'Course', icon: 'path' },
   { to: '/review', label: 'Review', icon: 'cards' },
+  { to: '/trainers', label: 'Trainers', icon: 'target' },
   { to: '/grammar', label: 'Grammar', icon: 'book' },
   { to: '/lab', label: 'Lab', icon: 'table' },
 ]
 const IN_SESSION = ['/practice', '/review', '/drill', '/lesson', '/placement']
+/** Full-screen sessions hide the navigation (a trainer's run page is /trainer/:id/:mode). */
+const inSessionPath = (p: string) => IN_SESSION.some((x) => p.startsWith(x)) || /^\/trainer\/[^/]+\/[^/]+/.test(p)
 
 /** Applies theme, skin, motion and audio preferences to the document. */
 function Preferences() {
@@ -68,7 +74,7 @@ function Header() {
   const li = levelInfo(profile.xp)
   const streak = streakStatus(profile.streak, profile.freezes, dayKey(Date.now()))
   const { pathname } = useLocation()
-  const inSession = IN_SESSION.some((p) => pathname.startsWith(p))
+  const inSession = inSessionPath(pathname)
   return (
     <header className="sticky top-0 z-20 border-b border-line bg-paper/95 backdrop-blur">
       <div className="mx-auto flex max-w-3xl items-center justify-between gap-3 px-4 py-3">
@@ -103,10 +109,10 @@ function Header() {
 
 function BottomNav() {
   const { pathname } = useLocation()
-  if (IN_SESSION.some((p) => pathname.startsWith(p))) return null
+  if (inSessionPath(pathname)) return null
   return (
     <nav className="fixed inset-x-0 bottom-0 z-20 border-t border-line bg-paper pb-[env(safe-area-inset-bottom)] sm:hidden" aria-label="Main">
-      <div className="grid grid-cols-5">
+      <div className="grid grid-cols-6">
         {NAV.map((n) => (
           <NavLink key={n.to} to={n.to} end className={({ isActive }) => `flex min-h-14 flex-col items-center justify-center gap-0.5 text-xs ${isActive ? 'text-red' : 'text-ink-soft'}`}>
             <Icon name={n.icon} className="h-6 w-6" />
@@ -141,6 +147,9 @@ export default function App() {
               <Route path="/unit/:id" element={<UnitPage />} />
               <Route path="/lesson/:id/:mode" element={<LessonPage />} />
               <Route path="/placement" element={<Placement />} />
+              <Route path="/trainers" element={<TrainersHub />} />
+              <Route path="/trainer/:id" element={<TrainerPage />} />
+              <Route path="/trainer/:id/:mode" element={<TrainerRun />} />
               <Route path="/grammar" element={<GrammarIndex />} />
               <Route path="/grammar/:id" element={<GrammarArticlePage />} />
             </Routes>

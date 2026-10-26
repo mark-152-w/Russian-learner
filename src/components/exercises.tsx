@@ -20,6 +20,7 @@ export interface ViewProps {
   onSubmit: (r: Response) => void
 }
 
+const CYRILLIC = /[а-яё]/i // ru-ignore
 const inField = (e: KeyboardEvent) => e.target instanceof HTMLInputElement || e.target instanceof HTMLTextAreaElement
 
 function useKeys(handler: (e: KeyboardEvent) => void, active: boolean) {
@@ -158,7 +159,8 @@ function ChoiceView({ item, verdict, onSubmit, audio }: ViewProps & { audio?: bo
       {audio ? <PlayButtons play={play} /> : null}
       <div className="grid gap-2 sm:grid-cols-2">
         {options.map((o, i) => {
-          const right = verdict && (normalizeAnswer(o) === normalizeAnswer(correct ?? '') || o === correct)
+          // fixed choices compare exactly: за́мок and замо́к are different answers
+          const right = verdict && (item.choices ? o === correct : normalizeAnswer(o) === normalizeAnswer(correct ?? ''))
           const wrong = verdict && picked === o && !right
           return (
             <button
@@ -169,7 +171,7 @@ function ChoiceView({ item, verdict, onSubmit, audio }: ViewProps & { audio?: bo
               className={`flex min-h-14 items-center gap-3 rounded-lg border-2 bg-paper px-4 py-2 text-left transition ${right ? 'border-good' : wrong ? 'anim-shake border-bad' : 'border-line hover:border-red'}`}
             >
               <span className="hidden h-6 w-6 shrink-0 items-center justify-center rounded border border-line text-xs text-ink-soft sm:flex">{i + 1}</span>
-              {isRu ? <Ru className="text-xl">{o}</Ru> : <span className="text-lg">{o}</span>}
+              {isRu ? <Ru className="text-xl">{o}</Ru> : CYRILLIC.test(o) ? <span className="ru text-xl" lang="ru">{o}</span> : <span className="text-lg">{o}</span>}
             </button>
           )
         })}

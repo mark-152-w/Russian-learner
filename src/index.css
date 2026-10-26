@@ -95,6 +95,13 @@ body {
 @keyframes glow { 0%, 100% { filter: drop-shadow(0 0 0 transparent); } 50% { filter: drop-shadow(0 0 8px var(--gold)); } }
 @keyframes chest-wobble { 0%, 100% { transform: rotate(0); } 25% { transform: rotate(-6deg); } 75% { transform: rotate(6deg); } }
 @keyframes shine { from { background-position: -200% 0; } to { background-position: 200% 0; } }
+@keyframes v-walk { from { offset-distance: 0%; } 70%, to { offset-distance: 100%; } }
+@keyframes v-flow { to { stroke-dashoffset: -32; } }
+@keyframes v-draw { from { stroke-dashoffset: 140; } to { stroke-dashoffset: 0; } }
+.v-walk { offset-distance: 100%; offset-rotate: 0deg; animation: v-walk 2.4s ease-in-out infinite; }
+.v-flow { stroke-dasharray: 24 8; animation: v-flow 1.2s linear infinite; }
+.v-draw { stroke-dasharray: 140; animation: v-draw 0.9s ease-out both; }
+.v-pop { transform-box: fill-box; transform-origin: center; animation: pop 0.5s ease-out both; animation-delay: 0.6s; }
 @keyframes rise { from { transform: translateY(16px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
 
 .anim-pop { animation: pop 0.35s ease-out both; }

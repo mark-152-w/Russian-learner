@@ -107,6 +107,48 @@ export type ExerciseItem = {
   explanation?: string
   source?: 'handwritten' | 'generated'
   /**
+   * A small diagram shown with the feedback: an aspect timeline or a motion diagram.
+   */
+  visual?: {
+    /**
+     * Aspect picture: ongoing process, a result reached, repeated ticks, one point, a sequence, parallel actions, a bracketed span, a bare fact, an action undone (there and back), or the imperative uses.
+     */
+    timeline?:
+      | 'process'
+      | 'result'
+      | 'repeated'
+      | 'single'
+      | 'sequence'
+      | 'simultaneous'
+      | 'duration'
+      | 'fact'
+      | 'annulled'
+      | 'request'
+      | 'prohibition'
+      | 'warning'
+      | 'ability'
+    /**
+     * Motion diagram: a prefix's direction, one-way movement (uni), wandering (multi) or a round trip (round).
+     */
+    motion?:
+      | 'при'
+      | 'у'
+      | 'в'
+      | 'вы'
+      | 'под'
+      | 'от'
+      | 'до'
+      | 'пере'
+      | 'про'
+      | 'за'
+      | 'об'
+      | 'с'
+      | 'раз'
+      | 'uni'
+      | 'multi'
+      | 'round'
+  }
+  /**
    * true = hand-written Russian the author is not fully confident about; listed in PROGRESS.md.
    */
   review?: boolean
@@ -214,6 +256,48 @@ export type ExerciseItem1 = {
    */
   explanation?: string
   source?: 'handwritten' | 'generated'
+  /**
+   * A small diagram shown with the feedback: an aspect timeline or a motion diagram.
+   */
+  visual?: {
+    /**
+     * Aspect picture: ongoing process, a result reached, repeated ticks, one point, a sequence, parallel actions, a bracketed span, a bare fact, an action undone (there and back), or the imperative uses.
+     */
+    timeline?:
+      | 'process'
+      | 'result'
+      | 'repeated'
+      | 'single'
+      | 'sequence'
+      | 'simultaneous'
+      | 'duration'
+      | 'fact'
+      | 'annulled'
+      | 'request'
+      | 'prohibition'
+      | 'warning'
+      | 'ability'
+    /**
+     * Motion diagram: a prefix's direction, one-way movement (uni), wandering (multi) or a round trip (round).
+     */
+    motion?:
+      | 'при'
+      | 'у'
+      | 'в'
+      | 'вы'
+      | 'под'
+      | 'от'
+      | 'до'
+      | 'пере'
+      | 'про'
+      | 'за'
+      | 'об'
+      | 'с'
+      | 'раз'
+      | 'uni'
+      | 'multi'
+      | 'round'
+  }
   /**
    * true = hand-written Russian the author is not fully confident about; listed in PROGRESS.md.
    */

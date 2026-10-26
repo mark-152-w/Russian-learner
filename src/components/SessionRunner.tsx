@@ -11,6 +11,7 @@ import { FEATURES } from '../features'
 import { addFormCard } from '../srs/deck'
 import { Celebration, ComboMeter, EdgePulse, useJuice, XpFloat } from './juice'
 import { Md, Ru } from './Md'
+import { ItemVisual } from './visuals'
 import { SessionSummary } from './SessionSummary'
 import { Bar, Button, CountUp, Icon } from './ui'
 
@@ -189,12 +190,13 @@ function Feedback({ verdict, item, fx, onNext }: { verdict: Verdict; item: Exerc
         </div>
         {showAnswer && (
           <p>
-            Answer: <Ru className="text-xl font-bold">{verdict.expected}</Ru>
+            Answer: <Ru className="text-xl font-bold" stress={item.tags.includes('stress')}>{verdict.expected}</Ru>
           </p>
         )}
         {verdict.message && <Md text={verdict.message} className="text-ink" />}
         {verdict.noteText && <Md text={verdict.noteText} className="text-sm text-ink-soft" />}
-        {verdict.reason && <p className="text-sm italic text-ink-soft">{verdict.reason}</p>}
+        {verdict.reason && <Md text={verdict.reason} className="text-sm text-ink-soft" stress={item.tags.includes('stress')} />}
+        <ItemVisual item={item} />
         {verdict.diff && (
           <p className="flex flex-wrap gap-x-2 text-lg" lang="ru">
             {verdict.diff.map((t, i) => (

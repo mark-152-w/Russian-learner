@@ -32,6 +32,12 @@ describe('daily plan', () => {
     const s = planSteps({ ...base, tagMastery: rows })
     expect(s.find((x) => x.id === 'weak')?.to).toBe('/drill/tag/verb.past')
   })
+  it('rotates the light item through the trainers', () => {
+    const t = { ...base, features: new Set(['trainers']) }
+    const days = [0, 1, 2, 3, 4].map((d) => planSteps({ ...t, dayIndex: d }).find((x) => x.id === 'fun')!.to)
+    expect(new Set(days).size).toBe(5)
+    expect(planSteps({ ...t, dayIndex: 1, doneKinds: new Set(['trainer-cases']) }).find((x) => x.id === 'fun')!.done).toBe(true)
+  })
   it('hides sections whose feature is off', () => {
     expect(planSteps({ ...base, features: new Set() }).map((x) => x.id)).toEqual(['fun'])
   })

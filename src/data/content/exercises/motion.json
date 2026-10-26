@@ -1,0 +1,1691 @@
+{
+ "$schema": "../../../../schemas/exercise.schema.json",
+ "items": [
+  {
+   "id": "ex-mot-01",
+   "type": "choice-reason",
+   "level": "A2",
+   "tags": [
+    "motion.basic"
+   ],
+   "prompt": {
+    "ru": "Сейча́с я ___ в магази́н. Хо́чешь со мной?",
+    "en": "I'm going to the shop now. Do you want to come?",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "иду́"
+   ],
+   "distractors": [
+    {
+     "ru": "хожу́",
+     "error": "motion.direction"
+    }
+   ],
+   "reason": "Right now, one direction → **идти́**.",
+   "source": "handwritten",
+   "visual": {
+    "motion": "uni"
+   }
+  },
+  {
+   "id": "ex-mot-02",
+   "type": "choice-reason",
+   "level": "A2",
+   "tags": [
+    "motion.basic"
+   ],
+   "prompt": {
+    "ru": "Я ча́сто ___ в э́тот магази́н.",
+    "en": "I often go to this shop.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "хожу́"
+   ],
+   "distractors": [
+    {
+     "ru": "иду́",
+     "error": "motion.direction"
+    }
+   ],
+   "reason": "Regularly, there and back → **ходи́ть**.",
+   "source": "handwritten",
+   "visual": {
+    "motion": "multi"
+   }
+  },
+  {
+   "id": "ex-mot-03",
+   "type": "choice-reason",
+   "level": "A2",
+   "tags": [
+    "motion.basic"
+   ],
+   "prompt": {
+    "ru": "За́втра мы ___ в Петербу́рг на по́езде.",
+    "en": "Tomorrow we're going to St Petersburg by train.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "е́дем"
+   ],
+   "distractors": [
+    {
+     "ru": "идём",
+     "error": "motion.mode"
+    }
+   ],
+   "reason": "By train → **е́хать**; **идти́** is on foot.",
+   "source": "handwritten",
+   "visual": {
+    "motion": "uni"
+   }
+  },
+  {
+   "id": "ex-mot-04",
+   "type": "choice-reason",
+   "level": "A2",
+   "tags": [
+    "motion.basic"
+   ],
+   "prompt": {
+    "ru": "Ка́ждое ле́то мы ___ на мо́ре.",
+    "en": "Every summer we go to the seaside.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "е́здим"
+   ],
+   "distractors": [
+    {
+     "ru": "е́дем",
+     "error": "motion.direction"
+    }
+   ],
+   "reason": "**ка́ждое ле́то**: regular trips → **е́здить**.",
+   "source": "handwritten",
+   "visual": {
+    "motion": "multi"
+   }
+  },
+  {
+   "id": "ex-mot-05",
+   "type": "choice-reason",
+   "level": "A2",
+   "tags": [
+    "motion.basic"
+   ],
+   "prompt": {
+    "ru": "Вчера́ я ___ в теа́тр.",
+    "en": "Yesterday I went to the theatre.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "ходи́л"
+   ],
+   "distractors": [
+    {
+     "ru": "шёл",
+     "error": "motion.direction"
+    }
+   ],
+   "reason": "Went and came back: a round trip → **ходи́л**.",
+   "source": "handwritten",
+   "visual": {
+    "motion": "round"
+   }
+  },
+  {
+   "id": "ex-mot-06",
+   "type": "choice-reason",
+   "level": "A2",
+   "tags": [
+    "motion.basic"
+   ],
+   "prompt": {
+    "ru": "Когда́ я ___ домо́й, я встре́тил дру́га.",
+    "en": "On my way home I met a friend.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "шёл"
+   ],
+   "distractors": [
+    {
+     "ru": "ходи́л",
+     "error": "motion.direction"
+    }
+   ],
+   "reason": "On the way, one direction → **шёл**.",
+   "source": "handwritten",
+   "visual": {
+    "motion": "uni"
+   }
+  },
+  {
+   "id": "ex-mot-07",
+   "type": "choice-reason",
+   "level": "A2",
+   "tags": [
+    "motion.basic"
+   ],
+   "prompt": {
+    "ru": "Ребёнок уже́ ___.",
+    "en": "The baby can already walk.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "хо́дит"
+   ],
+   "distractors": [
+    {
+     "ru": "идёт",
+     "error": "motion.direction"
+    }
+   ],
+   "reason": "The ability to walk, no direction → **ходи́ть**.",
+   "source": "handwritten",
+   "visual": {
+    "motion": "multi"
+   }
+  },
+  {
+   "id": "ex-mot-08",
+   "type": "choice-reason",
+   "level": "A2",
+   "tags": [
+    "motion.basic"
+   ],
+   "prompt": {
+    "ru": "Смотри́, пти́цы ___ на юг.",
+    "en": "Look, the birds are flying south.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "летя́т"
+   ],
+   "distractors": [
+    {
+     "ru": "лета́ют",
+     "error": "motion.direction"
+    }
+   ],
+   "reason": "Right now, one direction → **лете́ть**.",
+   "source": "handwritten",
+   "visual": {
+    "motion": "uni"
+   }
+  },
+  {
+   "id": "ex-mot-09",
+   "type": "choice-reason",
+   "level": "A2",
+   "tags": [
+    "motion.basic"
+   ],
+   "prompt": {
+    "ru": "Над мо́рем ___ ча́йки.",
+    "en": "Seagulls are flying over the sea.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "лета́ют"
+   ],
+   "distractors": [
+    {
+     "ru": "летя́т",
+     "error": "motion.direction"
+    }
+   ],
+   "reason": "Circling around, no single direction → **лета́ть**.",
+   "source": "handwritten",
+   "visual": {
+    "motion": "multi"
+   }
+  },
+  {
+   "id": "ex-mot-10",
+   "type": "choice-reason",
+   "level": "A2",
+   "tags": [
+    "motion.basic"
+   ],
+   "prompt": {
+    "ru": "Я люблю́ ___ в бассе́йне.",
+    "en": "I love swimming in the pool.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "пла́вать"
+   ],
+   "distractors": [
+    {
+     "ru": "плыть",
+     "error": "motion.direction"
+    }
+   ],
+   "reason": "Swimming as an activity → **пла́вать**.",
+   "source": "handwritten",
+   "visual": {
+    "motion": "multi"
+   }
+  },
+  {
+   "id": "ex-mot-11",
+   "type": "choice-reason",
+   "level": "A2",
+   "tags": [
+    "motion.basic"
+   ],
+   "prompt": {
+    "ru": "Я ___ в Москву́ в про́шлом году́.",
+    "en": "I went to Moscow last year.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "е́здил"
+   ],
+   "distractors": [
+    {
+     "ru": "е́хал",
+     "error": "motion.direction"
+    }
+   ],
+   "reason": "A trip that's over (there and back) → **е́здил**.",
+   "source": "handwritten",
+   "visual": {
+    "motion": "round"
+   }
+  },
+  {
+   "id": "ex-mot-12",
+   "type": "choice-reason",
+   "level": "A2",
+   "tags": [
+    "motion.basic"
+   ],
+   "prompt": {
+    "ru": "Куда́ ты ___?",
+    "en": "Where are you going?",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "идёшь"
+   ],
+   "distractors": [
+    {
+     "ru": "хо́дишь",
+     "error": "motion.direction"
+    }
+   ],
+   "reason": "Right now, one direction → **идти́**.",
+   "source": "handwritten",
+   "visual": {
+    "motion": "uni"
+   }
+  },
+  {
+   "id": "ex-mot-13",
+   "type": "choice-reason",
+   "level": "A2",
+   "tags": [
+    "motion.basic"
+   ],
+   "prompt": {
+    "ru": "Куда́ ты ___ вчера́?",
+    "en": "Where did you go yesterday?",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "ходи́л"
+   ],
+   "distractors": [
+    {
+     "ru": "шёл",
+     "error": "motion.direction"
+    }
+   ],
+   "reason": "A trip that's over → **ходи́л**.",
+   "source": "handwritten",
+   "visual": {
+    "motion": "round"
+   }
+  },
+  {
+   "id": "ex-mot-14",
+   "type": "choice-reason",
+   "level": "A2",
+   "tags": [
+    "motion.basic"
+   ],
+   "prompt": {
+    "ru": "Он ___ по ко́мнате туда́-сюда́.",
+    "en": "He's pacing up and down the room.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "хо́дит"
+   ],
+   "distractors": [
+    {
+     "ru": "идёт",
+     "error": "motion.direction"
+    }
+   ],
+   "reason": "Back and forth → **ходи́ть**.",
+   "source": "handwritten",
+   "visual": {
+    "motion": "multi"
+   }
+  },
+  {
+   "id": "ex-mot-15",
+   "type": "choice-reason",
+   "level": "A2",
+   "tags": [
+    "motion.basic"
+   ],
+   "prompt": {
+    "ru": "Смотри́, како́й-то челове́к ___ к нам!",
+    "en": "Look, someone is running towards us!",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "бежи́т"
+   ],
+   "distractors": [
+    {
+     "ru": "бе́гает",
+     "error": "motion.direction"
+    }
+   ],
+   "reason": "Right now, one direction → **бежа́ть**.",
+   "source": "handwritten",
+   "visual": {
+    "motion": "uni"
+   }
+  },
+  {
+   "id": "ex-mot-16",
+   "type": "choice-reason",
+   "level": "A2",
+   "tags": [
+    "motion.basic"
+   ],
+   "prompt": {
+    "ru": "По утра́м я ___ в па́рке.",
+    "en": "In the mornings I go running in the park.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "бе́гаю"
+   ],
+   "distractors": [
+    {
+     "ru": "бегу́",
+     "error": "motion.direction"
+    }
+   ],
+   "reason": "A habit → **бе́гать**.",
+   "source": "handwritten",
+   "visual": {
+    "motion": "multi"
+   }
+  },
+  {
+   "id": "ex-mot-17",
+   "type": "choice-reason",
+   "level": "A2",
+   "tags": [
+    "motion.basic"
+   ],
+   "prompt": {
+    "ru": "Мы ___ на авто́бусе, когда́ он позвони́л.",
+    "en": "We were on the bus when he rang.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "е́хали"
+   ],
+   "distractors": [
+    {
+     "ru": "е́здили",
+     "error": "motion.direction"
+    }
+   ],
+   "reason": "In progress, one direction → **е́хать**.",
+   "source": "handwritten",
+   "visual": {
+    "motion": "uni"
+   }
+  },
+  {
+   "id": "ex-mot-18",
+   "type": "choice-reason",
+   "level": "B1",
+   "tags": [
+    "motion.basic"
+   ],
+   "prompt": {
+    "ru": "Ма́ма ___ сы́на в шко́лу ка́ждое у́тро.",
+    "en": "Mum takes her son to school every morning.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "во́дит"
+   ],
+   "distractors": [
+    {
+     "ru": "ведёт",
+     "error": "motion.direction"
+    }
+   ],
+   "reason": "Leading on foot, regularly → **води́ть**.",
+   "source": "handwritten",
+   "visual": {
+    "motion": "multi"
+   }
+  },
+  {
+   "id": "ex-mot-19",
+   "type": "choice-reason",
+   "level": "B1",
+   "tags": [
+    "motion.basic"
+   ],
+   "prompt": {
+    "ru": "Па́па ___ сы́на в шко́лу на маши́не.",
+    "en": "Dad drives his son to school.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "во́зит"
+   ],
+   "distractors": [
+    {
+     "ru": "во́дит",
+     "error": "motion.mode"
+    }
+   ],
+   "reason": "Taking someone by car → **вози́ть** (**води́ть** is on foot).",
+   "source": "handwritten",
+   "visual": {
+    "motion": "multi"
+   }
+  },
+  {
+   "id": "ex-mot-20",
+   "type": "choice-reason",
+   "level": "B1",
+   "tags": [
+    "motion.basic"
+   ],
+   "prompt": {
+    "ru": "Что ты ___ в су́мке?",
+    "en": "What are you carrying in your bag?",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "несёшь"
+   ],
+   "distractors": [
+    {
+     "ru": "но́сишь",
+     "error": "motion.direction"
+    }
+   ],
+   "reason": "Right now, one direction → **нести́**.",
+   "source": "handwritten",
+   "visual": {
+    "motion": "uni"
+   }
+  },
+  {
+   "id": "ex-mot-21",
+   "type": "choice-reason",
+   "level": "B1",
+   "tags": [
+    "motion.basic"
+   ],
+   "prompt": {
+    "ru": "Он всегда́ ___ с собо́й зонт.",
+    "en": "He always carries an umbrella.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "но́сит"
+   ],
+   "distractors": [
+    {
+     "ru": "несёт",
+     "error": "motion.direction"
+    }
+   ],
+   "reason": "**всегда́**: habitually → **носи́ть**.",
+   "source": "handwritten",
+   "visual": {
+    "motion": "multi"
+   }
+  },
+  {
+   "id": "ex-mot-22",
+   "type": "choice-reason",
+   "level": "B1",
+   "tags": [
+    "motion.basic"
+   ],
+   "prompt": {
+    "ru": "В о́тпуске мы мно́го ___ по стране́.",
+    "en": "On holiday we travelled a lot around the country.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "е́здили"
+   ],
+   "distractors": [
+    {
+     "ru": "е́хали",
+     "error": "motion.direction"
+    }
+   ],
+   "reason": "Around, in many directions → **е́здить**.",
+   "source": "handwritten",
+   "visual": {
+    "motion": "multi"
+   }
+  },
+  {
+   "id": "ex-mot-23",
+   "type": "choice-reason",
+   "level": "B1",
+   "tags": [
+    "motion.basic"
+   ],
+   "prompt": {
+    "ru": "Самолёт ___ в Москву́ три часа́.",
+    "en": "The plane takes three hours to fly to Moscow.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "лети́т"
+   ],
+   "distractors": [
+    {
+     "ru": "лета́ет",
+     "error": "motion.direction"
+    }
+   ],
+   "reason": "One flight in one direction → **лете́ть**.",
+   "source": "handwritten",
+   "visual": {
+    "motion": "uni"
+   }
+  },
+  {
+   "id": "ex-mot-24",
+   "type": "choice-reason",
+   "level": "B1",
+   "tags": [
+    "motion.prefixed"
+   ],
+   "prompt": {
+    "ru": "Когда́ ты ___ домо́й?",
+    "en": "When will you get home?",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "придёшь"
+   ],
+   "distractors": [
+    {
+     "ru": "уйдёшь",
+     "error": "motion.prefix"
+    }
+   ],
+   "reason": "Arriving → **при-**.",
+   "source": "handwritten",
+   "visual": {
+    "motion": "при"
+   }
+  },
+  {
+   "id": "ex-mot-25",
+   "type": "choice-reason",
+   "level": "B1",
+   "tags": [
+    "motion.prefixed"
+   ],
+   "prompt": {
+    "ru": "Он ___ из до́ма в во́семь.",
+    "en": "He left home at eight.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "ушёл"
+   ],
+   "distractors": [
+    {
+     "ru": "пришёл",
+     "error": "motion.prefix"
+    }
+   ],
+   "reason": "Leaving → **у-**.",
+   "source": "handwritten",
+   "visual": {
+    "motion": "у"
+   }
+  },
+  {
+   "id": "ex-mot-26",
+   "type": "choice-reason",
+   "level": "B1",
+   "tags": [
+    "motion.prefixed"
+   ],
+   "prompt": {
+    "ru": "Она́ ___ в ко́мнату и закры́ла дверь.",
+    "en": "She came into the room and shut the door.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "вошла́"
+   ],
+   "distractors": [
+    {
+     "ru": "вы́шла",
+     "error": "motion.prefix"
+    }
+   ],
+   "reason": "Going in → **в(о)-**.",
+   "source": "handwritten",
+   "visual": {
+    "motion": "в"
+   }
+  },
+  {
+   "id": "ex-mot-27",
+   "type": "choice-reason",
+   "level": "B1",
+   "tags": [
+    "motion.prefixed"
+   ],
+   "prompt": {
+    "ru": "Он ___ из ко́мнаты.",
+    "en": "He went out of the room.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "вы́шел"
+   ],
+   "distractors": [
+    {
+     "ru": "вошёл",
+     "error": "motion.prefix"
+    }
+   ],
+   "reason": "Going out → **вы-** (always stressed: **вы́шел**).",
+   "source": "handwritten",
+   "visual": {
+    "motion": "вы"
+   }
+  },
+  {
+   "id": "ex-mot-28",
+   "type": "choice-reason",
+   "level": "B1",
+   "tags": [
+    "motion.prefixed"
+   ],
+   "prompt": {
+    "ru": "Ко мне ___ како́й-то челове́к и спроси́л доро́гу.",
+    "en": "Someone came up to me and asked the way.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "подошёл"
+   ],
+   "distractors": [
+    {
+     "ru": "отошёл",
+     "error": "motion.prefix"
+    }
+   ],
+   "reason": "Approaching → **под(о)-**.",
+   "source": "handwritten",
+   "visual": {
+    "motion": "под"
+   }
+  },
+  {
+   "id": "ex-mot-29",
+   "type": "choice-reason",
+   "level": "B1",
+   "tags": [
+    "motion.prefixed"
+   ],
+   "prompt": {
+    "ru": "___ от две́ри, пожа́луйста!",
+    "en": "Step away from the door, please!",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "Отойди́те"
+   ],
+   "distractors": [
+    {
+     "ru": "Подойди́те",
+     "error": "motion.prefix"
+    }
+   ],
+   "reason": "Moving away from → **от(о)-**.",
+   "source": "handwritten",
+   "visual": {
+    "motion": "от"
+   }
+  },
+  {
+   "id": "ex-mot-30",
+   "type": "choice-reason",
+   "level": "B1",
+   "tags": [
+    "motion.prefixed"
+   ],
+   "prompt": {
+    "ru": "Мы ___ до ста́нции за де́сять мину́т.",
+    "en": "We got to the station in ten minutes.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "дошли́"
+   ],
+   "distractors": [
+    {
+     "ru": "вы́шли",
+     "error": "motion.prefix"
+    }
+   ],
+   "reason": "Reaching a point (**до** + genitive) → **до-**.",
+   "source": "handwritten",
+   "visual": {
+    "motion": "до"
+   }
+  },
+  {
+   "id": "ex-mot-31",
+   "type": "choice-reason",
+   "level": "B1",
+   "tags": [
+    "motion.prefixed"
+   ],
+   "prompt": {
+    "ru": "Мы ___ у́лицу на зелёный свет.",
+    "en": "We crossed the street on the green light.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "перешли́"
+   ],
+   "distractors": [
+    {
+     "ru": "прошли́",
+     "error": "motion.prefix"
+    }
+   ],
+   "reason": "Crossing → **пере-**.",
+   "source": "handwritten",
+   "visual": {
+    "motion": "пере"
+   }
+  },
+  {
+   "id": "ex-mot-32",
+   "type": "choice-reason",
+   "level": "B1",
+   "tags": [
+    "motion.prefixed"
+   ],
+   "prompt": {
+    "ru": "Мы ___ ми́мо его́ до́ма.",
+    "en": "We walked past his house.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "прошли́"
+   ],
+   "distractors": [
+    {
+     "ru": "перешли́",
+     "error": "motion.prefix"
+    }
+   ],
+   "reason": "Going past (**ми́мо**) → **про-**.",
+   "source": "handwritten",
+   "visual": {
+    "motion": "про"
+   }
+  },
+  {
+   "id": "ex-mot-33",
+   "type": "choice-reason",
+   "level": "B1",
+   "tags": [
+    "motion.prefixed"
+   ],
+   "prompt": {
+    "ru": "По доро́ге домо́й я ___ в апте́ку.",
+    "en": "On the way home I popped into the chemist's.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "зашёл"
+   ],
+   "distractors": [
+    {
+     "ru": "вошёл",
+     "error": "motion.prefix"
+    }
+   ],
+   "reason": "A quick stop on the way → **за-**.",
+   "source": "handwritten",
+   "visual": {
+    "motion": "за"
+   }
+  },
+  {
+   "id": "ex-mot-34",
+   "type": "choice-reason",
+   "level": "B1",
+   "tags": [
+    "motion.prefixed"
+   ],
+   "prompt": {
+    "ru": "Мы ___ вокру́г о́зера.",
+    "en": "We walked round the lake.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "обошли́"
+   ],
+   "distractors": [
+    {
+     "ru": "перешли́",
+     "error": "motion.prefix"
+    }
+   ],
+   "reason": "Going round (**вокру́г**) → **об(о)-**.",
+   "source": "handwritten",
+   "visual": {
+    "motion": "об"
+   }
+  },
+  {
+   "id": "ex-mot-35",
+   "type": "choice-reason",
+   "level": "B1",
+   "tags": [
+    "motion.prefixed"
+   ],
+   "prompt": {
+    "ru": "Он ___ с горы́ на лы́жах.",
+    "en": "He skied down the hill.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "съе́хал"
+   ],
+   "distractors": [
+    {
+     "ru": "уе́хал",
+     "error": "motion.prefix"
+    }
+   ],
+   "reason": "Coming down from (**с** + genitive) → **с(ъ)-**.",
+   "source": "handwritten",
+   "visual": {
+    "motion": "с"
+   }
+  },
+  {
+   "id": "ex-mot-36",
+   "type": "choice-reason",
+   "level": "B1",
+   "tags": [
+    "motion.prefixed"
+   ],
+   "prompt": {
+    "ru": "Ле́том к нам ___ ба́бушка.",
+    "en": "Grandma is coming to stay this summer.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "прие́дет"
+   ],
+   "distractors": [
+    {
+     "ru": "уе́дет",
+     "error": "motion.prefix"
+    }
+   ],
+   "reason": "Arriving (by transport) → **при-**.",
+   "source": "handwritten",
+   "visual": {
+    "motion": "при"
+   }
+  },
+  {
+   "id": "ex-mot-37",
+   "type": "choice-reason",
+   "level": "B1",
+   "tags": [
+    "motion.prefixed"
+   ],
+   "prompt": {
+    "ru": "Он ___ из Росси́и навсегда́.",
+    "en": "He left Russia for good.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "уе́хал"
+   ],
+   "distractors": [
+    {
+     "ru": "прие́хал",
+     "error": "motion.prefix"
+    }
+   ],
+   "reason": "Leaving (by transport) → **у-**.",
+   "source": "handwritten",
+   "visual": {
+    "motion": "у"
+   }
+  },
+  {
+   "id": "ex-mot-38",
+   "type": "choice-reason",
+   "level": "B1",
+   "tags": [
+    "motion.prefixed"
+   ],
+   "prompt": {
+    "ru": "Маши́на ___ к до́му.",
+    "en": "The car drew up to the house.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "подъе́хала"
+   ],
+   "distractors": [
+    {
+     "ru": "отъе́хала",
+     "error": "motion.prefix"
+    }
+   ],
+   "reason": "Approaching (**к** + dative) → **подъ-**.",
+   "source": "handwritten",
+   "visual": {
+    "motion": "под"
+   }
+  },
+  {
+   "id": "ex-mot-39",
+   "type": "choice-reason",
+   "level": "B1",
+   "tags": [
+    "motion.prefixed"
+   ],
+   "prompt": {
+    "ru": "По́езд ___ от платфо́рмы.",
+    "en": "The train pulled away from the platform.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "отошёл"
+   ],
+   "distractors": [
+    {
+     "ru": "подошёл",
+     "error": "motion.prefix"
+    }
+   ],
+   "reason": "Moving away from (**от** + genitive) → **от(о)-**.",
+   "source": "handwritten",
+   "visual": {
+    "motion": "от"
+   }
+  },
+  {
+   "id": "ex-mot-40",
+   "type": "choice-reason",
+   "level": "B1",
+   "tags": [
+    "motion.prefixed"
+   ],
+   "prompt": {
+    "ru": "Мы ___ до Москвы́ за два дня.",
+    "en": "We got as far as Moscow in two days.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "дое́хали"
+   ],
+   "distractors": [
+    {
+     "ru": "отъе́хали",
+     "error": "motion.prefix"
+    }
+   ],
+   "reason": "Reaching a point (**до** + genitive) → **до-**.",
+   "source": "handwritten",
+   "visual": {
+    "motion": "до"
+   }
+  },
+  {
+   "id": "ex-mot-41",
+   "type": "choice-reason",
+   "level": "B1",
+   "tags": [
+    "motion.prefixed"
+   ],
+   "prompt": {
+    "ru": "В ма́е они́ ___ в но́вую кварти́ру.",
+    "en": "In May they moved into a new flat.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "перее́хали"
+   ],
+   "distractors": [
+    {
+     "ru": "прие́хали",
+     "error": "motion.prefix"
+    }
+   ],
+   "reason": "Moving house is crossing from one home to another → **пере-**.",
+   "source": "handwritten",
+   "visual": {
+    "motion": "пере"
+   }
+  },
+  {
+   "id": "ex-mot-42",
+   "type": "choice-reason",
+   "level": "B1",
+   "tags": [
+    "motion.prefixed"
+   ],
+   "prompt": {
+    "ru": "Мы ___ ми́мо Кремля́.",
+    "en": "We drove past the Kremlin.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "прое́хали"
+   ],
+   "distractors": [
+    {
+     "ru": "перее́хали",
+     "error": "motion.prefix"
+    }
+   ],
+   "reason": "Going past (**ми́мо**) → **про-**.",
+   "source": "handwritten",
+   "visual": {
+    "motion": "про"
+   }
+  },
+  {
+   "id": "ex-mot-43",
+   "type": "choice-reason",
+   "level": "B1",
+   "tags": [
+    "motion.prefixed"
+   ],
+   "prompt": {
+    "ru": "Я ___ за тобо́й в шесть.",
+    "en": "I'll pick you up at six.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "зае́ду"
+   ],
+   "distractors": [
+    {
+     "ru": "дое́ду",
+     "error": "motion.prefix"
+    }
+   ],
+   "reason": "Stopping by to collect someone (**за** + instrumental) → **за-**.",
+   "source": "handwritten",
+   "visual": {
+    "motion": "за"
+   }
+  },
+  {
+   "id": "ex-mot-44",
+   "type": "choice-reason",
+   "level": "B1",
+   "tags": [
+    "motion.prefixed"
+   ],
+   "prompt": {
+    "ru": "Пти́цы ___ на юг.",
+    "en": "The birds have flown south.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "улете́ли"
+   ],
+   "distractors": [
+    {
+     "ru": "прилете́ли",
+     "error": "motion.prefix"
+    }
+   ],
+   "reason": "Gone away → **у-**.",
+   "source": "handwritten",
+   "visual": {
+    "motion": "у"
+   }
+  },
+  {
+   "id": "ex-mot-45",
+   "type": "choice-reason",
+   "level": "B1",
+   "tags": [
+    "motion.prefixed"
+   ],
+   "prompt": {
+    "ru": "Он ___ мне цветы́.",
+    "en": "He brought me flowers.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "принёс"
+   ],
+   "distractors": [
+    {
+     "ru": "унёс",
+     "error": "motion.prefix"
+    }
+   ],
+   "reason": "Bringing (arriving with something) → **при-**.",
+   "source": "handwritten",
+   "visual": {
+    "motion": "при"
+   }
+  },
+  {
+   "id": "ex-mot-46",
+   "type": "choice-reason",
+   "level": "B1",
+   "tags": [
+    "motion.prefixed"
+   ],
+   "prompt": {
+    "ru": "___ свои́ ве́щи из ко́мнаты!",
+    "en": "Take your things out of the room!",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "Унеси́"
+   ],
+   "distractors": [
+    {
+     "ru": "Принеси́",
+     "error": "motion.prefix"
+    }
+   ],
+   "reason": "Carrying away → **у-**.",
+   "source": "handwritten",
+   "visual": {
+    "motion": "у"
+   }
+  },
+  {
+   "id": "ex-mot-47",
+   "type": "choice-reason",
+   "level": "B1",
+   "tags": [
+    "motion.prefixed"
+   ],
+   "prompt": {
+    "ru": "Она́ ___ ребёнка в шко́лу и пошла́ на рабо́ту.",
+    "en": "She dropped the child off at school and went to work.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "отвела́"
+   ],
+   "distractors": [
+    {
+     "ru": "подвела́",
+     "error": "motion.prefix"
+    }
+   ],
+   "reason": "Taking someone somewhere and leaving them → **от(о)-**.",
+   "source": "handwritten",
+   "visual": {
+    "motion": "от"
+   }
+  },
+  {
+   "id": "ex-mot-48",
+   "type": "choice-reason",
+   "level": "B1",
+   "tags": [
+    "motion.prefixed"
+   ],
+   "prompt": {
+    "ru": "Па́па ___ нас домо́й на маши́не.",
+    "en": "Dad drove us home.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "отвёз"
+   ],
+   "distractors": [
+    {
+     "ru": "отвёл",
+     "error": "motion.mode"
+    }
+   ],
+   "reason": "By car → **везти́** (**вести́** is on foot).",
+   "source": "handwritten",
+   "visual": {
+    "motion": "от"
+   }
+  },
+  {
+   "id": "ex-mot-49",
+   "type": "choice-reason",
+   "level": "B2",
+   "tags": [
+    "motion.prefixed"
+   ],
+   "prompt": {
+    "ru": "Нам пришло́сь ___ про́бку.",
+    "en": "We had to drive round the traffic jam.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "объе́хать"
+   ],
+   "distractors": [
+    {
+     "ru": "перее́хать",
+     "error": "motion.prefix"
+    }
+   ],
+   "reason": "A detour round something → **объ-**.",
+   "source": "handwritten",
+   "visual": {
+    "motion": "об"
+   }
+  },
+  {
+   "id": "ex-mot-50",
+   "type": "choice-reason",
+   "level": "B2",
+   "tags": [
+    "motion.prefixed"
+   ],
+   "prompt": {
+    "ru": "По́сле конце́рта все ___ по дома́м.",
+    "en": "After the concert everyone went their separate ways home.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "разошли́сь"
+   ],
+   "distractors": [
+    {
+     "ru": "перешли́",
+     "error": "motion.prefix"
+    }
+   ],
+   "reason": "Dispersing in different directions → **раз(о)-** with **-ся**.",
+   "source": "handwritten",
+   "visual": {
+    "motion": "раз"
+   }
+  },
+  {
+   "id": "ex-mot-51",
+   "type": "choice-reason",
+   "level": "B1",
+   "tags": [
+    "motion.figurative"
+   ],
+   "prompt": {
+    "ru": "Сего́дня ___ дождь.",
+    "en": "It's raining today.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "идёт"
+   ],
+   "distractors": [
+    {
+     "ru": "хо́дит",
+     "error": "motion.direction"
+    }
+   ],
+   "reason": "Rain and snow **иду́т**.",
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-mot-52",
+   "type": "choice-reason",
+   "level": "B1",
+   "tags": [
+    "motion.figurative"
+   ],
+   "prompt": {
+    "ru": "Вре́мя ___ бы́стро.",
+    "en": "Time goes by fast.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "идёт"
+   ],
+   "distractors": [
+    {
+     "ru": "хо́дит",
+     "error": "motion.direction"
+    }
+   ],
+   "reason": "Time **идёт** (or **лети́т**).",
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-mot-53",
+   "type": "choice-reason",
+   "level": "B1",
+   "tags": [
+    "motion.figurative"
+   ],
+   "prompt": {
+    "ru": "Како́й фильм ___ в кинотеа́тре?",
+    "en": "What film is on at the cinema?",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "идёт"
+   ],
+   "distractors": [
+    {
+     "ru": "хо́дит",
+     "error": "motion.direction"
+    }
+   ],
+   "reason": "Films and plays that are on **иду́т**.",
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-mot-54",
+   "type": "choice-reason",
+   "level": "B1",
+   "tags": [
+    "motion.figurative"
+   ],
+   "prompt": {
+    "ru": "Тебе́ о́чень ___ э́то пла́тье.",
+    "en": "That dress really suits you.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "идёт"
+   ],
+   "distractors": [
+    {
+     "ru": "хо́дит",
+     "error": "motion.direction"
+    }
+   ],
+   "reason": "**кому́ идёт**: it suits someone.",
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-mot-55",
+   "type": "choice-reason",
+   "level": "B2",
+   "tags": [
+    "motion.figurative"
+   ],
+   "prompt": {
+    "ru": "Мне ___ в го́лову отли́чная иде́я.",
+    "en": "A great idea occurred to me.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "пришла́"
+   ],
+   "distractors": [
+    {
+     "ru": "ушла́",
+     "error": "motion.prefix"
+    }
+   ],
+   "reason": "**прийти́ в го́лову**: to occur to someone.",
+   "source": "handwritten",
+   "visual": {
+    "motion": "при"
+   }
+  },
+  {
+   "id": "ex-mot-56",
+   "type": "choice-reason",
+   "level": "B2",
+   "tags": [
+    "motion.figurative"
+   ],
+   "prompt": {
+    "ru": "Она́ ___ за́муж за америка́нца.",
+    "en": "She married an American.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "вы́шла"
+   ],
+   "distractors": [
+    {
+     "ru": "пришла́",
+     "error": "motion.prefix"
+    }
+   ],
+   "reason": "**вы́йти за́муж за** + accusative: (of a woman) to marry.",
+   "source": "handwritten",
+   "visual": {
+    "motion": "вы"
+   }
+  },
+  {
+   "id": "ex-mot-57",
+   "type": "choice-reason",
+   "level": "B2",
+   "tags": [
+    "motion.figurative"
+   ],
+   "prompt": {
+    "ru": "Он до́лго не мог ___ в себя́ по́сле ава́рии.",
+    "en": "He took a long time to come round after the accident.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "прийти́"
+   ],
+   "distractors": [
+    {
+     "ru": "уйти́",
+     "error": "motion.prefix"
+    }
+   ],
+   "reason": "**прийти́ в себя́**: to come round, recover.",
+   "source": "handwritten",
+   "visual": {
+    "motion": "при"
+   }
+  },
+  {
+   "id": "ex-mot-58",
+   "type": "choice-reason",
+   "level": "B2",
+   "tags": [
+    "motion.figurative"
+   ],
+   "prompt": {
+    "ru": "Дава́й ___ на «ты»!",
+    "en": "Let's switch to «ты»!",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "перейдём"
+   ],
+   "distractors": [
+    {
+     "ru": "придём",
+     "error": "motion.prefix"
+    }
+   ],
+   "reason": "**перейти́ на «ты»**: to switch to the informal *you*.",
+   "source": "handwritten",
+   "visual": {
+    "motion": "пере"
+   }
+  },
+  {
+   "id": "ex-mot-59",
+   "type": "choice-reason",
+   "level": "B2",
+   "tags": [
+    "motion.figurative"
+   ],
+   "prompt": {
+    "ru": "Как ___ экза́мен?",
+    "en": "How did the exam go?",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "прошёл"
+   ],
+   "distractors": [
+    {
+     "ru": "пришёл",
+     "error": "motion.prefix"
+    }
+   ],
+   "reason": "Events **прохо́дят**: they take place and go by.",
+   "source": "handwritten",
+   "visual": {
+    "motion": "про"
+   }
+  },
+  {
+   "id": "ex-mot-60",
+   "type": "choice-reason",
+   "level": "B2",
+   "tags": [
+    "motion.figurative"
+   ],
+   "prompt": {
+    "ru": "Он ___ с ума́!",
+    "en": "He's gone mad!",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "сошёл"
+   ],
+   "distractors": [
+    {
+     "ru": "ушёл",
+     "error": "motion.prefix"
+    }
+   ],
+   "reason": "**сойти́ с ума́**: to go mad (literally, to come down off one's mind).",
+   "source": "handwritten",
+   "visual": {
+    "motion": "с"
+   }
+  },
+  {
+   "id": "ex-mot-61",
+   "type": "choice-reason",
+   "level": "B2",
+   "tags": [
+    "motion.figurative"
+   ],
+   "prompt": {
+    "ru": "У него́ ___ но́вый рома́н.",
+    "en": "His new novel has come out.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "вы́шел"
+   ],
+   "distractors": [
+    {
+     "ru": "пришёл",
+     "error": "motion.prefix"
+    }
+   ],
+   "reason": "Books and films **выхо́дят**: they come out.",
+   "source": "handwritten",
+   "visual": {
+    "motion": "вы"
+   }
+  },
+  {
+   "id": "ex-mot-62",
+   "type": "choice-reason",
+   "level": "B2",
+   "tags": [
+    "motion.figurative"
+   ],
+   "prompt": {
+    "ru": "Мои́ часы́ не ___.",
+    "en": "My watch has stopped.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "иду́т"
+   ],
+   "distractors": [
+    {
+     "ru": "хо́дят",
+     "error": "motion.direction"
+    }
+   ],
+   "reason": "Working clocks **иду́т**.",
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-mot-63",
+   "type": "choice-reason",
+   "level": "B2",
+   "tags": [
+    "motion.figurative"
+   ],
+   "prompt": {
+    "ru": "Не ___ от те́мы!",
+    "en": "Don't stray from the subject!",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "отходи́"
+   ],
+   "distractors": [
+    {
+     "ru": "подходи́",
+     "error": "motion.prefix"
+    }
+   ],
+   "reason": "**отходи́ть от те́мы**: to wander off the topic.",
+   "source": "handwritten",
+   "visual": {
+    "motion": "от"
+   }
+  }
+ ]
+}
