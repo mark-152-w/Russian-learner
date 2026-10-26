@@ -84,7 +84,7 @@ function GeneratedTable({ spec }: { spec: { lexemes: string[]; slots: string[]; 
   useEffect(() => void loadLexemes(spec.lexemes).then((m) => setLx(spec.lexemes.map((id) => m.get(id)).filter((x): x is Lexeme => !!x))), [spec])
   const show = (v: FormVariant[]) => v.filter((x) => !x.unverified).map((x) => displayStress(x.form, s.showStress)).join(' / ') || '—'
   return (
-    <div className="overflow-x-auto">
+    <div className="overflow-x-auto" tabIndex={0} role="region" aria-label="Table (scrolls sideways)">
       <table className="w-full min-w-[20rem]">
         <thead>
           <tr>
@@ -169,7 +169,7 @@ export function GrammarArticlePage() {
             {sec.body && <Md text={sec.body} />}
             {sec.table?.generate && <GeneratedTable spec={sec.table.generate} />}
             {sec.table?.rows && (
-              <div className="overflow-x-auto">
+              <div className="overflow-x-auto" tabIndex={0} role="region" aria-label="Table (scrolls sideways)">
                 {sec.table.caption && <p className="mb-1 text-sm text-ink-soft">{sec.table.caption}</p>}
                 <table className="w-full min-w-[18rem]">
                   {sec.table.head && (

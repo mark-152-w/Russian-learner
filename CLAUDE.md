@@ -44,7 +44,8 @@ src/lib/               ru.ts (stress helpers), lexicon.ts (lazy chunks, decodeCe
                        lesson/checkpoint items), learner.ts (placement result, learner level), coverage.ts
                        ("N words ≈ X%"), plan.ts (Home daily plan, weakest tag, vocabulary milestones),
                        stories.ts (lazy story files, reading progress, analysis labels), bosses.ts (boss records),
-                       cards.ts (card index, lazy set files, owned cards), adventure.ts (chapters, progress, flags)
+                       cards.ts (card index, lazy set files, owned cards), adventure.ts (chapters, progress, flags),
+                       statsData.ts (pure summaries for /stats: calendar, weekly XP, accuracy by case, top errors)
 src/engine/            normalize.ts, translit.ts, slots.ts (slot → labels/tags), diagnose.ts (paradigm + spelling
                        rules → error type), grader.ts (all 11 item types), generators.ts (drills from the lexicon),
                        sentenceGen.ts (case/verb cloze, find-error, tiles, declension patterns from sentences),
@@ -69,7 +70,7 @@ src/pages/             Home, Practice, Review, Course (course/unit/lesson), Plac
                        Reader (/reader, /story/:id[/quiz], /dialogue/:id), Listening (/listening, /listen/:mode),
                        Keyboard (/keyboard/:n), Games (/games hub), Arcade (/arcade), Crossword (/crossword[/:topic],
                        'daily' = day-seeded), Speed (/speed), Boss (/boss/:unit), Cards (/cards, /card/:id), Town (/town),
-                       Adventure (/adventure, /adventure/:n), Idioms (/idioms, /idioms/practice), Trophies, Settings,
+                       Adventure (/adventure, /adventure/:n), Idioms (/idioms, /idioms/practice), Stats (/stats), Trophies, Settings,
                        Attributions
 src/features.ts        features that exist; quests/achievements for anything else stay hidden
 ```
@@ -150,6 +151,16 @@ src/features.ts        features that exist; quests/achievements for anything els
   sets pay `bonusXp` via the service (`awardCard()` for milestone rewards).
 - Minimal pairs (`MINIMAL_PAIRS` in trainers.ts) name lexeme + slot; forms come from the lexicon, and a test
   checks each pair differs only in stress. Check homograph order (`n:хлопок` is хлопо́к, `:2` is хло́пок).
+
+## App shell (src/App.tsx)
+
+- `TITLES` maps routes to tab titles; `PageTitle` sets `document.title`, adds a screen-reader `<h1>` when a page
+  has none, and moves focus to `<main>` on navigation. Give new routes a title there.
+- `UpdatePrompt`: the PWA uses `registerType: 'prompt'`. `main.tsx` dispatches `medved:update` /
+  `medved:offline-ready`, and the banner never shows inside a session (`inSessionPath`). Add full-screen session
+  routes to `inSessionPath` so they hide the navigation and the update banner.
+- Accessibility baseline: axe-core finds no violations on the main pages in light and dark mode. Keep
+  `Bar label=…`, icon-button `aria-label`s and text on `bg-gold` dark (`text-[#2a1d0f]`).
 
 ## Gotchas
 

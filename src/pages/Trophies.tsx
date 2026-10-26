@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { FEATURES } from '../features'
 import { useNow, useProfile, useStats, useUnlocked } from '../hooks/live'
 import { visibleAchievements } from '../rewards/achievements'
@@ -20,6 +21,9 @@ export default function Trophies() {
 
   return (
     <div className="space-y-4">
+      <Link to="/stats" className="block rounded-xl border-2 border-line bg-paper-2 px-4 py-3 font-bold transition hover:border-red">
+        📊 Your stats: activity, accuracy by case, weakest topics →
+      </Link>
       <Card>
         <h2 className="font-serif text-xl">Ranks</h2>
         <ol className="mt-2 space-y-1">

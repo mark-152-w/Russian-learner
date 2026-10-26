@@ -30,6 +30,6 @@
     "url": "https://tatoeba.org/en/downloads",
     "licence": "CC BY 2.0 FR",
     "licenceUrl": "https://creativecommons.org/licenses/by/2.0/fr/",
-    "status": "NOT REACHABLE from the build sandbox; must be committed manually to tools/raw/tatoeba/ (see PROGRESS.md)"
+    "snapshot": "rus-eng.zip (536,124 Russian–English pairs), committed to tools/raw/tatoeba/"
   }
 }

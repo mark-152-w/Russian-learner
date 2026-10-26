@@ -127,11 +127,21 @@ export function stressItem(lx: Lexeme, rng: Rng): ExerciseItem | null {
   return it
 }
 
+const STOP = new Set(['the', 'and', 'for', 'with', 'one', 'someone', 'something', 'from', 'into', 'out', 'off', 'not', 'get', 'make', 'have', 'take'])
+const words = (s: string) => s.toLowerCase().split(/[^a-z]+/).filter((w) => w.length > 2 && !STOP.has(w))
+/** True when two glosses share a content word: "first" and "first-class", "to run" and "run away". */
+export function overlaps(a: string, b: string): boolean {
+  if (a.toLowerCase() === b.toLowerCase()) return true
+  const wb = new Set(words(b))
+  return words(a).some((w) => wb.has(w))
+}
+
 function glossChoices(lx: Lexeme, pool: Lexeme[], rng: Rng): { choices: string[]; answerIndex: number } | null {
   const answer = gloss(lx)
   const others = shuffle(rng, pool.filter((x) => x.id !== lx.id && x.pos === lx.pos))
     .map(gloss)
-    .filter((g, i, a) => g.toLowerCase() !== answer.toLowerCase() && a.indexOf(g) === i)
+    // a distractor that contains the answer (first / first-class) or vice versa is too close to call
+    .filter((g, i, a) => !overlaps(g, answer) && a.indexOf(g) === i)
     .slice(0, 3)
   if (others.length < 3) return null
   const choices = shuffle(rng, [answer, ...others])

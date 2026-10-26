@@ -11,14 +11,15 @@
 | 4: graded reader, listening and speaking, keyboard trainer | **Done** (all 40 stories, not just the first 15) |
 | 5: games, collectible cards, the town, text adventure «Де́ло» | **Done** (in four chunks) |
 | 6: B1–C1 units, remaining grammar articles, idioms/culture | **Done** (in four chunks) |
-| 7: stats dashboard, polish, accessibility, performance, GitHub Pages deploy | Next (estimate at the end) |
+| 7: stats dashboard, polish, accessibility, performance, GitHub Pages deploy | **Done** |
 
 `npm run check` passes:
 
 - 25 Python tool tests;
 - `validate.py`: 0 errors, 2 warnings (сёк in two C1 sentences: a real form pymorphy3 doesn't know);
 - typecheck;
-- 147 Vitest tests. New in Phase 6:
+- 151 Vitest tests. New in Phase 7: the stats calculations (calendar, weekly XP, accuracy by case) and the
+  meaning-distractor overlap rule. New in Phase 6:
   - all 65 units, at every level, produce gradable items from every drill, in course order;
   - placement recovers every level from A1 to C1;
   - every idiom makes a four-way meaning question that grades.
@@ -55,6 +56,46 @@ including wrong cases. In Phase 4 they covered:
 - the Listening page and a dialogue;
 - the keyboard: typing a lesson line with Latin key positions;
 - the new Practice and Reference hubs.
+
+## Phase 7: what's built
+
+**Stats** (`/stats`, linked from Home and Trophies):
+- totals: time practised, answers, accuracy, longest streak, words known;
+- an activity calendar for the last 18 weeks;
+- XP per week for the last 12 weeks;
+- accuracy by case, from every form you've answered;
+- your weakest topics (each links to a drill) and your most common mistake types.
+
+Everything is computed from the per-day totals and the learner model, by pure functions in
+`src/lib/statsData.ts`. The charts follow one-hue, thin-mark, label-in-ink rules. Hover or tap shows the
+value, and the case accuracies are a real table.
+
+**Accessibility.** axe-core reports **zero violations** on 19 pages, in both light and dark mode. Fixes:
+- every progress bar has an accessible name;
+- contrast: the light-mode green is darker; the dark-mode red is lighter; the gold badges use dark text; locked
+  adventure chapters are dashed instead of faded;
+- every page has a browser-tab title, and a heading for screen readers where it had none;
+- focus moves to the page on navigation;
+- wide grammar tables are keyboard-scrollable regions.
+
+**Updates and offline.** The app used to update itself silently, which could reload it in the middle of a
+lesson. Now a new version shows **A new version is ready · Later / Update**, and never during a session.
+Installed copies check for updates hourly, and the first visit says when the app is ready to work offline.
+
+**Performance.** The startup JavaScript is about 170 KB gzipped: React, the router, the database and the
+scheduler. Every page and data file loads on demand. The 12 MB offline precache (the whole dictionary and
+sentence bank) downloads in the background after the first visit. I tried swapping in react-router's
+production build; it saved under 1 KB after minification, so I left the configuration alone.
+
+**Polish**:
+- Home's shortcut tiles fit at phone width, and the Settings placement button no longer wraps.
+- Meaning questions no longer offer a distractor that contains the answer (*first* against *first-class*).
+
+**Deploy and credits.** Every merge to `main` has deployed to GitHub Pages, starting with the first one (Phases 0–2)
+(https://mark-152-w.github.io/Russian-learner/). The README now explains the site, installing it, and where
+your data lives. The Attributions page was missing Tatoeba: `sources.json` still called it unreachable, a note
+from Phase 0. It's now credited with its licence, like the other sources: the page reads `tools/sources.json` directly, so a
+credit never waits for a dictionary rebuild.
 
 ## Phase 6: what's built
 
@@ -581,6 +622,10 @@ Russian–English pairs with per-sentence attribution. I'll ingest it at the sta
 
 ## Known issues
 
+- **A dictionary rebuild is due.** Rerunning `tools/ingest.py` now ranks **мно́гие** (rank 920, A2). It was
+  missing because of the lemma mismatch fixed in Phase 4, which never had a full rebuild. Accepting it shifts
+  11,478 later ranks by one and moves a word at each level boundary. I didn't fold that into Phase 7. To do it:
+  `npm run data:ingest && python3 tools/stories.py && npm run check`, then review the diff.
 - The Phase 0 known issues still stand (morph disagreements report, 9 suspect top-5000 words, unverified short
   adjectives).
 - Headless Chromium has no Russian voices, so audio cards and listen items were verified by tests only. Please
@@ -643,14 +688,12 @@ re-checked the homographs by hand. Corrections I made along the way, for the rec
 
 If anything reads oddly to you, tell me the unit or article and I'll fix it.
 
-## Next: Phase 7, polish and deploy (estimate)
+## Next
 
-| Piece | Work | Output tokens (approx.) |
-|---|---|---|
-| Stats dashboard: accuracy by case and tag over time, words learned, minutes, streak calendar | code | about 10k |
-| Accessibility pass: focus order, labels, contrast in every theme, reduced motion, screen-reader checks | code | about 6k |
-| Performance: bundle and chunk sizes, lazy loading of heavy pages and data, Lighthouse | code | about 5k |
-| Polish: empty states, small UI inconsistencies, a pass over every page at phone width | code | about 6k |
-| GitHub Pages deploy: workflow, base path, PWA update prompt, a README for running it | code + docs | about 4k |
+All seven phases of the brief are done. Ideas if you want to keep going (none is started):
 
-**Total: roughly 30k output tokens.** It's mostly code, so it can go in one or two chunks.
+- **Sync between devices.** It would need an account and a server (or a file in your own cloud drive), which
+  ends "zero runtime API calls". Export/Import covers it for now.
+- **Recorded audio** for the stories, instead of the device's text-to-speech voice.
+- **More content**: more C1 units and texts, and B2/C1 dialogues.
+- **The learner's own words**: add any text, get it analysed against the lexicon, and turn it into cards.
