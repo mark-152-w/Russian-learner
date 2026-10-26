@@ -257,12 +257,13 @@ def validate_closed_class(rep: Report):
                 if not any(p.tag.POS in e.get("sub", []) for p in dparses(strip_stress(v).lower())):
                     rep.err(f"closed_class.json:{e['lemma']}", f"«{v}» has none of the parts of speech {e.get('sub')} per pymorphy3")
             continue
+        keys = lemma_keys(e["lemma"], "noun") | {lf}  # Терешко́ва → терешков
         for slot, cell in e["forms"].items():
             parts = slot.split("_")
             want = {oc[parts[-1]]} | ({gm[parts[0]]} if len(parts) == 2 else set())
             for v in cell.split("|"):
                 check_text(v, f"closed_class.json:{e['lemma']}:{slot}", rep)
-                ps = [p for p in dparses(strip_stress(v).lower()) if fold(p.normal_form) == lf]
+                ps = [p for p in dparses(strip_stress(v).lower()) if fold(p.normal_form) in keys]
                 if not any(want <= p.tag.grammemes or "Fixd" in p.tag.grammemes for p in ps) and fold(v) not in ALLOW:
                     rep.err(f"closed_class.json:{e['lemma']}", f"{slot} «{v}» not confirmed by pymorphy3")
 

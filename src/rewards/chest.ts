@@ -15,6 +15,23 @@ export type Loot =
   | { kind: 'freeze'; amount: number }
   | { kind: 'boost'; mult: number; minutes: number }
   | { kind: 'skin'; skin: string }
+  | { kind: 'card'; card: string }
+
+/** A collectible card not yet owned, as the chest sees it. */
+export interface CardOption {
+  id: string
+  rarity: Tier
+}
+/** Chance that a chest of each tier holds a card (while there are cards left to find). */
+export const CARD_CHANCE: Record<Tier, number> = { common: 0.2, rare: 0.45, epic: 0.8, legendary: 1 }
+
+/** A card for a chest or milestone: rarer cards only from better chests, and same-tier cards most likely. */
+export function pickCard(rng: Rng, options: CardOption[], tier: Tier): string | null {
+  const t = TIERS.indexOf(tier)
+  const ok = options.filter((c) => TIERS.indexOf(c.rarity) <= t)
+  if (!ok.length) return null
+  return ok[weighted(rng, ok.map((c) => (TIERS.indexOf(c.rarity) === t ? 3 : 1)))]!.id
+}
 
 export interface Skin {
   id: string
@@ -57,7 +74,7 @@ export function tierWeights(q: number): number[] {
 
 const int = (rng: Rng, lo: number, hi: number) => lo + Math.floor(rng() * (hi - lo + 1))
 
-export function rollChest(q: number, rng: Rng, owned: { skins: string[]; freezes: number }, forceTier?: Tier) {
+export function rollChest(q: number, rng: Rng, owned: { skins: string[]; freezes: number; cardOptions?: CardOption[] }, forceTier?: Tier) {
   const tier: Tier = forceTier ?? TIERS[weighted(rng, tierWeights(q))]!
   const loot: Loot[] = []
   const unowned = SKINS.filter((s) => !owned.skins.includes(s.id))
@@ -87,6 +104,10 @@ export function rollChest(q: number, rng: Rng, owned: { skins: string[]; freezes
       loot.push({ kind: 'boost', mult: 2, minutes: 30 })
       break
     }
+  }
+  if (owned.cardOptions?.length && rng() < CARD_CHANCE[tier]) {
+    const card = pickCard(rng, owned.cardOptions, tier)
+    if (card) loot.push({ kind: 'card', card })
   }
   return { tier, loot }
 }

@@ -1,0 +1,1630 @@
+{
+ "$schema": "../../../../schemas/card.schema.json",
+ "id": "cs-idioms",
+ "title": {
+  "ru": "Идио́мы",
+  "en": "Idioms"
+ },
+ "bonusXp": 250,
+ "cards": [
+  {
+   "id": "c-ni-pukha",
+   "name": {
+    "ru": "Ни пу́ха ни пера́!",
+    "en": "Good luck!"
+   },
+   "rarity": "common",
+   "art": {
+    "icon": "🪶",
+    "hue": 50
+   },
+   "level": "A2",
+   "blurb": {
+    "id": "c-ni-pukha-blurb",
+    "kind": "card-blurb",
+    "level": "A2",
+    "title": {
+     "ru": "Ни пу́ха ни пера́!",
+     "en": "Good luck!"
+    },
+    "sentences": [
+     {
+      "para": true,
+      "en": "People say this before an exam.",
+      "tokens": [
+       {
+        "t": "Так",
+        "lex": "o:так",
+        "lemma": "так",
+        "g": {
+         "pos": "adv"
+        }
+       },
+       {
+        "t": "говоря́т",
+        "lex": "v:говорить",
+        "lemma": "говори́ть",
+        "g": {
+         "pos": "verb",
+         "aspect": "impf",
+         "tense": "pres",
+         "person": 3,
+         "number": "pl"
+        }
+       },
+       {
+        "t": "пе́ред",
+        "lex": "o:перед",
+        "lemma": "пе́ред",
+        "g": {
+         "pos": "prep"
+        }
+       },
+       {
+        "t": "экза́меном",
+        "sp": false,
+        "lex": "n:экзамен",
+        "lemma": "экза́мен",
+        "g": {
+         "pos": "noun",
+         "case": "ins",
+         "number": "sg"
+        },
+        "rare": true
+       },
+       {
+        "t": ".",
+        "sp": false
+       }
+      ]
+     },
+     {
+      "en": "The reply is \"To the devil!\" It isn't rude; it's tradition.",
+      "tokens": [
+       {
+        "t": "Отвеча́ть",
+        "lex": "v:отвечать",
+        "lemma": "отвеча́ть",
+        "g": {
+         "pos": "verb",
+         "aspect": "impf"
+        }
+       },
+       {
+        "t": "на́до",
+        "sp": false,
+        "lex": "o:надо",
+        "lemma": "на́до",
+        "g": {
+         "pos": "pred"
+        }
+       },
+       {
+        "t": ":"
+       },
+       {
+        "t": "«",
+        "sp": false
+       },
+       {
+        "t": "К",
+        "lex": "o:к",
+        "lemma": "к",
+        "g": {
+         "pos": "prep"
+        }
+       },
+       {
+        "t": "чёрту",
+        "sp": false,
+        "lex": "n:чёрт",
+        "lemma": "чёрт",
+        "g": {
+         "pos": "noun",
+         "case": "dat",
+         "number": "sg"
+        }
+       },
+       {
+        "t": "!",
+        "sp": false
+       },
+       {
+        "t": "»"
+       },
+       {
+        "t": "Э́то",
+        "lex": "o:это",
+        "lemma": "э́то",
+        "g": {
+         "pos": "pron"
+        }
+       },
+       {
+        "t": "не",
+        "lex": "o:не",
+        "lemma": "не",
+        "g": {
+         "pos": "part"
+        }
+       },
+       {
+        "t": "гру́бо",
+        "sp": false,
+        "lex": "o:грубо",
+        "lemma": "гру́бо",
+        "g": {
+         "pos": "adv"
+        },
+        "rare": true
+       },
+       {
+        "t": ","
+       },
+       {
+        "t": "а",
+        "lex": "o:а",
+        "lemma": "а",
+        "g": {
+         "pos": "conj"
+        }
+       },
+       {
+        "t": "тради́ция",
+        "sp": false,
+        "lex": "n:традиция",
+        "lemma": "тради́ция",
+        "g": {
+         "pos": "noun",
+         "case": "nom",
+         "number": "sg"
+        },
+        "rare": true
+       },
+       {
+        "t": ".",
+        "sp": false
+       }
+      ]
+     }
+    ],
+    "questions": []
+   }
+  },
+  {
+   "id": "c-sobaka",
+   "name": {
+    "ru": "Вот где соба́ка зары́та",
+    "en": "That's the heart of the matter"
+   },
+   "rarity": "rare",
+   "art": {
+    "icon": "🐕",
+    "hue": 30
+   },
+   "level": "B1",
+   "blurb": {
+    "id": "c-sobaka-blurb",
+    "kind": "card-blurb",
+    "level": "B1",
+    "title": {
+     "ru": "Вот где соба́ка зары́та",
+     "en": "That's the heart of the matter"
+    },
+    "sentences": [
+     {
+      "para": true,
+      "en": "Literally: that's where the dog lies buried.",
+      "tokens": [
+       {
+        "t": "Буква́льно",
+        "sp": false,
+        "lex": "o:буквально",
+        "lemma": "буква́льно",
+        "g": {
+         "pos": "adv"
+        }
+       },
+       {
+        "t": ":"
+       },
+       {
+        "t": "вот",
+        "lex": "o:вот",
+        "lemma": "вот",
+        "g": {
+         "pos": "part"
+        }
+       },
+       {
+        "t": "где",
+        "lex": "o:где",
+        "lemma": "где",
+        "g": {
+         "pos": "adv"
+        }
+       },
+       {
+        "t": "лежи́т",
+        "lex": "v:лежать",
+        "lemma": "лежа́ть",
+        "g": {
+         "pos": "verb",
+         "aspect": "impf",
+         "tense": "pres",
+         "person": 3,
+         "number": "sg"
+        }
+       },
+       {
+        "t": "соба́ка",
+        "sp": false,
+        "lex": "n:собака",
+        "lemma": "соба́ка",
+        "g": {
+         "pos": "noun",
+         "case": "nom",
+         "number": "sg"
+        }
+       },
+       {
+        "t": ".",
+        "sp": false
+       }
+      ]
+     },
+     {
+      "en": "People say this when they've found the real cause of a problem.",
+      "tokens": [
+       {
+        "t": "Э́ту",
+        "lex": "a:этот",
+        "lemma": "э́тот",
+        "g": {
+         "pos": "adj",
+         "case": "acc",
+         "number": "sg",
+         "gender": "f"
+        }
+       },
+       {
+        "t": "фра́зу",
+        "lex": "n:фраза",
+        "lemma": "фра́за",
+        "g": {
+         "pos": "noun",
+         "case": "acc",
+         "number": "sg"
+        }
+       },
+       {
+        "t": "говоря́т",
+        "sp": false,
+        "lex": "v:говорить",
+        "lemma": "говори́ть",
+        "g": {
+         "pos": "verb",
+         "aspect": "impf",
+         "tense": "pres",
+         "person": 3,
+         "number": "pl"
+        }
+       },
+       {
+        "t": ","
+       },
+       {
+        "t": "когда́",
+        "lex": "o:когда",
+        "lemma": "когда́",
+        "g": {
+         "pos": "conj"
+        }
+       },
+       {
+        "t": "нашли́",
+        "lex": "v:найти",
+        "lemma": "найти́",
+        "g": {
+         "pos": "verb",
+         "aspect": "pf",
+         "tense": "past",
+         "number": "pl"
+        }
+       },
+       {
+        "t": "настоя́щую",
+        "lex": "a:настоящий",
+        "lemma": "настоя́щий",
+        "g": {
+         "pos": "adj",
+         "case": "acc",
+         "number": "sg",
+         "gender": "f"
+        }
+       },
+       {
+        "t": "причи́ну",
+        "lex": "n:причина",
+        "lemma": "причи́на",
+        "g": {
+         "pos": "noun",
+         "case": "acc",
+         "number": "sg"
+        }
+       },
+       {
+        "t": "пробле́мы",
+        "sp": false,
+        "lex": "n:проблема",
+        "lemma": "пробле́ма",
+        "g": {
+         "pos": "noun",
+         "case": "gen",
+         "number": "sg"
+        }
+       },
+       {
+        "t": ".",
+        "sp": false
+       }
+      ]
+     }
+    ],
+    "questions": []
+   }
+  },
+  {
+   "id": "c-lapsha",
+   "name": {
+    "ru": "Ве́шать лапшу́ на у́ши",
+    "en": "To pull someone's leg"
+   },
+   "rarity": "rare",
+   "art": {
+    "icon": "🍜",
+    "hue": 40
+   },
+   "level": "B1",
+   "blurb": {
+    "id": "c-lapsha-blurb",
+    "kind": "card-blurb",
+    "level": "B1",
+    "title": {
+     "ru": "Ве́шать лапшу́ на у́ши",
+     "en": "To pull someone's leg"
+    },
+    "sentences": [
+     {
+      "para": true,
+      "en": "If someone is hanging noodles on your ears, they're fooling you.",
+      "tokens": [
+       {
+        "t": "Е́сли",
+        "lex": "o:если",
+        "lemma": "е́сли",
+        "g": {
+         "pos": "conj"
+        }
+       },
+       {
+        "t": "кто́-то",
+        "lex": "o:кто-то",
+        "lemma": "кто́-то",
+        "g": {
+         "pos": "pron",
+         "case": "nom"
+        }
+       },
+       {
+        "t": "ве́шает",
+        "lex": "v:вешать",
+        "lemma": "ве́шать",
+        "g": {
+         "pos": "verb",
+         "aspect": "impf",
+         "tense": "pres",
+         "person": 3,
+         "number": "sg"
+        },
+        "rare": true
+       },
+       {
+        "t": "вам",
+        "lex": "o:вы",
+        "lemma": "вы",
+        "g": {
+         "pos": "pron",
+         "case": "dat"
+        }
+       },
+       {
+        "t": "лапшу́",
+        "lex": "n:лапша",
+        "lemma": "лапша́",
+        "g": {
+         "pos": "noun",
+         "case": "acc",
+         "number": "sg"
+        },
+        "rare": true
+       },
+       {
+        "t": "на",
+        "lex": "o:на",
+        "lemma": "на",
+        "g": {
+         "pos": "prep"
+        }
+       },
+       {
+        "t": "у́ши",
+        "sp": false,
+        "lex": "n:ухо",
+        "lemma": "у́хо",
+        "g": {
+         "pos": "noun",
+         "case": "acc",
+         "number": "pl"
+        }
+       },
+       {
+        "t": ","
+       },
+       {
+        "t": "он",
+        "lex": "o:он",
+        "lemma": "он",
+        "g": {
+         "pos": "pron",
+         "case": "nom"
+        }
+       },
+       {
+        "t": "вас",
+        "lex": "o:вы",
+        "lemma": "вы",
+        "g": {
+         "pos": "pron",
+         "case": "acc"
+        }
+       },
+       {
+        "t": "обма́нывает",
+        "sp": false,
+        "lex": "v:обманывать",
+        "lemma": "обма́нывать",
+        "g": {
+         "pos": "verb",
+         "aspect": "impf",
+         "tense": "pres",
+         "person": 3,
+         "number": "sg"
+        }
+       },
+       {
+        "t": ".",
+        "sp": false
+       }
+      ]
+     },
+     {
+      "en": "\"Don't hang noodles on my ears!\" is what you say to a friend who's lying.",
+      "tokens": [
+       {
+        "t": "«",
+        "sp": false
+       },
+       {
+        "t": "Не",
+        "lex": "o:не",
+        "lemma": "не",
+        "g": {
+         "pos": "part"
+        }
+       },
+       {
+        "t": "ве́шай",
+        "lex": "v:вешать",
+        "lemma": "ве́шать",
+        "g": {
+         "pos": "verb",
+         "aspect": "impf",
+         "mood": "imp",
+         "number": "sg"
+        },
+        "rare": true
+       },
+       {
+        "t": "мне",
+        "lex": "o:я",
+        "lemma": "я",
+        "g": {
+         "pos": "pron",
+         "case": "dat"
+        }
+       },
+       {
+        "t": "лапшу́",
+        "lex": "n:лапша",
+        "lemma": "лапша́",
+        "g": {
+         "pos": "noun",
+         "case": "acc",
+         "number": "sg"
+        },
+        "rare": true
+       },
+       {
+        "t": "на",
+        "lex": "o:на",
+        "lemma": "на",
+        "g": {
+         "pos": "prep"
+        }
+       },
+       {
+        "t": "у́ши",
+        "sp": false,
+        "lex": "n:ухо",
+        "lemma": "у́хо",
+        "g": {
+         "pos": "noun",
+         "case": "acc",
+         "number": "pl"
+        }
+       },
+       {
+        "t": "!",
+        "sp": false
+       },
+       {
+        "t": "»"
+       },
+       {
+        "t": "—"
+       },
+       {
+        "t": "так",
+        "lex": "o:так",
+        "lemma": "так",
+        "g": {
+         "pos": "adv"
+        }
+       },
+       {
+        "t": "говоря́т",
+        "lex": "v:говорить",
+        "lemma": "говори́ть",
+        "g": {
+         "pos": "verb",
+         "aspect": "impf",
+         "tense": "pres",
+         "person": 3,
+         "number": "pl"
+        }
+       },
+       {
+        "t": "дру́гу",
+        "sp": false,
+        "lex": "n:друг",
+        "lemma": "друг",
+        "g": {
+         "pos": "noun",
+         "case": "dat",
+         "number": "sg"
+        }
+       },
+       {
+        "t": ","
+       },
+       {
+        "t": "кото́рый",
+        "lex": "a:который",
+        "lemma": "кото́рый",
+        "g": {
+         "pos": "adj",
+         "case": "nom",
+         "number": "sg",
+         "gender": "m"
+        }
+       },
+       {
+        "t": "врёт",
+        "sp": false,
+        "lex": "v:врать",
+        "lemma": "врать",
+        "g": {
+         "pos": "verb",
+         "aspect": "impf",
+         "tense": "pres",
+         "person": 3,
+         "number": "sg"
+        }
+       },
+       {
+        "t": ".",
+        "sp": false
+       }
+      ]
+     }
+    ],
+    "questions": []
+   }
+  },
+  {
+   "id": "c-rak",
+   "name": {
+    "ru": "Когда́ рак на горе́ сви́стнет",
+    "en": "When pigs fly"
+   },
+   "rarity": "epic",
+   "art": {
+    "icon": "🦞",
+    "hue": 0
+   },
+   "level": "B1",
+   "blurb": {
+    "id": "c-rak-blurb",
+    "kind": "card-blurb",
+    "level": "B1",
+    "title": {
+     "ru": "Когда́ рак на горе́ сви́стнет",
+     "en": "When pigs fly"
+    },
+    "sentences": [
+     {
+      "para": true,
+      "en": "Crayfish can't whistle, and they don't live on mountains.",
+      "tokens": [
+       {
+        "t": "Ра́ки",
+        "lex": "n:рак",
+        "lemma": "рак",
+        "g": {
+         "pos": "noun",
+         "case": "nom",
+         "number": "pl"
+        }
+       },
+       {
+        "t": "не",
+        "lex": "o:не",
+        "lemma": "не",
+        "g": {
+         "pos": "part"
+        }
+       },
+       {
+        "t": "уме́ют",
+        "lex": "v:уметь",
+        "lemma": "уме́ть",
+        "g": {
+         "pos": "verb",
+         "aspect": "impf",
+         "tense": "pres",
+         "person": 3,
+         "number": "pl"
+        }
+       },
+       {
+        "t": "свисте́ть",
+        "sp": false,
+        "lex": "v:свистеть",
+        "lemma": "свисте́ть",
+        "g": {
+         "pos": "verb",
+         "aspect": "impf"
+        },
+        "rare": true
+       },
+       {
+        "t": ","
+       },
+       {
+        "t": "и",
+        "lex": "o:и",
+        "lemma": "и",
+        "g": {
+         "pos": "conj"
+        }
+       },
+       {
+        "t": "на",
+        "lex": "o:на",
+        "lemma": "на",
+        "g": {
+         "pos": "prep"
+        }
+       },
+       {
+        "t": "гора́х",
+        "lex": "n:гора",
+        "lemma": "гора́",
+        "g": {
+         "pos": "noun",
+         "case": "prep",
+         "number": "pl"
+        }
+       },
+       {
+        "t": "они́",
+        "lex": "o:они",
+        "lemma": "они́",
+        "g": {
+         "pos": "pron",
+         "case": "nom"
+        }
+       },
+       {
+        "t": "не",
+        "lex": "o:не",
+        "lemma": "не",
+        "g": {
+         "pos": "part"
+        }
+       },
+       {
+        "t": "живу́т",
+        "sp": false,
+        "lex": "v:жить",
+        "lemma": "жить",
+        "g": {
+         "pos": "verb",
+         "aspect": "impf",
+         "tense": "pres",
+         "person": 3,
+         "number": "pl"
+        }
+       },
+       {
+        "t": ".",
+        "sp": false
+       }
+      ]
+     },
+     {
+      "en": "So it will never happen.",
+      "tokens": [
+       {
+        "t": "Зна́чит",
+        "sp": false,
+        "lex": "v:значить",
+        "lemma": "зна́чить",
+        "g": {
+         "pos": "verb",
+         "aspect": "impf",
+         "tense": "pres",
+         "person": 3,
+         "number": "sg"
+        }
+       },
+       {
+        "t": ","
+       },
+       {
+        "t": "э́то",
+        "lex": "o:это",
+        "lemma": "э́то",
+        "g": {
+         "pos": "pron"
+        }
+       },
+       {
+        "t": "бу́дет",
+        "lex": "v:быть",
+        "lemma": "быть",
+        "g": {
+         "pos": "verb",
+         "aspect": "impf",
+         "tense": "fut",
+         "person": 3,
+         "number": "sg"
+        }
+       },
+       {
+        "t": "никогда́",
+        "sp": false,
+        "lex": "o:никогда",
+        "lemma": "никогда́",
+        "g": {
+         "pos": "adv"
+        }
+       },
+       {
+        "t": ".",
+        "sp": false
+       }
+      ]
+     }
+    ],
+    "questions": []
+   }
+  },
+  {
+   "id": "c-maslo",
+   "name": {
+    "ru": "Как по ма́слу",
+    "en": "Like clockwork"
+   },
+   "rarity": "common",
+   "art": {
+    "icon": "🧈",
+    "hue": 45
+   },
+   "level": "A2",
+   "blurb": {
+    "id": "c-maslo-blurb",
+    "kind": "card-blurb",
+    "level": "A2",
+    "title": {
+     "ru": "Как по ма́слу",
+     "en": "Like clockwork"
+    },
+    "sentences": [
+     {
+      "para": true,
+      "en": "If everything goes \"as if on butter\", it goes easily and without problems.",
+      "tokens": [
+       {
+        "t": "Е́сли",
+        "lex": "o:если",
+        "lemma": "е́сли",
+        "g": {
+         "pos": "conj"
+        }
+       },
+       {
+        "t": "всё",
+        "lex": "o:всё",
+        "lemma": "всё",
+        "g": {
+         "pos": "part"
+        }
+       },
+       {
+        "t": "идёт",
+        "lex": "v:идти",
+        "lemma": "идти́",
+        "g": {
+         "pos": "verb",
+         "aspect": "impf",
+         "tense": "pres",
+         "person": 3,
+         "number": "sg"
+        }
+       },
+       {
+        "t": "как",
+        "lemma": "как",
+        "g": {
+         "pos": "adv"
+        },
+        "gloss": "how; as, like"
+       },
+       {
+        "t": "по",
+        "lex": "o:по",
+        "lemma": "по",
+        "g": {
+         "pos": "prep"
+        }
+       },
+       {
+        "t": "ма́слу",
+        "sp": false,
+        "lex": "n:масло",
+        "lemma": "ма́сло",
+        "g": {
+         "pos": "noun",
+         "case": "dat",
+         "number": "sg"
+        },
+        "rare": true
+       },
+       {
+        "t": ","
+       },
+       {
+        "t": "всё",
+        "lex": "o:всё",
+        "lemma": "всё",
+        "g": {
+         "pos": "part"
+        }
+       },
+       {
+        "t": "идёт",
+        "lex": "v:идти",
+        "lemma": "идти́",
+        "g": {
+         "pos": "verb",
+         "aspect": "impf",
+         "tense": "pres",
+         "person": 3,
+         "number": "sg"
+        }
+       },
+       {
+        "t": "легко́",
+        "lex": "o:легко",
+        "lemma": "легко́",
+        "g": {
+         "pos": "adv"
+        }
+       },
+       {
+        "t": "и",
+        "lex": "o:и",
+        "lemma": "и",
+        "g": {
+         "pos": "conj"
+        }
+       },
+       {
+        "t": "без",
+        "lex": "o:без",
+        "lemma": "без",
+        "g": {
+         "pos": "prep"
+        }
+       },
+       {
+        "t": "пробле́м",
+        "sp": false,
+        "lex": "n:проблема",
+        "lemma": "пробле́ма",
+        "g": {
+         "pos": "noun",
+         "case": "gen",
+         "number": "pl"
+        }
+       },
+       {
+        "t": ".",
+        "sp": false
+       }
+      ]
+     }
+    ],
+    "questions": []
+   }
+  },
+  {
+   "id": "c-medvezhya",
+   "name": {
+    "ru": "Медве́жья услу́га",
+    "en": "A bear's favour"
+   },
+   "rarity": "epic",
+   "art": {
+    "icon": "🐻",
+    "hue": 25
+   },
+   "level": "B1",
+   "blurb": {
+    "id": "c-medvezhya-blurb",
+    "kind": "card-blurb",
+    "level": "B1",
+    "title": {
+     "ru": "Медве́жья услу́га",
+     "en": "A bear's favour"
+    },
+    "sentences": [
+     {
+      "para": true,
+      "en": "It's help that only makes things worse.",
+      "tokens": [
+       {
+        "t": "Э́то",
+        "lex": "a:этот",
+        "lemma": "э́тот",
+        "g": {
+         "pos": "adj",
+         "case": "nom",
+         "number": "sg",
+         "gender": "n"
+        }
+       },
+       {
+        "t": "по́мощь",
+        "sp": false,
+        "lex": "n:помощь",
+        "lemma": "по́мощь",
+        "g": {
+         "pos": "noun",
+         "case": "nom",
+         "number": "sg"
+        }
+       },
+       {
+        "t": ","
+       },
+       {
+        "t": "от",
+        "lex": "o:от",
+        "lemma": "от",
+        "g": {
+         "pos": "prep"
+        }
+       },
+       {
+        "t": "кото́рой",
+        "lex": "a:который",
+        "lemma": "кото́рый",
+        "g": {
+         "pos": "adj",
+         "case": "gen",
+         "number": "sg",
+         "gender": "f"
+        }
+       },
+       {
+        "t": "то́лько",
+        "lex": "o:только",
+        "lemma": "то́лько",
+        "g": {
+         "pos": "part"
+        }
+       },
+       {
+        "t": "ху́же",
+        "sp": false,
+        "lex": "a:плохой",
+        "lemma": "плохо́й",
+        "g": {
+         "pos": "comp"
+        }
+       },
+       {
+        "t": ".",
+        "sp": false
+       }
+      ]
+     },
+     {
+      "en": "In an old fable, a bear killed a fly on his friend's forehead with a rock.",
+      "tokens": [
+       {
+        "t": "В",
+        "lex": "o:в",
+        "lemma": "в",
+        "g": {
+         "pos": "prep"
+        }
+       },
+       {
+        "t": "ста́рой",
+        "lex": "a:старый",
+        "lemma": "ста́рый",
+        "g": {
+         "pos": "adj",
+         "case": "prep",
+         "number": "sg",
+         "gender": "f"
+        }
+       },
+       {
+        "t": "ба́сне",
+        "lex": "n:басня",
+        "lemma": "ба́сня",
+        "g": {
+         "pos": "noun",
+         "case": "prep",
+         "number": "sg"
+        },
+        "rare": true
+       },
+       {
+        "t": "медве́дь",
+        "lex": "n:медведь",
+        "lemma": "медве́дь",
+        "g": {
+         "pos": "noun",
+         "case": "nom",
+         "number": "sg"
+        }
+       },
+       {
+        "t": "уби́л",
+        "lex": "v:убить",
+        "lemma": "уби́ть",
+        "g": {
+         "pos": "verb",
+         "aspect": "pf",
+         "tense": "past",
+         "number": "sg",
+         "gender": "m"
+        }
+       },
+       {
+        "t": "му́ху",
+        "lex": "n:муха",
+        "lemma": "му́ха",
+        "g": {
+         "pos": "noun",
+         "case": "acc",
+         "number": "sg"
+        },
+        "rare": true
+       },
+       {
+        "t": "на",
+        "lex": "o:на",
+        "lemma": "на",
+        "g": {
+         "pos": "prep"
+        }
+       },
+       {
+        "t": "лбу",
+        "lex": "n:лоб",
+        "lemma": "лоб",
+        "g": {
+         "pos": "noun",
+         "case": "loc2",
+         "number": "sg"
+        },
+        "rare": true
+       },
+       {
+        "t": "дру́га",
+        "lex": "n:друг",
+        "lemma": "друг",
+        "g": {
+         "pos": "noun",
+         "case": "acc",
+         "number": "sg"
+        }
+       },
+       {
+        "t": "ка́мнем",
+        "sp": false,
+        "lex": "n:камень",
+        "lemma": "ка́мень",
+        "g": {
+         "pos": "noun",
+         "case": "ins",
+         "number": "sg"
+        }
+       },
+       {
+        "t": ".",
+        "sp": false
+       }
+      ]
+     }
+    ],
+    "questions": []
+   }
+  },
+  {
+   "id": "c-trud",
+   "name": {
+    "ru": "Без труда́ не вы́тащишь и ры́бку из пруда́",
+    "en": "No pain, no gain"
+   },
+   "rarity": "rare",
+   "art": {
+    "icon": "🎣",
+    "hue": 200
+   },
+   "level": "A2",
+   "blurb": {
+    "id": "c-trud-blurb",
+    "kind": "card-blurb",
+    "level": "A2",
+    "title": {
+     "ru": "Без труда́ не вы́тащишь и ры́бку из пруда́",
+     "en": "No pain, no gain"
+    },
+    "sentences": [
+     {
+      "para": true,
+      "en": "This proverb says there are no results without work.",
+      "tokens": [
+       {
+        "t": "Э́та",
+        "lex": "a:этот",
+        "lemma": "э́тот",
+        "g": {
+         "pos": "adj",
+         "case": "nom",
+         "number": "sg",
+         "gender": "f"
+        }
+       },
+       {
+        "t": "посло́вица",
+        "lex": "n:пословица",
+        "lemma": "посло́вица",
+        "g": {
+         "pos": "noun",
+         "case": "nom",
+         "number": "sg"
+        },
+        "rare": true
+       },
+       {
+        "t": "о",
+        "lex": "o:о",
+        "lemma": "о",
+        "g": {
+         "pos": "prep"
+        }
+       },
+       {
+        "t": "том",
+        "sp": false,
+        "lex": "n:том",
+        "lemma": "том",
+        "g": {
+         "pos": "noun",
+         "case": "acc",
+         "number": "sg"
+        },
+        "rare": true
+       },
+       {
+        "t": ","
+       },
+       {
+        "t": "что",
+        "lex": "o:что",
+        "lemma": "что",
+        "g": {
+         "pos": "conj"
+        }
+       },
+       {
+        "t": "без",
+        "lex": "o:без",
+        "lemma": "без",
+        "g": {
+         "pos": "prep"
+        }
+       },
+       {
+        "t": "рабо́ты",
+        "lex": "n:работа",
+        "lemma": "рабо́та",
+        "g": {
+         "pos": "noun",
+         "case": "gen",
+         "number": "sg"
+        }
+       },
+       {
+        "t": "не",
+        "lex": "o:не",
+        "lemma": "не",
+        "g": {
+         "pos": "part"
+        }
+       },
+       {
+        "t": "быва́ет",
+        "lex": "v:бывать",
+        "lemma": "быва́ть",
+        "g": {
+         "pos": "verb",
+         "aspect": "impf",
+         "tense": "pres",
+         "person": 3,
+         "number": "sg"
+        }
+       },
+       {
+        "t": "результа́та",
+        "sp": false,
+        "lex": "n:результат",
+        "lemma": "результа́т",
+        "g": {
+         "pos": "noun",
+         "case": "gen",
+         "number": "sg"
+        }
+       },
+       {
+        "t": ".",
+        "sp": false
+       }
+      ]
+     },
+     {
+      "en": "Every Russian child knows it.",
+      "tokens": [
+       {
+        "t": "Её",
+        "lex": "o:она",
+        "lemma": "она́",
+        "g": {
+         "pos": "pron",
+         "case": "acc"
+        }
+       },
+       {
+        "t": "зна́ют",
+        "lex": "v:знать",
+        "lemma": "знать",
+        "g": {
+         "pos": "verb",
+         "aspect": "impf",
+         "tense": "pres",
+         "person": 3,
+         "number": "pl"
+        }
+       },
+       {
+        "t": "все",
+        "lex": "o:все",
+        "lemma": "все",
+        "g": {
+         "pos": "part"
+        },
+        "rare": true
+       },
+       {
+        "t": "ру́сские",
+        "lex": "a:русский",
+        "lemma": "ру́сский",
+        "g": {
+         "pos": "adj",
+         "case": "nom",
+         "number": "pl"
+        }
+       },
+       {
+        "t": "де́ти",
+        "sp": false,
+        "lex": "n:ребёнок",
+        "lemma": "ребёнок",
+        "g": {
+         "pos": "noun",
+         "case": "nom",
+         "number": "pl"
+        }
+       },
+       {
+        "t": ".",
+        "sp": false
+       }
+      ]
+     }
+    ],
+    "questions": []
+   }
+  },
+  {
+   "id": "c-utro",
+   "name": {
+    "ru": "У́тро ве́чера мудрене́е",
+    "en": "Sleep on it"
+   },
+   "rarity": "legendary",
+   "art": {
+    "icon": "🌅",
+    "hue": 40
+   },
+   "level": "B1",
+   "blurb": {
+    "id": "c-utro-blurb",
+    "kind": "card-blurb",
+    "level": "B1",
+    "title": {
+     "ru": "У́тро ве́чера мудрене́е",
+     "en": "Sleep on it"
+    },
+    "sentences": [
+     {
+      "para": true,
+      "en": "If you don't know what to do, it's better to go to bed.",
+      "tokens": [
+       {
+        "t": "Е́сли",
+        "lex": "o:если",
+        "lemma": "е́сли",
+        "g": {
+         "pos": "conj"
+        }
+       },
+       {
+        "t": "не",
+        "lex": "o:не",
+        "lemma": "не",
+        "g": {
+         "pos": "part"
+        }
+       },
+       {
+        "t": "зна́ешь",
+        "sp": false,
+        "lex": "v:знать",
+        "lemma": "знать",
+        "g": {
+         "pos": "verb",
+         "aspect": "impf",
+         "tense": "pres",
+         "person": 2,
+         "number": "sg"
+        }
+       },
+       {
+        "t": ","
+       },
+       {
+        "t": "что",
+        "lex": "o:что",
+        "lemma": "что",
+        "g": {
+         "pos": "conj"
+        }
+       },
+       {
+        "t": "де́лать",
+        "sp": false,
+        "lex": "v:делать",
+        "lemma": "де́лать",
+        "g": {
+         "pos": "verb",
+         "aspect": "impf"
+        }
+       },
+       {
+        "t": ","
+       },
+       {
+        "t": "лу́чше",
+        "lex": "o:лучше",
+        "lemma": "лу́чше",
+        "g": {
+         "pos": "part"
+        }
+       },
+       {
+        "t": "лечь",
+        "lex": "v:лечь",
+        "lemma": "лечь",
+        "g": {
+         "pos": "verb",
+         "aspect": "pf"
+        }
+       },
+       {
+        "t": "спать",
+        "sp": false,
+        "lex": "v:спать",
+        "lemma": "спать",
+        "g": {
+         "pos": "verb",
+         "aspect": "impf"
+        }
+       },
+       {
+        "t": ".",
+        "sp": false
+       }
+      ]
+     },
+     {
+      "en": "In the morning everything will become clear.",
+      "tokens": [
+       {
+        "t": "У́тром",
+        "lex": "n:утро",
+        "lemma": "у́тро",
+        "g": {
+         "pos": "noun",
+         "case": "ins",
+         "number": "sg"
+        }
+       },
+       {
+        "t": "всё",
+        "lex": "o:всё",
+        "lemma": "всё",
+        "g": {
+         "pos": "part"
+        }
+       },
+       {
+        "t": "ста́нет",
+        "lex": "v:стать",
+        "lemma": "стать",
+        "g": {
+         "pos": "verb",
+         "aspect": "pf",
+         "tense": "fut",
+         "person": 3,
+         "number": "sg"
+        }
+       },
+       {
+        "t": "я́сно",
+        "sp": false,
+        "lex": "o:ясно",
+        "lemma": "я́сно",
+        "g": {
+         "pos": "adv"
+        }
+       },
+       {
+        "t": ".",
+        "sp": false
+       }
+      ]
+     },
+     {
+      "en": "Heroes of Russian fairy tales often say this.",
+      "tokens": [
+       {
+        "t": "Так",
+        "lex": "o:так",
+        "lemma": "так",
+        "g": {
+         "pos": "adv"
+        }
+       },
+       {
+        "t": "ча́сто",
+        "lex": "o:часто",
+        "lemma": "ча́сто",
+        "g": {
+         "pos": "adv"
+        }
+       },
+       {
+        "t": "говоря́т",
+        "lex": "v:говорить",
+        "lemma": "говори́ть",
+        "g": {
+         "pos": "verb",
+         "aspect": "impf",
+         "tense": "pres",
+         "person": 3,
+         "number": "pl"
+        }
+       },
+       {
+        "t": "геро́и",
+        "lex": "n:герой",
+        "lemma": "геро́й",
+        "g": {
+         "pos": "noun",
+         "case": "nom",
+         "number": "pl"
+        }
+       },
+       {
+        "t": "ру́сских",
+        "lex": "a:русский",
+        "lemma": "ру́сский",
+        "g": {
+         "pos": "adj",
+         "case": "gen",
+         "number": "pl"
+        }
+       },
+       {
+        "t": "ска́зок",
+        "sp": false,
+        "lex": "n:сказка",
+        "lemma": "ска́зка",
+        "g": {
+         "pos": "noun",
+         "case": "gen",
+         "number": "pl"
+        }
+       },
+       {
+        "t": ".",
+        "sp": false
+       }
+      ]
+     }
+    ],
+    "questions": []
+   }
+  }
+ ]
+}

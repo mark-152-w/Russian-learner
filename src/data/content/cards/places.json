@@ -1,0 +1,1828 @@
+{
+ "$schema": "../../../../schemas/card.schema.json",
+ "id": "cs-places",
+ "title": {
+  "ru": "Места́",
+  "en": "Places"
+ },
+ "bonusXp": 200,
+ "cards": [
+  {
+   "id": "c-moscow",
+   "name": {
+    "ru": "Москва́",
+    "en": "Moscow"
+   },
+   "rarity": "common",
+   "art": {
+    "icon": "🏛️",
+    "hue": 0
+   },
+   "level": "A2",
+   "blurb": {
+    "id": "c-moscow-blurb",
+    "kind": "card-blurb",
+    "level": "A2",
+    "title": {
+     "ru": "Москва́",
+     "en": "Moscow"
+    },
+    "sentences": [
+     {
+      "para": true,
+      "en": "Moscow is the capital of Russia.",
+      "tokens": [
+       {
+        "t": "Москва́",
+        "lex": "n:Москва",
+        "lemma": "Москва́",
+        "g": {
+         "pos": "noun",
+         "case": "nom",
+         "number": "sg"
+        },
+        "rare": true
+       },
+       {
+        "t": "—"
+       },
+       {
+        "t": "столи́ца",
+        "lex": "n:столица",
+        "lemma": "столи́ца",
+        "g": {
+         "pos": "noun",
+         "case": "nom",
+         "number": "sg"
+        },
+        "rare": true
+       },
+       {
+        "t": "Росси́и",
+        "sp": false,
+        "lex": "n:Россия",
+        "lemma": "Росси́я",
+        "g": {
+         "pos": "noun",
+         "case": "gen",
+         "number": "sg"
+        },
+        "rare": true
+       },
+       {
+        "t": ".",
+        "sp": false
+       }
+      ]
+     },
+     {
+      "en": "More than twelve million people live here.",
+      "tokens": [
+       {
+        "t": "Здесь",
+        "lex": "o:здесь",
+        "lemma": "здесь",
+        "g": {
+         "pos": "adv"
+        }
+       },
+       {
+        "t": "живёт",
+        "lex": "v:жить",
+        "lemma": "жить",
+        "g": {
+         "pos": "verb",
+         "aspect": "impf",
+         "tense": "pres",
+         "person": 3,
+         "number": "sg"
+        }
+       },
+       {
+        "t": "бо́льше",
+        "lex": "o:больше",
+        "lemma": "бо́льше",
+        "g": {
+         "pos": "adv"
+        }
+       },
+       {
+        "t": "двена́дцати",
+        "lex": "o:двенадцать",
+        "lemma": "двена́дцать",
+        "g": {
+         "pos": "num",
+         "case": "gen"
+        },
+        "rare": true
+       },
+       {
+        "t": "миллио́нов",
+        "lex": "n:миллион",
+        "lemma": "миллио́н",
+        "g": {
+         "pos": "noun",
+         "case": "gen",
+         "number": "pl"
+        }
+       },
+       {
+        "t": "челове́к",
+        "sp": false,
+        "lex": "n:человек",
+        "lemma": "челове́к",
+        "g": {
+         "pos": "noun",
+         "case": "nom",
+         "number": "sg"
+        }
+       },
+       {
+        "t": ".",
+        "sp": false
+       }
+      ]
+     },
+     {
+      "en": "The Kremlin stands in the centre, and Red Square is next to it.",
+      "tokens": [
+       {
+        "t": "В",
+        "lex": "o:в",
+        "lemma": "в",
+        "g": {
+         "pos": "prep"
+        }
+       },
+       {
+        "t": "це́нтре",
+        "lex": "n:центр",
+        "lemma": "центр",
+        "g": {
+         "pos": "noun",
+         "case": "prep",
+         "number": "sg"
+        }
+       },
+       {
+        "t": "стои́т",
+        "lex": "v:стоять",
+        "lemma": "стоя́ть",
+        "g": {
+         "pos": "verb",
+         "aspect": "impf",
+         "tense": "pres",
+         "person": 3,
+         "number": "sg"
+        }
+       },
+       {
+        "t": "Кремль",
+        "sp": false,
+        "lex": "n:кремль",
+        "lemma": "кремль",
+        "g": {
+         "pos": "noun",
+         "case": "nom",
+         "number": "sg"
+        },
+        "rare": true
+       },
+       {
+        "t": ","
+       },
+       {
+        "t": "а",
+        "lex": "o:а",
+        "lemma": "а",
+        "g": {
+         "pos": "conj"
+        }
+       },
+       {
+        "t": "ря́дом",
+        "lex": "o:рядом",
+        "lemma": "ря́дом",
+        "g": {
+         "pos": "adv"
+        }
+       },
+       {
+        "t": "—"
+       },
+       {
+        "t": "Кра́сная",
+        "lex": "a:красный",
+        "lemma": "кра́сный",
+        "g": {
+         "pos": "adj",
+         "case": "nom",
+         "number": "sg",
+         "gender": "f"
+        }
+       },
+       {
+        "t": "пло́щадь",
+        "sp": false,
+        "lex": "n:площадь",
+        "lemma": "пло́щадь",
+        "g": {
+         "pos": "noun",
+         "case": "nom",
+         "number": "sg"
+        },
+        "rare": true
+       },
+       {
+        "t": ".",
+        "sp": false
+       }
+      ]
+     }
+    ],
+    "questions": []
+   }
+  },
+  {
+   "id": "c-petersburg",
+   "name": {
+    "ru": "Петербу́рг",
+    "en": "St Petersburg"
+   },
+   "rarity": "rare",
+   "art": {
+    "icon": "🌉",
+    "hue": 210
+   },
+   "level": "B1",
+   "blurb": {
+    "id": "c-petersburg-blurb",
+    "kind": "card-blurb",
+    "level": "B1",
+    "title": {
+     "ru": "Петербу́рг",
+     "en": "St Petersburg"
+    },
+    "sentences": [
+     {
+      "para": true,
+      "en": "St Petersburg stands on the Neva.",
+      "tokens": [
+       {
+        "t": "Петербу́рг",
+        "lex": "n:Петербург",
+        "lemma": "Петербу́рг",
+        "g": {
+         "pos": "noun",
+         "case": "nom",
+         "number": "sg"
+        },
+        "rare": true
+       },
+       {
+        "t": "стои́т",
+        "lex": "v:стоять",
+        "lemma": "стоя́ть",
+        "g": {
+         "pos": "verb",
+         "aspect": "impf",
+         "tense": "pres",
+         "person": 3,
+         "number": "sg"
+        }
+       },
+       {
+        "t": "на",
+        "lex": "o:на",
+        "lemma": "на",
+        "g": {
+         "pos": "prep"
+        }
+       },
+       {
+        "t": "Неве́",
+        "sp": false,
+        "lex": "n:Нева",
+        "lemma": "Нева́",
+        "g": {
+         "pos": "noun",
+         "case": "prep",
+         "number": "sg"
+        },
+        "rare": true
+       },
+       {
+        "t": ".",
+        "sp": false
+       }
+      ]
+     },
+     {
+      "en": "In summer there are white nights: at midnight it's as light as day.",
+      "tokens": [
+       {
+        "t": "Ле́том",
+        "lex": "n:лето",
+        "lemma": "ле́то",
+        "g": {
+         "pos": "noun",
+         "case": "ins",
+         "number": "sg"
+        }
+       },
+       {
+        "t": "здесь",
+        "lex": "o:здесь",
+        "lemma": "здесь",
+        "g": {
+         "pos": "adv"
+        }
+       },
+       {
+        "t": "бе́лые",
+        "lex": "a:белый",
+        "lemma": "бе́лый",
+        "g": {
+         "pos": "adj",
+         "case": "nom",
+         "number": "pl"
+        }
+       },
+       {
+        "t": "но́чи",
+        "sp": false,
+        "lex": "n:ночь",
+        "lemma": "ночь",
+        "g": {
+         "pos": "noun",
+         "case": "nom",
+         "number": "pl"
+        }
+       },
+       {
+        "t": ":"
+       },
+       {
+        "t": "в",
+        "lex": "o:в",
+        "lemma": "в",
+        "g": {
+         "pos": "prep"
+        }
+       },
+       {
+        "t": "по́лночь",
+        "lex": "n:полночь",
+        "lemma": "по́лночь",
+        "g": {
+         "pos": "noun",
+         "case": "acc",
+         "number": "sg"
+        }
+       },
+       {
+        "t": "светло́",
+        "sp": false,
+        "lex": "o:светло",
+        "lemma": "светло́",
+        "g": {
+         "pos": "adv"
+        },
+        "rare": true
+       },
+       {
+        "t": ","
+       },
+       {
+        "t": "как",
+        "lemma": "как",
+        "g": {
+         "pos": "conj"
+        },
+        "gloss": "how; as, like"
+       },
+       {
+        "t": "днём",
+        "sp": false,
+        "lex": "n:день",
+        "lemma": "день",
+        "g": {
+         "pos": "noun",
+         "case": "ins",
+         "number": "sg"
+        }
+       },
+       {
+        "t": ".",
+        "sp": false
+       }
+      ]
+     },
+     {
+      "en": "At night the bridges are raised so that ships can pass.",
+      "tokens": [
+       {
+        "t": "Но́чью",
+        "lex": "n:ночь",
+        "lemma": "ночь",
+        "g": {
+         "pos": "noun",
+         "case": "ins",
+         "number": "sg"
+        }
+       },
+       {
+        "t": "мосты́",
+        "lex": "n:мост",
+        "lemma": "мост",
+        "g": {
+         "pos": "noun",
+         "case": "nom",
+         "number": "pl"
+        }
+       },
+       {
+        "t": "разво́дят",
+        "sp": false,
+        "lex": "v:разводить",
+        "lemma": "разводи́ть",
+        "g": {
+         "pos": "verb",
+         "aspect": "impf",
+         "tense": "pres",
+         "person": 3,
+         "number": "pl"
+        },
+        "rare": true
+       },
+       {
+        "t": ","
+       },
+       {
+        "t": "что́бы",
+        "lex": "o:чтобы",
+        "lemma": "что́бы",
+        "g": {
+         "pos": "conj"
+        }
+       },
+       {
+        "t": "прошли́",
+        "lex": "v:пройти",
+        "lemma": "пройти́",
+        "g": {
+         "pos": "verb",
+         "aspect": "pf",
+         "tense": "past",
+         "number": "pl"
+        }
+       },
+       {
+        "t": "корабли́",
+        "sp": false,
+        "lex": "n:корабль",
+        "lemma": "кора́бль",
+        "g": {
+         "pos": "noun",
+         "case": "acc",
+         "number": "pl"
+        }
+       },
+       {
+        "t": ".",
+        "sp": false
+       }
+      ]
+     }
+    ],
+    "questions": []
+   }
+  },
+  {
+   "id": "c-baikal",
+   "name": {
+    "ru": "Байка́л",
+    "en": "Lake Baikal"
+   },
+   "rarity": "epic",
+   "art": {
+    "icon": "💧",
+    "hue": 195
+   },
+   "level": "B1",
+   "blurb": {
+    "id": "c-baikal-blurb",
+    "kind": "card-blurb",
+    "level": "B1",
+    "title": {
+     "ru": "Байка́л",
+     "en": "Lake Baikal"
+    },
+    "sentences": [
+     {
+      "para": true,
+      "en": "Baikal is the deepest lake in the world.",
+      "tokens": [
+       {
+        "t": "Байка́л",
+        "lemma": "Байка́л",
+        "g": {
+         "pos": "name",
+         "case": "nom",
+         "number": "sg"
+        }
+       },
+       {
+        "t": "—"
+       },
+       {
+        "t": "са́мое",
+        "lex": "a:самый",
+        "lemma": "са́мый",
+        "g": {
+         "pos": "adj",
+         "case": "nom",
+         "number": "sg",
+         "gender": "n"
+        }
+       },
+       {
+        "t": "глубо́кое",
+        "lex": "a:глубокий",
+        "lemma": "глубо́кий",
+        "g": {
+         "pos": "adj",
+         "case": "nom",
+         "number": "sg",
+         "gender": "n"
+        }
+       },
+       {
+        "t": "о́зеро",
+        "lex": "n:озеро",
+        "lemma": "о́зеро",
+        "g": {
+         "pos": "noun",
+         "case": "nom",
+         "number": "sg"
+        }
+       },
+       {
+        "t": "в",
+        "lex": "o:в",
+        "lemma": "в",
+        "g": {
+         "pos": "prep"
+        }
+       },
+       {
+        "t": "ми́ре",
+        "sp": false,
+        "lex": "n:мир",
+        "lemma": "мир",
+        "g": {
+         "pos": "noun",
+         "case": "prep",
+         "number": "sg"
+        }
+       },
+       {
+        "t": ".",
+        "sp": false
+       }
+      ]
+     },
+     {
+      "en": "It holds a fifth of all the fresh water on Earth.",
+      "tokens": [
+       {
+        "t": "В",
+        "lex": "o:в",
+        "lemma": "в",
+        "g": {
+         "pos": "prep"
+        }
+       },
+       {
+        "t": "нём",
+        "lex": "o:он",
+        "lemma": "он",
+        "g": {
+         "pos": "pron",
+         "case": "prep"
+        }
+       },
+       {
+        "t": "пя́тая",
+        "lex": "a:пятый",
+        "lemma": "пя́тый",
+        "g": {
+         "pos": "adj",
+         "case": "nom",
+         "number": "sg",
+         "gender": "f"
+        }
+       },
+       {
+        "t": "часть",
+        "lex": "n:часть",
+        "lemma": "часть",
+        "g": {
+         "pos": "noun",
+         "case": "acc",
+         "number": "sg"
+        }
+       },
+       {
+        "t": "всей",
+        "lex": "a:весь",
+        "lemma": "весь",
+        "g": {
+         "pos": "adj",
+         "case": "prep",
+         "number": "sg",
+         "gender": "f"
+        }
+       },
+       {
+        "t": "пре́сной",
+        "lex": "a:пресный",
+        "lemma": "пре́сный",
+        "g": {
+         "pos": "adj",
+         "case": "prep",
+         "number": "sg",
+         "gender": "f"
+        },
+        "rare": true
+       },
+       {
+        "t": "воды́",
+        "lex": "n:вода",
+        "lemma": "вода́",
+        "g": {
+         "pos": "noun",
+         "case": "gen",
+         "number": "sg"
+        }
+       },
+       {
+        "t": "на",
+        "lex": "o:на",
+        "lemma": "на",
+        "g": {
+         "pos": "prep"
+        }
+       },
+       {
+        "t": "Земле́",
+        "sp": false,
+        "lex": "n:земля",
+        "lemma": "земля́",
+        "g": {
+         "pos": "noun",
+         "case": "prep",
+         "number": "sg"
+        }
+       },
+       {
+        "t": ".",
+        "sp": false
+       }
+      ]
+     },
+     {
+      "en": "In winter the ice is so clear that you can see the bottom.",
+      "tokens": [
+       {
+        "t": "Зимо́й",
+        "lex": "n:зима",
+        "lemma": "зима́",
+        "g": {
+         "pos": "noun",
+         "case": "ins",
+         "number": "sg"
+        },
+        "rare": true
+       },
+       {
+        "t": "лёд",
+        "lex": "n:лёд",
+        "lemma": "лёд",
+        "g": {
+         "pos": "noun",
+         "case": "nom",
+         "number": "sg"
+        }
+       },
+       {
+        "t": "тако́й",
+        "lex": "a:такой",
+        "lemma": "тако́й",
+        "g": {
+         "pos": "adj",
+         "case": "nom",
+         "number": "sg",
+         "gender": "m"
+        }
+       },
+       {
+        "t": "прозра́чный",
+        "sp": false,
+        "lex": "a:прозрачный",
+        "lemma": "прозра́чный",
+        "g": {
+         "pos": "adj",
+         "case": "nom",
+         "number": "sg",
+         "gender": "m"
+        },
+        "rare": true
+       },
+       {
+        "t": ","
+       },
+       {
+        "t": "что",
+        "lex": "o:что",
+        "lemma": "что",
+        "g": {
+         "pos": "conj"
+        }
+       },
+       {
+        "t": "ви́дно",
+        "lex": "a:видный",
+        "lemma": "ви́дный",
+        "g": {
+         "pos": "adj",
+         "short": true,
+         "number": "sg",
+         "gender": "n"
+        }
+       },
+       {
+        "t": "дно",
+        "sp": false,
+        "lex": "n:дно",
+        "lemma": "дно",
+        "g": {
+         "pos": "noun",
+         "case": "nom",
+         "number": "sg"
+        }
+       },
+       {
+        "t": ".",
+        "sp": false
+       }
+      ]
+     }
+    ],
+    "questions": []
+   }
+  },
+  {
+   "id": "c-siberia",
+   "name": {
+    "ru": "Сиби́рь",
+    "en": "Siberia"
+   },
+   "rarity": "common",
+   "art": {
+    "icon": "🌲",
+    "hue": 140
+   },
+   "level": "A2",
+   "blurb": {
+    "id": "c-siberia-blurb",
+    "kind": "card-blurb",
+    "level": "A2",
+    "title": {
+     "ru": "Сиби́рь",
+     "en": "Siberia"
+    },
+    "sentences": [
+     {
+      "para": true,
+      "en": "Siberia takes up more than half of Russia.",
+      "tokens": [
+       {
+        "t": "Сиби́рь",
+        "lemma": "Сиби́рь",
+        "g": {
+         "pos": "name",
+         "case": "nom",
+         "number": "sg"
+        }
+       },
+       {
+        "t": "занима́ет",
+        "lex": "v:занимать",
+        "lemma": "занима́ть",
+        "g": {
+         "pos": "verb",
+         "aspect": "impf",
+         "tense": "pres",
+         "person": 3,
+         "number": "sg"
+        },
+        "rare": true
+       },
+       {
+        "t": "бо́льше",
+        "lex": "a:большой",
+        "lemma": "большо́й",
+        "g": {
+         "pos": "comp"
+        }
+       },
+       {
+        "t": "полови́ны",
+        "lex": "n:половина",
+        "lemma": "полови́на",
+        "g": {
+         "pos": "noun",
+         "case": "gen",
+         "number": "sg"
+        }
+       },
+       {
+        "t": "Росси́и",
+        "sp": false,
+        "lex": "n:Россия",
+        "lemma": "Росси́я",
+        "g": {
+         "pos": "noun",
+         "case": "gen",
+         "number": "sg"
+        },
+        "rare": true
+       },
+       {
+        "t": ".",
+        "sp": false
+       }
+      ]
+     },
+     {
+      "en": "In winter it can be minus forty there, and in summer plus thirty.",
+      "tokens": [
+       {
+        "t": "Зимо́й",
+        "lex": "n:зима",
+        "lemma": "зима́",
+        "g": {
+         "pos": "noun",
+         "case": "ins",
+         "number": "sg"
+        },
+        "rare": true
+       },
+       {
+        "t": "там",
+        "lex": "o:там",
+        "lemma": "там",
+        "g": {
+         "pos": "adv"
+        }
+       },
+       {
+        "t": "быва́ет",
+        "lex": "v:бывать",
+        "lemma": "быва́ть",
+        "g": {
+         "pos": "verb",
+         "aspect": "impf",
+         "tense": "pres",
+         "person": 3,
+         "number": "sg"
+        }
+       },
+       {
+        "t": "ми́нус",
+        "lex": "n:минус",
+        "lemma": "ми́нус",
+        "g": {
+         "pos": "noun",
+         "case": "nom",
+         "number": "sg"
+        },
+        "rare": true
+       },
+       {
+        "t": "со́рок",
+        "sp": false,
+        "lex": "o:сорок",
+        "lemma": "со́рок",
+        "g": {
+         "pos": "num",
+         "case": "nom"
+        },
+        "rare": true
+       },
+       {
+        "t": ","
+       },
+       {
+        "t": "а",
+        "lex": "o:а",
+        "lemma": "а",
+        "g": {
+         "pos": "conj"
+        }
+       },
+       {
+        "t": "ле́том",
+        "lex": "n:лето",
+        "lemma": "ле́то",
+        "g": {
+         "pos": "noun",
+         "case": "ins",
+         "number": "sg"
+        },
+        "rare": true
+       },
+       {
+        "t": "—"
+       },
+       {
+        "t": "плюс",
+        "lex": "n:плюс",
+        "lemma": "плюс",
+        "g": {
+         "pos": "noun",
+         "case": "nom",
+         "number": "sg"
+        },
+        "rare": true
+       },
+       {
+        "t": "три́дцать",
+        "sp": false,
+        "lex": "n:тридцать",
+        "lemma": "три́дцать",
+        "g": {
+         "pos": "num",
+         "case": "nom"
+        },
+        "rare": true
+       },
+       {
+        "t": ".",
+        "sp": false
+       }
+      ]
+     }
+    ],
+    "questions": []
+   }
+  },
+  {
+   "id": "c-kamchatka",
+   "name": {
+    "ru": "Камча́тка",
+    "en": "Kamchatka"
+   },
+   "rarity": "epic",
+   "art": {
+    "icon": "🌋",
+    "hue": 10
+   },
+   "level": "A2",
+   "blurb": {
+    "id": "c-kamchatka-blurb",
+    "kind": "card-blurb",
+    "level": "A2",
+    "title": {
+     "ru": "Камча́тка",
+     "en": "Kamchatka"
+    },
+    "sentences": [
+     {
+      "para": true,
+      "en": "Kamchatka has a great many volcanoes and geysers.",
+      "tokens": [
+       {
+        "t": "На",
+        "lex": "o:на",
+        "lemma": "на",
+        "g": {
+         "pos": "prep"
+        }
+       },
+       {
+        "t": "Камча́тке",
+        "lemma": "Камча́тка",
+        "g": {
+         "pos": "name",
+         "case": "prep",
+         "number": "sg"
+        }
+       },
+       {
+        "t": "о́чень",
+        "lex": "o:очень",
+        "lemma": "о́чень",
+        "g": {
+         "pos": "adv"
+        }
+       },
+       {
+        "t": "мно́го",
+        "lex": "o:много",
+        "lemma": "мно́го",
+        "g": {
+         "pos": "adv"
+        }
+       },
+       {
+        "t": "вулка́нов",
+        "lex": "n:вулкан",
+        "lemma": "вулка́н",
+        "g": {
+         "pos": "noun",
+         "case": "gen",
+         "number": "pl"
+        },
+        "rare": true
+       },
+       {
+        "t": "и",
+        "lex": "o:и",
+        "lemma": "и",
+        "g": {
+         "pos": "conj"
+        }
+       },
+       {
+        "t": "ге́йзеров",
+        "sp": false,
+        "lex": "n:гейзер",
+        "lemma": "ге́йзер",
+        "g": {
+         "pos": "noun",
+         "case": "gen",
+         "number": "pl"
+        },
+        "rare": true
+       },
+       {
+        "t": ".",
+        "sp": false
+       }
+      ]
+     },
+     {
+      "en": "Bears are ordinary neighbours here.",
+      "tokens": [
+       {
+        "t": "Медве́ди",
+        "lex": "n:медведь",
+        "lemma": "медве́дь",
+        "g": {
+         "pos": "noun",
+         "case": "nom",
+         "number": "pl"
+        },
+        "rare": true
+       },
+       {
+        "t": "здесь",
+        "lex": "o:здесь",
+        "lemma": "здесь",
+        "g": {
+         "pos": "adv"
+        }
+       },
+       {
+        "t": "—"
+       },
+       {
+        "t": "обы́чные",
+        "lex": "a:обычный",
+        "lemma": "обы́чный",
+        "g": {
+         "pos": "adj",
+         "case": "nom",
+         "number": "pl"
+        }
+       },
+       {
+        "t": "сосе́ди",
+        "sp": false,
+        "lex": "n:сосед",
+        "lemma": "сосе́д",
+        "g": {
+         "pos": "noun",
+         "case": "nom",
+         "number": "pl"
+        }
+       },
+       {
+        "t": ".",
+        "sp": false
+       }
+      ]
+     }
+    ],
+    "questions": []
+   }
+  },
+  {
+   "id": "c-kazan",
+   "name": {
+    "ru": "Каза́нь",
+    "en": "Kazan"
+   },
+   "rarity": "common",
+   "art": {
+    "icon": "🕌",
+    "hue": 150
+   },
+   "level": "A2",
+   "blurb": {
+    "id": "c-kazan-blurb",
+    "kind": "card-blurb",
+    "level": "A2",
+    "title": {
+     "ru": "Каза́нь",
+     "en": "Kazan"
+    },
+    "sentences": [
+     {
+      "para": true,
+      "en": "Russians and Tatars live in Kazan.",
+      "tokens": [
+       {
+        "t": "В",
+        "lex": "o:в",
+        "lemma": "в",
+        "g": {
+         "pos": "prep"
+        }
+       },
+       {
+        "t": "Каза́ни",
+        "lemma": "Каза́нь",
+        "g": {
+         "pos": "name",
+         "case": "prep",
+         "number": "sg"
+        }
+       },
+       {
+        "t": "живу́т",
+        "lex": "v:жить",
+        "lemma": "жить",
+        "g": {
+         "pos": "verb",
+         "aspect": "impf",
+         "tense": "pres",
+         "person": 3,
+         "number": "pl"
+        }
+       },
+       {
+        "t": "ру́сские",
+        "lex": "a:русский",
+        "lemma": "ру́сский",
+        "g": {
+         "pos": "adj",
+         "case": "nom",
+         "number": "pl"
+        }
+       },
+       {
+        "t": "и",
+        "lex": "o:и",
+        "lemma": "и",
+        "g": {
+         "pos": "conj"
+        }
+       },
+       {
+        "t": "тата́ры",
+        "sp": false,
+        "lex": "n:татарин",
+        "lemma": "тата́рин",
+        "g": {
+         "pos": "noun",
+         "case": "nom",
+         "number": "pl"
+        },
+        "rare": true
+       },
+       {
+        "t": ".",
+        "sp": false
+       }
+      ]
+     },
+     {
+      "en": "In the Kazan Kremlin a mosque and a church stand side by side.",
+      "tokens": [
+       {
+        "t": "В",
+        "lex": "o:в",
+        "lemma": "в",
+        "g": {
+         "pos": "prep"
+        }
+       },
+       {
+        "t": "Кремле́",
+        "lex": "n:кремль",
+        "lemma": "кремль",
+        "g": {
+         "pos": "noun",
+         "case": "prep",
+         "number": "sg"
+        },
+        "rare": true
+       },
+       {
+        "t": "Каза́ни",
+        "lemma": "Каза́нь",
+        "g": {
+         "pos": "name",
+         "case": "prep",
+         "number": "sg"
+        }
+       },
+       {
+        "t": "ря́дом",
+        "lex": "o:рядом",
+        "lemma": "ря́дом",
+        "g": {
+         "pos": "adv"
+        }
+       },
+       {
+        "t": "стоя́т",
+        "lex": "v:стоять",
+        "lemma": "стоя́ть",
+        "g": {
+         "pos": "verb",
+         "aspect": "impf",
+         "tense": "pres",
+         "person": 3,
+         "number": "pl"
+        }
+       },
+       {
+        "t": "мече́ть",
+        "lex": "n:мечеть",
+        "lemma": "мече́ть",
+        "g": {
+         "pos": "noun",
+         "case": "nom",
+         "number": "sg"
+        },
+        "rare": true
+       },
+       {
+        "t": "и",
+        "lex": "o:и",
+        "lemma": "и",
+        "g": {
+         "pos": "conj"
+        }
+       },
+       {
+        "t": "це́рковь",
+        "sp": false,
+        "lex": "n:церковь",
+        "lemma": "це́рковь",
+        "g": {
+         "pos": "noun",
+         "case": "nom",
+         "number": "sg"
+        }
+       },
+       {
+        "t": ".",
+        "sp": false
+       }
+      ]
+     }
+    ],
+    "questions": []
+   }
+  },
+  {
+   "id": "c-volga",
+   "name": {
+    "ru": "Во́лга",
+    "en": "The Volga"
+   },
+   "rarity": "rare",
+   "art": {
+    "icon": "🛶",
+    "hue": 205
+   },
+   "level": "A2",
+   "blurb": {
+    "id": "c-volga-blurb",
+    "kind": "card-blurb",
+    "level": "A2",
+    "title": {
+     "ru": "Во́лга",
+     "en": "The Volga"
+    },
+    "sentences": [
+     {
+      "para": true,
+      "en": "The Volga is the longest river in Europe.",
+      "tokens": [
+       {
+        "t": "Во́лга",
+        "lex": "n:волга",
+        "lemma": "во́лга",
+        "g": {
+         "pos": "noun",
+         "case": "nom",
+         "number": "sg"
+        },
+        "rare": true
+       },
+       {
+        "t": "—"
+       },
+       {
+        "t": "са́мая",
+        "lex": "a:самый",
+        "lemma": "са́мый",
+        "g": {
+         "pos": "adj",
+         "case": "nom",
+         "number": "sg",
+         "gender": "f"
+        }
+       },
+       {
+        "t": "дли́нная",
+        "lex": "a:длинный",
+        "lemma": "дли́нный",
+        "g": {
+         "pos": "adj",
+         "case": "nom",
+         "number": "sg",
+         "gender": "f"
+        }
+       },
+       {
+        "t": "река́",
+        "lex": "n:река",
+        "lemma": "река́",
+        "g": {
+         "pos": "noun",
+         "case": "nom",
+         "number": "sg"
+        }
+       },
+       {
+        "t": "в",
+        "lex": "o:в",
+        "lemma": "в",
+        "g": {
+         "pos": "prep"
+        }
+       },
+       {
+        "t": "Евро́пе",
+        "sp": false,
+        "lex": "n:Европа",
+        "lemma": "Евро́па",
+        "g": {
+         "pos": "noun",
+         "case": "prep",
+         "number": "sg"
+        },
+        "rare": true
+       },
+       {
+        "t": ".",
+        "sp": false
+       }
+      ]
+     },
+     {
+      "en": "Russians call it \"Mother Volga\".",
+      "tokens": [
+       {
+        "t": "Ру́сские",
+        "lex": "a:русский",
+        "lemma": "ру́сский",
+        "g": {
+         "pos": "adj",
+         "case": "nom",
+         "number": "pl"
+        }
+       },
+       {
+        "t": "называ́ют",
+        "lex": "v:называть",
+        "lemma": "называ́ть",
+        "g": {
+         "pos": "verb",
+         "aspect": "impf",
+         "tense": "pres",
+         "person": 3,
+         "number": "pl"
+        }
+       },
+       {
+        "t": "её",
+        "lex": "o:она",
+        "lemma": "она́",
+        "g": {
+         "pos": "pron",
+         "case": "acc"
+        }
+       },
+       {
+        "t": "«",
+        "sp": false
+       },
+       {
+        "t": "ма́тушка",
+        "lex": "n:матушка",
+        "lemma": "ма́тушка",
+        "g": {
+         "pos": "noun",
+         "case": "nom",
+         "number": "sg"
+        },
+        "rare": true
+       },
+       {
+        "t": "Во́лга",
+        "sp": false,
+        "lex": "n:волга",
+        "lemma": "во́лга",
+        "g": {
+         "pos": "noun",
+         "case": "nom",
+         "number": "sg"
+        },
+        "rare": true
+       },
+       {
+        "t": "»",
+        "sp": false
+       },
+       {
+        "t": ".",
+        "sp": false
+       }
+      ]
+     }
+    ],
+    "questions": []
+   }
+  },
+  {
+   "id": "c-hermitage",
+   "name": {
+    "ru": "Эрмита́ж",
+    "en": "The Hermitage"
+   },
+   "rarity": "legendary",
+   "art": {
+    "icon": "🖼️",
+    "hue": 45
+   },
+   "level": "B1",
+   "blurb": {
+    "id": "c-hermitage-blurb",
+    "kind": "card-blurb",
+    "level": "B1",
+    "title": {
+     "ru": "Эрмита́ж",
+     "en": "The Hermitage"
+    },
+    "sentences": [
+     {
+      "para": true,
+      "en": "The Hermitage is one of the biggest museums in the world.",
+      "tokens": [
+       {
+        "t": "Эрмита́ж",
+        "lemma": "Эрмита́ж",
+        "g": {
+         "pos": "name",
+         "case": "nom",
+         "number": "sg"
+        }
+       },
+       {
+        "t": "—"
+       },
+       {
+        "t": "оди́н",
+        "lex": "o:один",
+        "lemma": "оди́н",
+        "g": {
+         "pos": "num",
+         "case": "nom",
+         "gender": "m"
+        }
+       },
+       {
+        "t": "из",
+        "lex": "o:из",
+        "lemma": "из",
+        "g": {
+         "pos": "prep"
+        }
+       },
+       {
+        "t": "са́мых",
+        "lex": "a:самый",
+        "lemma": "са́мый",
+        "g": {
+         "pos": "adj",
+         "case": "gen",
+         "number": "pl"
+        }
+       },
+       {
+        "t": "больши́х",
+        "lex": "a:большой",
+        "lemma": "большо́й",
+        "g": {
+         "pos": "adj",
+         "case": "gen",
+         "number": "pl"
+        }
+       },
+       {
+        "t": "музе́ев",
+        "lex": "n:музей",
+        "lemma": "музе́й",
+        "g": {
+         "pos": "noun",
+         "case": "gen",
+         "number": "pl"
+        }
+       },
+       {
+        "t": "ми́ра",
+        "sp": false,
+        "lex": "n:мир",
+        "lemma": "мир",
+        "g": {
+         "pos": "noun",
+         "case": "gen",
+         "number": "sg"
+        }
+       },
+       {
+        "t": ".",
+        "sp": false
+       }
+      ]
+     },
+     {
+      "en": "They say that if you looked at each painting for one minute, it would take many years to see everything.",
+      "tokens": [
+       {
+        "t": "Говоря́т",
+        "sp": false,
+        "lex": "v:говорить",
+        "lemma": "говори́ть",
+        "g": {
+         "pos": "verb",
+         "aspect": "impf",
+         "tense": "pres",
+         "person": 3,
+         "number": "pl"
+        }
+       },
+       {
+        "t": ","
+       },
+       {
+        "t": "что",
+        "lex": "o:что",
+        "lemma": "что",
+        "g": {
+         "pos": "conj"
+        }
+       },
+       {
+        "t": "е́сли",
+        "lex": "o:если",
+        "lemma": "е́сли",
+        "g": {
+         "pos": "conj"
+        }
+       },
+       {
+        "t": "смотре́ть",
+        "lex": "v:смотреть",
+        "lemma": "смотре́ть",
+        "g": {
+         "pos": "verb",
+         "aspect": "impf"
+        }
+       },
+       {
+        "t": "на",
+        "lex": "o:на",
+        "lemma": "на",
+        "g": {
+         "pos": "prep"
+        }
+       },
+       {
+        "t": "ка́ждую",
+        "lex": "a:каждый",
+        "lemma": "ка́ждый",
+        "g": {
+         "pos": "adj",
+         "case": "acc",
+         "number": "sg",
+         "gender": "f"
+        }
+       },
+       {
+        "t": "карти́ну",
+        "lex": "n:картина",
+        "lemma": "карти́на",
+        "g": {
+         "pos": "noun",
+         "case": "acc",
+         "number": "sg"
+        }
+       },
+       {
+        "t": "одну́",
+        "lex": "o:один",
+        "lemma": "оди́н",
+        "g": {
+         "pos": "num",
+         "case": "acc",
+         "gender": "f"
+        }
+       },
+       {
+        "t": "мину́ту",
+        "sp": false,
+        "lex": "n:минута",
+        "lemma": "мину́та",
+        "g": {
+         "pos": "noun",
+         "case": "acc",
+         "number": "sg"
+        }
+       },
+       {
+        "t": ","
+       },
+       {
+        "t": "на",
+        "lex": "o:на",
+        "lemma": "на",
+        "g": {
+         "pos": "part"
+        }
+       },
+       {
+        "t": "всё",
+        "lex": "o:всё",
+        "lemma": "всё",
+        "g": {
+         "pos": "part"
+        }
+       },
+       {
+        "t": "уйдёт",
+        "lex": "v:уйти",
+        "lemma": "уйти́",
+        "g": {
+         "pos": "verb",
+         "aspect": "pf",
+         "tense": "fut",
+         "person": 3,
+         "number": "sg"
+        }
+       },
+       {
+        "t": "мно́го",
+        "lex": "o:много",
+        "lemma": "мно́го",
+        "g": {
+         "pos": "adv"
+        }
+       },
+       {
+        "t": "лет",
+        "sp": false,
+        "lex": "n:год",
+        "lemma": "год",
+        "g": {
+         "pos": "noun",
+         "case": "gen",
+         "number": "pl"
+        }
+       },
+       {
+        "t": ".",
+        "sp": false
+       }
+      ]
+     },
+     {
+      "en": "Cats live in the museum: they catch mice.",
+      "tokens": [
+       {
+        "t": "В",
+        "lex": "o:в",
+        "lemma": "в",
+        "g": {
+         "pos": "prep"
+        }
+       },
+       {
+        "t": "музе́е",
+        "lex": "n:музей",
+        "lemma": "музе́й",
+        "g": {
+         "pos": "noun",
+         "case": "prep",
+         "number": "sg"
+        }
+       },
+       {
+        "t": "живу́т",
+        "lex": "v:жить",
+        "lemma": "жить",
+        "g": {
+         "pos": "verb",
+         "aspect": "impf",
+         "tense": "pres",
+         "person": 3,
+         "number": "pl"
+        }
+       },
+       {
+        "t": "ко́шки",
+        "sp": false,
+        "lex": "n:кошка",
+        "lemma": "ко́шка",
+        "g": {
+         "pos": "noun",
+         "case": "nom",
+         "number": "pl"
+        }
+       },
+       {
+        "t": ":"
+       },
+       {
+        "t": "они́",
+        "lex": "o:они",
+        "lemma": "они́",
+        "g": {
+         "pos": "pron",
+         "case": "nom"
+        }
+       },
+       {
+        "t": "ло́вят",
+        "lex": "v:ловить",
+        "lemma": "лови́ть",
+        "g": {
+         "pos": "verb",
+         "aspect": "impf",
+         "tense": "pres",
+         "person": 3,
+         "number": "pl"
+        }
+       },
+       {
+        "t": "мыше́й",
+        "sp": false,
+        "lex": "n:мышь",
+        "lemma": "мышь",
+        "g": {
+         "pos": "noun",
+         "case": "acc",
+         "number": "pl"
+        },
+        "rare": true
+       },
+       {
+        "t": ".",
+        "sp": false
+       }
+      ]
+     }
+    ],
+    "questions": []
+   }
+  }
+ ]
+}

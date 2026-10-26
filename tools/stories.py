@@ -548,14 +548,18 @@ def grammemes(w: Word, ctx: Ctx, nxt) -> dict:
 
 
 # --------------------------------------------------------------------------- source files
-def parse_source(path: Path):
-    head, body, qs = (path.read_text(encoding="utf-8").split("\n---\n") + ["", ""])[:3]
+def parse_meta(head: str) -> dict:
     meta = {}
     for line in head.splitlines():
         if ":" in line:
             k, v = line.split(":", 1)
             meta[k.strip()] = v.strip()
-    return meta, body, qs
+    return meta
+
+
+def parse_source(path: Path):
+    head, body, qs = (path.read_text(encoding="utf-8").split("\n---\n") + ["", ""])[:3]
+    return parse_meta(head), body, qs
 
 
 def tokenize(text: str, ctx: Ctx, level: str, problems: list, notes: list, where: str):
@@ -625,6 +629,10 @@ def tokenize(text: str, ctx: Ctx, level: str, problems: list, notes: list, where
 
 def build(path: Path, ctx: Ctx, problems: list, notes: list):
     meta, body, qs = parse_source(path)
+    return build_text(path.name, meta, body, qs, ctx, problems, notes)
+
+
+def build_text(name: str, meta: dict, body: str, qs: str, ctx: Ctx, problems: list, notes: list):
     sid = meta["id"]
     level = meta["level"]
     kind = meta.get("kind", "story")
@@ -648,7 +656,7 @@ def build(path: Path, ctx: Ctx, problems: list, notes: list):
         ru, _, en = line.partition("|")
         ru, en = ru.strip(), en.strip()
         if not en:
-            problems.append(f"{path.name}:{n}: missing English after |")
+            problems.append(f"{name}:{n}: missing English after |")
         sent = {}
         if para:
             sent["para"] = True
@@ -658,7 +666,7 @@ def build(path: Path, ctx: Ctx, problems: list, notes: list):
             sent["speaker"] = m.group(1)
             ru = m.group(2)
         sent["en"] = en
-        sent["tokens"] = tokenize(ru, ctx, level, problems, notes, f"{path.name}:{n}")
+        sent["tokens"] = tokenize(ru, ctx, level, problems, notes, f"{name}:{n}")
         sentences.append(sent)
     story["sentences"] = sentences
     questions = []
@@ -689,9 +697,43 @@ def build(path: Path, ctx: Ctx, problems: list, notes: list):
             cur["reason"] = rest
     for q in questions:
         if len(q["accept"]) != 1 or len(q["distractors"]) < 2:
-            problems.append(f"{path.name}: question {q['id']} needs one + and at least two -")
+            problems.append(f"{name}: question {q['id']} needs one + and at least two -")
     story["questions"] = questions
     return story
+
+
+CARDS_SRC = ROOT / "tools" / "cards"
+CARDS_OUT = ROOT / "src" / "data" / "content" / "cards"
+
+
+def build_cards(ctx: Ctx, problems: list, notes: list) -> list:
+    """tools/cards/<set>.txt: a set header, then cards separated by '===' lines; each card has a header
+    (id, name: ru | en, rarity, level, art: <emoji> <hue>), '---', and a short blurb (one sentence per line)."""
+    CARDS_OUT.mkdir(parents=True, exist_ok=True)
+    sets = []
+    for path in sorted(CARDS_SRC.glob("*.txt")):
+        blocks = path.read_text(encoding="utf-8").split("\n===\n")
+        head = parse_meta(blocks[0])
+        t_ru, _, t_en = head["title"].partition("|")
+        cs = {"$schema": "../../../../schemas/card.schema.json", "id": head["set"], "title": {"ru": t_ru.strip(), "en": t_en.strip()},
+              "bonusXp": int(head.get("bonusXp", 200)), "cards": []}
+        for block in blocks[1:]:
+            h, _, body = block.partition("\n---\n")
+            meta = parse_meta(h)
+            icon, _, hue = meta["art"].rpartition(" ")
+            n_ru, _, n_en = meta["name"].partition("|")
+            blurb = build_text(f"{path.name}:{meta['id']}", {"id": f"{meta['id']}-blurb", "kind": "card-blurb", "level": meta["level"], "title": meta["name"]},
+                               body, "", ctx, problems, notes)
+            del blurb["$schema"]
+            cs["cards"].append({"id": meta["id"], "name": {"ru": n_ru.strip(), "en": n_en.strip()}, "rarity": meta["rarity"],
+                                "art": {"icon": icon.strip(), "hue": int(hue)}, "level": meta["level"], "blurb": blurb})
+        (CARDS_OUT / f"{path.stem}.json").write_text(json.dumps(cs, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+        sets.append(cs)
+    # the collection and the chests need names and rarities, not the analysed blurbs
+    index = [{k: cs[k] for k in ("id", "title", "bonusXp")} | {"file": path.stem, "cards": [{k: c[k] for k in ("id", "name", "rarity", "art", "level")} for c in cs["cards"]]}
+             for cs, path in zip(sets, sorted(CARDS_SRC.glob("*.txt")))]
+    (ROOT / "src" / "data" / "cards-index.json").write_text(json.dumps(index, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+    return sets
 
 
 def main():
@@ -704,6 +746,7 @@ def main():
         story = build(path, ctx, problems, notes)
         (OUT / f"{story['id']}.json").write_text(json.dumps(story, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
         built.append(story)
+    sets = build_cards(ctx, problems, notes)
     words = sum(1 for s in built for se in s["sentences"] for t in se["tokens"] if "g" in t)
     # the library lists texts without loading every token
     index = [
@@ -722,7 +765,7 @@ def main():
         + "\n## Decisions\n\n" + "".join(f"- {n}\n" for n in notes),
         encoding="utf-8",
     )
-    print(f"{len(built)} texts, {words} words, {len(notes)} context decisions, {len(problems)} problems")
+    print(f"{len(built)} texts, {words} words, {sum(len(c['cards']) for c in sets)} cards, {len(notes)} context decisions, {len(problems)} problems")
     for p in problems[:60]:
         print("  PROBLEM", p)
     return 1 if problems else 0

@@ -186,6 +186,23 @@ export default function Home() {
 
       {FEATURES.has('vocab') && <VocabularyCard />}
 
+      {(FEATURES.has('town') || FEATURES.has('cards')) && (
+        <div className="grid grid-cols-2 gap-3">
+          {FEATURES.has('town') && (
+            <Link to="/town" className="rounded-xl border-2 border-line bg-paper-2 px-4 py-3 transition hover:border-red active:scale-[0.99]">
+              <span className="block font-bold">🏘️ Your town</span>
+              <span className="text-sm text-ink-soft">Grows as you learn</span>
+            </Link>
+          )}
+          {FEATURES.has('cards') && (
+            <Link to="/cards" className="rounded-xl border-2 border-line bg-paper-2 px-4 py-3 transition hover:border-red active:scale-[0.99]">
+              <span className="block font-bold">🃏 Cards</span>
+              <span className="text-sm text-ink-soft">Your collection</span>
+            </Link>
+          )}
+        </div>
+      )}
+
       <Card className="space-y-3">
         <h2 className="font-serif text-xl">Today's quests</h2>
         {[...daily, ...weekly].map((q) => {

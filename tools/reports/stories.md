@@ -2,13 +2,13 @@
 
 60 texts, 7242 analysed words. Decisions taken by a context rule (check a sample):
 
-- lexeme: 581
-- open: 309
-- nom: 300
-- acc: 261
-- gen: 61
+- lexeme: 624
+- nom: 340
+- open: 328
+- acc: 274
+- gen: 64
 - prep: 42
-- agrees with its adjective: 38
+- agrees with its adjective: 40
 - no agreement with году́: 5
 - no agreement with он: 2
 - no agreement with его́: 2
@@ -28,6 +28,8 @@
 - no agreement with просту́да: 1
 - no agreement with гости́ная: 1
 - no agreement with пра́вда: 1
+- no agreement with по́мощь: 1
+- no agreement with апре́ля: 1
 
 ## Problems
 
@@ -1652,3 +1654,125 @@ None.
 - dl-b2-04.txt:7: «жи́зни» prep: location
 - dl-b2-04.txt:8: «Э́то» no agreement with пра́вда
 - dl-b2-04.txt:8: «Э́то» open: n_nom/n_acc → n_nom
+- culture.txt:c-matryoshka:1: «ку́клы» nom: subject
+- culture.txt:c-matryoshka:2: «пять» nom: subject
+- culture.txt:c-samovar:1: «Самова́р» nom: subject
+- culture.txt:c-samovar:1: «ча́йник» nom: subject
+- culture.txt:c-samovar:1: «кото́ром» open: m_prep/n_prep → m_prep
+- culture.txt:c-samovar:1: «во́ду» lexeme: chose n:вода over n:вод
+- culture.txt:c-maslenitsa:1: «пра́здник» nom: subject
+- culture.txt:c-maslenitsa:2: «блины́» acc: after a transitive verb
+- culture.txt:c-maslenitsa:2: «чу́чело» acc: after a transitive verb
+- culture.txt:c-dacha:1: «дом» nom: subject
+- culture.txt:c-dacha:2: «Ле́том» lexeme: chose n:лето over o:летом
+- culture.txt:c-dacha:2: «мно́гие» open: pl_nom/pl_acc → pl_nom
+- culture.txt:c-dacha:2: «ру́сские» open: pl_nom/pl_acc → pl_nom
+- culture.txt:c-dacha:2: «выходны́е» lexeme: chose n:выходные over n:выходной
+- culture.txt:c-dacha:2: «о́вощи» lexeme: chose n:овощ over n:овощи
+- culture.txt:c-dacha:2: «о́вощи» acc: after a transitive verb
+- culture.txt:c-new-year:1: «год» nom: subject
+- culture.txt:c-new-year:1: «пра́здник» nom: subject
+- culture.txt:c-new-year:2: «сала́т» nom: subject
+- culture.txt:c-new-year:2: «оливье́» open: sg_nom/pl_nom → sg_nom
+- culture.txt:c-new-year:2: «пода́рки» nom: subject
+- culture.txt:c-ballet:1: «бале́т» nom: subject
+- culture.txt:c-ballet:1: «ми́ре» lexeme: chose n:мир over n:миро
+- culture.txt:c-ballet:2: «Биле́ты» nom: subject
+- culture.txt:c-gzhel:1: «Гжель» nom: subject
+- culture.txt:c-gzhel:2: «Её» lexeme: chose o:она over o:её
+- culture.txt:c-gzhel:2: «Её» open: acc/gen → acc
+- culture.txt:c-gzhel:2: «уже́» lexeme: chose o:уже over n:уж
+- culture.txt:c-gzhel:2: «лет» lexeme: chose n:год over n:лета, n:лёт
+- idioms.txt:c-sobaka:2: «нашли́» lexeme: chose v:найти over v:наслать
+- idioms.txt:c-sobaka:2: «пробле́мы» gen: follows a noun (possession)
+- idioms.txt:c-lapsha:1: «вам» lexeme: chose o:вы over o:вам
+- idioms.txt:c-lapsha:2: «мне» lexeme: chose o:я over o:мне
+- idioms.txt:c-lapsha:2: «кото́рый» open: m_nom/m_acc → m_nom
+- idioms.txt:c-rak:1: «Ра́ки» lexeme: chose n:рак over n:рака
+- idioms.txt:c-maslo:1: «всё» lexeme: chose o:всё over o:все
+- idioms.txt:c-maslo:1: «всё» lexeme: chose o:всё over o:все
+- idioms.txt:c-medvezhya:1: «Э́то» no agreement with по́мощь
+- idioms.txt:c-medvezhya:1: «Э́то» open: n_nom/n_acc → n_nom
+- idioms.txt:c-medvezhya:1: «по́мощь» nom: subject
+- idioms.txt:c-trud:2: «Её» lexeme: chose o:она over o:её
+- idioms.txt:c-trud:2: «Её» open: acc/gen → acc
+- idioms.txt:c-utro:2: «У́тром» lexeme: chose n:утро over o:утром
+- idioms.txt:c-utro:2: «всё» lexeme: chose o:всё over o:все
+- people.txt:c-pushkin:1: «Росси́и» gen: follows a noun (possession)
+- people.txt:c-pushkin:2: «жил» lexeme: chose v:жить over n:жила
+- people.txt:c-pushkin:2: «ве́ке» lexeme: chose n:век over n:веко
+- people.txt:c-pushkin:2: «стихи́» acc: after a transitive verb
+- people.txt:c-pushkin:2: «ска́зки» acc: listed after стихи́
+- people.txt:c-pushkin:2: «рома́ны» acc: listed after ска́зки
+- people.txt:c-pushkin:3: «Ру́сские» open: pl_nom/pl_acc → pl_nom
+- people.txt:c-pushkin:3: «на́ше» open: n_nom/n_acc → n_nom
+- people.txt:c-pushkin:3: «всё» lexeme: chose o:всё over o:все
+- people.txt:c-tolstoy:1: «рома́н» acc: after a transitive verb
+- people.txt:c-tolstoy:1: «мир» nom: listed after Война́
+- people.txt:c-tolstoy:1: «ми́ре» lexeme: chose n:мир over n:миро
+- people.txt:c-tolstoy:2: «его́» lexeme: chose o:он over o:его, o:оно
+- people.txt:c-tolstoy:2: «его́» acc: after a transitive verb
+- people.txt:c-dostoevsky:1: «что» nom: subject
+- people.txt:c-dostoevsky:1: «добро́» nom: subject
+- people.txt:c-dostoevsky:1: «зло» nom: listed after добро́
+- people.txt:c-dostoevsky:1: «есть» lexeme: chose v:быть over o:есть, v:есть
+- people.txt:c-dostoevsky:1: «есть» open: np_3sg/np_3pl → np_3sg
+- people.txt:c-dostoevsky:2: «Его́» lexeme: chose o:он over o:его, o:оно
+- people.txt:c-dostoevsky:2: «Его́» open: acc/gen → acc
+- people.txt:c-dostoevsky:2: «рома́н» nom: subject
+- people.txt:c-dostoevsky:2: «Преступле́ние» nom: subject
+- people.txt:c-dostoevsky:2: «наказа́ние» nom: listed after Преступле́ние
+- people.txt:c-dostoevsky:2: «ми́ре» lexeme: chose n:мир over n:миро
+- people.txt:c-gagarin:1: «пе́рвым» open: m_ins/n_ins/pl_dat → m_ins
+- people.txt:c-gagarin:3: «двена́дцатое» no agreement with апре́ля
+- people.txt:c-gagarin:3: «двена́дцатое» open: n_nom/n_acc → n_nom
+- people.txt:c-gagarin:3: «пра́здник» nom: subject
+- people.txt:c-tchaikovsky:2: «Его́» lexeme: chose o:он over o:его, o:оно
+- people.txt:c-tchaikovsky:2: «Его́» open: acc/gen → acc
+- people.txt:c-tchaikovsky:2: «бале́т» nom: subject
+- people.txt:c-tchaikovsky:2: «о́зеро» nom: subject
+- people.txt:c-tchaikovsky:2: «ми́ре» lexeme: chose n:мир over n:миро
+- people.txt:c-tereshkova:2: «почти́» lexeme: chose o:почти over v:почесть, v:почтить
+- people.txt:c-tereshkova:2: «три» lexeme: chose o:три over v:тереть
+- people.txt:c-tereshkova:2: «три» acc: a number after the verb
+- people.txt:c-shostakovich:1: «пятна́дцать» acc: after a transitive verb
+- places.txt:c-moscow:1: «Росси́и» gen: follows a noun (possession)
+- places.txt:c-moscow:3: «Кремль» nom: subject
+- places.txt:c-moscow:3: «ря́дом» lexeme: chose o:рядом over n:ряд
+- places.txt:c-moscow:3: «пло́щадь» agrees with its adjective
+- places.txt:c-petersburg:1: «Петербу́рг» nom: subject
+- places.txt:c-petersburg:2: «Ле́том» lexeme: chose n:лето over o:летом
+- places.txt:c-petersburg:2: «но́чи» agrees with its adjective
+- places.txt:c-petersburg:2: «но́чи» nom: subject
+- places.txt:c-petersburg:2: «днём» lexeme: chose n:день over o:днём
+- places.txt:c-petersburg:3: «мосты́» nom: subject
+- places.txt:c-petersburg:3: «корабли́» acc: after a transitive verb
+- places.txt:c-baikal:1: «Байка́л» nom: subject
+- places.txt:c-baikal:1: «о́зеро» nom: subject
+- places.txt:c-baikal:1: «ми́ре» lexeme: chose n:мир over n:миро
+- places.txt:c-baikal:2: «нём» lexeme: chose o:он over o:оно
+- places.txt:c-baikal:3: «Зимо́й» lexeme: chose n:зима over o:зимой
+- places.txt:c-baikal:3: «лёд» nom: subject
+- places.txt:c-baikal:3: «тако́й» open: m_nom/m_acc/f_gen/f_dat/f_ins → m_nom
+- places.txt:c-baikal:3: «прозра́чный» open: m_nom/m_acc → m_nom
+- places.txt:c-baikal:3: «дно» nom: subject
+- places.txt:c-siberia:1: «Сиби́рь» nom: subject
+- places.txt:c-siberia:2: «Зимо́й» lexeme: chose n:зима over o:зимой
+- places.txt:c-siberia:2: «ми́нус» nom: subject
+- places.txt:c-siberia:2: «ле́том» lexeme: chose n:лето over o:летом
+- places.txt:c-siberia:2: «плюс» nom: subject
+- places.txt:c-siberia:2: «три́дцать» nom: subject
+- places.txt:c-kazan:1: «ру́сские» open: pl_nom/pl_acc → pl_nom
+- places.txt:c-kazan:2: «ря́дом» lexeme: chose o:рядом over n:ряд
+- places.txt:c-kazan:2: «мече́ть» nom: subject
+- places.txt:c-kazan:2: «це́рковь» nom: listed after мече́ть
+- places.txt:c-volga:2: «Ру́сские» open: pl_nom/pl_acc → pl_nom
+- places.txt:c-volga:2: «её» lexeme: chose o:она over o:её
+- places.txt:c-volga:2: «её» acc: after a transitive verb
+- places.txt:c-hermitage:1: «Эрмита́ж» nom: subject
+- places.txt:c-hermitage:1: «ми́ра» lexeme: chose n:мир over n:миро
+- places.txt:c-hermitage:2: «всё» lexeme: chose o:всё over o:все
+- places.txt:c-hermitage:2: «лет» lexeme: chose n:год over n:лета, n:лёт
+- places.txt:c-hermitage:3: «ко́шки» lexeme: chose n:кошка over n:кошки
+- places.txt:c-hermitage:3: «ко́шки» nom: subject
+- places.txt:c-hermitage:3: «мыше́й» acc: after a transitive verb

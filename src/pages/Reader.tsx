@@ -8,11 +8,11 @@ import { russianVoices, speak, stopSpeaking, useRussianVoices } from '../audio/t
 import { loadLexemes } from '../lib/lexicon'
 import { usePlacement } from '../lib/learner'
 import { displayStress } from '../lib/ru'
-import { analysisLabel, defaultHelp, isWord, loadStory, recordStory, sentenceText, STORY_INDEX, useReaderProgress, type StoryMeta } from '../lib/stories'
-import { addWord, inDeck, isCardWorthy } from '../srs/deck'
+import { defaultHelp, isWord, loadStory, recordStory, sentenceText, STORY_INDEX, useReaderProgress, type StoryMeta } from '../lib/stories'
 import { gloss as lexGloss } from '../engine/generators'
 import { SessionRunner } from '../components/SessionRunner'
 import { Ru } from '../components/Md'
+import { WordSheet } from '../components/Tappable'
 import { Button, Card, Icon } from '../components/ui'
 
 const LEVELS = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2']
@@ -94,62 +94,6 @@ export function ReaderPage() {
 interface Popup {
   tok: Token
   si: number
-}
-
-function WordSheet({ tok, lexeme, onClose, hasVoice }: { tok: Token; lexeme?: Lexeme; onClose: () => void; hasVoice: boolean }) {
-  const s = useSettings()
-  const [state, setState] = useState<'idle' | 'in' | 'added'>('idle')
-  useEffect(() => {
-    if (lexeme) void inDeck(lexeme.id).then((x) => x && setState('in'))
-  }, [lexeme])
-  const meaning = tok.gloss ?? (lexeme ? lexGloss(lexeme) : '')
-  return (
-    <div className="anim-rise fixed inset-x-0 bottom-0 z-40 border-t-4 border-red bg-paper px-4 pb-[max(1rem,env(safe-area-inset-bottom))] pt-3 shadow-[0_-8px_24px_rgba(0,0,0,0.15)]" role="dialog" aria-label="Word">
-      <div className="mx-auto max-w-xl space-y-2">
-        <div className="flex items-start justify-between gap-2">
-          <div>
-            <Ru className="text-3xl" stress>
-              {tok.t}
-            </Ru>
-            {tok.lemma && tok.lemma.toLowerCase() !== tok.t.toLowerCase() && (
-              <span className="ml-2 text-ink-soft">
-                from <Ru className="font-bold text-ink" stress>{tok.lemma}</Ru>
-              </span>
-            )}
-          </div>
-          <button type="button" onClick={onClose} aria-label="Close" className="text-ink-soft">
-            <Icon name="x" className="h-6 w-6" />
-          </button>
-        </div>
-        {meaning && <p className="text-lg">{meaning}</p>}
-        {tok.g && <p className="text-sm text-ink-soft">{analysisLabel(tok.g)}</p>}
-        <div className="flex flex-wrap gap-2 pt-1">
-          {hasVoice && (
-            <Button variant="secondary" onClick={() => speak(tok.t, { rate: s.ttsRate, voice: s.ttsVoice })}>
-              <Icon name="speaker" className="mr-1 inline h-4 w-4" /> Listen
-            </Button>
-          )}
-          {lexeme && isCardWorthy(lexeme) && (
-            <Button
-              variant="secondary"
-              disabled={state !== 'idle'}
-              onClick={async () => {
-                await addWord(lexeme.id, Date.now(), hasVoice)
-                setState('added')
-              }}
-            >
-              {state === 'idle' ? 'Add to my deck' : state === 'added' ? 'Added ✓' : 'In your deck'}
-            </Button>
-          )}
-          {lexeme && (
-            <Link to={`/word/${encodeURIComponent(lexeme.id)}`}>
-              <Button variant="secondary">All forms</Button>
-            </Link>
-          )}
-        </div>
-      </div>
-    </div>
-  )
 }
 
 /** One story or dialogue. `listening`: the transcript starts hidden and speakers get different voices. */

@@ -42,6 +42,9 @@ const CrosswordHub = lazy(() => import('./pages/Crossword').then((m) => ({ defau
 const CrosswordGame = lazy(() => import('./pages/Crossword').then((m) => ({ default: m.CrosswordGame })))
 const Speed = lazy(() => import('./pages/Speed'))
 const Boss = lazy(() => import('./pages/Boss'))
+const CardsPage = lazy(() => import('./pages/Cards').then((m) => ({ default: m.CardsPage })))
+const CardPage = lazy(() => import('./pages/Cards').then((m) => ({ default: m.CardPage })))
+const Town = lazy(() => import('./pages/Town'))
 
 const NAV = [
   { to: '/', label: 'Home', icon: 'home' },
@@ -178,6 +181,9 @@ export default function App() {
               <Route path="/crossword/:topic" element={<CrosswordGame />} />
               <Route path="/speed" element={<Speed />} />
               <Route path="/boss/:id" element={<Boss />} />
+              <Route path="/cards" element={<CardsPage />} />
+              <Route path="/card/:id" element={<CardPage />} />
+              <Route path="/town" element={<Town />} />
               <Route path="/grammar" element={<GrammarIndex />} />
               <Route path="/grammar/:id" element={<GrammarArticlePage />} />
             </Routes>

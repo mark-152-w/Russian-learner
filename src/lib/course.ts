@@ -2,7 +2,7 @@
 import { useLiveQuery } from 'dexie-react-hooks'
 import type { ExerciseItem, Unit } from '../types/content.gen'
 import { db, getKV, setKV } from '../db/db'
-import { bumpStatsExternal } from '../rewards/service'
+import { awardCard, bumpStatsExternal } from '../rewards/service'
 import { shuffle } from './rng'
 import { runDrill, type DrillContext } from '../engine/drills'
 
@@ -28,8 +28,8 @@ export async function recordLesson(unitId: string): Promise<void> {
   await setKV('course', p)
 }
 
-/** Record a checkpoint result; returns true if it completed the unit just now. */
-export async function recordCheckpoint(unit: Unit, accuracy: number, testOut: boolean, now: number): Promise<boolean> {
+/** Record a checkpoint result: whether it completed the unit just now, and the card that earned. */
+export async function recordCheckpoint(unit: Unit, accuracy: number, testOut: boolean, now: number): Promise<{ completed: boolean; card: string | null }> {
   const p = await getProgress()
   const u = p[unit.id] ?? { lessons: 0, best: 0 }
   const already = !!u.completed
@@ -40,7 +40,8 @@ export async function recordCheckpoint(unit: Unit, accuracy: number, testOut: bo
     await bumpStatsExternal({ units: 1, [`units${unit.level}`]: 1 })
   }
   await setKV('course', p)
-  return passed && !already
+  const completed = passed && !already
+  return { completed, card: completed ? ((await awardCard(now, 'common'))?.card ?? null) : null }
 }
 
 /** The first unit not yet completed, in course order. */

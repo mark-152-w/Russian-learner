@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { haptic } from '../audio/haptics'
 import { sound } from '../audio/sound'
 import { SKINS, TIER_RU, TIERS, type Loot, type Tier } from '../rewards/chest'
+import { cardById } from '../lib/cards'
 import { xpForLevel } from '../rewards/levels'
 import type { SessionEnd } from '../rewards/service'
 import { Ru } from './Md'
@@ -21,6 +22,8 @@ function lootText(l: Loot): string {
       const s = SKINS.find((x) => x.id === l.skin)
       return `New theme: ${s?.en ?? l.skin}`
     }
+    case 'card':
+      return `New card: ${cardById(l.card)?.card.name.en ?? l.card} 🃏`
   }
 }
 
@@ -120,6 +123,12 @@ export function SessionSummary({ end, onDone, onAgain }: { end: SessionEnd; onDo
       ) : (
         <p className="text-center text-sm text-ink-soft">Answer 8 or more items in a session to earn a chest.</p>
       )}
+
+      {end.sets?.map((t) => (
+        <Card key={t} className="anim-pop border-gold text-center font-bold">
+          Card set complete: {t}! Bonus XP added.
+        </Card>
+      ))}
 
       {(end.achievements.length > 0 || end.quests.length > 0) && (
         <Card className="space-y-2">

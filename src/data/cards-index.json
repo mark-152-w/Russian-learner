@@ -1,0 +1,462 @@
+[
+ {
+  "id": "cs-culture",
+  "title": {
+   "ru": "Культу́ра",
+   "en": "Culture"
+  },
+  "bonusXp": 200,
+  "file": "culture",
+  "cards": [
+   {
+    "id": "c-matryoshka",
+    "name": {
+     "ru": "Матрёшка",
+     "en": "Matryoshka doll"
+    },
+    "rarity": "common",
+    "art": {
+     "icon": "🪆",
+     "hue": 0
+    },
+    "level": "A2"
+   },
+   {
+    "id": "c-samovar",
+    "name": {
+     "ru": "Самова́р",
+     "en": "Samovar"
+    },
+    "rarity": "common",
+    "art": {
+     "icon": "🫖",
+     "hue": 25
+    },
+    "level": "A2"
+   },
+   {
+    "id": "c-banya",
+    "name": {
+     "ru": "Ба́ня",
+     "en": "Banya"
+    },
+    "rarity": "rare",
+    "art": {
+     "icon": "🧖",
+     "hue": 15
+    },
+    "level": "A2"
+   },
+   {
+    "id": "c-maslenitsa",
+    "name": {
+     "ru": "Ма́сленица",
+     "en": "Maslenitsa"
+    },
+    "rarity": "rare",
+    "art": {
+     "icon": "🥞",
+     "hue": 35
+    },
+    "level": "B1"
+   },
+   {
+    "id": "c-dacha",
+    "name": {
+     "ru": "Да́ча",
+     "en": "Dacha"
+    },
+    "rarity": "common",
+    "art": {
+     "icon": "🏡",
+     "hue": 100
+    },
+    "level": "A2"
+   },
+   {
+    "id": "c-new-year",
+    "name": {
+     "ru": "Но́вый год",
+     "en": "New Year"
+    },
+    "rarity": "epic",
+    "art": {
+     "icon": "🎄",
+     "hue": 120
+    },
+    "level": "A2"
+   },
+   {
+    "id": "c-ballet",
+    "name": {
+     "ru": "Бале́т",
+     "en": "Ballet"
+    },
+    "rarity": "rare",
+    "art": {
+     "icon": "🩰",
+     "hue": 300
+    },
+    "level": "B1"
+   },
+   {
+    "id": "c-gzhel",
+    "name": {
+     "ru": "Гжель",
+     "en": "Gzhel"
+    },
+    "rarity": "legendary",
+    "art": {
+     "icon": "🏺",
+     "hue": 215
+    },
+    "level": "B1"
+   }
+  ]
+ },
+ {
+  "id": "cs-idioms",
+  "title": {
+   "ru": "Идио́мы",
+   "en": "Idioms"
+  },
+  "bonusXp": 250,
+  "file": "idioms",
+  "cards": [
+   {
+    "id": "c-ni-pukha",
+    "name": {
+     "ru": "Ни пу́ха ни пера́!",
+     "en": "Good luck!"
+    },
+    "rarity": "common",
+    "art": {
+     "icon": "🪶",
+     "hue": 50
+    },
+    "level": "A2"
+   },
+   {
+    "id": "c-sobaka",
+    "name": {
+     "ru": "Вот где соба́ка зары́та",
+     "en": "That's the heart of the matter"
+    },
+    "rarity": "rare",
+    "art": {
+     "icon": "🐕",
+     "hue": 30
+    },
+    "level": "B1"
+   },
+   {
+    "id": "c-lapsha",
+    "name": {
+     "ru": "Ве́шать лапшу́ на у́ши",
+     "en": "To pull someone's leg"
+    },
+    "rarity": "rare",
+    "art": {
+     "icon": "🍜",
+     "hue": 40
+    },
+    "level": "B1"
+   },
+   {
+    "id": "c-rak",
+    "name": {
+     "ru": "Когда́ рак на горе́ сви́стнет",
+     "en": "When pigs fly"
+    },
+    "rarity": "epic",
+    "art": {
+     "icon": "🦞",
+     "hue": 0
+    },
+    "level": "B1"
+   },
+   {
+    "id": "c-maslo",
+    "name": {
+     "ru": "Как по ма́слу",
+     "en": "Like clockwork"
+    },
+    "rarity": "common",
+    "art": {
+     "icon": "🧈",
+     "hue": 45
+    },
+    "level": "A2"
+   },
+   {
+    "id": "c-medvezhya",
+    "name": {
+     "ru": "Медве́жья услу́га",
+     "en": "A bear's favour"
+    },
+    "rarity": "epic",
+    "art": {
+     "icon": "🐻",
+     "hue": 25
+    },
+    "level": "B1"
+   },
+   {
+    "id": "c-trud",
+    "name": {
+     "ru": "Без труда́ не вы́тащишь и ры́бку из пруда́",
+     "en": "No pain, no gain"
+    },
+    "rarity": "rare",
+    "art": {
+     "icon": "🎣",
+     "hue": 200
+    },
+    "level": "A2"
+   },
+   {
+    "id": "c-utro",
+    "name": {
+     "ru": "У́тро ве́чера мудрене́е",
+     "en": "Sleep on it"
+    },
+    "rarity": "legendary",
+    "art": {
+     "icon": "🌅",
+     "hue": 40
+    },
+    "level": "B1"
+   }
+  ]
+ },
+ {
+  "id": "cs-people",
+  "title": {
+   "ru": "Лю́ди",
+   "en": "People"
+  },
+  "bonusXp": 200,
+  "file": "people",
+  "cards": [
+   {
+    "id": "c-pushkin",
+    "name": {
+     "ru": "Пу́шкин",
+     "en": "Alexander Pushkin"
+    },
+    "rarity": "rare",
+    "art": {
+     "icon": "🪶",
+     "hue": 30
+    },
+    "level": "A2"
+   },
+   {
+    "id": "c-tolstoy",
+    "name": {
+     "ru": "Толсто́й",
+     "en": "Leo Tolstoy"
+    },
+    "rarity": "epic",
+    "art": {
+     "icon": "📖",
+     "hue": 200
+    },
+    "level": "B1"
+   },
+   {
+    "id": "c-dostoevsky",
+    "name": {
+     "ru": "Достое́вский",
+     "en": "Fyodor Dostoevsky"
+    },
+    "rarity": "epic",
+    "art": {
+     "icon": "🕯️",
+     "hue": 260
+    },
+    "level": "B1"
+   },
+   {
+    "id": "c-gagarin",
+    "name": {
+     "ru": "Гага́рин",
+     "en": "Yuri Gagarin"
+    },
+    "rarity": "legendary",
+    "art": {
+     "icon": "🚀",
+     "hue": 220
+    },
+    "level": "A2"
+   },
+   {
+    "id": "c-tchaikovsky",
+    "name": {
+     "ru": "Чайко́вский",
+     "en": "Pyotr Tchaikovsky"
+    },
+    "rarity": "rare",
+    "art": {
+     "icon": "🎻",
+     "hue": 330
+    },
+    "level": "A2"
+   },
+   {
+    "id": "c-mendeleev",
+    "name": {
+     "ru": "Менделе́ев",
+     "en": "Dmitri Mendeleev"
+    },
+    "rarity": "rare",
+    "art": {
+     "icon": "⚗️",
+     "hue": 160
+    },
+    "level": "B1"
+   },
+   {
+    "id": "c-tereshkova",
+    "name": {
+     "ru": "Терешко́ва",
+     "en": "Valentina Tereshkova"
+    },
+    "rarity": "epic",
+    "art": {
+     "icon": "🛰️",
+     "hue": 280
+    },
+    "level": "A2"
+   },
+   {
+    "id": "c-shostakovich",
+    "name": {
+     "ru": "Шостако́вич",
+     "en": "Dmitri Shostakovich"
+    },
+    "rarity": "common",
+    "art": {
+     "icon": "🎼",
+     "hue": 0
+    },
+    "level": "B1"
+   }
+  ]
+ },
+ {
+  "id": "cs-places",
+  "title": {
+   "ru": "Места́",
+   "en": "Places"
+  },
+  "bonusXp": 200,
+  "file": "places",
+  "cards": [
+   {
+    "id": "c-moscow",
+    "name": {
+     "ru": "Москва́",
+     "en": "Moscow"
+    },
+    "rarity": "common",
+    "art": {
+     "icon": "🏛️",
+     "hue": 0
+    },
+    "level": "A2"
+   },
+   {
+    "id": "c-petersburg",
+    "name": {
+     "ru": "Петербу́рг",
+     "en": "St Petersburg"
+    },
+    "rarity": "rare",
+    "art": {
+     "icon": "🌉",
+     "hue": 210
+    },
+    "level": "B1"
+   },
+   {
+    "id": "c-baikal",
+    "name": {
+     "ru": "Байка́л",
+     "en": "Lake Baikal"
+    },
+    "rarity": "epic",
+    "art": {
+     "icon": "💧",
+     "hue": 195
+    },
+    "level": "B1"
+   },
+   {
+    "id": "c-siberia",
+    "name": {
+     "ru": "Сиби́рь",
+     "en": "Siberia"
+    },
+    "rarity": "common",
+    "art": {
+     "icon": "🌲",
+     "hue": 140
+    },
+    "level": "A2"
+   },
+   {
+    "id": "c-kamchatka",
+    "name": {
+     "ru": "Камча́тка",
+     "en": "Kamchatka"
+    },
+    "rarity": "epic",
+    "art": {
+     "icon": "🌋",
+     "hue": 10
+    },
+    "level": "A2"
+   },
+   {
+    "id": "c-kazan",
+    "name": {
+     "ru": "Каза́нь",
+     "en": "Kazan"
+    },
+    "rarity": "common",
+    "art": {
+     "icon": "🕌",
+     "hue": 150
+    },
+    "level": "A2"
+   },
+   {
+    "id": "c-volga",
+    "name": {
+     "ru": "Во́лга",
+     "en": "The Volga"
+    },
+    "rarity": "rare",
+    "art": {
+     "icon": "🛶",
+     "hue": 205
+    },
+    "level": "A2"
+   },
+   {
+    "id": "c-hermitage",
+    "name": {
+     "ru": "Эрмита́ж",
+     "en": "The Hermitage"
+    },
+    "rarity": "legendary",
+    "art": {
+     "icon": "🖼️",
+     "hue": 45
+    },
+    "level": "B1"
+   }
+  ]
+ }
+]

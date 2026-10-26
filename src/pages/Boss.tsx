@@ -14,6 +14,7 @@ import { buildDrillContext } from '../lib/drillContext'
 import { loadLexemes } from '../lib/lexicon'
 import { SessionRunner } from '../components/SessionRunner'
 import { BossArt } from '../components/BossArt'
+import { NewCard } from '../components/CardFace'
 import { Ru } from '../components/Md'
 import { Bar, Button, Card } from '../components/ui'
 
@@ -57,7 +58,7 @@ export default function BossPage() {
   const [state, setState] = useState<BossState | null>(null)
   const [hit, setHit] = useState(0)
   const [crit, setCrit] = useState(false)
-  const [firstWin, setFirstWin] = useState(false)
+  const [firstWin, setFirstWin] = useState<{ first: boolean; card: string | null }>({ first: false, card: null })
   const live = useRef<BossState | null>(null)
   const records = useBossRecords()
   const progress = useCourseProgress()
@@ -151,11 +152,12 @@ export default function BossPage() {
             <p className="font-serif text-2xl">{won ? <Ru>Побе́да!</Ru> : s.hearts <= 0 ? 'The boss won this time' : 'The boss got away'}</p>
             <p className="text-sm text-ink-soft">
               {won
-                ? firstWin
+                ? firstWin.first
                   ? 'A first victory over this boss: it counts towards Богаты́рь.'
                   : `With ${s.hearts} heart${s.hearts === 1 ? '' : 's'} to spare.`
                 : `${s.hp} HP left. The XP and practice still count; try again after a lesson.`}
             </p>
+            {firstWin.card && <NewCard id={firstWin.card} />}
           </Card>
         )
       }}

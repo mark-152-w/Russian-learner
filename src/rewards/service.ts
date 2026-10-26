@@ -7,7 +7,8 @@ import type { Verdict } from '../engine/grader'
 import { parseSlot } from '../engine/slots'
 import { mulberry32, type Rng } from '../lib/rng'
 import { newlyUnlocked, type AchievementDef, type Stats } from './achievements'
-import { MIN_ANSWERS_FOR_CHEST, rollChest, sessionQuality, type Loot, type Tier } from './chest'
+import { MIN_ANSWERS_FOR_CHEST, pickCard, rollChest, sessionQuality, type CardOption, type Loot, type Tier } from './chest'
+import cardsIndex from '../data/cards-index.json'
 import { isHappyHour, rollHappyHour, type HappyHour } from './goals'
 import { levelInfo, type LevelInfo } from './levels'
 import { applyQuestEvent, isCurrent, questDef, questsForPeriod, type QuestDef, type QuestEvent } from './quests'
@@ -23,6 +24,8 @@ export interface Profile {
   skin: string
   happyHour: HappyHour | null
   created: number
+  /** Collectible card ids. */
+  cards: string[]
 }
 
 export const DEFAULT_PROFILE: Profile = {
@@ -34,9 +37,14 @@ export const DEFAULT_PROFILE: Profile = {
   skin: 'paper',
   happyHour: null,
   created: 0,
+  cards: [],
 }
 
-export const getProfile = async () => ({ ...DEFAULT_PROFILE, ...(await getKV<Partial<Profile>>('profile', {})) })
+export const getProfile = async (): Promise<Profile> => {
+  const p = { ...DEFAULT_PROFILE, ...(await getKV<Partial<Profile>>('profile', {})) }
+  // fresh arrays: never push into the defaults
+  return { ...p, skins: [...p.skins], cards: [...(p.cards ?? [])], boosts: [...p.boosts] }
+}
 export const saveProfile = (p: Profile) => setKV('profile', p)
 export const getStats = () => getKV<Stats>('stats', {})
 
@@ -113,6 +121,40 @@ async function checkAchievements(now: number): Promise<AchievementDef[]> {
 
 const ALL_TABLES = () => [db.kv, db.attempts, db.mastery, db.days, db.quests, db.achievements, db.sessions]
 
+// ------------------------------------------------------------------ collectible cards
+const CARD_SETS = cardsIndex as { id: string; title: { en: string }; bonusXp: number; cards: { id: string; rarity: string }[] }[]
+
+function cardOptions(p: Profile): CardOption[] {
+  if (!FEATURES.has('cards')) return []
+  const owned = new Set(p.cards)
+  return CARD_SETS.flatMap((s) => s.cards).filter((c) => !owned.has(c.id)).map((c) => ({ id: c.id, rarity: c.rarity as Tier }))
+}
+
+/** Add cards to the profile (not saved here). Returns the sets just completed and their bonus XP (for the caller to
+ *  add after saving the profile). */
+async function addCards(p: Profile, ids: string[]): Promise<{ sets: string[]; bonus: number }> {
+  const before = new Set(p.cards)
+  for (const id of ids) if (!p.cards.includes(id)) p.cards.push(id)
+  const after = new Set(p.cards)
+  const done = CARD_SETS.filter((s) => s.cards.every((c) => after.has(c.id)) && !s.cards.every((c) => before.has(c.id)))
+  if (ids.length) await bumpStats({ cardSets: done.length }, { cardsOwned: p.cards.length })
+  return { sets: done.map((s) => s.title.en), bonus: done.reduce((a, s) => a + s.bonusXp, 0) }
+}
+
+/** A milestone card (first boss win, a completed unit…). Returns the card id and any set it completed. */
+export async function awardCard(now: number, tier: Tier = 'rare', rng: Rng = Math.random): Promise<{ card: string; sets: string[] } | null> {
+  return db.transaction('rw', ALL_TABLES(), async () => {
+    const p = await getProfile()
+    const card = pickCard(rng, cardOptions(p), tier) ?? pickCard(rng, cardOptions(p), 'legendary')
+    if (!card) return null
+    const { sets, bonus } = await addCards(p, [card])
+    await saveProfile(p)
+    await addXp(bonus, now)
+    await checkAchievements(now)
+    return { card, sets }
+  })
+}
+
 // ------------------------------------------------------------------ app open
 export interface OpenResult {
   happyHourStarted: boolean
@@ -176,6 +218,8 @@ export interface SessionEnd {
   achievements: AchievementDef[]
   quests: QuestDef[]
   minutes: number
+  /** Card sets the chest completed (English titles). */
+  sets: string[]
 }
 
 export class RewardSession {
@@ -352,7 +396,7 @@ export class RewardSession {
       let chest: SessionEnd['chest'] = null
       let bonusXp = 0
       if (this.answered >= MIN_ANSWERS_FOR_CHEST) {
-        chest = rollChest(sessionQuality({ answered: this.answered, correct: this.correct, hard: this.hard }), this.rng, p)
+        chest = rollChest(sessionQuality({ answered: this.answered, correct: this.correct, hard: this.hard }), this.rng, { ...p, cardOptions: cardOptions(p) })
         for (const l of chest.loot) {
           if (l.kind === 'xp') bonusXp += l.amount
           if (l.kind === 'freeze') p.freezes += l.amount
@@ -360,6 +404,8 @@ export class RewardSession {
           if (l.kind === 'skin' && !p.skins.includes(l.skin)) p.skins.push(l.skin)
         }
       }
+      const { sets, bonus } = await addCards(p, chest?.loot.flatMap((l) => (l.kind === 'card' ? [l.card] : [])) ?? [])
+      bonusXp += bonus
       await saveProfile(p)
       await addXp(bonusXp, now)
 
@@ -409,6 +455,7 @@ export class RewardSession {
         achievements: this.achievements,
         quests: this.quests,
         minutes: this.seconds / 60,
+        sets,
       }
     })
   }

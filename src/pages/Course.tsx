@@ -13,6 +13,7 @@ import { SessionRunner } from '../components/SessionRunner'
 import { Md, Ru } from '../components/Md'
 import { Bar, Button, Card, Icon } from '../components/ui'
 import { BossArt } from '../components/BossArt'
+import { NewCard } from '../components/CardFace'
 import { useBossRecords } from '../lib/bosses'
 
 const LEVEL_ORDER = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2']
@@ -183,6 +184,7 @@ export function LessonPage() {
   const nav = useNavigate()
   const { voices, ready } = useRussianVoices()
   const [round, setRound] = useState(0)
+  const [card, setCard] = useState<string | null>(null)
   const [state, setState] = useState<{ unit: Unit; items: ExerciseItem[]; lexemes: Map<string, Lexeme> } | null>(null)
 
   useEffect(() => {
@@ -210,13 +212,14 @@ export function LessonPage() {
       lexemes={state.lexemes}
       kind={isCheck ? 'checkpoint' : 'lesson'}
       onFinish={async (end) => {
-        if (isCheck) await recordCheckpoint(state.unit, end.accuracy, mode === 'testout', Date.now())
+        if (isCheck) setCard((await recordCheckpoint(state.unit, end.accuracy, mode === 'testout', Date.now())).card)
         else await recordLesson(state.unit.id)
       }}
       summaryNote={(end) =>
         isCheck ? (
           <Card className={`mx-auto mb-4 max-w-xl text-center ${end.accuracy >= PASS_MARK ? 'border-good' : 'border-bad'}`}>
             <p className="font-serif text-2xl">{end.accuracy >= PASS_MARK ? `Unit ${state.unit.number} complete!` : 'Not quite yet'}</p>
+            {card && <NewCard id={card} />}
             <p className="text-sm text-ink-soft">
               {end.accuracy >= PASS_MARK
                 ? 'On to the next unit.'

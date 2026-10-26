@@ -109,7 +109,7 @@ def lemma_keys(lemma: str, pos: str) -> frozenset:
     сча́стье → счастие, де́ньги → деньга. Only parses of the lemma as a dictionary form count."""
     bare = fold(lemma)
     keys = {bare}
-    head = {"noun": ("NOUN", {"nomn"}), "verb": ("INFN", set()), "adj": ("ADJF", {"nomn"})}.get(pos)
+    head = {"noun": ("NOUN", {"nomn"}), "name": ("NOUN", {"nomn"}), "verb": ("INFN", set()), "adj": ("ADJF", {"nomn"})}.get(pos)
     if head:
         for p in dparses(bare):
             if p.tag.POS == head[0] and head[1] <= p.tag.grammemes:

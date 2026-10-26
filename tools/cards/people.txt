@@ -1,0 +1,78 @@
+set: cs-people
+title: Лю́ди | People
+bonusXp: 200
+===
+id: c-pushkin
+name: Пу́шкин | Alexander Pushkin
+rarity: rare
+level: A2
+art: 🪶 30
+---
+Пу́шкин — са́мый люби́мый поэ́т Росси́и. | Pushkin is Russia's best-loved poet.
+Он жил в девятна́дцатом ве́ке и писа́л стихи́, ска́зки и рома́ны. | He lived in the nineteenth century and wrote poems, fairy tales and novels.
+Ру́сские говоря́т: «Пу́шкин — на́ше всё». | Russians say: "Pushkin is our everything."
+===
+id: c-tolstoy
+name: Толсто́й | Leo Tolstoy
+rarity: epic
+level: B1
+art: 📖 200
+---
+Толсто́й написа́л рома́н «Война́ и мир» — одну́ из са́мых изве́стных книг в ми́ре. | Tolstoy wrote the novel "War and Peace", one of the most famous books in the world.
+В рома́не о́чень мно́го персона́жей, и чита́ть его́ на́до до́лго. | The novel has a great many characters, and it takes a long time to read.
+===
+id: c-dostoevsky
+name: Достое́вский | Fyodor Dostoevsky
+rarity: epic
+level: B1
+art: 🕯️ 260
+---
+Достое́вский писа́л о тру́дных вопро́сах: что тако́е добро́ и зло, есть ли Бог. | Dostoevsky wrote about hard questions: what good and evil are, whether God exists.
+Его́ рома́н «Преступле́ние и наказа́ние» чита́ют во всём ми́ре. | His novel "Crime and Punishment" is read all over the world.
+===
+id: c-gagarin
+name: Гага́рин | Yuri Gagarin
+rarity: legendary
+level: A2
+art: 🚀 220
+---
+В 1961 году́ Ю́рий Гага́рин пе́рвым полете́л в ко́смос. | In 1961 Yuri Gagarin became the first person to fly into space.
+Пе́ред ста́ртом он сказа́л: «Пое́хали!» | Before the launch he said: "Off we go!"
+Тепе́рь двена́дцатое апре́ля — пра́здник. | Now the twelfth of April is a holiday.
+===
+id: c-tchaikovsky
+name: Чайко́вский | Pyotr Tchaikovsky
+rarity: rare
+level: A2
+art: 🎻 330
+---
+Чайко́вский — ру́сский компози́тор. | Tchaikovsky is a Russian composer.
+Его́ бале́т «Лебеди́ное о́зеро» зна́ют во всём ми́ре. | His ballet "Swan Lake" is known all over the world.
+===
+id: c-mendeleev
+name: Менделе́ев | Dmitri Mendeleev
+rarity: rare
+level: B1
+art: ⚗️ 160
+---
+Менделе́ев был хи́миком. | Mendeleev was a chemist.
+Он со́здал табли́цу хими́ческих элеме́нтов. | He created the table of chemical elements.
+Говоря́т, что он уви́дел э́ту табли́цу во сне. | They say he saw the table in a dream.
+===
+id: c-tereshkova
+name: Терешко́ва | Valentina Tereshkova
+rarity: epic
+level: A2
+art: 🛰️ 280
+---
+В 1963 году́ Терешко́ва ста́ла пе́рвой же́нщиной в ко́смосе. | In 1963 Tereshkova became the first woman in space.
+Она́ провела́ там почти́ три дня. | She spent almost three days there.
+===
+id: c-shostakovich
+name: Шостако́вич | Dmitri Shostakovich
+rarity: common
+level: B1
+art: 🎼 0
+---
+Шостако́вич написа́л пятна́дцать симфо́ний. | Shostakovich wrote fifteen symphonies.
+Седьму́ю симфо́нию он на́чал писа́ть во вре́мя войны́. | He began writing his Seventh Symphony during the war.

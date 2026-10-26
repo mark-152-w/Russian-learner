@@ -1,0 +1,1773 @@
+{
+ "$schema": "../../../../schemas/card.schema.json",
+ "id": "cs-culture",
+ "title": {
+  "ru": "Культу́ра",
+  "en": "Culture"
+ },
+ "bonusXp": 200,
+ "cards": [
+  {
+   "id": "c-matryoshka",
+   "name": {
+    "ru": "Матрёшка",
+    "en": "Matryoshka doll"
+   },
+   "rarity": "common",
+   "art": {
+    "icon": "🪆",
+    "hue": 0
+   },
+   "level": "A2",
+   "blurb": {
+    "id": "c-matryoshka-blurb",
+    "kind": "card-blurb",
+    "level": "A2",
+    "title": {
+     "ru": "Матрёшка",
+     "en": "Matryoshka doll"
+    },
+    "sentences": [
+     {
+      "para": true,
+      "en": "A matryoshka is a wooden doll with more dolls inside it.",
+      "tokens": [
+       {
+        "t": "Матрёшка",
+        "lex": "n:матрёшка",
+        "lemma": "матрёшка",
+        "g": {
+         "pos": "noun",
+         "case": "nom",
+         "number": "sg"
+        },
+        "rare": true
+       },
+       {
+        "t": "—"
+       },
+       {
+        "t": "деревя́нная",
+        "lex": "a:деревянный",
+        "lemma": "деревя́нный",
+        "g": {
+         "pos": "adj",
+         "case": "nom",
+         "number": "sg",
+         "gender": "f"
+        },
+        "rare": true
+       },
+       {
+        "t": "ку́кла",
+        "sp": false,
+        "lex": "n:кукла",
+        "lemma": "ку́кла",
+        "g": {
+         "pos": "noun",
+         "case": "nom",
+         "number": "sg"
+        },
+        "rare": true
+       },
+       {
+        "t": ","
+       },
+       {
+        "t": "а",
+        "lex": "o:а",
+        "lemma": "а",
+        "g": {
+         "pos": "conj"
+        }
+       },
+       {
+        "t": "внутри́",
+        "lex": "o:внутри",
+        "lemma": "внутри́",
+        "g": {
+         "pos": "prep"
+        }
+       },
+       {
+        "t": "неё",
+        "lex": "o:она",
+        "lemma": "она́",
+        "g": {
+         "pos": "pron",
+         "case": "gen"
+        }
+       },
+       {
+        "t": "—"
+       },
+       {
+        "t": "ещё",
+        "lex": "o:ещё",
+        "lemma": "ещё",
+        "g": {
+         "pos": "adv"
+        }
+       },
+       {
+        "t": "ку́клы",
+        "sp": false,
+        "lex": "n:кукла",
+        "lemma": "ку́кла",
+        "g": {
+         "pos": "noun",
+         "case": "nom",
+         "number": "pl"
+        },
+        "rare": true
+       },
+       {
+        "t": ".",
+        "sp": false
+       }
+      ]
+     },
+     {
+      "en": "One matryoshka can hold five dolls, or even twenty.",
+      "tokens": [
+       {
+        "t": "В",
+        "lex": "o:в",
+        "lemma": "в",
+        "g": {
+         "pos": "prep"
+        }
+       },
+       {
+        "t": "одно́й",
+        "lex": "o:один",
+        "lemma": "оди́н",
+        "g": {
+         "pos": "num",
+         "case": "prep",
+         "gender": "f"
+        }
+       },
+       {
+        "t": "матрёшке",
+        "lex": "n:матрёшка",
+        "lemma": "матрёшка",
+        "g": {
+         "pos": "noun",
+         "case": "prep",
+         "number": "sg"
+        },
+        "rare": true
+       },
+       {
+        "t": "мо́жет",
+        "lex": "v:мочь",
+        "lemma": "мочь",
+        "g": {
+         "pos": "verb",
+         "aspect": "impf",
+         "tense": "pres",
+         "person": 3,
+         "number": "sg"
+        }
+       },
+       {
+        "t": "быть",
+        "lex": "v:быть",
+        "lemma": "быть",
+        "g": {
+         "pos": "verb",
+         "aspect": "impf"
+        }
+       },
+       {
+        "t": "и",
+        "lex": "o:и",
+        "lemma": "и",
+        "g": {
+         "pos": "conj"
+        }
+       },
+       {
+        "t": "пять",
+        "sp": false,
+        "lex": "n:пять",
+        "lemma": "пять",
+        "g": {
+         "pos": "num",
+         "case": "nom"
+        }
+       },
+       {
+        "t": ","
+       },
+       {
+        "t": "и",
+        "lex": "o:и",
+        "lemma": "и",
+        "g": {
+         "pos": "conj"
+        }
+       },
+       {
+        "t": "два́дцать",
+        "lex": "o:двадцать",
+        "lemma": "два́дцать",
+        "g": {
+         "pos": "num",
+         "case": "nom"
+        },
+        "rare": true
+       },
+       {
+        "t": "ку́кол",
+        "sp": false,
+        "lex": "n:кукла",
+        "lemma": "ку́кла",
+        "g": {
+         "pos": "noun",
+         "case": "gen",
+         "number": "pl"
+        },
+        "rare": true
+       },
+       {
+        "t": ".",
+        "sp": false
+       }
+      ]
+     }
+    ],
+    "questions": []
+   }
+  },
+  {
+   "id": "c-samovar",
+   "name": {
+    "ru": "Самова́р",
+    "en": "Samovar"
+   },
+   "rarity": "common",
+   "art": {
+    "icon": "🫖",
+    "hue": 25
+   },
+   "level": "A2",
+   "blurb": {
+    "id": "c-samovar-blurb",
+    "kind": "card-blurb",
+    "level": "A2",
+    "title": {
+     "ru": "Самова́р",
+     "en": "Samovar"
+    },
+    "sentences": [
+     {
+      "para": true,
+      "en": "A samovar is a big urn in which water for tea is heated.",
+      "tokens": [
+       {
+        "t": "Самова́р",
+        "lex": "n:самовар",
+        "lemma": "самова́р",
+        "g": {
+         "pos": "noun",
+         "case": "nom",
+         "number": "sg"
+        },
+        "rare": true
+       },
+       {
+        "t": "—"
+       },
+       {
+        "t": "э́то",
+        "lex": "o:это",
+        "lemma": "э́то",
+        "g": {
+         "pos": "pron"
+        }
+       },
+       {
+        "t": "большо́й",
+        "lex": "a:большой",
+        "lemma": "большо́й",
+        "g": {
+         "pos": "adj",
+         "case": "nom",
+         "number": "sg",
+         "gender": "m"
+        }
+       },
+       {
+        "t": "ча́йник",
+        "sp": false,
+        "lex": "n:чайник",
+        "lemma": "ча́йник",
+        "g": {
+         "pos": "noun",
+         "case": "nom",
+         "number": "sg"
+        },
+        "rare": true
+       },
+       {
+        "t": ","
+       },
+       {
+        "t": "в",
+        "lex": "o:в",
+        "lemma": "в",
+        "g": {
+         "pos": "prep"
+        }
+       },
+       {
+        "t": "кото́ром",
+        "lex": "a:который",
+        "lemma": "кото́рый",
+        "g": {
+         "pos": "adj",
+         "case": "prep",
+         "number": "sg",
+         "gender": "m"
+        }
+       },
+       {
+        "t": "гре́ют",
+        "lex": "v:греть",
+        "lemma": "греть",
+        "g": {
+         "pos": "verb",
+         "aspect": "impf",
+         "tense": "pres",
+         "person": 3,
+         "number": "pl"
+        },
+        "rare": true
+       },
+       {
+        "t": "во́ду",
+        "lex": "n:вода",
+        "lemma": "вода́",
+        "g": {
+         "pos": "noun",
+         "case": "acc",
+         "number": "sg"
+        }
+       },
+       {
+        "t": "для",
+        "lex": "o:для",
+        "lemma": "для",
+        "g": {
+         "pos": "prep"
+        }
+       },
+       {
+        "t": "ча́я",
+        "sp": false,
+        "lex": "n:чай",
+        "lemma": "чай",
+        "g": {
+         "pos": "noun",
+         "case": "gen",
+         "number": "sg"
+        }
+       },
+       {
+        "t": ".",
+        "sp": false
+       }
+      ]
+     },
+     {
+      "en": "In the old days the whole family would gather round the samovar.",
+      "tokens": [
+       {
+        "t": "Ра́ньше",
+        "lex": "o:раньше",
+        "lemma": "ра́ньше",
+        "g": {
+         "pos": "comp"
+        },
+        "rare": true
+       },
+       {
+        "t": "вокру́г",
+        "lex": "o:вокруг",
+        "lemma": "вокру́г",
+        "g": {
+         "pos": "prep"
+        }
+       },
+       {
+        "t": "самова́ра",
+        "lex": "n:самовар",
+        "lemma": "самова́р",
+        "g": {
+         "pos": "noun",
+         "case": "gen",
+         "number": "sg"
+        },
+        "rare": true
+       },
+       {
+        "t": "собира́лась",
+        "lex": "v:собираться",
+        "lemma": "собира́ться",
+        "g": {
+         "pos": "verb",
+         "aspect": "impf",
+         "tense": "past",
+         "number": "sg",
+         "gender": "f"
+        }
+       },
+       {
+        "t": "вся",
+        "lex": "a:весь",
+        "lemma": "весь",
+        "g": {
+         "pos": "adj",
+         "case": "nom",
+         "number": "sg",
+         "gender": "f"
+        }
+       },
+       {
+        "t": "семья́",
+        "sp": false,
+        "lex": "n:семья",
+        "lemma": "семья́",
+        "g": {
+         "pos": "noun",
+         "case": "nom",
+         "number": "sg"
+        }
+       },
+       {
+        "t": ".",
+        "sp": false
+       }
+      ]
+     }
+    ],
+    "questions": []
+   }
+  },
+  {
+   "id": "c-banya",
+   "name": {
+    "ru": "Ба́ня",
+    "en": "Banya"
+   },
+   "rarity": "rare",
+   "art": {
+    "icon": "🧖",
+    "hue": 15
+   },
+   "level": "A2",
+   "blurb": {
+    "id": "c-banya-blurb",
+    "kind": "card-blurb",
+    "level": "A2",
+    "title": {
+     "ru": "Ба́ня",
+     "en": "Banya"
+    },
+    "sentences": [
+     {
+      "para": true,
+      "en": "It's very hot in a banya, and afterwards you can jump into the snow.",
+      "tokens": [
+       {
+        "t": "В",
+        "lex": "o:в",
+        "lemma": "в",
+        "g": {
+         "pos": "prep"
+        }
+       },
+       {
+        "t": "ба́не",
+        "lex": "n:баня",
+        "lemma": "ба́ня",
+        "g": {
+         "pos": "noun",
+         "case": "prep",
+         "number": "sg"
+        },
+        "rare": true
+       },
+       {
+        "t": "о́чень",
+        "lex": "o:очень",
+        "lemma": "о́чень",
+        "g": {
+         "pos": "adv"
+        }
+       },
+       {
+        "t": "жа́рко",
+        "sp": false,
+        "lex": "o:жарко",
+        "lemma": "жа́рко",
+        "g": {
+         "pos": "adv"
+        },
+        "rare": true
+       },
+       {
+        "t": ","
+       },
+       {
+        "t": "а",
+        "lex": "o:а",
+        "lemma": "а",
+        "g": {
+         "pos": "conj"
+        }
+       },
+       {
+        "t": "пото́м",
+        "lex": "o:потом",
+        "lemma": "пото́м",
+        "g": {
+         "pos": "adv"
+        }
+       },
+       {
+        "t": "мо́жно",
+        "lex": "o:можно",
+        "lemma": "мо́жно",
+        "g": {
+         "pos": "pred"
+        }
+       },
+       {
+        "t": "пры́гнуть",
+        "lex": "v:прыгнуть",
+        "lemma": "пры́гнуть",
+        "g": {
+         "pos": "verb",
+         "aspect": "pf"
+        },
+        "rare": true
+       },
+       {
+        "t": "в",
+        "lex": "o:в",
+        "lemma": "в",
+        "g": {
+         "pos": "prep"
+        }
+       },
+       {
+        "t": "снег",
+        "sp": false,
+        "lex": "n:снег",
+        "lemma": "снег",
+        "g": {
+         "pos": "noun",
+         "case": "acc",
+         "number": "sg"
+        },
+        "rare": true
+       },
+       {
+        "t": ".",
+        "sp": false
+       }
+      ]
+     },
+     {
+      "en": "After the banya people say: \"Enjoy the light steam!\"",
+      "tokens": [
+       {
+        "t": "По́сле",
+        "lex": "o:после",
+        "lemma": "по́сле",
+        "g": {
+         "pos": "prep"
+        }
+       },
+       {
+        "t": "ба́ни",
+        "lex": "n:баня",
+        "lemma": "ба́ня",
+        "g": {
+         "pos": "noun",
+         "case": "gen",
+         "number": "sg"
+        },
+        "rare": true
+       },
+       {
+        "t": "говоря́т",
+        "sp": false,
+        "lex": "v:говорить",
+        "lemma": "говори́ть",
+        "g": {
+         "pos": "verb",
+         "aspect": "impf",
+         "tense": "pres",
+         "person": 3,
+         "number": "pl"
+        }
+       },
+       {
+        "t": ":"
+       },
+       {
+        "t": "«",
+        "sp": false
+       },
+       {
+        "t": "С",
+        "lex": "o:с",
+        "lemma": "с",
+        "g": {
+         "pos": "prep"
+        }
+       },
+       {
+        "t": "лёгким",
+        "lex": "a:лёгкий",
+        "lemma": "лёгкий",
+        "g": {
+         "pos": "adj",
+         "case": "ins",
+         "number": "sg",
+         "gender": "m"
+        },
+        "rare": true
+       },
+       {
+        "t": "па́ром",
+        "sp": false,
+        "lex": "n:пар",
+        "lemma": "пар",
+        "g": {
+         "pos": "noun",
+         "case": "ins",
+         "number": "sg"
+        },
+        "rare": true
+       },
+       {
+        "t": "!",
+        "sp": false
+       },
+       {
+        "t": "»",
+        "sp": false
+       }
+      ]
+     }
+    ],
+    "questions": []
+   }
+  },
+  {
+   "id": "c-maslenitsa",
+   "name": {
+    "ru": "Ма́сленица",
+    "en": "Maslenitsa"
+   },
+   "rarity": "rare",
+   "art": {
+    "icon": "🥞",
+    "hue": 35
+   },
+   "level": "B1",
+   "blurb": {
+    "id": "c-maslenitsa-blurb",
+    "kind": "card-blurb",
+    "level": "B1",
+    "title": {
+     "ru": "Ма́сленица",
+     "en": "Maslenitsa"
+    },
+    "sentences": [
+     {
+      "para": true,
+      "en": "Maslenitsa is the festival of the end of winter.",
+      "tokens": [
+       {
+        "t": "Ма́сленица",
+        "lex": "n:масленица",
+        "lemma": "ма́сленица",
+        "g": {
+         "pos": "noun",
+         "case": "nom",
+         "number": "sg"
+        },
+        "rare": true
+       },
+       {
+        "t": "—"
+       },
+       {
+        "t": "пра́здник",
+        "lex": "n:праздник",
+        "lemma": "пра́здник",
+        "g": {
+         "pos": "noun",
+         "case": "nom",
+         "number": "sg"
+        }
+       },
+       {
+        "t": "конца́",
+        "lex": "n:конец",
+        "lemma": "коне́ц",
+        "g": {
+         "pos": "noun",
+         "case": "gen",
+         "number": "sg"
+        }
+       },
+       {
+        "t": "зимы́",
+        "sp": false,
+        "lex": "n:зима",
+        "lemma": "зима́",
+        "g": {
+         "pos": "noun",
+         "case": "gen",
+         "number": "sg"
+        },
+        "rare": true
+       },
+       {
+        "t": ".",
+        "sp": false
+       }
+      ]
+     },
+     {
+      "en": "All week people eat pancakes, and at the end they burn a straw figure of winter.",
+      "tokens": [
+       {
+        "t": "Всю",
+        "lex": "a:весь",
+        "lemma": "весь",
+        "g": {
+         "pos": "adj",
+         "case": "acc",
+         "number": "sg",
+         "gender": "f"
+        }
+       },
+       {
+        "t": "неде́лю",
+        "lex": "n:неделя",
+        "lemma": "неде́ля",
+        "g": {
+         "pos": "noun",
+         "case": "acc",
+         "number": "sg"
+        }
+       },
+       {
+        "t": "едя́т",
+        "lex": "v:есть",
+        "lemma": "есть",
+        "g": {
+         "pos": "verb",
+         "aspect": "impf",
+         "tense": "pres",
+         "person": 3,
+         "number": "pl"
+        }
+       },
+       {
+        "t": "блины́",
+        "sp": false,
+        "lex": "n:блин",
+        "lemma": "блин",
+        "g": {
+         "pos": "noun",
+         "case": "acc",
+         "number": "pl"
+        }
+       },
+       {
+        "t": ","
+       },
+       {
+        "t": "а",
+        "lex": "o:а",
+        "lemma": "а",
+        "g": {
+         "pos": "conj"
+        }
+       },
+       {
+        "t": "в",
+        "lex": "o:в",
+        "lemma": "в",
+        "g": {
+         "pos": "prep"
+        }
+       },
+       {
+        "t": "конце́",
+        "lex": "n:конец",
+        "lemma": "коне́ц",
+        "g": {
+         "pos": "noun",
+         "case": "prep",
+         "number": "sg"
+        }
+       },
+       {
+        "t": "сжига́ют",
+        "lex": "v:сжигать",
+        "lemma": "сжига́ть",
+        "g": {
+         "pos": "verb",
+         "aspect": "impf",
+         "tense": "pres",
+         "person": 3,
+         "number": "pl"
+        },
+        "rare": true
+       },
+       {
+        "t": "чу́чело",
+        "lex": "n:чучело",
+        "lemma": "чу́чело",
+        "g": {
+         "pos": "noun",
+         "case": "acc",
+         "number": "sg"
+        },
+        "rare": true
+       },
+       {
+        "t": "зимы́",
+        "sp": false,
+        "lex": "n:зима",
+        "lemma": "зима́",
+        "g": {
+         "pos": "noun",
+         "case": "gen",
+         "number": "sg"
+        },
+        "rare": true
+       },
+       {
+        "t": ".",
+        "sp": false
+       }
+      ]
+     }
+    ],
+    "questions": []
+   }
+  },
+  {
+   "id": "c-dacha",
+   "name": {
+    "ru": "Да́ча",
+    "en": "Dacha"
+   },
+   "rarity": "common",
+   "art": {
+    "icon": "🏡",
+    "hue": 100
+   },
+   "level": "A2",
+   "blurb": {
+    "id": "c-dacha-blurb",
+    "kind": "card-blurb",
+    "level": "A2",
+    "title": {
+     "ru": "Да́ча",
+     "en": "Dacha"
+    },
+    "sentences": [
+     {
+      "para": true,
+      "en": "A dacha is a house outside the city.",
+      "tokens": [
+       {
+        "t": "Да́ча",
+        "lex": "n:дача",
+        "lemma": "да́ча",
+        "g": {
+         "pos": "noun",
+         "case": "nom",
+         "number": "sg"
+        },
+        "rare": true
+       },
+       {
+        "t": "—"
+       },
+       {
+        "t": "дом",
+        "lex": "n:дом",
+        "lemma": "дом",
+        "g": {
+         "pos": "noun",
+         "case": "nom",
+         "number": "sg"
+        }
+       },
+       {
+        "t": "за",
+        "lex": "o:за",
+        "lemma": "за",
+        "g": {
+         "pos": "prep"
+        }
+       },
+       {
+        "t": "го́родом",
+        "sp": false,
+        "lex": "n:город",
+        "lemma": "го́род",
+        "g": {
+         "pos": "noun",
+         "case": "ins",
+         "number": "sg"
+        }
+       },
+       {
+        "t": ".",
+        "sp": false
+       }
+      ]
+     },
+     {
+      "en": "In summer many Russians go there for the weekend and grow vegetables.",
+      "tokens": [
+       {
+        "t": "Ле́том",
+        "lex": "n:лето",
+        "lemma": "ле́то",
+        "g": {
+         "pos": "noun",
+         "case": "ins",
+         "number": "sg"
+        },
+        "rare": true
+       },
+       {
+        "t": "мно́гие",
+        "lex": "a:многие",
+        "lemma": "мно́гие",
+        "g": {
+         "pos": "adj",
+         "case": "nom",
+         "number": "pl"
+        },
+        "rare": true
+       },
+       {
+        "t": "ру́сские",
+        "lex": "a:русский",
+        "lemma": "ру́сский",
+        "g": {
+         "pos": "adj",
+         "case": "nom",
+         "number": "pl"
+        }
+       },
+       {
+        "t": "е́здят",
+        "lex": "v:ездить",
+        "lemma": "е́здить",
+        "g": {
+         "pos": "verb",
+         "aspect": "impf",
+         "tense": "pres",
+         "person": 3,
+         "number": "pl"
+        }
+       },
+       {
+        "t": "туда́",
+        "lex": "o:туда",
+        "lemma": "туда́",
+        "g": {
+         "pos": "adv"
+        }
+       },
+       {
+        "t": "на",
+        "lex": "o:на",
+        "lemma": "на",
+        "g": {
+         "pos": "prep"
+        }
+       },
+       {
+        "t": "выходны́е",
+        "lex": "n:выходные",
+        "lemma": "выходны́е",
+        "g": {
+         "pos": "noun",
+         "case": "acc",
+         "number": "pl"
+        },
+        "rare": true
+       },
+       {
+        "t": "и",
+        "lex": "o:и",
+        "lemma": "и",
+        "g": {
+         "pos": "conj"
+        }
+       },
+       {
+        "t": "выра́щивают",
+        "lex": "v:выращивать",
+        "lemma": "выра́щивать",
+        "g": {
+         "pos": "verb",
+         "aspect": "impf",
+         "tense": "pres",
+         "person": 3,
+         "number": "pl"
+        },
+        "rare": true
+       },
+       {
+        "t": "о́вощи",
+        "sp": false,
+        "lex": "n:овощ",
+        "lemma": "о́вощ",
+        "g": {
+         "pos": "noun",
+         "case": "acc",
+         "number": "pl"
+        },
+        "rare": true
+       },
+       {
+        "t": ".",
+        "sp": false
+       }
+      ]
+     }
+    ],
+    "questions": []
+   }
+  },
+  {
+   "id": "c-new-year",
+   "name": {
+    "ru": "Но́вый год",
+    "en": "New Year"
+   },
+   "rarity": "epic",
+   "art": {
+    "icon": "🎄",
+    "hue": 120
+   },
+   "level": "A2",
+   "blurb": {
+    "id": "c-new-year-blurb",
+    "kind": "card-blurb",
+    "level": "A2",
+    "title": {
+     "ru": "Но́вый год",
+     "en": "New Year"
+    },
+    "sentences": [
+     {
+      "para": true,
+      "en": "New Year is the main holiday in Russia.",
+      "tokens": [
+       {
+        "t": "Но́вый",
+        "lex": "a:новый",
+        "lemma": "но́вый",
+        "g": {
+         "pos": "adj",
+         "case": "nom",
+         "number": "sg",
+         "gender": "m"
+        }
+       },
+       {
+        "t": "год",
+        "lex": "n:год",
+        "lemma": "год",
+        "g": {
+         "pos": "noun",
+         "case": "nom",
+         "number": "sg"
+        }
+       },
+       {
+        "t": "—"
+       },
+       {
+        "t": "гла́вный",
+        "lex": "a:главный",
+        "lemma": "гла́вный",
+        "g": {
+         "pos": "adj",
+         "case": "nom",
+         "number": "sg",
+         "gender": "m"
+        }
+       },
+       {
+        "t": "пра́здник",
+        "lex": "n:праздник",
+        "lemma": "пра́здник",
+        "g": {
+         "pos": "noun",
+         "case": "nom",
+         "number": "sg"
+        }
+       },
+       {
+        "t": "в",
+        "lex": "o:в",
+        "lemma": "в",
+        "g": {
+         "pos": "prep"
+        }
+       },
+       {
+        "t": "Росси́и",
+        "sp": false,
+        "lex": "n:Россия",
+        "lemma": "Росси́я",
+        "g": {
+         "pos": "noun",
+         "case": "prep",
+         "number": "sg"
+        },
+        "rare": true
+       },
+       {
+        "t": ".",
+        "sp": false
+       }
+      ]
+     },
+     {
+      "en": "There's always Olivier salad on the table, and under the tree there are presents from Grandfather Frost.",
+      "tokens": [
+       {
+        "t": "На",
+        "lex": "o:на",
+        "lemma": "на",
+        "g": {
+         "pos": "prep"
+        }
+       },
+       {
+        "t": "столе́",
+        "lex": "n:стол",
+        "lemma": "стол",
+        "g": {
+         "pos": "noun",
+         "case": "prep",
+         "number": "sg"
+        }
+       },
+       {
+        "t": "обяза́тельно",
+        "lex": "o:обязательно",
+        "lemma": "обяза́тельно",
+        "g": {
+         "pos": "adv"
+        }
+       },
+       {
+        "t": "стои́т",
+        "lex": "v:стоять",
+        "lemma": "стоя́ть",
+        "g": {
+         "pos": "verb",
+         "aspect": "impf",
+         "tense": "pres",
+         "person": 3,
+         "number": "sg"
+        }
+       },
+       {
+        "t": "сала́т",
+        "lex": "n:салат",
+        "lemma": "сала́т",
+        "g": {
+         "pos": "noun",
+         "case": "nom",
+         "number": "sg"
+        },
+        "rare": true
+       },
+       {
+        "t": "оливье́",
+        "sp": false,
+        "lex": "n:оливье",
+        "lemma": "оливье́",
+        "g": {
+         "pos": "noun",
+         "case": "nom",
+         "number": "sg"
+        },
+        "rare": true
+       },
+       {
+        "t": ","
+       },
+       {
+        "t": "а",
+        "lex": "o:а",
+        "lemma": "а",
+        "g": {
+         "pos": "conj"
+        }
+       },
+       {
+        "t": "под",
+        "lex": "o:под",
+        "lemma": "под",
+        "g": {
+         "pos": "prep"
+        }
+       },
+       {
+        "t": "ёлкой",
+        "lex": "n:ёлка",
+        "lemma": "ёлка",
+        "g": {
+         "pos": "noun",
+         "case": "ins",
+         "number": "sg"
+        },
+        "rare": true
+       },
+       {
+        "t": "лежа́т",
+        "lex": "v:лежать",
+        "lemma": "лежа́ть",
+        "g": {
+         "pos": "verb",
+         "aspect": "impf",
+         "tense": "pres",
+         "person": 3,
+         "number": "pl"
+        }
+       },
+       {
+        "t": "пода́рки",
+        "lex": "n:подарок",
+        "lemma": "пода́рок",
+        "g": {
+         "pos": "noun",
+         "case": "nom",
+         "number": "pl"
+        }
+       },
+       {
+        "t": "от",
+        "lex": "o:от",
+        "lemma": "от",
+        "g": {
+         "pos": "prep"
+        }
+       },
+       {
+        "t": "Де́да",
+        "lex": "n:дед",
+        "lemma": "дед",
+        "g": {
+         "pos": "noun",
+         "case": "gen",
+         "number": "sg"
+        },
+        "rare": true
+       },
+       {
+        "t": "Моро́за",
+        "sp": false,
+        "lex": "n:мороз",
+        "lemma": "моро́з",
+        "g": {
+         "pos": "noun",
+         "case": "gen",
+         "number": "sg"
+        },
+        "rare": true
+       },
+       {
+        "t": ".",
+        "sp": false
+       }
+      ]
+     }
+    ],
+    "questions": []
+   }
+  },
+  {
+   "id": "c-ballet",
+   "name": {
+    "ru": "Бале́т",
+    "en": "Ballet"
+   },
+   "rarity": "rare",
+   "art": {
+    "icon": "🩰",
+    "hue": 300
+   },
+   "level": "B1",
+   "blurb": {
+    "id": "c-ballet-blurb",
+    "kind": "card-blurb",
+    "level": "B1",
+    "title": {
+     "ru": "Бале́т",
+     "en": "Ballet"
+    },
+    "sentences": [
+     {
+      "para": true,
+      "en": "Russian ballet is famous all over the world.",
+      "tokens": [
+       {
+        "t": "Ру́сский",
+        "lex": "a:русский",
+        "lemma": "ру́сский",
+        "g": {
+         "pos": "adj",
+         "case": "nom",
+         "number": "sg",
+         "gender": "m"
+        }
+       },
+       {
+        "t": "бале́т",
+        "lex": "n:балет",
+        "lemma": "бале́т",
+        "g": {
+         "pos": "noun",
+         "case": "nom",
+         "number": "sg"
+        },
+        "rare": true
+       },
+       {
+        "t": "изве́стен",
+        "lex": "a:известный",
+        "lemma": "изве́стный",
+        "g": {
+         "pos": "adj",
+         "short": true,
+         "number": "sg",
+         "gender": "m"
+        }
+       },
+       {
+        "t": "во",
+        "lex": "o:в",
+        "lemma": "в",
+        "g": {
+         "pos": "prep"
+        }
+       },
+       {
+        "t": "всём",
+        "lex": "a:весь",
+        "lemma": "весь",
+        "g": {
+         "pos": "adj",
+         "case": "prep",
+         "number": "sg",
+         "gender": "m"
+        }
+       },
+       {
+        "t": "ми́ре",
+        "sp": false,
+        "lex": "n:мир",
+        "lemma": "мир",
+        "g": {
+         "pos": "noun",
+         "case": "prep",
+         "number": "sg"
+        }
+       },
+       {
+        "t": ".",
+        "sp": false
+       }
+      ]
+     },
+     {
+      "en": "Tickets for the Bolshoi Theatre are often bought several months ahead.",
+      "tokens": [
+       {
+        "t": "Биле́ты",
+        "lex": "n:билет",
+        "lemma": "биле́т",
+        "g": {
+         "pos": "noun",
+         "case": "nom",
+         "number": "pl"
+        }
+       },
+       {
+        "t": "в",
+        "lex": "o:в",
+        "lemma": "в",
+        "g": {
+         "pos": "prep"
+        }
+       },
+       {
+        "t": "Большо́й",
+        "lex": "a:большой",
+        "lemma": "большо́й",
+        "g": {
+         "pos": "adj",
+         "case": "acc",
+         "number": "sg",
+         "gender": "m"
+        }
+       },
+       {
+        "t": "теа́тр",
+        "lex": "n:театр",
+        "lemma": "теа́тр",
+        "g": {
+         "pos": "noun",
+         "case": "acc",
+         "number": "sg"
+        }
+       },
+       {
+        "t": "ча́сто",
+        "lex": "o:часто",
+        "lemma": "ча́сто",
+        "g": {
+         "pos": "adv"
+        }
+       },
+       {
+        "t": "покупа́ют",
+        "lex": "v:покупать",
+        "lemma": "покупа́ть",
+        "g": {
+         "pos": "verb",
+         "aspect": "impf",
+         "tense": "pres",
+         "person": 3,
+         "number": "pl"
+        }
+       },
+       {
+        "t": "за",
+        "lex": "o:за",
+        "lemma": "за",
+        "g": {
+         "pos": "prep"
+        }
+       },
+       {
+        "t": "не́сколько",
+        "lex": "o:несколько",
+        "lemma": "не́сколько",
+        "g": {
+         "pos": "adv"
+        }
+       },
+       {
+        "t": "ме́сяцев",
+        "sp": false,
+        "lex": "n:месяц",
+        "lemma": "ме́сяц",
+        "g": {
+         "pos": "noun",
+         "case": "gen",
+         "number": "pl"
+        }
+       },
+       {
+        "t": ".",
+        "sp": false
+       }
+      ]
+     }
+    ],
+    "questions": []
+   }
+  },
+  {
+   "id": "c-gzhel",
+   "name": {
+    "ru": "Гжель",
+    "en": "Gzhel"
+   },
+   "rarity": "legendary",
+   "art": {
+    "icon": "🏺",
+    "hue": 215
+   },
+   "level": "B1",
+   "blurb": {
+    "id": "c-gzhel-blurb",
+    "kind": "card-blurb",
+    "level": "B1",
+    "title": {
+     "ru": "Гжель",
+     "en": "Gzhel"
+    },
+    "sentences": [
+     {
+      "para": true,
+      "en": "Gzhel is white china with a blue pattern.",
+      "tokens": [
+       {
+        "t": "Гжель",
+        "lemma": "Гжель",
+        "g": {
+         "pos": "name",
+         "case": "nom",
+         "number": "sg"
+        }
+       },
+       {
+        "t": "—"
+       },
+       {
+        "t": "э́то",
+        "lex": "o:это",
+        "lemma": "э́то",
+        "g": {
+         "pos": "pron"
+        }
+       },
+       {
+        "t": "бе́лая",
+        "lex": "a:белый",
+        "lemma": "бе́лый",
+        "g": {
+         "pos": "adj",
+         "case": "nom",
+         "number": "sg",
+         "gender": "f"
+        }
+       },
+       {
+        "t": "посу́да",
+        "lex": "n:посуда",
+        "lemma": "посу́да",
+        "g": {
+         "pos": "noun",
+         "case": "nom",
+         "number": "sg"
+        },
+        "rare": true
+       },
+       {
+        "t": "с",
+        "lex": "o:с",
+        "lemma": "с",
+        "g": {
+         "pos": "prep"
+        }
+       },
+       {
+        "t": "си́ним",
+        "lex": "a:синий",
+        "lemma": "си́ний",
+        "g": {
+         "pos": "adj",
+         "case": "ins",
+         "number": "sg",
+         "gender": "m"
+        }
+       },
+       {
+        "t": "рису́нком",
+        "sp": false,
+        "lex": "n:рисунок",
+        "lemma": "рису́нок",
+        "g": {
+         "pos": "noun",
+         "case": "ins",
+         "number": "sg"
+        },
+        "rare": true
+       },
+       {
+        "t": ".",
+        "sp": false
+       }
+      ]
+     },
+     {
+      "en": "It has been made in villages near Moscow for many years.",
+      "tokens": [
+       {
+        "t": "Её",
+        "lex": "o:она",
+        "lemma": "она́",
+        "g": {
+         "pos": "pron",
+         "case": "acc"
+        }
+       },
+       {
+        "t": "де́лают",
+        "lex": "v:делать",
+        "lemma": "де́лать",
+        "g": {
+         "pos": "verb",
+         "aspect": "impf",
+         "tense": "pres",
+         "person": 3,
+         "number": "pl"
+        }
+       },
+       {
+        "t": "в",
+        "lex": "o:в",
+        "lemma": "в",
+        "g": {
+         "pos": "prep"
+        }
+       },
+       {
+        "t": "деревня́х",
+        "lex": "n:деревня",
+        "lemma": "дере́вня",
+        "g": {
+         "pos": "noun",
+         "case": "prep",
+         "number": "pl"
+        }
+       },
+       {
+        "t": "недалеко́",
+        "lex": "o:недалеко",
+        "lemma": "недалеко́",
+        "g": {
+         "pos": "adv"
+        }
+       },
+       {
+        "t": "от",
+        "lex": "o:от",
+        "lemma": "от",
+        "g": {
+         "pos": "prep"
+        }
+       },
+       {
+        "t": "Москвы́",
+        "lex": "n:Москва",
+        "lemma": "Москва́",
+        "g": {
+         "pos": "noun",
+         "case": "gen",
+         "number": "sg"
+        },
+        "rare": true
+       },
+       {
+        "t": "уже́",
+        "lex": "o:уже",
+        "lemma": "уже́",
+        "g": {
+         "pos": "adv"
+        }
+       },
+       {
+        "t": "мно́го",
+        "lex": "o:много",
+        "lemma": "мно́го",
+        "g": {
+         "pos": "adv"
+        }
+       },
+       {
+        "t": "лет",
+        "sp": false,
+        "lex": "n:год",
+        "lemma": "год",
+        "g": {
+         "pos": "noun",
+         "case": "gen",
+         "number": "pl"
+        }
+       },
+       {
+        "t": ".",
+        "sp": false
+       }
+      ]
+     },
+     {
+      "en": "Every cup is painted by hand.",
+      "tokens": [
+       {
+        "t": "Ка́ждую",
+        "lex": "a:каждый",
+        "lemma": "ка́ждый",
+        "g": {
+         "pos": "adj",
+         "case": "acc",
+         "number": "sg",
+         "gender": "f"
+        }
+       },
+       {
+        "t": "ча́шку",
+        "lex": "n:чашка",
+        "lemma": "ча́шка",
+        "g": {
+         "pos": "noun",
+         "case": "acc",
+         "number": "sg"
+        }
+       },
+       {
+        "t": "распи́сывают",
+        "lex": "v:расписывать",
+        "lemma": "распи́сывать",
+        "g": {
+         "pos": "verb",
+         "aspect": "impf",
+         "tense": "pres",
+         "person": 3,
+         "number": "pl"
+        },
+        "rare": true
+       },
+       {
+        "t": "рука́ми",
+        "sp": false,
+        "lex": "n:рука",
+        "lemma": "рука́",
+        "g": {
+         "pos": "noun",
+         "case": "ins",
+         "number": "pl"
+        }
+       },
+       {
+        "t": ".",
+        "sp": false
+       }
+      ]
+     }
+    ],
+    "questions": []
+   }
+  }
+ ]
+}

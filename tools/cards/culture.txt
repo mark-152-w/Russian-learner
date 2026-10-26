@@ -1,0 +1,76 @@
+set: cs-culture
+title: Культу́ра | Culture
+bonusXp: 200
+===
+id: c-matryoshka
+name: Матрёшка | Matryoshka doll
+rarity: common
+level: A2
+art: 🪆 0
+---
+Матрёшка — деревя́нная ку́кла, а внутри́ неё — ещё ку́клы. | A matryoshka is a wooden doll with more dolls inside it.
+В одно́й матрёшке мо́жет быть и пять, и два́дцать ку́кол. | One matryoshka can hold five dolls, or even twenty.
+===
+id: c-samovar
+name: Самова́р | Samovar
+rarity: common
+level: A2
+art: 🫖 25
+---
+Самова́р — э́то большо́й ча́йник, в кото́ром гре́ют во́ду для ча́я. | A samovar is a big urn in which water for tea is heated.
+Ра́ньше вокру́г самова́ра собира́лась вся семья́. | In the old days the whole family would gather round the samovar.
+===
+id: c-banya
+name: Ба́ня | Banya
+rarity: rare
+level: A2
+art: 🧖 15
+---
+В ба́не о́чень жа́рко, а пото́м мо́жно пры́гнуть в снег. | It's very hot in a banya, and afterwards you can jump into the snow.
+По́сле ба́ни говоря́т: «С лёгким па́ром!» | After the banya people say: "Enjoy the light steam!"
+===
+id: c-maslenitsa
+name: Ма́сленица | Maslenitsa
+rarity: rare
+level: B1
+art: 🥞 35
+---
+Ма́сленица — пра́здник конца́ зимы́. | Maslenitsa is the festival of the end of winter.
+Всю неде́лю едя́т блины́, а в конце́ сжига́ют чу́чело зимы́. | All week people eat pancakes, and at the end they burn a straw figure of winter.
+===
+id: c-dacha
+name: Да́ча | Dacha
+rarity: common
+level: A2
+art: 🏡 100
+---
+Да́ча — дом за го́родом. | A dacha is a house outside the city.
+Ле́том мно́гие ру́сские е́здят туда́ на выходны́е и выра́щивают о́вощи. | In summer many Russians go there for the weekend and grow vegetables.
+===
+id: c-new-year
+name: Но́вый год | New Year
+rarity: epic
+level: A2
+art: 🎄 120
+---
+Но́вый год — гла́вный пра́здник в Росси́и. | New Year is the main holiday in Russia.
+На столе́ обяза́тельно стои́т сала́т оливье́{nom}, а под ёлкой лежа́т пода́рки от Де́да Моро́за. | There's always Olivier salad on the table, and under the tree there are presents from Grandfather Frost.
+===
+id: c-ballet
+name: Бале́т | Ballet
+rarity: rare
+level: B1
+art: 🩰 300
+---
+Ру́сский бале́т изве́стен во всём ми́ре. | Russian ballet is famous all over the world.
+Биле́ты в Большо́й{acc} теа́тр{acc} ча́сто покупа́ют за не́сколько ме́сяцев. | Tickets for the Bolshoi Theatre are often bought several months ahead.
+===
+id: c-gzhel
+name: Гжель | Gzhel
+rarity: legendary
+level: B1
+art: 🏺 215
+---
+Гжель — э́то бе́лая посу́да с си́ним рису́нком. | Gzhel is white china with a blue pattern.
+Её де́лают в деревня́х недалеко́ от Москвы́ уже́ мно́го лет. | It has been made in villages near Moscow for many years.
+Ка́ждую ча́шку распи́сывают рука́ми. | Every cup is painted by hand.
