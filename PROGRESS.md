@@ -6,29 +6,86 @@
 |---|---|
 | 0: scaffold, ingestion, validation, schemas | Done |
 | 1: shell, storage, PWA, engine, grader, FSRS, rewards | Done |
-| 2: grammar A2–B1, A2 units, placement, daily plan, vocab SRS, declension lab | **Done** |
-| 3: specialist trainers (cases, aspect, motion, stress, numerals) | Next (estimate at the end) |
+| 2: grammar A2–B1, A2 units, placement, daily plan, vocab SRS, declension lab | Done |
+| 3: specialist trainers (cases, aspect, motion, stress, numerals) | **Done** |
+| 4: graded reader, listening and speaking, keyboard trainer | Next (needs your go-ahead on the writing budget, at the end) |
 
 `npm run check` passes:
 
 - 25 Python tool tests;
 - `validate.py`: 0 errors, 2 warnings (сёк in two C1 sentences: a real form pymorphy3 doesn't know);
 - typecheck;
-- 105 Vitest tests. New in Phase 2: sentence cloze and generators, every unit producing gradable items,
-  placement staircase and item bank, the vocabulary deck, and the daily plan.
+- 117 Vitest tests. New in Phase 3: the counting rule and declined numerals, preposition sorting, shifting
+  stress and minimal pairs resolved from the lexicon, every hand-written aspect and motion item answerable, and
+  the trainer rotation in the daily plan.
 
-`npm run build`: the precache is 123 files, 11.3 MB raw (about 2.9 MB gzipped). That covers the app, the A1–C2
-lexicon and the A1–B1 example sentences. The rare-word tail, its search index and the B2/C1 sentences are cached
-the first time they're used.
+`npm run build`: the precache is 126 files, 11.1 MB raw (about 2.9 MB gzipped). The rare-word tail, its search
+index and the B2/C1 sentences are cached the first time they're used.
 
-I ran an end-to-end check in headless Chromium with no console errors. It covered:
+I ran every trainer end to end in headless Chromium with no console errors. That covered the hub, the motion
+prefix gallery, the aspect timeline legend, and a run of each mode with its feedback and diagram.
 
-- Home with the daily plan;
-- the whole placement test through to the result;
-- the course, a unit and a lesson;
-- the grammar index and an article;
-- the stress sprint;
-- the Lab, word pages and Review (checked earlier in the phase).
+## Phase 3: what's built
+
+A new **Trainers** tab holds five trainers. Each one shows your accuracy from the learner model, per mode.
+
+**Cases** (`/trainer/cases`):
+
+- **Sort the prepositions.** 40 prepositions, each paired with the meaning that fixes its case, so в appears
+  as "into (куда́?)" → accusative and as "in (где?)" → prepositional. You tap one of five case bins. Then you
+  see the rule with an example: «**без** + genitive: **ко́фе без са́хара**». The list is filtered to your level.
+- **Sentence gaps** from Tatoeba, either all cases or one case at a time. The governing word is highlighted and
+  a "why this case?" appears after each answer. These come from Phase 2's generator.
+
+**Numbers** (`/trainer/numerals`), all generated:
+
+- **Counting.** The 1 / 2–4 / 5+ rule, including 11–14 and 21/22/25, in 12 everyday frames: prices, the time,
+  ages, durations, "there are N people in the room". It knows the special counting forms: два часа́, пять лет,
+  пять челове́к. A wrong band gets the rule back ("after 2, 3, 4: genitive singular"), plus the grader's
+  diagnosis.
+- **Declined numerals.** о́коло двух часо́в, позвони́л пяти́ друзья́м, с тремя́ студе́нтами, о четырёх
+  кни́гах. Numeral forms come from `tools/closed_class.json`, so validate.py has checked them against pymorphy3.
+
+**Aspect** (`/trainer/aspect`): **71 hand-written items**, A2–B2. Each has a one-line reason and a **timeline
+picture** in the feedback. The pictures cover:
+
+- process, result, repetition, sequence and simultaneous actions;
+- duration;
+- a bare fact;
+- an action undone (приходи́л vs пришёл, брал vs взял);
+- request, prohibition and warning (Переда́й соль! / Не закрыва́й! / Не упади́!);
+- not managing it.
+
+The modes are past; present, habits and future (за два дня vs два дня); не and нельзя́; imperatives; and fine
+points.
+
+**Verbs of motion** (`/trainer/motion`): **63 hand-written items**:
+
+- basics: идти́/ходи́ть, е́хать/е́здить, нести́/носи́ть, вести́/води́ть vs везти́/вози́ть;
+- 13 prefixes;
+- figurative uses at B2: идёт дождь, тебе́ идёт, вы́шла за́муж, прийти́ в себя́, сойти́ с ума́.
+
+The trainer page has a **prefix gallery**: an animated diagram per prefix, with the on-foot and by-transport
+pairs (прийти́ / приходи́ть · прие́хать / приезжа́ть…). The same diagram appears in the feedback.
+
+**Stress** (`/trainer/stress`), all from the lexicon, so the stress is the dataset's:
+
+- shifting noun stress (ру́ку, города́, в лесу́);
+- feminine past shifts (жила́, начала́, была́);
+- same letters, different form (ру́ки "of the hand" vs руки́ "hands");
+- 14 minimal pairs between different words (за́мок/замо́к, пла́чу/плачу́, сто́ит/стои́т, мука́/му́ка…). The
+  lexicon must spell both forms identically apart from stress, and a test checks it.
+
+The stress trainer always shows stress marks, even with the stress setting off.
+
+**Rewards:**
+
+- a daily quest, "Finish a trainer session";
+- three achievements: Тренажёр, Трудя́га (50 sessions) and Многобо́рец (try all five trainers);
+- the daily plan's light item now rotates through the five trainers day by day.
+
+Hand-written aspect and motion items also feed the weak-spot drills and the placement test. That fixes the
+Phase 2 issue of the placement aspect questions repeating.
 
 ## Phase 2: what's built
 
@@ -220,6 +277,21 @@ Russian–English pairs with per-sentence attribution. I'll ingest it at the sta
 
 ## Decisions and trade-offs
 
+**Phase 3**
+
+- **Preposition sorting is a choice item with fixed case bins**, not drag-and-drop. It is faster on a phone, and
+  it goes through the same grader, XP and learner model as everything else.
+- **The aspect and motion items are hand-written; numerals and stress are generated.** For aspect and motion, I
+  left out any context where both aspects (or both verbs) would sound natural to a native speaker, for example
+  звони́л/позвони́л ему́, но он не отве́тил. A trainer that marks a natural answer wrong teaches the wrong
+  lesson.
+- **Minimal pairs come from the lexicon, not from my spelling.** Each pair names two lexemes and slots, and the
+  forms are read from the dataset. I dropped two pairs where the dataset was wrong or missing a form
+  (а́тлас/атла́с, ду́хи/духи́), and one that turned out not to be a pair: права́ "rights" and права́ "she is
+  right" are stressed the same.
+- **The hand-written trainer items go one level above yours.** An A2 learner also sees the B1 items, since
+  trainers are where you stretch.
+
 **Phase 2**
 
 - **Descriptive declension labels.** Patterns are named by their endings ("feminine -а/-я nouns", "masculine
@@ -258,8 +330,8 @@ Russian–English pairs with per-sentence attribution. I'll ingest it at the sta
   try a review session on your phone.
 - Tatoeba translations are community-written; a few English glosses are loose. Each sentence links to its
   source page.
-- The placement test's aspect skill draws from 8 hand-written items plus the units' aspect items, so retaking
-  it soon repeats questions. The Phase 3 aspect trainer will add more.
+- The motion diagrams animate with CSS `offset-path`. Safari before 16 (2022) shows them static, which still
+  reads correctly.
 
 ## Content counts
 
@@ -269,11 +341,12 @@ Russian–English pairs with per-sentence attribution. I'll ingest it at the sta
 | Example sentences (verified, stressed, analysed) | 32,430 |
 | Grammar articles | 30 (20 A2, 10 B1), about 14k words |
 | Course units | 20 (A2), 286 unit words |
-| Hand-written exercise items | 92 (84 in units, 8 placement) |
+| Hand-written exercise items | 226 (84 in units, 8 placement, 71 aspect, 63 motion) |
+| Trainer prepositions / minimal pairs | 40 / 14 |
 | Error types | 47 |
 | Grammar tags | 71 |
-| Achievements | 66 (57 active, 11 hidden) |
-| Quests | 14 daily, 4 weekly templates |
+| Achievements | 69 (60 active, 11 hidden) |
+| Quests | 15 daily, 4 weekly templates |
 | Themes | 6 |
 
 ## Review queue (`"review": true`)
@@ -281,21 +354,24 @@ Russian–English pairs with per-sentence attribution. I'll ingest it at the sta
 None. All the hand-written Russian passes `validate.py`, including the dictionary-stress check, and I
 re-checked the homographs by hand. Corrections I made along the way, for the record:
 
-- письмо́, де́ньги, о́тдал, приезжа́й, це́ны;
-- по́ездом instead of на по́езде in a "how did you get here" example.
+- Phase 2: письмо́, де́ньги, о́тдал, приезжа́й, це́ны; по́ездом instead of на по́езде;
+- Phase 3: the imperative of переби́ть is **перебе́й** (I'd written переби́й, and pymorphy3 flagged it).
+  I rephrased an example to avoid ко́е-что, whose stress dictionaries disagree on.
 
 If anything reads oddly to you, tell me the unit or article and I'll fix it.
 
-## Next: Phase 3, specialist trainers (estimate)
+## Next: Phase 4, reader, listening and keyboard (estimate)
 
-Mostly code. The writing is small because most items come from the sentence bank.
+This is the biggest writing batch so far. Stories are hand-written; a build step adds the per-word analysis
+(lemma, case/tense, stress), and validate.py checks it against pymorphy3.
 
 | Piece | Work | Output tokens (approx.) |
 |---|---|---|
-| Cases trainer: preposition→case sorting game, governing-word highlight (exists), "why" for every item | code | about 8k |
-| Numerals trainer: 2/3/4 + gen sg, 5+ gen pl, declined numerals, prices and times; all generated | code | about 6k |
-| Aspect trainer: ~80 hand-written contextual pairs with one-line reasons, plus negation and imperatives; process vs result timeline graphic | writing + code | about 15k |
-| Verbs of motion: uni/multi-directional, on foot/by vehicle; 13 prefixes, each with an animated SVG direction diagram; ~60 items, figurative uses at B2 | writing + code | about 15k |
-| Stress trainer: shifting patterns, feminine past (жила́), minimal pairs (за́мок / замо́к); generated, plus a ~30-pair list | code + small list | about 5k |
+| Graded reader: tappable words (gloss, dictionary form, analysis, add to SRS), comprehension questions, TTS with sentence highlighting and speed, stress/gloss defaults by level | code | about 12k |
+| ~40 original stories A2–C1 with recurring characters, plus short non-fiction (culture, history, everyday life); 250–700 words each, rising with level, with questions and glosses | writing | 70–90k |
+| Listening: dictation from the sentence bank (generated), sound discrimination (ы/и, hard/soft, а́канье), shadowing with optional SpeechRecognition | code + small lists | about 10k |
+| ~20 short scripted dialogues with questions (two voices where available) | writing | about 15k |
+| Keyboard trainer: ЙЦУКЕН course from the home row out, on-screen keyboard, layout setup help | code | about 8k |
 
-**Total: roughly 50k output tokens**, about half of Phase 2's budget.
+**Total: roughly 115–135k output tokens.** If that's too much at once, I'd suggest writing the A2–B1 stories
+now (about 20, about 35k) and the B2–C1 ones with the B1–C1 course in Phase 6.

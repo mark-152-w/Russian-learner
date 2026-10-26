@@ -64,6 +64,21 @@
         "model": {"type": "string", "description": "self-graded: the model answer."},
         "explanation": {"$ref": "common.schema.json#/$defs/markdown"},
         "source": {"enum": ["handwritten", "generated"]},
+        "visual": {
+          "type": "object",
+          "additionalProperties": false,
+          "description": "A small diagram shown with the feedback: an aspect timeline or a motion diagram.",
+          "properties": {
+            "timeline": {
+              "enum": ["process", "result", "repeated", "single", "sequence", "simultaneous", "duration", "fact", "annulled", "request", "prohibition", "warning", "ability"],
+              "description": "Aspect picture: ongoing process, a result reached, repeated ticks, one point, a sequence, parallel actions, a bracketed span, a bare fact, an action undone (there and back), or the imperative uses."
+            },
+            "motion": {
+              "enum": ["при", "у", "в", "вы", "под", "от", "до", "пере", "про", "за", "об", "с", "раз", "uni", "multi", "round"],
+              "description": "Motion diagram: a prefix's direction, one-way movement (uni), wandering (multi) or a round trip (round)."
+            }
+          }
+        },
         "review": {"$ref": "common.schema.json#/$defs/review"}
       },
       "allOf": [

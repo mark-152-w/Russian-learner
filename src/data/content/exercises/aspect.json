@@ -1,0 +1,1922 @@
+{
+ "$schema": "../../../../schemas/exercise.schema.json",
+ "items": [
+  {
+   "id": "ex-asp-01",
+   "type": "choice-reason",
+   "level": "A2",
+   "tags": [
+    "aspect.past"
+   ],
+   "prompt": {
+    "ru": "Вчера́ я весь ве́чер ___ телеви́зор.",
+    "en": "Yesterday I watched TV all evening.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "смотре́л"
+   ],
+   "distractors": [
+    {
+     "ru": "посмотре́л",
+     "error": "aspect.wrong"
+    }
+   ],
+   "reason": "**весь ве́чер**: how long it went on → imperfective.",
+   "source": "handwritten",
+   "visual": {
+    "timeline": "duration"
+   }
+  },
+  {
+   "id": "ex-asp-02",
+   "type": "choice-reason",
+   "level": "A2",
+   "tags": [
+    "aspect.past"
+   ],
+   "prompt": {
+    "ru": "Я ___ фильм и пошёл спать.",
+    "en": "I watched the film and went to bed.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "посмотре́л"
+   ],
+   "distractors": [
+    {
+     "ru": "смотре́л",
+     "error": "aspect.wrong"
+    }
+   ],
+   "reason": "One finished action, then the next → perfective.",
+   "source": "handwritten",
+   "visual": {
+    "timeline": "sequence"
+   }
+  },
+  {
+   "id": "ex-asp-03",
+   "type": "choice-reason",
+   "level": "A2",
+   "tags": [
+    "aspect.past"
+   ],
+   "prompt": {
+    "ru": "Когда́ я ___ у́жин, позвони́ла ма́ма.",
+    "en": "While I was cooking dinner, Mum rang.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "гото́вил"
+   ],
+   "distractors": [
+    {
+     "ru": "пригото́вил",
+     "error": "aspect.wrong"
+    }
+   ],
+   "reason": "A background process interrupted by an event → imperfective.",
+   "source": "handwritten",
+   "visual": {
+    "timeline": "process"
+   }
+  },
+  {
+   "id": "ex-asp-04",
+   "type": "choice-reason",
+   "level": "A2",
+   "tags": [
+    "aspect.past"
+   ],
+   "prompt": {
+    "ru": "Мы ___ и разгова́ривали.",
+    "en": "We were eating and talking.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "е́ли"
+   ],
+   "distractors": [
+    {
+     "ru": "съе́ли",
+     "error": "aspect.wrong"
+    }
+   ],
+   "reason": "Two processes at the same time → imperfective.",
+   "source": "handwritten",
+   "visual": {
+    "timeline": "simultaneous"
+   }
+  },
+  {
+   "id": "ex-asp-05",
+   "type": "choice-reason",
+   "level": "A2",
+   "tags": [
+    "aspect.past"
+   ],
+   "prompt": {
+    "ru": "Она́ ___ всё моро́женое!",
+    "en": "She's eaten all the ice cream!",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "съе́ла"
+   ],
+   "distractors": [
+    {
+     "ru": "е́ла",
+     "error": "aspect.wrong"
+    }
+   ],
+   "reason": "**всё**: the whole thing is gone, a result → perfective.",
+   "source": "handwritten",
+   "visual": {
+    "timeline": "result"
+   }
+  },
+  {
+   "id": "ex-asp-06",
+   "type": "choice-reason",
+   "level": "A2",
+   "tags": [
+    "aspect.past"
+   ],
+   "prompt": {
+    "ru": "Ра́ньше я ча́сто ___ ба́бушке.",
+    "en": "I used to write to my grandmother often.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "писа́л"
+   ],
+   "distractors": [
+    {
+     "ru": "написа́л",
+     "error": "aspect.wrong"
+    }
+   ],
+   "reason": "**ра́ньше, ча́сто**: a repeated action → imperfective.",
+   "source": "handwritten",
+   "visual": {
+    "timeline": "repeated"
+   }
+  },
+  {
+   "id": "ex-asp-07",
+   "type": "choice-reason",
+   "level": "A2",
+   "tags": [
+    "aspect.past"
+   ],
+   "prompt": {
+    "ru": "Я ___ тебе́ письмо́. Прочита́й его́!",
+    "en": "I've written you a letter. Read it!",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "написа́л"
+   ],
+   "distractors": [
+    {
+     "ru": "писа́л",
+     "error": "aspect.wrong"
+    }
+   ],
+   "reason": "The letter exists now: the result matters → perfective.",
+   "source": "handwritten",
+   "visual": {
+    "timeline": "result"
+   }
+  },
+  {
+   "id": "ex-asp-08",
+   "type": "choice-reason",
+   "level": "A2",
+   "tags": [
+    "aspect.past"
+   ],
+   "prompt": {
+    "ru": "Ди́ма ___ дверь и вошёл.",
+    "en": "Dima opened the door and came in.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "откры́л"
+   ],
+   "distractors": [
+    {
+     "ru": "открыва́л",
+     "error": "aspect.wrong"
+    }
+   ],
+   "reason": "A chain of finished actions → perfective.",
+   "source": "handwritten",
+   "visual": {
+    "timeline": "sequence"
+   }
+  },
+  {
+   "id": "ex-asp-09",
+   "type": "choice-reason",
+   "level": "A2",
+   "tags": [
+    "aspect.past"
+   ],
+   "prompt": {
+    "ru": "Кто ___ весь мой чай?",
+    "en": "Who drank all my tea?",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "вы́пил"
+   ],
+   "distractors": [
+    {
+     "ru": "пил",
+     "error": "aspect.wrong"
+    }
+   ],
+   "reason": "**весь**: the tea is gone, a result → perfective.",
+   "source": "handwritten",
+   "visual": {
+    "timeline": "result"
+   }
+  },
+  {
+   "id": "ex-asp-10",
+   "type": "choice-reason",
+   "level": "A2",
+   "tags": [
+    "aspect.past"
+   ],
+   "prompt": {
+    "ru": "Мы ___ до са́мого утра́.",
+    "en": "We danced right until morning.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "танцева́ли"
+   ],
+   "distractors": [
+    {
+     "ru": "потанцева́ли",
+     "error": "aspect.wrong"
+    }
+   ],
+   "reason": "**до утра́**: a long process → imperfective.",
+   "source": "handwritten",
+   "visual": {
+    "timeline": "duration"
+   }
+  },
+  {
+   "id": "ex-asp-11",
+   "type": "choice-reason",
+   "level": "A2",
+   "tags": [
+    "aspect.past"
+   ],
+   "prompt": {
+    "ru": "Сего́дня я ___ в шесть.",
+    "en": "Today I got up at six.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "встал"
+   ],
+   "distractors": [
+    {
+     "ru": "встава́л",
+     "error": "aspect.wrong"
+    }
+   ],
+   "reason": "One occasion, done → perfective.",
+   "source": "handwritten",
+   "visual": {
+    "timeline": "single"
+   }
+  },
+  {
+   "id": "ex-asp-12",
+   "type": "choice-reason",
+   "level": "A2",
+   "tags": [
+    "aspect.past"
+   ],
+   "prompt": {
+    "ru": "Он ___ ру́ки и сел за стол.",
+    "en": "He washed his hands and sat down at the table.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "помы́л"
+   ],
+   "distractors": [
+    {
+     "ru": "мыл",
+     "error": "aspect.wrong"
+    }
+   ],
+   "reason": "Finished, then the next action → perfective.",
+   "source": "handwritten",
+   "visual": {
+    "timeline": "sequence"
+   }
+  },
+  {
+   "id": "ex-asp-13",
+   "type": "choice-reason",
+   "level": "A2",
+   "tags": [
+    "aspect.past"
+   ],
+   "prompt": {
+    "ru": "Пока́ ма́ма ___ посу́ду, па́па чита́л газе́ту.",
+    "en": "While Mum was washing up, Dad was reading the paper.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "мы́ла"
+   ],
+   "distractors": [
+    {
+     "ru": "помы́ла",
+     "error": "aspect.wrong"
+    }
+   ],
+   "reason": "**пока́**: two processes side by side → imperfective.",
+   "source": "handwritten",
+   "visual": {
+    "timeline": "simultaneous"
+   }
+  },
+  {
+   "id": "ex-asp-14",
+   "type": "choice-reason",
+   "level": "A2",
+   "tags": [
+    "aspect.past"
+   ],
+   "prompt": {
+    "ru": "Я ___ э́ту пе́сню мно́го раз.",
+    "en": "I've heard this song many times.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "слы́шал"
+   ],
+   "distractors": [
+    {
+     "ru": "услы́шал",
+     "error": "aspect.wrong"
+    }
+   ],
+   "reason": "**мно́го раз**: repeated → imperfective.",
+   "source": "handwritten",
+   "visual": {
+    "timeline": "repeated"
+   }
+  },
+  {
+   "id": "ex-asp-15",
+   "type": "choice-reason",
+   "level": "A2",
+   "tags": [
+    "aspect.past"
+   ],
+   "prompt": {
+    "ru": "Вдруг я ___ стра́нный звук.",
+    "en": "Suddenly I heard a strange sound.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "услы́шал"
+   ],
+   "distractors": [
+    {
+     "ru": "слы́шал",
+     "error": "aspect.wrong"
+    }
+   ],
+   "reason": "**вдруг**: one sudden event → perfective.",
+   "source": "handwritten",
+   "visual": {
+    "timeline": "single"
+   }
+  },
+  {
+   "id": "ex-asp-16",
+   "type": "choice-reason",
+   "level": "A2",
+   "tags": [
+    "aspect.past"
+   ],
+   "prompt": {
+    "ru": "Он ___ ключ и откры́л дверь.",
+    "en": "He took out the key and opened the door.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "доста́л"
+   ],
+   "distractors": [
+    {
+     "ru": "достава́л",
+     "error": "aspect.wrong"
+    }
+   ],
+   "reason": "A chain of finished actions → perfective.",
+   "source": "handwritten",
+   "visual": {
+    "timeline": "sequence"
+   }
+  },
+  {
+   "id": "ex-asp-17",
+   "type": "choice-reason",
+   "level": "A2",
+   "tags": [
+    "aspect.past"
+   ],
+   "prompt": {
+    "ru": "Мы до́лго ___, како́й пода́рок купи́ть.",
+    "en": "We spent a long time choosing which present to buy.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "выбира́ли"
+   ],
+   "distractors": [
+    {
+     "ru": "вы́брали",
+     "error": "aspect.wrong"
+    }
+   ],
+   "reason": "**до́лго**: a process → imperfective.",
+   "source": "handwritten",
+   "visual": {
+    "timeline": "duration"
+   }
+  },
+  {
+   "id": "ex-asp-18",
+   "type": "choice-reason",
+   "level": "A2",
+   "tags": [
+    "aspect.past"
+   ],
+   "prompt": {
+    "ru": "Наконе́ц мы ___ пода́рок.",
+    "en": "At last we chose a present.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "вы́брали"
+   ],
+   "distractors": [
+    {
+     "ru": "выбира́ли",
+     "error": "aspect.wrong"
+    }
+   ],
+   "reason": "**наконе́ц**: the result is reached → perfective.",
+   "source": "handwritten",
+   "visual": {
+    "timeline": "result"
+   }
+  },
+  {
+   "id": "ex-asp-19",
+   "type": "choice-reason",
+   "level": "A2",
+   "tags": [
+    "aspect.past"
+   ],
+   "prompt": {
+    "ru": "Он ___ на вопро́с и сел.",
+    "en": "He answered the question and sat down.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "отве́тил"
+   ],
+   "distractors": [
+    {
+     "ru": "отвеча́л",
+     "error": "aspect.wrong"
+    }
+   ],
+   "reason": "Finished, then the next action → perfective.",
+   "source": "handwritten",
+   "visual": {
+    "timeline": "sequence"
+   }
+  },
+  {
+   "id": "ex-asp-20",
+   "type": "choice-reason",
+   "level": "A2",
+   "tags": [
+    "aspect.past"
+   ],
+   "prompt": {
+    "ru": "Я до́лго иска́л ключи́ и наконе́ц ___ их.",
+    "en": "I looked for my keys for ages and finally found them.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "нашёл"
+   ],
+   "distractors": [
+    {
+     "ru": "находи́л",
+     "error": "aspect.wrong"
+    }
+   ],
+   "reason": "**наконе́ц**: the search reached its result → perfective.",
+   "source": "handwritten",
+   "visual": {
+    "timeline": "result"
+   }
+  },
+  {
+   "id": "ex-asp-21",
+   "type": "choice-reason",
+   "level": "B1",
+   "tags": [
+    "aspect.past"
+   ],
+   "prompt": {
+    "ru": "Вчера́ к тебе́ ___ како́й-то мужчи́на.",
+    "en": "Some man came to see you yesterday.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "приходи́л"
+   ],
+   "distractors": [
+    {
+     "ru": "пришёл",
+     "error": "aspect.wrong"
+    }
+   ],
+   "reason": "He came and left again: the visit no longer holds → imperfective.",
+   "source": "handwritten",
+   "visual": {
+    "timeline": "annulled"
+   }
+  },
+  {
+   "id": "ex-asp-22",
+   "type": "choice-reason",
+   "level": "B1",
+   "tags": [
+    "aspect.past"
+   ],
+   "prompt": {
+    "ru": "Смотри́, кто ___!",
+    "en": "Look who's here!",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "пришёл"
+   ],
+   "distractors": [
+    {
+     "ru": "приходи́л",
+     "error": "aspect.wrong"
+    }
+   ],
+   "reason": "He came and is here now → perfective.",
+   "source": "handwritten",
+   "visual": {
+    "timeline": "result"
+   }
+  },
+  {
+   "id": "ex-asp-23",
+   "type": "choice-reason",
+   "level": "B1",
+   "tags": [
+    "aspect.past"
+   ],
+   "prompt": {
+    "ru": "Вы когда́-нибудь ___ борщ?",
+    "en": "Have you ever cooked borscht?",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "гото́вили"
+   ],
+   "distractors": [
+    {
+     "ru": "пригото́вили",
+     "error": "aspect.wrong"
+    }
+   ],
+   "reason": "**когда́-нибудь**: asking about experience, not a result → imperfective.",
+   "source": "handwritten",
+   "visual": {
+    "timeline": "fact"
+   }
+  },
+  {
+   "id": "ex-asp-24",
+   "type": "choice-reason",
+   "level": "B1",
+   "tags": [
+    "aspect.nuance"
+   ],
+   "prompt": {
+    "ru": "Он три ра́за ___ экза́мен, но не сдал.",
+    "en": "He took the exam three times but didn't pass.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "сдава́л"
+   ],
+   "distractors": [
+    {
+     "ru": "сдал",
+     "error": "aspect.wrong"
+    }
+   ],
+   "reason": "**сдава́ть** = to take an exam (attempts); **сдать** = to pass it.",
+   "source": "handwritten",
+   "visual": {
+    "timeline": "repeated"
+   }
+  },
+  {
+   "id": "ex-asp-25",
+   "type": "choice-reason",
+   "level": "B1",
+   "tags": [
+    "aspect.past"
+   ],
+   "prompt": {
+    "ru": "Кто ___ из мое́й ча́шки?",
+    "en": "Who's been drinking from my cup?",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "пил"
+   ],
+   "distractors": [
+    {
+     "ru": "вы́пил",
+     "error": "aspect.wrong"
+    }
+   ],
+   "reason": "Traces of an action, no interest in a result → imperfective.",
+   "source": "handwritten",
+   "visual": {
+    "timeline": "fact"
+   }
+  },
+  {
+   "id": "ex-asp-26",
+   "type": "choice-reason",
+   "level": "B1",
+   "tags": [
+    "aspect.past"
+   ],
+   "prompt": {
+    "ru": "Вы уже́ ___?",
+    "en": "Have you already ordered?",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "заказа́ли"
+   ],
+   "distractors": [
+    {
+     "ru": "зака́зывали",
+     "error": "aspect.wrong"
+    }
+   ],
+   "reason": "**уже́**: is the result there? → perfective.",
+   "source": "handwritten",
+   "visual": {
+    "timeline": "result"
+   }
+  },
+  {
+   "id": "ex-asp-27",
+   "type": "choice-reason",
+   "level": "B2",
+   "tags": [
+    "aspect.nuance"
+   ],
+   "prompt": {
+    "ru": "Кто́-то ___ окно́: в ко́мнате хо́лодно, хотя́ оно́ закры́то.",
+    "en": "Someone has had the window open: the room is cold, though it's shut now.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "открыва́л"
+   ],
+   "distractors": [
+    {
+     "ru": "откры́л",
+     "error": "aspect.wrong"
+    }
+   ],
+   "reason": "Opened and shut again: the result was undone → imperfective.",
+   "source": "handwritten",
+   "visual": {
+    "timeline": "annulled"
+   }
+  },
+  {
+   "id": "ex-asp-28",
+   "type": "choice-reason",
+   "level": "B2",
+   "tags": [
+    "aspect.nuance"
+   ],
+   "prompt": {
+    "ru": "Ты ___ мою́ ру́чку? Она́ лежи́т не там.",
+    "en": "Did you borrow my pen? It's not where I left it.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "брал"
+   ],
+   "distractors": [
+    {
+     "ru": "взял",
+     "error": "aspect.wrong"
+    }
+   ],
+   "reason": "Taken and put back: the result no longer holds → imperfective.",
+   "source": "handwritten",
+   "visual": {
+    "timeline": "annulled"
+   }
+  },
+  {
+   "id": "ex-asp-29",
+   "type": "choice-reason",
+   "level": "B2",
+   "tags": [
+    "aspect.nuance"
+   ],
+   "prompt": {
+    "ru": "Ты ___ мою́ ру́чку? Я не могу́ её найти́.",
+    "en": "Have you taken my pen? I can't find it.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "взял"
+   ],
+   "distractors": [
+    {
+     "ru": "брал",
+     "error": "aspect.wrong"
+    }
+   ],
+   "reason": "The pen is still gone: the result holds → perfective.",
+   "source": "handwritten",
+   "visual": {
+    "timeline": "result"
+   }
+  },
+  {
+   "id": "ex-asp-30",
+   "type": "choice-reason",
+   "level": "A2",
+   "tags": [
+    "aspect.intro"
+   ],
+   "prompt": {
+    "ru": "Сейча́с я ___ письмо́.",
+    "en": "I'm writing a letter now.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "пишу́"
+   ],
+   "distractors": [
+    {
+     "ru": "напишу́",
+     "error": "aspect.wrong"
+    }
+   ],
+   "reason": "Right now = a process; a perfective has no present tense (**напишу́** is future).",
+   "source": "handwritten",
+   "visual": {
+    "timeline": "process"
+   }
+  },
+  {
+   "id": "ex-asp-31",
+   "type": "choice-reason",
+   "level": "A2",
+   "tags": [
+    "aspect.intro"
+   ],
+   "prompt": {
+    "ru": "Обы́чно я ___ в семь.",
+    "en": "I usually get up at seven.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "встаю́"
+   ],
+   "distractors": [
+    {
+     "ru": "вста́ну",
+     "error": "aspect.wrong"
+    }
+   ],
+   "reason": "**обы́чно**: a habit → imperfective (**вста́ну** is a one-off future).",
+   "source": "handwritten",
+   "visual": {
+    "timeline": "repeated"
+   }
+  },
+  {
+   "id": "ex-asp-32",
+   "type": "choice-reason",
+   "level": "A2",
+   "tags": [
+    "aspect.intro"
+   ],
+   "prompt": {
+    "ru": "Обы́чно он ___ в во́семь.",
+    "en": "He usually arrives at eight.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "прихо́дит"
+   ],
+   "distractors": [
+    {
+     "ru": "придёт",
+     "error": "aspect.wrong"
+    }
+   ],
+   "reason": "**обы́чно**: a habit → imperfective.",
+   "source": "handwritten",
+   "visual": {
+    "timeline": "repeated"
+   }
+  },
+  {
+   "id": "ex-asp-33",
+   "type": "choice-reason",
+   "level": "A2",
+   "tags": [
+    "aspect.intro"
+   ],
+   "prompt": {
+    "ru": "Он всегда́ ___ мне, когда́ ему́ что́-то ну́жно.",
+    "en": "He always rings me when he needs something.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "звони́т"
+   ],
+   "distractors": [
+    {
+     "ru": "позвони́т",
+     "error": "aspect.wrong"
+    }
+   ],
+   "reason": "**всегда́**: repeated → imperfective.",
+   "source": "handwritten",
+   "visual": {
+    "timeline": "repeated"
+   }
+  },
+  {
+   "id": "ex-asp-34",
+   "type": "choice-reason",
+   "level": "A2",
+   "tags": [
+    "aspect.future"
+   ],
+   "prompt": {
+    "ru": "За́втра я весь день ___ к экза́мену.",
+    "en": "Tomorrow I'll spend the whole day preparing for the exam.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "бу́ду гото́виться"
+   ],
+   "distractors": [
+    {
+     "ru": "подгото́влюсь",
+     "error": "aspect.wrong"
+    }
+   ],
+   "reason": "**весь день**: a process in the future → **бу́ду** + imperfective.",
+   "source": "handwritten",
+   "visual": {
+    "timeline": "duration"
+   }
+  },
+  {
+   "id": "ex-asp-35",
+   "type": "choice-reason",
+   "level": "A2",
+   "tags": [
+    "aspect.future"
+   ],
+   "prompt": {
+    "ru": "Не волну́йся, я ___ тебе́ из аэропо́рта.",
+    "en": "Don't worry, I'll call you from the airport.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "позвоню́"
+   ],
+   "distractors": [
+    {
+     "ru": "бу́ду звони́ть",
+     "error": "aspect.wrong"
+    }
+   ],
+   "reason": "One promised call → perfective future.",
+   "source": "handwritten",
+   "visual": {
+    "timeline": "single"
+   }
+  },
+  {
+   "id": "ex-asp-36",
+   "type": "choice-reason",
+   "level": "A2",
+   "tags": [
+    "aspect.future"
+   ],
+   "prompt": {
+    "ru": "Я ___ тебе́ ка́ждый день.",
+    "en": "I'll call you every day.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "бу́ду звони́ть"
+   ],
+   "distractors": [
+    {
+     "ru": "позвоню́",
+     "error": "aspect.wrong"
+    }
+   ],
+   "reason": "**ка́ждый день**: repeated → **бу́ду** + imperfective.",
+   "source": "handwritten",
+   "visual": {
+    "timeline": "repeated"
+   }
+  },
+  {
+   "id": "ex-asp-37",
+   "type": "choice-reason",
+   "level": "A2",
+   "tags": [
+    "aspect.future"
+   ],
+   "prompt": {
+    "ru": "Обеща́й, что бу́дешь ___ мне ка́ждую неде́лю.",
+    "en": "Promise you'll write to me every week.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "писа́ть"
+   ],
+   "distractors": [
+    {
+     "ru": "написа́ть",
+     "error": "aspect.future-pf"
+    }
+   ],
+   "reason": "**бу́ду** only combines with an imperfective infinitive.",
+   "source": "handwritten",
+   "visual": {
+    "timeline": "repeated"
+   }
+  },
+  {
+   "id": "ex-asp-38",
+   "type": "choice-reason",
+   "level": "B1",
+   "tags": [
+    "aspect.future"
+   ],
+   "prompt": {
+    "ru": "Когда́ ты ___ рабо́ту, позвони́ мне.",
+    "en": "When you've finished work, call me.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "зако́нчишь"
+   ],
+   "distractors": [
+    {
+     "ru": "бу́дешь зака́нчивать",
+     "error": "aspect.wrong"
+    }
+   ],
+   "reason": "First finish, then call: a completed step → perfective.",
+   "source": "handwritten",
+   "visual": {
+    "timeline": "sequence"
+   }
+  },
+  {
+   "id": "ex-asp-39",
+   "type": "choice-reason",
+   "level": "B1",
+   "tags": [
+    "aspect.future"
+   ],
+   "prompt": {
+    "ru": "Я ___ э́ту кни́гу за два дня.",
+    "en": "I'll read this book in two days.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "прочита́ю"
+   ],
+   "distractors": [
+    {
+     "ru": "бу́ду чита́ть",
+     "error": "aspect.wrong"
+    }
+   ],
+   "reason": "**за** + time: how long it takes to reach the result → perfective.",
+   "source": "handwritten",
+   "visual": {
+    "timeline": "result"
+   }
+  },
+  {
+   "id": "ex-asp-40",
+   "type": "choice-reason",
+   "level": "B1",
+   "tags": [
+    "aspect.future"
+   ],
+   "prompt": {
+    "ru": "Я ___ э́ту кни́гу два дня.",
+    "en": "I'll be reading this book for two days.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "бу́ду чита́ть"
+   ],
+   "distractors": [
+    {
+     "ru": "прочита́ю",
+     "error": "aspect.wrong"
+    }
+   ],
+   "reason": "Bare time span: how long the process lasts → imperfective.",
+   "source": "handwritten",
+   "visual": {
+    "timeline": "duration"
+   }
+  },
+  {
+   "id": "ex-asp-41",
+   "type": "choice-reason",
+   "level": "B1",
+   "tags": [
+    "aspect.future"
+   ],
+   "prompt": {
+    "ru": "Как то́лько он ___, мы начнём.",
+    "en": "As soon as he arrives, we'll start.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "придёт"
+   ],
+   "distractors": [
+    {
+     "ru": "прихо́дит",
+     "error": "aspect.wrong"
+    }
+   ],
+   "reason": "**как то́лько**: one event, then the next → perfective future.",
+   "source": "handwritten",
+   "visual": {
+    "timeline": "sequence"
+   }
+  },
+  {
+   "id": "ex-asp-42",
+   "type": "choice-reason",
+   "level": "B1",
+   "tags": [
+    "aspect.nuance"
+   ],
+   "prompt": {
+    "ru": "Подожди́ мину́тку, я сейча́с всё ___.",
+    "en": "Wait a moment, I'll explain everything right away.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "объясню́"
+   ],
+   "distractors": [
+    {
+     "ru": "объясня́ю",
+     "error": "aspect.wrong"
+    }
+   ],
+   "reason": "**сейча́с** + perfective = *in a moment*: one action about to be done.",
+   "source": "handwritten",
+   "visual": {
+    "timeline": "single"
+   }
+  },
+  {
+   "id": "ex-asp-43",
+   "type": "choice-reason",
+   "level": "A2",
+   "tags": [
+    "aspect.intro"
+   ],
+   "prompt": {
+    "ru": "Я люблю́ ___.",
+    "en": "I love cooking.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "гото́вить"
+   ],
+   "distractors": [
+    {
+     "ru": "пригото́вить",
+     "error": "aspect.wrong"
+    }
+   ],
+   "reason": "After **люби́ть**: an activity → imperfective.",
+   "source": "handwritten",
+   "visual": {
+    "timeline": "process"
+   }
+  },
+  {
+   "id": "ex-asp-44",
+   "type": "choice-reason",
+   "level": "A2",
+   "tags": [
+    "aspect.intro"
+   ],
+   "prompt": {
+    "ru": "Мо́жно ___ окно́?",
+    "en": "May I open the window?",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "откры́ть"
+   ],
+   "distractors": [
+    {
+     "ru": "открыва́ть",
+     "error": "aspect.wrong"
+    }
+   ],
+   "reason": "Asking to do one thing once → perfective.",
+   "source": "handwritten",
+   "visual": {
+    "timeline": "single"
+   }
+  },
+  {
+   "id": "ex-asp-45",
+   "type": "choice-reason",
+   "level": "A2",
+   "tags": [
+    "aspect.intro"
+   ],
+   "prompt": {
+    "ru": "Я хочу́ тебе́ что́-то ___.",
+    "en": "I want to tell you something.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "сказа́ть"
+   ],
+   "distractors": [
+    {
+     "ru": "говори́ть",
+     "error": "aspect.wrong"
+    }
+   ],
+   "reason": "One statement → perfective.",
+   "source": "handwritten",
+   "visual": {
+    "timeline": "single"
+   }
+  },
+  {
+   "id": "ex-asp-46",
+   "type": "choice-reason",
+   "level": "A2",
+   "tags": [
+    "aspect.intro"
+   ],
+   "prompt": {
+    "ru": "Я забы́л ___ молоко́.",
+    "en": "I forgot to buy milk.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "купи́ть"
+   ],
+   "distractors": [
+    {
+     "ru": "покупа́ть",
+     "error": "aspect.wrong"
+    }
+   ],
+   "reason": "One errand → perfective.",
+   "source": "handwritten",
+   "visual": {
+    "timeline": "single"
+   }
+  },
+  {
+   "id": "ex-asp-47",
+   "type": "choice-reason",
+   "level": "B1",
+   "tags": [
+    "aspect.intro"
+   ],
+   "prompt": {
+    "ru": "Я начала́ ___ ру́сский год наза́д.",
+    "en": "I started learning Russian a year ago.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "учи́ть"
+   ],
+   "distractors": [
+    {
+     "ru": "вы́учить",
+     "error": "aspect.wrong"
+    }
+   ],
+   "reason": "After **нача́ть**, **ко́нчить**, **продолжа́ть** only an imperfective infinitive.",
+   "source": "handwritten",
+   "visual": {
+    "timeline": "process"
+   }
+  },
+  {
+   "id": "ex-asp-48",
+   "type": "choice-reason",
+   "level": "B1",
+   "tags": [
+    "aspect.intro"
+   ],
+   "prompt": {
+    "ru": "Он зако́нчил ___ статью́ и пошёл гуля́ть.",
+    "en": "He finished writing the article and went for a walk.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "писа́ть"
+   ],
+   "distractors": [
+    {
+     "ru": "написа́ть",
+     "error": "aspect.wrong"
+    }
+   ],
+   "reason": "After **зако́нчить** only an imperfective infinitive.",
+   "source": "handwritten",
+   "visual": {
+    "timeline": "process"
+   }
+  },
+  {
+   "id": "ex-asp-49",
+   "type": "choice-reason",
+   "level": "B1",
+   "tags": [
+    "aspect.intro"
+   ],
+   "prompt": {
+    "ru": "Я уста́л ___ одно́ и то же.",
+    "en": "I'm tired of repeating the same thing.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "повторя́ть"
+   ],
+   "distractors": [
+    {
+     "ru": "повтори́ть",
+     "error": "aspect.wrong"
+    }
+   ],
+   "reason": "After **уста́ть** an imperfective infinitive: the tiring process.",
+   "source": "handwritten",
+   "visual": {
+    "timeline": "repeated"
+   }
+  },
+  {
+   "id": "ex-asp-50",
+   "type": "choice-reason",
+   "level": "B1",
+   "tags": [
+    "aspect.intro"
+   ],
+   "prompt": {
+    "ru": "Я не успе́л ___ отве́т.",
+    "en": "I didn't manage to write the answer in time.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "написа́ть"
+   ],
+   "distractors": [
+    {
+     "ru": "писа́ть",
+     "error": "aspect.wrong"
+    }
+   ],
+   "reason": "**успе́ть** = manage in time: it needs a result → perfective.",
+   "source": "handwritten",
+   "visual": {
+    "timeline": "result"
+   }
+  },
+  {
+   "id": "ex-asp-51",
+   "type": "choice-reason",
+   "level": "B1",
+   "tags": [
+    "aspect.intro"
+   ],
+   "prompt": {
+    "ru": "Мне на́до ___ ему́ сего́дня.",
+    "en": "I need to ring him today.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "позвони́ть"
+   ],
+   "distractors": [
+    {
+     "ru": "звони́ть",
+     "error": "aspect.wrong"
+    }
+   ],
+   "reason": "One call that has to happen → perfective.",
+   "source": "handwritten",
+   "visual": {
+    "timeline": "single"
+   }
+  },
+  {
+   "id": "ex-asp-52",
+   "type": "choice-reason",
+   "level": "B1",
+   "tags": [
+    "aspect.intro"
+   ],
+   "prompt": {
+    "ru": "Тебе́ на́до бо́льше ___.",
+    "en": "You need to rest more.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "отдыха́ть"
+   ],
+   "distractors": [
+    {
+     "ru": "отдохну́ть",
+     "error": "aspect.wrong"
+    }
+   ],
+   "reason": "A general habit to adopt → imperfective.",
+   "source": "handwritten",
+   "visual": {
+    "timeline": "repeated"
+   }
+  },
+  {
+   "id": "ex-asp-53",
+   "type": "choice-reason",
+   "level": "B1",
+   "tags": [
+    "aspect.nuance"
+   ],
+   "prompt": {
+    "ru": "Дава́йте ___ по-ру́сски!",
+    "en": "Let's speak Russian!",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "говори́ть"
+   ],
+   "distractors": [
+    {
+     "ru": "ска́жем",
+     "error": "aspect.wrong"
+    }
+   ],
+   "reason": "**дава́йте** + imperfective infinitive: let's do it as an activity.",
+   "source": "handwritten",
+   "visual": {
+    "timeline": "process"
+   }
+  },
+  {
+   "id": "ex-asp-54",
+   "type": "choice-reason",
+   "level": "B2",
+   "tags": [
+    "aspect.nuance"
+   ],
+   "prompt": {
+    "ru": "Ско́лько раз тебе́ ___!",
+    "en": "How many times do I have to tell you!",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "говори́ть"
+   ],
+   "distractors": [
+    {
+     "ru": "сказа́ть",
+     "error": "aspect.wrong"
+    }
+   ],
+   "reason": "**ско́лько раз**: endless repetition → imperfective.",
+   "source": "handwritten",
+   "visual": {
+    "timeline": "repeated"
+   }
+  },
+  {
+   "id": "ex-asp-55",
+   "type": "choice-reason",
+   "level": "B1",
+   "tags": [
+    "aspect.negation"
+   ],
+   "prompt": {
+    "ru": "Я не ___ э́тот фильм. О чём он?",
+    "en": "I haven't seen this film. What's it about?",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "смотре́л"
+   ],
+   "distractors": [
+    {
+     "ru": "посмотре́л",
+     "error": "aspect.wrong"
+    }
+   ],
+   "reason": "No action at all: **не** + imperfective.",
+   "source": "handwritten",
+   "visual": {
+    "timeline": "fact"
+   }
+  },
+  {
+   "id": "ex-asp-56",
+   "type": "choice-reason",
+   "level": "B1",
+   "tags": [
+    "aspect.negation"
+   ],
+   "prompt": {
+    "ru": "Я весь ве́чер чита́л, но так и не ___ кни́гу.",
+    "en": "I read all evening but still didn't finish the book.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "прочита́л"
+   ],
+   "distractors": [
+    {
+     "ru": "чита́л",
+     "error": "aspect.wrong"
+    }
+   ],
+   "reason": "The expected result wasn't reached: **не** + perfective.",
+   "source": "handwritten",
+   "visual": {
+    "timeline": "ability"
+   }
+  },
+  {
+   "id": "ex-asp-57",
+   "type": "choice-reason",
+   "level": "B1",
+   "tags": [
+    "aspect.negation"
+   ],
+   "prompt": {
+    "ru": "Я не могу́ ___ э́ту зада́чу: она́ сли́шком тру́дная.",
+    "en": "I can't solve this problem: it's too hard.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "реши́ть"
+   ],
+   "distractors": [
+    {
+     "ru": "реша́ть",
+     "error": "aspect.wrong"
+    }
+   ],
+   "reason": "Can't manage to reach the result → perfective.",
+   "source": "handwritten",
+   "visual": {
+    "timeline": "ability"
+   }
+  },
+  {
+   "id": "ex-asp-58",
+   "type": "choice-reason",
+   "level": "B1",
+   "tags": [
+    "aspect.negation"
+   ],
+   "prompt": {
+    "ru": "Не на́до ___ ему́: он уже́ зна́ет.",
+    "en": "There's no need to ring him: he already knows.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "звони́ть"
+   ],
+   "distractors": [
+    {
+     "ru": "позвони́ть",
+     "error": "aspect.wrong"
+    }
+   ],
+   "reason": "**не на́до** + imperfective: don't bother doing it.",
+   "source": "handwritten",
+   "visual": {
+    "timeline": "prohibition"
+   }
+  },
+  {
+   "id": "ex-asp-59",
+   "type": "choice-reason",
+   "level": "B1",
+   "tags": [
+    "aspect.negation"
+   ],
+   "prompt": {
+    "ru": "Здесь нельзя́ ___: э́то больни́ца.",
+    "en": "You can't smoke here: it's a hospital.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "кури́ть"
+   ],
+   "distractors": [
+    {
+     "ru": "покури́ть",
+     "error": "aspect.wrong"
+    }
+   ],
+   "reason": "**нельзя́** + imperfective = it's not allowed.",
+   "source": "handwritten",
+   "visual": {
+    "timeline": "prohibition"
+   }
+  },
+  {
+   "id": "ex-asp-60",
+   "type": "choice-reason",
+   "level": "B2",
+   "tags": [
+    "aspect.negation"
+   ],
+   "prompt": {
+    "ru": "Э́ту дверь нельзя́ ___: она́ сло́мана.",
+    "en": "This door can't be opened: it's broken.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "откры́ть"
+   ],
+   "distractors": [
+    {
+     "ru": "открыва́ть",
+     "error": "aspect.wrong"
+    }
+   ],
+   "reason": "**нельзя́** + perfective = it's impossible.",
+   "source": "handwritten",
+   "visual": {
+    "timeline": "ability"
+   }
+  },
+  {
+   "id": "ex-asp-61",
+   "type": "choice-reason",
+   "level": "A2",
+   "tags": [
+    "aspect.imperative"
+   ],
+   "prompt": {
+    "ru": "Не ___ дверь!",
+    "en": "Don't shut the door!",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "закрыва́й"
+   ],
+   "distractors": [
+    {
+     "ru": "закро́й",
+     "error": "aspect.wrong"
+    }
+   ],
+   "reason": "A prohibition with **не** → imperfective.",
+   "source": "handwritten",
+   "visual": {
+    "timeline": "prohibition"
+   }
+  },
+  {
+   "id": "ex-asp-62",
+   "type": "choice-reason",
+   "level": "A2",
+   "tags": [
+    "aspect.imperative"
+   ],
+   "prompt": {
+    "ru": "___, пожа́луйста, соль.",
+    "en": "Pass the salt, please.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "Переда́й"
+   ],
+   "distractors": [
+    {
+     "ru": "Передава́й",
+     "error": "aspect.wrong"
+    }
+   ],
+   "reason": "One concrete request → perfective.",
+   "source": "handwritten",
+   "visual": {
+    "timeline": "request"
+   }
+  },
+  {
+   "id": "ex-asp-63",
+   "type": "choice-reason",
+   "level": "A2",
+   "tags": [
+    "aspect.imperative"
+   ],
+   "prompt": {
+    "ru": "___ мне, когда́ прие́дешь.",
+    "en": "Ring me when you arrive.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "Позвони́"
+   ],
+   "distractors": [
+    {
+     "ru": "Звони́",
+     "error": "aspect.wrong"
+    }
+   ],
+   "reason": "One concrete request → perfective.",
+   "source": "handwritten",
+   "visual": {
+    "timeline": "request"
+   }
+  },
+  {
+   "id": "ex-asp-64",
+   "type": "choice-reason",
+   "level": "A2",
+   "tags": [
+    "aspect.imperative"
+   ],
+   "prompt": {
+    "ru": "___ мне, пожа́луйста, ваш но́мер телефо́на.",
+    "en": "Please give me your phone number.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "Да́йте"
+   ],
+   "distractors": [
+    {
+     "ru": "Дава́йте",
+     "error": "aspect.wrong"
+    }
+   ],
+   "reason": "One concrete request → perfective.",
+   "source": "handwritten",
+   "visual": {
+    "timeline": "request"
+   }
+  },
+  {
+   "id": "ex-asp-65",
+   "type": "choice-reason",
+   "level": "A2",
+   "tags": [
+    "aspect.imperative"
+   ],
+   "prompt": {
+    "ru": "Не ___ свет, я ещё рабо́таю.",
+    "en": "Don't switch the light off, I'm still working.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "выключа́й"
+   ],
+   "distractors": [
+    {
+     "ru": "вы́ключи",
+     "error": "aspect.wrong"
+    }
+   ],
+   "reason": "A prohibition with **не** → imperfective.",
+   "source": "handwritten",
+   "visual": {
+    "timeline": "prohibition"
+   }
+  },
+  {
+   "id": "ex-asp-66",
+   "type": "choice-reason",
+   "level": "A2",
+   "tags": [
+    "aspect.imperative"
+   ],
+   "prompt": {
+    "ru": "___ свет, когда́ бу́дешь уходи́ть.",
+    "en": "Switch the light off when you leave.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "Вы́ключи"
+   ],
+   "distractors": [
+    {
+     "ru": "Выключа́й",
+     "error": "aspect.wrong"
+    }
+   ],
+   "reason": "One concrete instruction → perfective.",
+   "source": "handwritten",
+   "visual": {
+    "timeline": "request"
+   }
+  },
+  {
+   "id": "ex-asp-67",
+   "type": "choice-reason",
+   "level": "B1",
+   "tags": [
+    "aspect.imperative"
+   ],
+   "prompt": {
+    "ru": "Осторо́жно, не ___!",
+    "en": "Careful, don't fall!",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "упади́"
+   ],
+   "distractors": [
+    {
+     "ru": "па́дай",
+     "error": "aspect.wrong"
+    }
+   ],
+   "reason": "A warning against an accident: **не** + perfective.",
+   "source": "handwritten",
+   "visual": {
+    "timeline": "warning"
+   }
+  },
+  {
+   "id": "ex-asp-68",
+   "type": "choice-reason",
+   "level": "B1",
+   "tags": [
+    "aspect.imperative"
+   ],
+   "prompt": {
+    "ru": "Не ___ ключи́!",
+    "en": "Don't forget the keys!",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "забу́дь"
+   ],
+   "distractors": [
+    {
+     "ru": "забыва́й",
+     "error": "aspect.wrong"
+    }
+   ],
+   "reason": "A warning against an accident: **не** + perfective.",
+   "source": "handwritten",
+   "visual": {
+    "timeline": "warning"
+   }
+  },
+  {
+   "id": "ex-asp-69",
+   "type": "choice-reason",
+   "level": "B1",
+   "tags": [
+    "aspect.imperative"
+   ],
+   "prompt": {
+    "ru": "Не ___ меня́, я сейча́с всё объясню́.",
+    "en": "Don't interrupt me, I'll explain everything in a moment.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "перебива́й"
+   ],
+   "distractors": [
+    {
+     "ru": "перебе́й",
+     "error": "aspect.wrong"
+    }
+   ],
+   "reason": "A prohibition with **не** → imperfective.",
+   "source": "handwritten",
+   "visual": {
+    "timeline": "prohibition"
+   }
+  },
+  {
+   "id": "ex-asp-70",
+   "type": "choice-reason",
+   "level": "B1",
+   "tags": [
+    "aspect.imperative"
+   ],
+   "prompt": {
+    "ru": "Входи́те, ___!",
+    "en": "Come in, sit down!",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "сади́тесь"
+   ],
+   "distractors": [
+    {
+     "ru": "ся́дьте",
+     "error": "aspect.wrong"
+    }
+   ],
+   "reason": "An invitation (polite, warm) → imperfective; **ся́дьте** sounds like an order.",
+   "source": "handwritten",
+   "visual": {
+    "timeline": "process"
+   }
+  },
+  {
+   "id": "ex-asp-71",
+   "type": "choice-reason",
+   "level": "B1",
+   "tags": [
+    "aspect.imperative"
+   ],
+   "prompt": {
+    "ru": "___ да́льше, не остана́вливайтесь!",
+    "en": "Keep reading, don't stop!",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "Чита́йте"
+   ],
+   "distractors": [
+    {
+     "ru": "Прочита́йте",
+     "error": "aspect.wrong"
+    }
+   ],
+   "reason": "Carry on with the process → imperfective.",
+   "source": "handwritten",
+   "visual": {
+    "timeline": "process"
+   }
+  }
+ ]
+}

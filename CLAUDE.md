@@ -38,15 +38,18 @@ src/lib/               ru.ts (stress helpers), lexicon.ts (lazy chunks, decodeCe
 src/engine/            normalize.ts, translit.ts, slots.ts (slot → labels/tags), diagnose.ts (paradigm + spelling
                        rules → error type), grader.ts (all 11 item types), generators.ts (drills from the lexicon),
                        sentenceGen.ts (case/verb cloze, find-error, tiles, declension patterns from sentences),
-                       drills.ts (generator registry used by unit JSON; itemsForTag), placement.ts (staircases)
+                       drills.ts (generator registry used by unit JSON; itemsForTag), placement.ts (staircases),
+                       trainers.ts (preposition sorting, numerals from closed_class.json, stress items, minimal pairs)
 src/srs/fsrs.ts        ts-fsrs wrapper; cards stored with epoch-ms dates; ratingFor(verdict, ms)
 src/srs/deck.ts        vocabulary deck: card directions, form cards from missed forms, new-word queue, due items
 src/db/                Dexie schema (db.ts), settings, backup (export/import/reset)
 src/rewards/           pure: xp, levels, chest, streak, quests, achievements, goals; service.ts persists them
 src/audio/             sound.ts (Web Audio synth), haptics.ts, tts.ts (speechSynthesis)
-src/components/        ui.tsx, Md.tsx (markdown-lite + Ru), juice.tsx, exercises.tsx, SessionRunner, SessionSummary
+src/components/        ui.tsx, Md.tsx (markdown-lite + Ru), juice.tsx, exercises.tsx, SessionRunner, SessionSummary,
+                       visuals.tsx (aspect timelines + motion-prefix diagrams; an item's `visual` shows in feedback)
 src/pages/             Home, Practice, Review, Course (course/unit/lesson), Placement, Grammar, Lab, Word, Drill
-                       (/drill/{word,pattern,cell,tag}/…), Trophies, Settings, Attributions
+                       (/drill/{word,pattern,cell,tag}/…), Trainers (/trainers, /trainer/:id, /trainer/:id/:mode),
+                       Trophies, Settings, Attributions
 src/features.ts        features that exist; quests/achievements for anything else stay hidden
 ```
 
@@ -99,7 +102,12 @@ src/features.ts        features that exist; quests/achievements for anything els
 - Unit drills are data: `{generator, params, count}` from the registry in `src/engine/drills.ts`, or `items`
   ids of hand-written exercises. `src/engine/units.test.ts` checks every unit yields gradable items.
 - Session `kind` strings matter: the daily plan ticks steps off by kind (`review`, `lesson`, `checkpoint`,
-  `drill-tag-<tag>`).
+  `drill-tag-<tag>`, `trainer-<id>`), and `trainer-<id>` feeds the trainer stats, quest and achievements.
+- Trainer content: aspect and motion items live in `content/exercises/{aspect,motion}.json` (ids `ex-asp-*`,
+  `ex-mot-*`, type `choice-reason`, with `visual.timeline` / `visual.motion`). Only write a pair where one
+  answer is clearly wrong; if both aspects would sound natural, leave the context out.
+- Minimal pairs (`MINIMAL_PAIRS` in trainers.ts) name lexeme + slot; forms come from the lexicon, and a test
+  checks each pair differs only in stress. Check homograph order (`n:хлопок` is хлопо́к, `:2` is хло́пок).
 
 ## Gotchas
 
@@ -108,6 +116,10 @@ src/features.ts        features that exist; quests/achievements for anything els
 - validate.py also scans string literals and JSX text in `src/**/*.ts(x)` (tests excluded) for the Russian rules.
   Add `// ru-ignore` to a line holding letter sets such as `'аеёиоуыэюя'`. ALL-CAPS abbreviations (ЙЦУКЕН) are
   exempt. A stressed monosyllable carries its clitic group (не́ было, на́ пол).
+- Vitest caches transforms in `node_modules/.vitest-cache`: a **new** JSON file under an `import.meta.glob` won't
+  appear in tests until you delete that folder.
+- String literals that are ids (`'n:книга'`, `'tr:prep:…'`) are skipped by validate's source scan. A prefix
+  written as a key needs morpheme notation (`'пере-'`) or it's flagged as unstressed.
 - Frequency: an inflecting word is ranked only on evidence from forms unique to it, and only the first homograph
   (dataset order) is ranked. This stops ага́ "cane toad" from inheriting the interjection ага.
 

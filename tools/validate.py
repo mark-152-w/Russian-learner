@@ -32,7 +32,7 @@ from referencing import Registry, Resource
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from morph import SLOTS, confirms, dparses  # noqa: E402
-from rulib import ACUTE, GRAVE, VOWELS, fold, missing_stress_parts, needs_stress, strip_stress, syllables  # noqa: E402,F401
+from rulib import ACUTE, GRAVE, UNSTRESSED_OK, VOWELS, fold, missing_stress_parts, needs_stress, strip_stress, syllables  # noqa: E402,F401
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "src" / "data"
@@ -53,7 +53,7 @@ NO_STRESS_KEYS = {
     "$schema", "id", "lex", "vocab", "partners", "to", "requires", "sets", "verb", "object", "topic", "start", "flags",
     "article", "related", "grammar", "series", "characters", "art", "generator", "reading", "listening", "unlock",
     "family", "level", "type", "kind", "source", "error", "tags", "exits", "testOut", "action", "rarity", "speaker",
-    "register", "pos", "slot", "lexemes", "slots", "case", "number", "gender", "tense", "aspect", "mood", "voice", "degree", "lemmaId",
+    "register", "pos", "slot", "lexemes", "slots", "visual", "case", "number", "gender", "tense", "aspect", "mood", "voice", "degree", "lemmaId",
 }
 ANSWER_KEYS = {"accept"}
 # Values that are wrong Russian on purpose (the "wrong" side of a common-mistakes entry).
@@ -140,7 +140,7 @@ def check_text(text: str, where: str, rep: Report, answer: bool = False):
                 rep.err(where, f"more than one primary stress in «{part}»")
         if missing_stress_parts(w) and not clitic_group:
             rep.err(where, f"missing stress mark in «{w}»")
-        if not clitic_group and syllables(w) > 1 and not missing_stress_parts(w):
+        if not clitic_group and syllables(w) > 1 and not missing_stress_parts(w) and w.lower() not in UNSTRESSED_OK:
             known = dictionary_forms().get(fold(w))
             if known and w.lower() not in known and not any(compound_agrees(w.lower(), k) for k in known):
                 rep.err(where, f"«{w}» differs from the dictionary: {' / '.join(sorted(known))}")
@@ -453,6 +453,7 @@ def validate_content(rep: Report, registry, schemas, lex_ids: set[str]):
 
 
 # --------------------------------------------------------------------------- UI source strings
+ID_LIT = re.compile(r"""['"`][a-z]+:[^\s'"`]+['"`]""")
 STRING_LIT = re.compile(r"'(?:[^'\\\n]|\\.)*'|\"(?:[^\"\\\n]|\\.)*\"|`(?:[^`\\]|\\.)*`|>[^<>{}]+<")
 
 
@@ -468,6 +469,8 @@ def validate_sources(rep: Report):
                 continue
             line = line.split(" // ")[0]
             for lit in STRING_LIT.findall(line):
+                if ID_LIT.fullmatch(lit):
+                    continue  # lexeme / item ids: 'n:книга', 'n:замок:2'
                 if re.search("[А-Яа-яЁё]", lit):
                     check_text(lit, f"{rel}:{n}", rep)
 

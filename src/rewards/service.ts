@@ -383,8 +383,14 @@ export class RewardSession {
         minutes: this.seconds / 60,
         ...perfectRounds,
       })
+      // specialist trainers: sessions, plus how many of the different trainers have been tried
+      const trainer = /^trainer-(\w+)/.exec(this.kind)?.[1]
+      if (trainer) {
+        const st = await bumpStats({ trainerSessions: 1 }, { [`trainer_${trainer}`]: 1 })
+        await bumpStats({}, { trainersTried: Object.keys(st).filter((k) => k.startsWith('trainer_')).length })
+      }
 
-      const quests = await progressQuests({ sessions: 1, perfectSessions: perfect ? 1 : 0, activeDays: firstToday ? 1 : 0 }, today)
+      const quests = await progressQuests({ sessions: 1, perfectSessions: perfect ? 1 : 0, activeDays: firstToday ? 1 : 0, trainerSessions: trainer ? 1 : 0 }, today)
       for (const q of quests) await addXp(q.xp, now)
       this.quests.push(...quests)
       this.achievements.push(...(await checkAchievements(now)))

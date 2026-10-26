@@ -78,6 +78,7 @@ const PATHS: Record<string, string> = {
   book: 'M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2zM4 5v16M8 7h7M8 11h7',
   table: 'M3 5h18v14H3zM3 10h18M3 15h18M9 5v14',
   path: 'M5 20c0-6 14-6 14-12a4 4 0 0 0-8 0M5 20h.01M19 8h.01',
+  target: 'M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18zM12 16a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM12 12h.01',
 }
 
 export function Icon({ name, className = 'h-5 w-5', filled = false }: { name: keyof typeof PATHS | string; className?: string; filled?: boolean }) {

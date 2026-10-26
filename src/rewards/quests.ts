@@ -5,7 +5,7 @@ import { daysBetween } from './streak'
 /** Metrics fed by events. "max" metrics keep the best value instead of summing. */
 export type Metric =
   | 'correct' | 'xp' | 'sessions' | 'minutes' | 'typedCorrect' | 'stressCorrect' | 'golden'
-  | 'perfectSessions' | 'bestCombo' | 'activeDays' | 'reviews' | 'stories'
+  | 'perfectSessions' | 'bestCombo' | 'activeDays' | 'reviews' | 'stories' | 'trainerSessions'
 export const MAX_METRICS: Metric[] = ['bestCombo']
 
 export interface QuestDef {
@@ -32,6 +32,7 @@ export const QUESTS: QuestDef[] = [
   { id: 'golden-1', period: 'daily', text: 'Answer a golden question', metric: 'golden', target: 1, xp: 30 },
   { id: 'perfect-1', period: 'daily', text: 'Finish a session without a mistake', metric: 'perfectSessions', target: 1, xp: 60 },
   { id: 'reviews-30', period: 'daily', text: 'Review 30 cards', metric: 'reviews', target: 30, xp: 50, feature: 'vocab' },
+  { id: 'trainer-1', period: 'daily', text: 'Finish a trainer session', metric: 'trainerSessions', target: 1, xp: 40, feature: 'trainers' },
   { id: 'story-1', period: 'daily', text: 'Read a story', metric: 'stories', target: 1, xp: 50, feature: 'reader' },
   { id: 'w-xp-2000', period: 'weekly', text: 'Earn 2,000 XP this week', metric: 'xp', target: 2000, xp: 250 },
   { id: 'w-correct-400', period: 'weekly', text: 'Answer 400 items correctly this week', metric: 'correct', target: 400, xp: 250 },

@@ -29,6 +29,8 @@ export interface PlanInput {
   /** Tag mastery rows, already filtered to drillable tags. */
   tagMastery: Mastery[]
   features: ReadonlySet<string>
+  /** Days since the epoch: picks today's light item. */
+  dayIndex?: number
 }
 
 /** A topic counts as weak with enough evidence and an accuracy below this. */
@@ -37,6 +39,14 @@ export const WEAK_MIN_ATTEMPTS = 6
 
 const TAG_LABEL = new Map(tagsJson.items.map((t) => [t.id, t.label]))
 export const tagLabel = (tag: string) => TAG_LABEL.get(tag) ?? tag
+
+const FUN = [
+  { title: 'Stress sprint', detail: 'Where does the stress fall? Quick taps, no typing.', to: '/trainer/stress/nouns', kind: 'trainer-stress' },
+  { title: 'Preposition sort', detail: 'Which case follows без, к, че́рез, ме́жду…?', to: '/trainer/cases/prepositions', kind: 'trainer-cases' },
+  { title: 'Numbers and prices', detail: 'два рубля́, пять рубле́й, два́дцать оди́н год…', to: '/trainer/numerals/count', kind: 'trainer-numerals' },
+  { title: 'Aspect: process or result?', detail: 'Real contexts, a one-line reason and a timeline.', to: '/trainer/aspect/mixed', kind: 'trainer-aspect' },
+  { title: 'Verbs of motion', detail: 'идти́ or ходи́ть? пришёл or ушёл?', to: '/trainer/motion/mixed', kind: 'trainer-motion' },
+]
 
 export function weakestTag(rows: Mastery[]): Mastery | undefined {
   return rows
@@ -78,13 +88,9 @@ export function planSteps(x: PlanInput): PlanStep[] {
       done: did(`drill-tag-${tag}`),
     })
   }
-  steps.push({
-    id: 'fun',
-    title: 'Stress sprint',
-    detail: 'Where does the stress fall? Quick taps, no typing.',
-    to: '/drill/tag/stress',
-    done: did('drill-tag-stress'),
-  })
+  // the light item rotates through the trainers day by day
+  const fun = x.features.has('trainers') ? FUN[(x.dayIndex ?? 0) % FUN.length]! : { ...FUN[0]!, to: '/drill/tag/stress', kind: 'drill-tag-stress' }
+  steps.push({ id: 'fun', title: fun.title, detail: fun.detail, to: fun.to, done: did(fun.kind) })
   return steps
 }
 
@@ -135,5 +141,6 @@ export async function loadPlan(now: number, features: ReadonlySet<string>): Prom
   ])
   const doneKinds = new Set(sessions.filter((s) => dayKey(s.start) === today).map((s) => s.kind))
   const tagMastery = tagRows.filter((m) => drillableTag(m.key.slice(4), hand))
-  return planSteps({ due, doneKinds, next: nextUnit(units, progress), progress, tagMastery, features })
+  const dayIndex = Math.floor((now - new Date(now).getTimezoneOffset() * 60000) / 86400000)
+  return planSteps({ due, doneKinds, next: nextUnit(units, progress), progress, tagMastery, features, dayIndex })
 }

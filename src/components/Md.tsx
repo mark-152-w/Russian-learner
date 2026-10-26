@@ -21,8 +21,9 @@ export function renderInline(text: string, showStress: boolean): ReactNode[] {
   return out
 }
 
-export function Md({ text, className = '' }: { text: string; className?: string }) {
-  const { showStress } = useSettings()
+/** `stress` forces stress marks on (the stress trainer is about them), whatever the setting. */
+export function Md({ text, className = '', stress }: { text: string; className?: string; stress?: boolean }) {
+  const showStress = useSettings().showStress || !!stress
   return (
     <div className={className}>
       {text.split(/\n{2,}/).map((para, i) => {
@@ -48,8 +49,8 @@ export function Md({ text, className = '' }: { text: string; className?: string 
 }
 
 /** Russian text with the stress-mark setting applied. */
-export function Ru({ children, className = '' }: { children: string; className?: string }) {
-  const { showStress } = useSettings()
+export function Ru({ children, className = '', stress }: { children: string; className?: string; stress?: boolean }) {
+  const showStress = useSettings().showStress || !!stress
   return (
     <span className={`ru ${className}`} lang="ru">
       {displayStress(children, showStress)}
