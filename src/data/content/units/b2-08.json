@@ -1,0 +1,63 @@
+{
+ "$schema": "../../../../schemas/unit.schema.json",
+ "id": "u-b2-08",
+ "number": 8,
+ "level": "B2",
+ "title": {
+  "en": "Style",
+  "ru": "Стиль"
+ },
+ "theme": "clothes, films, time",
+ "grammar": [
+  "g-motion-figurative"
+ ],
+ "vocab": [
+  "n:мода",
+  "n:стиль",
+  "n:одежда",
+  "n:платье",
+  "n:костюм",
+  "n:время",
+  "n:дождь",
+  "n:фильм",
+  "n:спектакль",
+  "v:идти",
+  "v:носить",
+  "v:подходить",
+  "v:лететь",
+  "v:везти"
+ ],
+ "drills": [
+  {
+   "items": [
+    "ex-b2-u08-01",
+    "ex-b2-u08-02"
+   ]
+  },
+  {
+   "items": [
+    "ex-mot-54",
+    "ex-mot-55",
+    "ex-mot-56",
+    "ex-mot-57",
+    "ex-mot-58",
+    "ex-mot-59"
+   ]
+  },
+  {
+   "generator": "vocab",
+   "count": 6
+  }
+ ],
+ "boss": {
+  "name": {
+   "ru": "Сне́жная Ба́ба",
+   "en": "the snow-woman"
+  },
+  "hp": 29,
+  "art": "boss-48"
+ },
+ "testOut": [
+  "motion.figurative"
+ ]
+}

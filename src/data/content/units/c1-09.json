@@ -1,0 +1,63 @@
+{
+ "$schema": "../../../../schemas/unit.schema.json",
+ "id": "u-c1-09",
+ "number": 9,
+ "level": "C1",
+ "title": {
+  "en": "The law",
+  "ru": "Зако́н"
+ },
+ "theme": "courts and formal prepositions",
+ "grammar": [
+  "g-prepositions-bookish"
+ ],
+ "vocab": [
+  "n:закон",
+  "n:суд",
+  "n:право",
+  "n:решение",
+  "n:преступление",
+  "n:наказание",
+  "n:адвокат",
+  "n:свидетель",
+  "n:доказательство",
+  "n:приговор",
+  "n:нарушение",
+  "v:соблюдать",
+  "v:обвинять",
+  "v:оправдать"
+ ],
+ "drills": [
+  {
+   "items": [
+    "ex-c1-u09-01",
+    "ex-c1-u09-02",
+    "ex-c1-u09-03"
+   ]
+  },
+  {
+   "generator": "case-cloze",
+   "count": 6
+  },
+  {
+   "generator": "vocab",
+   "count": 6
+  },
+  {
+   "generator": "find-error",
+   "count": 3
+  }
+ ],
+ "boss": {
+  "name": {
+   "ru": "Вели́кий Инквизи́тор",
+   "en": "the Grand Inquisitor"
+  },
+  "hp": 38,
+  "art": "boss-64"
+ },
+ "testOut": [
+  "case.dat.prepositions",
+  "case.gen.prepositions"
+ ]
+}

@@ -1,0 +1,61 @@
+{
+ "$schema": "../../../../schemas/unit.schema.json",
+ "id": "u-c1-10",
+ "number": 10,
+ "level": "C1",
+ "title": {
+  "en": "Fate and the elements",
+  "ru": "Судьба́"
+ },
+ "theme": "things that happen to us",
+ "grammar": [
+  "g-impersonal-advanced"
+ ],
+ "vocab": [
+  "n:судьба",
+  "n:случай",
+  "n:удача",
+  "n:несчастье",
+  "n:погода",
+  "n:ветер",
+  "n:мороз",
+  "n:буря",
+  "n:стихия",
+  "v:хватать",
+  "v:удаваться",
+  "v:везти",
+  "v:повезти"
+ ],
+ "drills": [
+  {
+   "items": [
+    "ex-c1-u10-01",
+    "ex-c1-u10-02",
+    "ex-c1-u10-03"
+   ]
+  },
+  {
+   "generator": "case-cloze",
+   "count": 6
+  },
+  {
+   "generator": "vocab",
+   "count": 6
+  },
+  {
+   "generator": "verb-cloze",
+   "count": 4
+  }
+ ],
+ "boss": {
+  "name": {
+   "ru": "Медве́дь-Шату́н",
+   "en": "the bear who never sleeps"
+  },
+  "hp": 38,
+  "art": "boss-65"
+ },
+ "testOut": [
+  "verb.impersonal"
+ ]
+}

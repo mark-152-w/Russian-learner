@@ -1,0 +1,69 @@
+{
+ "$schema": "../../../../schemas/unit.schema.json",
+ "id": "u-c1-01",
+ "number": 1,
+ "level": "C1",
+ "title": {
+  "en": "Business",
+  "ru": "Би́знес"
+ },
+ "theme": "economy and words built from roots",
+ "grammar": [
+  "g-word-formation"
+ ],
+ "vocab": [
+  "n:экономика",
+  "n:бизнес",
+  "n:рынок",
+  "n:прибыль",
+  "n:доход",
+  "n:расход",
+  "n:налог",
+  "n:инвестиция",
+  "n:предприниматель",
+  "n:предприятие",
+  "n:конкуренция",
+  "n:банкротство",
+  "n:кредит",
+  "n:производство"
+ ],
+ "drills": [
+  {
+   "items": [
+    "ex-c1-u01-01",
+    "ex-c1-u01-02"
+   ]
+  },
+  {
+   "generator": "forms",
+   "count": 6,
+   "params": {
+    "pos": "noun",
+    "slots": [
+     "sg_gen",
+     "pl_gen",
+     "sg_ins"
+    ]
+   }
+  },
+  {
+   "generator": "vocab",
+   "count": 6
+  },
+  {
+   "generator": "case-cloze",
+   "count": 4
+  }
+ ],
+ "boss": {
+  "name": {
+   "ru": "Ростовщи́к",
+   "en": "the moneylender"
+  },
+  "hp": 34,
+  "art": "boss-56"
+ },
+ "testOut": [
+  "word-formation"
+ ]
+}

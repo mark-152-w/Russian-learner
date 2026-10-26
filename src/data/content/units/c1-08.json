@@ -1,0 +1,67 @@
+{
+ "$schema": "../../../../schemas/unit.schema.json",
+ "id": "u-c1-08",
+ "number": 8,
+ "level": "C1",
+ "title": {
+  "en": "Poetry",
+  "ru": "Поэ́зия"
+ },
+ "theme": "sound, rhythm and stress",
+ "grammar": [
+  "g-stress-patterns"
+ ],
+ "vocab": [
+  "n:поэзия",
+  "n:стихотворение",
+  "n:рифма",
+  "n:строка",
+  "n:поэт",
+  "n:звук",
+  "n:произношение",
+  "n:чтение",
+  "o:вслух",
+  "n:ритм",
+  "v:читать"
+ ],
+ "drills": [
+  {
+   "items": [
+    "ex-c1-u08-01",
+    "ex-c1-u08-02"
+   ]
+  },
+  {
+   "generator": "stress",
+   "count": 8
+  },
+  {
+   "generator": "forms",
+   "count": 6,
+   "params": {
+    "pos": "noun",
+    "fromPool": true,
+    "slots": [
+     "pl_nom",
+     "sg_gen",
+     "sg_acc"
+    ]
+   }
+  },
+  {
+   "generator": "vocab",
+   "count": 3
+  }
+ ],
+ "boss": {
+  "name": {
+   "ru": "Му́за",
+   "en": "the Muse"
+  },
+  "hp": 37,
+  "art": "boss-63"
+ },
+ "testOut": [
+  "stress"
+ ]
+}

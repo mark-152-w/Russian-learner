@@ -1,0 +1,56 @@
+{
+ "$schema": "../../../../schemas/unit.schema.json",
+ "id": "u-b2-06",
+ "number": 6,
+ "level": "B2",
+ "title": {
+  "en": "Mine and theirs",
+  "ru": "Своё и чужо́е"
+ },
+ "theme": "family and property",
+ "grammar": [
+  "g-svoj"
+ ],
+ "vocab": [
+  "n:имущество",
+  "n:собственность",
+  "n:наследство",
+  "n:родственник",
+  "n:владелец",
+  "n:квартира",
+  "n:машина",
+  "n:вещь",
+  "v:принадлежать",
+  "v:дарить",
+  "v:делить",
+  "n:хозяин",
+  "n:дача"
+ ],
+ "drills": [
+  {
+   "items": [
+    "ex-b2-u06-01",
+    "ex-b2-u06-02"
+   ]
+  },
+  {
+   "generator": "case-cloze",
+   "count": 6
+  },
+  {
+   "generator": "vocab",
+   "count": 6
+  }
+ ],
+ "boss": {
+  "name": {
+   "ru": "Скупо́й Ры́царь",
+   "en": "the Miserly Knight"
+  },
+  "hp": 28,
+  "art": "boss-46"
+ },
+ "testOut": [
+  "pron.possessive"
+ ]
+}

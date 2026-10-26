@@ -1,0 +1,67 @@
+{
+ "$schema": "../../../../schemas/unit.schema.json",
+ "id": "u-b2-04",
+ "number": 4,
+ "level": "B2",
+ "title": {
+  "en": "Gossip",
+  "ru": "Слу́хи"
+ },
+ "theme": "who said what",
+ "grammar": [
+  "g-reported-speech"
+ ],
+ "vocab": [
+  "n:разговор",
+  "n:слух",
+  "n:сплетня",
+  "n:сосед",
+  "v:рассказывать",
+  "v:сообщить",
+  "v:спросить",
+  "v:ответить",
+  "v:попросить",
+  "v:уверять",
+  "v:признаться",
+  "v:обещать",
+  "v:предупредить",
+  "v:шептать"
+ ],
+ "drills": [
+  {
+   "items": [
+    "ex-b2-u04-01",
+    "ex-b2-u04-02",
+    "ex-b2-u04-03"
+   ]
+  },
+  {
+   "generator": "verb-cloze",
+   "count": 6,
+   "params": {
+    "kinds": [
+     "pst"
+    ]
+   }
+  },
+  {
+   "generator": "tiles",
+   "count": 3
+  },
+  {
+   "generator": "vocab",
+   "count": 4
+  }
+ ],
+ "boss": {
+  "name": {
+   "ru": "Ста́рая Спле́тница",
+   "en": "the old gossip"
+  },
+  "hp": 27,
+  "art": "boss-44"
+ },
+ "testOut": [
+  "syntax.reported-speech"
+ ]
+}

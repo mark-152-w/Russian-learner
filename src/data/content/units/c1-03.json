@@ -1,0 +1,57 @@
+{
+ "$schema": "../../../../schemas/unit.schema.json",
+ "id": "u-c1-03",
+ "number": 3,
+ "level": "C1",
+ "title": {
+  "en": "Official letters",
+  "ru": "Официа́льные пи́сьма"
+ },
+ "theme": "applications and register",
+ "grammar": [
+  "g-register"
+ ],
+ "vocab": [
+  "n:заявление",
+  "n:документ",
+  "n:справка",
+  "n:договор",
+  "n:подпись",
+  "n:учреждение",
+  "n:сотрудник",
+  "n:обращение",
+  "n:уведомление",
+  "v:предоставить",
+  "v:оформить",
+  "v:подтвердить",
+  "v:рассмотреть",
+  "a:уважаемый"
+ ],
+ "drills": [
+  {
+   "items": [
+    "ex-c1-u03-01",
+    "ex-c1-u03-02"
+   ]
+  },
+  {
+   "generator": "case-cloze",
+   "count": 6
+  },
+  {
+   "generator": "vocab",
+   "count": 6
+  }
+ ],
+ "boss": {
+  "name": {
+   "ru": "Бюрокра́т",
+   "en": "the bureaucrat"
+  },
+  "hp": 35,
+  "art": "boss-58"
+ },
+ "testOut": [
+  "register"
+ ]
+}

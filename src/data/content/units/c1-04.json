@@ -1,0 +1,72 @@
+{
+ "$schema": "../../../../schemas/unit.schema.json",
+ "id": "u-c1-04",
+ "number": 4,
+ "level": "C1",
+ "title": {
+  "en": "Memories",
+  "ru": "Воспомина́ния"
+ },
+ "theme": "the past, told precisely",
+ "grammar": [
+  "g-aspect-subtle"
+ ],
+ "vocab": [
+  "n:память",
+  "n:прошлое",
+  "n:молодость",
+  "n:юность",
+  "n:встреча",
+  "n:письмо",
+  "n:фотография",
+  "v:вспоминать",
+  "v:забывать",
+  "v:помнить",
+  "v:приходить",
+  "v:уезжать",
+  "v:знакомиться",
+  "v:жалеть"
+ ],
+ "drills": [
+  {
+   "items": [
+    "ex-c1-u04-01",
+    "ex-c1-u04-02"
+   ]
+  },
+  {
+   "items": [
+    "ex-asp-28",
+    "ex-asp-29",
+    "ex-asp-42",
+    "ex-asp-53",
+    "ex-asp-54",
+    "ex-asp-55"
+   ]
+  },
+  {
+   "generator": "verb-cloze",
+   "count": 6,
+   "params": {
+    "kinds": [
+     "pst"
+    ]
+   }
+  },
+  {
+   "generator": "vocab",
+   "count": 4
+  }
+ ],
+ "boss": {
+  "name": {
+   "ru": "Пи́ковая да́ма",
+   "en": "the Queen of Spades"
+  },
+  "hp": 35,
+  "art": "boss-59"
+ },
+ "testOut": [
+  "aspect.nuance"
+ ]
+}

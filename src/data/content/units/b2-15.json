@@ -1,0 +1,73 @@
+{
+ "$schema": "../../../../schemas/unit.schema.json",
+ "id": "u-b2-15",
+ "number": 15,
+ "level": "B2",
+ "title": {
+  "en": "B2 review",
+  "ru": "Повторе́ние"
+ },
+ "theme": "everything from B2",
+ "grammar": [
+  "g-participles-passive",
+  "g-chtoby",
+  "g-reported-speech"
+ ],
+ "vocab": [
+  "n:опыт",
+  "n:знание",
+  "n:умение",
+  "n:навык",
+  "n:прогресс",
+  "n:уровень",
+  "n:язык",
+  "n:словарь",
+  "n:произношение",
+  "n:ошибка",
+  "n:практика",
+  "n:повторение",
+  "n:успех"
+ ],
+ "drills": [
+  {
+   "items": [
+    "ex-b2-u15-01",
+    "ex-b2-u15-02",
+    "ex-b2-u15-03"
+   ]
+  },
+  {
+   "items": [
+    "ex-asp-27",
+    "ex-asp-28",
+    "ex-asp-29",
+    "ex-mot-49",
+    "ex-mot-50"
+   ]
+  },
+  {
+   "generator": "case-cloze",
+   "count": 6
+  },
+  {
+   "generator": "find-error",
+   "count": 3
+  },
+  {
+   "generator": "tiles",
+   "count": 3
+  }
+ ],
+ "boss": {
+  "name": {
+   "ru": "Чёрный Ры́царь",
+   "en": "the Black Knight"
+  },
+  "hp": 33,
+  "art": "boss-55"
+ },
+ "testOut": [
+  "participle.passive",
+  "syntax.reported-speech"
+ ]
+}

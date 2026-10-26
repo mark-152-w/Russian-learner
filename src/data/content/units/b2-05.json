@@ -1,0 +1,63 @@
+{
+ "$schema": "../../../../schemas/unit.schema.json",
+ "id": "u-b2-05",
+ "number": 5,
+ "level": "B2",
+ "title": {
+  "en": "Goals and requests",
+  "ru": "Це́ли и про́сьбы"
+ },
+ "theme": "what you want from others",
+ "grammar": [
+  "g-chtoby"
+ ],
+ "vocab": [
+  "n:задача",
+  "n:цель",
+  "n:требование",
+  "n:просьба",
+  "n:условие",
+  "v:требовать",
+  "v:просить",
+  "v:советовать",
+  "v:предлагать",
+  "v:добиться",
+  "v:стремиться",
+  "v:желать",
+  "o:важно",
+  "o:необходимо"
+ ],
+ "drills": [
+  {
+   "items": [
+    "ex-b2-u05-01",
+    "ex-b2-u05-02"
+   ]
+  },
+  {
+   "generator": "verb-cloze",
+   "count": 6,
+   "params": {
+    "kinds": [
+     "pst"
+    ]
+   }
+  },
+  {
+   "generator": "vocab",
+   "count": 6
+  }
+ ],
+ "boss": {
+  "name": {
+   "ru": "Нача́льник Канцеля́рии",
+   "en": "the head of the office"
+  },
+  "hp": 28,
+  "art": "boss-45"
+ },
+ "testOut": [
+  "verb.conditional",
+  "syntax.conjunctions"
+ ]
+}

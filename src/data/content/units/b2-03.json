@@ -1,0 +1,63 @@
+{
+ "$schema": "../../../../schemas/unit.schema.json",
+ "id": "u-b2-03",
+ "number": 3,
+ "level": "B2",
+ "title": {
+  "en": "Daily life",
+  "ru": "Мой день"
+ },
+ "theme": "routines, told smoothly",
+ "grammar": [
+  "g-gerunds"
+ ],
+ "vocab": [
+  "n:распорядок",
+  "n:привычка",
+  "n:утро",
+  "n:завтрак",
+  "n:душ",
+  "v:одеться",
+  "v:умыться",
+  "v:торопиться",
+  "v:спешить",
+  "v:опаздывать",
+  "v:возвращаться",
+  "v:отдыхать",
+  "n:вечер",
+  "v:выходить"
+ ],
+ "drills": [
+  {
+   "items": [
+    "ex-b2-u03-01",
+    "ex-b2-u03-02"
+   ]
+  },
+  {
+   "generator": "verb-cloze",
+   "count": 6,
+   "params": {
+    "kinds": [
+     "np",
+     "pst"
+    ]
+   }
+  },
+  {
+   "generator": "vocab",
+   "count": 6
+  }
+ ],
+ "boss": {
+  "name": {
+   "ru": "Злой Колду́н",
+   "en": "the evil sorcerer"
+  },
+  "hp": 27,
+  "art": "boss-43"
+ },
+ "testOut": [
+  "gerund"
+ ]
+}

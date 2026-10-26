@@ -1,0 +1,73 @@
+{
+ "$schema": "../../../../schemas/unit.schema.json",
+ "id": "u-c1-05",
+ "number": 5,
+ "level": "C1",
+ "title": {
+  "en": "Numbers in society",
+  "ru": "Ци́фры"
+ },
+ "theme": "statistics and counting people",
+ "grammar": [
+  "g-collective-numerals"
+ ],
+ "vocab": [
+  "n:статистика",
+  "n:население",
+  "n:большинство",
+  "n:меньшинство",
+  "n:процент",
+  "n:количество",
+  "n:число",
+  "n:рост",
+  "n:снижение",
+  "n:опрос",
+  "n:данные",
+  "v:увеличиться",
+  "v:составлять"
+ ],
+ "drills": [
+  {
+   "items": [
+    "ex-c1-u05-01",
+    "ex-c1-u05-02",
+    "ex-c1-u05-03"
+   ]
+  },
+  {
+   "generator": "forms",
+   "count": 6,
+   "params": {
+    "pos": "noun",
+    "slots": [
+     "pl_gen"
+    ]
+   }
+  },
+  {
+   "generator": "case-cloze",
+   "count": 6,
+   "params": {
+    "cases": [
+     "gen"
+    ]
+   }
+  },
+  {
+   "generator": "vocab",
+   "count": 4
+  }
+ ],
+ "boss": {
+  "name": {
+   "ru": "Левша́",
+   "en": "the left-handed craftsman"
+  },
+  "hp": 36,
+  "art": "boss-60"
+ },
+ "testOut": [
+  "num.cardinal",
+  "num.declension"
+ ]
+}

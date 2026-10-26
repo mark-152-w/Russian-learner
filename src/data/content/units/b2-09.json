@@ -1,0 +1,61 @@
+{
+ "$schema": "../../../../schemas/unit.schema.json",
+ "id": "u-b2-09",
+ "number": 9,
+ "level": "B2",
+ "title": {
+  "en": "Telling a story",
+  "ru": "Расска́з"
+ },
+ "theme": "events in order",
+ "grammar": [
+  "g-word-order"
+ ],
+ "vocab": [
+  "n:рассказ",
+  "n:сюжет",
+  "n:герой",
+  "n:событие",
+  "n:начало",
+  "n:конец",
+  "n:случай",
+  "n:история",
+  "v:происходить",
+  "v:случиться",
+  "o:вдруг",
+  "o:наконец",
+  "o:сначала",
+  "o:потом"
+ ],
+ "drills": [
+  {
+   "items": [
+    "ex-b2-u09-01",
+    "ex-b2-u09-02"
+   ]
+  },
+  {
+   "generator": "tiles",
+   "count": 4
+  },
+  {
+   "generator": "find-error",
+   "count": 4
+  },
+  {
+   "generator": "vocab",
+   "count": 4
+  }
+ ],
+ "boss": {
+  "name": {
+   "ru": "Баро́н Мюнхга́узен",
+   "en": "the tall-tale baron"
+  },
+  "hp": 30,
+  "art": "boss-49"
+ },
+ "testOut": [
+  "syntax.word-order"
+ ]
+}

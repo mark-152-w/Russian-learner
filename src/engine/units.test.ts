@@ -36,6 +36,8 @@ describe('course units', () => {
     }
     expect(units.filter((u) => u.level === 'A2')).toHaveLength(20)
     expect(units.filter((u) => u.level === 'B1')).toHaveLength(20)
+    expect(units.filter((u) => u.level === 'B2')).toHaveLength(15)
+    expect(units.filter((u) => u.level === 'C1')).toHaveLength(10)
   })
   it('units come in course order: by level, then number', () => {
     const order = units.map((u) => `${levelsWithUnits.indexOf(u.level)}:${String(u.number).padStart(2, '0')}`)
