@@ -46,7 +46,9 @@ src/engine/            normalize.ts, translit.ts, slots.ts (slot → labels/tags
                        sentenceGen.ts (case/verb cloze, find-error, tiles, declension patterns from sentences),
                        drills.ts (generator registry used by unit JSON; itemsForTag), placement.ts (staircases),
                        trainers.ts (preposition sorting, numerals from closed_class.json, stress items, minimal pairs),
-                       listening.ts (dictation, shadowing, ы/и + hard/soft pairs, а́канье), keyboard.ts (ЙЦУКЕН course)
+                       listening.ts (dictation, shadowing, ы/и + hard/soft pairs, а́канье), keyboard.ts (ЙЦУКЕН course),
+                       arcade.ts (case arcade waves/cards, joinPreposition о→об…), crossword.ts (candidates from the
+                       lexicon, grid builder, daySeed)
 src/srs/fsrs.ts        ts-fsrs wrapper; cards stored with epoch-ms dates; ratingFor(verdict, ms)
 src/srs/deck.ts        vocabulary deck: card directions, form cards from missed forms, new-word queue, due items
 src/db/                Dexie schema (db.ts), settings, backup (export/import/reset)
@@ -57,8 +59,10 @@ src/components/        ui.tsx, Md.tsx (markdown-lite + Ru), juice.tsx, exercises
 src/pages/             Home, Practice, Review, Course (course/unit/lesson), Placement, Grammar, Lab, Word, Drill
                        (/drill/{word,pattern,cell,tag}/…), Trainers (/trainers = Practice hub, /trainer/:id/:mode),
                        Reader (/reader, /story/:id[/quiz], /dialogue/:id), Listening (/listening, /listen/:mode),
-                       Keyboard (/keyboard/:n), Trophies, Settings, Attributions
-src/features.ts        features that exist; quests/achievements for anything else stay hidden
+                       Keyboard (/keyboard/:n), Games (/games hub), Arcade (/arcade), Crossword (/crossword[/:topic],
+                       'daily' = day-seeded), Trophies, Settings, Attributions
+src/features.ts        features that exist; quests/achievements for anything else stay hidden (flags still to come:
+                       bosses, cards, adventure)
 ```
 
 ## How a learning activity plugs in
@@ -116,7 +120,7 @@ src/features.ts        features that exist; quests/achievements for anything els
   problems: rephrase, or add a name/word to closed_class.json (validated). Gerunds and most participles aren't
   in the lexicon. Check `tools/reports/stories.md` for odd context decisions; fix with `{hint}`.
 - Session `kind` strings matter: the daily plan ticks steps off by kind (`review`, `lesson`, `checkpoint`,
-  `drill-tag-<tag>`, `trainer-<id>`), and `trainer-<id>` feeds the trainer stats, quest and achievements.
+  `drill-tag-<tag>`, `trainer-<id>`, `arcade`, `crossword`), and `trainer-<id>` feeds the trainer stats, quest and achievements.
 - Trainer content: aspect and motion items live in `content/exercises/{aspect,motion}.json` (ids `ex-asp-*`,
   `ex-mot-*`, type `choice-reason`, with `visual.timeline` / `visual.motion`). Only write a pair where one
   answer is clearly wrong; if both aspects would sound natural, leave the context out.

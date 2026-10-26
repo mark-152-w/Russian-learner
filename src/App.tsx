@@ -36,6 +36,10 @@ const ListeningPage = lazy(() => import('./pages/Listening').then((m) => ({ defa
 const ListenRun = lazy(() => import('./pages/Listening').then((m) => ({ default: m.ListenRun })))
 const KeyboardPage = lazy(() => import('./pages/Keyboard').then((m) => ({ default: m.KeyboardPage })))
 const KeyboardRun = lazy(() => import('./pages/Keyboard').then((m) => ({ default: m.KeyboardRun })))
+const Games = lazy(() => import('./pages/Games'))
+const Arcade = lazy(() => import('./pages/Arcade'))
+const CrosswordHub = lazy(() => import('./pages/Crossword').then((m) => ({ default: m.CrosswordHub })))
+const CrosswordGame = lazy(() => import('./pages/Crossword').then((m) => ({ default: m.CrosswordGame })))
 
 const NAV = [
   { to: '/', label: 'Home', icon: 'home' },
@@ -47,7 +51,7 @@ const NAV = [
 ]
 const IN_SESSION = ['/practice', '/review', '/drill', '/lesson', '/placement', '/listen/']
 /** Full-screen sessions hide the navigation (a trainer's run page is /trainer/:id/:mode). */
-const inSessionPath = (p: string) => IN_SESSION.some((x) => p.startsWith(x)) || /^\/trainer\/[^/]+\/[^/]+|\/quiz$|^\/keyboard\/\d/.test(p)
+const inSessionPath = (p: string) => IN_SESSION.some((x) => p.startsWith(x)) || /^\/trainer\/[^/]+\/[^/]+|\/quiz$|^\/keyboard\/\d|^\/arcade|^\/crossword\/./.test(p)
 
 /** Applies theme, skin, motion and audio preferences to the document. */
 function Preferences() {
@@ -166,6 +170,10 @@ export default function App() {
               <Route path="/listen/:mode" element={<ListenRun />} />
               <Route path="/keyboard" element={<KeyboardPage />} />
               <Route path="/keyboard/:n" element={<KeyboardRun />} />
+              <Route path="/games" element={<Games />} />
+              <Route path="/arcade" element={<Arcade />} />
+              <Route path="/crossword" element={<CrosswordHub />} />
+              <Route path="/crossword/:topic" element={<CrosswordGame />} />
               <Route path="/grammar" element={<GrammarIndex />} />
               <Route path="/grammar/:id" element={<GrammarArticlePage />} />
             </Routes>

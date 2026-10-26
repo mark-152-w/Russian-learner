@@ -49,6 +49,8 @@ const FUN = [
   { title: 'Numbers and prices', detail: 'два рубля́, пять рубле́й, два́дцать оди́н год…', to: '/trainer/numerals/count', kind: 'trainer-numerals' },
   { title: 'Aspect: process or result?', detail: 'Real contexts, a one-line reason and a timeline.', to: '/trainer/aspect/mixed', kind: 'trainer-aspect' },
   { title: 'Verbs of motion', detail: 'идти́ or ходи́ть? пришёл or ушёл?', to: '/trainer/motion/mixed', kind: 'trainer-motion' },
+  { title: 'Case arcade', detail: 'Pick the right form before the noun lands.', to: '/arcade', kind: 'arcade', feature: 'arcade' },
+  { title: "Today's crossword", detail: 'Every answer is an inflected form.', to: '/crossword/daily', kind: 'crossword', feature: 'crossword' },
 ]
 
 export function weakestTag(rows: Mastery[]): Mastery | undefined {
@@ -101,7 +103,8 @@ export function planSteps(x: PlanInput): PlanStep[] {
     })
   }
   // the light item rotates through the trainers day by day
-  const fun = x.features.has('trainers') ? FUN[(x.dayIndex ?? 0) % FUN.length]! : { ...FUN[0]!, to: '/drill/tag/stress', kind: 'drill-tag-stress' }
+  const funs = FUN.filter((f) => !('feature' in f) || x.features.has(f.feature as string))
+  const fun = x.features.has('trainers') ? funs[(x.dayIndex ?? 0) % funs.length]! : { ...FUN[0]!, to: '/drill/tag/stress', kind: 'drill-tag-stress' }
   steps.push({ id: 'fun', title: fun.title, detail: fun.detail, to: fun.to, done: did(fun.kind) })
   return steps
 }

@@ -145,6 +145,10 @@ export function TrainersHub() {
           <p className="text-sm text-ink-soft">Dialogues, dictation, ы/и and hard/soft sounds, shadowing.</p>
           <MasteryLine prefixes={['listening', 'phonetics.']} />
         </Link>
+        <Link to="/games" className="block rounded-xl border-2 border-red bg-paper-2 p-4 transition hover:border-red sm:col-span-2">
+          <p className="font-bold">Games</p>
+          <p className="text-sm text-ink-soft">The case arcade and the declension crossword (daily puzzle and by topic).</p>
+        </Link>
         <Link to="/keyboard" className="block rounded-xl border-2 border-line bg-paper-2 p-4 transition hover:border-red">
           <p className="font-bold">Keyboard</p>
           <p className="text-sm text-ink-soft">Touch-type the Russian ЙЦУКЕН layout, a few keys at a time.</p>

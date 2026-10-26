@@ -9,21 +9,23 @@
 | 2: grammar A2–B1, A2 units, placement, daily plan, vocab SRS, declension lab | Done |
 | 3: specialist trainers (cases, aspect, motion, stress, numerals) | Done |
 | 4: graded reader, listening and speaking, keyboard trainer | **Done** (all 40 stories, not just the first 15) |
-| 5: games, collectible cards, the town, text adventure «Де́ло» | Next (estimate at the end) |
+| 5: games, collectible cards, the town, text adventure «Де́ло» | **In progress**: chunk 1 of 4 done (case arcade, declension crossword) |
 
 `npm run check` passes:
 
 - 25 Python tool tests;
 - `validate.py`: 0 errors, 2 warnings (сёк in two C1 sentences: a real form pymorphy3 doesn't know);
 - typecheck;
-- 126 Vitest tests. New in Phase 4:
+- 130 Vitest tests. New in Phase 5 chunk 1: the preposition joining rule (о → об, с → со…), every arcade wave
+  deals valid gradable cards, every crossword topic builds a consistent grid, and the daily puzzle is
+  deterministic. New in Phase 4:
   - every story word carries an analysis and every comprehension question is answerable;
   - analysis labels;
   - а́канье;
   - the dictation, shadowing and sound-pair items grade their own answers;
   - each keyboard lesson uses only learned letters.
 
-`npm run build`: the precache is 191 files, 12.4 MB raw (about 3.2 MB gzipped), with the stories loaded one file at a time.
+`npm run build`: the precache is 199 files (191 after Phase 4), 12.4 MB raw (about 3.2 MB gzipped), with the stories loaded one file at a time.
 
 I ran an end-to-end check in headless Chromium with no console errors. It covered:
 
@@ -34,6 +36,31 @@ I ran an end-to-end check in headless Chromium with no console errors. It covere
 - the Listening page and a dialogue;
 - the keyboard: typing a lesson line with Latin key positions;
 - the new Practice and Reference hubs.
+
+## Phase 5, chunk 1: what's built
+
+Both games live under **Practice → Games** (`/games`), and the daily plan's "something fun" step now rotates
+through them too.
+
+**Case arcade** (`/arcade`, `src/engine/arcade.ts`). A card falls with a governing word and a noun in the
+dictionary form (без + кни́га); pick the right form from three before it lands. Waves of eight cards get faster
+(9 s down to 3.2 s) and widen: genitive/dative/accusative, then all five cases, then plurals, then adjective +
+noun phrases, then numbers (2 кни́ги, 5 книг). в/на carry a «где?» or «куда́?» cue so the case is decidable, and
+the preposition adapts to the word (об о́кнах, со столо́м, во вто́рник). Three lives; points are 10 × wave plus a
+speed bonus. A wrong answer shows the rule (**без** + genitive: **без кни́ги**). Every card is a normal graded
+item with a lexeme target, so misses feed the learner model and the diagnosis like any drill. The top ten runs
+are kept as personal bests. With reduced motion on, cards fall 3 s slower.
+
+**Declension crossword** (`/crossword`, `src/engine/crossword.ts`). Every answer is an inflected form from the
+lexicon at your level: the clue gives the dictionary form or the English meaning plus the form wanted
+(«кни́га — gen. pl.», «"choose" — ты …»). A generator places 6–10 words on a grid where they cross. There is a
+daily puzzle (the same for everyone on a given day) and puzzles by topic: mixed, each case, plurals, verb
+forms. Type with any keyboard, including Latin key positions; tap a cell twice to switch direction; Check marks
+wrong letters; Reveal fills a word (a revealed word doesn't count as correct). Stress doesn't matter and ё = е.
+
+**Rewards**: two new session kinds (`arcade`, `crossword`), feature flags `arcade` and `crossword`, and three
+new achievements: Разга́дчик (10 crosswords), Ме́ткость (500 arcade points), Чемпио́н (2,000). The boss
+achievements now wait for the `bosses` flag (chunk 2).
 
 ## Phase 4: what's built
 
@@ -441,7 +468,7 @@ Russian–English pairs with per-sentence attribution. I'll ingest it at the sta
 - Chest odds depend on quality only, with a minimum of 8 answers.
 - A session of 5+ answers counts for the streak.
 - Quests pay XP rather than a second chest.
-- Ghost races, collectible cards and the town are Phase 5.
+- Ghost races, collectible cards and the town are Phase 5 (cards and the town are chunk 3).
 
 ## Known issues
 
@@ -475,7 +502,7 @@ Russian–English pairs with per-sentence attribution. I'll ingest it at the sta
 | Trainer prepositions / minimal pairs | 40 / 14 |
 | Error types | 47 |
 | Grammar tags | 71 |
-| Achievements | 69 (64 active, 11 hidden) |
+| Achievements | 72 (68 active, 11 hidden) |
 | Quests | 15 daily, 4 weekly templates |
 | Themes | 6 |
 
@@ -495,16 +522,11 @@ re-checked the homographs by hand. Corrections I made along the way, for the rec
 
 If anything reads oddly to you, tell me the unit or article and I'll fix it.
 
-## Next: Phase 5, games, cards, the town, «Де́ло» (estimate)
+## Next: Phase 5, the remaining chunks (estimate)
 
-| Piece | Work | Output tokens (approx.) |
+| Chunk | Piece | Output tokens (approx.) |
 |---|---|---|
-| Case arcade: falling nouns with a governing word, waves that add adjectives and numbers, personal-best leaderboard | code | about 10k |
-| Declension crossword: generator from the lexicon (clues like "кни́га, gen. pl." or meaning + form), daily puzzle, by topic/level | code | about 9k |
-| Speed match + boss battles: timed pairs; an SVG boss per unit with HP, drawing on the unit and your recent errors (20 A2 bosses) | code + small SVG art | about 14k |
-| Collectible card sets (people, places, idioms, culture) with short analysed blurbs, earned from chests and milestones | writing + code | about 20k |
-| The town: a meta-map whose buildings unlock and grow with your learning | code + SVG | about 10k |
-| Text adventure «Де́ло»: a detective story across 5 chapters (A2 choice buttons → B1+ typed commands), a state machine in data, and a parser that explains failed commands in grammatical terms | writing + code | 45–55k |
-
-**Total: roughly 110–120k output tokens.** The adventure is the biggest piece. If you'd prefer, I can do the
-four games, cards and the town first and the adventure as its own step.
+| 1 | Case arcade + declension crossword | **Done** |
+| 2 | Speed match (timed pairs) + boss battles: an SVG boss per A2 unit with HP, drawing on the unit and your recent errors | about 14k |
+| 3 | Collectible card sets (people, places, idioms, culture) with short analysed blurbs + the town meta-map | about 30k |
+| 4 | Text adventure «Де́ло»: 5 chapters, a state machine in data, a parser that explains failed commands grammatically | 45–55k |
