@@ -89,6 +89,7 @@ export const ACHIEVEMENTS: AchievementDef[] = [
   def('dictation-10', 'Чу́ткое у́хо', 'Keen ear', '10 perfect dictations.', 'dictationPerfect', 10, { feature: 'listening' }),
   def('unit-1', 'Пе́рвый уро́к', 'First lesson', 'Complete a course unit.', 'units', 1, { feature: 'course' }),
   def('a2-done', 'Ба́зовый у́ровень', 'A2 complete', 'Complete every A2 unit.', 'unitsA2', 20, { feature: 'course', xp: 500 }),
+  def('b1-done', 'Сре́дний у́ровень', 'B1 complete', 'Complete every B1 unit.', 'unitsB1', 20, { feature: 'course', xp: 750 }),
   def('trainer-1', 'Тренажёр', 'Warm-up', 'Finish a trainer session.', 'trainerSessions', 1, { feature: 'trainers' }),
   def('trainer-50', 'Трудя́га', 'Hard worker', 'Finish 50 trainer sessions.', 'trainerSessions', 50, { feature: 'trainers', xp: 300 }),
   def('trainers-all', 'Многобо́рец', 'All-rounder', 'Try all five trainers.', 'trainersTried', 5, { feature: 'trainers', xp: 150 }),

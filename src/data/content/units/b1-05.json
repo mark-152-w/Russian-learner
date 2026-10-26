@@ -1,0 +1,75 @@
+{
+ "$schema": "../../../../schemas/unit.schema.json",
+ "id": "u-b1-05",
+ "number": 5,
+ "level": "B1",
+ "title": {
+  "en": "Shopping",
+  "ru": "Поку́пки"
+ },
+ "theme": "prices and choosing",
+ "grammar": [
+  "g-comparatives"
+ ],
+ "vocab": [
+  "n:магазин",
+  "n:покупка",
+  "n:цена",
+  "n:скидка",
+  "a:дешёвый",
+  "a:дорогой",
+  "a:удобный",
+  "a:модный",
+  "n:качество",
+  "n:размер",
+  "v:примерить",
+  "v:выбирать",
+  "v:сравнить"
+ ],
+ "drills": [
+  {
+   "items": [
+    "ex-b1-u05-01",
+    "ex-b1-u05-02",
+    "ex-b1-u05-03"
+   ]
+  },
+  {
+   "generator": "forms",
+   "count": 8,
+   "params": {
+    "pos": "adj",
+    "slots": [
+     "comp"
+    ],
+    "fromPool": true
+   }
+  },
+  {
+   "generator": "vocab",
+   "count": 6
+  },
+  {
+   "generator": "case-cloze",
+   "count": 4,
+   "params": {
+    "cases": [
+     "acc",
+     "prep"
+    ]
+   }
+  }
+ ],
+ "boss": {
+  "name": {
+   "ru": "Упы́рь",
+   "en": "the vampire"
+  },
+  "hp": 23,
+  "art": "boss-25"
+ },
+ "testOut": [
+  "adj.comparative",
+  "adj.superlative"
+ ]
+}

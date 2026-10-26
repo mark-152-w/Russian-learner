@@ -218,7 +218,7 @@ export function LessonPage() {
       summaryNote={(end) =>
         isCheck ? (
           <Card className={`mx-auto mb-4 max-w-xl text-center ${end.accuracy >= PASS_MARK ? 'border-good' : 'border-bad'}`}>
-            <p className="font-serif text-2xl">{end.accuracy >= PASS_MARK ? `Unit ${state.unit.number} complete!` : 'Not quite yet'}</p>
+            <p className="font-serif text-2xl">{end.accuracy >= PASS_MARK ? `${state.unit.level} unit ${state.unit.number} complete!` : 'Not quite yet'}</p>
             {card && <NewCard id={card} />}
             <p className="text-sm text-ink-soft">
               {end.accuracy >= PASS_MARK

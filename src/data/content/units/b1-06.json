@@ -1,0 +1,68 @@
+{
+ "$schema": "../../../../schemas/unit.schema.json",
+ "id": "u-b1-06",
+ "number": 6,
+ "level": "B1",
+ "title": {
+  "en": "Weather",
+  "ru": "Пого́да"
+ },
+ "theme": "seasons and forecasts",
+ "grammar": [
+  "g-impersonal"
+ ],
+ "vocab": [
+  "n:погода",
+  "n:климат",
+  "n:дождь",
+  "n:снег",
+  "n:ветер",
+  "n:мороз",
+  "n:жара",
+  "n:туман",
+  "n:солнце",
+  "n:облако",
+  "n:тепло",
+  "o:холодно",
+  "a:влажный",
+  "n:прогноз"
+ ],
+ "drills": [
+  {
+   "items": [
+    "ex-b1-u06-01",
+    "ex-b1-u06-02",
+    "ex-b1-u06-03"
+   ]
+  },
+  {
+   "generator": "case-cloze",
+   "count": 6,
+   "params": {
+    "cases": [
+     "acc",
+     "prep"
+    ]
+   }
+  },
+  {
+   "generator": "vocab",
+   "count": 6
+  },
+  {
+   "generator": "stress",
+   "count": 4
+  }
+ ],
+ "boss": {
+  "name": {
+   "ru": "Ба́нник",
+   "en": "the bathhouse spirit"
+  },
+  "hp": 23,
+  "art": "boss-26"
+ },
+ "testOut": [
+  "verb.impersonal"
+ ]
+}

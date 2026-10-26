@@ -1,0 +1,76 @@
+{
+ "$schema": "../../../../schemas/unit.schema.json",
+ "id": "u-b1-04",
+ "number": 4,
+ "level": "B1",
+ "title": {
+  "en": "Getting around town",
+  "ru": "По го́роду"
+ },
+ "theme": "streets and transport",
+ "grammar": [
+  "g-prefixed-motion",
+  "g-imperatives"
+ ],
+ "vocab": [
+  "n:транспорт",
+  "n:метро",
+  "n:остановка",
+  "n:трамвай",
+  "n:маршрут",
+  "n:пробка",
+  "n:перекрёсток",
+  "n:переход",
+  "v:перейти",
+  "v:обойти",
+  "v:зайти",
+  "v:выйти",
+  "v:проехать"
+ ],
+ "drills": [
+  {
+   "items": [
+    "ex-b1-u04-01",
+    "ex-b1-u04-02",
+    "ex-b1-u04-03"
+   ]
+  },
+  {
+   "items": [
+    "ex-mot-24",
+    "ex-mot-25",
+    "ex-mot-26",
+    "ex-mot-27",
+    "ex-mot-28",
+    "ex-mot-29"
+   ]
+  },
+  {
+   "generator": "forms",
+   "count": 6,
+   "params": {
+    "pos": "verb",
+    "slots": [
+     "imp_sg",
+     "imp_pl",
+     "pst_m"
+    ]
+   }
+  },
+  {
+   "generator": "vocab",
+   "count": 4
+  }
+ ],
+ "boss": {
+  "name": {
+   "ru": "Ве́дьма",
+   "en": "the witch"
+  },
+  "hp": 22,
+  "art": "boss-24"
+ },
+ "testOut": [
+  "motion.prefixed"
+ ]
+}

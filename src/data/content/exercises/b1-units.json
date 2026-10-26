@@ -1,0 +1,1761 @@
+{
+ "$schema": "../../../../schemas/exercise.schema.json",
+ "items": [
+  {
+   "id": "ex-b1-u01-01",
+   "type": "choice",
+   "level": "B1",
+   "tags": [
+    "verb.reflexive"
+   ],
+   "prompt": {
+    "ru": "Чем вы ___?",
+    "en": "What do you do (for a living)?",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "занима́етесь"
+   ],
+   "distractors": [
+    {
+     "ru": "занима́ете",
+     "error": "verb.reflexive",
+     "why": "Without **-сь**, занима́ть means *to occupy*. *To be engaged in* is **занима́ться** (+ instrumental)."
+    },
+    {
+     "ru": "занима́ешься",
+     "error": "verb.person",
+     "why": "You asked **вы**, so the form is **занима́етесь**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-b1-u01-02",
+   "type": "choice",
+   "level": "B1",
+   "tags": [
+    "verb.reflexive"
+   ],
+   "prompt": {
+    "ru": "В про́шлом году́ он ___ на рабо́ту в банк.",
+    "en": "Last year he got a job at a bank.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "устро́ился"
+   ],
+   "distractors": [
+    {
+     "ru": "устро́ил",
+     "error": "verb.reflexive",
+     "why": "**устро́ить** needs an object (*to arrange something*). *To get a job* is **устро́иться на рабо́ту**."
+    },
+    {
+     "ru": "устро́илась",
+     "error": "verb.past-gender",
+     "why": "**он**: the masculine past, **устро́ился**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-b1-u01-03",
+   "type": "choice",
+   "level": "B1",
+   "tags": [
+    "verb.reflexive",
+    "aspect.past"
+   ],
+   "prompt": {
+    "ru": "Вчера́ мы ___ встре́титься в пять.",
+    "en": "Yesterday we agreed to meet at five.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "договори́лись"
+   ],
+   "distractors": [
+    {
+     "ru": "договори́ли",
+     "error": "verb.reflexive",
+     "why": "*To agree* is **договори́ться**; without -сь it means *to finish saying*."
+    },
+    {
+     "ru": "догова́риваемся",
+     "error": "verb.tense",
+     "why": "**вчера́** puts it in the past."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-b1-u02-01",
+   "type": "choice",
+   "level": "B1",
+   "tags": [
+    "verb.impersonal",
+    "case.dat.impersonal"
+   ],
+   "prompt": {
+    "ru": "___ пло́хо, я пойду́ домо́й.",
+    "en": "I feel bad, I'm going home.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "Мне"
+   ],
+   "distractors": [
+    {
+     "ru": "Я",
+     "error": "case.wrong",
+     "why": "A state that happens to you takes the dative: **мне пло́хо**."
+    },
+    {
+     "ru": "Меня́",
+     "error": "case.wrong",
+     "why": "Not the accusative: the person who feels is in the **dative**, **мне**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-b1-u02-02",
+   "type": "choice",
+   "level": "B1",
+   "tags": [
+    "verb.present"
+   ],
+   "prompt": {
+    "ru": "У меня́ ___ голова́.",
+    "en": "I have a headache.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "боли́т"
+   ],
+   "distractors": [
+    {
+     "ru": "болю́",
+     "error": "verb.person",
+     "why": "The subject is **голова́**, so the third person: **боли́т**."
+    },
+    {
+     "ru": "боле́ет",
+     "error": "vocab.wrong-word",
+     "why": "**боле́ть** (-е́ю) means *to be ill*; *to hurt* is **боле́ть** (-и́т): **голова́ боли́т**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-b1-u02-03",
+   "type": "choice",
+   "level": "B1",
+   "tags": [
+    "verb.impersonal"
+   ],
+   "prompt": {
+    "ru": "Вчера́ ему́ ___ пло́хо.",
+    "en": "Yesterday he felt bad.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "бы́ло"
+   ],
+   "distractors": [
+    {
+     "ru": "был",
+     "error": "verb.past-gender",
+     "why": "No subject, so the neuter: **бы́ло**."
+    },
+    {
+     "ru": "была́",
+     "error": "verb.past-gender",
+     "why": "No subject, so the neuter: **бы́ло**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-b1-u03-01",
+   "type": "choice",
+   "level": "B1",
+   "tags": [
+    "motion.prefixed"
+   ],
+   "prompt": {
+    "ru": "— Когда́ ты ___ в Москву́? — Вчера́ ве́чером.",
+    "en": "When did you arrive in Moscow? Yesterday evening.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "прие́хал"
+   ],
+   "distractors": [
+    {
+     "ru": "уе́хал",
+     "error": "motion.prefix",
+     "why": "**у-** is *away*. Arriving is **при-**: **прие́хал**."
+    },
+    {
+     "ru": "е́хал",
+     "error": "motion.prefix",
+     "why": "The trip is over and you're there: the prefixed perfective **прие́хал**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-b1-u03-02",
+   "type": "choice",
+   "level": "B1",
+   "tags": [
+    "motion.prefixed"
+   ],
+   "prompt": {
+    "ru": "Как ___ до вокза́ла?",
+    "en": "How do I get to the station?",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "дое́хать"
+   ],
+   "distractors": [
+    {
+     "ru": "прие́хать",
+     "error": "motion.prefix",
+     "why": "*As far as* a place is **до-** + **до**: **дое́хать до вокза́ла**."
+    },
+    {
+     "ru": "уе́хать",
+     "error": "motion.prefix",
+     "why": "**у-** means leaving; *getting as far as* is **до-**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-b1-u03-03",
+   "type": "choice",
+   "level": "B1",
+   "tags": [
+    "motion.prefixed"
+   ],
+   "prompt": {
+    "ru": "Самолёт уже́ ___, мы опозда́ли.",
+    "en": "The plane has already left, we were too late.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "улете́л"
+   ],
+   "distractors": [
+    {
+     "ru": "прилете́л",
+     "error": "motion.prefix",
+     "why": "If it isn't there, it has flown **away**: **у-**."
+    },
+    {
+     "ru": "подлете́л",
+     "error": "motion.prefix",
+     "why": "**под-** is *approaching*. Gone is **улете́л**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-b1-u04-01",
+   "type": "choice",
+   "level": "B1",
+   "tags": [
+    "motion.prefixed",
+    "aspect.negation"
+   ],
+   "prompt": {
+    "ru": "Здесь нельзя́ ___ у́лицу: иди́те к перехо́ду.",
+    "en": "You mustn't cross the street here: go to the crossing.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "переходи́ть"
+   ],
+   "distractors": [
+    {
+     "ru": "перейти́",
+     "error": "aspect.negation",
+     "why": "**нельзя́** + perfective means *it's impossible*. A ban is **нельзя́** + imperfective: **переходи́ть**."
+    },
+    {
+     "ru": "пройти́",
+     "error": "motion.prefix",
+     "why": "Across is **пере-**: **переходи́ть у́лицу**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-b1-u04-02",
+   "type": "choice",
+   "level": "B1",
+   "tags": [
+    "motion.prefixed",
+    "verb.imperative"
+   ],
+   "prompt": {
+    "ru": "___ ко мне за́втра, я бу́ду до́ма.",
+    "en": "Drop in on me tomorrow, I'll be home.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "Зайди́"
+   ],
+   "distractors": [
+    {
+     "ru": "Вы́йди",
+     "error": "motion.prefix",
+     "why": "**вы-** is *out of*. Dropping in is **за-**: **зайди́**."
+    },
+    {
+     "ru": "Обойди́",
+     "error": "motion.prefix",
+     "why": "**об-** is *around*. Dropping in is **за-**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-b1-u04-03",
+   "type": "choice",
+   "level": "B1",
+   "tags": [
+    "motion.prefixed"
+   ],
+   "prompt": {
+    "ru": "Вы ___ свою́ остано́вку!",
+    "en": "You've missed your stop!",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "прое́хали"
+   ],
+   "distractors": [
+    {
+     "ru": "перее́хали",
+     "error": "motion.prefix",
+     "why": "**пере-** with a place means moving house. Going past is **про-**: **прое́хали**."
+    },
+    {
+     "ru": "уе́хали",
+     "error": "motion.prefix",
+     "why": "Going *past* something is **про-**: **прое́хали остано́вку**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-b1-u05-01",
+   "type": "choice",
+   "level": "B1",
+   "tags": [
+    "adj.comparative"
+   ],
+   "prompt": {
+    "ru": "Э́та ку́ртка ___, чем та.",
+    "en": "This jacket is more expensive than that one.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "доро́же"
+   ],
+   "distractors": [
+    {
+     "ru": "дорога́я",
+     "error": "adj.comparative",
+     "why": "With **чем** you need the comparative: **доро́же**."
+    },
+    {
+     "ru": "дорогу́ю",
+     "error": "case.wrong",
+     "why": "The comparative doesn't change for case: **доро́же**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-b1-u05-02",
+   "type": "choice",
+   "level": "B1",
+   "tags": [
+    "adj.superlative"
+   ],
+   "prompt": {
+    "ru": "Э́то са́мый ___ магази́н в го́роде.",
+    "en": "This is the cheapest shop in town.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "дешёвый"
+   ],
+   "distractors": [
+    {
+     "ru": "деше́вле",
+     "error": "adj.superlative",
+     "why": "**са́мый** + the ordinary adjective makes the superlative: **са́мый дешёвый**."
+    },
+    {
+     "ru": "дешёвая",
+     "error": "agreement.gender",
+     "why": "**магази́н** is masculine: **дешёвый**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-b1-u05-03",
+   "type": "choice",
+   "level": "B1",
+   "tags": [
+    "adj.comparative",
+    "syntax.conjunctions"
+   ],
+   "prompt": {
+    "ru": "Здесь це́ны ни́же, ___ в том магази́не.",
+    "en": "Prices here are lower than in that shop.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "чем"
+   ],
+   "distractors": [
+    {
+     "ru": "как",
+     "error": "syntax.conjunction",
+     "why": "*Than* after a comparative is **чем**."
+    },
+    {
+     "ru": "что",
+     "error": "syntax.conjunction",
+     "why": "*Than* after a comparative is **чем**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-b1-u06-01",
+   "type": "choice",
+   "level": "B1",
+   "tags": [
+    "verb.impersonal",
+    "verb.future"
+   ],
+   "prompt": {
+    "ru": "За́втра ___ тепло́.",
+    "en": "It will be warm tomorrow.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "бу́дет"
+   ],
+   "distractors": [
+    {
+     "ru": "бу́дут",
+     "error": "agreement.number",
+     "why": "No subject, so the singular: **бу́дет**."
+    },
+    {
+     "ru": "бы́ло",
+     "error": "verb.tense",
+     "why": "**за́втра**: the future, **бу́дет**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-b1-u06-02",
+   "type": "choice",
+   "level": "B1",
+   "tags": [
+    "verb.impersonal",
+    "verb.past"
+   ],
+   "prompt": {
+    "ru": "Вчера́ ___ о́чень хо́лодно.",
+    "en": "It was very cold yesterday.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "бы́ло"
+   ],
+   "distractors": [
+    {
+     "ru": "был",
+     "error": "verb.past-gender",
+     "why": "Impersonal sentences take the neuter: **бы́ло**."
+    },
+    {
+     "ru": "была́",
+     "error": "verb.past-gender",
+     "why": "Impersonal sentences take the neuter: **бы́ло**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-b1-u06-03",
+   "type": "choice",
+   "level": "B1",
+   "tags": [
+    "case.nom"
+   ],
+   "prompt": {
+    "ru": "На у́лице идёт ___.",
+    "en": "It's snowing outside.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "снег"
+   ],
+   "distractors": [
+    {
+     "ru": "сне́гом",
+     "error": "case.wrong",
+     "why": "Snow is the subject of **идёт**: the nominative, **снег**."
+    },
+    {
+     "ru": "сне́га",
+     "error": "case.wrong",
+     "why": "Snow is the subject of **идёт**: the nominative, **снег**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-b1-u07-01",
+   "type": "choice",
+   "level": "B1",
+   "tags": [
+    "verb.imperative"
+   ],
+   "prompt": {
+    "ru": "Ма́ма, ___, пожа́луйста, окно́.",
+    "en": "Mum, please close the window.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "закро́й"
+   ],
+   "distractors": [
+    {
+     "ru": "закро́йте",
+     "error": "verb.imperative",
+     "why": "Mum is **ты**, so the singular: **закро́й**."
+    },
+    {
+     "ru": "закры́ла",
+     "error": "verb.imperative",
+     "why": "A request takes the imperative: **закро́й**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-b1-u07-02",
+   "type": "choice",
+   "level": "B1",
+   "tags": [
+    "aspect.imperative",
+    "aspect.negation"
+   ],
+   "prompt": {
+    "ru": "Не ___ ла́мпу, я ещё чита́ю!",
+    "en": "Don't switch the lamp off, I'm still reading!",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "выключа́й"
+   ],
+   "distractors": [
+    {
+     "ru": "вы́ключи",
+     "error": "aspect.negation",
+     "why": "**не** + perfective imperative is a warning (*mind you don't…*). *Don't do it* takes the imperfective: **не выключа́й**."
+    },
+    {
+     "ru": "выключа́ть",
+     "error": "verb.imperative",
+     "why": "A request takes the imperative: **не выключа́й**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-b1-u07-03",
+   "type": "choice",
+   "level": "B1",
+   "tags": [
+    "verb.imperative"
+   ],
+   "prompt": {
+    "ru": "___ кно́пку два ра́за.",
+    "en": "Press the button twice.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "Нажми́те"
+   ],
+   "distractors": [
+    {
+     "ru": "Нажмёте",
+     "error": "verb.imperative",
+     "why": "That's the future (*you'll press*). An instruction: **нажми́те**."
+    },
+    {
+     "ru": "Нажа́ть",
+     "error": "verb.imperative",
+     "why": "An instruction to the reader takes the imperative: **нажми́те**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-b1-u08-01",
+   "type": "choice",
+   "level": "B1",
+   "tags": [
+    "verb.conditional"
+   ],
+   "prompt": {
+    "ru": "Е́сли бы у меня́ бы́ли де́ньги, я ___ дом у мо́ря.",
+    "en": "If I had money, I'd buy a house by the sea.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "купи́л бы"
+   ],
+   "distractors": [
+    {
+     "ru": "куплю́",
+     "error": "verb.tense",
+     "why": "An unreal condition takes **бы** + past in both halves: **купи́л бы**."
+    },
+    {
+     "ru": "покупа́ю",
+     "error": "verb.tense",
+     "why": "An unreal condition takes **бы** + past: **купи́л бы**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-b1-u08-02",
+   "type": "choice",
+   "level": "B1",
+   "tags": [
+    "verb.conditional",
+    "verb.future"
+   ],
+   "prompt": {
+    "ru": "Е́сли за́втра бу́дет дождь, мы ___ до́ма.",
+    "en": "If it rains tomorrow, we'll stay at home.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "оста́немся"
+   ],
+   "distractors": [
+    {
+     "ru": "оста́лись бы",
+     "error": "verb.tense",
+     "why": "A real future condition has no **бы**: **е́сли бу́дет…, мы оста́немся**."
+    },
+    {
+     "ru": "оста́лись",
+     "error": "verb.tense",
+     "why": "The rain is tomorrow: the future, **оста́немся**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-b1-u08-03",
+   "type": "choice",
+   "level": "B1",
+   "tags": [
+    "verb.conditional"
+   ],
+   "prompt": {
+    "ru": "Ива́н: «Я ___ пое́хать с ва́ми, но у меня́ рабо́та».",
+    "en": "Ivan: \"I'd like to go with you, but I have work.\"",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "хоте́л бы"
+   ],
+   "distractors": [
+    {
+     "ru": "хоте́ла бы",
+     "error": "verb.past-gender",
+     "why": "Ivan is a man: **хоте́л бы**."
+    },
+    {
+     "ru": "хочу́ бы",
+     "error": "verb.tense",
+     "why": "**бы** goes with the past form: **хоте́л бы**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-b1-u09-01",
+   "type": "choice",
+   "level": "B1",
+   "tags": [
+    "pron.relative"
+   ],
+   "prompt": {
+    "ru": "Э́то мой друг, ___ живёт в Пари́же.",
+    "en": "This is my friend who lives in Paris.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "кото́рый"
+   ],
+   "distractors": [
+    {
+     "ru": "кото́рого",
+     "error": "case.wrong",
+     "why": "**кото́рый** is the subject of **живёт**: the nominative."
+    },
+    {
+     "ru": "кото́рая",
+     "error": "agreement.gender",
+     "why": "It agrees with **друг** (masculine): **кото́рый**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-b1-u09-02",
+   "type": "choice",
+   "level": "B1",
+   "tags": [
+    "pron.relative"
+   ],
+   "prompt": {
+    "ru": "Э́то де́вушка, ___ я вчера́ встре́тил.",
+    "en": "This is the girl I met yesterday.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "кото́рую"
+   ],
+   "distractors": [
+    {
+     "ru": "кото́рая",
+     "error": "case.wrong",
+     "why": "She's the object of **встре́тил**: the accusative, **кото́рую**."
+    },
+    {
+     "ru": "кото́рой",
+     "error": "case.wrong",
+     "why": "**встре́тить** takes the accusative: **кото́рую**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-b1-u09-03",
+   "type": "choice",
+   "level": "B1",
+   "tags": [
+    "pron.relative"
+   ],
+   "prompt": {
+    "ru": "Вот дом, в ___ я живу́.",
+    "en": "Here's the house I live in.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "кото́ром"
+   ],
+   "distractors": [
+    {
+     "ru": "кото́рый",
+     "error": "case.wrong",
+     "why": "**в** + location: the prepositional, **в кото́ром**."
+    },
+    {
+     "ru": "кото́рой",
+     "error": "agreement.gender",
+     "why": "**дом** is masculine: **кото́ром**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-b1-u10-01",
+   "type": "choice",
+   "level": "B1",
+   "tags": [
+    "case.plural",
+    "case.gen.negation"
+   ],
+   "prompt": {
+    "ru": "В но́вой кварти́ре ещё нет ___.",
+    "en": "There are no wardrobes in the new flat yet.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "шкафо́в"
+   ],
+   "distractors": [
+    {
+     "ru": "шкафы́",
+     "error": "case.gen-after-negation",
+     "why": "**нет** takes the genitive: **шкафо́в**."
+    },
+    {
+     "ru": "шкафа́х",
+     "error": "case.wrong",
+     "why": "**нет** takes the genitive plural: **шкафо́в**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-b1-u10-02",
+   "type": "choice",
+   "level": "B1",
+   "tags": [
+    "case.plural",
+    "case.prep.location"
+   ],
+   "prompt": {
+    "ru": "Мы покра́сили сте́ны во всех ___.",
+    "en": "We painted the walls in all the rooms.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "ко́мнатах"
+   ],
+   "distractors": [
+    {
+     "ru": "ко́мнатам",
+     "error": "case.wrong",
+     "why": "**в** + location: the prepositional plural, **ко́мнатах**."
+    },
+    {
+     "ru": "ко́мнаты",
+     "error": "case.wrong",
+     "why": "**в** + location: the prepositional plural, **ко́мнатах**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-b1-u10-03",
+   "type": "choice",
+   "level": "B1",
+   "tags": [
+    "case.plural",
+    "case.ins.with"
+   ],
+   "prompt": {
+    "ru": "Я познако́мился с ___.",
+    "en": "I got to know the neighbours.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "сосе́дями"
+   ],
+   "distractors": [
+    {
+     "ru": "сосе́дям",
+     "error": "case.wrong",
+     "why": "**с** (*with*) takes the instrumental: **сосе́дями**."
+    },
+    {
+     "ru": "сосе́дом",
+     "error": "number.wrong",
+     "why": "There were several neighbours: the plural, **сосе́дями**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-b1-u11-01",
+   "type": "choice",
+   "level": "B1",
+   "tags": [
+    "num.governance"
+   ],
+   "prompt": {
+    "ru": "Биле́т сто́ит две ты́сячи ___.",
+    "en": "The ticket costs two thousand roubles.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "рубле́й"
+   ],
+   "distractors": [
+    {
+     "ru": "рубля́",
+     "error": "numeral.governance",
+     "why": "After **ты́сячи** (thousands of…) the genitive plural: **рубле́й**."
+    },
+    {
+     "ru": "рубли́",
+     "error": "numeral.governance",
+     "why": "After a number word like **ты́сяча** the genitive plural: **рубле́й**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-b1-u11-02",
+   "type": "choice",
+   "level": "B1",
+   "tags": [
+    "num.governance"
+   ],
+   "prompt": {
+    "ru": "Э́то сто́ит два́дцать оди́н ___.",
+    "en": "That costs twenty-one roubles.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "рубль"
+   ],
+   "distractors": [
+    {
+     "ru": "рубля́",
+     "error": "numeral.governance",
+     "why": "After a number ending in **оди́н**: the nominative singular, **рубль**."
+    },
+    {
+     "ru": "рубле́й",
+     "error": "numeral.governance",
+     "why": "After a number ending in **оди́н**: the nominative singular, **рубль**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-b1-u11-03",
+   "type": "choice",
+   "level": "B1",
+   "tags": [
+    "num.declension"
+   ],
+   "prompt": {
+    "ru": "Я заплати́л за ___ биле́та.",
+    "en": "I paid for two tickets.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "два"
+   ],
+   "distractors": [
+    {
+     "ru": "двух",
+     "error": "numeral.declension",
+     "why": "**за** + accusative; for things, the accusative of **два** is **два**."
+    },
+    {
+     "ru": "двум",
+     "error": "numeral.declension",
+     "why": "**за** takes the accusative: **за два биле́та**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-b1-u12-01",
+   "type": "choice",
+   "level": "B1",
+   "tags": [
+    "aspect.nuance"
+   ],
+   "prompt": {
+    "ru": "Обы́чно я ___ в семь часо́в.",
+    "en": "I usually get up at seven.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "встаю́"
+   ],
+   "distractors": [
+    {
+     "ru": "вста́ну",
+     "error": "aspect.wrong",
+     "why": "A habit takes the imperfective: **встаю́**."
+    },
+    {
+     "ru": "встал",
+     "error": "verb.tense",
+     "why": "**обы́чно** describes the present: **встаю́**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-b1-u12-02",
+   "type": "choice",
+   "level": "B1",
+   "tags": [
+    "aspect.past"
+   ],
+   "prompt": {
+    "ru": "Вчера́ я ___ на авто́бус.",
+    "en": "Yesterday I missed the bus.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "опозда́л"
+   ],
+   "distractors": [
+    {
+     "ru": "опа́здывал",
+     "error": "aspect.wrong",
+     "why": "One event with a result: the perfective, **опозда́л**."
+    },
+    {
+     "ru": "опозда́ю",
+     "error": "verb.tense",
+     "why": "**вчера́** is the past: **опозда́л**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-b1-u12-03",
+   "type": "choice",
+   "level": "B1",
+   "tags": [
+    "aspect.nuance"
+   ],
+   "prompt": {
+    "ru": "Он всегда́ ___ ключи́ до́ма.",
+    "en": "He always forgets his keys at home.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "забыва́ет"
+   ],
+   "distractors": [
+    {
+     "ru": "забу́дет",
+     "error": "aspect.wrong",
+     "why": "**всегда́** is a repeated action: the imperfective, **забыва́ет**."
+    },
+    {
+     "ru": "забы́л",
+     "error": "aspect.wrong",
+     "why": "**всегда́** is a repeated action: the imperfective, **забыва́ет**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-b1-u13-01",
+   "type": "choice",
+   "level": "B1",
+   "tags": [
+    "case.gen",
+    "verb.reflexive"
+   ],
+   "prompt": {
+    "ru": "Ребёнок бои́тся ___.",
+    "en": "The child is afraid of the dark.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "темноты́"
+   ],
+   "distractors": [
+    {
+     "ru": "темноту́",
+     "error": "case.verb-government",
+     "why": "**боя́ться** takes the genitive: **темноты́**."
+    },
+    {
+     "ru": "темното́й",
+     "error": "case.verb-government",
+     "why": "**боя́ться** takes the genitive: **темноты́**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-b1-u13-02",
+   "type": "choice",
+   "level": "B1",
+   "tags": [
+    "case.dat",
+    "verb.reflexive"
+   ],
+   "prompt": {
+    "ru": "Ба́бушка ра́дуется ___.",
+    "en": "Grandma is happy to see her grandson.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "вну́ку"
+   ],
+   "distractors": [
+    {
+     "ru": "вну́ка",
+     "error": "case.verb-government",
+     "why": "**ра́доваться** takes the dative: **вну́ку**."
+    },
+    {
+     "ru": "вну́ком",
+     "error": "case.verb-government",
+     "why": "**ра́доваться** takes the dative: **вну́ку**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-b1-u13-03",
+   "type": "choice",
+   "level": "B1",
+   "tags": [
+    "case.dat.prepositions"
+   ],
+   "prompt": {
+    "ru": "Я скуча́ю по ___.",
+    "en": "I miss home.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "до́му"
+   ],
+   "distractors": [
+    {
+     "ru": "до́ма",
+     "error": "case.preposition-government",
+     "why": "**скуча́ть по** + dative: **по до́му**."
+    },
+    {
+     "ru": "до́ме",
+     "error": "case.preposition-government",
+     "why": "**скуча́ть по** + dative: **по до́му**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-b1-u14-01",
+   "type": "choice",
+   "level": "B1",
+   "tags": [
+    "verb.imperative"
+   ],
+   "prompt": {
+    "ru": "___ лук и морко́вь.",
+    "en": "Chop the onion and the carrot.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "Наре́жьте"
+   ],
+   "distractors": [
+    {
+     "ru": "Наре́жете",
+     "error": "verb.imperative",
+     "why": "That's the future (*you'll chop*). A recipe gives commands: **наре́жьте**."
+    },
+    {
+     "ru": "Наре́жьтесь",
+     "error": "verb.reflexive",
+     "why": "**наре́зать** has no -ся: **наре́жьте**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-b1-u14-02",
+   "type": "choice",
+   "level": "B1",
+   "tags": [
+    "case.gen.quantity"
+   ],
+   "prompt": {
+    "ru": "Доба́вьте немно́го ___.",
+    "en": "Add a little salt.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "со́ли"
+   ],
+   "distractors": [
+    {
+     "ru": "соль",
+     "error": "case.gen-quantity",
+     "why": "After **немно́го** the genitive: **со́ли**."
+    },
+    {
+     "ru": "со́лью",
+     "error": "case.gen-quantity",
+     "why": "After **немно́го** the genitive: **со́ли**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-b1-u14-03",
+   "type": "choice",
+   "level": "B1",
+   "tags": [
+    "case.gen.quantity"
+   ],
+   "prompt": {
+    "ru": "Купи́ килогра́мм ___.",
+    "en": "Buy a kilo of apples.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "я́блок"
+   ],
+   "distractors": [
+    {
+     "ru": "я́блоки",
+     "error": "case.gen-quantity",
+     "why": "*A kilo of* takes the genitive: **я́блок**."
+    },
+    {
+     "ru": "я́блока",
+     "error": "number.wrong",
+     "why": "Apples in general: the genitive plural, **я́блок**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-b1-u15-01",
+   "type": "choice",
+   "level": "B1",
+   "tags": [
+    "aspect.nuance"
+   ],
+   "prompt": {
+    "ru": "Я сдава́л экза́мен три ра́за и наконе́ц ___!",
+    "en": "I took the exam three times and finally passed!",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "сдал"
+   ],
+   "distractors": [
+    {
+     "ru": "сдава́л",
+     "error": "aspect.wrong",
+     "why": "**сдава́ть** is *to take* an exam, **сдать** *to pass* it: **наконе́ц сдал**."
+    },
+    {
+     "ru": "сдаю́",
+     "error": "verb.tense",
+     "why": "It's over: the past, **сдал**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-b1-u15-02",
+   "type": "choice",
+   "level": "B1",
+   "tags": [
+    "aspect.past"
+   ],
+   "prompt": {
+    "ru": "Он ___ в университе́т в про́шлом году́.",
+    "en": "He got into university last year.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "поступи́л"
+   ],
+   "distractors": [
+    {
+     "ru": "посту́пит",
+     "error": "verb.tense",
+     "why": "**в про́шлом году́**: the past, **поступи́л**."
+    },
+    {
+     "ru": "поступи́ла",
+     "error": "verb.past-gender",
+     "why": "**он**: the masculine, **поступи́л**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-b1-u15-03",
+   "type": "choice",
+   "level": "B1",
+   "tags": [
+    "aspect.past"
+   ],
+   "prompt": {
+    "ru": "Ско́лько вре́мени ты ___ к экза́мену?",
+    "en": "How long did you prepare for the exam?",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "гото́вился"
+   ],
+   "distractors": [
+    {
+     "ru": "подгото́вился",
+     "error": "aspect.wrong",
+     "why": "*How long* asks about a process: the imperfective, **гото́вился**."
+    },
+    {
+     "ru": "гото́вил",
+     "error": "verb.reflexive",
+     "why": "*To prepare for* is **гото́виться к**: **гото́вился**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-b1-u16-01",
+   "type": "choice",
+   "level": "B1",
+   "tags": [
+    "pron.relative"
+   ],
+   "prompt": {
+    "ru": "Я прочита́л статью́, ___ ты мне посове́товал.",
+    "en": "I read the article you recommended.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "кото́рую"
+   ],
+   "distractors": [
+    {
+     "ru": "кото́рая",
+     "error": "case.wrong",
+     "why": "It's the object of **посове́товал**: the accusative, **кото́рую**."
+    },
+    {
+     "ru": "кото́рой",
+     "error": "case.wrong",
+     "why": "It's the object of **посове́товал**: the accusative, **кото́рую**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-b1-u16-02",
+   "type": "choice",
+   "level": "B1",
+   "tags": [
+    "case.prep.about"
+   ],
+   "prompt": {
+    "ru": "Все говоря́т о ___.",
+    "en": "Everyone is talking about the event.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "собы́тии"
+   ],
+   "distractors": [
+    {
+     "ru": "собы́тие",
+     "error": "case.wrong",
+     "why": "**о** + prepositional; nouns in **-ие** end in **-ии**: **о собы́тии**."
+    },
+    {
+     "ru": "собы́тием",
+     "error": "case.wrong",
+     "why": "**о** + prepositional: **о собы́тии**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-b1-u16-03",
+   "type": "choice",
+   "level": "B1",
+   "tags": [
+    "pron.relative"
+   ],
+   "prompt": {
+    "ru": "Журнали́ст, с ___ я говори́л, рабо́тает на телеви́дении.",
+    "en": "The journalist I talked to works in television.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "кото́рым"
+   ],
+   "distractors": [
+    {
+     "ru": "кото́рый",
+     "error": "case.wrong",
+     "why": "**с** (*with*) takes the instrumental: **с кото́рым**."
+    },
+    {
+     "ru": "кото́рого",
+     "error": "case.wrong",
+     "why": "**с** (*with*) takes the instrumental: **с кото́рым**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-b1-u17-01",
+   "type": "choice",
+   "level": "B1",
+   "tags": [
+    "num.time-date"
+   ],
+   "prompt": {
+    "ru": "Мы отмеча́ем пра́здник ___ ма́я.",
+    "en": "We celebrate the holiday on the ninth of May.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "девя́того"
+   ],
+   "distractors": [
+    {
+     "ru": "девя́тое",
+     "error": "numeral.declension",
+     "why": "*On* a date: the genitive, **девя́того ма́я**."
+    },
+    {
+     "ru": "де́вять",
+     "error": "numeral.declension",
+     "why": "Dates use ordinals in the genitive: **девя́того**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-b1-u17-02",
+   "type": "choice",
+   "level": "B1",
+   "tags": [
+    "case.ins.with"
+   ],
+   "prompt": {
+    "ru": "Поздравля́ю тебя́ с ___!",
+    "en": "Happy holiday!",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "пра́здником"
+   ],
+   "distractors": [
+    {
+     "ru": "пра́здник",
+     "error": "case.preposition-government",
+     "why": "**поздравля́ть с** + instrumental: **с пра́здником**."
+    },
+    {
+     "ru": "пра́здника",
+     "error": "case.preposition-government",
+     "why": "**поздравля́ть с** + instrumental: **с пра́здником**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-b1-u17-03",
+   "type": "choice",
+   "level": "B1",
+   "tags": [
+    "num.time-date"
+   ],
+   "prompt": {
+    "ru": "Сва́дьба бу́дет ___ ию́не.",
+    "en": "The wedding will be in June.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "в"
+   ],
+   "distractors": [
+    {
+     "ru": "на",
+     "error": "case.preposition-government",
+     "why": "Months take **в**: **в ию́не**."
+    },
+    {
+     "ru": "с",
+     "error": "case.preposition-government",
+     "why": "*In* a month is **в** + prepositional: **в ию́не**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-b1-u18-01",
+   "type": "choice",
+   "level": "B1",
+   "tags": [
+    "adj.comparative"
+   ],
+   "prompt": {
+    "ru": "Он бе́гает ___ всех в кома́нде.",
+    "en": "He runs faster than anyone in the team.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "быстре́е"
+   ],
+   "distractors": [
+    {
+     "ru": "са́мый бы́стрый",
+     "error": "adj.comparative",
+     "why": "An adverb with **всех** (*than all*): **быстре́е всех**."
+    },
+    {
+     "ru": "бы́стрый",
+     "error": "adj.comparative",
+     "why": "*Faster than everyone*: the comparative + **всех**, **быстре́е всех**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-b1-u18-02",
+   "type": "choice",
+   "level": "B1",
+   "tags": [
+    "adj.superlative"
+   ],
+   "prompt": {
+    "ru": "Э́то ___ си́льная кома́нда в ли́ге.",
+    "en": "This is the strongest team in the league.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "са́мая"
+   ],
+   "distractors": [
+    {
+     "ru": "са́мый",
+     "error": "agreement.gender",
+     "why": "**кома́нда** is feminine: **са́мая**."
+    },
+    {
+     "ru": "са́мое",
+     "error": "agreement.gender",
+     "why": "**кома́нда** is feminine: **са́мая**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-b1-u18-03",
+   "type": "choice",
+   "level": "B1",
+   "tags": [
+    "adj.comparative"
+   ],
+   "prompt": {
+    "ru": "На́ша кома́нда игра́ет ___, чем в про́шлом году́.",
+    "en": "Our team is playing better than last year.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "лу́чше"
+   ],
+   "distractors": [
+    {
+     "ru": "хоро́ший",
+     "error": "adj.comparative",
+     "why": "With **чем** you need the comparative: **лу́чше**."
+    },
+    {
+     "ru": "лу́чший",
+     "error": "adj.comparative",
+     "why": "**лу́чший** is an adjective (*the best one*); *plays better* is **лу́чше**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-b1-u19-01",
+   "type": "choice",
+   "level": "B1",
+   "tags": [
+    "case.prep"
+   ],
+   "prompt": {
+    "ru": "Ива́н жени́лся на ___.",
+    "en": "Ivan married Masha.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "Ма́ше"
+   ],
+   "distractors": [
+    {
+     "ru": "Ма́шу",
+     "error": "case.preposition-government",
+     "why": "**жени́ться на** + prepositional: **на Ма́ше**."
+    },
+    {
+     "ru": "Ма́шей",
+     "error": "case.preposition-government",
+     "why": "**жени́ться на** + prepositional: **на Ма́ше**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-b1-u19-02",
+   "type": "choice",
+   "level": "B1",
+   "tags": [
+    "case.ins.with",
+    "verb.reflexive"
+   ],
+   "prompt": {
+    "ru": "Я поссо́рился с ___.",
+    "en": "I fell out with my brother.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "бра́том"
+   ],
+   "distractors": [
+    {
+     "ru": "бра́та",
+     "error": "case.preposition-government",
+     "why": "**с** (*with*) takes the instrumental: **с бра́том**."
+    },
+    {
+     "ru": "бра́ту",
+     "error": "case.preposition-government",
+     "why": "**с** (*with*) takes the instrumental: **с бра́том**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-b1-u19-03",
+   "type": "choice",
+   "level": "B1",
+   "tags": [
+    "case.acc"
+   ],
+   "prompt": {
+    "ru": "Ма́ша вы́шла за́муж за ___.",
+    "en": "Masha married Ivan.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "Ива́на"
+   ],
+   "distractors": [
+    {
+     "ru": "Ива́ну",
+     "error": "case.preposition-government",
+     "why": "**вы́йти за́муж за** + accusative: **за Ива́на**."
+    },
+    {
+     "ru": "Ива́не",
+     "error": "case.preposition-government",
+     "why": "**вы́йти за́муж за** + accusative: **за Ива́на**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-b1-u20-01",
+   "type": "choice",
+   "level": "B1",
+   "tags": [
+    "verb.conditional"
+   ],
+   "prompt": {
+    "ru": "Е́сли бы ты позвони́л, я бы ___.",
+    "en": "If you had called, I would have come.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "пришёл"
+   ],
+   "distractors": [
+    {
+     "ru": "приду́",
+     "error": "verb.tense",
+     "why": "**бы** takes the past form: **я бы пришёл**."
+    },
+    {
+     "ru": "прийти́",
+     "error": "verb.tense",
+     "why": "**бы** takes the past form: **я бы пришёл**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-b1-u20-02",
+   "type": "choice",
+   "level": "B1",
+   "tags": [
+    "pron.relative",
+    "case.prep.about"
+   ],
+   "prompt": {
+    "ru": "Кни́га, о ___ я тебе́ говори́л, на столе́.",
+    "en": "The book I told you about is on the table.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "кото́рой"
+   ],
+   "distractors": [
+    {
+     "ru": "кото́рую",
+     "error": "case.wrong",
+     "why": "**о** + prepositional: **о кото́рой**."
+    },
+    {
+     "ru": "кото́рая",
+     "error": "case.wrong",
+     "why": "**о** + prepositional: **о кото́рой**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-b1-u20-03",
+   "type": "choice",
+   "level": "B1",
+   "tags": [
+    "aspect.future"
+   ],
+   "prompt": {
+    "ru": "Мне ну́жно ___ рабо́ту до пя́тницы.",
+    "en": "I need to finish the work by Friday.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "зако́нчить"
+   ],
+   "distractors": [
+    {
+     "ru": "зако́нчил",
+     "error": "verb.tense",
+     "why": "**ну́жно** + infinitive: **зако́нчить**."
+    },
+    {
+     "ru": "зако́нчу",
+     "error": "verb.tense",
+     "why": "**ну́жно** + infinitive: **зако́нчить**."
+    }
+   ],
+   "source": "handwritten"
+  }
+ ]
+}

@@ -1,0 +1,75 @@
+{
+ "$schema": "../../../../schemas/unit.schema.json",
+ "id": "u-b1-13",
+ "number": 13,
+ "level": "B1",
+ "title": {
+  "en": "Feelings",
+  "ru": "Чу́вства"
+ },
+ "theme": "emotions and their cases",
+ "grammar": [
+  "g-reflexive-verbs"
+ ],
+ "vocab": [
+  "n:чувство",
+  "n:радость",
+  "n:грусть",
+  "n:страх",
+  "n:злость",
+  "v:волноваться",
+  "v:бояться",
+  "v:радоваться",
+  "v:сердиться",
+  "v:обижаться",
+  "v:удивляться",
+  "v:нравиться",
+  "v:скучать",
+  "n:любовь"
+ ],
+ "drills": [
+  {
+   "items": [
+    "ex-b1-u13-01",
+    "ex-b1-u13-02",
+    "ex-b1-u13-03"
+   ]
+  },
+  {
+   "generator": "verb-cloze",
+   "count": 6,
+   "params": {
+    "kinds": [
+     "np"
+    ]
+   }
+  },
+  {
+   "generator": "forms",
+   "count": 6,
+   "params": {
+    "pos": "verb",
+    "slots": [
+     "np_1sg",
+     "np_2sg",
+     "np_3sg"
+    ]
+   }
+  },
+  {
+   "generator": "vocab",
+   "count": 4
+  }
+ ],
+ "boss": {
+  "name": {
+   "ru": "Ба́рмалей",
+   "en": "the pirate"
+  },
+  "hp": 27,
+  "art": "boss-33"
+ },
+ "testOut": [
+  "verb.reflexive"
+ ]
+}

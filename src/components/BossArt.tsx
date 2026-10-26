@@ -34,6 +34,45 @@ const LOOKS: Record<string, Look> = {
   'boss-18': { body: '#221d29', face: '#bdb7a8', shape: 'tall', eyes: 2, parts: ['crown', 'grin', 'wings'] },
   'boss-19': { body: '#8a2f22', face: '#c2553a', shape: 'blob', eyes: 2, heads: 3, parts: ['wings', 'horns', 'crest'] },
   'boss-20': { body: '#6b4423', face: '#a8754a', shape: 'blob', eyes: 2, parts: ['ears-round', 'crown', 'nose'] },
+  // B1
+  'boss-21': { body: '#3b3b4f', face: '#8a8aa6', shape: 'blob', eyes: 2, parts: ['ears-pointy', 'grin', 'crown'] },
+  'boss-22': { body: '#2e7f86', face: '#b9e0dc', shape: 'tall', eyes: 2, parts: ['hair', 'fins'] },
+  'boss-23': { body: '#2b2433', face: '#9fb58a', shape: 'tall', eyes: 2, parts: ['cap', 'nose', 'grin', 'hair'] },
+  'boss-24': { body: '#1f5f6b', face: '#4f9a8c', shape: 'blob', eyes: 2, heads: 3, parts: ['fins', 'horns'] },
+  'boss-25': { body: '#3a1f2a', face: '#d8d0cf', shape: 'tall', eyes: 2, parts: ['grin', 'wings'] },
+  'boss-26': { body: '#7a5a3a', face: '#c9a27e', shape: 'blob', eyes: 2, parts: ['beard', 'hair'] },
+  'boss-27': { body: '#d9c27a', face: '#f3e6b8', shape: 'tall', eyes: 2, parts: ['hair', 'leaves'] },
+  'boss-28': { body: '#1d1d1d', face: '#c7432f', shape: 'bird', eyes: 2, parts: ['crest', 'wings'] },
+  'boss-29': { body: '#3f7a5a', face: '#b8d8c0', shape: 'tall', eyes: 2, parts: ['crown', 'hair'] },
+  'boss-30': { body: '#5a2a1a', face: '#d39b7a', shape: 'blob', eyes: 2, parts: ['beard', 'cap', 'grin'] },
+  'boss-31': { body: '#a9cde6', face: '#eef6fb', shape: 'tall', eyes: 2, parts: ['crown', 'snow'] },
+  'boss-32': { body: '#2b2b2b', face: '#e1c3b0', shape: 'tall', eyes: 2, parts: ['cap', 'nose', 'grin'] },
+  'boss-33': { body: '#3a2f22', face: '#c58b5a', shape: 'blob', eyes: 2, parts: ['beard', 'cap', 'grin'] },
+  'boss-34': { body: '#6b3d1f', face: '#a8683a', shape: 'blob', eyes: 2, parts: ['horns', 'grin'] },
+  'boss-35': { body: '#e8e4dc', face: '#f7f4ee', shape: 'square', eyes: 2, parts: ['grin', 'nose'] },
+  'boss-36': { body: '#1f1a2b', face: '#cfc8b8', shape: 'tall', eyes: 2, parts: ['cap', 'grin'] },
+  'boss-37': { body: '#2b2b2b', face: '#4a4a4a', shape: 'blob', eyes: 2, parts: ['ears-pointy', 'grin'] },
+  'boss-38': { body: '#7a3b6b', face: '#e0b98c', shape: 'tall', eyes: 2, parts: ['beard', 'cap'] },
+  'boss-39': { body: '#3f6fa8', face: '#f0c9a8', shape: 'blob', eyes: 2, parts: ['hair', 'grin', 'fins'] },
+  'boss-40': { body: '#5a3a1f', face: '#9a6a3a', shape: 'blob', eyes: 2, parts: ['ears-round', 'crown', 'beard'] },
+}
+
+const PARTS: Part[] = ['beard', 'horns', 'crown', 'grin', 'nose', 'hair', 'cap', 'ears-pointy', 'wings', 'crest']
+/** Bosses without a hand-picked look get a stable one derived from their art id. */
+function lookFor(art: string): Look {
+  if (LOOKS[art]) return LOOKS[art]!
+  let h = 7
+  for (const ch of art) h = (h * 31 + ch.charCodeAt(0)) >>> 0
+  const hue = h % 360
+  const pick = (k: number) => PARTS[(h >>> k) % PARTS.length]!
+  return {
+    body: `hsl(${hue} 35% 32%)`,
+    face: `hsl(${(hue + 30) % 360} 40% 70%)`,
+    shape: (['blob', 'tall', 'blob', 'tall', 'bird'] as const)[(h >>> 3) % 5]!,
+    eyes: (h >>> 5) % 7 === 0 ? 1 : 2,
+    heads: (h >>> 9) % 11 === 0 ? 3 : undefined,
+    parts: [...new Set([pick(11), pick(15), pick(19)])],
+  }
 }
 
 const INK = '#2a1d0f'
@@ -98,7 +137,7 @@ function Head({ x, y, r, look, out }: { x: number; y: number; r: number; look: L
 }
 
 export function BossArt({ art, defeated = false, hit = false, className = 'h-40 w-40' }: { art: string; defeated?: boolean; hit?: boolean; className?: string }) {
-  const look = LOOKS[art] ?? LOOKS['boss-01']!
+  const look = lookFor(art)
   const has = (p: Part) => look.parts.includes(p)
   const body = defeated ? '#8e877b' : look.body
   return (

@@ -17,9 +17,10 @@ export function loadGrammar(): Promise<GrammarArticle[]> {
   return (grammar ??= Promise.all(Object.values(grammarFiles).map((f) => f())).then((mods) => mods.map((m) => m.default)))
 }
 
+const LEVELS = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2']
 let units: Promise<Unit[]> | null = null
 export function loadUnits(): Promise<Unit[]> {
   return (units ??= Promise.all(Object.values(unitFiles).map((f) => f())).then((mods) =>
-    mods.map((m) => m.default).sort((a, b) => a.number - b.number),
+    mods.map((m) => m.default).sort((a, b) => LEVELS.indexOf(a.level) - LEVELS.indexOf(b.level) || a.number - b.number),
   ))
 }

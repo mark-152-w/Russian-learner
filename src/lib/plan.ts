@@ -78,7 +78,7 @@ export function planSteps(x: PlanInput): PlanStep[] {
     const check = (p?.lessons ?? 0) > 0
     steps.push({
       id: 'course',
-      title: check ? `Unit ${x.next.number} checkpoint` : `Unit ${x.next.number}: ${x.next.title.en}`,
+      title: check ? `${x.next.level} unit ${x.next.number} checkpoint` : `${x.next.level} unit ${x.next.number}: ${x.next.title.en}`,
       detail: check ? 'You have done the lesson. Score 80% to complete the unit.' : 'Next lesson in your course.',
       to: check ? `/lesson/${x.next.id}/check` : `/lesson/${x.next.id}/lesson`,
       done: did('lesson') || did('checkpoint'),

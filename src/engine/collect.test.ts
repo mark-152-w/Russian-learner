@@ -39,7 +39,7 @@ describe('town', () => {
   it('levels buildings by thresholds and ranks the town', () => {
     const b = BUILDINGS.find((x) => x.id === 'library')!
     expect([0, 1, 4, 5, 40, 99].map((v) => levelFor(b, v))).toEqual([0, 1, 1, 2, 5, 5])
-    const st = townState({ stories: 5, units: 20 })
+    const st = townState({ stories: 5, units: 45 })
     expect(st.find((x) => x.building.id === 'school')).toMatchObject({ level: 5, next: undefined })
     expect(st.find((x) => x.building.id === 'library')).toMatchObject({ level: 2, next: 12 })
     expect(townRank(0)[1]).toBe('Ху́тор')

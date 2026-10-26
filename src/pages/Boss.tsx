@@ -99,7 +99,7 @@ export default function BossPage() {
       <div className="mx-auto max-w-lg space-y-4">
         <Card className="space-y-3 text-center">
           <p className="text-sm font-bold text-red">
-            Unit {unit.number} boss · {unit.title.en}
+            {unit.level} unit {unit.number} boss · {unit.title.en}
           </p>
           <BossArt art={boss.art} className="mx-auto h-48 w-48" />
           <h1 className="font-serif text-3xl">

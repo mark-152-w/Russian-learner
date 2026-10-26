@@ -1,0 +1,75 @@
+{
+ "$schema": "../../../../schemas/unit.schema.json",
+ "id": "u-b1-11",
+ "number": 11,
+ "level": "B1",
+ "title": {
+  "en": "Money",
+  "ru": "Де́ньги"
+ },
+ "theme": "prices and banks",
+ "grammar": [
+  "g-numerals-cases"
+ ],
+ "vocab": [
+  "n:деньги",
+  "n:рубль",
+  "n:доллар",
+  "n:цена",
+  "v:стоить",
+  "n:тысяча",
+  "n:миллион",
+  "n:процент",
+  "n:копейка",
+  "v:заплатить",
+  "n:счёт",
+  "n:карта",
+  "n:наличные",
+  "n:банк"
+ ],
+ "drills": [
+  {
+   "items": [
+    "ex-b1-u11-01",
+    "ex-b1-u11-02",
+    "ex-b1-u11-03"
+   ]
+  },
+  {
+   "generator": "forms",
+   "count": 6,
+   "params": {
+    "pos": "noun",
+    "slots": [
+     "sg_gen",
+     "pl_gen"
+    ]
+   }
+  },
+  {
+   "generator": "case-cloze",
+   "count": 6,
+   "params": {
+    "cases": [
+     "gen"
+    ]
+   }
+  },
+  {
+   "generator": "vocab",
+   "count": 4
+  }
+ ],
+ "boss": {
+  "name": {
+   "ru": "Сне́жная короле́ва",
+   "en": "the Snow Queen"
+  },
+  "hp": 26,
+  "art": "boss-31"
+ },
+ "testOut": [
+  "num.governance",
+  "num.declension"
+ ]
+}
