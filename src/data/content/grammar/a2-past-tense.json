@@ -1,0 +1,53 @@
+{
+  "$schema": "../../../../schemas/grammar-article.schema.json",
+  "id": "g-past-tense",
+  "title": {"en": "The past tense: one rule, four endings", "ru": "Проше́дшее вре́мя"},
+  "level": "A2",
+  "tags": ["verb.past"],
+  "card": "Drop **-ть** from the infinitive and add **-л** (masc.), **-ла** (fem.), **-ло** (neut.), **-ли** (plural): **чита́ть → чита́л, чита́ла, чита́ло, чита́ли**. The past agrees in **gender**, not person: **я чита́л** (a man), **я чита́ла** (a woman).",
+  "sections": [
+    {
+      "kind": "why",
+      "body": "The Russian past tense was once a participle, something like *I [am] having-read*. That's why it agrees in gender and number like an adjective, and why it doesn't change for person: **я / ты / он чита́л** are all the same. Only the subject's gender and number matter."
+    },
+    {
+      "kind": "table",
+      "title": "Regular verbs",
+      "table": {
+        "generate": {"lexemes": ["v:читать", "v:говорить", "v:жить", "v:быть"], "slots": ["inf", "pst_m", "pst_f", "pst_n", "pst_pl"]}
+      }
+    },
+    {
+      "kind": "explanation",
+      "title": "Stress and irregular pasts",
+      "body": "Many short verbs shift the stress to the ending in the feminine only: **жил, жила́, жи́ло, жи́ли**; **был, была́, бы́ло, бы́ли**; **дал, дала́**. Verbs ending in **-ти**, **-чь** or **-зть** have irregular masculine forms:\n\n- **идти́ → шёл, шла, шло, шли**\n- **мочь → мог, могла́, могли́**\n- **есть → ел, е́ла, е́ли**\n- **нести́ → нёс, несла́**\n- verbs in **-нуть** often drop the **-ну-**: **исче́знуть → исче́з, исче́зла**"
+    },
+    {
+      "kind": "explanation",
+      "title": "Agreement",
+      "body": "- With **я** and **ты**, the ending shows the speaker's gender: a woman writes **я была́ ра́да**.\n- **вы** always takes **-ли**, even for one person: **Вы бы́ли пра́вы.**\n- Neuter and impersonal sentences use **-ло**: **Бы́ло хо́лодно.** **Мне нра́вилось.**\n- **у меня́ был / была́ / бы́ло / бы́ли** agrees with the thing possessed: **У меня́ была́ соба́ка.**"
+    },
+    {
+      "kind": "vs-english",
+      "body": "English *I read, I was reading, I have read, I had read* all use the same Russian tense; the difference between *was reading* and *have read* is carried by **aspect** (see the next articles): **я чита́л** (imperfective: was reading, used to read) vs **я прочита́л** (perfective: read it through, finished)."
+    },
+    {
+      "kind": "common-mistakes",
+      "mistakes": [
+        {"wrong": "Она́ чита́л.", "right": "Она́ чита́ла.", "why": "The past agrees with the subject's gender.", "error": "verb.past-gender"},
+        {"wrong": "Я иде́л в шко́лу.", "right": "Я шёл в шко́лу.", "why": "**идти́** has an irregular past: **шёл, шла, шли**.", "error": "ending.invented"},
+        {"wrong": "Вы был до́ма?", "right": "Вы бы́ли до́ма?", "why": "**вы** always takes the plural past.", "error": "verb.past-gender"}
+      ]
+    }
+  ],
+  "examples": [
+    {"ru": "Вчера́ я чита́л кни́гу.", "en": "Yesterday I was reading a book.", "focus": "чита́л"},
+    {"ru": "Она́ жила́ в Москве́.", "en": "She lived in Moscow.", "focus": "жила́"},
+    {"ru": "Где ты был?", "en": "Where were you?", "focus": "был"},
+    {"ru": "Мы шли домо́й.", "en": "We were walking home.", "focus": "шли"},
+    {"ru": "Вчера́ бы́ло хо́лодно.", "en": "It was cold yesterday.", "focus": "бы́ло"},
+    {"ru": "Я не мог спать.", "en": "I couldn't sleep.", "focus": "мог"},
+    {"ru": "У нас была́ ко́шка.", "en": "We had a cat.", "focus": "была́"}
+  ],
+  "related": ["g-present-tense", "g-future-tense", "g-aspect-intro"]
+}

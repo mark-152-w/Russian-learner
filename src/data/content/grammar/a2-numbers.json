@@ -1,0 +1,78 @@
+{
+  "$schema": "../../../../schemas/grammar-article.schema.json",
+  "id": "g-numbers",
+  "title": {"en": "Numbers 1–1000 and the 1 / 2–4 / 5+ rule", "ru": "Числи́тельные"},
+  "level": "A2",
+  "tags": ["num.cardinal", "num.governance", "case.gen.quantity"],
+  "card": "After a number, the noun's form depends on the **last word** of the number: **1** → nominative singular (**оди́н стол**), **2, 3, 4** → genitive singular (**два стола́**), **5–20** and anything ending in 0, 5–9 → genitive plural (**пять столо́в**). So **21 стол**, **22 стола́**, **25 столо́в**.",
+  "sections": [
+    {
+      "kind": "table",
+      "title": "The numbers",
+      "table": {
+        "head": ["", "", "", ""],
+        "rows": [
+          ["1 **оди́н**", "11 **оди́ннадцать**", "10 **де́сять**", "100 **сто**"],
+          ["2 **два**", "12 **двена́дцать**", "20 **два́дцать**", "200 **две́сти**"],
+          ["3 **три**", "13 **трина́дцать**", "30 **три́дцать**", "300 **три́ста**"],
+          ["4 **четы́ре**", "14 **четы́рнадцать**", "40 **со́рок**", "400 **четы́реста**"],
+          ["5 **пять**", "15 **пятна́дцать**", "50 **пятьдеся́т**", "500 **пятьсо́т**"],
+          ["6 **шесть**", "16 **шестна́дцать**", "60 **шестьдеся́т**", "600 **шестьсо́т**"],
+          ["7 **семь**", "17 **семна́дцать**", "70 **се́мьдесят**", "700 **семьсо́т**"],
+          ["8 **во́семь**", "18 **восемна́дцать**", "80 **во́семьдесят**", "800 **восемьсо́т**"],
+          ["9 **де́вять**", "19 **девятна́дцать**", "90 **девяно́сто**", "900 **девятьсо́т**"],
+          ["", "", "", "1000 **ты́сяча**"]
+        ],
+        "caption": "Compound numbers simply line up: 345 = **три́ста со́рок пять**."
+      }
+    },
+    {
+      "kind": "why",
+      "body": "The 2–4 rule is a fossil. Old Russian had a *dual* number for pairs of things, and **два стола́** is that old dual ending, which happens to look like the genitive singular today. Three and four followed two. From five upwards, numbers were originally nouns (*a five of tables*), so they took the genitive plural like **мно́го столо́в**."
+    },
+    {
+      "kind": "table",
+      "title": "The rule in action",
+      "table": {
+        "head": ["Last word", "Noun form", "Examples"],
+        "rows": [
+          ["1 (**оди́н / одна́ / одно́**)", "nominative singular", "**оди́н брат**, **одна́ кни́га**, **два́дцать оди́н год**"],
+          ["2, 3, 4 (**два / две**)", "genitive singular", "**два бра́та**, **две кни́ги**, **три го́да**"],
+          ["5–20, 25–30…, 0", "genitive plural", "**пять бра́тьев**, **пять книг**, **пять лет**, **оди́ннадцать дней**"]
+        ]
+      }
+    },
+    {
+      "kind": "explanation",
+      "title": "Gender in 1 and 2",
+      "body": "**оди́н** agrees like an adjective: **оди́н стол**, **одна́ кни́га**, **одно́ окно́**. **два** has a feminine form **две**: **два стола́, два окна́**, but **две кни́ги**. From three on there is no gender.\n\nThe teens all have their stress on **-на́-**: **пятна́дцать**, **семна́дцать**, except **оди́ннадцать** and **четы́рнадцать**."
+    },
+    {
+      "kind": "explanation",
+      "title": "Years: год, го́да, лет",
+      "body": "Age and durations are the commonest place to meet this rule: **оди́н год**, **два го́да**, **пять лет**, **два́дцать оди́н год**, **два́дцать два го́да**, **два́дцать пять лет**. **лет** is the genitive plural of **год**, borrowed from **ле́то** (*summer*). With age, the person is dative: **Мне три́дцать лет.**"
+    },
+    {
+      "kind": "memory-trick",
+      "body": "Remember the shopping list: **оди́н рубль**, **два рубля́**, **пять рубле́й**. Every price you hear in Russia rehearses the rule."
+    },
+    {
+      "kind": "common-mistakes",
+      "mistakes": [
+        {"wrong": "два бра́тья", "right": "два бра́та", "why": "2–4 take the genitive **singular**.", "error": "numeral.governance"},
+        {"wrong": "пять год", "right": "пять лет", "why": "5 and above take the genitive plural; for **год** that is **лет**.", "error": "numeral.governance"},
+        {"wrong": "два кни́ги", "right": "две кни́ги", "why": "Feminine nouns take **две**.", "error": "agreement.gender"}
+      ]
+    }
+  ],
+  "examples": [
+    {"ru": "У меня́ два бра́та и одна́ сестра́.", "en": "I have two brothers and one sister.", "focus": "два бра́та"},
+    {"ru": "Мне два́дцать пять лет.", "en": "I'm twenty-five.", "focus": "два́дцать пять лет"},
+    {"ru": "Э́то сто́ит сто рубле́й.", "en": "This costs a hundred roubles.", "focus": "сто рубле́й"},
+    {"ru": "Я жду уже́ де́сять мину́т.", "en": "I've been waiting for ten minutes.", "focus": "де́сять мину́т"},
+    {"ru": "У нас три ко́мнаты.", "en": "We have three rooms.", "focus": "три ко́мнаты"},
+    {"ru": "Мы бы́ли там два дня.", "en": "We were there for two days.", "focus": "два дня"},
+    {"ru": "Ему́ два́дцать оди́н год.", "en": "He's twenty-one.", "focus": "два́дцать оди́н год"}
+  ],
+  "related": ["g-genitive-plural", "g-time-dates", "g-numerals-cases"]
+}

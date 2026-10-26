@@ -1,0 +1,60 @@
+{
+  "$schema": "../../../../schemas/grammar-article.schema.json",
+  "id": "g-where-whither",
+  "title": {"en": "где, куда́, отку́да: location vs motion", "ru": "Где? Куда́? Отку́да?"},
+  "level": "A2",
+  "tags": ["case.motion-location", "case.prep.location", "case.acc.direction"],
+  "card": "Russian keeps three questions apart. **где?** *where (at)?* → **в/на** + prepositional: **в шко́ле**. **куда́?** *where to?* → **в/на** + accusative: **в шко́лу**. **отку́да?** *where from?* → **из/с** + genitive: **из шко́лы**. For people: **у** (at), **к** (to), **от** (from).",
+  "sections": [
+    {
+      "kind": "why",
+      "body": "English *where* does double duty: *Where are you?* and *Where are you going?* Russian never confuses the two, and the case after **в/на** carries the difference. Learn the three questions as a set, with their prepositions and cases; it is one of the most useful tables in the language."
+    },
+    {
+      "kind": "table",
+      "title": "The core table",
+      "table": {
+        "head": ["", "где? (location)", "куда́? (destination)", "отку́да? (origin)"],
+        "rows": [
+          ["enclosed places", "**в** + prep: **в шко́ле**", "**в** + acc: **в шко́лу**", "**из** + gen: **из шко́лы**"],
+          ["surfaces, events, на-places", "**на** + prep: **на рабо́те**", "**на** + acc: **на рабо́ту**", "**с** + gen: **с рабо́ты**"],
+          ["people", "**у** + gen: **у врача́**", "**к** + dat: **к врачу́**", "**от** + gen: **от врача́**"],
+          ["home", "**до́ма**", "**домо́й**", "**из до́ма**"],
+          ["here / there", "**здесь, там**", "**сюда́, туда́**", "**отсю́да, отту́да**"]
+        ]
+      }
+    },
+    {
+      "kind": "explanation",
+      "title": "The pairs line up",
+      "body": "Whatever preposition a place takes for *location*, it takes the matching partner for *from*:\n\n- **в** goes with **из**: **в Москве́ → из Москвы́**\n- **на** goes with **с**: **на по́чте → с по́чты**, **на конце́рте → с конце́рта**\n- **у** goes with **от** and **к**: **у ба́бушки → от ба́бушки, к ба́бушке**\n\nSo once you know **на рабо́те**, you know **на рабо́ту** and **с рабо́ты**."
+    },
+    {
+      "kind": "explanation",
+      "title": "Verbs that go with each question",
+      "body": "- **где?** with verbs of being and staying: **быть, жить, рабо́тать, сиде́ть, стоя́ть, лежа́ть**.\n- **куда́?** with verbs of moving and putting: **идти́, е́хать, ходи́ть, класть / положи́ть, ста́вить, приглаша́ть**.\n\nThe verb tells you which question the sentence is asking: **Я живу́ в Москве́** but **Я е́ду в Москву́**."
+    },
+    {
+      "kind": "vs-english",
+      "body": "English often signals destination with *to* (*to school*) and location with *at/in* (*at school*). Russian uses the **same** preposition **в** for both and lets the case decide: **в шко́лу** is *to school*, **в шко́ле** is *at school*. Listen for the ending, not the preposition."
+    },
+    {
+      "kind": "common-mistakes",
+      "mistakes": [
+        {"wrong": "Я е́ду в Москве́.", "right": "Я е́ду в Москву́.", "why": "**е́хать** is motion, so **куда́?** → accusative.", "error": "case.prep-for-acc"},
+        {"wrong": "Я иду́ к шко́ле.", "right": "Я иду́ в шко́лу.", "why": "**к** means *towards* or *to someone*; going *into* school is **в шко́лу**.", "error": "motion.where-whither"},
+        {"wrong": "Я был в врача́.", "right": "Я был у врача́.", "why": "With people, location is **у** + genitive.", "error": "motion.where-whither"}
+      ]
+    }
+  ],
+  "examples": [
+    {"ru": "Где ты? — Я на рабо́те.", "en": "Where are you? I'm at work.", "focus": "на рабо́те"},
+    {"ru": "Куда́ ты идёшь? — На рабо́ту.", "en": "Where are you going? To work.", "focus": "На рабо́ту"},
+    {"ru": "Отку́да ты? — Я из А́нглии.", "en": "Where are you from? I'm from England.", "focus": "из А́нглии"},
+    {"ru": "Я иду́ домо́й.", "en": "I'm going home.", "focus": "домо́й"},
+    {"ru": "Вчера́ я был у бра́та.", "en": "Yesterday I was at my brother's.", "focus": "у бра́та"},
+    {"ru": "Пойдём к ба́бушке.", "en": "Let's go to Grandma's.", "focus": "к ба́бушке"},
+    {"ru": "Он то́лько что пришёл с рабо́ты.", "en": "He's just come back from work.", "focus": "с рабо́ты"}
+  ],
+  "related": ["g-prepositional", "g-accusative", "g-motion-basics", "g-case-cheatsheet"]
+}

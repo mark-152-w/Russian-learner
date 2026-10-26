@@ -1,0 +1,74 @@
+{
+ "$schema": "../../../../schemas/unit.schema.json",
+ "id": "u-a2-16",
+ "number": 16,
+ "level": "A2",
+ "title": {
+  "en": "Lots of books",
+  "ru": "Мно́го книг"
+ },
+ "theme": "quantities",
+ "grammar": [
+  "g-genitive-plural"
+ ],
+ "vocab": [
+  "n:книга",
+  "n:студент",
+  "n:друг",
+  "n:ребёнок",
+  "n:девушка",
+  "n:яблоко",
+  "n:окно",
+  "n:письмо",
+  "n:слово",
+  "n:вопрос",
+  "n:место",
+  "n:рубль",
+  "n:словарь"
+ ],
+ "drills": [
+  {
+   "generator": "forms",
+   "count": 8,
+   "params": {
+    "pos": "noun",
+    "slots": [
+     "pl_gen"
+    ]
+   }
+  },
+  {
+   "generator": "case-cloze",
+   "count": 6,
+   "params": {
+    "cases": [
+     "gen"
+    ],
+    "numbers": [
+     "pl"
+    ]
+   }
+  },
+  {
+   "generator": "pattern",
+   "count": 4,
+   "params": {
+    "class": "fem-a",
+    "slots": [
+     "pl_gen"
+    ]
+   }
+  }
+ ],
+ "boss": {
+  "name": {
+   "ru": "Ба́ба-Яга́ II",
+   "en": "the forest witch, again"
+  },
+  "hp": 18,
+  "art": "boss-16"
+ },
+ "testOut": [
+  "case.gen.quantity"
+ ]
+}

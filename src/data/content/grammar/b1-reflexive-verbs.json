@@ -1,0 +1,62 @@
+{
+  "$schema": "../../../../schemas/grammar-article.schema.json",
+  "id": "g-reflexive-verbs",
+  "title": {"en": "Reflexive verbs: -ся and -сь", "ru": "Возвра́тные глаго́лы"},
+  "level": "B1",
+  "tags": ["verb.reflexive"],
+  "card": "**-ся** after a consonant, **-сь** after a vowel: **умыва́юсь, умыва́ешься, умыва́ется**. It can mean *oneself* (**мы́ться**), *each other* (**встреча́ться**), an action happening by itself (**дверь открыва́ется**), a passive, or nothing visible at all (**боя́ться**, **смея́ться**). Reflexive verbs never take an accusative object.",
+  "sections": [
+    {
+      "kind": "why",
+      "body": "**-ся** is a worn-down form of **себя́** (*oneself*). It started as \"wash oneself\" and grew into a general marker that the action stays with the subject instead of passing to an object. That's why a reflexive verb can never have a direct object: the \"object slot\" is already filled by **-ся**."
+    },
+    {
+      "kind": "table",
+      "title": "Conjugation",
+      "table": {
+        "head": ["Person", "Form", "Note"],
+        "rows": [
+          ["я", "**учу́сь**", "after a vowel: **-сь**"],
+          ["ты", "**у́чишься**", "**-шься**"],
+          ["он / она́", "**у́чится**", "**-тся** (no **ь**)"],
+          ["мы", "**у́чимся**", ""],
+          ["вы", "**у́читесь**", "after a vowel: **-сь**"],
+          ["они́", "**у́чатся**", ""],
+          ["past", "**учи́лся, учи́лась, учи́лось, учи́лись**", ""]
+        ]
+      }
+    },
+    {
+      "kind": "explanation",
+      "title": "What -ся can mean",
+      "body": "- **Reflexive**: **одева́ться** (*get dressed*), **мы́ться** (*wash*), **причёсываться**.\n- **Reciprocal** (*each other*): **встреча́ться**, **знако́миться**, **целова́ться**, **ссо́риться**.\n- **The action happens by itself**: **Дверь открыва́ется.** **Уро́к начина́ется.** **Це́ны расту́т** has no **-ся** because **расти́** is already intransitive.\n- **Passive** (imperfective, mostly with things): **Э́тот дом стро́ится уже́ два го́да.**\n- **Impersonal feelings**: **мне хо́чется** (*I feel like*), **мне не спи́тся** (*I can't sleep*).\n- **No visible meaning**: some verbs just come with **-ся**: **боя́ться**, **смея́ться**, **наде́яться**, **нра́виться**, **улыба́ться**."
+    },
+    {
+      "kind": "spelling-rule",
+      "title": "-тся or -ться?",
+      "body": "Pronunciation is the same [-ца], so ask the question the form answers. **Что де́лает?** → **-тся** (3rd person): **он у́чится**. **Что де́лать?** → **-ться** (infinitive): **он хо́чет учи́ться**. If the question has **ь**, so does the verb."
+    },
+    {
+      "kind": "vs-english",
+      "body": "English often uses no reflexive at all where Russian needs one: *The shop opens at nine* is **Магази́н открыва́ется в де́вять**; *I'm interested in music* is **Я интересу́юсь му́зыкой**. Conversely, English *myself* for emphasis is **сам**, not **-ся**: *I did it myself* is **Я сде́лал э́то сам**."
+    },
+    {
+      "kind": "common-mistakes",
+      "mistakes": [
+        {"wrong": "Я боя́ться соба́к.", "right": "Я бою́сь соба́к.", "why": "Conjugate the verb: **я бою́сь**.", "error": "verb.person"},
+        {"wrong": "Магази́н открыва́ет в де́вять.", "right": "Магази́н открыва́ется в де́вять.", "why": "The shop isn't opening something; it opens: **-ся**.", "error": "verb.reflexive"},
+        {"wrong": "Он у́читься в шко́ле.", "right": "Он у́чится в шко́ле.", "why": "**Что де́лает?** → **-тся**, no soft sign.", "error": "spelling.soft-sign"}
+      ]
+    }
+  ],
+  "examples": [
+    {"ru": "Я учу́сь в университе́те.", "en": "I study at university.", "focus": "учу́сь"},
+    {"ru": "Мы встре́тились в кафе́.", "en": "We met in a café.", "focus": "встре́тились"},
+    {"ru": "Фильм начина́ется в во́семь.", "en": "The film starts at eight.", "focus": "начина́ется"},
+    {"ru": "Не бо́йся!", "en": "Don't be afraid!", "focus": "бо́йся"},
+    {"ru": "Она́ всегда́ улыба́ется.", "en": "She's always smiling.", "focus": "улыба́ется"},
+    {"ru": "Как тебя́ зову́т? Дава́й познако́мимся.", "en": "What's your name? Let's get acquainted.", "focus": "познако́мимся"},
+    {"ru": "Мне не хо́чется рабо́тать.", "en": "I don't feel like working.", "focus": "хо́чется"}
+  ],
+  "related": ["g-present-tense", "g-impersonal"]
+}

@@ -1,0 +1,77 @@
+{
+ "$schema": "../../../../schemas/unit.schema.json",
+ "id": "u-a2-03",
+ "number": 3,
+ "level": "A2",
+ "title": {
+  "en": "What are we talking about?",
+  "ru": "О чём мы говори́м?"
+ },
+ "theme": "conversation",
+ "grammar": [
+  "g-prepositional",
+  "g-present-tense"
+ ],
+ "vocab": [
+  "n:книга",
+  "n:фильм",
+  "n:музыка",
+  "n:жизнь",
+  "n:погода",
+  "n:история",
+  "n:работа",
+  "n:семья",
+  "n:любовь",
+  "n:война",
+  "n:проблема",
+  "v:говорить",
+  "v:думать",
+  "v:рассказывать",
+  "v:мечтать"
+ ],
+ "drills": [
+  {
+   "generator": "case-cloze",
+   "count": 6,
+   "params": {
+    "tags": [
+     "case.prep.about"
+    ]
+   }
+  },
+  {
+   "generator": "forms",
+   "count": 4,
+   "params": {
+    "pos": "noun",
+    "slots": [
+     "sg_prep"
+    ]
+   }
+  },
+  {
+   "generator": "verb-cloze",
+   "count": 5,
+   "params": {
+    "kinds": [
+     "np"
+    ]
+   }
+  },
+  {
+   "generator": "vocab",
+   "count": 5
+  }
+ ],
+ "boss": {
+  "name": {
+   "ru": "Кики́мора",
+   "en": "the marsh spirit"
+  },
+  "hp": 11,
+  "art": "boss-03"
+ },
+ "testOut": [
+  "case.prep.about"
+ ]
+}

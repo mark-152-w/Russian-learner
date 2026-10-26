@@ -1,0 +1,76 @@
+{
+ "$schema": "../../../../schemas/unit.schema.json",
+ "id": "u-a2-09",
+ "number": 9,
+ "level": "A2",
+ "title": {
+  "en": "Without sugar",
+  "ru": "Без са́хара"
+ },
+ "theme": "food and drink",
+ "grammar": [
+  "g-genitive"
+ ],
+ "vocab": [
+  "n:сахар",
+  "n:молоко",
+  "n:чай",
+  "n:сок",
+  "n:вода",
+  "n:хлеб",
+  "n:мясо",
+  "n:рыба",
+  "n:сыр",
+  "n:масло",
+  "n:суп",
+  "n:стакан",
+  "n:чашка",
+  "n:бутылка"
+ ],
+ "drills": [
+  {
+   "generator": "case-cloze",
+   "count": 6,
+   "params": {
+    "tags": [
+     "case.gen.prepositions"
+    ]
+   }
+  },
+  {
+   "generator": "case-cloze",
+   "count": 4,
+   "params": {
+    "tags": [
+     "case.gen.negation"
+    ]
+   }
+  },
+  {
+   "generator": "forms",
+   "count": 5,
+   "params": {
+    "pos": "noun",
+    "slots": [
+     "sg_gen"
+    ]
+   }
+  },
+  {
+   "generator": "vocab",
+   "count": 4
+  }
+ ],
+ "boss": {
+  "name": {
+   "ru": "Ли́хо Одногла́зое",
+   "en": "One-eyed Misfortune"
+  },
+  "hp": 14,
+  "art": "boss-09"
+ },
+ "testOut": [
+  "case.gen.prepositions",
+  "case.gen.negation"
+ ]
+}

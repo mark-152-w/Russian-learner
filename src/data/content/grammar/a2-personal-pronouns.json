@@ -1,0 +1,62 @@
+{
+  "$schema": "../../../../schemas/grammar-article.schema.json",
+  "id": "g-personal-pronouns",
+  "title": {"en": "Personal pronouns in every case", "ru": "Ли́чные местоиме́ния"},
+  "level": "A2",
+  "tags": ["pron.personal"],
+  "card": "Pronouns decline like nouns: **я → меня́ → мне → мной**. Two quirks: after a preposition, **он, она́, оно́, они́** gain an **н-** (**у него́**, **с ней**, **о них**), and **ты** is informal while **вы** is polite or plural.",
+  "sections": [
+    {
+      "kind": "table",
+      "title": "The full table",
+      "table": {
+        "head": ["", "я", "ты", "он / оно́", "она́", "мы", "вы", "они́"],
+        "rows": [
+          ["nom", "я", "ты", "он / оно́", "она́", "мы", "вы", "они́"],
+          ["gen", "меня́", "тебя́", "его́", "её", "нас", "вас", "их"],
+          ["dat", "мне", "тебе́", "ему́", "ей", "нам", "вам", "им"],
+          ["acc", "меня́", "тебя́", "его́", "её", "нас", "вас", "их"],
+          ["ins", "мной", "тобо́й", "им", "ей", "на́ми", "ва́ми", "и́ми"],
+          ["prep", "мне", "тебе́", "нём", "ней", "нас", "вас", "них"]
+        ],
+        "caption": "The prepositional is only ever used after a preposition, so its third-person forms always have **н-**: **о нём**, **о ней**, **о них**."
+      }
+    },
+    {
+      "kind": "explanation",
+      "title": "The н- rule",
+      "body": "Whenever **он, она́, оно́, они́** stand directly after a preposition, they take an **н-** at the front: **у него́** (*he has*), **к ней** (*to her*), **с ни́ми** (*with them*), **для него́** (*for him*). Without a preposition there is no **н-**: **Я зна́ю его́.** **Я дал ей кни́гу.**\n\nThe possessives **его́, её, их** (*his, her, their*) never take **н-**, even after a preposition: **у его́ бра́та** (*at his brother's*). That's how you can tell *him* from *his* in **у него́** vs **у его́ бра́та**."
+    },
+    {
+      "kind": "explanation",
+      "title": "ты or вы?",
+      "body": "**ты** is for one person you know well: family, friends, children, animals. **вы** is for one person you should be polite to (strangers, older people, teachers, colleagues at first), and for any group. With polite **вы** the verb is always plural: **Вы зна́ете?** Adjectives and past tense agree in the plural too: **Вы бы́ли пра́вы.** In writing to one person, **Вы** is often capitalised as a courtesy.\n\nSwitching from **вы** to **ты** is a small social event, often proposed explicitly: **Дава́й на ты?** (*Shall we say ты?*)"
+    },
+    {
+      "kind": "vs-english",
+      "body": "English *you* is both singular and plural, formal and informal; Russian splits it. And where English uses *it* for things, Russian uses **он** or **она́** to match the noun's gender: **Где маши́на? — Она́ во дворе́.**"
+    },
+    {
+      "kind": "memory-trick",
+      "body": "**его́** is spelt with **г** but said with **в** (*yevó*). The same goes for every **-ого/-его** ending (**но́вого**, **моего́**). Read it the way Russians say it from the start, and the spelling will stop confusing you."
+    },
+    {
+      "kind": "common-mistakes",
+      "mistakes": [
+        {"wrong": "Я говорю́ с им.", "right": "Я говорю́ с ним.", "why": "After a preposition, third-person pronouns take **н-**.", "error": "pronoun.form"},
+        {"wrong": "Я люблю́ она́.", "right": "Я люблю́ её.", "why": "The object is accusative: **её**.", "error": "pronoun.form"},
+        {"wrong": "Вы зна́ешь?", "right": "Вы зна́ете?", "why": "**вы**, even for one polite person, takes the plural verb.", "error": "verb.person"}
+      ]
+    }
+  ],
+  "examples": [
+    {"ru": "Я тебя́ люблю́.", "en": "I love you.", "focus": "тебя́"},
+    {"ru": "У него́ есть маши́на.", "en": "He has a car.", "focus": "него́"},
+    {"ru": "Скажи́ ей пра́вду.", "en": "Tell her the truth.", "focus": "ей"},
+    {"ru": "Мы говори́ли о нём.", "en": "We were talking about him.", "focus": "нём"},
+    {"ru": "Пойдём с на́ми!", "en": "Come with us!", "focus": "на́ми"},
+    {"ru": "Э́то для вас.", "en": "This is for you.", "focus": "вас"},
+    {"ru": "Я их не зна́ю.", "en": "I don't know them.", "focus": "их"}
+  ],
+  "related": ["g-possessives", "g-cases-intro"]
+}

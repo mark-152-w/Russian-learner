@@ -1,0 +1,54 @@
+{
+ "sources": {
+  "openrussian": {
+   "name": "OpenRussian dictionary data",
+   "url": "https://github.com/Badestrand/russian-dictionary",
+   "licence": "CC BY-SA 4.0",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "commit": "50e210c4803237779cb562bc1abcea529066031c"
+  },
+  "frequency": {
+   "name": "FrequencyWords (OpenSubtitles 2018, Russian)",
+   "url": "https://github.com/hermitdave/FrequencyWords",
+   "licence": "CC BY-SA 4.0 (content), MIT (code)",
+   "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+   "commit": "525f9b560de45753a5ea01069454e72e9aa541c6"
+  },
+  "pymorphy3": {
+   "name": "pymorphy3 + OpenCorpora dictionaries (build-time verification only)",
+   "url": "https://github.com/no-plagiarism/pymorphy3",
+   "licence": "MIT (pymorphy3); OpenCorpora dictionary CC BY-SA 3.0",
+   "licenceUrl": "https://opencorpora.org/?page=about"
+  }
+ },
+ "counts": {
+  "lexemes": 43174,
+  "noun": 20361,
+  "verb": 12175,
+  "adj": 8519,
+  "other": 2119
+ },
+ "levels": {
+  "A1": 598,
+  "A2": 887,
+  "B1": 1462,
+  "B2": 2395,
+  "C1": 3203,
+  "C2": 3738,
+  "unranked": 30891
+ },
+ "chunks": {
+  "A1": 598,
+  "A2": 887,
+  "B1": 1462,
+  "B2": 2395,
+  "C1": 3203,
+  "C2": 3738,
+  "X1": 6000,
+  "X2": 6000,
+  "X3": 6000,
+  "X4": 6000,
+  "X5": 6000,
+  "X6": 891
+ }
+}

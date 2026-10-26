@@ -1,0 +1,61 @@
+{
+ "$schema": "../../../../schemas/unit.schema.json",
+ "id": "u-a2-19",
+ "number": 19,
+ "level": "A2",
+ "title": {
+  "en": "Going places",
+  "ru": "Идти́ и́ли ходи́ть?"
+ },
+ "theme": "transport",
+ "grammar": [
+  "g-motion-basics"
+ ],
+ "vocab": [
+  "v:идти",
+  "v:ходить",
+  "v:ехать",
+  "v:ездить",
+  "v:пойти",
+  "v:поехать",
+  "n:автобус",
+  "n:трамвай",
+  "n:машина",
+  "n:велосипед",
+  "o:пешком",
+  "n:дорога",
+  "n:остановка"
+ ],
+ "drills": [
+  {
+   "items": [
+    "ex-a2-u19-01",
+    "ex-a2-u19-02",
+    "ex-a2-u19-03",
+    "ex-a2-u19-04",
+    "ex-a2-u19-05",
+    "ex-a2-u19-06",
+    "ex-a2-u19-07",
+    "ex-a2-u19-08",
+    "ex-a2-u19-09",
+    "ex-a2-u19-10",
+    "ex-a2-u19-11"
+   ]
+  },
+  {
+   "generator": "vocab",
+   "count": 4
+  }
+ ],
+ "boss": {
+  "name": {
+   "ru": "Змей Горы́ныч II",
+   "en": "the dragon, again"
+  },
+  "hp": 19,
+  "art": "boss-19"
+ },
+ "testOut": [
+  "motion.basic"
+ ]
+}

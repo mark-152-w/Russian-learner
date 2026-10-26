@@ -1,0 +1,70 @@
+{
+  "$schema": "../../../../schemas/grammar-article.schema.json",
+  "id": "g-instrumental",
+  "title": {"en": "The instrumental case: with, by means of, as", "ru": "Твори́тельный паде́ж"},
+  "level": "A2",
+  "tags": ["case.ins", "case.ins.instrument", "case.ins.with", "case.ins.predicate", "case.ins.prepositions"],
+  "card": "The instrumental answers **кем? чем?**: the tool or means (**писа́ть ру́чкой**), company with **с** (**ко́фе с молоко́м**), and what someone *is, becomes or works as* (**Он рабо́тает врачо́м**). Endings: **-ом/-ем** (masc./neut.), **-ой/-ей** (fem. **-а/-я**), **-ью** (fem. **-ь**).",
+  "sections": [
+    {
+      "kind": "why",
+      "body": "The name comes from *instrument*: the oldest use is the means by which something is done, **писа́ть карандашо́м** (*to write with a pencil*), **е́хать по́ездом** (*to go by train*). From there it spread to *together with* (after **с**), to roles and professions, and to several prepositions of position."
+    },
+    {
+      "kind": "table",
+      "title": "Singular endings",
+      "table": {
+        "head": ["Nominative", "Instrumental", "Examples"],
+        "rows": [
+          ["masculine consonant, neuter -о", "-ом", "**брат → бра́том**, **окно́ → окно́м**"],
+          ["masculine -й, -ь; neuter -е", "-ем (-ём when stressed)", "**музе́й → музе́ем**, **мо́ре → мо́рем**, **слова́рь → словарём**"],
+          ["-а", "-ой", "**ма́ма → ма́мой**, **ру́чка → ру́чкой**"],
+          ["-я", "-ей (-ёй when stressed)", "**неде́ля → неде́лей**, **семья́ → семьёй**"],
+          ["feminine -ь", "-ью", "**дверь → две́рью**, **ночь → но́чью**"]
+        ]
+      }
+    },
+    {
+      "kind": "spelling-rule",
+      "title": "The 5-letter rule",
+      "body": "After **ж, ш, щ, ч, ц** an **unstressed** **о** in an ending is written **е**: **ме́сяцем**, **му́жем**, **ка́шей**, **у́лицей**. When stressed it stays **о**: **отцо́м**, **ножо́м**, **душо́й**. So say the word, find the stress, then choose the letter."
+    },
+    {
+      "kind": "explanation",
+      "title": "The main uses",
+      "body": "- **Tool or means**: **ре́зать ножо́м**, **е́хать авто́бусом**, **писа́ть ле́вой руко́й**.\n- **With someone or something** (**с**): **ча́й с лимо́ном**, **гуля́ть с соба́кой**, **Мы с бра́том** (*my brother and I*).\n- **Professions and roles** after **рабо́тать**, **быть** (past and future), **стать**: **Она́ ста́ла врачо́м.** **Я бу́ду учи́телем.** In the present tense there is no verb and the nominative is used: **Она́ врач.**\n- **Verbs of interest and occupation**: **занима́ться спо́ртом**, **интересова́ться му́зыкой**, **по́льзоваться телефо́ном**.\n- **Position**: **над** (*above*), **под** (*under*), **пе́ред** (*in front of*), **за** (*behind*), **ме́жду** (*between*): **под столо́м**, **пе́ред до́мом**.\n- **Times of day and seasons** as adverbs: **у́тром**, **ве́чером**, **но́чью**, **ле́том**, **зимо́й**."
+    },
+    {
+      "kind": "table",
+      "title": "Pronouns in the instrumental",
+      "table": {
+        "head": ["я", "ты", "он / оно́", "она́", "мы", "вы", "они́"],
+        "rows": [["**мной**", "**тобо́й**", "**им**", "**ей**", "**на́ми**", "**ва́ми**", "**и́ми**"]],
+        "caption": "After a preposition, third-person forms gain **н-**: **с ним**, **с ней**, **с ни́ми**."
+      }
+    },
+    {
+      "kind": "vs-english",
+      "body": "English *with* covers two different Russian ideas. *With a knife* (the tool) is the bare instrumental: **ножо́м**, no preposition. *With a friend* (company) needs **с**: **с дру́гом**. Saying **с ножо́м** means *carrying a knife*, not *using* it."
+    },
+    {
+      "kind": "common-mistakes",
+      "mistakes": [
+        {"wrong": "Я пишу́ с ру́чкой.", "right": "Я пишу́ ру́чкой.", "why": "A tool takes the bare instrumental; **с** means *together with*.", "error": "case.instrumental-role"},
+        {"wrong": "Он хо́чет стать врач.", "right": "Он хо́чет стать врачо́м.", "why": "After **стать** the profession goes in the instrumental.", "error": "case.instrumental-role"},
+        {"wrong": "ме́сяцом", "right": "ме́сяцем", "why": "The 5-letter rule: unstressed **о** after **ц** becomes **е**.", "error": "spelling.5-letter"}
+      ]
+    }
+  ],
+  "examples": [
+    {"ru": "Я пишу́ карандашо́м.", "en": "I'm writing in pencil.", "focus": "карандашо́м"},
+    {"ru": "Мы е́хали туда́ по́ездом.", "en": "We went there by train.", "focus": "по́ездом"},
+    {"ru": "Я пью ча́й с лимо́ном.", "en": "I drink tea with lemon.", "focus": "лимо́ном"},
+    {"ru": "Моя́ сестра́ рабо́тает врачо́м.", "en": "My sister works as a doctor.", "focus": "врачо́м"},
+    {"ru": "Он занима́ется спо́ртом.", "en": "He does sport.", "focus": "спо́ртом"},
+    {"ru": "Ко́шка спит под столо́м.", "en": "The cat is sleeping under the table.", "focus": "столо́м"},
+    {"ru": "Мы с дру́гом идём в кино́.", "en": "My friend and I are going to the cinema.", "focus": "дру́гом"},
+    {"ru": "Ле́том мы живём на да́че.", "en": "In summer we live at the dacha.", "focus": "Ле́том"}
+  ],
+  "related": ["g-cases-intro", "g-personal-pronouns", "g-case-cheatsheet"]
+}

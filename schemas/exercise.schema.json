@@ -1,0 +1,80 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "exercise.schema.json",
+  "title": "ExerciseFile",
+  "description": "One shared format for lessons, trainers and games. A file holds {items: [...]}.",
+  "type": "object",
+  "required": ["items"],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": {"type": "string"},
+    "items": {"type": "array", "items": {"$ref": "#/$defs/item"}}
+  },
+  "$defs": {
+    "distractor": {
+      "type": "object",
+      "required": ["ru", "error"],
+      "additionalProperties": false,
+      "properties": {
+        "ru": {"type": "string", "description": "A plausible wrong answer (usually another form of the same word). Not pymorphy-checked: it may be a deliberately misspelt form."},
+        "error": {"$ref": "common.schema.json#/$defs/errorType"},
+        "why": {"$ref": "common.schema.json#/$defs/enText", "description": "Diagnostic shown when this is chosen/typed."}
+      }
+    },
+    "item": {
+      "title": "ExerciseItem",
+      "type": "object",
+      "required": ["id", "type", "level", "tags", "prompt"],
+      "additionalProperties": false,
+      "properties": {
+        "id": {"$ref": "common.schema.json#/$defs/id"},
+        "type": {"enum": ["choice", "cloze", "transform", "tiles", "match", "stress", "find-error", "dictation", "listen-choose", "choice-reason", "self-graded"]},
+        "level": {"$ref": "common.schema.json#/$defs/level"},
+        "tags": {"type": "array", "items": {"$ref": "common.schema.json#/$defs/tag"}, "minItems": 1},
+        "vocab": {"type": "array", "items": {"$ref": "common.schema.json#/$defs/lexemeId"}},
+        "target": {
+          "type": "object",
+          "description": "The lexeme form the answer should be. Lets the grader diagnose wrong answers against the whole paradigm (wrong case, wrong number, ...).",
+          "required": ["lex", "slot"],
+          "additionalProperties": false,
+          "properties": {"lex": {"$ref": "common.schema.json#/$defs/lexemeId"}, "slot": {"type": "string"}}
+        },
+        "golden": {"type": "boolean", "description": "Runtime only: rolled when the item is presented."},
+        "prompt": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "ru": {"type": "string", "description": "Russian prompt. '___' marks the gap in cloze/transform items."},
+            "en": {"type": "string"},
+            "instruction": {"type": "string", "description": "English task line, e.g. 'Put into the instrumental plural'."},
+            "governor": {"type": "string", "description": "The word that governs the case, highlighted in the UI (e.g. 'в', 'интересова́ться')."},
+            "audio": {"type": "string", "description": "Russian text to speak (dictation/listen-choose)."}
+          }
+        },
+        "accept": {"type": "array", "items": {"type": "string"}, "minItems": 1, "description": "All accepted Russian answers, stressed. For tiles: the full correct sentence(s)."},
+        "acceptEn": {"type": "array", "items": {"type": "string"}, "description": "Accepted English answers (RU→EN items)."},
+        "distractors": {"type": "array", "items": {"$ref": "#/$defs/distractor"}},
+        "choices": {"type": "array", "items": {"type": "string"}, "description": "For choice items whose options are not Russian forms (e.g. reasons)."},
+        "answerIndex": {"type": "integer", "minimum": 0},
+        "pairs": {"type": "array", "items": {"type": "array", "items": {"type": "string"}, "minItems": 2, "maxItems": 2}, "description": "match: [left, right] pairs."},
+        "tiles": {"type": "array", "items": {"type": "string"}, "description": "tiles: the tile bank, including distractor tiles."},
+        "stressWord": {"type": "string", "description": "stress: the stressed target word; the UI strips the mark and asks for it."},
+        "errorIndex": {"type": "integer", "minimum": 0, "description": "find-error: index of the wrong word in prompt.ru tokens."},
+        "reason": {"$ref": "common.schema.json#/$defs/enText", "description": "choice-reason: the one-line reason ('completed single action → perfective')."},
+        "model": {"type": "string", "description": "self-graded: the model answer."},
+        "explanation": {"$ref": "common.schema.json#/$defs/markdown"},
+        "source": {"enum": ["handwritten", "generated"]},
+        "review": {"$ref": "common.schema.json#/$defs/review"}
+      },
+      "allOf": [
+        {"if": {"properties": {"type": {"enum": ["cloze", "transform", "dictation"]}}}, "then": {"required": ["accept"]}},
+        {"if": {"properties": {"type": {"const": "tiles"}}}, "then": {"required": ["accept", "tiles"]}},
+        {"if": {"properties": {"type": {"const": "match"}}}, "then": {"required": ["pairs"]}},
+        {"if": {"properties": {"type": {"const": "stress"}}}, "then": {"required": ["stressWord"]}},
+        {"if": {"properties": {"type": {"const": "find-error"}}}, "then": {"required": ["errorIndex", "accept"]}},
+        {"if": {"properties": {"type": {"const": "choice-reason"}}}, "then": {"required": ["accept", "distractors", "reason"]}},
+        {"if": {"properties": {"type": {"const": "self-graded"}}}, "then": {"required": ["model"]}}
+      ]
+    }
+  }
+}

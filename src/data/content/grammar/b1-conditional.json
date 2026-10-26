@@ -1,0 +1,58 @@
+{
+  "$schema": "../../../../schemas/grammar-article.schema.json",
+  "id": "g-conditional",
+  "title": {"en": "The conditional: е́сли and бы", "ru": "Усло́вное наклоне́ние"},
+  "level": "B1",
+  "tags": ["verb.conditional"],
+  "card": "Real conditions use **е́сли** with ordinary tenses: **Е́сли бу́дет дождь, я оста́нусь до́ма.** Unreal conditions (*would, would have*) use the **past tense + бы** in **both** halves: **Е́сли бы у меня́ бы́ло вре́мя, я бы пое́хал.** The same form covers present and past: *if I had… I would* and *if I had had… I would have*.",
+  "sections": [
+    {
+      "kind": "why",
+      "body": "Russian doesn't build a special *would* tense. It takes the past-tense form (which agrees in gender, like an adjective) and adds the little particle **бы** to mark it as imagined. Because the past form is only a shape here, not a real past, **бы** + past works for any time: present, past or future wishes."
+    },
+    {
+      "kind": "table",
+      "title": "Real and unreal",
+      "table": {
+        "head": ["Type", "Russian", "English"],
+        "rows": [
+          ["Real (likely)", "**Е́сли за́втра бу́дет хоро́шая пого́да, мы пойдём гуля́ть.**", "If the weather is good tomorrow, we'll go for a walk."],
+          ["Unreal (now)", "**Е́сли бы я знал, я бы сказа́л.**", "If I knew, I would tell you."],
+          ["Unreal (past)", "**Е́сли бы я знал, я бы сказа́л.**", "If I had known, I would have told you."],
+          ["Wish", "**Я бы хоте́л пое́хать в Москву́.**", "I'd like to go to Moscow."],
+          ["Polite request", "**Не могли́ бы вы помо́чь?**", "Could you help?"]
+        ]
+      }
+    },
+    {
+      "kind": "explanation",
+      "title": "Using бы",
+      "body": "- **бы** usually comes after the first word or after the verb: **Я бы пошёл** or **Я пошёл бы**. In the **е́сли** clause it comes right after **е́сли**: **е́сли бы**.\n- The verb is always the past form, agreeing with the subject: **она́ бы сказа́ла**, **они́ бы сказа́ли**.\n- **Е́сли** + future for real conditions: Russian uses the future in the **е́сли** clause where English uses the present: **Е́сли ты придёшь, я бу́ду рад.**\n- **что́бы** (*so that, in order to*) contains **бы** and also takes the past tense when the subject changes: **Я хочу́, что́бы ты пришёл.** (*I want you to come.*) Same subject: infinitive: **Я пришёл, что́бы помо́чь.**"
+    },
+    {
+      "kind": "vs-english",
+      "body": "English needs four tenses for conditions (*if it rains / if it rained / if it had rained…*). Russian needs two patterns: **е́сли** + normal tenses for real conditions, **е́сли бы** + past for everything imagined. Note English *if it rains* (present) is **е́сли бу́дет дождь** (future) in Russian."
+    },
+    {
+      "kind": "memory-trick",
+      "body": "**бы** is the \"magic wand\": wave it over any past-tense verb and the action becomes imaginary. Wave it over both halves of the sentence, the *if* and the *then*."
+    },
+    {
+      "kind": "common-mistakes",
+      "mistakes": [
+        {"wrong": "Е́сли бы я зна́ю, я бы скажу́.", "right": "Е́сли бы я знал, я бы сказа́л.", "why": "**бы** always takes the past-tense form.", "error": "verb.tense"},
+        {"wrong": "Е́сли за́втра идёт дождь, я бу́ду до́ма.", "right": "Е́сли за́втра пойдёт дождь, я бу́ду до́ма.", "why": "A future condition uses the future tense after **е́сли**.", "error": "verb.tense"},
+        {"wrong": "Я хочу́, что ты пришёл.", "right": "Я хочу́, что́бы ты пришёл.", "why": "Wanting someone else to do something: **что́бы** + past.", "error": "vocab.wrong-word"}
+      ]
+    }
+  ],
+  "examples": [
+    {"ru": "Е́сли бы я был бога́т, я бы купи́л дом у мо́ря.", "en": "If I were rich, I'd buy a house by the sea.", "focus": "бы"},
+    {"ru": "Я бы с удово́льствием пошёл.", "en": "I'd love to go.", "focus": "бы"},
+    {"ru": "Е́сли у тебя́ бу́дет вре́мя, позвони́ мне.", "en": "If you have time, call me.", "focus": "Е́сли"},
+    {"ru": "Не могли́ бы вы говори́ть ме́дленнее?", "en": "Could you speak more slowly?", "focus": "могли́ бы"},
+    {"ru": "Я хочу́, что́бы ты был сча́стлив.", "en": "I want you to be happy.", "focus": "что́бы"},
+    {"ru": "Е́сли бы не ты, я бы опозда́л.", "en": "If it hadn't been for you, I'd have been late.", "focus": "Е́сли бы"}
+  ],
+  "related": ["g-past-tense", "g-imperatives"]
+}

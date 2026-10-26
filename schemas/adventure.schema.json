@@ -1,0 +1,105 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "adventure.schema.json",
+  "title": "AdventureChapter",
+  "description": "A data-driven state machine. Early chapters use choices; later chapters use the command parser, whose vocabulary is declared here with the case each verb governs, so the parser can explain failures grammatically.",
+  "type": "object",
+  "required": ["id", "chapter", "level", "title", "start", "scenes"],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": {"type": "string"},
+    "id": {"$ref": "common.schema.json#/$defs/id"},
+    "chapter": {"type": "integer", "minimum": 1},
+    "level": {"$ref": "common.schema.json#/$defs/level"},
+    "title": {"$ref": "common.schema.json#/$defs/bilingual"},
+    "unlock": {"type": "string", "description": "Human-readable unlock goal, evaluated by the app (e.g. 'level:A2', 'unit:a2-08')."},
+    "start": {"type": "string"},
+    "flags": {"type": "array", "items": {"type": "string"}},
+    "items": {
+      "type": "object",
+      "description": "Inventory/objects keyed by id.",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["lex", "forms"],
+        "additionalProperties": false,
+        "properties": {
+          "lex": {"$ref": "common.schema.json#/$defs/lexemeId"},
+          "forms": {"type": "object", "description": "case → stressed form used in commands/text.", "additionalProperties": {"type": "string"}},
+          "adjective": {"type": "string"}
+        }
+      }
+    },
+    "verbs": {
+      "type": "array",
+      "description": "Parser vocabulary for this chapter.",
+      "items": {
+        "type": "object",
+        "required": ["id", "forms", "action"],
+        "additionalProperties": false,
+        "properties": {
+          "id": {"type": "string"},
+          "lex": {"$ref": "common.schema.json#/$defs/lexemeId"},
+          "forms": {"type": "array", "items": {"type": "string"}, "description": "Accepted imperative/infinitive forms."},
+          "action": {"enum": ["go", "take", "look", "ask", "give", "open", "use", "talk", "read", "wait"]},
+          "object": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "case": {"enum": ["nom", "gen", "dat", "acc", "ins", "prep"]},
+              "preposition": {"type": "string"},
+              "why": {"type": "string", "description": "Shown when the learner uses the wrong case, e.g. 'возьми́ takes the accusative: ключ → ключ (inanimate masculine = nominative)'."}
+            }
+          },
+          "topic": {"type": "object", "additionalProperties": false, "properties": {"preposition": {"type": "string"}, "case": {"enum": ["gen", "dat", "acc", "ins", "prep"]}, "why": {"type": "string"}}}
+        }
+      }
+    },
+    "scenes": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["text"],
+        "additionalProperties": false,
+        "properties": {
+          "text": {"$ref": "common.schema.json#/$defs/ruText"},
+          "en": {"type": "string"},
+          "exits": {"type": "object", "additionalProperties": {"type": "string"}, "description": "direction word (stressed) → scene id"},
+          "choices": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["text", "to"],
+              "additionalProperties": false,
+              "properties": {
+                "text": {"$ref": "common.schema.json#/$defs/ruText"},
+                "to": {"type": "string"},
+                "requires": {"type": "array", "items": {"type": "string"}},
+                "sets": {"type": "array", "items": {"type": "string"}},
+                "check": {"$ref": "exercise.schema.json#/$defs/item", "description": "Optional comprehension/grammar gate."}
+              }
+            }
+          },
+          "commands": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["verb", "to"],
+              "additionalProperties": false,
+              "properties": {
+                "verb": {"type": "string"},
+                "object": {"type": "string"},
+                "topic": {"type": "string"},
+                "requires": {"type": "array", "items": {"type": "string"}},
+                "sets": {"type": "array", "items": {"type": "string"}},
+                "to": {"type": "string"},
+                "response": {"$ref": "common.schema.json#/$defs/ruText"}
+              }
+            }
+          },
+          "end": {"type": "boolean"}
+        }
+      }
+    },
+    "review": {"$ref": "common.schema.json#/$defs/review"}
+  }
+}

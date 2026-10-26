@@ -1,0 +1,61 @@
+{
+  "$schema": "../../../../schemas/grammar-article.schema.json",
+  "id": "g-present-tense",
+  "title": {"en": "The present tense: two conjugations", "ru": "Настоя́щее вре́мя"},
+  "level": "A2",
+  "tags": ["verb.present"],
+  "card": "Russian verbs follow one of two patterns. **1st conjugation** (**чита́ть**): **-ю, -ешь, -ет, -ем, -ете, -ют**. **2nd conjugation** (**говори́ть**): **-ю, -ишь, -ит, -им, -ите, -ят**. The **ты** form tells you which one you have. Watch for consonant changes in the **я** form: **люби́ть → люблю́**, **ви́деть → ви́жу**.",
+  "sections": [
+    {
+      "kind": "why",
+      "body": "Every Russian verb ending tells you who is acting, so the pronoun is often dropped in speech: **Иду́!** (*I'm coming!*). There are only two sets of endings, and they differ mainly in one vowel: **е** for the first conjugation, **и** for the second. Learn the **я** and **ты** forms of each new verb, and you can build the other four."
+    },
+    {
+      "kind": "table",
+      "title": "The two patterns",
+      "table": {
+        "generate": {"lexemes": ["v:читать", "v:говорить", "v:жить"], "slots": ["np_1sg", "np_2sg", "np_3sg", "np_1pl", "np_2pl", "np_3pl"]}
+      }
+    },
+    {
+      "kind": "explanation",
+      "title": "Which conjugation is it?",
+      "body": "- Most verbs in **-ать** and **-ять** are 1st conjugation: **чита́ть, рабо́тать, гуля́ть, понима́ть**.\n- Most verbs in **-ить** are 2nd conjugation: **говори́ть, звони́ть, люби́ть, кури́ть**. The exceptions are a few short verbs like **пить** and **жить**, which are 1st: **пью, пьёшь**; **живу́, живёшь**.\n- A handful in **-еть** and **-ать** are 2nd conjugation and must be learned: **ви́деть, смотре́ть, сиде́ть, лежа́ть, слы́шать, держа́ть, спать**.\n\nWhen in doubt, the dictionary's **ты** form settles it: **-ешь/-ёшь** = 1st, **-ишь** = 2nd."
+    },
+    {
+      "kind": "explanation",
+      "title": "Consonant changes",
+      "body": "In the 2nd conjugation the **я** form often changes its last consonant; the rest of the verb is regular:\n\n- **б, п, в, ф, м** add **л**: **люби́ть → люблю́, лю́бишь**; **гото́вить → гото́влю**\n- **д → ж**: **ви́деть → ви́жу**; **з → ж**: **вози́ть → вожу́**\n- **с → ш**: **проси́ть → прошу́**; **т → ч**: **плати́ть → плачу́**\n- **ст → щ**: **чи́стить → чи́щу**\n\nIn the 1st conjugation, some verbs change the consonant **in every form**: **писа́ть → пишу́, пи́шешь, пи́шут**; **сказа́ть → скажу́, ска́жешь**."
+    },
+    {
+      "kind": "spelling-rule",
+      "body": "After **ж, ш, ч, щ** write **у** and **а**, never **ю** and **я**: **пишу́, пи́шут**; **слы́шат**, **лежа́т**. This is the same family of rules as the 7-letter rule for **ы/и**."
+    },
+    {
+      "kind": "vs-english",
+      "body": "Russian has one present tense for both *I read* and *I am reading*: **я чита́ю**. There is no *do* in questions or negatives either: *Do you speak Russian?* is **Ты говори́шь по-ру́сски?**, and *I don't know* is **Я не зна́ю**."
+    },
+    {
+      "kind": "memory-trick",
+      "body": "The **они́** form carries the conjugation in its vowel: **-ут/-ют** for the 1st, **-ат/-ят** for the 2nd. **чита́ют** vs **говоря́т**: the **у** and the **я** are like two family surnames."
+    },
+    {
+      "kind": "common-mistakes",
+      "mistakes": [
+        {"wrong": "ты говоре́шь", "right": "ты говори́шь", "why": "**говори́ть** is 2nd conjugation: **-ишь**.", "error": "verb.conjugation-class"},
+        {"wrong": "я люби́ю", "right": "я люблю́", "why": "**б** adds **л** in the **я** form.", "error": "verb.consonant-mutation"},
+        {"wrong": "они́ пишют", "right": "они́ пи́шут", "why": "After **ш** write **у**, not **ю**.", "error": "spelling.ya-a"}
+      ]
+    }
+  ],
+  "examples": [
+    {"ru": "Я чита́ю кни́гу.", "en": "I'm reading a book.", "focus": "чита́ю"},
+    {"ru": "Ты говори́шь по-ру́сски?", "en": "Do you speak Russian?", "focus": "говори́шь"},
+    {"ru": "Где вы живёте?", "en": "Where do you live?", "focus": "живёте"},
+    {"ru": "Я люблю́ ко́фе.", "en": "I love coffee.", "focus": "люблю́"},
+    {"ru": "Я ничего́ не ви́жу.", "en": "I can't see anything.", "focus": "ви́жу"},
+    {"ru": "Они́ пи́шут письмо́.", "en": "They're writing a letter.", "focus": "пи́шут"},
+    {"ru": "Мы смо́трим телеви́зор.", "en": "We're watching TV.", "focus": "смо́трим"}
+  ],
+  "related": ["g-past-tense", "g-future-tense", "g-reflexive-verbs"]
+}

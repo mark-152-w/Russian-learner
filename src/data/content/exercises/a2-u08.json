@@ -1,0 +1,173 @@
+{
+ "$schema": "../../../../schemas/exercise.schema.json",
+ "items": [
+  {
+   "id": "ex-a2-u08-01",
+   "type": "choice",
+   "level": "A2",
+   "tags": [
+    "case.gen.possession"
+   ],
+   "prompt": {
+    "ru": "___ есть маши́на.",
+    "en": "I have a car.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "У меня́"
+   ],
+   "distractors": [
+    {
+     "ru": "Я",
+     "error": "case.nom-default",
+     "why": "*Having* is **у** + genitive: **у меня́ есть**."
+    },
+    {
+     "ru": "Мне",
+     "error": "case.wrong",
+     "why": "**мне** is dative; having uses **у меня́**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-a2-u08-02",
+   "type": "choice",
+   "level": "A2",
+   "tags": [
+    "case.gen.negation"
+   ],
+   "prompt": {
+    "ru": "У меня́ нет ___.",
+    "en": "I have no time.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "вре́мени"
+   ],
+   "distractors": [
+    {
+     "ru": "вре́мя",
+     "error": "case.gen-after-negation",
+     "why": "**нет** + genitive: **вре́мени**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-a2-u08-03",
+   "type": "choice",
+   "level": "A2",
+   "tags": [
+    "case.gen.possession",
+    "case.nom"
+   ],
+   "prompt": {
+    "ru": "У бра́та есть ___.",
+    "en": "My brother has a dog.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "соба́ка"
+   ],
+   "distractors": [
+    {
+     "ru": "соба́ки",
+     "error": "case.wrong",
+     "why": "With **есть**, the thing you have is the subject: nominative."
+    },
+    {
+     "ru": "соба́ку",
+     "error": "case.wrong",
+     "why": "With **есть**, the thing you have is the subject: nominative."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-a2-u08-04",
+   "type": "choice",
+   "level": "A2",
+   "tags": [
+    "case.gen.possession",
+    "case.gen.prepositions"
+   ],
+   "prompt": {
+    "ru": "У ___ нет де́нег.",
+    "en": "Mum has no money.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "ма́мы"
+   ],
+   "distractors": [
+    {
+     "ru": "ма́ма",
+     "error": "case.nom-default",
+     "why": "**у** takes the genitive: **у ма́мы**."
+    },
+    {
+     "ru": "ма́ме",
+     "error": "case.preposition-government",
+     "why": "**у** takes the genitive, not the dative."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-a2-u08-05",
+   "type": "choice",
+   "level": "A2",
+   "tags": [
+    "case.gen.negation",
+    "verb.impersonal"
+   ],
+   "prompt": {
+    "ru": "Вчера́ у нас не ___ све́та.",
+    "en": "Yesterday we had no electricity.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "бы́ло"
+   ],
+   "distractors": [
+    {
+     "ru": "был",
+     "error": "verb.past-gender",
+     "why": "Absence in the past is impersonal: **не́ было**."
+    },
+    {
+     "ru": "была́",
+     "error": "verb.past-gender",
+     "why": "Absence in the past is impersonal: **не́ было**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-a2-u08-06",
+   "type": "choice",
+   "level": "A2",
+   "tags": [
+    "case.gen.possession",
+    "case.nom"
+   ],
+   "prompt": {
+    "ru": "У тебя́ есть ___?",
+    "en": "Do you have any questions?",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "вопро́сы"
+   ],
+   "distractors": [
+    {
+     "ru": "вопро́сов",
+     "error": "case.wrong",
+     "why": "The genitive appears after **нет**; with **есть** use the nominative."
+    }
+   ],
+   "source": "handwritten"
+  }
+ ]
+}

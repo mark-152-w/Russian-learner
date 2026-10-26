@@ -1,0 +1,72 @@
+{
+ "$schema": "../../../../schemas/unit.schema.json",
+ "id": "u-a2-12",
+ "number": 12,
+ "level": "A2",
+ "title": {
+  "en": "Gifts and favours",
+  "ru": "Пода́рки"
+ },
+ "theme": "giving and liking",
+ "grammar": [
+  "g-dative"
+ ],
+ "vocab": [
+  "v:дать",
+  "v:подарить",
+  "v:сказать",
+  "v:помогать",
+  "v:помочь",
+  "v:звонить",
+  "v:позвонить",
+  "v:показать",
+  "v:объяснить",
+  "v:нравиться",
+  "n:подарок",
+  "n:цветок",
+  "n:бабушка",
+  "n:дедушка"
+ ],
+ "drills": [
+  {
+   "items": [
+    "ex-a2-u12-01",
+    "ex-a2-u12-02",
+    "ex-a2-u12-03",
+    "ex-a2-u12-04",
+    "ex-a2-u12-05",
+    "ex-a2-u12-06"
+   ]
+  },
+  {
+   "generator": "case-cloze",
+   "count": 8,
+   "params": {
+    "cases": [
+     "dat"
+    ]
+   }
+  },
+  {
+   "generator": "forms",
+   "count": 6,
+   "params": {
+    "pos": "noun",
+    "slots": [
+     "sg_dat"
+    ]
+   }
+  }
+ ],
+ "boss": {
+  "name": {
+   "ru": "Дед Моро́з",
+   "en": "Grandfather Frost"
+  },
+  "hp": 16,
+  "art": "boss-12"
+ },
+ "testOut": [
+  "case.dat"
+ ]
+}

@@ -1,0 +1,64 @@
+{
+ "$schema": "../../../../schemas/unit.schema.json",
+ "id": "u-a2-18",
+ "number": 18,
+ "level": "A2",
+ "title": {
+  "en": "Did or done?",
+  "ru": "Де́лал и́ли сде́лал?"
+ },
+ "theme": "process and result",
+ "grammar": [
+  "g-aspect-intro"
+ ],
+ "vocab": [
+  "v:читать",
+  "v:прочитать",
+  "v:писать",
+  "v:написать",
+  "v:делать",
+  "v:сделать",
+  "v:решать",
+  "v:решить",
+  "v:покупать",
+  "v:купить",
+  "v:открывать",
+  "v:открыть",
+  "v:опаздывать",
+  "v:опоздать"
+ ],
+ "drills": [
+  {
+   "items": [
+    "ex-a2-u18-01",
+    "ex-a2-u18-02",
+    "ex-a2-u18-03",
+    "ex-a2-u18-04",
+    "ex-a2-u18-05",
+    "ex-a2-u18-06",
+    "ex-a2-u18-07",
+    "ex-a2-u18-08",
+    "ex-a2-u18-09",
+    "ex-a2-u18-10",
+    "ex-a2-u18-11",
+    "ex-a2-u18-12"
+   ]
+  },
+  {
+   "generator": "vocab",
+   "count": 4
+  }
+ ],
+ "boss": {
+  "name": {
+   "ru": "Коще́й II",
+   "en": "the deathless sorcerer, again"
+  },
+  "hp": 19,
+  "art": "boss-18"
+ },
+ "testOut": [
+  "aspect.intro",
+  "aspect.past"
+ ]
+}

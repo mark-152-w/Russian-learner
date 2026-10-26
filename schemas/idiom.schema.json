@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "idiom.schema.json",
+  "title": "IdiomFile",
+  "type": "object",
+  "required": ["items"],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": {"type": "string"},
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "kind", "level", "ru", "meaning"],
+        "additionalProperties": false,
+        "properties": {
+          "id": {"$ref": "common.schema.json#/$defs/id"},
+          "kind": {"enum": ["idiom", "colloquial", "slang", "etiquette", "culture", "mat-explained"]},
+          "level": {"$ref": "common.schema.json#/$defs/level"},
+          "ru": {"$ref": "common.schema.json#/$defs/ruText"},
+          "literal": {"type": "string"},
+          "meaning": {"type": "string"},
+          "register": {"enum": ["neutral", "colloquial", "slang", "vulgar", "formal", "bookish"]},
+          "note": {"$ref": "common.schema.json#/$defs/markdown"},
+          "examples": {
+            "type": "array",
+            "items": {"type": "object", "required": ["ru", "en"], "additionalProperties": false, "properties": {"ru": {"$ref": "common.schema.json#/$defs/ruText"}, "en": {"type": "string"}}}
+          },
+          "review": {"$ref": "common.schema.json#/$defs/review"}
+        }
+      }
+    }
+  }
+}

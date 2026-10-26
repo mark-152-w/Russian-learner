@@ -1,0 +1,285 @@
+{
+ "$schema": "../../../../schemas/exercise.schema.json",
+ "items": [
+  {
+   "id": "ex-a2-u06-01",
+   "type": "choice",
+   "level": "A2",
+   "tags": [
+    "case.prep.location",
+    "case.motion-location"
+   ],
+   "prompt": {
+    "ru": "Мы живём ___.",
+    "en": "We live in Moscow.",
+    "instruction": "Choose the right phrase"
+   },
+   "accept": [
+    "в Москве́"
+   ],
+   "distractors": [
+    {
+     "ru": "в Москву́",
+     "error": "case.acc-for-prep",
+     "why": "Living is location (где?): **в** + prepositional."
+    },
+    {
+     "ru": "из Москвы́",
+     "error": "motion.where-whither",
+     "why": "**из** means *from*."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-a2-u06-02",
+   "type": "choice",
+   "level": "A2",
+   "tags": [
+    "case.acc.direction",
+    "case.motion-location"
+   ],
+   "prompt": {
+    "ru": "За́втра я е́ду ___.",
+    "en": "Tomorrow I'm going to Moscow.",
+    "instruction": "Choose the right phrase"
+   },
+   "accept": [
+    "в Москву́"
+   ],
+   "distractors": [
+    {
+     "ru": "в Москве́",
+     "error": "case.prep-for-acc",
+     "why": "**е́хать** is motion (куда́?): **в** + accusative."
+    },
+    {
+     "ru": "к Москве́",
+     "error": "motion.where-whither",
+     "why": "**к** is for going to a person, not into a city."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-a2-u06-03",
+   "type": "choice",
+   "level": "A2",
+   "tags": [
+    "case.motion-location",
+    "case.gen.prepositions"
+   ],
+   "prompt": {
+    "ru": "Он то́лько что пришёл ___.",
+    "en": "He's just come back from work.",
+    "instruction": "Choose the right phrase"
+   },
+   "accept": [
+    "с рабо́ты"
+   ],
+   "distractors": [
+    {
+     "ru": "из рабо́ты",
+     "error": "motion.where-whither",
+     "why": "**рабо́та** takes **на**, so *from work* is **с рабо́ты**."
+    },
+    {
+     "ru": "на рабо́ту",
+     "error": "motion.where-whither",
+     "why": "**на рабо́ту** means *to work*."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-a2-u06-04",
+   "type": "choice",
+   "level": "A2",
+   "tags": [
+    "case.motion-location",
+    "case.gen.prepositions"
+   ],
+   "prompt": {
+    "ru": "Вчера́ я был ___.",
+    "en": "Yesterday I was at the doctor's.",
+    "instruction": "Choose the right phrase"
+   },
+   "accept": [
+    "у врача́"
+   ],
+   "distractors": [
+    {
+     "ru": "к врачу́",
+     "error": "motion.where-whither",
+     "why": "**к** answers куда́?; being *at* someone's is **у** + genitive."
+    },
+    {
+     "ru": "от врача́",
+     "error": "motion.where-whither",
+     "why": "**от** means *from* a person."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-a2-u06-05",
+   "type": "choice",
+   "level": "A2",
+   "tags": [
+    "case.motion-location",
+    "case.dat.prepositions"
+   ],
+   "prompt": {
+    "ru": "Я иду́ ___.",
+    "en": "I'm going to Grandma's.",
+    "instruction": "Choose the right phrase"
+   },
+   "accept": [
+    "к ба́бушке"
+   ],
+   "distractors": [
+    {
+     "ru": "у ба́бушки",
+     "error": "motion.where-whither",
+     "why": "**у** is *at*; going *to* a person is **к** + dative."
+    },
+    {
+     "ru": "от ба́бушки",
+     "error": "motion.where-whither",
+     "why": "**от** means *from* a person."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-a2-u06-06",
+   "type": "choice",
+   "level": "A2",
+   "tags": [
+    "case.motion-location"
+   ],
+   "prompt": {
+    "ru": "___ ты? — Я из А́нглии.",
+    "en": "Where are you from? I'm from England.",
+    "instruction": "Choose the right phrase"
+   },
+   "accept": [
+    "Отку́да"
+   ],
+   "distractors": [
+    {
+     "ru": "Где",
+     "error": "motion.where-whither",
+     "why": "**где** asks *where (at)*."
+    },
+    {
+     "ru": "Куда́",
+     "error": "motion.where-whither",
+     "why": "**куда́** asks *where to*."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-a2-u06-07",
+   "type": "choice",
+   "level": "A2",
+   "tags": [
+    "case.motion-location"
+   ],
+   "prompt": {
+    "ru": "___ ты идёшь? — В магази́н.",
+    "en": "Where are you going? To the shop.",
+    "instruction": "Choose the right phrase"
+   },
+   "accept": [
+    "Куда́"
+   ],
+   "distractors": [
+    {
+     "ru": "Где",
+     "error": "motion.where-whither",
+     "why": "**где** is for location; going somewhere asks **куда́**."
+    },
+    {
+     "ru": "Отку́да",
+     "error": "motion.where-whither",
+     "why": "**отку́да** asks *where from*."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-a2-u06-08",
+   "type": "choice",
+   "level": "A2",
+   "tags": [
+    "case.motion-location"
+   ],
+   "prompt": {
+    "ru": "Я весь день был ___.",
+    "en": "I was at home all day.",
+    "instruction": "Choose the right phrase"
+   },
+   "accept": [
+    "до́ма"
+   ],
+   "distractors": [
+    {
+     "ru": "домо́й",
+     "error": "motion.where-whither",
+     "why": "**домо́й** means *(to) home*, with motion; *at home* is **до́ма**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-a2-u06-09",
+   "type": "choice",
+   "level": "A2",
+   "tags": [
+    "case.motion-location"
+   ],
+   "prompt": {
+    "ru": "Уже́ по́здно, пора́ ___.",
+    "en": "It's late, time to go home.",
+    "instruction": "Choose the right phrase"
+   },
+   "accept": [
+    "домо́й"
+   ],
+   "distractors": [
+    {
+     "ru": "до́ма",
+     "error": "motion.where-whither",
+     "why": "Going home is motion: **домо́й**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-a2-u06-10",
+   "type": "choice",
+   "level": "A2",
+   "tags": [
+    "case.acc.direction"
+   ],
+   "prompt": {
+    "ru": "Положи́ кни́гу ___.",
+    "en": "Put the book on the table.",
+    "instruction": "Choose the right phrase"
+   },
+   "accept": [
+    "на стол"
+   ],
+   "distractors": [
+    {
+     "ru": "на столе́",
+     "error": "case.prep-for-acc",
+     "why": "Putting something somewhere is motion (куда́?): **на** + accusative."
+    }
+   ],
+   "source": "handwritten"
+  }
+ ]
+}

@@ -1,0 +1,18 @@
+# Real words missing from the pymorphy3/OpenCorpora dictionary (one per line, no stress marks needed).
+хохлома
+перфекционист
+кроссвордист
+# Proper names whose stress differs from a common word (stressed lines add allowed spellings)
+Толсто́й
+Толсто́го
+Толсто́му
+Толсты́м
+Толсто́м
+# Folklore names (unit bosses)
+Солове́й-Разбо́йник
+Горы́ныч
+Ска́терть-самобра́нка
+Царе́вна-лягу́шка
+Тугари́н
+Зме́евич
+Царь-Медве́дь

@@ -1,0 +1,62 @@
+{
+  "$schema": "../../../../schemas/grammar-article.schema.json",
+  "id": "g-kotoryj",
+  "title": {"en": "Relative clauses with кото́рый", "ru": "Предложе́ния с кото́рый"},
+  "level": "B1",
+  "tags": ["pron.relative"],
+  "card": "**кото́рый** (*who, which, that*) takes its **gender and number** from the noun it refers to, but its **case** from its own role in the relative clause: **Э́то де́вушка, кото́рая живёт ря́дом** (subject: nominative) / **кото́рую я люблю́** (object: accusative) / **с кото́рой я рабо́таю** (after **с**: instrumental).",
+  "sections": [
+    {
+      "kind": "why",
+      "body": "**кото́рый** is an adjective-pronoun with two loyalties. It points back to a noun in the main clause, so it copies that noun's gender and number. But it also has a job inside its own clause (subject, object, after a preposition), and that job sets the case. Ask two questions: *which noun?* → gender/number; *what does it do in its clause?* → case."
+    },
+    {
+      "kind": "table",
+      "title": "The forms",
+      "table": {
+        "generate": {"lexemes": ["a:который"], "slots": ["m_nom", "m_gen", "m_dat", "m_acc", "m_acc_an", "m_ins", "m_prep", "f_nom", "f_gen", "f_acc", "f_ins", "pl_nom", "pl_gen", "pl_ins"]}
+      }
+    },
+    {
+      "kind": "table",
+      "title": "One noun, many roles",
+      "table": {
+        "head": ["Role in the clause", "Example"],
+        "rows": [
+          ["subject (nom)", "**Э́то друг, кото́рый живёт в Москве́.**"],
+          ["direct object (acc, animate = gen)", "**Э́то друг, кото́рого я давно́ зна́ю.**"],
+          ["dative", "**Э́то друг, кото́рому я звони́л.**"],
+          ["after **с** (ins)", "**Э́то друг, с кото́рым я рабо́таю.**"],
+          ["after **о** (prep)", "**Э́то друг, о кото́ром я тебе́ расска́зывал.**"],
+          ["possession (gen, after the noun)", "**Э́то друг, брат кото́рого живёт в Ки́еве.**"]
+        ]
+      }
+    },
+    {
+      "kind": "explanation",
+      "title": "Punctuation and word order",
+      "body": "- The relative clause is always set off by commas, on both sides if the sentence continues: **Кни́га, кото́рую ты дал, о́чень интере́сная.**\n- A preposition goes in front of **кото́рый**, never at the end of the clause: **го́род, в кото́ром я живу́** (never *which I live in*).\n- **что** can replace **кото́рый** in casual speech only in the nominative/accusative: **кни́га, что ты дал** (colloquial).\n- After **тот**, **всё**, **ка́ждый** and similar words, use **кто** / **что** instead: **тот, кто зна́ет**; **всё, что я зна́ю**."
+    },
+    {
+      "kind": "vs-english",
+      "body": "English *that* never changes and you can even drop it (*the book I read*). Russian **кото́рый** can never be dropped, and must be declined. The English habit of ending a clause with a preposition (*the city I live in*) has no Russian equivalent: the preposition jumps to the front."
+    },
+    {
+      "kind": "common-mistakes",
+      "mistakes": [
+        {"wrong": "Э́то де́вушка, кото́рый живёт ря́дом.", "right": "Э́то де́вушка, кото́рая живёт ря́дом.", "why": "Gender comes from **де́вушка**: feminine.", "error": "agreement.gender"},
+        {"wrong": "Э́то фильм, кото́рый я говори́л о.", "right": "Э́то фильм, о кото́ром я говори́л.", "why": "The preposition comes first and sets the case.", "error": "word-order.unnatural"},
+        {"wrong": "Кни́га, кото́рая я чита́ю, интере́сная.", "right": "Кни́га, кото́рую я чита́ю, интере́сная.", "why": "In its clause it's the object: accusative.", "error": "case.wrong"}
+      ]
+    }
+  ],
+  "examples": [
+    {"ru": "Я зна́ю челове́ка, кото́рый тебе́ помо́жет.", "en": "I know someone who can help you.", "focus": "кото́рый"},
+    {"ru": "Где кни́га, кото́рую я тебе́ дал?", "en": "Where's the book I gave you?", "focus": "кото́рую"},
+    {"ru": "Го́род, в кото́ром я живу́, о́чень краси́вый.", "en": "The city I live in is very beautiful.", "focus": "кото́ром"},
+    {"ru": "Э́то челове́к, с кото́рым я рабо́таю.", "en": "This is the person I work with.", "focus": "кото́рым"},
+    {"ru": "Де́ти, кото́рые игра́ют на у́лице, — мои́.", "en": "The children playing outside are mine.", "focus": "кото́рые"},
+    {"ru": "Всё, что ты сказа́л, пра́вда.", "en": "Everything you said is true.", "focus": "что"}
+  ],
+  "related": ["g-adjective-agreement", "g-cases-intro"]
+}

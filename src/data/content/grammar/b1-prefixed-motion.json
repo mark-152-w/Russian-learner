@@ -1,0 +1,67 @@
+{
+  "$schema": "../../../../schemas/grammar-article.schema.json",
+  "id": "g-prefixed-motion",
+  "title": {"en": "Prefixed verbs of motion", "ru": "Приста́вочные глаго́лы движе́ния"},
+  "level": "B1",
+  "tags": ["motion.prefixed"],
+  "card": "Add a prefix to **идти́ / ходи́ть** (on foot) or **е́хать / е́здить** (by vehicle) to give the direction: **при-** arrive, **у-** leave, **в-** enter, **вы́-** exit, **под-** approach, **от-** move away, **до-** reach, **пере-** cross, **про-** pass, **за-** drop in, **об-** go round. With a prefix, the pair becomes an aspect pair: **приходи́ть** (impf) / **прийти́** (pf).",
+  "sections": [
+    {
+      "kind": "why",
+      "body": "English adds a particle after *go* (*go in, go out, go past*); Russian puts the direction in front, as a prefix. Once a prefix is added, the uni-/multidirectional contrast disappears and the pair becomes an ordinary **aspect** pair:\n\n- **-ходи́ть** → imperfective: **приходи́ть**, **уходи́ть**\n- **-йти** (from **идти́**) → perfective: **прийти́**, **уйти́**\n- **-езжа́ть** → imperfective: **приезжа́ть**, **уезжа́ть**\n- **-е́хать** → perfective: **прие́хать**, **уе́хать**"
+    },
+    {
+      "kind": "table",
+      "title": "Prefixes and their prepositions",
+      "table": {
+        "head": ["Prefix", "Meaning", "On foot (impf / pf)", "Goes with"],
+        "rows": [
+          ["при-", "arrive", "**приходи́ть / прийти́**", "**в, на** + acc; **к** + dat"],
+          ["у-", "leave", "**уходи́ть / уйти́**", "**из, с** + gen; **от** + gen"],
+          ["в- / во-", "enter", "**входи́ть / войти́**", "**в** + acc"],
+          ["вы́-", "exit", "**выходи́ть / вы́йти**", "**из** + gen"],
+          ["под- / подо-", "approach", "**подходи́ть / подойти́**", "**к** + dat"],
+          ["от- / ото-", "move away", "**отходи́ть / отойти́**", "**от** + gen"],
+          ["до-", "reach, get as far as", "**доходи́ть / дойти́**", "**до** + gen"],
+          ["пере-", "cross", "**переходи́ть / перейти́**", "acc, or **че́рез** + acc"],
+          ["про-", "pass, go past/through", "**проходи́ть / пройти́**", "**ми́мо** + gen; acc"],
+          ["за-", "drop in; go behind", "**заходи́ть / зайти́**", "**в, на** + acc; **к** + dat"],
+          ["об- / обо-", "go round", "**обходи́ть / обойти́**", "acc; **вокру́г** + gen"]
+        ]
+      }
+    },
+    {
+      "kind": "explanation",
+      "title": "Spelling of -йти",
+      "body": "With prefixes, **идти́** becomes **-йти**: **прийти́, уйти́, вы́йти**. After a prefix ending in a consonant, an **о** is added: **войти́, подойти́, отойти́, обойти́**. The future is regular: **приду́, придёшь**; **вы́йду, вы́йдешь**. The past keeps **-шёл**: **пришёл, пришла́**; **вы́шел, вы́шла**.\n\nBy vehicle, the imperfective is **-езжа́ть**: **приезжа́ть, уезжа́ть, въезжа́ть**. The prefix **в-** before **е** gains a hard sign: **въе́хать**."
+    },
+    {
+      "kind": "explanation",
+      "title": "Two meanings of the past",
+      "body": "With prefixed verbs, the aspect contrast in the past is sharp:\n\n- **Он пришёл.** (pf) *He has come; he's here.*\n- **Он приходи́л.** (impf) *He came (and left again): he was here.*\n\nSo **Ко мне приходи́л друг** means a friend visited, and has gone."
+    },
+    {
+      "kind": "memory-trick",
+      "body": "The preposition usually echoes the prefix: **в**ойти́ **в** ко́мнату, **вы́**йти **из** ко́мнаты, **под**ойти́ **к** окну́, **от**ойти́ **от** окна́, **до**йти́ **до** угла́. If the prefix and preposition look alike, you have probably chosen right."
+    },
+    {
+      "kind": "common-mistakes",
+      "mistakes": [
+        {"wrong": "Он вы́шел в ко́мнату.", "right": "Он вы́шел из ко́мнаты.", "why": "**вы́-** means *out of*: **из** + genitive.", "error": "motion.prefix"},
+        {"wrong": "Я приду́ в тебя́.", "right": "Я приду́ к тебе́.", "why": "Arriving at a person's place: **к** + dative.", "error": "motion.where-whither"},
+        {"wrong": "За́втра я уйду́ в Москву́ на маши́не.", "right": "За́втра я уе́ду в Москву́.", "why": "By vehicle: **уе́хать**.", "error": "motion.mode"}
+      ]
+    }
+  ],
+  "examples": [
+    {"ru": "Когда́ ты придёшь?", "en": "When will you come?", "focus": "придёшь"},
+    {"ru": "Он уже́ ушёл.", "en": "He's already left.", "focus": "ушёл"},
+    {"ru": "Войди́те!", "en": "Come in!", "focus": "Войди́те"},
+    {"ru": "Мы вы́шли из до́ма в семь.", "en": "We left the house at seven.", "focus": "вы́шли"},
+    {"ru": "Подойди́ к окну́.", "en": "Come over to the window.", "focus": "Подойди́"},
+    {"ru": "Перейди́ у́лицу здесь.", "en": "Cross the street here.", "focus": "Перейди́"},
+    {"ru": "Заходи́ ко мне ве́чером.", "en": "Drop by this evening.", "focus": "Заходи́"},
+    {"ru": "Они́ прие́хали из Москвы́.", "en": "They came from Moscow.", "focus": "прие́хали"}
+  ],
+  "related": ["g-motion-basics", "g-where-whither", "g-aspect-depth"]
+}

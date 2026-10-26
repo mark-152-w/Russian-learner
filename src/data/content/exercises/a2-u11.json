@@ -1,0 +1,251 @@
+{
+ "$schema": "../../../../schemas/exercise.schema.json",
+ "items": [
+  {
+   "id": "ex-a2-u11-01",
+   "type": "choice",
+   "level": "A2",
+   "tags": [
+    "num.time-date"
+   ],
+   "prompt": {
+    "ru": "Фильм начина́ется ___.",
+    "en": "The film starts at seven.",
+    "instruction": "Choose the right phrase"
+   },
+   "accept": [
+    "в семь часо́в"
+   ],
+   "distractors": [
+    {
+     "ru": "в семь часа́",
+     "error": "numeral.governance",
+     "why": "7 takes the genitive plural: **часо́в**."
+    },
+    {
+     "ru": "семь часо́в",
+     "error": "case.wrong",
+     "why": "*At* a time needs **в** + accusative."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-a2-u11-02",
+   "type": "choice",
+   "level": "A2",
+   "tags": [
+    "num.time-date",
+    "case.acc.time"
+   ],
+   "prompt": {
+    "ru": "Уви́димся ___.",
+    "en": "See you on Friday.",
+    "instruction": "Choose the right phrase"
+   },
+   "accept": [
+    "в пя́тницу"
+   ],
+   "distractors": [
+    {
+     "ru": "в пя́тнице",
+     "error": "case.acc-for-prep",
+     "why": "Days take **в** + accusative."
+    },
+    {
+     "ru": "пя́тница",
+     "error": "case.nom-default",
+     "why": "*On* a day: **в** + accusative."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-a2-u11-03",
+   "type": "choice",
+   "level": "A2",
+   "tags": [
+    "num.time-date"
+   ],
+   "prompt": {
+    "ru": "Мой день рожде́ния ___.",
+    "en": "My birthday is in May.",
+    "instruction": "Choose the right phrase"
+   },
+   "accept": [
+    "в ма́е"
+   ],
+   "distractors": [
+    {
+     "ru": "в май",
+     "error": "case.prep-for-acc",
+     "why": "Months take **в** + prepositional."
+    },
+    {
+     "ru": "ма́ем",
+     "error": "case.instrumental-role",
+     "why": "Only seasons and parts of the day use the bare instrumental."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-a2-u11-04",
+   "type": "choice",
+   "level": "A2",
+   "tags": [
+    "num.time-date",
+    "case.ins"
+   ],
+   "prompt": {
+    "ru": "___ здесь о́чень жа́рко.",
+    "en": "It's very hot here in summer.",
+    "instruction": "Choose the right phrase"
+   },
+   "accept": [
+    "Ле́том"
+   ],
+   "distractors": [
+    {
+     "ru": "В ле́то",
+     "error": "case.instrumental-role",
+     "why": "Seasons: instrumental with no preposition."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-a2-u11-05",
+   "type": "choice",
+   "level": "A2",
+   "tags": [
+    "num.time-date",
+    "case.ins"
+   ],
+   "prompt": {
+    "ru": "Я позвоню́ тебе́ ___.",
+    "en": "I'll call you in the evening.",
+    "instruction": "Choose the right phrase"
+   },
+   "accept": [
+    "ве́чером"
+   ],
+   "distractors": [
+    {
+     "ru": "в ве́чер",
+     "error": "case.instrumental-role",
+     "why": "Parts of the day: bare instrumental."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-a2-u11-06",
+   "type": "choice",
+   "level": "A2",
+   "tags": [
+    "num.time-date",
+    "num.governance"
+   ],
+   "prompt": {
+    "ru": "Кото́рый час? — Сейча́с три ___.",
+    "en": "What time is it? It's three o'clock.",
+    "instruction": "Choose the right phrase"
+   },
+   "accept": [
+    "часа́"
+   ],
+   "distractors": [
+    {
+     "ru": "часо́в",
+     "error": "numeral.governance",
+     "why": "3 takes the genitive singular."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-a2-u11-07",
+   "type": "choice",
+   "level": "A2",
+   "tags": [
+    "num.time-date"
+   ],
+   "prompt": {
+    "ru": "Сего́дня ___ ма́я.",
+    "en": "Today is the first of May.",
+    "instruction": "Choose the right phrase"
+   },
+   "accept": [
+    "пе́рвое"
+   ],
+   "distractors": [
+    {
+     "ru": "пе́рвый",
+     "error": "agreement.gender",
+     "why": "Dates are neuter, agreeing with **число́**."
+    },
+    {
+     "ru": "пе́рвого",
+     "error": "case.wrong",
+     "why": "The date itself is nominative; *on* a date uses the genitive."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-a2-u11-08",
+   "type": "choice",
+   "level": "A2",
+   "tags": [
+    "num.time-date"
+   ],
+   "prompt": {
+    "ru": "Я роди́лся ___ ма́рта.",
+    "en": "I was born on the eighth of March.",
+    "instruction": "Choose the right phrase"
+   },
+   "accept": [
+    "восьмо́го"
+   ],
+   "distractors": [
+    {
+     "ru": "восьмо́е",
+     "error": "case.wrong",
+     "why": "*On* a date: genitive, **восьмо́го**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-a2-u11-09",
+   "type": "choice",
+   "level": "A2",
+   "tags": [
+    "num.time-date",
+    "case.acc"
+   ],
+   "prompt": {
+    "ru": "Встре́тимся ___ час.",
+    "en": "Let's meet in an hour.",
+    "instruction": "Choose the right phrase"
+   },
+   "accept": [
+    "че́рез"
+   ],
+   "distractors": [
+    {
+     "ru": "в",
+     "error": "vocab.wrong-word",
+     "why": "*In an hour (from now)* is **че́рез час**."
+    },
+    {
+     "ru": "за",
+     "error": "vocab.wrong-word",
+     "why": "**за час** means *within an hour*."
+    }
+   ],
+   "source": "handwritten"
+  }
+ ]
+}

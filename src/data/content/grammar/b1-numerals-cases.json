@@ -1,0 +1,69 @@
+{
+  "$schema": "../../../../schemas/grammar-article.schema.json",
+  "id": "g-numerals-cases",
+  "title": {"en": "Numerals in all cases", "ru": "Склоне́ние числи́тельных"},
+  "level": "B1",
+  "tags": ["num.declension", "num.governance"],
+  "card": "Numerals decline too. In the nominative and inanimate accusative, the 1 / 2–4 / 5+ rule applies. In **every other case** the noun simply goes into the **plural of that case**, and the numeral agrees: **о двух кни́гах**, **с пятью́ друзья́ми**, **к трём часа́м**.",
+  "sections": [
+    {
+      "kind": "why",
+      "body": "The 1 / 2–4 / 5+ rule only applies when the whole phrase is nominative (or accusative of things). The moment the phrase needs another case because of a preposition or verb, the numeral itself takes that case and the noun follows in the plural of the same case. In other words, in the oblique cases Russian behaves the way an English speaker would expect."
+    },
+    {
+      "kind": "table",
+      "title": "два, три, четы́ре",
+      "table": {
+        "head": ["Case", "2", "3", "4"],
+        "rows": [
+          ["nom", "два / две", "три", "четы́ре"],
+          ["gen", "двух", "трёх", "четырёх"],
+          ["dat", "двум", "трём", "четырём"],
+          ["acc", "= nom / gen", "= nom / gen", "= nom / gen"],
+          ["ins", "двумя́", "тремя́", "четырьмя́"],
+          ["prep", "двух", "трёх", "четырёх"]
+        ]
+      }
+    },
+    {
+      "kind": "table",
+      "title": "пять to два́дцать, три́дцать: like a feminine -ь noun",
+      "table": {
+        "head": ["Case", "5", "8", "20"],
+        "rows": [
+          ["nom / acc", "пять", "во́семь", "два́дцать"],
+          ["gen / dat / prep", "пяти́", "восьми́", "двадцати́"],
+          ["ins", "пятью́", "восемью́", "двадцатью́"]
+        ],
+        "caption": "**сто** and **со́рок** have one oblique form each: **ста**, **сорока́**. **девяно́сто** has **девяно́ста**."
+      }
+    },
+    {
+      "kind": "explanation",
+      "title": "Putting it together",
+      "body": "- **nominative**: **два бра́та**, **пять бра́тьев** (the rule)\n- **genitive**: **у двух бра́тьев**, **у пяти́ бра́тьев**\n- **dative**: **к двум бра́тьям**, **к пяти́ бра́тьям**\n- **accusative, animate**: **Я ви́жу двух бра́тьев.** (= genitive)\n- **instrumental**: **с двумя́ бра́тьями**, **с пятью́ бра́тьями**\n- **prepositional**: **о двух бра́тьях**, **о пяти́ бра́тьях**\n\nIn compound numbers every part declines in formal Russian: **с двадцатью́ пятью́ рубля́ми**. In speech people often simplify, but the formal rule is what you'll see written."
+    },
+    {
+      "kind": "explanation",
+      "title": "Collective numerals: дво́е, тро́е",
+      "body": "With people (especially male or mixed groups), pluralia tantum and children, Russian often uses **дво́е, тро́е, че́тверо** + genitive plural: **дво́е дете́й**, **тро́е су́ток**, **Нас бы́ло че́тверо.** (*There were four of us.*) **о́ба / о́бе** (*both*) follow the 2–4 rule: **о́ба бра́та**, **о́бе сестры́**."
+    },
+    {
+      "kind": "common-mistakes",
+      "mistakes": [
+        {"wrong": "с два дру́га", "right": "с двумя́ друзья́ми", "why": "After **с** both numeral and noun go into the instrumental plural.", "error": "numeral.declension"},
+        {"wrong": "о пять кни́гах", "right": "о пяти́ кни́гах", "why": "The numeral declines too: prepositional **пяти́**.", "error": "numeral.declension"},
+        {"wrong": "Я ви́жу два бра́та.", "right": "Я ви́жу двух бра́тьев.", "why": "Animate accusative = genitive: **двух бра́тьев**.", "error": "animacy.acc"}
+      ]
+    }
+  ],
+  "examples": [
+    {"ru": "Я живу́ с двумя́ друзья́ми.", "en": "I live with two friends.", "focus": "двумя́"},
+    {"ru": "Мы говори́ли о трёх кни́гах.", "en": "We talked about three books.", "focus": "трёх"},
+    {"ru": "Приезжа́й к пяти́ часа́м.", "en": "Come by five o'clock.", "focus": "пяти́"},
+    {"ru": "У нас дво́е дете́й.", "en": "We have two children.", "focus": "дво́е"},
+    {"ru": "Я ви́жу двух студе́нтов.", "en": "I can see two students.", "focus": "двух"},
+    {"ru": "Он верну́лся че́рез пять дней.", "en": "He came back five days later.", "focus": "пять"}
+  ],
+  "related": ["g-numbers", "g-plural-declension", "g-time-dates"]
+}

@@ -1,0 +1,74 @@
+{
+ "$schema": "../../../../schemas/unit.schema.json",
+ "id": "u-a2-08",
+ "number": 8,
+ "level": "A2",
+ "title": {
+  "en": "I have…",
+  "ru": "У меня́ есть…"
+ },
+ "theme": "possessions",
+ "grammar": [
+  "g-genitive"
+ ],
+ "vocab": [
+  "n:машина",
+  "n:дача",
+  "n:собака",
+  "n:кошка",
+  "n:время",
+  "n:вопрос",
+  "n:проблема",
+  "n:идея",
+  "n:ключ",
+  "n:паспорт",
+  "n:билет",
+  "n:сын",
+  "n:дочь"
+ ],
+ "drills": [
+  {
+   "items": [
+    "ex-a2-u08-01",
+    "ex-a2-u08-02",
+    "ex-a2-u08-03",
+    "ex-a2-u08-04",
+    "ex-a2-u08-05",
+    "ex-a2-u08-06"
+   ]
+  },
+  {
+   "generator": "case-cloze",
+   "count": 6,
+   "params": {
+    "cases": [
+     "gen"
+    ],
+    "numbers": [
+     "sg"
+    ]
+   }
+  },
+  {
+   "generator": "forms",
+   "count": 6,
+   "params": {
+    "pos": "noun",
+    "slots": [
+     "sg_gen"
+    ]
+   }
+  }
+ ],
+ "boss": {
+  "name": {
+   "ru": "Змей Горы́ныч",
+   "en": "the three-headed dragon"
+  },
+  "hp": 14,
+  "art": "boss-08"
+ },
+ "testOut": [
+  "case.gen.possession"
+ ]
+}

@@ -1,0 +1,198 @@
+{
+ "$schema": "../../../../schemas/exercise.schema.json",
+ "items": [
+  {
+   "id": "ex-pl-01",
+   "type": "choice-reason",
+   "level": "B1",
+   "tags": [
+    "aspect.negation"
+   ],
+   "prompt": {
+    "ru": "Не на́до мне ___.",
+    "en": "No need to call me.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "звони́ть"
+   ],
+   "distractors": [
+    {
+     "ru": "позвони́ть",
+     "error": "aspect.negation"
+    }
+   ],
+   "reason": "**не на́до** + imperfective.",
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-pl-02",
+   "type": "choice-reason",
+   "level": "B1",
+   "tags": [
+    "aspect.nuance"
+   ],
+   "prompt": {
+    "ru": "Он на́чал ___ кни́гу.",
+    "en": "He started reading the book.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "чита́ть"
+   ],
+   "distractors": [
+    {
+     "ru": "прочита́ть",
+     "error": "aspect.wrong"
+    }
+   ],
+   "reason": "Verbs of beginning and ending take an imperfective infinitive.",
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-pl-03",
+   "type": "choice-reason",
+   "level": "B1",
+   "tags": [
+    "aspect.nuance"
+   ],
+   "prompt": {
+    "ru": "Он переста́л ___.",
+    "en": "He stopped smoking.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "кури́ть"
+   ],
+   "distractors": [
+    {
+     "ru": "закури́ть",
+     "error": "aspect.wrong"
+    }
+   ],
+   "reason": "**переста́ть** + imperfective infinitive.",
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-pl-04",
+   "type": "choice-reason",
+   "level": "B1",
+   "tags": [
+    "aspect.past"
+   ],
+   "prompt": {
+    "ru": "Ско́лько вре́мени ты ___ э́ту статью́?",
+    "en": "How long did you spend writing this article?",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "писа́л"
+   ],
+   "distractors": [
+    {
+     "ru": "написа́л",
+     "error": "aspect.wrong"
+    }
+   ],
+   "reason": "*How long* asks about duration: imperfective.",
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-pl-05",
+   "type": "choice-reason",
+   "level": "B1",
+   "tags": [
+    "aspect.negation"
+   ],
+   "prompt": {
+    "ru": "Здесь нельзя́ ___.",
+    "en": "Parking isn't allowed here.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "паркова́ться"
+   ],
+   "distractors": [
+    {
+     "ru": "припаркова́ться",
+     "error": "aspect.negation"
+    }
+   ],
+   "reason": "**нельзя́** + imperfective = *not allowed*.",
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-pl-06",
+   "type": "choice-reason",
+   "level": "B2",
+   "tags": [
+    "aspect.negation",
+    "aspect.nuance"
+   ],
+   "prompt": {
+    "ru": "Э́ту дверь нельзя́ ___: она́ сло́мана.",
+    "en": "This door can't be opened: it's broken.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "откры́ть"
+   ],
+   "distractors": [
+    {
+     "ru": "открыва́ть",
+     "error": "aspect.negation"
+    }
+   ],
+   "reason": "**нельзя́** + perfective = *impossible*.",
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-pl-07",
+   "type": "choice-reason",
+   "level": "B2",
+   "tags": [
+    "aspect.imperative"
+   ],
+   "prompt": {
+    "ru": "Осторо́жно, не ___!",
+    "en": "Careful, don't fall!",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "упади́"
+   ],
+   "distractors": [
+    {
+     "ru": "па́дай",
+     "error": "aspect.wrong"
+    }
+   ],
+   "reason": "A warning against an accident: **не** + perfective.",
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-pl-08",
+   "type": "choice-reason",
+   "level": "B2",
+   "tags": [
+    "aspect.nuance"
+   ],
+   "prompt": {
+    "ru": "Я ___ экза́мен, но не сдал.",
+    "en": "I took the exam but didn't pass.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "сдава́л"
+   ],
+   "distractors": [
+    {
+     "ru": "сдал",
+     "error": "aspect.wrong"
+    }
+   ],
+   "reason": "**сдава́ть** is to sit an exam (the attempt); **сдать** is to pass it (the result).",
+   "source": "handwritten"
+  }
+ ]
+}

@@ -1,0 +1,294 @@
+{
+ "$schema": "../../../../schemas/exercise.schema.json",
+ "items": [
+  {
+   "id": "ex-a2-u18-01",
+   "type": "choice-reason",
+   "level": "A2",
+   "tags": [
+    "aspect.past"
+   ],
+   "prompt": {
+    "ru": "Вчера́ я два часа́ ___ письмо́.",
+    "en": "Yesterday I spent two hours writing a letter.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "писа́л"
+   ],
+   "distractors": [
+    {
+     "ru": "написа́л",
+     "error": "aspect.wrong"
+    }
+   ],
+   "source": "handwritten",
+   "reason": "A process lasting a while (два часа́) → imperfective."
+  },
+  {
+   "id": "ex-a2-u18-02",
+   "type": "choice-reason",
+   "level": "A2",
+   "tags": [
+    "aspect.past"
+   ],
+   "prompt": {
+    "ru": "Я ___ письмо́ и пошёл на по́чту.",
+    "en": "I wrote the letter and went to the post office.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "написа́л"
+   ],
+   "distractors": [
+    {
+     "ru": "писа́л",
+     "error": "aspect.wrong"
+    }
+   ],
+   "source": "handwritten",
+   "reason": "A finished step in a sequence → perfective."
+  },
+  {
+   "id": "ex-a2-u18-03",
+   "type": "choice-reason",
+   "level": "A2",
+   "tags": [
+    "aspect.intro"
+   ],
+   "prompt": {
+    "ru": "Он ча́сто ___ на рабо́ту.",
+    "en": "He's often late for work.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "опа́здывает"
+   ],
+   "distractors": [
+    {
+     "ru": "опозда́ет",
+     "error": "aspect.wrong"
+    }
+   ],
+   "source": "handwritten",
+   "reason": "Repeated action → imperfective."
+  },
+  {
+   "id": "ex-a2-u18-04",
+   "type": "choice-reason",
+   "level": "A2",
+   "tags": [
+    "aspect.past"
+   ],
+   "prompt": {
+    "ru": "Сего́дня он ___ на два часа́.",
+    "en": "Today he was two hours late.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "опозда́л"
+   ],
+   "distractors": [
+    {
+     "ru": "опа́здывал",
+     "error": "aspect.wrong"
+    }
+   ],
+   "source": "handwritten",
+   "reason": "One occasion with a result → perfective."
+  },
+  {
+   "id": "ex-a2-u18-05",
+   "type": "choice-reason",
+   "level": "A2",
+   "tags": [
+    "aspect.past"
+   ],
+   "prompt": {
+    "ru": "Ты уже́ ___ дома́шнее зада́ние?",
+    "en": "Have you done your homework yet?",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "сде́лал"
+   ],
+   "distractors": [
+    {
+     "ru": "де́лал",
+     "error": "aspect.wrong"
+    }
+   ],
+   "source": "handwritten",
+   "reason": "Asking whether there's a result → perfective."
+  },
+  {
+   "id": "ex-a2-u18-06",
+   "type": "choice-reason",
+   "level": "A2",
+   "tags": [
+    "aspect.past"
+   ],
+   "prompt": {
+    "ru": "Что ты ___ вчера́ ве́чером?",
+    "en": "What were you doing yesterday evening?",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "де́лал"
+   ],
+   "distractors": [
+    {
+     "ru": "сде́лал",
+     "error": "aspect.wrong"
+    }
+   ],
+   "source": "handwritten",
+   "reason": "Asking about activity, not a result → imperfective."
+  },
+  {
+   "id": "ex-a2-u18-07",
+   "type": "choice-reason",
+   "level": "A2",
+   "tags": [
+    "aspect.past"
+   ],
+   "prompt": {
+    "ru": "Наконе́ц я ___ зада́чу!",
+    "en": "I've finally solved the problem!",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "реши́л"
+   ],
+   "distractors": [
+    {
+     "ru": "реша́л",
+     "error": "aspect.wrong"
+    }
+   ],
+   "source": "handwritten",
+   "reason": "*Finally* points to the result → perfective."
+  },
+  {
+   "id": "ex-a2-u18-08",
+   "type": "choice-reason",
+   "level": "A2",
+   "tags": [
+    "aspect.intro"
+   ],
+   "prompt": {
+    "ru": "Ка́ждое у́тро я ___ газе́ту.",
+    "en": "Every morning I buy a newspaper.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "покупа́ю"
+   ],
+   "distractors": [
+    {
+     "ru": "куплю́",
+     "error": "aspect.wrong"
+    }
+   ],
+   "source": "handwritten",
+   "reason": "A habit → imperfective."
+  },
+  {
+   "id": "ex-a2-u18-09",
+   "type": "choice-reason",
+   "level": "A2",
+   "tags": [
+    "aspect.past"
+   ],
+   "prompt": {
+    "ru": "Ты когда́-нибудь ___ «Войну́ и мир»?",
+    "en": "Have you ever read War and Peace?",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "чита́л"
+   ],
+   "distractors": [
+    {
+     "ru": "прочита́л",
+     "error": "aspect.wrong"
+    }
+   ],
+   "source": "handwritten",
+   "reason": "*Have you ever…?* asks about experience → imperfective."
+  },
+  {
+   "id": "ex-a2-u18-10",
+   "type": "choice-reason",
+   "level": "A2",
+   "tags": [
+    "aspect.past"
+   ],
+   "prompt": {
+    "ru": "Он ___ окно́, и в ко́мнате ста́ло хо́лодно.",
+    "en": "He opened the window and the room got cold.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "откры́л"
+   ],
+   "distractors": [
+    {
+     "ru": "открыва́л",
+     "error": "aspect.wrong"
+    }
+   ],
+   "source": "handwritten",
+   "reason": "One action whose result matters (the cold room) → perfective."
+  },
+  {
+   "id": "ex-a2-u18-11",
+   "type": "choice-reason",
+   "level": "A2",
+   "tags": [
+    "aspect.intro"
+   ],
+   "prompt": {
+    "ru": "Сейча́с я ___.",
+    "en": "I'm reading right now.",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "чита́ю"
+   ],
+   "distractors": [
+    {
+     "ru": "прочита́ю",
+     "error": "aspect.wrong"
+    }
+   ],
+   "source": "handwritten",
+   "reason": "Right now = a process; a perfective has no present tense."
+  },
+  {
+   "id": "ex-a2-u18-12",
+   "type": "choice-reason",
+   "level": "A2",
+   "tags": [
+    "aspect.imperative",
+    "aspect.negation"
+   ],
+   "prompt": {
+    "ru": "Не ___ окно́, пожа́луйста!",
+    "en": "Please don't open the window!",
+    "instruction": "Choose the verb"
+   },
+   "accept": [
+    "открыва́й"
+   ],
+   "distractors": [
+    {
+     "ru": "откро́й",
+     "error": "aspect.negation"
+    }
+   ],
+   "source": "handwritten",
+   "reason": "A prohibition with **не** → imperfective."
+  }
+ ]
+}

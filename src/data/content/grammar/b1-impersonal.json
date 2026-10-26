@@ -1,0 +1,60 @@
+{
+  "$schema": "../../../../schemas/grammar-article.schema.json",
+  "id": "g-impersonal",
+  "title": {"en": "Impersonal sentences: мне хо́лодно, на́до, нельзя́", "ru": "Безли́чные предложе́ния"},
+  "level": "B1",
+  "tags": ["verb.impersonal", "case.dat.impersonal"],
+  "card": "Many Russian sentences have no subject. The person who feels or needs something goes in the **dative**, and the predicate is a word in **-о** or a modal: **Мне хо́лодно.** **Тебе́ на́до отдохну́ть.** **Здесь нельзя́ кури́ть.** In the past and future add **бы́ло** / **бу́дет**: **Мне бы́ло хо́лодно.**",
+  "sections": [
+    {
+      "kind": "why",
+      "body": "English insists on a subject, even an empty one: *it is cold*, *it is necessary*. Russian is happy without one. It treats many states as things that *happen to* a person rather than things a person *is*, so that person appears in the dative, as an experiencer: **Мне ве́село** is closer to *for me it's fun* than to *I am cheerful*."
+    },
+    {
+      "kind": "table",
+      "title": "Common predicates",
+      "table": {
+        "head": ["Kind", "Words", "Examples"],
+        "rows": [
+          ["feelings and states", "**хо́лодно, жа́рко, ску́чно, ве́село, интере́сно, тру́дно, легко́, стра́шно, пло́хо, хорошо́, жаль**", "**Мне ску́чно.** **Ему́ жаль.**"],
+          ["necessity", "**на́до, ну́жно, необходи́мо**", "**Мне на́до идти́.**"],
+          ["permission and possibility", "**мо́жно, нельзя́**", "**Мо́жно войти́?** **Здесь нельзя́ кури́ть.**"],
+          ["weather and time", "**темно́, светло́, по́здно, ра́но**", "**Уже́ по́здно.** **На у́лице темно́.**"],
+          ["impersonal verbs", "**хо́чется, ка́жется, нра́вится, повезло́, не спи́тся**", "**Мне ка́жется, что…** **Нам повезло́.**"]
+        ]
+      }
+    },
+    {
+      "kind": "explanation",
+      "title": "Tense",
+      "body": "The present has no verb. The past uses **бы́ло** and the future **бу́дет**, both neuter singular because there is no subject: **Мне бы́ло ску́чно.** **Тебе́ бу́дет интере́сно.** **Нам на́до бы́ло уйти́.** With a negation: **Мне не́ было ску́чно.**\n\nImpersonal verbs use the neuter past: **Мне повезло́.** **Ему́ показа́лось.**"
+    },
+    {
+      "kind": "explanation",
+      "title": "на́до versus до́лжен",
+      "body": "**на́до / ну́жно** (impersonal + dative) express a general need: **Мне на́до рабо́тать.** **до́лжен / должна́ / должны́** (personal, agreeing with the subject) express obligation or duty: **Я до́лжен рабо́тать.** (*I must, it's my duty.*) **до́лжен** can also mean *supposed to*: **Он до́лжен прийти́ в пять.**"
+    },
+    {
+      "kind": "vs-english",
+      "body": "*I'm cold* is **мне хо́лодно**, not ~~я хо́лодный~~ (which would mean *I'm a cold person*, emotionally!). *I'm bored* is **мне ску́чно**; **я ску́чный** means *I'm boring*. These are some of the most noticeable English-speaker errors in Russian."
+    },
+    {
+      "kind": "common-mistakes",
+      "mistakes": [
+        {"wrong": "Я хо́лодно.", "right": "Мне хо́лодно.", "why": "The person experiencing a state is dative.", "error": "case.wrong"},
+        {"wrong": "Мне был ску́чно.", "right": "Мне бы́ло ску́чно.", "why": "No subject, so the neuter **бы́ло**.", "error": "verb.past-gender"},
+        {"wrong": "Я на́до идти́.", "right": "Мне на́до идти́.", "why": "**на́до** is impersonal: dative of the person.", "error": "case.wrong"}
+      ]
+    }
+  ],
+  "examples": [
+    {"ru": "Мне хо́лодно.", "en": "I'm cold.", "focus": "Мне"},
+    {"ru": "Тебе́ на́до отдохну́ть.", "en": "You need to rest.", "focus": "на́до"},
+    {"ru": "Здесь нельзя́ кури́ть.", "en": "No smoking here.", "focus": "нельзя́"},
+    {"ru": "Мо́жно мне ча́ю?", "en": "May I have some tea?", "focus": "Мо́жно"},
+    {"ru": "Нам бы́ло о́чень ве́село.", "en": "We had a lot of fun.", "focus": "бы́ло"},
+    {"ru": "Мне ка́жется, он прав.", "en": "I think he's right.", "focus": "ка́жется"},
+    {"ru": "Тебе́ повезло́!", "en": "You were lucky!", "focus": "повезло́"}
+  ],
+  "related": ["g-dative", "g-reflexive-verbs", "g-aspect-depth"]
+}

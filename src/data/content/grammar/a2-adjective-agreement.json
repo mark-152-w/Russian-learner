@@ -1,0 +1,68 @@
+{
+  "$schema": "../../../../schemas/grammar-article.schema.json",
+  "id": "g-adjective-agreement",
+  "title": {"en": "Adjectives: agreeing with the noun", "ru": "Прилага́тельные"},
+  "level": "A2",
+  "tags": ["adj.agreement"],
+  "card": "An adjective copies the noun's **gender, number and case**: **но́вый дом**, **но́вая кни́га**, **но́вое окно́**, **но́вые кни́ги**; **в но́вом до́ме**, **с но́вой кни́гой**. Learn one hard model (**но́вый**) and one soft one (**си́ний**); everything else is these plus the spelling rules.",
+  "sections": [
+    {
+      "kind": "why",
+      "body": "In English *new* never changes. In Russian the adjective wears the same grammatical uniform as its noun, which is how you can tell which noun it belongs to even when words are moved around: **Кни́гу я купи́л интере́сную** still clearly says the *book* was interesting.\n\nThe good news: adjective endings are far more regular than noun endings. There is essentially one system, with a hard and a soft version."
+    },
+    {
+      "kind": "table",
+      "title": "The hard model: но́вый",
+      "table": {
+        "caption": "Generated from the dictionary.",
+        "generate": {"lexemes": ["a:новый"], "slots": ["m_nom", "m_gen", "m_dat", "m_acc", "m_acc_an", "m_ins", "m_prep", "f_nom", "f_gen", "f_acc", "f_ins", "n_nom", "pl_nom", "pl_gen", "pl_ins"]}
+      }
+    },
+    {
+      "kind": "table",
+      "title": "Endings side by side",
+      "table": {
+        "head": ["", "masculine", "neuter", "feminine", "plural"],
+        "rows": [
+          ["nom", "-ый / -ой", "-ое", "-ая", "-ые"],
+          ["gen", "-ого", "-ого", "-ой", "-ых"],
+          ["dat", "-ому", "-ому", "-ой", "-ым"],
+          ["acc", "= nom or gen", "-ое", "-ую", "= nom or gen"],
+          ["ins", "-ым", "-ым", "-ой", "-ыми"],
+          ["prep", "-ом", "-ом", "-ой", "-ых"]
+        ],
+        "caption": "Soft adjectives (**си́ний**, **после́дний**) swap ы→и, о→е, а→я, у→ю: **си́него**, **си́няя**, **си́нюю**. The **-ого/-его** ending is pronounced **-ова/-ева**."
+      }
+    },
+    {
+      "kind": "spelling-rule",
+      "body": "- **7-letter rule**: after **к, г, х, ж, ш, щ, ч** write **и**, not **ы**: **ру́сский → ру́сские, ру́сским**; **хоро́ший → хоро́шие**.\n- **5-letter rule**: after **ж, ш, щ, ч, ц** an unstressed **о** becomes **е**: **хоро́шего**, **хоро́шем**; but stressed **большо́го**, **большо́м**.\n- **Stressed -ой**: adjectives stressed on the ending have **-ой** in the masculine nominative: **большо́й**, **молодо́й**, **родно́й**."
+    },
+    {
+      "kind": "vs-english",
+      "body": "English adjectives come before the noun and never change. Russian adjectives also usually come first, but can follow the noun for emphasis, and they change with every case. When translating *a new house*, decide the noun's case first, then give the adjective the matching ending."
+    },
+    {
+      "kind": "memory-trick",
+      "body": "The endings **rhyme** with the forms of **тот** (*that*): **того́ → но́вого**, **тому́ → но́вому**, **той → но́вой**, **те → но́вые**, **тех → но́вых**. Learn **тот** in all its cases and you have the adjective endings for free."
+    },
+    {
+      "kind": "common-mistakes",
+      "mistakes": [
+        {"wrong": "в но́вый до́ме", "right": "в но́вом до́ме", "why": "The adjective must be in the same case as **до́ме** (prepositional).", "error": "agreement.case"},
+        {"wrong": "ру́сскый язы́к", "right": "ру́сский язы́к", "why": "7-letter rule: after **к** write **и**.", "error": "spelling.7-letter"},
+        {"wrong": "интере́сный кни́га", "right": "интере́сная кни́га", "why": "**кни́га** is feminine.", "error": "agreement.gender"}
+      ]
+    }
+  ],
+  "examples": [
+    {"ru": "Э́то о́чень интере́сная кни́га.", "en": "This is a very interesting book.", "focus": "интере́сная"},
+    {"ru": "Мы живём в большо́м го́роде.", "en": "We live in a big city.", "focus": "большо́м"},
+    {"ru": "У меня́ нет си́ней ру́чки.", "en": "I don't have a blue pen.", "focus": "си́ней"},
+    {"ru": "Он купи́л но́вую маши́ну.", "en": "He bought a new car.", "focus": "но́вую"},
+    {"ru": "Я говорю́ с ру́сскими друзья́ми.", "en": "I'm talking to Russian friends.", "focus": "ру́сскими"},
+    {"ru": "Сего́дня хоро́шая пого́да.", "en": "The weather is nice today.", "focus": "хоро́шая"},
+    {"ru": "Мне нра́вятся ста́рые фи́льмы.", "en": "I like old films.", "focus": "ста́рые"}
+  ],
+  "related": ["g-gender-nominative", "g-possessives", "g-comparatives"]
+}

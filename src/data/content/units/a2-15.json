@@ -1,0 +1,63 @@
+{
+ "$schema": "../../../../schemas/unit.schema.json",
+ "id": "u-a2-15",
+ "number": 15,
+ "level": "A2",
+ "title": {
+  "en": "Mine and yours",
+  "ru": "Моё и твоё"
+ },
+ "theme": "belongings",
+ "grammar": [
+  "g-possessives",
+  "g-personal-pronouns"
+ ],
+ "vocab": [
+  "a:мой",
+  "a:твой",
+  "a:свой",
+  "a:этот",
+  "a:тот",
+  "a:весь",
+  "n:вещь",
+  "n:сумка",
+  "n:очки",
+  "n:кошелёк",
+  "n:рюкзак",
+  "n:зонтик"
+ ],
+ "drills": [
+  {
+   "items": [
+    "ex-a2-u15-01",
+    "ex-a2-u15-02",
+    "ex-a2-u15-03",
+    "ex-a2-u15-04",
+    "ex-a2-u15-05",
+    "ex-a2-u15-06",
+    "ex-a2-u15-07",
+    "ex-a2-u15-08",
+    "ex-a2-u15-09"
+   ]
+  },
+  {
+   "generator": "forms",
+   "count": 4,
+   "params": {
+    "pos": "adj"
+   }
+  }
+ ],
+ "boss": {
+  "name": {
+   "ru": "Се́рый Волк",
+   "en": "the Grey Wolf"
+  },
+  "hp": 17,
+  "art": "boss-15"
+ },
+ "testOut": [
+  "pron.possessive",
+  "pron.personal"
+ ]
+}

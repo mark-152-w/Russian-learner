@@ -1,0 +1,76 @@
+{
+ "$schema": "../../../../schemas/unit.schema.json",
+ "id": "u-a2-10",
+ "number": 10,
+ "level": "A2",
+ "title": {
+  "en": "Numbers and money",
+  "ru": "Чи́сла и де́ньги"
+ },
+ "theme": "shopping",
+ "grammar": [
+  "g-numbers"
+ ],
+ "vocab": [
+  "n:рубль",
+  "n:доллар",
+  "n:минута",
+  "n:час",
+  "n:день",
+  "n:год",
+  "n:раз",
+  "n:этаж",
+  "n:место",
+  "n:цена",
+  "n:копейка",
+  "n:тысяча",
+  "n:номер",
+  "n:возраст"
+ ],
+ "drills": [
+  {
+   "items": [
+    "ex-a2-u10-01",
+    "ex-a2-u10-02",
+    "ex-a2-u10-03",
+    "ex-a2-u10-04",
+    "ex-a2-u10-05",
+    "ex-a2-u10-06",
+    "ex-a2-u10-07",
+    "ex-a2-u10-08",
+    "ex-a2-u10-09"
+   ]
+  },
+  {
+   "generator": "case-cloze",
+   "count": 4,
+   "params": {
+    "tags": [
+     "case.gen.quantity"
+    ]
+   }
+  },
+  {
+   "generator": "forms",
+   "count": 4,
+   "params": {
+    "pos": "noun",
+    "slots": [
+     "sg_gen",
+     "pl_gen"
+    ]
+   }
+  }
+ ],
+ "boss": {
+  "name": {
+   "ru": "Ска́терть-самобра́нка",
+   "en": "the magic tablecloth"
+  },
+  "hp": 15,
+  "art": "boss-10"
+ },
+ "testOut": [
+  "num.governance"
+ ]
+}

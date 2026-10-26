@@ -1,0 +1,247 @@
+{
+ "$schema": "../../../../schemas/exercise.schema.json",
+ "items": [
+  {
+   "id": "ex-a2-u10-01",
+   "type": "choice",
+   "level": "A2",
+   "tags": [
+    "num.governance"
+   ],
+   "prompt": {
+    "ru": "У меня́ два ___.",
+    "en": "I have two brothers.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "бра́та"
+   ],
+   "distractors": [
+    {
+     "ru": "бра́тьев",
+     "error": "numeral.governance",
+     "why": "2, 3, 4 take the genitive **singular**."
+    },
+    {
+     "ru": "брат",
+     "error": "case.nom-default",
+     "why": "Only 1 takes the nominative."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-a2-u10-02",
+   "type": "choice",
+   "level": "A2",
+   "tags": [
+    "num.governance"
+   ],
+   "prompt": {
+    "ru": "Мне два́дцать пять ___.",
+    "en": "I'm twenty-five.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "лет"
+   ],
+   "distractors": [
+    {
+     "ru": "го́да",
+     "error": "numeral.governance",
+     "why": "The number ends in 5: genitive plural, **лет**."
+    },
+    {
+     "ru": "год",
+     "error": "numeral.governance",
+     "why": "Only numbers ending in 1 take **год**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-a2-u10-03",
+   "type": "choice",
+   "level": "A2",
+   "tags": [
+    "num.governance"
+   ],
+   "prompt": {
+    "ru": "Ему́ два́дцать оди́н ___.",
+    "en": "He's twenty-one.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "год"
+   ],
+   "distractors": [
+    {
+     "ru": "лет",
+     "error": "numeral.governance",
+     "why": "Ends in 1 (but not 11): nominative singular."
+    },
+    {
+     "ru": "го́да",
+     "error": "numeral.governance",
+     "why": "**го́да** follows 2, 3, 4."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-a2-u10-04",
+   "type": "choice",
+   "level": "A2",
+   "tags": [
+    "num.governance"
+   ],
+   "prompt": {
+    "ru": "Э́то сто́ит три ___.",
+    "en": "It costs three roubles.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "рубля́"
+   ],
+   "distractors": [
+    {
+     "ru": "рубле́й",
+     "error": "numeral.governance",
+     "why": "3 takes the genitive singular."
+    },
+    {
+     "ru": "рубль",
+     "error": "numeral.governance",
+     "why": "Only 1 takes the nominative."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-a2-u10-05",
+   "type": "choice",
+   "level": "A2",
+   "tags": [
+    "num.governance"
+   ],
+   "prompt": {
+    "ru": "Мы жда́ли пятна́дцать ___.",
+    "en": "We waited fifteen minutes.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "мину́т"
+   ],
+   "distractors": [
+    {
+     "ru": "мину́ты",
+     "error": "numeral.governance",
+     "why": "11–19 always take the genitive plural."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-a2-u10-06",
+   "type": "choice",
+   "level": "A2",
+   "tags": [
+    "num.governance",
+    "num.cardinal"
+   ],
+   "prompt": {
+    "ru": "У нас ___ кварти́ры.",
+    "en": "We have two flats.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "две"
+   ],
+   "distractors": [
+    {
+     "ru": "два",
+     "error": "agreement.gender",
+     "why": "**кварти́ра** is feminine: **две**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-a2-u10-07",
+   "type": "choice",
+   "level": "A2",
+   "tags": [
+    "num.governance"
+   ],
+   "prompt": {
+    "ru": "В гру́ппе два́дцать два ___.",
+    "en": "There are twenty-two students in the group.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "студе́нта"
+   ],
+   "distractors": [
+    {
+     "ru": "студе́нтов",
+     "error": "numeral.governance",
+     "why": "Ends in 2: genitive singular."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-a2-u10-08",
+   "type": "choice",
+   "level": "A2",
+   "tags": [
+    "num.governance"
+   ],
+   "prompt": {
+    "ru": "Я купи́л ___ я́блок.",
+    "en": "I bought five apples.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "пять"
+   ],
+   "distractors": [
+    {
+     "ru": "два",
+     "error": "numeral.governance",
+     "why": "**я́блок** is genitive plural, which follows 5 and up."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-a2-u10-09",
+   "type": "choice",
+   "level": "A2",
+   "tags": [
+    "num.cardinal"
+   ],
+   "prompt": {
+    "ru": "Со́рок плюс пятьдеся́т — э́то ___.",
+    "en": "Forty plus fifty is ninety.",
+    "instruction": "Choose the right form"
+   },
+   "accept": [
+    "девяно́сто"
+   ],
+   "distractors": [
+    {
+     "ru": "девятна́дцать",
+     "error": "vocab.wrong-word",
+     "why": "That's 19."
+    },
+    {
+     "ru": "девятьсо́т",
+     "error": "vocab.wrong-word",
+     "why": "That's 900."
+    }
+   ],
+   "source": "handwritten"
+  }
+ ]
+}

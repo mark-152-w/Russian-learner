@@ -1,0 +1,71 @@
+{
+  "$schema": "../../../../schemas/grammar-article.schema.json",
+  "id": "g-accusative",
+  "title": {"en": "The accusative case: objects and directions", "ru": "Вини́тельный паде́ж"},
+  "level": "A2",
+  "tags": ["case.acc", "case.acc.direct-object", "case.acc.animacy", "case.acc.direction", "case.acc.time"],
+  "card": "The accusative marks the **direct object** (*I read a book*), and after **в/на** it means *into/onto* (куда́?). Only feminine **-а/-я** nouns visibly change in the singular: **кни́га → кни́гу**, **неде́ля → неде́лю**. Masculine **animate** nouns look like the genitive: **ви́жу бра́та**.",
+  "sections": [
+    {
+      "kind": "why",
+      "body": "The accusative is the case of the thing directly affected by the action. The good news is how little it changes: masculine inanimate and neuter nouns, and feminine **-ь** nouns, look exactly like the nominative. Only two groups need attention: feminine nouns in **-а/-я**, and animate masculine nouns (people and animals)."
+    },
+    {
+      "kind": "table",
+      "title": "Singular",
+      "table": {
+        "head": ["Noun type", "Accusative", "Examples"],
+        "rows": [
+          ["-а / -я (any gender)", "-у / -ю", "**ма́ма → ма́му**, **неде́ля → неде́лю**, **па́па → па́пу**"],
+          ["masculine, inanimate", "= nominative", "**стол → стол**, **дом → дом**"],
+          ["masculine, animate", "= genitive (-а / -я)", "**брат → бра́та**, **учи́тель → учи́теля**"],
+          ["neuter", "= nominative", "**окно́ → окно́**, **мо́ре → мо́ре**"],
+          ["feminine -ь", "= nominative", "**дверь → дверь**, **ночь → ночь**"]
+        ]
+      }
+    },
+    {
+      "kind": "explanation",
+      "title": "Animacy: why ви́жу бра́та",
+      "body": "Russian distinguishes living beings from things in the accusative. For masculine nouns in the singular, and for **all** nouns in the plural, an animate accusative borrows the genitive form: **Я ви́жу бра́та.** **Я ви́жу студе́нтов.** **Я люблю́ ко́шек.** An inanimate accusative copies the nominative: **Я ви́жу стол.** **Я ви́жу столы́.**\n\nThe rule exists because, in old Russian, **Оте́ц лю́бит сын** could not show who loved whom (the two forms were identical), so the genitive form was borrowed to make the object clear."
+    },
+    {
+      "kind": "explanation",
+      "title": "Direction and time",
+      "body": "After **в** and **на**, the accusative answers **куда́?** (*where to?*): **Я иду́ в шко́лу.** **Положи́ кни́гу на стол.** Compare the prepositional for location: **Я в шко́ле.** **Кни́га на столе́.**\n\nThe accusative also gives points and stretches of time: **в сре́ду** (*on Wednesday*), **всю неде́лю** (*all week*), **ка́ждый день** (*every day*)."
+    },
+    {
+      "kind": "table",
+      "title": "Generated paradigms",
+      "table": {
+        "generate": {"lexemes": ["n:мама", "n:брат", "n:стол", "n:дверь"], "slots": ["sg_nom", "sg_acc", "pl_acc"]}
+      }
+    },
+    {
+      "kind": "vs-english",
+      "body": "English has an accusative only in pronouns: *she → her*, *they → them*. If *him* or *her* would fit in English, think accusative in Russian. The Russian pronouns: **меня́, тебя́, его́, её, нас, вас, их**."
+    },
+    {
+      "kind": "memory-trick",
+      "body": "**куда́? → accusative; где? → prepositional.** A ball thrown **into** the box flies (accusative); a ball lying **in** the box sits still (prepositional). The accusative ending **-у** is like an arrow pointing at the target."
+    },
+    {
+      "kind": "common-mistakes",
+      "mistakes": [
+        {"wrong": "Я ви́жу брат.", "right": "Я ви́жу бра́та.", "why": "**брат** is animate, so the accusative looks like the genitive.", "error": "animacy.acc"},
+        {"wrong": "Я иду́ в шко́ле.", "right": "Я иду́ в шко́лу.", "why": "Going *to* a place is direction (куда́?), so accusative.", "error": "case.prep-for-acc"},
+        {"wrong": "Я чита́ю кни́га.", "right": "Я чита́ю кни́гу.", "why": "The book is the direct object.", "error": "case.nom-default"}
+      ]
+    }
+  ],
+  "examples": [
+    {"ru": "Я чита́ю интере́сную кни́гу.", "en": "I'm reading an interesting book.", "focus": "кни́гу"},
+    {"ru": "Ты зна́ешь моего́ бра́та?", "en": "Do you know my brother?", "focus": "бра́та"},
+    {"ru": "Он купи́л но́вый телефо́н.", "en": "He bought a new phone.", "focus": "телефо́н"},
+    {"ru": "Мы идём в теа́тр.", "en": "We're going to the theatre.", "focus": "теа́тр"},
+    {"ru": "Положи́ ключ на стол.", "en": "Put the key on the table.", "focus": "стол"},
+    {"ru": "Я люблю́ ма́му.", "en": "I love Mum.", "focus": "ма́му"},
+    {"ru": "Уви́димся в сре́ду.", "en": "See you on Wednesday.", "focus": "сре́ду"}
+  ],
+  "related": ["g-cases-intro", "g-prepositional", "g-where-whither", "g-personal-pronouns"]
+}

@@ -1,0 +1,76 @@
+{
+ "$schema": "../../../../schemas/unit.schema.json",
+ "id": "u-a2-05",
+ "number": 5,
+ "level": "A2",
+ "title": {
+  "en": "I can see my brother",
+  "ru": "Я ви́жу бра́та"
+ },
+ "theme": "people and things",
+ "grammar": [
+  "g-accusative"
+ ],
+ "vocab": [
+  "n:письмо",
+  "n:газета",
+  "n:телефон",
+  "n:машина",
+  "n:подарок",
+  "n:собака",
+  "n:кошка",
+  "n:мальчик",
+  "n:ребёнок",
+  "n:друг",
+  "v:видеть",
+  "v:любить",
+  "v:ждать",
+  "v:знать",
+  "v:купить",
+  "v:искать"
+ ],
+ "drills": [
+  {
+   "generator": "case-cloze",
+   "count": 8,
+   "params": {
+    "cases": [
+     "acc"
+    ],
+    "tags": [
+     "case.acc.direct-object",
+     "case.acc"
+    ]
+   }
+  },
+  {
+   "generator": "forms",
+   "count": 6,
+   "params": {
+    "pos": "noun",
+    "slots": [
+     "sg_acc"
+    ]
+   }
+  },
+  {
+   "generator": "vocab",
+   "count": 4
+  },
+  {
+   "generator": "tiles",
+   "count": 3
+  }
+ ],
+ "boss": {
+  "name": {
+   "ru": "Ба́ба-Яга́",
+   "en": "the forest witch"
+  },
+  "hp": 12,
+  "art": "boss-05"
+ },
+ "testOut": [
+  "case.acc"
+ ]
+}

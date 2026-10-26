@@ -1,0 +1,65 @@
+{
+  "$schema": "../../../../schemas/grammar-article.schema.json",
+  "id": "g-motion-basics",
+  "title": {"en": "Verbs of motion: идти́ / ходи́ть, е́хать / е́здить", "ru": "Глаго́лы движе́ния"},
+  "level": "A2",
+  "tags": ["motion.basic"],
+  "card": "Russian has two verbs for each kind of going. **идти́ / е́хать** (unidirectional): one trip in one direction, *now* or on the way: **Я иду́ домо́й.** **ходи́ть / е́здить** (multidirectional): round trips, habits, wandering: **Я хожу́ в шко́лу.** **идти́, ходи́ть** = on foot; **е́хать, е́здить** = by vehicle.",
+  "sections": [
+    {
+      "kind": "why",
+      "body": "English *go* covers everything: walking or driving, once or every day, one way or there and back. Russian splits it along two lines:\n\n1. **How**: on foot (**идти́ / ходи́ть**) or in a vehicle (**е́хать / е́здить**). If wheels are involved, use **е́хать**: even a short bus ride is **е́хать на авто́бусе**.\n2. **Shape of the movement**: a single line towards a goal (**идти́, е́хать**) or anything else: there and back, repeated, aimless (**ходи́ть, е́здить**)."
+    },
+    {
+      "kind": "table",
+      "title": "Present tense",
+      "table": {
+        "generate": {"lexemes": ["v:идти", "v:ходить", "v:ехать", "v:ездить"], "slots": ["np_1sg", "np_2sg", "np_3sg", "np_1pl", "np_2pl", "np_3pl", "pst_m", "pst_f"]}
+      }
+    },
+    {
+      "kind": "table",
+      "title": "Which one?",
+      "table": {
+        "head": ["Unidirectional: идти́, е́хать", "Multidirectional: ходи́ть, е́здить"],
+        "rows": [
+          ["Right now, on the way: **Куда́ ты идёшь?**", "Regularly: **Я хожу́ в спортза́л три ра́за в неде́лю.**"],
+          ["A single trip in progress in the past: **Когда́ я шёл домо́й, на́чался дождь.**", "A round trip in the past (= *went and came back*): **Вчера́ я ходи́л в кино́.**"],
+          ["Future plan (one trip): **За́втра я е́ду в Москву́.**", "Ability or general activity: **Ребёнок уже́ хо́дит.** (*can walk*)"],
+          ["", "Aimless movement: **Мы ходи́ли по го́роду.** (*walked around*)"]
+        ]
+      }
+    },
+    {
+      "kind": "explanation",
+      "title": "\"I went\": the trap",
+      "body": "*Yesterday I went to the cinema* is **Вчера́ я ходи́л в кино́**: you went *and came back*, a round trip. **Вчера́ я шёл в кино́** means *I was on my way to the cinema* (and something happened along the way). To say *I set off* or *I have gone* (and am not back), use the perfective **пошёл / пое́хал**: **Он пое́хал в Москву́.** (*He has left for Moscow.*)"
+    },
+    {
+      "kind": "vs-english",
+      "body": "English adds a particle to show direction (*go out, go in, go across*); Russian adds a prefix to these verbs instead (**вы́йти, войти́, перейти́**). That's the B1 article on prefixed motion. For now: whenever you would say *go*, first ask *on foot or by vehicle?*, then *one trip in one direction, or not?*"
+    },
+    {
+      "kind": "memory-trick",
+      "body": "**идти́** is an arrow →. **ходи́ть** is a loop ↺. If you can draw the trip as a single arrow, use **идти́ / е́хать**; if it's a loop, a zigzag or many arrows, use **ходи́ть / е́здить**."
+    },
+    {
+      "kind": "common-mistakes",
+      "mistakes": [
+        {"wrong": "Я иду́ в шко́лу ка́ждый день.", "right": "Я хожу́ в шко́лу ка́ждый день.", "why": "A habit is multidirectional.", "error": "motion.direction"},
+        {"wrong": "За́втра я иду́ в Петербу́рг.", "right": "За́втра я е́ду в Петербу́рг.", "why": "You won't walk to another city: use **е́хать**.", "error": "motion.mode"},
+        {"wrong": "Вчера́ я шёл в кино́.", "right": "Вчера́ я ходи́л в кино́.", "why": "*I went (and came back)* is a round trip: **ходи́л**.", "error": "motion.direction"}
+      ]
+    }
+  ],
+  "examples": [
+    {"ru": "Куда́ ты идёшь?", "en": "Where are you going?", "focus": "идёшь"},
+    {"ru": "Я ча́сто хожу́ в теа́тр.", "en": "I often go to the theatre.", "focus": "хожу́"},
+    {"ru": "Мы е́дем на мо́ре.", "en": "We're going to the seaside.", "focus": "е́дем"},
+    {"ru": "Ле́том мы е́здили в Ита́лию.", "en": "In the summer we went to Italy.", "focus": "е́здили"},
+    {"ru": "Вчера́ я ходи́л к врачу́.", "en": "Yesterday I went to the doctor.", "focus": "ходи́л"},
+    {"ru": "Иди́ сюда́!", "en": "Come here!", "focus": "Иди́"},
+    {"ru": "Он е́дет на рабо́ту на авто́бусе.", "en": "He's going to work by bus.", "focus": "е́дет"}
+  ],
+  "related": ["g-where-whither", "g-prefixed-motion", "g-aspect-intro"]
+}

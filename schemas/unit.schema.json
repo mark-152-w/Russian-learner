@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "unit.schema.json",
+  "title": "Unit",
+  "type": "object",
+  "required": ["id", "number", "level", "title", "grammar", "vocab", "drills", "boss"],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": {"type": "string"},
+    "id": {"$ref": "common.schema.json#/$defs/id"},
+    "number": {"type": "integer", "minimum": 1},
+    "level": {"$ref": "common.schema.json#/$defs/level"},
+    "title": {"$ref": "common.schema.json#/$defs/bilingual"},
+    "theme": {"type": "string"},
+    "grammar": {"type": "array", "items": {"$ref": "common.schema.json#/$defs/id"}, "minItems": 1, "description": "Grammar article ids."},
+    "vocab": {"type": "array", "items": {"$ref": "common.schema.json#/$defs/lexemeId"}, "minItems": 5, "maxItems": 25},
+    "drills": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "generator": {"type": "string", "description": "Name of a programmatic generator."},
+          "params": {"type": "object"},
+          "items": {"type": "array", "items": {"$ref": "common.schema.json#/$defs/id"}, "description": "Hand-written exercise ids."},
+          "count": {"type": "integer", "minimum": 1}
+        }
+      }
+    },
+    "reading": {"$ref": "common.schema.json#/$defs/id", "description": "Story/reading id."},
+    "listening": {"$ref": "common.schema.json#/$defs/id"},
+    "boss": {
+      "type": "object",
+      "required": ["name", "hp", "art"],
+      "additionalProperties": false,
+      "properties": {
+        "name": {"$ref": "common.schema.json#/$defs/bilingual"},
+        "hp": {"type": "integer", "minimum": 5},
+        "art": {"type": "string", "description": "Id of an inline SVG component."},
+        "taunt": {"type": "string"}
+      }
+    },
+    "testOut": {"type": "array", "items": {"$ref": "common.schema.json#/$defs/tag"}, "description": "Placement-test tags whose mastery unlocks test-out."}
+  }
+}
