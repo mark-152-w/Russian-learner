@@ -13,6 +13,7 @@ import { Celebration, ComboMeter, EdgePulse, useJuice, XpFloat } from './juice'
 import { Md, Ru } from './Md'
 import { ItemVisual } from './visuals'
 import { SessionSummary } from './SessionSummary'
+import { requeueMissed, type RelearnMode } from '../lib/relearn'
 import { Bar, Button, CountUp, Icon } from './ui'
 
 interface Props {
@@ -33,11 +34,13 @@ interface Props {
   hud?: ReactNode
   /** Called after each answer; return true to end the session once its feedback is dismissed. */
   onAnswered?: (verdict: Verdict, effects: AnswerEffects) => boolean | void
+  /** What happens to a missed item: back once at the end (default), or spaced retries until it's right. */
+  relearn?: RelearnMode
 }
 
 const FORM_TYPES = new Set(['transform', 'cloze', 'choice'])
 
-export function SessionRunner({ items, lexemes, kind, onDone, onAgain, recallFor, onGraded, onFinish, summaryNote, hud, onAnswered }: Props) {
+export function SessionRunner({ items, lexemes, kind, onDone, onAgain, recallFor, onGraded, onFinish, summaryNote, hud, onAnswered, relearn = 'once' }: Props) {
   const session = useRef<RewardSession>(null as unknown as RewardSession)
   session.current ??= new RewardSession(kind, Date.now())
   const [queue, setQueue] = useState(items)
@@ -49,11 +52,12 @@ export function SessionRunner({ items, lexemes, kind, onDone, onAgain, recallFor
   const [levelUp, setLevelUp] = useState<LevelInfo | null>(null)
   const [xp, setXp] = useState(0)
   const shownAt = useRef(Date.now())
-  const requeued = useRef(new Set<string>())
+  const misses = useRef(new Map<string, number>())
   const stop = useRef(false)
   const cardRef = useRef<HTMLDivElement>(null)
   const juice = useJuice()
   const item = queue[idx]!
+  const attempt = queue.slice(0, idx).filter((q) => q.id === item.id).length
 
   useEffect(() => {
     setGolden(session.current.rollGolden())
@@ -96,10 +100,12 @@ export function SessionRunner({ items, lexemes, kind, onDone, onAgain, recallFor
       haptic.big()
       setLevelUp(e.levelUp)
     }
-    // missed items come back once, later in the session
-    if (!v.correct && !requeued.current.has(item.id) && queue.length - idx > 2) {
-      requeued.current.add(item.id)
-      setQueue((q) => [...q, item])
+    // missed items come back later in the session
+    if (!v.correct) {
+      const n = (misses.current.get(item.id) ?? 0) + 1
+      misses.current.set(item.id, n)
+      const q = requeueMissed(queue, idx, n, relearn)
+      if (q) setQueue(q)
     }
   }
 
@@ -164,7 +170,7 @@ export function SessionRunner({ items, lexemes, kind, onDone, onAgain, recallFor
       {hud}
       <div ref={cardRef} className={`relative rounded-2xl border-2 p-5 ${golden ? 'golden-card' : 'border-line bg-paper-2'}`}>
         {fx && <XpFloat key={idx} amount={fx.xp} golden={golden} />}
-        <ExerciseView key={`${idx}:${item.id}`} item={item} verdict={verdict} onSubmit={submit} />
+        <ExerciseView key={`${idx}:${item.id}`} item={item} verdict={verdict} onSubmit={submit} attempt={attempt} />
       </div>
 
       {verdict && <Feedback verdict={verdict} item={item} fx={fx} onNext={next} />}

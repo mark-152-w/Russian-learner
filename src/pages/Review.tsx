@@ -82,6 +82,7 @@ export default function Review() {
       items={built.items as ExerciseItem[]}
       lexemes={built.lexemes}
       kind="review"
+      relearn="until-correct"
       recallFor={(it) => built.recall.get(it.id) ?? null}
       onGraded={async (it, v, ms) => {
         const card = (it as DeckItem).card

@@ -19,7 +19,11 @@ export interface ViewProps {
   /** Set once graded: the view shows the outcome and ignores input. */
   verdict: Verdict | null
   onSubmit: (r: Response) => void
+  /** How many times this item was already shown in the session: a retry shuffles its options anew. */
+  attempt?: number
 }
+
+const seedFor = (item: ExerciseItem, attempt = 0) => seeded(attempt ? `${item.id}#${attempt}` : item.id)
 
 const CYRILLIC = /[а-яё]/i // ru-ignore
 const inField = (e: KeyboardEvent) => e.target instanceof HTMLInputElement || e.target instanceof HTMLTextAreaElement
@@ -149,8 +153,13 @@ function TypedView({ item, verdict, onSubmit, audio }: ViewProps & { audio?: boo
   )
 }
 
-function ChoiceView({ item, verdict, onSubmit, audio }: ViewProps & { audio?: boolean }) {
-  const options = useMemo(() => choiceOptions(item, seeded(item.id)), [item])
+function ChoiceView({ item, verdict, onSubmit, audio, attempt }: ViewProps & { audio?: boolean }) {
+  const options = useMemo(() => {
+    const rng = seedFor(item, attempt)
+    const o = choiceOptions(item, rng)
+    // fixed choice lists keep their order, except on a retry, where a remembered position would give it away
+    return item.choices && attempt ? shuffle(rng, o) : o
+  }, [item, attempt])
   const [picked, setPicked] = useState<string | null>(null)
   const play = useSpeaker(item.prompt.audio, audio)
   const choose = (o: string) => {
@@ -226,9 +235,9 @@ function StressView({ item, verdict, onSubmit }: ViewProps) {
   )
 }
 
-function MatchView({ item, verdict, onSubmit }: ViewProps) {
+function MatchView({ item, verdict, onSubmit, attempt }: ViewProps) {
   const pairs = item.pairs ?? []
-  const rng = useMemo(() => seeded(item.id), [item.id])
+  const rng = useMemo(() => seedFor(item, attempt), [item, attempt])
   const left = useMemo(() => shuffle(rng, pairs.map((p) => p[0]!)), [pairs, rng])
   const right = useMemo(() => shuffle(rng, pairs.map((p) => p[1]!)), [pairs, rng])
   const [sel, setSel] = useState<string | null>(null)
@@ -272,8 +281,8 @@ function MatchView({ item, verdict, onSubmit }: ViewProps) {
   )
 }
 
-function TilesView({ item, verdict, onSubmit }: ViewProps) {
-  const bank = useMemo(() => shuffle(seeded(item.id), (item.tiles ?? []).map((t, i) => ({ t, i }))), [item])
+function TilesView({ item, verdict, onSubmit, attempt }: ViewProps) {
+  const bank = useMemo(() => shuffle(seedFor(item, attempt), (item.tiles ?? []).map((t, i) => ({ t, i }))), [item, attempt])
   const [chosen, setChosen] = useState<number[]>([])
   useKeys((e) => e.key === 'Enter' && chosen.length && onSubmit({ kind: 'tiles', tiles: chosen.map((i) => item.tiles![i]!) }), !verdict)
   return (

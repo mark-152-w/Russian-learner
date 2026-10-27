@@ -12,13 +12,15 @@
 | 5: games, collectible cards, the town, text adventure «Де́ло» | **Done** (in four chunks) |
 | 6: B1–C1 units, remaining grammar articles, idioms/culture | **Done** (in four chunks) |
 | 7: stats dashboard, polish, accessibility, performance, GitHub Pages deploy | **Done** |
+| 8: retention (memory research applied to the existing app) | Part 1 **done**: varied cloze sentences, relearning, fading grammar mastery |
 
 `npm run check` passes:
 
 - 25 Python tool tests;
 - `validate.py`: 0 errors, 2 warnings (сёк in two C1 sentences: a real form pymorphy3 doesn't know);
 - typecheck;
-- 151 Vitest tests. New in Phase 7: the stats calculations (calendar, weekly XP, accuracy by case) and the
+- 158 Vitest tests. New in Phase 8: the cloze card rotates sentences; the relearning queue (gap, cap, the
+  default once-only rule); grammar mastery fading by time, and the plan's refresh step. New in Phase 7: the stats calculations (calendar, weekly XP, accuracy by case) and the
   meaning-distractor overlap rule. New in Phase 6:
   - all 65 units, at every level, produce gradable items from every drill, in course order;
   - placement recovers every level from A1 to C1;
@@ -56,6 +58,39 @@ including wrong cases. In Phase 4 they covered:
 - the Listening page and a dialogue;
 - the keyboard: typing a lesson line with Latin key positions;
 - the new Practice and Reference hubs.
+
+## Phase 8: what's built (part 1)
+
+Three changes from memory research, applied to what the app already does. Nothing new to learn in the UI; the
+existing sessions just work better.
+
+**A different sentence on each review** (*encoding variability*: a word met in varied contexts is recalled
+better in new ones). A word's sentence-gap card now rotates through up to 8 sentences, one per review
+(`card.reps`), in `cardToItem` (`src/srs/deck.ts`). This also fixed a quiet bug: the card used to try only the
+4 shortest example sentences. For nouns and adjectives those are usually in the nominative, which can't be
+gapped, so the card fell back to a plain English→Russian card. книга and новый never got a sentence card; now
+they do.
+
+**Relearning until correct** (*successive relearning*, Rawson & Dunlosky). In Review, a missed card comes back
+3 items later, and again after each miss, until it's answered correctly, up to 3 retries
+(`src/lib/relearn.ts`; `SessionRunner relearn="until-correct"`). Other sessions keep the old rule: a missed item
+comes back once, at the end. A retry reshuffles its options, so you can't just remember "it was the second
+button". Every retry goes through FSRS like any review, so a word relearned in-session leaves Relearning the
+normal way.
+
+**Grammar mastery fades** (*the forgetting curve*). The learner model stores recent accuracy per topic. It
+never went down with time, so a topic mastered in unit 3 looked mastered forever and never came back.
+`recallScore()` (`src/lib/forgetting.ts`) now discounts the score by the days since the topic was last
+practised. The half-life is 30 days at 10 attempts and grows with the square root of practice (20–180 days).
+A topic at 95% with 10 attempts comes back after about 10 days; with 60 attempts, after about 3½ weeks; each
+refresh pushes the next one further out. The stored score is untouched; the fading is applied when it's read.
+- The daily plan's weak-spot step uses the faded score. A topic that was strong but has gone stale shows as
+  **Refresh: Genitive · Last practised 30 days ago**; a genuinely weak one still says **Weak spot**.
+- XP freshness uses it too, so refreshing a stale topic pays like real work.
+- Stats, the trainer bars and the Word page still show plain accuracy. That's what they describe.
+
+I checked it in headless Chromium at phone width: in a Review session, a missed card came back at items 4, 8
+and 12 with its options in a new order each time, then stopped. There were no console errors.
 
 ## Phase 7: what's built
 

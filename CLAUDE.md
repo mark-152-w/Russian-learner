@@ -45,7 +45,8 @@ src/lib/               ru.ts (stress helpers), lexicon.ts (lazy chunks, decodeCe
                        ("N words ≈ X%"), plan.ts (Home daily plan, weakest tag, vocabulary milestones),
                        stories.ts (lazy story files, reading progress, analysis labels), bosses.ts (boss records),
                        cards.ts (card index, lazy set files, owned cards), adventure.ts (chapters, progress, flags),
-                       statsData.ts (pure summaries for /stats: calendar, weekly XP, accuracy by case, top errors)
+                       statsData.ts (pure summaries for /stats: calendar, weekly XP, accuracy by case, top errors),
+                       forgetting.ts (tag mastery faded by days since practice), relearn.ts (missed-item requeue)
 src/engine/            normalize.ts, translit.ts, slots.ts (slot → labels/tags), diagnose.ts (paradigm + spelling
                        rules → error type), grader.ts (all 11 item types), generators.ts (drills from the lexicon),
                        sentenceGen.ts (case/verb cloze, find-error, tiles, declension patterns from sentences),
@@ -133,6 +134,8 @@ src/features.ts        features that exist; quests/achievements for anything els
   Write every polysyllabic word stressed; the written stress picks homographs. Words the lexicon lacks are
   problems: rephrase, or add a name/word to closed_class.json (validated). Gerunds and most participles aren't
   in the lexicon. Check `tools/reports/stories.md` for odd context decisions; fix with `{hint}`.
+- Read tag mastery for scheduling through `recallScore()` (lib/forgetting.ts), not the raw `score`; displays
+  of accuracy use the raw score.
 - Session `kind` strings matter: the daily plan ticks steps off by kind (`review`, `lesson`, `checkpoint`,
   `drill-tag-<tag>`, `trainer-<id>`, `arcade`, `crossword`, `speed`, `boss`, `adventure`), and `trainer-<id>` feeds the trainer stats, quest and achievements.
 - Trainer content: aspect and motion items live in `content/exercises/{aspect,motion}.json` (ids `ex-asp-*`,

@@ -32,6 +32,19 @@ describe('daily plan', () => {
     const s = planSteps({ ...base, tagMastery: rows })
     expect(s.find((x) => x.id === 'weak')?.to).toBe('/drill/tag/verb.past')
   })
+  it('brings back a strong topic that has not been practised for a while', () => {
+    const DAY = 86400000
+    const now = 60 * DAY
+    const rows = [{ ...m('tag:case.gen', 0.95), last: now - 2 * DAY }, { ...m('tag:verb.past', 0.95), last: now - 30 * DAY }]
+    expect(weakestTag(rows)).toBeUndefined()
+    expect(weakestTag(rows, now)).toMatchObject({ key: 'tag:verb.past', stale: true })
+    const s = planSteps({ ...base, tagMastery: rows, now }).find((x) => x.id === 'weak')!
+    expect(s.title).toMatch(/^Refresh: /)
+    expect(s.detail).toMatch(/^Last practised 30 days ago/)
+    // a genuinely weak topic is still called a weak spot
+    const weak = planSteps({ ...base, tagMastery: [{ ...m('tag:case.dat', 0.5), last: now }], now }).find((x) => x.id === 'weak')!
+    expect(weak.title).toMatch(/^Weak spot: /)
+  })
   it('rotates the light item through the trainers', () => {
     const t = { ...base, features: new Set(['trainers']) }
     const days = [0, 1, 2, 3, 4].map((d) => planSteps({ ...t, dayIndex: d }).find((x) => x.id === 'fun')!.to)
