@@ -5,6 +5,7 @@ import { speak } from '../audio/tts'
 import { gloss } from '../engine/generators'
 import { markRescued, setHook } from '../srs/leech'
 import { ExampleList } from './ExampleList'
+import { WordFamily } from './WordFamily'
 import { Ru } from './Md'
 import { Button, Card, Icon } from './ui'
 
@@ -52,6 +53,7 @@ export function LeechRescue({ rescues, onDone }: { rescues: Rescue[]; onDone: ()
         <p className="mt-1 text-lg">{r.lx.en.join('; ')}</p>
       </div>
       {r.example && <ExampleList sentences={[r.example]} lex={r.lx.id} />}
+      <WordFamily key={r.lx.id} lex={r.lx.id} compact />
       {r.partners.length > 0 && (
         <p className="text-sm">
           You also mix it up with{' '}

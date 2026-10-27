@@ -59,6 +59,15 @@ export function lessonItems(unit: Unit, ctx: DrillContext): ExerciseItem[] {
   return out.slice(0, 28)
 }
 
+/** Grammar guesses before reading a unit's rule (the pretesting effect): a few of its lesson questions. */
+export const GUESS_ITEMS = 3
+export function guessItems(unit: Unit, ctx: DrillContext): ExerciseItem[] {
+  return lessonItems(unit, ctx)
+    .filter((i) => !i.tags.includes('vocab') && !['match', 'self-graded', 'dictation'].includes(i.type))
+    .slice(0, GUESS_ITEMS)
+    .map((i) => ({ ...i, id: `guess:${i.id}`, pretest: true }))
+}
+
 /** The checkpoint draws a fresh sample from all of the unit's drills. */
 export function checkpointItems(unit: Unit, ctx: DrillContext): ExerciseItem[] {
   const all = unit.drills.flatMap((d) => runDrill({ ...d, count: (d.count ?? 6) + 3 }, ctx))

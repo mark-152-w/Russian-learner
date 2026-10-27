@@ -9,6 +9,10 @@ import { calendar, caseAccuracy, totals, topErrors, weeklyXp, type CalendarCell 
 import { dayKey } from '../rewards/streak'
 import errorsJson from '../data/errors.json'
 import { Card } from '../components/ui'
+import { ForgettingCurve } from '../components/ForgettingCurve'
+import { FEATURES } from '../features'
+import { State } from '../srs/fsrs'
+import { curveReport, fitStrength, MIN_OBSERVATIONS, observations, type CurveReport } from '../srs/memory'
 
 const ERROR_LABEL = new Map(errorsJson.items.map((e) => [e.id, e.label]))
 const CASE_EN: Record<string, string> = { nom: 'Nominative', gen: 'Genitive', dat: 'Dative', acc: 'Accusative', ins: 'Instrumental', prep: 'Prepositional' }
@@ -95,6 +99,46 @@ function WeeklyXp({ weeks }: { weeks: { week: string; xp: number }[] }) {
   )
 }
 
+/** The learner's forgetting curve, fitted to their own reviews (src/srs/memory.ts). */
+function MemoryCard() {
+  const [report, setReport] = useState<CurveReport | null>(null)
+  useEffect(() => {
+    void (async () => {
+      const [logs, cards] = await Promise.all([db.reviews.toArray(), db.srs.where('state').equals(State.Review).toArray()])
+      const obs = observations(logs)
+      setReport(curveReport(obs, cards.map((c) => c.stability), fitStrength(obs)))
+    })()
+  }, [])
+  if (!report) return null
+  const enough = report.n >= MIN_OBSERVATIONS
+  const pctOff = Math.round(Math.abs(report.k - 1) * 100)
+  return (
+    <Card>
+      <h2 className="font-serif text-xl">Your forgetting curve</h2>
+      {enough ? (
+        <>
+          <p className="text-sm">
+            {pctOff < 5
+              ? 'Words you know fade about as fast as the scheduler assumes for an average learner, so your reviews keep their standard spacing.'
+              : report.k > 1
+                ? `Words you know last about ${pctOff}% longer than the scheduler assumes for an average learner, so your reviews are spaced further apart.`
+                : `Words you know fade about ${pctOff}% sooner than the scheduler assumes for an average learner, so your reviews come back sooner.`}{' '}
+            <span className="text-ink-soft">From {report.n.toLocaleString('en')} reviews of words you'd learned; it updates after every review session.</span>
+          </p>
+          <div className="mt-2">
+            <ForgettingCurve report={report} />
+          </div>
+        </>
+      ) : (
+        <p className="mt-1 text-sm text-ink-soft">
+          After {MIN_OBSERVATIONS} reviews of words you've already learned (you have {report.n}), this fits a forgetting curve to your own memory, and
+          your review schedule adjusts to it.
+        </p>
+      )}
+    </Card>
+  )
+}
+
 export default function Stats() {
   const profile = useProfile()
   const [data, setData] = useState<{ days: Day[]; mastery: Mastery[]; words: number } | null>(null)
@@ -126,6 +170,7 @@ export default function Stats() {
 
       <ActivityCalendar cols={calendar(data.days, today)} />
       <WeeklyXp weeks={weeklyXp(data.days, today)} />
+      {FEATURES.has('vocab') && <MemoryCard />}
 
       <Card>
         <h2 className="font-serif text-xl">Accuracy by case</h2>

@@ -45,6 +45,19 @@ describe('reward session', () => {
     expect(day.correct).toBe(6)
   })
 
+  it('a wrong guess before the answer was taught costs nothing; a right one pays', async () => {
+    const s = new RewardSession('review', T0)
+    await play(s, [true, true])
+    const guess = { ...item(9, 'choice'), pretest: true }
+    const miss = await s.answer({ item: guess, verdict: bad, ms: 4000, golden: false, now: T0 + 20_000 })
+    expect(miss).toMatchObject({ xp: 0, combo: 2 })
+    expect(await db.attempts.count()).toBe(2)
+    expect(await db.mastery.get('err:case.wrong')).toBeUndefined()
+    const hit = await s.answer({ item: { ...guess, id: 't:10' }, verdict: ok, ms: 4000, golden: false, now: T0 + 30_000 })
+    expect(hit.combo).toBe(3)
+    expect(hit.xp).toBeGreaterThan(0)
+  })
+
   it('no XP for repeating the same item inside the window', async () => {
     const s = new RewardSession('practice', T0)
     const a = await s.answer({ item: item(1), verdict: ok, ms: 3000, golden: false, now: T0 + 1000 })

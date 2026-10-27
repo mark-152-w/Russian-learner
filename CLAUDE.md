@@ -37,7 +37,7 @@ src/data/              generated + hand-written data
   cards-index.json     generated card index (sets → cards: id, name, rarity, art, level; no blurbs)
   errors.json          error taxonomy (grader diagnostics)
   tags.json            grammar tag vocabulary
-  content/{grammar,units,exercises,stories,adventure,cards,idioms}/*.json  hand-written content
+  content/{grammar,units,exercises,stories,adventure,cards,idioms,roots}/*.json  hand-written content
 src/lib/               ru.ts (stress helpers), lexicon.ts (lazy chunks, decodeCell, loadIndex, poolUpTo), rng.ts,
                        ics.ts, sentences.ts (load/examplesFor), content.ts (hand-written JSON via import.meta.glob),
                        drillContext.ts (lexicon + sentences + hand-written for generators), course.ts (unit progress,
@@ -46,7 +46,8 @@ src/lib/               ru.ts (stress helpers), lexicon.ts (lazy chunks, decodeCe
                        stories.ts (lazy story files, reading progress, analysis labels), bosses.ts (boss records),
                        cards.ts (card index, lazy set files, owned cards), adventure.ts (chapters, progress, flags),
                        statsData.ts (pure summaries for /stats: calendar, weekly XP, accuracy by case, top errors),
-                       forgetting.ts (tag mastery faded by days since practice), relearn.ts (missed-item requeue)
+                       forgetting.ts (tag mastery faded by days since practice), relearn.ts (missed-item requeue:
+                       once / until-correct / never)
 src/engine/            normalize.ts, translit.ts, slots.ts (slot → labels/tags), diagnose.ts (paradigm + spelling
                        rules → error type), grader.ts (all 11 item types), generators.ts (drills from the lexicon),
                        sentenceGen.ts (case/verb cloze, find-error, tiles, declension patterns from sentences),
@@ -61,14 +62,16 @@ src/srs/fsrs.ts        ts-fsrs wrapper; cards stored with epoch-ms dates; rating
 src/srs/deck.ts        vocabulary deck: card directions, form cards from missed forms, new-word queue, due items
 src/srs/confusion.ts   mix-ups between deck words (noteConfusion after a miss) → pair cards (kind/dir 'pair', `other`)
 src/srs/leech.ts       leeches (lapses summed per word), rescue offers, memory hooks
+src/srs/memory.ts      forgetting curve fitted to the learner (replay log → MLE of strength k) → requested retention
 src/db/                Dexie schema (db.ts), settings, backup (export/import/reset)
 src/rewards/           pure: xp, levels, chest, streak, quests, achievements, goals; service.ts persists them
 src/audio/             sound.ts (Web Audio synth), haptics.ts, tts.ts (speechSynthesis), speech.ts (recognition, Chrome)
 src/components/        ui.tsx, Md.tsx (markdown-lite + Ru), juice.tsx, exercises.tsx, SessionRunner (hud/onAnswered
                        hooks for bosses), SessionSummary, Tappable.tsx (analysed tokens + WordSheet), BossArt.tsx
                        (20 parametric portraits), CardFace.tsx (card + NewCard), ExampleList.tsx, LeechRescue.tsx (pre-review hook screen),
+                       WordFamily.tsx, ForgettingCurve.tsx (Stats chart),
                        visuals.tsx (aspect timelines + motion-prefix diagrams; an item's `visual` shows in feedback)
-src/pages/             Home, Practice, Review, Course (course/unit/lesson), Placement, Grammar, Lab, Word, Drill
+src/pages/             Home, Practice, Review, Evening (/review/evening), Course (course/unit/lesson), Placement, Grammar, Lab, Word, Drill
                        (/drill/{word,pattern,cell,tag}/…), Trainers (/trainers = Practice hub, /trainer/:id/:mode),
                        Reader (/reader, /story/:id[/quiz], /dialogue/:id), Listening (/listening, /listen/:mode),
                        Keyboard (/keyboard/:n), Games (/games hub), Arcade (/arcade), Crossword (/crossword[/:topic],
@@ -138,10 +141,18 @@ src/features.ts        features that exist; quests/achievements for anything els
   in the lexicon. Check `tools/reports/stories.md` for odd context decisions; fix with `{hint}`.
 - Per-word learner notes live in `kv`, not new tables: `hook:<lex>` (memory hook), `confuse:<a>|<b>` (mix-up count,
   ids sorted), `rescue:<lex>` (lapses when a rescue was last offered).
+- Word families (`content/roots/roots.json`): root in morpheme notation, English meaning, `lexemes` (≥ 3, each word
+  in at most one family; validate.py checks both), optional `note`. Only write a note whose etymology you're sure of.
+  `loadFamilies()` (lib/content.ts) maps lexeme id → family.
+- `pretest: true` on an item = a guess before the answer is taught: a wrong answer costs nothing in the reward
+  service (no XP, combo kept, no mastery/accuracy change), the feedback says "Now you know", and a retry comes
+  back without the flag. Never put it on items that test something already taught.
+- FSRS's requested retention is `effectiveRetention()` (memory.ts): the learner's `retention` setting corrected by
+  their fitted memory strength; `recordReview` applies it. ts-fsrs's `decay` is negative: R = (1 + factor·t/S)^decay.
 - Read tag mastery for scheduling through `recallScore()` (lib/forgetting.ts), not the raw `score`; displays
   of accuracy use the raw score.
 - Session `kind` strings matter: the daily plan ticks steps off by kind (`review`, `lesson`, `checkpoint`,
-  `drill-tag-<tag>`, `trainer-<id>`, `arcade`, `crossword`, `speed`, `boss`, `adventure`), and `trainer-<id>` feeds the trainer stats, quest and achievements.
+  `drill-tag-<tag>`, `trainer-<id>`, `arcade`, `crossword`, `speed`, `boss`, `adventure`, `evening`; `guess` ticks nothing), and `trainer-<id>` feeds the trainer stats, quest and achievements.
 - Trainer content: aspect and motion items live in `content/exercises/{aspect,motion}.json` (ids `ex-asp-*`,
   `ex-mot-*`, type `choice-reason`, with `visual.timeline` / `visual.motion`). Only write a pair where one
   answer is clearly wrong; if both aspects would sound natural, leave the context out.

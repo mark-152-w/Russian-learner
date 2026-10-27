@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "root.schema.json",
+  "title": "RootFile",
+  "description": "Word families: words sharing a root. Each word belongs to at most one family (validate.py).",
+  "type": "object",
+  "required": ["items"],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": {"type": "string"},
+    "items": {
+      "type": "array",
+      "items": {
+        "title": "RootFamily",
+        "type": "object",
+        "required": ["id", "root", "meaning", "lexemes"],
+        "additionalProperties": false,
+        "properties": {
+          "id": {"$ref": "common.schema.json#/$defs/id"},
+          "root": {"type": "string", "description": "The root and its alternants in morpheme notation: пис-, пиш-"},
+          "meaning": {"type": "string"},
+          "lexemes": {"type": "array", "minItems": 3, "uniqueItems": true, "items": {"$ref": "common.schema.json#/$defs/lexemeId"}},
+          "note": {"$ref": "common.schema.json#/$defs/markdown"},
+          "review": {"$ref": "common.schema.json#/$defs/review"}
+        }
+      }
+    }
+  }
+}

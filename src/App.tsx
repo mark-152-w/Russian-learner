@@ -18,6 +18,7 @@ const Trophies = lazy(() => import('./pages/Trophies'))
 const Settings = lazy(() => import('./pages/Settings'))
 const Attributions = lazy(() => import('./pages/Attributions'))
 const Review = lazy(() => import('./pages/Review'))
+const Evening = lazy(() => import('./pages/Evening'))
 const Lab = lazy(() => import('./pages/Lab'))
 const Word = lazy(() => import('./pages/Word'))
 const Drill = lazy(() => import('./pages/Drill'))
@@ -224,6 +225,7 @@ export default function App() {
               <Route path="/settings" element={<Settings />} />
               <Route path="/attributions" element={<Attributions />} />
               <Route path="/review" element={<Review />} />
+              <Route path="/review/evening" element={<Evening />} />
               <Route path="/lab" element={<Lab />} />
               <Route path="/word/:id" element={<Word />} />
               <Route path="/drill/:kind/:a/:b?/:c?" element={<Drill />} />

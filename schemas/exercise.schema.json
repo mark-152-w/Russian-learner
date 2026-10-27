@@ -40,6 +40,7 @@
           "properties": {"lex": {"$ref": "common.schema.json#/$defs/lexemeId"}, "slot": {"type": "string"}}
         },
         "golden": {"type": "boolean", "description": "Runtime only: rolled when the item is presented."},
+        "pretest": {"type": "boolean", "description": "A guess before the answer has been taught (the pretesting effect). A wrong guess is expected: no XP, and it doesn't break the combo or count as a mistake."},
         "prompt": {
           "type": "object",
           "additionalProperties": false,

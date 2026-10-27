@@ -7,13 +7,15 @@ import { loadLexemes, poolUpTo } from '../lib/lexicon'
 import { asChunk, getPlacement, learnerLevel } from '../lib/learner'
 import { mulberry32 } from '../lib/rng'
 import { examplesFor, sentencesUpTo } from '../lib/sentences'
-import { cardToItem, DEFAULT_KNOWN_RANK, dueCards, introduceNewWords, recordReview, type DeckItem } from '../srs/deck'
+import { cardToItem, DEFAULT_KNOWN_RANK, dueCards, introduceNewWords, recordReview, relativeFor, type DeckItem } from '../srs/deck'
+import { loadFamilies } from '../lib/content'
 import { retrievability } from '../srs/fsrs'
 import { db } from '../db/db'
 import { SessionRunner } from '../components/SessionRunner'
 import { LeechRescue, type Rescue } from '../components/LeechRescue'
 import { confusionsOf } from '../srs/confusion'
 import { getHook, leechesToRescue } from '../srs/leech'
+import { refitMemory } from '../srs/memory'
 import { Button, Card } from '../components/ui'
 
 const MAX_ITEMS = 40
@@ -50,7 +52,17 @@ export default function Review() {
       const lexemes = new Map<string, Lexeme>([...pool.map((x) => [x.id, x] as const), ...extra])
       const sentences = await sentencesUpTo(level === 'C1' ? 'C1' : level)
       const rng = mulberry32(now)
-      const items = cards.map((c) => cardToItem(c, lexemes, sentences, rng, hasVoice)).filter((x): x is DeckItem => !!x)
+      // a new word's first card is a guess, hinted by a relative from its word family
+      const [families, deck] = await Promise.all([loadFamilies(), db.srs.orderBy('lex').uniqueKeys()])
+      const deckSet = new Set(deck as string[])
+      const fresh = cards.filter((c) => c.dir === 'ru-en' && c.reps === 0).map((c) => lexemes.get(c.lex))
+      const kinIds = fresh.flatMap((lx) => families.get(lx?.id ?? '')?.lexemes ?? [])
+      for (const [id, x] of await loadLexemes(kinIds.filter((id) => !lexemes.has(id)))) lexemes.set(id, x)
+      const relatives = new Map(fresh.flatMap((lx) => {
+        const r = lx && relativeFor(lx, families.get(lx.id), lexemes, deckSet)
+        return r ? [[lx.id, r] as const] : []
+      }))
+      const items = cards.map((c) => cardToItem(c, lexemes, sentences, rng, hasVoice, relatives)).filter((x): x is DeckItem => !!x)
       const recall = new Map(cards.map((c) => [`srs:${c.id}`, retrievability(c, now)]))
       const next = await db.srs.orderBy('due').filter((c) => c.due > now && !c.suspended).first()
       const rescue: Rescue[] = []
@@ -102,6 +114,8 @@ export default function Review() {
         const card = (it as DeckItem).card
         if (card) await recordReview(card, v, ms, TYPED.has(it.type), Date.now())
       }}
+      // refit the learner's forgetting curve in the background; the summary shouldn't wait for it
+      onFinish={() => void refitMemory(Date.now())}
       onDone={() => nav('/')}
       onAgain={() => setRound((r) => r + 1)}
     />

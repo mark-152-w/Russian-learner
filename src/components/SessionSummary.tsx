@@ -68,7 +68,7 @@ export function Chest({ tier, loot }: { tier: Tier; loot: Loot[] }) {
   )
 }
 
-export function SessionSummary({ end, onDone, onAgain }: { end: SessionEnd; onDone: () => void; onAgain?: () => void }) {
+export function SessionSummary({ end, onDone, onAgain, doneLabel = 'Home' }: { end: SessionEnd; onDone: () => void; onAgain?: () => void; doneLabel?: string }) {
   const { levelBefore: lb, levelAfter: la } = end
   const toNext = xpForLevel(la.level + 1) - xpForLevel(la.level) - la.into
   const teaser = la.nextRank
@@ -151,7 +151,7 @@ export function SessionSummary({ end, onDone, onAgain }: { end: SessionEnd; onDo
 
       <div className="grid grid-cols-2 gap-3">
         <Button variant="secondary" onClick={onDone}>
-          Home
+          {doneLabel}
         </Button>
         {onAgain && <Button onClick={onAgain}>Another session</Button>}
       </div>

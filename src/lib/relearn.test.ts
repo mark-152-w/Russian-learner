@@ -21,3 +21,17 @@ describe('missed items within a session', () => {
     expect(requeueMissed(q, 0, RELEARN_MAX + 1, 'until-correct')).toBeNull()
   })
 })
+
+describe('a retry', () => {
+  it('can differ from the first showing (a guess comes back as a real question)', () => {
+    const items = [{ id: 'a', pretest: true }, { id: 'b' }]
+    const after = requeueMissed(items, 0, 1, 'until-correct', (x) => ({ ...x, pretest: false }))!
+    expect(after).toEqual([{ id: 'a', pretest: true }, { id: 'b' }, { id: 'a', pretest: false }])
+  })
+})
+
+describe('guessing before a rule', () => {
+  it('never retries: there is nothing to retrieve yet', () => {
+    expect(requeueMissed(['a', 'b', 'c', 'd'], 0, 1, 'never')).toBeNull()
+  })
+})

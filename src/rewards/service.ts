@@ -254,6 +254,11 @@ export class RewardSession {
 
   async answer(a: AnswerInput): Promise<AnswerEffects> {
     const { item, verdict, now } = a
+    // a wrong guess at something not yet taught isn't a mistake: no XP, and combo, accuracy and the learner model stay as they were
+    if (item.pretest && !verdict.correct) {
+      const m = comboMultiplier(this.combo)
+      return { xp: 0, combo: this.combo, multiplier: m, comboUp: false, golden: false, repeat: false, achievements: [], quests: [], levelUp: null }
+    }
     return db.transaction('rw', ALL_TABLES(), async () => {
       const p = await getProfile()
       if (!this.levelBefore) this.levelBefore = levelInfo(p.xp)

@@ -37,11 +37,22 @@ export interface SrsReviewLog {
   ms?: number
 }
 
-let scheduler: FSRS = fsrs(generatorParameters({ enable_fuzz: true, request_retention: 0.9 }))
+let fuzz = true
+let requested = 0.9
+let scheduler: FSRS = fsrs(generatorParameters({ enable_fuzz: fuzz, request_retention: requested }))
 
 /** Tests use a fuzz-free scheduler for exact intervals. */
 export function setScheduler(opts: { fuzz: boolean; retention?: number }) {
-  scheduler = fsrs(generatorParameters({ enable_fuzz: opts.fuzz, request_retention: opts.retention ?? 0.9 }))
+  fuzz = opts.fuzz
+  requested = opts.retention ?? 0.9
+  scheduler = fsrs(generatorParameters({ enable_fuzz: fuzz, request_retention: requested }))
+}
+
+/** The retention FSRS aims at (the learner's target, corrected by their fitted memory strength). */
+export function setRetention(r: number) {
+  if (Math.abs(r - requested) < 1e-9) return
+  requested = r
+  scheduler = fsrs(generatorParameters({ enable_fuzz: fuzz, request_retention: requested }))
 }
 
 function toCard(c: SrsCard): Card {

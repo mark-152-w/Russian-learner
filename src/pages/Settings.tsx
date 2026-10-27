@@ -11,6 +11,27 @@ import { Ru } from '../components/Md'
 import { Button, Card, Toggle } from '../components/ui'
 import { FEATURES } from '../features'
 import { loadChunk, loadIndex } from '../lib/lexicon'
+import { useLiveQuery } from 'dexie-react-hooks'
+import { db } from '../db/db'
+import { State } from '../srs/fsrs'
+import { getFit, retentionFor, reviewsPerDay, usableK } from '../srs/memory'
+
+function RetentionSelect({ value, onChange }: { value: number; onChange: (v: number) => void }) {
+  const loads = useWorkloads(RETENTION_TARGETS)
+  return (
+    <div>
+      <Select
+        label="Remember"
+        value={value}
+        options={RETENTION_TARGETS.map((t, i) => [t, `${Math.round(t * 100)}%${loads ? ` · ${perDay(loads[i]!)}` : ''}`] as [number, string])}
+        onChange={onChange}
+      />
+      <p className="-mt-1 pb-1 text-sm text-ink-soft">
+        How much of what you've learned to keep. Remembering more costs more reviews; the schedule is fitted to your own memory (see Stats).
+      </p>
+    </div>
+  )
+}
 
 function Section({ title, children }: { title: string; children: ReactNode }) {
   return (
@@ -20,6 +41,17 @@ function Section({ title, children }: { title: string; children: ReactNode }) {
     </Card>
   )
 }
+
+/** Reviews a day each retention target would cost for the learner's current deck, with their fitted memory. */
+function useWorkloads(targets: number[]): number[] | null {
+  return useLiveQuery(async () => {
+    const [cards, fit] = await Promise.all([db.srs.where('state').equals(State.Review).toArray(), getFit()])
+    return cards.length ? targets.map((t) => reviewsPerDay(cards, retentionFor(t, usableK(fit)))) : null
+  }, [targets.join()]) ?? null
+}
+
+const RETENTION_TARGETS = [0.8, 0.85, 0.9, 0.95]
+const perDay = (n: number) => (n < 1 ? 'under 1 review a day' : `about ${Math.round(n)} review${Math.round(n) === 1 ? '' : 's'} a day`)
 
 function Select<T extends string | number>({ label, value, options, onChange }: { label: string; value: T; options: [T, string][]; onChange: (v: T) => void }) {
   return (
@@ -126,6 +158,7 @@ export default function Settings() {
             onChange={(v) => set({ newCardsPerDay: v })}
           />
         )}
+        {FEATURES.has('vocab') && <RetentionSelect value={s.retention} onChange={(v) => set({ retention: v })} />}
         <FullDictionary />
         <div className="flex min-h-11 items-center justify-between gap-4 py-2">
           <span>
