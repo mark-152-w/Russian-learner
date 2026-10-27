@@ -5,7 +5,7 @@ import { dayKey } from '../rewards/streak'
 import { bumpStatsExternal, progressQuestsExternal } from '../rewards/service'
 import { examplesFor, soleLexeme, wordTokens } from '../lib/sentences'
 import type { Rng } from '../lib/rng'
-import { listenItem, meaningItem, transformItem } from '../engine/generators'
+import { listenItem, meaningItem, pairItem, transformItem } from '../engine/generators'
 import { enRuItem } from '../engine/drills'
 import { caseClozeItems, verbClozeItems } from '../engine/sentenceGen'
 import type { Verdict } from '../engine/grader'
@@ -121,7 +121,10 @@ export function cardToItem(card: SrsCard, lexemes: Map<string, Lexeme>, sentence
   const lx = lexemes.get(card.lex)
   if (!lx) return null
   let item: ExerciseItem | null = null
-  if (card.dir === 'form' && card.slot) item = transformItem(lx, card.slot)
+  if (card.dir === 'pair') {
+    const other = lexemes.get(card.other ?? '')
+    item = other ? pairItem(lx, other, card.reps, rng) : null
+  } else if (card.dir === 'form' && card.slot) item = transformItem(lx, card.slot)
   else if (card.dir === 'ru-en') item = meaningItem(lx, [...lexemes.values()], rng)
   else if (card.dir === 'audio') item = hasVoice ? listenItem(lx, [...lexemes.values()], rng) : meaningItem(lx, [...lexemes.values()], rng)
   else if (card.dir === 'cloze') {
@@ -176,5 +179,6 @@ export interface WordState {
 
 export async function wordState(lex: string): Promise<WordState> {
   const cards = await db.srs.where('lex').equals(lex).toArray()
-  return { cards, known: cards.some(isKnown), learning: cards.some((c) => c.state !== State.New) }
+  const vocab = cards.filter((c) => c.kind !== 'pair')
+  return { cards: vocab, known: vocab.some(isKnown), learning: vocab.some((c) => c.state !== State.New) }
 }

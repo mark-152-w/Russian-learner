@@ -9,6 +9,8 @@ import type { LevelInfo } from '../rewards/levels'
 import { ExerciseView } from './exercises'
 import { FEATURES } from '../features'
 import { addFormCard } from '../srs/deck'
+import { itemLexeme, noteConfusion } from '../srs/confusion'
+import { getHook } from '../srs/leech'
 import { Celebration, ComboMeter, EdgePulse, useJuice, XpFloat } from './juice'
 import { Md, Ru } from './Md'
 import { ItemVisual } from './visuals'
@@ -51,6 +53,7 @@ export function SessionRunner({ items, lexemes, kind, onDone, onAgain, recallFor
   const [end, setEnd] = useState<SessionEnd | null>(null)
   const [levelUp, setLevelUp] = useState<LevelInfo | null>(null)
   const [xp, setXp] = useState(0)
+  const [hook, setHook] = useState('')
   const shownAt = useRef(Date.now())
   const misses = useRef(new Map<string, number>())
   const stop = useRef(false)
@@ -84,6 +87,12 @@ export function SessionRunner({ items, lexemes, kind, onDone, onAgain, recallFor
     // a form missed anywhere becomes its own spaced-repetition card
     if (!v.correct && item.target && FORM_TYPES.has(item.type) && FEATURES.has('vocab') && !item.id.startsWith('srs:form:')) {
       void addFormCard(item.target.lex, item.target.slot, Date.now())
+    }
+    if (!v.correct && FEATURES.has('vocab')) {
+      // a mix-up with another deck word is counted; the learner's own memory hook is shown with the answer
+      void noteConfusion(item, v.given ?? '', lexemes, Date.now())
+      const lex = itemLexeme(item)
+      if (lex) void getHook(lex).then(setHook)
     }
     setFx(e)
     setXp(session.current.xp)
@@ -123,6 +132,7 @@ export function SessionRunner({ items, lexemes, kind, onDone, onAgain, recallFor
     setIdx(idx + 1)
     setVerdict(null)
     setFx(null)
+    setHook('')
   }, [idx, queue.length, finish])
 
   useEffect(() => {
@@ -173,7 +183,7 @@ export function SessionRunner({ items, lexemes, kind, onDone, onAgain, recallFor
         <ExerciseView key={`${idx}:${item.id}`} item={item} verdict={verdict} onSubmit={submit} attempt={attempt} />
       </div>
 
-      {verdict && <Feedback verdict={verdict} item={item} fx={fx} onNext={next} />}
+      {verdict && <Feedback verdict={verdict} item={item} fx={fx} hook={hook} onNext={next} />}
 
       {levelUp && (
         <Celebration ms={0} onDone={() => setLevelUp(null)}>
@@ -189,7 +199,7 @@ export function SessionRunner({ items, lexemes, kind, onDone, onAgain, recallFor
   )
 }
 
-function Feedback({ verdict, item, fx, onNext }: { verdict: Verdict; item: ExerciseItem; fx: AnswerEffects | null; onNext: () => void }) {
+function Feedback({ verdict, item, fx, hook, onNext }: { verdict: Verdict; item: ExerciseItem; fx: AnswerEffects | null; hook: string; onNext: () => void }) {
   const ok = verdict.correct
   const showAnswer = !ok && verdict.expected && item.type !== 'match'
   return (
@@ -209,6 +219,11 @@ function Feedback({ verdict, item, fx, onNext }: { verdict: Verdict; item: Exerc
         {verdict.message && <Md text={verdict.message} className="text-ink" />}
         {verdict.noteText && <Md text={verdict.noteText} className="text-sm text-ink-soft" />}
         {verdict.reason && <Md text={verdict.reason} className="text-sm text-ink-soft" stress={item.tags.includes('stress')} />}
+        {!ok && hook && (
+          <p className="rounded-lg border border-line bg-paper-2 px-3 py-2 text-sm">
+            <span className="font-bold">Your hook:</span> {hook}
+          </p>
+        )}
         <ItemVisual item={item} />
         {verdict.diff && (
           <p className="flex flex-wrap gap-x-2 text-lg" lang="ru">

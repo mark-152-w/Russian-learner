@@ -8,40 +8,57 @@ import { speak, useRussianVoices } from '../audio/tts'
 import { loadLexemes } from '../lib/lexicon'
 import { examplesFor, sentencesUpTo } from '../lib/sentences'
 import { addWord, wordState } from '../srs/deck'
+import { confusionsOf } from '../srs/confusion'
+import { getHook, setHook, wordLapses } from '../srs/leech'
 import { State } from '../srs/fsrs'
 import { isDrillable } from '../engine/generators'
 import { NOUN_CLASS_LABEL, nounClass } from '../engine/sentenceGen'
 import { FormTable } from '../components/FormTable'
+import { ExampleList } from '../components/ExampleList'
 import { Ru } from '../components/Md'
 import { Button, Card, Icon } from '../components/ui'
 
 const POS_NAME = { noun: 'noun', verb: 'verb', adj: 'adjective', other: 'word' }
 const GENDER = { m: 'masculine', f: 'feminine', n: 'neuter', mf: 'common gender', pl: 'plural only' }
 
-export function ExampleList({ sentences, lex }: { sentences: Sentence[]; lex: string }) {
-  const s = useSettings()
+function MemoryHook({ lex }: { lex: string }) {
+  const saved = useLiveQuery(() => getHook(lex), [lex])
+  const [text, setText] = useState<string | null>(null)
+  const mixed = useLiveQuery(async () => {
+    const rows = await confusionsOf(lex)
+    const lxs = await loadLexemes(rows.map((r) => r.lex))
+    return rows.flatMap((r) => (lxs.has(r.lex) ? [{ lx: lxs.get(r.lex)!, n: r.n }] : []))
+  }, [lex])
+  const value = text ?? saved ?? ''
   return (
-    <ul className="space-y-2">
-      {sentences.map((x) => {
-        const hit = x.w.find((w) => w.slice(2).some((r) => String(r).startsWith(lex + '|')))
-        const [a, b] = hit ? [hit[0] as number, hit[1] as number] : [0, 0]
-        return (
-          <li key={x.id}>
-            <button type="button" onClick={() => speak(x.ru, { rate: s.ttsRate, voice: s.ttsVoice })} className="text-left">
-              <Ru className="text-lg">{x.ru.slice(0, a)}</Ru>
-              <Ru className="text-lg font-bold text-red">{x.ru.slice(a, b)}</Ru>
-              <Ru className="text-lg">{x.ru.slice(b)}</Ru>
-            </button>
-            <div className="text-sm text-ink-soft">
-              {x.en[0]}{' '}
-              <a href={`https://tatoeba.org/en/sentences/show/${x.id.slice(2)}`} className="text-xs underline" target="_blank" rel="noreferrer">
-                Tatoeba
-              </a>
-            </div>
-          </li>
-        )
-      })}
-    </ul>
+    <Card className="space-y-2">
+      <h2 className="font-serif text-xl">Memory hook</h2>
+      <p className="text-sm text-ink-soft">A sound-alike or a picture of your own. It shows whenever you miss this word.</p>
+      <textarea
+        aria-label="Memory hook"
+        value={value}
+        onChange={(e) => setText(e.target.value)}
+        rows={2}
+        className="w-full rounded-lg border-2 border-line bg-paper px-3 py-2 focus:border-red focus:outline-none"
+      />
+      <Button variant="secondary" disabled={text === null || text.trim() === (saved ?? '')} onClick={() => setHook(lex, value).then(() => setText(null))}>
+        Save hook
+      </Button>
+      {!!mixed?.length && (
+        <p className="text-sm">
+          Often mixed up with{' '}
+          {mixed.map(({ lx, n }, k) => (
+            <span key={lx.id}>
+              {k ? ', ' : ''}
+              <Link to={`/word/${encodeURIComponent(lx.id)}`} className="text-red underline">
+                <Ru>{lx.lemma}</Ru>
+              </Link>{' '}
+              ({n}×)
+            </span>
+          ))}
+        </p>
+      )}
+    </Card>
   )
 }
 
@@ -161,6 +178,8 @@ export default function Word() {
         </Card>
       )}
 
+      <MemoryHook key={lx.id} lex={lx.id} />
+
       <Card>
         <h2 className="font-serif text-xl">My history with this word</h2>
         {attempts.length ? (
@@ -171,6 +190,9 @@ export default function Word() {
           </p>
         ) : (
           <p className="mt-1 text-sm text-ink-soft">You haven't practised this word yet.</p>
+        )}
+        {state && wordLapses(state.cards, lx.id) > 0 && (
+          <p className="mt-1 text-sm text-ink-soft">Forgotten after learning: {wordLapses(state.cards, lx.id)}×</p>
         )}
         {attempts.some((a) => !a.correct && a.err) && (
           <p className="mt-1 text-sm text-ink-soft">

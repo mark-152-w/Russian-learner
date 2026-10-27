@@ -6,11 +6,14 @@ import { useRussianVoices } from '../audio/tts'
 import { loadLexemes, poolUpTo } from '../lib/lexicon'
 import { asChunk, getPlacement, learnerLevel } from '../lib/learner'
 import { mulberry32 } from '../lib/rng'
-import { sentencesUpTo } from '../lib/sentences'
+import { examplesFor, sentencesUpTo } from '../lib/sentences'
 import { cardToItem, DEFAULT_KNOWN_RANK, dueCards, introduceNewWords, recordReview, type DeckItem } from '../srs/deck'
 import { retrievability } from '../srs/fsrs'
 import { db } from '../db/db'
 import { SessionRunner } from '../components/SessionRunner'
+import { LeechRescue, type Rescue } from '../components/LeechRescue'
+import { confusionsOf } from '../srs/confusion'
+import { getHook, leechesToRescue } from '../srs/leech'
 import { Button, Card } from '../components/ui'
 
 const MAX_ITEMS = 40
@@ -21,6 +24,8 @@ interface Built {
   lexemes: Map<string, Lexeme>
   recall: Map<string, number>
   nextDue: number | null
+  /** Leeches to offer a memory hook before the session. */
+  rescue: Rescue[]
 }
 
 export default function Review() {
@@ -41,14 +46,22 @@ export default function Review() {
       const hasVoice = voices.length > 0
       await introduceNewWords(pool, settings.newCardsPerDay, now, hasVoice, (await getPlacement())?.knownRank ?? DEFAULT_KNOWN_RANK)
       const cards = await dueCards(now, MAX_ITEMS)
-      const extra = await loadLexemes(cards.map((c) => c.lex))
+      const extra = await loadLexemes(cards.flatMap((c) => (c.other ? [c.lex, c.other] : [c.lex])))
       const lexemes = new Map<string, Lexeme>([...pool.map((x) => [x.id, x] as const), ...extra])
       const sentences = await sentencesUpTo(level === 'C1' ? 'C1' : level)
       const rng = mulberry32(now)
       const items = cards.map((c) => cardToItem(c, lexemes, sentences, rng, hasVoice)).filter((x): x is DeckItem => !!x)
       const recall = new Map(cards.map((c) => [`srs:${c.id}`, retrievability(c, now)]))
       const next = await db.srs.orderBy('due').filter((c) => c.due > now && !c.suspended).first()
-      if (alive) setBuilt({ items, lexemes, recall, nextDue: next?.due ?? null })
+      const rescue: Rescue[] = []
+      for (const { lex, lapses } of await leechesToRescue(cards)) {
+        const lx = lexemes.get(lex)
+        if (!lx) continue
+        const mixed = (await confusionsOf(lex)).slice(0, 2).map((c) => c.lex)
+        const partners = [...(await loadLexemes(mixed)).values()]
+        rescue.push({ lx, lapses, hook: await getHook(lex), example: examplesFor(lex, sentences, 1)[0], partners })
+      }
+      if (alive) setBuilt({ items, lexemes, recall, nextDue: next?.due ?? null, rescue })
     })()
     return () => {
       alive = false
@@ -76,6 +89,7 @@ export default function Review() {
       </Card>
     )
   }
+  if (built.rescue.length) return <LeechRescue rescues={built.rescue} onDone={() => setBuilt({ ...built, rescue: [] })} />
   return (
     <SessionRunner
       key={round}
