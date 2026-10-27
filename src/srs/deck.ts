@@ -5,7 +5,7 @@ import { dayKey } from '../rewards/streak'
 import { bumpStatsExternal, progressQuestsExternal } from '../rewards/service'
 import { examplesFor, soleLexeme, wordTokens } from '../lib/sentences'
 import type { Rng } from '../lib/rng'
-import { listenItem, meaningItem, transformItem } from '../engine/generators'
+import { listenItem, meaningItem, pairItem, transformItem } from '../engine/generators'
 import { enRuItem } from '../engine/drills'
 import { caseClozeItems, verbClozeItems } from '../engine/sentenceGen'
 import type { Verdict } from '../engine/grader'
@@ -102,22 +102,35 @@ export async function countDue(now: number): Promise<number> {
 
 export type DeckItem = ExerciseItem & { card: string }
 
+/** How many sentences a cloze card rotates through (the shortest ones that make a gap for the word). */
+export const CLOZE_SENTENCES = 8
+
+/** Sentence gaps for this word, one per sentence, shortest sentences first. */
+function clozesFor(lx: Lexeme, lexemes: Map<string, Lexeme>, sentences: Sentence[], rng: Rng): ExerciseItem[] {
+  const out: ExerciseItem[] = []
+  for (const s of examplesFor(lx.id, sentences, Infinity)) {
+    const hit = [...caseClozeItems(s, lexemes, { pos: [lx.pos], rng }), ...verbClozeItems(s, lexemes)].find((i) => i.target?.lex === lx.id)
+    if (hit) out.push(hit)
+    if (out.length >= CLOZE_SENTENCES) break
+  }
+  return out
+}
+
 /** Turn a card into an exercise. Falls back to a simpler direction when the ideal one isn't possible. */
 export function cardToItem(card: SrsCard, lexemes: Map<string, Lexeme>, sentences: Sentence[], rng: Rng, hasVoice: boolean): DeckItem | null {
   const lx = lexemes.get(card.lex)
   if (!lx) return null
   let item: ExerciseItem | null = null
-  if (card.dir === 'form' && card.slot) item = transformItem(lx, card.slot)
+  if (card.dir === 'pair') {
+    const other = lexemes.get(card.other ?? '')
+    item = other ? pairItem(lx, other, card.reps, rng) : null
+  } else if (card.dir === 'form' && card.slot) item = transformItem(lx, card.slot)
   else if (card.dir === 'ru-en') item = meaningItem(lx, [...lexemes.values()], rng)
   else if (card.dir === 'audio') item = hasVoice ? listenItem(lx, [...lexemes.values()], rng) : meaningItem(lx, [...lexemes.values()], rng)
   else if (card.dir === 'cloze') {
-    for (const s of examplesFor(lx.id, sentences, 4)) {
-      const cands = [...caseClozeItems(s, lexemes, { pos: [lx.pos], rng }), ...verbClozeItems(s, lexemes)].filter((i) => i.target?.lex === lx.id)
-      if (cands.length) {
-        item = cands[0]!
-        break
-      }
-    }
+    // a different sentence on each review: a word met in varied contexts is recalled in new ones
+    const gaps = clozesFor(lx, lexemes, sentences, rng)
+    item = gaps.length ? gaps[card.reps % gaps.length]! : null
   }
   item ??= enRuItem(lx)
   return { ...item, id: `srs:${card.id}`, card: card.id }
@@ -166,5 +179,6 @@ export interface WordState {
 
 export async function wordState(lex: string): Promise<WordState> {
   const cards = await db.srs.where('lex').equals(lex).toArray()
-  return { cards, known: cards.some(isKnown), learning: cards.some((c) => c.state !== State.New) }
+  const vocab = cards.filter((c) => c.kind !== 'pair')
+  return { cards: vocab, known: vocab.some(isKnown), learning: vocab.some((c) => c.state !== State.New) }
 }

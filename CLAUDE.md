@@ -45,7 +45,8 @@ src/lib/               ru.ts (stress helpers), lexicon.ts (lazy chunks, decodeCe
                        ("N words ≈ X%"), plan.ts (Home daily plan, weakest tag, vocabulary milestones),
                        stories.ts (lazy story files, reading progress, analysis labels), bosses.ts (boss records),
                        cards.ts (card index, lazy set files, owned cards), adventure.ts (chapters, progress, flags),
-                       statsData.ts (pure summaries for /stats: calendar, weekly XP, accuracy by case, top errors)
+                       statsData.ts (pure summaries for /stats: calendar, weekly XP, accuracy by case, top errors),
+                       forgetting.ts (tag mastery faded by days since practice), relearn.ts (missed-item requeue)
 src/engine/            normalize.ts, translit.ts, slots.ts (slot → labels/tags), diagnose.ts (paradigm + spelling
                        rules → error type), grader.ts (all 11 item types), generators.ts (drills from the lexicon),
                        sentenceGen.ts (case/verb cloze, find-error, tiles, declension patterns from sentences),
@@ -58,12 +59,14 @@ src/engine/            normalize.ts, translit.ts, slots.ts (slot → labels/tags
                        idioms.ts (meaning questions from content/idioms)
 src/srs/fsrs.ts        ts-fsrs wrapper; cards stored with epoch-ms dates; ratingFor(verdict, ms)
 src/srs/deck.ts        vocabulary deck: card directions, form cards from missed forms, new-word queue, due items
+src/srs/confusion.ts   mix-ups between deck words (noteConfusion after a miss) → pair cards (kind/dir 'pair', `other`)
+src/srs/leech.ts       leeches (lapses summed per word), rescue offers, memory hooks
 src/db/                Dexie schema (db.ts), settings, backup (export/import/reset)
 src/rewards/           pure: xp, levels, chest, streak, quests, achievements, goals; service.ts persists them
 src/audio/             sound.ts (Web Audio synth), haptics.ts, tts.ts (speechSynthesis), speech.ts (recognition, Chrome)
 src/components/        ui.tsx, Md.tsx (markdown-lite + Ru), juice.tsx, exercises.tsx, SessionRunner (hud/onAnswered
                        hooks for bosses), SessionSummary, Tappable.tsx (analysed tokens + WordSheet), BossArt.tsx
-                       (20 parametric portraits), CardFace.tsx (card + NewCard),
+                       (20 parametric portraits), CardFace.tsx (card + NewCard), ExampleList.tsx, LeechRescue.tsx (pre-review hook screen),
                        visuals.tsx (aspect timelines + motion-prefix diagrams; an item's `visual` shows in feedback)
 src/pages/             Home, Practice, Review, Course (course/unit/lesson), Placement, Grammar, Lab, Word, Drill
                        (/drill/{word,pattern,cell,tag}/…), Trainers (/trainers = Practice hub, /trainer/:id/:mode),
@@ -133,6 +136,10 @@ src/features.ts        features that exist; quests/achievements for anything els
   Write every polysyllabic word stressed; the written stress picks homographs. Words the lexicon lacks are
   problems: rephrase, or add a name/word to closed_class.json (validated). Gerunds and most participles aren't
   in the lexicon. Check `tools/reports/stories.md` for odd context decisions; fix with `{hint}`.
+- Per-word learner notes live in `kv`, not new tables: `hook:<lex>` (memory hook), `confuse:<a>|<b>` (mix-up count,
+  ids sorted), `rescue:<lex>` (lapses when a rescue was last offered).
+- Read tag mastery for scheduling through `recallScore()` (lib/forgetting.ts), not the raw `score`; displays
+  of accuracy use the raw score.
 - Session `kind` strings matter: the daily plan ticks steps off by kind (`review`, `lesson`, `checkpoint`,
   `drill-tag-<tag>`, `trainer-<id>`, `arcade`, `crossword`, `speed`, `boss`, `adventure`), and `trainer-<id>` feeds the trainer stats, quest and achievements.
 - Trainer content: aspect and motion items live in `content/exercises/{aspect,motion}.json` (ids `ex-asp-*`,

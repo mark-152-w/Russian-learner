@@ -3,15 +3,17 @@ import { createEmptyCard, fsrs, generatorParameters, Rating, State, type Card, t
 
 export { Rating, State }
 
-export type SrsKind = 'vocab' | 'form'
-export type SrsDir = 'ru-en' | 'en-ru' | 'audio' | 'cloze' | 'form'
+export type SrsKind = 'vocab' | 'form' | 'pair'
+export type SrsDir = 'ru-en' | 'en-ru' | 'audio' | 'cloze' | 'form' | 'pair'
 
 export interface SrsCard {
-  id: string // e.g. "vocab:n:книга:ru-en", "form:n:книга:pl_gen"
+  id: string // e.g. "vocab:n:книга:ru-en", "form:n:книга:pl_gen", "pair:v:платить|n:платье"
   kind: SrsKind
   dir: SrsDir
   lex: string
   slot?: string
+  /** Pair cards: the word `lex` keeps getting mixed up with. */
+  other?: string
   added: number
   suspended?: boolean
   due: number
@@ -73,7 +75,7 @@ function fromCard(meta: SrsCard, c: Card): SrsCard {
   }
 }
 
-export function newCard(meta: { id: string; kind: SrsKind; dir: SrsDir; lex: string; slot?: string }, now: number): SrsCard {
+export function newCard(meta: { id: string; kind: SrsKind; dir: SrsDir; lex: string; slot?: string; other?: string }, now: number): SrsCard {
   const c = createEmptyCard(new Date(now))
   return fromCard({ ...meta, added: now } as SrsCard, c)
 }

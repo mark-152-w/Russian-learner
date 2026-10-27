@@ -11,6 +11,7 @@ import { coverageOf } from './coverage'
 import { getPlacement, learnerLevel } from './learner'
 import { getReaderProgress, STORY_INDEX } from './stories'
 import { loadIndex } from './lexicon'
+import { daysSince, recallScore } from './forgetting'
 import tagsJson from '../data/tags.json'
 
 export interface PlanStep {
@@ -34,6 +35,8 @@ export interface PlanInput {
   dayIndex?: number
   /** The next unread story at the learner's level, if any. */
   nextStory?: { id: string; title: string; words: number }
+  /** Epoch ms: fades topic scores by time since practice. Without it, scores are taken as they are. */
+  now?: number
 }
 
 /** A topic counts as weak with enough evidence and an accuracy below this. */
@@ -55,14 +58,26 @@ const FUN = [
   { title: "Today's crossword", detail: 'Every answer is an inflected form.', to: '/crossword/daily', kind: 'crossword', feature: 'crossword' },
 ]
 
-/** Tags with enough evidence, weakest first (`below`: only those under that score). */
+/** Tags with enough evidence, weakest first by plain accuracy (`below`: only those under that score). */
 export function weakTags(rows: Mastery[], below = 1.01): Mastery[] {
   return rows
     .filter((m) => m.kind === 'tag' && m.attempts >= WEAK_MIN_ATTEMPTS && m.score < below && m.key !== 'tag:vocab')
     .sort((a, b) => a.score - b.score || b.attempts - a.attempts)
 }
 
-export const weakestTag = (rows: Mastery[]): Mastery | undefined => weakTags(rows, WEAK_BELOW)[0]
+/**
+ * The topic most in need of practice: the lowest score after fading by time since practice. A topic that was
+ * strong but hasn't been touched for a while qualifies too (`stale`), so learned grammar keeps coming back.
+ */
+export function weakestTag(rows: Mastery[], now?: number): (Mastery & { recall: number; stale: boolean }) | undefined {
+  return weakTags(rows)
+    .map((m) => {
+      const recall = now === undefined ? m.score : recallScore(m, now)
+      return { ...m, recall, stale: m.score >= WEAK_BELOW }
+    })
+    .filter((m) => m.recall < WEAK_BELOW)
+    .sort((a, b) => a.recall - b.recall || b.attempts - a.attempts)[0]
+}
 
 export function planSteps(x: PlanInput): PlanStep[] {
   const steps: PlanStep[] = []
@@ -87,13 +102,16 @@ export function planSteps(x: PlanInput): PlanStep[] {
       done: did('lesson') || did('checkpoint'),
     })
   }
-  const weak = weakestTag(x.tagMastery)
+  const weak = weakestTag(x.tagMastery, x.now)
   if (weak) {
     const tag = weak.key.slice(4)
+    const days = x.now === undefined ? 0 : daysSince(weak, x.now)
     steps.push({
       id: 'weak',
-      title: `Weak spot: ${tagLabel(tag)}`,
-      detail: `${Math.round(weak.score * 100)}% recently. A short focused drill.`,
+      title: weak.stale ? `Refresh: ${tagLabel(tag)}` : `Weak spot: ${tagLabel(tag)}`,
+      detail: weak.stale
+        ? `Last practised ${days} day${days === 1 ? '' : 's'} ago. A short drill now keeps it from slipping.`
+        : `${Math.round(weak.score * 100)}% recently. A short focused drill.`,
       to: `/drill/tag/${tag}`,
       done: did(`drill-tag-${tag}`),
     })
@@ -167,5 +185,5 @@ export async function loadPlan(now: number, features: ReadonlySet<string>): Prom
   const doneKinds = new Set(sessions.filter((s) => dayKey(s.start) === today).map((s) => s.kind))
   const tagMastery = tagRows.filter((m) => drillableTag(m.key.slice(4), hand))
   const dayIndex = Math.floor((now - new Date(now).getTimezoneOffset() * 60000) / 86400000)
-  return planSteps({ due, doneKinds, next: nextUnit(units, progress), progress, tagMastery, features, dayIndex, nextStory })
+  return planSteps({ due, doneKinds, next: nextUnit(units, progress), progress, tagMastery, features, dayIndex, nextStory, now })
 }

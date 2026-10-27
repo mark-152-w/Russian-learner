@@ -9,10 +9,13 @@ import type { LevelInfo } from '../rewards/levels'
 import { ExerciseView } from './exercises'
 import { FEATURES } from '../features'
 import { addFormCard } from '../srs/deck'
+import { itemLexeme, noteConfusion } from '../srs/confusion'
+import { getHook } from '../srs/leech'
 import { Celebration, ComboMeter, EdgePulse, useJuice, XpFloat } from './juice'
 import { Md, Ru } from './Md'
 import { ItemVisual } from './visuals'
 import { SessionSummary } from './SessionSummary'
+import { requeueMissed, type RelearnMode } from '../lib/relearn'
 import { Bar, Button, CountUp, Icon } from './ui'
 
 interface Props {
@@ -33,11 +36,13 @@ interface Props {
   hud?: ReactNode
   /** Called after each answer; return true to end the session once its feedback is dismissed. */
   onAnswered?: (verdict: Verdict, effects: AnswerEffects) => boolean | void
+  /** What happens to a missed item: back once at the end (default), or spaced retries until it's right. */
+  relearn?: RelearnMode
 }
 
 const FORM_TYPES = new Set(['transform', 'cloze', 'choice'])
 
-export function SessionRunner({ items, lexemes, kind, onDone, onAgain, recallFor, onGraded, onFinish, summaryNote, hud, onAnswered }: Props) {
+export function SessionRunner({ items, lexemes, kind, onDone, onAgain, recallFor, onGraded, onFinish, summaryNote, hud, onAnswered, relearn = 'once' }: Props) {
   const session = useRef<RewardSession>(null as unknown as RewardSession)
   session.current ??= new RewardSession(kind, Date.now())
   const [queue, setQueue] = useState(items)
@@ -48,12 +53,14 @@ export function SessionRunner({ items, lexemes, kind, onDone, onAgain, recallFor
   const [end, setEnd] = useState<SessionEnd | null>(null)
   const [levelUp, setLevelUp] = useState<LevelInfo | null>(null)
   const [xp, setXp] = useState(0)
+  const [hook, setHook] = useState('')
   const shownAt = useRef(Date.now())
-  const requeued = useRef(new Set<string>())
+  const misses = useRef(new Map<string, number>())
   const stop = useRef(false)
   const cardRef = useRef<HTMLDivElement>(null)
   const juice = useJuice()
   const item = queue[idx]!
+  const attempt = queue.slice(0, idx).filter((q) => q.id === item.id).length
 
   useEffect(() => {
     setGolden(session.current.rollGolden())
@@ -81,6 +88,12 @@ export function SessionRunner({ items, lexemes, kind, onDone, onAgain, recallFor
     if (!v.correct && item.target && FORM_TYPES.has(item.type) && FEATURES.has('vocab') && !item.id.startsWith('srs:form:')) {
       void addFormCard(item.target.lex, item.target.slot, Date.now())
     }
+    if (!v.correct && FEATURES.has('vocab')) {
+      // a mix-up with another deck word is counted; the learner's own memory hook is shown with the answer
+      void noteConfusion(item, v.given ?? '', lexemes, Date.now())
+      const lex = itemLexeme(item)
+      if (lex) void getHook(lex).then(setHook)
+    }
     setFx(e)
     setXp(session.current.xp)
     if (onAnswered?.(v, e)) stop.current = true
@@ -96,10 +109,12 @@ export function SessionRunner({ items, lexemes, kind, onDone, onAgain, recallFor
       haptic.big()
       setLevelUp(e.levelUp)
     }
-    // missed items come back once, later in the session
-    if (!v.correct && !requeued.current.has(item.id) && queue.length - idx > 2) {
-      requeued.current.add(item.id)
-      setQueue((q) => [...q, item])
+    // missed items come back later in the session
+    if (!v.correct) {
+      const n = (misses.current.get(item.id) ?? 0) + 1
+      misses.current.set(item.id, n)
+      const q = requeueMissed(queue, idx, n, relearn)
+      if (q) setQueue(q)
     }
   }
 
@@ -117,6 +132,7 @@ export function SessionRunner({ items, lexemes, kind, onDone, onAgain, recallFor
     setIdx(idx + 1)
     setVerdict(null)
     setFx(null)
+    setHook('')
   }, [idx, queue.length, finish])
 
   useEffect(() => {
@@ -164,10 +180,10 @@ export function SessionRunner({ items, lexemes, kind, onDone, onAgain, recallFor
       {hud}
       <div ref={cardRef} className={`relative rounded-2xl border-2 p-5 ${golden ? 'golden-card' : 'border-line bg-paper-2'}`}>
         {fx && <XpFloat key={idx} amount={fx.xp} golden={golden} />}
-        <ExerciseView key={`${idx}:${item.id}`} item={item} verdict={verdict} onSubmit={submit} />
+        <ExerciseView key={`${idx}:${item.id}`} item={item} verdict={verdict} onSubmit={submit} attempt={attempt} />
       </div>
 
-      {verdict && <Feedback verdict={verdict} item={item} fx={fx} onNext={next} />}
+      {verdict && <Feedback verdict={verdict} item={item} fx={fx} hook={hook} onNext={next} />}
 
       {levelUp && (
         <Celebration ms={0} onDone={() => setLevelUp(null)}>
@@ -183,7 +199,7 @@ export function SessionRunner({ items, lexemes, kind, onDone, onAgain, recallFor
   )
 }
 
-function Feedback({ verdict, item, fx, onNext }: { verdict: Verdict; item: ExerciseItem; fx: AnswerEffects | null; onNext: () => void }) {
+function Feedback({ verdict, item, fx, hook, onNext }: { verdict: Verdict; item: ExerciseItem; fx: AnswerEffects | null; hook: string; onNext: () => void }) {
   const ok = verdict.correct
   const showAnswer = !ok && verdict.expected && item.type !== 'match'
   return (
@@ -203,6 +219,11 @@ function Feedback({ verdict, item, fx, onNext }: { verdict: Verdict; item: Exerc
         {verdict.message && <Md text={verdict.message} className="text-ink" />}
         {verdict.noteText && <Md text={verdict.noteText} className="text-sm text-ink-soft" />}
         {verdict.reason && <Md text={verdict.reason} className="text-sm text-ink-soft" stress={item.tags.includes('stress')} />}
+        {!ok && hook && (
+          <p className="rounded-lg border border-line bg-paper-2 px-3 py-2 text-sm">
+            <span className="font-bold">Your hook:</span> {hook}
+          </p>
+        )}
         <ItemVisual item={item} />
         {verdict.diff && (
           <p className="flex flex-wrap gap-x-2 text-lg" lang="ru">

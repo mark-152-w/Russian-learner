@@ -171,6 +171,26 @@ export function meaningItem(lx: Lexeme, pool: Lexeme[], rng: Rng): ExerciseItem 
   }
 }
 
+/**
+ * Two words the learner keeps mixing up, side by side. Successive reviews alternate which word is asked and
+ * the direction (meaning → word, word → meaning). Null when the two can't be told apart by gloss or spelling.
+ */
+export function pairItem(a: Lexeme, b: Lexeme, reps: number, rng: Rng): ExerciseItem | null {
+  if (a.lemma === b.lemma || overlaps(gloss(a), gloss(b))) return null
+  const [ask, other] = reps % 2 ? [b, a] : [a, b]
+  const base: Omit<ExerciseItem, 'prompt'> = {
+    id: `gen:pair:${a.id}|${b.id}`, type: 'choice', level: level(ask), tags: ['vocab'], vocab: [ask.id], source: 'generated',
+    reason: `**${a.lemma}** means *${gloss(a)}*; **${b.lemma}** means *${gloss(b)}*.`,
+  }
+  if (Math.floor(reps / 2) % 2) {
+    const choices = shuffle(rng, [gloss(ask), gloss(other)])
+    return { ...base, prompt: { ru: ask.lemma, instruction: 'Which meaning?' }, choices, answerIndex: choices.indexOf(gloss(ask)), acceptEn: [gloss(ask)] }
+  }
+  // Russian options are fixed choices so за́мок and замо́к stay different answers
+  const choices = shuffle(rng, [ask.lemma, other.lemma])
+  return { ...base, prompt: { en: gloss(ask), instruction: 'Which word means this?' }, choices, answerIndex: choices.indexOf(ask.lemma) }
+}
+
 export function listenItem(lx: Lexeme, pool: Lexeme[], rng: Rng): ExerciseItem | null {
   const gc = glossChoices(lx, pool, rng)
   if (!gc) return null

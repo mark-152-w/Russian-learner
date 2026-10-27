@@ -5,6 +5,7 @@ import { db, getKV, setKV, type Attempt, type Mastery } from '../db/db'
 import { FEATURES } from '../features'
 import type { Verdict } from '../engine/grader'
 import { parseSlot } from '../engine/slots'
+import { recallScore } from '../lib/forgetting'
 import { mulberry32, type Rng } from '../lib/rng'
 import { newlyUnlocked, type AchievementDef, type Stats } from './achievements'
 import { MIN_ANSWERS_FOR_CHEST, pickCard, rollChest, sessionQuality, type CardOption, type Loot, type Tier } from './chest'
@@ -261,7 +262,7 @@ export class RewardSession {
 
       const recent = await db.attempts.where('item').equals(item.id).filter((x) => x.ts > now - REPEAT_WINDOW_MS && x.xp > 0).count()
       const tagRow = item.tags?.[0] ? await db.mastery.get(`tag:${item.tags[0]}`) : undefined
-      const mastery = tagRow && tagRow.attempts >= 5 ? tagRow.score : 0
+      const mastery = tagRow && tagRow.attempts >= 5 ? recallScore(tagRow, now) : 0
 
       const prevMult = comboMultiplier(this.combo)
       this.combo = verdict.correct ? this.combo + 1 : 0

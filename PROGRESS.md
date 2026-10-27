@@ -12,13 +12,16 @@
 | 5: games, collectible cards, the town, text adventure «Де́ло» | **Done** (in four chunks) |
 | 6: B1–C1 units, remaining grammar articles, idioms/culture | **Done** (in four chunks) |
 | 7: stats dashboard, polish, accessibility, performance, GitHub Pages deploy | **Done** |
+| 8: retention (memory research applied to the existing app) | Parts 1–2 **done**: varied cloze sentences, relearning, fading grammar mastery; leech rescue with memory hooks, confusion-pair cards |
 
 `npm run check` passes:
 
 - 25 Python tool tests;
 - `validate.py`: 0 errors, 2 warnings (сёк in two C1 sentences: a real form pymorphy3 doesn't know);
 - typecheck;
-- 152 Vitest tests. New after Phase 7: the update-prompt store (`src/lib/pwa.ts`). New in Phase 7: the stats calculations (calendar, weekly XP, accuracy by case) and the
+- 168 Vitest tests. New in Phase 8: pair items in both directions; what counts as a mix-up (a deck word's meaning
+  or form, never a form of the word asked); the pair card on the second mix-up; leech thresholds and hooks; the cloze card rotates sentences; the relearning queue (gap, cap, the
+  default once-only rule); grammar mastery fading by time, and the plan's refresh step. New after Phase 7: the update-prompt store (`src/lib/pwa.ts`). New in Phase 7: the stats calculations (calendar, weekly XP, accuracy by case) and the
   meaning-distractor overlap rule. New in Phase 6:
   - all 65 units, at every level, produce gradable items from every drill, in course order;
   - placement recovers every level from A1 to C1;
@@ -56,6 +59,78 @@ including wrong cases. In Phase 4 they covered:
 - the Listening page and a dialogue;
 - the keyboard: typing a lesson line with Latin key positions;
 - the new Practice and Reference hubs.
+
+## Phase 8: what's built (part 2)
+
+Two features for the words that won't stick, both from the learner's own mistakes.
+
+**Leech rescue** (*keyword mnemonics*, Atkinson 1975; the *generation effect*). A word whose vocabulary cards
+have lapsed 5 times in total (forgotten after being learned) is a leech. Before a Review session, up to 3 due
+leeches get a **Word rescue** screen:
+- the word with audio, its meanings and an example sentence;
+- the words it's mixed up with, if any;
+- a box for **your own memory hook**, with short tips on making one (sound-alike + vivid picture: щека́ sounds like
+  "check-a").
+
+Saving or skipping both count as offered, so it doesn't nag: it's offered again only after 4 more lapses. From
+then on, **your hook shows in the feedback whenever you miss that word**, in any session, not only Review. The
+Word page has a hook editor too, so you can add one to any word, and shows how often you've forgotten it.
+(`src/srs/leech.ts`, `src/components/LeechRescue.tsx`.)
+
+**Confusion pairs** (*interference*). A wrong answer counts as a mix-up when it's another word *from your own
+deck*: you picked its meaning, or typed one of its forms. A word outside the deck doesn't count, since picking
+one of those is a guess rather than interference. A real form of the word asked for doesn't count either: that's
+a grammar slip (ста́ли is a form of both сталь and стать). On the second mix-up between the same two words, at
+least an hour after the first (a relearning retry repeating the same slip is one occasion), a **pair card** joins
+the deck. It alternates which word it asks about and the direction ("Which word means
+*dress*? пла́тье / плати́ть", "плати́ть: which meaning?"), and the feedback always contrasts the two:
+**пла́тье** means *dress*; **плати́ть** means *pay*. Words whose glosses overlap get no card, since they can't
+be told apart that way. The Word page lists "Often mixed up with пла́тье (2×)". (`src/srs/confusion.ts`,
+`pairItem` in `generators.ts`.)
+
+**Storage.** Hooks, mix-up counts and rescue offers are rows in the existing `kv` table (`hook:<lex>`,
+`confuse:<a>|<b>`, `rescue:<lex>`), so there's no database migration and backups already include them. Pair
+cards are ordinary FSRS cards (`kind: 'pair'`, with `other`). The Word page's "In your deck / Known" ignores
+them.
+
+I checked it in headless Chromium at phone width, with a seeded leech (книга, 6 lapses) and a seeded mix-up
+(плати́ть/пла́тье). The rescue screen showed and saved the hook. The hook appeared under every missed книга
+card: sentence gap, typed and meaning. The pair card came up with its contrast line, and the Word page showed
+the hook and the mix-up. There were no console errors, and axe-core found no violations on the rescue screen or
+the Word page, in light and dark mode.
+
+## Phase 8: what's built (part 1)
+
+Three changes from memory research, applied to what the app already does. Nothing new to learn in the UI; the
+existing sessions just work better.
+
+**A different sentence on each review** (*encoding variability*: a word met in varied contexts is recalled
+better in new ones). A word's sentence-gap card now rotates through up to 8 sentences, one per review
+(`card.reps`), in `cardToItem` (`src/srs/deck.ts`). This also fixed a quiet bug: the card used to try only the
+4 shortest example sentences. For nouns and adjectives those are usually in the nominative, which can't be
+gapped, so the card fell back to a plain English→Russian card. книга and новый never got a sentence card; now
+they do.
+
+**Relearning until correct** (*successive relearning*, Rawson & Dunlosky). In Review, a missed card comes back
+3 items later, and again after each miss, until it's answered correctly, up to 3 retries
+(`src/lib/relearn.ts`; `SessionRunner relearn="until-correct"`). Other sessions keep the old rule: a missed item
+comes back once, at the end. A retry reshuffles its options, so you can't just remember "it was the second
+button". Every retry goes through FSRS like any review, so a word relearned in-session leaves Relearning the
+normal way.
+
+**Grammar mastery fades** (*the forgetting curve*). The learner model stores recent accuracy per topic. It
+never went down with time, so a topic mastered in unit 3 looked mastered forever and never came back.
+`recallScore()` (`src/lib/forgetting.ts`) now discounts the score by the days since the topic was last
+practised. The half-life is 30 days at 10 attempts and grows with the square root of practice (20–180 days).
+A topic at 95% with 10 attempts comes back after about 10 days; with 60 attempts, after about 3½ weeks; each
+refresh pushes the next one further out. The stored score is untouched; the fading is applied when it's read.
+- The daily plan's weak-spot step uses the faded score. A topic that was strong but has gone stale shows as
+  **Refresh: Genitive · Last practised 30 days ago**; a genuinely weak one still says **Weak spot**.
+- XP freshness uses it too, so refreshing a stale topic pays like real work.
+- Stats, the trainer bars and the Word page still show plain accuracy. That's what they describe.
+
+I checked it in headless Chromium at phone width: in a Review session, a missed card came back at items 4, 8
+and 12 with its options in a new order each time, then stopped. There were no console errors.
 
 ## Clean-up pass after Phase 7
 

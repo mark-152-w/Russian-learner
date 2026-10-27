@@ -66,6 +66,13 @@ describe('deck', () => {
     }
   })
 
+  it('a cloze card moves to a different sentence on each review', async () => {
+    await addWord('n:книга', T0, true)
+    const card = (await db.srs.get('vocab:n:книга:cloze'))!
+    const prompts = [0, 1, 2].map((reps) => JSON.stringify(cardToItem({ ...card, reps }, lex, sents, mulberry32(1), true)!.prompt))
+    expect(new Set(prompts).size).toBe(3)
+  })
+
   it('reviews reschedule the card and feed stats and quests', async () => {
     await addWord('n:книга', T0, false)
     const id = 'vocab:n:книга:ru-en'
