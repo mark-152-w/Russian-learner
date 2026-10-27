@@ -81,6 +81,13 @@ function VocabularyCard() {
 
 const mmss = (ms: number) => `${Math.floor(ms / 60000)}:${String(Math.floor((ms % 60000) / 1000)).padStart(2, '0')}`
 
+// Stats always exists; the town and the cards only when their features ship
+const SHORTCUTS = [
+  { to: '/town', label: '🏘️ Town', detail: 'Grows as you learn', feature: 'town' },
+  { to: '/cards', label: '🃏 Cards', detail: 'Your collection', feature: 'cards' },
+  { to: '/stats', label: '📊 Stats', detail: "How it's going" },
+].filter((t) => !t.feature || FEATURES.has(t.feature))
+
 export default function Home() {
   const now = useNow(1000)
   const profile = useProfile()
@@ -186,26 +193,14 @@ export default function Home() {
 
       {FEATURES.has('vocab') && <VocabularyCard />}
 
-      {(FEATURES.has('town') || FEATURES.has('cards')) && (
-        <div className="grid grid-cols-3 gap-3">
-          {FEATURES.has('town') && (
-            <Link to="/town" className="rounded-xl border-2 border-line bg-paper-2 px-4 py-3 transition hover:border-red active:scale-[0.99]">
-              <span className="block font-bold">🏘️ Town</span>
-              <span className="hidden text-sm text-ink-soft sm:block">Grows as you learn</span>
-            </Link>
-          )}
-          {FEATURES.has('cards') && (
-            <Link to="/cards" className="rounded-xl border-2 border-line bg-paper-2 px-4 py-3 transition hover:border-red active:scale-[0.99]">
-              <span className="block font-bold">🃏 Cards</span>
-              <span className="hidden text-sm text-ink-soft sm:block">Your collection</span>
-            </Link>
-          )}
-          <Link to="/stats" className="rounded-xl border-2 border-line bg-paper-2 px-4 py-3 transition hover:border-red active:scale-[0.99]">
-            <span className="block font-bold">📊 Stats</span>
-            <span className="hidden text-sm text-ink-soft sm:block">How it's going</span>
+      <div className={`grid gap-3 ${SHORTCUTS.length === 3 ? 'grid-cols-3' : 'grid-cols-2'}`}>
+        {SHORTCUTS.map((t) => (
+          <Link key={t.to} to={t.to} className="rounded-xl border-2 border-line bg-paper-2 px-4 py-3 transition hover:border-red active:scale-[0.99]">
+            <span className="block font-bold">{t.label}</span>
+            <span className="hidden text-sm text-ink-soft sm:block">{t.detail}</span>
           </Link>
-        </div>
-      )}
+        ))}
+      </div>
 
       <Card className="space-y-3">
         <h2 className="font-serif text-xl">Today's quests</h2>

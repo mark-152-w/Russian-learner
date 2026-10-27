@@ -156,8 +156,8 @@ src/features.ts        features that exist; quests/achievements for anything els
 
 - `TITLES` maps routes to tab titles; `PageTitle` sets `document.title`, adds a screen-reader `<h1>` when a page
   has none, and moves focus to `<main>` on navigation. Give new routes a title there.
-- `UpdatePrompt`: the PWA uses `registerType: 'prompt'`. `main.tsx` dispatches `medved:update` /
-  `medved:offline-ready`, and the banner never shows inside a session (`inSessionPath`). Add full-screen session
+- `UpdatePrompt`: the PWA uses `registerType: 'prompt'`. `main.tsx` hands the service-worker events to
+  `src/lib/pwa.ts` (a held update, a one-time offline-ready toast), and the banner never shows inside a session (`inSessionPath`). Add full-screen session
   routes to `inSessionPath` so they hide the navigation and the update banner.
 - Accessibility baseline: axe-core finds no violations on the main pages in light and dark mode. Keep
   `Bar label=…`, icon-button `aria-label`s and text on `bg-gold` dark (`text-[#2a1d0f]`).
@@ -169,6 +169,9 @@ src/features.ts        features that exist; quests/achievements for anything els
 - validate.py also scans string literals and JSX text in `src/**/*.ts(x)` (tests excluded) for the Russian rules.
   Add `// ru-ignore` to a line holding letter sets such as `'аеёиоуыэюя'`. ALL-CAPS abbreviations (ЙЦУКЕН) are
   exempt. A stressed monosyllable carries its clitic group (не́ было, на́ пол).
+- An effect that sets state (or shows a toast) must not re-run on every render: an endless stream of updates
+  starves react-router's transition-based navigation, so links stop working. Keep app-wide events in module
+  stores (`src/lib/pwa.ts`) and give such effects stable deps (refs for callbacks).
 - Chromium's `scrollIntoView()` now returns a Promise: never return its result from a `useEffect` arrow (React calls
   it as a cleanup). Use a block body.
 - Vitest caches transforms in `node_modules/.vitest-cache`: a **new** JSON file under an `import.meta.glob` won't
