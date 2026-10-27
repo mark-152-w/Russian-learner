@@ -78,13 +78,13 @@ export function GrammarIndex() {
 }
 
 /** A table whose cells are filled from the lexicon at runtime (no hand-typed forms). */
-function GeneratedTable({ spec }: { spec: { lexemes: string[]; slots: string[]; highlightEndings?: boolean } }) {
+function GeneratedTable({ spec, label }: { spec: { lexemes: string[]; slots: string[]; highlightEndings?: boolean }; label: string }) {
   const [lx, setLx] = useState<Lexeme[]>([])
   const s = useSettings()
   useEffect(() => void loadLexemes(spec.lexemes).then((m) => setLx(spec.lexemes.map((id) => m.get(id)).filter((x): x is Lexeme => !!x))), [spec])
   const show = (v: FormVariant[]) => v.filter((x) => !x.unverified).map((x) => displayStress(x.form, s.showStress)).join(' / ') || '—'
   return (
-    <div className="overflow-x-auto" tabIndex={0} role="region" aria-label="Table (scrolls sideways)">
+    <div className="overflow-x-auto" tabIndex={0} role="region" aria-label={label}>
       <table className="w-full min-w-[20rem]">
         <thead>
           <tr>
@@ -167,9 +167,9 @@ export function GrammarArticlePage() {
           <section className={SECTION_STYLE[sec.kind] ?? ''}>
             {(sec.title || SECTION_TITLE[sec.kind]) && <h2 className="mb-2 font-serif text-xl">{sec.title ?? SECTION_TITLE[sec.kind]}</h2>}
             {sec.body && <Md text={sec.body} />}
-            {sec.table?.generate && <GeneratedTable spec={sec.table.generate} />}
+            {sec.table?.generate && <GeneratedTable spec={sec.table.generate} label={`Table ${i + 1}: ${sec.title ?? SECTION_TITLE[sec.kind] ?? 'forms'}`} />}
             {sec.table?.rows && (
-              <div className="overflow-x-auto" tabIndex={0} role="region" aria-label="Table (scrolls sideways)">
+              <div className="overflow-x-auto" tabIndex={0} role="region" aria-label={`Table ${i + 1}: ${sec.table.caption ?? sec.title ?? SECTION_TITLE[sec.kind] ?? 'forms'}`}>
                 {sec.table.caption && <p className="mb-1 text-sm text-ink-soft">{sec.table.caption}</p>}
                 <table className="w-full min-w-[18rem]">
                   {sec.table.head && (

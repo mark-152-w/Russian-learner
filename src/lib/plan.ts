@@ -55,11 +55,14 @@ const FUN = [
   { title: "Today's crossword", detail: 'Every answer is an inflected form.', to: '/crossword/daily', kind: 'crossword', feature: 'crossword' },
 ]
 
-export function weakestTag(rows: Mastery[]): Mastery | undefined {
+/** Tags with enough evidence, weakest first (`below`: only those under that score). */
+export function weakTags(rows: Mastery[], below = 1.01): Mastery[] {
   return rows
-    .filter((m) => m.kind === 'tag' && m.attempts >= WEAK_MIN_ATTEMPTS && m.score < WEAK_BELOW && m.key !== 'tag:vocab')
-    .sort((a, b) => a.score - b.score || b.attempts - a.attempts)[0]
+    .filter((m) => m.kind === 'tag' && m.attempts >= WEAK_MIN_ATTEMPTS && m.score < below && m.key !== 'tag:vocab')
+    .sort((a, b) => a.score - b.score || b.attempts - a.attempts)
 }
+
+export const weakestTag = (rows: Mastery[]): Mastery | undefined => weakTags(rows, WEAK_BELOW)[0]
 
 export function planSteps(x: PlanInput): PlanStep[] {
   const steps: PlanStep[] = []

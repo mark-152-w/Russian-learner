@@ -1,4 +1,4 @@
-import { lazy, Suspense, useEffect, useState } from 'react'
+import { lazy, Suspense, useEffect, useRef, useState } from 'react'
 import { HashRouter, NavLink, Route, Routes, useLocation } from 'react-router-dom'
 import { prefersReducedMotion, useSettings } from './db/settings'
 import { setSoundEnabled } from './audio/sound'
@@ -10,6 +10,7 @@ import { useProfile } from './hooks/live'
 import { JuiceLayer, useJuice } from './components/juice'
 import { Ru } from './components/Md'
 import { Button, Icon } from './components/ui'
+import { pendingUpdate, subscribe, takeOfflineReady } from './lib/pwa'
 import Home from './pages/Home'
 
 const Practice = lazy(() => import('./pages/Practice'))
@@ -138,17 +139,23 @@ const TITLES: [RegExp, string][] = [
   [/^\/trophies/, 'Trophies'], [/^\/settings/, 'Settings'], [/^\/attributions/, 'Attributions'],
 ]
 
-/** Names every page: the browser tab, a heading for screen readers where the page has none, and focus on navigation. */
+/** Names every page: the browser tab, a heading for screen readers while the page has none of its own, and focus
+ *  on navigation (unless the new page already focused a field). */
 function PageTitle() {
   const { pathname } = useLocation()
   const [needH1, setNeedH1] = useState(false)
   const title = TITLES.find(([re]) => re.test(pathname))?.[1] ?? 'Медве́дь'
   useEffect(() => {
     document.title = `${title} · Медве́дь`
-    // pages load lazily: look for their own heading once they've rendered
-    const t = setTimeout(() => setNeedH1(!document.querySelector('main h1:not(.sr-only)')), 400)
-    document.getElementById('main')?.focus({ preventScroll: true })
-    return () => clearTimeout(t)
+    const main = document.getElementById('main')
+    const active = document.activeElement
+    if (main && (!active || active === document.body || active.closest('header, nav'))) main.focus({ preventScroll: true })
+    // pages load lazily and may render their heading late: watch for it instead of guessing a delay
+    const check = () => setNeedH1(!main?.querySelector('h1:not(.sr-only)'))
+    check()
+    const obs = new MutationObserver(check)
+    if (main) obs.observe(main, { childList: true, subtree: true })
+    return () => obs.disconnect()
   }, [pathname, title])
   return needH1 ? <h1 className="sr-only">{title}</h1> : null
 }
@@ -157,23 +164,25 @@ function PageTitle() {
 function UpdatePrompt() {
   const { pathname } = useLocation()
   const juice = useJuice()
-  const [apply, setApply] = useState<(() => void) | null>(null)
-  const [later, setLater] = useState(false)
+  const juiceRef = useRef(juice)
+  juiceRef.current = juice
+  const [apply, setApply] = useState(() => pendingUpdate())
+  const [dismissed, setDismissed] = useState<(() => void) | null>(null)
+  // subscribe once: re-subscribing on every render would re-announce, and a toast re-renders this component
   useEffect(() => {
-    const onUpdate = (e: Event) => setApply(() => (e as CustomEvent<() => void>).detail)
-    const onReady = () => juice.toast({ title: 'Ready to work offline', body: 'Медве́дь now works without a connection.', tone: 'red' })
-    window.addEventListener('medved:update', onUpdate)
-    window.addEventListener('medved:offline-ready', onReady)
-    return () => {
-      window.removeEventListener('medved:update', onUpdate)
-      window.removeEventListener('medved:offline-ready', onReady)
+    const sync = () => {
+      setApply(() => pendingUpdate())
+      if (takeOfflineReady()) juiceRef.current.toast({ title: 'Ready to work offline', body: 'Медве́дь now works without a connection.', tone: 'red' })
     }
-  }, [juice])
-  if (!apply || later || inSessionPath(pathname)) return null
+    sync()
+    return subscribe(sync)
+  }, [])
+  // "Later" hides this update only; a newer one shows again
+  if (!apply || dismissed === apply || inSessionPath(pathname)) return null
   return (
     <div role="status" className="anim-rise fixed inset-x-3 bottom-20 z-30 mx-auto flex max-w-md items-center gap-3 rounded-xl border-2 border-red bg-paper p-3 shadow-lg sm:bottom-4">
       <span className="flex-1 text-sm">A new version of Медве́дь is ready.</span>
-      <Button variant="secondary" onClick={() => setLater(true)}>
+      <Button variant="secondary" onClick={() => setDismissed(() => apply)}>
         Later
       </Button>
       <Button onClick={apply}>Update</Button>

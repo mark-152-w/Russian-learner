@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { db, type Day, type Mastery } from '../db/db'
 import { useProfile } from '../hooks/live'
-import { loadVocabulary, tagLabel, WEAK_MIN_ATTEMPTS } from '../lib/plan'
+import { loadVocabulary, tagLabel, weakTags, WEAK_MIN_ATTEMPTS } from '../lib/plan'
 import { calendar, caseAccuracy, totals, topErrors, weeklyXp, type CalendarCell } from '../lib/statsData'
 import { dayKey } from '../rewards/streak'
 import errorsJson from '../data/errors.json'
@@ -100,7 +100,8 @@ export default function Stats() {
   const [data, setData] = useState<{ days: Day[]; mastery: Mastery[]; words: number } | null>(null)
   useEffect(() => {
     void (async () => {
-      const [days, mastery, vocab] = await Promise.all([db.days.toArray(), db.mastery.toArray(), loadVocabulary()])
+      // one lex: row per word ever practised: skip those, only tag/form/err rows are shown
+      const [days, mastery, vocab] = await Promise.all([db.days.toArray(), db.mastery.where('kind').anyOf('tag', 'form', 'err').toArray(), loadVocabulary()])
       setData({ days, mastery, words: vocab.known })
     })()
   }, [])
@@ -108,10 +109,7 @@ export default function Stats() {
   const today = dayKey(Date.now())
   const t = totals(data.days)
   const cases = caseAccuracy(data.mastery)
-  const weak = data.mastery
-    .filter((m) => m.kind === 'tag' && m.attempts >= WEAK_MIN_ATTEMPTS && m.key !== 'tag:vocab')
-    .sort((a, b) => a.score - b.score)
-    .slice(0, 5)
+  const weak = weakTags(data.mastery).slice(0, 5)
   const errors = topErrors(data.mastery)
   const hours = Math.floor(t.minutes / 60)
 

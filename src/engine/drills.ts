@@ -39,12 +39,22 @@ export function enRuItem(lx: Lexeme): ExerciseItem {
   }
 }
 
+// Which sentences use the unit's words: worked out once per drill context (a lesson runs several drills over
+// tens of thousands of sentences), then shuffled afresh for each drill.
+const split = new WeakMap<DrillContext, { withVocab: Sentence[]; rest: Sentence[] }>()
+
 /** Sentences that contain the unit's words come first. */
 function unitSentences(ctx: DrillContext): Sentence[] {
-  const ids = new Set(ctx.vocab.map((v) => v.id))
-  const withVocab = ctx.sentences.filter((s) => wordTokens(s).some((t) => ids.has(soleLexeme(t) ?? '')))
-  const rest = ctx.sentences.filter((s) => !withVocab.includes(s))
-  return [...shuffle(ctx.rng, withVocab), ...shuffle(ctx.rng, rest)]
+  let sp = split.get(ctx)
+  if (!sp) {
+    const ids = new Set(ctx.vocab.map((v) => v.id))
+    const withVocab: Sentence[] = []
+    const rest: Sentence[] = []
+    for (const s of ctx.sentences) (wordTokens(s).some((t) => ids.has(soleLexeme(t) ?? '')) ? withVocab : rest).push(s)
+    sp = { withVocab, rest }
+    split.set(ctx, sp)
+  }
+  return [...shuffle(ctx.rng, sp.withVocab), ...shuffle(ctx.rng, sp.rest)]
 }
 
 function take(items: Iterable<ExerciseItem>, n: number): ExerciseItem[] {

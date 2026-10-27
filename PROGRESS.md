@@ -18,7 +18,7 @@
 - 25 Python tool tests;
 - `validate.py`: 0 errors, 2 warnings (сёк in two C1 sentences: a real form pymorphy3 doesn't know);
 - typecheck;
-- 151 Vitest tests. New in Phase 7: the stats calculations (calendar, weekly XP, accuracy by case) and the
+- 152 Vitest tests. New after Phase 7: the update-prompt store (`src/lib/pwa.ts`). New in Phase 7: the stats calculations (calendar, weekly XP, accuracy by case) and the
   meaning-distractor overlap rule. New in Phase 6:
   - all 65 units, at every level, produce gradable items from every drill, in course order;
   - placement recovers every level from A1 to C1;
@@ -56,6 +56,27 @@ including wrong cases. In Phase 4 they covered:
 - the Listening page and a dialogue;
 - the keyboard: typing a lesson line with Latin key positions;
 - the new Practice and Reference hubs.
+
+## Clean-up pass after Phase 7
+
+A review for errors and inefficiencies. Fixes:
+
+- **Update banner.** The service-worker events now go through a small store (`src/lib/pwa.ts`), so an update
+  that arrives mid-lesson is still offered afterwards. "Later" hides only that update. Installed copies check
+  for a new version hourly while online. A loop that re-fired the "ready to work offline" toast (and starved
+  page navigation once the service worker was active) was caught before release.
+- **Page titles and focus.** The screen-reader `<h1>` tracks the page content (a MutationObserver). Focus moves
+  to `<main>` only when it would otherwise be lost, not away from a field the learner is using.
+- **Voice detection.** It starts at app start-up and its result is kept for the visit. Session pages on devices
+  without a Russian voice used to wait 1.5 s each; Review now opens in about 0.3 s, down from 1.8 s (4× CPU throttle).
+- **Unit drills.** Splitting the sentence bank by the unit's words is computed once per lesson, not per drill:
+  a C1 boss opens in 0.5 s, down from 0.9 s. Meaning distractors are sampled rather than found by scanning the whole pool.
+- **Stats** reads only the tag/form/error rows of the learner model (not one row per word), and shares the
+  "weakest topic" rule with the daily plan (`weakTags`). Calendar days use the same day key as streaks.
+- **Smaller fixes:**
+  - grammar tables have distinct accessible labels;
+  - the Home shortcut grid no longer leaves a gap when a feature is hidden;
+  - Attributions dropped a stale snapshot line.
 
 ## Phase 7: what's built
 
