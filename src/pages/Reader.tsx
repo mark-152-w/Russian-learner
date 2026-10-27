@@ -103,7 +103,7 @@ export function StoryView({ listening = false }: { listening?: boolean }) {
   const s = useSettings()
   const { voices } = useRussianVoices()
   const progress = useReaderProgress()
-  const [story, setStory] = useState<Story | null>(null)
+  const [story, setStory] = useState<Story | null | undefined>(undefined)
   const [lexemes, setLexemes] = useState<Map<string, Lexeme>>(new Map())
   const [stress, setStress] = useState(true)
   const [glosses, setGlosses] = useState(true)
@@ -117,14 +117,15 @@ export function StoryView({ listening = false }: { listening?: boolean }) {
   useEffect(() => {
     let alive = true
     void loadStory(id).then(async (st) => {
-      if (!alive || !st) return
+      if (!alive) return
       setStory(st)
+      if (!st) return
       const help = defaultHelp(st.level)
       setStress(s.showStress && help)
       setGlosses(help)
       const ids = [...new Set(st.sentences.flatMap((x) => x.tokens.map((t) => t.lex).filter((l): l is string => !!l)))]
-      const lx = await loadLexemes(ids)
-      if (alive) setLexemes(lx)
+      const lx = await loadLexemes(ids).catch(() => null)
+      if (alive && lx) setLexemes(lx)
     })
     return () => {
       alive = false
@@ -156,7 +157,8 @@ export function StoryView({ listening = false }: { listening?: boolean }) {
     setPlaying(null)
   }
 
-  if (!story) return <p className="py-12 text-center text-ink-soft">Opening…</p>
+  if (story === undefined) return <p className="py-12 text-center text-ink-soft">Opening…</p>
+  if (!story) return <p className="py-12 text-center text-ink-soft">No such text.</p>
   const hasVoice = voices.length > 0
   const done = progress[story.id]?.read
   const paras: { para: boolean; i: number }[][] = []
@@ -281,10 +283,11 @@ function Toggle({ on, set, label }: { on: boolean; set: (v: boolean) => void; la
 export function StoryQuiz({ listening = false }: { listening?: boolean }) {
   const { id = '' } = useParams()
   const nav = useNavigate()
-  const [story, setStory] = useState<Story | null>(null)
+  const [story, setStory] = useState<Story | null | undefined>(undefined)
   const [round, setRound] = useState(0)
   useEffect(() => void loadStory(id).then(setStory), [id])
-  if (!story) return <p className="py-12 text-center text-ink-soft">Opening…</p>
+  if (story === undefined) return <p className="py-12 text-center text-ink-soft">Opening…</p>
+  if (!story) return <p className="py-12 text-center text-ink-soft">No such text.</p>
   const back = listening ? `/dialogue/${id}` : `/story/${id}`
   return (
     <SessionRunner

@@ -1,9 +1,9 @@
 // The vocabulary deck: which words are being learned, which cards are due, and how a card becomes an item.
 import type { ExerciseItem, Lexeme, Sentence } from '../types/content.gen'
-import { db, getKV, setKV } from '../db/db'
+import { db, getKV, setKV, type Attempt } from '../db/db'
 import { dayKey } from '../rewards/streak'
 import { bumpStatsExternal, progressQuestsExternal } from '../rewards/service'
-import { examplesFor, soleLexeme, wordTokens } from '../lib/sentences'
+import { examplesFor } from '../lib/sentences'
 import type { Rng } from '../lib/rng'
 import { listenItem, meaningItem, pairItem, transformItem } from '../engine/generators'
 import { enRuItem } from '../engine/drills'
@@ -136,9 +136,12 @@ export function cardToItem(card: SrsCard, lexemes: Map<string, Lexeme>, sentence
   return { ...item, id: `srs:${card.id}`, card: card.id }
 }
 
-/** Is there a sentence for this word's cloze card? (used to decide whether a cloze card is worth showing) */
-export function hasExample(lex: string, sentences: Sentence[]): boolean {
-  return sentences.some((s) => wordTokens(s).some((t) => soleLexeme(t) === lex))
+/** Every answer about a word: items aimed at it, and reviews of its cards (a pair card counts for both words).
+ *  Card ids are matched exactly, so за́мок's history doesn't pick up замо́к (`n:замок:2`). */
+export async function attemptsFor(lex: string): Promise<Attempt[]> {
+  const cards = [...(await db.srs.where('lex').equals(lex).primaryKeys()), ...(await db.srs.where('kind').equals('pair').filter((c) => c.other === lex).primaryKeys())]
+  const [byLex, byCard] = await Promise.all([db.attempts.where('lex').equals(lex).toArray(), db.attempts.where('item').anyOf(cards.map((c) => `srs:${c}`)).toArray()])
+  return [...new Map([...byLex, ...byCard].map((a) => [a.id, a])).values()]
 }
 
 /** Record a graded review: FSRS update, review log, stats and quest progress. */

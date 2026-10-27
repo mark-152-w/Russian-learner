@@ -71,18 +71,32 @@ export function loadIndex(which: 'core' | 'ext'): Promise<IndexRow[]> {
   return (extIndex ??= import('../data/lexicon/index-ext.json').then((m) => m.default as IndexRow[]))
 }
 
-/** Load the chunks holding the given lexeme ids (core first; the rare tail only if needed). */
+// Rare-tail lexemes that hand-written content uses (tools/contenttail.py): small and precached, so stories and
+// trainers don't fetch the tail's index and 3 MB chunks for a word or two, and keep working offline.
+let contentTail: Promise<Map<string, Lexeme>> | null = null
+const loadContentTail = () =>
+  (contentTail ??= import('../data/content-tail.json').then((m) => new Map((m.default as Lexeme[]).map((x) => [x.id, x]))))
+
+/** Load the given lexeme ids: core chunks first, then content's tail words, then the rare tail only if needed. */
 export async function loadLexemes(ids: string[]): Promise<Map<string, Lexeme>> {
-  const want = new Set(ids)
-  const core = await loadIndex('core')
-  const chunks = new Set<ChunkName>()
-  for (const r of core) if (want.has(r[0])) chunks.add(r[4])
-  const found = new Set(core.filter((r) => want.has(r[0])).map((r) => r[0]))
-  if ([...want].some((id) => !found.has(id) && !id.startsWith('name:'))) {
-    for (const r of await loadIndex('ext')) if (want.has(r[0])) chunks.add(r[4])
-  }
+  const want = new Set(ids.filter((id) => !id.startsWith('name:')))
   const out = new Map<string, Lexeme>()
-  for (const c of chunks) for (const x of await loadChunk(c)) if (want.has(x.id)) out.set(x.id, x)
+  if (!want.size) return out
+  const chunks = new Set<ChunkName>()
+  const rest = new Set(want)
+  for (const r of await loadIndex('core')) if (rest.delete(r[0])) chunks.add(r[4])
+  if (rest.size) {
+    const tail = await loadContentTail()
+    for (const id of [...rest]) {
+      const x = tail.get(id)
+      if (x) {
+        out.set(id, x)
+        rest.delete(id)
+      }
+    }
+  }
+  if (rest.size) for (const r of await loadIndex('ext')) if (rest.has(r[0])) chunks.add(r[4])
+  for (const xs of await Promise.all([...chunks].map(loadChunk))) for (const x of xs) if (want.has(x.id)) out.set(x.id, x)
   return out
 }
 

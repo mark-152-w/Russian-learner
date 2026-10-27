@@ -18,6 +18,8 @@ tools/                 Python build pipeline (run from repo root)
   stories/             story/dialogue sources (see the docstring in stories.py for the format and {hints})
   cards/               card-set sources (set header, cards split by '===', blurb lines like stories); stories.py
                        builds them into content/cards/*.json + src/data/cards-index.json
+  contenttail.py       rare-tail lexemes that content uses → src/data/content-tail.json (written by stories.py,
+                       checked by validate.py); loadLexemes reads it before the tail index, so content works offline
   morph.py             pymorphy3 verification shared by ingest + validate (slot → grammemes)
   rulib.py             stress/ё helpers (mirror: src/lib/ru.ts)
   validate.py          schema + Russian-text + reference + lexicon checks; exit 1 on errors
@@ -35,6 +37,7 @@ src/data/              generated + hand-written data
   sentences/{A1..C1}.json  {id:"s:<tatoeba>", ru, en[], lv, r, w:[[start,end,"lex|slot"],…]} (B2/C1 runtime-cached)
   stories-index.json   generated library index (id, kind, level, series, chapter, title, words, questions)
   cards-index.json     generated card index (sets → cards: id, name, rarity, art, level; no blurbs)
+  content-tail.json    generated: the ~120 rare-tail lexemes content uses (precached; see contenttail.py)
   errors.json          error taxonomy (grader diagnostics)
   tags.json            grammar tag vocabulary
   content/{grammar,units,exercises,stories,adventure,cards,idioms}/*.json  hand-written content
@@ -181,6 +184,10 @@ src/features.ts        features that exist; quests/achievements for anything els
   stores (`src/lib/pwa.ts`) and give such effects stable deps (refs for callbacks).
 - Chromium's `scrollIntoView()` now returns a Promise: never return its result from a `useEffect` arrow (React calls
   it as a cleanup). Use a block body.
+- Don't scan the sentence bank per item: `examplesFor` reads a per-pool index (WeakMap keyed by the array), so
+  reuse one pool array. `examplesUpTo` loads levels only until it has enough (B2/C1 files are large, not precached).
+- Content that names a new rare-tail word needs `python3 tools/stories.py` (it rebuilds content-tail.json);
+  validate fails until you do. A lexeme-id literal in `src/` counts too (minimal pairs).
 - Vitest caches transforms in `node_modules/.vitest-cache`: a **new** JSON file under an `import.meta.glob` won't
   appear in tests until you delete that folder.
 - String literals that are ids (`'n:книга'`, `'tr:prep:…'`) are skipped by validate's source scan. A prefix

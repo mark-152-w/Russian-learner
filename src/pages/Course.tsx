@@ -81,7 +81,7 @@ export function CoursePage() {
 
 export function UnitPage() {
   const { id } = useParams()
-  const [unit, setUnit] = useState<Unit | null>(null)
+  const [unit, setUnit] = useState<Unit | null | undefined>(undefined)
   const [grammar, setGrammar] = useState<GrammarArticle[]>([])
   const [words, setWords] = useState<Lexeme[]>([])
   const [queued, setQueued] = useState(false)
@@ -99,7 +99,8 @@ export function UnitPage() {
       setWords(u.vocab.map((v) => lx.get(v)).filter((x): x is Lexeme => !!x))
     })
   }, [id])
-  if (!unit) return <p className="py-12 text-center text-ink-soft">Loading…</p>
+  if (unit === undefined) return <p className="py-12 text-center text-ink-soft">Loading…</p>
+  if (!unit) return <p className="py-12 text-center text-ink-soft">No such unit.</p>
   const p = progress[unit.id]
   return (
     <div className="space-y-4">
@@ -186,6 +187,7 @@ export function LessonPage() {
   const [round, setRound] = useState(0)
   const [card, setCard] = useState<string | null>(null)
   const [state, setState] = useState<{ unit: Unit; items: ExerciseItem[]; lexemes: Map<string, Lexeme> } | null>(null)
+  const [missing, setMissing] = useState(false)
 
   useEffect(() => {
     if (!ready) return
@@ -193,6 +195,7 @@ export function LessonPage() {
     setState(null)
     void loadUnits().then(async (us) => {
       const unit = us.find((u) => u.id === id)
+      setMissing(!unit)
       if (!unit) return
       const ctx = await buildDrillContext({ level: unit.level as 'A2', vocab: unit.vocab, hasVoice: voices.length > 0 })
       const items = mode === 'lesson' ? lessonItems(unit, ctx) : checkpointItems(unit, ctx)
@@ -203,6 +206,7 @@ export function LessonPage() {
     }
   }, [id, mode, round, ready, voices.length])
 
+  if (missing) return <p className="py-12 text-center text-ink-soft">No such unit.</p>
   if (!state) return <p className="py-12 text-center text-ink-soft">Preparing the unit…</p>
   const isCheck = mode !== 'lesson'
   return (

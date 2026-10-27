@@ -2,7 +2,7 @@ import { beforeAll, describe, expect, it } from 'vitest'
 import type { Lexeme, Sentence } from '../types/content.gen'
 import { loadChunk } from '../lib/lexicon'
 import { mulberry32 } from '../lib/rng'
-import { examplesFor, loadSentences, soleLexeme, wordTokens } from '../lib/sentences'
+import { examplesFor, examplesUpTo, loadSentences, soleLexeme, wordTokens } from '../lib/sentences'
 import { normalizeAnswer } from './normalize'
 import { matchingSlots } from './diagnose'
 import { grade } from './grader'
@@ -34,6 +34,16 @@ describe('sentences data', () => {
     const ex = examplesFor('n:книга', sents)
     expect(ex.length).toBeGreaterThan(0)
     for (const s of ex) expect(wordTokens(s).some((t) => soleLexeme(t) === 'n:книга')).toBe(true)
+  })
+  it('the example index gives what a full scan would, in the same order', () => {
+    const scan = (id: string) => sents.filter((s) => wordTokens(s).some((t) => soleLexeme(t) === id)).sort((a, b) => a.w.length - b.w.length)
+    for (const id of [...lex.keys()].slice(0, 300)) expect(examplesFor(id, sents, Infinity).map((s) => s.id), id).toEqual(scan(id).map((s) => s.id))
+    expect(examplesFor('n:книга', sents, 2)).toHaveLength(2)
+  })
+  it('examplesUpTo reads the easiest levels first and stops when it has enough', async () => {
+    const ex = await examplesUpTo('n:книга', 'C1', 3)
+    expect(ex.map((s) => s.lv)).toEqual(['A1', 'A1', 'A1'])
+    expect(await examplesUpTo('n:нет-такого-слова', 'A2')).toEqual([])
   })
 })
 

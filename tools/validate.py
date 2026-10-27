@@ -14,6 +14,7 @@ Checks
   5. Story tokens: surface form + lemma + grammemes must match a pymorphy3 analysis.
   6. References: lexeme ids, grammar tags, error types, article/unit/exercise ids exist.
   7. Lexicon: unmarked form variants are stressed and confirmed by pymorphy3.
+  8. src/data/content-tail.json holds exactly the rare-tail lexemes content uses, as in the lexicon.
 Also writes tools/reports/review.tsv listing everything marked "review": true.
 
 Usage: python3 tools/validate.py [--full]   (--full re-checks unranked lexicon entries too)
@@ -31,6 +32,7 @@ from jsonschema import Draft202012Validator
 from referencing import Registry, Resource
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+import contenttail  # noqa: E402
 from morph import lemma_keys, SLOTS, confirms, dparses  # noqa: E402
 from rulib import ACUTE, GRAVE, UNSTRESSED_OK, VOWELS, fold, missing_stress_parts, needs_stress, strip_stress, syllables  # noqa: E402,F401
 
@@ -466,6 +468,19 @@ def validate_content(rep: Report, registry, schemas, lex_ids: set[str]):
 
 
 
+def validate_content_tail(rep: Report):
+    """content-tail.json must equal a fresh build: complete, nothing stale (re-run tools/stories.py to fix)."""
+    if not contenttail.OUT.exists():
+        rep.err("content-tail.json", "missing: run python3 tools/stories.py")
+        return
+    have = json.loads(contenttail.OUT.read_text(encoding="utf-8"))
+    want = contenttail.build()
+    if have != want:
+        missing = sorted({x["id"] for x in want} - {x["id"] for x in have})
+        extra = sorted({x["id"] for x in have} - {x["id"] for x in want})
+        rep.err("content-tail.json", f"out of date (missing {missing[:5]}, extra {extra[:5]}): run python3 tools/stories.py")
+
+
 # --------------------------------------------------------------------------- UI source strings
 ID_LIT = re.compile(r"""['"`][a-z]+:[^\s'"`]+['"`]""")
 STRING_LIT = re.compile(r"'(?:[^'\\\n]|\\.)*'|\"(?:[^\"\\\n]|\\.)*\"|`(?:[^`\\]|\\.)*`|>[^<>{}]+<")
@@ -511,6 +526,7 @@ def main():
     if not args.skip_lexicon:
         validate_sentences(rep, registry, schemas, lex_ids)
     validate_content(rep, registry, schemas, lex_ids)
+    validate_content_tail(rep)
     validate_sources(rep)
 
     REPORTS.mkdir(parents=True, exist_ok=True)

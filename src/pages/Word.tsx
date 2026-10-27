@@ -6,8 +6,8 @@ import { db } from '../db/db'
 import { useSettings } from '../db/settings'
 import { speak, useRussianVoices } from '../audio/tts'
 import { loadLexemes } from '../lib/lexicon'
-import { examplesFor, sentencesUpTo } from '../lib/sentences'
-import { addWord, wordState } from '../srs/deck'
+import { examplesUpTo } from '../lib/sentences'
+import { addWord, attemptsFor, wordState } from '../srs/deck'
 import { confusionsOf } from '../srs/confusion'
 import { getHook, setHook, wordLapses } from '../srs/leech'
 import { State } from '../srs/fsrs'
@@ -66,26 +66,32 @@ export default function Word() {
   const { id = '' } = useParams()
   const settings = useSettings()
   const { voices } = useRussianVoices()
-  const [lx, setLx] = useState<Lexeme | null | undefined>(undefined)
+  // undefined while loading; null if there's no such word; 'offline' if it's a rare word not downloaded yet
+  const [lx, setLx] = useState<Lexeme | null | undefined | 'offline'>(undefined)
   const [examples, setExamples] = useState<Sentence[]>([])
   const [partners, setPartners] = useState<Lexeme[]>([])
   const state = useLiveQuery(() => wordState(id), [id])
   const history = useLiveQuery(async () => {
-    const attempts = await db.attempts.where('ts').above(0).filter((a) => a.lex === id || (a.item.includes(id) && a.item.startsWith('srs:'))).toArray()
+    const attempts = await attemptsFor(id)
     const m = await db.mastery.get(`lex:${id}`)
     return { attempts, mastery: m }
   }, [id])
 
   useEffect(() => {
     let alive = true
-    loadLexemes([id]).then(async (m) => {
-      const x = m.get(id) ?? null
+    setLx(undefined)
+    setExamples([])
+    setPartners([])
+    void (async () => {
+      const m = await loadLexemes([id]).catch(() => null)
+      const x = m ? (m.get(id) ?? null) : 'offline'
       if (!alive) return
       setLx(x)
-      if (x?.partners?.length) setPartners([...(await loadLexemes(x.partners)).values()])
-      const pool = await sentencesUpTo('C1')
-      if (alive) setExamples(examplesFor(id, pool, 6))
-    })
+      if (!x || x === 'offline') return
+      if (x.partners?.length) void loadLexemes(x.partners).then((m) => alive && setPartners([...m.values()]), () => {})
+      const ex = await examplesUpTo(id, 'C1', 6).catch(() => [])
+      if (alive) setExamples(ex)
+    })()
     return () => {
       alive = false
     }
@@ -93,6 +99,8 @@ export default function Word() {
 
   if (lx === undefined) return <p className="py-12 text-center text-ink-soft">Loading…</p>
   if (lx === null) return <p className="py-12 text-center text-ink-soft">No such word in the dictionary.</p>
+  if (lx === 'offline')
+    return <p className="py-12 text-center text-ink-soft">This rare word isn't saved on this device yet. Connect to the internet, or download the full dictionary in Settings.</p>
 
   const cls = lx.pos === 'noun' ? nounClass(lx) : null
   const attempts = history?.attempts ?? []

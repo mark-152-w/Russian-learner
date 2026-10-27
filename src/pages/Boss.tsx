@@ -59,6 +59,7 @@ export default function BossPage() {
   const [hit, setHit] = useState(0)
   const [crit, setCrit] = useState(false)
   const [firstWin, setFirstWin] = useState<{ first: boolean; card: string | null }>({ first: false, card: null })
+  const [missing, setMissing] = useState(false)
   const live = useRef<BossState | null>(null)
   const records = useBossRecords()
   const progress = useCourseProgress()
@@ -69,11 +70,13 @@ export default function BossPage() {
     setData(null)
     void loadUnits().then(async (us) => {
       const unit = us.find((u) => u.id === id)
+      setMissing(!unit?.boss)
       if (!unit?.boss) return
       const ctx = await buildDrillContext({ level: unit.level as 'A2', vocab: unit.vocab, hasVoice: voices.length > 0 })
       const now = Date.now()
       const errors = recentErrorTargets(await db.attempts.where('ts').above(now - ERROR_WINDOW_MS).toArray(), now)
-      const extra = await loadLexemes(errors.map((e) => e.lex))
+      // revenge items are a bonus: a rare word that can't load offline just drops out
+      const extra = await loadLexemes(errors.map((e) => e.lex)).catch(() => new Map<string, Lexeme>())
       const lexemes = new Map([...ctx.lexemes, ...extra])
       const unitItems = [...checkpointItems(unit, ctx), ...checkpointItems(unit, ctx)]
       const items = bossItems(unitItems, errors, lexemes, unit.boss.hp)
@@ -89,6 +92,7 @@ export default function BossPage() {
     }
   }, [id, round, ready, voices.length])
 
+  if (missing) return <p className="py-12 text-center text-ink-soft">There's no boss here.</p>
   if (!data || !state) return <p className="py-12 text-center text-ink-soft">The boss is getting ready…</p>
   const { unit } = data
   const boss = unit.boss!

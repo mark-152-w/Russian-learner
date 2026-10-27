@@ -42,6 +42,7 @@ from collections import Counter
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+import contenttail  # noqa: E402
 from morph import dparses  # noqa: E402
 from rulib import fold, has_stress, syllables  # noqa: E402
 from sentences import build_index  # noqa: E402
@@ -755,6 +756,7 @@ def main():
         for s in sorted(built, key=lambda s: (s["level"], s["kind"] != "story", s.get("series", ""), s.get("chapter", 0), s["id"]))
     ]
     (ROOT / "src" / "data" / "stories-index.json").write_text(json.dumps(index, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+    tail = contenttail.write()
     kinds = Counter(n.split("» ", 1)[1].split(":")[0] for n in notes)
     REPORT.parent.mkdir(exist_ok=True)
     REPORT.write_text(
@@ -765,7 +767,7 @@ def main():
         + "\n## Decisions\n\n" + "".join(f"- {n}\n" for n in notes),
         encoding="utf-8",
     )
-    print(f"{len(built)} texts, {words} words, {sum(len(c['cards']) for c in sets)} cards, {len(notes)} context decisions, {len(problems)} problems")
+    print(f"{len(built)} texts, {words} words, {sum(len(c['cards']) for c in sets)} cards, {len(notes)} context decisions, {tail} rare-tail lexemes for content, {len(problems)} problems")
     for p in problems[:60]:
         print("  PROBLEM", p)
     return 1 if problems else 0

@@ -1,6 +1,12 @@
-import { describe, expect, it } from 'vitest'
-import { decodeCell, formsOf, loadChunk, primaryForm, SLOTS } from './lexicon'
+import { describe, expect, it, vi } from 'vitest'
+import { decodeCell, formsOf, loadChunk, loadLexemes, primaryForm, SLOTS } from './lexicon'
 import { fold, stressIndex, stripStress } from './ru'
+import { loadStory, STORY_INDEX } from './stories'
+
+// The rare tail's index is a 2.7 MB runtime-cached download: content must never need it.
+vi.mock('../data/lexicon/index-ext.json', () => {
+  throw new Error('the rare-tail index was loaded')
+})
 
 describe('decodeCell', () => {
   it('decodes variants and markers', () => {
@@ -43,6 +49,21 @@ describe('generated lexicon', () => {
         }
       }
     }
+  })
+})
+
+describe('loadLexemes', () => {
+  it('finds every word of every story without the rare-tail index (offline, no 3 MB chunks)', async () => {
+    const ids = new Set<string>()
+    for (const { id } of STORY_INDEX) for (const s of (await loadStory(id))!.sentences) for (const t of s.tokens) if (t.lex) ids.add(t.lex)
+    const got = await loadLexemes([...ids])
+    expect([...ids].filter((id) => !got.has(id))).toEqual([])
+    expect(got.get('v:засмеяться')?.lemma).toBe('засмея́ться')
+  })
+
+  it('reads homograph tail words used by the trainers, and skips names', async () => {
+    const got = await loadLexemes(['n:замок:2', 'n:книга', 'name:Анна'])
+    expect([...got.keys()].sort()).toEqual(['n:замок:2', 'n:книга'])
   })
 })
 

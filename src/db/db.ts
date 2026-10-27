@@ -95,6 +95,8 @@ export class MedvedDB extends Dexie {
       bests: '&key',
       sessions: '++id, start',
     })
+    // a word's history (Word page) reads its attempts by lexeme instead of scanning them all
+    this.version(2).stores({ attempts: '++id, ts, item, *tags, err, lex' })
   }
 }
 

@@ -19,7 +19,8 @@
 - 25 Python tool tests;
 - `validate.py`: 0 errors, 2 warnings (сёк in two C1 sentences: a real form pymorphy3 doesn't know);
 - typecheck;
-- 168 Vitest tests. New in Phase 8: pair items in both directions; what counts as a mix-up (a deck word's meaning
+- 173 Vitest tests. New in the efficiency pass: every story word resolves without the rare-tail index; the example
+  index matches a full scan; a word's history ignores its homograph's cards. New in Phase 8: pair items in both directions; what counts as a mix-up (a deck word's meaning
   or form, never a form of the word asked); the pair card on the second mix-up; leech thresholds and hooks; the cloze card rotates sentences; the relearning queue (gap, cap, the
   default once-only rule); grammar mastery fading by time, and the plan's refresh step. New after Phase 7: the update-prompt store (`src/lib/pwa.ts`). New in Phase 7: the stats calculations (calendar, weekly XP, accuracy by case) and the
   meaning-distractor overlap rule. New in Phase 6:
@@ -45,7 +46,7 @@
   - the dictation, shadowing and sound-pair items grade their own answers;
   - each keyboard lesson uses only learned letters.
 
-`npm run build`: the precache is 291 files (221 after Phase 5), 12.4 MB raw (about 3.2 MB gzipped), with the stories loaded one file at a time.
+`npm run build`: the precache is 294 files (221 after Phase 5), 12.9 MB raw (about 3.2 MB gzipped), with the stories loaded one file at a time.
 
 I ran end-to-end checks in headless Chromium at phone width, with no console errors. In Phase 5 they covered:
 the games hub; an arcade run, a speed round and a crossword; a boss fight to the end; the town; the collection and
@@ -59,6 +60,38 @@ including wrong cases. In Phase 4 they covered:
 - the Listening page and a dialogue;
 - the keyboard: typing a lesson line with Latin key positions;
 - the new Practice and Reference hubs.
+
+## Efficiency and bug-fix pass after Phase 8
+
+I profiled every route of the production build in headless Chromium (phone width), recording the data each one
+fetches, the JS heap, and console errors. There were no console errors, but several screens loaded far more data
+than they used, and some of it broke the offline promise.
+
+- **Rare words in stories.** 44 of the 60 texts (and the card blurbs, the adventure, the minimal-pairs trainer)
+  use a word or two from the rare tail: засмея́ться, Петербу́рг, мно́гие… To gloss one, the reader fetched the
+  tail's 2.7 MB index plus a 3 MB chunk per word, and the tail isn't precached, so **offline those words had no
+  gloss or word sheet**. `tools/contenttail.py` now collects exactly the tail lexemes that content uses (119, 9.5 KB
+  gzipped) into `src/data/content-tail.json`. It is precached, and `loadLexemes` checks it before the tail index.
+  `stories.py` writes it; `validate.py` errors if it's stale. Chunks also load in parallel now, not one by one.
+  An A2 story fell from 9.3 MB fetched and 47 MB heap to 3.4 MB and 22 MB; a C1 story from 19.2 MB and 92 MB to
+  6.7 MB and 37 MB.
+- **Word page examples.** The page read every sentence file, A1 to C1 (10.6 MB, including 6 MB of B2/C1 that
+  isn't precached), to show six sentences. `examplesUpTo` now reads levels from the easiest up and stops when it
+  has enough: 1.8 MB, 16 MB heap (was 57 MB). Examples now come from the easiest level that has them, which
+  suits learners better. Offline, a rare word that hasn't been downloaded says so instead of loading forever.
+- **Review start-up.** Each cloze card scanned the whole sentence bank for its word (about 30 ms a scan here,
+  far more on a phone; up to 40 cards a session). `examplesFor` now uses a lexeme → sentences index built once
+  per pool: about 1.25 s of scanning became 36 ms. Results are identical (a test compares them).
+- **A word's history** (Word page) scanned every attempt ever made, and matched review cards by substring, so
+  за́мок's history counted замо́к's (`n:замок:2`) reviews. Attempts are now indexed by lexeme (Dexie schema v2,
+  an index-only upgrade) and cards are matched by exact id (`attemptsFor` in `srs/deck.ts`).
+- **Pages stuck on "Loading…".** A unit, lesson, boss or story id that doesn't exist (an old bookmark, a typo)
+  left the page loading forever; they now say there's no such unit/boss/text. A boss's revenge items no longer
+  block the fight if a rare word can't load offline.
+- Removed `hasExample` (unused, and a full scan per call).
+
+Checked offline in Chromium with the service worker installed: a story's rare word opens its word sheet, the
+minimal-pairs trainer runs, and the Word page shows examples.
 
 ## Phase 8: what's built (part 2)
 

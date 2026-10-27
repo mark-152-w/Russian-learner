@@ -8,9 +8,10 @@ import { mulberry32 } from '../lib/rng'
 import { coverageOf, coverageTopN, marginalCoverage } from '../lib/coverage'
 import { getStats } from '../rewards/service'
 import { grade } from '../engine/grader'
-import { setScheduler } from './fsrs'
+import { newCard, setScheduler } from './fsrs'
+import { pairCardId } from './confusion'
 import {
-  addFormCard, addWord, cardToItem, countDue, dueCards, introduceNewWords, newWordsAddedToday, queueWords, recordReview,
+  addFormCard, addWord, attemptsFor, cardToItem, countDue, dueCards, introduceNewWords, newWordsAddedToday, queueWords, recordReview,
 } from './deck'
 
 const T0 = new Date(2026, 3, 1, 10).getTime()
@@ -81,6 +82,23 @@ describe('deck', () => {
     expect((await getStats()).reviews).toBe(1)
     const wrong = await recordReview(id, { correct: false }, 3000, false, after!.due)
     expect(wrong!.lapses + wrong!.reps).toBeGreaterThan(after!.reps)
+  })
+})
+
+describe('a word\'s history', () => {
+  const att = (item: string, lex?: string) => db.attempts.add({ ts: T0, item, type: 'meaning', level: 'A1', tags: [], lex, correct: true, ms: 1, xp: 1 })
+  it('counts its items and its own cards, not a homograph\'s', async () => {
+    await addWord('n:замок', T0, false)
+    await addWord('n:замок:2', T0, false)
+    const pair = pairCardId('n:замок', 'n:замок:2')
+    await db.srs.put(newCard({ id: pair, kind: 'pair', dir: 'pair', lex: 'n:замок:2', other: 'n:замок' }, T0))
+    await att('gen:form:1', 'n:замок')
+    await att('srs:vocab:n:замок:ru-en')
+    await att('srs:vocab:n:замок:2:ru-en')
+    await att(`srs:${pair}`)
+    await att('gen:form:2', 'n:замок:2')
+    expect((await attemptsFor('n:замок')).map((a) => a.item).sort()).toEqual(['gen:form:1', `srs:${pair}`, 'srs:vocab:n:замок:ru-en'])
+    expect((await attemptsFor('n:замок:2')).map((a) => a.item).sort()).toEqual(['gen:form:2', `srs:${pair}`, 'srs:vocab:n:замок:2:ru-en'])
   })
 })
 

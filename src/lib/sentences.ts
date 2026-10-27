@@ -56,10 +56,52 @@ export function soleLexeme(t: WordToken): string | null {
   return ids.size === 1 ? [...ids][0]! : null
 }
 
+/** soleLexeme() for a raw `w` entry, without building tokens. */
+function soleLex(w: Sentence['w'][number]): string | null {
+  let lex: string | null = null
+  for (let i = 2; i < w.length; i++) {
+    const r = w[i] as string
+    const bar = r.indexOf('|')
+    const l = bar < 0 ? r : r.slice(0, bar)
+    if (lex === null) lex = l
+    else if (l !== lex) return null
+  }
+  return lex
+}
+
+// lexeme → its sentences in pool order, built in one pass per pool: Review asks for every cloze card's word.
+const indexes = new WeakMap<Sentence[], Map<string, Sentence[]>>()
+function indexOf(pool: Sentence[]): Map<string, Sentence[]> {
+  let idx = indexes.get(pool)
+  if (!idx) {
+    idx = new Map()
+    for (const s of pool) {
+      for (const w of s.w) {
+        const lex = soleLex(w)
+        if (!lex) continue
+        const list = idx.get(lex)
+        if (!list) idx.set(lex, [s])
+        else if (list[list.length - 1] !== s) list.push(s)
+      }
+    }
+    for (const list of idx.values()) list.sort((a, b) => a.w.length - b.w.length)
+    indexes.set(pool, idx)
+  }
+  return idx
+}
+
 /** Sentences containing an unambiguous form of `lex`, shortest first. */
 export function examplesFor(lex: string, pool: Sentence[], limit = 6): Sentence[] {
-  return pool
-    .filter((s) => wordTokens(s).some((t) => soleLexeme(t) === lex))
-    .sort((a, b) => a.w.length - b.w.length)
-    .slice(0, limit)
+  return (indexOf(pool).get(lex) ?? []).slice(0, limit)
+}
+
+/** Up to `limit` examples, reading sentence levels from the easiest up and stopping once there are enough: the
+ *  B2 and C1 files are large and cached only on first use. */
+export async function examplesUpTo(lex: string, max: Level, limit = 6): Promise<Sentence[]> {
+  const out: Sentence[] = []
+  for (const lv of SENTENCE_LEVELS.slice(0, SENTENCE_LEVELS.indexOf(max) + 1)) {
+    out.push(...examplesFor(lex, await loadSentences(lv), limit - out.length))
+    if (out.length >= limit) break
+  }
+  return out
 }
