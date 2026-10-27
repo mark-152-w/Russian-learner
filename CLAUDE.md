@@ -156,8 +156,8 @@ src/features.ts        features that exist; quests/achievements for anything els
 
 - `TITLES` maps routes to tab titles; `PageTitle` sets `document.title`, adds a screen-reader `<h1>` when a page
   has none, and moves focus to `<main>` on navigation. Give new routes a title there.
-- `UpdatePrompt`: the PWA uses `registerType: 'prompt'`. `main.tsx` dispatches `medved:update` /
-  `medved:offline-ready`, and the banner never shows inside a session (`inSessionPath`). Add full-screen session
+- `UpdatePrompt`: the PWA uses `registerType: 'prompt'`. `main.tsx` hands the service-worker events to
+  `src/lib/pwa.ts` (a held update, a one-time offline-ready toast), and the banner never shows inside a session (`inSessionPath`). Add full-screen session
   routes to `inSessionPath` so they hide the navigation and the update banner.
 - Accessibility baseline: axe-core finds no violations on the main pages in light and dark mode. Keep
   `Bar label=…`, icon-button `aria-label`s and text on `bg-gold` dark (`text-[#2a1d0f]`).
