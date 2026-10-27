@@ -15,6 +15,7 @@ import { isDrillable } from '../engine/generators'
 import { NOUN_CLASS_LABEL, nounClass } from '../engine/sentenceGen'
 import { FormTable } from '../components/FormTable'
 import { ExampleList } from '../components/ExampleList'
+import { WordFamily } from '../components/WordFamily'
 import { Ru } from '../components/Md'
 import { Button, Card, Icon } from '../components/ui'
 
@@ -164,6 +165,8 @@ export default function Word() {
         </div>
         {cls && cls !== 'other' && <p className="mt-2 text-xs text-ink-soft">Pattern: {NOUN_CLASS_LABEL[cls]}</p>}
       </Card>
+
+      <WordFamily key={`family:${lx.id}`} lex={lx.id} card />
 
       {lx.pos !== 'other' && (
         <Card>

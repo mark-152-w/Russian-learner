@@ -42,6 +42,10 @@ export type ExerciseItem = {
    * Runtime only: rolled when the item is presented.
    */
   golden?: boolean
+  /**
+   * A guess before the answer has been taught (the pretesting effect). A wrong guess is expected: no XP, and it doesn't break the combo or count as a mistake.
+   */
+  pretest?: boolean
   prompt: {
     /**
      * Russian prompt. '___' marks the gap in cloze/transform items.
@@ -192,6 +196,10 @@ export type ExerciseItem1 = {
    * Runtime only: rolled when the item is presented.
    */
   golden?: boolean
+  /**
+   * A guess before the answer has been taught (the pretesting effect). A wrong guess is expected: no XP, and it doesn't break the combo or count as a mistake.
+   */
+  pretest?: boolean
   prompt: {
     /**
      * Russian prompt. '___' marks the gap in cloze/transform items.
@@ -319,6 +327,7 @@ export interface ContentFiles {
   'grammar-article'?: GrammarArticle
   idiom?: IdiomFile
   lexeme?: LexiconChunk
+  root?: RootFile
   sentences?: SentenceChunk
   story?: Story1
   taxonomy?: Taxonomy
@@ -883,6 +892,35 @@ export interface Lexeme {
     | 'stress-propagated'
     | 'override'
   )[]
+  /**
+   * true = hand-written Russian the author is not fully confident about; listed in PROGRESS.md.
+   */
+  review?: boolean
+}
+/**
+ * Word families: words sharing a root. Each word belongs to at most one family (validate.py).
+ */
+export interface RootFile {
+  $schema?: string
+  items: RootFamily[]
+}
+export interface RootFamily {
+  id: string
+  /**
+   * The root and its alternants in morpheme notation: пис-, пиш-
+   */
+  root: string
+  meaning: string
+  /**
+   * @minItems 3
+   *
+   * Items: Lexicon id: pos letter (n noun, v verb, a adjective, o other) + ':' + bare lemma, plus ':2', ':3' for homographs in dataset order.
+   */
+  lexemes: [string, string, string, ...string[]]
+  /**
+   * Limited markdown: **bold**, *italic*, `code`, lists, line breaks, [text](#/route) links, and {{ru:слово́}} for inline Russian that should be tappable/playable.
+   */
+  note?: string
   /**
    * true = hand-written Russian the author is not fully confident about; listed in PROGRESS.md.
    */

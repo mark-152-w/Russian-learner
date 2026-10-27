@@ -1,9 +1,10 @@
 // Programmatic drill generators: exercises built straight from the verified lexicon.
 // Every form used comes from a usable (verified, stressed, non-rare) variant.
-import type { ExerciseItem, Lexeme } from '../types/content.gen'
+import type { ExerciseItem, Lexeme, Sentence } from '../types/content.gen'
 import { SLOTS, decodeCell, formsOf, primaryForm } from '../lib/lexicon'
 import { fold, stressIndex, syllables } from '../lib/ru'
 import { hashString, pick, shuffle, weighted, type Rng } from '../lib/rng'
+import { soleLexeme, wordTokens } from '../lib/sentences'
 import { diagnoseForm } from './diagnose'
 import { parseSlot, slotLabel, slotTags } from './slots'
 
@@ -189,6 +190,28 @@ export function pairItem(a: Lexeme, b: Lexeme, reps: number, rng: Rng): Exercise
   // Russian options are fixed choices so за́мок and замо́к stay different answers
   const choices = shuffle(rng, [ask.lemma, other.lemma])
   return { ...base, prompt: { en: gloss(ask), instruction: 'Which word means this?' }, choices, answerIndex: choices.indexOf(ask.lemma) }
+}
+
+/**
+ * A new word's first appearance, as a guess (the pretesting effect): its meaning from a sentence it's used in
+ * and, when it has one, a relative from its word family. A wrong guess is expected; the feedback teaches the
+ * word. Null without a sentence or a relative, since a guess from nothing at all teaches nothing.
+ */
+export function guessItem(lx: Lexeme, pool: Lexeme[], rng: Rng, s?: Sentence, relative?: Lexeme): ExerciseItem | null {
+  const gc = glossChoices(lx, pool, rng)
+  const tok = s && wordTokens(s).find((t) => soleLexeme(t) === lx.id)
+  if (!gc || (!tok && !relative)) return null
+  return {
+    id: `gen:guess:${lx.id}`, type: 'choice', level: level(lx), tags: ['vocab'], vocab: [lx.id], source: 'generated', pretest: true,
+    prompt: {
+      ru: tok ? s!.ru : lx.lemma,
+      ...(tok ? { governor: tok.text } : {}),
+      instruction: 'New word: guess what it means',
+      ...(relative ? { en: `Related to ${relative.lemma} (${gloss(relative)})` } : {}),
+    },
+    acceptEn: [gc.choices[gc.answerIndex]!], ...gc,
+    reason: `**${lx.lemma}** means *${gloss(lx)}*.${tok ? ` The sentence: *${s!.en[0]}*` : ''}`,
+  }
 }
 
 export function listenItem(lx: Lexeme, pool: Lexeme[], rng: Rng): ExerciseItem | null {

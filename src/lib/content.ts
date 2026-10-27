@@ -1,5 +1,5 @@
 // Hand-written content (src/data/content/**), validated at build time by tools/validate.py.
-import type { ExerciseFile, ExerciseItem, GrammarArticle, IdiomFile, Unit } from '../types/content.gen'
+import type { ExerciseFile, ExerciseItem, GrammarArticle, IdiomFile, RootFamily, RootFile, Unit } from '../types/content.gen'
 
 const exerciseFiles = import.meta.glob<{ default: ExerciseFile }>('../data/content/exercises/*.json')
 const grammarFiles = import.meta.glob<{ default: GrammarArticle }>('../data/content/grammar/*.json')
@@ -30,4 +30,13 @@ export type Idiom = IdiomFile['items'][number]
 let idioms: Promise<Idiom[]> | null = null
 export function loadIdioms(): Promise<Idiom[]> {
   return (idioms ??= Promise.all(Object.values(idiomFiles).map((f) => f())).then((mods) => mods.flatMap((m) => m.default.items)))
+}
+
+const rootFiles = import.meta.glob<{ default: RootFile }>('../data/content/roots/*.json')
+let families: Promise<Map<string, RootFamily>> | null = null
+/** Word families by member lexeme id (a word belongs to at most one family). */
+export function loadFamilies(): Promise<Map<string, RootFamily>> {
+  return (families ??= Promise.all(Object.values(rootFiles).map((f) => f())).then(
+    (mods) => new Map(mods.flatMap((m) => m.default.items).flatMap((fam) => fam.lexemes.map((lex) => [lex, fam] as const))),
+  ))
 }

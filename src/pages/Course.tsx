@@ -3,7 +3,8 @@ import { Link, useNavigate, useParams } from 'react-router-dom'
 import type { ExerciseItem, GrammarArticle, Lexeme, Unit } from '../types/content.gen'
 import { useRussianVoices } from '../audio/tts'
 import { loadGrammar, loadUnits } from '../lib/content'
-import { checkpointItems, lessonItems, nextUnit, PASS_MARK, recordCheckpoint, recordLesson, useCourseProgress } from '../lib/course'
+import { checkpointItems, GUESS_ITEMS, guessItems, lessonItems, nextUnit, PASS_MARK, recordCheckpoint, recordLesson, useCourseProgress } from '../lib/course'
+import { getKV, setKV } from '../db/db'
 import { buildDrillContext } from '../lib/drillContext'
 import { loadLexemes } from '../lib/lexicon'
 import { usePlacement } from '../lib/learner'
@@ -85,6 +86,8 @@ export function UnitPage() {
   const [grammar, setGrammar] = useState<GrammarArticle[]>([])
   const [words, setWords] = useState<Lexeme[]>([])
   const [queued, setQueued] = useState(false)
+  // before the first lesson, the rule stays folded until the learner has guessed (or skipped guessing)
+  const [guessed, setGuessed] = useState<boolean | null>(null)
   const progress = useCourseProgress()
   const placement = usePlacement()
   const bosses = useBossRecords()
@@ -93,6 +96,7 @@ export function UnitPage() {
       const u = us.find((x) => x.id === id) ?? null
       setUnit(u)
       if (!u) return
+      setGuessed(await getKV(`guessed:${u.id}`, false))
       const g = await loadGrammar()
       setGrammar(u.grammar.map((gid) => g.find((a) => a.id === gid)).filter((a): a is GrammarArticle => !!a))
       const lx = await loadLexemes(u.vocab)
@@ -139,7 +143,23 @@ export function UnitPage() {
         </Link>
       )}
 
-      {grammar.map((g) => (
+      {grammar.length > 0 && guessed === false && !p?.lessons && !p?.completed ? (
+        <Card className="space-y-2">
+          <h2 className="font-serif text-xl">Guess first</h2>
+          <p>
+            Before you read this unit's grammar, try {GUESS_ITEMS} questions on it. Wrong guesses cost nothing: trying first is what makes the
+            explanation stick.
+          </p>
+          <div className="flex flex-wrap gap-2">
+            <Link to={`/lesson/${unit.id}/guess`}>
+              <Button>Guess first</Button>
+            </Link>
+            <Button variant="secondary" onClick={() => setKV(`guessed:${unit.id}`, true).then(() => setGuessed(true))}>
+              Show me the rule
+            </Button>
+          </div>
+        </Card>
+      ) : grammar.map((g) => (
         <Card key={g.id}>
           <h2 className="font-serif text-xl">{g.title.en}</h2>
           <Md text={g.card} className="mt-2" />
@@ -195,28 +215,45 @@ export function LessonPage() {
       const unit = us.find((u) => u.id === id)
       if (!unit) return
       const ctx = await buildDrillContext({ level: unit.level as 'A2', vocab: unit.vocab, hasVoice: voices.length > 0 })
-      const items = mode === 'lesson' ? lessonItems(unit, ctx) : checkpointItems(unit, ctx)
+      const items = mode === 'lesson' ? lessonItems(unit, ctx) : mode === 'guess' ? guessItems(unit, ctx) : checkpointItems(unit, ctx)
+      if (!items.length) {
+        // nothing to guess at (an all-vocabulary unit): straight to the rule
+        await setKV(`guessed:${unit.id}`, true)
+        return nav(`/unit/${unit.id}`, { replace: true })
+      }
       if (alive) setState({ unit, items, lexemes: ctx.lexemes })
     })
     return () => {
       alive = false
     }
-  }, [id, mode, round, ready, voices.length])
+  }, [id, mode, round, ready, voices.length, nav])
 
   if (!state) return <p className="py-12 text-center text-ink-soft">Preparing the unit…</p>
-  const isCheck = mode !== 'lesson'
+  const isCheck = mode === 'check' || mode === 'testout'
+  const guess = mode === 'guess'
+  const leave = async () => {
+    if (guess) await setKV(`guessed:${state.unit.id}`, true)
+    nav(`/unit/${state.unit.id}`)
+  }
   return (
     <SessionRunner
       key={round}
       items={state.items}
       lexemes={state.lexemes}
-      kind={isCheck ? 'checkpoint' : 'lesson'}
+      kind={isCheck ? 'checkpoint' : guess ? 'guess' : 'lesson'}
+      relearn={guess ? 'never' : 'once'}
+      doneLabel={guess ? 'Read the rule' : undefined}
       onFinish={async (end) => {
         if (isCheck) setCard((await recordCheckpoint(state.unit, end.accuracy, mode === 'testout', Date.now())).card)
-        else await recordLesson(state.unit.id)
+        else if (!guess) await recordLesson(state.unit.id)
       }}
       summaryNote={(end) =>
-        isCheck ? (
+        guess ? (
+          <Card className="mx-auto mb-4 max-w-xl text-center">
+            <p className="font-serif text-2xl">Now read the rule</p>
+            <p className="text-sm text-ink-soft">It explains the questions you just tried. Then start the lesson.</p>
+          </Card>
+        ) : isCheck ? (
           <Card className={`mx-auto mb-4 max-w-xl text-center ${end.accuracy >= PASS_MARK ? 'border-good' : 'border-bad'}`}>
             <p className="font-serif text-2xl">{end.accuracy >= PASS_MARK ? `${state.unit.level} unit ${state.unit.number} complete!` : 'Not quite yet'}</p>
             {card && <NewCard id={card} />}
@@ -228,8 +265,8 @@ export function LessonPage() {
           </Card>
         ) : null
       }
-      onDone={() => nav(`/unit/${state.unit.id}`)}
-      onAgain={() => setRound((r) => r + 1)}
+      onDone={leave}
+      onAgain={guess ? undefined : () => setRound((r) => r + 1)}
     />
   )
 }

@@ -6,6 +6,7 @@ import { loadSentences } from '../lib/sentences'
 import { loadHandwritten, loadUnits } from '../lib/content'
 import { grade } from './grader'
 import { runDrill, type DrillContext } from './drills'
+import { GUESS_ITEMS, guessItems } from '../lib/course'
 
 let units: Unit[]
 let lexemes: Map<string, Lexeme>
@@ -62,6 +63,21 @@ describe('course units', () => {
         }
       }
       expect(total, u.id).toBeGreaterThanOrEqual(12)
+    }
+  })
+  it('every unit with grammar has grammar questions to guess before the rule', { timeout: 120_000 }, () => {
+    for (const u of units.filter((x) => x.grammar.length)) {
+      const ctx: DrillContext = {
+        lexemes, handwritten, rng: mulberry32(5), hasVoice: true, pool: pools[u.level]!, sentences: sentences[u.level]!,
+        vocab: u.vocab.map((id) => lexemes.get(id)).filter((x): x is Lexeme => !!x),
+      }
+      const items = guessItems(u, ctx)
+      expect(items, u.id).toHaveLength(GUESS_ITEMS)
+      for (const it of items) {
+        expect(it.pretest && !it.tags.includes('vocab'), it.id).toBe(true)
+        const right = correctResponse(it)
+        if (right) expect(grade(it, right, { lexemes }).correct, `${u.id} ${it.id}`).toBe(true)
+      }
     }
   })
 })

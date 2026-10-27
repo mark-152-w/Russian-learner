@@ -12,14 +12,17 @@
 | 5: games, collectible cards, the town, text adventure «Де́ло» | **Done** (in four chunks) |
 | 6: B1–C1 units, remaining grammar articles, idioms/culture | **Done** (in four chunks) |
 | 7: stats dashboard, polish, accessibility, performance, GitHub Pages deploy | **Done** |
-| 8: retention (memory research applied to the existing app) | Parts 1–2 **done**: varied cloze sentences, relearning, fading grammar mastery; leech rescue with memory hooks, confusion-pair cards |
+| 8: retention (memory research applied to the existing app) | Parts 1–3 **done**: varied cloze sentences, relearning, fading grammar mastery; leech rescue with memory hooks, confusion-pair cards; word families, guessing first, the evening review, a forgetting curve fitted to you |
 
 `npm run check` passes:
 
 - 25 Python tool tests;
 - `validate.py`: 0 errors, 2 warnings (сёк in two C1 sentences: a real form pymorphy3 doesn't know);
 - typecheck;
-- 168 Vitest tests. New in Phase 8: pair items in both directions; what counts as a mix-up (a deck word's meaning
+- 184 Vitest tests. New in Phase 8 part 3: the memory-strength fit recovers a simulated learner's strength; the
+  retention correction keeps the learner's target; review logs replay into observations; binned recall for the
+  chart; word guesses (sentence, relative hint, only a new word's first card); a wrong guess costs nothing; every
+  unit with grammar yields three gradable guesses; guess sessions never retry; the evening plan step. Part 2: pair items in both directions; what counts as a mix-up (a deck word's meaning
   or form, never a form of the word asked); the pair card on the second mix-up; leech thresholds and hooks; the cloze card rotates sentences; the relearning queue (gap, cap, the
   default once-only rule); grammar mastery fading by time, and the plan's refresh step. New after Phase 7: the update-prompt store (`src/lib/pwa.ts`). New in Phase 7: the stats calculations (calendar, weekly XP, accuracy by case) and the
   meaning-distractor overlap rule. New in Phase 6:
@@ -59,6 +62,66 @@ including wrong cases. In Phase 4 they covered:
 - the Listening page and a dialogue;
 - the keyboard: typing a lesson line with Latin key positions;
 - the new Practice and Reference hubs.
+
+## Phase 8: what's built (part 3)
+
+Four more features from memory research.
+
+**Word families** (*depth of processing*, Craik & Lockhart). 107 hand-written root families, 639 words
+(`src/data/content/roots/roots.json`, schema `root.schema.json`): the root with its alternants (пис-, пиш-), what
+it means, the words built on it, and for 32 of them a short note where the link is a surprise. Examples:
+- **неде́ля** was the day of *not doing*;
+- **включи́ть** is to *lock in*;
+- **друг**, **друго́й** and **вдруг** share a root.
+
+I checked every note's etymology and rewrote two loose ones. validate.py checks that every member exists and that
+no word sits in two families. 12 members are rare words from the extended dictionary. A word's page shows its
+family: each relative is linked, with its meaning and a ✓ if you know it. The rescue screen shows the family too.
+
+**Guessing before you're told** (*the pretesting effect*, Kornell & Richland).
+- **New words.** A new word's first card is a guess: the word underlined in a real sentence, plus a hint from its
+  family ("Related to писа́ть (write)", preferring a relative you're already learning). Pick a meaning. A wrong
+  guess shows **Now you know** in neutral colours: no thud, no XP, and it doesn't break the combo or count as a
+  mistake. The answer and the sentence's translation follow, and the word then comes back as a real question
+  ("What does it mean?"). There's no guess without a sentence or a relative, since guessing from nothing teaches
+  nothing.
+- **Grammar.** On a unit you haven't started, the rule stays folded behind **Guess first**: three of the unit's own
+  grammar questions before you read it, or **Show me the rule** to skip. Guesses never retry (there's nothing to
+  retrieve yet), and the summary sends you to **Read the rule**. A test checks that all 65 units with grammar yield
+  three gradable guesses.
+- Exercise items have a new `pretest` flag (schema): a wrong answer to one costs nothing in the reward service.
+
+**Evening review** (*sleep consolidation*; Mazza et al. 2016). From 7 pm, a day with 3 or more new words adds
+**Evening review: today's N new words** to the plan (`/review/evening`). It's recall in both directions, missed
+words relearned until right, and it never moves a card's schedule. It ticks off like the other steps (kind
+`evening`).
+
+**A forgetting curve fitted to you** (`src/srs/memory.ts`).
+- **The fit.** The review log is replayed through FSRS. Every review of a learned card at least a day after the
+  last one is an observation: elapsed days, FSRS's stability, and whether it was recalled. A maximum-likelihood
+  fit finds one number, your memory strength *k* relative to FSRS's average learner. A prior keeps it near 1
+  until the evidence says otherwise. It refits in the background after every review session. On simulated
+  learners it recovers k = 1.6 and k = 0.7 within ±0.15.
+- **Using it.** Once there are 30 observations, the scheduler requests the retention that makes *your* actual
+  retention equal your target: r′ = (1 + k·(target^(1/decay) − 1))^decay. A test checks that the corrected
+  interval lands exactly on the target for a learner of strength k.
+- **Settings → Remember** (80–95%, default 90%) shows what each target costs in reviews a day for your deck.
+- **Stats → Your forgetting curve** compares your curve with the average learner's for your typical learned card,
+  with your actual recall as dots. Hover or tap reads both curves at a day, and there's a table view. It uses the
+  emphasis pattern: you in the accent colour, the average as a grey context line, both labelled at their ends. The
+  y-range fits the data.
+
+I checked it in headless Chromium at phone width, with a fixed 8 pm clock:
+- New words: a new word's first card was a guess, and wrong guesses showed "Now you know" and came back as real
+  questions.
+- The fit: a simulated 1.3× learner (532 reviews, through the app's own scheduler) was fitted at k = 1.26, and the
+  Stats chart rendered.
+- Settings showed workloads.
+- Evening: the evening step appeared, ran, and ticked off.
+- Units: a fresh unit's guess-first ran three guesses, then showed the rule.
+
+There were no console errors. axe-core found no violations on the Word page, Stats (light and dark) or the unit
+page.
 
 ## Phase 8: what's built (part 2)
 

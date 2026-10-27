@@ -45,6 +45,13 @@ describe('daily plan', () => {
     const weak = planSteps({ ...base, tagMastery: [{ ...m('tag:case.dat', 0.5), last: now }], now }).find((x) => x.id === 'weak')!
     expect(weak.title).toMatch(/^Weak spot: /)
   })
+  it('offers an evening review of today’s new words, after the reviews', () => {
+    const s = planSteps({ ...base, newToday: 5 })
+    expect(s.map((x) => x.id)).toEqual(['review', 'evening', 'course', 'fun'])
+    expect(s[1]).toMatchObject({ title: "Evening review: today's 5 new words", to: '/review/evening', done: false })
+    expect(planSteps({ ...base, newToday: 5, doneKinds: new Set(['evening']) })[1]!.done).toBe(true)
+    expect(planSteps({ ...base, newToday: 2 }).map((x) => x.id)).not.toContain('evening')
+  })
   it('rotates the light item through the trainers', () => {
     const t = { ...base, features: new Set(['trainers']) }
     const days = [0, 1, 2, 3, 4].map((d) => planSteps({ ...t, dayIndex: d }).find((x) => x.id === 'fun')!.to)

@@ -47,6 +47,7 @@ CONTENT_SCHEMAS = {
     "adventure": "adventure.schema.json",
     "cards": "card.schema.json",
     "idioms": "idiom.schema.json",
+    "roots": "root.schema.json",
 }
 # String values under these keys are ids/references/enums, not displayed Russian.
 NO_STRESS_KEYS = {
@@ -457,6 +458,15 @@ def validate_content(rep: Report, registry, schemas, lex_ids: set[str]):
                 for v in d.get("items", []):
                     if v not in content_ids:
                         rep.err(rel, f"unknown exercise id {v}")
+        if sub == "roots":
+            owner: dict[str, str] = {}
+            for fam in doc.get("items", []):
+                for v in fam.get("lexemes", []):
+                    if v not in lex_ids:
+                        rep.err(f"{rel}:{fam['id']}", f"unknown lexeme id {v}")
+                    elif v in owner:
+                        rep.err(f"{rel}:{fam['id']}", f"{v} is already in {owner[v]}")
+                    owner.setdefault(v, fam["id"])
         if sub in ("stories", "cards"):
             stories = [doc] if sub == "stories" else [c["blurb"] for c in doc.get("cards", [])]
             for st in stories:

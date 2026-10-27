@@ -3,7 +3,7 @@
 import type { Unit } from '../types/content.gen'
 import { db, type Mastery } from '../db/db'
 import { dayKey } from '../rewards/streak'
-import { countDue, DEFAULT_KNOWN_RANK, knownLexemes } from '../srs/deck'
+import { countDue, DEFAULT_KNOWN_RANK, knownLexemes, newWordsAddedToday } from '../srs/deck'
 import { drillableTag } from '../engine/drills'
 import { loadHandwritten, loadUnits } from './content'
 import { getProgress, nextUnit, type CourseProgress } from './course'
@@ -15,7 +15,7 @@ import { daysSince, recallScore } from './forgetting'
 import tagsJson from '../data/tags.json'
 
 export interface PlanStep {
-  id: 'review' | 'course' | 'weak' | 'read' | 'fun'
+  id: 'review' | 'evening' | 'course' | 'weak' | 'read' | 'fun'
   title: string
   detail: string
   to: string
@@ -37,7 +37,13 @@ export interface PlanInput {
   nextStory?: { id: string; title: string; words: number }
   /** Epoch ms: fades topic scores by time since practice. Without it, scores are taken as they are. */
   now?: number
+  /** In the evening: how many new words joined the deck today. */
+  newToday?: number
 }
+
+/** From this hour, a day with enough new words offers an evening review of them. */
+export const EVENING_HOUR = 19
+export const EVENING_MIN_WORDS = 3
 
 /** A topic counts as weak with enough evidence and an accuracy below this. */
 export const WEAK_BELOW = 0.75
@@ -89,6 +95,15 @@ export function planSteps(x: PlanInput): PlanStep[] {
       detail: x.due > 100 ? 'A big pile: do one round now and the rest will spread out.' : x.due ? 'Spaced repetition: a few minutes keeps them fresh.' : 'Nothing due. Add a few new words to your deck.',
       to: '/review',
       done: did('review') && x.due === 0,
+    })
+  }
+  if (x.features.has('vocab') && (x.newToday ?? 0) >= EVENING_MIN_WORDS) {
+    steps.push({
+      id: 'evening',
+      title: `Evening review: today's ${x.newToday} new words`,
+      detail: 'Two minutes before bed. What you recall just before sleep is what sleep keeps.',
+      to: '/review/evening',
+      done: did('evening'),
     })
   }
   if (x.features.has('course') && x.next) {
@@ -169,7 +184,7 @@ export async function loadVocabulary(): Promise<Vocabulary> {
 
 export async function loadPlan(now: number, features: ReadonlySet<string>): Promise<PlanStep[]> {
   const today = dayKey(now)
-  const [due, units, progress, tagRows, hand, sessions, reader, level] = await Promise.all([
+  const [due, units, progress, tagRows, hand, sessions, reader, level, newToday] = await Promise.all([
     countDue(now),
     loadUnits(),
     getProgress(),
@@ -178,6 +193,7 @@ export async function loadPlan(now: number, features: ReadonlySet<string>): Prom
     db.sessions.where('start').aboveOrEqual(now - 36 * 3600_000).toArray(),
     getReaderProgress(),
     learnerLevel(),
+    new Date(now).getHours() >= EVENING_HOUR ? newWordsAddedToday(now) : 0,
   ])
   const LV = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2']
   const story = STORY_INDEX.find((s) => s.kind !== 'dialogue' && !reader[s.id]?.read && LV.indexOf(s.level) >= LV.indexOf(level))
@@ -185,5 +201,5 @@ export async function loadPlan(now: number, features: ReadonlySet<string>): Prom
   const doneKinds = new Set(sessions.filter((s) => dayKey(s.start) === today).map((s) => s.kind))
   const tagMastery = tagRows.filter((m) => drillableTag(m.key.slice(4), hand))
   const dayIndex = Math.floor((now - new Date(now).getTimezoneOffset() * 60000) / 86400000)
-  return planSteps({ due, doneKinds, next: nextUnit(units, progress), progress, tagMastery, features, dayIndex, nextStory, now })
+  return planSteps({ due, doneKinds, next: nextUnit(units, progress), progress, tagMastery, features, dayIndex, nextStory, now, newToday })
 }

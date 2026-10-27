@@ -38,11 +38,17 @@ interface Props {
   onAnswered?: (verdict: Verdict, effects: AnswerEffects) => boolean | void
   /** What happens to a missed item: back once at the end (default), or spaced retries until it's right. */
   relearn?: RelearnMode
+  /** The summary's way out (default "Home"). */
+  doneLabel?: string
 }
 
 const FORM_TYPES = new Set(['transform', 'cloze', 'choice'])
 
-export function SessionRunner({ items, lexemes, kind, onDone, onAgain, recallFor, onGraded, onFinish, summaryNote, hud, onAnswered, relearn = 'once' }: Props) {
+/** A guess comes back as a real question: by then the answer has been taught. */
+const asRetry = (item: ExerciseItem): ExerciseItem =>
+  item.pretest ? { ...item, pretest: undefined, prompt: { ...item.prompt, instruction: 'What does it mean?' } } : item
+
+export function SessionRunner({ items, lexemes, kind, onDone, onAgain, recallFor, onGraded, onFinish, summaryNote, hud, onAnswered, relearn = 'once', doneLabel }: Props) {
   const session = useRef<RewardSession>(null as unknown as RewardSession)
   session.current ??= new RewardSession(kind, Date.now())
   const [queue, setQueue] = useState(items)
@@ -73,11 +79,13 @@ export function SessionRunner({ items, lexemes, kind, onDone, onAgain, recallFor
     setVerdict(v)
     const ms = Date.now() - shownAt.current
     // feedback first, persistence after: no perceptible lag
+    // a wrong guess at something not yet taught is how pretesting works: no thud, no buzz
+    const guessMiss = !v.correct && !!item.pretest
     if (v.correct) {
       sound.correct(session.current.combo + 1)
       haptic.tick()
       juice.burst(cardRef.current, { color: golden ? 'var(--gold)' : undefined, count: golden ? 24 : 14 })
-    } else {
+    } else if (!guessMiss) {
       sound.wrong()
       haptic.wrong()
     }
@@ -88,7 +96,7 @@ export function SessionRunner({ items, lexemes, kind, onDone, onAgain, recallFor
     if (!v.correct && item.target && FORM_TYPES.has(item.type) && FEATURES.has('vocab') && !item.id.startsWith('srs:form:')) {
       void addFormCard(item.target.lex, item.target.slot, Date.now())
     }
-    if (!v.correct && FEATURES.has('vocab')) {
+    if (!v.correct && !guessMiss && FEATURES.has('vocab')) {
       // a mix-up with another deck word is counted; the learner's own memory hook is shown with the answer
       void noteConfusion(item, v.given ?? '', lexemes, Date.now())
       const lex = itemLexeme(item)
@@ -113,7 +121,7 @@ export function SessionRunner({ items, lexemes, kind, onDone, onAgain, recallFor
     if (!v.correct) {
       const n = (misses.current.get(item.id) ?? 0) + 1
       misses.current.set(item.id, n)
-      const q = requeueMissed(queue, idx, n, relearn)
+      const q = requeueMissed(queue, idx, n, relearn, asRetry)
       if (q) setQueue(q)
     }
   }
@@ -154,7 +162,7 @@ export function SessionRunner({ items, lexemes, kind, onDone, onAgain, recallFor
     return (
       <>
         {summaryNote?.(end)}
-        <SessionSummary end={end} onDone={onDone} onAgain={onAgain} />
+        <SessionSummary end={end} onDone={onDone} onAgain={onAgain} doneLabel={doneLabel} />
       </>
     )
 
@@ -201,13 +209,15 @@ export function SessionRunner({ items, lexemes, kind, onDone, onAgain, recallFor
 
 function Feedback({ verdict, item, fx, hook, onNext }: { verdict: Verdict; item: ExerciseItem; fx: AnswerEffects | null; hook: string; onNext: () => void }) {
   const ok = verdict.correct
+  // a guess before the word was taught: right is a good guess, wrong is just how you find out
+  const guess = !!item.pretest
   const showAnswer = !ok && verdict.expected && item.type !== 'match'
   return (
-    <div className={`anim-rise fixed inset-x-0 bottom-0 z-30 border-t-4 bg-paper px-4 pb-[max(1rem,env(safe-area-inset-bottom))] pt-4 shadow-[0_-8px_24px_rgba(0,0,0,0.12)] ${ok ? 'border-good' : 'border-bad'}`} role="status" aria-live="assertive">
+    <div className={`anim-rise fixed inset-x-0 bottom-0 z-30 border-t-4 bg-paper px-4 pb-[max(1rem,env(safe-area-inset-bottom))] pt-4 shadow-[0_-8px_24px_rgba(0,0,0,0.12)] ${ok ? 'border-good' : guess ? 'border-line' : 'border-bad'}`} role="status" aria-live="assertive">
       <div className="mx-auto max-w-xl space-y-2">
-        <div className={`flex items-center gap-2 text-lg font-bold ${ok ? 'text-good' : 'text-bad'}`}>
-          <Icon name={ok ? 'check' : 'x'} className="h-6 w-6" />
-          {ok ? (fx?.golden ? 'Golden!' : 'Right') : 'Not quite'}
+        <div className={`flex items-center gap-2 text-lg font-bold ${ok ? 'text-good' : guess ? 'text-ink' : 'text-bad'}`}>
+          {!(guess && !ok) && <Icon name={ok ? 'check' : 'x'} className="h-6 w-6" />}
+          {ok ? (fx?.golden ? 'Golden!' : guess ? 'Good guess!' : 'Right') : guess ? 'Now you know' : 'Not quite'}
           {fx && fx.xp > 0 && <span className="ml-auto text-sm text-red">+{fx.xp} XP{fx.multiplier > 1 ? ` (×${fx.multiplier})` : ''}</span>}
           {fx?.repeat && ok && <span className="ml-auto text-xs font-normal text-ink-soft">repeat: no XP</span>}
         </div>
@@ -234,7 +244,7 @@ function Feedback({ verdict, item, fx, hook, onNext }: { verdict: Verdict; item:
             ))}
           </p>
         )}
-        <Button autoFocus onClick={onNext} className={`w-full ${ok ? '' : 'bg-bad'}`}>
+        <Button autoFocus onClick={onNext} className={`w-full ${ok || guess ? '' : 'bg-bad'}`}>
           Continue
         </Button>
       </div>

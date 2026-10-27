@@ -1,15 +1,16 @@
 // The vocabulary deck: which words are being learned, which cards are due, and how a card becomes an item.
-import type { ExerciseItem, Lexeme, Sentence } from '../types/content.gen'
+import type { ExerciseItem, Lexeme, RootFamily, Sentence } from '../types/content.gen'
 import { db, getKV, setKV } from '../db/db'
 import { dayKey } from '../rewards/streak'
 import { bumpStatsExternal, progressQuestsExternal } from '../rewards/service'
 import { examplesFor, soleLexeme, wordTokens } from '../lib/sentences'
 import type { Rng } from '../lib/rng'
-import { listenItem, meaningItem, pairItem, transformItem } from '../engine/generators'
+import { guessItem, listenItem, meaningItem, pairItem, transformItem } from '../engine/generators'
 import { enRuItem } from '../engine/drills'
 import { caseClozeItems, verbClozeItems } from '../engine/sentenceGen'
 import type { Verdict } from '../engine/grader'
-import { isDue, isKnown, newCard, ratingFor, retrievability, reviewCard, State, type SrsCard, type SrsDir } from './fsrs'
+import { isDue, isKnown, newCard, ratingFor, retrievability, reviewCard, setRetention, State, type SrsCard, type SrsDir } from './fsrs'
+import { effectiveRetention } from './memory'
 
 const DAY = 86400000
 
@@ -42,6 +43,12 @@ export async function addFormCard(lex: string, slot: string, now: number): Promi
   const id = cardId(lex, 'form', slot)
   if (await db.srs.get(id)) return
   await db.srs.put(newCard({ id, kind: 'form', dir: 'form', lex, slot }, now))
+}
+
+/** Words that joined the deck today, in the order they came. */
+export async function wordsAddedToday(now: number): Promise<string[]> {
+  const start = new Date(dayKey(now) + 'T00:00').getTime()
+  return (await db.srs.filter((c) => c.dir === 'ru-en' && c.added >= start).toArray()).sort((a, b) => a.added - b.added).map((c) => c.lex)
 }
 
 export async function newWordsAddedToday(now: number): Promise<number> {
@@ -116,8 +123,19 @@ function clozesFor(lx: Lexeme, lexemes: Map<string, Lexeme>, sentences: Sentence
   return out
 }
 
-/** Turn a card into an exercise. Falls back to a simpler direction when the ideal one isn't possible. */
-export function cardToItem(card: SrsCard, lexemes: Map<string, Lexeme>, sentences: Sentence[], rng: Rng, hasVoice: boolean): DeckItem | null {
+/** A relative to hint at a new word's meaning: one the learner is learning already, else the most frequent. */
+export function relativeFor(lx: Lexeme, family: RootFamily | undefined, lexemes: Map<string, Lexeme>, deck: ReadonlySet<string>): Lexeme | undefined {
+  const kin = (family?.lexemes ?? []).flatMap((id) => (id !== lx.id && lexemes.get(id)?.rank ? [lexemes.get(id)!] : []))
+  return kin.find((k) => deck.has(k.id)) ?? kin.sort((a, b) => a.rank! - b.rank!).find((k) => !lx.rank || k.rank! < lx.rank)
+}
+
+/**
+ * Turn a card into an exercise. Falls back to a simpler direction when the ideal one isn't possible. A new word's
+ * first card is a guess (`relatives` gives the hint for it).
+ */
+export function cardToItem(
+  card: SrsCard, lexemes: Map<string, Lexeme>, sentences: Sentence[], rng: Rng, hasVoice: boolean, relatives?: Map<string, Lexeme>,
+): DeckItem | null {
   const lx = lexemes.get(card.lex)
   if (!lx) return null
   let item: ExerciseItem | null = null
@@ -125,7 +143,11 @@ export function cardToItem(card: SrsCard, lexemes: Map<string, Lexeme>, sentence
     const other = lexemes.get(card.other ?? '')
     item = other ? pairItem(lx, other, card.reps, rng) : null
   } else if (card.dir === 'form' && card.slot) item = transformItem(lx, card.slot)
-  else if (card.dir === 'ru-en') item = meaningItem(lx, [...lexemes.values()], rng)
+  else if (card.dir === 'ru-en') {
+    const first = card.state === State.New && card.reps === 0
+    if (first) item = guessItem(lx, [...lexemes.values()], rng, examplesFor(lx.id, sentences, 1)[0], relatives?.get(lx.id))
+    item ??= meaningItem(lx, [...lexemes.values()], rng)
+  }
   else if (card.dir === 'audio') item = hasVoice ? listenItem(lx, [...lexemes.values()], rng) : meaningItem(lx, [...lexemes.values()], rng)
   else if (card.dir === 'cloze') {
     // a different sentence on each review: a word met in varied contexts is recalled in new ones
@@ -145,6 +167,7 @@ export function hasExample(lex: string, sentences: Sentence[]): boolean {
 export async function recordReview(cardIdValue: string, v: Pick<Verdict, 'correct' | 'note'>, ms: number, typed: boolean, now: number): Promise<SrsCard | null> {
   const card = await db.srs.get(cardIdValue)
   if (!card) return null
+  setRetention(await effectiveRetention())
   const rating = ratingFor(v, ms, typed, card)
   const { card: next, log } = reviewCard(card, rating, now, ms)
   await db.srs.put(next)

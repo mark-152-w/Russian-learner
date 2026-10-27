@@ -1,13 +1,14 @@
 import 'fake-indexeddb/auto'
 import { beforeAll, beforeEach, describe, expect, it } from 'vitest'
-import type { Lexeme } from '../types/content.gen'
+import type { Lexeme, RootFamily, Sentence } from '../types/content.gen'
 import { db, MedvedDB, useDatabase } from '../db/db'
-import { loadChunk } from '../lib/lexicon'
+import { loadChunk, loadLexemes } from '../lib/lexicon'
+import { loadFamilies } from '../lib/content'
 import { mulberry32 } from '../lib/rng'
 import { grade } from '../engine/grader'
-import { gloss, meaningItem, pairItem } from '../engine/generators'
+import { gloss, guessItem, meaningItem, pairItem } from '../engine/generators'
 import { enRuItem } from '../engine/drills'
-import { addWord, cardToItem } from './deck'
+import { addWord, cardToItem, relativeFor } from './deck'
 import { confusedWith, confusionsOf, noteConfusion, pairCardId, recordConfusion, SAME_OCCASION_MS } from './confusion'
 import { getHook, LEECH_AGAIN, LEECH_LAPSES, leechesToRescue, markRescued, needsRescue, setHook } from './leech'
 
@@ -17,7 +18,7 @@ let n = 0
 const L = (id: string) => lex.get(id)!
 
 beforeAll(async () => {
-  const pool = [...(await loadChunk('A1')), ...(await loadChunk('A2')), ...(await loadChunk('C1'))]
+  const pool = (await Promise.all((['A1', 'A2', 'B1', 'C1'] as const).map(loadChunk))).flat()
   lex = new Map(pool.map((x) => [x.id, x]))
 })
 beforeEach(() => useDatabase(new MedvedDB(`memory-${++n}`)))
@@ -97,5 +98,45 @@ describe('leeches', () => {
     expect(await getHook('n:книга')).toBe('a book with a knee')
     await setHook('n:книга', ' ')
     expect(await getHook('n:книга')).toBe('')
+  })
+})
+
+describe('guessing a new word first', () => {
+  const ru = 'Я пишу́ письмо́.'
+  const tok = (w: string, reading: string): [number, number, string] => [ru.indexOf(w), ru.indexOf(w) + w.length, reading]
+  const sentence = (lex: string): Sentence => ({
+    id: 's:1', ru, en: ['I am writing a letter.'], lv: 'A1', r: 1,
+    w: [tok('Я', 'o:я|sg_nom'), tok('пишу́', 'v:писать|np_1sg'), tok('письмо́', `${lex}|sg_acc`)],
+  })
+  it('asks for the meaning in a sentence, with a relative as the hint', () => {
+    const it = guessItem(L('n:письмо'), [...lex.values()], mulberry32(2), sentence('n:письмо'), L('v:писать'))!
+    expect(it).toMatchObject({ pretest: true, prompt: { ru: 'Я пишу́ письмо́.', governor: 'письмо́' } })
+    expect(it.prompt.en).toContain('писа́ть')
+    expect(grade(it, answer(it)).correct).toBe(true)
+    expect(it.reason).toContain('The sentence: *I am writing a letter.*')
+  })
+  it('isn’t a blind guess: no sentence and no relative means no guess item', () => {
+    expect(guessItem(L('n:письмо'), [...lex.values()], mulberry32(2))).toBeNull()
+    expect(guessItem(L('n:письмо'), [...lex.values()], mulberry32(2), undefined, L('v:писать'))!.prompt.ru).toBe('письмо́')
+  })
+  it('hints with a relative the learner is learning, else a more frequent one', () => {
+    const fam: RootFamily = { id: 'root-pis', root: 'пис-', meaning: 'write', lexemes: ['v:писать', 'n:письмо', 'n:писатель'] }
+    expect(relativeFor(L('n:письмо'), fam, lex, new Set(['n:писатель']))?.id).toBe('n:писатель')
+    expect(relativeFor(L('n:письмо'), fam, lex, new Set())?.id).toBe('v:писать')
+    expect(relativeFor(L('n:письмо'), undefined, lex, new Set())).toBeUndefined()
+  })
+  it('turns only a new word’s first card into a guess', async () => {
+    await addWord('n:письмо', T0, false)
+    const card = (await db.srs.get('vocab:n:письмо:ru-en'))!
+    const sents = [sentence('n:письмо')]
+    const first = cardToItem(card, lex, sents, mulberry32(1), false, new Map([['n:письмо', L('v:писать')]]))!
+    expect(first.pretest).toBe(true)
+    expect(cardToItem({ ...card, reps: 1, state: 1 }, lex, sents, mulberry32(1), false)!.pretest).toBeUndefined()
+  })
+  it('every word family member is a real word (validate.py checks none is in two families)', { timeout: 60_000 }, async () => {
+    const fams = await loadFamilies()
+    const all = await loadLexemes([...fams.keys()])
+    expect(all.size).toBe(fams.size)
+    expect(new Set(fams.values()).size).toBeGreaterThanOrEqual(100)
   })
 })

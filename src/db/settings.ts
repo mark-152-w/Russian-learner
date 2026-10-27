@@ -4,6 +4,8 @@ import { db, getKV, setKV } from './db'
 export interface Settings {
   dailyGoalMinutes: number
   newCardsPerDay: number
+  /** How much of what's learned to remember (FSRS's target retention, before the personal correction). */
+  retention: number
   showStress: boolean
   translit: boolean
   ttsRate: number
@@ -18,6 +20,7 @@ export interface Settings {
 export const DEFAULT_SETTINGS: Settings = {
   dailyGoalMinutes: 20,
   newCardsPerDay: 10,
+  retention: 0.9,
   showStress: true,
   translit: false,
   ttsRate: 0.9,
