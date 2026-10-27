@@ -136,13 +136,27 @@ export function overlaps(a: string, b: string): boolean {
   return words(a).some((w) => wb.has(w))
 }
 
+/** Three meanings of other words of the same part of speech, none too close to the answer. The pool can hold
+ *  thousands of words, so sample at random and stop at three; scan it all only when sampling comes up short. */
 function glossChoices(lx: Lexeme, pool: Lexeme[], rng: Rng): { choices: string[]; answerIndex: number } | null {
   const answer = gloss(lx)
-  const others = shuffle(rng, pool.filter((x) => x.id !== lx.id && x.pos === lx.pos))
-    .map(gloss)
-    // a distractor that contains the answer (first / first-class) or vice versa is too close to call
-    .filter((g, i, a) => !overlaps(g, answer) && a.indexOf(g) === i)
-    .slice(0, 3)
+  const answerWords = new Set(words(answer))
+  const seen = new Set([answer.toLowerCase()])
+  const others: string[] = []
+  // a distractor that contains the answer (first / first-class) or vice versa is too close to call
+  const consider = (x: Lexeme) => {
+    if (x.id === lx.id || x.pos !== lx.pos) return
+    const g = gloss(x)
+    if (seen.has(g.toLowerCase()) || words(g).some((w) => answerWords.has(w))) return
+    seen.add(g.toLowerCase())
+    others.push(g)
+  }
+  for (let tries = 0; tries < 60 && others.length < 3 && pool.length; tries++) consider(pool[Math.floor(rng() * pool.length)]!)
+  if (others.length < 3)
+    for (const x of shuffle(rng, pool)) {
+      if (others.length >= 3) break
+      consider(x)
+    }
   if (others.length < 3) return null
   const choices = shuffle(rng, [answer, ...others])
   return { choices, answerIndex: choices.indexOf(answer) }

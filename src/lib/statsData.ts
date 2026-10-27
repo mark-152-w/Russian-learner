@@ -1,9 +1,15 @@
 // Pure summaries for the stats dashboard, from the per-day totals and the learner model.
 import type { Day, Mastery } from '../db/db'
+import { dayKey } from '../rewards/streak'
 
 const DAY_MS = 86400000
 const parse = (day: string) => new Date(`${day}T12:00:00`)
-const key = (d: Date) => `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`
+const key = (d: Date) => dayKey(d.getTime())
+/** Noon on the Monday of the week containing `day`. */
+const mondayOf = (day: string) => {
+  const t = parse(day)
+  return new Date(t.getTime() - ((t.getDay() + 6) % 7) * DAY_MS)
+}
 
 export interface CalendarCell {
   day: string
@@ -17,8 +23,7 @@ export interface CalendarCell {
 /** `weeks` columns of Monday-to-Sunday cells, ending with the week of `today`. */
 export function calendar(days: Day[], today: string, weeks = 18): CalendarCell[][] {
   const byDay = new Map(days.map((d) => [d.day, d]))
-  const t = parse(today)
-  const monday = new Date(t.getTime() - ((t.getDay() + 6) % 7) * DAY_MS)
+  const monday = mondayOf(today)
   const start = new Date(monday.getTime() - (weeks - 1) * 7 * DAY_MS)
   const cols: CalendarCell[][] = []
   const counts: number[] = []
@@ -40,8 +45,7 @@ export function calendar(days: Day[], today: string, weeks = 18): CalendarCell[]
 
 /** XP per week (Monday start) for the last `weeks` weeks, oldest first. */
 export function weeklyXp(days: Day[], today: string, weeks = 12): { week: string; xp: number }[] {
-  const t = parse(today)
-  const monday = new Date(t.getTime() - ((t.getDay() + 6) % 7) * DAY_MS)
+  const monday = mondayOf(today)
   return Array.from({ length: weeks }, (_, i) => {
     const from = new Date(monday.getTime() - (weeks - 1 - i) * 7 * DAY_MS)
     const keys = new Set(Array.from({ length: 7 }, (_, j) => key(new Date(from.getTime() + j * DAY_MS))))

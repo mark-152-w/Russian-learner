@@ -1,9 +1,10 @@
 // The pinned source list itself (tools/sources.json), so a credit never waits for a dictionary rebuild.
 import sources from '../../tools/sources.json'
 
-type Source = { name: string; url: string; licence: string; licenceUrl: string; commit?: string; snapshot?: string }
+type Source = { name: string; url: string; licence: string; licenceUrl: string; commit?: string }
 
 export default function Attributions() {
+  // the same rule as ingest.py: a source with a "status" note isn't in the build yet
   const list = Object.entries(sources as Record<string, Source & { status?: string }>).filter(([, s]) => !s.status)
   return (
     <div className="space-y-4">
@@ -25,7 +26,6 @@ export default function Attributions() {
               </a>
             </div>
             {s.commit && <div className="text-xs text-ink-soft">Version: {s.commit.slice(0, 10)}</div>}
-            {s.snapshot && <div className="text-xs text-ink-soft">Data: {s.snapshot}</div>}
           </li>
         ))}
         <li className="rounded-lg border border-line bg-paper-2 p-4 text-sm">

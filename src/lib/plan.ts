@@ -58,13 +58,19 @@ const FUN = [
   { title: "Today's crossword", detail: 'Every answer is an inflected form.', to: '/crossword/daily', kind: 'crossword', feature: 'crossword' },
 ]
 
+/** Tags with enough evidence, weakest first by plain accuracy (`below`: only those under that score). */
+export function weakTags(rows: Mastery[], below = 1.01): Mastery[] {
+  return rows
+    .filter((m) => m.kind === 'tag' && m.attempts >= WEAK_MIN_ATTEMPTS && m.score < below && m.key !== 'tag:vocab')
+    .sort((a, b) => a.score - b.score || b.attempts - a.attempts)
+}
+
 /**
  * The topic most in need of practice: the lowest score after fading by time since practice. A topic that was
  * strong but hasn't been touched for a while qualifies too (`stale`), so learned grammar keeps coming back.
  */
 export function weakestTag(rows: Mastery[], now?: number): (Mastery & { recall: number; stale: boolean }) | undefined {
-  return rows
-    .filter((m) => m.kind === 'tag' && m.attempts >= WEAK_MIN_ATTEMPTS && m.key !== 'tag:vocab')
+  return weakTags(rows)
     .map((m) => {
       const recall = now === undefined ? m.score : recallScore(m, now)
       return { ...m, recall, stale: m.score >= WEAK_BELOW }
