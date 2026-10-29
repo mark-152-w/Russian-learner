@@ -19,7 +19,7 @@
 - 25 Python tool tests;
 - `validate.py`: 0 errors, 2 warnings (сёк in two C1 sentences: a real form pymorphy3 doesn't know);
 - typecheck;
-- 184 Vitest tests. New in Phase 8 part 3: the memory-strength fit recovers a simulated learner's strength; the
+- 189 Vitest tests (5 added with the A1 unit: the next-unit rule, beginner stress items). New in Phase 8 part 3: the memory-strength fit recovers a simulated learner's strength; the
   retention correction keeps the learner's target; review logs replay into observations; binned recall for the
   chart; word guesses (sentence, relative hint, only a new word's first card); a wrong guess costs nothing; every
   unit with grammar yields three gradable guesses; guess sessions never retry; the evening plan step. Part 2: pair items in both directions; what counts as a mix-up (a deck word's meaning
@@ -62,6 +62,24 @@ including wrong cases. In Phase 4 they covered:
 - the Listening page and a dialogue;
 - the keyboard: typing a lesson line with Latin key positions;
 - the new Practice and Reference hubs.
+
+## A1 unit 1: Hello! First words (after Phase 8)
+
+A first unit for complete beginners, before A2 unit 1 (`content/units/a1-01.json`, boss Колобо́к).
+
+- **Rule** (`g-first-steps`): the alphabet in four groups (old friends, false friends, new letters, the two signs),
+  each letter with its sound and an example word; the **РЕСТОРАН** trick; stress and unstressed о; **э́то** with no
+  *a/the/is*; **кто / что / где**, yes/no questions by intonation, **нет** vs **не**; a greetings table; **ты / вы**;
+  common mistakes.
+- **Exercises** (`content/exercises/a1-u01.json`, 19 items): reading cognates (**такси́**, **рестора́н**,
+  **футбо́л**…), greetings and register, **меня́ зову́т**, question words, **нет / не**, no *is*.
+- **Generated drills**: 25 words (greetings, polite words, question words, family, everyday things), with vocab,
+  match, and stress on the dictionary form only (new `dictionary` param on the stress generator: no case forms
+  before cases are taught).
+- Three new tags (`basics.alphabet`, `basics.this-is`, `basics.greetings`).
+- **The next unit** no longer sends a learner back to a level they went straight past: someone halfway through A2
+  isn't told to do A1 unit 1 now (it stays open in the course list). A level they've started still brings them back
+  to a unit they skipped.
 
 ## Phase 8: what's built (part 3)
 
@@ -809,12 +827,12 @@ Russian–English pairs with per-sentence attribution. I'll ingest it at the sta
 | Stories and non-fiction | 40 (A2 10, B1 10, B2 10, C1 10), 6,083 analysed words, 147 questions |
 | Dialogues | 20 (A2 8, B1 8, B2 4), 1,159 words, 60 questions |
 | Keyboard lessons | 13 |
-| Grammar articles | 50 (20 A2, 10 B1, 10 B2, 10 C1) |
-| Course units | 65 (20 A2, 20 B1, 15 B2, 10 C1), 727 unit words, 65 bosses |
-| Hand-written exercise items | 344 (202 in units, 8 placement, 71 aspect, 63 motion) |
+| Grammar articles | 51 (1 A1, 20 A2, 10 B1, 10 B2, 10 C1) |
+| Course units | 66 (1 A1, 20 A2, 20 B1, 15 B2, 10 C1), 739 unit words, 66 bosses |
+| Hand-written exercise items | 363 (221 in units, 8 placement, 71 aspect, 63 motion) |
 | Trainer prepositions / minimal pairs | 40 / 14 |
 | Error types | 51 |
-| Grammar tags | 73 |
+| Grammar tags | 76 |
 | Achievements | 80 (all active, 12 hidden) |
 | Idioms and culture entries | 77 |
 | Collectible cards | 32 in 4 sets, 528 analysed words |

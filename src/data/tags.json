@@ -1,6 +1,9 @@
 {
   "$schema": "../../schemas/taxonomy.schema.json",
   "items": [
+    {"id": "basics.alphabet", "family": "basics", "label": "Reading Cyrillic", "level": "A1", "article": "g-first-steps"},
+    {"id": "basics.this-is", "family": "basics", "label": "Э́то…, кто? что? где?", "level": "A1", "article": "g-first-steps"},
+    {"id": "basics.greetings", "family": "basics", "label": "Greetings and polite words", "level": "A1", "article": "g-first-steps"},
     {"id": "case.nom", "family": "case", "label": "Nominative"},
     {"id": "case.gen", "family": "case", "label": "Genitive"},
     {"id": "case.gen.possession", "family": "case", "label": "Genitive: possession (кни́га бра́та)"},

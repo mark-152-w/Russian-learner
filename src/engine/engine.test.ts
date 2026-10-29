@@ -210,6 +210,10 @@ describe('generators', () => {
     const it = stressItem(L('n:рука'), mulberry32(3))!
     expect(stressIndex(it.stressWord!)).not.toBeNull()
   })
+  it('beginner stress items ask about the dictionary form only', () => {
+    expect(stressItem(L('n:рука'), mulberry32(3), true)!.stressWord).toBe(L('n:рука').lemma)
+    expect(stressItem(L('n:дом'), mulberry32(3), true)).toBeNull()
+  })
   it('match items have distinct glosses', () => {
     const lxs = ['n:дом', 'n:книга', 'n:рука', 'n:город', 'n:время'].map(L)
     const m = matchItem(lxs)!
