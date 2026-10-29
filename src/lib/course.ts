@@ -44,9 +44,14 @@ export async function recordCheckpoint(unit: Unit, accuracy: number, testOut: bo
   return { completed, card: completed ? ((await awardCard(now, 'common'))?.card ?? null) : null }
 }
 
-/** The first unit not yet completed, in course order. */
+/**
+ * The first unit not yet completed, in course order. A level the learner went past without completing any of its
+ * units (they began higher up) isn't pushed back at them: it stays open in the course list.
+ */
 export function nextUnit(units: Unit[], p: CourseProgress): Unit | undefined {
-  return units.find((u) => !p[u.id]?.completed)
+  const started = new Set(units.filter((u) => p[u.id]?.completed).map((u) => u.level))
+  const bypassed = (u: Unit) => !started.has(u.level) && units.some((v) => started.has(v.level) && units.indexOf(v) > units.indexOf(u))
+  return units.find((u) => !p[u.id]?.completed && !bypassed(u))
 }
 
 /** A lesson: every drill of the unit, in order, lightly interleaved. */

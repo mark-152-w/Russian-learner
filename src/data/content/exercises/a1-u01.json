@@ -1,0 +1,490 @@
+{
+ "$schema": "../../../../schemas/exercise.schema.json",
+ "items": [
+  {
+   "id": "ex-a1-u01-01",
+   "type": "choice",
+   "level": "A1",
+   "tags": [
+    "basics.alphabet"
+   ],
+   "prompt": {
+    "ru": "такси́",
+    "instruction": "Read the word aloud. What does it mean?"
+   },
+   "choices": [
+    "taxi",
+    "tax",
+    "Texas",
+    "taco"
+   ],
+   "answerIndex": 0,
+   "reason": "**такси́** is *taxi*: **т** = t, **а** = a, **к** = k, **с** = s, **и** = ee. **С** is *s*, never *k*.",
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-a1-u01-02",
+   "type": "choice",
+   "level": "A1",
+   "tags": [
+    "basics.alphabet"
+   ],
+   "prompt": {
+    "ru": "метро́",
+    "instruction": "Read the word aloud. What does it mean?"
+   },
+   "choices": [
+    "meter",
+    "metal",
+    "metro (underground)",
+    "mother"
+   ],
+   "answerIndex": 2,
+   "reason": "**метро́** is *metro*: **Р** is *r*, not *p*.",
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-a1-u01-03",
+   "type": "choice",
+   "level": "A1",
+   "tags": [
+    "basics.alphabet"
+   ],
+   "prompt": {
+    "ru": "рестора́н",
+    "instruction": "Read the word aloud. What does it mean?"
+   },
+   "choices": [
+    "station",
+    "restaurant",
+    "rest",
+    "post office"
+   ],
+   "answerIndex": 1,
+   "reason": "**Р** is *r*, **С** is *s*, **Н** is *n*: **рестора́н**, *restaurant*.",
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-a1-u01-04",
+   "type": "choice",
+   "level": "A1",
+   "tags": [
+    "basics.alphabet"
+   ],
+   "prompt": {
+    "ru": "суп",
+    "instruction": "Read the word aloud. What does it mean?"
+   },
+   "choices": [
+    "cup",
+    "sun",
+    "bus",
+    "soup"
+   ],
+   "answerIndex": 3,
+   "reason": "**С** is *s* and **У** is *oo*: **суп**, *soup*.",
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-a1-u01-05",
+   "type": "choice",
+   "level": "A1",
+   "tags": [
+    "basics.alphabet"
+   ],
+   "prompt": {
+    "ru": "футбо́л",
+    "instruction": "Read the word aloud. What does it mean?"
+   },
+   "choices": [
+    "football",
+    "photo",
+    "fruit",
+    "boat"
+   ],
+   "answerIndex": 0,
+   "reason": "**Ф** is *f*, **У** *oo*, **Б** *b*, **Л** *l*: **футбо́л**, *football*.",
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-a1-u01-06",
+   "type": "choice",
+   "level": "A1",
+   "tags": [
+    "basics.alphabet"
+   ],
+   "prompt": {
+    "en": "telephone",
+    "instruction": "Which word means *telephone*?"
+   },
+   "choices": [
+    "теа́тр",
+    "телеви́зор",
+    "телефо́н"
+   ],
+   "answerIndex": 2,
+   "reason": "**телефо́н** is *telephone* (**Ф** is *f*). **телеви́зор** is *television* and **теа́тр** is *theatre*.",
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-a1-u01-07",
+   "type": "choice",
+   "level": "A1",
+   "tags": [
+    "basics.greetings",
+    "register"
+   ],
+   "prompt": {
+    "ru": "___, А́нна Ива́новна!",
+    "en": "Hello, Anna Ivanovna! (to your teacher)",
+    "instruction": "Choose the right word"
+   },
+   "accept": [
+    "Здра́вствуйте"
+   ],
+   "distractors": [
+    {
+     "ru": "Приве́т",
+     "error": "register.formality",
+     "why": "**Приве́т** is for friends and family. A teacher, called by first name and father's name, gets **Здра́вствуйте**."
+    },
+    {
+     "ru": "Пока́",
+     "error": "vocab.wrong-word",
+     "why": "**Пока́** means *bye*."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-a1-u01-08",
+   "type": "choice",
+   "level": "A1",
+   "tags": [
+    "basics.greetings"
+   ],
+   "prompt": {
+    "ru": "___, Ми́ша! Как дела́?",
+    "en": "Hi, Misha! How are things? (to a friend)",
+    "instruction": "Choose the right word"
+   },
+   "accept": [
+    "Приве́т"
+   ],
+   "distractors": [
+    {
+     "ru": "До свида́ния",
+     "error": "vocab.wrong-word",
+     "why": "**До свида́ния** means *goodbye*."
+    },
+    {
+     "ru": "Спаси́бо",
+     "error": "vocab.wrong-word",
+     "why": "**Спаси́бо** means *thank you*."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-a1-u01-09",
+   "type": "choice",
+   "level": "A1",
+   "tags": [
+    "basics.greetings"
+   ],
+   "prompt": {
+    "ru": "Спаси́бо! — ___!",
+    "en": "Thank you! — You're welcome!",
+    "instruction": "Choose the right word"
+   },
+   "accept": [
+    "Пожа́луйста"
+   ],
+   "distractors": [
+    {
+     "ru": "Приве́т",
+     "error": "vocab.wrong-word",
+     "why": "**Приве́т** is *hi*. The answer to **спаси́бо** is **пожа́луйста**."
+    },
+    {
+     "ru": "Да",
+     "error": "vocab.wrong-word",
+     "why": "**да** means *yes*."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-a1-u01-10",
+   "type": "choice",
+   "level": "A1",
+   "tags": [
+    "basics.greetings",
+    "pron.personal"
+   ],
+   "prompt": {
+    "ru": "Как вас зову́т? — ___ зову́т А́нна.",
+    "en": "What's your name? — My name is Anna.",
+    "instruction": "Choose the right word"
+   },
+   "accept": [
+    "Меня́"
+   ],
+   "distractors": [
+    {
+     "ru": "Я",
+     "error": "pronoun.form",
+     "why": "Word for word it's *They call me Anna*: **меня́** (*me*), not **я** (*I*)."
+    },
+    {
+     "ru": "Вас",
+     "error": "pronoun.form",
+     "why": "**вас** is *you*: that's the word in the question."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-a1-u01-11",
+   "type": "choice",
+   "level": "A1",
+   "tags": [
+    "basics.greetings",
+    "register"
+   ],
+   "prompt": {
+    "ru": "Как ___ зову́т?",
+    "en": "What's your name? (to a little boy)",
+    "instruction": "Choose the right word"
+   },
+   "accept": [
+    "тебя́"
+   ],
+   "distractors": [
+    {
+     "ru": "вас",
+     "error": "register.formality",
+     "why": "A child gets **ты**, so it's **Как тебя́ зову́т?** **вас** is for adults you don't know well."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-a1-u01-12",
+   "type": "choice",
+   "level": "A1",
+   "tags": [
+    "basics.greetings"
+   ],
+   "prompt": {
+    "ru": "Как дела́? — ___, спаси́бо.",
+    "en": "How are things? — Fine, thanks.",
+    "instruction": "Choose the right word"
+   },
+   "accept": [
+    "Хорошо́"
+   ],
+   "distractors": [
+    {
+     "ru": "Здра́вствуйте",
+     "error": "vocab.wrong-word",
+     "why": "**Здра́вствуйте** is *hello*. *Fine* is **хорошо́**."
+    },
+    {
+     "ru": "Пожа́луйста",
+     "error": "vocab.wrong-word",
+     "why": "**Пожа́луйста** is *please* or *you're welcome*."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-a1-u01-13",
+   "type": "choice",
+   "level": "A1",
+   "tags": [
+    "basics.this-is"
+   ],
+   "prompt": {
+    "ru": "___ э́то? — Э́то ма́ма.",
+    "en": "Who's this? — It's Mum.",
+    "instruction": "Choose the question word"
+   },
+   "accept": [
+    "Кто"
+   ],
+   "distractors": [
+    {
+     "ru": "Что",
+     "error": "vocab.wrong-word",
+     "why": "**что** is for things. Ask about people with **кто**."
+    },
+    {
+     "ru": "Где",
+     "error": "vocab.wrong-word",
+     "why": "**где** means *where*."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-a1-u01-14",
+   "type": "choice",
+   "level": "A1",
+   "tags": [
+    "basics.this-is"
+   ],
+   "prompt": {
+    "ru": "___ э́то? — Э́то кни́га.",
+    "en": "What's this? — It's a book.",
+    "instruction": "Choose the question word"
+   },
+   "accept": [
+    "Что"
+   ],
+   "distractors": [
+    {
+     "ru": "Кто",
+     "error": "vocab.wrong-word",
+     "why": "**кто** is for people and animals. A book is a thing: **что**."
+    },
+    {
+     "ru": "Где",
+     "error": "vocab.wrong-word",
+     "why": "**где** means *where*."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-a1-u01-15",
+   "type": "choice",
+   "level": "A1",
+   "tags": [
+    "basics.this-is"
+   ],
+   "prompt": {
+    "ru": "___ э́то? — Э́то соба́ка.",
+    "en": "What's this? — It's a dog.",
+    "instruction": "Choose the question word"
+   },
+   "accept": [
+    "Кто"
+   ],
+   "distractors": [
+    {
+     "ru": "Что",
+     "error": "vocab.wrong-word",
+     "why": "English says *what*, but Russian animals are **кто**, like people."
+    }
+   ],
+   "explanation": "Animals are **кто**: **Кто э́то? — Э́то кот.**",
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-a1-u01-16",
+   "type": "choice",
+   "level": "A1",
+   "tags": [
+    "basics.this-is"
+   ],
+   "prompt": {
+    "ru": "___ ма́ма? — Вот она́.",
+    "en": "Where's Mum? — Here she is.",
+    "instruction": "Choose the question word"
+   },
+   "accept": [
+    "Где"
+   ],
+   "distractors": [
+    {
+     "ru": "Кто",
+     "error": "vocab.wrong-word",
+     "why": "**кто** asks *who*. The answer **Вот она́** (*here she is*) answers *where*: **где**."
+    },
+    {
+     "ru": "Что",
+     "error": "vocab.wrong-word",
+     "why": "**что** asks *what*."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-a1-u01-17",
+   "type": "choice",
+   "level": "A1",
+   "tags": [
+    "basics.this-is"
+   ],
+   "prompt": {
+    "ru": "Э́то дом? — ___, э́то не дом. Э́то шко́ла.",
+    "en": "Is that a house? — No, it's not a house. It's a school.",
+    "instruction": "Choose the right word"
+   },
+   "accept": [
+    "Нет"
+   ],
+   "distractors": [
+    {
+     "ru": "Да",
+     "error": "vocab.wrong-word",
+     "why": "The answer goes on *it's not a house*, so it's **нет**."
+    },
+    {
+     "ru": "Не",
+     "error": "vocab.wrong-word",
+     "why": "**не** means *not* and goes before a word. *No* on its own is **нет**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-a1-u01-18",
+   "type": "choice",
+   "level": "A1",
+   "tags": [
+    "basics.this-is"
+   ],
+   "prompt": {
+    "ru": "Э́то ___ ко́шка. Э́то соба́ка.",
+    "en": "It's not a cat. It's a dog.",
+    "instruction": "Choose the right word"
+   },
+   "accept": [
+    "не"
+   ],
+   "distractors": [
+    {
+     "ru": "нет",
+     "error": "vocab.wrong-word",
+     "why": "**нет** is the answer *no*. *Not* before a word is **не**."
+    }
+   ],
+   "source": "handwritten"
+  },
+  {
+   "id": "ex-a1-u01-19",
+   "type": "choice",
+   "level": "A1",
+   "tags": [
+    "basics.this-is"
+   ],
+   "prompt": {
+    "en": "This is a book.",
+    "instruction": "How do you say it in Russian?"
+   },
+   "accept": [
+    "Э́то кни́га."
+   ],
+   "distractors": [
+    {
+     "ru": "Э́то есть кни́га.",
+     "error": "vocab.wrong-word",
+     "why": "Russian leaves out *is* in the present: just **Э́то кни́га.**"
+    }
+   ],
+   "source": "handwritten"
+  }
+ ]
+}

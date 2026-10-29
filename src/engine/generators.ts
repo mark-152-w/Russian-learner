@@ -113,7 +113,15 @@ export function choiceItem(lx: Lexeme, slot: string, rng: Rng): ExerciseItem | n
   return it
 }
 
-export function stressItem(lx: Lexeme, rng: Rng): ExerciseItem | null {
+export function stressItem(lx: Lexeme, rng: Rng, dictionaryOnly = false): ExerciseItem | null {
+  // beginners, who haven't met endings yet, are asked about the dictionary form only
+  if (dictionaryOnly) {
+    if (syllables(lx.lemma) < 2 || stressIndex(lx.lemma) === null) return null
+    return {
+      id: `gen:st:${lx.id}:lemma`, type: 'stress', level: level(lx), tags: ['stress'], vocab: [lx.id], source: 'generated',
+      stressWord: lx.lemma, prompt: { instruction: 'Tap the stressed vowel', en: gloss(lx) },
+    }
+  }
   const lemmaIdx = stressIndex(lx.lemma)
   const options = SLOTS[lx.pos]
     .map((slot) => ({ slot, form: primaryForm(lx, slot) }))

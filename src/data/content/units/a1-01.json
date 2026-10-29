@@ -1,0 +1,97 @@
+{
+ "$schema": "../../../../schemas/unit.schema.json",
+ "id": "u-a1-01",
+ "number": 1,
+ "level": "A1",
+ "title": {
+  "en": "Hello! First words",
+  "ru": "Приве́т! Пе́рвые слова́"
+ },
+ "theme": "basics",
+ "grammar": [
+  "g-first-steps"
+ ],
+ "vocab": [
+  "o:здравствуйте",
+  "n:привет",
+  "o:пока",
+  "o:спасибо",
+  "o:пожалуйста",
+  "o:да",
+  "o:нет",
+  "o:это",
+  "o:кто",
+  "o:что",
+  "o:где",
+  "o:хорошо",
+  "o:очень",
+  "n:имя",
+  "n:мама",
+  "n:папа",
+  "n:брат",
+  "n:сестра",
+  "n:друг",
+  "n:дом",
+  "n:школа",
+  "n:книга",
+  "n:вода",
+  "n:телефон",
+  "n:машина"
+ ],
+ "drills": [
+  {
+   "items": [
+    "ex-a1-u01-01",
+    "ex-a1-u01-02",
+    "ex-a1-u01-03",
+    "ex-a1-u01-04",
+    "ex-a1-u01-05",
+    "ex-a1-u01-06"
+   ]
+  },
+  {
+   "items": [
+    "ex-a1-u01-07",
+    "ex-a1-u01-08",
+    "ex-a1-u01-09",
+    "ex-a1-u01-10",
+    "ex-a1-u01-11",
+    "ex-a1-u01-12",
+    "ex-a1-u01-13",
+    "ex-a1-u01-14",
+    "ex-a1-u01-15",
+    "ex-a1-u01-16",
+    "ex-a1-u01-17",
+    "ex-a1-u01-18",
+    "ex-a1-u01-19"
+   ]
+  },
+  {
+   "generator": "vocab",
+   "count": 6
+  },
+  {
+   "generator": "stress",
+   "count": 3,
+   "params": {
+    "dictionary": true
+   }
+  },
+  {
+   "generator": "match",
+   "count": 1
+  }
+ ],
+ "boss": {
+  "name": {
+   "ru": "Колобо́к",
+   "en": "the runaway bun"
+  },
+  "hp": 8,
+  "art": "boss-66"
+ },
+ "testOut": [
+  "basics.this-is",
+  "basics.greetings"
+ ]
+}

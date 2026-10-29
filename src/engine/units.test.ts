@@ -26,7 +26,7 @@ beforeAll(async () => {
   }
 }, 120_000)
 
-const levelsWithUnits = ['A2', 'B1', 'B2', 'C1']
+const levelsWithUnits = ['A1', 'A2', 'B1', 'B2', 'C1']
 
 describe('course units', () => {
   it('each level is numbered from 1 without gaps, and ids are unique', () => {
@@ -35,6 +35,7 @@ describe('course units', () => {
       const ns = units.filter((u) => u.level === lv).map((u) => u.number)
       expect(ns, lv).toEqual(Array.from({ length: ns.length }, (_, i) => i + 1))
     }
+    expect(units.filter((u) => u.level === 'A1')).toHaveLength(1)
     expect(units.filter((u) => u.level === 'A2')).toHaveLength(20)
     expect(units.filter((u) => u.level === 'B1')).toHaveLength(20)
     expect(units.filter((u) => u.level === 'B2')).toHaveLength(15)

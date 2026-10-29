@@ -129,12 +129,13 @@ src/features.ts        features that exist; quests/achievements for anything els
   руку́ is an error. Homographs pass with either stress, so check це́ны/цены́-type words yourself.
 - Markdown is only `**bold**`, `*italic*`, `~~wrong~~`, `` `code` ``, `{{ru:…}}` and `- ` bullets; nesting
   (`*give **him***`) can't render and is a validate error.
-- Units exist for A2 (20), B1 (20), B2 (15) and C1 (10): `content/units/{a2,b1,b2,c1}-NN.json`, numbered from 1
-  per level; `loadUnits()` sorts by level then number. Hand-written unit items live in
-  `content/exercises/{b1,b2,c1}-units.json` (ids `ex-b1-u03-02`); B1+ units also reuse `ex-asp-*`/`ex-mot-*`.
-  Boss art ids run `boss-01…boss-65`; BossArt has hand-picked looks to 40 and derives the rest from the id.
+- Units exist for A1 (1), A2 (20), B1 (20), B2 (15) and C1 (10): `content/units/{a1,a2,b1,b2,c1}-NN.json`, numbered
+  from 1 per level; `loadUnits()` sorts by level then number. Hand-written unit items live in
+  `content/exercises/{a1,a2}-uNN.json` and `{b1,b2,c1}-units.json` (ids `ex-b1-u03-02`); B1+ units also reuse
+  `ex-asp-*`/`ex-mot-*`. `nextUnit()` skips a level the learner went straight past (completed units above it, none in it).
+  Boss art ids run `boss-01…boss-66`; BossArt has hand-picked looks to 40 and derives the rest from the id.
 - Unit drills are data: `{generator, params, count}` from the registry in `src/engine/drills.ts`, or `items`
-  ids of hand-written exercises. `src/engine/units.test.ts` checks every unit yields gradable items.
+  ids of hand-written exercises. `stress` with `params.dictionary` asks about lemmas only (beginner units). `src/engine/units.test.ts` checks every unit yields gradable items.
 - Stories: one sentence per line `Russian | English`; blank line = new paragraph; dialogues `Speaker: text | en`.
   Write every polysyllabic word stressed; the written stress picks homographs. Words the lexicon lacks are
   problems: rephrase, or add a name/word to closed_class.json (validated). Gerunds and most participles aren't

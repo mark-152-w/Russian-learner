@@ -121,7 +121,7 @@ export const GENERATORS: Record<string, (ctx: DrillContext, p: P, n: number) => 
     })(), n)
   },
 
-  stress: (ctx, _p, n) => take(shuffle(ctx.rng, ctx.vocab).map((lx) => stressItem(lx, ctx.rng)).filter((x): x is ExerciseItem => !!x), n),
+  stress: (ctx, p, n) => take(shuffle(ctx.rng, ctx.vocab).map((lx) => stressItem(lx, ctx.rng, !!p.dictionary)).filter((x): x is ExerciseItem => !!x), n),
 
   match: (ctx) => {
     const m = matchItem(shuffle(ctx.rng, ctx.vocab).slice(0, 6))

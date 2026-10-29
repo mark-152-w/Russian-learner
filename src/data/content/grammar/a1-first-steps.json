@@ -1,0 +1,138 @@
+{
+  "$schema": "../../../../schemas/grammar-article.schema.json",
+  "id": "g-first-steps",
+  "title": {"en": "First steps: letters, «э́то» and questions", "ru": "Пе́рвые шаги́"},
+  "level": "A1",
+  "tags": ["basics.alphabet", "basics.this-is", "basics.greetings"],
+  "card": "Some Russian letters look and sound like English (**А, К, М, О, Т**); some look English but aren't (**В** = v, **Н** = n, **Р** = r, **С** = s, **У** = oo); the rest are new. Russian has no *a/the* and no *is* in the present: **Э́то кни́га.** = *This is a book.* Ask **Кто э́то?** about people and animals and **Что э́то?** about things. Say **Здра́вствуйте** to adults you don't know, **Приве́т** to friends.",
+  "sections": [
+    {
+      "kind": "why",
+      "body": "Before any grammar comes reading. Russian spelling follows sound far more closely than English does, so once you know 33 letters you can read almost any word aloud. Many of them are words you already know: **такси́**, **метро́**, **кафе́**, **телефо́н**, **рестора́н**. The other good news: the first sentences need almost no grammar. There is no *a* or *the*, and no *am, is, are*."
+    },
+    {
+      "kind": "table",
+      "title": "Old friends: look and sound like English",
+      "table": {
+        "head": ["Letter", "Sound", "Example"],
+        "rows": [
+          ["А а", "*a* as in *father*", "**ма́ма** (mum)"],
+          ["К к", "*k*", "**кот** (cat)"],
+          ["М м", "*m*", "**мир** (world)"],
+          ["О о", "*o* as in *for*, when stressed", "**дом** (house)"],
+          ["Т т", "*t*", "**торт** (cake)"]
+        ]
+      }
+    },
+    {
+      "kind": "table",
+      "title": "False friends: they look English, but aren't",
+      "table": {
+        "head": ["Letter", "Sound", "Example"],
+        "rows": [
+          ["В в", "*v* as in *van*", "**вода́** (water)"],
+          ["Е е", "*ye* as in *yes*; after a consonant *e*, softening it", "**нет** (no)"],
+          ["Н н", "*n*", "**нос** (nose)"],
+          ["Р р", "a rolled *r*", "**рот** (mouth)"],
+          ["С с", "*s*", "**сок** (juice)"],
+          ["У у", "*oo* as in *boot*", "**у́тро** (morning)"],
+          ["Х х", "*kh*, like Scottish *loch*", "**хлеб** (bread)"]
+        ]
+      }
+    },
+    {
+      "kind": "table",
+      "title": "New letters",
+      "table": {
+        "head": ["Letter", "Sound", "Example"],
+        "rows": [
+          ["Б б", "*b*", "**брат** (brother)"],
+          ["Г г", "*g* as in *go*", "**го́род** (town)"],
+          ["Д д", "*d*", "**да** (yes)"],
+          ["Ё ё", "*yo* as in *yonder*; always stressed", "**ёж** (hedgehog)"],
+          ["Ж ж", "*zh*, like the *s* in *pleasure*", "**жена́** (wife)"],
+          ["З з", "*z*", "**зима́** (winter)"],
+          ["И и", "*ee* as in *meet*", "**и́мя** (name)"],
+          ["Й й", "a short *y*, as in *boy*", "**чай** (tea)"],
+          ["Л л", "*l*", "**ла́мпа** (lamp)"],
+          ["П п", "*p*", "**па́па** (dad)"],
+          ["Ф ф", "*f*", "**фильм** (film)"],
+          ["Ц ц", "*ts* as in *cats*", "**цирк** (circus)"],
+          ["Ч ч", "*ch* as in *chip*", "**час** (hour)"],
+          ["Ш ш", "*sh*", "**шко́ла** (school)"],
+          ["Щ щ", "a long, soft *sh*", "**борщ** (borscht)"],
+          ["Ы ы", "no English match: *i* said with the tongue pulled back", "**ты** (you)"],
+          ["Э э", "*e* as in *met*", "**э́то** (this)"],
+          ["Ю ю", "*yu* as in *you*", "**юг** (south)"],
+          ["Я я", "*ya* as in *yard*", "**я** (I)"],
+          ["Ь ь", "soft sign: no sound of its own; it softens the consonant before it", "**день** (day)"],
+          ["Ъ ъ", "hard sign: no sound; a tiny break before *ye, yo, yu, ya*", "**подъе́зд** (entrance)"]
+        ]
+      }
+    },
+    {
+      "kind": "memory-trick",
+      "body": "Tourists in Russia puzzle over signs saying **РЕСТОРАН**, which an English reader sees as *pectopah*. Read it with the false friends: Р = r, Е = e, С = s, Т = t, О = o, Р = r, А = a, Н = n. It's **рестора́н**, *restaurant*. Once the false friends click, street signs start to make sense."
+    },
+    {
+      "kind": "explanation",
+      "title": "Stress: the mark over a vowel",
+      "body": "Every Russian word of two or more syllables has one stressed syllable, said louder and longer than the rest. Russians don't write the mark, but learners' books do, and so does this app: the accent in **ма́ма** tells you to say *MA-ma*.\n\n- Unstressed **о** sounds like *a*: **окно́** is said *akno*, **молоко́** *malako*.\n- Stress can change the meaning: **за́мок** is a castle, **замо́к** a lock.\n- **ё** is always stressed, so it never needs the mark."
+    },
+    {
+      "kind": "explanation",
+      "title": "«Э́то»: this is, that is, it's",
+      "body": "Russian has no word for *a* or *the*, and leaves out *am, is, are* in the present. So **Э́то кни́га.** means *This is a book*, *That's a book* or *It's the book*, and **Ма́ма до́ма.** means *Mum is at home*. **э́то** never changes: **Э́то мой брат.** *This is my brother.* **Э́то ма́ма и па́па.** *This is Mum and Dad.*"
+    },
+    {
+      "kind": "explanation",
+      "title": "Questions: кто? что? and your voice",
+      "body": "- Ask **Кто э́то?** (*Who is this?*) about people **and animals**, and **Что э́то?** (*What is this?*) about things.\n- **Где?** is *where?* The answer can be **Вот он.** (*Here he is.* or *There it is.*)\n- A yes/no question uses the same words as a statement. Only your voice changes: it jumps up on the word you're asking about. **Э́то дом.** *It's a house.* **Э́то дом?** *Is it a house?*\n- Answer **Да, э́то дом.** or **Нет, э́то не дом. Э́то шко́ла.** **нет** is *no*; **не** is *not*, and it goes right before the word it denies."
+    },
+    {
+      "kind": "table",
+      "title": "Hello, goodbye, please, thank you",
+      "table": {
+        "head": ["Russian", "English", "Say it to"],
+        "rows": [
+          ["**Здра́вствуйте!**", "Hello!", "anyone; polite (the first **в** is silent: *zdrastvuyte*)"],
+          ["**Приве́т!**", "Hi!", "friends, family, children"],
+          ["**До свида́ния!**", "Goodbye!", "anyone; polite"],
+          ["**Пока́!**", "Bye!", "friends, family, children"],
+          ["**Спаси́бо!**", "Thank you!", "anyone"],
+          ["**Пожа́луйста!**", "Please! / You're welcome!", "anyone"],
+          ["**Извини́те!**", "Excuse me! / Sorry!", "anyone; polite"],
+          ["**Как дела́?**", "How are things?", "friends (answer **Хорошо́!** *Fine!*)"],
+          ["**Как вас зову́т?**", "What's your name?", "adults you don't know well"],
+          ["**Как тебя́ зову́т?**", "What's your name?", "friends, children"],
+          ["**Меня́ зову́т А́нна.**", "My name is Anna.", "anyone"],
+          ["**О́чень прия́тно!**", "Nice to meet you!", "anyone"]
+        ]
+      }
+    },
+    {
+      "kind": "vs-english",
+      "body": "English has one *you*. Russian has two: **ты** for one friend, a relative, a child or a pet, and **вы** for an adult you don't know well, anyone older or senior, or more than one person. That's why there are two of everything: **Приве́т** and **Пока́** go with **ты**, **Здра́вствуйте** and **До свида́ния** with **вы**. When in doubt, use **вы**: it is never rude."
+    },
+    {
+      "kind": "common-mistakes",
+      "mistakes": [
+        {"wrong": "Э́то есть кни́га.", "right": "Э́то кни́га.", "why": "There's no *is* in the present: **Э́то кни́га.**", "error": "vocab.wrong-word"},
+        {"wrong": "Я зову́т А́нна.", "right": "Меня́ зову́т А́нна.", "why": "Word for word it's *They call me Anna*: **меня́** (*me*), not **я** (*I*).", "error": "pronoun.form"},
+        {"wrong": "Что э́то? — Э́то соба́ка.", "right": "Кто э́то? — Э́то соба́ка.", "why": "Animals are **кто** in Russian, like people.", "error": "vocab.wrong-word"},
+        {"wrong": "Нет, э́то нет дом.", "right": "Нет, э́то не дом.", "why": "**нет** answers *no*. *Not* before a word is **не**.", "error": "vocab.wrong-word"},
+        {"wrong": "Приве́т, А́нна Ива́новна!", "right": "Здра́вствуйте, А́нна Ива́новна!", "why": "A first name with the father's name (**Ива́новна**) is how you address a teacher or an older adult: they get the polite **Здра́вствуйте**.", "error": "register.formality"}
+      ]
+    }
+  ],
+  "examples": [
+    {"ru": "Здра́вствуйте! Меня́ зову́т А́нна.", "en": "Hello! My name is Anna.", "focus": "зову́т"},
+    {"ru": "Кто э́то? — Э́то мой брат.", "en": "Who's this? — It's my brother.", "focus": "Кто"},
+    {"ru": "Что э́то? — Э́то телефо́н.", "en": "What's this? — It's a phone.", "focus": "Что"},
+    {"ru": "Э́то дом? — Нет, э́то не дом. Э́то шко́ла.", "en": "Is that a house? — No, it's not a house. It's a school.", "focus": "не"},
+    {"ru": "Где ма́ма? — Вот она́.", "en": "Where's Mum? — Here she is.", "focus": "Вот"},
+    {"ru": "Приве́т, Ми́ша! Как дела́? — Хорошо́, спаси́бо.", "en": "Hi, Misha! How are things? — Fine, thanks.", "focus": "дела́"},
+    {"ru": "Спаси́бо! — Пожа́луйста.", "en": "Thank you! — You're welcome.", "focus": "Пожа́луйста"}
+  ],
+  "related": ["g-gender-nominative", "g-personal-pronouns"]
+}
