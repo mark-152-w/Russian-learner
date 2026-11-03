@@ -16,7 +16,7 @@
 
 `npm run check` passes:
 
-- 25 Python tool tests;
+- 26 Python tool tests (the newest checks that the Tatoeba credits list is current);
 - `validate.py`: 0 errors, 2 warnings (сёк in two C1 sentences: a real form pymorphy3 doesn't know);
 - typecheck;
 - 189 Vitest tests (5 added with the A1 unit: the next-unit rule, beginner stress items). New in Phase 8 part 3: the memory-strength fit recovers a simulated learner's strength; the
@@ -212,6 +212,29 @@ refresh pushes the next one further out. The stored score is untouched; the fadi
 
 I checked it in headless Chromium at phone width: in a Review session, a missed card came back at items 4, 8
 and 12 with its options in a new order each time, then stopped. There were no console errors.
+
+## Licensing and credits
+
+Медведь is open source, and every requirement of the source licences is now met:
+
+- **`LICENSE`:** MIT, for the code.
+- **`CONTENT-LICENSE.md`:**
+  - which files are CC BY-SA 4.0 (content, and the dictionary adapted from OpenRussian and FrequencyWords) and
+    which are CC BY 2.0 FR (Tatoeba sentences);
+  - the changes made to each source.
+- **Tatoeba credits:**
+  - `tools/attribution.py` lists the Russian and English authors of all 33,176 shipped sentences in
+    `public/credits/tatoeba.txt` (about 1 MB, served but not precached);
+  - the manythings.org/anki download is credited too;
+  - a Python test fails if the list falls out of date.
+- **Third-party notices:** `scripts/licenses.mjs` writes the LICENSE and NOTICE texts of the 21 bundled packages
+  and both fonts (Dexie's Apache NOTICE, the fonts' SIL OFL) into `third-party-licenses.txt` on every build.
+- **Attributions page:**
+  - the app's own licences;
+  - each source's changes;
+  - links to the credits and licence texts. A service-worker denylist keeps those `.txt` links from opening the app.
+- **Content audit:** no text from copyrighted works. The stories, cards, idioms and grammar were written for the
+  app. The only cultural references are to public-domain works (Krylov, Pushkin, Grigoryev's 1859 line about Pushkin) and historical facts.
 
 ## Clean-up pass after Phase 7
 

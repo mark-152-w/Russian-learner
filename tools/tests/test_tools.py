@@ -149,5 +149,12 @@ class MarkdownTest(unittest.TestCase):
         self.assertTrue(self.md_errors("the ***of*** case"))
 
 
+class AttributionTest(unittest.TestCase):
+    def test_tatoeba_credits_are_current(self):
+        # every shipped sentence must be credited to its authors (CC BY 2.0 FR): re-run tools/attribution.py
+        import attribution
+        self.assertEqual(attribution.OUT.read_text(encoding="utf-8"), attribution.credits())
+
+
 if __name__ == "__main__":
     unittest.main()

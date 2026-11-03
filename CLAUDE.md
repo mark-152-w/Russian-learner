@@ -13,6 +13,8 @@ tools/                 Python build pipeline (run from repo root)
   sentences.py         Tatoeba → src/data/sentences/{A1..C1}.json (only fully resolved, unambiguously stressed)
   closed_class.json    stressed paradigms the dataset lacks: pronouns (наш, ваш), numerals (11–19…), names/places,
                        preposition variants (во, со, обо), invariant words (kind "word": как, пусть; with "sub" + "en")
+  attribution.py       Tatoeba credits for every shipped sentence → public/credits/tatoeba.txt (run after
+                       sentences.py; a test fails if it's stale)
   stories.py           tools/stories/*.txt → src/data/content/stories/*.json + src/data/stories-index.json, with
                        context disambiguation; report in tools/reports/stories.md
   stories/             story/dialogue sources (see the docstring in stories.py for the format and {hints})
@@ -27,6 +29,8 @@ tools/                 Python build pipeline (run from repo root)
   reports/             generated review reports (ingest_summary.md is the overview)
   tests/               python unittest suite
 schemas/               JSON Schemas for every data file (source of truth for TS types)
+scripts/licenses.mjs   bundled packages' LICENSE + NOTICE texts → public/third-party-licenses.txt (runs in `npm run build`;
+                       gitignored)
 scripts/gen-types.mjs  schemas → src/types/content.gen.ts (run `npm run gen:types` after schema edits)
 src/data/              generated + hand-written data
   lexicon/{A1..C2}.json  ranked words by level (precached core); X1..Xn.json rare tail (optional download)
@@ -99,6 +103,17 @@ src/features.ts        features that exist; quests/achievements for anything els
 - `npm run data:validate`: must pass before a phase is done (`--full` re-checks the rare tail too, slower).
 - `npm run check`: python tests + validate + typecheck + vitest.
 - `npm run dev` / `npm run build` (`BASE=/` for root hosting; default base is `/Russian-learner/`).
+
+## Licensing
+
+- The code is MIT (`LICENSE`). Content and data are CC BY-SA 4.0, and the Tatoeba sentences CC BY 2.0 FR
+  (`CONTENT-LICENSE.md` maps files to licences). The CC BY-SA comes from OpenRussian/FrequencyWords: never add data
+  under a more restrictive licence, and never paste text from copyrighted works (lyrics, modern literature, film scripts).
+  Short quotes from public-domain authors are fine.
+- A new data source goes in `tools/sources.json` with `licence`, `licenceUrl` and `changes`. The Attributions page
+  renders that list. Re-run `tools/attribution.py` after changing the sentences.
+- Files in `public/` ending `.txt` skip the service worker's app fallback (`navigateFallbackDenylist`), so links
+  to them open the file.
 
 ## Data conventions
 
