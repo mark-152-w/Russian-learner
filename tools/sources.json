@@ -4,6 +4,7 @@
     "url": "https://github.com/Badestrand/russian-dictionary",
     "git": "https://github.com/Badestrand/russian-dictionary.git",
     "commit": "50e210c4803237779cb562bc1abcea529066031c",
+    "changes": "Converted into form tables, filtered, levelled by frequency, corrected by hand (tools/overrides.json) and checked against pymorphy3.",
     "licence": "CC BY-SA 4.0",
     "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
     "files": ["nouns.csv", "verbs.csv", "adjectives.csv", "others.csv"]
@@ -12,6 +13,7 @@
     "name": "FrequencyWords (OpenSubtitles 2018, Russian)",
     "url": "https://github.com/hermitdave/FrequencyWords",
     "commit": "525f9b560de45753a5ea01069454e72e9aa541c6",
+    "changes": "Used to rank the words and set their levels; the list itself isn't shipped.",
     "licence": "CC BY-SA 4.0 (content), MIT (code)",
     "licenceUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
     "files": {
@@ -23,13 +25,17 @@
     "name": "pymorphy3 + OpenCorpora dictionaries (build-time verification only)",
     "url": "https://github.com/no-plagiarism/pymorphy3",
     "licence": "MIT (pymorphy3); OpenCorpora dictionary CC BY-SA 3.0",
-    "licenceUrl": "https://opencorpora.org/?page=about"
+    "licenceUrl": "https://opencorpora.org/?page=about",
+    "changes": "Used at build time to check forms and grammatical tags."
   },
   "tatoeba": {
     "name": "Tatoeba sentences (Russian + English translations)",
     "url": "https://tatoeba.org/en/downloads",
     "licence": "CC BY 2.0 FR",
     "licenceUrl": "https://creativecommons.org/licenses/by/2.0/fr/",
+    "via": { "name": "manythings.org/anki", "url": "https://www.manythings.org/anki/" },
+    "changes": "Sentences selected by level; stress marks added to the Russian and ё restored. Translations unchanged.",
+    "credits": "credits/tatoeba.txt",
     "snapshot": "rus-eng.zip (536,124 Russian–English pairs), committed to tools/raw/tatoeba/"
   }
 }

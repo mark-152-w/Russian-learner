@@ -38,6 +38,8 @@ export default defineConfig({
         globIgnores: ['**/lex/X*', '**/index-ext-*', '**/sent/B2*', '**/sent/C1*'],
         maximumFileSizeToCacheInBytes: 6 * 1024 * 1024,
         navigateFallback: 'index.html',
+        // the licence and credit files are opened as pages, not the app
+        navigateFallbackDenylist: [/\.txt$/],
         runtimeCaching: [
           {
             urlPattern: /\/assets\/(lex\/X|index-ext-|sent\/(B2|C1)).*\.js$/,

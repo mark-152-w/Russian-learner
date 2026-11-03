@@ -47,12 +47,27 @@ Pushes to `main` deploy to GitHub Pages (`.github/workflows/deploy.yml`). Instal
 - `CLAUDE.md`: architecture and conventions
 - `PROGRESS.md`: status, decisions, known issues
 
+## Licence
+
+Медведь is open source.
+
+- **Code:** [MIT](LICENSE).
+- **Course content and dictionary data:** [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/), because
+  the dictionary is adapted from CC BY-SA sources.
+- **Example sentences (Tatoeba):** CC BY 2.0 FR.
+
+[CONTENT-LICENSE.md](CONTENT-LICENSE.md) says which files fall under which licence and what was changed.
+
 ## Credits
 
 Data:
 - OpenRussian (CC BY-SA 4.0);
 - FrequencyWords / OpenSubtitles (CC BY-SA 4.0);
-- Tatoeba sentences (CC BY 2.0 FR);
+- Tatoeba sentences (CC BY 2.0 FR), via manythings.org/anki. Every sentence's authors are listed in
+  `public/credits/tatoeba.txt`;
 - verified with pymorphy3 / OpenCorpora.
 
-See the in-app Attributions page.
+Fonts: PT Sans and PT Serif by ParaType (SIL Open Font License 1.1).
+
+Each build writes the licence texts of the bundled libraries to `third-party-licenses.txt`.
+The in-app Attributions page links to it.
