@@ -2,7 +2,7 @@
 import type { ExerciseItem, Lexeme, Sentence } from '../types/content.gen'
 import { pick, shuffle, type Rng } from '../lib/rng'
 import { soleLexeme, wordTokens } from '../lib/sentences'
-import { choiceItem, drillableSlots, gloss, isDrillable, listenItem, matchItem, meaningItem, stressItem, transformItem } from './generators'
+import { choiceItem, drillableSlots, isDrillable, senses, listenItem, matchItem, meaningItem, stressItem, transformItem } from './generators'
 import { caseClozeItems, findErrorItem, patternItems, tilesItem, verbClozeItems, type NounClass } from './sentenceGen'
 import type { Case } from './slots'
 
@@ -30,12 +30,33 @@ type P = Record<string, unknown>
 const arr = <T>(p: P, k: string) => (Array.isArray(p[k]) ? (p[k] as T[]) : undefined)
 
 /** English → Russian: write the dictionary form. */
-export function enRuItem(lx: Lexeme): ExerciseItem {
+/** What kind of word a recall card asks for: "verb, imperfective", "noun"… (an English gloss alone is often both). */
+export function wordKind(lx: Lexeme): string {
+  if (lx.pos === 'verb') return lx.aspect === 'pf' ? 'verb, perfective' : lx.aspect === 'impf' ? 'verb, imperfective' : 'verb'
+  return { noun: 'noun', adj: 'adjective', other: 'word' }[lx.pos]
+}
+
+/**
+ * English → Russian recall. An English gloss fits several Russian words (to answer: отвеча́ть or отве́тить), so
+ * the card says which kind of word it wants (part of speech, aspect) and the first letter. Typing the aspect
+ * partner gets its own explanation.
+ */
+export function enRuItem(lx: Lexeme, lexemes?: Map<string, Lexeme>): ExerciseItem {
   const slot = { noun: 'sg_nom', verb: 'inf', adj: 'm_nom', other: '' }[lx.pos]
+  const first = lx.lemma[0]!
+  const partners = (lx.partners ?? []).flatMap((id) => {
+    const p = lexemes?.get(id)
+    return p && p.lemma !== lx.lemma && lx.aspect && lx.aspect !== 'both' ? [p] : []
+  })
+  const want = lx.aspect === 'pf' ? 'perfective' : 'imperfective'
   return {
     id: `gen:enru:${lx.id}`, type: 'transform', level: lx.level ?? 'C2', tags: ['vocab'], vocab: [lx.id], source: 'generated',
     ...(slot ? { target: { lex: lx.id, slot } } : {}),
-    prompt: { en: gloss(lx), instruction: 'Write in Russian' }, accept: [lx.lemma],
+    prompt: { en: `${senses(lx)} · starts with ${first}…`, instruction: `Write the Russian ${wordKind(lx)}` },
+    accept: [lx.lemma],
+    ...(partners.length
+      ? { distractors: partners.map((p) => ({ ru: p.lemma, error: 'aspect.wrong', why: `**${p.lemma}** is the aspect partner. This card asks for the ${want}: **${lx.lemma}**.` })) }
+      : {}),
   }
 }
 
@@ -114,9 +135,9 @@ export const GENERATORS: Record<string, (ctx: DrillContext, p: P, n: number) => 
     return take((function* () {
       for (const lx of words) {
         const r = ctx.rng()
-        if (r < 0.35) yield meaningItem(lx, ctx.pool, ctx.rng) ?? enRuItem(lx)
-        else if (r < 0.55 && ctx.hasVoice) yield listenItem(lx, ctx.pool, ctx.rng) ?? enRuItem(lx)
-        else yield enRuItem(lx)
+        if (r < 0.35) yield meaningItem(lx, ctx.pool, ctx.rng) ?? enRuItem(lx, ctx.lexemes)
+        else if (r < 0.55 && ctx.hasVoice) yield listenItem(lx, ctx.pool, ctx.rng) ?? enRuItem(lx, ctx.lexemes)
+        else yield enRuItem(lx, ctx.lexemes)
       }
     })(), n)
   },

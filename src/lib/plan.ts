@@ -3,7 +3,7 @@
 import type { Unit } from '../types/content.gen'
 import { db, type Mastery } from '../db/db'
 import { dayKey } from '../rewards/streak'
-import { countDue, DEFAULT_KNOWN_RANK, knownLexemes, newWordsAddedToday } from '../srs/deck'
+import { BACKLOG_PAUSE, BACKLOG_SLOW, countDue, DEFAULT_KNOWN_RANK, knownLexemes, newWordsAddedToday } from '../srs/deck'
 import { drillableTag } from '../engine/drills'
 import { loadHandwritten, loadUnits } from './content'
 import { getProgress, nextUnit, type CourseProgress } from './course'
@@ -92,7 +92,14 @@ export function planSteps(x: PlanInput): PlanStep[] {
     steps.push({
       id: 'review',
       title: x.due ? `Review ${x.due} card${x.due === 1 ? '' : 's'}` : 'Learn new words',
-      detail: x.due > 100 ? 'A big pile: do one round now and the rest will spread out.' : x.due ? 'Spaced repetition: a few minutes keeps them fresh.' : 'Nothing due. Add a few new words to your deck.',
+      detail:
+        x.due >= BACKLOG_PAUSE
+          ? 'New words wait until this pile is smaller. One round a day brings it down.'
+          : x.due >= BACKLOG_SLOW
+            ? 'Fewer new words today while you catch up.'
+            : x.due
+              ? 'Spaced repetition: a few minutes keeps them fresh.'
+              : 'Nothing due. Add a few new words to your deck.',
       to: '/review',
       done: did('review') && x.due === 0,
     })

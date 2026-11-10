@@ -11,10 +11,29 @@ import { parseSlot, slotLabel, slotTags } from './slots'
 type Level = NonNullable<Lexeme['level']>
 type Distractor = NonNullable<ExerciseItem['distractors']>[number]
 
-/** Short English gloss: first synonym of the first sense. */
+/** Split a sense list on commas that aren't inside brackets. */
+const splitSenses = (en: string) => en.split(/,(?![^(]*\))/).map((x) => x.trim()).filter(Boolean)
+
+/** English verbs read as nouns without "to" (answer, help, walk), so verb glosses get one. */
+const asVerb = (lx: Lexeme, g: string) => (lx.pos === 'verb' && !/^to\b/i.test(g) ? `to ${g}` : g)
+
+/** Short English gloss: first synonym of the first sense ("to" in front of a verb). */
 export function gloss(lx: Lexeme): string {
-  const first = lx.en[0].split(/,(?![^(]*\))/)[0]!.trim()
-  return first.length > 40 ? first.slice(0, 38) + '…' : first
+  const first = splitSenses(lx.en[0])[0] ?? lx.en[0]
+  return asVerb(lx, first.length > 40 ? first.slice(0, 38) + '…' : first)
+}
+
+/** A fuller gloss for recall prompts: the first few synonyms, so the learner can tell which word is meant. */
+export function senses(lx: Lexeme, max = 3): string {
+  const list = splitSenses(lx.en[0]).slice(0, max)
+  let out = asVerb(lx, list.join(', '))
+  if (out.length > 60) out = gloss(lx)
+  return out
+}
+
+/** Every meaning the word has (all senses and synonyms), for keeping wrong options clear of right ones. */
+function allSenses(lx: Lexeme): string[] {
+  return lx.en.flatMap(splitSenses)
 }
 
 export function isDrillable(lx: Lexeme): boolean {
@@ -150,13 +169,18 @@ export function overlaps(a: string, b: string): boolean {
 function glossChoices(lx: Lexeme, pool: Lexeme[], rng: Rng): { choices: string[]; answerIndex: number } | null {
   const answer = gloss(lx)
   const answerWords = new Set(words(answer))
+  // every meaning of the word: a wrong option must not be one of them (слу́шать is also "hear", so слы́шать's
+  // "to hear" can't be a wrong answer for it)
+  const meaningWords = new Set(allSenses(lx).flatMap(words))
   const seen = new Set([answer.toLowerCase()])
   const others: string[] = []
   // a distractor that contains the answer (first / first-class) or vice versa is too close to call
   const consider = (x: Lexeme) => {
     if (x.id === lx.id || x.pos !== lx.pos) return
     const g = gloss(x)
-    if (seen.has(g.toLowerCase()) || words(g).some((w) => answerWords.has(w))) return
+    if (seen.has(g.toLowerCase()) || words(g).some((w) => answerWords.has(w) || meaningWords.has(w))) return
+    // ...nor a word that can itself mean the answer
+    if (allSenses(x).flatMap(words).some((w) => answerWords.has(w))) return
     seen.add(g.toLowerCase())
     others.push(g)
   }

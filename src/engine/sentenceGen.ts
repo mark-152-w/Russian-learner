@@ -139,7 +139,7 @@ export function caseClozeItems(s: Sentence, lexemes: Map<string, Lexeme>, o: Clo
     let item: ExerciseItem = {
       id: `gen:cz:${s.id}:${i}`, type: 'cloze', level: s.lv, tags, vocab: [lx.id], target: { lex: lx.id, slot: ag.slot },
       source: 'generated',
-      prompt: { ru: gapped(s, t), en: s.en[0], instruction: `Fill the gap: ${lx.lemma}`, governor: why.governor },
+      prompt: { ru: gapped(s, t), en: s.en[0], instruction: `Fill the gap with the right form of ${lx.lemma}`, governor: why.governor },
       accept: acceptFor(lx, ag.slot, t.text),
       reason: why.reason,
     }
@@ -168,7 +168,7 @@ export function verbClozeItems(s: Sentence, lexemes: Map<string, Lexeme>, kinds:
     out.push({
       id: `gen:vz:${s.id}:${i}`, type: 'cloze', level: s.lv, tags: slotTags('verb', slot, lx.aspect) as Tags, vocab: [lx.id],
       target: { lex: lx.id, slot }, source: 'generated',
-      prompt: { ru: gapped(s, t), en: s.en[0], instruction: `Fill the gap: ${lx.lemma}` },
+      prompt: { ru: gapped(s, t), en: s.en[0], instruction: `Fill the gap with the right form of ${lx.lemma}` },
       accept: acceptFor(lx, slot, t.text),
       reason: `${slotLabel('verb', slot, lx.aspect)[0]!.toUpperCase()}${slotLabel('verb', slot, lx.aspect).slice(1)}.`,
     })
