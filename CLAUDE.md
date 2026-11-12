@@ -63,7 +63,8 @@ src/engine/            normalize.ts, translit.ts, slots.ts (slot → labels/tags
                        town.ts (buildings, levels, ranks), adventure.ts («Де́ло» parser: verb government → explanations),
                        idioms.ts (meaning questions from content/idioms)
 src/srs/fsrs.ts        ts-fsrs wrapper; cards stored with epoch-ms dates; ratingFor(verdict, ms)
-src/srs/deck.ts        vocabulary deck: card directions, form cards from missed forms, new-word queue, due items
+src/srs/deck.ts        vocabulary deck: card directions (unlocked one at a time), form cards from missed forms (capped
+                       per day), new-word queue (throttled by the backlog), due items (`pickDue`: one card per word a day)
 src/srs/confusion.ts   mix-ups between deck words (noteConfusion after a miss) → pair cards (kind/dir 'pair', `other`)
 src/srs/leech.ts       leeches (lapses summed per word), rescue offers, memory hooks
 src/srs/memory.ts      forgetting curve fitted to the learner (replay log → MLE of strength k) → requested retention

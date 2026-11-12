@@ -19,7 +19,9 @@
 - 26 Python tool tests (the newest checks that the Tatoeba credits list is current);
 - `validate.py`: 0 errors, 2 warnings (сёк in two C1 sentences: a real form pymorphy3 doesn't know);
 - typecheck;
-- 189 Vitest tests (5 added with the A1 unit: the next-unit rule, beginner stress items). New in Phase 8 part 3: the memory-strength fit recovers a simulated learner's strength; the
+- 195 Vitest tests (6 added with the flashcard fixes: directions unlock in turn, one card per word a day, the
+  backlog throttle, the form-card cap, the English → Russian hints, no other meaning of the word as a wrong option;
+  5 with the A1 unit: the next-unit rule, beginner stress items). New in Phase 8 part 3: the memory-strength fit recovers a simulated learner's strength; the
   retention correction keeps the learner's target; review logs replay into observations; binned recall for the
   chart; word guesses (sentence, relative hint, only a new word's first card); a wrong guess costs nothing; every
   unit with grammar yields three gradable guesses; guess sessions never retry; the evening plan step. Part 2: pair items in both directions; what counts as a mix-up (a deck word's meaning
@@ -62,6 +64,29 @@ including wrong cases. In Phase 4 they covered:
 - the Listening page and a dialogue;
 - the keyboard: typing a lesson line with Latin key positions;
 - the new Practice and Reference hubs.
+
+## Flashcards: a manageable load, clearer questions (after A1 unit 1)
+
+Feedback: the review pile grew faster than it could be done, and some cards didn't make clear what they wanted.
+
+**Why it piled up.** Each new word made 3–4 cards (meaning, English → Russian, audio, sentence gap) that all came due
+within four days and were scheduled independently, so 10 new words a day meant about 40 cards a day of new
+material on top of the reviews. Every form missed anywhere in practice added another card, and new words kept
+coming however big the backlog was.
+
+- **Directions unlock in turn** (`isWaiting`, deck.ts): a word starts as one card (meaning). The next direction's
+  first review waits until the one before has a stability of `UNLOCK_STABILITY` (5) days. Existing decks benefit
+  straight away: unseen later directions just wait; nothing is deleted.
+- **One card per word a day** (`isBuried`): once any card of a word is reviewed, its other due cards wait until
+  tomorrow, and a session holds one card per word. Cards being learned come before new ones (`pickDue`).
+- **Backlog throttle** (`newWordRoom`): 30+ due reviews halve the day's new words, 60+ pause them. Home's review
+  step says so.
+- **Missed forms** make at most `FORM_CARDS_PER_DAY` (5) cards a day, and only one unseen form card per word.
+- **Clearer cards**: English → Russian names the kind of word and the aspect ("Write the Russian verb,
+  imperfective"), shows up to three senses and the first letter, and typing the aspect partner gets its own
+  explanation (`aspect.wrong`). Verb glosses carry "to" everywhere (`gloss()`), so "to answer" can't be read as the
+  noun. Meaning questions never offer another sense of the same word as a wrong option (слу́шать is also "hear").
+  Sentence gaps say "Fill the gap with the right form of …".
 
 ## A1 unit 1: Hello! First words (after Phase 8)
 

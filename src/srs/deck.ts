@@ -14,13 +14,76 @@ import { effectiveRetention } from './memory'
 
 const DAY = 86400000
 
-/** A vocabulary card introduces several directions, spread out so the first day isn't all one word. */
+/**
+ * A vocabulary word has several directions. They are introduced one at a time: a direction's first review waits
+ * until the one before it is settled (`isWaiting`), so a new word costs one card, not four, while it's fresh.
+ * The delays only order the directions; the unlock decides when each is first seen.
+ */
 export const VOCAB_DIRS: { dir: SrsDir; delayDays: number; needsVoice?: boolean }[] = [
   { dir: 'ru-en', delayDays: 0 },
   { dir: 'en-ru', delayDays: 1 },
   { dir: 'audio', delayDays: 2, needsVoice: true },
   { dir: 'cloze', delayDays: 4 },
 ]
+
+/** A direction is settled once it has survived a review into an interval of this many days. */
+export const UNLOCK_STABILITY = 5
+/** Due reviews above this slow new words to half the daily number; at BACKLOG_PAUSE they stop until it's cleared. */
+export const BACKLOG_SLOW = 30
+export const BACKLOG_PAUSE = 60
+/** Missed forms that become cards in a day; more misses than that are practice, not a deck. */
+export const FORM_CARDS_PER_DAY = 5
+
+const startOfDay = (now: number) => new Date(dayKey(now) + 'T00:00').getTime()
+const DIR_ORDER = VOCAB_DIRS.map((d) => d.dir)
+
+/** A vocabulary direction not yet seen whose earlier directions (of the same word) aren't settled yet. */
+export function isWaiting(card: SrsCard, siblings: readonly SrsCard[]): boolean {
+  if (card.kind !== 'vocab' || card.reps > 0) return false
+  const i = DIR_ORDER.indexOf(card.dir)
+  if (i <= 0) return false
+  return siblings.some((s) => {
+    const j = DIR_ORDER.indexOf(s.dir)
+    return s.kind === 'vocab' && j >= 0 && j < i && !s.suspended && !(s.state === State.Review && s.stability >= UNLOCK_STABILITY)
+  })
+}
+
+/** Another card of the same word was reviewed today, and this one wasn't: it waits until tomorrow. */
+export function isBuried(card: SrsCard, siblings: readonly SrsCard[], dayStart: number): boolean {
+  if ((card.last_review ?? 0) >= dayStart) return false
+  return siblings.some((s) => s.id !== card.id && (s.last_review ?? 0) >= dayStart)
+}
+
+/**
+ * The cards to review now: due, unlocked, not buried, one per word. Cards already being learned come before
+ * new ones, so a backlog is worked off before more is started; within each group the most overdue go first.
+ */
+export function pickDue(all: readonly SrsCard[], now: number, limit = Infinity): SrsCard[] {
+  const byLex = new Map<string, SrsCard[]>()
+  for (const c of all) byLex.set(c.lex, [...(byLex.get(c.lex) ?? []), c])
+  const dayStart = startOfDay(now)
+  const due = all
+    .filter((c) => isDue(c, now) && !isWaiting(c, byLex.get(c.lex)!) && !isBuried(c, byLex.get(c.lex)!, dayStart))
+    .sort((a, b) => Number(a.reps === 0) - Number(b.reps === 0) || a.due - b.due)
+  const seen = new Set<string>()
+  const out: SrsCard[] = []
+  for (const c of due) {
+    if (seen.has(c.lex)) continue
+    seen.add(c.lex)
+    out.push(c)
+    if (out.length >= limit) break
+  }
+  return out
+}
+
+/** Reviews due now of cards already seen: the backlog that holds back new words. */
+export const backlogOf = (all: readonly SrsCard[], now: number) => pickDue(all, now).filter((c) => c.reps > 0).length
+
+/** New words allowed today: the daily number, halved by a growing backlog and paused by a big one. */
+export function newWordRoom(limit: number, addedToday: number, backlog: number): number {
+  const cap = backlog >= BACKLOG_PAUSE ? 0 : backlog >= BACKLOG_SLOW ? Math.ceil(limit / 2) : limit
+  return Math.max(0, cap - addedToday)
+}
 
 export const cardId = (lex: string, dir: SrsDir, slot?: string) => (dir === 'form' ? `form:${lex}:${slot}` : `vocab:${lex}:${dir}`)
 
@@ -39,10 +102,16 @@ export async function addWord(lex: string, now: number, hasVoice: boolean): Prom
 }
 
 /** A form the learner got wrong in practice becomes its own card (e.g. кни́га → genitive plural). */
-export async function addFormCard(lex: string, slot: string, now: number): Promise<void> {
+export async function addFormCard(lex: string, slot: string, now: number): Promise<boolean> {
   const id = cardId(lex, 'form', slot)
-  if (await db.srs.get(id)) return
+  if (await db.srs.get(id)) return false
+  // a few a day, and one waiting per word: a hard practice session shouldn't bury the learner in cards
+  const forms = await db.srs.where('kind').equals('form').toArray()
+  const start = startOfDay(now)
+  if (forms.filter((c) => c.added >= start).length >= FORM_CARDS_PER_DAY) return false
+  if (forms.some((c) => c.lex === lex && c.reps === 0)) return false
   await db.srs.put(newCard({ id, kind: 'form', dir: 'form', lex, slot }, now))
+  return true
 }
 
 /** Words that joined the deck today, in the order they came. */
@@ -80,9 +149,10 @@ export function isCardWorthy(x: Lexeme): boolean {
 export const DEFAULT_KNOWN_RANK = 150
 
 export async function introduceNewWords(pool: Lexeme[], limit: number, now: number, hasVoice: boolean, skipBelowRank = DEFAULT_KNOWN_RANK): Promise<string[]> {
-  const room = Math.max(0, limit - (await newWordsAddedToday(now)))
+  const all = await db.srs.toArray()
+  const room = newWordRoom(limit, await newWordsAddedToday(now), backlogOf(all, now))
   if (!room) return []
-  const deck = new Set((await db.srs.toArray()).map((c) => c.lex))
+  const deck = new Set(all.map((c) => c.lex))
   const byId = new Map(pool.map((x) => [x.id, x]))
   const queue = (await getQueue()).filter((id) => !deck.has(id))
   const fresh = pool
@@ -100,11 +170,17 @@ export async function introduceNewWords(pool: Lexeme[], limit: number, now: numb
 }
 
 export async function dueCards(now: number, limit = 200): Promise<SrsCard[]> {
-  return (await db.srs.where('due').belowOrEqual(now).toArray()).filter((c) => isDue(c, now)).sort((a, b) => a.due - b.due).slice(0, limit)
+  return pickDue(await db.srs.toArray(), now, limit)
 }
 
 export async function countDue(now: number): Promise<number> {
-  return db.srs.where('due').belowOrEqual(now).filter((c) => !c.suspended).count()
+  return pickDue(await db.srs.toArray(), now).length
+}
+
+/** Whether new words are held back today by the review backlog (for explaining an empty or short session). */
+export async function newWordsHeldBack(now: number): Promise<{ backlog: number; paused: boolean; slowed: boolean }> {
+  const backlog = backlogOf(await db.srs.toArray(), now)
+  return { backlog, paused: backlog >= BACKLOG_PAUSE, slowed: backlog >= BACKLOG_SLOW && backlog < BACKLOG_PAUSE }
 }
 
 export type DeckItem = ExerciseItem & { card: string }
@@ -154,7 +230,7 @@ export function cardToItem(
     const gaps = clozesFor(lx, lexemes, sentences, rng)
     item = gaps.length ? gaps[card.reps % gaps.length]! : null
   }
-  item ??= enRuItem(lx)
+  item ??= enRuItem(lx, lexemes)
   return { ...item, id: `srs:${card.id}`, card: card.id }
 }
 

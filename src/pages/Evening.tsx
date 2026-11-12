@@ -26,7 +26,7 @@ export default function Evening() {
       const lexemes = new Map<string, Lexeme>([...pool.map((x) => [x.id, x] as const), ...words])
       const rng = mulberry32(now)
       // recall in both directions: meaning from the word, and the word from its meaning
-      const items = [...words.values()].flatMap((lx, i) => (i % 2 ? meaningItem(lx, pool, rng) ?? enRuItem(lx) : enRuItem(lx)))
+      const items = [...words.values()].flatMap((lx, i) => (i % 2 ? meaningItem(lx, pool, rng) ?? enRuItem(lx, lexemes) : enRuItem(lx, lexemes)))
       if (alive) setBuilt({ items: shuffle(rng, items), lexemes })
     })()
     return () => {
