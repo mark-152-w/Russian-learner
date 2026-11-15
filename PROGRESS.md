@@ -92,6 +92,11 @@ From a code review. Each fix has a test where one is possible.
   the app's established patterns, not bugs.
 - **Browser test**: `npm run e2e` (after a build) plays a session and leaves it with Back, finishes one, exports,
   deletes everything, imports, and opens the main pages, failing on any page error. CI runs it.
+- **Dictionary rebuild** (the one listed as due since Phase 4): **мно́гие** is now ranked (920, A2) and every later
+  rank moved by one; ла́герь, нужда́, данти́ст and вольт crossed into the next level. Nothing else in the lexicon
+  changed; 28 more sentences pass the filter (33,204); stories and cards re-analysed with 0 problems. The new
+  random draws exposed a meaning question offering "to get out" as a wrong answer for вы́йти: distractors are now
+  also compared as whole phrases, not only by content words.
 - **Backup reminder**: once there are 5+ sessions, Home asks for a backup when the last one (or the first use) is
   14 days old; "Later" waits a week. Settings shows the last export date.
 
@@ -877,10 +882,6 @@ Russian–English pairs with per-sentence attribution. I'll ingest it at the sta
 
 ## Known issues
 
-- **A dictionary rebuild is due.** Rerunning `tools/ingest.py` now ranks **мно́гие** (rank 920, A2). It was
-  missing because of the lemma mismatch fixed in Phase 4, which never had a full rebuild. Accepting it shifts
-  11,478 later ranks by one and moves a word at each level boundary. I didn't fold that into Phase 7. To do it:
-  `npm run data:ingest && python3 tools/stories.py && npm run check`, then review the diff.
 - The Phase 0 known issues still stand (morph disagreements report, 9 suspect top-5000 words, unverified short
   adjectives).
 - Headless Chromium has no Russian voices, so audio cards and listen items were verified by tests only. Please
@@ -900,8 +901,8 @@ Russian–English pairs with per-sentence attribution. I'll ingest it at the sta
 
 | Content | Count |
 |---|---|
-| Lexemes | 43,377 (12,392 ranked A1–C2) |
-| Example sentences (verified, stressed, analysed) | 33,176 |
+| Lexemes | 43,377 (12,393 ranked A1–C2) |
+| Example sentences (verified, stressed, analysed) | 33,204 |
 | Stories and non-fiction | 40 (A2 10, B1 10, B2 10, C1 10), 6,083 analysed words, 147 questions |
 | Dialogues | 20 (A2 8, B1 8, B2 4), 1,159 words, 60 questions |
 | Keyboard lessons | 13 |

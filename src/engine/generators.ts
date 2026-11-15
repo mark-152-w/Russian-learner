@@ -164,6 +164,9 @@ export function overlaps(a: string, b: string): boolean {
   return words(a).some((w) => wb.has(w))
 }
 
+/** A gloss's phrases, compared whole: "to get out" has no content word for `words` to see, but it is still a meaning. */
+const phrases = (senses: string[]) => new Set(senses.flatMap((s) => s.split(/[,;]/)).map((p) => p.trim().toLowerCase().replace(/^to /, '')).filter(Boolean))
+
 /** Three meanings of other words of the same part of speech, none too close to the answer. The pool can hold
  *  thousands of words, so sample at random and stop at three; scan it all only when sampling comes up short. */
 function glossChoices(lx: Lexeme, pool: Lexeme[], rng: Rng): { choices: string[]; answerIndex: number } | null {
@@ -172,6 +175,8 @@ function glossChoices(lx: Lexeme, pool: Lexeme[], rng: Rng): { choices: string[]
   // every meaning of the word: a wrong option must not be one of them (слу́шать is also "hear", so слы́шать's
   // "to hear" can't be a wrong answer for it)
   const meaningWords = new Set(allSenses(lx).flatMap(words))
+  const ownPhrases = phrases(allSenses(lx))
+  const answerPhrases = phrases([answer])
   const seen = new Set([answer.toLowerCase()])
   const others: string[] = []
   // a distractor that contains the answer (first / first-class) or vice versa is too close to call
@@ -179,8 +184,10 @@ function glossChoices(lx: Lexeme, pool: Lexeme[], rng: Rng): { choices: string[]
     if (x.id === lx.id || x.pos !== lx.pos) return
     const g = gloss(x)
     if (seen.has(g.toLowerCase()) || words(g).some((w) => answerWords.has(w) || meaningWords.has(w))) return
+    if ([...phrases([g])].some((p) => ownPhrases.has(p))) return
     // ...nor a word that can itself mean the answer
     if (allSenses(x).flatMap(words).some((w) => answerWords.has(w))) return
+    if ([...phrases(allSenses(x))].some((p) => answerPhrases.has(p))) return
     seen.add(g.toLowerCase())
     others.push(g)
   }
