@@ -238,6 +238,7 @@ export class RewardSession {
   private levelBefore: LevelInfo | null = null
   private achievements: AchievementDef[] = []
   private quests: QuestDef[] = []
+  private finished = false
 
   constructor(
     readonly kind: string,
@@ -369,8 +370,14 @@ export class RewardSession {
     })
   }
 
-  async finish(now: number): Promise<SessionEnd | null> {
-    if (!this.answered) return null
+  /**
+   * Close the session: streak, quests, the session row and (unless `chest: false`) the chest. Only the first call
+   * counts. A session the learner walked away from is closed with `chest: false`: it keeps its streak day, but
+   * loot nobody would see isn't dealt.
+   */
+  async finish(now: number, opts: { chest?: boolean } = {}): Promise<SessionEnd | null> {
+    if (!this.answered || this.finished) return null
+    this.finished = true
     return db.transaction('rw', ALL_TABLES(), async () => {
       const today = dayKey(now)
       const p = await getProfile()
@@ -401,7 +408,7 @@ export class RewardSession {
 
       let chest: SessionEnd['chest'] = null
       let bonusXp = 0
-      if (this.answered >= MIN_ANSWERS_FOR_CHEST) {
+      if (opts.chest !== false && this.answered >= MIN_ANSWERS_FOR_CHEST) {
         chest = rollChest(sessionQuality({ answered: this.answered, correct: this.correct, hard: this.hard }), this.rng, { ...p, cardOptions: cardOptions(p) })
         for (const l of chest.loot) {
           if (l.kind === 'xp') bonusXp += l.amount

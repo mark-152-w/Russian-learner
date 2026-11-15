@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import type { ExerciseItem, Lexeme } from '../types/content.gen'
-import { useSettings } from '../db/settings'
-import { useRussianVoices } from '../audio/tts'
+import { loadSettings, useSettings } from '../db/settings'
+import { russianVoices, useRussianVoices } from '../audio/tts'
 import { loadLexemes, poolUpTo } from '../lib/lexicon'
 import { asChunk, getPlacement, learnerLevel } from '../lib/learner'
 import { mulberry32 } from '../lib/rng'
@@ -33,7 +33,7 @@ interface Built {
 export default function Review() {
   const nav = useNavigate()
   const settings = useSettings()
-  const { voices, ready } = useRussianVoices()
+  const { ready } = useRussianVoices()
   const [round, setRound] = useState(0)
   const [built, setBuilt] = useState<Built | null>(null)
 
@@ -45,8 +45,8 @@ export default function Review() {
       const now = Date.now()
       const level = await learnerLevel()
       const pool = await poolUpTo(asChunk(level))
-      const hasVoice = voices.length > 0
-      await introduceNewWords(pool, settings.newCardsPerDay, now, hasVoice, (await getPlacement())?.knownRank ?? DEFAULT_KNOWN_RANK)
+      const hasVoice = russianVoices().length > 0
+      await introduceNewWords(pool, (await loadSettings()).newCardsPerDay, now, hasVoice, (await getPlacement())?.knownRank ?? DEFAULT_KNOWN_RANK)
       const cards = await dueCards(now, MAX_ITEMS)
       const extra = await loadLexemes(cards.flatMap((c) => (c.other ? [c.lex, c.other] : [c.lex])))
       const lexemes = new Map<string, Lexeme>([...pool.map((x) => [x.id, x] as const), ...extra])
@@ -78,7 +78,7 @@ export default function Review() {
     return () => {
       alive = false
     }
-  }, [ready, round, voices.length, settings.newCardsPerDay])
+  }, [ready, round])
 
   if (!built) return <p className="py-12 text-center text-ink-soft">Gathering your cards…</p>
   if (!built.items.length) {

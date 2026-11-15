@@ -71,8 +71,8 @@ export async function recordConfusion(a: Lexeme, b: Lexeme, now: number): Promis
 export async function noteConfusion(item: ExerciseItem, given: string, lexemes: Map<string, Lexeme>, now: number): Promise<void> {
   const target = lexemes.get(itemLexeme(item) ?? '')
   if (!target) return
+  if (!(await db.srs.where('lex').equals(target.id).count())) return
   const deck = new Set((await db.srs.orderBy('lex').uniqueKeys()) as string[])
-  if (!deck.has(target.id)) return
   for (const id of confusedWith(item, given, lexemes, deck)) await recordConfusion(target, lexemes.get(id)!, now)
 }
 

@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react'
 import { Link, useNavigate, useParams } from 'react-router-dom'
 import type { ExerciseItem, Lexeme } from '../types/content.gen'
-import { useRussianVoices } from '../audio/tts'
+import { russianVoices, useRussianVoices } from '../audio/tts'
 import { recognitionSupported } from '../audio/speech'
 import { buildDrillContext } from '../lib/drillContext'
 import { akanyeItems, pairItems, sentenceDictationItems, shadowItems } from '../engine/listening'
@@ -64,7 +64,7 @@ export function ListenRun() {
     if (!ready) return
     let alive = true
     setState(null)
-    void buildDrillContext({ hasVoice: voices.length > 0 }).then((ctx) => {
+    void buildDrillContext({ hasVoice: russianVoices().length > 0 }).then((ctx) => {
       const items =
         mode === 'yi' || mode === 'soft'
           ? pairItems(mode, ctx.rng, 12)
@@ -78,7 +78,7 @@ export function ListenRun() {
     return () => {
       alive = false
     }
-  }, [mode, round, ready, voices.length])
+  }, [mode, round, ready])
   if (!state) return <p className="py-12 text-center text-ink-soft">Getting the audio ready…</p>
   if (!voices.length) return <p className="py-12 text-center text-ink-soft">These drills need a Russian voice on your device.</p>
   return (

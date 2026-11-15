@@ -21,6 +21,21 @@ export async function exportProgress(): Promise<Backup> {
 
 export class BackupError extends Error {}
 
+/** Each table's primary key, and the fields a row can't work without (beyond being an object). Auto-increment
+ *  tables (reviews, attempts, sessions) need no key. */
+const REQUIRED: Record<TableName, Record<string, 'string' | 'number'>> = {
+  kv: { key: 'string' },
+  srs: { id: 'string', lex: 'string', due: 'number', state: 'number' },
+  reviews: { card: 'string', ts: 'number' },
+  attempts: { ts: 'number', item: 'string' },
+  mastery: { key: 'string', score: 'number' },
+  days: { day: 'string' },
+  quests: { id: 'string', period: 'string' },
+  achievements: { id: 'string', ts: 'number' },
+  bests: { key: 'string' },
+  sessions: { start: 'number', kind: 'string' },
+}
+
 export function parseBackup(text: string): Backup {
   let data: unknown
   try {
@@ -35,7 +50,15 @@ export function parseBackup(text: string): Backup {
   if (b.version > BACKUP_VERSION) throw new BackupError('This backup comes from a newer version of the app. Update the app first.')
   for (const t of Object.keys(b.tables)) {
     if (!(TABLES as readonly string[]).includes(t)) throw new BackupError(`Unknown table "${t}" in backup.`)
-    if (!Array.isArray((b.tables as Record<string, unknown>)[t])) throw new BackupError(`Table "${t}" is malformed.`)
+    const rows = (b.tables as Record<string, unknown>)[t]
+    if (!Array.isArray(rows)) throw new BackupError(`Table "${t}" is malformed.`)
+    // a damaged file must be refused before it replaces anything, not crash pages later
+    const need = Object.entries(REQUIRED[t as TableName])
+    rows.forEach((row, i) => {
+      if (typeof row !== 'object' || row === null || Array.isArray(row)) throw new BackupError(`Table "${t}", row ${i + 1} is malformed.`)
+      for (const [k, type] of need)
+        if (typeof (row as Record<string, unknown>)[k] !== type) throw new BackupError(`Table "${t}", row ${i + 1} is missing "${k}".`)
+    })
   }
   return b as Backup
 }

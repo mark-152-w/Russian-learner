@@ -261,7 +261,13 @@ export default function Settings() {
           <Button variant="secondary" onClick={() => fileRef.current?.click()}>
             Import progress
           </Button>
-          <input ref={fileRef} type="file" accept="application/json,.json" hidden onChange={(e) => e.target.files?.[0] && doImport(e.target.files[0])} />
+          <input ref={fileRef} type="file" accept="application/json,.json" hidden onChange={(e) => {
+              const f = e.target.files?.[0]
+              // cleared, so choosing the same file again still fires
+              e.target.value = ''
+              if (f) void doImport(f)
+            }}
+          />
           <Button variant="ghost" onClick={doReset} className="text-bad">
             Delete all progress
           </Button>

@@ -71,7 +71,19 @@ function lexemeFor(item: ExerciseItem, ctx?: GradeContext): Lexeme | undefined {
   return item.target ? ctx?.lexemes?.get(item.target.lex) : undefined
 }
 
-function wrong(item: ExerciseItem, given: string, errorType: string, message?: string): Verdict {
+/**
+ * The error to record when nothing more specific is known: the item's own first distractor error, else a wrong
+ * case only for an item about cases, a different word only for a vocabulary item, else none (an unlabelled
+ * miss is better than one that skews the learner's top errors).
+ */
+export function fallbackError(item: ExerciseItem): string | undefined {
+  if (item.distractors?.[0]?.error) return item.distractors[0].error
+  if ((item.tags ?? []).some((t) => t.startsWith('case.'))) return 'case.wrong'
+  if (item.vocab?.length || (item.tags ?? []).includes('vocab')) return 'vocab.wrong-word'
+  return undefined
+}
+
+function wrong(item: ExerciseItem, given: string, errorType: string | undefined, message?: string): Verdict {
   return { correct: false, expected: item.accept?.[0] ?? '', given, errorType, message }
 }
 
@@ -79,7 +91,7 @@ function gradeText(item: ExerciseItem, raw: string, ctx?: GradeContext): Verdict
   const accepts = item.accept ?? []
   const resp = normalizeAnswer(raw)
   const given = raw.trim()
-  if (!resp) return wrong(item, given, item.distractors?.[0]?.error ?? 'case.wrong', 'No answer given.')
+  if (!resp) return wrong(item, given, undefined, 'No answer given.')
 
   const exact = accepts.find((a) => normalizeAnswer(a) === resp)
   if (exact) {
@@ -111,7 +123,7 @@ function gradeText(item: ExerciseItem, raw: string, ctx?: GradeContext): Verdict
     if (diag) return wrong(item, given, diag.errorType, diag.message)
   }
   const msg = lx ? `${given} isn't a form of **${lx.lemma}**.` : undefined
-  return wrong(item, given, item.distractors?.[0]?.error ?? 'vocab.wrong-word', msg)
+  return wrong(item, given, fallbackError(item) ?? (lx ? 'vocab.wrong-word' : undefined), msg)
 }
 
 function gradeChoice(item: ExerciseItem, value: string, ctx?: GradeContext): Verdict {
@@ -119,7 +131,7 @@ function gradeChoice(item: ExerciseItem, value: string, ctx?: GradeContext): Ver
   if (item.choices && item.answerIndex !== undefined) {
     const answer = item.choices[item.answerIndex]!
     const ok = value === answer
-    return { correct: ok, expected: answer, given: value, reason, errorType: ok ? undefined : item.distractors?.[0]?.error ?? 'vocab.wrong-word' }
+    return { correct: ok, expected: answer, given: value, reason, errorType: ok ? undefined : fallbackError(item) }
   }
   const resp = normalizeAnswer(value)
   const hit = (item.accept ?? []).find((a) => normalizeAnswer(a) === resp)
@@ -132,7 +144,7 @@ function gradeChoice(item: ExerciseItem, value: string, ctx?: GradeContext): Ver
     expected: item.accept?.[0] ?? '',
     given: value,
     reason,
-    errorType: d?.error ?? diag?.errorType ?? 'case.wrong',
+    errorType: d?.error ?? diag?.errorType ?? fallbackError(item),
     message: d?.why ?? diag?.message,
   }
 }
@@ -208,7 +220,7 @@ function gradeTiles(item: ExerciseItem, tiles: string[]): Verdict {
     const d = item.distractors?.find((x) => normalizeAnswer(x.ru) === normalizeAnswer(t))
     if (d) return wrong(item, sentence, d.error, d.why ?? `**${t}** doesn't fit here.`)
   }
-  return wrong(item, sentence, 'case.wrong', `The sentence is: **${accepts[0] ?? ''}**`)
+  return wrong(item, sentence, fallbackError(item), `The sentence is: **${accepts[0] ?? ''}**`)
 }
 
 function gradeStress(item: ExerciseItem, vowelIndex: number): Verdict {
@@ -227,7 +239,7 @@ function gradeFindError(item: ExerciseItem, index: number): Verdict {
     : {
         correct: false,
         expected,
-        errorType: item.distractors?.[0]?.error ?? 'case.wrong',
+        errorType: fallbackError(item),
         message: `The mistake was elsewhere. Correct: **${expected}**.${item.explanation ? ' ' + item.explanation : ''}`,
       }
 }

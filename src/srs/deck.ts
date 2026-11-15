@@ -3,7 +3,7 @@ import type { ExerciseItem, Lexeme, RootFamily, Sentence } from '../types/conten
 import { db, getKV, setKV } from '../db/db'
 import { dayKey } from '../rewards/streak'
 import { bumpStatsExternal, progressQuestsExternal } from '../rewards/service'
-import { examplesFor, soleLexeme, wordTokens } from '../lib/sentences'
+import { examplesFor, hasExampleIn } from '../lib/sentences'
 import type { Rng } from '../lib/rng'
 import { guessItem, listenItem, meaningItem, pairItem, transformItem } from '../engine/generators'
 import { enRuItem } from '../engine/drills'
@@ -102,7 +102,12 @@ export async function addWord(lex: string, now: number, hasVoice: boolean): Prom
 }
 
 /** A form the learner got wrong in practice becomes its own card (e.g. кни́га → genitive plural). */
-export async function addFormCard(lex: string, slot: string, now: number): Promise<boolean> {
+export function addFormCard(lex: string, slot: string, now: number): Promise<boolean> {
+  // one transaction: misses answered in quick succession must not each pass the daily cap
+  return db.transaction('rw', db.srs, () => addForm(lex, slot, now))
+}
+
+async function addForm(lex: string, slot: string, now: number): Promise<boolean> {
   const id = cardId(lex, 'form', slot)
   if (await db.srs.get(id)) return false
   // a few a day, and one waiting per word: a hard practice session shouldn't bury the learner in cards
@@ -148,7 +153,12 @@ export function isCardWorthy(x: Lexeme): boolean {
 /** Words more frequent than this are assumed known (the placement test refines it). */
 export const DEFAULT_KNOWN_RANK = 150
 
-export async function introduceNewWords(pool: Lexeme[], limit: number, now: number, hasVoice: boolean, skipBelowRank = DEFAULT_KNOWN_RANK): Promise<string[]> {
+export function introduceNewWords(pool: Lexeme[], limit: number, now: number, hasVoice: boolean, skipBelowRank = DEFAULT_KNOWN_RANK): Promise<string[]> {
+  // one transaction: two overlapping calls (a page built twice) must not both spend the day's allowance
+  return db.transaction('rw', db.srs, db.kv, () => introduce(pool, limit, now, hasVoice, skipBelowRank))
+}
+
+async function introduce(pool: Lexeme[], limit: number, now: number, hasVoice: boolean, skipBelowRank: number): Promise<string[]> {
   const all = await db.srs.toArray()
   const room = newWordRoom(limit, await newWordsAddedToday(now), backlogOf(all, now))
   if (!room) return []
@@ -205,6 +215,14 @@ export function relativeFor(lx: Lexeme, family: RootFamily | undefined, lexemes:
   return kin.find((k) => deck.has(k.id)) ?? kin.sort((a, b) => a.rank! - b.rank!).find((k) => !lx.rank || k.rank! < lx.rank)
 }
 
+// cached per map: callers finish filling a lexeme map before turning cards into items
+const lexemeLists = new WeakMap<Map<string, Lexeme>, Lexeme[]>()
+const lexemeList = (m: Map<string, Lexeme>): Lexeme[] => {
+  let l = lexemeLists.get(m)
+  if (!l) lexemeLists.set(m, (l = [...m.values()]))
+  return l
+}
+
 /**
  * Turn a card into an exercise. Falls back to a simpler direction when the ideal one isn't possible. A new word's
  * first card is a guess (`relatives` gives the hint for it).
@@ -221,10 +239,10 @@ export function cardToItem(
   } else if (card.dir === 'form' && card.slot) item = transformItem(lx, card.slot)
   else if (card.dir === 'ru-en') {
     const first = card.state === State.New && card.reps === 0
-    if (first) item = guessItem(lx, [...lexemes.values()], rng, examplesFor(lx.id, sentences, 1)[0], relatives?.get(lx.id))
-    item ??= meaningItem(lx, [...lexemes.values()], rng)
+    if (first) item = guessItem(lx, lexemeList(lexemes), rng, examplesFor(lx.id, sentences, 1)[0], relatives?.get(lx.id))
+    item ??= meaningItem(lx, lexemeList(lexemes), rng)
   }
-  else if (card.dir === 'audio') item = hasVoice ? listenItem(lx, [...lexemes.values()], rng) : meaningItem(lx, [...lexemes.values()], rng)
+  else if (card.dir === 'audio') item = hasVoice ? listenItem(lx, lexemeList(lexemes), rng) : meaningItem(lx, lexemeList(lexemes), rng)
   else if (card.dir === 'cloze') {
     // a different sentence on each review: a word met in varied contexts is recalled in new ones
     const gaps = clozesFor(lx, lexemes, sentences, rng)
@@ -236,7 +254,7 @@ export function cardToItem(
 
 /** Is there a sentence for this word's cloze card? (used to decide whether a cloze card is worth showing) */
 export function hasExample(lex: string, sentences: Sentence[]): boolean {
-  return sentences.some((s) => wordTokens(s).some((t) => soleLexeme(t) === lex))
+  return hasExampleIn(lex, sentences)
 }
 
 /** Record a graded review: FSRS update, review log, stats and quest progress. */
@@ -248,8 +266,9 @@ export async function recordReview(cardIdValue: string, v: Pick<Verdict, 'correc
   const { card: next, log } = reviewCard(card, rating, now, ms)
   await db.srs.put(next)
   await db.reviews.add(log)
-  const known = await countKnownWords()
-  await bumpStatsExternal({ reviews: 1 }, { knownWords: known })
+  // the known-word count only moves when this vocab card crosses the mature line
+  const changed = card.kind === 'vocab' && isKnown(card) !== isKnown(next)
+  await bumpStatsExternal({ reviews: 1 }, changed ? { knownWords: await countKnownWords() } : undefined)
   await progressQuestsExternal({ reviews: 1 }, now)
   return next
 }

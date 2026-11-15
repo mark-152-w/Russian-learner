@@ -67,6 +67,8 @@ describe('ratingFor', () => {
     expect(ratingFor({ correct: false }, 1000, true)).toBe(Rating.Again)
     expect(ratingFor({ correct: true, note: 'typo' }, 3000, true)).toBe(Rating.Hard)
     expect(ratingFor({ correct: true }, 30000, true)).toBe(Rating.Hard)
+    // looked away: a long time says nothing about recall
+    expect(ratingFor({ correct: true }, 5 * 60000, true)).toBe(Rating.Good)
     expect(ratingFor({ correct: true }, 3000, true)).toBe(Rating.Good)
     const mature = run([Rating.Good, Rating.Good, Rating.Good])
     expect(ratingFor({ correct: true }, 3000, true, mature)).toBe(Rating.Easy)

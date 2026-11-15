@@ -19,7 +19,7 @@
 - 26 Python tool tests (the newest checks that the Tatoeba credits list is current);
 - `validate.py`: 0 errors, 2 warnings (сёк in two C1 sentences: a real form pymorphy3 doesn't know);
 - typecheck;
-- 195 Vitest tests (6 added with the flashcard fixes: directions unlock in turn, one card per word a day, the
+- 202 Vitest tests (7 added with the bug-fix pass below; 6 added with the flashcard fixes: directions unlock in turn, one card per word a day, the
   backlog throttle, the form-card cap, the English → Russian hints, no other meaning of the word as a wrong option;
   5 with the A1 unit: the next-unit rule, beginner stress items). New in Phase 8 part 3: the memory-strength fit recovers a simulated learner's strength; the
   retention correction keeps the learner's target; review logs replay into observations; binned recall for the
@@ -50,7 +50,7 @@
   - the dictation, shadowing and sound-pair items grade their own answers;
   - each keyboard lesson uses only learned letters.
 
-`npm run build`: the precache is 291 files (221 after Phase 5), 12.4 MB raw (about 3.2 MB gzipped), with the stories loaded one file at a time.
+`npm run build`: the precache is 299 files (221 after Phase 5), 12.6 MB raw (about 3.2 MB gzipped), with the stories loaded one file at a time.
 
 I ran end-to-end checks in headless Chromium at phone width, with no console errors. In Phase 5 they covered:
 the games hub; an arcade run, a speed round and a crossword; a boss fight to the end; the town; the collection and
@@ -64,6 +64,28 @@ including wrong cases. In Phase 4 they covered:
 - the Listening page and a dialogue;
 - the keyboard: typing a lesson line with Latin key positions;
 - the new Practice and Reference hubs.
+
+## Bug-fix pass (after the flashcard changes)
+
+From a code review. Each fix has a test where one is possible.
+
+- **Sessions**: "New words per day" is read from storage when the review is built (it used the default of 10
+  before the saved value arrived). Session pages no longer restart when the browser lists its voices late. A
+  session left without the ✕ (Back, a closed tab) is still recorded, so it counts for the streak and the plan,
+  but it deals no chest. A double tap can't submit an answer twice.
+- **Robustness**: an error page (with Reload / Home) replaces a blank screen when a page throws or can't load
+  offline. A failed load of a lexicon chunk, index or sentence file is retried next time instead of being cached.
+  After the first finished session the app asks the browser to keep its storage (`navigator.storage.persist`).
+- **Data**: import checks every row's key fields before replacing anything, and the same file can be chosen twice.
+  New words and form cards are added in transactions, so overlapping calls can't exceed the daily caps.
+- **Grading**: a miss with no specific diagnosis is labelled by what the item is about (case, vocabulary) or not
+  at all, instead of always "wrong case"; an empty answer isn't an error. An answer slower than a minute is
+  rated as if the time weren't known (a distraction no longer shortens the interval).
+- **Match items** track tiles by position, so two words with the same gloss can't mark each other done.
+- **Speed**: example sentences are indexed by word once per pool (the review page searched all 33k per card); the
+  known-word count is redone only when a card matures; Home re-renders once a minute (the happy-hour countdown
+  keeps its own clock).
+- **Deploys** run the full `npm run check` first, like CI.
 
 ## Flashcards: a manageable load, clearer questions (after A1 unit 1)
 

@@ -88,33 +88,13 @@ const SHORTCUTS = [
   { to: '/stats', label: '📊 Stats', detail: "How it's going" },
 ].filter((t) => !t.feature || FEATURES.has(t.feature))
 
-export default function Home() {
+/** Happy-hour countdown and boost notice: the only part of Home that needs a one-second clock. */
+function XpBanners({ profile }: { profile: ReturnType<typeof useProfile> }) {
   const now = useNow(1000)
-  const profile = useProfile()
-  const stats = useStats()
-  const today = useToday()
-  const quests = useQuests()
-  const settings = useSettings()
-  const li = levelInfo(profile.xp)
-  const streak = streakStatus(profile.streak, profile.freezes, dayKey(now))
-  const xpPerCorrect = stats.correct ? Math.max(3, Math.round(profile.xp / stats.correct)) : 8
-  const goal = nextGoal({ xp: profile.xp, xpPerCorrect, quests, streak })
-  const minutes = (today?.seconds ?? 0) / 60
   const happy = isHappyHour(profile.happyHour, now)
   const boost = activeBoost(profile, now)
-  const daily = quests.filter((q) => q.period.startsWith('d:'))
-  const weekly = quests.filter((q) => q.period.startsWith('w:'))
-
-  const streakLine = {
-    'done-today': 'Done for today. See you tomorrow!',
-    'at-risk': 'Practise today to keep it going.',
-    protected: 'A streak freeze is covering the missed day(s). Practise today!',
-    broken: 'Start a new streak today.',
-    none: 'Finish a session to start a streak.',
-  }[streak.status]
-
   return (
-    <div className="space-y-4">
+    <>
       {happy && profile.happyHour && (
         <div className="anim-pop flex items-center justify-between rounded-xl bg-gold px-4 py-3 font-bold text-[#2a1d0f]">
           <span>
@@ -128,6 +108,36 @@ export default function Home() {
           <Icon name="bolt" filled className="mr-1 inline h-4 w-4 text-gold" />×{boost} XP boost active
         </div>
       )}
+    </>
+  )
+}
+
+export default function Home() {
+  const now = useNow(60000)
+  const profile = useProfile()
+  const stats = useStats()
+  const today = useToday()
+  const quests = useQuests()
+  const settings = useSettings()
+  const li = levelInfo(profile.xp)
+  const streak = streakStatus(profile.streak, profile.freezes, dayKey(now))
+  const xpPerCorrect = stats.correct ? Math.max(3, Math.round(profile.xp / stats.correct)) : 8
+  const goal = nextGoal({ xp: profile.xp, xpPerCorrect, quests, streak })
+  const minutes = (today?.seconds ?? 0) / 60
+  const daily = quests.filter((q) => q.period.startsWith('d:'))
+  const weekly = quests.filter((q) => q.period.startsWith('w:'))
+
+  const streakLine = {
+    'done-today': 'Done for today. See you tomorrow!',
+    'at-risk': 'Practise today to keep it going.',
+    protected: 'A streak freeze is covering the missed day(s). Practise today!',
+    broken: 'Start a new streak today.',
+    none: 'Finish a session to start a streak.',
+  }[streak.status]
+
+  return (
+    <div className="space-y-4">
+      <XpBanners profile={profile} />
 
       <Card>
         <div className="flex items-baseline justify-between gap-2">

@@ -112,13 +112,16 @@ export const isKnown = (card: SrsCard) => card.state === State.Review && card.st
 
 /**
  * Map a graded answer to an FSRS rating. Wrong → Again. Accepted with a typo or slowly → Hard.
- * Quick and clean on a mature card → Easy. Otherwise Good.
+ * Quick and clean on a mature card → Easy. Otherwise Good. Past DISTRACTED_MS the time says nothing about recall
+ * (the learner looked away), so it's rated as if the time weren't known.
  */
+export const DISTRACTED_MS = 60000
+
 export function ratingFor(v: { correct: boolean; note?: string }, ms: number, typed: boolean, card?: SrsCard): Grade {
   if (!v.correct) return Rating.Again
   const slow = typed ? 20000 : 10000
   const fast = typed ? 5000 : 2500
-  if (v.note === 'typo' || ms > slow) return Rating.Hard
+  if (v.note === 'typo' || (ms > slow && ms <= DISTRACTED_MS)) return Rating.Hard
   if (ms < fast && card?.state === State.Review) return Rating.Easy
   return Rating.Good
 }

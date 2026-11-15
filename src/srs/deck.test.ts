@@ -3,14 +3,15 @@ import { beforeAll, beforeEach, describe, expect, it } from 'vitest'
 import type { Lexeme, Sentence } from '../types/content.gen'
 import { db, MedvedDB, useDatabase } from '../db/db'
 import { loadChunk } from '../lib/lexicon'
-import { loadSentences } from '../lib/sentences'
+import { examplesFor, hasExampleIn, loadSentences, sentencesUpTo, soleLexeme, wordTokens } from '../lib/sentences'
 import { mulberry32 } from '../lib/rng'
 import { coverageOf, coverageTopN, marginalCoverage } from '../lib/coverage'
 import { getStats } from '../rewards/service'
+import { noteConfusion } from './confusion'
 import { grade } from '../engine/grader'
 import { enRuItem } from '../engine/drills'
 import { meaningItem } from '../engine/generators'
-import { newCard, setScheduler, State } from './fsrs'
+import { isKnown, newCard, setScheduler, State } from './fsrs'
 import {
   addFormCard, addWord, BACKLOG_PAUSE, BACKLOG_SLOW, cardToItem, countDue, dueCards, introduceNewWords, isWaiting, newWordRoom,
   newWordsAddedToday, newWordsHeldBack, pickDue, queueWords, recordReview, UNLOCK_STABILITY,
@@ -107,6 +108,12 @@ describe('deck', () => {
     expect((await introduceNewWords(pool, 5, T0 + DAY, true)).length).toBe(5)
   })
 
+  it('two overlapping calls share one daily allowance', async () => {
+    const [a, b] = await Promise.all([introduceNewWords(pool, 5, T0, true), introduceNewWords(pool, 5, T0, true)])
+    expect(a.length + b.length).toBe(5)
+    expect(await newWordsAddedToday(T0)).toBe(5)
+  })
+
   it('cards become gradable items in every direction', async () => {
     await addWord('n:книга', T0, true)
     await addFormCard('n:книга', 'pl_gen', T0)
@@ -135,6 +142,45 @@ describe('deck', () => {
     expect((await getStats()).reviews).toBe(1)
     const wrong = await recordReview(id, { correct: false }, 3000, false, after!.due)
     expect(wrong!.lapses + wrong!.reps).toBeGreaterThan(after!.reps)
+  })
+})
+
+describe('example index', () => {
+  const brute = (id: string, pool: Sentence[], limit: number) =>
+    pool.filter((x) => wordTokens(x).some((t) => soleLexeme(t) === id)).sort((a, b) => a.w.length - b.w.length).slice(0, limit)
+
+  it('matches a brute-force scan, in the same order', () => {
+    for (const id of ['n:книга', 'v:читать', 'a:новый', 'n:дом', 'n:замок', 'n:нет-такого']) {
+      for (const limit of [1, 6, Infinity]) {
+        expect(examplesFor(id, sents, limit).map((x) => x.id), `${id}/${limit}`).toEqual(brute(id, sents, limit).map((x) => x.id))
+      }
+      expect(hasExampleIn(id, sents)).toBe(brute(id, sents, 1).length > 0)
+    }
+  })
+
+  it('sentencesUpTo returns the same array each time', async () => {
+    expect(await sentencesUpTo('A2')).toBe(await sentencesUpTo('A2'))
+  })
+})
+
+describe('known-word stat', () => {
+  it('is only recounted when a card matures, and then bumped', async () => {
+    await addWord('n:книга', T0, false)
+    const id = 'vocab:n:книга:ru-en'
+    await recordReview(id, { correct: true }, 3000, false, T0)
+    expect((await getStats()).knownWords ?? 0).toBe(0)
+    const c = (await db.srs.get(id))!
+    await db.srs.put({ ...c, state: State.Review, stability: 6, reps: 10 })
+    const next = await recordReview(id, { correct: true }, 3000, false, T0 + 6 * DAY)
+    expect(isKnown(next!)).toBe(true)
+    expect((await getStats()).knownWords).toBe(1)
+  })
+})
+
+describe('noteConfusion', () => {
+  it('ignores a target that is not in the deck', async () => {
+    const item = meaningItem(lex.get('n:книга')!, pool, mulberry32(1))!
+    await expect(noteConfusion(item, 'x', lex, T0)).resolves.toBeUndefined()
   })
 })
 
