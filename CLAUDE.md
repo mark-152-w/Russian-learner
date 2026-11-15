@@ -68,7 +68,8 @@ src/srs/deck.ts        vocabulary deck: card directions (unlocked one at a time)
 src/srs/confusion.ts   mix-ups between deck words (noteConfusion after a miss) → pair cards (kind/dir 'pair', `other`)
 src/srs/leech.ts       leeches (lapses summed per word), rescue offers, memory hooks
 src/srs/memory.ts      forgetting curve fitted to the learner (replay log → MLE of strength k) → requested retention
-src/db/                Dexie schema (db.ts), settings, backup (export/import/reset)
+src/db/                Dexie schema (db.ts: version 2; new versions below the last, row-shape changes need
+                       `.upgrade()` + a BACKUP_VERSION bump with an import conversion), settings, backup (export/import/reset)
 src/rewards/           pure: xp, levels, chest, streak, quests, achievements, goals; service.ts persists them
 src/audio/             sound.ts (Web Audio synth), haptics.ts, tts.ts (speechSynthesis), speech.ts (recognition, Chrome)
 src/components/        ui.tsx, Md.tsx (markdown-lite + Ru), juice.tsx, exercises.tsx, SessionRunner (hud/onAnswered

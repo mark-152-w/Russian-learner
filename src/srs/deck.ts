@@ -87,6 +87,32 @@ export function newWordRoom(limit: number, addedToday: number, backlog: number):
 
 export const cardId = (lex: string, dir: SrsDir, slot?: string) => (dir === 'form' ? `form:${lex}:${slot}` : `vocab:${lex}:${dir}`)
 
+/**
+ * Whether a review item (`srs:<card id>`) is about this word. Exact, not a substring match: n:кот must not claim
+ * n:котёл's cards, and n:замок must not claim n:замок:2's (a homograph suffix is digits; slots and directions aren't).
+ */
+export function isCardOf(item: string, lex: string): boolean {
+  if (!item.startsWith('srs:')) return false
+  const id = item.slice(4)
+  if (id.startsWith('pair:')) return id.slice(5).split('|').includes(lex)
+  for (const kind of ['vocab:', 'form:']) {
+    if (!id.startsWith(kind + lex + ':')) continue
+    const rest = id.slice(kind.length + lex.length + 1)
+    if (rest && !/^\d/.test(rest)) return true
+  }
+  return false
+}
+
+/** Every answer about a word: drills that targeted it, and its review cards. */
+export async function attemptsOf(lex: string) {
+  const [direct, reviews] = await Promise.all([
+    db.attempts.where('lex').equals(lex).toArray(),
+    db.attempts.where('item').startsWith('srs:').filter((a) => isCardOf(a.item, lex)).toArray(),
+  ])
+  const seen = new Set(direct.map((a) => a.id))
+  return [...direct, ...reviews.filter((a) => !seen.has(a.id))].sort((a, b) => a.ts - b.ts)
+}
+
 export async function inDeck(lex: string): Promise<boolean> {
   return (await db.srs.where('lex').equals(lex).count()) > 0
 }

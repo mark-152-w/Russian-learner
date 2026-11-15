@@ -92,6 +92,9 @@ From a code review. Each fix has a test where one is possible.
   the app's established patterns, not bugs.
 - **Browser test**: `npm run e2e` (after a build) plays a session and leaves it with Back, finishes one, exports,
   deletes everything, imports, and opens the main pages, failing on any page error. CI runs it.
+- **Database version 2**: attempts are indexed by word, so the Word page no longer reads every answer ever
+  given. Its history now matches a word's review cards exactly (before, кот also counted котёл's cards). A test
+  opens a version 1 database and checks its rows survive. `db.ts` says how to write the next migration.
 - **Dictionary rebuild** (the one listed as due since Phase 4): **мно́гие** is now ranked (920, A2) and every later
   rank moved by one; ла́герь, нужда́, данти́ст and вольт crossed into the next level. Nothing else in the lexicon
   changed; 28 more sentences pass the filter (33,204); stories and cards re-analysed with 0 problems. The new
