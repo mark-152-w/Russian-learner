@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Link, useNavigate, useParams } from 'react-router-dom'
 import type { ExerciseItem, GrammarArticle, Lexeme, Unit } from '../types/content.gen'
-import { useRussianVoices } from '../audio/tts'
+import { russianVoices, useRussianVoices } from '../audio/tts'
 import { loadGrammar, loadUnits } from '../lib/content'
 import { checkpointItems, GUESS_ITEMS, guessItems, lessonItems, nextUnit, PASS_MARK, recordCheckpoint, recordLesson, useCourseProgress } from '../lib/course'
 import { getKV, setKV } from '../db/db'
@@ -202,7 +202,7 @@ export function UnitPage() {
 export function LessonPage() {
   const { id, mode = 'lesson' } = useParams()
   const nav = useNavigate()
-  const { voices, ready } = useRussianVoices()
+  const { ready } = useRussianVoices()
   const [round, setRound] = useState(0)
   const [card, setCard] = useState<string | null>(null)
   const [state, setState] = useState<{ unit: Unit; items: ExerciseItem[]; lexemes: Map<string, Lexeme> } | null>(null)
@@ -214,7 +214,7 @@ export function LessonPage() {
     void loadUnits().then(async (us) => {
       const unit = us.find((u) => u.id === id)
       if (!unit) return
-      const ctx = await buildDrillContext({ level: unit.level as 'A2', vocab: unit.vocab, hasVoice: voices.length > 0 })
+      const ctx = await buildDrillContext({ level: unit.level as 'A2', vocab: unit.vocab, hasVoice: russianVoices().length > 0 })
       const items = mode === 'lesson' ? lessonItems(unit, ctx) : mode === 'guess' ? guessItems(unit, ctx) : checkpointItems(unit, ctx)
       if (!items.length) {
         // nothing to guess at (an all-vocabulary unit): straight to the rule
@@ -226,7 +226,7 @@ export function LessonPage() {
     return () => {
       alive = false
     }
-  }, [id, mode, round, ready, voices.length, nav])
+  }, [id, mode, round, ready, nav])
 
   if (!state) return <p className="py-12 text-center text-ink-soft">Preparing the unit…</p>
   const isCheck = mode === 'check' || mode === 'testout'

@@ -31,6 +31,17 @@ async function play(s: RewardSession, results: boolean[], start = T0, typeOf: (i
 }
 
 describe('reward session', () => {
+  it('a session finishes once; one the learner walked away from keeps its streak day but deals no chest', async () => {
+    const s = new RewardSession('practice', T0)
+    const { t } = await play(s, Array<boolean>(10).fill(true))
+    const end = await s.finish(t, { chest: false })
+    expect(end!.chest).toBeNull()
+    expect(end!.streak.current).toBe(1)
+    expect(await s.finish(t + 1000)).toBeNull()
+    expect(await db.sessions.count()).toBe(1)
+    expect((await getStats()).chests ?? 0).toBe(0)
+  })
+
   it('combos build and reset; XP accrues to the profile and the day', async () => {
     const s = new RewardSession('practice', T0)
     const { effects } = await play(s, [true, true, true, true, true, false, true])
@@ -159,5 +170,7 @@ describe('settings and backup', () => {
     expect(() => parseBackup('{"app":"other"}')).toThrow(BackupError)
     expect(() => parseBackup('{"app":"medved","version":99,"tables":{}}')).toThrow(/newer version/)
     expect(() => parseBackup('{"app":"medved","version":1,"tables":{"evil":[]}}')).toThrow(/Unknown table/)
+    expect(() => parseBackup('{"app":"medved","version":1,"tables":{"srs":[null]}}')).toThrow(/row 1 is malformed/)
+    expect(() => parseBackup('{"app":"medved","version":1,"tables":{"kv":[{"value":1}]}}')).toThrow(/missing "key"/)
   })
 })

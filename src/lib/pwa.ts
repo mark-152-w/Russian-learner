@@ -26,3 +26,14 @@ export function subscribe(l: Listener): () => void {
   listeners.add(l)
   return () => listeners.delete(l)
 }
+
+/**
+ * Ask the browser not to evict our storage (all progress lives in IndexedDB; Safari clears sites unused for a
+ * week). Asked once a visit, after a finished session: by then there is something worth keeping.
+ */
+let persistAsked = false
+export function requestPersistence(): void {
+  if (persistAsked || typeof navigator === 'undefined' || !navigator.storage?.persist) return
+  persistAsked = true
+  void navigator.storage.persist().catch(() => {})
+}

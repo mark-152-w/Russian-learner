@@ -25,14 +25,23 @@ export function loadSentences(level: Level): Promise<Sentence[]> {
     if (!loader) return Promise.resolve([])
     p = loader().then((m) => m.default)
     cache.set(level, p)
+    p.catch(() => cache.delete(level))
   }
   return p
 }
 
-/** All sentences up to and including `max`. */
-export async function sentencesUpTo(max: Level): Promise<Sentence[]> {
-  const lv = SENTENCE_LEVELS.slice(0, SENTENCE_LEVELS.indexOf(max) + 1)
-  return (await Promise.all(lv.map(loadSentences))).flat()
+const upTo = new Map<Level, Promise<Sentence[]>>()
+
+/** All sentences up to and including `max` (the same array each call, so the example index can be cached on it). */
+export function sentencesUpTo(max: Level): Promise<Sentence[]> {
+  let p = upTo.get(max)
+  if (!p) {
+    const lv = SENTENCE_LEVELS.slice(0, SENTENCE_LEVELS.indexOf(max) + 1)
+    p = Promise.all(lv.map(loadSentences)).then((parts) => parts.flat())
+    upTo.set(max, p)
+    p.catch(() => upTo.delete(max))
+  }
+  return p
 }
 
 export function wordTokens(s: Sentence): WordToken[] {
@@ -56,10 +65,37 @@ export function soleLexeme(t: WordToken): string | null {
   return ids.size === 1 ? [...ids][0]! : null
 }
 
+const indexes = new WeakMap<Sentence[], Map<string, Sentence[]>>()
+
+/** lexeme id → sentences where it is the sole reading of some token (pool order), built once per pool array. */
+function exampleIndex(pool: Sentence[]): Map<string, Sentence[]> {
+  let idx = indexes.get(pool)
+  if (!idx) {
+    idx = new Map()
+    for (const s of pool) {
+      const seen = new Set<string>()
+      for (const t of wordTokens(s)) {
+        const id = soleLexeme(t)
+        if (id === null || seen.has(id)) continue
+        seen.add(id)
+        const list = idx.get(id)
+        if (list) list.push(s)
+        else idx.set(id, [s])
+      }
+    }
+    indexes.set(pool, idx)
+  }
+  return idx
+}
+
 /** Sentences containing an unambiguous form of `lex`, shortest first. */
 export function examplesFor(lex: string, pool: Sentence[], limit = 6): Sentence[] {
-  return pool
-    .filter((s) => wordTokens(s).some((t) => soleLexeme(t) === lex))
-    .sort((a, b) => a.w.length - b.w.length)
-    .slice(0, limit)
+  const hits = exampleIndex(pool).get(lex)
+  if (!hits) return []
+  return [...hits].sort((a, b) => a.w.length - b.w.length).slice(0, limit)
+}
+
+/** Does any sentence in the pool contain an unambiguous form of `lex`? */
+export function hasExampleIn(lex: string, pool: Sentence[]): boolean {
+  return exampleIndex(pool).has(lex)
 }

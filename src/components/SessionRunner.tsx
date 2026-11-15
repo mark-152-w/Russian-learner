@@ -16,6 +16,7 @@ import { Md, Ru } from './Md'
 import { ItemVisual } from './visuals'
 import { SessionSummary } from './SessionSummary'
 import { requeueMissed, type RelearnMode } from '../lib/relearn'
+import { requestPersistence } from '../lib/pwa'
 import { Bar, Button, CountUp, Icon } from './ui'
 
 interface Props {
@@ -63,6 +64,8 @@ export function SessionRunner({ items, lexemes, kind, onDone, onAgain, recallFor
   const shownAt = useRef(Date.now())
   const misses = useRef(new Map<string, number>())
   const stop = useRef(false)
+  /** Set synchronously on submit: a double tap lands before the verdict state does. */
+  const answered = useRef(false)
   const cardRef = useRef<HTMLDivElement>(null)
   const juice = useJuice()
   const item = queue[idx]!
@@ -74,7 +77,8 @@ export function SessionRunner({ items, lexemes, kind, onDone, onAgain, recallFor
   }, [idx])
 
   const submit = async (r: Response) => {
-    if (verdict) return
+    if (verdict || answered.current) return
+    answered.current = true
     const v = grade(item, r, { lexemes })
     setVerdict(v)
     const ms = Date.now() - shownAt.current
@@ -129,14 +133,28 @@ export function SessionRunner({ items, lexemes, kind, onDone, onAgain, recallFor
   const finish = useCallback(async () => {
     stopSpeaking()
     const e = await session.current.finish(Date.now())
+    requestPersistence()
     if (e) {
       await onFinish?.(e)
       setEnd(e)
     } else onDone()
   }, [onDone, onFinish])
 
+  // Leaving without the ✕ (Back, a closed tab) still closes the session, so the answers given count for the
+  // streak and the plan. No chest: nobody is there to open it.
+  useEffect(() => {
+    const s = session.current
+    const leave = () => void s.finish(Date.now(), { chest: false }).catch(() => {})
+    window.addEventListener('pagehide', leave)
+    return () => {
+      window.removeEventListener('pagehide', leave)
+      leave()
+    }
+  }, [])
+
   const next = useCallback(() => {
     if (stop.current || idx + 1 >= queue.length) return void finish()
+    answered.current = false
     setIdx(idx + 1)
     setVerdict(null)
     setFx(null)

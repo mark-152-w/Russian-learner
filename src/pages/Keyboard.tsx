@@ -221,7 +221,7 @@ export function KeyboardRun() {
     )
   }
   if (!lines) return <p className="py-12 text-center text-ink-soft">Preparing the lesson…</p>
-  const known = new Set([...LESSONS.filter((l) => l.n <= n).map((l) => l.adds).join('')])
+  const known = new Set(LESSONS.filter((l) => l.n <= n).map((l) => l.adds).join(''))
   return (
     <div className="mx-auto max-w-xl space-y-5" onClick={() => input.current?.focus()}>
       <div className="flex items-center gap-3">

@@ -240,3 +240,17 @@ describe('generators', () => {
     }
   })
 })
+
+describe('fallback error labels', () => {
+  const base = { level: 'A2' as const, prompt: {}, accept: ['да'] as [string] }
+  it('a miss is labelled by what the item is about, or not at all', () => {
+    const vocab: ExerciseItem = { ...base, id: 'x:1', type: 'choice', tags: ['basics.greetings'], vocab: ['o:да'], choices: ['да', 'нет'], answerIndex: 0 }
+    expect(grade(vocab, { kind: 'choice', value: 'нет' }).errorType).toBe('vocab.wrong-word')
+    const cases: ExerciseItem = { ...base, id: 'x:2', type: 'choice', tags: ['case.gen'], choices: ['да', 'нет'], answerIndex: 0 }
+    expect(grade(cases, { kind: 'choice', value: 'нет' }).errorType).toBe('case.wrong')
+    const other: ExerciseItem = { ...base, id: 'x:3', type: 'choice', tags: ['basics.this-is'], choices: ['да', 'нет'], answerIndex: 0 }
+    expect(grade(other, { kind: 'choice', value: 'нет' }).errorType).toBeUndefined()
+    // an empty answer isn't a grammar mistake
+    expect(grade({ ...cases, type: 'cloze', choices: undefined }, { kind: 'text', text: ' ' }).errorType).toBeUndefined()
+  })
+})

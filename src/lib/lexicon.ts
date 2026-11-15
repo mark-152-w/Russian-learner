@@ -56,6 +56,8 @@ export function loadChunk(name: ChunkName): Promise<Lexeme[]> {
     if (!loader) return Promise.reject(new Error(`unknown lexicon chunk ${name}`))
     p = loader().then((m) => m.default)
     cache.set(name, p)
+    // a failed load (offline, chunk not cached yet) must be retried next time, not remembered
+    p.catch(() => cache.delete(name))
   }
   return p
 }
@@ -67,8 +69,14 @@ let coreIndex: Promise<IndexRow[]> | null = null
 let extIndex: Promise<IndexRow[]> | null = null
 
 export function loadIndex(which: 'core' | 'ext'): Promise<IndexRow[]> {
-  if (which === 'core') return (coreIndex ??= import('../data/lexicon/index-core.json').then((m) => m.default as IndexRow[]))
-  return (extIndex ??= import('../data/lexicon/index-ext.json').then((m) => m.default as IndexRow[]))
+  if (which === 'core') {
+    coreIndex ??= import('../data/lexicon/index-core.json').then((m) => m.default as IndexRow[])
+    coreIndex.catch(() => (coreIndex = null))
+    return coreIndex
+  }
+  extIndex ??= import('../data/lexicon/index-ext.json').then((m) => m.default as IndexRow[])
+  extIndex.catch(() => (extIndex = null))
+  return extIndex
 }
 
 /** Load the chunks holding the given lexeme ids (core first; the rare tail only if needed). */

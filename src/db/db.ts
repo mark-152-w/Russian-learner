@@ -95,6 +95,13 @@ export class MedvedDB extends Dexie {
       bests: '&key',
       sessions: '++id, start',
     })
+    // v2: attempts indexed by word, for a word's history (the Word page scanned every attempt). Adding an index
+    // needs no upgrade function; Dexie builds it from the existing rows.
+    this.version(2).stores({
+      attempts: '++id, ts, item, *tags, err, lex',
+    })
+    // A future change to row shapes goes in a new version with `.upgrade(tx => …)`, and raises BACKUP_VERSION
+    // (db/backup.ts) with a matching conversion in importProgress, so older backup files still import.
   }
 }
 

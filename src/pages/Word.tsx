@@ -7,7 +7,7 @@ import { useSettings } from '../db/settings'
 import { speak, useRussianVoices } from '../audio/tts'
 import { loadLexemes } from '../lib/lexicon'
 import { examplesFor, sentencesUpTo } from '../lib/sentences'
-import { addWord, wordState } from '../srs/deck'
+import { addWord, attemptsOf, wordState } from '../srs/deck'
 import { confusionsOf } from '../srs/confusion'
 import { getHook, setHook, wordLapses } from '../srs/leech'
 import { State } from '../srs/fsrs'
@@ -72,7 +72,7 @@ export default function Word() {
   const [partners, setPartners] = useState<Lexeme[]>([])
   const state = useLiveQuery(() => wordState(id), [id])
   const history = useLiveQuery(async () => {
-    const attempts = await db.attempts.where('ts').above(0).filter((a) => a.lex === id || (a.item.includes(id) && a.item.startsWith('srs:'))).toArray()
+    const attempts = await attemptsOf(id)
     const m = await db.mastery.get(`lex:${id}`)
     return { attempts, mastery: m }
   }, [id])

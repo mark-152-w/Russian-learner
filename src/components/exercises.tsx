@@ -236,44 +236,50 @@ function StressView({ item, verdict, onSubmit }: ViewProps) {
 }
 
 function MatchView({ item, verdict, onSubmit, attempt }: ViewProps) {
-  const pairs = item.pairs ?? []
-  const rng = useMemo(() => seedFor(item, attempt), [item, attempt])
-  const left = useMemo(() => shuffle(rng, pairs.map((p) => p[0]!)), [pairs, rng])
-  const right = useMemo(() => shuffle(rng, pairs.map((p) => p[1]!)), [pairs, rng])
-  const [sel, setSel] = useState<string | null>(null)
-  const [done, setDone] = useState<Set<string>>(new Set())
-  const [bad, setBad] = useState<string | null>(null)
+  // Tracked by position, not text: two words can share a gloss, and their tiles must not answer for each other.
+  const pairs = useMemo(() => item.pairs ?? [], [item.pairs])
+  // both columns from one seeded generator, in one go: shuffled the same way on every render
+  const [left, right] = useMemo(() => {
+    const rng = seedFor(item, attempt)
+    return [shuffle(rng, pairs.map((p, i) => ({ text: p[0]!, i }))), shuffle(rng, pairs.map((p, i) => ({ text: p[1]!, i })))]
+  }, [item, attempt, pairs])
+  const [sel, setSel] = useState<number | null>(null)
+  const [doneL, setDoneL] = useState<Set<number>>(new Set())
+  const [doneR, setDoneR] = useState<Set<number>>(new Set())
+  const [bad, setBad] = useState<number | null>(null)
   const mistakes = useRef(0)
-  const pick = (r: string) => {
-    if (!sel || verdict) return
-    const ok = pairs.some((p) => p[0] === sel && p[1] === r)
+  const pick = (r: number) => {
+    if (sel === null || verdict) return
+    // identical texts are interchangeable: any tile reading the right gloss is right
+    const ok = pairs[r]![1] === pairs[sel]![1]
     if (ok) {
       sound.tap()
-      const next = new Set(done).add(sel).add(r)
-      setDone(next)
+      const l = new Set(doneL).add(sel)
+      setDoneL(l)
+      setDoneR(new Set(doneR).add(r))
       setSel(null)
-      if (next.size === pairs.length * 2) onSubmit({ kind: 'match', mistakes: mistakes.current })
+      if (l.size === pairs.length) onSubmit({ kind: 'match', mistakes: mistakes.current })
     } else {
       mistakes.current++
       setBad(r)
       setTimeout(() => setBad(null), 400)
     }
   }
-  const cls = (k: string, active: boolean) =>
-    `min-h-12 w-full rounded-lg border-2 px-3 py-2 transition ${done.has(k) ? 'border-good opacity-40' : active ? 'border-red bg-paper' : bad === k ? 'anim-shake border-bad' : 'border-line bg-paper hover:border-red'}`
+  const cls = (done: boolean, active: boolean, shaking: boolean) =>
+    `min-h-12 w-full rounded-lg border-2 px-3 py-2 transition ${done ? 'border-good opacity-40' : active ? 'border-red bg-paper' : shaking ? 'anim-shake border-bad' : 'border-line bg-paper hover:border-red'}`
   return (
     <div className="grid grid-cols-2 gap-2">
       <div className="space-y-2">
         {left.map((l) => (
-          <button key={l} type="button" disabled={done.has(l)} onClick={() => setSel(l)} className={cls(l, sel === l)}>
-            <Ru className="text-lg">{l}</Ru>
+          <button key={l.i} type="button" disabled={doneL.has(l.i)} onClick={() => setSel(l.i)} className={cls(doneL.has(l.i), sel === l.i, false)}>
+            <Ru className="text-lg">{l.text}</Ru>
           </button>
         ))}
       </div>
       <div className="space-y-2">
         {right.map((r) => (
-          <button key={r} type="button" disabled={done.has(r)} onClick={() => pick(r)} className={cls(r, false)}>
-            {r}
+          <button key={r.i} type="button" disabled={doneR.has(r.i)} onClick={() => pick(r.i)} className={cls(doneR.has(r.i), false, bad === r.i)}>
+            {r.text}
           </button>
         ))}
       </div>

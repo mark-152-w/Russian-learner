@@ -19,7 +19,7 @@
 - 26 Python tool tests (the newest checks that the Tatoeba credits list is current);
 - `validate.py`: 0 errors, 2 warnings (сёк in two C1 sentences: a real form pymorphy3 doesn't know);
 - typecheck;
-- 195 Vitest tests (6 added with the flashcard fixes: directions unlock in turn, one card per word a day, the
+- 202 Vitest tests (7 added with the bug-fix pass below; 6 added with the flashcard fixes: directions unlock in turn, one card per word a day, the
   backlog throttle, the form-card cap, the English → Russian hints, no other meaning of the word as a wrong option;
   5 with the A1 unit: the next-unit rule, beginner stress items). New in Phase 8 part 3: the memory-strength fit recovers a simulated learner's strength; the
   retention correction keeps the learner's target; review logs replay into observations; binned recall for the
@@ -50,7 +50,7 @@
   - the dictation, shadowing and sound-pair items grade their own answers;
   - each keyboard lesson uses only learned letters.
 
-`npm run build`: the precache is 291 files (221 after Phase 5), 12.4 MB raw (about 3.2 MB gzipped), with the stories loaded one file at a time.
+`npm run build`: the precache is 299 files (221 after Phase 5), 12.6 MB raw (about 3.2 MB gzipped), with the stories loaded one file at a time.
 
 I ran end-to-end checks in headless Chromium at phone width, with no console errors. In Phase 5 they covered:
 the games hub; an arcade run, a speed round and a crossword; a boss fight to the end; the town; the collection and
@@ -64,6 +64,44 @@ including wrong cases. In Phase 4 they covered:
 - the Listening page and a dialogue;
 - the keyboard: typing a lesson line with Latin key positions;
 - the new Practice and Reference hubs.
+
+## Bug-fix pass (after the flashcard changes)
+
+From a code review. Each fix has a test where one is possible.
+
+- **Sessions**: "New words per day" is read from storage when the review is built (it used the default of 10
+  before the saved value arrived). Session pages no longer restart when the browser lists its voices late. A
+  session left without the ✕ (Back, a closed tab) is still recorded, so it counts for the streak and the plan,
+  but it deals no chest. A double tap can't submit an answer twice.
+- **Robustness**: an error page (with Reload / Home) replaces a blank screen when a page throws or can't load
+  offline. A failed load of a lexicon chunk, index or sentence file is retried next time instead of being cached.
+  After the first finished session the app asks the browser to keep its storage (`navigator.storage.persist`).
+- **Data**: import checks every row's key fields before replacing anything, and the same file can be chosen twice.
+  New words and form cards are added in transactions, so overlapping calls can't exceed the daily caps.
+- **Grading**: a miss with no specific diagnosis is labelled by what the item is about (case, vocabulary) or not
+  at all, instead of always "wrong case"; an empty answer isn't an error. An answer slower than a minute is
+  rated as if the time weren't known (a distraction no longer shortens the interval).
+- **Match items** track tiles by position, so two words with the same gloss can't mark each other done.
+- **Speed**: example sentences are indexed by word once per pool (the review page searched all 33k per card); the
+  known-word count is redone only when a card matures; Home re-renders once a minute (the happy-hour countdown
+  keeps its own clock).
+- **Deploys** run the full `npm run check` first, like CI.
+- **Lint**: oxlint with the React hooks rules (`npm run lint`, part of `check`). typescript-eslint doesn't run on
+  TypeScript 7 yet; oxlint doesn't need it. It found a match item that could reshuffle on a re-render and a literal
+  combining accent in a test regex. The compiler-style rules (purity, refs, set-state-in-effect) are off: they flag
+  the app's established patterns, not bugs.
+- **Browser test**: `npm run e2e` (after a build) plays a session and leaves it with Back, finishes one, exports,
+  deletes everything, imports, and opens the main pages, failing on any page error. CI runs it.
+- **Database version 2**: attempts are indexed by word, so the Word page no longer reads every answer ever
+  given. Its history now matches a word's review cards exactly (before, кот also counted котёл's cards). A test
+  opens a version 1 database and checks its rows survive. `db.ts` says how to write the next migration.
+- **Dictionary rebuild** (the one listed as due since Phase 4): **мно́гие** is now ranked (920, A2) and every later
+  rank moved by one; ла́герь, нужда́, данти́ст and вольт crossed into the next level. Nothing else in the lexicon
+  changed; 28 more sentences pass the filter (33,204); stories and cards re-analysed with 0 problems. The new
+  random draws exposed a meaning question offering "to get out" as a wrong answer for вы́йти: distractors are now
+  also compared as whole phrases, not only by content words.
+- **Backup reminder**: once there are 5+ sessions, Home asks for a backup when the last one (or the first use) is
+  14 days old; "Later" waits a week. Settings shows the last export date.
 
 ## Flashcards: a manageable load, clearer questions (after A1 unit 1)
 
@@ -847,10 +885,6 @@ Russian–English pairs with per-sentence attribution. I'll ingest it at the sta
 
 ## Known issues
 
-- **A dictionary rebuild is due.** Rerunning `tools/ingest.py` now ranks **мно́гие** (rank 920, A2). It was
-  missing because of the lemma mismatch fixed in Phase 4, which never had a full rebuild. Accepting it shifts
-  11,478 later ranks by one and moves a word at each level boundary. I didn't fold that into Phase 7. To do it:
-  `npm run data:ingest && python3 tools/stories.py && npm run check`, then review the diff.
 - The Phase 0 known issues still stand (morph disagreements report, 9 suspect top-5000 words, unverified short
   adjectives).
 - Headless Chromium has no Russian voices, so audio cards and listen items were verified by tests only. Please
@@ -870,8 +904,8 @@ Russian–English pairs with per-sentence attribution. I'll ingest it at the sta
 
 | Content | Count |
 |---|---|
-| Lexemes | 43,377 (12,392 ranked A1–C2) |
-| Example sentences (verified, stressed, analysed) | 33,176 |
+| Lexemes | 43,377 (12,393 ranked A1–C2) |
+| Example sentences (verified, stressed, analysed) | 33,204 |
 | Stories and non-fiction | 40 (A2 10, B1 10, B2 10, C1 10), 6,083 analysed words, 147 questions |
 | Dialogues | 20 (A2 8, B1 8, B2 4), 1,159 words, 60 questions |
 | Keyboard lessons | 13 |

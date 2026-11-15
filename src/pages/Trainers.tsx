@@ -4,7 +4,7 @@ import { Link, useNavigate, useParams } from 'react-router-dom'
 import { useLiveQuery } from 'dexie-react-hooks'
 import type { ExerciseItem, Lexeme } from '../types/content.gen'
 import { db, type Mastery } from '../db/db'
-import { useRussianVoices } from '../audio/tts'
+import { russianVoices, useRussianVoices } from '../audio/tts'
 import { buildDrillContext } from '../lib/drillContext'
 import { learnerLevel } from '../lib/learner'
 import { loadLexemes } from '../lib/lexicon'
@@ -301,18 +301,18 @@ async function trainerItems(trainer: string, mode: string, hasVoice: boolean): P
 export function TrainerRun() {
   const { id = '', mode = 'mixed' } = useParams()
   const nav = useNavigate()
-  const { voices, ready } = useRussianVoices()
+  const { ready } = useRussianVoices()
   const [round, setRound] = useState(0)
   const [state, setState] = useState<{ items: ExerciseItem[]; lexemes: Map<string, Lexeme> } | null>(null)
   useEffect(() => {
     if (!ready) return
     let alive = true
     setState(null)
-    void trainerItems(id, mode, voices.length > 0).then((s) => alive && setState(s))
+    void trainerItems(id, mode, russianVoices().length > 0).then((s) => alive && setState(s))
     return () => {
       alive = false
     }
-  }, [id, mode, round, ready, voices.length])
+  }, [id, mode, round, ready])
   if (!state) return <p className="py-12 text-center text-ink-soft">Setting up the trainer…</p>
   if (!state.items.length) return <p className="py-12 text-center text-ink-soft">Nothing to practise here yet at your level.</p>
   return (

@@ -19,6 +19,13 @@
    "url": "https://github.com/no-plagiarism/pymorphy3",
    "licence": "MIT (pymorphy3); OpenCorpora dictionary CC BY-SA 3.0",
    "licenceUrl": "https://opencorpora.org/?page=about"
+  },
+  "tatoeba": {
+   "name": "Tatoeba sentences (Russian + English translations)",
+   "url": "https://tatoeba.org/en/downloads",
+   "licence": "CC BY 2.0 FR",
+   "licenceUrl": "https://creativecommons.org/licenses/by/2.0/fr/",
+   "snapshot": "rus-eng.zip (536,124 Russian–English pairs), committed to tools/raw/tatoeba/"
   }
  },
  "counts": {
@@ -34,8 +41,8 @@
   "B1": 1459,
   "B2": 2390,
   "C1": 3199,
-  "C2": 3861,
-  "unranked": 30985
+  "C2": 3862,
+  "unranked": 30984
  },
  "chunks": {
   "A1": 598,
@@ -43,12 +50,12 @@
   "B1": 1459,
   "B2": 2390,
   "C1": 3199,
-  "C2": 3861,
+  "C2": 3862,
   "X1": 6000,
   "X2": 6000,
   "X3": 6000,
   "X4": 6000,
   "X5": 6000,
-  "X6": 985
+  "X6": 984
  }
 }

@@ -11,7 +11,9 @@ import { questDef } from '../rewards/quests'
 import { activeBoost } from '../rewards/service'
 import { dayKey, streakStatus } from '../rewards/streak'
 import { Ru } from '../components/Md'
-import { Bar, Card, CountUp, Icon } from '../components/ui'
+import { Bar, Button, Card, CountUp, Icon } from '../components/ui'
+import { backupDue, exportAndDownload, snoozeBackup, useBackupState } from '../lib/backupReminder'
+import type { Profile } from '../rewards/service'
 
 const STEP_ICON = { review: 'cards', evening: 'moon', course: 'path', weak: 'table', read: 'book', fun: 'bolt' } as const
 
@@ -79,6 +81,28 @@ function VocabularyCard() {
   )
 }
 
+/** Everything lives on this device: every couple of weeks, ask for a backup file. */
+function BackupNudge({ profile, sessions, now }: { profile: Profile; sessions: number; now: number }) {
+  const state = useBackupState()
+  if (!state || !backupDue(state, profile.created, sessions, now)) return null
+  const days = state.last ? Math.floor((now - state.last) / 86400000) : null
+  return (
+    <Card className="space-y-2">
+      <h2 className="font-serif text-xl">Back up your progress</h2>
+      <p className="text-sm text-ink-soft">
+        {days === null ? "You haven't saved a backup yet." : `Your last backup was ${days} days ago.`} Your progress is stored only in this
+        browser, so a lost phone or cleared site data would lose it. The backup is one small file you can import on any device.
+      </p>
+      <div className="flex gap-2">
+        <Button onClick={() => void exportAndDownload(Date.now())}>Save a backup</Button>
+        <Button variant="secondary" onClick={() => void snoozeBackup(Date.now())}>
+          Later
+        </Button>
+      </div>
+    </Card>
+  )
+}
+
 const mmss = (ms: number) => `${Math.floor(ms / 60000)}:${String(Math.floor((ms % 60000) / 1000)).padStart(2, '0')}`
 
 // Stats always exists; the town and the cards only when their features ship
@@ -88,33 +112,13 @@ const SHORTCUTS = [
   { to: '/stats', label: '📊 Stats', detail: "How it's going" },
 ].filter((t) => !t.feature || FEATURES.has(t.feature))
 
-export default function Home() {
+/** Happy-hour countdown and boost notice: the only part of Home that needs a one-second clock. */
+function XpBanners({ profile }: { profile: ReturnType<typeof useProfile> }) {
   const now = useNow(1000)
-  const profile = useProfile()
-  const stats = useStats()
-  const today = useToday()
-  const quests = useQuests()
-  const settings = useSettings()
-  const li = levelInfo(profile.xp)
-  const streak = streakStatus(profile.streak, profile.freezes, dayKey(now))
-  const xpPerCorrect = stats.correct ? Math.max(3, Math.round(profile.xp / stats.correct)) : 8
-  const goal = nextGoal({ xp: profile.xp, xpPerCorrect, quests, streak })
-  const minutes = (today?.seconds ?? 0) / 60
   const happy = isHappyHour(profile.happyHour, now)
   const boost = activeBoost(profile, now)
-  const daily = quests.filter((q) => q.period.startsWith('d:'))
-  const weekly = quests.filter((q) => q.period.startsWith('w:'))
-
-  const streakLine = {
-    'done-today': 'Done for today. See you tomorrow!',
-    'at-risk': 'Practise today to keep it going.',
-    protected: 'A streak freeze is covering the missed day(s). Practise today!',
-    broken: 'Start a new streak today.',
-    none: 'Finish a session to start a streak.',
-  }[streak.status]
-
   return (
-    <div className="space-y-4">
+    <>
       {happy && profile.happyHour && (
         <div className="anim-pop flex items-center justify-between rounded-xl bg-gold px-4 py-3 font-bold text-[#2a1d0f]">
           <span>
@@ -128,6 +132,36 @@ export default function Home() {
           <Icon name="bolt" filled className="mr-1 inline h-4 w-4 text-gold" />×{boost} XP boost active
         </div>
       )}
+    </>
+  )
+}
+
+export default function Home() {
+  const now = useNow(60000)
+  const profile = useProfile()
+  const stats = useStats()
+  const today = useToday()
+  const quests = useQuests()
+  const settings = useSettings()
+  const li = levelInfo(profile.xp)
+  const streak = streakStatus(profile.streak, profile.freezes, dayKey(now))
+  const xpPerCorrect = stats.correct ? Math.max(3, Math.round(profile.xp / stats.correct)) : 8
+  const goal = nextGoal({ xp: profile.xp, xpPerCorrect, quests, streak })
+  const minutes = (today?.seconds ?? 0) / 60
+  const daily = quests.filter((q) => q.period.startsWith('d:'))
+  const weekly = quests.filter((q) => q.period.startsWith('w:'))
+
+  const streakLine = {
+    'done-today': 'Done for today. See you tomorrow!',
+    'at-risk': 'Practise today to keep it going.',
+    protected: 'A streak freeze is covering the missed day(s). Practise today!',
+    broken: 'Start a new streak today.',
+    none: 'Finish a session to start a streak.',
+  }[streak.status]
+
+  return (
+    <div className="space-y-4">
+      <XpBanners profile={profile} />
 
       <Card>
         <div className="flex items-baseline justify-between gap-2">
@@ -173,6 +207,8 @@ export default function Home() {
       </div>
 
       <DailyPlan />
+
+      <BackupNudge profile={profile} sessions={stats.sessions ?? 0} now={now} />
 
       <div className="grid gap-3 sm:grid-cols-2">
         <Link to="/practice/full" className="flex items-center gap-3 rounded-xl bg-red px-5 py-4 text-paper shadow-md transition hover:brightness-110 active:scale-[0.99]">

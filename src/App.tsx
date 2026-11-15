@@ -10,6 +10,7 @@ import { useProfile } from './hooks/live'
 import { JuiceLayer, useJuice } from './components/juice'
 import { Ru } from './components/Md'
 import { Button, Icon } from './components/ui'
+import { ErrorBoundary } from './components/ErrorBoundary'
 import { pendingUpdate, subscribe, takeOfflineReady } from './lib/pwa'
 import Home from './pages/Home'
 
@@ -208,6 +209,61 @@ function BottomNav() {
   )
 }
 
+/** The routes. A page that throws or can't load shows a message; moving to another page clears it. */
+function Pages() {
+  const { pathname } = useLocation()
+  return (
+    <ErrorBoundary key={pathname}>
+      <Suspense fallback={<p className="py-12 text-center text-ink-soft">Loading…</p>}>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/practice/:mode" element={<Practice />} />
+          <Route path="/trophies" element={<Trophies />} />
+          <Route path="/settings" element={<Settings />} />
+          <Route path="/attributions" element={<Attributions />} />
+          <Route path="/review" element={<Review />} />
+          <Route path="/review/evening" element={<Evening />} />
+          <Route path="/lab" element={<Lab />} />
+          <Route path="/word/:id" element={<Word />} />
+          <Route path="/drill/:kind/:a/:b?/:c?" element={<Drill />} />
+          <Route path="/course" element={<CoursePage />} />
+          <Route path="/unit/:id" element={<UnitPage />} />
+          <Route path="/lesson/:id/:mode" element={<LessonPage />} />
+          <Route path="/placement" element={<Placement />} />
+          <Route path="/trainers" element={<TrainersHub />} />
+          <Route path="/trainer/:id" element={<TrainerPage />} />
+          <Route path="/trainer/:id/:mode" element={<TrainerRun />} />
+          <Route path="/reader" element={<ReaderPage />} />
+          <Route path="/story/:id" element={<StoryView />} />
+          <Route path="/story/:id/quiz" element={<StoryQuiz />} />
+          <Route path="/dialogue/:id" element={<StoryView listening />} />
+          <Route path="/dialogue/:id/quiz" element={<StoryQuiz listening />} />
+          <Route path="/listening" element={<ListeningPage />} />
+          <Route path="/listen/:mode" element={<ListenRun />} />
+          <Route path="/keyboard" element={<KeyboardPage />} />
+          <Route path="/keyboard/:n" element={<KeyboardRun />} />
+          <Route path="/games" element={<Games />} />
+          <Route path="/arcade" element={<Arcade />} />
+          <Route path="/crossword" element={<CrosswordHub />} />
+          <Route path="/crossword/:topic" element={<CrosswordGame />} />
+          <Route path="/speed" element={<Speed />} />
+          <Route path="/boss/:id" element={<Boss />} />
+          <Route path="/cards" element={<CardsPage />} />
+          <Route path="/card/:id" element={<CardPage />} />
+          <Route path="/town" element={<Town />} />
+          <Route path="/stats" element={<Stats />} />
+          <Route path="/idioms" element={<IdiomsPage />} />
+          <Route path="/idioms/practice" element={<IdiomsPractice />} />
+          <Route path="/adventure" element={<AdventureHub />} />
+          <Route path="/adventure/:n" element={<AdventurePlay />} />
+          <Route path="/grammar" element={<GrammarIndex />} />
+          <Route path="/grammar/:id" element={<GrammarArticlePage />} />
+        </Routes>
+      </Suspense>
+    </ErrorBoundary>
+  )
+}
+
 export default function App() {
   return (
     <HashRouter>
@@ -217,52 +273,7 @@ export default function App() {
         <Header />
         <main id="main" tabIndex={-1} className="mx-auto max-w-3xl px-4 pb-24 pt-4 outline-none sm:pb-8">
           <PageTitle />
-          <Suspense fallback={<p className="py-12 text-center text-ink-soft">Loading…</p>}>
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/practice/:mode" element={<Practice />} />
-              <Route path="/trophies" element={<Trophies />} />
-              <Route path="/settings" element={<Settings />} />
-              <Route path="/attributions" element={<Attributions />} />
-              <Route path="/review" element={<Review />} />
-              <Route path="/review/evening" element={<Evening />} />
-              <Route path="/lab" element={<Lab />} />
-              <Route path="/word/:id" element={<Word />} />
-              <Route path="/drill/:kind/:a/:b?/:c?" element={<Drill />} />
-              <Route path="/course" element={<CoursePage />} />
-              <Route path="/unit/:id" element={<UnitPage />} />
-              <Route path="/lesson/:id/:mode" element={<LessonPage />} />
-              <Route path="/placement" element={<Placement />} />
-              <Route path="/trainers" element={<TrainersHub />} />
-              <Route path="/trainer/:id" element={<TrainerPage />} />
-              <Route path="/trainer/:id/:mode" element={<TrainerRun />} />
-              <Route path="/reader" element={<ReaderPage />} />
-              <Route path="/story/:id" element={<StoryView />} />
-              <Route path="/story/:id/quiz" element={<StoryQuiz />} />
-              <Route path="/dialogue/:id" element={<StoryView listening />} />
-              <Route path="/dialogue/:id/quiz" element={<StoryQuiz listening />} />
-              <Route path="/listening" element={<ListeningPage />} />
-              <Route path="/listen/:mode" element={<ListenRun />} />
-              <Route path="/keyboard" element={<KeyboardPage />} />
-              <Route path="/keyboard/:n" element={<KeyboardRun />} />
-              <Route path="/games" element={<Games />} />
-              <Route path="/arcade" element={<Arcade />} />
-              <Route path="/crossword" element={<CrosswordHub />} />
-              <Route path="/crossword/:topic" element={<CrosswordGame />} />
-              <Route path="/speed" element={<Speed />} />
-              <Route path="/boss/:id" element={<Boss />} />
-              <Route path="/cards" element={<CardsPage />} />
-              <Route path="/card/:id" element={<CardPage />} />
-              <Route path="/town" element={<Town />} />
-              <Route path="/stats" element={<Stats />} />
-              <Route path="/idioms" element={<IdiomsPage />} />
-              <Route path="/idioms/practice" element={<IdiomsPractice />} />
-              <Route path="/adventure" element={<AdventureHub />} />
-              <Route path="/adventure/:n" element={<AdventurePlay />} />
-              <Route path="/grammar" element={<GrammarIndex />} />
-              <Route path="/grammar/:id" element={<GrammarArticlePage />} />
-            </Routes>
-          </Suspense>
+          <Pages />
         </main>
         <UpdatePrompt />
         <BottomNav />

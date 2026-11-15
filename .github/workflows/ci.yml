@@ -22,9 +22,15 @@ jobs:
         run: npm run data:test
       - name: Validate data and content
         run: npm run data:validate
+      - name: Lint
+        run: npm run lint
       - name: Typecheck
         run: npm run typecheck
       - name: Unit tests
         run: npm test
       - name: Build
         run: npm run build
+      - name: Browser smoke test
+        run: |
+          npx playwright install --with-deps chromium
+          npm run e2e

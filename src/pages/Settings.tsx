@@ -1,8 +1,8 @@
 import { useRef, useState, type ReactNode } from 'react'
 import { Link } from 'react-router-dom'
 import { updateSettings, useSettings, type Settings as S } from '../db/settings'
-import { downloadJson, exportProgress, importProgress, parseBackup, resetProgress, BackupError } from '../db/backup'
-import { noteExported } from '../rewards/service'
+import { importProgress, parseBackup, resetProgress, BackupError } from '../db/backup'
+import { exportAndDownload, useBackupState } from '../lib/backupReminder'
 import { TRANSLIT_TABLE } from '../engine/translit'
 import { speak, ttsSupported, useRussianVoices } from '../audio/tts'
 import { downloadIcs, reminderIcs } from '../lib/ics'
@@ -86,7 +86,7 @@ function FullDictionary() {
     setState('busy')
     try {
       const idx = await loadIndex('ext')
-      for (const c of [...new Set(idx.map((r) => r[4]))]) await loadChunk(c)
+      for (const c of new Set(idx.map((r) => r[4]))) await loadChunk(c)
       setState('done')
     } catch {
       setState('error')
@@ -113,10 +113,9 @@ export default function Settings() {
   const [msg, setMsg] = useState<string | null>(null)
   const canVibrate = typeof navigator !== 'undefined' && 'vibrate' in navigator
 
+  const backup = useBackupState()
   const doExport = async () => {
-    const b = await exportProgress()
-    downloadJson(b, `medved-progress-${b.exportedAt.slice(0, 10)}.json`)
-    await noteExported(Date.now())
+    await exportAndDownload(Date.now())
     setMsg('Progress exported. Keep the file somewhere safe.')
   }
   const doImport = async (f: File) => {
@@ -255,13 +254,22 @@ export default function Settings() {
       </Section>
 
       <Section title="Your progress">
-        <p className="text-sm text-ink-soft">Everything is stored on this device. Export regularly so you never lose it.</p>
+        <p className="text-sm text-ink-soft">
+          Everything is stored on this device. Export regularly so you never lose it.{' '}
+          {backup?.last ? `Last exported ${new Date(backup.last).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })}.` : 'Not exported yet.'}
+        </p>
         <div className="flex flex-wrap gap-2 pt-2">
           <Button onClick={doExport}>Export progress</Button>
           <Button variant="secondary" onClick={() => fileRef.current?.click()}>
             Import progress
           </Button>
-          <input ref={fileRef} type="file" accept="application/json,.json" hidden onChange={(e) => e.target.files?.[0] && doImport(e.target.files[0])} />
+          <input ref={fileRef} type="file" accept="application/json,.json" hidden onChange={(e) => {
+              const f = e.target.files?.[0]
+              // cleared, so choosing the same file again still fires
+              e.target.value = ''
+              if (f) void doImport(f)
+            }}
+          />
           <Button variant="ghost" onClick={doReset} className="text-bad">
             Delete all progress
           </Button>

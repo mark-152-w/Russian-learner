@@ -2,7 +2,7 @@
 import { useEffect, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import type { ExerciseItem, Lexeme } from '../types/content.gen'
-import { useRussianVoices } from '../audio/tts'
+import { russianVoices, useRussianVoices } from '../audio/tts'
 import { buildDrillContext } from '../lib/drillContext'
 import { shuffle } from '../lib/rng'
 import { examplesFor } from '../lib/sentences'
@@ -35,7 +35,7 @@ function cellDrill(ctx: DrillContext, kase: string, num: string, gender: string)
 export default function Drill() {
   const { kind, a, b, c } = useParams()
   const nav = useNavigate()
-  const { voices, ready } = useRussianVoices()
+  const { ready } = useRussianVoices()
   const [round, setRound] = useState(0)
   const [state, setState] = useState<{ items: ExerciseItem[]; lexemes: Map<string, Lexeme> } | null>(null)
 
@@ -43,7 +43,7 @@ export default function Drill() {
     if (!ready || !a) return
     let alive = true
     setState(null)
-    buildDrillContext({ hasVoice: voices.length > 0, vocab: kind === 'word' ? [a] : undefined }).then((ctx) => {
+    buildDrillContext({ hasVoice: russianVoices().length > 0, vocab: kind === 'word' ? [a] : undefined }).then((ctx) => {
       let items: ExerciseItem[] = []
       if (kind === 'word') items = wordDrill(ctx, a)
       else if (kind === 'pattern') items = patternItems(ctx.pool, a as NounClass, (b ?? 'pl_gen').split(','), ctx.rng, N)
@@ -54,7 +54,7 @@ export default function Drill() {
     return () => {
       alive = false
     }
-  }, [ready, kind, a, b, c, round, voices.length])
+  }, [ready, kind, a, b, c, round])
 
   if (!state) return <p className="py-12 text-center text-ink-soft">Building your drill…</p>
   if (!state.items.length) return <p className="py-12 text-center text-ink-soft">Nothing to drill here yet at your level.</p>

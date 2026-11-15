@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from 'react'
 import { Link, useNavigate, useParams } from 'react-router-dom'
 import type { ExerciseItem, Lexeme, Unit } from '../types/content.gen'
 import { db } from '../db/db'
-import { useRussianVoices } from '../audio/tts'
+import { russianVoices, useRussianVoices } from '../audio/tts'
 import { sound } from '../audio/sound'
 import { haptic } from '../audio/haptics'
 import { bossHit, bossItems, ERROR_WINDOW_MS, HEARTS, recentErrorTargets, startBoss, type BossState } from '../engine/boss'
@@ -51,7 +51,7 @@ function BossHud({ unit, state, hit, crit }: { unit: Unit; state: BossState; hit
 export default function BossPage() {
   const { id } = useParams()
   const nav = useNavigate()
-  const { voices, ready } = useRussianVoices()
+  const { ready } = useRussianVoices()
   const [round, setRound] = useState(0)
   const [phase, setPhase] = useState<'intro' | 'fight'>('intro')
   const [data, setData] = useState<{ unit: Unit; items: ExerciseItem[]; lexemes: Map<string, Lexeme> } | null>(null)
@@ -70,7 +70,7 @@ export default function BossPage() {
     void loadUnits().then(async (us) => {
       const unit = us.find((u) => u.id === id)
       if (!unit?.boss) return
-      const ctx = await buildDrillContext({ level: unit.level as 'A2', vocab: unit.vocab, hasVoice: voices.length > 0 })
+      const ctx = await buildDrillContext({ level: unit.level as 'A2', vocab: unit.vocab, hasVoice: russianVoices().length > 0 })
       const now = Date.now()
       const errors = recentErrorTargets(await db.attempts.where('ts').above(now - ERROR_WINDOW_MS).toArray(), now)
       const extra = await loadLexemes(errors.map((e) => e.lex))
@@ -87,7 +87,7 @@ export default function BossPage() {
     return () => {
       alive = false
     }
-  }, [id, round, ready, voices.length])
+  }, [id, round, ready])
 
   if (!data || !state) return <p className="py-12 text-center text-ink-soft">The boss is getting ready…</p>
   const { unit } = data
