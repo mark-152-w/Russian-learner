@@ -25,7 +25,7 @@ describe('sentences data', () => {
   it('token offsets cover words and readings are well-formed', () => {
     for (const s of sents.slice(0, 500)) {
       for (const t of wordTokens(s)) {
-        expect(t.text).toMatch(/^[А-Яа-яЁё́-]+$/)
+        expect(t.text).toMatch(/^(?:[А-Яа-яЁё-]|\u0301)+$/)
         for (const r of t.readings) expect(r.lex).toMatch(/^(n|v|a|o|name|pron|num|word):/)
       }
     }

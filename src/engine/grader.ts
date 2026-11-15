@@ -155,7 +155,7 @@ export function diffWords(expectedDisplay: string[], got: string[]): DiffToken[]
   const G = got.map((w) => normalizeAnswer(w))
   const n = E.length
   const m = G.length
-  const L: number[][] = Array.from({ length: n + 1 }, () => new Array<number>(m + 1).fill(0))
+  const L: number[][] = Array.from({ length: n + 1 }, () => Array.from({ length: m + 1 }, () => 0))
   for (let i = n - 1; i >= 0; i--)
     for (let j = m - 1; j >= 0; j--) L[i]![j] = E[i] === G[j] ? L[i + 1]![j + 1]! + 1 : Math.max(L[i + 1]![j]!, L[i]![j + 1]!)
   const raw: DiffToken[] = []

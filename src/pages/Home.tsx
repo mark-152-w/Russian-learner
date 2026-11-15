@@ -11,7 +11,9 @@ import { questDef } from '../rewards/quests'
 import { activeBoost } from '../rewards/service'
 import { dayKey, streakStatus } from '../rewards/streak'
 import { Ru } from '../components/Md'
-import { Bar, Card, CountUp, Icon } from '../components/ui'
+import { Bar, Button, Card, CountUp, Icon } from '../components/ui'
+import { backupDue, exportAndDownload, snoozeBackup, useBackupState } from '../lib/backupReminder'
+import type { Profile } from '../rewards/service'
 
 const STEP_ICON = { review: 'cards', evening: 'moon', course: 'path', weak: 'table', read: 'book', fun: 'bolt' } as const
 
@@ -75,6 +77,28 @@ function VocabularyCard() {
         Counts the {v.credited.toLocaleString('en')} most frequent words (assumed known) plus every word whose card has matured in
         review.{v.nextMilestone ? ` Next milestone: ${v.nextMilestone.toLocaleString('en')}.` : ''}
       </p>
+    </Card>
+  )
+}
+
+/** Everything lives on this device: every couple of weeks, ask for a backup file. */
+function BackupNudge({ profile, sessions, now }: { profile: Profile; sessions: number; now: number }) {
+  const state = useBackupState()
+  if (!state || !backupDue(state, profile.created, sessions, now)) return null
+  const days = state.last ? Math.floor((now - state.last) / 86400000) : null
+  return (
+    <Card className="space-y-2">
+      <h2 className="font-serif text-xl">Back up your progress</h2>
+      <p className="text-sm text-ink-soft">
+        {days === null ? "You haven't saved a backup yet." : `Your last backup was ${days} days ago.`} Your progress is stored only in this
+        browser, so a lost phone or cleared site data would lose it. The backup is one small file you can import on any device.
+      </p>
+      <div className="flex gap-2">
+        <Button onClick={() => void exportAndDownload(Date.now())}>Save a backup</Button>
+        <Button variant="secondary" onClick={() => void snoozeBackup(Date.now())}>
+          Later
+        </Button>
+      </div>
     </Card>
   )
 }
@@ -183,6 +207,8 @@ export default function Home() {
       </div>
 
       <DailyPlan />
+
+      <BackupNudge profile={profile} sessions={stats.sessions ?? 0} now={now} />
 
       <div className="grid gap-3 sm:grid-cols-2">
         <Link to="/practice/full" className="flex items-center gap-3 rounded-xl bg-red px-5 py-4 text-paper shadow-md transition hover:brightness-110 active:scale-[0.99]">

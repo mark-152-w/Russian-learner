@@ -102,7 +102,9 @@ src/features.ts        features that exist; quests/achievements for anything els
 - `python3 tools/stories.py`: rebuild stories and cards after editing `tools/stories/*.txt` or `tools/cards/*.txt`
   (exit 1 on problems). Re-run it after any ingest, since lexeme ids/ranks feed the analysis.
 - `npm run data:validate`: must pass before a phase is done (`--full` re-checks the rare tail too, slower).
-- `npm run check`: python tests + validate + typecheck + vitest.
+- `npm run check`: python tests + validate + lint (oxlint: hooks rules, `.oxlintrc.json`) + typecheck + vitest.
+- `npm run build && npm run e2e`: Playwright smoke test of the built app (`e2e/smoke.mjs`: sessions, export/import,
+  main pages). CI runs it after the build.
 - `npm run dev` / `npm run build` (`BASE=/` for root hosting; default base is `/Russian-learner/`).
 
 ## Licensing

@@ -237,10 +237,12 @@ function StressView({ item, verdict, onSubmit }: ViewProps) {
 
 function MatchView({ item, verdict, onSubmit, attempt }: ViewProps) {
   // Tracked by position, not text: two words can share a gloss, and their tiles must not answer for each other.
-  const pairs = item.pairs ?? []
-  const rng = useMemo(() => seedFor(item, attempt), [item, attempt])
-  const left = useMemo(() => shuffle(rng, pairs.map((p, i) => ({ text: p[0]!, i }))), [pairs, rng])
-  const right = useMemo(() => shuffle(rng, pairs.map((p, i) => ({ text: p[1]!, i }))), [pairs, rng])
+  const pairs = useMemo(() => item.pairs ?? [], [item.pairs])
+  // both columns from one seeded generator, in one go: shuffled the same way on every render
+  const [left, right] = useMemo(() => {
+    const rng = seedFor(item, attempt)
+    return [shuffle(rng, pairs.map((p, i) => ({ text: p[0]!, i }))), shuffle(rng, pairs.map((p, i) => ({ text: p[1]!, i })))]
+  }, [item, attempt, pairs])
   const [sel, setSel] = useState<number | null>(null)
   const [doneL, setDoneL] = useState<Set<number>>(new Set())
   const [doneR, setDoneR] = useState<Set<number>>(new Set())

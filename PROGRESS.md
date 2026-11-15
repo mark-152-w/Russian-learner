@@ -86,6 +86,14 @@ From a code review. Each fix has a test where one is possible.
   known-word count is redone only when a card matures; Home re-renders once a minute (the happy-hour countdown
   keeps its own clock).
 - **Deploys** run the full `npm run check` first, like CI.
+- **Lint**: oxlint with the React hooks rules (`npm run lint`, part of `check`). typescript-eslint doesn't run on
+  TypeScript 7 yet; oxlint doesn't need it. It found a match item that could reshuffle on a re-render and a literal
+  combining accent in a test regex. The compiler-style rules (purity, refs, set-state-in-effect) are off: they flag
+  the app's established patterns, not bugs.
+- **Browser test**: `npm run e2e` (after a build) plays a session and leaves it with Back, finishes one, exports,
+  deletes everything, imports, and opens the main pages, failing on any page error. CI runs it.
+- **Backup reminder**: once there are 5+ sessions, Home asks for a backup when the last one (or the first use) is
+  14 days old; "Later" waits a week. Settings shows the last export date.
 
 ## Flashcards: a manageable load, clearer questions (after A1 unit 1)
 
